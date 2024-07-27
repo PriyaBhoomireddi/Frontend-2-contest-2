@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(17, 17, 17, 0);
+    color:black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color:grey;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px black;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width:calc(100%-50px);
+    padding: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 30px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+
+.error-message {
+    color: red;
+    display: none;
+}
+
+.success-message {
+    color: green;
+    display: none;
+    padding: 10px;
+    margin: 10px;
+
+}
