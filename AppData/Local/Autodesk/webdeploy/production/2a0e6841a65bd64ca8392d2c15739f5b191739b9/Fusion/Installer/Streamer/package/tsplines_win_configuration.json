@@ -1,0 +1,14 @@
+{
+	"build"	   : "Release",
+
+	"platform" : "win32",
+
+	"packageId": "5cdb062ac66041bdbffd0d3d74a4efd3",
+
+	"major-update-version" : "1.1.1",
+
+	"included-files" : [
+		"Applications/Fusion/NaTSplineUI10.dll",
+		"Applications/Fusion/NaTSplineUI10.xml"
+	]
+}

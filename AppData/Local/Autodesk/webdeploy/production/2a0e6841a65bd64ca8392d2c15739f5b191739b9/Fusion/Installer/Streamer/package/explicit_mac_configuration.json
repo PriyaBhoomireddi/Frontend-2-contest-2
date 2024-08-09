@@ -1,0 +1,15 @@
+{
+	"build" : "Release",
+
+	"platform" : "darwin",
+
+	"packageId": "explicit",
+
+	"included-files" : [
+        "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/Configuration/Fusion360.xml",
+        "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaSPDTranslator10.dylib",
+        "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaSPDTranslator10.xml",
+        "Autodesk Fusion 360.app/Contents/Libraries/Neutron/library.spdc",
+        "Autodesk Fusion 360.app/Contents/Libraries/Neutron/prism_library.spdc"
+	]
+}

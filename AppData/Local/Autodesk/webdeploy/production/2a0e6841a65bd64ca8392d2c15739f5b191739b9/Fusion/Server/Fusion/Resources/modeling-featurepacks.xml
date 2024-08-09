@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeaturePacks>
+  <FeaturePack Id="modeling" Preview="True">
+
+    <Title _LCLZId="modeling-featurepack-title" _LCLZText="Modeling"/>
+	  <Description _LCLZId="modeling-featurepack-desc" _LCLZText="This section controls optional capabilities within the Modeling workspaces."/>
+	  
+    <Features>
+    
+	    <Feature Id="sketchdisplay-by-constraint" Hidden="True" LegacyPreviewId="SketchDisplayByConstraintEnabled">
+		    <Title _LCLZId="sketchdisplay-by-constraint-title" _LCLZText="Sketch Display by Constraint"/>
+		    <Description _LCLZId="sketchdisplay-by-constraint-desc" _LCLZText="Need a description for this"/>
+	    </Feature>
+    
+	    <Feature Id="mt-compute" Hidden="True" Advanced="True" LegacyPreviewId="MTComputeEnabled">
+		    <Title _LCLZId="mt-compute-title" _LCLZText="Enable Multi-threaded component compute"/>
+		    <Description _LCLZId="mt-compute-desc">
+			    <_LCLZText>
+			      <![CDATA[Allows computing of multiple components to be split across multiple processors. Using this functionality will allow edited features to compute simultaneously, speeding up the overall recompute time. The performance improvement is based on implementation of <a href='http://help.autodesk.com/view/NINVFUS/ENU/?guid=GUID-4B1F9693-F209-4833-AA16-1ACDA6005DB6'>Best Practice</a> methods.]]>
+			    </_LCLZText>
+		    </Description>
+	    </Feature>
+    
+	  </Features>
+
+  </FeaturePack>
+</FeaturePacks>

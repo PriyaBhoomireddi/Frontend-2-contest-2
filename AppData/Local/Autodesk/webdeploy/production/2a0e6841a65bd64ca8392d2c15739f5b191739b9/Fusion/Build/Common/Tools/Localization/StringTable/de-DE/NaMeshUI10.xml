@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="AllSupportedFiles" devLabel="All supported files ( %1% ) ;;" translation="Alle unterstützten Dateien (%1%) ;;"/>
+	<label commandName="BRep2MeshCommand" devLabel="BRep to Mesh" translation="BRep zu Netz"/>
+	<label commandName="BestFitType" devLabel="Best Fit" translation="Beste Einpassung"/>
+	<label commandName="BodyEntitySelection" devLabel="Body" translation="Körper"/>
+	<label commandName="BooleanTypeOperation" devLabel="Operation" translation="Vorgang"/>
+	<label commandName="CenterTransform" devLabel="Center" translation="Mittelpunkt"/>
+	<label commandName="CmMKS" devLabel="Centimeter" translation="Zentimeter"/>
+	<label commandName="CombineKeepToolsOptionInput" devLabel="Keep Tool Bodies" translation="Werkzeugkörper beibehalten"/>
+	<label commandName="CompColorCycleOptionWarning1" devLabel="Component color cycling has been disabled temporarily." translation="Der Komponenten-Farbwechsel wurde vorübergehend deaktiviert."/>
+	<label commandName="CustomRefinementOption" devLabel="Custom" translation="Benutzerdefiniert"/>
+	<label commandName="CylinderType" devLabel="Cylinder" translation="Zylinder"/>
+	<label commandName="ExitMeshPanel" devLabel="Close" translation="Schließen"/>
+	<label commandName="ExpandToConnectedSel" devLabel="Expand to Connected" translation="Auf Verbundene erweitern"/>
+	<label commandName="ExpandToGroupSel" devLabel="Expand to Face Group" translation="Auf Flächengruppe erweitern"/>
+	<label commandName="Facet Count" devLabel="Facet Count" translation="Anzahl Facetten"/>
+	<label commandName="FitType" devLabel="Meshing Type" translation="Netzgenerierungstyp"/>
+	<label commandName="FlatMeshShading" devLabel="Flat Shaded" translation="Flachschattiert"/>
+	<label commandName="FlatType" devLabel="Uniform" translation="Einheitlich"/>
+	<label commandName="FusionMeshPlanarSectionBodyPrompt" devLabel="Select a mesh body" translation="Netzkörper auswählen"/>
+	<label commandName="FusionMeshPlanarSectionPlanePrompt" devLabel="Move the plane" translation="Ebene verschieben"/>
+	<label commandName="FusionMeshPlanarSectionPrompt" devLabel="Select a plane (optional)" translation="Ebene auswählen (optional)"/>
+	<label commandName="FusionPositionMesh" devLabel="Insert Mesh" translation="Netz einfügen"/>
+	<label commandName="GenerateFGAngle" devLabel="Threshold Angle" translation="Winkelgrenzwert"/>
+	<label commandName="GridAspectRatio" devLabel="Aspect Ratio" translation="Seitenverhältnis"/>
+	<label commandName="GroundTransform" devLabel="Move to Ground" translation="In Ausgangsebene verschieben"/>
+	<label commandName="GrowMeshSel" devLabel="Grow Selection" translation="Auswahl erweitern"/>
+	<label commandName="HighRefinementOption" devLabel="High" translation="Hoch"/>
+	<label commandName="Imperial" devLabel="Foot" translation="Fuß"/>
+	<label commandName="InchImperial" devLabel="Inch" translation="Zoll"/>
+	<label commandName="InsertAlignMeshCommand" devLabel="Insert Mesh" translation="Netz einfügen"/>
+	<label commandName="InsertMeshCommand" devLabel="Insert Mesh" translation="Netz einfügen"/>
+	<label commandName="InvertMeshSel" devLabel="Invert Selection" translation="Auswahl invertieren"/>
+	<label commandName="LowRefinementOption" devLabel="Low" translation="Niedrig"/>
+	<label commandName="MMKS" devLabel="Meter" translation="Meter"/>
+	<label commandName="MaximumEdgeLength" devLabel="Maximum Edge Length" translation="Maximale Kantenlänge"/>
+	<label commandName="MediumRefinementOption" devLabel="Medium" translation="Mittel"/>
+	<label commandName="Mesh" devLabel="Mesh" translation="Netz"/>
+	<label commandName="Mesh Environment" devLabel="Mesh" translation="Netz"/>
+	<label commandName="Mesh2BRep Conversion Warning" devLabel="&lt;b&gt;Mesh to BRep conversion&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Warning: This mesh contains a large number of facets. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Mesh surface content:&lt;br&gt;Facets = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversion has been aborted. &lt;/br&gt;" translation="&lt;b&gt;Konvertierung von Netz in BRep&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Warnung: Dieses Netz enthält eine große Anzahl an Facetten. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Netzflächeninhalt:&lt;br&gt;Facetten = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Konvertierung wurde abgebrochen. &lt;/br&gt;"/>
+	<label commandName="Mesh2BRep Conversion Warning_1" devLabel="&lt;b&gt;Mesh to BRep conversion&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Warning: This mesh contains a large number of facets. &lt;/br&gt;&lt;br&gt;Proceeding will result in slow performance.&lt;/br&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt;Mesh surface content:&lt;br&gt;Facets = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversion is not recommended. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Proceed with conversion?&lt;/br&gt;" translation="&lt;b&gt;Konvertierung von Netz in BRep&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Warnung: Dieses Netz enthält eine große Anzahl an Facetten. &lt;/br&gt;&lt;br&gt;Wenn Sie fortfahren, führt dies zu einer geringeren Leistung.&lt;/br&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt;Netzflächeninhalt:&lt;br&gt;Facetten = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Konvertierung wird nicht empfohlen. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Mit der Konvertierung fortfahren?&lt;/br&gt;"/>
+	<label commandName="Mesh2BRep conversion aborted." devLabel="Mesh to BRep conversion aborted." translation="Konvertierung von Netz in BRep abgebrochen"/>
+	<label commandName="Mesh2BRepCommand" devLabel="Mesh to BRep" translation="Netz in BRep"/>
+	<label commandName="MeshBodiesSelection" devLabel="Mesh Bodies" translation="Netzkörper"/>
+	<label commandName="MeshBodySelection" devLabel="Mesh Body" translation="Netzkörper"/>
+	<label commandName="MeshClearFGCommand" devLabel="Clear Face Group" translation="Flächengruppe löschen"/>
+	<label commandName="MeshColorCommand" devLabel="Face Groups" translation="Flächengruppen"/>
+	<label commandName="MeshCombineCommand" devLabel="Merge Bodies" translation="Körper zusammenführen"/>
+	<label commandName="MeshCombineGenericError" devLabel="Combine failed due to invalid input" translation="Kombinieren aufgrund einer ungültigen Eingabe fehlgeschlagen"/>
+	<label commandName="MeshCreateFGCommand" devLabel="Create Face Group" translation="Flächengruppe erstellen"/>
+	<label commandName="MeshCutSplitFaces" devLabel="Split Faces" translation="Flächen teilen"/>
+	<label commandName="MeshDeleteTrianglesCommand" devLabel="Delete Faces" translation="Flächen löschen"/>
+	<label commandName="MeshDensity" devLabel="Density" translation="Dichte"/>
+	<label commandName="MeshDistance" devLabel="Offset" translation="Versatz"/>
+	<label commandName="MeshEntitySelection" devLabel="Mesh Body" translation="Netzkörper"/>
+	<label commandName="MeshFACESelection" devLabel="Mesh Faces" translation="Netzflächen"/>
+	<label commandName="MeshFaceBodySelection" devLabel="Mesh Faces/Body" translation="Netzflächen/Netzkörper"/>
+	<label commandName="MeshFaceGroupOffCommand" devLabel="FaceGroup Off" translation="Flächengruppe aus"/>
+	<label commandName="MeshFaceGroupOnCommand" devLabel="FaceGroup On" translation="Flächengruppe ein"/>
+	<label commandName="MeshFacetSelection" devLabel="Mesh Facet" translation="Netzfacette"/>
+	<label commandName="MeshFacetSelection_1" devLabel="Mesh Faces/Body" translation="Netzflächen/Netzkörper"/>
+	<label commandName="MeshFacetSelection_2" devLabel="Mesh Faces/Body" translation="Netzflächen/Netzkörper"/>
+	<label commandName="MeshFittingCommand" devLabel="Fit Surface to Mesh" translation="Fläche an Netz anpassen"/>
+	<label commandName="MeshGenerateFGCommand" devLabel="Generate Face Groups" translation="Flächengruppen generieren"/>
+	<label commandName="MeshGenerateFGGenericError" devLabel="GenerateFG failed due to invalid input" translation="GenerateFG aufgrund einer ungültigen Eingabe fehlgeschlagen"/>
+	<label commandName="MeshMakeSolidBeginComputation" devLabel="Starting conversion..." translation="Konvertierung wird gestartet..."/>
+	<label commandName="MeshMakeSolidCommand" devLabel="Make Closed Mesh" translation="Geschlossenes Netz erstellen"/>
+	<label commandName="MeshPlanarSectionCommand" devLabel="Create Mesh Section Sketch" translation="Netzschnittskizze erstellen"/>
+	<label commandName="MeshPlaneCutBodySel" devLabel="Mesh Body" translation="Netzkörper"/>
+	<label commandName="MeshPlaneCutCommand" devLabel="Plane Cut" translation="Ebenenschnitt"/>
+	<label commandName="MeshPlaneCutFillMinimal" devLabel="Minimal" translation="Minimal"/>
+	<label commandName="MeshPlaneCutFillNone" devLabel="No Fill" translation="Keine Füllung"/>
+	<label commandName="MeshPlaneCutFillType" devLabel="Fill Type" translation="Füllungstyp"/>
+	<label commandName="MeshPlaneCutFillUniform" devLabel="Uniform" translation="Einheitlich"/>
+	<label commandName="MeshPlaneCutFlipTrimDir" devLabel="Flip" translation="Umkehren"/>
+	<label commandName="MeshPlaneCutMeshSelectPrompt" devLabel="Select a mesh body" translation="Netzkörper auswählen"/>
+	<label commandName="MeshPlaneCutPlanePrompt" devLabel="Select a plane" translation="Ebene auswählen"/>
+	<label commandName="MeshPlaneCutPlaneSel" devLabel="Plane" translation="Ebene"/>
+	<label commandName="MeshPlaneCutSplitBody" devLabel="Split Body" translation="Körper teilen"/>
+	<label commandName="MeshPlaneCutTransfPlane" devLabel="Transform Plane" translation="Ebene transformieren"/>
+	<label commandName="MeshPlaneCutTransformPlanePrompt" devLabel="Position the plane" translation="Ebene positionieren"/>
+	<label commandName="MeshPlaneCutTrim" devLabel="Trim" translation="Stutzen"/>
+	<label commandName="MeshPlaneCutType" devLabel="Cut Type" translation="Schnitttyp"/>
+	<label commandName="MeshRebuildSolidGenericError" devLabel="Make Closed Mesh failed due to invalid input" translation="Geschlossenes Netz erstellen aufgrund einer ungültigen Eingabe fehlgeschlagen"/>
+	<label commandName="MeshReduceCommand" devLabel="Reduce" translation="Reduzieren"/>
+	<label commandName="MeshReduceGenericError" devLabel="Reduce failed due to invalid input" translation="Reduzieren aufgrund einer ungültigen Eingabe fehlgeschlagen"/>
+	<label commandName="MeshRemeshCommand" devLabel="Remesh" translation="Neu vernetzen"/>
+	<label commandName="MeshRemeshGenericError" devLabel="Remesh failed due to invalid input" translation="Neuvernetzung aufgrund einer ungültigen Eingabe fehlgeschlagen"/>
+	<label commandName="MeshReplaceCommand" devLabel="Erase and Fill" translation="Löschen und Füllen"/>
+	<label commandName="MeshReverseNormalsCommand" devLabel="Reverse Normal" translation="Normale umdrehen"/>
+	<label commandName="MeshSectionBodyInput" devLabel="Mesh Body" translation="Netzkörper"/>
+	<label commandName="MeshSectionPlaneInput" devLabel="Plane" translation="Ebene"/>
+	<label commandName="MeshSectionTransformInput" devLabel="Transform" translation="Transformieren"/>
+	<label commandName="MeshSelection" devLabel="Mesh Faces/Body" translation="Netzflächen/Netzkörper"/>
+	<label commandName="MeshSelectionPalette" devLabel="Mesh Palette" translation="Netzpalette"/>
+	<label commandName="MeshSmoothCommand" devLabel="Smooth" translation="Glatt"/>
+	<label commandName="MeshSmoothGenericError" devLabel="Smooth failed due to invalid input" translation="Glätten aufgrund einer ungültigen Eingabe fehlgeschlagen"/>
+	<label commandName="MeshStyleCommand" devLabel="Mesh Display" translation="Netzanzeige"/>
+	<label commandName="MeshSubsetCommand" devLabel="Separate" translation="Trennen"/>
+	<label commandName="MeshTriangulateCommand" devLabel="Triangulate Mesh" translation="Netz triangulieren"/>
+	<label commandName="MeshingTypeOption" devLabel="Reduce Type" translation="Reduzierungstyp"/>
+	<label commandName="MeshingTypeOption_1" devLabel="Meshing Type" translation="Netzgenerierungstyp"/>
+	<label commandName="MinimalType" devLabel="Minimal" translation="Minimal"/>
+	<label commandName="MissingMoveBodies" devLabel="missing bodies" translation="fehlende Körper"/>
+	<label commandName="MmMKS" devLabel="Millimeter" translation="Millimeter"/>
+	<label commandName="MoveSelectionInputPrompt4" devLabel="Position mesh bodies" translation="Netzkörper positionieren"/>
+	<label commandName="NewBodyInNewCompType" devLabel="New Component" translation="Neue Komponente"/>
+	<label commandName="NewBodyType" devLabel="New Body" translation="Neuer Körper"/>
+	<label commandName="NewComponent" devLabel="Operation" translation="Vorgang"/>
+	<label commandName="NormalTolerance" devLabel="Normal Deviation" translation="Normales Abmaß"/>
+	<label commandName="NumberOfTriangles" devLabel="Number Of Triangles" translation="Anzahl der Dreiecke"/>
+	<label commandName="NumericalInputsGroup" devLabel="Numerical Inputs" translation="Numerische Eingaben"/>
+	<label commandName="OBJFilesFilter" devLabel="OBJ File(*.obj);;" translation="OBJ-Datei (*.obj);;"/>
+	<label commandName="PhysicalMaterialProperty" devLabel="Physical Material" translation="Material"/>
+	<label commandName="PlaneType" devLabel="Plane" translation="Ebene"/>
+	<label commandName="PositionMeshSelectionInput" devLabel="Selection" translation="Auswahl"/>
+	<label commandName="PositionMeshTransformInput" devLabel="Distance" translation="Abstand"/>
+	<label commandName="PreviewDeviation" devLabel="Deviation Preview" translation="Abweichungsvorschau"/>
+	<label commandName="PreviewGroupStart" devLabel="Preview" translation="Vorschau"/>
+	<label commandName="PreviewInput" devLabel="Preview" translation="Vorschau"/>
+	<label commandName="PreviewMesh" devLabel="Preview Mesh" translation="Netzvorschau"/>
+	<label commandName="ReduceFacetCount" devLabel="Face Count" translation="Flächenanzahl"/>
+	<label commandName="ReducePBOptionInput" devLabel="Preserve Boundaries" translation="Umgrenzungen beibehalten"/>
+	<label commandName="ReducePercentage" devLabel="Density" translation="Dichte"/>
+	<label commandName="ReduceType" devLabel="Reduce Target" translation="Ziel reduzieren"/>
+	<label commandName="RefinementGroupStart" devLabel="Refinement" translation="Verfeinerung"/>
+	<label commandName="RefinementOptionsInput" devLabel="Refinement Options" translation="Verfeinerungsoptionen"/>
+	<label commandName="RemeshBoundaryOptionInput" devLabel="Preserve Boundaries" translation="Umgrenzungen beibehalten"/>
+	<label commandName="RemeshDensity" devLabel="Density" translation="Dichte"/>
+	<label commandName="RemeshNormalThresholdInput" devLabel="Shape Preservation" translation="Form beibehalten"/>
+	<label commandName="RemeshSharpOptionInput" devLabel="Preserve Sharp Edges" translation="Scharfe Kanten beibehalten"/>
+	<label commandName="ReplaceDensity" devLabel="Density" translation="Dichte"/>
+	<label commandName="ReplaceScale" devLabel="Weight" translation="Gewicht"/>
+	<label commandName="ResetTransform" devLabel="Reset Transformation" translation="Transformation zurücksetzen"/>
+	<label commandName="STLFilesFilter" devLabel="STL File(*.stl)" translation="STL-Datei (*.stl)"/>
+	<label commandName="SelectBodies" devLabel="Select bodies" translation="Körper auswählen"/>
+	<label commandName="SelectMeshBodies" devLabel="Select mesh bodies" translation="Netzkörper auswählen"/>
+	<label commandName="SelectMeshFacet" devLabel="Select mesh facet" translation="Netz-Facette auswählen"/>
+	<label commandName="ShrinkMeshSel" devLabel="Shrink Selection" translation="Auswahl verkleinern"/>
+	<label commandName="SmoothAdaptive" devLabel="Adaptive" translation="Adaptiv"/>
+	<label commandName="SmoothMeshShading" devLabel="Smooth Shaded" translation="Glatt schattiert"/>
+	<label commandName="SmoothScale" devLabel="Smoothing" translation="Glättungsfilter"/>
+	<label commandName="SolidType" devLabel="Rebuild Mode" translation="Neuerstellungsmodus"/>
+	<label commandName="Sphere Type" devLabel="Sphere" translation="Kugel"/>
+	<label commandName="SurfaceDeviationTolerance" devLabel="Deviation Tolerance" translation="Abweichungstoleranz"/>
+	<label commandName="SurfaceFitTolerance" devLabel="Fit Tolerance" translation="Anpassungstoleranz"/>
+	<label commandName="SurfaceTolerance" devLabel="Surface Deviation" translation="Flächenabmaß"/>
+	<label commandName="SurfaceType" devLabel="Surface to Fit" translation="Anzupassende Fläche"/>
+	<label commandName="Tolerance" devLabel="Tolerance" translation="Toleranz"/>
+	<label commandName="Torus Type" devLabel="Torus" translation="Torus"/>
+	<label commandName="TransformTriad" devLabel="Transform" translation="Transformieren"/>
+	<label commandName="TransformTriadPrompt" devLabel="" translation=""/>
+	<label commandName="TriangulatedQuadMeshWarning" devLabel="The inserted mesh has been automatically converted to a triangle mesh to make it compatible with the mesh editing tools. You can disable this automatic triangulation in Preferences &gt; Mesh." translation="Das eingefügte Netz wurde automatisch in ein Dreiecksnetz umgewandelt, damit es mit den Netzbearbeitungswerkzeugen kompatibel ist. Sie können diese automatische Dreieckseinteilung unter Voreinstellungen &gt; Netz deaktivieren."/>
+	<label commandName="UnitsType" devLabel="Unit Type" translation="Einheitentyp"/>
+	<label commandName="UpDirType" devLabel="Flip Up Direction" translation="AUF-Richtung umkehren"/>
+	<label commandName="VisualMaterialProperty" devLabel="Appearance" translation="Darstellung"/>
+	<label commandName="accurateType" devLabel="Accurate" translation="Genau"/>
+	<label commandName="blockyType" devLabel="Blocky" translation="Kantig"/>
+	<label commandName="fastType" devLabel="Standard" translation="Standard"/>
+	<label commandName="infoAdaptiveType" devLabel="Adaptive" translation="Adaptiv"/>
+	<label commandName="infoUniformType" devLabel="Uniform" translation="Einheitlich"/>
+	<label commandName="lclzBRep2MeshDesc1" devLabel="Converts a BRep body to a Mesh body" translation="Konvertiert einen BRep-Körper in einen Netzkörper"/>
+	<label commandName="lclzFitCurvesToSectionCmd1" devLabel="Fits sketch curves to a mesh cross section." translation="Passt Skizzenkurven an einen Netz-Querschnitt an."/>
+	<label commandName="lclzFitCurvesToSectionCmd2" devLabel="Choose the sketch curve type, then select the start and end points on the mesh section. Create multiple curves within the same command with various join conditions." translation="Wählen Sie den Skizzenkurventyp und dann die Start- und Endpunkte auf dem Netzschnitt aus. Erstellen Sie mehrere Kurven innerhalb des gleichen Befehls mit verschiedenen Verbindungsbedingungen."/>
+	<label commandName="lclzInsertAlignMeshDesc1" devLabel="Inserts the selected OBJ or STL mesh file into the active design." translation="Fügt die ausgewählte OBJ- oder STL-Netzdatei in die aktive Konstruktion ein."/>
+	<label commandName="lclzInsertAlignMeshDesc2" devLabel="Choose an OBJ or STL file to insert, then use the options and manipulators to orient and position the mesh." translation="Wählen Sie eine OBJ- oder STL-Datei zum Einfügen, und verwenden Sie die Optionen und Manipulatoren zum Ausrichten und Positionieren des Netzes."/>
+	<label commandName="lclzInsertMeshDesc1" devLabel="Inserts the selected OBJ or STL mesh file into the active design." translation="Fügt die ausgewählte OBJ- oder STL-Netzdatei in die aktive Konstruktion ein."/>
+	<label commandName="lclzInsertMeshDesc2" devLabel="Choose an OBJ or STL file to insert, then use the options and manipulators to orient and position the mesh." translation="Wählen Sie eine OBJ- oder STL-Datei zum Einfügen, und verwenden Sie die Optionen und Manipulatoren zum Ausrichten und Positionieren des Netzes."/>
+	<label commandName="lclzMesh2BRepDesc1" devLabel="Converts a Mesh to a BRep (surface or solid) body type. Meshes more than 10,000 facets can affect performance." translation="Konvertiert einen Netz- in einen BRep-Körpertyp (Fläche oder Volumenkörper). Netze mit mehr als 10.000 Facetten können die Leistung beeinträchtigen."/>
+	<label commandName="lclzMesh2BRepTipsAndTricks1Item1" devLabel="&lt;b&gt;Mesh to BRep:&lt;/b&gt; Meshes that have originated from CAD models or reality capture scans of limited size can be converted to a BRep surface or solid.  Each facet of the input mesh will be converted to a single planar surface." translation="&lt;b&gt;Netz in BRep:&lt;/b&gt; Netze, die aus CAD-Modellen oder Reality Capture Scan-Dateien mit begrenzter Größe stammen, können in eine BRep-Fläche oder einen BRep-Volumenkörper konvertiert werden. Jede Facette des Eingabenetzes wird in eine einzelne ebene Fläche konvertiert."/>
+	<label commandName="lclzMesh2BRepTipsAndTricks1Item2" devLabel="&lt;Meshes larger than 10,000 polygons can be time consuming to convert and the resulting BRep body will have poor performance in modeling commands." translation="&lt;Bei Netzen, die größer als 10.000 Polygone sind, kann die Konvertierung sehr zeitaufwändig sein, und der resultierende BRep-Körper reagiert schlecht auf Modellierbefehle."/>
+	<label commandName="lclzMesh2BRepTipsAndTricksTitle" devLabel="Convert Tips and Tricks" translation="Tipps und Tricks zum Konvertieren"/>
+	<label commandName="lclzMeshBaseFeatureCreationDesc1" devLabel="Enters Mesh mode and inserts a mesh feature into the timeline. Use Mesh tools to modify and repair mesh geometry." translation="Wechselt in den Netzmodus und fügt ein Netzelement auf der Zeitachse ein. Verwenden Sie die Netzwerkzeuge zum Bearbeiten und Reparieren der Netzgeometrie."/>
+	<label commandName="lclzMeshBaseFeatureCreationDesc2" devLabel="Select Finish Mesh to exit out of the mode." translation="Wählen Sie Netz fertigstellen aus, um den Modus zu beenden."/>
+	<label commandName="lclzMeshBaseFeatureStopDesc1" devLabel="Finishes the Mesh feature." translation="Schließt das Netzelement ab."/>
+	<label commandName="lclzMeshDeleteFacesCmd1" devLabel="Deletes the selected mesh faces." translation="Löscht die ausgewählten Netzflächen."/>
+	<label commandName="lclzMeshEraseAndFillCmd1" devLabel="Fills a hole in a mesh, or erases and replaces a selected portion of a mesh." translation="Füllt ein Loch im Netz und ersetzt oder löscht einen ausgewählten Teil eines Netzes."/>
+	<label commandName="lclzMeshEraseAndFillCmd2" devLabel="Select the boundary of the hole to fill, or the set of mesh faces to replace." translation="Wählen Sie die Umgrenzung der zu füllenden Bohrung oder die zu ersetzenden Netzflächen aus."/>
+	<label commandName="lclzMeshGenerateFaceGroupsCmd1" devLabel="Generates face groups on a mesh body." translation="Generiert Flächengruppen auf einem Netzkörper."/>
+	<label commandName="lclzMeshGenerateFaceGroupsCmd2" devLabel="Select a mesh body then adjust the angle to control the face group segmentation." translation="Wählen Sie einen Netzkörper aus, und passen Sie dann den Winkel an, um die Flächengruppensegmentierung zu steuern."/>
+	<label commandName="lclzMeshMergeBodiesCmd1" devLabel="Merges two or more mesh bodies into a single body." translation="Führt zwei oder mehr Netzkörper zu einem einzelnen Körper zusammen."/>
+	<label commandName="lclzMeshMergeBodiesCmd2" devLabel="Select two or more mesh bodies to merge. Overlapping boundary edges will be stitched." translation="Wählen Sie zwei oder mehr Netzkörper zum Zusammenführen aus. Überlappende Umgrenzungskanten werden geheftet."/>
+	<label commandName="lclzMeshPlanarSectionCommand1" devLabel="Creates a new sketch containing a mesh cross section as reference geometry." translation="Erstellt eine neue Skizze mit einem Netz-Querschnitt als Referenzgeometrie."/>
+	<label commandName="lclzMeshPlanarSectionCommand2" devLabel="Select a mesh body then move the section plane. To fit sketch curves to the mesh section, follow with the Fit Mesh Section Curves command." translation="Wählen Sie einen Netzkörper aus, und verschieben Sie dann die Schnittebene. Um Skizzenkurven an den Netzschnitt anzupassen, verwenden Sie den Befehl Netzschnittkurven anpassen."/>
+	<label commandName="lclzMeshPlaneCut2" devLabel="Select a mesh body then move the cutting plane. The cut can trim the body, split the body into multiple bodies, or split the faces only." translation="Wählen Sie einen Netzkörper aus, und verschieben Sie dann die Schnittebene. Mit dem Schnitt kann der Körper gestutzt, in mehrere Körper geteilt oder nur die Flächen geteilt werden."/>
+	<label commandName="lclzMeshPlaneCutCommand1" devLabel="Splits a mesh body using a plane." translation="Teilt einen Netzkörper mithilfe einer Ebene."/>
+	<label commandName="lclzMeshRebuildAsSolidCmd1" devLabel="Rebuilds a mesh body as a new watertight solid mesh." translation="Erstellt einen Netzkörper als neues dichtes Netz."/>
+	<label commandName="lclzMeshRebuildAsSolidCmd2" devLabel="Select a mesh body then choose the rebuild mode and density of the output mesh." translation="Wählen Sie einen Netzkörper und dann den Neuerstellungsmodus sowie die Dichte des Ausgabenetzes aus."/>
+	<label commandName="lclzMeshReduceCmd1" devLabel="Reduces the number of faces in a mesh." translation="Verringert die Anzahl der Flächen in einem Netz."/>
+	<label commandName="lclzMeshReduceCmd2" devLabel="Select a mesh body or faces then choose a reduction target." translation="Wählen Sie einen Netzkörper oder Flächen und dann ein Reduzierungsziel aus."/>
+	<label commandName="lclzMeshRemeshCmd1" devLabel="Retiles a mesh with a new set of faces." translation="Generiert ein Netz mit einem neuen Satz an Flächen."/>
+	<label commandName="lclzMeshRemeshCmd2" devLabel="Select a mesh body or faces then set the density and characteristics of the new faces." translation="Wählen Sie einen Netzkörper oder Flächen aus, und legen Sie dann die Dichte und die Eigenschaften der neuen Flächen fest."/>
+	<label commandName="lclzMeshReverseNormalCmd1" devLabel="Reverses the normal direction of selected mesh faces." translation="Kehrt die Richtung der Normalen der ausgewählten Netzflächen um."/>
+	<label commandName="lclzMeshSeparateCmd1" devLabel="Splits a mesh body into two separate bodies." translation="Teilt einen Netzkörper in zwei separate Körper."/>
+	<label commandName="lclzMeshSeparateCmd2" devLabel="Select the mesh faces to split into a separate body." translation="Wählen Sie die Netzflächen aus, die in einen separaten Körper unterteilt werden sollen."/>
+	<label commandName="lclzMeshSmoothCmd1" devLabel="Smooths a mesh." translation="Glättet ein Netz."/>
+	<label commandName="lclzMeshSmoothCmd2" devLabel="Select a mesh body or faces then adjust the amount of smoothing." translation="Wählen Sie einen Netzkörper oder Flächen aus, und passen Sie dann den Glättungsgrad an."/>
+	<label commandName="lclzMeshWorkspaceTitle" devLabel="Repairs mesh geometry. Access commands to remesh and repair triangulated mesh bodies." translation="Repariert Netzgeometrie. Zugriff auf Befehle zum Neuerstellen und Reparieren von Dreiecksnetzkörpern."/>
+	<label commandName="lclzRemeshCmd1" devLabel="Create a face group from the selected mesh faces." translation="Erstellen Sie eine Flächengruppe aus den ausgewählten Netzflächen."/>
+	<label commandName="lclzRemeshCmd2" devLabel="Clears face groups from the selected mesh body or faces." translation="Löscht Flächengruppen aus dem ausgewählten Netzkörper oder den ausgewählten Flächen."/>
+	<label commandName="pInputSet" devLabel="Select faces to clear facegroup" translation="Flächen zum Entfernen der Flächengruppe auswählen"/>
+	<label commandName="pInputSet_1" devLabel="Select faces to delete" translation="Zu löschende Flächen auswählen"/>
+	<label commandName="pInputSet_9" devLabel="Select faces to reverse normals" translation="Flächen zum Umkehren der Normalen auswählen"/>
+	<label commandName="percentage" devLabel="Density" translation="Dichte"/>
+	<label commandName="sharpEdgesType" devLabel="Preserve Sharp Edges" translation="Scharfe Kanten beibehalten"/>
+	<label commandName="tolerance" devLabel="Tolerance" translation="Toleranz"/>
+	<label commandName="triCount" devLabel="Face Count" translation="Flächenanzahl"/>
+</Resource>

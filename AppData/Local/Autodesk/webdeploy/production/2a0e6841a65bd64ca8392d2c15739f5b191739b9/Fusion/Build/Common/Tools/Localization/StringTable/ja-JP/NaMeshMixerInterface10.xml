@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="AMM_ERROR_DISCONNECTED_MESH" devLabel="The target mesh needs to be a connected mesh." translation="ターゲット メッシュは接続されたメッシュである必要があります。"/>
+	<label commandName="AMM_ERROR_EMPTY_SELECTION" devLabel="Failure due to empty selection." translation="選択が空のため、失敗しました。"/>
+	<label commandName="AMM_ERROR_FAILED_TO_CREATE_MESH" devLabel="Failed to generate the mesh. Try different parameter settings if possible." translation="メッシュの生成に失敗しました。可能な場合は、別のパラメータの設定を試してください。"/>
+	<label commandName="AMM_ERROR_FAILED_TO_OPEN_FILE" devLabel="Failed to open mesh file." translation="メッシュ ファイルを開くのに失敗しました。"/>
+	<label commandName="AMM_ERROR_FAILED_TO_SAVE_FILE" devLabel="Failed to save mesh file." translation="メッシュ ファイルの保存に失敗しました。"/>
+	<label commandName="AMM_ERROR_FAILED_TO_SLICE_MESH" devLabel="Failed to slice the mesh with the specified plane." translation="指定された平面を持つメッシュのスライスに失敗しました。"/>
+	<label commandName="AMM_ERROR_NO_OVERHANGS_FOR_SUPPORT" devLabel="No supports are required because there are no overhangs in the mesh." translation="メッシュ内にオーバーハングがないため、サポート材は必要ありません。"/>
+	<label commandName="AMM_ERROR_REPAIR_FAILED" devLabel="The repair tool failed to reduce the number of defects." translation="修復ツールが欠陥の数の削減に失敗しました。"/>
+	<label commandName="AMM_ERROR_SELECTION_ALREADY_DRAWING" devLabel="Error during paint selection." translation="選択範囲をペイント中にエラーが発生しました。"/>
+	<label commandName="AMM_ERROR_SELECTION_FAILED" devLabel="Error creating selection." translation="選択の作成中にエラーが発生しました。"/>
+	<label commandName="AMM_ERROR_TOO_SMALL_FOR_SUPPORT" devLabel="Mesh is too small for support generation." translation="サポート材を生成するには、メッシュが小さすぎます。"/>
+	<label commandName="AMM_ERROR_UNABLE_TO_EXPORT_MULTIPLE_MESHES" devLabel="Mesh export failed." translation="メッシュのエクスポートに失敗しました。"/>
+	<label commandName="AMM_ERROR_UNABLE_TO_FIND_CONSISTENT_NORMAL" devLabel="Unsable to find consistent normals for the mesh. Try repairing any non-manifold regions first." translation="メッシュの一貫した法線が見つかりません。まず、非多様体リージョンを修復してみてください。"/>
+	<label commandName="AMM_ERROR_WRONG_BRUSH_STROKE_ORDER" devLabel="Error during paint selection." translation="選択範囲をペイント中にエラーが発生しました。"/>
+	<label commandName="AMM_FAILED" devLabel="Mesh operation failed." translation="メッシュ操作に失敗しました。"/>
+	<label commandName="MMIGenerateMeshFromVoxelSolid" devLabel="Generating mesh from voxelized body..." translation="ボクセル化されたボディからメッシュを生成しています..."/>
+	<label commandName="MMIGenerateVoxelSolid" devLabel="Generating voxel representation..." translation="ボクセル リプレゼンテーションを生成しています..."/>
+	<label commandName="MMIProjectResultSolid" devLabel="Projecting result on original mesh..." translation="元のメッシュの結果を投影しています..."/>
+	<label commandName="MMIReduceMeshSolid" devLabel="Reducing mesh body..." translation="メッシュ ボディを削減しています..."/>
+	<label commandName="MMIRepairMeshSolid" devLabel="Repairing mesh body..." translation="メッシュ ボディを修復しています..."/>
+	<label commandName="MMISmoothVoxelSolid" devLabel="Smoothing voxelized body..." translation="ボクセル化されたボディをスムーズ化しています..."/>
+	<label commandName="MMIThickenVoxelSolid" devLabel="Thickening voxelized body..." translation="ボクセル化されたボディの厚みを追加しています.."/>
+</Resource>

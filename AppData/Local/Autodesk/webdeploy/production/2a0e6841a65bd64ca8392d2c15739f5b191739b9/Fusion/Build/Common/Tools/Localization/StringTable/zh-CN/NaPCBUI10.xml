@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="3D PCB Environment" devLabel="3D PCB" translation="三维 PCB"/>
+	<label commandName="3DPCBTypeCanvas" devLabel="Canvas" translation="画布"/>
+	<label commandName="3DPCBTypeComplete" devLabel="Complete 3D" translation="完整三维"/>
+	<label commandName="3DPCBTypeInput" devLabel="3D PCB Type" translation="三维 PCB 类型"/>
+	<label commandName="3DPCBTypeSimple" devLabel="Simple 3D" translation="简单三维"/>
+	<label commandName="ChooseEagleProfile" devLabel="Choose EAGLE Board Shape" translation="选择 EAGLE 电路板形状"/>
+	<label commandName="ChooseFusionProfile" devLabel="Choose Fusion Board Shape" translation="选择 Fusion 电路板形状"/>
+	<label commandName="Create Hole on Board" devLabel="PCBHole" translation="PCB 孔"/>
+	<label commandName="Create PCB" devLabel="Create 3D PCB" translation="创建三维 PCB"/>
+	<label commandName="Create PCB Document" devLabel="New 3D PCB" translation="新建三维 PCB"/>
+	<label commandName="Create PCB Workspace" devLabel="Create PCB" translation="创建 PCB"/>
+	<label commandName="CreatePCBFlipInput" devLabel="Flip" translation="反向"/>
+	<label commandName="CreatePCBHeightInput" devLabel="Thickness" translation="厚度"/>
+	<label commandName="CreatePCBProfileInput" devLabel="Profile" translation="轮廓"/>
+	<label commandName="Edit PCB Board" devLabel="Edit Board" translation="编辑电路板"/>
+	<label commandName="EnterIntoPCBEnvironment" devLabel="You have entered into the PCB Mechanical Environment." translation="您已进入 PCB 机械环境。"/>
+	<label commandName="FusionPCB3DFlipComponent" devLabel="Flip 3D PCB Component" translation="翻转三维 PCB 元件"/>
+	<label commandName="FusionPCBActivate" devLabel="Edit" translation="编辑"/>
+	<label commandName="FusionPCBFlipComponent" devLabel="Flip Component" translation="翻转元件"/>
+	<label commandName="FusionPCBStop" devLabel="Finish PCB" translation="完成 PCB"/>
+	<label commandName="FusionPCBUpdateDocument" devLabel="Update 3D PCB" translation="更新三维 PCB"/>
+	<label commandName="FusionSelectDeriveProfileError" devLabel="Can't select 3d sketch to derive" translation="无法选择三维草图进行衍生"/>
+	<label commandName="FusionSelectFaceForHole" devLabel="Select face to locate hole" translation="选择面以定位孔"/>
+	<label commandName="FusionSelectOriginRefPCBDefineBoard" devLabel="Select sketch point for PCB board origin reference" translation="选择 PCB 电路板原点参考的草图点"/>
+	<label commandName="FusionSelectPCBComponent" devLabel="Select PCB components" translation="选择 PCB 元件"/>
+	<label commandName="FusionSelectPCBComponentBodyEdit" devLabel="Select Body from PCB component" translation="从 PCB 元件中选择实体"/>
+	<label commandName="FusionSelectPCBComponentEdit" devLabel="Select a PCB component" translation="选择 PCB 元件"/>
+	<label commandName="FusionSelectProfileCreatePCB" devLabel="Select sketch profile(s) for PCB" translation="选择 PCB 的草图轮廓"/>
+	<label commandName="FusionSelectProfileError" devLabel="Can't select 3d sketch to create PCB" translation="无法选择三维草图以创建 PCB"/>
+	<label commandName="FusionSelectProfilePCBDefine3DBoard" devLabel="Select sketch profile for PCB" translation="选择 PCB 的草图轮廓"/>
+	<label commandName="FusionSelectProfilePCBDefineBoard" devLabel="Select sketch profile(s) and origin for PCB" translation="选择 PCB 的草图轮廓和原点"/>
+	<label commandName="FusionSelectReferencesForHole" devLabel="Select linear or circular reference edges to fully define hole location" translation="选择线性或环形参考边以完全定义孔位置"/>
+	<label commandName="FusionSelectSingleForHole" devLabel="Select face to locate hole" translation="选择面以定位孔"/>
+	<label commandName="FusionSelectXDirPointRefPCBDefineBoard" devLabel="Select Sketch Line for board secondary axis orientation" translation="选择草图线以进行电路板副轴定向"/>
+	<label commandName="InvalidProfileSelection" devLabel="The selected profiles must be able to be merged into single one!" translation="选定的轮廓必须能够合并为一个轮廓！"/>
+	<label commandName="MissingExtrudeProfile" devLabel="Missing profiles" translation="缺少轮廓"/>
+	<label commandName="MissingHoleOrigin" devLabel="missing face" translation="缺少面"/>
+	<label commandName="MissingPCBAxis" devLabel="Missing axis" translation="缺少轴"/>
+	<label commandName="MissingPCBOrigin" devLabel="Missing origin" translation="缺少原点"/>
+	<label commandName="Move 3D PCB components" devLabel="Move" translation="移动"/>
+	<label commandName="Move PCB component Body" devLabel="Move PCB Component body" translation="移动 PCB 元件实体"/>
+	<label commandName="Move PCB components" devLabel="Move PCB Components" translation="移动 PCB 元件"/>
+	<label commandName="PCB Environment" devLabel="PCB" translation="PCB"/>
+	<label commandName="PCB Profile" devLabel="PCB Profile" translation="PCB 轮廓"/>
+	<label commandName="PCB Sketch" devLabel="Edit EAGLE Profile" translation="编辑 EAGLE 轮廓"/>
+	<label commandName="PCB3DBoardOutlineEditCommand" devLabel="Edit Sketch" translation="编辑草图"/>
+	<label commandName="PCBConstruction" devLabel="Construction" translation="构造"/>
+	<label commandName="PCBCreateLimitText" devLabel="The maximum number of PCBs within a Design, %1%, has been reached.&#xA;PCBs can be inserted from other Designs." translation="已达到设计中的最大 PCB 数: %1%。&#xA;可以从其他设计插入 PCB。"/>
+	<label commandName="PCBCreateLimitTitle" devLabel="PCB Limit Reached" translation="PCB 限制已达到"/>
+	<label commandName="PCBCreateSimExisting" devLabel="The PCB Feature does not currently support syncing PCBs in Fusion assemblies containing linked components or simulation studies.            &#xA;&#xA;Remove linked components or simulation studies in your assembly to continue, or put the PCB in a separate Fusion design and insert it into your assembly." translation="对于含有链接零部件或仿真分析的 Fusion 部件，PCB 特征当前不支持同步其中的 PCB。&#xA;&#xA;请移除部件中的链接零部件或仿真分析以继续，或将 PCB 放置在单独的 Fusion 设计中，然后再将其插入到部件中。"/>
+	<label commandName="PCBCreateXRefExisting" devLabel="The PCB Feature does not currently support syncing PCBs in Fusion assemblies containing linked components or simulation studies.            &#xA;&#xA;Remove linked components or simulation studies in your assembly to continue, or put the PCB in a separate Fusion design and insert it into your assembly." translation="对于含有链接零部件或仿真分析的 Fusion 部件，PCB 特征当前不支持同步其中的 PCB。&#xA;&#xA;请移除部件中的链接零部件或仿真分析以继续，或将 PCB 放置在单独的 Fusion 设计中，然后再将其插入到部件中。"/>
+	<label commandName="PCBDefineBoardFlipInput" devLabel="Flip" translation="反向"/>
+	<label commandName="PCBDefineBoardHeightInput" devLabel="Thickness" translation="厚度"/>
+	<label commandName="PCBDefineBoardOriginGroup" devLabel="Origin" translation="原点"/>
+	<label commandName="PCBDefineBoardOriginRefInput" devLabel="Origin" translation="原点"/>
+	<label commandName="PCBDefineBoardProfileInput" devLabel="Profile" translation="轮廓"/>
+	<label commandName="PCBDefineBoardProfileOnBottom" devLabel="PCB Bottom Layer" translation="PCB 底部图层"/>
+	<label commandName="PCBDefineBoardProfileOnInput" devLabel="Profile On" translation="轮廓开启"/>
+	<label commandName="PCBDefineBoardProfileOnTop" devLabel="PCB Top Layer" translation="PCB 顶部图层"/>
+	<label commandName="PCBDefineBoardReorientInput" devLabel="Reorient" translation="重定向"/>
+	<label commandName="PCBDefineBoardShapeGroup" devLabel="Shape" translation="形状"/>
+	<label commandName="PCBDefineBoardTopInput" devLabel="PCB Top" translation="PCB 顶部"/>
+	<label commandName="PCBDefineBoardXDirRefInput" devLabel="X Axis" translation="X 轴"/>
+	<label commandName="PCBDerive" devLabel="Derive PCB from Sketch" translation="从草图衍生 PCB"/>
+	<label commandName="PCBFixed" devLabel="Fixed" translation="固定"/>
+	<label commandName="PCBHoleCenterInput" devLabel="Center" translation="中心"/>
+	<label commandName="PCBHoleDiameterInput" devLabel="Diameter" translation="直径"/>
+	<label commandName="PCBHoleEdit" devLabel="Edit" translation="编辑"/>
+	<label commandName="PCBHoleFaceInput" devLabel="Face" translation="面"/>
+	<label commandName="PCBHoleRef0" devLabel="Distance" translation="距离"/>
+	<label commandName="PCBHoleRef0Btn" devLabel="Reference" translation="参考"/>
+	<label commandName="PCBHoleRef1" devLabel="Distance" translation="距离"/>
+	<label commandName="PCBHoleRef1Btn" devLabel="Reference" translation="参考"/>
+	<label commandName="PCBImprintEagle" devLabel="Copy EAGLE Profile" translation="复制 EAGLE 轮廓"/>
+	<label commandName="PCBImprintSelPrompt" devLabel="Select destination plane or sketch" translation="选择目标平面或草图"/>
+	<label commandName="PCBMoveBodySelectionInput" devLabel="Selection" translation="选择"/>
+	<label commandName="PCBMoveBodyTransformInput" devLabel="Distance" translation="距离"/>
+	<label commandName="PCBMoveRerouteInput" devLabel="Reroute" translation="重新布线"/>
+	<label commandName="PCBMoveSelectionInput" devLabel="Selection" translation="选择"/>
+	<label commandName="PCBMoveTransformInput" devLabel="Distance" translation="距离"/>
+	<label commandName="PCBMoveUpdateInput" devLabel="Update PCB" translation="更新 PCB"/>
+	<label commandName="PCBOpenFileInput" devLabel="Select Board file" translation="选择电路板文件"/>
+	<label commandName="PCBSketchSelect" devLabel="Destination" translation="目标"/>
+	<label commandName="PCBStatus" devLabel="PCB Status" translation="PCB 状态"/>
+	<label commandName="PCBStatusBoardHeight" devLabel="Board Height" translation="电路板高度"/>
+	<label commandName="PCBStatusBoardShape" devLabel="Board Shape" translation="电路板形状"/>
+	<label commandName="PCBStatusChanged" devLabel="Changed" translation="已更改"/>
+	<label commandName="PCBStatusComponents" devLabel="PCB Components" translation="PCB 元件"/>
+	<label commandName="PCBStatusEagleInput" devLabel="EAGLE Board Shape" translation="EAGLE 电路板形状"/>
+	<label commandName="PCBStatusFusionInput" devLabel="Fusion Board Shape" translation="Fusion 电路板形状"/>
+	<label commandName="PCBStatusUnchanged" devLabel="Unchanged" translation="未更改"/>
+	<label commandName="PushDeriveInvalidSelectionMsg" devLabel="Unexpected invalid selection" translation="意外的无效选择"/>
+	<label commandName="PushDeriveToExistingTxnMessage" devLabel="New Derive Feature" translation="新衍生特征"/>
+	<label commandName="Replace PCB component" devLabel="Replace Component Body" translation="替换元件实体"/>
+	<label commandName="StepFFilesFilter" devLabel="STEP Files (*.stp *.step)" translation="STEP 文件 (*.stp *.step)"/>
+	<label commandName="UnSupportedDeriveObject" devLabel="Target document is 3D PCB, which only accepts sketch for derive" translation="目标文档为三维 PCB，仅接受草图进行衍生"/>
+	<label commandName="Update PCB component" devLabel="Update PCB Component" translation="更新 PCB 元件"/>
+	<label commandName="XmlFilesFilter" devLabel="Xml Files (*.xml)" translation="Xml 文件 (*.xml)"/>
+	<label commandName="lclzPCB3DWorkspaceTitle" devLabel="Mechanical 3D PCB Workspace" translation="机械三维 PCB 工作空间"/>
+	<label commandName="lclzPCBBoardSketchEditCmd1" devLabel="Edit the sketch generated from EAGLE board." translation="编辑从 EAGLE 电路板生成的草图。"/>
+	<label commandName="lclzPCBBoardSketchEditCmdTipsAndTricksDesc" devLabel="This command is only available when there's sketch generated from EAGLE board." translation="仅当存在从 EAGLE 电路板生成的草图时，此命令才可用。"/>
+	<label commandName="lclzPCBBoardSketchEditCmdTipsAndTricksTips" devLabel="This command will activate the sketch generated from EAGLE board for editing." translation="此命令将激活从 EAGLE 电路板生成的草图以用于编辑。"/>
+	<label commandName="lclzPCBBoardSketchEditCmdTipsAndTricksTitle" devLabel="Edit the sketch generated from EAGLE board" translation="编辑从 EAGLE 电路板生成的草图"/>
+	<label commandName="lclzPCBCreateCommand1" devLabel="Create a 3D PCB document from the selected sketch or face." translation="从选定草图或面创建三维 PCB 文档。"/>
+	<label commandName="lclzPCBCreateCommand2" devLabel="Use the 3D PCB document as an external reference in the enclosure design." translation="使用三维 PCB 文档作为外壳设计中的外部参考。"/>
+	<label commandName="lclzPCBDefineBoardCmd1" devLabel="Define the shape of the PCB via a sketched profile." translation="通过草图轮廓定义 PCB 的形状。"/>
+	<label commandName="lclzPCBDefineBoardCmd2" devLabel="Select a profile and an origin point." translation="选择轮廓和原点。"/>
+	<label commandName="lclzPCBDefineBoardCmdTipsAndTricksDesc" devLabel="After selecting the profile, you must choose an origin to ensure the communication with EAGLE is precise. One corner of the PCB normally works well. Decide if the profile is on the top or bottom of the PCB, and be sure that the extrusion direction is correct. The PCB shape will become visible to EAGLE after the model is saved, and the EAGLE user can change the shape of the board as well." translation="选择轮廓后，必须选择原点以确保与 EAGLE 的通信精确。PCB 的一个拐角通常正常运行。请确定轮廓是位于 PCB 的顶部还是底部，并确保拉伸方向正确。在保存模型后，PCB 形状将变为对 EAGLE 可见，并且 EAGLE 用户还可以更改电路板的形状。"/>
+	<label commandName="lclzPCBDefineBoardCmdTipsAndTricksTips" devLabel="Select a profile and an origin point." translation="选择轮廓和原点。"/>
+	<label commandName="lclzPCBDefineBoardCmdTipsAndTricksTitle" devLabel="PCB Define Board Information" translation="PCB 定义电路板信息"/>
+	<label commandName="lclzPCBDeriveCommand1" devLabel="Derive a sketch from this design to a 3D PCB design. The selected profiles will be used to create the board outline. " translation="将此设计中的草图衍生为三维 PCB 设计。选定的轮廓将用于创建电路板轮廓。 "/>
+	<label commandName="lclzPCBDeriveCommand2" devLabel="The board outline updates with changes to this design." translation="电路板轮廓会随此设计的更改而更新。"/>
+	<label commandName="lclzPCBImprintCmd1" devLabel="Copies the profile supplied from EAGLE to an upstream Fusion sketch." translation="将 EAGLE 提供的轮廓复制到上游 Fusion 草图。"/>
+	<label commandName="lclzPCBImprintCmdTipsAndTricksDesc" devLabel="This command is primarily useful when both the Fusion and EAGLE user are actively changing the shape of the PCB." translation="当 Fusion 和 EAGLE 用户在主动更改 PCB 的形状时，此命令特别有用。"/>
+	<label commandName="lclzPCBImprintCmdTipsAndTricksTips" devLabel="Copies the profile supplied from EAGLE to an upstream Fusion sketch. You can copy to a pre-existing sketch, or create a new sketch by selecting a planar face or construction plane. The selected sketch or plane must be parallel to the PCB.  If there is already an upstream sketch that drives the PCB feature, that sketch will be selected by default." translation="将 EAGLE 提供的轮廓复制到上游 Fusion 草图。可以复制到既有草图，或者通过选择平整面或构造平面创建新草图。选定的草图或平面必须与 PCB 平行。如果已存在驱动 PCB 特征的上游草图，则默认情况下该草图处于选中状态。"/>
+	<label commandName="lclzPCBImprintCmdTipsAndTricksTitle" devLabel="Copy EAGLE Profile Information" translation="复制 EAGLE 轮廓信息"/>
+	<label commandName="lclzPCBMoveComponentBodyCommand1" devLabel="Move PCB component body to align with the footprint on the board." translation="移动 PCB 元件实体以将其与电路板上的示意图对齐。"/>
+	<label commandName="lclzPCBMoveComponentBodyCommand2" devLabel="Select a body from PCB component and move it by dragging or typing in values." translation="从 PCB 元件中选择一个实体，然后通过拖动或键入值来移动该实体。"/>
+	<label commandName="lclzPCBMoveComponentBodyCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the new locations will be remembered by Fusion." translation="请注意，不会在时间轴中创建移动特征。但是，Fusion 会记住新位置。"/>
+	<label commandName="lclzPCBMoveComponentBodyCommandTipsAndTricksTips" devLabel="Select a body from PCB component and move it by dragging or typing in values." translation="从 PCB 元件中选择一个实体，然后通过拖动或键入值来移动该实体。"/>
+	<label commandName="lclzPCBMoveComponentBodyCommandTipsAndTricksTitle" devLabel="Move PCB Component Body Information" translation="移动 PCB 元件实体信息"/>
+	<label commandName="lclzPCBMoveComponentsCommand1" devLabel="Move PCB components to new locations on the board." translation="将 PCB 元件移至电路板上的新位置。"/>
+	<label commandName="lclzPCBMoveComponentsCommand2" devLabel="Select a component and move it by dragging or typing in values." translation="选择一个元件，然后通过拖动或键入值移动它。"/>
+	<label commandName="lclzPCBMoveComponentsCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the new locations will be remembered by Fusion, and will become visible to EAGLE after the model is saved, and the EAGLE user can move the components as well." translation="请注意，不会在时间轴中创建移动特征。但是，Fusion 会记住新位置，这些新位置在模型被保存后将变为对 EAGLE 可见，EAGLE 用户还可以移动元件。"/>
+	<label commandName="lclzPCBMoveComponentsCommandTipsAndTricksTips" devLabel="Select a component and move it by dragging or typing in values." translation="选择一个元件，然后通过拖动或键入值移动它。"/>
+	<label commandName="lclzPCBMoveComponentsCommandTipsAndTricksTitle" devLabel="Move PCB Components Information" translation="移动 PCB 元件信息"/>
+	<label commandName="lclzPCBReplaceComponentCommand1" devLabel="Replace PCB component with different one." translation="将 PCB 元件替换为其他对象。"/>
+	<label commandName="lclzPCBReplaceComponentCommand2" devLabel="Select a PCB 3d model(step, stp file format) to replace existing PCB component." translation="选择一个 PCB 三维模型(STEP、STP 文件格式)以替换现有的 PCB 元件。"/>
+	<label commandName="lclzPCBReplaceComponentCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the PCB component will be replace with new model, the change will not able to get back to eagle." translation="请注意，不会在时间轴中创建移动特征。但是，PCB 元件将被替换为新模型，此更改在 EAGLE 中不能撤销。"/>
+	<label commandName="lclzPCBReplaceComponentCommandTipsAndTricksTips" devLabel="Select a model to replace selected PCB component and move it to adjust its position." translation="选择一个模型以替换选定的 PCB 元件，然后移动该模型以调整其位置。"/>
+	<label commandName="lclzPCBReplaceComponentCommandTipsAndTricksTitle" devLabel="Replace PCB Component Information" translation="替换 PCB 元件信息"/>
+	<label commandName="lclzPCBStatusCommand1" devLabel="Check the status of the PCB shape and component positions. " translation="检查 PCB 形状和元件位置的状态。 "/>
+	<label commandName="lclzPCBStatusCommand2" devLabel="Both the board shape and the component positions can be driven by either Fusion or EAGLE. Use this command to understand the state of the model." translation="Fusion 或 EAGLE 都能够驱动电路板形状及元件位置。使用此命令可了解模型的状态。"/>
+	<label commandName="lclzPCBStatusCommandTipsAndTricksDesc" devLabel="If the board shape and/or component positions have been edited in Fusion after the last EAGLE update, this command will allow you to see both PCB shapes. Also, it will tell you if your current component positions are different from the last EAGLE update." translation="如果自上次 EAGLE 更新后，在 Fusion 中对电路板形状和/或元件位置进行了编辑，则使用此命令可以查看编辑前和编辑后的 PCB 形状。此外，此命令还会指出当前的元件位置是否不同于上次 EAGLE 更新时的元件位置。"/>
+	<label commandName="lclzPCBStatusCommandTipsAndTricksTips" devLabel="Both the board shape and the component positions can be driven by either Fusion or EAGLE. Use this command to understand the state of the model." translation="Fusion 或 EAGLE 都能够驱动电路板形状及元件位置。使用此命令可了解模型的状态。"/>
+	<label commandName="lclzPCBStatusCommandTipsAndTricksTitle" devLabel="PCB Status Information" translation="PCB 状态信息"/>
+	<label commandName="lclzPCBStop1" devLabel="Return to the Model workspace." translation="返回到“模型”工作空间。"/>
+	<label commandName="lclzPCBUpdateComponentCommand1" devLabel="Update PCB component from library." translation="从库中更新 PCB 元件。"/>
+	<label commandName="lclzPCBUpdateComponentCommand2" devLabel="Download PCB component from library to replace existing PCB component." translation="从库中下载 PCB 元件以替换现有 PCB 元件。"/>
+	<label commandName="lclzPCBUpdateComponentCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the PCB component will be replace with new model, the change will not able to get back to eagle." translation="请注意，不会在时间轴中创建移动特征。但是，PCB 元件将被替换为新模型，此更改在 EAGLE 中不能撤销。"/>
+	<label commandName="lclzPCBUpdateComponentCommandTipsAndTricksTips" devLabel="Download PCB component from library to replace the selected PCB component and move it to adjust its position." translation="从库中下载 PCB 元件以替换选定的 PCB 元件，然后移动该元件以调整其位置。"/>
+	<label commandName="lclzPCBUpdateComponentCommandTipsAndTricksTitle" devLabel="Update PCB Component Information" translation="更新 PCB 元件信息"/>
+	<label commandName="lclzPCBWorkspaceTitle" devLabel="Mechanical PCB Workspace" translation="机械 PCB 工作空间"/>
+</Resource>

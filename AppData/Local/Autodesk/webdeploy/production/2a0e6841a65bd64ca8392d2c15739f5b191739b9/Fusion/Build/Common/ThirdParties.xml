@@ -1,0 +1,51 @@
+
+<ThirdParties>
+  <ThirdParty Id="MeshMixer">
+    <Platform Target="WIN64" Version="5.2.0" Package="win64_0"/>
+    <Platform Target="MAC64" Version="5.2.0" Package="mac64_0"/>
+  </ThirdParty>
+  
+  <ThirdParty Id="lib3mf">
+    <Platform Target="WIN64" Version="2.1.1" Package="win64_1"/>
+    <Platform Target="MAC64" Version="2.1.1" Package="mac64_1"/>
+  </ThirdParty>
+
+  <ThirdParty Id="ZGRViewer">
+    <Platform Target="WIN64" Version="0.9.3" Package="WIN">
+		<Configuration Target="Debug">
+			<Path></Path>
+			<Path>\graphviz-2.30.1\release\bin</Path>
+		</Configuration>
+		<Configuration Target="Release">
+			<Path></Path>
+			<Path>\graphviz-2.30.1\release\bin</Path>
+		</Configuration>
+	</Platform>
+  </ThirdParty>
+
+  <!-- Chronicle -->
+  <ThirdParty Id="CHRONICLE">
+    <Platform Target="WIN64" Version="1.0c_vs_2017" Package="win64_2_sp"
+        UpdateKey="bin\x64\Release\Chronicle.dll">
+    </Platform>
+    <Platform Target="MAC64" Version="1.0d" Package="mac64_sp">
+    </Platform>
+
+  </ThirdParty>
+
+<!-- SMTK 2.0.0 with ASM 227.0.0 amd GeLib 227.0.0-->
+  <ThirdParty Id="SMTK" SDK="True">
+    <Platform Target="WIN64" Version="2.0.0" Package="WIN64">
+    </Platform>
+    <Platform Target="MAC64" Version="2.0.0" Package="MAC64">
+    </Platform>
+  </ThirdParty>
+
+  <ThirdParty Id="OpenCV">
+    <Platform Target="WIN64" Version="2.4.10.1" Package="win64_sp_1">
+  </Platform>
+  </ThirdParty>
+  
+  
+ 
+  </ThirdParties>

@@ -1,0 +1,13 @@
+{
+    "autodeskProduct": "Fusion360",
+    "type": "addin",
+    "author": "Autodesk",
+    "id":"5BCC9494-C1E0-42FF-8123-F4F8D8259F57",
+    "description": {
+        "": "Insert TraceParts Supplier Components"
+    },
+    "version":"1.0.0",
+    "supportedOS": "windows|mac",
+    "editEnabled": false,
+    "runOnStartup": true
+}

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+  <EnvironmentDefinition Id="EditModelWMEnv">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/EditModelWorkspace.png">
+        <TextBlock _LCLZId="lclzGenWorkingModelWorkspaceTitle" _LCLZText="Edits a generative model by creating bodies to represent preserve, obstacle, and starting shape geometries in a design problem."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </EnvironmentDefinition>
+	<CommandDefinition Id="DeleteWorkingModelCommand">
+		<Tooltip>
+			<TextBlock _LCLZId="DeleteWorkingModelText" _LCLZText="Delete Simulation Model"/>
+		</Tooltip>
+	</CommandDefinition>
+	<!--<CommandDefinition Id="NewSimulationDocumentCommand">
+		<Tooltip>
+			<TextBlock _LCLZId="NewSimulationDocumentText" _LCLZText="New Document"/>
+		</Tooltip>
+	</CommandDefinition>-->
+	<CommandDefinition Id="CopyWorkingModelCommand">
+		<Tooltip>
+			<TextBlock _LCLZId="CopyWorkingModelText" _LCLZText="Copy Simulation Model"/>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="ActivateWorkingModelCommand">
+		<Tooltip>
+			<TextBlock _LCLZId="ActivateWorkingModelText" _LCLZText="Activate Simulation Model"/>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="FinishSimplifyCommand">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="FinishSimplifyCommandModelText" _LCLZText="Click Finish Simplify to return to the Simulation workspace."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="FinishEditModelCommand">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="FinishEditModelCommandModelText" _LCLZText="Enables you to return to the Generative Design workspace."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+  <CommandDefinition Id="SoftDeleteAllUnselectedCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="SoftDeleteAllUnselectedText" _LCLZText="Remove All Except Selected"/>
+    </Tooltip>
+  </CommandDefinition>
+</CommandDefinitions>

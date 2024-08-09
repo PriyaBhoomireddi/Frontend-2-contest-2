@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="AMM_ERROR_DISCONNECTED_MESH" devLabel="The target mesh needs to be a connected mesh." translation="Das Zielnetz muss ein verbundenes Netz sein."/>
+	<label commandName="AMM_ERROR_EMPTY_SELECTION" devLabel="Failure due to empty selection." translation="Fehler aufgrund einer leeren Auswahl."/>
+	<label commandName="AMM_ERROR_FAILED_TO_CREATE_MESH" devLabel="Failed to generate the mesh. Try different parameter settings if possible." translation="Fehler beim Erstellen des Netzes. Probieren Sie ggf. andere Parametereinstellungen aus."/>
+	<label commandName="AMM_ERROR_FAILED_TO_OPEN_FILE" devLabel="Failed to open mesh file." translation="Fehler beim Öffnen der Netzdatei."/>
+	<label commandName="AMM_ERROR_FAILED_TO_SAVE_FILE" devLabel="Failed to save mesh file." translation="Fehler beim Speichern der Netzdatei."/>
+	<label commandName="AMM_ERROR_FAILED_TO_SLICE_MESH" devLabel="Failed to slice the mesh with the specified plane." translation="Schneiden des Netzes mit der angegebenen Ebene nicht möglich."/>
+	<label commandName="AMM_ERROR_NO_OVERHANGS_FOR_SUPPORT" devLabel="No supports are required because there are no overhangs in the mesh." translation="Es sind keine Auflager erforderlich, da es im Netz keine Überstände gibt."/>
+	<label commandName="AMM_ERROR_REPAIR_FAILED" devLabel="The repair tool failed to reduce the number of defects." translation="Mit dem Reparaturwerkzeug konnte die Anzahl der Fehler nicht reduziert werden."/>
+	<label commandName="AMM_ERROR_SELECTION_ALREADY_DRAWING" devLabel="Error during paint selection." translation="Fehler bei der Farbauswahl."/>
+	<label commandName="AMM_ERROR_SELECTION_FAILED" devLabel="Error creating selection." translation="Fehler beim Erstellen der Auswahl."/>
+	<label commandName="AMM_ERROR_TOO_SMALL_FOR_SUPPORT" devLabel="Mesh is too small for support generation." translation="Netz ist zu klein für die Auflagergenerierung."/>
+	<label commandName="AMM_ERROR_UNABLE_TO_EXPORT_MULTIPLE_MESHES" devLabel="Mesh export failed." translation="Netz konnte nicht exportiert werden."/>
+	<label commandName="AMM_ERROR_UNABLE_TO_FIND_CONSISTENT_NORMAL" devLabel="Unsable to find consistent normals for the mesh. Try repairing any non-manifold regions first." translation="Es wurden keine konsistenten Normalen für das Netz gefunden. Versuchen Sie zunächst, alle nicht-bündigen Bereiche zu reparieren."/>
+	<label commandName="AMM_ERROR_WRONG_BRUSH_STROKE_ORDER" devLabel="Error during paint selection." translation="Fehler bei der Farbauswahl."/>
+	<label commandName="AMM_FAILED" devLabel="Mesh operation failed." translation="Netzvorgang fehlgeschlagen."/>
+	<label commandName="MMIGenerateMeshFromVoxelSolid" devLabel="Generating mesh from voxelized body..." translation="Netz wird aus Voxel-Körper generiert..."/>
+	<label commandName="MMIGenerateVoxelSolid" devLabel="Generating voxel representation..." translation="Voxel-Darstellung wird generiert..."/>
+	<label commandName="MMIProjectResultSolid" devLabel="Projecting result on original mesh..." translation="Ergebnis wird auf ursprüngliches Netz projiziert..."/>
+	<label commandName="MMIReduceMeshSolid" devLabel="Reducing mesh body..." translation="Netzkörper wird reduziert..."/>
+	<label commandName="MMIRepairMeshSolid" devLabel="Repairing mesh body..." translation="Netzkörper wird repariert..."/>
+	<label commandName="MMISmoothVoxelSolid" devLabel="Smoothing voxelized body..." translation="Voxel-Körper wird geglättet..."/>
+	<label commandName="MMIThickenVoxelSolid" devLabel="Thickening voxelized body..." translation="Voxel-Körper wird verdickt..."/>
+</Resource>

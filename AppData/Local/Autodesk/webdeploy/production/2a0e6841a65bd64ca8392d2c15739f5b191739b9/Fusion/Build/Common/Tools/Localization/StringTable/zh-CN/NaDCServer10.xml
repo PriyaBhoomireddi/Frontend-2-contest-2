@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="ComputeInMouseDragToolTip" devLabel="Switch on/off compute in mouse drag for push / pull." translation="打开/关闭鼠标拖动中用于执行推/拉操作的计算。"/>
+	<label commandName="ComputeInMouseDragUserName" devLabel="ComputeInMouseDrag enable" translation="启用“在鼠标拖动中计算”"/>
+	<label commandName="ComputeInPreviewToolTip" devLabel="Switch on/off compute in preview for push / pull." translation="打开/关闭预览中用于执行推/拉操作的计算。"/>
+	<label commandName="ComputeInPreviewUserName" devLabel="ComputeInPreview enable" translation="启用“在预览中计算”"/>
+	<label commandName="ComputeInThreadToolTip" devLabel="Switch on/off compute in another thread for push / pull dragging." translation="打开/关闭另一个线程中用于执行推/拉拖动操作的计算。"/>
+	<label commandName="ComputeInThreadUserName" devLabel="ComputeInThread enable" translation="启用“在线程中计算”"/>
+	<label commandName="CycleDependencyInComputeCommon" devLabel="The operation will be aborted due to cyclic dependency error. Please report this issue to Autodesk!" translation="由于发生循环依赖错误，该操作将会中止。请将该问题报告给 Autodesk！"/>
+	<label commandName="MinimumComputeTimeToolTip" devLabel="set the minimum compute time for thread compute." translation="设置线程计算的最短计算时间。"/>
+	<label commandName="MinimumComputeTimeUserName" devLabel="MinimumComputeTime" translation="最短计算时间"/>
+	<label commandName="MinimumSpeedUpRatioToolTip" devLabel="set the minimum speed up ratio(serialTime/parallelTime)" translation="设置最小加速比(串行计算时间/并行计算时间)"/>
+	<label commandName="MinimumSpeedUpRatioUserName" devLabel="MinimumSpeedUpRatio" translation="最小加速比"/>
+	<label commandName="ParallelComputingToolTip" devLabel="Switch on/off parallel computing option." translation="打开/关闭并行计算选项。"/>
+	<label commandName="ParallelComputingUserName" devLabel="ParallelComputing enable" translation="启用“并行计算”"/>
+	<label commandName="XRefPlaceToolTip" devLabel="Switch on/off XRef import options." translation="打开/关闭外部参照导入选项。"/>
+	<label commandName="XRefPlaceUserName" devLabel="XRef Place enable" translation="启用“外部参照放置”"/>
+</Resource>

@@ -1,0 +1,8 @@
+{
+	"typeid": "Fusion:BOM-1.0.0",
+	"inherits": ["NamedProperty"],
+	"annotation": { "description": "BOM Data Representation - Part List" },
+	"properties": [
+		{ "id": "parts", "typeid": "Fusion:PartData-1.0.0", "context": "array" }
+	]
+}

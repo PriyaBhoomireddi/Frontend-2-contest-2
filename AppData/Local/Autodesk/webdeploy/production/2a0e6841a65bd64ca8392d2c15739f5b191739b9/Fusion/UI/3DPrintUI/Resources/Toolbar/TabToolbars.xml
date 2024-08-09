@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Toolbars>
+  <CommandToolbar Id="3DPrintAssetType">
+    <DropDownButton Id="ActivateEnvironmentCommand" ShowText="true" SynchronizedWithCurrentItem="true" />
+
+    <!--All Tab info-->
+    <Tab Id="3DPrintTab"
+         _LCLZId="lclz3DPrintTab"
+         _LCLZText="3D Print"
+         Panels="3DPrintSetupPanel;3DPrintModifyPanel"
+         Environment="3DPrintEnvironment"/>
+    
+    <!-- ** 3D Print Panel ** -->
+    <Panel Id="3DPrintSetupPanel" _LCLZId="lclz3DPrintSetup" _LCLZText="Setup" Environment="3DPrintEnvironment">
+      <Controls>
+        <!-- ** DM - The following commands show up in the toolbar if  ** -->
+        <!-- ** a. they are part of a group that has been added to the Fusion3DPrintEnvironment AND ** -->
+        <!-- ** b. their onIsApplicable returns true ** -->
+		  <Button Id="PrintSetupCommand" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="PrintSetupCommand" /> 
+        <Button Id="ChooseObjectsCommand" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- ** 3D Component Panel ** -->
+    <Panel Id="3DPrintModifyPanel" _LCLZId="lclz3DPrintModify" _LCLZText="Modify" Environment="3DPrintEnvironment">
+      <Controls>
+        <!-- ** DM - The following commands show up in the toolbar if  ** -->
+        <!-- ** a. they are part of a group that has been added to the Publisher3DEnvironment AND ** -->
+        <!-- ** b. their onIsApplicable returns true ** -->
+        <Button Id="GenerateSupportsCommand" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="GenerateSupportsCommand" />
+        <Button Id="InspectFor3DPrintCommand" />
+      </PanelDropdown>
+    </Panel>
+
+  </CommandToolbar>
+ </Toolbars>

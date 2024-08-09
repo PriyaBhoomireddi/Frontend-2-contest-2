@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<WebServicesEvent>
+    <Event Id="11" RaisedByProcess="17000">
+        <Params>
+            <Param Name="ConsumerKey" Type="String" Value="LL6VvVxIGKWGMEhEeRfPqKdMagjjp9/dbWTJUEBczasKoecuBS0TemypP3mqkEVgL38F/q9dqtVS/cV69idxAfNk3CrBAB7GefJxeowZnywt4o+4IQwD0j+kjNvyp2CqM3vHDgTtl6Wv7uUAJUo+jcHQHuWNBzWWda995EKriPg="/>
+        </Params>
+    </Event>
+</WebServicesEvent>

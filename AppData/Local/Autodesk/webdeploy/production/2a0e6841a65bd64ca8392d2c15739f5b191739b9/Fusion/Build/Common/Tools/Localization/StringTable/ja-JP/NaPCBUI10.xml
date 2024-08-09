@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="3D PCB Environment" devLabel="3D PCB" translation="3D PCB"/>
+	<label commandName="3DPCBTypeCanvas" devLabel="Canvas" translation="キャンバス"/>
+	<label commandName="3DPCBTypeComplete" devLabel="Complete 3D" translation="完全な 3D"/>
+	<label commandName="3DPCBTypeInput" devLabel="3D PCB Type" translation="3D PCB タイプ"/>
+	<label commandName="3DPCBTypeSimple" devLabel="Simple 3D" translation="単純な 3D"/>
+	<label commandName="ChooseEagleProfile" devLabel="Choose EAGLE Board Shape" translation="EAGLE ボード形状を選択"/>
+	<label commandName="ChooseFusionProfile" devLabel="Choose Fusion Board Shape" translation="Fusion ボード形状を選択"/>
+	<label commandName="Create Hole on Board" devLabel="PCBHole" translation="PCB 穴"/>
+	<label commandName="Create PCB" devLabel="Create 3D PCB" translation="3D PCB を作成"/>
+	<label commandName="Create PCB Document" devLabel="New 3D PCB" translation="新しい 3D PCB"/>
+	<label commandName="Create PCB Workspace" devLabel="Create PCB" translation="PCB を作成"/>
+	<label commandName="CreatePCBFlipInput" devLabel="Flip" translation="反転"/>
+	<label commandName="CreatePCBHeightInput" devLabel="Thickness" translation="厚さ"/>
+	<label commandName="CreatePCBProfileInput" devLabel="Profile" translation="プロファイル"/>
+	<label commandName="Edit PCB Board" devLabel="Edit Board" translation="ボードを編集"/>
+	<label commandName="EnterIntoPCBEnvironment" devLabel="You have entered into the PCB Mechanical Environment." translation="PCB メカニカル環境に入りました。"/>
+	<label commandName="FusionPCB3DFlipComponent" devLabel="Flip 3D PCB Component" translation="3D PCB コンポーネントを反転"/>
+	<label commandName="FusionPCBActivate" devLabel="Edit" translation="編集"/>
+	<label commandName="FusionPCBFlipComponent" devLabel="Flip Component" translation="コンポーネントを反転"/>
+	<label commandName="FusionPCBStop" devLabel="Finish PCB" translation="PCB を終了"/>
+	<label commandName="FusionPCBUpdateDocument" devLabel="Update 3D PCB" translation="3D PCB を更新"/>
+	<label commandName="FusionSelectDeriveProfileError" devLabel="Can't select 3d sketch to derive" translation="派生する 3D スケッチを選択できません"/>
+	<label commandName="FusionSelectFaceForHole" devLabel="Select face to locate hole" translation="穴を配置する面を選択"/>
+	<label commandName="FusionSelectOriginRefPCBDefineBoard" devLabel="Select sketch point for PCB board origin reference" translation="PCB ボードの原点を基準にスケッチ点を選択"/>
+	<label commandName="FusionSelectPCBComponent" devLabel="Select PCB components" translation="PCB コンポーネントを選択"/>
+	<label commandName="FusionSelectPCBComponentBodyEdit" devLabel="Select Body from PCB component" translation="PCB コンポーネントからボディを選択"/>
+	<label commandName="FusionSelectPCBComponentEdit" devLabel="Select a PCB component" translation="PCB コンポーネントを選択"/>
+	<label commandName="FusionSelectProfileCreatePCB" devLabel="Select sketch profile(s) for PCB" translation="PCB のスケッチ プロファイルを選択"/>
+	<label commandName="FusionSelectProfileError" devLabel="Can't select 3d sketch to create PCB" translation="PCB を作成する 3D スケッチを選択できません"/>
+	<label commandName="FusionSelectProfilePCBDefine3DBoard" devLabel="Select sketch profile for PCB" translation="PCB のスケッチ プロファイルを選択"/>
+	<label commandName="FusionSelectProfilePCBDefineBoard" devLabel="Select sketch profile(s) and origin for PCB" translation="スケッチ プロファイルと PCB の原点を選択"/>
+	<label commandName="FusionSelectReferencesForHole" devLabel="Select linear or circular reference edges to fully define hole location" translation="直線または円形の参照エッジを選択して、穴の位置を完全に定義します"/>
+	<label commandName="FusionSelectSingleForHole" devLabel="Select face to locate hole" translation="穴を配置する面を選択"/>
+	<label commandName="FusionSelectXDirPointRefPCBDefineBoard" devLabel="Select Sketch Line for board secondary axis orientation" translation="ボードの第 2 軸方向のスケッチ線分を選択"/>
+	<label commandName="InvalidProfileSelection" devLabel="The selected profiles must be able to be merged into single one!" translation="選択したプロファイルを 1 つにマージできるようにする必要があります。"/>
+	<label commandName="MissingExtrudeProfile" devLabel="Missing profiles" translation="プロファイルが見つかりません"/>
+	<label commandName="MissingHoleOrigin" devLabel="missing face" translation="面が見つかりません"/>
+	<label commandName="MissingPCBAxis" devLabel="Missing axis" translation="軸が見つかりません"/>
+	<label commandName="MissingPCBOrigin" devLabel="Missing origin" translation="原点が見つかりません"/>
+	<label commandName="Move 3D PCB components" devLabel="Move" translation="移動"/>
+	<label commandName="Move PCB component Body" devLabel="Move PCB Component body" translation="PCB コンポーネント ボディを移動"/>
+	<label commandName="Move PCB components" devLabel="Move PCB Components" translation="PCB コンポーネントを移動"/>
+	<label commandName="PCB Environment" devLabel="PCB" translation="PCB"/>
+	<label commandName="PCB Profile" devLabel="PCB Profile" translation="PCB プロファイル"/>
+	<label commandName="PCB Sketch" devLabel="Edit EAGLE Profile" translation="EAGLE プロファイルを編集"/>
+	<label commandName="PCB3DBoardOutlineEditCommand" devLabel="Edit Sketch" translation="スケッチを編集"/>
+	<label commandName="PCBConstruction" devLabel="Construction" translation="コンストラクション"/>
+	<label commandName="PCBCreateLimitText" devLabel="The maximum number of PCBs within a Design, %1%, has been reached.&#xA;PCBs can be inserted from other Designs." translation="デザイン内の PCB の最大数 %1% に達しました。&#xA;PCB は、他のデザインから挿入できます。"/>
+	<label commandName="PCBCreateLimitTitle" devLabel="PCB Limit Reached" translation="PCB の制限に達しました"/>
+	<label commandName="PCBCreateSimExisting" devLabel="The PCB Feature does not currently support syncing PCBs in Fusion assemblies containing linked components or simulation studies.            &#xA;&#xA;Remove linked components or simulation studies in your assembly to continue, or put the PCB in a separate Fusion design and insert it into your assembly." translation="現在 PCB フィーチャは、リンクされたコンポーネントまたはシミュレーション スタディを含む Fusion アセンブリでの PCB の同期をサポートしていません。            &#xA;&#xA;アセンブリに含まれているリンクされたコンポーネントまたはシミュレーション スタディを削除して続行するか、PCB を別の Fusion デザインに配置してそれをアセンブリ内に挿入します。"/>
+	<label commandName="PCBCreateXRefExisting" devLabel="The PCB Feature does not currently support syncing PCBs in Fusion assemblies containing linked components or simulation studies.            &#xA;&#xA;Remove linked components or simulation studies in your assembly to continue, or put the PCB in a separate Fusion design and insert it into your assembly." translation="現在 PCB フィーチャは、リンクされたコンポーネントまたはシミュレーション スタディを含む Fusion アセンブリでの PCB の同期をサポートしていません。            &#xA;&#xA;アセンブリに含まれているリンクされたコンポーネントまたはシミュレーション スタディを削除して続行するか、PCB を別の Fusion デザインに配置してそれをアセンブリ内に挿入します。"/>
+	<label commandName="PCBDefineBoardFlipInput" devLabel="Flip" translation="反転"/>
+	<label commandName="PCBDefineBoardHeightInput" devLabel="Thickness" translation="厚さ"/>
+	<label commandName="PCBDefineBoardOriginGroup" devLabel="Origin" translation="原点"/>
+	<label commandName="PCBDefineBoardOriginRefInput" devLabel="Origin" translation="原点"/>
+	<label commandName="PCBDefineBoardProfileInput" devLabel="Profile" translation="プロファイル"/>
+	<label commandName="PCBDefineBoardProfileOnBottom" devLabel="PCB Bottom Layer" translation="PCB 下部レイヤ"/>
+	<label commandName="PCBDefineBoardProfileOnInput" devLabel="Profile On" translation="プロファイル オン"/>
+	<label commandName="PCBDefineBoardProfileOnTop" devLabel="PCB Top Layer" translation="PCB 上部レイヤ"/>
+	<label commandName="PCBDefineBoardReorientInput" devLabel="Reorient" translation="向きを変更"/>
+	<label commandName="PCBDefineBoardShapeGroup" devLabel="Shape" translation="形状"/>
+	<label commandName="PCBDefineBoardTopInput" devLabel="PCB Top" translation="PCB 上部"/>
+	<label commandName="PCBDefineBoardXDirRefInput" devLabel="X Axis" translation="X 軸"/>
+	<label commandName="PCBDerive" devLabel="Derive PCB from Sketch" translation="スケッチから PCB を派生"/>
+	<label commandName="PCBFixed" devLabel="Fixed" translation="固定"/>
+	<label commandName="PCBHoleCenterInput" devLabel="Center" translation="中心"/>
+	<label commandName="PCBHoleDiameterInput" devLabel="Diameter" translation="直径"/>
+	<label commandName="PCBHoleEdit" devLabel="Edit" translation="編集"/>
+	<label commandName="PCBHoleFaceInput" devLabel="Face" translation="面"/>
+	<label commandName="PCBHoleRef0" devLabel="Distance" translation="距離"/>
+	<label commandName="PCBHoleRef0Btn" devLabel="Reference" translation="参照"/>
+	<label commandName="PCBHoleRef1" devLabel="Distance" translation="距離"/>
+	<label commandName="PCBHoleRef1Btn" devLabel="Reference" translation="参照"/>
+	<label commandName="PCBImprintEagle" devLabel="Copy EAGLE Profile" translation="EAGLE プロファイルをコピー"/>
+	<label commandName="PCBImprintSelPrompt" devLabel="Select destination plane or sketch" translation="目的の平面またはスケッチを選択"/>
+	<label commandName="PCBMoveBodySelectionInput" devLabel="Selection" translation="選択"/>
+	<label commandName="PCBMoveBodyTransformInput" devLabel="Distance" translation="距離"/>
+	<label commandName="PCBMoveRerouteInput" devLabel="Reroute" translation="経路を再設定"/>
+	<label commandName="PCBMoveSelectionInput" devLabel="Selection" translation="選択"/>
+	<label commandName="PCBMoveTransformInput" devLabel="Distance" translation="距離"/>
+	<label commandName="PCBMoveUpdateInput" devLabel="Update PCB" translation="PCB を更新"/>
+	<label commandName="PCBOpenFileInput" devLabel="Select Board file" translation="ボード ファイルを選択"/>
+	<label commandName="PCBSketchSelect" devLabel="Destination" translation="目的"/>
+	<label commandName="PCBStatus" devLabel="PCB Status" translation="PCB ステータス"/>
+	<label commandName="PCBStatusBoardHeight" devLabel="Board Height" translation="ボード高さ"/>
+	<label commandName="PCBStatusBoardShape" devLabel="Board Shape" translation="ボード形状"/>
+	<label commandName="PCBStatusChanged" devLabel="Changed" translation="変更あり"/>
+	<label commandName="PCBStatusComponents" devLabel="PCB Components" translation="PCB コンポーネント"/>
+	<label commandName="PCBStatusEagleInput" devLabel="EAGLE Board Shape" translation="EAGLE ボード形状"/>
+	<label commandName="PCBStatusFusionInput" devLabel="Fusion Board Shape" translation="Fusion ボード形状"/>
+	<label commandName="PCBStatusUnchanged" devLabel="Unchanged" translation="変更なし"/>
+	<label commandName="PushDeriveInvalidSelectionMsg" devLabel="Unexpected invalid selection" translation="予期しない無効な選択"/>
+	<label commandName="PushDeriveToExistingTxnMessage" devLabel="New Derive Feature" translation="新しい派生フィーチャ"/>
+	<label commandName="Replace PCB component" devLabel="Replace Component Body" translation="コンポーネント ボディを置換"/>
+	<label commandName="StepFFilesFilter" devLabel="STEP Files (*.stp *.step)" translation="STEP ファイル(*.stp *.step)"/>
+	<label commandName="UnSupportedDeriveObject" devLabel="Target document is 3D PCB, which only accepts sketch for derive" translation="ターゲット ドキュメントは 3D PCB です。派生用スケッチのみが受け入れられます"/>
+	<label commandName="Update PCB component" devLabel="Update PCB Component" translation="PCB コンポーネントを更新"/>
+	<label commandName="XmlFilesFilter" devLabel="Xml Files (*.xml)" translation="XML ファイル(*.xml)"/>
+	<label commandName="lclzPCB3DWorkspaceTitle" devLabel="Mechanical 3D PCB Workspace" translation="機械系 3D PCB 作業スペース"/>
+	<label commandName="lclzPCBBoardSketchEditCmd1" devLabel="Edit the sketch generated from EAGLE board." translation="EAGLE ボードから生成されたスケッチを編集します。"/>
+	<label commandName="lclzPCBBoardSketchEditCmdTipsAndTricksDesc" devLabel="This command is only available when there's sketch generated from EAGLE board." translation="このコマンドは、EAGLE ボードから生成されたスケッチがある場合にのみ使用できます。"/>
+	<label commandName="lclzPCBBoardSketchEditCmdTipsAndTricksTips" devLabel="This command will activate the sketch generated from EAGLE board for editing." translation="このコマンドは、EAGLE ボードから生成されたスケッチの編集を有効にします。"/>
+	<label commandName="lclzPCBBoardSketchEditCmdTipsAndTricksTitle" devLabel="Edit the sketch generated from EAGLE board" translation="EAGLE ボードから生成されたスケッチを編集します"/>
+	<label commandName="lclzPCBCreateCommand1" devLabel="Create a 3D PCB document from the selected sketch or face." translation="選択したスケッチまたは面から 3D PCB ドキュメントを作成します。"/>
+	<label commandName="lclzPCBCreateCommand2" devLabel="Use the 3D PCB document as an external reference in the enclosure design." translation="筐体設計で外部参照として 3D PCB ドキュメントを使用します。"/>
+	<label commandName="lclzPCBDefineBoardCmd1" devLabel="Define the shape of the PCB via a sketched profile." translation="スケッチ プロファイルを介して、PCB の形状を定義します。"/>
+	<label commandName="lclzPCBDefineBoardCmd2" devLabel="Select a profile and an origin point." translation="プロファイルと原点を選択します。"/>
+	<label commandName="lclzPCBDefineBoardCmdTipsAndTricksDesc" devLabel="After selecting the profile, you must choose an origin to ensure the communication with EAGLE is precise. One corner of the PCB normally works well. Decide if the profile is on the top or bottom of the PCB, and be sure that the extrusion direction is correct. The PCB shape will become visible to EAGLE after the model is saved, and the EAGLE user can change the shape of the board as well." translation="プロファイルを選択した後、EAGLE とのコミュニケーションが正確であることを確認するために、原点を選択する必要があります。PCB の 1 つのコーナーは通常は正しく機能します。プロファイルを PCB の上部または下部のどちらにするかを決定し、押し出しの方向が正しいことを確認します。PCB の形状は、モデルが保存された後に EAGLE で表示可能になり、EAGLE ユーザも形状を変更することができます。"/>
+	<label commandName="lclzPCBDefineBoardCmdTipsAndTricksTips" devLabel="Select a profile and an origin point." translation="プロファイルと原点を選択します。"/>
+	<label commandName="lclzPCBDefineBoardCmdTipsAndTricksTitle" devLabel="PCB Define Board Information" translation="PCB 定義のボード情報"/>
+	<label commandName="lclzPCBDeriveCommand1" devLabel="Derive a sketch from this design to a 3D PCB design. The selected profiles will be used to create the board outline. " translation="このデザインから 3D PCB デザインにスケッチを派生します。選択したプロファイルは、ボードのアウトラインの作成に使用されます。 "/>
+	<label commandName="lclzPCBDeriveCommand2" devLabel="The board outline updates with changes to this design." translation="ボードのアウトラインは、このデザインの変更で更新されます。"/>
+	<label commandName="lclzPCBImprintCmd1" devLabel="Copies the profile supplied from EAGLE to an upstream Fusion sketch." translation="EAGLE から提供されたプロファイルを上流の Fusion のスケッチにコピーします。"/>
+	<label commandName="lclzPCBImprintCmdTipsAndTricksDesc" devLabel="This command is primarily useful when both the Fusion and EAGLE user are actively changing the shape of the PCB." translation="このコマンドは、Fusion と EAGLE のユーザがアクティブに PCB の形状を変更しているときに非常に便利です。"/>
+	<label commandName="lclzPCBImprintCmdTipsAndTricksTips" devLabel="Copies the profile supplied from EAGLE to an upstream Fusion sketch. You can copy to a pre-existing sketch, or create a new sketch by selecting a planar face or construction plane. The selected sketch or plane must be parallel to the PCB.  If there is already an upstream sketch that drives the PCB feature, that sketch will be selected by default." translation="EAGLE から提供されたプロファイルを上流の Fusion のスケッチにコピーします。既存のスケッチにコピーしたり、平面や作図平面を選択して新しいスケッチを作成することができます。選択したスケッチまたは平面は、PCB に対して平行である必要があります。PCB フィーチャを駆動する上流スケッチが既に存在する場合、そのスケッチが既定で選択されます。"/>
+	<label commandName="lclzPCBImprintCmdTipsAndTricksTitle" devLabel="Copy EAGLE Profile Information" translation="EAGLE プロファイル情報をコピー"/>
+	<label commandName="lclzPCBMoveComponentBodyCommand1" devLabel="Move PCB component body to align with the footprint on the board." translation="PCB コンポーネント ボディを移動して、ボード上のフットプリントに合わせて配置します。"/>
+	<label commandName="lclzPCBMoveComponentBodyCommand2" devLabel="Select a body from PCB component and move it by dragging or typing in values." translation="PCB コンポーネントからボディを選択して、ドラッグするか値を入力して移動します。"/>
+	<label commandName="lclzPCBMoveComponentBodyCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the new locations will be remembered by Fusion." translation="[移動]フィーチャはタイムラインに作成されません。ただし、新しい位置は Fusion で記憶されます。"/>
+	<label commandName="lclzPCBMoveComponentBodyCommandTipsAndTricksTips" devLabel="Select a body from PCB component and move it by dragging or typing in values." translation="PCB コンポーネントからボディを選択して、ドラッグするか値を入力して移動します。"/>
+	<label commandName="lclzPCBMoveComponentBodyCommandTipsAndTricksTitle" devLabel="Move PCB Component Body Information" translation="[PCB コンポーネント ボディを移動]に関する情報"/>
+	<label commandName="lclzPCBMoveComponentsCommand1" devLabel="Move PCB components to new locations on the board." translation="ボード上の新しい場所に PCB コンポーネントを移動します。"/>
+	<label commandName="lclzPCBMoveComponentsCommand2" devLabel="Select a component and move it by dragging or typing in values." translation="コンポーネントを選択して、ドラッグするか値を入力して移動します。"/>
+	<label commandName="lclzPCBMoveComponentsCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the new locations will be remembered by Fusion, and will become visible to EAGLE after the model is saved, and the EAGLE user can move the components as well." translation="[フィーチャ移動]はタイムラインに作成されません。ただし、新しい位置は Fusion で記憶され、モデルの保存後に EAGLE に表示されるため、EAGLE ユーザも同様にコンポーネントを移動することができます。"/>
+	<label commandName="lclzPCBMoveComponentsCommandTipsAndTricksTips" devLabel="Select a component and move it by dragging or typing in values." translation="コンポーネントを選択して、ドラッグするか値を入力して移動します。"/>
+	<label commandName="lclzPCBMoveComponentsCommandTipsAndTricksTitle" devLabel="Move PCB Components Information" translation="[PCB コンポーネントを移動]に関する情報"/>
+	<label commandName="lclzPCBReplaceComponentCommand1" devLabel="Replace PCB component with different one." translation="PCB コンポーネントを別のコンポーネントに置換します。"/>
+	<label commandName="lclzPCBReplaceComponentCommand2" devLabel="Select a PCB 3d model(step, stp file format) to replace existing PCB component." translation="PCB の 3D モデル(step、stp ファイル形式)を選択して、既存の PCB コンポーネントを置換します。"/>
+	<label commandName="lclzPCBReplaceComponentCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the PCB component will be replace with new model, the change will not able to get back to eagle." translation="[移動]フィーチャはタイムラインに作成されません。ただし、PCB コンポーネントは新しいモデルに置換されますが、この変更は EAGLE に反映されません。"/>
+	<label commandName="lclzPCBReplaceComponentCommandTipsAndTricksTips" devLabel="Select a model to replace selected PCB component and move it to adjust its position." translation="選択した PCB コンポーネントを置換するためにモデルを選択し、移動して位置を調整します。"/>
+	<label commandName="lclzPCBReplaceComponentCommandTipsAndTricksTitle" devLabel="Replace PCB Component Information" translation="[PCB コンポーネントを置換]に関する情報"/>
+	<label commandName="lclzPCBStatusCommand1" devLabel="Check the status of the PCB shape and component positions. " translation="PCB の形状およびコンポーネントの位置のステータスを確認します。"/>
+	<label commandName="lclzPCBStatusCommand2" devLabel="Both the board shape and the component positions can be driven by either Fusion or EAGLE. Use this command to understand the state of the model." translation="ボード形状およびコンポーネントの位置は、Fusion または EAGLE によって駆動することができます。モデルの状態を確認するには、このコマンドを使用します。"/>
+	<label commandName="lclzPCBStatusCommandTipsAndTricksDesc" devLabel="If the board shape and/or component positions have been edited in Fusion after the last EAGLE update, this command will allow you to see both PCB shapes. Also, it will tell you if your current component positions are different from the last EAGLE update." translation="ボート形状やコンポーネントの位置が、最後の EAGLE の更新後に Fusion で編集されている場合、このコマンドは両方の PCB 形状を表示することができます。また、現在のコンポーネントの位置が、最後の EAGLE の更新と異なる場合は通知されます。"/>
+	<label commandName="lclzPCBStatusCommandTipsAndTricksTips" devLabel="Both the board shape and the component positions can be driven by either Fusion or EAGLE. Use this command to understand the state of the model." translation="ボード形状およびコンポーネントの位置は、Fusion または EAGLE によって駆動することができます。モデルの状態を確認するには、このコマンドを使用します。"/>
+	<label commandName="lclzPCBStatusCommandTipsAndTricksTitle" devLabel="PCB Status Information" translation="PCB ステータス情報"/>
+	<label commandName="lclzPCBStop1" devLabel="Return to the Model workspace." translation="[モデル]作業スペースに戻ります。"/>
+	<label commandName="lclzPCBUpdateComponentCommand1" devLabel="Update PCB component from library." translation="ライブラリから PCB コンポーネントを更新します。"/>
+	<label commandName="lclzPCBUpdateComponentCommand2" devLabel="Download PCB component from library to replace existing PCB component." translation="既存の PCB コンポーネントを置き換えるには、ライブラリから PCB コンポーネントをダウンロードします。"/>
+	<label commandName="lclzPCBUpdateComponentCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the PCB component will be replace with new model, the change will not able to get back to eagle." translation="[移動]フィーチャはタイムラインに作成されません。ただし、PCB コンポーネントは新しいモデルに置換されますが、この変更は EAGLE に反映されません。"/>
+	<label commandName="lclzPCBUpdateComponentCommandTipsAndTricksTips" devLabel="Download PCB component from library to replace the selected PCB component and move it to adjust its position." translation="選択した PCB コンポーネントを置き換えるには、ライブラリから PCB コンポーネントをダウンロードし、移動して位置を調整します。"/>
+	<label commandName="lclzPCBUpdateComponentCommandTipsAndTricksTitle" devLabel="Update PCB Component Information" translation="PCB コンポーネント情報を更新"/>
+	<label commandName="lclzPCBWorkspaceTitle" devLabel="Mechanical PCB Workspace" translation="メカニカル PCB 作業スペース"/>
+</Resource>

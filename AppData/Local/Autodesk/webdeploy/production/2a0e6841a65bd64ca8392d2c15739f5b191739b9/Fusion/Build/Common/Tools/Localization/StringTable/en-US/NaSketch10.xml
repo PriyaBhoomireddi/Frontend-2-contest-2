@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Resource>
+	<label commandName="CannotChangeCVSpline" devLabel="Can not open/close CV spline" translation="" />
+	<label commandName="CircularPattern" devLabel="Circular Pattern" translation="" />
+	<label commandName="CircularPatternConstraintSelectionId" devLabel="Circular Pattern Constraint" translation="" />
+	<label commandName="Coincident" devLabel="Coincident" translation="" />
+	<label commandName="CoincidentConstraintSelectionId" devLabel="Coincident Constraint" translation="" />
+	<label commandName="Collinear" devLabel="Collinear" translation="" />
+	<label commandName="CollinearConstraintSelectionId" devLabel="Collinear Constraint" translation="" />
+	<label commandName="Concentric" devLabel="Concentric" translation="" />
+	<label commandName="ConcentricConstraintSelectionId" devLabel="Concentric Constraint" translation="" />
+	<label commandName="CurvatureConstraintSelectionId" devLabel="Curvature Constraint" translation="" />
+	<label commandName="CurveError" devLabel="One selected curve is degenerated!" translation="" />
+	<label commandName="EllipseOffsetInvalidWarning" devLabel="Could not offset ellipse." translation="" />
+	<label commandName="Equal" devLabel="Equal" translation="" />
+	<label commandName="EqualConstraintSelectionId" devLabel="Equal Constraint" translation="" />
+	<label commandName="ExtendConicCurveError" devLabel="Extend conic curve error!" translation="" />
+	<label commandName="ExtendSplineError" devLabel="Extend spline error!" translation="" />
+	<label commandName="FIT_CURVES_TO_SECTION_ADD_CONSTRAINT_FAIL" devLabel="Failed to add tangent sketch constraint." translation="" />
+	<label commandName="FIT_CURVES_TO_SECTION_BAD_INPUTS" devLabel="Failed to process inputs to fit curve to section." translation="" />
+	<label commandName="FIT_CURVES_TO_SECTION_ERROR_NO_CURVES" devLabel="Failed to fit curve to section." translation="" />
+	<label commandName="FIT_CURVES_TO_SECTION_LIN_OR_DEG_ARC_FIT" devLabel="Include more points to fit an arc." translation="" />
+	<label commandName="FIT_CURVES_TO_SECTION_NO_SKETCH" devLabel="Include more points to fit an arc." translation="" />
+	<label commandName="FailedToSolve" devLabel="Failed to solve." translation="" />
+	<label commandName="FitPointError" devLabel="Fit point index wrong!" translation="" />
+	<label commandName="Fixed" devLabel="Fixed" translation="" />
+	<label commandName="FixedConstraintSelectionId" devLabel="Fixed Constraint" translation="" />
+	<label commandName="Horizontal" devLabel="Horizontal" translation="" />
+	<label commandName="HorizontalConstraintSelectionId" devLabel="Horizontal Constraint" translation="" />
+	<label commandName="InactiveMidPointSelectionId" devLabel="InactiveMidPoint" translation="" />
+	<label commandName="InactiveMidPointSelectionsId" devLabel="InactiveMidPoints" translation="" />
+	<label commandName="InactiveTangentSelectionId" devLabel="Inactive Tangent Handle" translation="" />
+	<label commandName="InactiveTangentSelectionsId" devLabel="InactiveTangents" translation="" />
+	<label commandName="InactiveTextGripSelectionId" devLabel="Text Frame Snap Point" translation="" />
+	<label commandName="InactiveTextGripSelectionsId" devLabel="Text Frame Snap Points" translation="" />
+	<label commandName="InputAxisError" devLabel="Input major axis error!" translation="" />
+	<label commandName="InvalidSplineforcontrolframe" devLabel="Control Frame could not be displayed as selected sketch curve do not support control frame." translation="" />
+	<label commandName="InvalidSplinesNoCFMultiselection" devLabel="Control Frames could not be displayed as all the selected sketch curves don't support control frame." translation="" />
+	<label commandName="InvalidSplinesforcontrolframeMultiselection" devLabel="Control Frames could not be displayed for some selected sketch curves as they don't support control frame." translation="" />
+	<label commandName="LineMidPoint" devLabel="Mid Point" translation="" />
+	<label commandName="MeshPlanarSectionDefaultUserName" devLabel="MeshSection" translation="" />
+	<label commandName="MeshPlanarSectionSelectionId" devLabel="MeshPlanarSection" translation="" />
+	<label commandName="MeshPlanarSectionSelectionsId" devLabel="MeshPlanarSections" translation="" />
+	<label commandName="MidpointConstraintSelectionId" devLabel="Midpoint Constraint" translation="" />
+	<label commandName="NO_VADIL_SKETCH" devLabel="No valid sketch found!" translation="" />
+	<label commandName="NoPathSelected" devLabel="Please select path curve" translation="" />
+	<label commandName="NoTextProfileWarning" devLabel="Could not retrieve the profiles of the selected text!" translation="" />
+	<label commandName="NonPlanarCurve" devLabel="Please select planar curve" translation="" />
+	<label commandName="OffsetConstraintSelectionId" devLabel="Offset Constraint" translation="" />
+	<label commandName="OffsetSketchNoGeomError" devLabel="The sketch offset created no geometry. Modify the offset dimension or verify the changes are correct." translation="" />
+	<label commandName="PROFILE_BUILD_ERROR_ILLEGALCURVES" devLabel="Some sketch curves cannot be converted to profile edges." translation="" />
+	<label commandName="PROFILE_BUILD_FAILTOGENPROFILE" devLabel="Failed to generate profile as, curves do not precisely overlap." translation="" />
+	<label commandName="Parallel" devLabel="Parallel" translation="" />
+	<label commandName="ParallelConstraintSelectionId" devLabel="Parallel Constraint" translation="" />
+	<label commandName="Perpendicular" devLabel="Perpendicular" translation="" />
+	<label commandName="PerpendicularConstraintSelectionId" devLabel="Perpendicular Constraint" translation="" />
+	<label commandName="PleaseDeleteConstraints" devLabel="&#10;Please delete or modify one of the following constraints/dimensions&#10;" translation="" />
+	<label commandName="Polygon" devLabel="Polygon" translation="" />
+	<label commandName="PolygonConstraintSelectionId" devLabel="Polygon Constraint" translation="" />
+	<label commandName="ProfileCategory" devLabel="Sketch Profiles" translation="" />
+	<label commandName="ProfileSelectionId" devLabel="Profile" translation="" />
+	<label commandName="ProfilebuildError_TrimStageTwo" devLabel="profile trim failed in stage two" translation="" />
+	<label commandName="ProfilesSelectionId" devLabel="Profiles" translation="" />
+	<label commandName="RectangularPattern" devLabel="Rectangular Pattern" translation="" />
+	<label commandName="RectangularPatternConstraintSelectionId" devLabel="Rectangular Pattern Constraint" translation="" />
+	<label commandName="SharedPointCoincidentSelectionId" devLabel="Coincident Constraint" translation="" />
+	<label commandName="SharedPointCoincidentSelectionsId" devLabel="Coincident Constraints" translation="" />
+	<label commandName="SketchConicCurveSelectionID" devLabel="Sketch Conic Curve" translation="" />
+	<label commandName="SketchConstraintCategory" devLabel="Sketch Geometry Constraint" translation="" />
+	<label commandName="SketchConstraintHasSameConstraint" devLabel="Constraint has already been applied to the selected sketch object." translation="" />
+	<label commandName="SketchDimensionSelectionId" devLabel="Sketch Dimension" translation="" />
+	<label commandName="SketchDimensionSelectionsId" devLabel="Sketch Dimensions" translation="" />
+	<label commandName="SketchGeomConstSelectionsId" devLabel="Sketch Geometry Constraints" translation="" />
+	<label commandName="SketchGeometryConstraintSelectionId" devLabel="Sketch Geometry Constraint" translation="" />
+	<label commandName="SketchInvisibleProjectGeometries" devLabel="The Projected Geometries you have just created is not visible. Please toggle Show Project Geometries option in sketch palette." translation="" />
+	<label commandName="SketchProjectedGeomSelectionId" devLabel="SketchProjectedGeom" translation="" />
+	<label commandName="SketchProjectedGeomSelectionsId" devLabel="SketchProjectedGeoms" translation="" />
+	<label commandName="Smooth" devLabel="Smooth" translation="" />
+	<label commandName="Symmetric" devLabel="Symmetric" translation="" />
+	<label commandName="SymmetryConstraintSelectionId" devLabel="Symmetry Constraint" translation="" />
+	<label commandName="Tangent" devLabel="Tangent" translation="" />
+	<label commandName="TangentConstraintSelectionId" devLabel="Tangent Constraint" translation="" />
+	<label commandName="TangentExists" devLabel="Tangent already exists on selected fit point" translation="" />
+	<label commandName="TextFrameConstraintSelectionId" devLabel="Text Frame Constraint" translation="" />
+	<label commandName="TooFewFitPoints" devLabel="A close spline must at least have 3 fit points" translation="" />
+	<label commandName="Vertical" devLabel="Vertical" translation="" />
+	<label commandName="VerticalConstraintSelectionId" devLabel="Vertical Constraint" translation="" />
+	<label commandName="lclzSketchError" devLabel="Invalid sketch curve" translation="" />
+</Resource>

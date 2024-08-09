@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="BasicType" devLabel="Basic" translation="基本"/>
+	<label commandName="BasicTypeTooltip" devLabel="Basic = Geometry checks, Standard = Basic + Face/Face and Edge/Edge intersecton tests." translation="基本 = ジオメトリ チェック、標準 = 基本 + 面/面とエッジ/エッジ交差テスト。"/>
+	<label commandName="BooleanTypeOperation" devLabel="Operation" translation="操作"/>
+	<label commandName="Boundary" devLabel="Boundary %1%" translation="境界 %1%"/>
+	<label commandName="Chain" devLabel="Chain" translation="チェーン"/>
+	<label commandName="ChainSelCmdInput" devLabel="BoundarySelectionType" translation="BoundarySelectionType"/>
+	<label commandName="ChainSelectionOptionInput" devLabel="Chain Selection" translation="チェーン選択"/>
+	<label commandName="CheckingLevel" devLabel="Checking Level" translation="確認レベル"/>
+	<label commandName="ConnectivityTypeConnected" devLabel="Connected (G0)" translation="接続(G0)"/>
+	<label commandName="ConnectivityTypeCurvature" devLabel="Curvature (G2)" translation="曲率(G2)"/>
+	<label commandName="ConnectivityTypeTangent" devLabel="Tangent (G1)" translation="接線(G1)"/>
+	<label commandName="CurveTable" devLabel="Curve %1%" translation="カーブ %1%"/>
+	<label commandName="CutType" devLabel="Cut" translation="切り取り"/>
+	<label commandName="Edge" devLabel="Edge" translation="エッジ"/>
+	<label commandName="EdgeTable" devLabel="Edge %1%" translation="エッジ %1%"/>
+	<label commandName="FreeEdgesInput" devLabel="Free Edges" translation="フリー エッジ"/>
+	<label commandName="FusionDcMidSurfaceEditCommand" devLabel="Edit Feature " translation="フィーチャ編集"/>
+	<label commandName="FusionDcReverseNormalEdit" devLabel="Edit Feature " translation="フィーチャ編集"/>
+	<label commandName="FusionDcSurfaceDeleteFaceEditCommand" devLabel="Edit Feature " translation="フィーチャ編集"/>
+	<label commandName="FusionDcSurfaceOffsetEditCommand" devLabel="Edit Feature " translation="フィーチャ編集"/>
+	<label commandName="FusionDcSurfaceOffsetShellEditCommand" devLabel="Edit Feature " translation="フィーチャ編集"/>
+	<label commandName="FusionDcSurfaceRuledEditCommand" devLabel="Edit Feature " translation="フィーチャ編集"/>
+	<label commandName="FusionDcSurfaceShellEditCommand" devLabel="Edit Feature " translation="フィーチャ編集"/>
+	<label commandName="FusionDcSurfaceTrimEditCommand" devLabel="Edit Feature " translation="フィーチャ編集"/>
+	<label commandName="FusionDcSurfaceUntrimEditCommand" devLabel="Edit Feature " translation="フィーチャ編集"/>
+	<label commandName="FusionSurfaceDeleteFaces" devLabel="Delete Faces" translation="面を削除"/>
+	<label commandName="FusionSurfaceEditMidsurfaceShell" devLabel="Edit Midsurface Shell" translation="中間サーフェス シェルを編集"/>
+	<label commandName="FusionSurfaceMerge" devLabel="Merge" translation="結合"/>
+	<label commandName="FusionSurfaceMidsurfaceShell" devLabel="Midsurface Shell" translation="中間サーフェス シェル"/>
+	<label commandName="FusionSurfaceOffset" devLabel="Offset" translation="オフセット"/>
+	<label commandName="FusionSurfaceOffsetShell" devLabel="Offset Shell" translation="オフセット シェル"/>
+	<label commandName="FusionSurfacePatch" devLabel="Patch" translation="パッチ"/>
+	<label commandName="FusionSurfacePatchEdit" devLabel="Edit Feature " translation="フィーチャ編集"/>
+	<label commandName="FusionSurfaceReverseNormal" devLabel="Reverse Normal" translation="法線を反転"/>
+	<label commandName="FusionSurfaceRuled" devLabel="Ruled" translation="ルールド"/>
+	<label commandName="FusionSurfaceRuledSelectDirection" devLabel="Select a linear edge, plane or axis for direction" translation="方向に使用する直線状エッジ、平面、または軸を選択します"/>
+	<label commandName="FusionSurfaceSelectionTransparency" devLabel="Toggle Surface Body Transparency" translation="サーフェス ボディの透明度を切り替え"/>
+	<label commandName="FusionSurfaceStitch" devLabel="Stitch" translation="ステッチ"/>
+	<label commandName="FusionSurfaceStitchEdit" devLabel="Edit Feature " translation="フィーチャ編集"/>
+	<label commandName="FusionSurfaceSurfaceShell" devLabel="Edit Surface Shell" translation="サーフェス シェルを編集"/>
+	<label commandName="FusionSurfaceTransparency" devLabel="Transparent Surfaces Toggle" translation="透明なサーフェスの切り替え"/>
+	<label commandName="FusionSurfaceTrim" devLabel="Trim" translation="トリム"/>
+	<label commandName="FusionSurfaceUnStitch" devLabel="Unstitch" translation="ステッチ解除"/>
+	<label commandName="FusionSurfaceUnStitchEdit" devLabel="Edit Feature " translation="フィーチャ編集"/>
+	<label commandName="FusionSurfaceUntrim" devLabel="Untrim" translation="トリム解除"/>
+	<label commandName="FusionSurfaceValidate" devLabel="Validate" translation="検証"/>
+	<label commandName="FusionUntrimEdgeInputCursorPrompt" devLabel="Hold %1% to modify selection" translation="選択を修正するには、%1% を押しながら選択します"/>
+	<label commandName="FusionUntrimEdgesInputCursorPrompt" devLabel="Select edges to untrim" translation="トリム解除するエッジを選択"/>
+	<label commandName="FusionUntrimFaceInputCursorPrompt" devLabel="Select faces to untrim" translation="トリム解除する面を選択"/>
+	<label commandName="GapToleranceInput" devLabel="Gap Healing" translation="ギャップの修復"/>
+	<label commandName="GapToleranceTooltip" devLabel="Maximim gap size to heal, must be 2X small edge/face removal size if this is enabled." translation="有効になっている場合、修復するギャップの最大サイズは[小さいエッジ/面を削除]のサイズの 2 倍である必要があります。"/>
+	<label commandName="IntersectType" devLabel="Intersect" translation="交差"/>
+	<label commandName="JoinType" devLabel="Join" translation="結合"/>
+	<label commandName="MaxGap" devLabel="Max Gap" translation="最大ギャップ"/>
+	<label commandName="MergeSelectionPrompt" devLabel="Select faces" translation="面を選択"/>
+	<label commandName="MissingDeleteFaces" devLabel="missing faces" translation="面が見つかりません"/>
+	<label commandName="MissingMidsurfaceInputBodies" devLabel="missing bodies" translation="ボディが見つかりません"/>
+	<label commandName="MissingOffsetFaces" devLabel="missing faces" translation="面が見つかりません"/>
+	<label commandName="MissingPatchBoundaries" devLabel="missing boundary paths" translation="境界パスが見つかりません"/>
+	<label commandName="MissingPatchProfiles" devLabel="missing profiels" translation="プロファイルが見つかりません"/>
+	<label commandName="MissingRuledSurfaceEdges" devLabel="Missing edges" translation="エッジが見つかりません"/>
+	<label commandName="MissingRuledSurfaceRefDir" devLabel="Reselect missing direction reference" translation="見つからない方向参照を再選択"/>
+	<label commandName="MissingStitchSurfaces" devLabel="missing surfaces" translation="サーフェスが見つかりません"/>
+	<label commandName="MissingSurfReverseFaces" devLabel="missing faces" translation="面が見つかりません"/>
+	<label commandName="MissingSurfUntrimFaces" devLabel="Missing faces" translation="面が見つかりません"/>
+	<label commandName="MissingSurfaceShellInputBodies" devLabel="missing bodies" translation="ボディが見つかりません"/>
+	<label commandName="MissingTrimTools" devLabel="missing trim tools" translation="トリム ツールが見つかりません"/>
+	<label commandName="MissingUnstitchObjects" devLabel="missing target bodies or faces" translation="ターゲット ボディまたはターゲット面が見つかりません"/>
+	<label commandName="MissingUntrimSurfaceEdges" devLabel="Missing edges" translation="エッジが見つかりません"/>
+	<label commandName="NewBodyInNewCompType" devLabel="New Component" translation="新規コンポーネント"/>
+	<label commandName="NewBodyType" devLabel="New Body" translation="新規ボディ"/>
+	<label commandName="NothingStitched" devLabel="Modeling Error: Nothing has stitched." translation="モデリング エラー: 何もステッチされていません。"/>
+	<label commandName="OffsetChainSelectionInput" devLabel="Chain Selection" translation="チェーン選択"/>
+	<label commandName="PatchContinuity" devLabel="PatchContinuity%1%" translation="PatchContinuity%1%"/>
+	<label commandName="PatchContinuityInput" devLabel="Continuity" translation="連続性"/>
+	<label commandName="PatchContinuityOptionToolTip" devLabel="Continuity" translation="連続性"/>
+	<label commandName="PatchFlipToolTip" devLabel="Continuity Direction" translation="連続性の方向"/>
+	<label commandName="PatchInteriorConstraintsSelectionPrompt" devLabel="Select edges, sketch curves or points to define patch interior constraints" translation="パッチの内部拘束を定義するには、エッジ、スケッチ曲線、またはスケッチ点を選択します"/>
+	<label commandName="PatchSelectionPrompt" devLabel="Select edges, sketch profiles or sketch curves to define patch boundary" translation="パッチの境界を定義するエッジ、スケッチ プロファイル、またはスケッチ曲線を選択"/>
+	<label commandName="PatchTable" devLabel="PatchTable" translation="PatchTable"/>
+	<label commandName="PatchTableAdd" devLabel="Add" translation="追加"/>
+	<label commandName="PatchTableRemvoe" devLabel="Remove" translation="削除"/>
+	<label commandName="PatchTableRowLabel" devLabel="Boundray" translation="境界"/>
+	<label commandName="PatchTangentFlip" devLabel="PatchFlip%1%" translation="PatchFlip%1%"/>
+	<label commandName="PatchTangentFlipInput" devLabel="Flip" translation="反転"/>
+	<label commandName="PatchTangentWeight" devLabel="PatchScale%1%" translation="PatchScale%1%"/>
+	<label commandName="PatchTangentWeightInput" devLabel="Scale" translation="尺度"/>
+	<label commandName="PatchTangentWeightToolTip" devLabel="Weight" translation="ウエイト"/>
+	<label commandName="PatchTypeBounded" devLabel="Bounded" translation="バウンド"/>
+	<label commandName="PatchTypeTrimmed" devLabel="Trimmed" translation="トリム"/>
+	<label commandName="Profile" devLabel="Profile %1%" translation="プロファイル %1%"/>
+	<label commandName="SelectStitchSurfaces" devLabel="Select Surfaces to Stitch" translation="ステッチするサーフェスを選択"/>
+	<label commandName="SelectTrimToolProfile" devLabel="Select a trimming tool" translation="トリム ツールを選択"/>
+	<label commandName="SelectValidateBodies" devLabel="Select Bodies to validate" translation="検証するボディを選択"/>
+	<label commandName="SelectionListControlCmdInput" devLabel="Edge Sets" translation="エッジ セット"/>
+	<label commandName="SelectionListCtrlGroup" devLabel="Unstitched Edges" translation="ステッチ解除されたエッジ"/>
+	<label commandName="ShellfromSurface" devLabel="Shell from Surface" translation="サーフェスからのシェル"/>
+	<label commandName="SimAutomaticSelectionEnabled" devLabel="Automatic" translation="自動"/>
+	<label commandName="SimAutomaticSelectionSlider" devLabel="Size" translation="サイズ"/>
+	<label commandName="SimNativeSurfaceCmdSelection" devLabel="Selection" translation="選択"/>
+	<label commandName="SimNativeSurfaceCmdThickness" devLabel="Thickness" translation="厚さ"/>
+	<label commandName="SimPreviewEnabledCheckbox" devLabel="Preview" translation="プレビュー"/>
+	<label commandName="SimThinShellDistanceGroup" devLabel="Maximum Face Pair Distance" translation="面のペアの最大距離"/>
+	<label commandName="SimThinShellDistanceSlider" devLabel="Distance" translation="距離"/>
+	<label commandName="SimThinShellDistanceSliderEnabled" devLabel="Automatic Distance" translation="自動距離"/>
+	<label commandName="SimThinShellDistanceValue" devLabel="Distance" translation="距離"/>
+	<label commandName="SimThinShellOptionGroup" devLabel="Options" translation="オプション"/>
+	<label commandName="SimThinShellPreview" devLabel="Preview" translation="プレビュー"/>
+	<label commandName="SimThinShellSmallFaceRemovalPerc" devLabel="Remove Small Faces (%)" translation="小さい面を削除(%)"/>
+	<label commandName="SimThinShellThicknessOverride" devLabel="Thickness" translation="厚さ"/>
+	<label commandName="SimThinShellThicknessOverrideEnabled" devLabel="Override Thickness" translation="厚さをオーバーライド"/>
+	<label commandName="SimThinShellThicknessReset" devLabel="Reset Thickness" translation="厚さをリセット"/>
+	<label commandName="SmallEdgeFaceToleranceTooltip" devLabel="Maximim Face/Edge size to remove, will be skipped if the body has errors." translation="ボディにエラーがある場合は、削除する面/エッジの最大サイズはスキップされます。"/>
+	<label commandName="SmallEdgeFacesToleranceInput" devLabel="Small Edge/Face Removal" translation="小さいエッジ/面を削除"/>
+	<label commandName="StandardType" devLabel="Standard" translation="標準"/>
+	<label commandName="StitchFreeEdge" devLabel="Free Edge" translation="フリー エッジ"/>
+	<label commandName="StitchResultsInput" devLabel="Stitch Result" translation="ステッチの結果"/>
+	<label commandName="StitchTolInput" devLabel="" translation=""/>
+	<label commandName="StitchToleranceInput" devLabel="Tolerance" translation="許容差"/>
+	<label commandName="StitchedEdgesInput" devLabel="Edges to be Stitched" translation="ステッチするエッジ"/>
+	<label commandName="SufaceRefitToleranceInput" devLabel="Refit Bad Surfaces" translation="不正なサーフェスを再フィット"/>
+	<label commandName="SurfTrimNotargetFaceToRem" devLabel="No Target Face selected to remove!" translation="削除するターゲット面が選択されていません。"/>
+	<label commandName="SurfaceDeleteFacesInput" devLabel="Faces" translation="面"/>
+	<label commandName="SurfaceFaceStitchSetTolerance" devLabel="Set Max Gap as Stitch Tolerance" translation="ステッチの許容差として最大ギャップを設定"/>
+	<label commandName="SurfaceMergeChainSelectionInput" devLabel="Select Chain" translation="チェーンを選択"/>
+	<label commandName="SurfaceMergeSelectionInput" devLabel="Selection" translation="選択"/>
+	<label commandName="SurfaceMidsurfaceBodiesInput" devLabel="Bodies" translation="ボディ"/>
+	<label commandName="SurfaceOffsetDistanceInput" devLabel="Distance" translation="距離"/>
+	<label commandName="SurfaceOffsetFacesInput" devLabel="Faces / Surface Bodies" translation="面/サーフェス ボディ"/>
+	<label commandName="SurfaceOffsetThicknessInput" devLabel="Thickness" translation="厚さ"/>
+	<label commandName="SurfacePatchChainInput" devLabel="Boundary Edges" translation="境界エッジ"/>
+	<label commandName="SurfacePatchChainSelectionInput" devLabel="Enable Chaining" translation="チェーンを有効化"/>
+	<label commandName="SurfacePatchConnectivityInput" devLabel="Continuity" translation="連続性"/>
+	<label commandName="SurfacePatchGroupInput" devLabel="Group Edges" translation="グループ エッジ"/>
+	<label commandName="SurfacePatchInteriorRailsAndPointsInput" devLabel="Interior Rails/Points" translation="内部レールまたは点"/>
+	<label commandName="SurfacePatchPatchType" devLabel="Patch Type" translation="パッチ タイプ"/>
+	<label commandName="SurfaceRefitFaceToleranceTooltip" devLabel="Maximim distance between the repaired face and the original face." translation="修復された面と元の面の間の最大距離。"/>
+	<label commandName="SurfaceReverseNormalInput" devLabel="Faces" translation="面"/>
+	<label commandName="SurfaceRevolve" devLabel="Revolve" translation="回転"/>
+	<label commandName="SurfaceRuledAltFacesInput" devLabel="Alternate Faces" translation="代替面"/>
+	<label commandName="SurfaceRuledAltFacesInputDesc" devLabel="Flips direction or angle when edges share more than one face" translation="エッジが複数の面を共有している場合に、方向または角度を反転します"/>
+	<label commandName="SurfaceRuledAngleInput" devLabel="Angle" translation="角度"/>
+	<label commandName="SurfaceRuledAngleInputDesc" devLabel="Specify rotation angle" translation="回転角度を指定"/>
+	<label commandName="SurfaceRuledChainInput" devLabel="Chain Selection" translation="チェーン選択"/>
+	<label commandName="SurfaceRuledChainInputDesc" devLabel="Automatically select connected geometry" translation="接続されたジオメトリを自動的に選択します"/>
+	<label commandName="SurfaceRuledDirectionInput" devLabel="Direction" translation="方向"/>
+	<label commandName="SurfaceRuledDirectionInputDesc" devLabel="Select a linear edge, plane, or axis" translation="直線状エッジ、平面、または軸を選択します"/>
+	<label commandName="SurfaceRuledDistanceInput" devLabel="Distance" translation="距離"/>
+	<label commandName="SurfaceRuledDistanceInputDesc" devLabel="Specify distance to extend" translation="延長する距離を指定"/>
+	<label commandName="SurfaceRuledProfileInput" devLabel="Edges" translation="エッジ"/>
+	<label commandName="SurfaceRuledProfileInputDesc" devLabel="Select edges" translation="エッジを選択"/>
+	<label commandName="SurfaceRuledTypeDirectionInput" devLabel="Direction" translation="方向"/>
+	<label commandName="SurfaceRuledTypeDirectionInputDesc" devLabel="Creates a ruled surface in a direction that you select" translation="選択した方向にルールド サーフェスを作成します"/>
+	<label commandName="SurfaceRuledTypeInput" devLabel="Type" translation="タイプ"/>
+	<label commandName="SurfaceRuledTypeNormalInput" devLabel="Normal" translation="標準"/>
+	<label commandName="SurfaceRuledTypeNormalInputDesc" devLabel="Creates a ruled surface normal to the face of selected edges" translation="選択したエッジの面に垂直なルールド サーフェスを作成します"/>
+	<label commandName="SurfaceRuledTypeTangentDesc" devLabel="Creates a ruled surface tangent to the face of selected edges" translation="選択したエッジの面に接するルールド サーフェスを作成します"/>
+	<label commandName="SurfaceRuledTypeTangentInput" devLabel="Tangent" translation="接線"/>
+	<label commandName="SurfaceShellThicknessTip" devLabel="The thickness direction is symmetric about the selected surface." translation="厚さ方向は、選択したサーフェスに対して対称です。"/>
+	<label commandName="SurfaceStitchChainInput" devLabel="Stitch Surfaces" translation="サーフェスをステッチ"/>
+	<label commandName="SurfaceStitchFindInWindow" devLabel="Find Edge in Window" translation="ウィンドウ内のエッジを検索"/>
+	<label commandName="SurfaceSweep" devLabel="Sweep" translation="スイープ"/>
+	<label commandName="SurfaceTrimChainInput" devLabel="Trim Tool" translation="トリム ツール"/>
+	<label commandName="SurfaceTrimFaceSelInput" devLabel="FaceRemoveSel" translation="除去する面を選択"/>
+	<label commandName="SurfaceUnStitchFacesInput" devLabel="Faces / Bodies" translation="面/ボディ"/>
+	<label commandName="SurfaceUntrimEdgesInput" devLabel="Edges" translation="エッジ"/>
+	<label commandName="SurfaceUntrimEdgesInputDesc" devLabel="Select edges to untrim.&#xA;Hold %1% to suppress command preview and select multiple edges." translation="トリム解除するエッジを選択します。&#xA;コマンドのプレビューを省略して複数のエッジを選択するには、%1% を押します。"/>
+	<label commandName="SurfaceUntrimExtensionInput" devLabel="Extend" translation="延長"/>
+	<label commandName="SurfaceUntrimExtensionInputDesc" devLabel="Specify distance to extend untrimmed surface." translation="トリムされていないサーフェスを延長する距離を指定します。"/>
+	<label commandName="SurfaceUntrimFacesInput" devLabel="Faces" translation="面"/>
+	<label commandName="SurfaceUntrimFacesInputDesc" devLabel="Select faces to untrim." translation="トリム解除する面を選択します。"/>
+	<label commandName="SurfaceUntrimKeepCopyInput" devLabel="Keep Copy" translation="コピーを保持"/>
+	<label commandName="SurfaceUntrimKeepCopyInputDesc" devLabel="Creates a copy of original trimmed surface." translation="元のトリムされたサーフェスのコピーを作成します。"/>
+	<label commandName="SurfaceUntrimTypeAllEdgesInput" devLabel="All Edges" translation="すべてのエッジ"/>
+	<label commandName="SurfaceUntrimTypeAllEdgesInputDesc" devLabel="Untrims all internal and external edges of a surface." translation="サーフェスの内側エッジと外側エッジをすべてトリム解除します。"/>
+	<label commandName="SurfaceUntrimTypeExternalEdgesInput" devLabel="External Edges" translation="外側エッジ"/>
+	<label commandName="SurfaceUntrimTypeExternalEdgesInputDesc" devLabel="Untrims external edges only." translation="外側エッジのみをトリム解除します。"/>
+	<label commandName="SurfaceUntrimTypeInput" devLabel="Type" translation="タイプ"/>
+	<label commandName="SurfaceUntrimTypeInternalEdgesDesc" devLabel="Untrims internal edges only." translation="内側エッジのみをトリム解除します。"/>
+	<label commandName="SurfaceUntrimTypeInternalEdgesInput" devLabel="Internal Edges" translation="内側エッジ"/>
+	<label commandName="SurfaceUntrimTypeManualInput" devLabel="Manual" translation="手動"/>
+	<label commandName="SurfaceUntrimTypeManualInputDesc" devLabel="Untrims manually selected edges of a face.&#xA;Hold %1% to suppress command preview and select multiple edges." translation="面の選択したエッジを手動でトリム解除します。&#xA;コマンドのプレビューを省略して複数のエッジを選択するには、%1% を押します。"/>
+	<label commandName="SurfaceValidateBodyInput" devLabel="Validate Bodies" translation="ボディを検証"/>
+	<label commandName="SurfaceValidateDefectiveNodeName" devLabel="Defective Surface" translation="不良なサーフェス"/>
+	<label commandName="SurfaceValidateEdgesRemovedCount" devLabel="Number of edges removed: %1%" translation="削除されたエッジの数: %1%"/>
+	<label commandName="SurfaceValidateFacesRemovedCount" devLabel="Number of faces removed: %1%" translation="削除された面の数: %1%"/>
+	<label commandName="SurfaceValidateFixedCount" devLabel="Number of surfaces repaired: %1%" translation="修復されたサーフェスの数: %1%"/>
+	<label commandName="SurfaceValidateIntersectNodeName" devLabel="Intersecting Surface" translation="交差サーフェス"/>
+	<label commandName="SurfaceValidateIntersectingCount" devLabel="Number of intersecting or overlapping surfaces: %1%" translation="交差またはオーバーラップしているサーフェスの数: %1%"/>
+	<label commandName="SurfaceValidateInvalidCount" devLabel="Number of invalid surfaces: %1%" translation="サーフェス数が無効です: %1%"/>
+	<label commandName="SurfaceValidateNoIssue" devLabel="No issues were found" translation="問題は検出されませんでした"/>
+	<label commandName="SurfaceValidateSmallEdgeFaceRemovalSkipped" devLabel="Small Edge/Face Removal has been skipped." translation="[小さいエッジ/面を削除]がスキップされました。"/>
+	<label commandName="SurfaceValidateSummary" devLabel="Validate Summary:" translation="検証の概要:"/>
+	<label commandName="SurfaceValidateUnstitchableCount" devLabel="Number of surfaces that cause stitching failure: %1%" translation="ステッチの失敗の原因となるサーフェスの数: %1%"/>
+	<label commandName="SurfaceValidateUnstitchableNodeName" devLabel="Unstitchable Surface" translation="ステッチ不可のサーフェス"/>
+	<label commandName="TTSurfaceEnvironment" devLabel="Surface" translation="サーフェス"/>
+	<label commandName="UnStitchedEdgeTitle" devLabel="Edge" translation="エッジ"/>
+	<label commandName="UnStitchedGapTitle" devLabel="Max Gap" translation="最大ギャップ"/>
+	<label commandName="UnStitchedTableFindInWindow" devLabel="Find in Window" translation="ウィンドウ内を検索"/>
+	<label commandName="UnStitchedTableSetTolerance" devLabel="Set Tolerance" translation="許容値を設定"/>
+	<label commandName="UnstitchedEdgeName" devLabel="UnStitchedEdgeName" translation="UnStitchedEdgeName"/>
+	<label commandName="UnstitchedGapLength" devLabel="UnStitchedGapLength" translation="UnStitchedGapLength"/>
+	<label commandName="ValidateEnableGapRepair" devLabel="Gap Healing" translation="ギャップの修復"/>
+	<label commandName="ValidateEnableRepair" devLabel="Repair" translation="修復"/>
+	<label commandName="ValidateEnableSmallEdgeFaceRemoval" devLabel="Small Edge/Face Removal" translation="小さいエッジ/面を削除"/>
+	<label commandName="ValidateEnableSurfaceRefit" devLabel="Refit Bad Surfaces" translation="不正なサーフェスを再フィット"/>
+	<label commandName="lclzFusionReverseNormalCommand1" devLabel="Flips the normal direction of the selected surface body." translation="選択したサーフェス ボディの法線方向を反転します。"/>
+	<label commandName="lclzFusionSurfaceMergeCommand1" devLabel="Combines the selected faces into a single quilt surface." translation="選択した面を単一のキルト サーフェスに結合します。"/>
+	<label commandName="lclzFusionSurfaceMergeCommand2" devLabel="Select the faces to merge. You can select solid or surface faces." translation="結合する面を選択します。ソリッドまたはサーフェス面を選択できます。"/>
+	<label commandName="lclzFusionSurfaceMidsurfaceShellCommand1" devLabel="Creates a new midsurface shell from the selected body." translation="選択したボディから新しい中間サーフェス シェルを作成します。"/>
+	<label commandName="lclzFusionSurfaceMidsurfaceShellCommand2" devLabel="Select the face to midsurface." translation="中間サーフェスへの面を選択します。"/>
+	<label commandName="lclzFusionSurfaceOffsetCommand1" devLabel="Creates a new surface at a given distance from the selected face." translation="選択した面から指定した距離にサーフェスを新規作成します。"/>
+	<label commandName="lclzFusionSurfaceOffsetCommand2" devLabel="Select the face to offset then specify the distance." translation="オフセットする面を選択し、距離を指定します。"/>
+	<label commandName="lclzFusionSurfaceOffsetShellCommand1" devLabel="Creates a new offset shell at a given distance from the selected face." translation="選択した面から指定した距離にオフセット シェルを新規作成します。"/>
+	<label commandName="lclzFusionSurfaceOffsetShellCommand2" devLabel="Select the face to offset then specify the distance." translation="オフセットする面を選択し、距離を指定します。"/>
+	<label commandName="lclzFusionSurfacePatchCommand1" devLabel="Creates a planar or 3D surface within the boundary of a specified closed loop." translation="指定した閉じたループの境界内に平面または 3D サーフェスを作成します。"/>
+	<label commandName="lclzFusionSurfacePatchCommand2" devLabel="Select the loop to patch then apply connected (G0), tangent (G1), and curvature (G2) boundary conditions." translation="パッチを作成するループを選択し、接続(G0)、接線(G1)、および曲率(G2)境界条件を適用します。"/>
+	<label commandName="lclzFusionSurfaceRuledCommand1" devLabel="Creates a ruled surface from selected edges." translation="選択したエッジからルールド サーフェスを作成します。"/>
+	<label commandName="lclzFusionSurfaceRuledCommand2" devLabel="Select a ruled surface type, select edges, then specify the direction, distance, and angle." translation="ルールド サーフェスのタイプを選択し、エッジを選択してから、方向、距離、角度を指定します。"/>
+	<label commandName="lclzFusionSurfaceShellConvertCommand1" devLabel="Creates a new surface shell from the surface." translation="サーフェスから新しいサーフェス シェルを作成します。"/>
+	<label commandName="lclzFusionSurfaceShellConvertCommand2" devLabel="Select the surface to surface shell." translation="サーフェス シェルへのサーフェスを選択します。"/>
+	<label commandName="lclzFusionSurfaceStitchCommand1" devLabel="Joins surfaces to make a single surface body or solid body." translation="サーフェスを結合して、単一サーフェス ボディまたはソリッド ボディを作成します。"/>
+	<label commandName="lclzFusionSurfaceStitchCommand2" devLabel="Select the surfaces to join. Edges within the tolerance are highlighted green." translation="結合するサーフェスを選択します。許容差の範囲内にあるエッジが緑色でハイライト表示されます。"/>
+	<label commandName="lclzFusionSurfaceTrimCommand1" devLabel="Removes the selected area of a surface body using the specified cutting tool." translation="指定したカット ツールを使用して、サーフェス ボディの選択した領域を除去します。"/>
+	<label commandName="lclzFusionSurfaceTrimCommand2" devLabel="Select the cutting tool to use then select faces or surface bodies to remove." translation="カット ツールを選択し、削除する面またはサーフェス ボディを選択します。"/>
+	<label commandName="lclzFusionSurfaceUnStitchCommand1" devLabel="Breaks joined surfaces into individual surfaces." translation="結合したサーフェスを個別のサーフェスに分割します。"/>
+	<label commandName="lclzFusionSurfaceUnStitchCommand2" devLabel="Select faces to unstitch. The selected face is unhooked from the parent body and the result body contains the unhooked face." translation="ステッチ解除する面を選択します。選択した面は親ボディからフックが外されおり、結果のボディはフックがない面を含みます。"/>
+	<label commandName="lclzFusionSurfaceUntrimCommand1" devLabel="Extends trimmed surfaces and fills gaps, holes, or empty regions." translation="トリムされたサーフェスを延長し、ギャップ、穴、または空の領域を塗り潰します。"/>
+	<label commandName="lclzFusionSurfaceUntrimCommand2" devLabel="Select the surface to untrim, then select the untrim type. You can untrim all edges, internal edges, external edges, or manually select the edges you want to untrim." translation="トリム解除するサーフェスを選択し、トリム解除のタイプを選択します。トリム解除するエッジ、内側エッジ、外側エッジをすべて解除するか、トリム解除するエッジを手動で選択します。"/>
+	<label commandName="lclzFusionSurfaceValidate1" devLabel="Checks the quality of selected surfaces and attempts to heal surfaces before stitching into quilts and solids." translation="選択したサーフェスの品質を確認し、サーフェスの修復を試みてから、キルトおよびソリッドにステッチします。"/>
+	<label commandName="lclzFusionSurfaceValidate2" devLabel="Select the surfaces to check, specify a tolerance then select the type of validation to perform." translation="確認するサーフェスを選択して、許容差を指定し、実行する検証のタイプを選択します。"/>
+	<label commandName="lclzMergeTipsAndTricksTips" devLabel="Select the surfaces to merge. You can select solid or surface faces." translation="結合するサーフェスを選択します。ソリッドまたはサーフェス面を選択できます。"/>
+	<label commandName="lclzMergeTipsAndTricksTitle" devLabel="Merge Information" translation="[結合]に関する情報"/>
+	<label commandName="lclzMidsurfaceShellTipsAndTricksDesc" devLabel="The use of shells can reduce mesh requirements and solve time.  Using this command on a complex body may require slight adjustments with other shellcommands such as Gap Fill." translation="シェルを使用すると、メッシュ要件および解析時間を短縮することができます。複雑なボディ上でこのコマンドを使用する場合は、[ギャップ埋め]などのほかのシェルコマンドで微妙な調整が必要な場合があります。"/>
+	<label commandName="lclzMidsurfaceShellTipsAndTricksTips" devLabel="Creates a shell part in the middle of the selected body or bodies using the thickness of the selected body." translation="選択したボディまたは選択したボディの厚みを使用するボディの中央にシェル パーツを作成します。"/>
+	<label commandName="lclzMidsurfaceShellTipsAndTricksTitle" devLabel="Midsurface Shell Information" translation="中間サーフェス シェル情報"/>
+	<label commandName="lclzOffsetShellTipsAndTricksDesc" devLabel="Using the Offset Shell command will create a shell to represent the selected body and remove the selected body from the Simulation Model. To recover the original body the Shell must be removed from the timeline, or a new Simulation Model must be created." translation="[オフセット シェル]コマンドを使用すると、選択したボディを表現するシェルを作成し、シミュレーション モデルから選択したボディを削除します。元のボディを復元するには、タイムラインからシェルを削除するか、新しいシミュレーション モデルを作成する必要があります。"/>
+	<label commandName="lclzOffsetShellTipsAndTricksTips" devLabel="Creates a new shell at a specified distance from selected faces of a 3D body." translation="3D ボディの選択された面から指定された距離に新しいシェルを作成します。"/>
+	<label commandName="lclzOffsetShellTipsAndTricksTitle" devLabel="Offset Shell Information" translation="オフセット シェル情報"/>
+	<label commandName="lclzOffsetTipsAndTricksDesc" devLabel="Select multiple faces to offset them simultaneously." translation="複数の面を選択して同時にオフセットします。"/>
+	<label commandName="lclzOffsetTipsAndTricksTips" devLabel="Select the face to offset then specify the distance." translation="オフセットする面を選択し、距離を指定します。"/>
+	<label commandName="lclzOffsetTipsAndTricksTitle" devLabel="Offset Information" translation="[オフセット]に関する情報"/>
+	<label commandName="lclzPatchWorkspaceTitle" devLabel="Creates construction surfaces and repairs surface geometry. Access commands to create surface bodies." translation="コンストラクション サーフェスを作成し、サーフェス ジオメトリを修復します。サーフェス ボディを作成するコマンドにアクセスします。"/>
+	<label commandName="lclzReverseNormalTipsAndTricksTips" devLabel="Select the faces to modify." translation="修正する面を選択します。"/>
+	<label commandName="lclzReverseNormalTipsAndTricksTitle" devLabel="Reverse Normal Information" translation="[法線を反転]に関する情報"/>
+	<label commandName="lclzRuledTipsAndTricksDesc" devLabel="You can use the Ruled command to add extensions to existing surfaces, create parting surfaces, or add a drafted surface that follows selected reference geometry." translation="[ルールド]コマンドを使用すると、既存のサーフェスに延長を追加したり、パーティング面を作成したり、選択した参照ジオメトリに沿って勾配面を追加することができます。"/>
+	<label commandName="lclzRuledTipsAndTricksTips" devLabel="Adjust Type to create ruled surfaces normal or tangent to the face connected to the selected edges, or in a direction that you define." translation="[タイプ]を調整して、選択したエッジに接続されている面に垂直な、または接するルールド サーフェスを作成するか、定義した方向にルールド サーフェスを作成します。"/>
+	<label commandName="lclzRuledTipsAndTricksTitle" devLabel="Ruled Information" translation="[ルールド]に関する情報"/>
+	<label commandName="lclzStitchTipsAndTricksDesc" devLabel="Green indicates closed edges, whereas red indicates open edges." translation="緑はクローズ エッジ、赤はオープン エッジを示します。"/>
+	<label commandName="lclzStitchTipsAndTricksTips" devLabel="Select the surfaces to join." translation="結合するサーフェスを選択します。"/>
+	<label commandName="lclzStitchTipsAndTricksTitle" devLabel="Stitch Information" translation="[ステッチ]に関する情報"/>
+	<label commandName="lclzSurfacePatchTipsAndTricksDesc" devLabel="Use Patch to fill an open body with a new surface. Surfaces can be knit together using the Stitch tool." translation="開いているボディを新しいサーフェスで塗り潰すには、[パッチ]を使用します。[ステッチ]ツールを使用すると、複数のサーフェスをニットできます。"/>
+	<label commandName="lclzSurfacePatchTipsAndTricksTips" devLabel="Select the loop to patch then apply connected (G0), tangent (G1), and curvature (G2) boundary conditions." translation="パッチを作成するループを選択し、接続(G0)、接線(G1)、および曲率(G2)境界条件を適用します。"/>
+	<label commandName="lclzSurfacePatchTipsAndTricksTitle" devLabel="Patch Information" translation="[パッチ]に関する情報"/>
+	<label commandName="lclzSurfaceRevolve1" devLabel="Revolves a sketch profile or planar face around a selected axis." translation="選択した軸を中心にスケッチ プロファイルまたは平面を回転します。"/>
+	<label commandName="lclzSurfaceRevolve2" devLabel="Select the profile or planar face then select the axis of revolution." translation="プロファイルまたは平面を選択し、回転軸を選択します。"/>
+	<label commandName="lclzSurfaceRevolveTipsAndTricksDesc" devLabel="After selecting the profile and axis, you can select faces or points to set the angular value." translation="プロファイルおよび軸を選択した後は、面または点を選択して、角度の値を設定できます。"/>
+	<label commandName="lclzSurfaceRevolveTipsAndTricksTips" devLabel="Select the profile or planar face then select the axis of revolution." translation="プロファイルまたは平面を選択し、回転軸を選択します。"/>
+	<label commandName="lclzSurfaceRevolveTipsAndTricksTitle" devLabel="Revolve Information" translation="[回転]に関する情報"/>
+	<label commandName="lclzSurfaceShellConvertTipsAndTricksDesc" devLabel="A suface body itself will not be considered in simulation until it is transformed into a shell and given a thickness." translation="サーフェス ボディ自体は、シェルに変換されて厚みが与えられるまで、シミュレーションでは考慮されません。"/>
+	<label commandName="lclzSurfaceShellConvertTipsAndTricksTips" devLabel="Transform surface bodies into shells for Simulation." translation="シミュレーション用にサーフェス ボディをシェルに変換します。"/>
+	<label commandName="lclzSurfaceShellConvertTipsAndTricksTitle" devLabel="Shell from Surface Information" translation="サーフェス情報からのシェル"/>
+	<label commandName="lclzSurfaceSweep1" devLabel="Sweeps a sketch profile or planar face along a selected path." translation="選択したパスに沿ってスケッチ プロファイルまたは平面をスイープします。"/>
+	<label commandName="lclzSurfaceSweep2" devLabel="Select the profile then select the sweep path. The distance for the sweep is a decimal percentage of the selected path." translation="プロファイルを選択し、スイープ パスを選択します。スイープの距離は、選択したパスの十進数のパーセンテージで指定します。"/>
+	<label commandName="lclzSurfaceSweepTipsAndTricksDesc" devLabel="The distance for the sweep is a decimal percentage of the length of the path." translation="スイープの距離は、パスの長さに対して十進法の割合で指定します。"/>
+	<label commandName="lclzSurfaceSweepTipsAndTricksTips" devLabel="Select the profile and the sweep path." translation="プロファイルおよびスイープ パスを選択します。"/>
+	<label commandName="lclzSurfaceSweepTipsAndTricksTitle" devLabel="Sweep Information" translation="[スイープ]に関する情報"/>
+	<label commandName="lclzTrimTipsAndTricksDesc" devLabel="Surfaces to be trimmed will turn red." translation="トリムするサーフェスの色が赤に変わります。"/>
+	<label commandName="lclzTrimTipsAndTricksTips" devLabel="Select a plane or a sketch intersecting a surface as the cutting tool, then select the desired surface to trim." translation="カット ツールとして平面またはサーフェスと交差するスケッチを選択し、トリムする目的のサーフェスを選択します。"/>
+	<label commandName="lclzTrimTipsAndTricksTitle" devLabel="Trim Information" translation="[トリム]に関する情報"/>
+	<label commandName="lclzUnStitchTipsAndTricksTips" devLabel="Select the faces or bodies to unstitch." translation="ステッチ解除する面またはボディを選択します。"/>
+	<label commandName="lclzUnStitchTipsAndTricksTitle" devLabel="Unstitch Information" translation="[ステッチ解除]に関する情報"/>
+	<label commandName="lclzUntrimTipsAndTricksDesc" devLabel="For the Manual untrim type, hold Ctrl (Windows) or Command (MacOS) to suppress the preview and select multiple edges to untrim." translation="手動のトリム解除タイプの場合は、[Ctrl](Windows)または[Command](MacOS)を押しながらプレビューを省略し、トリム解除する複数のエッジを選択します。"/>
+	<label commandName="lclzUntrimTipsAndTricksTips" devLabel="Use Untrim to remove unwanted holes or extend and rebuild clean surface intersections." translation="不要な穴を除去したり、クリーンなサーフェスの交差を延長および再構築するには、[トリム解除]を使用します。"/>
+	<label commandName="lclzUntrimTipsAndTricksTitle" devLabel="Untrim Information" translation="[トリム解除]に関する情報"/>
+	<label commandName="lclzValidateTipsAndTricksTips" devLabel="Select the surfaces to check, specify a tolerance then select the type of validation to perform." translation="確認するサーフェスを選択して、許容差を指定し、実行する検証のタイプを選択します。"/>
+	<label commandName="lclzValidateTipsAndTricksTitle" devLabel="Validate Information" translation="[検証]に関する情報"/>
+	<label commandName="midsurfaceSelectSolid" devLabel="Select solid bodies to midsurface" translation="中間サーフェスへのソリッド ボディを選択"/>
+	<label commandName="offsetSelectSurface" devLabel="Select faces or surface bodies to offset" translation="オフセットする面またはサーフェス ボディを選択"/>
+	<label commandName="pInputSet" devLabel="Select objects to delete" translation="削除するオブジェクトを選択"/>
+	<label commandName="pInputSurfaceQuiltSet" devLabel="Select surface body" translation="サーフェス ボディを選択"/>
+	<label commandName="ruledSelectProfileNoSel" devLabel="Select edges" translation="エッジを選択"/>
+	<label commandName="ruledSelectProfileSel" devLabel="Adjust distance and angle or modify selection" translation="距離と角度を調整するか、選択を修正します"/>
+	<label commandName="unstitchSelectSurface" devLabel="Select bodies to unstitch" translation="ステッチ解除するボディを選択"/>
+</Resource>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+   <CommandDefinition Id="FusionSimulateInCFDCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="FusionSimulateInCFDCommandDefDesc1" _LCLZText="Launches your model in Autodesk CFD."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="FusionSimulateInCFDCommandDefDesc2" _LCLZText="Opens CFD and imports your model into a new file. Setup and run your CFD simulation using your verified geometry."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  
+  <CommandDefinition Id="FusionCFDModelAssessmentToolCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="FusionCFDModelAssessmentToolCommandDefDesc1" _LCLZText="Open in CFD Model Assessment Tool."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="FusionCFDModelAssessmentToolCommandDefDesc2" _LCLZText="Opens Autodesk CFD and imports your model into the Assessment Tool before creating a new Design Study."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>  
+
+   <CommandDefinition Id="FusionSimulateInMoldflowAdviserCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="FusionSimulateInMoldflowAdviserCommandDefDesc1" _LCLZText="Launches your model in Autodesk Moldflow Adviser."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="FusionSimulateInMoldflowAdviserCommandDefDesc2" _LCLZText="Opens Moldflow Adviser and imports your model into a new file. Setup and run your Moldflow simulation using your verified geometry."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  
+   <CommandDefinition Id="FusionSimulateInMoldflowInsightCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="FusionSimulateInMoldflowInsightCommandDefDesc1" _LCLZText="Launches your model in Autodesk Moldflow Insight."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="FusionSimulateInMoldflowInsightCommandDefDesc2" _LCLZText="Opens Moldflow Synergy and imports your model into a new file. Setup and run your Moldflow simulation using your verified geometry."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>  
+
+</CommandDefinitions>

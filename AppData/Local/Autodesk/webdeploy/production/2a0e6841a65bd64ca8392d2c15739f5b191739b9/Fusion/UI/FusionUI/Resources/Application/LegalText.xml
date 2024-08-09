@@ -1,0 +1,944 @@
+<html>
+  <body>
+    <font color="#DADADA">
+      <p>
+        <b>Autodesk Fusion 360 © 2020 Autodesk, Inc. All rights reserved.</b>
+      </p>
+      <p>
+        <b>
+          All use of this Software is subject to the terms and conditions of the Autodesk license agreement accepted upon installation of this Software and/or packaged with the Software.  Autodesk software license agreements for Autodesk’s various products can be found <a href="http://www.autodesk.com/company/legal-notices-trademarks/software-license-agreements"/>http://www.autodesk.com/company/legal-notices-trademarks/software-license-agreement</a>.
+        </b>
+      </p>
+
+      <p><b>Privacy</b></p>
+      <p>To learn more about Autodesk’s online and offline privacy practices, please see the <a href="http://www.autodesk.com/company/legal-notices-trademarks/privacy-statement">Autodesk Privacy Statement</a>
+      </p>
+
+      <p>
+        <b>Autodesk Trademarks</b>
+      </p>
+      <p>The trademarks on the <a href="http://www.autodesk.com/company/legal-notices-trademarks/trademarks/autodesk-inc">Autodesk Trademarks page</a> are registered trademarks or trademarks of Autodesk, Inc., and/or its subsidiaries and/or affiliates in the USA and/or other countries.
+      </p>
+      <p>
+        All other brand names, product names or trademarks belong to their respective holders.
+      </p>
+
+      <p>
+        <b>
+          Patents
+        </b>
+      </p>
+      <p>This Product or Service is protected by patents listed on the <a href="https://www.autodesk.com/company/legal-notices-trademarks/patents">Autodesk Patents</a> page.
+      </p>
+
+      <p>
+        <b>
+          Autodesk Cloud and Desktop Components
+        </b>
+      </p>
+      <p>This Product or Service may incorporate or use background Autodesk online and desktop technology components.  For information about these components, see <a href="https://www.autodesk.com/company/legal-notices-trademarks/autodesk-cloud-platform-components">Autodesk Cloud Platform Components</a> and <a href="https://www.autodesk.com/company/legal-notices-trademarks/autodesk-desktop-platform-components">Autodesk Desktop Platform Components</a>.
+      </p>
+
+      <p><b>Third-Party Trademarks, Software Credits and Attributions</b></p>
+      <p>
+        3DxSDK
+        </p>
+        <p>
+        3D input device development tools and related technology are provided under license from 3Dconnexion. © 3Dconnexion 1992 - 2013. All rights reserved.
+      </p>
+      <p>The Visualization Toolkit (VTK) </p>
+      <p>Copyright (c) 1993-2015 Ken Martin, Will Schroeder, Bill Lorensen</p>
+      <p> All rights reserved.</p>
+      <p></p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p>•Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+      <p>•Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p>•Neither name of Ken Martin, Will Schroeder, or Bill Lorensen nor the names of any contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+      <p></p>
+      <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHORS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p>Protobuf  </p>
+      <p>This license applies to all parts of Protocol Buffers except the following:</p>
+      <p>  - Atomicops support for generic gcc, located in src/google/protobuf/stubs/atomicops_internals_generic_gcc.h.</p>
+      <p>    This file is copyrighted by Red Hat Inc.</p>
+      <p></p>
+      <p>  - Atomicops support for AIX/POWER, located in src/google/protobuf/stubs/atomicops_internals_power.h.</p>
+      <p>    This file is copyrighted by Bloomberg Finance LP.</p>
+      <p></p>
+      <p>Copyright 2014, Google Inc.  All rights reserved.</p>
+      <p></p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p></p>
+      <p>    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+      <p>    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p>    * Neither the name of Google Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+      <p></p>
+      <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY</p>
+      <p>THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p>Code generated by the Protocol Buffer compiler is owned by the owner of the input file used when generating it.  This code is not standalone and requires a support library to be linked with it.  This support library is itself covered by the above license.</p>
+      <p></p>
+      <p>JsonCpp	</p>
+      <p>Copyright (c) 2007-2010 Baptiste Lepilleur</p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:   </p>
+      <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.   </p>
+      <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </p>
+      <p></p>
+      <p>Ibjson </p>
+      <p>Copyright 2010 Jonathan Wallace. All rights reserved.  </p>
+      <p></p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:  </p>
+      <p>1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.  </p>
+      <p>2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.  </p>
+      <p>THIS SOFTWARE IS PROVIDED BY JONATHAN WALLACE ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL JONATHAN WALLACE OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p></p>
+      <p>unittest++ </p>
+      <p>Copyright (c) 2006 Noel Llopis and Charles Nicholson</p>
+      <p></p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:   </p>
+      <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.   </p>
+      <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. </p>
+      <p></p>
+      <p>stb </p>
+      <p>Copyright (c) Jeff Roberts and others Authors. All rights reserved.</p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:   </p>
+      <p></p>
+      <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.   </p>
+      <p></p>
+      <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <p></p>
+      <p></p>
+      <p>QT 5.9.2</p>
+      <p>Copyright (C) 2017 The Qt Company Ltd.  This Autodesk software contains QT 5.9.2, as modified by Autodesk.  Qt is licensed under the GNU Lesser General Public License v.3, which can be found at https://www.gnu.org/licenses/lgpl-3.0.en.html.   A text copy of this license and GPL license is included on the media provided by Autodesk or with the download of this Autodesk software.  You may obtain a copy of the source code for QT 5.9.2, as modified by Autodesk, from www.autodesk.com/lgplsource or by sending a written request to:</p>
+      <p>Autodesk, Inc.</p>
+      <p>Attention:  General Counsel</p>
+      <p>Legal Department</p>
+      <p>111 McInnis Parkway</p>
+      <p>San Rafael, CA 94903</p>
+      <p>Your written request must:</p>
+      <p>1.       Contain a self-addressed CD/DVD mailer (or envelope sufficiently large to hold a DVD) with postage sufficient to cover the amount of the current U.S. Post Office First Class postage rate for CD/DVD mailers (or the envelope you have chosen) weighing 5 ounces from San Rafael, California USA to your indicated address; and</p>
+      <p>2.       Identify:</p>
+      <p>a.       This Autodesk software name and release number;</p>
+      <p>b.       That you are requesting the source code for QT 5.9.2, as modified by Autodesk; and</p>
+      <p>c.        The above URL (www.autodesk.com/lgplsource)</p>
+      <p>So that Autodesk may properly respond to your request.  The offer to receive this Qt source code via the above URL (www.autodesk.com/lgplsource) or by written request to Autodesk is valid for a period of three (3) years from the date you purchased your license to this Autodesk software. </p>
+      <p>You may modify, debug and relink Qt to this Autodesk software as provided under the terms of the GNU Lesser General Public License v.3.</p>
+      <p></p>
+      <p>Qt MFC Migration Framework </p>
+      <p>Copyright (c) 2009 Nokia Corporation and/or its subsidiary(-ies). This Autodesk software contains Qt MFC Migration Framework v.2.8, as modified by Autodesk, Inc..  Qt MFC Migration Framework is licensed under the GNU Lesser General Public License v.2.1, which can be found at http://www.gnu.org/licenses/old-licenses/lgpl-2.1.txt.   A text copy of this license is included on the media provided by Autodesk or with the download of this Autodesk software.  You may obtain a copy of the source code for Qt MFC Migration Framework v.2.8, as modified by Autodesk, Inc., from www.autodesk.com/lgplsource or by sending a written request  to:</p>
+      <p>Autodesk, Inc.</p>
+      <p>Attention:  General Counsel</p>
+      <p>Legal Department</p>
+      <p>111 McInnis Parkway</p>
+      <p>San Rafael, CA 94903</p>
+      <p>Your written request must:</p>
+      <p>1. Contain a self-addressed CD/DVD mailer (or envelope sufficiently large to hold a DVD) with postage sufficient to cover the amount of the current U.S. Post Office First Class postage rate for CD/DVD mailers (or the envelope you have chosen) weighing  5 ounces from San Rafael, California USA to your indicated address; and</p>
+      <p>2. Identify:</p>
+      <p>a. This Autodesk software name and release number;</p>
+      <p>b. That you are requesting the source code for Qt MFC Migration Framework v.2.8, as modified by Autodesk, Inc.; and</p>
+      <p>c. The above URL (www.autodesk.com/lgplsource)</p>
+      <p>so that Autodesk may properly respond to your request.  The offer to receive this Qt MFC Migration Framework source code, as modified by Autodesk, Inc., via the above URL (www.autodesk.com/lgplsource) or by written request to Autodesk is valid for a period of three (3) years from the date you purchased your license to this Autodesk software. </p>
+      <p>You may modify, debug and relink Qt MFC Migration Framework to this Autodesk software as provided under the terms of the GNU Lesser General Public License v.2.1.</p>
+      <p></p>
+      <p>Log4CPLUS </p>
+      <p>Copyright (C) 1999--2009 Contributors to log4cplus project. All rights reserved.   </p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: </p>
+      <p>   1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.   </p>
+      <p>   2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.    </p>
+      <p>THIS SOFTWARE IS PROVIDED ``AS IS'' AND ANY EXPRESSED OR IMPLIED    WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES    OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE    DISCLAIMED.  IN NO EVENT SHALL THE APACHE SOFTWARE FOUNDATION OR   ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,   SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT    LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF    USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND    ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p>OpenSSL</p>
+      <p>Copyright (c) 1998-2018 The OpenSSL Project. All rights reserved.</p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p>1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+      <p>2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p>3. All advertising materials mentioning features or use of this software must display the following acknowledgment: "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)"</p>
+      <p>4. The names "OpenSSL Toolkit" and "OpenSSL Project" must not be used to endorse or promote products derived from this software without prior written permission. For written permission, please contact openssl-core@openssl.org.</p>
+      <p>5. Products derived from this software may not be called "OpenSSL" nor may "OpenSSL" appear in their names without prior written permission of the OpenSSL Project.</p>
+      <p>6. Redistributions of any form whatsoever must retain the following acknowledgment:</p>
+      <p>* "This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/)"</p>
+      <p>THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE OpenSSL PROJECT OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p>=========================================================</p>
+      <p>This product includes cryptographic software written by Eric Young(eay@cryptsoft.com). This product includes software written by Tim Hudson (tjh@cryptsoft.com).</p>
+      <p>Original SSLeay License</p>
+      <p>-----------------------</p>
+      <p>Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com) All rights reserved.</p>
+      <p>This package is an SSL implementation written by Eric Young (eay@cryptsoft.com).</p>
+      <p>* The implementation was written so as to conform with Netscapes SSL.</p>
+      <p>This library is free for commercial and non-commercial use as long as the following conditions are aheared [sic] to. The following conditions apply to all code found in this distribution, be it the RC4, RSA, lhash, DES, etc., code; not just the SSL code. The SSL documentation included with this distribution is covered by the same copyright terms except that the holder is Tim Hudson (tjh@cryptsoft.com). Copyright remains Eric Young's, and as such any Copyright notices in the code are not to be removed. If this package is used in a product, Eric Young should be given attribution as the author of the parts of the library used. This can be in the form of a textual message at program startup or in documentation (online or textual) provided with the package.</p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p>1. Redistributions of source code must retain the copyright notice, this list of conditions and the following disclaimer.</p>
+      <p>2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p>3. All advertising materials mentioning features or use of this software must display the following acknowledgement: "This product includes cryptographic software written by Eric Young (eay@cryptsoft.com)" The word 'cryptographic' can be left out if the rouines [sic] from the library being used are not cryptographic related :-).</p>
+      <p>4. If you include any Windows specific code (or a derivative thereof) from the apps directory (application code) you must include an acknowledgement: "This product includes software written by Tim Hudson (tjh@cryptsoft.com)"</p>
+      <p>THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. The licence and distribution terms for any publicly available version or derivative of this code cannot be changed. i.e. this code cannot simply be copied and put under another distribution licence [including the GNU Public Licence.]</p>
+      <p></p>
+      <p>Atob</p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <p></p>
+      <p>json-schema </p>
+      <p>Copyright Kris Zyp</p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p>1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+      <p>2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p>3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+      <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p>Razor</p>
+      <p>Boost Software License - Version 1.0 - August 17th, 2003</p>
+      <p>Permission is hereby granted, free of charge, to any person or organization obtaining a copy of the software and accompanying documentation covered by this license (the ""Software"") to use, reproduce, display, distribute, execute, and transmit the Software, and to prepare derivative works of the Software, and to permit third-parties to whom the Software is furnished to</p>
+      <p>do so, all subject to the following: The copyright notices in the Software and this entire statement, including the above license grant, this restriction and the following disclaimer, must be included in all copies of the Software, in whole or in part, and all derivative works of the Software, unless such copies or derivative works are solely in the form of machine-executable object code generated bya source language processor.</p>
+      <p>THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."</p>
+      <p></p>
+      <p>Intel® Threading Building Blocks </p>
+      <p>Copyright (C) 2005-2016 Intel Corporation.  All Rights Reserved.</p>
+      <p></p>
+      <p>domelementtype </p>
+      <p>Copyright (c) Felix Böhm</p>
+      <p>All rights reserved.</p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+      <p>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p>THIS IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p>amdefine </p>
+      <p>Copyright (c) 2011-2016, The Dojo Foundation</p>
+      <p>All rights reserved.</p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ""Software""), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+      <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+      <p>THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <p></p>
+      <p>domutils </p>
+      <p>Copyright (c) Felix Böhm</p>
+      <p>All rights reserved.</p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+      <p>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p>THIS IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </p>
+      <p>FFmpeg</p>
+      <p>Copyright (c) 2000-2003 Fabrice Bellard.  This software contains part of FFmpeg v.0.10.3 (not modified).  FFmpeg is licensed under the GNU Lesser General Public License v.2.1, which can be found at http://www.gnu.org/licenses/old-licenses/lgpl-2.1.html.  A text copy of this license and GPL license is included on the media provided by Autodesk or with the download of this Autodesk software.  You may obtain a copy of the source code for FFmpeg v.0.10.3 from www.autodesk.com/lgplsource or by sending a written request to:</p>
+      <p>Autodesk, Inc.</p>
+      <p>Attention:  General Counsel</p>
+      <p>Legal Department</p>
+      <p>111 McInnis Parkway</p>
+      <p>San Rafael, CA 94903</p>
+      <p>Your written request must:</p>
+      <p>1.	Contain a self-addressed CD/DVD mailer (or envelope sufficiently large to hold a DVD) with postage sufficient to cover the amount of the current U.S. Post Office First Class postage rate for CD/DVD mailers (or the envelope you have chosen) weighing 5 ounces from San Rafael, California USA to your indicated address; and</p>
+      <p>2.	Identify:</p>
+      <p>a.	This Autodesk software name and release number;</p>
+      <p>b.	That you are requesting the source code for FFmpeg v.0.10.3; and</p>
+      <p>c.	The above URL (www.autodesk.com/lgplsource)</p>
+      <p>So that Autodesk may properly respond to your request.  The offer to receive this FFmpeg source code via the above URL (www.autodesk.com/lgplsource) or by written request to Autodesk is valid for a period of three (3) years from the date you purchased your license to this Autodesk software. </p>
+      <p>You may modify, debug and relink FFmpeg to this Autodesk software as provided under the terms of the GNU Lesser General Public License v.2.1.</p>
+      <p>rc</p>
+      <p>Copyright (c) 2011 Dominic Tarr</p>
+      <p>Licensed under the Apache License, Version 2.0 (the ""License""); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+      <p>    http://www.apache.org/licenses/LICENSE-2.0</p>
+      <p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+      <p></p>
+      <p>lib3ds v1.3.0</p>
+      <p>This Autodesk software contains lib3ds v1.3.0 (not modified).  lib3ds is licensed under the GNU Lesser General Public License v.3, which can be found at https://www.gnu.org/licenses/lgpl-3.0.en.html.   A text copy of this license and GPL license is included on the media provided by Autodesk or with the download of this Autodesk software.  You may obtain a copy of the source code for lib3ds from www.autodesk.com/lgplsource or by sending a written request to:</p>
+      <p>Autodesk, Inc.</p>
+      <p>Attention:  General Counsel</p>
+      <p>Legal Department</p>
+      <p>111 McInnis Parkway</p>
+      <p>San Rafael, CA 94903</p>
+      <p>Your written request must:</p>
+      <p>1.	Contain a self-addressed CD/DVD mailer (or envelope sufficiently large to hold a DVD) with postage sufficient to cover the amount of the current U.S. Post Office First Class postage rate for CD/DVD mailers (or the envelope you have chosen) weighing 5 ounces from San Rafael, California USA to your indicated address; and</p>
+      <p>2.	Identify:</p>
+      <p>a.	This Autodesk software name and release number;</p>
+      <p>b.	That you are requesting the source code for lib3ds v1.3.0; and</p>
+      <p>c.	The above URL (www.autodesk.com/lgplsource)</p>
+      <p>So that Autodesk may properly respond to your request.  The offer to receive this lib3ds source code via the above URL (www.autodesk.com/lgplsource) or by written request to Autodesk is valid for a period of three (3) years from the date you purchased your license to this Autodesk software. </p>
+      <p>You may modify, debug and relink lib3ds to this Autodesk software as provided under the terms of the GNU Lesser General Public License v.3."</p>
+      <p></p>
+      <p>Qt Library 5.9.4</p>
+      <p>© 2018 The Qt Company. </p>
+      <p>This Autodesk software contains Qt v.5.9.4 (not modified).  Qt is licensed under the GNU Lesser General Public License v.3, which can be found at https://www.gnu.org/licenses/lgpl-3.0.en.html.   A text copy of this license and GPL license is included on the media provided by Autodesk or with the download of this Autodesk software.  You may obtain a copy of the source code for Qt v. 5.9.4 from www.autodesk.com/lgplsource or by sending a written request to:</p>
+      <p>Autodesk, Inc.</p>
+      <p>Attention:  General Counsel</p>
+      <p>Legal Department</p>
+      <p>111 McInnis Parkway</p>
+      <p>San Rafael, CA 94903</p>
+      <p>Your written request must:</p>
+      <p>1.	Contain a self-addressed CD/DVD mailer (or envelope sufficiently large to hold a DVD) with postage sufficient to cover the amount of the current U.S. Post Office First Class postage rate for CD/DVD mailers (or the envelope you have chosen) weighing 5 ounces from San Rafael, California USA to your indicated address; and</p>
+      <p>2.	Identify:</p>
+      <p>a.	This Autodesk software name and release number;</p>
+      <p>b.	That you are requesting the source code for Qt v. 5.9.4; and</p>
+      <p>c.	The above URL (www.autodesk.com/lgplsource)</p>
+      <p>So that Autodesk may properly respond to your request.  The offer to receive this Qt source code via the above URL (www.autodesk.com/lgplsource) or by written request to Autodesk is valid for a period of three (3) years from the date you purchased your license to this Autodesk software. </p>
+      <p>You may modify, debug and relink Qt to this Autodesk software as provided under the terms of the GNU Lesser General Public License v.3.</p>
+      <p></p>
+      <p></p>
+      <p>Chromium </p>
+      <p>Copyright (c) 2013 The Chromium Authors. All rights reserved.</p>
+      <p></p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p>* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+      <p>* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p>* Neither the name of Google Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+      <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p>Apple Webkit </p>
+      <p>Copyright (C) 2005, 2006, 2007, 2008, 2009 Apple Inc. All rights reserved.</p>
+      <p></p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p>1.  Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+      <p>2.  Redistributions in binary form must reproduce the above copyright   notice, this list of conditions and the following disclaimer in the    documentation and/or other materials provided with the distribution.</p>
+      <p>THIS SOFTWARE IS PROVIDED BY APPLE INC. AND ITS CONTRIBUTORS ``AS IS'' AND ANYEXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED</p>
+      <p>WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE</p>
+      <p>DISCLAIMED. IN NO EVENT SHALL APPLE INC. OR ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p>libpng versions 1.2.6, August 15, 2004, through 1.5.12, July 11, 2012, are</p>
+      <p>Copyright (c) 2004, 2006-2012 Glenn Randers-Pehrson, and are distributed according to the same disclaimer and license as libpng-1.2.5 with the following individual added to the list of Contributing Authors Cosmin Truta</p>
+      <p>libpng versions 1.0.7, July 1, 2000, through 1.2.5 - October 3, 2002, are</p>
+      <p>Copyright (c) 2000-2002 Glenn Randers-Pehrson, and are distributed according to the same disclaimer and license as libpng-1.0.6 with the following individuals added to the list of Contributing Authors Simon-Pierre Cadieux</p>
+      <p>Eric S. Raymond, Gilles Vollant and with the following additions to the disclaimer:</p>
+      <p>There is no warranty against interference with your enjoyment of the library or against infringement. There is no warranty that our efforts or the library will fulfill any of your particular purposes or needs. This library is provided with all faults, and the entire risk of satisfactory quality, performance, accuracy, and effort is with the user.</p>
+      <p>libpng versions 0.97, January 1998, through 1.0.6, March 20, 2000, are</p>
+      <p>Copyright (c) 1998, 1999 Glenn Randers-Pehrson, and are distributed according to the same disclaimer and license as libpng-0.96, with the following individuals added to the list of Contributing Authors:</p>
+      <p>Tom Lane</p>
+      <p>Glenn Randers-Pehrson</p>
+      <p>Willem van Schaik</p>
+      <p>libpng versions 0.89, June 1996, through 0.96, May 1997, are</p>
+      <p>Copyright (c) 1996, 1997 Andreas Dilger</p>
+      <p>Distributed according to the same disclaimer and license as libpng-0.88,</p>
+      <p>with the following individuals added to the list of Contributing Authors:</p>
+      <p>John Bowler</p>
+      <p>Kevin Bracey</p>
+      <p>Sam Bushell</p>
+      <p>Magnus Holmgren</p>
+      <p>Greg Roelofs</p>
+      <p>Tom Tanner</p>
+      <p>libpng versions 0.5, May 1995, through 0.88, January 1996, are</p>
+      <p>Copyright (c) 1995, 1996 Guy Eric Schalnat, Group 42, Inc.</p>
+      <p>For the purposes of this copyright and license, "Contributing Authors"</p>
+      <p>is defined as the following set of individuals:</p>
+      <p>Andreas Dilger</p>
+      <p>Dave Martindale</p>
+      <p>Guy Eric Schalnat</p>
+      <p>Paul Schmidt</p>
+      <p>Tim Wegner</p>
+      <p>The PNG Reference Library is supplied "AS IS". The Contributing Authors</p>
+      <p>and Group 42, Inc. disclaim all warranties, expressed or implied, including, without limitation, the warranties of merchantability and of fitness for any purpose. The Contributing Authors and Group 42, Inc. assume no liability for direct, indirect, incidental, special, exemplary, or consequential damages, which may result from the use of the PNG Reference Library, even if advised of the possibility of such damage.</p>
+      <p>Permission is hereby granted to use, copy, modify, and distribute this source code, or portions hereof, for any purpose, without fee, subject to the following restrictions:</p>
+      <p>1. The origin of this source code must not be misrepresented.</p>
+      <p>2. Altered versions must be plainly marked as such and must not be misrepresented as being the original source.</p>
+      <p>3. This Copyright notice may not be removed or altered from any source or altered source distribution.</p>
+      <p>The Contributing Authors and Group 42, Inc. specifically permit, without fee, and encourage the use of this source code as a component to supporting the PNG file format in commercial products. If you use this source code in a product, acknowledgment is not required but would be appreciated.</p>
+      <p></p>
+      <p>Except where otherwise noted in the source code (e.g. the files hash.c, list.c and the trio files, which are covered by a similar licence but with different Copyright notices) all the files related to libxml are: Copyright (C) 1998-2003 Daniel Veillard.  All Rights Reserved. Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE DANIEL VEILLARD BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CON NECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. Except as contained in this notice, the name of Daniel Veillard shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization from him.</p>
+      <p></p>
+      <p>Mozjs is the Mozilla Javascript engine, which is bundled into CAMPOST.</p>
+      <p>Mozilla JavaScript library are Copyright (c) 1998 Netscape Communications Corporation. All Rights Reserved. Copyright (c) 1998-2004 by Contributors to the Mozilla codebase. All Rights Reserved.</p>
+      <p>The contents of this file are not modified and subject to the Mozilla Public License Version 1.1 (the 'License'); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.mozilla.org/MPL/</p>
+      <p>Software distributed under the License is distributed on an 'AS IS' basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License for the specific language governing rights and limitations under the License.</p>
+      <p></p>
+      <p>CASABLANCA</p>
+      <p>Copyright (c) Microsoft Corporation. All rights reserved.  Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+      <p></p>
+      <p>CMake </p>
+      <p>Copyright © 2000-2014 Kitware, Inc., Copyright © 2000-2011 Insight Software Consortium.  All rights reserved.</p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p>* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+      <p>* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p>* Neither the names of Kitware, Inc., the Insight Software Consortium, nor the names of their contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+      <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p></p>
+      <p>CX_FREEZE</p>
+      <p>Copyright © 2007-2013, Anthony Tuininga.</p>
+      <p>Copyright © 2001-2006, Computronix (Canada) Ltd., Edmonton, Alberta, Canada.</p>
+      <p>All rights reserved.</p>
+      <p>1.	This LICENSE AGREEMENT is between the copyright holders and the Individual or Organization (“Licensee”) accessing and otherwise using cx_Freeze software in source or binary form and its associated documentation.</p>
+      <p>2.	Subject to the terms and conditions of this License Agreement, the copyright holders hereby grant Licensee a nonexclusive, royalty-free, world-wide license to reproduce, analyze, test, perform and/or display publicly, prepare derivative works, distribute, and otherwise use cx_Freeze alone or in any derivative version, provided, however, that this License Agreement and this notice of copyright are retained in cx_Freeze alone or in any derivative version prepared by Licensee.</p>
+      <p>3.	In the event Licensee prepares a derivative work that is based on or incorporates cx_Freeze or any part thereof, and wants to make the derivative work available to others as provided herein, then Licensee hereby agrees to include in any such work a brief summary of the changes made to cx_Freeze.</p>
+      <p>4.	The copyright holders are making cx_Freeze available to Licensee on an “AS IS” basis. THE COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT NOT LIMITATION, THE COPYRIGHT HOLDERS MAKE NO AND DISCLAIM ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF CX_FREEZE WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.</p>
+      <p>5.	THE COPYRIGHT HOLDERS SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF CX_FREEZE FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING CX_FREEZE, OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.</p>
+      <p>6.	This License Agreement will automatically terminate upon a material breach of its terms and conditions.</p>
+      <p>7.	Nothing in this License Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between the copyright holders and Licensee. This License Agreement does not grant permission to use copyright holder’s trademarks or trade name in a trademark sense to endorse or promote products or services of Licensee, or any third party.</p>
+      <p>8.	By copying, installing or otherwise using cx_Freeze, Licensee agrees to be bound by the terms and conditions of this License Agreement."</p>
+      <p></p>
+      <p></p>
+      <p>NVIDIA Texture Tools is licensed under the MIT license.</p>
+      <p>Copyright (c) 2009-2016 Ignacio Castano</p>
+      <p>Copyright (c) 2007-2009 NVIDIA Corporation</p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  </p>
+      <p></p>
+      <p>Copyright [yyyy] ImageMagick Studio LLC </p>
+      <p>   Licensed under the ImageMagick License (the ""License""); you may not use</p>
+      <p>   this file except in compliance with the License.  You may obtain a copy</p>
+      <p>   of the License at http://www.imagemagick.org/script/license.php</p>
+      <p></p>
+      <p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an ""AS IS"" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the    License for the specific language governing permissions and limitations under the License."</p>
+      <p></p>
+      <p>dir_moniter</p>
+      <p>Licensed under Boost Software License. </p>
+      <p></p>
+      <p>Intel® OpenMP Runtime library is licensed under BSD license. </p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p>1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+      <p>2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p>3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+      <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS ""AS IS"" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p>Intel® Math Kernel Library (www.intel.com/software/products/mkl) </p>
+      <p>Copyright ©2010-2015 Intel Corporation. All rights reserved.</p>
+      <p></p>
+      <p></p>
+      <p>FEACS</p>
+      <p>Copyright (c) 2007-2010 Baptiste Lepilleur</p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the ""Software""), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:  </p>
+      <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. </p>
+      <p>THE SOFTWARE IS PROVIDED ""AS IS"", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <p></p>
+      <p></p>
+      <p>Htmltopdf</p>
+      <p>This Autodesk software contains wkhtmltopdf v0.12.5 (unmodified).  wkhtmltopdf is licensed under the GNU Lesser General Public License v.3, which can be found at https://www.gnu.org/licenses/lgpl.html.   A text copy of this license is included on the media or with the download of this Autodesk software.  You may obtain a copy of the source code for wkhtmltopdf v0.12.5 from www.autodesk.com/lgplsource or by sending a written request to:</p>
+      <p>Autodesk, Inc.</p>
+      <p>Attention:  General Counsel</p>
+      <p>Legal Department</p>
+      <p>111 McInnis Parkway</p>
+      <p>San Rafael, CA 94903</p>
+      <p>Your written request must:</p>
+      <p>1. Contain a self-addressed CD/DVD mailer (or envelope sufficiently large to hold a DVD) with postage sufficient to cover the amount of the current U.S. Post Office First Class postage rate for CD/DVD mailers (or the envelope you have chosen) weighing 5 ounces from San Rafael, California USA to your indicated address; and</p>
+      <p>2. Identify:</p>
+      <p>a. This Autodesk software name and release number;</p>
+      <p>b. That you are requesting the source code for wkhtmltopdf v0.12.5; and</p>
+      <p>c. The above URL (www.autodesk.com/lgplsource)</p>
+      <p>so that Autodesk may properly respond to your request.  The offer to receive this wkhtmltopdf v0.12.5 source code via the above URL (www.autodesk.com/lgplsource) or by written request to Autodesk is valid for a period of three (3) years from the date you purchased your license to this Autodesk software.</p>
+      <p>You may modify, debug and relink wkhtmltopdf to this Autodesk software as provided under the terms of the GNU Lesser General Public License v.3.</p>
+      <p></p>
+      <p>libcurl</p>
+      <p>
+        Copyright (c) 1996 - 2015, Daniel Stenberg, <daniel@haxx.se>. All rights reserved.</p>
+      <p> </p>
+      <p>Permission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.  </p>
+      <p>Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.</p>
+      <p></p>
+      <p>Jansson </p>
+      <p>Copyright (c) 2009-2014 Petri Lehtinen petri@digip.org </p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <p></p>
+      <p>LIBWEBSOCKETS</p>
+      <p>Copyright (c) 2013-2014 Aymeric Augustin. All rights reserved.</p>
+      <p></p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: </p>
+      <p>    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. </p>
+      <p>    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p>    * Neither the name of websockets nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+      <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p>three.js </p>
+      <p>Copyright &copy; 2010-2014 three.js authors</p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <p></p>
+      <p></p>
+      <p>MACHINEWORKS</p>
+      <p>MachineWorks technology (c) MachineWorks Ltd. 1990–2012. All rights reserved.</p>
+      <p></p>
+      <p>NASTRAN is a registered trademark of the National Aeronautics and Space Administration.</p>
+      <p></p>
+      <p>PCGLSS 8.0, Copyright © 1992-2014, Computational Applications and System Integration Inc. All rights reserved.</p>
+      <p></p>
+      <p>MG-TETRA (Copyright © 1989-2016 by Distene SAS & Inria)</p>
+      <p></p>
+      <p></p>
+      <p>OpenCV © Copyright 2014, Itseez.</p>
+      <p></p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p>•Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+      <p>•Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p>•Neither the names of the copyright holders nor the names of the contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+      <p>This software is provided by the copyright holders and contributors “as is” and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall copyright holders or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.</p>
+      <p></p>
+      <p></p>
+      <p>PUBNUB C SDK</p>
+      <p>PubNub Real-time Cloud-Hosted Push API and Push Notification Client Frameworks  </p>
+      <p>Copyright (c) 2013 PubNub Inc.  </p>
+      <p>http://www.pubnub.com/  </p>
+      <p>http://www.pubnub.com/terms  </p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.  THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <p></p>
+      <p>PYLIB_COMTYPES </p>
+      <p>Copyright (c) 2006-2013, Thomas Heller.</p>
+      <p>Copyright (c) 2014, Comtypes Developers. All rights reserved.</p>
+      <p></p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <p></p>
+      <p></p>
+      <p>PYTHON</p>
+      <p>PYTHON SOFTWARE FOUNDATION LICENSE VERSION 2</p>
+      <p></p>
+      <p>1. This LICENSE AGREEMENT is between the Python Software Foundation ("PSF"), and the Individual or Organization ("Licensee") accessing and otherwise using this software ("Python") in source or binary form and its associated documentation.</p>
+      <p></p>
+      <p>2. Subject to the terms and conditions of this License Agreement, PSF hereby grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce, analyze, test, perform and/or display publicly, prepare derivative works, distribute, and otherwise use Python alone or in any derivative version, provided, however, that PSF's License Agreement and PSF's notice of copyright, i.e., "Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012 Python Software Foundation; All Rights Reserved" are retained in Python alone or in any derivative version prepared by Licensee.</p>
+      <p></p>
+      <p>3. In the event Licensee prepares a derivative work that is based on or incorporates Python or any part thereof, and wants to make the derivative work available to others as provided herein, then Licensee hereby agrees to include in any such work a brief summary of the changes made to Python.</p>
+      <p></p>
+      <p>4. PSF is making Python available to Licensee on an "AS IS" basis. PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED. BY WAY OF EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.</p>
+      <p></p>
+      <p>5. PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON, OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.</p>
+      <p></p>
+      <p>6. This License Agreement will automatically terminate upon a material breach of its terms and conditions.</p>
+      <p></p>
+      <p>7. Nothing in this License Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between PSF and Licensee. This License Agreement does not grant permission to use PSF trademarks or trade name in a trademark sense to endorse or promote products or services of Licensee, or any third party.</p>
+      <p></p>
+      <p>8. By copying, installing or otherwise using Python, Licensee agrees to be bound by the terms and conditions of this License Agreement.</p>
+      <p></p>
+      <p>Qt v.5.5.0</p>
+      <p>Copyright (C) 2015 The Qt Company Ltd.  This Autodesk software contains Qt v.5.5.0, as modified by Autodesk.  Qt is licensed under the GNU Lesser General Public License v.3, which can be found at https://www.gnu.org/licenses/lgpl-3.0.en.html.   A text copy of this license and GPL license is included on the media provided by Autodesk or with the download of this Autodesk software.  You may obtain a copy of the source code for Qt v. 5.5.0, as modified by Autodesk, from www.autodesk.com/lgplsource or by sending a written request to:</p>
+      <p>Autodesk, Inc.</p>
+      <p>Attention:  General Counsel</p>
+      <p>Legal Department</p>
+      <p>111 McInnis Parkway</p>
+      <p>San Rafael, CA 94903</p>
+      <p>Your written request must:</p>
+      <p>1.	Contain a self-addressed CD/DVD mailer (or envelope sufficiently large to hold a DVD) with postage sufficient to cover the amount of the current U.S. Post Office First Class postage rate for CD/DVD mailers (or the envelope you have chosen) weighing 5 ounces from San Rafael, California USA to your indicated address; and</p>
+      <p>2.	Identify:</p>
+      <p>a.	This Autodesk software name and release number;</p>
+      <p>b.	That you are requesting the source code for Qt v. 5.5.0, as modified by Autodesk; and</p>
+      <p>c.	The above URL (www.autodesk.com/lgplsource)</p>
+      <p>so that Autodesk may properly respond to your request.  The offer to receive this Qt source code via the above URL (www.autodesk.com/lgplsource) or by written request to Autodesk is valid for a period of three (3) years from the date you purchased your license to this Autodesk software. </p>
+      <p>You may modify, debug and relink Qt to this Autodesk software as provided under the terms of the GNU Lesser General Public License v.3.</p>
+      <p></p>
+      <p></p>
+      <p>libcurl </p>
+      <p>
+        Copyright (c) 1996 - 2011, Daniel Stenberg, <daniel@haxx.se>. All rights reserved.</p>
+      <p>Permission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.</p>
+      <p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <p> </p>
+      <p>Except as contained in this notice, the name of a copyright holder shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization of the copyright holder.</p>
+      <p></p>
+      <p>libOAuth </p>
+      <p>Copyright 2007-2012 Robin Gareus</p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <p></p>
+      <p>V8</p>
+      <p>Copyright 2014, the V8 project authors. All rights reserved.</p>
+      <p> </p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p>  </p>
+      <p>    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+      <p>     * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p>     * Neither the name of Google Inc. nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+      <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY  </p>
+      <p>THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p>This Autodesk software contains Eigen 3.3.4.  Eigen is licensed under the Mozilla Public License v.2.0, which can be found at http://www.mozilla.org/MPL/2.0/.   A text copy of this license and the source code for Eigen v.3.3.4 (and modifications made by Autodesk, if any) can be found at the Autodesk website www.autodesk.com/lgplsource.  </p>
+      <p></p>
+      <p></p>
+      <p>XERCES</p>
+      <p>copyright 1999-2010 The Apache Software Foundation.  Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0.  Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+      <p></p>
+      <p>LaunchDarkly</p>
+      <p>Copyright 2015 Catamorphic, Co.</p>
+      <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License.</p>
+      <p>You may obtain a copy of the License at</p>
+      <p>    http://www.apache.org/licenses/LICENSE-2.0</p>
+      <p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</p>
+      <p>See the License for the specific language governing permissions and limitations under the License.</p>
+      <p></p>
+      <p></p>
+      <p>D3</p>
+      <p>Copyright 2010-2017 Mike Bostock </p>
+      <p>All rights reserved. </p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: </p>
+      <p>* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. </p>
+      <p>* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. </p>
+      <p>* Neither the name of the author nor the names of contributors may be used to</p>
+      <p>endorse or promote products derived from this software without specific prior written permission. </p>
+      <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p>OpenSans </p>
+      <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+      <p>http://www.apache.org/licenses/LICENSE-2.0</p>
+      <p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+      <p></p>
+      <p>JQuery </p>
+      <p>Copyright 2019 The jQuery Foundation.</p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES</p>
+      <p>OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+
+      <p>The following components are licensed under Apache 2.0 License:</p>
+
+      <p>spdx-correct, validate-npm-package-license are Copyright Kyle E. Mitchell &lt;kyle@kemitchell.com&gt; (https://kemitchell.com)</p>
+      <p>aws-sign2, caseless, forever-agent, oauth-sign, request, tunnel-agent are Copyright Mikeal Rogers <mikeal.rogers@gmail.com> (http://www.futurealoof.com)</p>
+
+      <p>Licensed under the Apache License, Version 2.0 (the “License”); you may not use this file except in compliance with the License.  You may obtain a copy of the License at</p>
+
+      <p>http://www.apache.org/licenses/LICENSE-2.0</p>
+
+      <p>Unless required by applicable law or agreed to in writing, software    distributed under the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.    See the License for the specific language governing permissions and    limitations under the License.</p>
+
+      <p>The following components are licensed under ISC License:</p>
+
+      <p>abbrev is Copyright Isaac Z. Schlueter and Contributors</p>
+      <p>browser-stdout is Copyright 2018 kumavis</p>
+      <p>cliui, y18n are Copyright (c) 2015, Contributors</p>
+      <p>fs.realpath, glob, ini, lru-cache, minimatch, nopt, once, proto-list, pseudomap, semver, sigmund, wrappy, json-stringify-safe, rimraf are Copyright (c) Isaac Z. Schlueter and Contributors</p>
+      <p>get-caller-file is Copyright (c)  Stefan Penner (http://iamstef.net/)</p>
+      <p>graceful-fs is Copyright (c) Isaac Z. Schlueter, Ben Noordhuis, and Contributors</p>
+      <p>hosted-git-info is Copyright (c) 2015, Rebecca Turner</p>
+      <p>inflight, inherits are Copyright (c) Isaac Z. Schlueter</p>
+      <p>require-main-filename, set-blocking, which-module, yargs-parser are Copyright (c) 2016, Contributors</p>
+      <p>har-validator, har-schema are Copyright (c) 2015, Ahmad Nassri &lt;ahmad@ahmadnassri.com&gt;</p>
+      <p>ini, json-stringify-safe, sax are Copyright (c) Isaac Z. Schlueter and Contributors</p>
+      <p>setprototypeof is Copyright (c) 2015, Wes Todd</p>
+
+      <p>Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+      <p>THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
+
+      <p>The following components are licensed under BSD 2-Clause License:</p>
+
+      <p>normalize-package-data is Copyright (c) Meryn Stol ("Author") All rights reserved.</p>
+
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+      2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+
+      <p>The following components are licensed under BSD 3-Clause License:</p>
+
+      <p>diff is Copyright (c) 2009-2015, Kevin Decker &lt;kpdecker@gmail.com&gt;</p>
+      <p>bcrypt-pbkdf is Copyright 1997 Niels Provos &lt;provos@physnet.uni-hamburg.de&gt; All rights reserved. Implementation advice by David Mazieres &lt;dm@lcs.mit.edu&gt;.</p>
+      <p>boom is Copyright (c) 2012-2017, Project contributors. Copyright (c) 2012-2014, Walmart. All rights reserved.</p>
+      <p>cryptiles is Copyright (c) 2014-2017, Eran Hammer and Project contributors. All rights reserved.</p>
+      <p>hawk is Copyright (c) 2012-2017, Eran Hammer and Project contributors. All rights reserved.</p>
+      <p>hoek is Copyright (c) 2011-2017, Project contributors Copyright (c) 2011-2014, Walmart Copyright (c) 2011, Yahoo Inc. All rights reserved</p>
+      <p>json-schema is Copyright Kris Zyp</p>
+      <p>qs is Copyright (c) 2014 Nathan LaFreniere and other contributors. All rights reserved.</p>
+      <p>sntp is Copyright (c) 2012-2016, Eran Hammer and Project contributors. All rights reserved.</p>
+      <p>tough-cookie is Copyright (c) 2015, Salesforce.com, Inc. All rights reserved.</p>
+
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+      1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+      2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+      3. Neither the name of the copyright owner nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+      <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+
+      <p>The following components are licensed under MIT License:</p>
+
+      <p>ajv is Copyright (c) 2015-2017 Evgeny Poberezkin</p>
+      <p>ansi-regex, builtin-modules, camelcase, code-point-at, escape-string-regexp, find-up, has-flag, invert-kv, is-builtin-module, is-fullwidth-code-point, lcid, load-json-file, number-is-nan, os-locale, parse-json, path-exists, path-is-absolute, path-type, pify, read-pkg-up, read-pkg, string-width, strip-ansi, strip-bom, supports-color, wrap-ansi, ansi-styles, chalk, has-ansi, decamelize, object-assign are Copyright (c) Sindre Sorhus &lt;sindresorhus@gmail.com&gt; (sindresorhus.com)</p>
+      <p>assertion-error is Copyright (c) 2013 Jake Luer jake@qualiancy.com (http://qualiancy.com)</p>
+      <p>balanced-match, brace-expansion, isarray are Copyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;</p>
+      <p>bluebird is Copyright (c) 2013-2017 Petka Antonov</p>
+      <p>chai is Copyright (c) 2017 Chai.js Assertion Library</p>
+      <p>co is Copyright (c) 2014 TJ Holowaychuk &lt;tj@vision-media.ca&gt;</p>
+      <p>commander is Copyright (c) 2011 TJ Holowaychuk &lt;tj@vision-media.ca&gt;</p>
+      <p>concat-map, deep-equal, json-stable-stringify, minimist are Copyright (c) James Halliday (mail@substack.net)</p>
+      <p>config-chain, debug are Copyright (c) 2014 TJ Holowaychuk &lt;tj@vision-media.ca&gt;</p>
+      <p>decamelize, deep-eql, type-detect are Copyright (c) 2013 Jake Luer &lt;jake@alogicalparadox.com&gt; (http://alogicalparadox.com)</p>
+      <p>editorconfig is Copyright © 2012 EditorConfig Team</p>
+      <p>error-ex, is-arrayish are Copyright (c) 2015 JD Ballard</p>
+      <p>graceful-readlink is Copyright (c) 2015 Zhiye Li</p>
+      <p>growl is Copyright (c) 2009 TJ Holowaychuk tj@vision-media.ca Copyright (c) 2016 Joshua Boy Nicolai Appelman joshua@jbna.nl</p>
+      <p>is-utf8 is Copyright (C) 2014 Wei Fanzhe</p>
+      <p>js-beautify is Copyright (c) 2007-2017 Einar Lielmanis, Liam Newman, and contributors.</p>
+      <p>json3 is Copyright (c) 2012-2015 Kit Cambridge. http://kitcambridge.be/ Copyright (c) 2013-2015 Benjamin Tan. https://d10.github.io/ </p>
+      <p>jsonapi-validator is Copyright (c) Elliott Foster &lt;elliottf@codebrews.com&gt;</p>
+      <p>lodash._baseassign, lodash._basecopy, lodash._basecreate, lodash._getnative, lodash._isiterateecall, lodash.create, lodash.isarguments, lodash.isarray, lodash.keys, lodash are Copyright JS Foundation and other contributors &lt;https://js.foundation/&gt;</p>
+      <p>mkdirp is Copyright 2010 James Halliday (mail@substack.net)</p>
+      <p>mocha is Copyright (c) 2011-2018 JS Foundation and contributors, https://js.foundation </p>
+      <p>moment is Copyright (c) JS Foundation and other contributors</p>
+      <p>ms is Copyright (c) 2016 Zeit, Inc.</p>
+      <p>pinkie-promise, pinkie are Copyright (c) Vsevolod Strukchinsky &lt;floatdrop@gmail.com&gt; (github.com/floatdrop)</p>
+      <p>require-directory is Copyright (c) 2011 Troy Goode &lt;troygoode@gmail.com&gt;</p>
+      <p>spdx-expression-parse is Copyright (c) 2015 Kyle E. Mitchell &amp; other authors listed in AUTHORS</p>
+      <p>underscore is Copyright (c) 2009-2017 Jeremy Ashkenas, DocumentCloud and Investigative Reporters &amp; Editors</p>
+      <p>validator is Copyright (c) 2017 Chris O'Hara &lt;cohara87@gmail.com&gt;</p>
+      <p>yargs is Copyright 2010 James Halliday (mail@substack.net)</p>
+      <p>Modified work Copyright 2014 Contributors (ben@npmjs.com)</p>
+      <p>asn1 is Copyright (c) 2011 Mark Cavage, All rights reserved.</p>
+      <p>assert-plus is Copyright (c) 2012 Mark Cavage</p>
+      <p>async is Copyright (c) 2010-2018 Caolan McMahon</p>
+      <p>asynckit is Copyright (c) 2016 Alex Indigo</p>
+      <p>aws4 is Copyright 2013 Michael Hart (michael.hart.au@gmail.com)</p>
+      <p>colors is Original Library  - Copyright (c) Marak Squires, Additional Functionality - Copyright (c) Sindre Sorhus &lt;sindresorhus@gmail.com&gt; (sindresorhus.com)</p>
+      <p>combined-stream, delayed-stream are Copyright (c) 2011 Debuggable Limited &lt;felix@debuggable.com&gt;</p>
+      <p>dashdash is Copyright (c) 2013 Trent Mick. All rights reserved. Copyright (c) 2013 Joyent Inc. All rights reserved.</p>
+      <p>delayed-stream, ecc-jsbn are Copyright (c) 2014 Jeremie Miller</p>
+      <p>extend is Copyright (c) 2014 Stefan Thomas</p>
+      <p>extsprintf, jsprim are Copyright (c) 2012, Joyent, Inc. All rights reserved.</p>
+      <p>fibers is Copyright 2011 Marcel Laverdet</p>
+      <p>form-data is Copyright (c) 2012 Felix Geisendörfer (felix@debuggable.com) and contributors</p>
+      <p>generate-function, generate-object-property, is-my-json-valid are Copyright (c) 2014 Mathias Buus</p>
+      <p>getpass, http-signature, sshpk are Copyright Joyent, Inc. All rights reserved.</p>
+      <p>is-property is Copyright (c) 2013 Mikola Lysenko</p>
+      <p>is-typedarray is Copyright Hugh Kennedy</p>
+      <p>isstream is Copyright (c) 2015 Rod Vagg</p>
+      <p>jodid25519 is Copyright (c) 2012 Ron Garret Copyright (c) 2007, 2013, 2014 Michele Bini Copyright (c) 2014 Mega Limited</p>
+      <p>jsonpointer is Copyright (c) 2011-2015 Jan Lehnardt jan@apache.org &amp; Marc Bachmann https://github.com/marcbachmann </p>
+      <p>md5-file is Copyright (c) 2015 - 2017 Rory Bradford and contributors.</p>
+      <p>mime-db is Copyright (c) 2014 Jonathan Ong me@jongleberry.com</p>
+      <p>mime-types, accepts are Copyright (c) 2014 Jonathan Ong &lt;me@jongleberry.com&gt; Copyright (c) 2015 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>pac-resolver is Copyright (c) 2013 Nathan Rajlich &lt;nathan@tootallnate.net&gt;</p>
+      <p>punycode is Copyright Mathias Bynens &lt;https://mathiasbynens.be</p>
+      <p>stringstream is Copyright (c) 2012 Michael Hart (michael.hart.au@gmail.com)</p>
+      <p>synchronize is Copyright (c) Alexey Petrushin, http://alex-craft.com </p>
+      <p>uuid is Copyright (c) 2010-2016 Robert Kieffer and other contributors</p>
+      <p>verror is Copyright (c) 2016, Joyent, Inc. All rights reserved.</p>
+      <p>xtend is Copyright (c) 2012-2014 Raynos.</p>
+      <p>array-flatten, path-to-regexp are Copyright (c) 2014 Blake Embrey (hello@blakeembrey.com)</p>
+      <p>babel/polyfill is Copyright (c) 2014-2018 Sebastian McKenzie and other contributors</p>
+      <p>babel-runtime is Copyright (c) 2014-2018 Sebastian McKenzie &lt;sebmck@gmail.com&gt;</p>
+      <p>base64-js is Copyright (c) 2014 Contributors. All rights reserved.</p>
+      <p>body-parser, type-is are Copyright (c) 2014 Jonathan Ong &lt;me@jongleberry.com&gt; Copyright (c) 2014-2015 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>buffer is Copyright (c) Feross Aboukhadijeh, and other contributors.</p>
+      <p>bytes is Copyright (c) 2012-2014 TJ Holowaychuk &lt;tj@vision-media.ca&gt; Copyright (c) 2015 Jed Watson &lt;jed.watson@me.com&gt;</p>
+      <p>camelize, fast-json-stable-stringify are Copyright (cJ James Halliday (mail@substack.net)</p>
+      <p>classnames is Copyright (c) 2017 Jed Watson</p>
+      <p>co is Copyright (c) 2014 TJ Holowaychuk &lt;tj@vision-media.ca&gt;</p>
+      <p>content-disposition, finalhandler, forwarded, media-typer, vary are Copyright (c) 2014-2017 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>content-security-policy-builder is Copyright (c) 2015-2018 Evan Hahn</p>
+      <p>content-type, unpipe are Copyright (c) 2015 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>cookie is Copyright (c) 2012-2014 Roman Shtylman &lt;shtylman@gmail.com&gt; Copyright (c) 2015 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>cookie-signature is Copyright (c) 2012 LearnBoost &lt;tj@learnboost.com&gt;</p>
+      <p>core-js is Copyright (c) 2014-2018 Denis Pushkarev</p>
+      <p>core-util-is is Copyright Node.js contributors. All rights reserved.</p>
+      <p>dasherize is Copyright (c) Shahar Talmi</p>
+      <p>debug is Copyright (c) 2014 TJ Holowaychuk &lt;tj@vision-media.ca&gt;</p>
+      <p>depd is Copyright (c) 2014-2018 Douglas Christopher Wilson</p>
+      <p>destroy, ee-first are Copyright (c) 2014 Jonathan Ong (me@jongleberry.com)</p>
+      <p>dns-prefetch-control, referrer-policy are Copyright (c) 2016-2018 Evan Hahn</p>
+      <p>dom-helpers is Copyright (c) 2015 Jason Quense</p>
+      <p>dont-sniff-mimetype, frameguard, helmet-crossdomain, helmet-csp, hide-powered-by, hsts, ienoopen, nocache, x-xss-protection are Copyright (c) 2014-2018 Evan Hahn, Adam Baldwin</p>
+      <p>encodeurl is Copyright (c) 2016 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>escape-html is Copyright (c) 2012-2013 TJ Holowaychuk Copyright (c) 2015 Andreas Lubbe Copyright (c) 2015 Tiancheng "Timothy" Gu</p>
+      <p>etag is Copyright (c) 2014-2016 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>events, url are Copyright Joyent, Inc. and other Node contributors.</p>
+      <p>expect-ct is Copyright (c) 2017, 2018 Evan Hahn</p>
+      <p>express is Copyright (c) 2009-2014 TJ Holowaychuk tj@vision-media.ca Copyright (c) 2013-2014 Roman Shtylman shtylman+expressjs@gmail.com Copyright (c) 2014-2015 Douglas Christopher Wilson doug@somethingdoug.com</p>
+      <p>express-static-gzip is Copyright (c) 2016 Tobias Koenig</p>
+      <p>extsprintf, jsprim are Copyright (c) 2012, Joyent, Inc. All rights reserved.</p>
+      <p>fast-deep-equal, json-schema-traverse are Copyright (c) 2017 Evgeny Poberezkin</p>
+      <p>feature-policy is Copyright (c) 2018 Evan Hahn</p>
+      <p>fresh is Copyright (c) 2012 TJ Holowaychuk &lt;tj@vision-media.ca&gt; Copyright (c) 2016-2017 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>getpass is Copyright Joyent, Inc. All rights reserved.</p>
+      <p>helmet is Copyright (c) 2012-2018 Evan Hahn, Adam Baldwin</p>
+      <p>hpkp is Copyright (c) 2015-2018 Evan Hahn, Adam Baldwin</p>
+      <p>http-errors is Copyright (c) 2014 Jonathan Ong me@jongleberry.com Copyright (c) 2016 Douglas Christopher Wilson doug@somethingdoug.com</p>
+      <p>iconv-lite is Copyright (c) 2011 Alexander Shtuchkin</p>
+      <p>immutable, regenerator-runtime are Copyright (c) 2014-present, Facebook, Inc.</p>
+      <p>invariant, prop-types, react, react-lifecycles-compat are Copyright (c) 2013-present, Facebook, Inc.</p>
+      <p>ipaddr.js is Copyright (C) 2011-2017 whitequark &lt;whitequark@whitequark.org&gt;</p>
+      <p>isomorphic-fetch is Copyright (c) 2015 Matt Andrews</p>
+      <p>jsbn is Copyright (c) 2003-2005  Tom Wu. All Rights Reserved.</p>
+      <p>js-quantities is Copyright © 2006-2007 Kevin C. Olbrich Copyright © 2010-2016 LIM SAS (http://lim.eu) - Julien Sanchez</p>
+      <p>js-tokens is Copyright (c) 2014, 2015, 2016, 2017, 2018 Simon Lydell</p>
+      <p>loose-envify is Copyright (c) 2015 Andres Suarez &lt;zertosh@gmail.com&gt;</p>
+      <p>merge-descriptors is Copyright (c) 2013 Jonathan Ong &lt;me@jongleberry.com&gt;</p>
+      <p>Copyright (c) 2015 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>methods is Copyright (c) 2013-2014 TJ Holowaychuk &lt;tj@vision-media.ca&gt; Copyright (c) 2015-2016 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>mime is Copyright (c) 2010 Benjamin Thomas, Robert Kieffer</p>
+      <p>nconf is Copyright (C) 2011 Charlie Robbins and the Contributors.</p>
+      <p>negotiator is Copyright (c) 2012-2014 Federico Romero Copyright (c) 2012-2014 Isaac Z. Schlueter Copyright (c) 2014-2015 Douglas Christopher Wilson</p>
+      <p>node-getopt is Copyright (c) 2012 Miao Jiang</p>
+      <p>on-finished is Copyright (c) 2013 Jonathan Ong &lt;me@jongleberry.com&gt; Copyright (c) 2014 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>parseurl is Copyright (c) 2014 Jonathan Ong &lt;me@jongleberry.com&gt; Copyright (c) 2014-2017 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>performance-now is Copyright (c) 2013 Braveg1rl</p>
+      <p>platform is Copyright 2014-2018 Benjamin Tan &lt;https://demoneaux.github.io/&gt; Copyright 2011-2013 John-David Dalton &lt;http://allyoucanleet.com/&gt;</p>
+      <p>proxy-addr is Copyright (c) 2014 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>psl is Copyright (c) University of Maryland & the University of California Santa Cruz</p>
+      <p>punycode is Copyright Mathias Bynens &lt;https://mathiasbynens.be/&gt;</p>
+      <p>query-string is Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)</p>
+      <p>querystring is Copyright 2012 Irakli Gozalishvili. All rights reserved</p>
+      <p>range-parser is Copyright (c) 2012-2014 TJ Holowaychuk &lt;tj@vision-media.ca&gt; Copyright (c) 2015-2016 Douglas Christopher Wilson &lt;doug@somethingdoug.com</p>
+      <p>raw-body is Copyright (c) 2013-2014 Jonathan Ong <me@jongleberry.com> Copyright (c) 2014-2015 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>react-dom is Copyright (c) 2013-present, Facebook, Inc</p>
+      <p>react-is, scheduler are Copyright (c) Facebook, Inc. and its affiliates.</p>
+      <p>react-redux, redux are Copyright (c) 2015-present Dan Abramov</p>
+      <p>react-to-print is Copyright (c) 2017 gregn</p>
+      <p>react-virtualized is Copyright (c) 2015 Brian Vaughn</p>
+      <p>reselect is Copyright (c) 2015-2016 Reselect Contributors</p>
+      <p>safe-buffer is Copyright (c) Feross Aboukhadijeh</p>
+      <p>safer-buffer is Copyright (c) 2018 Nikita Skovoroda &lt;chalkerx@gmail.com&gt;</p>
+      <p>secure-keys is Copyright (c) Jarrett Cruger &lt;jcrugzz@gmail.com&gt;</p>
+      <p>send is Copyright (c) 2012 TJ Holowaychuk Copyright (c) 2014-2016 Douglas Christopher Wilson</p>
+      <p>serve-static is Copyright (c) 2010 Sencha Inc. Copyright (c) 2011 LearnBoost Copyright (c) 2011 TJ Holowaychuk Copyright (c) 2014-2016 Douglas Christopher Wilson</p>
+      <p>statuses is Copyright (c) 2014 Jonathan Ong <me@jongleberry.com> Copyright (c) 2016 Douglas Christopher Wilson &lt;doug@somethingdoug.com&gt;</p>
+      <p>styled-components is Copyright (c) 2016-present Glen Maddern and Maximilian Stoiber</p>
+      <p>symbol-observable is Copyright (c) Sindre Sorhus &lt;sindresorhus@gmail.com&gt;
+       (sindresorhus.com) Copyright (c) Ben Lesh &lt;ben@benlesh.com&gt;</p>
+      <p>utils-merge is Copyright (c) 2013-2017 Jared Hanson</p>
+      <p>verror is Copyright (c) 2016, Joyent, Inc. All rights reserved.</p>
+      <p>window-size is Copyright (c) 2015-2017, Jon Schlinkert</p>
+      <p>whatwg-fetch is Copyright (c) 2014-2016 GitHub, Inc</p>
+      <p>xml2js is Copyright 2010, 2011, 2012, 2013. Marek Kubica &lt;marek@xivilization.net&gt; (https://xivilization.net) and Contributors. All rights reserved.</p>
+      <p>xmlbuilder is Copyright (c) 2013 Ozgur Ozcitak</p>
+
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+
+      <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+
+      <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <p>@babel/runtime: Copyright (c) 2014-present Sebastian McKenzie and other contributors</p>
+      <p>@redux-saga/core, @redux-saga/deferred, @redux-saga/delay-p, @redux-saga/is, @redux-saga/symbols, @redux-saga/types: Copyright (c) 2015 Yassine Elouafi</p>
+      <p>async: Copyright (c) 2010-2018 Caolan McMahon</p>
+      <p>babel-runtime: Copyright (c) Sebastian McKenzie</p>
+      <p>base64-js: Copyright (c) 2014 T. Jameson Little</p>
+      <p>classnames: Copyright (c) 2017 Jed Watson</p>
+      <p>core-js: Copyright (c) 2014-2019 Denis Pushkarev</p>
+      <p>dom-helpers: Copyright (c) 2015 Jason Quense</p>
+      <p>escape-string-regexp, object-assign: Copyright (c) Sindre Sorhus &lt;sindresorhus@gmail.com&gt; (sindresorhus.com)</p>
+      <p>fast-deep-equal: Copyright (c) 2017 Evgeny Poberezkin</p>
+      <p>immutable: Copyright (c) 2014-present, Facebook, Inc.</p>
+      <p>invariant, prop-types, react-lifecycles-compat: Copyright (c) 2013-present, Facebook, Inc.</p>
+      <p>js-quantities: Copyright © 2006-2007 Kevin C. Olbrich Copyright © 2010-2016 LIM SAS (http://lim.eu) - Julien Sanchez</p>
+      <p>js-tokens: Copyright (c) 2014, 2015, 2016, 2017, 2018 Simon Lydell</p>
+      <p>lodash: Copyright JS Foundation and other contributors &lt;https://js.foundation/&gt;</p>
+      <p>loose-envify: Copyright (c) 2015 Andres Suarez &lt;zertosh@gmail.com&gt;</p>
+      <p>memoize-one: Copyright (c) 2019 Alexander Reardon</p>
+      <p>react, react-dom, react-is, scheduler: Copyright (c) Facebook, Inc. and its affiliates.</p>
+      <p>react-redux, redux, redux-thunk: Copyright (c) 2015-present Dan Abramov</p>
+      <p>react-virtualized: Copyright (c) 2015 Brian Vaughn</p>
+      <p>redux-saga: Copyright (c) Yassine ELOUAFI</p>
+      <p>regenerator-runtime: Copyright (c) Ben Newman</p>
+      <p>reselect: Copyright (c) 2015-2018 Reselect Contributors</p>
+      <p>symbol-observable: Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com) Copyright (c) Ben Lesh <ben@benlesh.com></p>
+      <p>typescript-compare, typescript-logic, typescript-tuple: Copyright © 2018 Hoàng Văn Khải</p>
+      <p></p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+      <p></p>
+      <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+      <p></p>
+      <p>THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <p></p>
+      <p>d3-format: Copyright 2010-2015 Mike Bostock</p>
+      <p>hoist-non-react-statics: Copyright (c) 2015, Yahoo! Inc. All rights reserved.</p>
+      <p>intl-format-cache: Copyright 2014 Yahoo! Inc.</p>
+      <p>intl-messageformat-parser: Copyright 2014 Yahoo! Inc. Copyright 2014 Alex Sexton</p>
+      <p>intl-messageformat: Copyright 2013 Yahoo! Inc. Copyright (c) 2012, Andreas Lind Petersen</p>
+      <p>intl-relativeformat: Copyright 2014 Yahoo! Inc. Copyright (c) 2012, Andreas Lind Petersen</p>
+      <p>react-intl: Copyright 2014 Yahoo Inc.</p>
+      <p></p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p></p>
+      <p>1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+      <p></p>
+      <p>2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p></p>
+      <p>3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+      <p></p>
+      <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p>ldclient-js, ldclient-js-common: Copyright 2016 Catamorphic, Co.</p>
+      <p></p>
+      <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+      <p></p>
+      <p>
+        <a href="http://www.apache.org/licenses/LICENSE-2.0">http://www.apache.org/licenses/LICENSE-2.0</a>
+      </p>
+      <p></p>
+      <p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+
+      <p>Generative Design Explore</p>
+      <p>The following components are licensed under the MIT license:</p>
+      <p>@formatjs/ecma402-abstract, @formatjs/intl, @formatjs/intl-displaynames, @formatjs/intl-listformat, @formatjs/intl-relativetimeformat: Copyright (c) 2019 FormatJS</p>
+      <p>@babel/runtime, @babel/runtime-corejs3: Copyright (c) 2014-present Sebastian McKenzie and other contributors</p>
+      <p>@redux-saga/core, @redux-saga/deferred, @redux-saga/delay-p, @redux-saga/is, @redux-saga/symbols, @redux-saga/types, redux-saga: Copyright (c) 2015 Yassine Elouafi</p>
+      <p>@types/estree, @types/node, @types/react: Copyright (c) Microsoft Corporation.</p>
+      <p>@types/hoist-non-react-statics, @types/long, @types/prop-types: Copyright (c) Microsoft Corporation. All rights reserved.</p>
+      <p>acorn: Copyright (C) 2012-2018 by various contributors (see AUTHORS)</p>
+      <p>async: Copyright (c) 2010-2018 Caolan McMahon</p>
+      <p>babel-runtime: Copyright (c) Sebastian McKenzie</p>
+      <p>base64-js: Copyright (c) 2014 T. Jameson Little</p>
+      <p>classnames: Copyright (c) 2017 Jed Watson</p>
+      <p>clsx: Copyright (c) Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)</p>
+      <p>@types/estree, @types/node, @types/react: Copyright (c) Microsoft Corporation.</p>
+      <p>@types/hoist-non-react-statics, @types/long, @types/prop-types: Copyright (c) Microsoft Corporation. All rights reserved.</p>
+      <p>acorn: Copyright (C) 2012-2018 by various contributors (see AUTHORS)</p>
+      <p>dom-helpers: Copyright (c) 2015 Jason Quense</p>
+      <p>escape-string-regexp, object-assign: Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)</p>
+      <p>fast-deep-equal: Copyright (c) 2017 Evgeny Poberezkin</p>
+      <p>fast-memoize: Copyright (c) 2016 Caio Gondim</p>
+      <p>immutable: Copyright (c) 2014-present, Facebook, Inc.</p>
+      <p>invariant, prop-types, react-lifecycles-compat: Copyright (c) 2013-present, Facebook, Inc.</p>
+      <p>is-any-array: Copyright (c) 2018 cheminfo</p>
+      <p>js-quantities: Copyright © 2006-2007 Kevin C. Olbrich Copyright © 2010-2016 LIM SAS (<a href=http://lim.eu>http://lim.eu</a>) - Julien Sanchez</p>
+      <p>js-tokens: Copyright (c) 2014, 2015, 2016, 2017, 2018 Simon Lydell</p>
+      <p>lodash: Copyright OpenJS Foundation and other contributors 
+        <a href=https://openjsf.org>https://openjsf.org</a>
+      </p>
+      <p>loose-envify: Copyright (c) 2015 Andres Suarez <zertosh@gmail.com></p>
+      <p>memoize-one: Copyright (c) 2019 Alexander Reardon</p>
+      <p>ml-array-max: Copyright (c) 2017 ml.js</p>
+      <p>ml-array-min, ml-array-rescale: Copyright (c) 2017 mljs</p>
+      <p>ml-matrix: Copyright (c) 2014 Michaël Zasso</p>
+      <p>ml-pca: Copyright (c) 2014 ml.js</p>
+      <p>react, react-dom, react-is, scheduler: Copyright (c) Facebook, Inc. and its affiliates.</p>
+      <p>react-redux, redux: Copyright (c) 2015-present Dan Abramov</p>
+      <p>react-virtualized: Copyright (c) 2015 Brian Vaughn</p>
+      <p>regenerator-runtime: Copyright (c) Ben Newman</p>
+      <p>reselect: Copyright (c) 2015-2018 Reselect Contributors</p>
+      <p>rollup: Copyright (c) 2017 [these people](https://github.com/rollup/rollup/graphs/contributors)</p>
+      <p>shallow-equal: Copyright © 2016 Misha Moroshko</p>
+      <p>symbol-observable: Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com) Copyright (c) Ben Lesh <ben@benlesh.com></p>
+      <p>typescript-compare, typescript-logic, typescript-tuple: Copyright © 2018 Hoàng Văn Khải</p>
+      <p>uuid: Copyright (c) 2010-2016 Robert Kieffer and other contributors</p>
+      <p></p>
+      <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
+      <p></p>
+      <p>The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.</p>
+      <p></p>
+      <p>THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
+      <p></p>
+      <p>The following components are licensed under the BSD-3-Clause license:</p>
+      <p></p>
+      <p>@protobufjs/aspromise, @protobufjs/base64, @protobufjs/codegen, @protobufjs/eventemitter, @protobufjs/fetch, @protobufjs/float, @protobufjs/inquire, @protobufjs/path, @protobufjs/pool, @protobufjs/utf8, protobufjs: Copyright (c) 2016, Daniel Wirtz  All rights reserved.</p>
+      <p>d3-format: Copyright 2010-2015 Mike Bostock</p>
+      <p>intl-messageformat, intl-messageformat-parser: Copyright (c) 2019, Oath Inc.</p>
+      <p>react-intl: Copyright 2019 Oath Inc.</p>
+      <p></p>
+      <p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+      <p></p>
+      <p>1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p>
+      <p></p>
+      <p>2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p>
+      <p></p>
+      <p>3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p>
+      <p></p>
+      <p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+      <p></p>
+      <p>The following components are licensed under the Apache-2.0 license:</p>
+      <p></p>
+      <p>bytebuffer, long: Copyright (c) Daniel Wirtz</p>
+      <p>ldclient-js, ldclient-js-common: Copyright 2016 Catamorphic, Co.</p>
+      <p>typescript: Copyright (c) Microsoft Corp.</p>
+      <p></p>
+      <p>Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at</p>
+      <p></p>
+      <p>
+        <a href=http://www.apache.org/licenses/LICENSE-2.0>http://www.apache.org/licenses/LICENSE-2.0</a>
+      </p>
+      <p></p>
+      <p>Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
+      <p></p>
+      <p>The following component is licensed under the ISC license:</p>
+      <p></p>
+      <p>linear-layout-vector: Copyright (c) Paul Taylor</p>
+      <p></p>
+      <p>Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.</p>
+      <p></p>
+      <p>THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</p>
+      <p></p>
+      <p>The following component is licensed under the 0BSD license:</p>
+      <p></p>
+      <p>tslib: Copyright (c) Microsoft Corporation.</p>
+      <p></p>
+      <p>Permission to use, copy, modify, and/or distribute this software for any</p>
+      <p>purpose with or without fee is hereby granted.</p>
+      <p></p>
+      <p>THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH</p>
+      <p>REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY</p>
+      <p>AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,</p>
+      <p>INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM</p>
+      <p>LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR</p>
+      <p>OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR</p>
+      <p>PERFORMANCE OF THIS SOFTWARE.</p>
+    </body>
+</html>

@@ -1,0 +1,178 @@
+{
+
+    "build" : "Release",
+
+
+    "platform" : "darwin",
+
+
+    "packageId": "73e72ada57b7480280f7a6f4a289729f",
+
+
+    "update-group" : "b50de22ed5ae427f836157142f5a4d6b",
+
+
+    "packageDependencies": [
+        "747460e0b0e1370f022dcda407f5ac29",
+        "91fa5489c2e24e9398320426ea613284",
+        "5cdb062ac66041bdbffd0d3d74a4efd3",
+        "c102a1c1ea954675b57613e47f5e7631",
+        "animation",
+        "drawing",
+        "3cb417bbcef040edb001a69844afc9bc",
+        "17c18f06f82541eb8111822d6017321d",
+        "4386dc0be81e49d787777bfa54bae741",
+        "codesigned",
+        "explicit",
+        "paramesh",
+        "lib3mf"
+    ],
+
+    "executables" : [
+
+        {
+
+            "executable" : "Autodesk Fusion 360.app",
+            "name" : "Autodesk Fusion 360",
+            "icon" : 0,
+            "arguments" : "",
+            "ondock" : true,
+            "id" : "73e72ada57b7480280f7a6f4a289729f"
+
+        }
+
+    ],
+
+
+    "general" : [
+        {
+
+            "name" : "Fusion 360_uninstall.icns",
+            "id" : "56d551a4f8ae4771b5ac62653cc02079"
+
+        },
+        {
+            "name" : "Fusion 360_Install.icns",
+            "id" : "adfe94ab7b3d406593209313db61b4a1"
+        },
+        {
+
+            "name" : "ApplicationOptions.production.xml",
+            "id" : "bc787edea55e4e9398a67caea65d8a35"
+
+        },
+
+        {
+
+            "name" : "ApplicationOptions.staging.xml",
+            "id" : "b5f49c962d4340caa639f693e09331f1"
+
+        },
+        {
+            "name" : "ApplicationOptions.dev.xml",
+            "id" : "ec7e93ead12c4791a7a4e9930ff54ea1"
+        },
+
+        {
+            "name" : "ApplicationOptions.fdev.xml",
+            "id" : "e049e7d377dc476a8f8344ba2538f78a"
+        },
+
+        {
+            "name" : "Fusion 360.streamer.config",
+            "process-template" : "true",
+            "write-options": "true"
+        }
+
+    ],
+
+
+    "config-activation-source" : {
+       "relpath" : "Resources/CONFIG",
+        "name" : "Fusion 360.server.config",
+        "default" : "ec7e93ead12c4791a7a4e9930ff54ea1",
+        "fdev" : "e049e7d377dc476a8f8344ba2538f78a",
+        "staging" : "b5f49c962d4340caa639f693e09331f1",
+        "continuousupdate" : "b5f49c962d4340caa639f693e09331f1",
+        "production" : "bc787edea55e4e9398a67caea65d8a35",
+        "develop": "ec7e93ead12c4791a7a4e9930ff54ea1",
+        "release": "b5f49c962d4340caa639f693e09331f1",
+        "hotfix": "b5f49c962d4340caa639f693e09331f1",
+        "pre-production": "bc787edea55e4e9398a67caea65d8a35",
+        "stage1": "bc787edea55e4e9398a67caea65d8a35"
+    },
+
+    "app-info" : {
+
+        "display-name" : "Autodesk Fusion 360",
+		"launch-icon" : "adfe94ab7b3d406593209313db61b4a1",
+        "uninstall-icon" : "56d551a4f8ae4771b5ac62653cc02079",
+        "session-file-name" : "streamingsession.json",
+        "required-os" : {
+            "version" : [10,14],
+            "friendly-version" : "Mac OS X 10.14"
+        },
+        "pre-install-tasks" : [
+            "839cfbb44dc7466fa5ed8a9c7e749813",
+            "1b891e3c161b456cb570ff9a05c8a9c8"
+        ],
+        "sub-applications" : [
+            "e7f9cb70b7034d379c60bc2486571de8",
+            "3bb6685f2e064bb08a7d3913035e6b88",
+            "47458aa04dc04be2a184ca4322d75d74",
+            "06f12dc0a4f441c5a9ca3185334c84eb"
+        ],
+        "auto-launch" : {
+            "id": "73e72ada57b7480280f7a6f4a289729f"
+        },
+        "initial-install-delete-paths" : [
+            "${location_b1f25a12d32e40548e2176b7b3c474fa}/../Autodesk Fusion 360/delayedAppInfo${streamtag}"
+        ],
+        "abort-install-urls" : [
+            "https://autodeskfeedback.az1.qualtrics.com/SE/?SID=SV_2fYONt1491tyR6J&te={time_elapsed}&pa={progress_achieved}"
+        ],
+		"launcher-path":"${location_b1f25a12d32e40548e2176b7b3c474fa}/{stream_tag}/Autodesk Fusion 360 ${streamtag}.app"
+    },
+
+    "post-deploy-tasks" : [
+        "b32513729518446bbd4984e704827353",
+        "7df3ec3a7e8d40ada66494b9dc32dc4e",
+        "8df63efc00a94e9aa262d921a044c83a",
+        "9a6f9239365141149849b3081dc3fd7c",
+        "0b9a4c1251914f7facc25616ea0f9de3",
+        "14fd4E53b5d3476bb1C47d1fac493a50",
+        "abd8ee230bcc49f9a56035b8eefedeed"
+    ],
+
+    "always-archive" : [
+        "Autodesk Fusion 360.app/Contents/Info.plist"
+    ],
+
+    "always-archive-file-type" : [
+        ".pyc"
+    ],
+
+    "included-files" : [
+      {
+        "include-filter" : [
+          "Autodesk Fusion 360.app",
+          "Resources"
+         ],
+         "exclude-filter" : [
+            "Autodesk Fusion 360.app/Contents/Api",
+            "Autodesk Fusion 360.app/Contents/Frameworks",
+            "Autodesk Fusion 360.app/Contents/Libraries",
+            "Autodesk Fusion 360.app/Contents/Helpers",
+            "Autodesk Fusion 360.app/Contents/_CodeSignature",
+            "Autodesk Fusion 360.app/Contents/MacOS"
+         ]
+      },
+      {
+        "alt-source" : "Core/Fusion/Build/Common/Tools/Localization",
+        "alt-target" : "Autodesk Fusion 360.app/Contents/Libraries/Neutron",
+        "include-filter" : ["StringTable"]
+      }
+    ]
+
+
+}

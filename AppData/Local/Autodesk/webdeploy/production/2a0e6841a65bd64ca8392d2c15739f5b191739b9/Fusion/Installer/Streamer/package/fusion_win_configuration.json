@@ -1,0 +1,239 @@
+{
+    "build"       : "Release",
+
+    "platform" : "win32",
+
+    "packageId": "73e72ada57b7480280f7a6f4a289729f",
+
+    "update-group" : "b50de22ed5ae427f836157142f5a4d6b",
+
+    "general" : [
+        {
+            "name" : "F3D_data.ico",
+            "id" : "8552713032ac42efa277fbeffdd67f4f"
+        },
+        {
+            "name" : "CAM_data.ico",
+            "id" : "c9d96aa41ccb4b8a99a5befbee01ea6"
+        },
+        {
+            "name" : "ApplicationOptions.production.xml",
+            "id" : "bc787edea55e4e9398a67caea65d8a35"
+        },
+        {
+            "name" : "ApplicationOptions.staging.xml",
+            "id" : "b5f49c962d4340caa639f693e09331f1"
+        },
+        {
+            "name" : "ApplicationOptions.dev.xml",
+            "id" : "ec7e93ead12c4791a7a4e9930ff54ea1"
+        },
+        {
+            "name" : "ApplicationOptions.fdev.xml",
+            "id" : "e049e7d377dc476a8f8344ba2538f78a"
+        },
+        {
+            "name" : "Fusion360.exe",
+            "id": "73e72ada57b7480280f7a6f4a289729f",
+            "file-associations" : {
+                "f3d" : {
+                    "description" : "Autodesk Fusion 360 File",
+                    "content-type" : "application/fusion",
+                    "icon" : "8552713032ac42efa277fbeffdd67f4f",
+                    "shell-actions" : {
+                        "open" : ["%1"]
+                    }
+                },
+                "cam360" : {
+                    "description" : "Autodesk Fusion CAM File",
+                    "content-type" : "application/fusion",
+                    "icon" : "c9d96aa41ccb4b8a99a5befbee01ea6",
+                    "shell-actions" : {
+                        "open" : ["%1"]
+                    }
+                }
+            }
+        },
+        {
+            "name" : "Fusion 360.streamer.config",
+            "process-template" : "true",
+            "write-options": "true"
+        },
+        {
+            "name": "Fusion360.ico",
+            "id": "cb75314714154bd685b3395fe57655e7",
+            "deliver-icon": "true",
+            "destination": "c6906999383c4f2e88bb21899fe167a0"
+        },
+        {
+            "name" : "FusionLauncher.exe",
+            "launcher-relative-location": "../6a0c9611291d45bb9226980209917c3d/"
+        }
+    ],
+
+    "config-activation-source" : {
+        "relpath" : "",
+        "name" : "Fusion 360.server.config",
+        "default" : "ec7e93ead12c4791a7a4e9930ff54ea1",
+        "fdev" : "e049e7d377dc476a8f8344ba2538f78a",
+        "staging" : "b5f49c962d4340caa639f693e09331f1",
+        "continuousupdate" : "b5f49c962d4340caa639f693e09331f1",
+        "production" : "bc787edea55e4e9398a67caea65d8a35",
+        "develop": "ec7e93ead12c4791a7a4e9930ff54ea1",
+        "release": "b5f49c962d4340caa639f693e09331f1",
+        "hotfix": "b5f49c962d4340caa639f693e09331f1",
+        "pre-production": "bc787edea55e4e9398a67caea65d8a35",
+        "stage1": "bc787edea55e4e9398a67caea65d8a35"
+    },
+
+    "references" : [
+        {
+            "id" : "ec27778b5ad346a28d866fc8385da436",
+            "properties" : {
+                "file-associations" : {
+                    "fusion360" : {
+                        "description" : "Edit the files in Fusion 360",
+                        "is-url-protocol" : true,
+                        "shell-actions" : {
+                            "open" : ["%1"]
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "id" : "abd72029628f448888fa727750794db8",
+            "properties" : {
+                "installable" : "exe",
+                "install-params" : "Forge Fusion360.exe"
+            }
+        },
+        {
+            "id" : "c6906999383c4f2e88bb21899fe167a0",
+            "properties": {
+                "destination": [
+                    "Desktop",
+                    "${StartMenu}\\Programs\\Autodesk"
+                ],
+                "shell-properties" : {
+                    "System.AppUserModel.ID" : "AutodeskInc.Fusion360${streamtag}"
+                },
+                "launchable": true,
+                "name": "Autodesk Fusion 360",
+                "icon" : "cb75314714154bd685b3395fe57655e7",
+                "icon-id" : 0
+            }
+        },
+        {
+            "id" : "88ab02c8fa7e418e8661a61570d01246",
+            "properties" : {
+                "auid" : "AutodeskInc.Fusion360${streamtag}",
+                "cmd" : "73e72ada57b7480280f7a6f4a289729f",
+                "write-ini" : "true",
+                "global-flag" : "0"
+            }
+        }
+    ],
+
+    "packageDependencies": [
+        "1de01db8157bf3c5011749baf43f07a8",
+        "91fa5489c2e24e9398320426ea613284",
+        "5cdb062ac66041bdbffd0d3d74a4efd3",
+        "c102a1c1ea954675b57613e47f5e7631",
+        "animation",
+        "2652dca6590b4258b047b9156370bd96",
+        "3cb417bbcef040edb001a69844afc9bc",
+        "drawing",
+        "17c18f06f82541eb8111822d6017321d",
+        "3cb417bbc9f040edb401a69843afc9bc",
+        "paramesh",
+        "lib3mf"
+    ],
+
+    "app-info" : {
+        "display-name" : "Autodesk Fusion 360",
+        "uninstall-icon" : "cb75314714154bd685b3395fe57655e7",
+        "session-file-name" : "streamingsession.json",
+        "required-os" : {
+            "version" : [6,1],
+            "friendly-version" : "Windows 7"
+        },
+        "pre-install-tasks" : [
+            "839cfbb44dc7466fa5ed8a9c7e749813",
+            "1b891e3c161b456cb570ff9a05c8a9c8"
+        ],
+        "sub-applications" : [
+            "e7f9cb70b7034d379c60bc2486571de8",
+            "3bb6685f2e064bb08a7d3913035e6b88",
+            "47458aa04dc04be2a184ca4322d75d74",
+            "06f12dc0a4f441c5a9ca3185334c84eb"
+        ],
+        "auto-launch" : {
+            "id": "c6906999383c4f2e88bb21899fe167a0"
+        },
+        "initial-install-delete-paths" : [
+            "${location_b1f25a12d32e40548e2176b7b3c474fa}/../Autodesk Fusion 360/delayedAppInfo${streamtag}"
+        ],
+        "abort-install-urls" : [
+            "https://autodeskfeedback.az1.qualtrics.com/SE/?SID=SV_2fYONt1491tyR6J&te={time_elapsed}&pa={progress_achieved}"
+        ],
+		"launcher-path":"${location_b1f25a12d32e40548e2176b7b3c474fa}/{stream_tag}/6a0c9611291d45bb9226980209917c3d/FusionLauncher.exe"
+    },
+
+    "post-deploy-tasks" : [
+        "e10f096356f7470ea58e13af02d1ba7c",
+        "e11b50c4e45d49c68aa944c2e476a76f",
+        "b32513729518446bbd4984e704827353",
+        "7df3ec3a7e8d40ada66494b9dc32dc4e",
+        "8df63efc00a94e9aa262d921a044c83a",
+        "9a6f9239365141149849b3081dc3fd7c",
+        "1341bb4b8566410e9c7c8aef52bcb222",
+        "4afd20f9b05b4349869fb10841d11444",
+        "abd8ee230bcc49f9a56035b8eefedeed",
+        "3af6a9fa26704d868bb90e12b3aed9be",
+        "0b9a4c1251914f7facc25616ea0f9de3",
+        "2c5d70c64a6a46008630fb0201c90351",
+        "14fd4E53b5d3476bb1C47d1fac493a50"
+    ],
+
+
+    "always-archive" : [
+        "Fusion 360.server.config"
+    ],
+
+    "always-archive-file-type" : [
+        ".pyc"
+    ],
+
+    "included-files" : [
+      {
+        "include-filter" : [
+        "Applications/Fusion/Fusion360App",
+        "forgebanner.png",
+        "forgeheroImage.png",
+        "forgemanagementshell.png",
+        "forgesplash.png",
+        "forgeWelcomeScreenVideosInfo.xml",
+        "Fusion360.exe",
+        "FusionLauncher.exe",
+        "Fusion 360.streamer.config",
+        "Fusion 360.server.config",
+        "FusionToTPF.exe",
+        "Applications/Fusion/sampleImage.png",
+        "Applications/Fusion/Fusion360.xml",
+        "Applications/Fusion/heroImage.png",
+        "Applications/Fusion/TourGuide",
+        "Applications/Fusion/TourGuide.xml",
+        "Applications/Fusion/WelcomeScreenVideosInfo.xml",
+        "Applications/Fusion/NaSPDTranslator10.dll",
+        "Applications/Fusion/NaSPDTranslator10.xml",
+        "fusion_version.txt"
+        ]
+      },
+
+      {
+        "alt-source" : "Core/Fusion/Build/Common/Tools/Localization",
+        "include-filter" : ["StringTable"]
+      }
+    ]
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<NIDL>
+	<Common>
+	</Common>
+	<Cpp>
+		<HeaderComments>
+//////////////////////////////////////////////////////////////////////////////
+//
+//  Copyright 2016 Autodesk, Inc.  All rights reserved.
+//
+//  Use of this software is subject to the terms of the Autodesk license
+//  agreement provided at the time of installation or download, or which
+//  otherwise accompanies this software.
+//
+//////////////////////////////////////////////////////////////////////////////
+		</HeaderComments>
+		<SourceComments>
+//////////////////////////////////////////////////////////////////////////////
+//
+//  Copyright 2016 Autodesk, Inc.  All rights reserved.
+//
+//  Use of this software is subject to the terms of the Autodesk license
+//  agreement provided at the time of installation or download, or which
+//  otherwise accompanies this software.
+//
+//////////////////////////////////////////////////////////////////////////////
+#include "stdafx.h"
+		</SourceComments>
+		<BaseClassPath>"../Base.h"</BaseClassPath>
+		<BasicTypeDefsPath>"../BasicTypeDefs.h"</BasicTypeDefsPath>
+		<OSMacroHeaderPath>"../OSMacros.h"</OSMacroHeaderPath>
+        <!-- Xlayer provides information for the corresponding XLayer implementation module name of given NIDL file -->
+        <Xlayer>
+            <!-- if a NIDL file does not specify the information, it will use the value of Default -->
+            <Default>FusionXLayer</Default>
+            <!-- items in Files override Default -->
+            <Files>
+            </Files>
+            <!-- items in Classes override Files & Default-->
+            <Classes>
+                <adsk.core.Base>XLayer</adsk.core.Base>
+            </Classes>
+        </Xlayer>
+	</Cpp>
+</NIDL>

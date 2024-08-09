@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="CannotChangeCVSpline" devLabel="Can not open/close CV spline" translation="无法打开/关闭 CV 样条曲线"/>
+	<label commandName="CircularPattern" devLabel="Circular Pattern" translation="环形阵列"/>
+	<label commandName="CircularPatternConstraintSelectionId" devLabel="Circular Pattern Constraint" translation="环形阵列约束"/>
+	<label commandName="Coincident" devLabel="Coincident" translation="重合"/>
+	<label commandName="CoincidentConstraintSelectionId" devLabel="Coincident Constraint" translation="重合约束"/>
+	<label commandName="Collinear" devLabel="Collinear" translation="共线"/>
+	<label commandName="CollinearConstraintSelectionId" devLabel="Collinear Constraint" translation="共线约束"/>
+	<label commandName="Concentric" devLabel="Concentric" translation="同心"/>
+	<label commandName="ConcentricConstraintSelectionId" devLabel="Concentric Constraint" translation="同心约束"/>
+	<label commandName="CurvatureConstraintSelectionId" devLabel="Curvature Constraint" translation="曲率约束"/>
+	<label commandName="CurveError" devLabel="One selected curve is degenerated!" translation="一条选定曲线已退化！"/>
+	<label commandName="EllipseOffsetInvalidWarning" devLabel="Could not offset ellipse." translation="无法偏移椭圆。"/>
+	<label commandName="Equal" devLabel="Equal" translation="相等"/>
+	<label commandName="EqualConstraintSelectionId" devLabel="Equal Constraint" translation="等长约束"/>
+	<label commandName="ExtendConicCurveError" devLabel="Extend conic curve error!" translation="延伸圆锥曲线错误！"/>
+	<label commandName="ExtendSplineError" devLabel="Extend spline error!" translation="延伸样条曲线错误！"/>
+	<label commandName="FIT_CURVES_TO_SECTION_ADD_CONSTRAINT_FAIL" devLabel="Failed to add tangent sketch constraint." translation="未能添加相切草图约束。"/>
+	<label commandName="FIT_CURVES_TO_SECTION_BAD_INPUTS" devLabel="Failed to process inputs to fit curve to section." translation="未能处理输入以将曲线拟合到截面。"/>
+	<label commandName="FIT_CURVES_TO_SECTION_ERROR_NO_CURVES" devLabel="Failed to fit curve to section." translation="未能将曲线拟合到截面。"/>
+	<label commandName="FIT_CURVES_TO_SECTION_LIN_OR_DEG_ARC_FIT" devLabel="Include more points to fit an arc." translation="包含更多点以拟合圆弧。"/>
+	<label commandName="FIT_CURVES_TO_SECTION_NO_SKETCH" devLabel="Include more points to fit an arc." translation="包含更多点以拟合圆弧。"/>
+	<label commandName="FailedToSolve" devLabel="Failed to solve." translation="无法求解。"/>
+	<label commandName="FitPointError" devLabel="Fit point index wrong!" translation="拟合点索引错误！"/>
+	<label commandName="Fixed" devLabel="Fixed" translation="固定"/>
+	<label commandName="FixedConstraintSelectionId" devLabel="Fixed Constraint" translation="固定约束"/>
+	<label commandName="Horizontal" devLabel="Horizontal" translation="水平"/>
+	<label commandName="HorizontalConstraintSelectionId" devLabel="Horizontal Constraint" translation="水平约束"/>
+	<label commandName="InactiveMidPointSelectionId" devLabel="InactiveMidPoint" translation="不活动的中点"/>
+	<label commandName="InactiveMidPointSelectionsId" devLabel="InactiveMidPoints" translation="不活动的中点"/>
+	<label commandName="InactiveTangentSelectionId" devLabel="Inactive Tangent Handle" translation="不活动的相切控制柄"/>
+	<label commandName="InactiveTangentSelectionsId" devLabel="InactiveTangents" translation="不活动的切线"/>
+	<label commandName="InactiveTextGripSelectionId" devLabel="Text Frame Snap Point" translation="文本边框捕捉点"/>
+	<label commandName="InactiveTextGripSelectionsId" devLabel="Text Frame Snap Points" translation="文本边框捕捉点"/>
+	<label commandName="InputAxisError" devLabel="Input major axis error!" translation="输入长轴时出错！"/>
+	<label commandName="InvalidSplineforcontrolframe" devLabel="Control Frame could not be displayed as selected sketch curve do not support control frame." translation="无法显示控制框，因为选定的草图曲线不支持控制框。"/>
+	<label commandName="InvalidSplinesNoCFMultiselection" devLabel="Control Frames could not be displayed as all the selected sketch curves don't support control frame." translation="无法显示控制框，因为选定的所有草图曲线均不支持控制框。"/>
+	<label commandName="InvalidSplinesforcontrolframeMultiselection" devLabel="Control Frames could not be displayed for some selected sketch curves as they don't support control frame." translation="无法为某些选定的草图曲线显示控制框，因为其不支持控制框。"/>
+	<label commandName="LineMidPoint" devLabel="Mid Point" translation="中点"/>
+	<label commandName="MeshPlanarSectionDefaultUserName" devLabel="MeshSection" translation="网格部分"/>
+	<label commandName="MeshPlanarSectionSelectionId" devLabel="MeshPlanarSection" translation="网格平面部分"/>
+	<label commandName="MeshPlanarSectionSelectionsId" devLabel="MeshPlanarSections" translation="网格平面部分"/>
+	<label commandName="MidpointConstraintSelectionId" devLabel="Midpoint Constraint" translation="中点约束"/>
+	<label commandName="NO_VADIL_SKETCH" devLabel="No valid sketch found!" translation="未找到有效的草图！"/>
+	<label commandName="NoPathSelected" devLabel="Please select path curve" translation="请选择路径曲线"/>
+	<label commandName="NoTextProfileWarning" devLabel="Could not retrieve the profiles of the selected text!" translation="无法检索选定文本的轮廓！"/>
+	<label commandName="NonPlanarCurve" devLabel="Please select planar curve" translation="请选择平面曲线"/>
+	<label commandName="OffsetConstraintSelectionId" devLabel="Offset Constraint" translation="偏移约束"/>
+	<label commandName="OffsetSketchNoGeomError" devLabel="The sketch offset created no geometry. Modify the offset dimension or verify the changes are correct." translation="草图偏移未创建任何几何图元。请修改偏移尺寸或验证更改是否正确。"/>
+	<label commandName="PROFILE_BUILD_ERROR_ILLEGALCURVES" devLabel="Some sketch curves cannot be converted to profile edges." translation="一些草图曲线无法转换为轮廓边。"/>
+	<label commandName="PROFILE_BUILD_FAILTOGENPROFILE" devLabel="Failed to generate profile as, curves do not precisely overlap." translation="未能生成轮廓，因为曲线未精确重叠。"/>
+	<label commandName="Parallel" devLabel="Parallel" translation="平行"/>
+	<label commandName="ParallelConstraintSelectionId" devLabel="Parallel Constraint" translation="平行约束"/>
+	<label commandName="Perpendicular" devLabel="Perpendicular" translation="垂直"/>
+	<label commandName="PerpendicularConstraintSelectionId" devLabel="Perpendicular Constraint" translation="垂直约束"/>
+	<label commandName="PleaseDeleteConstraints" devLabel="&#xA;Please delete or modify one of the following constraints/dimensions&#xA;" translation="&#xA;请删除或修改下列约束/标注之一&#xA;"/>
+	<label commandName="Polygon" devLabel="Polygon" translation="多边形"/>
+	<label commandName="PolygonConstraintSelectionId" devLabel="Polygon Constraint" translation="多边形约束"/>
+	<label commandName="ProfileCategory" devLabel="Sketch Profiles" translation="草图轮廓"/>
+	<label commandName="ProfileSelectionId" devLabel="Profile" translation="轮廓"/>
+	<label commandName="ProfilebuildError_TrimStageTwo" devLabel="profile trim failed in stage two" translation="第二阶段的轮廓修剪失败"/>
+	<label commandName="ProfilesSelectionId" devLabel="Profiles" translation="轮廓"/>
+	<label commandName="RectangularPattern" devLabel="Rectangular Pattern" translation="矩形阵列"/>
+	<label commandName="RectangularPatternConstraintSelectionId" devLabel="Rectangular Pattern Constraint" translation="矩形阵列约束"/>
+	<label commandName="SharedPointCoincidentSelectionId" devLabel="Coincident Constraint" translation="重合约束"/>
+	<label commandName="SharedPointCoincidentSelectionsId" devLabel="Coincident Constraints" translation="重合约束"/>
+	<label commandName="SketchConicCurveSelectionID" devLabel="Sketch Conic Curve" translation="草图圆锥曲线"/>
+	<label commandName="SketchConstraintCategory" devLabel="Sketch Geometry Constraint" translation="草图几何图元约束"/>
+	<label commandName="SketchConstraintHasSameConstraint" devLabel="Constraint has already been applied to the selected sketch object." translation="约束已应用到选定的草图对象。"/>
+	<label commandName="SketchDimensionSelectionId" devLabel="Sketch Dimension" translation="草图尺寸"/>
+	<label commandName="SketchDimensionSelectionsId" devLabel="Sketch Dimensions" translation="草图尺寸"/>
+	<label commandName="SketchGeomConstSelectionsId" devLabel="Sketch Geometry Constraints" translation="草图几何图元约束"/>
+	<label commandName="SketchGeometryConstraintSelectionId" devLabel="Sketch Geometry Constraint" translation="草图几何图元约束"/>
+	<label commandName="SketchInvisibleProjectGeometries" devLabel="The Projected Geometries you have just created is not visible. Please toggle Show Project Geometries option in sketch palette." translation="您刚刚创建的投影几何图元不可见。请在“草图选项板”中启用“显示投影几何图元”选项。"/>
+	<label commandName="SketchProjectedGeomSelectionId" devLabel="SketchProjectedGeom" translation="SketchProjectedGeom"/>
+	<label commandName="SketchProjectedGeomSelectionsId" devLabel="SketchProjectedGeoms" translation="SketchProjectedGeoms"/>
+	<label commandName="Smooth" devLabel="Smooth" translation="平滑"/>
+	<label commandName="Symmetric" devLabel="Symmetric" translation="对称"/>
+	<label commandName="SymmetryConstraintSelectionId" devLabel="Symmetry Constraint" translation="对称约束"/>
+	<label commandName="Tangent" devLabel="Tangent" translation="相切"/>
+	<label commandName="TangentConstraintSelectionId" devLabel="Tangent Constraint" translation="相切约束"/>
+	<label commandName="TangentExists" devLabel="Tangent already exists on selected fit point" translation="在选定拟合点上已存在切线"/>
+	<label commandName="TextFrameConstraintSelectionId" devLabel="Text Frame Constraint" translation="文本边框约束"/>
+	<label commandName="TooFewFitPoints" devLabel="A close spline must at least have 3 fit points" translation="闭合的样条曲线必须至少有 3 个拟合点"/>
+	<label commandName="Vertical" devLabel="Vertical" translation="竖直"/>
+	<label commandName="VerticalConstraintSelectionId" devLabel="Vertical Constraint" translation="竖直约束"/>
+	<label commandName="lclzSketchError" devLabel="Invalid sketch curve" translation="无效的草图曲线"/>
+</Resource>

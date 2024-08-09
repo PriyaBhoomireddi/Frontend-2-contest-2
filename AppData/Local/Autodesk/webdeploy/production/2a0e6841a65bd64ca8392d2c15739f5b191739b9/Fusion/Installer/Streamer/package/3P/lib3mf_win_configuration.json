@@ -1,0 +1,11 @@
+{
+	"build"     : "Release",
+
+	"platform"  : "win32",
+
+	"packageId" : "lib3mf",
+
+	"package-files" : {
+		"third-party-var" : "_LIB3MF"
+	}
+}

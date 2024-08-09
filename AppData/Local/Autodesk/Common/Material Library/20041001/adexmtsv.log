@@ -1,0 +1,776 @@
+[2020-09-01 00:15:35.472425] [info]: adexmtsv starts.
+[2020-09-01 00:15:35.475425] [info]: Backend is https server.
+[2020-09-01 00:15:36.263399] [info]: Start acceptor.
+[2020-09-01 00:15:36.326372] [info]: New Pipe Session.
+[2020-09-01 00:15:36.379771] [info]: New Pipe Session.
+[2020-09-01 00:15:36.518250] [info]: New Pipe Session.
+[2020-09-01 00:15:36.589655] [info]: New Pipe Session.
+[2020-09-01 00:15:40.072151] [info]: New Pipe Session.
+[2020-09-01 00:22:02.461439] [info]: New Pipe Session.
+[2020-09-01 00:22:11.189260] [info]: set token : eyJhbGciOiJIUzI1NiIsImtpZCI6Imp3dF9zeW1tZXRyaWNfa2V5In0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImdyYW50X2lkIjoidjFSc1ZnS3ZXTlM3NFZGSjBOeVFCTlI1ZjlvUUlUdFMiLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbS9hdWQvand0ZXhwNjAiLCJqdGkiOiJFOG1GTDlxWkxBUFNLYnR2OGk5dE1HMjJheVZ0Y3p3aXZpWjlwRGxDa01iZmhzVjdES092VmJMR1VZRjVxS2dLIiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNTk4OTAzMzkyfQ.1GgEdJpskQyEMCv7MAaa8_Xz5ak5az1Mel1itzL-GIg
+[2020-09-01 00:22:11.191263] [info]: fetch category list with cookie: QueryCategory_BA5EE55E-9982-449B-9D66-9F036540E140environment
+[2020-09-01 00:22:11.191263] [info]:  download file: resource/CategoryList/type=environment url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&facet.category={sort:%27bucket%27,size:1000}&size=0&return=_no_fields&domain=environments
+[2020-09-01 00:22:11.223885] [info]: set token : eyJhbGciOiJIUzI1NiIsImtpZCI6Imp3dF9zeW1tZXRyaWNfa2V5In0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImdyYW50X2lkIjoidjFSc1ZnS3ZXTlM3NFZGSjBOeVFCTlI1ZjlvUUlUdFMiLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbS9hdWQvand0ZXhwNjAiLCJqdGkiOiJFOG1GTDlxWkxBUFNLYnR2OGk5dE1HMjJheVZ0Y3p3aXZpWjlwRGxDa01iZmhzVjdES092VmJMR1VZRjVxS2dLIiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNTk4OTAzMzkyfQ.1GgEdJpskQyEMCv7MAaa8_Xz5ak5az1Mel1itzL-GIg
+[2020-09-01 00:22:11.224925] [info]: fetch material list in  with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:11.224925] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&domain=materials&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 00:22:11.225847] [info]: fetch material list in  with cookie:AssetList/__libraryId:user/JDF3L3FH3CC8/content/private/__materialList:
+[2020-09-01 00:22:11.225847] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=%28and%20schema_set_id:{,3]%20owner:%27JDF3L3FH3CC8%27%20%29&q.parser=structured&pretty=true&domain=materials&size=500
+[2020-09-01 00:22:17.936564] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-006.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.936564] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-012.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.936564] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-023.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.936564] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-033.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.936564] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-028.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.937598] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-014.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.937598] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-055.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.937598] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-054.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.938555] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-009.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.938555] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-010.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.938555] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-036.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.939555] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-039.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.939555] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-026.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.939555] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-034.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.940551] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-053.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.940551] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-052.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.940551] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-037.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.940551] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-035.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.941556] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-013.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.941556] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-019.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.941556] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-018.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.941556] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-047.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.942543] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-046.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.942543] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-007.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.942543] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-020.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.942543] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-049.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.942543] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-048.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.943540] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-027.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.943540] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-030.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.943540] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-032.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.943540] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-008.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.943540] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-042.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.944574] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-043.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.944574] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-041.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.944574] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-045.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.944574] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-044.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.945533] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-040.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.945533] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-016.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.945533] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-031.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.945533] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-011.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.945533] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-015.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.946530] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-022.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.946530] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-029.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.946530] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-051.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.946530] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-050.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.946530] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-021.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.946530] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-025.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.947526] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-017.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.947526] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-024.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.947526] [info]: fetch /slib/resource/cloud/thumbnail/1/PrismWood-038.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.948523] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-017.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.949546] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-018.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.949546] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-218.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.949546] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-026.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.949546] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-024.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.949546] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-025.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.950516] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-023.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.950516] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-336.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.950516] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-219.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.950516] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-021.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.950516] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-022.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.950516] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-020.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.950516] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-019.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.951512] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-220.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.951512] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-173.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.951512] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-323.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.951512] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-629.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.951512] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-632.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.951512] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-631.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.951512] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-630.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.951512] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-039.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.952509] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-334.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.952509] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-352.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.952509] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-335.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.952509] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-041.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.952509] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-037.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.952509] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-038.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.952509] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-036.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.953505] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-035.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.953505] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-043.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.953505] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-002.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.953505] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-247.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.953505] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-139.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.954502] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-174.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.954502] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-175.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.954502] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-048.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.954502] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-051.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.954502] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-403.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.954502] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-404.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.954502] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-405.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.955499] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-406.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.955499] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-413.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.955499] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-398.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.955499] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-399.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.955499] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-400.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.955499] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-401.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.955499] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-402.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.956495] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-407.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.956495] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-408.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.956495] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-409.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.956495] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-410.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.956495] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-411.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.956495] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-412.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.956495] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-235.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.956495] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-215.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.957491] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-217.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.957491] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-627.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.957491] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-233.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.957491] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-214.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.957491] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-216.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.958488] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-158.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.958488] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-159.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.959485] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-160.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.959485] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-161.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.959485] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-162.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.959485] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-176.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.959485] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-633.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.960482] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-395.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.960482] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-350.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.960482] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-396.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.960482] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-243.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.961510] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-628.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.961510] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-087.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.961510] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-370.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.961510] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-373.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.961510] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-372.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.962697] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-366.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.962697] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-367.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.962697] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-369.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.962697] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-371.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.962697] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-368.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.963693] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-362.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.963693] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-365.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.963693] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-364.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.963693] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-358.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.963693] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-359.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.963693] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-361.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.964690] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-363.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.964690] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-360.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.964690] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-634.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.965685] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-248.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.965685] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-141.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.965685] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-397.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.965685] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-344.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.965685] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-225.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.965685] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-226.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.966690] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-420.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.966690] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-249.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.967749] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-010.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.968769] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-011.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.968769] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-016.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.968769] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-012.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.968769] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-013.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.969880] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-014.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.969880] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-015.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.970876] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-332.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.971870] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-251.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.971870] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-149.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.972867] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-122.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.972867] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-253.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.972867] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-123.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.972867] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-252.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.973863] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-096.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.974859] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-097.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.974859] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-100.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.974859] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-098.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.974859] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-099.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.974859] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-101.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.974859] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-102.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.975856] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-103.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.975856] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-104.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.976853] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-105.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.976853] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-108.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.976853] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-106.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.977891] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-107.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.977891] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-109.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.977891] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-110.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.977891] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-111.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.977891] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-133.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.978846] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-132.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.978846] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-177.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.979877] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-067.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.979877] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-068.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.980840] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-066.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.981839] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-069.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.981839] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-070.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.982834] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-061.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.982834] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-059.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.983832] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-060.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.983832] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-232.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.983832] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-071.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.984827] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-337.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.984827] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-064.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.985870] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-065.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.985870] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-063.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.985870] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-062.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.985870] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-074.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.986820] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-075.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.986820] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-076.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.986820] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-077.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.986820] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-078.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.987835] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-246.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.987835] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-221.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.987835] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-224.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.987835] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-222.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.988816] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-223.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.988816] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-083.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.989810] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-228.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.989810] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-080.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.989810] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-081.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.990812] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-079.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.990812] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-338.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.990812] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-227.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.991827] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-179.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.992814] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-206.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.992814] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-245.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.993798] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-205.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.993798] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-244.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.994797] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-250.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.994797] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-147.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.995790] [info]: fetch /slib/resource/cloud/thumbnail/1/Prism-237.jpg with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 00:22:17.995790] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-013.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-013/f4921191c10b4057bbd7d582abc97923_thumbnail.0.jpg
+[2020-09-01 00:22:17.996788] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-006.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-006/83850ba05f8c4887953bed71976328bb_thumbnail.0.jpg
+[2020-09-01 00:22:17.996788] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-012.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-012/1ee66981764943088a502d4960f26ec3_thumbnail.0.jpg
+[2020-09-01 00:22:17.996788] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-023.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-023/49d4cddb8fb540ab8099fa6488fcaca2_thumbnail.0.jpg
+[2020-09-01 00:22:17.997788] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-033.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-033/32c60eeffab24d79831a6cbd72e331e7_thumbnail.0.jpg
+[2020-09-01 00:22:17.998082] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-028.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-028/abc49790c4ff407b94c5438d9602d592_thumbnail.0.jpg
+[2020-09-01 00:22:17.998082] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-014.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-014/06adefc2e4904425ba027a1b7a62ddb8_thumbnail.0.jpg
+[2020-09-01 00:22:17.998082] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-055.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-055/5a295494e68346a69d75e683f197d705_thumbnail.0.jpg
+[2020-09-01 00:22:17.998796] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-054.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-054/d11b171122cb4884a8c8f50fab6cde1a_thumbnail.0.jpg
+[2020-09-01 00:22:17.998796] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-009.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-009/3c8c2f011ced45979f60bc822d6020e9_thumbnail.0.jpg
+[2020-09-01 00:22:17.998796] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-010.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-010/3cb513eca66848ab896236d05bdb37d4_thumbnail.0.jpg
+[2020-09-01 00:22:17.998796] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-036.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-036/f14b0f27b5ca4ded87fe8ddfab57cb17_thumbnail.0.jpg
+[2020-09-01 00:22:17.999810] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-039.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-039/9f57cd76759c4211b0cf0186167cbec9_thumbnail.0.jpg
+[2020-09-01 00:22:17.999810] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-026.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-026/8a67edbfadbb40a1b8a3a1aba2a5102e_thumbnail.0.jpg
+[2020-09-01 00:22:17.999810] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-034.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-034/9012e7a5cd6443ca9821329ef42146a2_thumbnail.0.jpg
+[2020-09-01 00:22:17.999810] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-053.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-053/246f8a5875804b668c87d530728459fc_thumbnail.0.jpg
+[2020-09-01 00:22:18.000891] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-052.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-052/4782b1c593fb4a2ea91d8376671d2736_thumbnail.0.jpg
+[2020-09-01 00:22:18.000891] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-037.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-037/5d6039931cf248aa849fcee122a7d866_thumbnail.0.jpg
+[2020-09-01 00:22:18.000891] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-035.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-035/ead0c84e7f5740578fefcdbb1064e119_thumbnail.0.jpg
+[2020-09-01 00:22:18.000891] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-019.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-019/03cb8bfd28a1410cad9dd39c080eb510_thumbnail.0.jpg
+[2020-09-01 00:22:18.561158] [info]: fetch material list in indoor/abstract with cookie:BA5EE55E-9982-449B-9D66-9F036540E140indoor/abstractenvironment
+[2020-09-01 00:22:18.562155] [info]: fetch material list in indoor/studio with cookie:BA5EE55E-9982-449B-9D66-9F036540E140indoor/studioenvironment
+[2020-09-01 00:22:18.562155] [info]: fetch material list in outdoor/city with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/cityenvironment
+[2020-09-01 00:22:18.562155] [info]: fetch material list in outdoor/nature with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/natureenvironment
+[2020-09-01 00:22:18.563227] [info]: fetch material list in outdoor/road with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/roadenvironment
+[2020-09-01 00:22:18.563227] [info]: fetch material list in outdoor/snow with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/snowenvironment
+[2020-09-01 00:22:19.253538] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-046.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-046/a685bbb1ef024c0780c935a1bbb0f8cf_thumbnail.0.jpg
+[2020-09-01 00:22:19.257524] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-031.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-031/61c41bd61e4d4a2bb2f703c290a1e95f_thumbnail.0.jpg
+[2020-09-01 00:22:19.259521] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-027.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-027/c443638b7940459dbc8b679112ca0c75_thumbnail.0.jpg
+[2020-09-01 00:22:19.291413] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-018.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-018/1252e0b5829a46d49c2c9fb3f169c0e5_thumbnail.0.jpg
+[2020-09-01 00:22:19.295475] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-032.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-032/b21db13ede62489c8e890b51a97f670a_thumbnail.0.jpg
+[2020-09-01 00:22:19.317326] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-047.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-047/8d2f79efa5664ebab826007a69e3d2da_thumbnail.0.jpg
+[2020-09-01 00:22:19.325299] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-042.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-042/9626897ecbb940948102cfa1ef8f0f8c_thumbnail.0.jpg
+[2020-09-01 00:22:19.329285] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-030.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-030/0334a83f2c7b4d9fb17ccfae0250c2ff_thumbnail.0.jpg
+[2020-09-01 00:22:19.346235] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-008.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-008/fc6369b852c947d5a891db4213ef21c7_thumbnail.0.jpg
+[2020-09-01 00:22:19.350222] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-048.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-048/9988da8e94c64b93bd8c2f85ec2c8ac2_thumbnail.0.jpg
+[2020-09-01 00:22:19.359263] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-041.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-041/b836347b61794345b762c02b9b963f79_thumbnail.0.jpg
+[2020-09-01 00:22:19.370233] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-007.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-007/efe7d4bb3e6940bc80a4c937014f2b80_thumbnail.0.jpg
+[2020-09-01 00:22:19.379200] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-011.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-011/9bd288926933442c96a059be00ca1c34_thumbnail.0.jpg
+[2020-09-01 00:22:19.388166] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-043.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-043/922438c542bb4406ae08ec4296eb4b77_thumbnail.0.jpg
+[2020-09-01 00:22:19.412050] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-020.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-020/0b94bae8a8414cdebf2a0d0d40a4d5f2_thumbnail.0.jpg
+[2020-09-01 00:22:19.416992] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-040.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-040/a9fd611b5d9c438eaa2ec4c8b1a6ac11_thumbnail.0.jpg
+[2020-09-01 00:22:19.421350] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-049.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-049/db3ae82735dc4b809146d694e57ade1f_thumbnail.0.jpg
+[2020-09-01 00:22:19.424415] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-016.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-016/8956ca6e3b3e4aadaad8ffb7582f7b5f_thumbnail.0.jpg
+[2020-09-01 00:22:19.432315] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-044.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-044/3a27b16a3279419fa02ba40c3c60da7e_thumbnail.0.jpg
+[2020-09-01 00:22:19.443615] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-045.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-045/24d1de0255bd49469decab0cbe3ac04e_thumbnail.0.jpg
+[2020-09-01 00:22:19.529747] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-029.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-029/a3683b8db5a74be786380ea5ad9ae3bb_thumbnail.0.jpg
+[2020-09-01 00:22:19.545696] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-017.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-017/2ad67043181a45899139123dbd299b56_thumbnail.0.jpg
+[2020-09-01 00:22:19.557037] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-038.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-038/3e5abc9914694cbf866d24a744363497_thumbnail.0.jpg
+[2020-09-01 00:22:19.563083] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-015.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-015/a98c71f184ea4aef8a5c9deee43a9cfa_thumbnail.0.jpg
+[2020-09-01 00:22:19.575288] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-219.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-219/2ba859c10d394b9e84093f32c52296dc_thumbnail.0.jpg
+[2020-09-01 00:22:19.583387] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-022.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-022/1d713332bb0f44e39574f57ce49d863c_thumbnail.0.jpg
+[2020-09-01 00:22:19.591381] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-024.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-024/b70bea59eecc468aba24dec52bfacce7_thumbnail.0.jpg
+[2020-09-01 00:22:19.600325] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-018.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-018/3a7c0a2ef4c04434acfba9d97c4caee2_thumbnail.0.jpg
+[2020-09-01 00:22:19.605706] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-017.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-017/ae6b5408fecf42638bd7e492d1edeb90_thumbnail.0.jpg
+[2020-09-01 00:22:19.612759] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-025.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-025/a3d501c8a16e4afb82eba2b2681d7615_thumbnail.0.jpg
+[2020-09-01 00:22:19.620825] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-026.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-026/09315bd3f94b4370a1063eadae2fc88c_thumbnail.0.jpg
+[2020-09-01 00:22:19.628568] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-051.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-051/f1db1084aca84253bcbc822764c8e71e_thumbnail.0.jpg
+[2020-09-01 00:22:19.633530] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-021.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-021/3c90f1ae9a0e460a9c5edc003e4e86f3_thumbnail.0.jpg
+[2020-09-01 00:22:19.651471] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-218.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-218/8280e452189f41d0a2d58d21be31e472_thumbnail.0.jpg
+[2020-09-01 00:22:19.656481] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-050.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-050/fabfed3a61a443269f2e7f64d842fa86_thumbnail.0.jpg
+[2020-09-01 00:22:19.664431] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-023.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-023/05f5712d57874962a7c32a3103f3c543_thumbnail.0.jpg
+[2020-09-01 00:22:19.681373] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-336.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-336/340665db1b7c48a1bdc8eaedd526277d_thumbnail.0.jpg
+[2020-09-01 00:22:19.685622] [info]:  download file: /slib/resource/cloud/thumbnail/1/PrismWood-021.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/PrismWood-021/2099c71101a746fa8e5e93c790ba4136_thumbnail.0.jpg
+[2020-09-01 00:22:19.705568] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-025.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-025/042c89ef58f447feabbca481f3b70e4a_thumbnail.0.jpg
+[2020-09-01 00:22:19.717082] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-024.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-024/86deb677873342658b821892bb2b52f9_thumbnail.0.jpg
+[2020-09-01 00:22:19.780422] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-632.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-632/235960661a494ab08aaf18bcffabd0bf_thumbnail.0.jpg
+[2020-09-01 00:22:19.788212] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-019.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-019/62893f66bf3747109bdda389f9a49276_thumbnail.0.jpg
+[2020-09-01 00:22:19.791201] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-631.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-631/7c88fee205ff4b4781f36884ff4d0358_thumbnail.0.jpg
+[2020-09-01 00:22:19.822864] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-035.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-035/876aaee5eec84fc78a71e6bd76f3b7e4_thumbnail.0.jpg
+[2020-09-01 00:22:19.856094] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-022.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-022/12439894b01c4b6c824da741ae620531_thumbnail.0.jpg
+[2020-09-01 00:22:19.861077] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-020.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-020/ad823c9b799c473f9a97f9e78945e214_thumbnail.0.jpg
+[2020-09-01 00:22:19.869126] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-630.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-630/82f9b6b9d59f489d88ffca0041916548_thumbnail.0.jpg
+[2020-09-01 00:22:19.895041] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-334.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-334/09e7945b970542dcb8e5eea37aa2512b_thumbnail.0.jpg
+[2020-09-01 00:22:19.913906] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-629.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-629/9f71cb0e16954d87a0a92f2f116dd8df_thumbnail.0.jpg
+[2020-09-01 00:22:19.929847] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-335.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-335/8b57120cf4dd4e778e8e17799fa06790_thumbnail.0.jpg
+[2020-09-01 00:22:19.939923] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-039.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-039/3b59e1ceddf44270a8d97ce389513f17_thumbnail.0.jpg
+[2020-09-01 00:22:19.955088] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-173.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-173/b5de7c06be884ac88c275b69849d17d0_thumbnail.0.jpg
+[2020-09-01 00:22:19.964868] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-220.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-220/425f23198e5146059c3d5ebe3bc76d7b_thumbnail.0.jpg
+[2020-09-01 00:22:19.994432] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-352.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-352/cf540116cbb6433eb427b0a5ee4f6277_thumbnail.0.jpg
+[2020-09-01 00:22:20.010454] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-038.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-038/e962ee77d3ed4ee98dba4bdcb7b9ccb9_thumbnail.0.jpg
+[2020-09-01 00:22:20.019427] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-043.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-043/847c36833bfb4e3183febe7da683e436_thumbnail.0.jpg
+[2020-09-01 00:22:20.034545] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-323.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-323/cc81ef82bc2048319f90ffb5558832bc_thumbnail.0.jpg
+[2020-09-01 00:22:20.044825] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-036.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-036/a7d30ea67afc4d8587df9990bb7735c2_thumbnail.0.jpg
+[2020-09-01 00:22:20.083529] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-037.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-037/69423221677845d3b6af49f032078745_thumbnail.0.jpg
+[2020-09-01 00:22:20.097482] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-041.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-041/2875a4cee2ae439486927d8f552bc210_thumbnail.0.jpg
+[2020-09-01 00:22:20.258797] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-403.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-403/a503697f04fe4698b7883b6ce1eff02b_thumbnail.0.jpg
+[2020-09-01 00:22:20.278844] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-139.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-139/c40cdaf52bad48009f154c908995ee46_thumbnail.0.jpg
+[2020-09-01 00:22:20.290499] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-404.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-404/49c5e71bf2d44d68b5848025aa16af23_thumbnail.0.jpg
+[2020-09-01 00:22:20.312719] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-408.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-408/4bf83c09c0c44fcf8df3c1936b2e548c_thumbnail.0.jpg
+[2020-09-01 00:22:20.328486] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-002.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-002/51b6fdaf6e824f0d99e8a1947ae64b20_thumbnail.0.jpg
+[2020-09-01 00:22:20.343356] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-247.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-247/fbda1ef599bc4542b48dd919b472ddd0_thumbnail.0.jpg
+[2020-09-01 00:22:20.351365] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-051.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-051/30645de0638c4ffcad8568f60d894328_thumbnail.0.jpg
+[2020-09-01 00:22:20.363390] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-405.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-405/3ccdc0dd7f1340f694631290985616c9_thumbnail.0.jpg
+[2020-09-01 00:22:20.374425] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-413.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-413/a979676254014b09b60cb25ed0236cae_thumbnail.0.jpg
+[2020-09-01 00:22:20.403832] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-399.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-399/0e4c097c5b2849b79c7ad41d1969a883_thumbnail.0.jpg
+[2020-09-01 00:22:20.418750] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-175.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-175/340eff2eb643422abc53164d88995a83_thumbnail.0.jpg
+[2020-09-01 00:22:20.425721] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-174.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-174/9d28b743d82e46ce8a56e457bf20b43c_thumbnail.0.jpg
+[2020-09-01 00:22:20.439716] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-406.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-406/cedf6bcbc21841d79297a010454ed10c_thumbnail.0.jpg
+[2020-09-01 00:22:20.470538] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-398.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-398/0e73a8cb2afc44bdada49b887bfdb3bc_thumbnail.0.jpg
+[2020-09-01 00:22:20.475520] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-402.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-402/3a248a8247024d80b27bdabce7f64fbb_thumbnail.0.jpg
+[2020-09-01 00:22:20.497258] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-409.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-409/82f6a492424a4b3396e2d0378d8c2698_thumbnail.0.jpg
+[2020-09-01 00:22:20.501434] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-407.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-407/cba0277879c44720a74edfb232c7bc68_thumbnail.0.jpg
+[2020-09-01 00:22:20.524026] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-048.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-048/a4de15f2d96e4cfc9bd425a9428be55c_thumbnail.0.jpg
+[2020-09-01 00:22:20.529437] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-401.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-401/080568ec5bb64a64b32dc5652f580697_thumbnail.0.jpg
+[2020-09-01 00:22:20.533846] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-400.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-400/b886427030454dcea7ecf6df080f8289_thumbnail.0.jpg
+[2020-09-01 00:22:20.570925] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-233.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-233/dee6ad81a7944812a5d7c51e9ade8201_thumbnail.0.jpg
+[2020-09-01 00:22:20.579852] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-214.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-214/97295d82324241358093497c6a5b3461_thumbnail.0.jpg
+[2020-09-01 00:22:20.585761] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-411.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-411/916d4a7ff71d4e99a548b242dfd6f73e_thumbnail.0.jpg
+[2020-09-01 00:22:20.591453] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-410.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-410/f95069fb929545e6b6219e5cce6a1509_thumbnail.0.jpg
+[2020-09-01 00:22:20.619367] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-412.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-412/4bbe4ccffff744f39fa8c143cb8f0aa0_thumbnail.0.jpg
+[2020-09-01 00:22:20.624337] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-350.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-350/748f53eb9edc41858a455344ab526231_thumbnail.0.jpg
+[2020-09-01 00:22:20.634381] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-627.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-627/b9cfb58bd7b74bc395aff1d1ebf01495_thumbnail.0.jpg
+[2020-09-01 00:22:20.653992] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-159.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-159/168443ce744741c4b5977baff6d8fab4_thumbnail.0.jpg
+[2020-09-01 00:22:20.658746] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-161.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-161/2d4ba76f985242acb53c31d1e02b7b5e_thumbnail.0.jpg
+[2020-09-01 00:22:20.663398] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-216.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-216/0d85ef2cc64d48ec9cafea58d4efd2d2_thumbnail.0.jpg
+[2020-09-01 00:22:20.668698] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-235.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-235/9969adabbd5e4e3eb9b60e3728ac2470_thumbnail.0.jpg
+[2020-09-01 00:22:20.672679] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-215.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-215/dc0f664e6b8949a290d68d1c89d6a962_thumbnail.0.jpg
+[2020-09-01 00:22:20.681649] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-158.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-158/0e33bbeaf74f4adbb0a0c9a3ccf3d445_thumbnail.0.jpg
+[2020-09-01 00:22:20.688662] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-633.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-633/962780089ef34b07aec3eb90621e616a_thumbnail.0.jpg
+[2020-09-01 00:22:20.692691] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-395.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-395/306d7f0ca31a4f85b56bace4b302eac6_thumbnail.0.jpg
+[2020-09-01 00:22:20.697647] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-160.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-160/fb29ce29c34e48b799890abea7e900d8_thumbnail.0.jpg
+[2020-09-01 00:22:20.706565] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-396.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-396/7e70cb40010d41b782b8d3c332d4653b_thumbnail.0.jpg
+[2020-09-01 00:22:20.710556] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-217.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-217/c8eb2a4148c043fda0d0ebbb1980ad97_thumbnail.0.jpg
+[2020-09-01 00:22:20.763564] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-162.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-162/5862e3e3a5d642d1861515442ad8ec14_thumbnail.0.jpg
+[2020-09-01 00:22:20.769545] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-176.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-176/4cf7a74ed7e8459eae9f4c2cd1d594d7_thumbnail.0.jpg
+[2020-09-01 00:22:20.774564] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-367.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-367/bd0395b75bbc408188003c0147a99db5_thumbnail.0.jpg
+[2020-09-01 00:22:20.778552] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-243.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-243/b5846bf9d15c4917878479cfd96c8cf9_thumbnail.0.jpg
+[2020-09-01 00:22:20.787581] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-369.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-369/175dbe3ac84e43a780ef9d0d3100cb01_thumbnail.0.jpg
+[2020-09-01 00:22:20.798547] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-087.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-087/666a6722c3114d80a76304e878daa5f0_thumbnail.0.jpg
+[2020-09-01 00:22:20.809997] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-628.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-628/83197be921b244e5ab65babb336e0026_thumbnail.0.jpg
+[2020-09-01 00:22:20.819187] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-364.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-364/b2267fd93dee4db28931a2956557ab8a_thumbnail.0.jpg
+[2020-09-01 00:22:20.828184] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-360.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-360/9e96862c42884d99844a9b099de869df_thumbnail.0.jpg
+[2020-09-01 00:22:20.893626] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-371.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-371/89cba938bb1c4ae597e6add47b15abca_thumbnail.0.jpg
+[2020-09-01 00:22:20.897613] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-362.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-362/031822ab951f4f21b461a19ed03a4fbc_thumbnail.0.jpg
+[2020-09-01 00:22:20.900603] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-368.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-368/b8b4c7df25524b83a8c77978931f2d32_thumbnail.0.jpg
+[2020-09-01 00:22:20.903403] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-366.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-366/44d7f871bb1d4d57880a4c1cd24fd396_thumbnail.0.jpg
+[2020-09-01 00:22:20.906393] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-365.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-365/2bcfffe86f5344ee93ae005b5835a3e4_thumbnail.0.jpg
+[2020-09-01 00:22:20.917899] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-373.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-373/9fff6078ea314816b075ee5dde6dc87f_thumbnail.0.jpg
+[2020-09-01 00:22:20.922445] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-363.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-363/36e019139a834097bd11474fd70e2189_thumbnail.0.jpg
+[2020-09-01 00:22:20.924360] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-361.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-361/0894d3032e11413f992c7f0581bd1f86_thumbnail.0.jpg
+[2020-09-01 00:22:20.927350] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-370.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-370/6d14daa98f154320baa2bbde5ba44cb4_thumbnail.0.jpg
+[2020-09-01 00:22:20.930601] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-372.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-372/1f616894a6574786a929f19c78adee31_thumbnail.0.jpg
+[2020-09-01 00:22:20.934613] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-634.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-634/2c9a7ebc65024cfabdf4af490f36fab6_thumbnail.0.jpg
+[2020-09-01 00:22:20.967814] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-359.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-359/50245e1b5a3f4325b250ea439068054e_thumbnail.0.jpg
+[2020-09-01 00:22:20.980932] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-358.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-358/0e1be054b4504f6cbd2b58fd05252ba1_thumbnail.0.jpg
+[2020-09-01 00:22:20.983924] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-249.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-249/2ebd778386c44cd79a84931d5df20ec9_thumbnail.0.jpg
+[2020-09-01 00:22:20.986916] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-248.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-248/8f6271b747a6444daecc1c39c8007564_thumbnail.0.jpg
+[2020-09-01 00:22:20.999869] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-122.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-122/235b4a8fff6e4f36bbf64ce5209d4303_thumbnail.0.jpg
+[2020-09-01 00:22:21.007026] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-010.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-010/39c6814601b94b7ba570e4dc1aeb6cf5_thumbnail.0.jpg
+[2020-09-01 00:22:21.010266] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-141.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-141/4e5cbaed077a42da8d877ea6f1dbf2ea_thumbnail.0.jpg
+[2020-09-01 00:22:21.016239] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-014.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-014/bcc76ad6bef447fbad22089a1796f864_thumbnail.0.jpg
+[2020-09-01 00:22:21.023219] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-397.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-397/5e4305b360804d90abcf6df3a41a2c90_thumbnail.0.jpg
+[2020-09-01 00:22:21.055568] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-011.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-011/2a3d68029a6e41a2b82de749a2e9e1fc_thumbnail.0.jpg
+[2020-09-01 00:22:21.060552] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-016.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-016/09fc6f36b94f45fc9ffa36c8336b8392_thumbnail.0.jpg
+[2020-09-01 00:22:21.065223] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-012.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-012/1bbf19d8b9eb4f548d30a3d8ac779ab1_thumbnail.0.jpg
+[2020-09-01 00:22:21.079480] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-420.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-420/42c31d9b90b448af81977f2a8db414a1_thumbnail.0.jpg
+[2020-09-01 00:22:21.086456] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-013.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-013/47672bcbbf9e46c787b4ebb7a3f9b607_thumbnail.0.jpg
+[2020-09-01 00:22:21.090443] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-344.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-344/b13417e7fb7941bfae8f5352201d3134_thumbnail.0.jpg
+[2020-09-01 00:22:21.139873] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-251.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-251/dfe0b963d87b435e9c949fbc87fac050_thumbnail.0.jpg
+[2020-09-01 00:22:21.143933] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-225.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-225/a0ec450a267642458fe7b1d8971c3690_thumbnail.0.jpg
+[2020-09-01 00:22:21.148840] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-226.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-226/0df762a2dda24c2f9cececf35e7d680c_thumbnail.0.jpg
+[2020-09-01 00:22:21.153828] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-253.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-253/cb0effcb1211499281264ebecd8653cb_thumbnail.0.jpg
+[2020-09-01 00:22:21.159807] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-332.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-332/2c202b7bfea442c7996d391e5bb64730_thumbnail.0.jpg
+[2020-09-01 00:22:21.164786] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-149.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-149/5671fdab633147c485c753f5769a20f3_thumbnail.0.jpg
+[2020-09-01 00:22:21.276234] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-133.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-133/5b79c22fb60b4395870091db79e1d0e0_thumbnail.0.jpg
+[2020-09-01 00:22:21.281216] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-101.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-101/41ad73ab0e1f48088fc3ee670212cc71_thumbnail.0.jpg
+[2020-09-01 00:22:21.287191] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-015.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-015/1e83406555d446428067b6e57519a2b9_thumbnail.0.jpg
+[2020-09-01 00:22:21.295207] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-123.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-123/9ebbb40dbe7e4a9f97fa800fef0106cc_thumbnail.0.jpg
+[2020-09-01 00:22:21.306247] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-252.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-252/65e4cb1e5fb949f5a714c8b8dd773cc0_thumbnail.0.jpg
+[2020-09-01 00:22:21.311154] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-102.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-102/98348824d1264ea4a871beed077723ab_thumbnail.0.jpg
+[2020-09-01 00:22:21.315221] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-106.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-106/c66e8a0e75314f7cbe9f1186e02ec3cc_thumbnail.0.jpg
+[2020-09-01 00:22:21.319470] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-096.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-096/7bc632dc745d4ed4b098b46e87bdab67_thumbnail.0.jpg
+[2020-09-01 00:22:21.354438] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-103.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-103/f25afb9b2b264f6c840923a1b2381b59_thumbnail.0.jpg
+[2020-09-01 00:22:21.361273] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-100.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-100/6fae485854124e558bee1d9c56a82ce8_thumbnail.0.jpg
+[2020-09-01 00:22:21.379212] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-110.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-110/25e8db6dfd974f26b02f75e5370d8057_thumbnail.0.jpg
+[2020-09-01 00:22:21.385190] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-104.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-104/226c9c17b4d649d4907d7d4c12cbb30e_thumbnail.0.jpg
+[2020-09-01 00:22:21.388788] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-097.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-097/7e75ecaf0ad44cf894f31ba4acb14e52_thumbnail.0.jpg
+[2020-09-01 00:22:21.394471] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-132.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-132/b9ddcb0418c1414a9416cecabbdf5e30_thumbnail.0.jpg
+[2020-09-01 00:22:21.413526] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-111.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-111/e6a78409b3e74f7cae1b3526307a4df5_thumbnail.0.jpg
+[2020-09-01 00:22:21.428874] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-105.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-105/242eaa0155a24a2c912f315d20fb836f_thumbnail.0.jpg
+[2020-09-01 00:22:21.452256] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-099.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-099/cc4ac3807a824ecbac2e4f8f60012e6a_thumbnail.0.jpg
+[2020-09-01 00:22:21.465172] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-109.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-109/038e99f011c5414381ee7effc63ebc58_thumbnail.0.jpg
+[2020-09-01 00:22:21.473164] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-098.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-098/cc7ecffbb4b640159c3880d334cb95ab_thumbnail.0.jpg
+[2020-09-01 00:22:21.496260] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-108.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-108/fd2a9aec8b8849cfbe741e4c56e0696b_thumbnail.0.jpg
+[2020-09-01 00:22:21.499751] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-076.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-076/3ce8a064c2054006867821cfb5297917_thumbnail.0.jpg
+[2020-09-01 00:22:21.503158] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-107.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-107/de2732ee5082401e93237762eba152ca_thumbnail.0.jpg
+[2020-09-01 00:22:21.516113] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-059.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-059/64b19969c5554a328c7409acc05dea24_thumbnail.0.jpg
+[2020-09-01 00:22:21.519101] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-177.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-177/2be56235382f43f5bb50b0f64b4dd163_thumbnail.0.jpg
+[2020-09-01 00:22:21.522613] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-067.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-067/b969903b3d074e90bdebb98c776ae145_thumbnail.0.jpg
+[2020-09-01 00:22:21.526836] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-060.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-060/9547a8e6aa0f4b19a4f73d0df5d55804_thumbnail.0.jpg
+[2020-09-01 00:22:21.543777] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-065.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-065/2834918eda764a60bd385f9936dd31a4_thumbnail.0.jpg
+[2020-09-01 00:22:21.549318] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-068.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-068/e21d393bddfc4af89e8df136dd0aad82_thumbnail.0.jpg
+[2020-09-01 00:22:21.564537] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-069.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-069/2b7f4d67d65e4c99942bcb736a404bbc_thumbnail.0.jpg
+[2020-09-01 00:22:21.566913] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-232.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-232/28bc424c9f0a4b399da1c79f2742bfbd_thumbnail.0.jpg
+[2020-09-01 00:22:21.579870] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-074.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-074/6e3baf25269c4b2d9e0d7293e0f8f391_thumbnail.0.jpg
+[2020-09-01 00:22:21.584532] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-071.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-071/edcb539c340d434a9a23ae53dceb4e2f_thumbnail.0.jpg
+[2020-09-01 00:22:21.588587] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-066.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-066/14ef5266284e41d7853058fda3109149_thumbnail.0.jpg
+[2020-09-01 00:22:21.593502] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-077.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-077/51c01d11e5894206825d1e866f6780fc_thumbnail.0.jpg
+[2020-09-01 00:22:21.597739] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-075.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-075/4cb03c4c421f40ae8512fe6cd76479ad_thumbnail.0.jpg
+[2020-09-01 00:22:21.604132] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-337.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-337/4fe93b39b2134bd89700c10fa469f8c4_thumbnail.0.jpg
+[2020-09-01 00:22:21.608631] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-061.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-061/09453863b652429b8f37a34be11510b3_thumbnail.0.jpg
+[2020-09-01 00:22:21.611781] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-062.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-062/59bd0bef37d0448b8335b04b9382f280_thumbnail.0.jpg
+[2020-09-01 00:22:21.650270] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-070.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-070/d10ad9990b424bafa3791a2f32811885_thumbnail.0.jpg
+[2020-09-01 00:22:21.672143] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-250.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-250/e2af00fb8efc4ea18048344c8e4386a5_thumbnail.0.jpg
+[2020-09-01 00:22:21.677060] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-064.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-064/fa93dce42fe440cba0cd71cf01cb2c61_thumbnail.0.jpg
+[2020-09-01 00:22:21.681046] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-063.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-063/d6297fbdbf85498185f14c9c547b74b6_thumbnail.0.jpg
+[2020-09-01 00:22:21.697246] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-228.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-228/32b3332f7838417f8d7a8897f11c8d83_thumbnail.0.jpg
+[2020-09-01 00:22:21.703190] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-080.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-080/d40c1f61d7ec40f8ac9147b6e25f74d0_thumbnail.0.jpg
+[2020-09-01 00:22:21.706180] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-078.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-078/c8e85e49989047c490cba95857c5b9db_thumbnail.0.jpg
+[2020-09-01 00:22:21.709863] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-246.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-246/dda689b3d3c44a5dbb57608a9f29e771_thumbnail.0.jpg
+[2020-09-01 00:22:21.714850] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-179.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-179/996749e5aafe444a9604497c0669e361_thumbnail.0.jpg
+[2020-09-01 00:22:21.731807] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-221.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-221/bc3abf8171e141279b57c57b4dd442c3_thumbnail.0.jpg
+[2020-09-01 00:22:21.740777] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-081.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-081/903b3bd04585460bbe2c20106a381590_thumbnail.0.jpg
+[2020-09-01 00:22:21.746754] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-222.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-222/758be8472ef747efb5405e7f4207e324_thumbnail.0.jpg
+[2020-09-01 00:22:21.754803] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-224.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-224/3d0404d2ddaf440ab2cdaf87188bcad1_thumbnail.0.jpg
+[2020-09-01 00:22:21.763695] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-079.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-079/b28abe705a694387a2e279a98eee6e6d_thumbnail.0.jpg
+[2020-09-01 00:22:21.781635] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-205.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-205/21a5384f9fe1401caa49d8d3fe367483_thumbnail.0.jpg
+[2020-09-01 00:22:21.786311] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-147.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-147/a50c23eb099245b39587fe58f5788426_thumbnail.0.jpg
+[2020-09-01 00:22:21.789567] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-244.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-244/65b8f0dd840c4178837ce408f892c149_thumbnail.0.jpg
+[2020-09-01 00:22:21.792576] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-338.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-338/ee415f9f5617483e95c83550559093e2_thumbnail.0.jpg
+[2020-09-01 00:22:21.797544] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-083.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-083/50b17a3e8b1841368517f082278db7a2_thumbnail.0.jpg
+[2020-09-01 00:22:21.803502] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-245.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-245/be52d3b529b9414986ed5080fa56c352_thumbnail.0.jpg
+[2020-09-01 00:22:21.816499] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-223.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-223/fdf345f43bec4aeb9ba5ff03bc1d5fc7_thumbnail.0.jpg
+[2020-09-01 00:22:21.874282] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-206.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-206/2d6b1a88021940d3a6ba06efd456f6ad_thumbnail.0.jpg
+[2020-09-01 00:22:21.884190] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-227.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-227/bbcaf0aed7a14a74a2b7a9e7dba65281_thumbnail.0.jpg
+[2020-09-01 00:22:21.906525] [info]:  download file: /slib/resource/cloud/thumbnail/1/Prism-237.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/Prism-237/078314fafaab4d0396fdbaa392e192e0_thumbnail.0.jpg
+[2020-09-01 00:22:21.919484] [info]:  download file: resource/AssetList/type=environment/category=indoor/abstract url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27indoor/abstract%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 00:22:21.928564] [info]:  download file: resource/AssetList/type=environment/category=indoor/studio url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27indoor/studio%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 00:22:21.940896] [info]:  download file: resource/AssetList/type=environment/category=outdoor/nature url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/nature%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 00:22:21.945094] [info]:  download file: resource/AssetList/type=environment/category=outdoor/city url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/city%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 00:22:22.018669] [info]:  download file: resource/AssetList/type=environment/category=outdoor/road url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/road%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 00:22:22.026394] [info]:  download file: resource/AssetList/type=environment/category=outdoor/snow url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/snow%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 00:22:23.262868] [info]: fetch /slib/resource/cloud/thumbnail/1/photobooth.jpg with cookie:BA5EE55E-9982-449B-9D66-9F036540E140indoor/abstractenvironment
+[2020-09-01 00:22:23.262868] [info]:  download file: /slib/resource/cloud/thumbnail/1/photobooth.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/photobooth/936061de341c41948f6a9629ff60f6f0_thumbnail.0.jpg
+[2020-09-01 00:22:23.480765] [info]: fetch /slib/resource/cloud/thumbnail/1/DryLakeBed.jpg with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/natureenvironment
+[2020-09-01 00:22:23.480765] [info]: fetch /slib/resource/cloud/thumbnail/1/field.jpg with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/natureenvironment
+[2020-09-01 00:22:23.481761] [info]:  download file: /slib/resource/cloud/thumbnail/1/DryLakeBed.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/DryLakeBed/2f601ca278744326a47d30f77da67897_thumbnail.0.jpg
+[2020-09-01 00:22:23.481761] [info]:  download file: /slib/resource/cloud/thumbnail/1/field.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/field/69d21852fa2b4305adce6bc7ac149d17_thumbnail.0.jpg
+[2020-09-01 00:22:23.486745] [info]: fetch /slib/resource/cloud/thumbnail/1/skylight.jpg with cookie:BA5EE55E-9982-449B-9D66-9F036540E140indoor/studioenvironment
+[2020-09-01 00:22:23.486745] [info]:  download file: /slib/resource/cloud/thumbnail/1/skylight.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/skylight/46d3cddcada84e7cb48b6bbaa3742cdb_thumbnail.0.jpg
+[2020-09-01 00:22:23.490051] [info]: fetch /slib/resource/cloud/thumbnail/1/mi360_Plaza.jpg with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/cityenvironment
+[2020-09-01 00:22:23.490051] [info]:  download file: /slib/resource/cloud/thumbnail/1/mi360_Plaza.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/mi360_Plaza/b7f8d04a358b41f59b1837a8bd06da32_thumbnail.0.jpg
+[2020-09-01 00:22:23.496995] [info]: fetch /slib/resource/cloud/thumbnail/1/crossroads.jpg with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/roadenvironment
+[2020-09-01 00:22:23.496995] [info]:  download file: /slib/resource/cloud/thumbnail/1/crossroads.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/crossroads/8c570e096c78445587608ffae8cf74ab_thumbnail.0.jpg
+[2020-09-01 00:22:23.507914] [info]: fetch /slib/resource/cloud/thumbnail/1/mi360_Snow.jpg with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/snowenvironment
+[2020-09-01 00:22:23.507914] [info]:  download file: /slib/resource/cloud/thumbnail/1/mi360_Snow.jpg url:http://d3nwea2p6rateh.cloudfront.net/publicassets/mi360_Snow/38f0886d5d504c6d9ab188a60002bfc9_thumbnail.0.jpg
+[2020-09-01 00:23:13.256320] [info]: adexmtsv stopped.
+[2020-09-01 07:42:36.429354] [info]: adexmtsv starts.
+[2020-09-01 07:42:36.439197] [info]: Backend is https server.
+[2020-09-01 07:42:36.884227] [info]: Start acceptor.
+[2020-09-01 07:42:36.909629] [info]: New Pipe Session.
+[2020-09-01 07:42:36.971854] [info]: New Pipe Session.
+[2020-09-01 07:42:37.065824] [info]: New Pipe Session.
+[2020-09-01 07:42:37.108683] [info]: New Pipe Session.
+[2020-09-01 07:42:37.779978] [info]: New Pipe Session.
+[2020-09-01 07:44:36.772847] [info]: New Pipe Session.
+[2020-09-01 07:44:36.874748] [info]: New Pipe Session.
+[2020-09-01 07:44:37.141134] [info]: New Pipe Session.
+[2020-09-01 07:44:37.289455] [info]: New Pipe Session.
+[2020-09-01 07:44:37.969440] [info]: New Pipe Session.
+[2020-09-01 07:45:02.126960] [info]: New Pipe Session.
+[2020-09-01 07:45:02.190412] [info]: New Pipe Session.
+[2020-09-01 07:45:02.319727] [info]: New Pipe Session.
+[2020-09-01 07:45:02.406350] [info]: New Pipe Session.
+[2020-09-01 07:45:03.208506] [info]: New Pipe Session.
+[2020-09-01 07:46:50.423695] [info]: New Pipe Session.
+[2020-09-01 07:46:56.922858] [info]: set token : eyJhbGciOiJIUzI1NiIsImtpZCI6Imp3dF9zeW1tZXRyaWNfa2V5In0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImdyYW50X2lkIjoiNkZoUTZ6T1UxSlRSUG1GOHBZdUF0YktkR0ZhSGZoSDMiLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbS9hdWQvand0ZXhwNjAiLCJqdGkiOiJaNWsxN1FFYnlLSU9QV0o3NDBVRjQ3dkRBVmxsQ0ZmWnA5Uk4wWERCSFJTVFRBVzRqRkxwMmU0NmFsWHlpaXY2IiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNTk4OTMwMTg2fQ.QqD77Zx44QGW5chV5mBTwjyCPostd4Y6wcXt499RaMQ
+[2020-09-01 07:46:56.923891] [info]: fetch category list with cookie: QueryCategory_BA5EE55E-9982-449B-9D66-9F036540E140environment
+[2020-09-01 07:46:56.923891] [info]:  download file: resource/CategoryList/type=environment url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&facet.category={sort:%27bucket%27,size:1000}&size=0&return=_no_fields&domain=environments
+[2020-09-01 07:46:56.973118] [info]: set token : eyJhbGciOiJIUzI1NiIsImtpZCI6Imp3dF9zeW1tZXRyaWNfa2V5In0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImdyYW50X2lkIjoiNkZoUTZ6T1UxSlRSUG1GOHBZdUF0YktkR0ZhSGZoSDMiLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbS9hdWQvand0ZXhwNjAiLCJqdGkiOiJaNWsxN1FFYnlLSU9QV0o3NDBVRjQ3dkRBVmxsQ0ZmWnA5Uk4wWERCSFJTVFRBVzRqRkxwMmU0NmFsWHlpaXY2IiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNTk4OTMwMTg2fQ.QqD77Zx44QGW5chV5mBTwjyCPostd4Y6wcXt499RaMQ
+[2020-09-01 07:46:56.974113] [info]: fetch material list in  with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 07:46:56.974113] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&domain=materials&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 07:46:56.975110] [info]: fetch material list in  with cookie:AssetList/__libraryId:user/JDF3L3FH3CC8/content/private/__materialList:
+[2020-09-01 07:46:56.975110] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=%28and%20schema_set_id:{,3]%20owner:%27JDF3L3FH3CC8%27%20%29&q.parser=structured&pretty=true&domain=materials&size=500
+[2020-09-01 07:47:03.441815] [info]: fetch material list in indoor/abstract with cookie:BA5EE55E-9982-449B-9D66-9F036540E140indoor/abstractenvironment
+[2020-09-01 07:47:03.441815] [info]:  download file: resource/AssetList/type=environment/category=indoor/abstract url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27indoor/abstract%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 07:47:03.443588] [info]: fetch material list in indoor/studio with cookie:BA5EE55E-9982-449B-9D66-9F036540E140indoor/studioenvironment
+[2020-09-01 07:47:03.443588] [info]:  download file: resource/AssetList/type=environment/category=indoor/studio url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27indoor/studio%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 07:47:03.444991] [info]: fetch material list in outdoor/city with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/cityenvironment
+[2020-09-01 07:47:03.445601] [info]:  download file: resource/AssetList/type=environment/category=outdoor/city url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/city%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 07:47:03.446291] [info]: fetch material list in outdoor/nature with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/natureenvironment
+[2020-09-01 07:47:03.446942] [info]:  download file: resource/AssetList/type=environment/category=outdoor/nature url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/nature%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 07:47:03.447472] [info]: fetch material list in outdoor/road with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/roadenvironment
+[2020-09-01 07:47:03.448422] [info]:  download file: resource/AssetList/type=environment/category=outdoor/road url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/road%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 07:47:03.448422] [info]: fetch material list in outdoor/snow with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/snowenvironment
+[2020-09-01 07:47:03.449468] [info]:  download file: resource/AssetList/type=environment/category=outdoor/snow url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/snow%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 07:54:47.645726] [info]: adexmtsv stopped.
+[2020-09-01 09:30:37.673026] [info]: adexmtsv starts.
+[2020-09-01 09:30:37.682007] [info]: Backend is https server.
+[2020-09-01 09:30:38.214582] [info]: Start acceptor.
+[2020-09-01 09:30:38.238831] [info]: New Pipe Session.
+[2020-09-01 09:30:38.293990] [info]: New Pipe Session.
+[2020-09-01 09:30:38.409670] [info]: New Pipe Session.
+[2020-09-01 09:30:38.493458] [info]: New Pipe Session.
+[2020-09-01 09:30:39.513209] [info]: New Pipe Session.
+[2020-09-01 09:31:28.123066] [info]: New Pipe Session.
+[2020-09-01 09:31:35.048775] [info]: set token : eyJhbGciOiJIUzI1NiIsImtpZCI6Imp3dF9zeW1tZXRyaWNfa2V5In0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImdyYW50X2lkIjoiRTNOaHBHZ0JqYW9BaWdHc3dRcGNaSzd5NEhPVTFKSVgiLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbS9hdWQvand0ZXhwNjAiLCJqdGkiOiJpbk1xNHh0eWVoM2xsdWtJOENuQlhlbkF0TzRSRlZCSURjck52dzdub09lWFE2YTE0Ykp1a3VxamhYYkl0NHA2IiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNTk4OTM2NDUxfQ.ScVMjEUdbv17L55rf2098M3riZ9cMEkQ6woSwwjMA3w
+[2020-09-01 09:31:35.050357] [info]: fetch category list with cookie: QueryCategory_BA5EE55E-9982-449B-9D66-9F036540E140environment
+[2020-09-01 09:31:35.051225] [info]:  download file: resource/CategoryList/type=environment url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&facet.category={sort:%27bucket%27,size:1000}&size=0&return=_no_fields&domain=environments
+[2020-09-01 09:31:35.144703] [info]: set token : eyJhbGciOiJIUzI1NiIsImtpZCI6Imp3dF9zeW1tZXRyaWNfa2V5In0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImdyYW50X2lkIjoiRTNOaHBHZ0JqYW9BaWdHc3dRcGNaSzd5NEhPVTFKSVgiLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbS9hdWQvand0ZXhwNjAiLCJqdGkiOiJpbk1xNHh0eWVoM2xsdWtJOENuQlhlbkF0TzRSRlZCSURjck52dzdub09lWFE2YTE0Ykp1a3VxamhYYkl0NHA2IiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNTk4OTM2NDUxfQ.ScVMjEUdbv17L55rf2098M3riZ9cMEkQ6woSwwjMA3w
+[2020-09-01 09:31:35.144703] [info]: fetch material list in  with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 09:31:35.145772] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&domain=materials&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 09:31:35.146582] [info]: fetch material list in  with cookie:AssetList/__libraryId:user/JDF3L3FH3CC8/content/private/__materialList:
+[2020-09-01 09:31:35.146582] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=%28and%20schema_set_id:{,3]%20owner:%27JDF3L3FH3CC8%27%20%29&q.parser=structured&pretty=true&domain=materials&size=500
+[2020-09-01 09:31:43.563037] [info]: fetch material list in indoor/abstract with cookie:BA5EE55E-9982-449B-9D66-9F036540E140indoor/abstractenvironment
+[2020-09-01 09:31:43.564097] [info]:  download file: resource/AssetList/type=environment/category=indoor/abstract url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27indoor/abstract%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 09:31:43.566028] [info]: fetch material list in indoor/studio with cookie:BA5EE55E-9982-449B-9D66-9F036540E140indoor/studioenvironment
+[2020-09-01 09:31:43.566028] [info]:  download file: resource/AssetList/type=environment/category=indoor/studio url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27indoor/studio%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 09:31:43.568059] [info]: fetch material list in outdoor/city with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/cityenvironment
+[2020-09-01 09:31:43.568059] [info]:  download file: resource/AssetList/type=environment/category=outdoor/city url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/city%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 09:31:43.570070] [info]: fetch material list in outdoor/nature with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/natureenvironment
+[2020-09-01 09:31:43.570070] [info]:  download file: resource/AssetList/type=environment/category=outdoor/nature url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/nature%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 09:31:43.572003] [info]: fetch material list in outdoor/road with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/roadenvironment
+[2020-09-01 09:31:43.573041] [info]:  download file: resource/AssetList/type=environment/category=outdoor/road url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/road%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 09:31:43.574003] [info]: fetch material list in outdoor/snow with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/snowenvironment
+[2020-09-01 09:31:43.574996] [info]:  download file: resource/AssetList/type=environment/category=outdoor/snow url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/snow%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 09:32:37.221690] [info]: fetch category list with cookie: QueryCategory_BA5EE55E-9982-449B-9D66-9F036540E140environment
+[2020-09-01 09:32:37.221690] [info]:  download file: resource/CategoryList/type=environment url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&facet.category={sort:%27bucket%27,size:1000}&size=0&return=_no_fields&domain=environments
+[2020-09-01 09:32:37.258555] [info]: fetch material list in  with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 09:32:37.259588] [info]: fetch material list in  with cookie:AssetList/__libraryId:user/JDF3L3FH3CC8/content/private/__materialList:
+[2020-09-01 09:32:37.259588] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=%28and%20schema_set_id:{,3]%20owner:%27JDF3L3FH3CC8%27%20%29&q.parser=structured&pretty=true&domain=materials&size=500
+[2020-09-01 09:34:00.659151] [info]: fetch category list with cookie: QueryCategory_BA5EE55E-9982-449B-9D66-9F036540E140environment
+[2020-09-01 09:34:00.660143] [info]:  download file: resource/CategoryList/type=environment url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&facet.category={sort:%27bucket%27,size:1000}&size=0&return=_no_fields&domain=environments
+[2020-09-01 09:34:00.740202] [info]: fetch material list in  with cookie:AssetList/__libraryId:user/JDF3L3FH3CC8/content/private/__materialList:
+[2020-09-01 09:34:00.740202] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=%28and%20schema_set_id:{,3]%20owner:%27JDF3L3FH3CC8%27%20%29&q.parser=structured&pretty=true&domain=materials&size=500
+[2020-09-01 09:41:20.910144] [info]: adexmtsv stopped.
+[2020-09-01 20:08:01.215889] [info]: adexmtsv starts.
+[2020-09-01 20:08:01.219873] [info]: Backend is https server.
+[2020-09-01 20:08:01.658115] [info]: Start acceptor.
+[2020-09-01 20:08:01.740191] [info]: New Pipe Session.
+[2020-09-01 20:08:01.808235] [info]: New Pipe Session.
+[2020-09-01 20:08:01.875700] [info]: New Pipe Session.
+[2020-09-01 20:08:01.919606] [info]: New Pipe Session.
+[2020-09-01 20:08:02.780608] [info]: New Pipe Session.
+[2020-09-01 20:08:34.459595] [info]: New Pipe Session.
+[2020-09-01 20:08:40.706343] [info]: set token : eyJhbGciOiJIUzI1NiIsImtpZCI6Imp3dF9zeW1tZXRyaWNfa2V5In0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImdyYW50X2lkIjoiaGR2VzR1TkNxNWh2MVVzaXhsY1JldHp3bE1EUU1sUEwiLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbS9hdWQvand0ZXhwNjAiLCJqdGkiOiJIVEhSbHJtMnA1YXgzTXpINXEwd3Rjd0gwRHJjbllveUFHbkpkbnRtcDhhV01FV0drUkJEQlYyemw2Y003NmhFIiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNTk4OTc0Njk1fQ.FOV5YJSOoXYkqjSd4vCuVVMj6d1rZh1YYp0nUPdToe4
+[2020-09-01 20:08:40.706343] [info]: fetch category list with cookie: QueryCategory_BA5EE55E-9982-449B-9D66-9F036540E140environment
+[2020-09-01 20:08:40.707344] [info]:  download file: resource/CategoryList/type=environment url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&facet.category={sort:%27bucket%27,size:1000}&size=0&return=_no_fields&domain=environments
+[2020-09-01 20:08:40.754809] [info]: set token : eyJhbGciOiJIUzI1NiIsImtpZCI6Imp3dF9zeW1tZXRyaWNfa2V5In0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImdyYW50X2lkIjoiaGR2VzR1TkNxNWh2MVVzaXhsY1JldHp3bE1EUU1sUEwiLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbS9hdWQvand0ZXhwNjAiLCJqdGkiOiJIVEhSbHJtMnA1YXgzTXpINXEwd3Rjd0gwRHJjbllveUFHbkpkbnRtcDhhV01FV0drUkJEQlYyemw2Y003NmhFIiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNTk4OTc0Njk1fQ.FOV5YJSOoXYkqjSd4vCuVVMj6d1rZh1YYp0nUPdToe4
+[2020-09-01 20:08:40.754809] [info]: fetch material list in  with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-01 20:08:40.754809] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&domain=materials&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 20:08:40.756002] [info]: fetch material list in  with cookie:AssetList/__libraryId:user/JDF3L3FH3CC8/content/private/__materialList:
+[2020-09-01 20:08:40.756002] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=%28and%20schema_set_id:{,3]%20owner:%27JDF3L3FH3CC8%27%20%29&q.parser=structured&pretty=true&domain=materials&size=500
+[2020-09-01 20:09:02.217111] [info]: fetch material list in indoor/abstract with cookie:BA5EE55E-9982-449B-9D66-9F036540E140indoor/abstractenvironment
+[2020-09-01 20:09:02.218136] [info]:  download file: resource/AssetList/type=environment/category=indoor/abstract url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27indoor/abstract%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 20:09:02.220179] [info]: fetch material list in indoor/studio with cookie:BA5EE55E-9982-449B-9D66-9F036540E140indoor/studioenvironment
+[2020-09-01 20:09:02.220711] [info]:  download file: resource/AssetList/type=environment/category=indoor/studio url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27indoor/studio%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 20:09:02.221789] [info]: fetch material list in outdoor/city with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/cityenvironment
+[2020-09-01 20:09:02.222709] [info]:  download file: resource/AssetList/type=environment/category=outdoor/city url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/city%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 20:09:02.223705] [info]: fetch material list in outdoor/nature with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/natureenvironment
+[2020-09-01 20:09:02.224702] [info]:  download file: resource/AssetList/type=environment/category=outdoor/nature url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/nature%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 20:09:02.225699] [info]: fetch material list in outdoor/road with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/roadenvironment
+[2020-09-01 20:09:02.226695] [info]:  download file: resource/AssetList/type=environment/category=outdoor/road url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/road%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 20:09:02.227699] [info]: fetch material list in outdoor/snow with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/snowenvironment
+[2020-09-01 20:09:02.228766] [info]:  download file: resource/AssetList/type=environment/category=outdoor/snow url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/snow%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-01 20:10:04.502874] [info]: adexmtsv stopped.
+[2020-09-02 11:22:10.889307] [info]: adexmtsv starts.
+[2020-09-02 11:22:10.891300] [info]: Backend is https server.
+[2020-09-02 11:22:11.317883] [info]: Start acceptor.
+[2020-09-02 11:22:11.321121] [info]: New Pipe Session.
+[2020-09-02 11:22:11.352234] [info]: New Pipe Session.
+[2020-09-02 11:22:11.418243] [info]: New Pipe Session.
+[2020-09-02 11:22:11.466377] [info]: New Pipe Session.
+[2020-09-02 11:22:12.112479] [info]: New Pipe Session.
+[2020-09-02 11:22:21.283477] [info]: New Pipe Session.
+[2020-09-02 11:30:12.429083] [info]: New Pipe Session.
+[2020-09-02 11:30:12.489742] [info]: New Pipe Session.
+[2020-09-02 11:30:12.590447] [info]: New Pipe Session.
+[2020-09-02 11:30:12.668346] [info]: New Pipe Session.
+[2020-09-02 11:30:13.357853] [info]: New Pipe Session.
+[2020-09-02 11:30:18.344419] [info]: New Pipe Session.
+[2020-09-02 11:35:59.523946] [info]: set token : eyJhbGciOiJIUzI1NiIsImtpZCI6Imp3dF9zeW1tZXRyaWNfa2V5In0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImdyYW50X2lkIjoiRXZ1TEpXZkxXUW04bTB0QkMxUXRSZllxaXV2WjBnVk8iLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbS9hdWQvand0ZXhwNjAiLCJqdGkiOiJpQzhCV2xCMUhtNHZibzc3WWNPd3JRWGNCcHJvWGhwU2Z1VzVaNmxjVXpZcUhUNnNMYzJwMjBTWDFKMElVM2RIIiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNTk5MDMwMjIwfQ.y_KKc8RE7GgcFnJzJoqbNfe-_glp0-4M335XStqYzlU
+[2020-09-02 11:35:59.524983] [info]: fetch category list with cookie: QueryCategory_BA5EE55E-9982-449B-9D66-9F036540E140environment
+[2020-09-02 11:35:59.525985] [info]:  download file: resource/CategoryList/type=environment url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&facet.category={sort:%27bucket%27,size:1000}&size=0&return=_no_fields&domain=environments
+[2020-09-02 11:35:59.631993] [info]: set token : eyJhbGciOiJIUzI1NiIsImtpZCI6Imp3dF9zeW1tZXRyaWNfa2V5In0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImdyYW50X2lkIjoiRXZ1TEpXZkxXUW04bTB0QkMxUXRSZllxaXV2WjBnVk8iLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbS9hdWQvand0ZXhwNjAiLCJqdGkiOiJpQzhCV2xCMUhtNHZibzc3WWNPd3JRWGNCcHJvWGhwU2Z1VzVaNmxjVXpZcUhUNnNMYzJwMjBTWDFKMElVM2RIIiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNTk5MDMwMjIwfQ.y_KKc8RE7GgcFnJzJoqbNfe-_glp0-4M335XStqYzlU
+[2020-09-02 11:35:59.634750] [info]: fetch material list in  with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-09-02 11:35:59.634750] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&domain=materials&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-02 11:35:59.635836] [info]: fetch material list in  with cookie:AssetList/__libraryId:user/JDF3L3FH3CC8/content/private/__materialList:
+[2020-09-02 11:35:59.635836] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=%28and%20schema_set_id:{,3]%20owner:%27JDF3L3FH3CC8%27%20%29&q.parser=structured&pretty=true&domain=materials&size=500
+[2020-09-02 11:36:14.942377] [info]: fetch material list in indoor/abstract with cookie:BA5EE55E-9982-449B-9D66-9F036540E140indoor/abstractenvironment
+[2020-09-02 11:36:14.943377] [info]:  download file: resource/AssetList/type=environment/category=indoor/abstract url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27indoor/abstract%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-02 11:36:14.945392] [info]: fetch material list in indoor/studio with cookie:BA5EE55E-9982-449B-9D66-9F036540E140indoor/studioenvironment
+[2020-09-02 11:36:14.945392] [info]:  download file: resource/AssetList/type=environment/category=indoor/studio url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27indoor/studio%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-02 11:36:14.947358] [info]: fetch material list in outdoor/city with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/cityenvironment
+[2020-09-02 11:36:14.947934] [info]:  download file: resource/AssetList/type=environment/category=outdoor/city url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/city%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-02 11:36:14.948955] [info]: fetch material list in outdoor/nature with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/natureenvironment
+[2020-09-02 11:36:14.949954] [info]:  download file: resource/AssetList/type=environment/category=outdoor/nature url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/nature%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-02 11:36:14.950782] [info]: fetch material list in outdoor/road with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/roadenvironment
+[2020-09-02 11:36:14.952126] [info]:  download file: resource/AssetList/type=environment/category=outdoor/road url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/road%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-02 11:36:14.954018] [info]: fetch material list in outdoor/snow with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/snowenvironment
+[2020-09-02 11:36:14.954550] [info]:  download file: resource/AssetList/type=environment/category=outdoor/snow url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/snow%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-09-02 11:48:26.811529] [info]: fetch material list in  with cookie:AssetList/__libraryId:user/JDF3L3FH3CC8/content/private/__materialList:
+[2020-09-02 11:48:26.812520] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=%28and%20schema_set_id:{,3]%20owner:%27JDF3L3FH3CC8%27%20%29&q.parser=structured&pretty=true&domain=materials&size=500
+[2020-09-02 11:49:34.018395] [info]: adexmtsv stopped.
+[2020-09-04 07:31:17.232681] [info]: adexmtsv starts.
+[2020-09-04 07:31:17.235817] [info]: Backend is https server.
+[2020-09-04 07:31:17.799678] [info]: Start acceptor.
+[2020-09-04 07:31:17.895943] [info]: New Pipe Session.
+[2020-09-04 07:31:17.939244] [info]: New Pipe Session.
+[2020-09-04 07:31:17.993064] [info]: New Pipe Session.
+[2020-09-04 07:31:18.035203] [info]: New Pipe Session.
+[2020-09-04 07:31:18.658604] [info]: New Pipe Session.
+[2020-09-04 07:32:29.133050] [info]: New Pipe Session.
+[2020-09-04 07:36:29.525893] [info]: adexmtsv stopped.
+[2020-09-04 07:39:10.993358] [info]: adexmtsv starts.
+[2020-09-04 07:39:10.994707] [info]: Backend is https server.
+[2020-09-04 07:39:11.499019] [info]: Start acceptor.
+[2020-09-04 07:39:11.556512] [info]: New Pipe Session.
+[2020-09-04 07:39:11.606903] [info]: New Pipe Session.
+[2020-09-04 07:39:11.664704] [info]: New Pipe Session.
+[2020-09-04 07:39:11.707607] [info]: New Pipe Session.
+[2020-09-04 07:39:12.185794] [info]: New Pipe Session.
+[2020-09-04 07:39:31.228191] [info]: adexmtsv stopped.
+[2020-09-12 08:53:12.264755] [info]: adexmtsv starts.
+[2020-09-12 08:53:12.267488] [info]: Backend is https server.
+[2020-09-12 08:53:12.811261] [info]: Start acceptor.
+[2020-09-12 08:53:12.848947] [info]: New Pipe Session.
+[2020-09-12 08:53:12.885817] [info]: New Pipe Session.
+[2020-09-12 08:53:12.947598] [info]: New Pipe Session.
+[2020-09-12 08:53:12.990832] [info]: New Pipe Session.
+[2020-09-12 08:53:13.755068] [info]: New Pipe Session.
+[2020-09-12 08:53:53.247765] [info]: adexmtsv stopped.
+[2020-10-13 13:33:39.701522] [info]: adexmtsv starts.
+[2020-10-13 13:33:39.705510] [info]: Backend is https server.
+[2020-10-13 13:33:40.638137] [info]: Start acceptor.
+[2020-10-13 13:33:40.731390] [info]: New Pipe Session.
+[2020-10-13 13:33:40.828990] [info]: New Pipe Session.
+[2020-10-13 13:33:41.006879] [info]: New Pipe Session.
+[2020-10-13 13:33:41.138332] [info]: New Pipe Session.
+[2020-10-13 13:33:42.348692] [info]: New Pipe Session.
+[2020-10-13 13:55:14.062129] [info]: adexmtsv stopped.
+[2020-11-17 13:22:37.536864] [info]: adexmtsv starts.
+[2020-11-17 13:22:37.559357] [info]: Backend is https server.
+[2020-11-17 13:22:38.297598] [info]: Start acceptor.
+[2020-11-17 13:22:38.320597] [info]: New Pipe Session.
+[2020-11-17 13:22:38.326549] [info]: New Pipe Session.
+[2020-11-17 13:22:38.408235] [info]: New Pipe Session.
+[2020-11-18 08:04:06.617311] [info]: adexmtsv stopped.
+[2020-11-24 22:16:21.437975] [info]: adexmtsv starts.
+[2020-11-24 22:16:21.488804] [info]: Backend is https server.
+[2020-11-24 22:16:22.522350] [info]: Start acceptor.
+[2020-11-24 22:16:22.537300] [info]: New Pipe Session.
+[2020-11-24 22:16:22.614043] [info]: New Pipe Session.
+[2020-11-24 22:16:22.764539] [info]: New Pipe Session.
+[2020-11-24 22:16:22.841297] [info]: New Pipe Session.
+[2020-11-24 22:16:24.394090] [info]: New Pipe Session.
+[2020-11-24 22:17:22.958686] [info]: New Pipe Session.
+[2020-11-24 22:17:23.040671] [info]: New Pipe Session.
+[2020-11-24 22:17:23.315402] [info]: New Pipe Session.
+[2020-11-24 22:17:23.430660] [info]: New Pipe Session.
+[2020-11-24 22:17:24.364556] [info]: New Pipe Session.
+[2020-11-24 22:19:54.252576] [info]: New Pipe Session.
+[2020-11-24 22:20:06.052401] [info]: set token : eyJhbGciOiJIUzI1NiIsImtpZCI6Imp3dF9zeW1tZXRyaWNfa2V5In0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImdyYW50X2lkIjoiQTZCM0xZOVo5aG1ZZDNKTW5PdERJZnVuQVlCd0xxODAiLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbS9hdWQvand0ZXhwNjAiLCJqdGkiOiJJbGpoWTJ1RXREeWFncDlaZWQ1OUJ1TElDMHVPQWd1TnE2cDRvV1BEa1AwclZxNXhBbzk0T0M2WURldDAydW0xIiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNjA2MjQwMTY3fQ.0a2vqtJA82WKvz6C-_bSXsNoOgUYMEJAvsuojtIFEsg
+[2020-11-24 22:20:06.076257] [info]: fetch category list with cookie: QueryCategory_BA5EE55E-9982-449B-9D66-9F036540E140environment
+[2020-11-24 22:20:06.079292] [info]:  download file: resource/CategoryList/type=environment url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&facet.category={sort:%27bucket%27,size:1000}&size=0&return=_no_fields&domain=environments
+[2020-11-24 22:20:06.137297] [info]: set token : eyJhbGciOiJIUzI1NiIsImtpZCI6Imp3dF9zeW1tZXRyaWNfa2V5In0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImdyYW50X2lkIjoiQTZCM0xZOVo5aG1ZZDNKTW5PdERJZnVuQVlCd0xxODAiLCJhdWQiOiJodHRwczovL2F1dG9kZXNrLmNvbS9hdWQvand0ZXhwNjAiLCJqdGkiOiJJbGpoWTJ1RXREeWFncDlaZWQ1OUJ1TElDMHVPQWd1TnE2cDRvV1BEa1AwclZxNXhBbzk0T0M2WURldDAydW0xIiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNjA2MjQwMTY3fQ.0a2vqtJA82WKvz6C-_bSXsNoOgUYMEJAvsuojtIFEsg
+[2020-11-24 22:20:06.138548] [info]: fetch material list in  with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2020-11-24 22:20:06.139609] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&domain=materials&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-11-24 22:20:06.139609] [info]: fetch material list in  with cookie:AssetList/__libraryId:user/JDF3L3FH3CC8/content/private/__materialList:
+[2020-11-24 22:20:06.140422] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=%28and%20schema_set_id:{,3]%20owner:%27JDF3L3FH3CC8%27%20%29&q.parser=structured&pretty=true&domain=materials&size=500
+[2020-11-24 22:20:19.925949] [info]: fetch material list in indoor/abstract with cookie:BA5EE55E-9982-449B-9D66-9F036540E140indoor/abstractenvironment
+[2020-11-24 22:20:19.925949] [info]:  download file: resource/AssetList/type=environment/category=indoor/abstract url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27indoor/abstract%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-11-24 22:20:19.927946] [info]: fetch material list in indoor/studio with cookie:BA5EE55E-9982-449B-9D66-9F036540E140indoor/studioenvironment
+[2020-11-24 22:20:19.927946] [info]:  download file: resource/AssetList/type=environment/category=indoor/studio url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27indoor/studio%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-11-24 22:20:19.929937] [info]: fetch material list in outdoor/city with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/cityenvironment
+[2020-11-24 22:20:19.929937] [info]:  download file: resource/AssetList/type=environment/category=outdoor/city url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/city%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-11-24 22:20:19.930933] [info]: fetch material list in outdoor/nature with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/natureenvironment
+[2020-11-24 22:20:19.931934] [info]:  download file: resource/AssetList/type=environment/category=outdoor/nature url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/nature%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-11-24 22:20:19.932933] [info]: fetch material list in outdoor/road with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/roadenvironment
+[2020-11-24 22:20:19.932933] [info]:  download file: resource/AssetList/type=environment/category=outdoor/road url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/road%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-11-24 22:20:19.934108] [info]: fetch material list in outdoor/snow with cookie:BA5EE55E-9982-449B-9D66-9F036540E140outdoor/snowenvironment
+[2020-11-24 22:20:19.935267] [info]:  download file: resource/AssetList/type=environment/category=outdoor/snow url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3])(prefix+field%3D%27category%27+%27outdoor/snow%27))&q.parser=structured&domain=environments&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2020-11-24 23:25:35.174822] [info]: adexmtsv stopped.
+[2020-11-25 22:21:38.212807] [info]: adexmtsv starts.
+[2020-11-25 22:21:38.230749] [info]: Backend is https server.
+[2020-11-25 22:21:39.333527] [info]: Start acceptor.
+[2020-11-25 22:21:39.429205] [info]: New Pipe Session.
+[2020-11-25 22:21:39.510934] [info]: New Pipe Session.
+[2020-11-25 22:21:39.636513] [info]: New Pipe Session.
+[2020-11-25 22:21:39.738175] [info]: New Pipe Session.
+[2020-11-25 22:21:41.558087] [info]: New Pipe Session.
+[2020-11-25 22:22:11.041505] [info]: New Pipe Session.
+[2020-11-25 23:01:29.660258] [info]: adexmtsv stopped.
+[2021-02-21 18:42:47.903600] [info]: adexmtsv starts.
+[2021-02-21 18:42:47.910575] [info]: Backend is https server.
+[2021-02-21 18:42:48.415874] [info]: Start acceptor.
+[2021-02-21 18:42:48.426333] [info]: New Pipe Session.
+[2021-02-21 18:42:48.454980] [info]: New Pipe Session.
+[2021-02-21 18:42:48.510867] [info]: New Pipe Session.
+[2021-02-21 18:42:48.548742] [info]: New Pipe Session.
+[2021-02-21 18:42:49.382671] [info]: New Pipe Session.
+[2021-02-21 18:43:18.833426] [info]: adexmtsv stopped.
+[2021-04-08 19:25:47.472304] [info]: adexmtsv starts.
+[2021-04-08 19:25:47.479339] [info]: Backend is https server.
+[2021-04-08 19:25:47.946645] [info]: Start acceptor.
+[2021-04-08 19:25:47.975941] [info]: New Pipe Session.
+[2021-04-08 19:25:48.022373] [info]: New Pipe Session.
+[2021-04-08 19:25:48.120843] [info]: New Pipe Session.
+[2021-04-08 19:25:48.160710] [info]: New Pipe Session.
+[2021-04-08 19:25:49.026270] [info]: New Pipe Session.
+[2021-04-08 19:26:59.114971] [info]: New Pipe Session.
+[2021-04-08 19:27:29.383036] [info]: set token : eyJhbGciOiJSUzI1NiIsImtpZCI6IlU3c0dGRldUTzlBekNhSzBqZURRM2dQZXBURVdWN2VhIn0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImF1ZCI6Imh0dHBzOi8vYXV0b2Rlc2suY29tL2F1ZC9hand0ZXhwNjAiLCJqdGkiOiJyTm5HdFZrOHJOaGh0WkVVSHNUV0xTeWhVanloSzNrRFpSWXNrcXZtSmFNTlN0ZHM4TGhTZU11amFaUHhUMDNzIiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNjE3ODkzODE2fQ.aeOYVSm68c4YbOyeOEL9oRNjYLstDbX-NckauvCb1TI_FwsIe7shxBYbJT_bincna5lJJxBltPFObcceaO90IV47lcRsin2L2JGYRsD_YdQtXzb6mk7OzGklMnbKwhxbomxkw8G0hvsskZ1eIucTzsa1OR9xCgeS3SraODs5gDXSaGL3aRF2QrEmlJhn6zhANtsef3lairscDbyQv2kZgOT4wiUWL9rI7lHdTIDOK7V5sP_i2-pLwePe8bMvtNb7TqP5pJXb-vjrPL0lxt2Hy589X57TYr1OHvSNNNHYdthFO7wK79fhNSuX8KA0h7Sx0wsXwhmCc_cgOEsOz7OIzA
+[2021-04-08 19:27:29.386027] [info]: fetch category list with cookie: QueryCategory_BA5EE55E-9982-449B-9D66-9F036540E140environment
+[2021-04-08 19:27:29.386027] [info]:  download file: resource/CategoryList/type=environment url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&facet.category={sort:%27bucket%27,size:1000}&size=0&return=_no_fields&domain=environments
+[2021-04-08 19:27:29.437105] [info]: set token : eyJhbGciOiJSUzI1NiIsImtpZCI6IlU3c0dGRldUTzlBekNhSzBqZURRM2dQZXBURVdWN2VhIn0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImF1ZCI6Imh0dHBzOi8vYXV0b2Rlc2suY29tL2F1ZC9hand0ZXhwNjAiLCJqdGkiOiJyTm5HdFZrOHJOaGh0WkVVSHNUV0xTeWhVanloSzNrRFpSWXNrcXZtSmFNTlN0ZHM4TGhTZU11amFaUHhUMDNzIiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNjE3ODkzODE2fQ.aeOYVSm68c4YbOyeOEL9oRNjYLstDbX-NckauvCb1TI_FwsIe7shxBYbJT_bincna5lJJxBltPFObcceaO90IV47lcRsin2L2JGYRsD_YdQtXzb6mk7OzGklMnbKwhxbomxkw8G0hvsskZ1eIucTzsa1OR9xCgeS3SraODs5gDXSaGL3aRF2QrEmlJhn6zhANtsef3lairscDbyQv2kZgOT4wiUWL9rI7lHdTIDOK7V5sP_i2-pLwePe8bMvtNb7TqP5pJXb-vjrPL0lxt2Hy589X57TYr1OHvSNNNHYdthFO7wK79fhNSuX8KA0h7Sx0wsXwhmCc_cgOEsOz7OIzA
+[2021-04-08 19:27:29.437970] [info]: fetch material list in  with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2021-04-08 19:27:29.437970] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&domain=materials&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2021-04-08 19:27:29.438986] [info]: fetch material list in  with cookie:AssetList/__libraryId:user/JDF3L3FH3CC8/content/private/__materialList:
+[2021-04-08 19:27:29.439991] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=%28and%20schema_set_id:{,3]%20owner:%27JDF3L3FH3CC8%27%20%29&q.parser=structured&pretty=true&domain=materials&size=500
+[2021-04-08 19:36:17.633831] [info]: adexmtsv stopped.
+[2021-04-28 12:41:35.650380] [info]: adexmtsv starts.
+[2021-04-28 12:41:35.654376] [info]: Backend is https server.
+[2021-04-28 12:41:36.132582] [info]: Start acceptor.
+[2021-04-28 12:41:36.169623] [info]: New Pipe Session.
+[2021-04-28 12:41:36.215370] [info]: New Pipe Session.
+[2021-04-28 12:41:36.279390] [info]: New Pipe Session.
+[2021-04-28 12:41:36.325795] [info]: New Pipe Session.
+[2021-04-28 12:41:37.179087] [info]: New Pipe Session.
+[2021-04-28 12:45:52.511861] [info]: adexmtsv stopped.
+[2021-05-02 08:34:26.752538] [info]: adexmtsv starts.
+[2021-05-02 08:34:26.758160] [info]: Backend is https server.
+[2021-05-02 08:34:27.207592] [info]: Start acceptor.
+[2021-05-02 08:34:27.299961] [info]: New Pipe Session.
+[2021-05-02 08:34:27.375920] [info]: New Pipe Session.
+[2021-05-02 08:34:27.550348] [info]: New Pipe Session.
+[2021-05-02 08:34:27.643250] [info]: New Pipe Session.
+[2021-05-02 08:34:28.770889] [info]: New Pipe Session.
+[2021-05-02 08:35:59.126262] [info]: New Pipe Session.
+[2021-05-02 08:36:06.846040] [info]: set token : eyJhbGciOiJSUzI1NiIsImtpZCI6IlU3c0dGRldUTzlBekNhSzBqZURRM2dQZXBURVdWN2VhIn0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImF1ZCI6Imh0dHBzOi8vYXV0b2Rlc2suY29tL2F1ZC9hand0ZXhwNjAiLCJqdGkiOiJmdWFZbld1TE1qdnlvR3hOZmh1c1NkMnVhMkFUaURDTzZHdkM1VGRjYW1vd3lGN0FmOGlnV1VWZk5kSXA0QzA4IiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNjE5OTI4MzQ1fQ.Z3dcHxODswNpWGcTsffa19cPHudvO9RlKftaMkELWBBVAIfkFT-la4XmBGTALREpof54eX05o_-SRojeBWaw3EgiObCdW_78eF9FTe-dzg2RKeFHYuK6tzu9rURqfvNe1E2amr74db_8kSEYO9QrK41_7G2MUGwvNFJ17MknCkFaBkwUha2BuGSg4baZIzufp9PF3Whh76aFdflE14hHR54CECUYrSFJkeVYFT5dj16NerqcnvtuDrDZSyc7hjzQO0q461_sIR1HlNsZvmZb9NiZ1LiY32xbe18Z1Q2ngGzgHSLCeWowrwJCl_0xb7f-LYnUqYC7S_YUxVf9ijVXXg
+[2021-05-02 08:36:06.847032] [info]: fetch category list with cookie: QueryCategory_BA5EE55E-9982-449B-9D66-9F036540E140environment
+[2021-05-02 08:36:06.849031] [info]:  download file: resource/CategoryList/type=environment url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&facet.category={sort:%27bucket%27,size:1000}&size=0&return=_no_fields&domain=environments
+[2021-05-02 08:36:06.909436] [info]: set token : eyJhbGciOiJSUzI1NiIsImtpZCI6IlU3c0dGRldUTzlBekNhSzBqZURRM2dQZXBURVdWN2VhIn0.eyJzY29wZSI6WyJkYXRhOnJlYWQiLCJkYXRhOndyaXRlIiwiZGF0YTpjcmVhdGUiLCJkYXRhOnNlYXJjaCIsInVzZXItcHJvZmlsZTpyZWFkIiwiYWNjb3VudDpyZWFkIiwiYWNjb3VudDp3cml0ZSJdLCJjbGllbnRfaWQiOiJQeHZKbUdZM1prOXBrV3BYOFU2dFQwUlRwVDRWdlRLSSIsImF1ZCI6Imh0dHBzOi8vYXV0b2Rlc2suY29tL2F1ZC9hand0ZXhwNjAiLCJqdGkiOiJmdWFZbld1TE1qdnlvR3hOZmh1c1NkMnVhMkFUaURDTzZHdkM1VGRjYW1vd3lGN0FmOGlnV1VWZk5kSXA0QzA4IiwidXNlcmlkIjoiSkRGM0wzRkgzQ0M4IiwiZXhwIjoxNjE5OTI4MzQ1fQ.Z3dcHxODswNpWGcTsffa19cPHudvO9RlKftaMkELWBBVAIfkFT-la4XmBGTALREpof54eX05o_-SRojeBWaw3EgiObCdW_78eF9FTe-dzg2RKeFHYuK6tzu9rURqfvNe1E2amr74db_8kSEYO9QrK41_7G2MUGwvNFJ17MknCkFaBkwUha2BuGSg4baZIzufp9PF3Whh76aFdflE14hHR54CECUYrSFJkeVYFT5dj16NerqcnvtuDrDZSyc7hjzQO0q461_sIR1HlNsZvmZb9NiZ1LiY32xbe18Z1Q2ngGzgHSLCeWowrwJCl_0xb7f-LYnUqYC7S_YUxVf9ijVXXg
+[2021-05-02 08:36:06.911599] [info]: fetch material list in  with cookie:AssetList/__libraryId:BA5EE55E-9982-449B-9D66-9F036540E140__materialList:
+[2021-05-02 08:36:06.912607] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=(and+(term+field%3D%27company%27+%27autodesk%27)(term+field%3D%27families%27+%27Prism.Fusion.2016%27)(range+field%3D%27schema_set_id%27+{,3]))&q.parser=structured&domain=materials&size=500&sort=ui_name%20asc&return=category,ui_name,immutable_asset,description,schema,keywords,identifier,thumbnail,thumbnail_full,version
+[2021-05-02 08:36:06.912607] [info]: fetch material list in  with cookie:AssetList/__libraryId:user/JDF3L3FH3CC8/content/private/__materialList:
+[2021-05-02 08:36:06.913608] [info]:  download file: resource/AssetList/type=materialappearance/category= url:https://raas-assets.autodesk.com/Asset/CloudSearch?q=%28and%20schema_set_id:{,3]%20owner:%27JDF3L3FH3CC8%27%20%29&q.parser=structured&pretty=true&domain=materials&size=500
+[2021-05-02 08:47:23.169371] [info]: adexmtsv stopped.

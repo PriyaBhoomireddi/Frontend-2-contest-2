@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- Specify the title -->
+<title></title>
+<!-- Include the stylesheets -->
+<link rel="Stylesheet" type="text/css" href="res/themes/smoothness/jquery-ui.min.css" />
+<link rel="Stylesheet" type="text/css" href="res/main.css" />
+<link rel="Stylesheet" type="text/css" href="res/divdialog.css" />
+
+<!-- The main startup -->
+<script src="scripts/jquery.min.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
+<script type="text/javascript" src="scripts/processprogressink.js"></script>
+<script src="scripts/Base64.js"></script>
+
+<script type="text/javascript">
+	
+    $(document).ready(function () {
+        $("#progressbar").progressbar();
+
+        $(document).bind("contextmenu", function (e) {
+            return false;
+        });
+    });
+
+    function initialize(_appId, resourceDirectory, procname) {
+        var progressSink = ProcessProgressSink.create(_appId, procname);
+        progressSink.initbg();
+        $("#progressbar").progressbar({
+            value: false
+        });
+        //$("#progressbarlabel").html("Initializing...");
+        return progressSink;
+    }
+</script>
+</head>
+
+<body scroll = "no">
+
+<div id="productlogo" class="productlogo">
+    <div id = "backbuff"></div>
+    <div class="pbarcontainer">
+        <div id = "progressdescription" class="progressdescription">&nbsp;</div>
+        <div id = "progressbar" class = "progressbar"></div>
+        <div id = "progressbarlabel" class = "progressbarlabel"></div>
+    </div>
+</div> 
+
+<div id="73e72ada57b7480280f7a6f4a289729f-survey" class="uninstall-survey">
+    <h3></h3>
+    <span class='instructions'></span>
+    <form qualtrics-id="SV_doqZwWhd6wZSBal">
+        <ul>
+            <li class='q1'>
+                <input type="checkbox" name="QID1" value="1">
+                <span></span>
+            </li>
+            <li class='q2'>
+                <input type="checkbox" name="QID1" value="2">
+                <span></span>
+            </li>
+            <li>
+                <input type="checkbox" name="QID1" value="3">
+                Fusion 360 is too difficult to learn and use.
+                <ul>
+                    <li>
+                        Please Tell us more. Did you check out our learning
+                        resources?
+                        <input type="text" name="QID8" size="30">
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" name="QID1" value="4">
+                Fusion 360 didn't run well on my machine.
+                <ul>
+                    <li>
+                        What were the specific problems you ran into (Select
+                        all that apply)
+                    </li>
+                    <li>
+                        <input type="checkbox" name="QID7" value="1">
+                        The program was unresponsive, froze or crashed.
+                    </li>
+                    <li>
+                        <input type="checkbox" name="QID7" value="2">
+                        Fusion 360 didn't launch for unknown reasons.
+                    </li>
+                    <li>
+                        <input type="checkbox" name="QID7" value="3">
+                        I had issues importing and/or uploading files.
+                    </li>
+                    <li>
+                        <input type="checkbox" name="QID7" value="4">
+                        The program was very slow.
+                    </li>
+                    <li>
+                        <input type="checkbox" name="QID7" value="5">
+                        I had issues after installing the latest update.
+                    </li>
+                    <li>
+                        <input type="checkbox" name="QID7" value="6">
+                        I had issues signing in.
+                    </li>
+                    <li>
+                        <input type="checkbox" name="QID7" value="7">
+                        Other:
+                        <input type="text" size="30" name="_QID7-7">
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" name="QID1" value="5">
+                Fusion 360 does not have features and capabilities that I need.
+                <ul>
+                    Please tell us more.
+                    <input type="text" name="QID9" size="30">
+                </ul>
+            </li>
+            <li>
+                <input type="checkbox" name="QID1" value="6">
+                I am reinstalling Fusion 360.
+            </li>
+        </ul>
+        <h4>For any of the selected reasons, or if you have any additional
+            feedback, please provide further comments below.<br/>
+            If you need help with Fusion 360, please visit our <a href="https://forums.autodesk.com/t5/fusion-360/ct-p/1234" target="_blank">Community Forum</a>
+        </h4>
+        <textarea name="QID5"></textarea>
+
+        <h4>If you consent to Autodesk contacting you about your feedback, please provide your email address.</h4>
+        <input name="QID4" type="text">
+    </form>
+    <button id="uninstall_cancel"></button>
+    <button id="uninstall_continue"></button>
+</div>
+<div id="dialog" class = "dialog">
+</div>
+
+<div class="hide-error-msg dlg-common">
+	<div class="dlg-titlebar">
+		<div class="title-col error-title showbd" align="left" >
+			Problem installing Fusion 360
+		</div> 
+		<div class="div-close showbd" align="right">
+			<a href="javascript:;" class="close"><img src="res/close.png" width="18" height="18"/></a>
+		</div>
+	</div>
+	<div class="error-body common-body">
+		<div class="row1">
+			<div class="Col_11 wide-col_1 showbd" align="right">
+				What's wrong?
+			</div>
+			<div class="Col_12 wide-col_2 showbd">
+				
+			</div>
+		</div>
+		<div class="row2">
+			<div class="Col_21 wide-col_1 showbd" align="right">
+				What should I do?
+			</div>
+			<div class="Col_22 wide-col_2 showbd">
+				
+			</div>
+		</div>
+	</div>
+	<div class="bottom-common bottom-error">
+		<div class="div-bt-col1 showbd">
+			<input id="btnDir" class="button sec-btn" type="submit" name="submitDir" value="Open Log File Location"/>
+		</div> 
+		<div class="div-bt-col2 showbd">
+			<input id="btnOK" class="button pri-btn" type="submit" name="submitOK" value="OK"/>
+		</div> 
+	</div>
+</div>
+
+<div class="hide-query-msg dlg-common">
+	<div class="dlg-titlebar">
+		<div class="title-col query-title showbd" align="left" >
+			Latest version already installed
+		</div> 
+		<div class="div-close showbd" align="right">
+			<a href="javascript:;" class="close"><img src="res/close.png" width="18" height="18"/></a>
+		</div>
+	</div>
+	<div class="query-body common-body showbd">
+	    
+	</div>
+	<div class="bottom-common showbd">
+		<div class="div-bt-col1 showbd" align="right" >
+			<input id="btnNo" class="button sec-btn" type="submit" name="submitNO" value="No"/>
+		</div> 
+		<div class="div-bt-col2 showbd" align="center">
+			<input id="btnYes" class="button pri-btn" type="submit" name="submitYES" value="Yes"/>
+		</div> 
+	</div>
+</div>
+
+<span id="spWidth"> </span>
+<div class="body-mask"></div>
+
+</body>
+</html>

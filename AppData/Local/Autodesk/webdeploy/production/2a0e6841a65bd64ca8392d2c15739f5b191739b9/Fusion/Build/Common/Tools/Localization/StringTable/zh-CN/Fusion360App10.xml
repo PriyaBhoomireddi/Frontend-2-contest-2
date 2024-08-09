@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="lclzExpirationMessage" devLabel="Licensing for this product has expired." translation="本产品的许可已过期。"/>
+	<label commandName="lclzTutorialCatDesc1" devLabel="Learn different design techniques to create various parts of the lamp." translation="了解各种设计技术以创建灯具的各个部分。"/>
+	<label commandName="lclzTutorialCatDesc2" devLabel="Take the lamp design further by adding joints and realistic materials." translation="通过添加联接和真实材料，对灯具进行进一步的设计。"/>
+	<label commandName="lclzTutorialCatDesc3" devLabel="Make it real by using various manufacturing workflows to fabricate the lamp design." translation="通过使用各种制造工作流，制造出灯具设计的实物。"/>
+	<label commandName="lclzTutorialCatDesc4" devLabel="Learn how to manage projects, collaborate with team members, and share designs with clients." translation="学习如何管理项目、与团队成员开展协作，以及与客户共享设计。"/>
+	<label commandName="lclzTutorialCatFabricate" devLabel="FABRICATE" translation="制造"/>
+	<label commandName="lclzTutorialCatForm" devLabel="FORM" translation="造型"/>
+	<label commandName="lclzTutorialCatFunction" devLabel="FUNCTION" translation="功能"/>
+	<label commandName="lclzTutorialCatManage" devLabel="MANAGE" translation="管理"/>
+	<label commandName="lclzTutorialType3Axis" devLabel="3 AXIS MACHINE" translation="三轴机床"/>
+	<label commandName="lclzTutorialType3DPrint" devLabel="3D PRINT" translation="3D 打印"/>
+	<label commandName="lclzTutorialTypeAnimate" devLabel="ANIMATE" translation="制作动画"/>
+	<label commandName="lclzTutorialTypeAssemble" devLabel="ASSEMBLE" translation="组装"/>
+	<label commandName="lclzTutorialTypeBasic" devLabel="PART DESIGN" translation="零件设计"/>
+	<label commandName="lclzTutorialTypeDesc1" devLabel="Design the foundation of your lamp with basic solid modeling tools." translation="使用基本实体建模工具对灯具进行最基本的设计。"/>
+	<label commandName="lclzTutorialTypeDesc10" devLabel="Prep your design and 3D print with our easy-to-use 3D print utility." translation="借助易于使用的 3D 打印实用程序，准备好设计并进行 3D 打印。"/>
+	<label commandName="lclzTutorialTypeDesc11" devLabel="Create and save a sketch as DXF format to use for laser cutting." translation="创建草图并将其另存为 DXF 格式以用于激光切削。"/>
+	<label commandName="lclzTutorialTypeDesc111" devLabel="Set up and simulate a CAM toolpath of a lamp base plate." translation="设置并模拟灯具底座的 CAM 刀具路径。"/>
+	<label commandName="lclzTutorialTypeDesc12" devLabel="Set up a more advanced 3 Axis toolpath and simulate how the lamp base will be machined." translation="设置更高级的三轴刀具路径并模拟灯具底座将如何进行加工。"/>
+	<label commandName="lclzTutorialTypeDesc13" devLabel="Invite collaborators to a new design and keep track of new versions." translation="邀请合作者参与新设计并跟踪新版本。"/>
+	<label commandName="lclzTutorialTypeDesc14" devLabel="Bring an external part into your design and archive the final assembly." translation="将外部零件引入到设计中并将最终部件归档。"/>
+	<label commandName="lclzTutorialTypeDesc15" devLabel="Get a quick overview of how to get around Fusion 360 and navigate around your design." translation="获得如何开始使用 Fusion 360 并浏览设计的快速概述。"/>
+	<label commandName="lclzTutorialTypeDesc16" devLabel="Create basic 3D geometry using 3 different modeling techniques." translation="使用 3 种不同的建模技术创建基本三维几何图元。"/>
+	<label commandName="lclzTutorialTypeDesc2" devLabel="Add a sophisticated lamp switch based on it's on-off position." translation="在灯具的开关位置添加一个精致的开关。"/>
+	<label commandName="lclzTutorialTypeDesc3" devLabel="Use sketches to draw and model a power cord for the lamp model." translation="使用草图绘制灯具模型的电源线并对其进行建模。"/>
+	<label commandName="lclzTutorialTypeDesc4" devLabel="Use various sculpt tools to create a stylized lamp shade." translation="使用各种造型工具创建极具风格的灯罩。"/>
+	<label commandName="lclzTutorialTypeDesc5" devLabel="Render the lamp and make it look real with built-in ray tracing technology." translation="使用内置的光线跟踪技术对灯具进行渲染，使其具有真实感。"/>
+	<label commandName="lclzTutorialTypeDesc6" devLabel="Add simple joints between components and assemble the final lamp design." translation="在零部件之间添加简单的联接，组装成最终的灯具设计。"/>
+	<label commandName="lclzTutorialTypeDesc7" devLabel="Animate an exploded view, assembly and disassembly process of the lamp." translation="为分解视图、灯具的组装和拆卸过程制作动画。"/>
+	<label commandName="lclzTutorialTypeDesc8" devLabel="Determine how the design will deform under various structural loads and boundary conditions." translation="确定设计在各种结构载荷和边界条件的影响下会产生怎样的变形。"/>
+	<label commandName="lclzTutorialTypeDesc9" devLabel="Examine how design behaves under various vibrational or modal frequencies" translation="仔细观察设计在各种振动频率或固有频率下会有何表现"/>
+	<label commandName="lclzTutorialTypeFreeform" devLabel="FREEFORM DESIGN" translation="自由造型设计"/>
+	<label commandName="lclzTutorialTypeLasercut" devLabel="LASER CUT" translation="激光切削"/>
+	<label commandName="lclzTutorialTypeMachine" devLabel="MACHINE" translation="加工"/>
+	<label commandName="lclzTutorialTypeModelingBasics" devLabel="MODELING BASICS" translation="建模基础知识"/>
+	<label commandName="lclzTutorialTypeRender" devLabel="RENDER" translation="渲染"/>
+	<label commandName="lclzTutorialTypeSave" devLabel="SAVE" translation="保存"/>
+	<label commandName="lclzTutorialTypeSimmodal" devLabel="MODAL FREQUENCIES" translation="固有频率"/>
+	<label commandName="lclzTutorialTypeSketech" devLabel="SKETCH DESIGN" translation="草图设计"/>
+	<label commandName="lclzTutorialTypeStatic" devLabel="STATIC STRESS" translation="静态应力"/>
+	<label commandName="lclzTutorialTypeTopDown" devLabel="TOP-DOWN DESIGN" translation="自上而下设计"/>
+	<label commandName="lclzTutorialTypeUpload" devLabel="UPLOAD" translation="上传"/>
+	<label commandName="lclzTutorialTypeWorkspace" devLabel="INTRO TO WORKSPACES" translation="工作空间简介"/>
+</Resource>

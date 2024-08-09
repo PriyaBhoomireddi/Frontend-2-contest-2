@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="3DPrint Environment" devLabel="3DPrint" translation="3D プリント"/>
+	<label commandName="BaseDiameter" devLabel="Base Diameter" translation="ベースの直径"/>
+	<label commandName="BrepBodySelection" devLabel="Components/Bodies" translation="コンポーネント/ボディ"/>
+	<label commandName="ChooseObjectsCommand" devLabel="Choose Objects" translation="オブジェクトを選択"/>
+	<label commandName="CustomRefinementOption" devLabel="Custom" translation="カスタム"/>
+	<label commandName="DLPPrinter" devLabel="DLP Printer" translation="DLP プリンタ"/>
+	<label commandName="DefaultPrinter" devLabel="Default" translation="既定"/>
+	<label commandName="Dremel" devLabel="Dremel 3D IdeaBuilder" translation="Dremel 3D IdeaBuilder"/>
+	<label commandName="DremelIdeaBuilder" devLabel="Dremel 3D Idea Builder" translation="Dremel 3D Idea Builder"/>
+	<label commandName="EmberPrinter" devLabel="Autodesk Ember" translation="Autodesk Ember"/>
+	<label commandName="GenerateSupportsCommand" devLabel="Supports" translation="サポート"/>
+	<label commandName="GridAspectRatio" devLabel="Aspect Ratio" translation="縦横比"/>
+	<label commandName="HighRefinementOption" devLabel="High" translation="高"/>
+	<label commandName="InspectFor3DPrintCommand" devLabel="Inspect For 3DPrint" translation="3D プリントの検査"/>
+	<label commandName="LowRefinementOption" devLabel="Low" translation="低"/>
+	<label commandName="Makerbot2mm" devLabel="Replicator 2mm" translation="Replicator 2mm"/>
+	<label commandName="Makerbot2mmHeavy" devLabel="Replicator 2mm Heavy" translation="Replicator 2mm Heavy"/>
+	<label commandName="Makerbot2mmThick" devLabel="Replicator 2mm Thick" translation="Replicator 2 mm Thick"/>
+	<label commandName="Makerbot3mm" devLabel="Replicator 3mm" translation="Replicator 3mm"/>
+	<label commandName="MaximumEdgeLength" devLabel="Maximum Edge Length" translation="エッジの最大長さ"/>
+	<label commandName="MediumRefinementOption" devLabel="Medium" translation="中"/>
+	<label commandName="MeshEntitySelection" devLabel="Mesh Body" translation="メッシュ ボディ"/>
+	<label commandName="NormalTolerance" devLabel="Normal Deviation" translation="法線の偏差"/>
+	<label commandName="NumberOfTriangles" devLabel="Number of Triangles" translation="三角形の数"/>
+	<label commandName="PostDiameter" devLabel="Post Diameter" translation="支柱の直径"/>
+	<label commandName="PreviewGroupStart" devLabel="Preview" translation="プレビュー"/>
+	<label commandName="PreviewMesh" devLabel="Preview Mesh" translation="メッシュをプレビュー"/>
+	<label commandName="PrintConfigurationActivateCommand" devLabel="Activate PrintSetup" translation="プリント設定をアクティブ化"/>
+	<label commandName="PrintConfigurationActivateCommandTooltip" devLabel="Activate PrintSetup" translation="プリント設定をアクティブ化"/>
+	<label commandName="PrintConfigurationGroupBrowserLabel" devLabel="Print Setups" translation="プリント設定"/>
+	<label commandName="PrintSetupCommand" devLabel="Setup 3D Printer" translation="3D プリンタを設定"/>
+	<label commandName="Printer" devLabel="Printer" translation="プリンタ"/>
+	<label commandName="PushBrepTo3DPrintWorkspaceCmd" devLabel="Send Body to 3D Print" translation="3D プリントにボディを送信"/>
+	<label commandName="RefinementGroupStart" devLabel="Refinement Options" translation="リファインメント オプション"/>
+	<label commandName="RefinementOptionsInput" devLabel="Refinement" translation="リファインメント"/>
+	<label commandName="SelectBodies" devLabel="Select bodies to add to 3DPrint" translation="3D プリントに追加するボディを選択"/>
+	<label commandName="SelectMeshBodies" devLabel="Select mesh bodies" translation="メッシュ ボディを選択"/>
+	<label commandName="SupportDensity" devLabel="Support Density" translation="サポートの密度"/>
+	<label commandName="SupportMinimumAngle" devLabel="Minimum Angle for Supports" translation="サポートの最小角度"/>
+	<label commandName="SupportsType" devLabel="Supports Type" translation="サポートのタイプ"/>
+	<label commandName="SurfaceTolerance" devLabel="Surface Deviation" translation="サーフェスの偏差"/>
+	<label commandName="TipDiameter" devLabel="Tip Diameter" translation="先端径"/>
+	<label commandName="TypeA" devLabel="Type A Series 1" translation="タイプ A シリーズ 1"/>
+	<label commandName="Ultimaker2_3mm" devLabel="Ultimaker2 3mm" translation="Ultimaker2 3mm"/>
+	<label commandName="lclz3DPrintModify" devLabel="Modify" translation="修正"/>
+	<label commandName="lclz3DPrintSetup" devLabel="Setup" translation="設定"/>
+	<label commandName="lclz3DPrintTab" devLabel="3D Print" translation="3D プリント"/>
+	<label commandName="lclzInspectFor3DPrintDesc1" devLabel="Inspects a mesh for issues related to printability." translation="印刷可能性の問題について、メッシュを検査します。"/>
+	<label commandName="lclzPrintSetupCmdDesc1" devLabel="Set up a 3D Print Job." translation="3D プリントのジョブを設定します。"/>
+</Resource>

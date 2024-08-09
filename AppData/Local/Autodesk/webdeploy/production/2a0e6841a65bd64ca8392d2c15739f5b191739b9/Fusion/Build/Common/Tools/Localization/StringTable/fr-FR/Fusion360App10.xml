@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="lclzExpirationMessage" devLabel="Licensing for this product has expired." translation="Les licences de ce produit ont expiré."/>
+	<label commandName="lclzTutorialCatDesc1" devLabel="Learn different design techniques to create various parts of the lamp." translation="Découvrez plusieurs techniques de conception permettant de créer les différentes parties de la lampe."/>
+	<label commandName="lclzTutorialCatDesc2" devLabel="Take the lamp design further by adding joints and realistic materials." translation="Améliorez la conception de la lampe en ajoutant des liaisons et des matières réalistes."/>
+	<label commandName="lclzTutorialCatDesc3" devLabel="Make it real by using various manufacturing workflows to fabricate the lamp design." translation="Donnez vie à une conception à l'aide des différents workflows permettant d'élaborer la lampe."/>
+	<label commandName="lclzTutorialCatDesc4" devLabel="Learn how to manage projects, collaborate with team members, and share designs with clients." translation="Découvrez comment gérer des projets, collaborer avec les membres de l'équipe et partager des conceptions avec les clients."/>
+	<label commandName="lclzTutorialCatFabricate" devLabel="FABRICATE" translation="FABRIQUER"/>
+	<label commandName="lclzTutorialCatForm" devLabel="FORM" translation="FORME"/>
+	<label commandName="lclzTutorialCatFunction" devLabel="FUNCTION" translation="FONCTION"/>
+	<label commandName="lclzTutorialCatManage" devLabel="MANAGE" translation="GERER"/>
+	<label commandName="lclzTutorialType3Axis" devLabel="3 AXIS MACHINE" translation="MACHINE 3 AXES"/>
+	<label commandName="lclzTutorialType3DPrint" devLabel="3D PRINT" translation="IMPRESSION 3D"/>
+	<label commandName="lclzTutorialTypeAnimate" devLabel="ANIMATE" translation="ANIMER"/>
+	<label commandName="lclzTutorialTypeAssemble" devLabel="ASSEMBLE" translation="ASSEMBLER"/>
+	<label commandName="lclzTutorialTypeBasic" devLabel="PART DESIGN" translation="CONCEPTION DE PIECE"/>
+	<label commandName="lclzTutorialTypeDesc1" devLabel="Design the foundation of your lamp with basic solid modeling tools." translation="Concevez la structure de base de la lampe à l'aide d'outils de modélisation de solides de base."/>
+	<label commandName="lclzTutorialTypeDesc10" devLabel="Prep your design and 3D print with our easy-to-use 3D print utility." translation="Préparez la conception et l'impression 3D grâce à l'utilitaire d'impression 3D convivial."/>
+	<label commandName="lclzTutorialTypeDesc11" devLabel="Create and save a sketch as DXF format to use for laser cutting." translation="Créez et enregistrez une esquisse au format DXF à utiliser pour la découpe au laser."/>
+	<label commandName="lclzTutorialTypeDesc111" devLabel="Set up and simulate a CAM toolpath of a lamp base plate." translation="Configurez et simulez une trajectoire d'outil de FAO de la plaque de corps d'une lampe."/>
+	<label commandName="lclzTutorialTypeDesc12" devLabel="Set up a more advanced 3 Axis toolpath and simulate how the lamp base will be machined." translation="Configurez une trajectoire d'outil 3 axes plus avancée et simulez l'usinage de la base de la lampe."/>
+	<label commandName="lclzTutorialTypeDesc13" devLabel="Invite collaborators to a new design and keep track of new versions." translation="Invitez des collaborateurs à prendre part à une nouvelle conception et effectuez le suivi des nouvelles versions."/>
+	<label commandName="lclzTutorialTypeDesc14" devLabel="Bring an external part into your design and archive the final assembly." translation="Intégrez une pièce externe à la conception et archivez l'ensemble final."/>
+	<label commandName="lclzTutorialTypeDesc15" devLabel="Get a quick overview of how to get around Fusion 360 and navigate around your design." translation="Obtenez un aperçu rapide de l'utilisation de Fusion 360 et naviguez autour de la conception."/>
+	<label commandName="lclzTutorialTypeDesc16" devLabel="Create basic 3D geometry using 3 different modeling techniques." translation="Créez une géométrie 3D de base à l'aide de trois techniques de modélisation différentes."/>
+	<label commandName="lclzTutorialTypeDesc2" devLabel="Add a sophisticated lamp switch based on it's on-off position." translation="Ajoutez un interrupteur de lampe sophistiqué (position marche/arrêt)."/>
+	<label commandName="lclzTutorialTypeDesc3" devLabel="Use sketches to draw and model a power cord for the lamp model." translation="Utilisez des esquisses pour dessiner et modéliser un cordon d'alimentation pour le modèle de lampe."/>
+	<label commandName="lclzTutorialTypeDesc4" devLabel="Use various sculpt tools to create a stylized lamp shade." translation="Utilisez différents outils de sculpture pour créer un abat-jour stylisé."/>
+	<label commandName="lclzTutorialTypeDesc5" devLabel="Render the lamp and make it look real with built-in ray tracing technology." translation="Effectuez le rendu de la lampe et donnez-lui un aspect réel grâce à la technologie de lancer de rayons intégrée."/>
+	<label commandName="lclzTutorialTypeDesc6" devLabel="Add simple joints between components and assemble the final lamp design." translation="Ajoutez des liaisons simples entre les composants et assemblez la conception finale de la lampe."/>
+	<label commandName="lclzTutorialTypeDesc7" devLabel="Animate an exploded view, assembly and disassembly process of the lamp." translation="Animez une vue éclatée, assemblez et désassemblez la lampe."/>
+	<label commandName="lclzTutorialTypeDesc8" devLabel="Determine how the design will deform under various structural loads and boundary conditions." translation="Déterminez la manière dont la conception se déformera sous l'effet de différentes charges structurelles et de conditions aux limites."/>
+	<label commandName="lclzTutorialTypeDesc9" devLabel="Examine how design behaves under various vibrational or modal frequencies" translation="Examinez le comportement de la conception sous l'effet de différentes fréquences modales ou vibrationnelles."/>
+	<label commandName="lclzTutorialTypeFreeform" devLabel="FREEFORM DESIGN" translation="CONCEPTION DE FORME LIBRE"/>
+	<label commandName="lclzTutorialTypeLasercut" devLabel="LASER CUT" translation="DÉCOUPE AU LASER"/>
+	<label commandName="lclzTutorialTypeMachine" devLabel="MACHINE" translation="MACHINE"/>
+	<label commandName="lclzTutorialTypeModelingBasics" devLabel="MODELING BASICS" translation="CONCEPTS DE BASE EN MATIERE DE MODELISATION"/>
+	<label commandName="lclzTutorialTypeRender" devLabel="RENDER" translation="RENDU"/>
+	<label commandName="lclzTutorialTypeSave" devLabel="SAVE" translation="ENREGISTRER"/>
+	<label commandName="lclzTutorialTypeSimmodal" devLabel="MODAL FREQUENCIES" translation="FREQUENCES MODALES"/>
+	<label commandName="lclzTutorialTypeSketech" devLabel="SKETCH DESIGN" translation="CONCEPTION D'ESQUISSE"/>
+	<label commandName="lclzTutorialTypeStatic" devLabel="STATIC STRESS" translation="CONTRAINTE STATIQUE"/>
+	<label commandName="lclzTutorialTypeTopDown" devLabel="TOP-DOWN DESIGN" translation="CONCEPTION VERTICALE"/>
+	<label commandName="lclzTutorialTypeUpload" devLabel="UPLOAD" translation="CHARGER"/>
+	<label commandName="lclzTutorialTypeWorkspace" devLabel="INTRO TO WORKSPACES" translation="INTRODUCTION AUX ESPACES DE TRAVAIL"/>
+</Resource>

@@ -1,0 +1,1247 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Resource>
+	<label commandName="2bendIntersection" devLabel="2 Bend Intersection" translation="" />
+	<label commandName="3bendIntersection" devLabel="3 Bend Intersection" translation="" />
+	<label commandName="ADSKRule1" devLabel="Steel (mm)" translation="" />
+	<label commandName="ADSKRule2" devLabel="Stainless Steel (mm)" translation="" />
+	<label commandName="ADSKRule3" devLabel="Aluminum (mm)" translation="" />
+	<label commandName="ADSKRule4" devLabel="Steel (in)" translation="" />
+	<label commandName="ADSKRule5" devLabel="Stainless Steel (in)" translation="" />
+	<label commandName="ADSKRule6" devLabel="Aluminum (in)" translation="" />
+	<label commandName="AGDFeatureForm" devLabel="Organic" translation="" />
+	<label commandName="AGDObstacleBodyName" devLabel="Obstacle%1%" translation="" />
+	<label commandName="AGDOrganicBodyName" devLabel="Organic%1%" translation="" />
+	<label commandName="AGDPreserveBodyName" devLabel="Preserve%1%" translation="" />
+	<label commandName="AGD_DESIGN_DESCRIPTION" devLabel="Created from generative design outcome" translation="" />
+	<label commandName="ALL_TOOL_BODY_REFERENCE_LOST" devLabel="All tool bodies are lost, try editing this feature to reselect tool bodies." translation="" />
+	<label commandName="APIFeature" devLabel="APIFeature" translation="" />
+	<label commandName="API_DEFINITION_MISSING" devLabel="The extension that owns this feature is not running." translation="" />
+	<label commandName="API_ERROR_PARALLEL" devLabel="This feature does not support parallel compute." translation="" />
+	<label commandName="ARRANGE_2D_NO_GEOMETRY" devLabel="Component does not have a body or sketch, which is required for 2D arrangement." translation="" />
+	<label commandName="ARRANGE_3D_BODY_MISSING" devLabel="Component does not have a body, which is required for 3D arrangement." translation="" />
+	<label commandName="ARRANGE_ERROR_INVALID_GEOMETRY" devLabel="These items could not be arranged due to geometry issues. Try checking all components and their geometry to make sure they are suitable for arranging; arrangeable items should have flat patterns and closed contours." translation="" />
+	<label commandName="ARRANGE_ERROR_MISSING_BODY" devLabel="Missing body: cannot arrange these items. Try editing this feature to fix the problem." translation="" />
+	<label commandName="ARRANGE_ERROR_MISSING_COMP" devLabel="Missing component: cannot arrange these items. Try editing this feature to fix the problem." translation="" />
+	<label commandName="ARRANGE_ERROR_MISSING_FACE" devLabel="Missing planar face: cannot arrange these items. Try editing this feature to fix the problem." translation="" />
+	<label commandName="ARRANGE_ERROR_MISSING_SKETCH" devLabel="Missing sketch: cannot arrange these items. Try editing this feature to fix the problem." translation="" />
+	<label commandName="ARRANGE_ERROR_NOT_ARRANGED" devLabel="Could not arrange these items." translation="" />
+	<label commandName="ARRANGE_ERROR_NOT_CLOSED" devLabel="At least one shape can't be arranged because its outer contour is not closed." translation="" />
+	<label commandName="ARRANGE_ERROR_NOT_COMPLETE" devLabel="Arrangement could not be completed." translation="" />
+	<label commandName="ARRANGE_ERROR_NOT_FIT" devLabel="There is not enough room to arrange all selected items. Edit this feature and try enlarging the area where they will be arranged." translation="" />
+	<label commandName="ARRANGE_ERROR_NO_ROOM" devLabel="There is not enough room to arrange all selected items. Edit this feature and try selecting fewer items or enlarging the area where they will be arranged." translation="" />
+	<label commandName="ARRANGE_ITEM_GROUNDED" devLabel="Grounded component cannot be arranged." translation="" />
+	<label commandName="ARRANGE_ITEM_OVERFLOW" devLabel="Component did not fit in the envelope." translation="" />
+	<label commandName="ARRANGE_NOT_LEAF_COMPONENTS" devLabel="Some items cannot be arranged because they have child components. This is either because the design has been modified,&#09;&#09;&#09;&#09;&#09;&#09;&#09;&#09;&#09;&#09;&#09;&#09;&#09;&#09;&#09;&#09; or was made with an older version of Fusion 360. Try re-selecting only leaf components for arrangement. (A leaf has no child components.)" translation="" />
+	<label commandName="AXIS_LOST" devLabel="The axis is lost, try editing this feature to reselect the axis." translation="" />
+	<label commandName="AccessibilityAnalysisDefaultUserName" devLabel="Accessibility" translation="" />
+	<label commandName="AddPlannarFaceEdgeVertices" devLabel="Could not determine the symmetry from the selections. Do both sides have the same number of faces?" translation="" />
+	<label commandName="AddPlannarFaces" devLabel="Could not determine the symmetry from the selections. Continue selecting edges and vertices, master side followed by mirror side." translation="" />
+	<label commandName="AddSymmetryFailed" devLabel="Failed to add symmetry" translation="" />
+	<label commandName="AddSymmetryFailedEntitiesSameSurface" devLabel="All selected entities should be on the same surface." translation="" />
+	<label commandName="AddSymmetryFailedFaceEdge" devLabel="Face Edge Vertex selection is not consistent." translation="" />
+	<label commandName="AddSymmetryFailedSameSurface" devLabel="Both faces should be on the same surface." translation="" />
+	<label commandName="AlignGeometryNotFound" devLabel="The referenced geometry for Align cannot be found." translation="" />
+	<label commandName="AlignSolveFailed" devLabel="Align Feature solve failed." translation="" />
+	<label commandName="AnnihilatedSketchDimension" devLabel="This dimension value causes the dimensioned geometry to be destroyed. The original dimension will be restored." translation="" />
+	<label commandName="AnsiMetricMProfile" devLabel="Ansi Metric M Profile" translation="" />
+	<label commandName="AnsiUnifiedScrewThreads" devLabel="Ansi Unified Screw Threads" translation="" />
+	<label commandName="AnyCADWMCloneFeatureName" devLabel="Component Link %1% v%2%" translation="" />
+	<label commandName="AppendFaceFailed" devLabel="Append Face failed" translation="" />
+	<label commandName="ArrangeRequest.AlgId" devLabel="The given algorithm ID is invalid." translation="" />
+	<label commandName="AssetAdapterIsMissing" devLabel="Asset adapter is missing" translation="" />
+	<label commandName="AxisGeometryMissing" devLabel="Axis geometry is missing" translation="" />
+	<label commandName="BAD_JOINT_DOF" devLabel="Motion Link joint DOF is wrong type" translation="" />
+	<label commandName="BEND_GENERIC_FEATURE_FAILURE" devLabel="Can't bend the part with current parameters. Check bend angle and position in Bend dialog. Adjust values in the Sheet Metal rule. Make sure the body has uniform thickness and a flat, wide area is picked as stationary side." translation="" />
+	<label commandName="BEND_INSUFFICIENT_REMNANT_ERROR" devLabel="Bend relief cannot be created for the given width and minimum remnant values. Verify inputs." translation="" />
+	<label commandName="BEND_INVALID_ANGLE" devLabel="Bend angle must be non zero, greater than -180 and less than 180 degree." translation="" />
+	<label commandName="BEND_INVALID_ANGLE_LEGACY" devLabel="Bend angle must be greater than 0 and less than 180 degree." translation="" />
+	<label commandName="BEND_INVALID_BEND_LINE" devLabel="Bend line is no longer valid. Pick another bend line or edit sketch and verify line position." translation="" />
+	<label commandName="BEND_INVALID_K_FACTOR" devLabel="Sheet metal K factor value must be between 0 and 1." translation="" />
+	<label commandName="BEND_INVALID_RADIUS" devLabel="Bend radius is too small, try increasing the value." translation="" />
+	<label commandName="BEND_INVALID_SHEET_METAL_BODY" devLabel="Not a valid sheet metal body." translation="" />
+	<label commandName="BEND_INVALID_STATIONARY_FACE" devLabel="Not a valid sheet metal face." translation="" />
+	<label commandName="BEND_LINE_OUTSIDE_FACE_ERROR" devLabel="Bend line must lie on the face to bend." translation="" />
+	<label commandName="BEND_LOST_STATIONARY_FACE" devLabel="Stationary side is lost. Most likely due to a geometry change. This will require reselecting stationary face and all bend lines." translation="" />
+	<label commandName="BEND_RELIEF_BODY_FAILURE" devLabel="Can't create Bend Relief. Adjust bend radius and rule values like relief type and size." translation="" />
+	<label commandName="BEND_RELIEF_WIRE_FAILURE" devLabel="Can't create Bend Relief. Adjust bend radius and rule values like relief type and size" translation="" />
+	<label commandName="BEND_UNEXPECTED_SPLIT_DETECTED" devLabel="Can't successfully create new geometry. Most likely caused by multiple bends interfering each other. Also make sure body thickness is even in all areas." translation="" />
+	<label commandName="BEND_WARNING_SELF_INTERSECTING_BODY" devLabel="Body is self intersecting for the given inputs for bend." translation="" />
+	<label commandName="BODY_REFERENCE_LOST" devLabel="The body reference is lost, try editing this feature to reselect the lost body." translation="" />
+	<label commandName="BODY_SKETCH_NOT_INTERSECT" devLabel="The body and sketch plane do not intersect, please modify the body or redefine sketch!" translation="" />
+	<label commandName="BOX_CREATE_BLOCK_FAILED" devLabel="Failed to create box solid body." translation="" />
+	<label commandName="BOX_LENGTH_VALUE_INVALID" devLabel="The box length is invalid." translation="" />
+	<label commandName="BOX_WIDTH_VALUE_INVALID" devLabel="The box width is invalid." translation="" />
+	<label commandName="BRepConvFail" devLabel="BRep Convert Failed" translation="" />
+	<label commandName="BadGuideRail" devLabel="There is a problem with the guide rail. Check that it pierces the profile plane and that it is on the same side of the profile plane as the path." translation="" />
+	<label commandName="BadSweepPath" devLabel="There is a problem with the sweep path. Check that it pierces the profile plane." translation="" />
+	<label commandName="BaseFeature" devLabel="Base Feature" translation="" />
+	<label commandName="BaseFeatureObstacles" devLabel="Obstacles" translation="" />
+	<label commandName="BaseFeaturePreserves" devLabel="Preserves" translation="" />
+	<label commandName="BaseFlange" devLabel="No target component." translation="" />
+	<label commandName="BaseMeshBodySelectionCategory" devLabel="Base Mesh Bodies" translation="" />
+	<label commandName="BaseMeshSelectionsId" devLabel="Base Mesh Bodies" translation="" />
+	<label commandName="BendLinesGroupName" devLabel="Bend Lines" translation="" />
+	<label commandName="BendLinesGroupSelectionId" devLabel="BendLinesGroup" translation="" />
+	<label commandName="BevelEdgeFailed" devLabel="Bevel Edge operation failed with specific input edge set" translation="" />
+	<label commandName="BoardCreationFailure" devLabel="Error occurs when creating or updating 3d board!" translation="" />
+	<label commandName="BoardOutlineMissing" devLabel="There's no board outline to generate 3d board shape!" translation="" />
+	<label commandName="BoardProfileBuildFailure" devLabel="The board profile is not generated successfully, it might be not closed!" translation="" />
+	<label commandName="BoardProfileMissing" devLabel="No profile is selected for board edit." translation="" />
+	<label commandName="BoardSketchEliminated" devLabel="The board sketch is rolled out, please roll forward it before update!" translation="" />
+	<label commandName="BodyConversionFailed" devLabel="Could not create body from Mesh." translation="" />
+	<label commandName="BodySelectionCategory" devLabel="Bodies" translation="" />
+	<label commandName="BreakLinkCloneError" devLabel="Break Link command failed for some reason, probably it would have created cyclic references." translation="" />
+	<label commandName="BreakLinkDeriveVersionClash" devLabel="The Target Design currently references a different version of the Source Design &lt;b&gt;%1%&lt;/b&gt;.A Target design can have multiple references to a Source design only if they are the same version.The referencing designs must be updated to reference the same version of the target design before this operation can be conducted." translation="" />
+	<label commandName="BuildEdgeCurvesFailed" devLabel="build Edge Curves failed" translation="" />
+	<label commandName="BuildSurfacesFailed" devLabel="build Surfaces failed" translation="" />
+	<label commandName="C2SM_Feature_Compute_Warning" devLabel="Compute Warning" translation="" />
+	<label commandName="CANNOT_CHAMFER_FREE_EDGE" devLabel="Cannot create chamfer feature from selected edges. Select edges with two adjacent faces." translation="" />
+	<label commandName="CANNOT_DEFINE_CSYS" devLabel="Cannot define coordinate system" translation="" />
+	<label commandName="CANNOT_DELETE_DEAD_INSTANCE" devLabel="Cannot delete instance already deleted" translation="" />
+	<label commandName="CANNOT_DERIVE_INSERTED_DOC" devLabel="The source design &lt;b&gt;%1%&lt;/b&gt; is inserted into &lt;b&gt;%2%&lt;/b&gt;. Deriving from an inserted design is not supported." translation="" />
+	<label commandName="CANNOT_DERIVE_SAME_ASSET" devLabel="The source design asset cannot be selected as the target asset for Derive." translation="" />
+	<label commandName="CANNOT_DERIVE_SAME_DOC" devLabel="The source design cannot be selected as the target for Derive." translation="" />
+	<label commandName="CANNOT_DERIVE_SAME_NESTED_DOC" devLabel="The selected Target Design creates a cyclical dependency with the Source Design. Break the link in the Source Design or select a different Target Design." translation="" />
+	<label commandName="CANNOT_FILLET_FREE_EDGE" devLabel="Some edges can not be filleted due to they changed to free edges." translation="" />
+	<label commandName="CANNOT_MOVE_GROUNDED_OCC" devLabel="Capture Position cannot move grounded Component occurrence." translation="" />
+	<label commandName="CFLANGE_CLOSE_LOOP" devLabel="Sketch curve with closed loop is not allowed" translation="" />
+	<label commandName="CFLANGE_CURVE_NOT_TANGENT" devLabel="Selected Sketch curve is not tangent." translation="" />
+	<label commandName="CFLANGE_CURVE_RADIUS_TOO_SMALL" devLabel="Sketch curve radius is too small." translation="" />
+	<label commandName="CFLANGE_INVALID_CURVE_FOR_MULTIEDGE_CFJOIN" devLabel="Could not create multi-edge contour flange. The selected sketch must start on one of the selected edges to create contour flanges on multiple edges. Try editing the sketch to make it start on a selected edge." translation="" />
+	<label commandName="CFLANGE_INVALID_GEOM" devLabel="Invalid input sketch curve." translation="" />
+	<label commandName="CHAMFER_BRANCHING_CHAIN_ERROR" devLabel="Cannot maintain first distance for all edges in selection set. Move branching edges to a separate selection set or adjust Type to Equal Distance." translation="" />
+	<label commandName="CHAMFER_GENERIC_FEATURE_FAILURE" devLabel="Cannot create chamfer feature. Adjust chamfer type, edges, faces, features, distance, angle, or corner type options." translation="" />
+	<label commandName="CHAMFER_INVALID_DISTANCE" devLabel="Chamfer distance value is invalid. Adjust distance." translation="" />
+	<label commandName="CHAMFER_NO_EDGE_FOUND" devLabel="Cannot find edge to chamfer. Adjust edge, face, or feature selection." translation="" />
+	<label commandName="CHANGE_SMRULE_FAIL" devLabel="Could not change the Sheet Metal Rule." translation="" />
+	<label commandName="CIRCULAR_PATTERN_MISSING_AXIS" devLabel="Missing axis" translation="" />
+	<label commandName="COIL_BUILD_COIL_FAILED" devLabel="Failed to build coil tool body." translation="" />
+	<label commandName="COIL_BUILD_HELIX_FAILED" devLabel="Failed to build coil helix path." translation="" />
+	<label commandName="COMPUTE_TIME_CHAINING_CONFLICT" devLabel="Cannot compute Tangent Chain. Some geometry in the tangent chain is already selected in other selection set rows. Tangent Chain disabled. Adjust selection sets to enable Tangent Chain." translation="" />
+	<label commandName="COMPUTE_TIME_CHAINING_CONFLICT_FEATURECOMPUTE" devLabel="Cannot compute Tangent Chain. Some geometry in the tangent chain is already selected in other selection set rows. Tangent Chain disabled. Edit the feature to adjust selection sets and reactivate Tangent Chain." translation="" />
+	<label commandName="COMPUTE_TIME_CHAINING_ISSUE" devLabel="Cannot compute Tangent Chain. Some geometry in the tangent chain is already selected in other selection set rows. Adjust selection sets before enabling Tangent Chain." translation="" />
+	<label commandName="CONNECTOBSTACLE_NORMAL_ERROR" devLabel="Start and end selection normal is not parallel, please check inputs" translation="" />
+	<label commandName="CONVERT_TO_SM_ALREADY_SM_BODY" devLabel="Selected body is already a Sheet Metal body." translation="" />
+	<label commandName="CONVERT_TO_SM_CANNOT_SHARE_RULES" devLabel="Using the same rule for more than one converted component can affect parametric computation of the design. Select another rule or use the Rules dialog to duplicate a rule, then try again." translation="" />
+	<label commandName="CONVERT_TO_SM_COMPONENT_THICKNESS_MISMATCH" devLabel="Body thickness and Sheet Metal component rule thickness are different. Move body to a non-Sheet Metal component or change rule thickness to continue." translation="" />
+	<label commandName="CONVERT_TO_SM_GENERIC_FAILURE" devLabel="Can't convert to Sheet Metal. Verify inputs like body type, thickness, or rule settings, then try again. Contact Autodesk Support if the issue persists." translation="" />
+	<label commandName="CONVERT_TO_SM_INCORRECT_RULE_THICKNESS" devLabel="Body thickness does not match with rule thickness. Please modify the rule thickness or change rule." translation="" />
+	<label commandName="CONVERT_TO_SM_INVALID_BASE_FACE" devLabel="Can't convert to Sheet Metal. Select the base face of a valid Sheet Metal body (typically a wide, flat area)." translation="" />
+	<label commandName="CONVERT_TO_SM_INVALID_OPPOSITE_FACE" devLabel="Not a valid opposite face for convert to sheet metal." translation="" />
+	<label commandName="CONVERT_TO_SM_NON_PARALLEL_FACES" devLabel="Can't calculate body thickness. Please make sure the input body is valid for sheet metal and has uniform thickness." translation="" />
+	<label commandName="CONVERT_TO_SM_THICKNESS_FIND_FAILURE" devLabel="Can't calculate body thickness. Select the base face of a valid Sheet Metal body (typically a wide, flat area)." translation="" />
+	<label commandName="CONVERT_TO_SM_UNSUPPORTED_BODY_TYPE" devLabel="Can't convert body type to Sheet Metal. Select a solid body instead." translation="" />
+	<label commandName="CONVERT_TO_SM_UNSUPPORTED_THICKNESS_VALUE" devLabel="Body thickness value is not supported." translation="" />
+	<label commandName="CONVERT_TO_SM_WARNING_RULE_THICKNESS_WILL_CHANGE" devLabel="Geometry changed. Need to recompute thickness. Right-click, select Edit Feature, and confirm thickness value is correct." translation="" />
+	<label commandName="CORNER_RELIEF_BODY_FAILURE" devLabel="Can't create corner relief. Adjust bend radius and rule values like relief type and size." translation="" />
+	<label commandName="CORNER_RELIEF_WIRE_FAILURE" devLabel="Can't create corner relief. Adjust bend radius and rule values like relief type and size." translation="" />
+	<label commandName="COSMETIC_TAPER_THREAD_TOOL_BODY_FAILED" devLabel="Failed to build taper thread tool body." translation="" />
+	<label commandName="CPatternFeatureName" devLabel="C-Pattern" translation="" />
+	<label commandName="CR3Intersection" devLabel="Intersection" translation="" />
+	<label commandName="CR3RadiusSize" devLabel="Relief radius" translation="" />
+	<label commandName="CRArcWeld" devLabel="Arc Weld" translation="" />
+	<label commandName="CRFullRound" devLabel="Full Round" translation="" />
+	<label commandName="CRLinearWeld" devLabel="Linear Weld" translation="" />
+	<label commandName="CRNoReplacement" devLabel="No Replacement" translation="" />
+	<label commandName="CRRoundWithRadius" devLabel="Round with Radius" translation="" />
+	<label commandName="CRSquare" devLabel="Square" translation="" />
+	<label commandName="CRTangent" devLabel="Tangent" translation="" />
+	<label commandName="CRTrimToBend" devLabel="Trim to Bend" translation="" />
+	<label commandName="CRVertex" devLabel="Vertex" translation="" />
+	<label commandName="CYLINDER_CREATE_CYLINDER_FAILED" devLabel="Failed to create cylinder solid body." translation="" />
+	<label commandName="CYLINDER_DIAMETER_VALUE_INVALID" devLabel="The cylinder diameter is invalid." translation="" />
+	<label commandName="CannotDeleteAppearanceHeader" devLabel="This appearance cannot be deleted because it is linked with an applied Physical Material: %s. To delete the appearance, first unassign and delete this material from the Physical Material command." translation="" />
+	<label commandName="CannotDeleteAppearanceTitle" devLabel="Warning" translation="" />
+	<label commandName="CanvasDefaultUserName" devLabel="Canvas" translation="" />
+	<label commandName="CanvasGroupCategory" devLabel="Canvas Group" translation="" />
+	<label commandName="CanvasGroupDefaultName" devLabel="Canvas Group" translation="" />
+	<label commandName="CanvasGroupSelectionId" devLabel="CanvasGroup" translation="" />
+	<label commandName="CanvasSelectionCategory" devLabel="Canvas" translation="" />
+	<label commandName="CanvasSelectionId" devLabel="Canvas" translation="" />
+	<label commandName="CanvasSelectionPluralId" devLabel="Canvases" translation="" />
+	<label commandName="CanvasesSelectionId" devLabel="Canvases" translation="" />
+	<label commandName="CenterLineBody" devLabel="Center Lines" translation="" />
+	<label commandName="CenterOfMassDefaultUserName" devLabel="CenterOfMass" translation="" />
+	<label commandName="CenterOfMassSelectionId" devLabel="Center Of Mass" translation="" />
+	<label commandName="CfEdgeSelectionId" devLabel="Edge" translation="" />
+	<label commandName="CfEdgesSelectionId" devLabel="Edges" translation="" />
+	<label commandName="CfFacetSelectionId" devLabel="Face" translation="" />
+	<label commandName="CfFacetsSelectionId" devLabel="Faces" translation="" />
+	<label commandName="CfGripSelectionId" devLabel="Tangency Handle" translation="" />
+	<label commandName="CfGripSelectionPluralId" devLabel="Tangency Handles" translation="" />
+	<label commandName="CfVertexSelectionId" devLabel="Vertex" translation="" />
+	<label commandName="CfVerticesSelectionId" devLabel="Vertices" translation="" />
+	<label commandName="ChainUpdateFailure" devLabel="Failed to Get Latest version of one of the Component Instances of selected path" translation="" />
+	<label commandName="ChamferFeatureName" devLabel="Chamfer" translation="" />
+	<label commandName="CircularDependencyFound" devLabel="Circular dependency found!" translation="" />
+	<label commandName="CircularDependencyFound2" devLabel="Circular dependency found: from %1% to %2%." translation="" />
+	<label commandName="CmMKSUnitSystemName" devLabel="cm modeling length with MKS (m, kg, second, Celsius) units" translation="" />
+	<label commandName="Coil" devLabel="No target component." translation="" />
+	<label commandName="CoilFeatureName" devLabel="Coil" translation="" />
+	<label commandName="ConnectorObstacle" devLabel="Connector Obstacle" translation="" />
+	<label commandName="Context" devLabel="Context" translation="" />
+	<label commandName="ConversionErrorFor" devLabel="Conversion error for: " translation="" />
+	<label commandName="ConversionFailed" devLabel="Could not create surface from Mesh." translation="" />
+	<label commandName="ConversionFailed1" devLabel="Non extractable Body. Use Repair Tool." translation="" />
+	<label commandName="ConversionWarningFor" devLabel="Conversion warning for: " translation="" />
+	<label commandName="Convert2TSplineFailed" devLabel="Failed to convert the face to T-Spline" translation="" />
+	<label commandName="ConvertRuleSuffix" devLabel=" (Convert)" translation="" />
+	<label commandName="CopperHolesName" devLabel="CopperHoles" translation="" />
+	<label commandName="CouldNotCreateNewEdge" devLabel="Could not create new edge" translation="" />
+	<label commandName="CouldNotCreateNewEdgeDueToHolesOnBothSidesOfTheLoop" devLabel="Could not create new edge due to holes on both sides of the loop" translation="" />
+	<label commandName="CouldNotCreateNewEdgeDueToHolesOnBothSidesOfTheLoop2" devLabel="Insert Edge will not work on faces which are not four sided. Try using Subdivide or Insert Point." translation="" />
+	<label commandName="CouldNotDuplicateEdgeDueToTOrLpointsOnTheSelectedEdge" devLabel="Could not duplicate edge due to T or L-points on the selected edge" translation="" />
+	<label commandName="CouldntFindAnyFaceLoops" devLabel="Couldn't find any face loops" translation="" />
+	<label commandName="CountersunkFlatHeadHexSocketScrewDINENISO10642" devLabel="Countersunk Flat Head Hex Socket Screw DIN EN ISO 10642" translation="" />
+	<label commandName="CountersunkFlatHeadHexSocketScrewISO10642" devLabel="Countersunk Flat Head Hex Socket Screw ISO 10642" translation="" />
+	<label commandName="CountersunkFlatHeadScrew" devLabel="Countersunk Flat Head Screw" translation="" />
+	<label commandName="CountersunkFlatHeadScrewDINENISO2009" devLabel="Countersunk Flat Head Screw DIN EN ISO 2009" translation="" />
+	<label commandName="CountersunkFlatHeadScrewISO2009/7046" devLabel="Countersunk Flat Head Screw ISO 2009/7046" translation="" />
+	<label commandName="CountersunkHead+WasherGOST12876-67" devLabel="Countersunk Head + Washer GOST 12876-67" translation="" />
+	<label commandName="CountersunkHeadGOST12876-67" devLabel="Countersunk Head GOST 12876-67" translation="" />
+	<label commandName="CountersunkRaisedHeadScrew" devLabel="Countersunk Raised Head Screw" translation="" />
+	<label commandName="CountersunkRaisedHeadScrewISO2010" devLabel="Countersunk Raised Head Screw ISO 2010" translation="" />
+	<label commandName="CountersunkRaisedHeadScrewISO2010/7047" devLabel="Countersunk Raised Head Screw ISO 2010/7047" translation="" />
+	<label commandName="CountourFlange" devLabel="No target component." translation="" />
+	<label commandName="CreaseEdgeFailed" devLabel="Failed to crease the given edges." translation="" />
+	<label commandName="CreaseVerticesFailed" devLabel="Failed to crease the given vertices." translation="" />
+	<label commandName="CreateBoxFailed" devLabel="Failed to create Box" translation="" />
+	<label commandName="CreateComponentFromBodyError" devLabel="Create Component From Body failed:  invalid input" translation="" />
+	<label commandName="CreateCylFailed" devLabel="Failed to create Cylinder" translation="" />
+	<label commandName="CreateFaceFailed" devLabel="Create Face failed" translation="" />
+	<label commandName="CreateGroupFeatureCommandError" devLabel="Create Group Feature Error:  rolled back features not allowed" translation="" />
+	<label commandName="CreateGroupFeatureCommandErrorTwoFeatures" devLabel="Create Group Feature Error:  At least 2 features needed for a group" translation="" />
+	<label commandName="CreateNurbsFailed" devLabel="Failed to create surface" translation="" />
+	<label commandName="CreatePCBComponent_BottomCanvas" devLabel="Board Bottom" translation="" />
+	<label commandName="CreatePCBComponent_BottomSilkscreen" devLabel="Silkscreen Bottom" translation="" />
+	<label commandName="CreatePCBComponent_TopCanvas" devLabel="Board Top" translation="" />
+	<label commandName="CreatePCBComponent_TopSilkscreen" devLabel="Silkscreen Top" translation="" />
+	<label commandName="CreatePlaneFailed" devLabel="Failed to create Plane" translation="" />
+	<label commandName="CreateQuadFailed" devLabel="Failed to create Quadball" translation="" />
+	<label commandName="CreateSphFailed" devLabel="Failed to create Sphere" translation="" />
+	<label commandName="CreateTorusFailed" devLabel="Failed to create Torus" translation="" />
+	<label commandName="CurvatureCombAnalysisDefaultUserName" devLabel="Curvature" translation="" />
+	<label commandName="CurvatureMapAnalysisDefaultUserName" devLabel="CurvatureMap" translation="" />
+	<label commandName="CuttingToolDoesNotIntersectAnySurface" devLabel="Cutting Tool does not intersect any surface!" translation="" />
+	<label commandName="CuttingToolNoIntersectionToSurface" devLabel="Cutting Tool does not intersect any surface!" translation="" />
+	<label commandName="CycleDependencyError" devLabel="The Break Link operation will be aborted due to cyclic dependency error. Please report this issue to Autodesk!" translation="" />
+	<label commandName="CyclicDependencyNotAllowed" devLabel="Cyclic dependency not allowed!! The document being referenced %1% already depends on the referencing document %2%, either on disk or in memory!!" translation="" />
+	<label commandName="CyclicDependencyNotAllowed2" devLabel="This insertion operation, along with undo or redo of previously committed commands, will result in a cyclic dependency between %1% and %2%. To prevent that, the insertion operation was canceled!!" translation="" />
+	<label commandName="CylindricalHeadHexSocketScrew+WasherGOST12876-67" devLabel="Cylindrical Head Hex Socket Screw + Washer GOST 12876-67" translation="" />
+	<label commandName="CylindricalHeadHexSocketScrewGOST12876-67" devLabel="Cylindrical Head Hex Socket Screw GOST 12876-67" translation="" />
+	<label commandName="CylindricalHeadSlottedScrew+WasherGOST12876-67" devLabel="Cylindrical Head Slotted Screw + Washer GOST 12876-67" translation="" />
+	<label commandName="CylindricalHeadSlottedScrewGOST12876-67" devLabel="Cylindrical Head Slotted Screw  GOST 12876-67" translation="" />
+	<label commandName="CylindrifyFailed" devLabel="Cannot cylindrify selected faces. Adjust selection or toggle Auto Feature Selection." translation="" />
+	<label commandName="DELETE_FACES_FAILED_TO_FILL_GAP" devLabel="Cannot delete individual faces. To delete the whole body, please use the Browser or Selection Filters." translation="" />
+	<label commandName="DERIVED_CONTEXT_NOT_FOUND" devLabel="Corresponding context not found in referenced design." translation="" />
+	<label commandName="DERIVED_SOURCE_MISSING" devLabel="The source FusionComponent cannot be found!" translation="" />
+	<label commandName="DIN" devLabel="DIN" translation="" />
+	<label commandName="DRAFT_DATA_CORRUPT" devLabel="Draft data model corrupt!" translation="" />
+	<label commandName="DRAFT_MISSING_FACE_REFERENCES" devLabel="Missing face references" translation="" />
+	<label commandName="DRAFT_MISSING_REFERENCE_PLANE" devLabel="Missing reference plane" translation="" />
+	<label commandName="DRAFT_PARTING_LINE_FAILED_SWITCH_DRAFT_SIDE" devLabel="Cannot create draft in the specified direction. Adjust Draft Sides to Symmetric or Two Sides." translation="" />
+	<label commandName="DRMATRIX_COMPUTE_FAILED" devLabel="Failed to evaluate the matrix due to the invalid input" translation="" />
+	<label commandName="DRMATRIX_NON_LINEAR_GEOM_ERROR" devLabel="Failed to track line segment" translation="" />
+	<label commandName="DRPOINT_COMPUTE_FAILED" devLabel="Failed to evaluate the point due to the invalid input" translation="" />
+	<label commandName="DRVECTOR_COMPUTE_FAILED" devLabel="Failed to evaluate the direction due to the invalid input" translation="" />
+	<label commandName="DcArrangeAlgorithm.EnvelopeBodyFace" devLabel="2D arrangement using a body requires that a face be selected." translation="" />
+	<label commandName="DcArrangeAlgorithm.EnvelopeLenWidth" devLabel="2D arrangement using a work plane as the envelope requires the length and width to also be set." translation="" />
+	<label commandName="DcArrangeAlgorithm.EnvelopeMissing" devLabel="No envelope geometry defined." translation="" />
+	<label commandName="DcArrangeAlgorithm.EnvelopeTypeInvalid" devLabel="2D arrangement requires the envelope to be a face, work plane, or sketch." translation="" />
+	<label commandName="DcArrangeAlgorithm.Envlope3DBody" devLabel="3D arrangement requires a body to be selected for the envelope." translation="" />
+	<label commandName="DcArrangeAlgorithm.NoItems" devLabel="Nothing has been selected to arrange." translation="" />
+	<label commandName="DcArrangeAlgorithm.UnsupportedDimension" devLabel="Algorithm does not support the requested arrangement dimension." translation="" />
+	<label commandName="DcArrangeFeature.MissingAlg" devLabel="Cannot find the arrangement algorithm." translation="" />
+	<label commandName="DcArrangeFeatureImplNoneLeafComps" devLabel="Some items cannot be arranged because they have child components. This is either because the design has been modified, or was made with an older version of Fusion 360.&#09;&#09;&#09; Try re-selecting only leaf components for arrangement. (A leaf has no child components.)" translation="" />
+	<label commandName="DcDerivedContextFeature_SourceNotMappable" devLabel="Object cannot be mapped from source to derived" translation="" />
+	<label commandName="DcDerivedContextFeature_UpdateFailed" devLabel="Update of sources to derive failed" translation="" />
+	<label commandName="DcFacesMove" devLabel="MoveFace" translation="" />
+	<label commandName="DcGroupFeatureDefaultName" devLabel="Group" translation="" />
+	<label commandName="DcGroupFeatureName" devLabel="DcGroupFeature" translation="" />
+	<label commandName="DcJointAssembleFeatureMakeFailure" devLabel="Creation of Joint Feature failed" translation="" />
+	<label commandName="DcPatternSourceError" devLabel="Invalid pattern feature" translation="" />
+	<label commandName="DecalCreationError" devLabel="No targets specified" translation="" />
+	<label commandName="DecalPatchDefaultUserName" devLabel="Decal" translation="" />
+	<label commandName="DecalPatchSelectionId" devLabel="DecalPatch" translation="" />
+	<label commandName="DecalPatchSelectionPluralId" devLabel="DecalPatches" translation="" />
+	<label commandName="DecalSelectionCategory" devLabel="Decal" translation="" />
+	<label commandName="DecalsSelectionId" devLabel="Decals" translation="" />
+	<label commandName="DefaultMeshOptionGroupMesh" devLabel="Mesh" translation="" />
+	<label commandName="DefaultMeshOptionGroupPreferences" devLabel="Preferences that control inserting a mesh" translation="" />
+	<label commandName="DefaultMeshShadingTypeToolTip" devLabel="Render the mesh as smooth shaded or flat shaded" translation="" />
+	<label commandName="DefaultMeshShadingTypeeUserName" devLabel="Default Shading" translation="" />
+	<label commandName="DeleteCauseDownstreamFailures" devLabel="Deletion cause downstream feature failures" translation="" />
+	<label commandName="DeleteHandleFailed" devLabel="Sections cannot be inserted within the regions controlled by global sections (i.e. where a path curve ends, or where multiple path curves meet). Try inserting the section in a different location, or control the shape using the existing global sections." translation="" />
+	<label commandName="DeleteHandleFailed2" devLabel="Unable to delete handle" translation="" />
+	<label commandName="DeleteRootComponentError" devLabel="It's not allowed to delete root component" translation="" />
+	<label commandName="DeleteTopologyFailed" devLabel="Failed deleting T-Spline entity" translation="" />
+	<label commandName="DeriveContinueButton" devLabel="Continue" translation="" />
+	<label commandName="DeriveDownStreamFeaturesImpacted" devLabel="Derive" translation="" />
+	<label commandName="DeriveDownStreamFeaturesImpactedMsg1" devLabel="One or more down stream features might lose their dependent geometry. If the feature can be repaired it will be shown as sick. If it cannot be repaired it will be deleted." translation="" />
+	<label commandName="DeriveEntitiesCreateComponentsFromBodiesIsNotSupported" devLabel="This operation is not supported for Derived entities, they will not participate in the operation." translation="" />
+	<label commandName="DerivedBaseFeature" devLabel="Derived Base Feature" translation="" />
+	<label commandName="DerivedContext" devLabel="DerivedContext" translation="" />
+	<label commandName="DerivedSuffix" devLabel="(Derive)" translation="" />
+	<label commandName="DetachedFromBaseAsset" devLabel="Could not %1% because we're detached from the base Asset" translation="" />
+	<label commandName="DetectCircularDependencyInRestructure" devLabel="The restructure is rejected because it will cause circular dependency." translation="" />
+	<label commandName="DetectPositionFeatureDependency" devLabel="Detect some position features may result downstream features fail after restructure." translation="" />
+	<label commandName="DisallowAnyCADBreakLink" devLabel="&lt;b&gt;%1%&lt;/b&gt; is associatively imported in this design. Break Link is not supported." translation="" />
+	<label commandName="DisallowDeriveBreakLink" devLabel="&lt;b&gt;%1%&lt;/b&gt; is already Derived into this design. Break Link is not supported." translation="" />
+	<label commandName="DocumentIsMissing" devLabel="Document is missing" translation="" />
+	<label commandName="DoesNotExistDecalError" devLabel="The image file does not exist" translation="" />
+	<label commandName="DownloadError1" devLabel="Could not download latest referenced files. Rate limited by service" translation="" />
+	<label commandName="DownloadError2" devLabel="Could not download latest referenced files. No content available" translation="" />
+	<label commandName="DownloadError3" devLabel="Could not download latest referenced files. Referenced document(s) is missing" translation="" />
+	<label commandName="DownloadError4" devLabel="Could not download latest referenced files" translation="" />
+	<label commandName="DownloadError5" devLabel="Could not download latest referenced files" translation="" />
+	<label commandName="DraftAnalysisDefaultUserName" devLabel="Draft" translation="" />
+	<label commandName="DraftFeatureName" devLabel="Draft" translation="" />
+	<label commandName="DraftPartingLineFailed" devLabel="Draft operation failed. Adjust the pull direction, parting tool, faces, or angle." translation="" />
+	<label commandName="DraftPartingLineNoIntersect" devLabel="Parting line does not intersect the body. Select a parting tool that intersects the body." translation="" />
+	<label commandName="EDGE1_SELECTION_MISSING" devLabel="Missing edge1" translation="" />
+	<label commandName="EDGE2_SELECTION_MISSING" devLabel="Missing edge2" translation="" />
+	<label commandName="EDGEFLANGE_NO_EDGE_FOUND" devLabel="No edge found for flange." translation="" />
+	<label commandName="EDGE_REFERENCE_LOST" devLabel="The edge reference is lost, try editing this feature to reselect the lost edge." translation="" />
+	<label commandName="EDGE_SELECTIONS_FROM_DIFF_SM_BODIES" devLabel="Edge selections from different sheetmetal bodies are not allowed to create Edge flange." translation="" />
+	<label commandName="EDITED_XREF_OCC_NOT_FOUND" devLabel="The edited occurrence of the referenced design is missing." translation="" />
+	<label commandName="EICInvalidOccPath" devLabel="Invalid Component Selection Path to activate EIP." translation="" />
+	<label commandName="EICUnresolvedComp" devLabel="Selected Component to activate EIP is unresolved." translation="" />
+	<label commandName="EIPContextDefaultUserName" devLabel="Context" translation="" />
+	<label commandName="EIPContextLocal" devLabel="Local" translation="" />
+	<label commandName="EIPContextSelectionId" devLabel="Context" translation="" />
+	<label commandName="EIPContextsSelectionId" devLabel="Contexts" translation="" />
+	<label commandName="EIPDetachedContext" devLabel="Detached context cannot reference parent assembly" translation="" />
+	<label commandName="EIPDirectModelParentRef" devLabel="Direct model cannot have associative reference to parent assembly" translation="" />
+	<label commandName="EIPInvalidAsset" devLabel="Invalid EIP asset" translation="" />
+	<label commandName="EIPInvalidObjectPath" devLabel="Invalid EIP selection path." translation="" />
+	<label commandName="EIPInvalidOccPath" devLabel="OccurrencePath does not follow EIP path." translation="" />
+	<label commandName="EIPSelectionNotInCachedObject" devLabel="Selection not found in cached body or sketch." translation="" />
+	<label commandName="EIPSelectionNotMatched" devLabel="Selection lost after cache compute." translation="" />
+	<label commandName="EIPSessionExpected" devLabel="Expected edit-in-place session" translation="" />
+	<label commandName="EIPUnsupportedObjectPath" devLabel="ObjectPath does not follow EIP path." translation="" />
+	<label commandName="EIP_UPDATE_CONTEXT_ASSETLOAD_FAILED" devLabel="Failed to load source design." translation="" />
+	<label commandName="EIP_UPDATE_CONTEXT_FAILED" devLabel="Failed to synchronize the context. It looks like you aren't connected to the internet. Please check your connection and try again." translation="" />
+	<label commandName="EIP_UPDATE_CONTEXT_OPENSOURCE_FAILED" devLabel="Failed to open source design." translation="" />
+	<label commandName="EIP_UPDATE_CONTEXT_ROLLBACK_FAILED" devLabel="Failed to roll back source design." translation="" />
+	<label commandName="EIP_UPDATE_CONTEXT_SOURCE_UNAVAILABLE" devLabel="Failed to access source design." translation="" />
+	<label commandName="EMBOSS_CANNOT_ORIENT_PROFILE" devLabel="Cannot emboss selected profile on selected faces. Adjust proximity of sketch profiles to selected faces. Ensure each selected face is a developable surface on a solid body." translation="" />
+	<label commandName="EMBOSS_DISCONNECTED_TARGET_FACES" devLabel="Selected faces are not connected. If disconnected faces are automatically selected, uncheck Tangent Chain, then select adjacent faces." translation="" />
+	<label commandName="EMBOSS_ERROR_CANNOT_BE_WRAPPED" devLabel="Cannot emboss selected faces. Ensure each selected face is a developable surface on a solid body." translation="" />
+	<label commandName="EMBOSS_ERROR_NON_PLANAR_PROFILES" devLabel="Sketch profiles are not coplanar. Deselect sketch profiles that are not on the same plane." translation="" />
+	<label commandName="EMBOSS_ERROR_OPEN_WIRE" devLabel="Selection is an open sketch curve. Select a closed sketch profile." translation="" />
+	<label commandName="EMBOSS_ERROR_TARGET_BODY_NOT_SOLID" devLabel="Selected faces are not on a solid body. Ensure each selected face is a developable surface on a solid body." translation="" />
+	<label commandName="EMBOSS_ERROR_TARGET_FACES_FROM_DIFF_BODIES" devLabel="Selected faces are not on the same body. Select faces on the same body to emboss." translation="" />
+	<label commandName="EMBOSS_GENERIC_FEATURE_FAILURE" devLabel="Cannot create emboss feature. Adjust sketch profiles, faces, emboss depth, effect, or alignment options." translation="" />
+	<label commandName="EMBOSS_INVALID_DEPTH" devLabel="Emboss depth value is invalid. Adjust depth." translation="" />
+	<label commandName="EMBOSS_INVALID_ROTATION_ANGLE" devLabel="Emboss rotation angle value is invalid. Adjust rotation angle." translation="" />
+	<label commandName="EMBOSS_NO_WRAP_GEOMETRY" devLabel="Emboss result falls outside boundary of selected faces. Add adjacent faces to selection, adjust distance and rotation angle, or adjust proximity of sketch profiles to selected faces." translation="" />
+	<label commandName="EMBOSS_SELF_INTERSECTING_BODY" devLabel="Sketch profiles create a self-intersecting body. Adjust depth of emboss or size of sketch profile." translation="" />
+	<label commandName="EMBOSS_SOURCE_PROFILE_LOST" devLabel="Sketch profiles are invalid. Ensure sketch profiles are closed, do not use single line fonts, and have not been deleted." translation="" />
+	<label commandName="EMBOSS_TARGET_FACE_LOST" devLabel="Faces to emboss are invalid. Ensure each selected face is a developable surface on a solid body." translation="" />
+	<label commandName="EMBOSS_THICKEN_FAILURE" devLabel="Cannot create emboss feature at specified depth. Adjust depth." translation="" />
+	<label commandName="ENTITY_REFERENCE_LOST" devLabel="Some input geometry cannot be found. Try editing this feature to reselect the lost inputs." translation="" />
+	<label commandName="ENTITY_REFERENCE_LOST_USE_CACHE" devLabel="The model is using cached geometry to solve. Please reselect reference geometry for failed features in the timeline." translation="" />
+	<label commandName="ERROR_CREATING_DERIVE_FEATURE" devLabel="Error creating external derive feature." translation="" />
+	<label commandName="EXTRUDE_MULTIPLE_WIRE_ERROR" devLabel="Cannot create toolbody as multiple wired body is not allowed" translation="" />
+	<label commandName="EXTRUDE_THROUGH_ALL_ERROR" devLabel="Cannot create toolbody for Through All, please check inputs" translation="" />
+	<label commandName="EdgeFlange" devLabel="No target component." translation="" />
+	<label commandName="EdgesForJONotParallelOrIntersectError" devLabel="Joint Origin from two edges failed:  Input lines must intersect or be parallel" translation="" />
+	<label commandName="EditDcCanvasError" devLabel="Invalid canvas feature" translation="" />
+	<label commandName="EditPCBPackageFileError" devLabel="Input package file not opened" translation="" />
+	<label commandName="EditPCBPackageInputModelError" devLabel="Input package model is invalid" translation="" />
+	<label commandName="EditingOffsetSketchError" devLabel="Invalid editing input found" translation="" />
+	<label commandName="EmbossFeatureName" devLabel="Emboss" translation="" />
+	<label commandName="EmptyComponentName" devLabel="Component Name is empty." translation="" />
+	<label commandName="EmptyFolderInput" devLabel="Location is empty." translation="" />
+	<label commandName="Enclosure Feature" devLabel="Fluid Volume" translation="" />
+	<label commandName="EnclosureExternal" devLabel="No external void has been detected for given inputs. Please try to increase the offset." translation="" />
+	<label commandName="ErrAsmEntData" devLabel="Body, face, edge or vertex" translation="" />
+	<label commandName="ErrBodyData" devLabel="Body" translation="" />
+	<label commandName="ErrEdgeData" devLabel="Edge" translation="" />
+	<label commandName="ErrFaceData" devLabel="Face" translation="" />
+	<label commandName="ErrProfileData" devLabel="Profile" translation="" />
+	<label commandName="ErrVertData" devLabel="Vertex" translation="" />
+	<label commandName="ErrorLoadingDesignAsset" devLabel="Could not load Design Asset in latest target document:%1%!!" translation="" />
+	<label commandName="ErrorLoadingOtherDesignAsset" devLabel="Could not load other Assets in the latest target document: %1%!!" translation="" />
+	<label commandName="ErrorOpeningFile" devLabel="Could not open latest file %1% into memory" translation="" />
+	<label commandName="ExtentLineBody" devLabel="Extent Lines" translation="" />
+	<label commandName="ExternalDeriveFeatureName" devLabel="Derived from %1% v%2%" translation="" />
+	<label commandName="ExternalDeriveRequestNotCloud" devLabel="Cannot derive from versionless design" translation="" />
+	<label commandName="ExternalDerived" devLabel="ExternalDerived" translation="" />
+	<label commandName="ExternalDerivedSuffix" devLabel=" (Derived)" translation="" />
+	<label commandName="Extrude" devLabel="No target component." translation="" />
+	<label commandName="ExtrudeFeatureName" devLabel="Extrude" translation="" />
+	<label commandName="FACE_REFERENCE_LOST" devLabel="The face reference is lost, try editing this feature to reselect the lost face." translation="" />
+	<label commandName="FAIL_TO_CUT_INSTANCE" devLabel="Cut of instance failed" translation="" />
+	<label commandName="FEATURE_ENTITY_TYPE_INVALID" devLabel="Entity type is invalid" translation="" />
+	<label commandName="FEATURE_FAILED_TO_CREATE" devLabel="Failed to create feature" translation="" />
+	<label commandName="FEATURE_MISSING_INPUTS" devLabel="Missing inputs" translation="" />
+	<label commandName="FEATURE_OPERATION_ID_ERROR" devLabel="No allocated operation ids" translation="" />
+	<label commandName="FEATURE_REFERENCE_LOST" devLabel="Reference is lost" translation="" />
+	<label commandName="FEATURE_SOLVER_NO_SOLUTION_FOUND" devLabel="Solver did not reach a solution" translation="" />
+	<label commandName="FILLET_DATA_CORRUPT" devLabel="Virable radius fillet data modle corrupt!" translation="" />
+	<label commandName="FILLET_NO_EDGE_FOUND" devLabel="No fillet edge found." translation="" />
+	<label commandName="FILLET_NO_FACE_FOUND" devLabel="A crucial face is missing." translation="" />
+	<label commandName="FILLET_TANGENT_CHAIN_ISSUE" devLabel="There was a problem accepting the sequences of edges to fillet. Tangent Chain option was turned off " translation="" />
+	<label commandName="FLANGE_OPN_NEEDS_EDGE" devLabel="Please select Edge(s) to Join..." translation="" />
+	<label commandName="FLANGE_OPN_NOT_YET_SUPPORTED" devLabel="This Flange operation is not yet supported." translation="" />
+	<label commandName="FLATPATTERN_COLLISION" devLabel="Collisions found while flattening, cannot generate flatpattern." translation="" />
+	<label commandName="FLATPATTERN_ERROR" devLabel="Flatpattern generation failed." translation="" />
+	<label commandName="FLATPATTERN_FEATURE_NO_ALIGN_FACE" devLabel="Alignment face not available.   " translation="" />
+	<label commandName="FLATPATTERN_USING_CACHE_ALIGN_FACE" devLabel="Align face not found. Used a cached face for flattening.   " translation="" />
+	<label commandName="FPExportDXFError" devLabel="There was an unexpected problem with exporting the flat pattern as a DXF file." translation="" />
+	<label commandName="FUSION_SERVER_FEATURE_REQUIREMENTS_ERROR" devLabel="Feature inputs not meeting minimum requirements to execute the request" translation="" />
+	<label commandName="FUSION_SERVER_INTERNAL_ERROR" devLabel="Server internal error" translation="" />
+	<label commandName="FaceSetName" devLabel="FaceSet" translation="" />
+	<label commandName="FailedToAdd3DPackage" devLabel=": Failed to get 3D model from library." translation="" />
+	<label commandName="FailedToCreateBox" devLabel=": Failed to get box from library." translation="" />
+	<label commandName="FailedToCreatePCBComponents" devLabel="Failed to create PCB components." translation="" />
+	<label commandName="FailedToCreateSimModelAsset" devLabel="Failed to create Model asset." translation="" />
+	<label commandName="FailedToEraseAndFillGivenFaces" devLabel="Failed to erase and fill given faces." translation="" />
+	<label commandName="FailedToFillHoleWithGivenEedge" devLabel="Failed to fill hole with given edge." translation="" />
+	<label commandName="FailedToGetPackageTransform" devLabel=": Failed to get the transform of the 3D model from library." translation="" />
+	<label commandName="Feature" devLabel="Feature" translation="" />
+	<label commandName="FeatureAlign" devLabel="Align" translation="" />
+	<label commandName="FeatureArrange" devLabel="Arrange" translation="" />
+	<label commandName="FeatureAsBuilt" devLabel="As-built" translation="" />
+	<label commandName="FeatureAssemble" devLabel="Assemble" translation="" />
+	<label commandName="FeatureBodyComp" devLabel="Body-&gt;Comp" translation="" />
+	<label commandName="FeatureBoxPrimitive" devLabel="BoxPrimitive" translation="" />
+	<label commandName="FeatureCanvas" devLabel="Canvas" translation="" />
+	<label commandName="FeatureCategory" devLabel="Features" translation="" />
+	<label commandName="FeatureChamfer" devLabel="Chamfer" translation="" />
+	<label commandName="FeatureCircularComponentPattern" devLabel="C-Pattern" translation="" />
+	<label commandName="FeatureCircularPattern" devLabel="C-Pattern" translation="" />
+	<label commandName="FeatureCoilPrimitive" devLabel="CoilPrimitive" translation="" />
+	<label commandName="FeatureCombine" devLabel="Combine" translation="" />
+	<label commandName="FeatureConvertToSheetMetal" devLabel="ConvertToSheetMetal" translation="" />
+	<label commandName="FeatureCopyPaste" devLabel="CopyPaste" translation="" />
+	<label commandName="FeatureCopyPasteBodies" devLabel="CopyPasteBodies" translation="" />
+	<label commandName="FeatureCreateComponent" devLabel="CreateComponent" translation="" />
+	<label commandName="FeatureCutPaste" devLabel="CutPaste" translation="" />
+	<label commandName="FeatureCutPasteBodies" devLabel="CutPasteBodies" translation="" />
+	<label commandName="FeatureCylinderPrimitive" devLabel="CylinderPrimitive" translation="" />
+	<label commandName="FeatureDecal" devLabel="Decal" translation="" />
+	<label commandName="FeatureDeleteBody" devLabel="RemoveBody" translation="" />
+	<label commandName="FeatureDeleteFace" devLabel="DeleteFace" translation="" />
+	<label commandName="FeatureDeleteInstance" devLabel="RemoveInstance" translation="" />
+	<label commandName="FeatureDraft" devLabel="Draft" translation="" />
+	<label commandName="FeatureExtrude" devLabel="Extrude" translation="" />
+	<label commandName="FeatureFillet" devLabel="Fillet" translation="" />
+	<label commandName="FeatureForm" devLabel="Form" translation="" />
+	<label commandName="FeatureGround" devLabel="Ground" translation="" />
+	<label commandName="FeatureHole" devLabel="Hole" translation="" />
+	<label commandName="FeatureJointOrigin" devLabel="JointOrigin" translation="" />
+	<label commandName="FeatureLoft" devLabel="Loft" translation="" />
+	<label commandName="FeatureMesh" devLabel="Mesh" translation="" />
+	<label commandName="FeatureMidSurface" devLabel="MidSurface" translation="" />
+	<label commandName="FeatureMirrorPattern" devLabel="Mirror" translation="" />
+	<label commandName="FeatureModEmboss" devLabel="Emboss" translation="" />
+	<label commandName="FeatureMotionLink" devLabel="MotionLink" translation="" />
+	<label commandName="FeatureMove" devLabel="Move" translation="" />
+	<label commandName="FeatureMoveBody" devLabel="MoveBody" translation="" />
+	<label commandName="FeatureOffsetFaces" devLabel="OffsetFaces" translation="" />
+	<label commandName="FeaturePCB" devLabel="PCB" translation="" />
+	<label commandName="FeaturePCBExtrude" devLabel="PCBExtrude" translation="" />
+	<label commandName="FeaturePCBHole" devLabel="PCBHole" translation="" />
+	<label commandName="FeaturePathComponentPattern" devLabel="PathPattern" translation="" />
+	<label commandName="FeaturePathPattern" devLabel="PathPattern" translation="" />
+	<label commandName="FeaturePipe" devLabel="Pipe" translation="" />
+	<label commandName="FeatureRectangularComponentPattern" devLabel="R-Pattern" translation="" />
+	<label commandName="FeatureRectangularPattern" devLabel="R-Pattern" translation="" />
+	<label commandName="FeatureRemoveFaces" devLabel="RemoveFaces" translation="" />
+	<label commandName="FeatureRemoveFeatures" devLabel="RemoveFeatures" translation="" />
+	<label commandName="FeatureReplaceFace" devLabel="ReplaceFace" translation="" />
+	<label commandName="FeatureRevolve" devLabel="Revolve" translation="" />
+	<label commandName="FeatureRib" devLabel="Rib" translation="" />
+	<label commandName="FeatureSMBaseFace" devLabel="Face" translation="" />
+	<label commandName="FeatureSMContourFlange" devLabel="ContourFlange" translation="" />
+	<label commandName="FeatureSMEdgeFlange" devLabel="EdgeFlange" translation="" />
+	<label commandName="FeatureScale" devLabel="Scale" translation="" />
+	<label commandName="FeatureSelectionPluralId" devLabel="Features" translation="" />
+	<label commandName="FeatureSheetMetalFlatPattern" devLabel="FlatPattern" translation="" />
+	<label commandName="FeatureSheetMetalFlatPatternAlign" devLabel="FlatPatternAlign" translation="" />
+	<label commandName="FeatureSheetmetalRefold" devLabel="Refold" translation="" />
+	<label commandName="FeatureSheetmetalSheetMetalBend" devLabel="Bend" translation="" />
+	<label commandName="FeatureSheetmetalUnfold" devLabel="Unfold" translation="" />
+	<label commandName="FeatureShell" devLabel="Shell" translation="" />
+	<label commandName="FeatureSilhouetteSplit" devLabel="SilhouetteSplit" translation="" />
+	<label commandName="FeatureSketch" devLabel="Sketch" translation="" />
+	<label commandName="FeatureSnapshot" devLabel="Position" translation="" />
+	<label commandName="FeatureSpherePrimitive" devLabel="SpherePrimitive" translation="" />
+	<label commandName="FeatureSplit" devLabel="Split" translation="" />
+	<label commandName="FeatureSplitFace" devLabel="SplitFace" translation="" />
+	<label commandName="FeatureSurfaceDeleteFace" devLabel="SurfaceDeleteFace" translation="" />
+	<label commandName="FeatureSurfaceExtend" devLabel="SurfaceExtend" translation="" />
+	<label commandName="FeatureSurfaceGapFill" devLabel="Gap Fill" translation="" />
+	<label commandName="FeatureSurfaceOffset" devLabel="SurfaceOffset" translation="" />
+	<label commandName="FeatureSurfacePatch" devLabel="SurfacePatch" translation="" />
+	<label commandName="FeatureSurfaceRuled" devLabel="SurfaceRuled" translation="" />
+	<label commandName="FeatureSurfaceStitch" devLabel="SurfaceStitch" translation="" />
+	<label commandName="FeatureSurfaceTrim" devLabel="SurfaceTrim" translation="" />
+	<label commandName="FeatureSurfaceUntrim" devLabel="SurfaceUntrim" translation="" />
+	<label commandName="FeatureSweep" devLabel="Sweep" translation="" />
+	<label commandName="FeatureThicken" devLabel="Thicken" translation="" />
+	<label commandName="FeatureThread" devLabel="Thread" translation="" />
+	<label commandName="FeatureTorusPrimitive" devLabel="TorusPrimitive" translation="" />
+	<label commandName="FeatureUnStitch" devLabel="UnStitch" translation="" />
+	<label commandName="FeatureWeb" devLabel="Web" translation="" />
+	<label commandName="FeatureWorkAxis" devLabel="WorkAxis" translation="" />
+	<label commandName="FeatureWorkPlane" devLabel="WorkPlane" translation="" />
+	<label commandName="FeatureWorkPoint" devLabel="WorkPoint" translation="" />
+	<label commandName="FeatureXRef" devLabel="Component Insert" translation="" />
+	<label commandName="Feature_Compute_Error" devLabel="Compute Failed" translation="" />
+	<label commandName="Feature_Input_Compute_Error" devLabel="Reference Failures" translation="" />
+	<label commandName="FilletEdgeNoBodiesError" devLabel="There are no bodies specified to fillet." translation="" />
+	<label commandName="FilletEdgeSplitError" devLabel="There was a problem accepting the sequences of edges to fillet. Try turning the Tangent Chain option off and splitting the edge sequences into shorter Selection Edge Sets." translation="" />
+	<label commandName="FilletFeatureName" devLabel="Fillet" translation="" />
+	<label commandName="FilletHelpPointError" devLabel="There was a problem accepting the fillet help points. " translation="" />
+	<label commandName="FlangeFeatureName" devLabel="Flange" translation="" />
+	<label commandName="FlatHeadMachineScrew" devLabel="Flat Head Machine Screw" translation="" />
+	<label commandName="FlatHeadMachineScrew(100)" devLabel="Flat Head Machine Screw (100)" translation="" />
+	<label commandName="FlatHeadMachineScrew(82)" devLabel="Flat Head Machine Screw (82)" translation="" />
+	<label commandName="FlatPattern" devLabel="Flat Pattern" translation="" />
+	<label commandName="FlatPatternUpdateInvalidAsset" devLabel="Invalid source Flat Pattern asset found during Flat Pattern update operation." translation="" />
+	<label commandName="FlatPatternUpdateNULLAsset" devLabel="Could not find the flat pattern asset during Flat Pattern update operation." translation="" />
+	<label commandName="FlatPatternUpdateNULLDocument" devLabel="Document is missing during Flat Pattern update operation." translation="" />
+	<label commandName="FlatPatternUpdateNULLSourceComponent" devLabel="Base component is not available during Flat Pattern update operation." translation="" />
+	<label commandName="FlatPatternUpdateNULLWorkingComponent" devLabel="Flat Pattern component is not available during Flat Pattern update operation." translation="" />
+	<label commandName="FlatShadingType" devLabel="Flat Shaded (Prismatic shapes with sharp edges)" translation="" />
+	<label commandName="FlattenFailed" devLabel="Failed to flatten the given points." translation="" />
+	<label commandName="FrozenSurfChangedNonPreview" devLabel="The last operation unfroze a frozen region to make the requested shape change. Undo this operation to revert the shape change and restore the frozen region" translation="" />
+	<label commandName="FrozenSurfChangedPreview" devLabel="This operation will need to unfreeze a frozen region to make the requested shape change." translation="" />
+	<label commandName="FrozenSurfChangedSimExacNonPreview" devLabel="The last operation unfroze a frozen region to make the requested shape change. Undo this operation to revert the shape change and restore the frozen region. Change the Insertion Mode to Exact to avoid this issue." translation="" />
+	<label commandName="FrozenSurfChangedSimExacPreview" devLabel="This operation will need to unfreeze a frozen region to make the requested shape change. Change the Insertion Mode to Exact to avoid this issue" translation="" />
+	<label commandName="FusionComponentRootDefaultUserName" devLabel="FusionComponent" translation="" />
+	<label commandName="FusionDefaultUnitsOptionsToolTip" devLabel="Preferences that sets default units used in new documents" translation="" />
+	<label commandName="FusionDefaultUnitsOptionsUserName" devLabel="Design" translation="" />
+	<label commandName="FusionDocDesc" devLabel="A Fusion Document" translation="" />
+	<label commandName="FusionDocName" devLabel="Fusion Document" translation="" />
+	<label commandName="FusionFROutputFindFeatures2NullBody" devLabel="No valid body for feature recognition" translation="" />
+	<label commandName="FusionFROutputFindFeaturesNullBody" devLabel="No valid body for feature recognition" translation="" />
+	<label commandName="FusionFROutputRemoveFeaturesNotFound" devLabel="Call findFeatures before removeFeatures" translation="" />
+	<label commandName="FusionJointAssembleRequestErrorJointId" devLabel="Missing first joint origin associativity" translation="" />
+	<label commandName="FusionJointAssembleRequestErrorMatrix3dId" devLabel="Joint could not be created with the given input." translation="" />
+	<label commandName="FusionRemoveFeaturesNoFeaturesRemoved" devLabel="No features were able to be removed from this part" translation="" />
+	<label commandName="FusionRemoveFeaturesNoFeaturesRemoved_" devLabel="No features were able to be removed" translation="" />
+	<label commandName="FusionRemoveFeaturesNotAllFeaturesRemoved" devLabel="Not all features were able to be removed from this part" translation="" />
+	<label commandName="FusionRemoveFeaturesNotAllFeaturesRemoved_" devLabel="Not all features were able to be removed" translation="" />
+	<label commandName="FusionTextCommandUsedOutsideFusion" devLabel="Fusion scripting can only be used in a fusion asset" translation="" />
+	<label commandName="GAPFILL_NO_TOOLBODY" devLabel="Modeling Error: Can't create toolbody for gap fill, please check the inputs." translation="" />
+	<label commandName="GOST" devLabel="GOST" translation="" />
+	<label commandName="GapFillExtendNFFaces_ExtendExtensionFace" devLabel="Unable to extend the extension face." translation="" />
+	<label commandName="GapFillExtendNFFaces_MakeExtensionWireBody" devLabel="Unable to copy source body of the selected edge." translation="" />
+	<label commandName="GapFillExtendNFFaces_MakeFirstExtensionBody" devLabel="Unable to trim the extension face." translation="" />
+	<label commandName="GapFillExtendNFFaces_MakeFirstExtensionWireBody" devLabel="Unable to create wire body from the extension face." translation="" />
+	<label commandName="GapFillExtendOneFaceExtendExtensionFace" devLabel="Unable to extend the extension face." translation="" />
+	<label commandName="GapFillExtendOneFaceFaceIntersection" devLabel="The extension face and the termination face have an invalid face intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="" />
+	<label commandName="GapFillExtendOneFaceMakeBlankBody" devLabel="Unable to trim the extension face." translation="" />
+	<label commandName="GapFillExtendOneFaceMakeExtensionBody" devLabel="Unable to trim the extension face." translation="" />
+	<label commandName="GapFillExtendOneFaceMakeExtensionWireBody" devLabel="Unable to extend the extension face." translation="" />
+	<label commandName="GapFillExtendOneFaceMakeTerminationBody" devLabel="Unable to trim the extension face." translation="" />
+	<label commandName="GapFillExtendOneFaceNoIntersection" devLabel="The extension face and the termination face do not intersect." translation="" />
+	<label commandName="GapFillExtendOneFaceNoIntersectionGraph" devLabel="The extension face and the termination face have an invalid intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="" />
+	<label commandName="GapFillExtendOneFaceStitch" devLabel="Unable to stitch the body." translation="" />
+	<label commandName="GapFillExtendOneFaceTrim" devLabel="Unable to trim the extension face." translation="" />
+	<label commandName="GapFillExtendOneNFFace_ExtendEdge" devLabel="Unable to extend the selected egde." translation="" />
+	<label commandName="GapFillExtendOneNFFace_ExtendFirstExtensionFace" devLabel="Unable to extend the first extension face." translation="" />
+	<label commandName="GapFillExtendOneNFFace_ExtendSecondExtensionFace" devLabel="Unable to extend the first extension face." translation="" />
+	<label commandName="GapFillExtendOneNFFace_FaceIntersection" devLabel="The first extension face and the second selected face have an invalid face intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="" />
+	<label commandName="GapFillExtendOneNFFace_FirstEdge" devLabel="The first selected edge doesn't have faces." translation="" />
+	<label commandName="GapFillExtendOneNFFace_MakeExtensionBody" devLabel="Unable to trim the extension face." translation="" />
+	<label commandName="GapFillExtendOneNFFace_NoIntersection" devLabel="The first extension face and the second selected face do not intersect." translation="" />
+	<label commandName="GapFillExtendOneNFFace_NoIntersectionGraph" devLabel="The first extension face and the second selected face have an invalid intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="" />
+	<label commandName="GapFillExtendOneNFFace_Stitch" devLabel="Unable to stitch the body." translation="" />
+	<label commandName="GapFillExtendOneNFFace_Trim" devLabel="Unable to trim the extension face." translation="" />
+	<label commandName="GapFillExtendTwoFacesExtendFirstExtensionFace" devLabel="Unable to extend the first extension face." translation="" />
+	<label commandName="GapFillExtendTwoFacesExtendFirstOrSecondExtensionFace" devLabel="Unable to extend the first extension face or second extension face." translation="" />
+	<label commandName="GapFillExtendTwoFacesExtendSecondExtensionFace" devLabel="Unable to extend the second extension face." translation="" />
+	<label commandName="GapFillExtendTwoFacesFaceInvalidIntersection" devLabel="The first extension face and the second extension face have an invalid face intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="" />
+	<label commandName="GapFillExtendTwoFacesMakeBlankBody" devLabel="Unable to trim the first extension face or the second extension face." translation="" />
+	<label commandName="GapFillExtendTwoFacesMakeFirstExtensionBody" devLabel="Unable to trim the first extension face." translation="" />
+	<label commandName="GapFillExtendTwoFacesMakeSecondExtensionBody" devLabel="Unable to trim the second extension face." translation="" />
+	<label commandName="GapFillExtendTwoFacesMakeSecondExtensionWireBody" devLabel="Unable to extend the second extension face." translation="" />
+	<label commandName="GapFillExtendTwoFacesNoIntersection" devLabel="The first extension face and the second extension face do not intersect." translation="" />
+	<label commandName="GapFillExtendTwoFacesNoIntersectionGraph" devLabel="The first extension face and the second extension face have an invalid intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="" />
+	<label commandName="GapFillExtendTwoFacesStitch" devLabel="Unable to stitch the body." translation="" />
+	<label commandName="GapFillExtendTwoFacesTrim" devLabel="Unable to trim the first extension face or the second extension face." translation="" />
+	<label commandName="GapFillExtendTwoFacescoplanarFaces" devLabel="Unable to trim coplanar faces. Please try the Loft between faces option or the Extend one face option." translation="" />
+	<label commandName="GapFillExtendTwoNFFaces_ExtendEdges" devLabel="Unable to extend the selected egdes." translation="" />
+	<label commandName="GapFillExtendTwoNFFaces_ExtendFirstExtensionFace" devLabel="Unable to extend the first extension face." translation="" />
+	<label commandName="GapFillExtendTwoNFFaces_ExtendSecondExtensionFace" devLabel="Unable to extend the second extension face." translation="" />
+	<label commandName="GapFillExtendTwoNFFaces_FaceIntersection1" devLabel="The first extension face and the second extension face have an invalid face intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="" />
+	<label commandName="GapFillExtendTwoNFFaces_FaceIntersection2" devLabel="The first extension face and the second extension face don't have an intersection. Please try the Loft between faces option or the Boundary Patch option." translation="" />
+	<label commandName="GapFillExtendTwoNFFaces_FaceIntersection2_MAC" devLabel="The first extension face and the second extension face don't have an intersection.&#10;Please try the Loft between faces option&#10;or the Boundary Patch option." translation="" />
+	<label commandName="GapFillExtendTwoNFFaces_FirstEdge" devLabel="The first selected edge doesn't have faces." translation="" />
+	<label commandName="GapFillExtendTwoNFFaces_MakeFirstExtensionBody" devLabel="Unable to trim the first extension face." translation="" />
+	<label commandName="GapFillExtendTwoNFFaces_MakeSecondExtensionBody" devLabel="Unable to trim the second extension face." translation="" />
+	<label commandName="GapFillExtendTwoNFFaces_NoIntersection" devLabel="The first extension face and the second extension face do not intersect." translation="" />
+	<label commandName="GapFillExtendTwoNFFaces_NoIntersectionGraph" devLabel="The first extension face and the second extension face have an invalid intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="" />
+	<label commandName="GapFillExtendTwoNFFaces_SecondEdge" devLabel="The second selected edge doesn't have faces." translation="" />
+	<label commandName="GapFillExtendTwoNFFaces_Stitch" devLabel="Unable to stitch the body." translation="" />
+	<label commandName="GapFillExtendTwoNFFaces_Trim" devLabel="Unable to trim the first extension face or the second extension face." translation="" />
+	<label commandName="GapFillLoftBetweenFacesLoft" devLabel="Unable to loft between the profiles." translation="" />
+	<label commandName="GapFillLoftBetweenFacesStitch" devLabel="Unable to stitch the body." translation="" />
+	<label commandName="GeneralUnitsValue0" devLabel="mm" translation="" />
+	<label commandName="GeneralUnitsValue1" devLabel="cm" translation="" />
+	<label commandName="GeneralUnitsValue2" devLabel="m" translation="" />
+	<label commandName="GeneralUnitsValue3" devLabel="in" translation="" />
+	<label commandName="GeneralUnitsValue4" devLabel="ft" translation="" />
+	<label commandName="GenericModelingError" devLabel="Modeling operation failed." translation="" />
+	<label commandName="GeometryPointMissing" devLabel="Some referenced point cannot be found." translation="" />
+	<label commandName="GetLatestCmdCancelled" devLabel="%1% is canceled" translation="" />
+	<label commandName="GetNormalFailed1" devLabel="Failed to get the normal due to get more faces from the edge" translation="" />
+	<label commandName="GetNormalFailed2" devLabel="Failed to get the normal due to the edges are not co-planar" translation="" />
+	<label commandName="HOLE_CANNOT_CREATE_TOOLBODY" devLabel="Can't create hole toolbody, please check inputs." translation="" />
+	<label commandName="HOLE_DEPTH_ERR_TAPERED_THREAD" devLabel="Hole depth is less than standard taper thread height." translation="" />
+	<label commandName="HOLE_END_FACE_LOST" devLabel="End face is lost" translation="" />
+	<label commandName="HOLE_MISSING_CENTERS" devLabel="Missing hole centers, please check inputs" translation="" />
+	<label commandName="HexHeadBolt" devLabel="Hex Head Bolt" translation="" />
+	<label commandName="HexHeadBolt/Nut(EnlargedWasher)GOST12876-67" devLabel="Hex Head Bolt / Nut (Enlarged Washer) GOST 12876-67" translation="" />
+	<label commandName="HexHeadBolt/Nut(ReducedSize)GOST12876-67" devLabel="Hex Head Bolt / Nut (Reduced Size) GOST 12876-67" translation="" />
+	<label commandName="HexHeadBolt/NutGOST12876-67" devLabel="Hex Head Bolt / Nut GOST 12876-67" translation="" />
+	<label commandName="HexHeadCapScrew" devLabel="Hex Head Cap Screw" translation="" />
+	<label commandName="HexHeadCapScrewDINEN24014(Spotface)" devLabel="Hex Head Cap Screw DIN EN 24014 (Spotface)" translation="" />
+	<label commandName="HexHeadCapScrewDINEN24017" devLabel="Hex Head Cap Screw DIN EN 24017" translation="" />
+	<label commandName="HexHeadCapScrewISO24014(Spotface)" devLabel="Hex Head Cap Screw ISO 24014 (Spotface)" translation="" />
+	<label commandName="HexHeadCapScrewISO24017" devLabel="Hex Head Cap Screw ISO 24017" translation="" />
+	<label commandName="HexHeadMachineScrew" devLabel="Hex Head Machine Screw" translation="" />
+	<label commandName="HexHeadScrew" devLabel="Hex Head Screw" translation="" />
+	<label commandName="HexMachineScrew" devLabel="Hex Machine Screw" translation="" />
+	<label commandName="HexSocketHeadCapScrew" devLabel="Hex Socket Head Cap Screw" translation="" />
+	<label commandName="Hole" devLabel="No target component." translation="" />
+	<label commandName="HoleFeatureName" devLabel="Hole" translation="" />
+	<label commandName="HoleToolBodyCreationReferenceError" devLabel="Referenced Edge is not parallel to the hole origin plane." translation="" />
+	<label commandName="INVALID_3BENDCORNERRELIEF_RADIUS" devLabel="The 3 bend corner relief radius value is invalid. Try specifying a different value." translation="" />
+	<label commandName="INVALID_BENDRELIEF_DEPTH" devLabel="The bend relief depth value is invalid. Try specifying a different value." translation="" />
+	<label commandName="INVALID_BENDRELIEF_REMNANT" devLabel="The bend relief minimum remnant value is invalid. Try specifying a different value." translation="" />
+	<label commandName="INVALID_BENDRELIEF_WIDTH" devLabel="The bend relief width value is invalid. Try specifying a different value." translation="" />
+	<label commandName="INVALID_BEND_LINE_POSITION" devLabel="Unexpected bend parameters encountered. Please use Edit Feature to verify all values." translation="" />
+	<label commandName="INVALID_BEND_RADIUS" devLabel="The bend radius value is invalid. Try specifying a different value." translation="" />
+	<label commandName="INVALID_CORNERRELIEF_SIZE" devLabel="The 2 bend corner relief size value is invalid. Try specifying a different value." translation="" />
+	<label commandName="INVALID_FLANGE_INPUTS" devLabel="Invalid input(s) to create flange." translation="" />
+	<label commandName="INVALID_OPERANTS" devLabel="Invalid operands" translation="" />
+	<label commandName="INVALID_PARTINGLINE_BODY" devLabel="No target body or more than one target body!" translation="" />
+	<label commandName="INVALID_PASTE_INSTANCE" devLabel="The instance is invalid to be Cut &amp; Pasted into target component." translation="" />
+	<label commandName="INVALID_ROUND_BENDRELIEF_DEPTH" devLabel="The bend relief depth value is invalid. When using a Round relief, the relief depth value must be greater than or equal to 1/2 of the relief width value." translation="" />
+	<label commandName="INVALID_SKPATTERN_INPUT" devLabel="Invalid Input. Please check: count is larger than 0 and angle is between -2*PI to 2*PI, and count should be 1 if distance is 0.0" translation="" />
+	<label commandName="INVALID_SOURCE_BODY" devLabel="No valid source Body found, cache will be used" translation="" />
+	<label commandName="INVALID_SOURCE_BODY2" devLabel="more than one bodies are selected in editing!" translation="" />
+	<label commandName="INVALID_SVG" devLabel="Invalid SVG file" translation="" />
+	<label commandName="INVALID_TARGET_INSTANCE" devLabel="Invalid target component instance" translation="" />
+	<label commandName="ISO" devLabel="ISO" translation="" />
+	<label commandName="IllegalRestructure" devLabel="Illegal restructure. It will cause bad dependency." translation="" />
+	<label commandName="ImperialUnitSystemName" devLabel="Imperial (foot, lbmass, second, Fahrenheit) units" translation="" />
+	<label commandName="ImportFailed" devLabel="Import failed" translation="" />
+	<label commandName="InchImperialUnitSystemName" devLabel="inch modeling length with imperial (foot, lbmass, second, Fahrenheit) units" translation="" />
+	<label commandName="IndependentXRefInstanceRequired" devLabel="The selected instance has some essential dependent instances. Break Link is currently not supported!" translation="" />
+	<label commandName="IndependentXRefsRequired" devLabel="The selected referenced component or one of its children has dependent features like Pattern associated with it. Please remove the dependent features and try again." translation="" />
+	<label commandName="InitializeFailed" devLabel="initialize failed" translation="" />
+	<label commandName="InsertPointFailed" devLabel="Insert Point failed to perform insertion" translation="" />
+	<label commandName="Instance_pattern_error" devLabel="Cannot find source component instance" translation="" />
+	<label commandName="InterferenceComponent" devLabel="Intersections" translation="" />
+	<label commandName="Invalid Face" devLabel="Some faces cannot be deleted" translation="" />
+	<label commandName="InvalidAxisInput" devLabel="Invalid input" translation="" />
+	<label commandName="InvalidOccPath" devLabel="Invalid Occurrence Path." translation="" />
+	<label commandName="InvalidOccurrencePath" devLabel="Occurrence Path is not active" translation="" />
+	<label commandName="InvalidOffsetSketchError" devLabel="Offset profile must be a simple (possibly closed) chain of curves." translation="" />
+	<label commandName="InvalidPlaneNormal" devLabel="Invalid reference plane due to some reference point is merged." translation="" />
+	<label commandName="InvalidReferringDocType" devLabel="External Component can not be created in incompatible or legacy document types." translation="" />
+	<label commandName="InvalidRibTool" devLabel="Invalid tool body for rib" translation="" />
+	<label commandName="InvalidSketchConstraint" devLabel="Invalid sketch constraint!" translation="" />
+	<label commandName="InvalidSketchDimension" devLabel="Invalid sketch dimension!" translation="" />
+	<label commandName="InvalidWPntInput" devLabel="Invalid input" translation="" />
+	<label commandName="InvalidWebTool" devLabel="Invalid tool body for web" translation="" />
+	<label commandName="IsoCurveAnalysisDefaultUserName" devLabel="IsoCurve" translation="" />
+	<label commandName="IsolateSymmetry1" devLabel="One of the T-Spline bodies selected for this operation does not contain symmetry.  That portion of the model will be highlighted and isolated from the symmetric portion of the model.  The isolated faces will be removed when symmetry is cleared." translation="" />
+	<label commandName="IsolateSymmetry2" devLabel="Failed to isolate symmetry." translation="" />
+	<label commandName="JIS" devLabel="JIS" translation="" />
+	<label commandName="JOINT_LOST" devLabel="Motion Link joint is missing" translation="" />
+	<label commandName="JOINT_LOST_ORIGIN1" devLabel="Missing joint origin 1, using cached position" translation="" />
+	<label commandName="JOINT_LOST_ORIGIN2" devLabel="Missing joint origin 2, using cached position" translation="" />
+	<label commandName="JO_ASSOCIATION_LOST" devLabel="Joint Origin geometry associations are missing" translation="" />
+	<label commandName="JointHandleFailed" devLabel="Modification of EndType failed" translation="" />
+	<label commandName="JointHomeWarning" devLabel="Joint could not be reset to Home position" translation="" />
+	<label commandName="JointOriginFeatureCreationFailure" devLabel="Joint Origin feature creation failed." translation="" />
+	<label commandName="JointOriginIdCloningFailed" devLabel="JointOrigin cloning failed" translation="" />
+	<label commandName="JointsHomeWarning" devLabel="One or more joints could not be reset to Home position" translation="" />
+	<label commandName="KnotsTechnicallyMatchButItsProbablyJustRoundoffFromASeashell" devLabel="Knots technically match, but it's probably just roundoff from a seashell" translation="" />
+	<label commandName="LINK_PATH_LOST" devLabel="Motion Link path to joint is missing" translation="" />
+	<label commandName="LOFT_CENTER_LINE_LOST" devLabel="Minimum of two profiles are required to create a Loft! Please select sketch curve as a Centerline." translation="" />
+	<label commandName="LOFT_COINCIDENT_POINT_SECTION" devLabel="A point profile can not be coincident with a non-point profile for a Loft." translation="" />
+	<label commandName="LOFT_COPLANAR_CLOSED_SECTIONS" devLabel="Closed profiles can not be coplanar for a Loft." translation="" />
+	<label commandName="LOFT_FOLLOWING_POINT_SECTION" devLabel="There must be at least one intermediate non-point profile for a Loft." translation="" />
+	<label commandName="LOFT_GUIDE_RAILS_LOST" devLabel="Minimum of two profiles are required to create a Loft! Please select sketch curve(s) as a Rail(s)." translation="" />
+	<label commandName="LOFT_GUIDE_RAIL_POINT_SPLIT" devLabel="Split the incorrect rail at the point profile,&#10;    and use the add button before each selection." translation="" />
+	<label commandName="LOFT_ILLEGAL_POINT_SECTION" devLabel="There was a problem with one or more of the point profiles.&#10;    Try changing or removing the point profiles." translation="" />
+	<label commandName="LOFT_INTERNAL_POINT_SECTION" devLabel="A point profile can only be used as the first or last profile of a Loft." translation="" />
+	<label commandName="LOFT_MIN_PROFILES_NOT_MEET" devLabel="Minimum of two profiles are required to create a Loft." translation="" />
+	<label commandName="LOFT_NO_TOOLBODY" devLabel="Modeling Error: Can't create loft toolbody, please check the inputs." translation="" />
+	<label commandName="LOFT_TOOLBODY_CREATE_FAIL" devLabel="Tool body creation failed" translation="" />
+	<label commandName="LatestDocEmptyPath" devLabel="Could not get the latest path for the base document" translation="" />
+	<label commandName="LatestDocEmptyPath2" devLabel="Could not get the latest path for the referenced document" translation="" />
+	<label commandName="LatestXRefDocOpenFailed" devLabel="Could not open linked document." translation="" />
+	<label commandName="LatticeEdgeSelectionCategory" devLabel="Lattice Edge" translation="" />
+	<label commandName="LatticeEdgeSelectionId" devLabel="LatticeEdge" translation="" />
+	<label commandName="LatticeEdgeSelectionPluralId" devLabel="LatticeEdges" translation="" />
+	<label commandName="LatticeEntitySelectionId" devLabel="LatticeEntity" translation="" />
+	<label commandName="LatticeEntitySelectionsId" devLabel="LatticeEntities" translation="" />
+	<label commandName="LatticeFaceSelectionCategory" devLabel="Lattice Face" translation="" />
+	<label commandName="LatticeFaceSelectionId" devLabel="LatticeFace" translation="" />
+	<label commandName="LatticeFaceSelectionsId" devLabel="LatticeFaces" translation="" />
+	<label commandName="LatticeRigDeformDefaultUserName" devLabel="Lattice" translation="" />
+	<label commandName="LatticeRigDeformSelectionId" devLabel="LatticeRigDeform" translation="" />
+	<label commandName="LatticeRigDeformSelectionsId" devLabel="LatticeRigDeforms" translation="" />
+	<label commandName="LatticeRigDeformersSelectionId" devLabel="LatticeRigDeformers" translation="" />
+	<label commandName="LatticeRigDeformersSelectionsId" devLabel="LatticeRigDeformers" translation="" />
+	<label commandName="LatticeRigSelectionCategory" devLabel="Lattice Rig" translation="" />
+	<label commandName="LatticeVertexSelectionCategory" devLabel="Lattice vertex" translation="" />
+	<label commandName="LatticeVertexSelectionId" devLabel="LatticeVertex" translation="" />
+	<label commandName="LatticeVertexSelectionsId" devLabel="LatticeVertices" translation="" />
+	<label commandName="LoadPackagesAsXRef" devLabel="XRef Packages" translation="" />
+	<label commandName="LoadPackagesAsXRefToolTip" devLabel="Load packages as XRef when generating PCB 3d document" translation="" />
+	<label commandName="Loft" devLabel="No target component." translation="" />
+	<label commandName="LoftFeatureName" devLabel="Loft" translation="" />
+	<label commandName="MESH_SELECTION_OPTION_GROUP" devLabel="Modify Selection" translation="" />
+	<label commandName="MESH_SELECTOR_BRUSH_SIZE" devLabel="Brush Size" translation="" />
+	<label commandName="MESH_SELECTOR_EXPANDTOCONNECTED_MESH_SEL_ACTION" devLabel="Expand to Connected" translation="" />
+	<label commandName="MESH_SELECTOR_EXPANDTOGROUP_MESH_SEL_ACTION" devLabel="Expand to Face Group" translation="" />
+	<label commandName="MESH_SELECTOR_GROW_MESH_SEL" devLabel="Grow" translation="" />
+	<label commandName="MESH_SELECTOR_GROW_SHRINK_MESH_SEL_EXPAND" devLabel="Expand" translation="" />
+	<label commandName="MESH_SELECTOR_GROW_SHRINK_MESH_SEL_GROW" devLabel="Grow/Shrink" translation="" />
+	<label commandName="MESH_SELECTOR_INVERT_MESH_SEL" devLabel="Invert" translation="" />
+	<label commandName="MESH_SELECTOR_INVERT_MESH_SEL_ACTION" devLabel="Invert Selection" translation="" />
+	<label commandName="MESH_SELECTOR_N_SELECTED_TRIANGLES" devLabel="Selected Faces" translation="" />
+	<label commandName="MESH_SELECTOR_SHRINK_MESH_SEL" devLabel="Shrink" translation="" />
+	<label commandName="MIRROR_PATTERN_JOIN_UNSUCCESSFUL" devLabel="Could not join, multiple bodies created." translation="" />
+	<label commandName="MIRROR_PATTERN_MISSING_PLANE" devLabel="Missing mirror plane" translation="" />
+	<label commandName="MISSING_REF_ERROR" devLabel="Missing reference" translation="" />
+	<label commandName="MMKSUnitSystemName" devLabel="standard MKS (m, kg, second, Celsius) units" translation="" />
+	<label commandName="MOTION_LINK_OUT_OF_DATE" devLabel="Motion Link offset could not be updated. Cached offset will be used" translation="" />
+	<label commandName="MULTIPLE_TARGET_UNSUPPORTED" devLabel="The feature doesn't support multiple targets, please edit the feature to select one target." translation="" />
+	<label commandName="MakeDeletionFeature" devLabel="A Delete feature will be added to the timeline." translation="" />
+	<label commandName="MarkTransactionBoundaryError" devLabel="ASM mark transaction boundary error." translation="" />
+	<label commandName="MatchAPIFailed" devLabel="Match failed" translation="" />
+	<label commandName="MatchAddParmFailed" devLabel="Invalid input" translation="" />
+	<label commandName="MatchAddParmFailedTargetInput" devLabel="Invalid Target input" translation="" />
+	<label commandName="MatchGetInputEdgesFailed" devLabel="Invalid input edges" translation="" />
+	<label commandName="MatrixAxisGeometryMissing" devLabel="Axis geometry is missing" translation="" />
+	<label commandName="MatrixEdgeGeometryMissing" devLabel="Edge geometry is missing" translation="" />
+	<label commandName="MatrixOriginGeometryMissing" devLabel="Origin geometry is missing" translation="" />
+	<label commandName="MatrixPlaneGeometryMissing" devLabel="Plane geometry is missing" translation="" />
+	<label commandName="MatrixXAxisGeometryMissing" devLabel="X axis geometry is missing" translation="" />
+	<label commandName="MergeEdgeFailed" devLabel="Merge Edge operation failed." translation="" />
+	<label commandName="MeshBodyDefaultUserName" devLabel="MeshBody" translation="" />
+	<label commandName="MeshBodySelectionCategory" devLabel="Mesh Bodies" translation="" />
+	<label commandName="MeshClearFGGenericError" devLabel="ClearFG failed due to invalid input" translation="" />
+	<label commandName="MeshCombineComponentError" devLabel="Combine failed due to invalid target component" translation="" />
+	<label commandName="MeshCombineGenericError" devLabel="Combine failed due to invalid input" translation="" />
+	<label commandName="MeshConvFail" devLabel="Mesh Convert Failed" translation="" />
+	<label commandName="MeshFaceGroupToolTip" devLabel="Color mesh bodies by face group" translation="" />
+	<label commandName="MeshFaceGroupUserName" devLabel="Face Groups" translation="" />
+	<label commandName="MeshFacetSelection" devLabel="Mesh Facet" translation="" />
+	<label commandName="MeshFacetSelectionCategory" devLabel="Mesh Facets" translation="" />
+	<label commandName="MeshFacetSelection_Plural" devLabel="Mesh Facets" translation="" />
+	<label commandName="MeshGenerateFGGenericError" devLabel="GenerateFG failed due to invalid input" translation="" />
+	<label commandName="MeshMakeSolidGenericError" devLabel="MakeSolid failed due to invalid input" translation="" />
+	<label commandName="MeshMakeSolidOutputError" devLabel="MakeSolid failed due to invalid output" translation="" />
+	<label commandName="MeshPlanarSectionRequestFailed" devLabel="Mesh section failed." translation="" />
+	<label commandName="MeshPlaneCutFailed" devLabel="Plane Cut failed." translation="" />
+	<label commandName="MeshPointSelectionCategory" devLabel="Mesh Points" translation="" />
+	<label commandName="MeshPointSelectionId" devLabel="Mesh Point" translation="" />
+	<label commandName="MeshPointsSelectionId" devLabel="Mesh Points" translation="" />
+	<label commandName="MeshReduceGenericError" devLabel="Reduce failed due to invalid input" translation="" />
+	<label commandName="MeshRemeshGenericError" devLabel="Remesh failed due to invalid input" translation="" />
+	<label commandName="MeshReplaceGenericError" devLabel="Replace failed due to invalid input" translation="" />
+	<label commandName="MeshReverseNormalsGenericError" devLabel="ReverseNormals failed due to invalid input" translation="" />
+	<label commandName="MeshScaleGenericError" devLabel="Scale failed due to invalid input" translation="" />
+	<label commandName="MeshSelectionsId" devLabel="Mesh Bodies" translation="" />
+	<label commandName="MeshSmoothGenericError" devLabel="Smooth failed due to invalid input" translation="" />
+	<label commandName="MeshStyleOptionGroup" devLabel="Mesh Style" translation="" />
+	<label commandName="MeshStyleOptionGroupToolTip" devLabel="Preferences that set Mesh rendering style" translation="" />
+	<label commandName="MeshToolProps" devLabel="Mesh Selection Tool" translation="" />
+	<label commandName="MidSurfaceError_NoSource" devLabel="Source bodies lost!" translation="" />
+	<label commandName="MidSurfaceShellCreationFailure" devLabel="Failed to generate a mid-surface shell" translation="" />
+	<label commandName="MidSurfaceShell_DefaultName" devLabel="Midsurface" translation="" />
+	<label commandName="MinimumRadiusAnalysisDefaultUserName" devLabel="MinimumRadius" translation="" />
+	<label commandName="MirrorComponent" devLabel="MirrorComponent" translation="" />
+	<label commandName="MirrorPatternFeatureName" devLabel="Mirror" translation="" />
+	<label commandName="MirrorReNameComponnet" devLabel="(Mirror)" translation="" />
+	<label commandName="MirrorSuffix" devLabel="(Mirror)" translation="" />
+	<label commandName="MissingJORef" devLabel="Missing snap reference" translation="" />
+	<label commandName="MmMKSUnitSystemName" devLabel="mm modeling length with MKS (m, kg, second, Celsius) units" translation="" />
+	<label commandName="ModelingError" devLabel="Modeling Error: Can't create hole toolbody, please check inputs" translation="" />
+	<label commandName="ModelingErrorBadInputToLoft4" devLabel="Modeling Error: Minimum two profiles are required to create a Loft! Please select sketch curve as a Centerline" translation="" />
+	<label commandName="ModelingErrorBadInputToLoft5" devLabel="Modeling Error: Minimum two profiles are required to create a Loft! Please select sketch curve(s) as a Rail(s)" translation="" />
+	<label commandName="ModelingErrorBadInputToLoft6" devLabel="Modeling Error: Minimum two profiles are required to create a Loft!" translation="" />
+	<label commandName="ModelingErrorBadInputToLoft7" devLabel="Modeling Error: Minimum two profiles are required to create a Loft!" translation="" />
+	<label commandName="ModelingErrorConnectorObstacleRequest" devLabel="Modeling Error: Can't create connector obstacle toolbody, please check inputs" translation="" />
+	<label commandName="MoveFaceGeneralError" devLabel="Move Face fails due to unexpected result" translation="" />
+	<label commandName="MultipleAreaBoardError" devLabel="The outline could generate multiple areas to defind board, which is not expected, please check the source outline to make it form single area for board!" translation="" />
+	<label commandName="MultipleEIPContextSelectionId" devLabel="Contexts" translation="" />
+	<label commandName="NONROOT_OCCURRENCE_PATH_ROOT" devLabel="Occurrence Path must be from root component" translation="" />
+	<label commandName="NO_EXTEND_EDGE" devLabel="No Extend Edge Found!" translation="" />
+	<label commandName="NO_REF_POINT" devLabel="No reference point found!" translation="" />
+	<label commandName="NO_SOURCE_FACES" devLabel="No Source Faces Found!" translation="" />
+	<label commandName="NO_TARGET_BODY" devLabel="No target body!" translation="" />
+	<label commandName="NegativeGuideRail" devLabel="Guide Rail Distance cannot be negative." translation="" />
+	<label commandName="NestedOffsetSketchError" devLabel="One or more of the selected curves has already been offset. Consider offsetting the original profile again instead." translation="" />
+	<label commandName="NoBoxCreated" devLabel=": No box is created." translation="" />
+	<label commandName="NoDesignAsset" devLabel="The latest target document %1% does not contain a Design Asset" translation="" />
+	<label commandName="NoGripsInTopos" devLabel="No valid selection for smoothing" translation="" />
+	<label commandName="NoIntersectingTargetBodyError" devLabel="No intersecting target body was found." translation="" />
+	<label commandName="NoLinkBetweenDocs" devLabel="Could not find link between source document: %1% and target document: %2%" translation="" />
+	<label commandName="NoLinkMgr" devLabel="Could not find Link Mgr in the source document %1%!!" translation="" />
+	<label commandName="NoPackage3dFileOnThisFootprint" devLabel=": This version of device might not have any package 3D file." translation="" />
+	<label commandName="NoShellBodySelectionCategory" devLabel="No Shell Bodies" translation="" />
+	<label commandName="NoSourceWMPlaceholder" devLabel="Working Model missing design placeholder." translation="" />
+	<label commandName="NoSurfacesToTrim" devLabel="Cutting Tool does not intersect any seletected surface!" translation="" />
+	<label commandName="NoTargetBodyError" devLabel="No target body found to cut or intersect!" translation="" />
+	<label commandName="NoThreeDModelInPackageFile" devLabel=": This version of package 3d file might have no 3d model." translation="" />
+	<label commandName="NoValidDecalError" devLabel="no valid decal patch to use" translation="" />
+	<label commandName="NoVisibleSurfacesToTrim1" devLabel="Cutting Tool does not intersect any surface!" translation="" />
+	<label commandName="NoVisibleSurfacesToTrim2" devLabel="There are no visible Surfaces to trim" translation="" />
+	<label commandName="NotExportTSpline" devLabel="Tspline bodies cannot be exported, and will not appear in the exported document. Use the Convert command to create bodies which will be exported." translation="" />
+	<label commandName="NotSupported1" devLabel="%1% command is not supported for non-associative references" translation="" />
+	<label commandName="NotSupported2" devLabel="%1% command is only supported for Fusion assets" translation="" />
+	<label commandName="NotSupported3" devLabel="%1% command can only work with valid Fusion root components" translation="" />
+	<label commandName="NotSupported4" devLabel="Get Latest command is only supported on Fusion design data" translation="" />
+	<label commandName="NotSupportedEdit" devLabel="Parameter edit type not supported!" translation="" />
+	<label commandName="NotSupportedUnitEdit" devLabel="Parameter unit edit not supported!" translation="" />
+	<label commandName="NothingConvertToDMFeature" devLabel="Nothing converted." translation="" />
+	<label commandName="NothingStitched" devLabel="Modeling Error: Nothing has stitched." translation="" />
+	<label commandName="OCCURRENCE_LOST" devLabel="Fails to find occurrence and cache is used" translation="" />
+	<label commandName="OCCURRENCE_MATCH_FAIL" devLabel="Occurrence Path is not matched" translation="" />
+	<label commandName="OCCURRENCE_PATH_LOST" devLabel="Failed to find occurrence path" translation="" />
+	<label commandName="OCCURRENCE_TRANSFORM_NOT_FOUND" devLabel="Occurrence transform for feature not found" translation="" />
+	<label commandName="ORIGIN_AXIS_GEOMETRY_MISSING" devLabel="Axis geometry is missing" translation="" />
+	<label commandName="ORIGIN_SELECTION_MISSING" devLabel="Origin geometry is missing." translation="" />
+	<label commandName="ORIGIN_X_AXIS_REF_EDGE_MISSING" devLabel="Origin's reference x-axis selection is missing." translation="" />
+	<label commandName="ORIGIN_Z_AXIS_REF_MISSING" devLabel="Origin's primary axis selection is missing." translation="" />
+	<label commandName="OWNER_OCCURRENCE_LOST" devLabel="Failed to get owner occurrence transform" translation="" />
+	<label commandName="ObjectPathReadonlyWarning" devLabel="some selected object is readonly and cannot be deleted." translation="" />
+	<label commandName="OccurrenceName" devLabel="Occurrence" translation="" />
+	<label commandName="OfflineFailedGetLatestMsg" devLabel="Latest version of the file %1% is not available in Offline mode. Please switch to Online mode to perform the %2% command." translation="" />
+	<label commandName="OffsetFacesFailed" devLabel="Brep transaction boundary is not set correctly." translation="" />
+	<label commandName="OffsetShell_DefaultName" devLabel="Midsurface" translation="" />
+	<label commandName="OffsetSketchBadCurvesError" devLabel="Could not offset curves." translation="" />
+	<label commandName="OffsetSketchFailedError" devLabel="Offset creation failed." translation="" />
+	<label commandName="OffsetSketchNoGeomError" devLabel="The sketch offset created no geometry. Modify the offset dimension or verify the changes are correct." translation="" />
+	<label commandName="OvalHeadMachineScrew" devLabel="Oval Head Machine Screw" translation="" />
+	<label commandName="PATCH_NO_TOOLBODY" devLabel="Modeling Error: Can't create patch toolbody, please check the inputs." translation="" />
+	<label commandName="PATH_PATTERN_INVALID_COUNT" devLabel="Invalid count" translation="" />
+	<label commandName="PATH_PATTERN_INVALID_START_RANGE" devLabel="Invalid start range" translation="" />
+	<label commandName="PATH_PATTERN_MISSING_OBJECTS_OR_PATH" devLabel="Missing objects or path" translation="" />
+	<label commandName="PATTERN_BODY_LOST" devLabel="Could not resolve the body being patterned" translation="" />
+	<label commandName="PATTERN_FACE_LOST" devLabel="Could not resolve the face being patterned" translation="" />
+	<label commandName="PATTERN_SOURCE_LOST_BODY" devLabel="A body is lost which is used as input for pattern. Try to edit the feature to repair it." translation="" />
+	<label commandName="PATTERN_SOURCE_LOST_COMPINSTANCE" devLabel="A component instance is lost which is used as input for pattern. Try to edit the feature to repair it." translation="" />
+	<label commandName="PATTERN_SOURCE_LOST_FACESET" devLabel="A face is lost which is used as input for pattern. Try to edit the feature to repair it." translation="" />
+	<label commandName="PATTERN_SOURCE_LOST_FEATURE" devLabel="A feature is lost which is used as input for pattern. Try to edit the feature to repair it." translation="" />
+	<label commandName="PCBBoardName" devLabel="Board" translation="" />
+	<label commandName="PCBNewBoard" devLabel="Board" translation="" />
+	<label commandName="PIMApprovedBy" devLabel="Approved By" translation="" />
+	<label commandName="PIMApprovedDate" devLabel="Approved Date" translation="" />
+	<label commandName="PIMDesignMass" devLabel="Mass" translation="" />
+	<label commandName="PIMDesignMaterial" devLabel="Material" translation="" />
+	<label commandName="PIMDesigner" devLabel="Designer" translation="" />
+	<label commandName="PIMManufacturer" devLabel="Manufacturer" translation="" />
+	<label commandName="PIMManufacturingEngineer" devLabel="Manufacturing Engineer" translation="" />
+	<label commandName="PIMMechanicalEngineer" devLabel="Mechanical Engineer" translation="" />
+	<label commandName="PIMPartDescription" devLabel="Description" translation="" />
+	<label commandName="PIMPartName" devLabel="Part Name" translation="" />
+	<label commandName="PIMPartNumber" devLabel="Part Number" translation="" />
+	<label commandName="PIMProject" devLabel="Project" translation="" />
+	<label commandName="PIMStatus" devLabel="Status" translation="" />
+	<label commandName="PIMStockNumber" devLabel="Stock Number" translation="" />
+	<label commandName="PIMTitle" devLabel="Title" translation="" />
+	<label commandName="PIPE_PATH_NOT_FOUND" devLabel="The path for pipe cannot be found!" translation="" />
+	<label commandName="PLANE1_SELECTION_MISSING" devLabel="Missing plane1" translation="" />
+	<label commandName="PLANE2_SELECTION_MISSING" devLabel="Missing plane2" translation="" />
+	<label commandName="PRIMITIVE_PROFILE_REFERENCE_LOST" devLabel="The primitive profile reference is lost." translation="" />
+	<label commandName="PROFILE_NON_PLANAR" devLabel="Curves tracked in old profile are not coplanar anymore. The downstream result may be not your intent." translation="" />
+	<label commandName="PROFILE_REFERENCE_LOST" devLabel="The profile reference is lost, try editing this the feature to reselect the lost profile." translation="" />
+	<label commandName="PROJECT_TO_SURFACE_FAILED" devLabel="Project to surface failed, please check the surface or the vector!" translation="" />
+	<label commandName="ParameterEditErrorStatus" devLabel="%1%" translation="" />
+	<label commandName="PartingFaceSplitFailure" devLabel="Failed to split faces" translation="" />
+	<label commandName="PartingLineFailure" devLabel="Failed to create parting lines" translation="" />
+	<label commandName="PartingLineNonPlanarParting" devLabel="Split Solid Body mode only supports coplanar parting lines." translation="" />
+	<label commandName="PartingSplitFailure" devLabel="Failed to split the body" translation="" />
+	<label commandName="PartingSplittingSheetFailure" devLabel="Failed to create splitting surface" translation="" />
+	<label commandName="PartingSurfaceExtendWarning" devLabel="Failed to extend parting surfaces" translation="" />
+	<label commandName="PathPatternFeatureName" devLabel="PathPattern" translation="" />
+	<label commandName="PathPatternFeatureNameNumbered" devLabel="PathPattern%1%" translation="" />
+	<label commandName="PatternComputeError" devLabel="Cannot find source body for the pattern compute." translation="" />
+	<label commandName="PatternFeatureName" devLabel="Pattern" translation="" />
+	<label commandName="PatternReNameComponent" devLabel="(Pattern)" translation="" />
+	<label commandName="Pattern_Feature_Input_Compute_Error" devLabel="Pattern Source Lost" translation="" />
+	<label commandName="PipeFeatureName" devLabel="Pipe" translation="" />
+	<label commandName="PipeJointId" devLabel="Pipe EndType" translation="" />
+	<label commandName="PipeJointsId" devLabel="Pipe EndTypes" translation="" />
+	<label commandName="PipeSectionId" devLabel="Pipe Section" translation="" />
+	<label commandName="PipeSectionsId" devLabel="Pipe Sections" translation="" />
+	<label commandName="PipeSegmentId" devLabel="Pipe Segment" translation="" />
+	<label commandName="PipeSegmentsId" devLabel="Pipe Segments" translation="" />
+	<label commandName="ProjectSourceLost" devLabel="The project source is lost, Cache is used!" translation="" />
+	<label commandName="ProjectSourceVectorLost" devLabel="The project direction line is lost, Cache is used!" translation="" />
+	<label commandName="ProjectSurfaceLost" devLabel="The project surface is lost, Cache is used!" translation="" />
+	<label commandName="ProjectToSurfaceComputeUtil_Fail01" devLabel="Failed to project the selected geometries. Please check that the project direction and selected faces are sensible, or try changing project type." translation="" />
+	<label commandName="ProjectToSurfaceComputeUtil_Fail02" devLabel="Failed to project the selected geometries. Please check that the selected geometries and faces are sensible, or try changing project type." translation="" />
+	<label commandName="ProjectToSurfaceComputeUtil_FailToProjectPartial" devLabel="Have certain selected curves couldn't be projected!" translation="" />
+	<label commandName="RADIUS_TOO_SMALL" devLabel="The radius is too small!" translation="" />
+	<label commandName="RECTANGULAR_PATTERN_MISSING_OBJECTS_OR_AXES" devLabel="Missing objects or axes" translation="" />
+	<label commandName="REFOLD_NO_BODY_INPUT" devLabel="It looks like the sheet metal body was removed. Undo the features or delete the features in the timeline to refold. You can also delete the unfold feature to return to the folded state." translation="" />
+	<label commandName="REFOLD_NO_VALID_INPUT" devLabel="Failed to refold the body. Please provide a valid input." translation="" />
+	<label commandName="RELATIVE_POSITION_LOST" devLabel="Fails to get associated relative position" translation="" />
+	<label commandName="REORIENT_PRIMARY_AXIS_MISSING" devLabel="The reoriented primary axis selection is missing." translation="" />
+	<label commandName="REORIENT_SECONDARY_AXIS_MISSING" devLabel="The reoriented secondary axis selection is missing." translation="" />
+	<label commandName="REPLACE_FACE_TARGET_LOST" devLabel="The target face is lost" translation="" />
+	<label commandName="REPLACE_FACE_TOOL_LOST" devLabel="The source face is lost" translation="" />
+	<label commandName="REPLACE_WITH_PRIMITIVE_OUT_OF_DATE" devLabel="Replace with Primitives Feature is out of date." translation="" />
+	<label commandName="REVOLVE_INVALID_AXIS" devLabel="Axis is invalid" translation="" />
+	<label commandName="RIGID_GROUP_OPERAND_LOST" devLabel="Rigid group operands are missing" translation="" />
+	<label commandName="RPatternFeatureName" devLabel="R-Pattern" translation="" />
+	<label commandName="RULED_SURFACE_INVALID_ANGLE" devLabel="Cannot set angle value to 90 degrees. Adjust angle value." translation="" />
+	<label commandName="RULED_SURFACE_NO_INPUT" devLabel="Cannot find input geometry. Edit the feature to reselect lost inputs." translation="" />
+	<label commandName="Reconstruction_prefix" devLabel="Reconstructed-" translation="" />
+	<label commandName="RedirectProblem" devLabel="Could not redirect the target file %1% to the _XRef_ location" translation="" />
+	<label commandName="RefDataMiss" devLabel="missing" translation="" />
+	<label commandName="ReloadDocumentCannotFetch" devLabel="Could not fetch the latest version of the document" translation="" />
+	<label commandName="ReloadDocumentCannotOpen" devLabel="Could not reload the latest version of the document" translation="" />
+	<label commandName="ReplaceWithPrimitiveFeature" devLabel="Replace With Primitive" translation="" />
+	<label commandName="ReplaceWithPrimitivesRequest_Rename" devLabel="Simplified Primitive" translation="" />
+	<label commandName="RequireSaveBeforeInsert" devLabel="Please save this design before inserting components" translation="" />
+	<label commandName="ResolveProblem" devLabel="Could not resolve the latest version of the target document. To-Path: %1%!!" translation="" />
+	<label commandName="ResolveProblem2" devLabel="Could not resolve the latest version of the target document. From-Path: %1%, To-Path: %2%!!" translation="" />
+	<label commandName="RevolveFeatureName" devLabel="Revolve" translation="" />
+	<label commandName="Rib" devLabel="No target component." translation="" />
+	<label commandName="RibComputeError" devLabel="Fail to compute rib profile!" translation="" />
+	<label commandName="RibComputeFailed" devLabel="Rib compute failed" translation="" />
+	<label commandName="RibFeatureName" devLabel="Rib" translation="" />
+	<label commandName="RuleName" devLabel="Rule Name" translation="" />
+	<label commandName="RuleUnitsExpressionLineEdit1" devLabel="Please complete the expression" translation="" />
+	<label commandName="RuleUnitsExpressionLineEdit2" devLabel="Please enter a valid expression" translation="" />
+	<label commandName="RuleUnitsExpressionLineEdit3" devLabel="For Round relief, relief depth value should be greater than or equal to 1/2 of relief width value" translation="" />
+	<label commandName="SCULPT_BUILD_CELLS_FAILED" devLabel="Failed to build cells." translation="" />
+	<label commandName="SCULPT_CELL_MISMATCHED" devLabel="Some sculpt cells are mismatched." translation="" />
+	<label commandName="SCULPT_CREATE_BODY_FROM_CELL" devLabel="Failed to create bodies from cells." translation="" />
+	<label commandName="SCULPT_MAKE_FACE_FROM_PLANE" devLabel="Failed to make sheet face from work plane." translation="" />
+	<label commandName="SKETCH_MISFIT_EDGE_ENTITY" devLabel="Misfit edge entity" translation="" />
+	<label commandName="SKETCH_MISFIT_VERTEX_ENTITY" devLabel="Misfit vertex entity" translation="" />
+	<label commandName="SKETCH_SOLVER_NO_SOLUTION_FOUND" devLabel="Solver did not reach a solution" translation="" />
+	<label commandName="SMEdgeSelectionCategory" devLabel="Sheet Metal Body Edges" translation="" />
+	<label commandName="SMRuleNotActivated" devLabel="Could not set the Rule as Default." translation="" />
+	<label commandName="SMRuleNotCloned" devLabel="Could not duplicate a Rule." translation="" />
+	<label commandName="SMRuleNotDeleted" devLabel="Could not delete a Rule as some component is using it or the Rule does not exist." translation="" />
+	<label commandName="SMRuleNotUpdated" devLabel="Could not update a Rule." translation="" />
+	<label commandName="SNAPSHOT_NOTHING_CHANGE" devLabel="Capture Position has no positions for current Components and Joints" translation="" />
+	<label commandName="SOURCE_BODY_LOST" devLabel="Source body not found!" translation="" />
+	<label commandName="SOURCE_INSTANCE_LOST" devLabel="Paste instance source occurrence context is lost" translation="" />
+	<label commandName="SOURCE_MODEL_NOT_AVAILABLE" devLabel="The source design was unavailable during compute. Cached data will be used." translation="" />
+	<label commandName="SPHERE_CREATE_SPHERE_FAILED" devLabel="Failed to build sphere tool body." translation="" />
+	<label commandName="SPHERE_DIAMETER_VALUE_INVALID" devLabel="The sphere diameter is invalid." translation="" />
+	<label commandName="SPLIT_NO_TARGET_FACES" devLabel="No target faces for executing face split." translation="" />
+	<label commandName="SPLIT_TARGET_TOOL_NOT_INTERSECT" devLabel="No intersection between target(s) and split tool." translation="" />
+	<label commandName="SPLIT_TOOL_INTERSECTING_SHEET" devLabel="There is unhandled intersecting tool data. Try without intersecting tools." translation="" />
+	<label commandName="SPLIT_TOOL_NON_MANIFOLD_SOLID" devLabel="Coincident tools would create illegal or non-manufacturable bodies. Try with separate tools." translation="" />
+	<label commandName="SameDecalError" devLabel="Same image file path" translation="" />
+	<label commandName="SameReferencedDoc" devLabel="The referenced file being opened is the same as the one currently open. Path of file: %1%!!" translation="" />
+	<label commandName="Sculpt" devLabel="No target component." translation="" />
+	<label commandName="SculptComputeFailedErr" devLabel="Failed to compute sculpt!" translation="" />
+	<label commandName="SculptFeatureName" devLabel="BoundaryFill" translation="" />
+	<label commandName="SeashellIsoparmPatternExistsStandardizationIsImpossible" devLabel="Seashell isoparm pattern exists, standardization is impossible" translation="" />
+	<label commandName="SectionViewAnalysisDefaultUserName" devLabel="Section" translation="" />
+	<label commandName="SelectBackFacets" devLabel="Select Back Faces" translation="" />
+	<label commandName="SelectedVerticesAreNotWithinWeldTolerance" devLabel="Selected vertices are not within weld tolerance" translation="" />
+	<label commandName="SelectionInputBaseMeshBodyClientType" devLabel="Base Mesh Body" translation="" />
+	<label commandName="SelectionInputMeshBodyClientType" devLabel="Mesh Body" translation="" />
+	<label commandName="SheetMetalBend" devLabel="No target component." translation="" />
+	<label commandName="ShellBodySelectionCategory" devLabel="Shell Bodies" translation="" />
+	<label commandName="ShellBodySelectionId" devLabel="ShellBody" translation="" />
+	<label commandName="ShellBody_DefaultName" devLabel="Shell" translation="" />
+	<label commandName="ShellFeatureName" devLabel="Shell" translation="" />
+	<label commandName="SimAssetIsMissing" devLabel="Asset is missing" translation="" />
+	<label commandName="SimpleConversionFailed" devLabel="T-Spline conversion failed." translation="" />
+	<label commandName="SketchConstraintHasSameDimension" devLabel="Already has same dimension on referenced geometry!" translation="" />
+	<label commandName="SketchInvisibleDimension" devLabel="The dimension you have just created is not visible. Please toggle Show Dimension option in sketch palette." translation="" />
+	<label commandName="SketchInvisibleProjectGeometries" devLabel="The Projected Geometries you have just created is not visible. Please toggle Show Project Geometries option in sketch palette." translation="" />
+	<label commandName="SketchPlaneLost" devLabel="The sketch plane is lost, Cache is used. Please redefine the sketch to select other plane!" translation="" />
+	<label commandName="SketchProject" devLabel="Project" translation="" />
+	<label commandName="SlideEdgeFailed" devLabel="Slide Edge operation failed with specific input edge set" translation="" />
+	<label commandName="SlottedCheeseHeadScrewDIN84" devLabel="Slotted Cheese Head Screw DIN 84" translation="" />
+	<label commandName="SlottedCheeseHeadScrewISO1207" devLabel="Slotted Cheese Head Screw ISO 1207" translation="" />
+	<label commandName="SmRuleCopyToLibraryStr" devLabel="Copy to Library" translation="" />
+	<label commandName="SmoothShadingType" devLabel="Smooth shaded (Organic/smooth shapes; increased performance)" translation="" />
+	<label commandName="SmoothSurfaceFailed" devLabel="Smooth surface operation failed" translation="" />
+	<label commandName="SmoothingRateNotInRange" devLabel="The smoothing rate is not in range" translation="" />
+	<label commandName="SocketHeadCapScrew" devLabel="Socket Head Cap Screw" translation="" />
+	<label commandName="SocketHeadCapScrewDINENISO4762" devLabel="Socket Head Cap Screw DIN EN ISO 4762" translation="" />
+	<label commandName="SocketHeadCapScrewISO4762" devLabel="Socket Head Cap Screw ISO 4762" translation="" />
+	<label commandName="StraightenFailed" devLabel="Failed to straighten the given points." translation="" />
+	<label commandName="SubDSurfaceDefaultUserName" devLabel="Body" translation="" />
+	<label commandName="SubDSurfaceNodeSelectionId" devLabel="T-Spline Body" translation="" />
+	<label commandName="SubDSurfaceNodeSelectionsId" devLabel="T-Spline Bodies" translation="" />
+	<label commandName="SubDivideFailed" devLabel="Subdivide operation can be applied only on manifold Surfaces." translation="" />
+	<label commandName="SubDivideFailedUnknown" devLabel="Subdivide operations failed." translation="" />
+	<label commandName="SuppressOrDissolveWarning" devLabel="Deleted geometry is part of a pattern, suppressed the instance or dissolved the pattern." translation="" />
+	<label commandName="Suppress_error" devLabel="No target feature" translation="" />
+	<label commandName="SurfaceAlreadySmoothAsPossible" devLabel="Surface is already as smooth as possible" translation="" />
+	<label commandName="SurfaceMergeFailed" devLabel="Failed to merge surfaces" translation="" />
+	<label commandName="SurfaceMergeFailedCopy" devLabel="Failed to copy tool body" translation="" />
+	<label commandName="SurfaceMergeFailedToolBody" devLabel="Failed to copy tool body" translation="" />
+	<label commandName="SurfaceOffsetFeatureName" devLabel="SurfaceOffset" translation="" />
+	<label commandName="SurfacePatchFeatureName" devLabel="SurfacePatch" translation="" />
+	<label commandName="SurfaceRuledFeatureName" devLabel="SurfaceRuled" translation="" />
+	<label commandName="SurfaceShellFeature" devLabel="SurfaceShell" translation="" />
+	<label commandName="SurfaceShell_DefaultName" devLabel="SurfaceShell" translation="" />
+	<label commandName="SurfaceStitch" devLabel="No target component." translation="" />
+	<label commandName="SurfaceStitchFailed" devLabel="Failed to stitch merge body" translation="" />
+	<label commandName="SurfaceThicken" devLabel="No target component." translation="" />
+	<label commandName="SurfaceUnionFailed" devLabel="Failed to union to merge body" translation="" />
+	<label commandName="Sweep" devLabel="No target component." translation="" />
+	<label commandName="SweepFeatureName" devLabel="Sweep" translation="" />
+	<label commandName="SweepProfileNonPlanarError" devLabel="The selected profile is non-planar. Parallel sweep requires a planar profile." translation="" />
+	<label commandName="SweepProfilePlaneNotIntersecting" devLabel="The path does not intersect the profile. For best results, the path should intersect the profile." translation="" />
+	<label commandName="SweepTaggingError" devLabel="Sweep creation failed. Try reselecting the inputs." translation="" />
+	<label commandName="SymmetryRemoved" devLabel="The symmetry applied to this T-Spline body will be removed as a result of this operation.  You can proceed or cancel the operation." translation="" />
+	<label commandName="SymmetrySplit" devLabel="Surface failed to split due to symmetry. Use Clear Symmetry command to remove the symmetry." translation="" />
+	<label commandName="TARGET_BODY_REFERENCE_LOST" devLabel="The target body is lost, try editing this feature to reselect target body." translation="" />
+	<label commandName="TARGET_INSTANCE_LOST" devLabel="Paste instance target occurrence context is lost" translation="" />
+	<label commandName="TARGET_OCCURRENCE_LOST" devLabel="Failed to get target occurrence transform" translation="" />
+	<label commandName="THREAD_BUILD_HELIXPATH_FAILED" devLabel="Failed to build thread helix path." translation="" />
+	<label commandName="THREAD_BUILD_PROFILE_FAILED" devLabel="Failed to build thread profile." translation="" />
+	<label commandName="THREAD_CREATE_THREAD_BODY_FAILED" devLabel="Failed to build thread tool body." translation="" />
+	<label commandName="THREAD_CUT_TOOL_FROM_TARGET_FAILED" devLabel="Failed to cut thread tool body from target body." translation="" />
+	<label commandName="THREAD_REFERENCE_FACE_LOST" devLabel="Thread face reference is lost, try editing this feature to reselect the reference face." translation="" />
+	<label commandName="THREAD_REFERENCE_FACE_OFFSET_FAILED" devLabel="Thread size is bigger than the body. Unable to create hole and thread. Reduce hole/thread size and try again." translation="" />
+	<label commandName="TOOLBODY_CREATION_FAIL_ERROR" devLabel="Tool body creation failed" translation="" />
+	<label commandName="TOOLBODY_CREATION_FAIL_WARNING" devLabel="Some profiles failed to create tool bodies" translation="" />
+	<label commandName="TOOL_BODY_REFERENCE_LOST" devLabel="The tool body is lost, try editing this feature to reselect tool body." translation="" />
+	<label commandName="TORUS_CREATE_TORUS_FAILED" devLabel="Failed to create torus solid body." translation="" />
+	<label commandName="TORUS_MAJOR_DIAMETER_VALUE_INVALID" devLabel="The torus inner diameter is invalid." translation="" />
+	<label commandName="TORUS_MINOR_DIAMETER_VALUE_INVALID" devLabel="The torus diameter is invalid." translation="" />
+	<label commandName="TSPlineAddRefSymPlaneNotSel" devLabel="Plane not selected" translation="" />
+	<label commandName="TSPlineBridgeInvalidSelection" devLabel="Bridge Failed. Invalid Selection" translation="" />
+	<label commandName="TSplineBodySelectionCategory" devLabel="T-Spline Body" translation="" />
+	<label commandName="TSplineEdgeSelectionCategory" devLabel="T-Spline Edges" translation="" />
+	<label commandName="TSplineEntitySelectionCategory" devLabel="T-Spline Geometry" translation="" />
+	<label commandName="TSplineExtrudeFailed" devLabel="Extrude failed with current selection set" translation="" />
+	<label commandName="TSplineFaceSelectionCategory" devLabel="T-Spline Faces" translation="" />
+	<label commandName="TSplineGripSelectionCategory" devLabel="T-Spline Tangency Handles" translation="" />
+	<label commandName="TSplinePipeFeatureName" devLabel="Pipe" translation="" />
+	<label commandName="TSplinePipeJointSelectionCategory" devLabel="Pipe Joint" translation="" />
+	<label commandName="TSplinePipeSectionSelectionCategory" devLabel="Pipe Section" translation="" />
+	<label commandName="TSplinePipeSegmentSelectionCategory" devLabel="Pipe Segment" translation="" />
+	<label commandName="TSplineStraigtenSurfacePointsError" devLabel="Straighten operation failed. When you use the Surface Points option, ensure that the T-Spline surface can be displayed in Smooth display mode." translation="" />
+	<label commandName="TSplineSurfaceUpgrade" devLabel="Both of the selected T-Spline bodies were upgraded to the latest version." translation="" />
+	<label commandName="TSplineSurfaceUpgrade2" devLabel="Selected T-Spline bodies were upgraded to the latest version." translation="" />
+	<label commandName="TSplineToASMSurfaceOverloadFailed" devLabel="T-SplineToASM (surface overload) failed." translation="" />
+	<label commandName="TSplineVertexSelectionCategory" devLabel="T-Spline Vertices" translation="" />
+	<label commandName="TWO_BEND_CORNER_RELIEF_PLACEMENT_UNSUPPORTED" devLabel="Bend feature can automatically create corner reliefs if shape type is set to Square, Round or Tear and relief placement is set to Intersection in Sheet Metal rule. Modify the rule or use Override in Bend dialog if you need corner reliefs." translation="" />
+	<label commandName="TWO_BEND_CORNER_RELIEF_SHAPE_UNSUPPORTED" devLabel="Bend feature can automatically create corner reliefs if shape type is set to Square, Round or Tear in Sheet Metal rule. Modify the rule or use Override in Bend dialog if you need corner reliefs." translation="" />
+	<label commandName="TargetBodyCollectionNotVisible" devLabel="The visibility of Bodies folder is turned on." translation="" />
+	<label commandName="TargetComponentReadonly" devLabel="The selected target component for Insert is in a readonly XRef. Please select another one." translation="" />
+	<label commandName="TargetDocumentNotFound" devLabel="Target document not found!!" translation="" />
+	<label commandName="Target_Body_Compute_Failure" devLabel="Target Body Error" translation="" />
+	<label commandName="TheMatchingKnotsGuaranteeIsNotMet" devLabel="The matching knots guarantee is not met" translation="" />
+	<label commandName="TheMeshContainsDegenerateFacesZeroLengthEdges" devLabel="The mesh contains degenerate faces/zero-length edges" translation="" />
+	<label commandName="TheMeshContainsValence2StarPoints" devLabel="The mesh contains valence-2 star points" translation="" />
+	<label commandName="TheMeshIsNotManifold" devLabel="The mesh is not manifold" translation="" />
+	<label commandName="ThickenFailed1" devLabel="Thicken operation can be applied only on manifold surfaces" translation="" />
+	<label commandName="ThickenFailed2" devLabel="Thicken operation can be applied only on manifold surfaces" translation="" />
+	<label commandName="ThickenFeatureName" devLabel="Thicken" translation="" />
+	<label commandName="Thread for Hole" devLabel="No possible thread faces found." translation="" />
+	<label commandName="ThreadFeatureName" devLabel="Thread" translation="" />
+	<label commandName="ThreadProfileAcmeST" devLabel="ACME Screw Threads" translation="" />
+	<label commandName="ThreadProfileAfbmaLocknuts" devLabel="AFBMA Standard Locknuts" translation="" />
+	<label commandName="ThreadProfileAnsiMetricM" devLabel="ANSI Metric M Profile" translation="" />
+	<label commandName="ThreadProfileAnsiUnifiedST" devLabel="ANSI Unified Screw Threads" translation="" />
+	<label commandName="ThreadProfileBSPTaperInternal" devLabel="BSP Taper Internal" translation="" />
+	<label commandName="ThreadProfileBspPT" devLabel="BSP Pipe Threads" translation="" />
+	<label commandName="ThreadProfileDINPipeTaperInternal" devLabel="DIN Pipe Taper Internal" translation="" />
+	<label commandName="ThreadProfileDinPT" devLabel="DIN Pipe Threads" translation="" />
+	<label commandName="ThreadProfileGbMetric" devLabel="GB Metric Profile" translation="" />
+	<label commandName="ThreadProfileGbNoSealPT" devLabel="GB Pipe Threads" translation="" />
+	<label commandName="ThreadProfileGostST" devLabel="GOST Self-tapping Screw Thread" translation="" />
+	<label commandName="ThreadProfileISOTaperInternal" devLabel="ISO Taper Internal" translation="" />
+	<label commandName="ThreadProfileInchTT" devLabel="Inch Tapping Threads" translation="" />
+	<label commandName="ThreadProfileIsoMetric" devLabel="ISO Metric profile" translation="" />
+	<label commandName="ThreadProfileIsoMetricTT" devLabel="ISO Metric Trapezoidal Threads" translation="" />
+	<label commandName="ThreadProfileIsoPT" devLabel="ISO Pipe Threads" translation="" />
+	<label commandName="ThreadProfileJISTaperInternal" devLabel="JIS Taper Internal" translation="" />
+	<label commandName="ThreadProfileJisPT" devLabel="JIS Pipe Threads" translation="" />
+	<label commandName="ThreadProfileMetricFormingST" devLabel="Metric Forming Screw Threads" translation="" />
+	<label commandName="ThreadProfileNPT" devLabel="NPT" translation="" />
+	<label commandName="ThreadProfileNPTforPVCPipeAndFitting" devLabel="NPT for PVC Pipe and Fitting" translation="" />
+	<label commandName="ToolBodyCreationFailError" devLabel="Tool body creation failed" translation="" />
+	<label commandName="ToolBodyStitchFailError" devLabel="Unable to stitch the bodies." translation="" />
+	<label commandName="ToolCreationFailure" devLabel="Cutting Tool does not generate successfully!" translation="" />
+	<label commandName="Tool_Body_Compute_Failure" devLabel="Tool Body Error" translation="" />
+	<label commandName="TriangulateToolTip" devLabel="Convert polygon facets in the imported mesh to triangles. Only applicable in Mesh Preview." translation="" />
+	<label commandName="TriangulateUserName" devLabel="Triangulate mesh polygons" translation="" />
+	<label commandName="UNFOLD_COLLISION" devLabel="Collisions found while unfolding, cannot unfold." translation="" />
+	<label commandName="UNFOLD_ERROR" devLabel="Unfolding failed." translation="" />
+	<label commandName="UNFOLD_FEATURE_BENDFACE_REF_LOST" devLabel="Bend face is not available." translation="" />
+	<label commandName="UNFOLD_FEATURE_NO_STATIONARY_FACE" devLabel="Stationary face not available." translation="" />
+	<label commandName="UNFOLD_NO_BENDS_FOR_STATIONARAY" devLabel="The selected stationary entity is not connected to any bends. Please select a different stationary entity." translation="" />
+	<label commandName="UnCreaseVerticesFailed" devLabel="Failed to uncrease the given vertices." translation="" />
+	<label commandName="UnWeldFailed" devLabel="UnWeld failed with given input" translation="" />
+	<label commandName="UnableToPromoteMeshToDesign" devLabel="Unable to promote mesh to design workspace, since the component data is unavailable." translation="" />
+	<label commandName="UncreaseEdgeFailed" devLabel="Failed to uncrease the given edges." translation="" />
+	<label commandName="Unfold" devLabel="No target component." translation="" />
+	<label commandName="UnitGeneralUnitsToolTip" devLabel="Default unit system for new design" translation="" />
+	<label commandName="UnitGeneralUnitsUserName" devLabel="Default units for new design" translation="" />
+	<label commandName="UnsavedDocumentLabel" devLabel="(Unsaved)" translation="" />
+	<label commandName="UpdatePCBPackageFailure" devLabel="Failed to update PCB Component package" translation="" />
+	<label commandName="UserParameter" devLabel="User Parameter" translation="" />
+	<label commandName="UserPropertyOnComponent__Description" devLabel="Description" translation="" />
+	<label commandName="UserPropertyOnComponent__ITEM_ID" devLabel="Item" translation="" />
+	<label commandName="UserPropertyOnComponent__MATERIAL" devLabel="Material" translation="" />
+	<label commandName="UserPropertyOnComponent__Mass" devLabel="Mass" translation="" />
+	<label commandName="UserPropertyOnComponent__Part Name" devLabel="Part Name" translation="" />
+	<label commandName="UserPropertyOnComponent__Part Number" devLabel="Part Number" translation="" />
+	<label commandName="UserPropertyOnComponent__QTY" devLabel="Qty" translation="" />
+	<label commandName="VERTEX_REFERENCE_LOST" devLabel="The vertex reference is lost, try editing this feature to reselect the lost vertex." translation="" />
+	<label commandName="VisualAnalysesSelectionId" devLabel="VisualAnalyses" translation="" />
+	<label commandName="VisualAnalysisSelectionId" devLabel="VisualAnalysis" translation="" />
+	<label commandName="WMFailedToRemoveWorkingModel" devLabel="Failed to remove Working Model(s)." translation="" />
+	<label commandName="WMLightWeightBaseAssetLoadFailed" devLabel="Failure loading Base Asset during Lightweight Working Model update operation." translation="" />
+	<label commandName="WMLightWeightInvalidAsset" devLabel="Context asset is not working model asset during Lightweight Working Model update operation." translation="" />
+	<label commandName="WMLightWeightInvalidBaseAsset" devLabel="Base Asset not found during Lightweight Working Model update operation." translation="" />
+	<label commandName="WMLightWeightNULLWorkingComponent" devLabel="Working component is null during Working Model Light weight update operation." translation="" />
+	<label commandName="WMNoWorkingModelIsSelected" devLabel="No Working Model is selected." translation="" />
+	<label commandName="WMNotAWorkingModel" devLabel="Input asset is not a Working Model Asset." translation="" />
+	<label commandName="WMPlaceholderEntityCreateFailed" devLabel="Failed to create PlaceholderEntity for WorkingModel." translation="" />
+	<label commandName="WMPlaceholderEntityGetFailed" devLabel="Failed to get PlaceholderEntity for WorkingModel." translation="" />
+	<label commandName="WMUpdateInvalidAsset" devLabel="Source asset is found but is not working model asset during Working Model update operation." translation="" />
+	<label commandName="WMUpdateNULLAsset" devLabel="Input WM asset is null during Working Model update operation." translation="" />
+	<label commandName="WMUpdateNULLDocument" devLabel="Document is missing during Working Model update operation." translation="" />
+	<label commandName="WMUpdateNULLWorkingComponent" devLabel="Working component is null during Working Model update operation." translation="" />
+	<label commandName="WMWorkingModelIsActive" devLabel="Not possible to delete active Working Model." translation="" />
+	<label commandName="WORK_AXIS_MISSING_INPUTS" devLabel="Missing inputs" translation="" />
+	<label commandName="WORK_PLANE_INVALID_REFERENCE_PLANE" devLabel="Invalid reference plane" translation="" />
+	<label commandName="WORK_PLANE_MISSING_INPUTS" devLabel="Missing inputs" translation="" />
+	<label commandName="WORK_POINT_EXPECTING_FACE_OR_EDGE" devLabel="Invalid center, expecting face or edge" translation="" />
+	<label commandName="WORK_POINT_MISSING_INPUTS" devLabel="Missing inputs" translation="" />
+	<label commandName="WRONG RIB SKETCH" devLabel="The curve you are selecting does not intersect a solid body. Select another curve." translation="" />
+	<label commandName="WebComputeError" devLabel="Fail to compute web profile!" translation="" />
+	<label commandName="WebFeatureName" devLabel="Web" translation="" />
+	<label commandName="WeldFailed" devLabel="Weld failed" translation="" />
+	<label commandName="WorkAxisFromLocationAndVectorRequestGenericError" devLabel="Work Axis failed due to invalid input" translation="" />
+	<label commandName="WorkAxisFromTwoPlanesRequestParallelPlanesError" devLabel="Work Axis From Two Planes failed: input planes do not intersect" translation="" />
+	<label commandName="WorkGeomRecontructor_NoValidParent" devLabel="Cannot find a valid root component" translation="" />
+	<label commandName="WorkPlaneFromLocationAndVectorRequestGenericError" devLabel="Work Plane failed due to invalid input" translation="" />
+	<label commandName="WorkPlaneFromTwoLinesRequestLinesNotParallelOrIntersectError" devLabel="Work Plane From Two Lines failed:  Input lines must intersect or be parallel" translation="" />
+	<label commandName="WorkPlaneTangentByRefPlaneInvalidRefPlnError" devLabel="Invalid reference plane" translation="" />
+	<label commandName="WorkPlaneTangentByRefPlaneInvalidTargetError" devLabel="Invalid target face" translation="" />
+	<label commandName="WorkPlaneTangentByRefPlaneRefPlaneLostError" devLabel="Reference plane lost" translation="" />
+	<label commandName="WorkPlaneTangentByRefPlaneRequestGenericError" devLabel="Tangent Work Plane failed due to invalid input" translation="" />
+	<label commandName="WorkPlaneTangentByRefPlaneTargetLostError" devLabel="Target cylindrical/conical face lost" translation="" />
+	<label commandName="WorkPlaneTangentToCylinderRequestGenericError" devLabel="Tangent Work Plane failed due to invalid input" translation="" />
+	<label commandName="WorkPointFromLineAndPlaneRequestLineAndFaceInvalidInputError" devLabel="Work Point From Line and Plane failed due to invalid input" translation="" />
+	<label commandName="WorkPointFromLineAndPlaneRequestLineAndFaceParallelError" devLabel="Work Point From Line and Plane failed: Selected Face and Line are parallel" translation="" />
+	<label commandName="WorkPointFromSphereRequestGenericError" devLabel="Cannot create point" translation="" />
+	<label commandName="WorkPointFromThreePlanesParallelPlanesError" devLabel="Work Point From Three Planes failed: input planes do not intersect" translation="" />
+	<label commandName="WorkPointFromTwoLinesError" devLabel="Work Point From Two Lines failed: lines do not intersect" translation="" />
+	<label commandName="WorkingComponent" devLabel="Fusion Working Model" translation="" />
+	<label commandName="WorkingModel" devLabel="WorkingModel" translation="" />
+	<label commandName="WorkingModelBaseComponentInvalid" devLabel="Base component of cloning operation failed sanity check. Not a Fusion component" translation="" />
+	<label commandName="WorkingModelCloneFeatureFailure" devLabel="Target component is missing!" translation="" />
+	<label commandName="WorkingModelCloneFeatureFailure1" devLabel="Error Creating Working Model Clone feature!" translation="" />
+	<label commandName="WorkingModelCopyFailed" devLabel="An error occurred during Working Model copy operation." translation="" />
+	<label commandName="WorkingModelDocumentInavlid" devLabel="Not a valid document" translation="" />
+	<label commandName="WorkingModelInvalidAssetSubtype" devLabel="Asset Subtype provided is not registered with Asset Subtype Mgr." translation="" />
+	<label commandName="WorkingModelRenameFailed" devLabel="An error occurred during Working Model rename operation." translation="" />
+	<label commandName="WorkingModelSelectionId" devLabel="Flat Pattern" translation="" />
+	<label commandName="WorkingModelSourceComponentInvalid3" devLabel="Unknown internal type of working model requested!" translation="" />
+	<label commandName="WorkingModelTargetAssetInvalid" devLabel="Target asset of cloning operation failed sanity check!" translation="" />
+	<label commandName="WorkingModelTargetComponentInvalid" devLabel="Target component of cloning operation failed sanity check!" translation="" />
+	<label commandName="WrongDocumentEnv" devLabel="Wrong Document Environment!" translation="" />
+	<label commandName="WrongDownloadPath" devLabel="Downloaded path %1% is not proper" translation="" />
+	<label commandName="WrongDownloadPath2" devLabel="Downloaded path %1% is not proper" translation="" />
+	<label commandName="WrongDownloadPath3" devLabel="Downloaded path %1% is not proper" translation="" />
+	<label commandName="XRefDesignMissing" devLabel="Some indirect referenced design cannot be found!" translation="" />
+	<label commandName="XRefDifferentVersionAlreadyExists" devLabel="A different version of the referenced document already exists. Please update that to latest version first." translation="" />
+	<label commandName="XRefDifferentVersionAlreadyExistsInPaste" devLabel="A different version of the referenced document already exists. We'll use this version for paste." translation="" />
+	<label commandName="XRefDifferentVersionAlreadyExistsSameWillBeInserted" devLabel="The active document is already referencing a different version of the document %1%. The same version will be inserted again." translation="" />
+	<label commandName="XRefLoadGroupToolTip" devLabel="Load Packages as XRef by XRef Load group" translation="" />
+	<label commandName="XRefLoadGroupUserName" devLabel="XRef Load Groups" translation="" />
+	<label commandName="XRefTargetComponentMissing" devLabel="The referenced design cannot be found!" translation="" />
+	<label commandName="ZERO_DISTANCE_ERROR" devLabel="Zero distance" translation="" />
+	<label commandName="ZebraAnalysisDefaultUserName" devLabel="Zebra" translation="" />
+	<label commandName="_isLatestVersion" devLabel="An unexpected error occurred while calling isLatestVersion." translation="" />
+	<label commandName="applyToselection" devLabel="Apply to selection" translation="" />
+	<label commandName="bendConditions" devLabel="Bend Conditions" translation="" />
+	<label commandName="bendRadius" devLabel="Bend radius" translation="" />
+	<label commandName="bendTransition" devLabel="Bend transition" translation="" />
+	<label commandName="clearSysmetryFailed" devLabel="Failed in clearing symmetry" translation="" />
+	<label commandName="cloningNotSupportedForIntersectingEdgesMatrix3dId" devLabel="Cloning not supported for IntersectingEdgesMatrix3dId" translation="" />
+	<label commandName="cloningNotSupportedForMidPlaneMatrix3dId" devLabel="Cloning not supported for MidPlaneMatrix3dId" translation="" />
+	<label commandName="cornerConditions" devLabel="Corner Conditions" translation="" />
+	<label commandName="createDesignRulesHeaderToolTip" devLabel="Create or edit sheet metal rules in this design" translation="" />
+	<label commandName="createLibraryRulesHeaderToolTip" devLabel="Create or edit sheet metal rules in the cloud library" translation="" />
+	<label commandName="createPoint3dBetweenFacesFailed" devLabel="Creation of point between faces failed." translation="" />
+	<label commandName="createPoint3dCenterIdFailed" devLabel="Creation of point at geometry center failed." translation="" />
+	<label commandName="createPoint3dOnConeAxisIdFailed" devLabel="Creation of point on cone edge failed." translation="" />
+	<label commandName="createPoint3dOnLinearEdgeIdFailed" devLabel="Creation of point on linear edge failed." translation="" />
+	<label commandName="createPoint3dOnPoint3dOnPlaneUVIdFailed" devLabel="Creation of point on plane failed." translation="" />
+	<label commandName="createPoint3dRefPointIdFailed" devLabel="Creation of point on plane failed." translation="" />
+	<label commandName="createPointBetweenEdgesFailed" devLabel="Creation of point between edges failed." translation="" />
+	<label commandName="createVector3dIdFailed" devLabel="Creation of vector from geometry failed." translation="" />
+	<label commandName="createVector3dOrthoIdFailed" devLabel="Creation of ortho vector failed." translation="" />
+	<label commandName="designRulesHeaderToolTip" devLabel="Select a sheet metal rule already in use in this design" translation="" />
+	<label commandName="differentEntityTypeRelinked" devLabel="Constraints and dimensions applied on target geometry are removed due to different geometry types in relinking." translation="" />
+	<label commandName="duplicateAndEdit" devLabel="Duplicate and edit rule" translation="" />
+	<label commandName="editRule" devLabel="Edit Rule" translation="" />
+	<label commandName="extendBooleanFail" devLabel="Extent boolean fail. The termination entity might be not fully intersected with the tool body built along the operation direction" translation="" />
+	<label commandName="failToProjectProfileToRemoteSurface" devLabel="Fail to project profile to remote surface" translation="" />
+	<label commandName="failToProjectSomeProfileToRemoteSurface" devLabel="Fail to project some profile(s) to remote surface" translation="" />
+	<label commandName="failTofindToNextTarget" devLabel="Fail to find To-Next target body along the operation direction in the active component" translation="" />
+	<label commandName="flatPatternBendAngle" devLabel="flat pattern bend angle" translation="" />
+	<label commandName="imprintExternalLoop" devLabel="Failed to imprint external loop" translation="" />
+	<label commandName="imprintInternalLoop" devLabel="Failed to imprint internal loop" translation="" />
+	<label commandName="inThisDesign" devLabel="In this design" translation="" />
+	<label commandName="initMatrix3dIdFailed" devLabel="Creation origin geometry failed." translation="" />
+	<label commandName="invalidSurface" devLabel="T-Spline surface is invalid." translation="" />
+	<label commandName="jointIdMissingJointOrigins" devLabel="Update of joint geometry failed due to missing Joint Origin information." translation="" />
+	<label commandName="kFactor" devLabel="K Factor" translation="" />
+	<label commandName="lclzBooleanFailure" devLabel="Failed to Boolean bodies together" translation="" />
+	<label commandName="lclzFailedToRevolveSE" devLabel="Failed to revolve the selected entities" translation="" />
+	<label commandName="lclzInvalidSelection" devLabel="Invalid selection." translation="" />
+	<label commandName="lclzManualAbort" devLabel="Operation aborted by user manually" translation="" />
+	<label commandName="lclzTEFOSMBETOAMOTOS" devLabel="The edges from one side must be equal to or a multiple of the other side." translation="" />
+	<label commandName="lclzUTBPTNP" devLabel="Unable to bridge periodic to non-periodic." translation="" />
+	<label commandName="lclzUTDFSB" devLabel="Unable to determine face selection border." translation="" />
+	<label commandName="library" devLabel="Library" translation="" />
+	<label commandName="libraryRulesHeaderToolTip" devLabel="Select a sheet metal rule from the cloud library" translation="" />
+	<label commandName="m_dThicknessError_NoSource" devLabel="Source bodies lost!" translation="" />
+	<label commandName="makeExtentSheet" devLabel="Failed to create extended sheet" translation="" />
+	<label commandName="makeUniformFailed" devLabel="Make Uniform failed with given input" translation="" />
+	<label commandName="miter" devLabel="Miter/rip/seam gap" translation="" />
+	<label commandName="modeling-featurepack-desc" devLabel="This section controls optional capabilities within the Modeling workspaces." translation="" />
+	<label commandName="modeling-featurepack-title" devLabel="Modeling" translation="" />
+	<label commandName="mt-compute-title" devLabel="Enable Multi-threaded component compute" translation="" />
+	<label commandName="newRule" devLabel="New Rule" translation="" />
+	<label commandName="nonExtractable" devLabel="T-Spline topology problem.  Use Modify - Utilities - Repair Body to remove error." translation="" />
+	<label commandName="patternInstances" devLabel="Too many pattern instances. Consider using Optimized/Identical compute option." translation="" />
+	<label commandName="physicalMaterial" devLabel="Physical material" translation="" />
+	<label commandName="reliefDepth" devLabel="Relief depth" translation="" />
+	<label commandName="reliefPlacement" devLabel="Relief placement" translation="" />
+	<label commandName="reliefRemnant" devLabel="Relief remnant" translation="" />
+	<label commandName="reliefShape" devLabel="Relief shape" translation="" />
+	<label commandName="reliefShapeRound" devLabel="Round" translation="" />
+	<label commandName="reliefShapeStraight" devLabel="Straight" translation="" />
+	<label commandName="reliefShapeTear" devLabel="Tear" translation="" />
+	<label commandName="reliefSize" devLabel="Relief size" translation="" />
+	<label commandName="reliefWidth" devLabel="Relief width" translation="" />
+	<label commandName="reportBendAngle" devLabel="Report bend angle" translation="" />
+	<label commandName="saveRule" devLabel="Save Rule" translation="" />
+	<label commandName="setAsDefault" devLabel="Set as Default" translation="" />
+	<label commandName="sketchdisplay-by-constraint-desc" devLabel="Need a description for this" translation="" />
+	<label commandName="sketchdisplay-by-constraint-title" devLabel="Sketch Display by Constraint" translation="" />
+	<label commandName="solveNewJointInconsistent" devLabel="Selected joint type will result in conflict" translation="" />
+	<label commandName="thickness" devLabel="Thickness" translation="" />
+	<label commandName="unfoldMethod" devLabel="Unfold method" translation="" />
+	<label commandName="updateJointId" devLabel="Update of joint geometry failed." translation="" />
+	<label commandName="upgradeSurfaceVersionFailed" devLabel="Surface version upgrade failed" translation="" />
+</Resource>

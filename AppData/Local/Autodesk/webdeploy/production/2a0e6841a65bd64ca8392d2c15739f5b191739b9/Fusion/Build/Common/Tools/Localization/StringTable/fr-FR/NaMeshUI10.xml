@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="AllSupportedFiles" devLabel="All supported files ( %1% ) ;;" translation="Tous les fichiers pris en charge (%1%) ;;"/>
+	<label commandName="BRep2MeshCommand" devLabel="BRep to Mesh" translation="BRep vers maillage"/>
+	<label commandName="BestFitType" devLabel="Best Fit" translation="Ajustement optimal"/>
+	<label commandName="BodyEntitySelection" devLabel="Body" translation="Corps"/>
+	<label commandName="BooleanTypeOperation" devLabel="Operation" translation="Opération"/>
+	<label commandName="CenterTransform" devLabel="Center" translation="Centre"/>
+	<label commandName="CmMKS" devLabel="Centimeter" translation="Centimètre"/>
+	<label commandName="CombineKeepToolsOptionInput" devLabel="Keep Tool Bodies" translation="Conserver les armatures"/>
+	<label commandName="CompColorCycleOptionWarning1" devLabel="Component color cycling has been disabled temporarily." translation="La fonction Cycle de couleurs du composant a été désactivée temporairement."/>
+	<label commandName="CustomRefinementOption" devLabel="Custom" translation="Personnalisé"/>
+	<label commandName="CylinderType" devLabel="Cylinder" translation="Cylindre"/>
+	<label commandName="ExitMeshPanel" devLabel="Close" translation="Fermer"/>
+	<label commandName="ExpandToConnectedSel" devLabel="Expand to Connected" translation="Développer jusqu'aux éléments connectés"/>
+	<label commandName="ExpandToGroupSel" devLabel="Expand to Face Group" translation="Développer jusqu'au groupe de faces"/>
+	<label commandName="Facet Count" devLabel="Facet Count" translation="Nombre de facettes"/>
+	<label commandName="FitType" devLabel="Meshing Type" translation="Type de maillage"/>
+	<label commandName="FlatMeshShading" devLabel="Flat Shaded" translation="Ombrage plat"/>
+	<label commandName="FlatType" devLabel="Uniform" translation="Uniforme"/>
+	<label commandName="FusionMeshPlanarSectionBodyPrompt" devLabel="Select a mesh body" translation="Sélectionnez un corps de maillage"/>
+	<label commandName="FusionMeshPlanarSectionPlanePrompt" devLabel="Move the plane" translation="Déplacez le plan"/>
+	<label commandName="FusionMeshPlanarSectionPrompt" devLabel="Select a plane (optional)" translation="Sélectionnez un plan (facultatif)"/>
+	<label commandName="FusionPositionMesh" devLabel="Insert Mesh" translation="Insérer le maillage"/>
+	<label commandName="GenerateFGAngle" devLabel="Threshold Angle" translation="Angle du seuil"/>
+	<label commandName="GridAspectRatio" devLabel="Aspect Ratio" translation="Rapport de linéarité"/>
+	<label commandName="GroundTransform" devLabel="Move to Ground" translation="Déplacer vers le sol"/>
+	<label commandName="GrowMeshSel" devLabel="Grow Selection" translation="Agrandir la sélection"/>
+	<label commandName="HighRefinementOption" devLabel="High" translation="Haut"/>
+	<label commandName="Imperial" devLabel="Foot" translation="Pied"/>
+	<label commandName="InchImperial" devLabel="Inch" translation="Pouce"/>
+	<label commandName="InsertAlignMeshCommand" devLabel="Insert Mesh" translation="Insérer le maillage"/>
+	<label commandName="InsertMeshCommand" devLabel="Insert Mesh" translation="Insérer le maillage"/>
+	<label commandName="InvertMeshSel" devLabel="Invert Selection" translation="Inverser la sélection"/>
+	<label commandName="LowRefinementOption" devLabel="Low" translation="Bas"/>
+	<label commandName="MMKS" devLabel="Meter" translation="Compteur"/>
+	<label commandName="MaximumEdgeLength" devLabel="Maximum Edge Length" translation="Longueur d'arête maximale"/>
+	<label commandName="MediumRefinementOption" devLabel="Medium" translation="Moyen"/>
+	<label commandName="Mesh" devLabel="Mesh" translation="Maillage"/>
+	<label commandName="Mesh Environment" devLabel="Mesh" translation="Maillage"/>
+	<label commandName="Mesh2BRep Conversion Warning" devLabel="&lt;b&gt;Mesh to BRep conversion&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Warning: This mesh contains a large number of facets. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Mesh surface content:&lt;br&gt;Facets = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversion has been aborted. &lt;/br&gt;" translation="&lt;b&gt;Conversion du maillage en BRep&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Avertissement: ce maillage contient un grand nombre de facettes. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Contenu de la surface de maillage:&lt;br&gt;Facettes = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversion abandonnée. &lt;/br&gt;"/>
+	<label commandName="Mesh2BRep Conversion Warning_1" devLabel="&lt;b&gt;Mesh to BRep conversion&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Warning: This mesh contains a large number of facets. &lt;/br&gt;&lt;br&gt;Proceeding will result in slow performance.&lt;/br&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt;Mesh surface content:&lt;br&gt;Facets = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversion is not recommended. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Proceed with conversion?&lt;/br&gt;" translation="&lt;b&gt;Conversion du maillage en BRep&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Avertissement: ce maillage contient un grand nombre de facettes. &lt;/br&gt;&lt;br&gt;&lt;br&gt;L'opération ralentira les performances.&lt;/br&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt;Contenu de la surface de maillage:&lt;br&gt;Facettes = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;La conversion n'est pas recommandée. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Continuer la conversion?&lt;/br&gt;"/>
+	<label commandName="Mesh2BRep conversion aborted." devLabel="Mesh to BRep conversion aborted." translation="Conversion de maillage en BRep abandonnée."/>
+	<label commandName="Mesh2BRepCommand" devLabel="Mesh to BRep" translation="Maillage vers BRep"/>
+	<label commandName="MeshBodiesSelection" devLabel="Mesh Bodies" translation="Corps de maillage"/>
+	<label commandName="MeshBodySelection" devLabel="Mesh Body" translation="Corps de maillage"/>
+	<label commandName="MeshClearFGCommand" devLabel="Clear Face Group" translation="Effacer le groupe de faces"/>
+	<label commandName="MeshColorCommand" devLabel="Face Groups" translation="Groupes de faces"/>
+	<label commandName="MeshCombineCommand" devLabel="Merge Bodies" translation="Fusionner des corps"/>
+	<label commandName="MeshCombineGenericError" devLabel="Combine failed due to invalid input" translation="Echec de la combinaison en raison d'une entrée incorrecte"/>
+	<label commandName="MeshCreateFGCommand" devLabel="Create Face Group" translation="Créer un groupe de faces"/>
+	<label commandName="MeshCutSplitFaces" devLabel="Split Faces" translation="Scinder les faces"/>
+	<label commandName="MeshDeleteTrianglesCommand" devLabel="Delete Faces" translation="Supprimer des faces"/>
+	<label commandName="MeshDensity" devLabel="Density" translation="Densité"/>
+	<label commandName="MeshDistance" devLabel="Offset" translation="Décalage"/>
+	<label commandName="MeshEntitySelection" devLabel="Mesh Body" translation="Corps de maillage"/>
+	<label commandName="MeshFACESelection" devLabel="Mesh Faces" translation="Faces de maillage"/>
+	<label commandName="MeshFaceBodySelection" devLabel="Mesh Faces/Body" translation="Faces/Corps de maillage"/>
+	<label commandName="MeshFaceGroupOffCommand" devLabel="FaceGroup Off" translation="Désactiver FaceGroup"/>
+	<label commandName="MeshFaceGroupOnCommand" devLabel="FaceGroup On" translation="Activer FaceGroup"/>
+	<label commandName="MeshFacetSelection" devLabel="Mesh Facet" translation="Facette de maillage"/>
+	<label commandName="MeshFacetSelection_1" devLabel="Mesh Faces/Body" translation="Faces/Corps de maillage"/>
+	<label commandName="MeshFacetSelection_2" devLabel="Mesh Faces/Body" translation="Faces/Corps de maillage"/>
+	<label commandName="MeshFittingCommand" devLabel="Fit Surface to Mesh" translation="Ajuster la surface au maillage"/>
+	<label commandName="MeshGenerateFGCommand" devLabel="Generate Face Groups" translation="Générer les groupes de faces"/>
+	<label commandName="MeshGenerateFGGenericError" devLabel="GenerateFG failed due to invalid input" translation="Echec de la commande GenerateFG en raison d'une entrée incorrecte"/>
+	<label commandName="MeshMakeSolidBeginComputation" devLabel="Starting conversion..." translation="Démarrage de la conversion..."/>
+	<label commandName="MeshMakeSolidCommand" devLabel="Make Closed Mesh" translation="Créer un maillage fermé"/>
+	<label commandName="MeshPlanarSectionCommand" devLabel="Create Mesh Section Sketch" translation="Créer une esquisse de coupe de maillage"/>
+	<label commandName="MeshPlaneCutBodySel" devLabel="Mesh Body" translation="Corps de maillage"/>
+	<label commandName="MeshPlaneCutCommand" devLabel="Plane Cut" translation="Coupe de plan"/>
+	<label commandName="MeshPlaneCutFillMinimal" devLabel="Minimal" translation="Minimum"/>
+	<label commandName="MeshPlaneCutFillNone" devLabel="No Fill" translation="Aucun remplissage"/>
+	<label commandName="MeshPlaneCutFillType" devLabel="Fill Type" translation="Type de remplissage"/>
+	<label commandName="MeshPlaneCutFillUniform" devLabel="Uniform" translation="Uniforme"/>
+	<label commandName="MeshPlaneCutFlipTrimDir" devLabel="Flip" translation="Inverser"/>
+	<label commandName="MeshPlaneCutMeshSelectPrompt" devLabel="Select a mesh body" translation="Sélectionnez un corps de maillage"/>
+	<label commandName="MeshPlaneCutPlanePrompt" devLabel="Select a plane" translation="Sélectionnez un plan"/>
+	<label commandName="MeshPlaneCutPlaneSel" devLabel="Plane" translation="Plan"/>
+	<label commandName="MeshPlaneCutSplitBody" devLabel="Split Body" translation="Scinder le corps"/>
+	<label commandName="MeshPlaneCutTransfPlane" devLabel="Transform Plane" translation="Transformer le plan"/>
+	<label commandName="MeshPlaneCutTransformPlanePrompt" devLabel="Position the plane" translation="Positionnez le plan"/>
+	<label commandName="MeshPlaneCutTrim" devLabel="Trim" translation="Ajuster"/>
+	<label commandName="MeshPlaneCutType" devLabel="Cut Type" translation="Type de coupe"/>
+	<label commandName="MeshRebuildSolidGenericError" devLabel="Make Closed Mesh failed due to invalid input" translation="Echec de la création du maillage fermé en raison d'une entrée incorrecte"/>
+	<label commandName="MeshReduceCommand" devLabel="Reduce" translation="Réduire"/>
+	<label commandName="MeshReduceGenericError" devLabel="Reduce failed due to invalid input" translation="Echec de l'opération de réduction en raison d'une entrée incorrecte"/>
+	<label commandName="MeshRemeshCommand" devLabel="Remesh" translation="Remailler"/>
+	<label commandName="MeshRemeshGenericError" devLabel="Remesh failed due to invalid input" translation="Echec du remaillage en raison d'une entrée incorrecte"/>
+	<label commandName="MeshReplaceCommand" devLabel="Erase and Fill" translation="Effacer et remplir"/>
+	<label commandName="MeshReverseNormalsCommand" devLabel="Reverse Normal" translation="Inverser la normale"/>
+	<label commandName="MeshSectionBodyInput" devLabel="Mesh Body" translation="Corps de maillage"/>
+	<label commandName="MeshSectionPlaneInput" devLabel="Plane" translation="Plan"/>
+	<label commandName="MeshSectionTransformInput" devLabel="Transform" translation="Transformation"/>
+	<label commandName="MeshSelection" devLabel="Mesh Faces/Body" translation="Faces/Corps de maillage"/>
+	<label commandName="MeshSelectionPalette" devLabel="Mesh Palette" translation="Palette de maillages"/>
+	<label commandName="MeshSmoothCommand" devLabel="Smooth" translation="Lissage"/>
+	<label commandName="MeshSmoothGenericError" devLabel="Smooth failed due to invalid input" translation="Echec de l'opération de lissage en raison d'une entrée incorrecte"/>
+	<label commandName="MeshStyleCommand" devLabel="Mesh Display" translation="Affichage du maillage"/>
+	<label commandName="MeshSubsetCommand" devLabel="Separate" translation="Séparer"/>
+	<label commandName="MeshTriangulateCommand" devLabel="Triangulate Mesh" translation="Trianguler le maillage"/>
+	<label commandName="MeshingTypeOption" devLabel="Reduce Type" translation="Type de réduction"/>
+	<label commandName="MeshingTypeOption_1" devLabel="Meshing Type" translation="Type de maillage"/>
+	<label commandName="MinimalType" devLabel="Minimal" translation="Minimum"/>
+	<label commandName="MissingMoveBodies" devLabel="missing bodies" translation="corps manquants"/>
+	<label commandName="MmMKS" devLabel="Millimeter" translation="Millimètre"/>
+	<label commandName="MoveSelectionInputPrompt4" devLabel="Position mesh bodies" translation="Positionner les corps de maillage"/>
+	<label commandName="NewBodyInNewCompType" devLabel="New Component" translation="Nouveau composant"/>
+	<label commandName="NewBodyType" devLabel="New Body" translation="Nouveau corps"/>
+	<label commandName="NewComponent" devLabel="Operation" translation="Opération"/>
+	<label commandName="NormalTolerance" devLabel="Normal Deviation" translation="Ecart des normales"/>
+	<label commandName="NumberOfTriangles" devLabel="Number Of Triangles" translation="Nombre de triangles"/>
+	<label commandName="NumericalInputsGroup" devLabel="Numerical Inputs" translation="Entrées numériques"/>
+	<label commandName="OBJFilesFilter" devLabel="OBJ File(*.obj);;" translation="Fichier Obj (*.obj);;"/>
+	<label commandName="PhysicalMaterialProperty" devLabel="Physical Material" translation="Matière physique"/>
+	<label commandName="PlaneType" devLabel="Plane" translation="Plan"/>
+	<label commandName="PositionMeshSelectionInput" devLabel="Selection" translation="Sélection"/>
+	<label commandName="PositionMeshTransformInput" devLabel="Distance" translation="Distance"/>
+	<label commandName="PreviewDeviation" devLabel="Deviation Preview" translation="Aperçu de l'écart"/>
+	<label commandName="PreviewGroupStart" devLabel="Preview" translation="Aperçu"/>
+	<label commandName="PreviewInput" devLabel="Preview" translation="Aperçu"/>
+	<label commandName="PreviewMesh" devLabel="Preview Mesh" translation="Afficher un aperçu du maillage"/>
+	<label commandName="ReduceFacetCount" devLabel="Face Count" translation="Nombre de faces"/>
+	<label commandName="ReducePBOptionInput" devLabel="Preserve Boundaries" translation="Conserver les limites"/>
+	<label commandName="ReducePercentage" devLabel="Density" translation="Densité"/>
+	<label commandName="ReduceType" devLabel="Reduce Target" translation="Cible de réduction"/>
+	<label commandName="RefinementGroupStart" devLabel="Refinement" translation="Affinement"/>
+	<label commandName="RefinementOptionsInput" devLabel="Refinement Options" translation="Options d'affinement"/>
+	<label commandName="RemeshBoundaryOptionInput" devLabel="Preserve Boundaries" translation="Conserver les limites"/>
+	<label commandName="RemeshDensity" devLabel="Density" translation="Densité"/>
+	<label commandName="RemeshNormalThresholdInput" devLabel="Shape Preservation" translation="Conservation de la forme"/>
+	<label commandName="RemeshSharpOptionInput" devLabel="Preserve Sharp Edges" translation="Conserver les arêtes vives"/>
+	<label commandName="ReplaceDensity" devLabel="Density" translation="Densité"/>
+	<label commandName="ReplaceScale" devLabel="Weight" translation="Poids"/>
+	<label commandName="ResetTransform" devLabel="Reset Transformation" translation="Réinitialiser la transformation"/>
+	<label commandName="STLFilesFilter" devLabel="STL File(*.stl)" translation="Fichier STL (*.stl)"/>
+	<label commandName="SelectBodies" devLabel="Select bodies" translation="Sélectionner des corps"/>
+	<label commandName="SelectMeshBodies" devLabel="Select mesh bodies" translation="Sélectionner des corps de maillage"/>
+	<label commandName="SelectMeshFacet" devLabel="Select mesh facet" translation="Sélectionner une facette de maillage"/>
+	<label commandName="ShrinkMeshSel" devLabel="Shrink Selection" translation="Rétrécir la sélection"/>
+	<label commandName="SmoothAdaptive" devLabel="Adaptive" translation="Adaptatif"/>
+	<label commandName="SmoothMeshShading" devLabel="Smooth Shaded" translation="Ombrage lissé"/>
+	<label commandName="SmoothScale" devLabel="Smoothing" translation="Lissage"/>
+	<label commandName="SolidType" devLabel="Rebuild Mode" translation="Mode de reconstruction"/>
+	<label commandName="Sphere Type" devLabel="Sphere" translation="Sphère"/>
+	<label commandName="SurfaceDeviationTolerance" devLabel="Deviation Tolerance" translation="Tolérance d'écart"/>
+	<label commandName="SurfaceFitTolerance" devLabel="Fit Tolerance" translation="Tolérance d'ajustement"/>
+	<label commandName="SurfaceTolerance" devLabel="Surface Deviation" translation="Ecart des surfaces"/>
+	<label commandName="SurfaceType" devLabel="Surface to Fit" translation="Surface à ajuster"/>
+	<label commandName="Tolerance" devLabel="Tolerance" translation="Tolérance"/>
+	<label commandName="Torus Type" devLabel="Torus" translation="Tore"/>
+	<label commandName="TransformTriad" devLabel="Transform" translation="Transformation"/>
+	<label commandName="TransformTriadPrompt" devLabel="" translation=""/>
+	<label commandName="TriangulatedQuadMeshWarning" devLabel="The inserted mesh has been automatically converted to a triangle mesh to make it compatible with the mesh editing tools. You can disable this automatic triangulation in Preferences &gt; Mesh." translation="Le maillage inséré a automatiquement été converti en maillage triangulaire pour le rendre compatible avec les outils de modification de maillage. Vous pouvez désactiver cette triangulation automatique dans Préférences &gt; Maillage."/>
+	<label commandName="UnitsType" devLabel="Unit Type" translation="Type d'unité"/>
+	<label commandName="UpDirType" devLabel="Flip Up Direction" translation="Inverser la direction vers le haut"/>
+	<label commandName="VisualMaterialProperty" devLabel="Appearance" translation="Apparence"/>
+	<label commandName="accurateType" devLabel="Accurate" translation="Précis"/>
+	<label commandName="blockyType" devLabel="Blocky" translation="Rugueux"/>
+	<label commandName="fastType" devLabel="Standard" translation="Standard"/>
+	<label commandName="infoAdaptiveType" devLabel="Adaptive" translation="Adaptatif"/>
+	<label commandName="infoUniformType" devLabel="Uniform" translation="Uniforme"/>
+	<label commandName="lclzBRep2MeshDesc1" devLabel="Converts a BRep body to a Mesh body" translation="Convertit un corps BRep en corps de maillage"/>
+	<label commandName="lclzFitCurvesToSectionCmd1" devLabel="Fits sketch curves to a mesh cross section." translation="Ajuste les courbes d'esquisse à une coupe de maillage."/>
+	<label commandName="lclzFitCurvesToSectionCmd2" devLabel="Choose the sketch curve type, then select the start and end points on the mesh section. Create multiple curves within the same command with various join conditions." translation="Sélectionnez le type de courbe d'esquisse, puis sélectionnez les points de départ et d'arrivée sur la section de maillage. Créez plusieurs courbes en utilisant la même commande avec différentes conditions de liaison."/>
+	<label commandName="lclzInsertAlignMeshDesc1" devLabel="Inserts the selected OBJ or STL mesh file into the active design." translation="Insère le fichier de maillage OBJ ou STL sélectionné dans la conception active."/>
+	<label commandName="lclzInsertAlignMeshDesc2" devLabel="Choose an OBJ or STL file to insert, then use the options and manipulators to orient and position the mesh." translation="Sélectionnez un fichier OBJ ou STL à insérer, puis utilisez les options et les manipulateurs pour orienter et positionner le maillage."/>
+	<label commandName="lclzInsertMeshDesc1" devLabel="Inserts the selected OBJ or STL mesh file into the active design." translation="Insère le fichier de maillage OBJ ou STL sélectionné dans la conception active."/>
+	<label commandName="lclzInsertMeshDesc2" devLabel="Choose an OBJ or STL file to insert, then use the options and manipulators to orient and position the mesh." translation="Sélectionnez un fichier OBJ ou STL à insérer, puis utilisez les options et les manipulateurs pour orienter et positionner le maillage."/>
+	<label commandName="lclzMesh2BRepDesc1" devLabel="Converts a Mesh to a BRep (surface or solid) body type. Meshes more than 10,000 facets can affect performance." translation="Convertit un maillage en type de corps BRep (surface ou solide). Les maillages de plus de 10 000 facettes peuvent avoir une incidence sur les performances."/>
+	<label commandName="lclzMesh2BRepTipsAndTricks1Item1" devLabel="&lt;b&gt;Mesh to BRep:&lt;/b&gt; Meshes that have originated from CAD models or reality capture scans of limited size can be converted to a BRep surface or solid.  Each facet of the input mesh will be converted to a single planar surface." translation="&lt;b&gt;Conversion du maillage en BRep:&lt;/b&gt; les maillages conçus à partir de modèles de CAO ou de numérisations de capture de la réalité qui ne sont pas trop volumineux peuvent être convertis en une surface ou un solide BRep. Chaque facette du maillage d'entrée sera convertie en une surface plane."/>
+	<label commandName="lclzMesh2BRepTipsAndTricks1Item2" devLabel="&lt;Meshes larger than 10,000 polygons can be time consuming to convert and the resulting BRep body will have poor performance in modeling commands." translation="La conversion des maillages de plus de 10 000 polygones peut prendre du temps et les commandes de modélisation appliquées au corps BRep obtenu seront peu performantes."/>
+	<label commandName="lclzMesh2BRepTipsAndTricksTitle" devLabel="Convert Tips and Tricks" translation="Conseils et astuces concernant les conversions"/>
+	<label commandName="lclzMeshBaseFeatureCreationDesc1" devLabel="Enters Mesh mode and inserts a mesh feature into the timeline. Use Mesh tools to modify and repair mesh geometry." translation="Active le mode Maillage et insère une fonction de maillage dans le plan de montage chronologique. Utilisez les outils de maillage pour modifier et réparer la géométrie de maillage."/>
+	<label commandName="lclzMeshBaseFeatureCreationDesc2" devLabel="Select Finish Mesh to exit out of the mode." translation="Sélectionnez Terminer le maillage pour quitter le mode."/>
+	<label commandName="lclzMeshBaseFeatureStopDesc1" devLabel="Finishes the Mesh feature." translation="Termine la fonction de maillage."/>
+	<label commandName="lclzMeshDeleteFacesCmd1" devLabel="Deletes the selected mesh faces." translation="Supprime les faces de maillage sélectionnées."/>
+	<label commandName="lclzMeshEraseAndFillCmd1" devLabel="Fills a hole in a mesh, or erases and replaces a selected portion of a mesh." translation="Remplit un perçage dans un maillage ou efface et remplace une partie sélectionnée d'un maillage."/>
+	<label commandName="lclzMeshEraseAndFillCmd2" devLabel="Select the boundary of the hole to fill, or the set of mesh faces to replace." translation="Sélectionnez le contour du perçage à remplir ou le jeu de faces de maillage à remplacer."/>
+	<label commandName="lclzMeshGenerateFaceGroupsCmd1" devLabel="Generates face groups on a mesh body." translation="Génère des groupes de faces sur un corps de maillage."/>
+	<label commandName="lclzMeshGenerateFaceGroupsCmd2" devLabel="Select a mesh body then adjust the angle to control the face group segmentation." translation="Sélectionnez un corps de maillage, puis ajustez l'angle pour contrôler la segmentation du groupe de faces."/>
+	<label commandName="lclzMeshMergeBodiesCmd1" devLabel="Merges two or more mesh bodies into a single body." translation="Fusionne deux corps de maillage ou plus en vue d'obtenir un seul corps."/>
+	<label commandName="lclzMeshMergeBodiesCmd2" devLabel="Select two or more mesh bodies to merge. Overlapping boundary edges will be stitched." translation="Sélectionnez deux corps de maillage ou plus à fusionner. Les arêtes des limites qui se chevauchent seront cousues."/>
+	<label commandName="lclzMeshPlanarSectionCommand1" devLabel="Creates a new sketch containing a mesh cross section as reference geometry." translation="Crée une esquisse contenant une coupe de maillage qui sert de géométrie de référence."/>
+	<label commandName="lclzMeshPlanarSectionCommand2" devLabel="Select a mesh body then move the section plane. To fit sketch curves to the mesh section, follow with the Fit Mesh Section Curves command." translation="Sélectionnez un corps de maillage, puis déplacez le plan de coupe. Pour ajuster les courbes d'esquisse à la section de maillage, utilisez la commande Ajuster les courbes de la section de maillage."/>
+	<label commandName="lclzMeshPlaneCut2" devLabel="Select a mesh body then move the cutting plane. The cut can trim the body, split the body into multiple bodies, or split the faces only." translation="Sélectionnez un corps de maillage, puis déplacez le plan de coupe. La découpe permet d'ajuster le corps, de scinder le corps en plusieurs corps ou de scinder uniquement les faces."/>
+	<label commandName="lclzMeshPlaneCutCommand1" devLabel="Splits a mesh body using a plane." translation="Scinde un corps de maillage à l'aide d'un plan."/>
+	<label commandName="lclzMeshRebuildAsSolidCmd1" devLabel="Rebuilds a mesh body as a new watertight solid mesh." translation="Reconstruit un corps de maillage en tant que nouveau maillage de solide hermétique."/>
+	<label commandName="lclzMeshRebuildAsSolidCmd2" devLabel="Select a mesh body then choose the rebuild mode and density of the output mesh." translation="Sélectionnez un corps de maillage, puis choisissez le mode de reconstruction et la densité du maillage de sortie."/>
+	<label commandName="lclzMeshReduceCmd1" devLabel="Reduces the number of faces in a mesh." translation="Réduit le nombre de faces d'un maillage."/>
+	<label commandName="lclzMeshReduceCmd2" devLabel="Select a mesh body or faces then choose a reduction target." translation="Sélectionnez un corps de maillage ou des faces, puis choisissez une cible de réduction."/>
+	<label commandName="lclzMeshRemeshCmd1" devLabel="Retiles a mesh with a new set of faces." translation="Recrée un maillage avec un nouveau jeu de faces."/>
+	<label commandName="lclzMeshRemeshCmd2" devLabel="Select a mesh body or faces then set the density and characteristics of the new faces." translation="Sélectionnez un corps de maillage ou plusieurs faces, puis définissez la densité et les caractéristiques des nouvelles faces."/>
+	<label commandName="lclzMeshReverseNormalCmd1" devLabel="Reverses the normal direction of selected mesh faces." translation="Inverse la direction de la normale des faces de maillage sélectionnées."/>
+	<label commandName="lclzMeshSeparateCmd1" devLabel="Splits a mesh body into two separate bodies." translation="Scinde un corps de maillage en deux corps distincts."/>
+	<label commandName="lclzMeshSeparateCmd2" devLabel="Select the mesh faces to split into a separate body." translation="Sélectionnez les faces de maillage à scinder pour obtenir un corps distinct."/>
+	<label commandName="lclzMeshSmoothCmd1" devLabel="Smooths a mesh." translation="Applique un lissage an maillage."/>
+	<label commandName="lclzMeshSmoothCmd2" devLabel="Select a mesh body or faces then adjust the amount of smoothing." translation="Sélectionnez un corps de maillage ou des faces, puis ajustez le degré de lissage."/>
+	<label commandName="lclzMeshWorkspaceTitle" devLabel="Repairs mesh geometry. Access commands to remesh and repair triangulated mesh bodies." translation="Répare la géométrie de maillage. Accédez aux commandes pour remailler et réparer les corps de maillage triangulés."/>
+	<label commandName="lclzRemeshCmd1" devLabel="Create a face group from the selected mesh faces." translation="Créez un groupe de faces à partir des faces de maillage sélectionnées."/>
+	<label commandName="lclzRemeshCmd2" devLabel="Clears face groups from the selected mesh body or faces." translation="Efface les groupes de faces du corps de maillage ou des faces sélectionnés."/>
+	<label commandName="pInputSet" devLabel="Select faces to clear facegroup" translation="Sélectionner les faces à effacer du groupe"/>
+	<label commandName="pInputSet_1" devLabel="Select faces to delete" translation="Sélectionner les faces à supprimer"/>
+	<label commandName="pInputSet_9" devLabel="Select faces to reverse normals" translation="Sélectionner des faces pour inverser les normales"/>
+	<label commandName="percentage" devLabel="Density" translation="Densité"/>
+	<label commandName="sharpEdgesType" devLabel="Preserve Sharp Edges" translation="Conserver les arêtes vives"/>
+	<label commandName="tolerance" devLabel="Tolerance" translation="Tolérance"/>
+	<label commandName="triCount" devLabel="Face Count" translation="Nombre de faces"/>
+</Resource>

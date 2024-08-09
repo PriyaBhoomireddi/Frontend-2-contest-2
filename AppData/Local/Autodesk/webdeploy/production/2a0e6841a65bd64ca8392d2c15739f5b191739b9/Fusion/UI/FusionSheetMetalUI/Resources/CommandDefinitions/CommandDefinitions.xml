@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+  <EnvironmentDefinition Id="FusionSheetMetalEnvironment">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/sheetmetal_workspace.png">
+        <TextBlock _LCLZId="lclzSheetmetalWorkspaceTitle" _LCLZText="Creates sheet metal designs. Use these commands to set rules, create sheet metal bodies, and produce manufacturing data."/>
+        <TextBlock/>       
+      </ExpandedContent>
+    </Tooltip>    
+  </EnvironmentDefinition>
+<!---->
+<!--Sheetmetal Rule commands-->
+<!---->
+  <CommandDefinition Id="FusionSheetMetalRulesCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/rules.png">
+            <TextBlock _LCLZId="lclzSheetMetalRules1" _LCLZText="Rules control the thickness, bend radius, reliefs, and other settings related to sheet metal design."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzSheetMetalRules2" _LCLZText="Create and edit rules in the active document to change your designs. Save rules to the library to make them accessible in other designs."/>
+         </ExpandedContent>
+      </Tooltip>
+    <TipsAndTricks MoreInfo="SHEETMETAL-CHANGE-RULES-CMD">
+       <Title _LCLZId="lclzSheetMetalRulesTipsAndTricksTitle" _LCLZText="Rules Information"/>
+       <Tips _LCLZId="lclzSheetMetalRulesTipsAndTricksTips" _LCLZText="Select a rule and click 'Edit Rule' to change values. Right-click on the rule name to duplicate, set default, or delete a rule."/>
+       <Description _LCLZId="lclzSheetMetalRulesTipsAndTricksDesc" _LCLZText="Rules 'In this design' are local to the active document. Rules in the 'Library' are saved in the cloud."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="ChangeSheetMetalDataCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/showSMData.png">
+            <TextBlock _LCLZId="lclzChangeSheetMetalData1" _LCLZText="Displays sheetmetal rule data."/>
+         </ExpandedContent>
+      </Tooltip>
+   </CommandDefinition>   
+<!---->
+<!--Sheetmetal Create commands-->
+<!---->
+   <CommandDefinition Id="FusionSheetMetalFlangeCommand" EditId="FusionBaseFaceEditCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/flange.png">
+            <TextBlock _LCLZId="lclzSheetMetalFlange1" _LCLZText="Creates a sheet metal face or flange from selected edges or sketches."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzSheetMetalFlange2" _LCLZText="Select a closed sketch to create a base flange. Select an open sketch to create a contour flange. Select an open sketch and edges to join a contour flange. Select edges to create edge flanges."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="SHEETMETAL-CREATE-FLANGE-CMD">
+       <Title _LCLZId="lclzSheetMetalFlangeTipsAndTricksTitle" _LCLZText="Flange Information"/>
+       <Tips _LCLZId="lclzSheetMetalFlangeTipsAndTricksTips" _LCLZText="Select a closed sketch to create a base flange. Select an open sketch to create a contour flange. Select an open sketch and edges to join a contour flange. Select edges to create edge flanges."/>
+       <Description _LCLZId="lclzSheetMetalFlangeTipsAndTricksDesc" _LCLZText="The options available depend on the type of profile selected. You can join contour flanges to other flanges by selecting an open sketch and then selecting the connected edge. Continue selecting edges if desired."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+  <CommandDefinition Id="SheetMetalBendCmd" EditId="SheetMetalBendEditCmd">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/bend.png">
+        <TextBlock _LCLZId="lclzSheetMetalBendCmd1" _LCLZText="Bends a sheet metal body along the selected line."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzSheetMetalBendCmd2" _LCLZText="Draw a line over a sheet metal body and select both objects to create a bend."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="GUID-D11BA900-A40A-4EC2-85E1-01CBF6BF642C">
+      <Title _LCLZId="lclzSheetMetalBendTipsAndTricksTitle" _LCLZText="Bend Information"/>
+      <Tips _LCLZId="lclzSheetMetalBendTipsAndTricksTips" _LCLZText="Draw a straight line over a sheet metal body, then select the face and the sketched line to create a bend."/>
+      <Description _LCLZId="lclzSheetMetalBendTipsAndTricksDesc" _LCLZText="Use the Bend Line Position to control whether the bend line defines the centerline, start, or end of the bend. Check the Override Rules checkbox to override the value of bend radius and the bend relief options."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="DMConvertToSheetMetalCmd">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzConvertToSheetMetalCmd1" _LCLZText="Converts a solid body of uniform thickness to a sheet metal body."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzConvertToSheetMetalCmd2" _LCLZText="Select a face of a solid body for inferring thickness."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ConvertToSheetMetalCmd"  EditId="ConvertToSheetMetalEditCmd">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzConvertToSheetMetalCmd1" _LCLZText="Converts a solid body of uniform thickness to a sheet metal body."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzConvertToSheetMetalCmd2" _LCLZText="Select a face of a solid body for inferring thickness."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SM-SHEET-METAL-CONVERT">
+      <Title _LCLZId="lclzConvToSMTipsAndTricksTitle" _LCLZText="Convert To Sheet Metal Information"/>
+      <Tips _LCLZId="lclzConvToSMTipsAndTricksTips" _LCLZText="Select a face of a solid body for inferring thickness."/>
+      <Description _LCLZId="lclzConvToSMTipsAndTricksDesc" _LCLZText="Use this to add Sheet Metal features to a solid body."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+
+  <!---->
+<!--Sheetmetal Modify commands-->
+<!---->
+   <CommandDefinition Id="FusionSheetmetalUnfoldCommand" EditId="SheetmetalEditUnfoldCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/unfold.png">
+            <TextBlock _LCLZId="lclzFusionSheetmetalUnfoldCommand1" _LCLZText="Unfolds the selected bends. Unfolding the bends lets you create features across flanges."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzFusionSheetmetalUnfoldCommand2" _LCLZText="Select the face that remains stationery then select the bends to unfold. Click the Refold command to exit the Unfold mode."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="SHEETMETAL-MODIFY-UNFOLD-CMD">
+       <Title _LCLZId="lclzSheetmetalUnfoldTipsAndTricksTitle" _LCLZText="Unfold Information"/>
+       <Tips _LCLZId="lclzSheetmetalUnfoldTipsAndTricksTips" _LCLZText="Select a stationary face to remain fixed then select the bends to unfold or choose 'Unfold all bends'."/>
+       <Description _LCLZId="lclzSheetmetalUnfoldTipsAndTricksDesc" _LCLZText="Use Unfold to create features across multiple flanges. Use Refold to put flanges back to their previously folded state."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="FusionSheetmetalRefoldCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/refold.png">
+            <TextBlock _LCLZId="lclzFusionSheetmetalRefoldCommand1" _LCLZText="Returns the unfolded bends to their folded state and exits the unfold mode."/>
+            <TextBlock/>
+         </ExpandedContent>
+      </Tooltip>
+     </CommandDefinition>
+  <!--Sheetmetal Create Flat Pattern command -->
+   <CommandDefinition Id="FusionSheetMetalFlatPatternCmd">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/flatpattern.png">
+        <TextBlock _LCLZId="lclzFusionSheetMetalFlatPatternCmd1" _LCLZText="Enters Flat Pattern mode and creates a flat pattern from a folded design."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzFusionSheetMetalFlatPatternCmd2" _LCLZText="Select the face to position on the XY plane. All flanges are unfolded from that face. Select Finish Flat Pattern to exit out of the mode."/>
+      </ExpandedContent>
+    </Tooltip>
+     <TipsAndTricks MoreInfo="SHEETMETAL-MODIFY-CREATE-FLAT-PATTERN-CMD">
+      <Title _LCLZId="lclzSheetMetalFlatPatternTipsAndTricksTitle" _LCLZText="Flat Pattern Information"/>
+      <Tips _LCLZId="lclzSheetMetalFlatPatternTipsAndTricksTips" _LCLZText="Select the face to position on the XY plane. All flanges are unfolded from that face."/>
+      <Description _LCLZId="lclzSheetMetalFlatPatternTipsAndTricksDesc" _LCLZText="The flanges are unfolded based on the K Factor in the sheet metal rule."/>
+    </TipsAndTricks>
+   </CommandDefinition>
+  <!--Sheetmetal Exit Flat Pattern command -->
+   <CommandDefinition Id="FusionSheetMetalExitFlatPatternCmd">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzFusionSheetMetalExitFlatPatternCmd1" _LCLZText="Return to the folded model."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+   </CommandDefinition>
+  <!--Sheetmetal Flat Pattern Export DXF command -->
+  <CommandDefinition Id="FlatPatternDXFExportCmd">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzFlatPatternDXFExportCmd1" _LCLZText="Exports the flat pattern as a DXF file."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SHEETMETAL-EXPORT-FLAT-PATTERN-DXF-CMD">
+      <Title _LCLZId="lclzFlatPatternDXFTipsAndTricksTitle" _LCLZText="Flat Pattern DXF Information"/>
+      <Tips _LCLZId="lclzFlatPatternDXFTipsAndTricksTips" _LCLZText="The Flat Pattern will be exported as a DXF file to use for laser cutting. Outer profiles, interior profiles, bend center lines, bend extent lines and text will each be assigned to a different layer in the DXF file."/>
+      <Description _LCLZId="lclzSFlatPatternDXFTipsAndTricksDesc" _LCLZText="Enable Convert Splines to Polylines if your laser cutting machine does not support splines. The tolerance value specifies the maximum allowable deviation between the converted polylines and the original splines."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+</CommandDefinitions>

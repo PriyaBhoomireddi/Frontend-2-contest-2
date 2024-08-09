@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="3D PCB Environment" devLabel="3D PCB" translation="CCI 3D"/>
+	<label commandName="3DPCBTypeCanvas" devLabel="Canvas" translation="Canevas"/>
+	<label commandName="3DPCBTypeComplete" devLabel="Complete 3D" translation="3D complet"/>
+	<label commandName="3DPCBTypeInput" devLabel="3D PCB Type" translation="Type de CCI 3D"/>
+	<label commandName="3DPCBTypeSimple" devLabel="Simple 3D" translation="3D simple"/>
+	<label commandName="ChooseEagleProfile" devLabel="Choose EAGLE Board Shape" translation="Choisir la forme de circuit imprimé EAGLE"/>
+	<label commandName="ChooseFusionProfile" devLabel="Choose Fusion Board Shape" translation="Choisir la forme de circuit imprimé Fusion"/>
+	<label commandName="Create Hole on Board" devLabel="PCBHole" translation="Perçage CCI"/>
+	<label commandName="Create PCB" devLabel="Create 3D PCB" translation="Créer une CCI 3D"/>
+	<label commandName="Create PCB Document" devLabel="New 3D PCB" translation="Nouvelle CCI 3D"/>
+	<label commandName="Create PCB Workspace" devLabel="Create PCB" translation="Créer une carte de circuit imprimé"/>
+	<label commandName="CreatePCBFlipInput" devLabel="Flip" translation="Inverser"/>
+	<label commandName="CreatePCBHeightInput" devLabel="Thickness" translation="Epaisseur"/>
+	<label commandName="CreatePCBProfileInput" devLabel="Profile" translation="Profil"/>
+	<label commandName="Edit PCB Board" devLabel="Edit Board" translation="Modifier le circuit imprimé"/>
+	<label commandName="EnterIntoPCBEnvironment" devLabel="You have entered into the PCB Mechanical Environment." translation="Vous êtes entré dans l'environnement mécanique de la carte de circuit imprimé."/>
+	<label commandName="FusionPCB3DFlipComponent" devLabel="Flip 3D PCB Component" translation="Inverser le composant de carte de circuit imprimé 3D"/>
+	<label commandName="FusionPCBActivate" devLabel="Edit" translation="Modifier"/>
+	<label commandName="FusionPCBFlipComponent" devLabel="Flip Component" translation="Inverser le composant"/>
+	<label commandName="FusionPCBStop" devLabel="Finish PCB" translation="Terminer la carte de circuit imprimé"/>
+	<label commandName="FusionPCBUpdateDocument" devLabel="Update 3D PCB" translation="Mettre à jour la CCI 3D"/>
+	<label commandName="FusionSelectDeriveProfileError" devLabel="Can't select 3d sketch to derive" translation="Impossible de sélectionner l'esquisse 3D à dériver"/>
+	<label commandName="FusionSelectFaceForHole" devLabel="Select face to locate hole" translation="Sélectionner une face pour localiser le perçage"/>
+	<label commandName="FusionSelectOriginRefPCBDefineBoard" devLabel="Select sketch point for PCB board origin reference" translation="Sélectionner un point d'esquisse pour définir la référence d'origine de la carte de circuit imprimé"/>
+	<label commandName="FusionSelectPCBComponent" devLabel="Select PCB components" translation="Sélectionner des composants de carte de circuit imprimé"/>
+	<label commandName="FusionSelectPCBComponentBodyEdit" devLabel="Select Body from PCB component" translation="Sélectionner le corps à partir du composant de carte de circuit imprimé"/>
+	<label commandName="FusionSelectPCBComponentEdit" devLabel="Select a PCB component" translation="Sélectionner un composant de carte de circuit imprimé"/>
+	<label commandName="FusionSelectProfileCreatePCB" devLabel="Select sketch profile(s) for PCB" translation="Sélectionner le ou les contours d'esquisse de la carte de circuit imprimé"/>
+	<label commandName="FusionSelectProfileError" devLabel="Can't select 3d sketch to create PCB" translation="Impossible de sélectionner une esquisse 3D pour créer la carte de circuit imprimé"/>
+	<label commandName="FusionSelectProfilePCBDefine3DBoard" devLabel="Select sketch profile for PCB" translation="Sélectionner le contour d'esquisse de la carte de circuit imprimé"/>
+	<label commandName="FusionSelectProfilePCBDefineBoard" devLabel="Select sketch profile(s) and origin for PCB" translation="Sélectionner le ou les contours d'esquisse et l'origine de la carte de circuit imprimé"/>
+	<label commandName="FusionSelectReferencesForHole" devLabel="Select linear or circular reference edges to fully define hole location" translation="Sélectionner des arêtes de référence linéaires ou circulaires pour définir précisément l'emplacement du perçage"/>
+	<label commandName="FusionSelectSingleForHole" devLabel="Select face to locate hole" translation="Sélectionner une face pour localiser le perçage"/>
+	<label commandName="FusionSelectXDirPointRefPCBDefineBoard" devLabel="Select Sketch Line for board secondary axis orientation" translation="Sélectionner une ligne d'esquisse pour définir l'orientation de l'axe secondaire du circuit imprimé"/>
+	<label commandName="InvalidProfileSelection" devLabel="The selected profiles must be able to be merged into single one!" translation="Les contours sélectionnés doivent pouvoir être fusionnés en un seul."/>
+	<label commandName="MissingExtrudeProfile" devLabel="Missing profiles" translation="Contours manquants"/>
+	<label commandName="MissingHoleOrigin" devLabel="missing face" translation="face manquante"/>
+	<label commandName="MissingPCBAxis" devLabel="Missing axis" translation="Axe manquant"/>
+	<label commandName="MissingPCBOrigin" devLabel="Missing origin" translation="Origine manquante"/>
+	<label commandName="Move 3D PCB components" devLabel="Move" translation="Déplacer"/>
+	<label commandName="Move PCB component Body" devLabel="Move PCB Component body" translation="Déplacer le corps du composant de carte de circuit imprimé"/>
+	<label commandName="Move PCB components" devLabel="Move PCB Components" translation="Déplacer les composants de carte de circuit imprimé"/>
+	<label commandName="PCB Environment" devLabel="PCB" translation="Carte de circuit imprimé"/>
+	<label commandName="PCB Profile" devLabel="PCB Profile" translation="Contour de carte de circuit imprimé"/>
+	<label commandName="PCB Sketch" devLabel="Edit EAGLE Profile" translation="Modifier le contour EAGLE"/>
+	<label commandName="PCB3DBoardOutlineEditCommand" devLabel="Edit Sketch" translation="Modifier l'esquisse"/>
+	<label commandName="PCBConstruction" devLabel="Construction" translation="Construction"/>
+	<label commandName="PCBCreateLimitText" devLabel="The maximum number of PCBs within a Design, %1%, has been reached.&#xA;PCBs can be inserted from other Designs." translation="Le nombre maximal de cartes de circuits imprimés dans une conception, %1%, a été atteint.&#xA;Les cartes de circuits imprimés peuvent être insérées à partir d'autres conceptions."/>
+	<label commandName="PCBCreateLimitTitle" devLabel="PCB Limit Reached" translation="Limite de la carte de circuit imprimé atteinte"/>
+	<label commandName="PCBCreateSimExisting" devLabel="The PCB Feature does not currently support syncing PCBs in Fusion assemblies containing linked components or simulation studies.            &#xA;&#xA;Remove linked components or simulation studies in your assembly to continue, or put the PCB in a separate Fusion design and insert it into your assembly." translation="Actuellement, la fonction de carte de circuit imprimé ne prend pas en charge la synchronisation des carte de circuits imprimés dans les ensembles Fusion contenant des composants liés ou des études de simulation.            &#xA;&#xA;Pour continuer, supprimez les composants liés ou les études de simulation de votre ensemble ou placez la carte de circuit imprimé dans une conception Fusion distincte et insérez cette dernière dans l'ensemble."/>
+	<label commandName="PCBCreateXRefExisting" devLabel="The PCB Feature does not currently support syncing PCBs in Fusion assemblies containing linked components or simulation studies.            &#xA;&#xA;Remove linked components or simulation studies in your assembly to continue, or put the PCB in a separate Fusion design and insert it into your assembly." translation="Actuellement, la fonction de carte de circuit imprimé ne prend pas en charge la synchronisation des carte de circuits imprimés dans les ensembles Fusion contenant des composants liés ou des études de simulation.            &#xA;&#xA;Pour continuer, supprimez les composants liés ou les études de simulation de votre ensemble ou placez la carte de circuit imprimé dans une conception Fusion distincte et insérez cette dernière dans l'ensemble."/>
+	<label commandName="PCBDefineBoardFlipInput" devLabel="Flip" translation="Inverser"/>
+	<label commandName="PCBDefineBoardHeightInput" devLabel="Thickness" translation="Epaisseur"/>
+	<label commandName="PCBDefineBoardOriginGroup" devLabel="Origin" translation="Origine"/>
+	<label commandName="PCBDefineBoardOriginRefInput" devLabel="Origin" translation="Origine"/>
+	<label commandName="PCBDefineBoardProfileInput" devLabel="Profile" translation="Profil"/>
+	<label commandName="PCBDefineBoardProfileOnBottom" devLabel="PCB Bottom Layer" translation="Couche inférieure de la carte de circuit imprimé"/>
+	<label commandName="PCBDefineBoardProfileOnInput" devLabel="Profile On" translation="Contour activé"/>
+	<label commandName="PCBDefineBoardProfileOnTop" devLabel="PCB Top Layer" translation="Couche supérieure de la carte de circuit imprimé"/>
+	<label commandName="PCBDefineBoardReorientInput" devLabel="Reorient" translation="Réorienter"/>
+	<label commandName="PCBDefineBoardShapeGroup" devLabel="Shape" translation="Forme"/>
+	<label commandName="PCBDefineBoardTopInput" devLabel="PCB Top" translation="Haut de la carte de circuit imprimé"/>
+	<label commandName="PCBDefineBoardXDirRefInput" devLabel="X Axis" translation="Axe X"/>
+	<label commandName="PCBDerive" devLabel="Derive PCB from Sketch" translation="Dériver une carte de circuit imprimé à partir d'une esquisse"/>
+	<label commandName="PCBFixed" devLabel="Fixed" translation="Fixe"/>
+	<label commandName="PCBHoleCenterInput" devLabel="Center" translation="Centre"/>
+	<label commandName="PCBHoleDiameterInput" devLabel="Diameter" translation="Diamètre"/>
+	<label commandName="PCBHoleEdit" devLabel="Edit" translation="Modifier"/>
+	<label commandName="PCBHoleFaceInput" devLabel="Face" translation="Face"/>
+	<label commandName="PCBHoleRef0" devLabel="Distance" translation="Distance"/>
+	<label commandName="PCBHoleRef0Btn" devLabel="Reference" translation="Référence"/>
+	<label commandName="PCBHoleRef1" devLabel="Distance" translation="Distance"/>
+	<label commandName="PCBHoleRef1Btn" devLabel="Reference" translation="Référence"/>
+	<label commandName="PCBImprintEagle" devLabel="Copy EAGLE Profile" translation="Copier le contour EAGLE"/>
+	<label commandName="PCBImprintSelPrompt" devLabel="Select destination plane or sketch" translation="Sélectionner le plan ou l'esquisse de destination"/>
+	<label commandName="PCBMoveBodySelectionInput" devLabel="Selection" translation="Sélection"/>
+	<label commandName="PCBMoveBodyTransformInput" devLabel="Distance" translation="Distance"/>
+	<label commandName="PCBMoveRerouteInput" devLabel="Reroute" translation="Réacheminer"/>
+	<label commandName="PCBMoveSelectionInput" devLabel="Selection" translation="Sélection"/>
+	<label commandName="PCBMoveTransformInput" devLabel="Distance" translation="Distance"/>
+	<label commandName="PCBMoveUpdateInput" devLabel="Update PCB" translation="Mettre à jour la carte de circuit imprimé"/>
+	<label commandName="PCBOpenFileInput" devLabel="Select Board file" translation="Sélectionner un fichier de circuit imprimé"/>
+	<label commandName="PCBSketchSelect" devLabel="Destination" translation="Destination"/>
+	<label commandName="PCBStatus" devLabel="PCB Status" translation="État de la carte de circuit imprimé"/>
+	<label commandName="PCBStatusBoardHeight" devLabel="Board Height" translation="Hauteur du circuit imprimé"/>
+	<label commandName="PCBStatusBoardShape" devLabel="Board Shape" translation="Forme du circuit imprimé"/>
+	<label commandName="PCBStatusChanged" devLabel="Changed" translation="Modifié"/>
+	<label commandName="PCBStatusComponents" devLabel="PCB Components" translation="Composants de la carte de circuit imprimé"/>
+	<label commandName="PCBStatusEagleInput" devLabel="EAGLE Board Shape" translation="Forme du circuit imprimé EAGLE"/>
+	<label commandName="PCBStatusFusionInput" devLabel="Fusion Board Shape" translation="Forme du circuit imprimé Fusion"/>
+	<label commandName="PCBStatusUnchanged" devLabel="Unchanged" translation="Non modifié"/>
+	<label commandName="PushDeriveInvalidSelectionMsg" devLabel="Unexpected invalid selection" translation="Sélection non valide inattendue"/>
+	<label commandName="PushDeriveToExistingTxnMessage" devLabel="New Derive Feature" translation="Nouvelle fonction de dérivation"/>
+	<label commandName="Replace PCB component" devLabel="Replace Component Body" translation="Remplacer le corps du composant"/>
+	<label commandName="StepFFilesFilter" devLabel="STEP Files (*.stp *.step)" translation="Fichiers STEP (*.stp *.step)"/>
+	<label commandName="UnSupportedDeriveObject" devLabel="Target document is 3D PCB, which only accepts sketch for derive" translation="Le document cible est une carte de circuit imprimé 3D qui n'accepte que les esquisses pour la dérivation"/>
+	<label commandName="Update PCB component" devLabel="Update PCB Component" translation="Mettre à jour le composant de carte de circuit imprimé"/>
+	<label commandName="XmlFilesFilter" devLabel="Xml Files (*.xml)" translation="Fichiers XML (*.xml)"/>
+	<label commandName="lclzPCB3DWorkspaceTitle" devLabel="Mechanical 3D PCB Workspace" translation="Espace de travail de carte de circuit imprimé 3D mécanique"/>
+	<label commandName="lclzPCBBoardSketchEditCmd1" devLabel="Edit the sketch generated from EAGLE board." translation="Modifier l'esquisse générée à partir du circuit imprimé EAGLE."/>
+	<label commandName="lclzPCBBoardSketchEditCmdTipsAndTricksDesc" devLabel="This command is only available when there's sketch generated from EAGLE board." translation="Cette commande n'est disponible que lorsque l'esquisse est générée à partir du circuit imprimé EAGLE."/>
+	<label commandName="lclzPCBBoardSketchEditCmdTipsAndTricksTips" devLabel="This command will activate the sketch generated from EAGLE board for editing." translation="Cette commande active l'esquisse générée à partir du circuit imprimé EAGLE pour modification."/>
+	<label commandName="lclzPCBBoardSketchEditCmdTipsAndTricksTitle" devLabel="Edit the sketch generated from EAGLE board" translation="Modifier l'esquisse générée à partir du circuit imprimé EAGLE"/>
+	<label commandName="lclzPCBCreateCommand1" devLabel="Create a 3D PCB document from the selected sketch or face." translation="Créez un document de circuit imprimé 3D à partir de l'esquisse ou de la face sélectionnée."/>
+	<label commandName="lclzPCBCreateCommand2" devLabel="Use the 3D PCB document as an external reference in the enclosure design." translation="Utilisez le document de carte de circuit imprimé 3D en tant que référence externe dans la conception du boîtier."/>
+	<label commandName="lclzPCBDefineBoardCmd1" devLabel="Define the shape of the PCB via a sketched profile." translation="Définissez la forme de la carte de circuit imprimé à l'aide d'un contour d'esquisse."/>
+	<label commandName="lclzPCBDefineBoardCmd2" devLabel="Select a profile and an origin point." translation="Sélectionnez un contour et un point d'origine."/>
+	<label commandName="lclzPCBDefineBoardCmdTipsAndTricksDesc" devLabel="After selecting the profile, you must choose an origin to ensure the communication with EAGLE is precise. One corner of the PCB normally works well. Decide if the profile is on the top or bottom of the PCB, and be sure that the extrusion direction is correct. The PCB shape will become visible to EAGLE after the model is saved, and the EAGLE user can change the shape of the board as well." translation="Après avoir sélectionné le contour, vous devez choisir une origine pour garantir une communication précise avec EAGLE. Normalement, un coin de la carte de circuit imprimé fonctionne bien. Décidez si le contour se trouve en haut ou en bas de la carte de circuit imprimé et assurez-vous que la direction de l'extrusion est correcte. Une fois le modèle enregistré, la forme de la carte de circuit imprimé sera visible dans EAGLE. L'utilisateur EAGLE pourra également la modifier."/>
+	<label commandName="lclzPCBDefineBoardCmdTipsAndTricksTips" devLabel="Select a profile and an origin point." translation="Sélectionnez un contour et un point d'origine."/>
+	<label commandName="lclzPCBDefineBoardCmdTipsAndTricksTitle" devLabel="PCB Define Board Information" translation="Informations sur la commande de définition d'une carte de circuit imprimé"/>
+	<label commandName="lclzPCBDeriveCommand1" devLabel="Derive a sketch from this design to a 3D PCB design. The selected profiles will be used to create the board outline. " translation="Dérivez une esquisse de cette conception vers une conception de carte de circuit imprimé 3D. Les contours sélectionnés serviront à créer le contour du circuit imprimé. "/>
+	<label commandName="lclzPCBDeriveCommand2" devLabel="The board outline updates with changes to this design." translation="Le contour du circuit imprimé est mis à jour avec les modifications apportées à cette conception."/>
+	<label commandName="lclzPCBImprintCmd1" devLabel="Copies the profile supplied from EAGLE to an upstream Fusion sketch." translation="Copie le contour fourni à partir d'EAGLE vers une esquisse Fusion en amont."/>
+	<label commandName="lclzPCBImprintCmdTipsAndTricksDesc" devLabel="This command is primarily useful when both the Fusion and EAGLE user are actively changing the shape of the PCB." translation="Cette commande est particulièrement utile lorsque les deux utilisateurs (Fusion et EAGLE) modifient activement la forme de la carte de circuit imprimé."/>
+	<label commandName="lclzPCBImprintCmdTipsAndTricksTips" devLabel="Copies the profile supplied from EAGLE to an upstream Fusion sketch. You can copy to a pre-existing sketch, or create a new sketch by selecting a planar face or construction plane. The selected sketch or plane must be parallel to the PCB.  If there is already an upstream sketch that drives the PCB feature, that sketch will be selected by default." translation="Copie le contour fourni à partir d'EAGLE vers une esquisse Fusion en amont. Vous pouvez effectuer la copie vers une esquisse existante ou en créer une nouvelle en sélectionnant une face plane ou un plan de construction. L'esquisse ou le plan sélectionné doit être parallèle à la carte de circuit imprimé. Si la fonction de carte de circuit imprimé est contrôlée par une esquisse en amont, cette dernière est sélectionnée par défaut."/>
+	<label commandName="lclzPCBImprintCmdTipsAndTricksTitle" devLabel="Copy EAGLE Profile Information" translation="Informations sur la commande Copier le contour EAGLE"/>
+	<label commandName="lclzPCBMoveComponentBodyCommand1" devLabel="Move PCB component body to align with the footprint on the board." translation="Déplacez le corps du composant de carte de circuit imprimé pour l'aligner sur l'encombrement du circuit imprimé."/>
+	<label commandName="lclzPCBMoveComponentBodyCommand2" devLabel="Select a body from PCB component and move it by dragging or typing in values." translation="Sélectionnez un corps du composant de carte de circuit imprimé et déplacez-le en le faisant glisser ou en saisissant les valeurs souhaitées."/>
+	<label commandName="lclzPCBMoveComponentBodyCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the new locations will be remembered by Fusion." translation="Veuillez noter qu'aucune fonction de déplacement n'est créée dans le plan de montage chronologique. Toutefois, Fusion mémorise les nouveaux emplacements."/>
+	<label commandName="lclzPCBMoveComponentBodyCommandTipsAndTricksTips" devLabel="Select a body from PCB component and move it by dragging or typing in values." translation="Sélectionnez un corps du composant de carte de circuit imprimé et déplacez-le en le faisant glisser ou en saisissant les valeurs souhaitées."/>
+	<label commandName="lclzPCBMoveComponentBodyCommandTipsAndTricksTitle" devLabel="Move PCB Component Body Information" translation="Informations sur la commande Déplacer le corps du composant de carte de circuit imprimé"/>
+	<label commandName="lclzPCBMoveComponentsCommand1" devLabel="Move PCB components to new locations on the board." translation="Déplacez les composants de carte de circuit imprimé vers de nouveaux emplacements sur le circuit imprimé."/>
+	<label commandName="lclzPCBMoveComponentsCommand2" devLabel="Select a component and move it by dragging or typing in values." translation="Sélectionnez un composant et déplacez-le en le faisant glisser ou en saisissant les valeurs souhaitées."/>
+	<label commandName="lclzPCBMoveComponentsCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the new locations will be remembered by Fusion, and will become visible to EAGLE after the model is saved, and the EAGLE user can move the components as well." translation="Veuillez noter qu'aucune fonction de déplacement n'est créée dans le plan de montage chronologique. Toutefois, Fusion mémorise les nouveaux emplacements et, une fois le modèle enregistré, ils sont visibles dans EAGLE. L'utilisateur EAGLE peut également déplacer les composants."/>
+	<label commandName="lclzPCBMoveComponentsCommandTipsAndTricksTips" devLabel="Select a component and move it by dragging or typing in values." translation="Sélectionnez un composant et déplacez-le en le faisant glisser ou en saisissant les valeurs souhaitées."/>
+	<label commandName="lclzPCBMoveComponentsCommandTipsAndTricksTitle" devLabel="Move PCB Components Information" translation="Informations sur la commande Déplacer les composants de carte de circuit imprimé"/>
+	<label commandName="lclzPCBReplaceComponentCommand1" devLabel="Replace PCB component with different one." translation="Remplacez le composant de carte de circuit imprimé par un autre composant."/>
+	<label commandName="lclzPCBReplaceComponentCommand2" devLabel="Select a PCB 3d model(step, stp file format) to replace existing PCB component." translation="Sélectionnez le modèle de carte de circuit imprimé 3D (format de fichier STEP ou STP) qui va remplacer le composant de carte de circuit imprimé existant."/>
+	<label commandName="lclzPCBReplaceComponentCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the PCB component will be replace with new model, the change will not able to get back to eagle." translation="Veuillez noter qu'aucune fonction de déplacement n'est créée dans le plan de montage chronologique. Toutefois, le composant de carte de circuit imprimé est remplacé par le nouveau modèle. La modification ne peut pas être réappliquée dans EAGLE."/>
+	<label commandName="lclzPCBReplaceComponentCommandTipsAndTricksTips" devLabel="Select a model to replace selected PCB component and move it to adjust its position." translation="Sélectionnez le modèle qui va remplacer le composant de carte de circuit imprimé sélectionné et déplacez-le pour ajuster sa position."/>
+	<label commandName="lclzPCBReplaceComponentCommandTipsAndTricksTitle" devLabel="Replace PCB Component Information" translation="Informations sur la commande Remplacer le composant de carte de circuit imprimé"/>
+	<label commandName="lclzPCBStatusCommand1" devLabel="Check the status of the PCB shape and component positions. " translation="Vérifiez l'état de la forme de carte de circuit imprimé et les positions des composants. "/>
+	<label commandName="lclzPCBStatusCommand2" devLabel="Both the board shape and the component positions can be driven by either Fusion or EAGLE. Use this command to understand the state of the model." translation="Vous pouvez contrôler la forme de circuit imprimé et la position des composants depuis Fusion ou EAGLE. Utilisez cette commande pour examiner l'état du modèle."/>
+	<label commandName="lclzPCBStatusCommandTipsAndTricksDesc" devLabel="If the board shape and/or component positions have been edited in Fusion after the last EAGLE update, this command will allow you to see both PCB shapes. Also, it will tell you if your current component positions are different from the last EAGLE update." translation="Si la forme de carte de circuit imprimé et/ou les positions des composants ont été modifiées dans Fusion après la dernière mise à jour EAGLE, cette commande vous permet d'observer les deux formes de carte de circuit imprimé. Elle indique également si les positions actuelles des composants sont différentes de leurs positions dans la dernière mise à jour EAGLE."/>
+	<label commandName="lclzPCBStatusCommandTipsAndTricksTips" devLabel="Both the board shape and the component positions can be driven by either Fusion or EAGLE. Use this command to understand the state of the model." translation="Vous pouvez contrôler la forme de circuit imprimé et la position des composants depuis Fusion ou EAGLE. Utilisez cette commande pour examiner l'état du modèle."/>
+	<label commandName="lclzPCBStatusCommandTipsAndTricksTitle" devLabel="PCB Status Information" translation="Informations sur la commande État de la carte de circuit imprimé"/>
+	<label commandName="lclzPCBStop1" devLabel="Return to the Model workspace." translation="Revenez à l'espace de travail des modèles."/>
+	<label commandName="lclzPCBUpdateComponentCommand1" devLabel="Update PCB component from library." translation="Mettez à jour le composant de carte de circuit imprimé à partir de la bibliothèque."/>
+	<label commandName="lclzPCBUpdateComponentCommand2" devLabel="Download PCB component from library to replace existing PCB component." translation="Téléchargez le composant de carte de circuit imprimé de la bibliothèque pour remplacer le composant de carte de circuit imprimé existant."/>
+	<label commandName="lclzPCBUpdateComponentCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the PCB component will be replace with new model, the change will not able to get back to eagle." translation="Veuillez noter qu'aucune fonction de déplacement n'est créée dans le plan de montage chronologique. Toutefois, le composant de carte de circuit imprimé est remplacé par le nouveau modèle. La modification ne peut pas être réappliquée dans EAGLE."/>
+	<label commandName="lclzPCBUpdateComponentCommandTipsAndTricksTips" devLabel="Download PCB component from library to replace the selected PCB component and move it to adjust its position." translation="Téléchargez le composant de carte de circuit imprimé de la bibliothèque pour remplacer le composant de carte de circuit imprimé sélectionné et déplacez-le pour ajuster sa position."/>
+	<label commandName="lclzPCBUpdateComponentCommandTipsAndTricksTitle" devLabel="Update PCB Component Information" translation="Informations sur la commande Mettre à jour le composant de carte de circuit imprimé"/>
+	<label commandName="lclzPCBWorkspaceTitle" devLabel="Mechanical PCB Workspace" translation="Espace de travail de carte de circuit imprimé mécanique"/>
+</Resource>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<root DllName="NaLMVTranslator10" Identifier="LMVTranslator" IsCoreAddIn="0" IsUIAddIn="0" 
+      IsTranslatorAddIn="1" Name="LMVTranslator" FileFilterExt="*.svf" FileFilterDescription="LOCID=LMVFileFilterDescription" 
+      SupportImport="1" SupportExport="1">
+  <LOC Module="NaLMVTranslator" _LCLZId="LMVFileFilterDescription" _LCLZText="LMV Files (*.svf)"/>
+  <NeededAddIns>
+    <NeededAddIn>Scene</NeededAddIn>
+    <NeededAddIn>CommonData</NeededAddIn>
+    <NeededAddIn>Component</NeededAddIn>
+    <NeededAddIn>Body</NeededAddIn>
+    <NeededAddIn>NeutronConsumer</NeededAddIn>
+    <NeededAddIn>NeutronListener</NeededAddIn>
+  </NeededAddIns>
+  <SupportedAssetTypes>
+    <SupportedAssetType>FusionAssetType</SupportedAssetType>
+  </SupportedAssetTypes>
+</root>

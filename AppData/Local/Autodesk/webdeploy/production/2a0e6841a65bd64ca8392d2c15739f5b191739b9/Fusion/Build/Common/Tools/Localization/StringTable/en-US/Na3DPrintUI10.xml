@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Resource>
+	<label commandName="3DPrint Environment" devLabel="3DPrint" translation="" />
+	<label commandName="BaseDiameter" devLabel="Base Diameter" translation="" />
+	<label commandName="BrepBodySelection" devLabel="Components/Bodies" translation="" />
+	<label commandName="ChooseObjectsCommand" devLabel="Choose Objects" translation="" />
+	<label commandName="CustomRefinementOption" devLabel="Custom" translation="" />
+	<label commandName="DLPPrinter" devLabel="DLP Printer" translation="" />
+	<label commandName="DefaultPrinter" devLabel="Default" translation="" />
+	<label commandName="Dremel" devLabel="Dremel 3D IdeaBuilder" translation="" />
+	<label commandName="DremelIdeaBuilder" devLabel="Dremel 3D Idea Builder" translation="" />
+	<label commandName="EmberPrinter" devLabel="Autodesk Ember" translation="" />
+	<label commandName="GenerateSupportsCommand" devLabel="Supports" translation="" />
+	<label commandName="GridAspectRatio" devLabel="Aspect Ratio" translation="" />
+	<label commandName="HighRefinementOption" devLabel="High" translation="" />
+	<label commandName="InspectFor3DPrintCommand" devLabel="Inspect For 3DPrint" translation="" />
+	<label commandName="LowRefinementOption" devLabel="Low" translation="" />
+	<label commandName="Makerbot2mm" devLabel="Replicator 2mm" translation="" />
+	<label commandName="Makerbot2mmHeavy" devLabel="Replicator 2mm Heavy" translation="" />
+	<label commandName="Makerbot2mmThick" devLabel="Replicator 2mm Thick" translation="" />
+	<label commandName="Makerbot3mm" devLabel="Replicator 3mm" translation="" />
+	<label commandName="MaximumEdgeLength" devLabel="Maximum Edge Length" translation="" />
+	<label commandName="MediumRefinementOption" devLabel="Medium" translation="" />
+	<label commandName="MeshEntitySelection" devLabel="Mesh Body" translation="" />
+	<label commandName="NormalTolerance" devLabel="Normal Deviation" translation="" />
+	<label commandName="NumberOfTriangles" devLabel="Number of Triangles" translation="" />
+	<label commandName="PostDiameter" devLabel="Post Diameter" translation="" />
+	<label commandName="PreviewGroupStart" devLabel="Preview" translation="" />
+	<label commandName="PreviewMesh" devLabel="Preview Mesh" translation="" />
+	<label commandName="PrintConfigurationActivateCommand" devLabel="Activate PrintSetup" translation="" />
+	<label commandName="PrintConfigurationActivateCommandTooltip" devLabel="Activate PrintSetup" translation="" />
+	<label commandName="PrintConfigurationGroupBrowserLabel" devLabel="Print Setups" translation="" />
+	<label commandName="PrintSetupCommand" devLabel="Setup 3D Printer" translation="" />
+	<label commandName="Printer" devLabel="Printer" translation="" />
+	<label commandName="PushBrepTo3DPrintWorkspaceCmd" devLabel="Send Body to 3D Print" translation="" />
+	<label commandName="RefinementGroupStart" devLabel="Refinement Options" translation="" />
+	<label commandName="RefinementOptionsInput" devLabel="Refinement" translation="" />
+	<label commandName="SelectBodies" devLabel="Select bodies to add to 3DPrint" translation="" />
+	<label commandName="SelectMeshBodies" devLabel="Select mesh bodies" translation="" />
+	<label commandName="SupportDensity" devLabel="Support Density" translation="" />
+	<label commandName="SupportMinimumAngle" devLabel="Minimum Angle for Supports" translation="" />
+	<label commandName="SupportsType" devLabel="Supports Type" translation="" />
+	<label commandName="SurfaceTolerance" devLabel="Surface Deviation" translation="" />
+	<label commandName="TipDiameter" devLabel="Tip Diameter" translation="" />
+	<label commandName="TypeA" devLabel="Type A Series 1" translation="" />
+	<label commandName="Ultimaker2_3mm" devLabel="Ultimaker2 3mm" translation="" />
+	<label commandName="lclz3DPrintModify" devLabel="Modify" translation="" />
+	<label commandName="lclz3DPrintSetup" devLabel="Setup" translation="" />
+	<label commandName="lclz3DPrintTab" devLabel="3D Print" translation="" />
+	<label commandName="lclzInspectFor3DPrintDesc1" devLabel="Inspects a mesh for issues related to printability." translation="" />
+	<label commandName="lclzPrintSetupCmdDesc1" devLabel="Set up a 3D Print Job." translation="" />
+</Resource>

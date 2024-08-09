@@ -1,0 +1,13 @@
+{
+    "autodeskProduct":"Fusion360",
+    "type":"addin",
+    "id":"EA4AE962-C943-4DB7-BF33-B9575C0B6D57",
+    "author":"CADENAS GmbH",
+    "description":{
+        "":"Insert a part from parts4cad"
+    },
+    "version":"1.0.0",
+    "runOnStartup":true,
+    "supportedOS":"windows|mac",
+    "editEnabled": false
+}

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="AllSupportedFiles" devLabel="All supported files ( %1% ) ;;" translation="所有受支持的文件(%1%);;"/>
+	<label commandName="BRep2MeshCommand" devLabel="BRep to Mesh" translation="BREP 到 Mesh"/>
+	<label commandName="BestFitType" devLabel="Best Fit" translation="最佳拟合"/>
+	<label commandName="BodyEntitySelection" devLabel="Body" translation="实体"/>
+	<label commandName="BooleanTypeOperation" devLabel="Operation" translation="操作"/>
+	<label commandName="CenterTransform" devLabel="Center" translation="中心"/>
+	<label commandName="CmMKS" devLabel="Centimeter" translation="厘米"/>
+	<label commandName="CombineKeepToolsOptionInput" devLabel="Keep Tool Bodies" translation="保留工具实体"/>
+	<label commandName="CompColorCycleOptionWarning1" devLabel="Component color cycling has been disabled temporarily." translation="“零部件颜色循环”已临时禁用。"/>
+	<label commandName="CustomRefinementOption" devLabel="Custom" translation="自定义"/>
+	<label commandName="CylinderType" devLabel="Cylinder" translation="圆柱体"/>
+	<label commandName="ExitMeshPanel" devLabel="Close" translation="关闭"/>
+	<label commandName="ExpandToConnectedSel" devLabel="Expand to Connected" translation="扩展到“相连”"/>
+	<label commandName="ExpandToGroupSel" devLabel="Expand to Face Group" translation="扩展到“面组”"/>
+	<label commandName="Facet Count" devLabel="Facet Count" translation="面数"/>
+	<label commandName="FitType" devLabel="Meshing Type" translation="网格化类型"/>
+	<label commandName="FlatMeshShading" devLabel="Flat Shaded" translation="平面着色"/>
+	<label commandName="FlatType" devLabel="Uniform" translation="均匀"/>
+	<label commandName="FusionMeshPlanarSectionBodyPrompt" devLabel="Select a mesh body" translation="选择网格实体"/>
+	<label commandName="FusionMeshPlanarSectionPlanePrompt" devLabel="Move the plane" translation="移动平面"/>
+	<label commandName="FusionMeshPlanarSectionPrompt" devLabel="Select a plane (optional)" translation="选择平面(可选)"/>
+	<label commandName="FusionPositionMesh" devLabel="Insert Mesh" translation="插入网格"/>
+	<label commandName="GenerateFGAngle" devLabel="Threshold Angle" translation="阈值角度"/>
+	<label commandName="GridAspectRatio" devLabel="Aspect Ratio" translation="纵横比"/>
+	<label commandName="GroundTransform" devLabel="Move to Ground" translation="移动到地面"/>
+	<label commandName="GrowMeshSel" devLabel="Grow Selection" translation="扩大选择"/>
+	<label commandName="HighRefinementOption" devLabel="High" translation="高"/>
+	<label commandName="Imperial" devLabel="Foot" translation="英尺"/>
+	<label commandName="InchImperial" devLabel="Inch" translation="英寸"/>
+	<label commandName="InsertAlignMeshCommand" devLabel="Insert Mesh" translation="插入网格"/>
+	<label commandName="InsertMeshCommand" devLabel="Insert Mesh" translation="插入网格"/>
+	<label commandName="InvertMeshSel" devLabel="Invert Selection" translation="反向选择"/>
+	<label commandName="LowRefinementOption" devLabel="Low" translation="低"/>
+	<label commandName="MMKS" devLabel="Meter" translation="米"/>
+	<label commandName="MaximumEdgeLength" devLabel="Maximum Edge Length" translation="最大边长度"/>
+	<label commandName="MediumRefinementOption" devLabel="Medium" translation="中等"/>
+	<label commandName="Mesh" devLabel="Mesh" translation="网格"/>
+	<label commandName="Mesh Environment" devLabel="Mesh" translation="网格"/>
+	<label commandName="Mesh2BRep Conversion Warning" devLabel="&lt;b&gt;Mesh to BRep conversion&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Warning: This mesh contains a large number of facets. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Mesh surface content:&lt;br&gt;Facets = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversion has been aborted. &lt;/br&gt;" translation="&lt;b&gt;Mesh 到 BRep 转换&lt;/b&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;警告: 此网格包含大量面。&lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;网格曲面组成:&lt;br&gt;面数 = %1%&lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;转换已中止。&lt;/br&gt;"/>
+	<label commandName="Mesh2BRep Conversion Warning_1" devLabel="&lt;b&gt;Mesh to BRep conversion&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Warning: This mesh contains a large number of facets. &lt;/br&gt;&lt;br&gt;Proceeding will result in slow performance.&lt;/br&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt;Mesh surface content:&lt;br&gt;Facets = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversion is not recommended. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Proceed with conversion?&lt;/br&gt;" translation="&lt;b&gt;Mesh 到 BRep 转换&lt;/b&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;警告: 此网格包含大量面。&lt;/br&gt;&lt;br&gt;继续进行转换将导致性能下降。&lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;网格曲面组成:&lt;br&gt;面数 = %1%&lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;不建议进行转换。&lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;是否继续进行转换？&lt;/br&gt;"/>
+	<label commandName="Mesh2BRep conversion aborted." devLabel="Mesh to BRep conversion aborted." translation="Mesh 到 BRep 转换已中止。"/>
+	<label commandName="Mesh2BRepCommand" devLabel="Mesh to BRep" translation="Mesh 到 BRep"/>
+	<label commandName="MeshBodiesSelection" devLabel="Mesh Bodies" translation="网格实体"/>
+	<label commandName="MeshBodySelection" devLabel="Mesh Body" translation="网格实体"/>
+	<label commandName="MeshClearFGCommand" devLabel="Clear Face Group" translation="清除面组"/>
+	<label commandName="MeshColorCommand" devLabel="Face Groups" translation="面组"/>
+	<label commandName="MeshCombineCommand" devLabel="Merge Bodies" translation="合并实体"/>
+	<label commandName="MeshCombineGenericError" devLabel="Combine failed due to invalid input" translation="由于输入无效，合并失败"/>
+	<label commandName="MeshCreateFGCommand" devLabel="Create Face Group" translation="创建面组"/>
+	<label commandName="MeshCutSplitFaces" devLabel="Split Faces" translation="分割面"/>
+	<label commandName="MeshDeleteTrianglesCommand" devLabel="Delete Faces" translation="删除面"/>
+	<label commandName="MeshDensity" devLabel="Density" translation="密度"/>
+	<label commandName="MeshDistance" devLabel="Offset" translation="偏移"/>
+	<label commandName="MeshEntitySelection" devLabel="Mesh Body" translation="网格实体"/>
+	<label commandName="MeshFACESelection" devLabel="Mesh Faces" translation="网格面"/>
+	<label commandName="MeshFaceBodySelection" devLabel="Mesh Faces/Body" translation="网格面/实体"/>
+	<label commandName="MeshFaceGroupOffCommand" devLabel="FaceGroup Off" translation="关闭面组"/>
+	<label commandName="MeshFaceGroupOnCommand" devLabel="FaceGroup On" translation="打开面组"/>
+	<label commandName="MeshFacetSelection" devLabel="Mesh Facet" translation="网格面"/>
+	<label commandName="MeshFacetSelection_1" devLabel="Mesh Faces/Body" translation="网格面/实体"/>
+	<label commandName="MeshFacetSelection_2" devLabel="Mesh Faces/Body" translation="网格面/实体"/>
+	<label commandName="MeshFittingCommand" devLabel="Fit Surface to Mesh" translation="将曲面拟合到网格"/>
+	<label commandName="MeshGenerateFGCommand" devLabel="Generate Face Groups" translation="生成面组"/>
+	<label commandName="MeshGenerateFGGenericError" devLabel="GenerateFG failed due to invalid input" translation="由于输入无效，生成 FG 失败"/>
+	<label commandName="MeshMakeSolidBeginComputation" devLabel="Starting conversion..." translation="正在开始转换..."/>
+	<label commandName="MeshMakeSolidCommand" devLabel="Make Closed Mesh" translation="封闭网格"/>
+	<label commandName="MeshPlanarSectionCommand" devLabel="Create Mesh Section Sketch" translation="创建网格截面草图"/>
+	<label commandName="MeshPlaneCutBodySel" devLabel="Mesh Body" translation="网格实体"/>
+	<label commandName="MeshPlaneCutCommand" devLabel="Plane Cut" translation="平面剪切"/>
+	<label commandName="MeshPlaneCutFillMinimal" devLabel="Minimal" translation="最小"/>
+	<label commandName="MeshPlaneCutFillNone" devLabel="No Fill" translation="无填充"/>
+	<label commandName="MeshPlaneCutFillType" devLabel="Fill Type" translation="填充类型"/>
+	<label commandName="MeshPlaneCutFillUniform" devLabel="Uniform" translation="均匀"/>
+	<label commandName="MeshPlaneCutFlipTrimDir" devLabel="Flip" translation="翻转"/>
+	<label commandName="MeshPlaneCutMeshSelectPrompt" devLabel="Select a mesh body" translation="选择网格实体"/>
+	<label commandName="MeshPlaneCutPlanePrompt" devLabel="Select a plane" translation="选择平面"/>
+	<label commandName="MeshPlaneCutPlaneSel" devLabel="Plane" translation="平面"/>
+	<label commandName="MeshPlaneCutSplitBody" devLabel="Split Body" translation="分割实体"/>
+	<label commandName="MeshPlaneCutTransfPlane" devLabel="Transform Plane" translation="变换平面"/>
+	<label commandName="MeshPlaneCutTransformPlanePrompt" devLabel="Position the plane" translation="放置平面"/>
+	<label commandName="MeshPlaneCutTrim" devLabel="Trim" translation="修剪"/>
+	<label commandName="MeshPlaneCutType" devLabel="Cut Type" translation="剪切类型"/>
+	<label commandName="MeshRebuildSolidGenericError" devLabel="Make Closed Mesh failed due to invalid input" translation="由于输入无效，封闭网格失败"/>
+	<label commandName="MeshReduceCommand" devLabel="Reduce" translation="减少"/>
+	<label commandName="MeshReduceGenericError" devLabel="Reduce failed due to invalid input" translation="由于输入无效，减少失败"/>
+	<label commandName="MeshRemeshCommand" devLabel="Remesh" translation="重新划分网格"/>
+	<label commandName="MeshRemeshGenericError" devLabel="Remesh failed due to invalid input" translation="由于输入无效，重新划分网格失败"/>
+	<label commandName="MeshReplaceCommand" devLabel="Erase and Fill" translation="删除和填充"/>
+	<label commandName="MeshReverseNormalsCommand" devLabel="Reverse Normal" translation="翻转法向"/>
+	<label commandName="MeshSectionBodyInput" devLabel="Mesh Body" translation="网格实体"/>
+	<label commandName="MeshSectionPlaneInput" devLabel="Plane" translation="平面"/>
+	<label commandName="MeshSectionTransformInput" devLabel="Transform" translation="变换"/>
+	<label commandName="MeshSelection" devLabel="Mesh Faces/Body" translation="网格面/实体"/>
+	<label commandName="MeshSelectionPalette" devLabel="Mesh Palette" translation="网格选项板"/>
+	<label commandName="MeshSmoothCommand" devLabel="Smooth" translation="平滑"/>
+	<label commandName="MeshSmoothGenericError" devLabel="Smooth failed due to invalid input" translation="由于输入无效，平滑处理失败"/>
+	<label commandName="MeshStyleCommand" devLabel="Mesh Display" translation="网格显示"/>
+	<label commandName="MeshSubsetCommand" devLabel="Separate" translation="划分"/>
+	<label commandName="MeshTriangulateCommand" devLabel="Triangulate Mesh" translation="三角化网格"/>
+	<label commandName="MeshingTypeOption" devLabel="Reduce Type" translation="减少类型"/>
+	<label commandName="MeshingTypeOption_1" devLabel="Meshing Type" translation="网格化类型"/>
+	<label commandName="MinimalType" devLabel="Minimal" translation="最小"/>
+	<label commandName="MissingMoveBodies" devLabel="missing bodies" translation="缺少实体"/>
+	<label commandName="MmMKS" devLabel="Millimeter" translation="毫米"/>
+	<label commandName="MoveSelectionInputPrompt4" devLabel="Position mesh bodies" translation="放置网格实体"/>
+	<label commandName="NewBodyInNewCompType" devLabel="New Component" translation="新建零部件"/>
+	<label commandName="NewBodyType" devLabel="New Body" translation="新建实体"/>
+	<label commandName="NewComponent" devLabel="Operation" translation="操作"/>
+	<label commandName="NormalTolerance" devLabel="Normal Deviation" translation="法向偏差"/>
+	<label commandName="NumberOfTriangles" devLabel="Number Of Triangles" translation="三角形数"/>
+	<label commandName="NumericalInputsGroup" devLabel="Numerical Inputs" translation="数值输入"/>
+	<label commandName="OBJFilesFilter" devLabel="OBJ File(*.obj);;" translation="OBJ 文件(*.obj);;"/>
+	<label commandName="PhysicalMaterialProperty" devLabel="Physical Material" translation="物理材料"/>
+	<label commandName="PlaneType" devLabel="Plane" translation="平面"/>
+	<label commandName="PositionMeshSelectionInput" devLabel="Selection" translation="选择"/>
+	<label commandName="PositionMeshTransformInput" devLabel="Distance" translation="距离"/>
+	<label commandName="PreviewDeviation" devLabel="Deviation Preview" translation="偏差预览"/>
+	<label commandName="PreviewGroupStart" devLabel="Preview" translation="预览"/>
+	<label commandName="PreviewInput" devLabel="Preview" translation="预览"/>
+	<label commandName="PreviewMesh" devLabel="Preview Mesh" translation="预览网格"/>
+	<label commandName="ReduceFacetCount" devLabel="Face Count" translation="面数"/>
+	<label commandName="ReducePBOptionInput" devLabel="Preserve Boundaries" translation="保留边界"/>
+	<label commandName="ReducePercentage" devLabel="Density" translation="密度"/>
+	<label commandName="ReduceType" devLabel="Reduce Target" translation="减少目标"/>
+	<label commandName="RefinementGroupStart" devLabel="Refinement" translation="优化"/>
+	<label commandName="RefinementOptionsInput" devLabel="Refinement Options" translation="优化选项"/>
+	<label commandName="RemeshBoundaryOptionInput" devLabel="Preserve Boundaries" translation="保留边界"/>
+	<label commandName="RemeshDensity" devLabel="Density" translation="密度"/>
+	<label commandName="RemeshNormalThresholdInput" devLabel="Shape Preservation" translation="形状保留"/>
+	<label commandName="RemeshSharpOptionInput" devLabel="Preserve Sharp Edges" translation="保留锐边"/>
+	<label commandName="ReplaceDensity" devLabel="Density" translation="密度"/>
+	<label commandName="ReplaceScale" devLabel="Weight" translation="重量"/>
+	<label commandName="ResetTransform" devLabel="Reset Transformation" translation="重置变换"/>
+	<label commandName="STLFilesFilter" devLabel="STL File(*.stl)" translation="STL 文件(*.stl)"/>
+	<label commandName="SelectBodies" devLabel="Select bodies" translation="选择实体"/>
+	<label commandName="SelectMeshBodies" devLabel="Select mesh bodies" translation="选择网格实体"/>
+	<label commandName="SelectMeshFacet" devLabel="Select mesh facet" translation="选择网格面"/>
+	<label commandName="ShrinkMeshSel" devLabel="Shrink Selection" translation="收缩选择"/>
+	<label commandName="SmoothAdaptive" devLabel="Adaptive" translation="自适应"/>
+	<label commandName="SmoothMeshShading" devLabel="Smooth Shaded" translation="平滑着色"/>
+	<label commandName="SmoothScale" devLabel="Smoothing" translation="平滑"/>
+	<label commandName="SolidType" devLabel="Rebuild Mode" translation="重建模式"/>
+	<label commandName="Sphere Type" devLabel="Sphere" translation="球体"/>
+	<label commandName="SurfaceDeviationTolerance" devLabel="Deviation Tolerance" translation="偏差公差"/>
+	<label commandName="SurfaceFitTolerance" devLabel="Fit Tolerance" translation="拟合公差"/>
+	<label commandName="SurfaceTolerance" devLabel="Surface Deviation" translation="曲面偏差"/>
+	<label commandName="SurfaceType" devLabel="Surface to Fit" translation="要拟合的曲面"/>
+	<label commandName="Tolerance" devLabel="Tolerance" translation="公差"/>
+	<label commandName="Torus Type" devLabel="Torus" translation="圆环体"/>
+	<label commandName="TransformTriad" devLabel="Transform" translation="变换"/>
+	<label commandName="TransformTriadPrompt" devLabel="" translation=""/>
+	<label commandName="TriangulatedQuadMeshWarning" devLabel="The inserted mesh has been automatically converted to a triangle mesh to make it compatible with the mesh editing tools. You can disable this automatic triangulation in Preferences &gt; Mesh." translation="插入的网格已自动转换为三角形网格，使其与网格编辑工具兼容。您可以在“首选项”&gt;“网格”中禁用此自动三角剖分功能。"/>
+	<label commandName="UnitsType" devLabel="Unit Type" translation="单位类型"/>
+	<label commandName="UpDirType" devLabel="Flip Up Direction" translation="反转向上方向"/>
+	<label commandName="VisualMaterialProperty" devLabel="Appearance" translation="外观"/>
+	<label commandName="accurateType" devLabel="Accurate" translation="精确"/>
+	<label commandName="blockyType" devLabel="Blocky" translation="块状"/>
+	<label commandName="fastType" devLabel="Standard" translation="标准"/>
+	<label commandName="infoAdaptiveType" devLabel="Adaptive" translation="自适应"/>
+	<label commandName="infoUniformType" devLabel="Uniform" translation="均匀"/>
+	<label commandName="lclzBRep2MeshDesc1" devLabel="Converts a BRep body to a Mesh body" translation="将 BRep 实体转换为网格实体"/>
+	<label commandName="lclzFitCurvesToSectionCmd1" devLabel="Fits sketch curves to a mesh cross section." translation="将草图曲线拟合到网格横截面。"/>
+	<label commandName="lclzFitCurvesToSectionCmd2" devLabel="Choose the sketch curve type, then select the start and end points on the mesh section. Create multiple curves within the same command with various join conditions." translation="选择草图曲线类型，然后在网格截面上选择起点和终点。使用同一个命令利用各种联接条件创建多条曲线。"/>
+	<label commandName="lclzInsertAlignMeshDesc1" devLabel="Inserts the selected OBJ or STL mesh file into the active design." translation="将选定的 OBJ 或 STL 网格文件插入到活动设计中。"/>
+	<label commandName="lclzInsertAlignMeshDesc2" devLabel="Choose an OBJ or STL file to insert, then use the options and manipulators to orient and position the mesh." translation="选择要插入的 OBJ 或 STL 文件，然后使用选项和操纵器确定网格的方向和位置。"/>
+	<label commandName="lclzInsertMeshDesc1" devLabel="Inserts the selected OBJ or STL mesh file into the active design." translation="将选定的 OBJ 或 STL 网格文件插入到活动设计中。"/>
+	<label commandName="lclzInsertMeshDesc2" devLabel="Choose an OBJ or STL file to insert, then use the options and manipulators to orient and position the mesh." translation="选择要插入的 OBJ 或 STL 文件，然后使用选项和操纵器确定网格的方向和位置。"/>
+	<label commandName="lclzMesh2BRepDesc1" devLabel="Converts a Mesh to a BRep (surface or solid) body type. Meshes more than 10,000 facets can affect performance." translation="将网格转换为 BRep (曲面或实体)实体类型。如果网格中的面数超过 10,000，则可能会影响性能。"/>
+	<label commandName="lclzMesh2BRepTipsAndTricks1Item1" devLabel="&lt;b&gt;Mesh to BRep:&lt;/b&gt; Meshes that have originated from CAD models or reality capture scans of limited size can be converted to a BRep surface or solid.  Each facet of the input mesh will be converted to a single planar surface." translation="&lt;b&gt;Mesh 到 BRep:&lt;/b&gt; 从大小有限的 CAD 模型或实景捕获扫描生成的网格可以转换为 BRep 曲面或实体。输入网格的每个面将转换为一个平面。"/>
+	<label commandName="lclzMesh2BRepTipsAndTricks1Item2" devLabel="&lt;Meshes larger than 10,000 polygons can be time consuming to convert and the resulting BRep body will have poor performance in modeling commands." translation="&lt;如果网格中的多边形数超过 10,000，则转换可能会相当耗时，并且生成的 BRep 实体在造型命令中会性能低下。"/>
+	<label commandName="lclzMesh2BRepTipsAndTricksTitle" devLabel="Convert Tips and Tricks" translation="转换提示与技巧"/>
+	<label commandName="lclzMeshBaseFeatureCreationDesc1" devLabel="Enters Mesh mode and inserts a mesh feature into the timeline. Use Mesh tools to modify and repair mesh geometry." translation="进入网格模式并将网格特征插入时间轴中。使用网格工具可修改和修复网格几何图元。"/>
+	<label commandName="lclzMeshBaseFeatureCreationDesc2" devLabel="Select Finish Mesh to exit out of the mode." translation="选择“完成网格”可退出该模式。"/>
+	<label commandName="lclzMeshBaseFeatureStopDesc1" devLabel="Finishes the Mesh feature." translation="完成网格特征。"/>
+	<label commandName="lclzMeshDeleteFacesCmd1" devLabel="Deletes the selected mesh faces." translation="删除选定的网格面。"/>
+	<label commandName="lclzMeshEraseAndFillCmd1" devLabel="Fills a hole in a mesh, or erases and replaces a selected portion of a mesh." translation="填充网格中的孔，或删除和替换网格的选定部分。"/>
+	<label commandName="lclzMeshEraseAndFillCmd2" devLabel="Select the boundary of the hole to fill, or the set of mesh faces to replace." translation="选择要填充的孔的边界，或要替换的一组网格面。"/>
+	<label commandName="lclzMeshGenerateFaceGroupsCmd1" devLabel="Generates face groups on a mesh body." translation="在网格实体上生成面组。"/>
+	<label commandName="lclzMeshGenerateFaceGroupsCmd2" devLabel="Select a mesh body then adjust the angle to control the face group segmentation." translation="选择网格实体，然后调整角度以控制面组分段。"/>
+	<label commandName="lclzMeshMergeBodiesCmd1" devLabel="Merges two or more mesh bodies into a single body." translation="将两个或更多网格实体合并为单个实体。"/>
+	<label commandName="lclzMeshMergeBodiesCmd2" devLabel="Select two or more mesh bodies to merge. Overlapping boundary edges will be stitched." translation="选择要合并的两个或更多网格实体。重叠的边界边将被缝合。"/>
+	<label commandName="lclzMeshPlanarSectionCommand1" devLabel="Creates a new sketch containing a mesh cross section as reference geometry." translation="创建包含网格横截面作为参考几何图元的新草图。"/>
+	<label commandName="lclzMeshPlanarSectionCommand2" devLabel="Select a mesh body then move the section plane. To fit sketch curves to the mesh section, follow with the Fit Mesh Section Curves command." translation="选择网格实体，然后移动截面平面。若要将草图曲线拟合到网格截面，请接着使用“拟合网格截面曲线”命令。"/>
+	<label commandName="lclzMeshPlaneCut2" devLabel="Select a mesh body then move the cutting plane. The cut can trim the body, split the body into multiple bodies, or split the faces only." translation="选择网格实体，然后移动剖切平面。这样可以修剪实体、将实体分割为多个实体，或仅分割面。"/>
+	<label commandName="lclzMeshPlaneCutCommand1" devLabel="Splits a mesh body using a plane." translation="使用平面分割网格实体。"/>
+	<label commandName="lclzMeshRebuildAsSolidCmd1" devLabel="Rebuilds a mesh body as a new watertight solid mesh." translation="将网格实体重建为新的无间隙实体网格。"/>
+	<label commandName="lclzMeshRebuildAsSolidCmd2" devLabel="Select a mesh body then choose the rebuild mode and density of the output mesh." translation="选择网格实体，然后选择重建模式和输出网格的密度。"/>
+	<label commandName="lclzMeshReduceCmd1" devLabel="Reduces the number of faces in a mesh." translation="减少网格中的面数。"/>
+	<label commandName="lclzMeshReduceCmd2" devLabel="Select a mesh body or faces then choose a reduction target." translation="选择网格实体或面，然后选择减少目标。"/>
+	<label commandName="lclzMeshRemeshCmd1" devLabel="Retiles a mesh with a new set of faces." translation="使用一组新的面重铺网格。"/>
+	<label commandName="lclzMeshRemeshCmd2" devLabel="Select a mesh body or faces then set the density and characteristics of the new faces." translation="选择网格实体或面，然后设置新面的密度和特性。"/>
+	<label commandName="lclzMeshReverseNormalCmd1" devLabel="Reverses the normal direction of selected mesh faces." translation="反转选定网格面的法向。"/>
+	<label commandName="lclzMeshSeparateCmd1" devLabel="Splits a mesh body into two separate bodies." translation="将网格实体分割为两个单独的实体。"/>
+	<label commandName="lclzMeshSeparateCmd2" devLabel="Select the mesh faces to split into a separate body." translation="选择要分割为单独实体的网格面。"/>
+	<label commandName="lclzMeshSmoothCmd1" devLabel="Smooths a mesh." translation="对网格进行平滑处理。"/>
+	<label commandName="lclzMeshSmoothCmd2" devLabel="Select a mesh body or faces then adjust the amount of smoothing." translation="选择网格实体或面，然后调整平滑度。"/>
+	<label commandName="lclzMeshWorkspaceTitle" devLabel="Repairs mesh geometry. Access commands to remesh and repair triangulated mesh bodies." translation="修复网格几何图元。访问命令以重新划分网格并修复三角化的网格实体。"/>
+	<label commandName="lclzRemeshCmd1" devLabel="Create a face group from the selected mesh faces." translation="从选定的网格面创建面组。"/>
+	<label commandName="lclzRemeshCmd2" devLabel="Clears face groups from the selected mesh body or faces." translation="清除选定的网格实体或面中的面组。"/>
+	<label commandName="pInputSet" devLabel="Select faces to clear facegroup" translation="选择要清除面组的面"/>
+	<label commandName="pInputSet_1" devLabel="Select faces to delete" translation="选择要删除的面"/>
+	<label commandName="pInputSet_9" devLabel="Select faces to reverse normals" translation="选择要翻转法向的面"/>
+	<label commandName="percentage" devLabel="Density" translation="密度"/>
+	<label commandName="sharpEdgesType" devLabel="Preserve Sharp Edges" translation="保留锐边"/>
+	<label commandName="tolerance" devLabel="Tolerance" translation="公差"/>
+	<label commandName="triCount" devLabel="Face Count" translation="面数"/>
+</Resource>

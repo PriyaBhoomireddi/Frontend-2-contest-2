@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="AddInput" devLabel="Grow  Selection" translation="Auswahl erweitern"/>
+	<label commandName="AgainstExtrudeDistance" devLabel="Distance" translation="Abstand"/>
+	<label commandName="All" devLabel="All" translation="Alle"/>
+	<label commandName="AlongExtrudeDistance" devLabel="Distance" translation="Abstand"/>
+	<label commandName="Angle" devLabel="Angle" translation="Winkel"/>
+	<label commandName="ArcLength" devLabel="Uniform" translation="Einheitlich"/>
+	<label commandName="AssemblyInfoCommand" devLabel="Assembly Info" translation="Baugruppeninfo"/>
+	<label commandName="AssemblyInfoCommandDesc" devLabel="Assembly Info" translation="Baugruppeninfo"/>
+	<label commandName="AutoFeatureSelMode" devLabel="Auto Feature Selection" translation="Automatische Elementauswahl"/>
+	<label commandName="AutoJoin" devLabel="Auto Join" translation="Autom. verbinden"/>
+	<label commandName="AutoRepair" devLabel="AutoRepair" translation="Autom. Reparatur"/>
+	<label commandName="AxisXInput" devLabel="X Distance" translation="Abstand X"/>
+	<label commandName="AxisYInput" devLabel="Y Distance" translation="Abstand Y"/>
+	<label commandName="AxisZInput" devLabel="Z Distance" translation="Abstand Z"/>
+	<label commandName="BetterDisplay" devLabel="Better Display" translation="Bessere Darstellung"/>
+	<label commandName="BetterPerformance" devLabel="Enable Better Performance" translation="Bessere Leistung ermöglichen"/>
+	<label commandName="Body" devLabel="Body" translation="Körper"/>
+	<label commandName="BooleanInput" devLabel="Embed Symmetry" translation="Symmetrie einbetten"/>
+	<label commandName="Both" devLabel="Both" translation="Beide"/>
+	<label commandName="Box" devLabel="Wireframe Box" translation="Quader-Drahtmodell"/>
+	<label commandName="BoxDisplayInput" devLabel="Box Display" translation="Quaderanzeige"/>
+	<label commandName="BridgeCurveRotation" devLabel="Curve Rotation" translation="Kurvendrehung"/>
+	<label commandName="BridgeErrBridgeFailed" devLabel="Bridge failed" translation="Fehler bei Brücke"/>
+	<label commandName="BridgeErrNumSegments" devLabel="Number of segments should be greater than twists" translation="Anzahl der Segmente muss größer sein als Anzahl der Drehungen"/>
+	<label commandName="BridgeErrSameTSpline" devLabel="Please select faces or boundary edges from same body" translation="Wählen Sie Flächen oder Begrenzungskanten desselben Körpers aus."/>
+	<label commandName="BridgeFlipDirectionInput1" devLabel="Flip Direction1" translation="Richtung umkehren1"/>
+	<label commandName="BridgeFlipDirectionInput2" devLabel="Flip Direction2" translation="Richtung umkehren2"/>
+	<label commandName="BridgeFollowCurve" devLabel="Follow Curve" translation="Kurve folgen"/>
+	<label commandName="BridgeGuideCurve" devLabel="Select bridge guide curve" translation="Brücken-Führungskurve auswählen"/>
+	<label commandName="BridgeInputOrientVertex" devLabel="OrientVertex" translation="Scheitelpunkt ausrichten"/>
+	<label commandName="BridgeSegmentsInput" devLabel="Faces" translation="Flächen"/>
+	<label commandName="BridgeShowPreview" devLabel="Preview" translation="Vorschau"/>
+	<label commandName="BridgeSideE1" devLabel="Select side one boundary edges" translation="Begrenzungskanten von Seite 1 auswählen"/>
+	<label commandName="BridgeSideE2" devLabel="Select side two boundary edges" translation="Begrenzungskanten von Seite 2 auswählen"/>
+	<label commandName="BridgeSideEF1" devLabel="Select side one faces or boundary edges" translation="Flächen der Seite 1 oder Begrenzungskanten auswählen"/>
+	<label commandName="BridgeSideEF2" devLabel="Select side two faces or boundary edges" translation="Flächen der Seite 2 oder Begrenzungskanten auswählen"/>
+	<label commandName="BridgeSideF1" devLabel="Select side one faces" translation="Flächen der Seite 1 auswählen"/>
+	<label commandName="BridgeSideF2" devLabel="Select side two faces" translation="Flächen der Seite 2 auswählen"/>
+	<label commandName="BridgeSideOne" devLabel="Side One" translation="Seite 1"/>
+	<label commandName="BridgeSideTwo" devLabel="Side Two" translation="Seite 2"/>
+	<label commandName="BridgeSideVE1" devLabel="Select side one boundary edges or direction vertex" translation="Begrenzungskanten der Seite 1 oder Richtungsscheitelpunkt auswählen"/>
+	<label commandName="BridgeSideVE2" devLabel="Select side two boundary edges or direction vertex" translation="Begrenzungskanten der Seite 2 oder Richtungsscheitelpunkt auswählen"/>
+	<label commandName="BridgeSideVEF1" devLabel="Select side one faces or boundary edges or direction vertex" translation="Flächen oder Begrenzungskanten der Seite 1 oder Richtungsscheitelpunkt auswählen"/>
+	<label commandName="BridgeSideVEF2" devLabel="Select side two faces or boundary edges or direction vertex" translation="Flächen mit zwei Seiten oder Begrenzungskanten oder Richtungsscheitelpunkt auswählen"/>
+	<label commandName="BridgeSideVF1" devLabel="Select side one faces or direction vertex" translation="Flächen der Seite 1 oder Richtungsscheitelpunkt auswählen"/>
+	<label commandName="BridgeSideVF2" devLabel="Select side two faces or direction vertex" translation="Flächen der Seite 2 oder Richtungsscheitelpunkt auswählen"/>
+	<label commandName="BridgeTwistsInput" devLabel="Twists" translation="Drehungen"/>
+	<label commandName="Circular Symmetry Warning" devLabel="%1% is a large number of circular instances that could impact performance.  You can proceed or modify the number of instances." translation="%1% ist eine große Anzahl von kreisförmigen Exemplaren, die sich auf die Leistung auswirken kann. Sie können fortfahren oder die Anzahl der Exemplare ändern."/>
+	<label commandName="CircularAxis" devLabel="Axis" translation="Achse"/>
+	<label commandName="CircularGrid" devLabel="Circular Grid" translation="Kreisförmiges Raster"/>
+	<label commandName="CircularSymmetryPossibleLoop" devLabel="Possible symmetries" translation="Mögliche Symmetrien"/>
+	<label commandName="ClearSymmetrySeperateBody" devLabel="Separate Bodies" translation="Separate Körper"/>
+	<label commandName="CmMKS" devLabel="cm" translation="cm"/>
+	<label commandName="ContinuityMode" devLabel="Continuity" translation="Kontinuität"/>
+	<label commandName="ContinuityModeCurvature" devLabel="Curvature (G2)" translation="Krümmung (G2)"/>
+	<label commandName="ContinuityModePositional" devLabel="Connected (G0)" translation="Verbunden (G0)"/>
+	<label commandName="ContinuityModeTangential" devLabel="Tangent (G1)" translation="Tangential (G1)"/>
+	<label commandName="ControlFrameDisplayInput" devLabel="Control Frame Display" translation="Rahmenanzeige steuern"/>
+	<label commandName="ControlFrameEntity" devLabel="ControlFrameEntity" translation="Steuerungsrahmenobjekt"/>
+	<label commandName="ControlFrameEntitySelection2" devLabel="T-Spline Face, Edge or Surface" translation="T-Spline-Fläche, -Kante oder -Oberfläche"/>
+	<label commandName="ControlFrameEntitySelection3" devLabel="T-Spline Vertices or Edges" translation="T-Spline-Scheitelpunkte oder -Kanten"/>
+	<label commandName="ControlFrameEntitySelection4" devLabel="T-Spline Vertices or Edges" translation="T-Spline-Scheitelpunkte oder -Kanten"/>
+	<label commandName="ControlFrameEntitySelection5" devLabel="T-Spline Edges" translation="T-Spline-Kanten"/>
+	<label commandName="CoordinateSpace" devLabel="Coordinate Space" translation="Koordinatenraum"/>
+	<label commandName="Crease edges/vertices" devLabel="Select edges or vertices" translation="Kanten oder Scheitelpunkte auswählen"/>
+	<label commandName="CreateFaceChainNoPossible" devLabel="Chain creation failed, select edge to start new chain" translation="Fehler beim Erstellen der Kette, Kante für neue Kette auswählen"/>
+	<label commandName="CreateOrConvertBodies" devLabel="To apply this change, the affected regions need to be unfrozen. Do you wish to continue?" translation="Damit diese Änderung übernommen wird, müssen die betroffenen Regionen freigegeben werden. Möchten Sie fortfahren?"/>
+	<label commandName="CrvSensitive" devLabel="Curvature" translation="Krümmung"/>
+	<label commandName="CurveFit" devLabel="Curve Fit" translation="Kurvenangleichung"/>
+	<label commandName="CurveSplit" devLabel="Display Curve Splits" translation="Kurvenaufteilungen anzeigen"/>
+	<label commandName="CurveToleranceValueInput" devLabel="Curve Tolerance" translation="Kurventoleranz"/>
+	<label commandName="DeformJoint" devLabel="Deform" translation="Verformen"/>
+	<label commandName="Degree" devLabel="Degree" translation="Grad"/>
+	<label commandName="DeleteGlobalHandle" devLabel="Global sections may not be deleted" translation="Globale Schnitte können möglicherweise nicht gelöscht werden."/>
+	<label commandName="DeleteKeyPressed" devLabel="Delete Key" translation="Schlüssel löschen"/>
+	<label commandName="Diameter1Faces" devLabel="Diameter 1 Faces" translation="Durchmesser 1 Flächen"/>
+	<label commandName="DiameterFaces" devLabel="Diameter Faces" translation="Durchmesser Flächen"/>
+	<label commandName="DirectionType" devLabel="Direction" translation="Richtung"/>
+	<label commandName="DirectionTypeTowards" devLabel="Towards" translation="Richtung"/>
+	<label commandName="DisplayMode" devLabel="Display Mode" translation="Anzeigemodus"/>
+	<label commandName="DisplayType" devLabel="Display" translation="Anzeige"/>
+	<label commandName="Distribution" devLabel="Distribution" translation="Verteilung"/>
+	<label commandName="DragPreviewToShiftPosition" devLabel="Move manipulator or enter parameter value" translation="Manipulator verschieben oder Parameterwert eingeben"/>
+	<label commandName="DrivingCurveCVSelection" devLabel="Curve Control Points" translation="Kurvensteuerpunkte"/>
+	<label commandName="EFillHoleMode" devLabel="Fill Hole Mode" translation="Bohrungs-Füllmodus"/>
+	<label commandName="ELayoutDisplayErrorStarInput" devLabel="Error Star" translation="Fehler bei Stern"/>
+	<label commandName="ELayoutDisplayLPointsInput" devLabel="L Points" translation="L-Punkte"/>
+	<label commandName="ELayoutDisplayNGonsInput" devLabel="NGons" translation="Vielecke"/>
+	<label commandName="ELayoutDisplayNakedEdgesInput" devLabel="Free Edges" translation="Freie Kanten"/>
+	<label commandName="ELayoutDisplaySeaShellsInput" devLabel="Error T Points" translation="Fehler-T-Punkte"/>
+	<label commandName="ELayoutDisplayStarPointsInput" devLabel="Star Points" translation="Sternpunkte"/>
+	<label commandName="ELayoutDisplayTPointsInput" devLabel="T Points" translation="T-Punkte"/>
+	<label commandName="Edge" devLabel="Edge" translation="Kante"/>
+	<label commandName="EdgeGroupOneNotConnected" devLabel="Edge Group One is not connected." translation="Kantengruppe 1 ist nicht verbunden."/>
+	<label commandName="EdgeGroupTwoNotConnected" devLabel="Edge Group Two is not connected." translation="Kantengruppe 2 ist nicht verbunden."/>
+	<label commandName="EdgeSelection" devLabel="EdgeSelection" translation="Kantenauswahl"/>
+	<label commandName="EdgeSelectionForBevel" devLabel="T-Spline Edge" translation="T-Spline-Kante"/>
+	<label commandName="EdgeSelectionForInsertion" devLabel="T-Spline Edge" translation="T-Spline-Kante"/>
+	<label commandName="EditFormSelectionA" devLabel="Select vertex, edge or face. Alt Key to extrude" translation="Wählen Sie den Scheitelpunkt, die Kante oder Fläche. Alt-Taste zum Extrudieren"/>
+	<label commandName="EditFormSelectionE" devLabel="Select edges. Alt Key to extrude" translation="Wählen Sie die Kanten aus. ALT-Taste zum Extrudieren."/>
+	<label commandName="EditFormSelectionF" devLabel="Select faces. Alt Key to extrude" translation="Wählen Sie die Flächen aus. ALT-Taste zum Extrudieren."/>
+	<label commandName="EditFormSelectionS" devLabel="Select T-Spline or mesh bodies" translation="T-Spline oder Netzkörper auswählen"/>
+	<label commandName="EditFormSelectionV" devLabel="Select vertices or tangency handles" translation="Scheitelpunkte oder Tangentengriffe auswählen"/>
+	<label commandName="EnableBetterDisplay" devLabel="Enable Better Display" translation="Bessere Anzeige aktivieren"/>
+	<label commandName="EntitySelection" devLabel="Profile" translation="Profil"/>
+	<label commandName="ErrorlabelGroup" devLabel="Error Labels" translation="Fehlerbezeichnungen"/>
+	<label commandName="Exact Mode" devLabel="Select point on edge" translation="Punkt auf Kante auswählen"/>
+	<label commandName="ExtrudeBackSegmentsInput" devLabel="Back Faces" translation="Rückflächen"/>
+	<label commandName="ExtrudeFailed" devLabel="Curve Extraction failed" translation="Fehler bei Kurvenextraktion"/>
+	<label commandName="ExtrudeFrontSegmentsInput" devLabel="Front Faces" translation="Vorderflächen"/>
+	<label commandName="ExtrudeLengthSegmentsInput" devLabel="Length Faces" translation="Längenflächen"/>
+	<label commandName="ExtrudeSelection" devLabel="Select sketch profiles or planar faces to extrude" translation="Skizzierprofile oder ebene Flächen zum Extrudieren auswählen"/>
+	<label commandName="ExtrudeSubD" devLabel="Extrude" translation="Extrusion"/>
+	<label commandName="ExtrudeTaperAngleInput" devLabel="Angle" translation="Winkel"/>
+	<label commandName="ExtrudeWidthSegmentsInput" devLabel="Width Faces" translation="Breitenflächen"/>
+	<label commandName="Face" devLabel="Face" translation="Fläche"/>
+	<label commandName="FaceEdgeVertSelectionForSmooth" devLabel="Faces" translation="Flächen"/>
+	<label commandName="FaceSelection" devLabel="Select Face" translation="Fläche auswählen"/>
+	<label commandName="FaceSelectionForSubSet" devLabel="T-Spline Face" translation="T-Spline-Fläche"/>
+	<label commandName="FasterBetterPerformance" devLabel="Switching to faster performance mode.  Editing will be faster.  Display and analysis may be compromised." translation="Es wird in den schnelleren Leistungsmodus gewechselt, wodurch eine schnellere Bearbeitung ermöglicht wird. Anzeige und Analyse werden hierbei möglicherweise beeinträchtigt."/>
+	<label commandName="FasterModeling" devLabel="Faster Modeling" translation="Schnellere Modellierung"/>
+	<label commandName="FeatSelInput" devLabel="Feature Selection" translation="Elementauswahl"/>
+	<label commandName="FewerLabel" devLabel="Fewer" translation="Weniger"/>
+	<label commandName="FillHoleCollapse" devLabel="Collapse" translation="Ausblenden"/>
+	<label commandName="FillHoleNGON" devLabel="Fill Star" translation="Stern füllen"/>
+	<label commandName="FillHoleTessellation" devLabel="Reduced Star" translation="Reduzierter Stern"/>
+	<label commandName="FilterType" devLabel="Selection Filter" translation="Auswahlfilter"/>
+	<label commandName="FitDirection" devLabel="Fit" translation="Anpassen"/>
+	<label commandName="FlattenSelectPlane" devLabel="Select a work plane or planar B-rep face" translation="Arbeitsebene oder planare B-Rep-Fläche auswählen"/>
+	<label commandName="FlattenSelectVertices" devLabel="Select vertices and/or tangency handles to flatten" translation="Abzuflachende Scheitelpunkte und/oder Tangentengriffe auswählen"/>
+	<label commandName="FlattenType" devLabel="Flatten Type" translation="Abflachen - Typ"/>
+	<label commandName="FlipFollowCurve" devLabel="Flip Curve" translation="Kurve umkehren"/>
+	<label commandName="ForgeSelectAxisSymmetry" devLabel="Select axis or edge" translation="Achse oder Kante auswählen"/>
+	<label commandName="ForgeSelectAxisThicken" devLabel="Select axis or edge" translation="Achse oder Kante auswählen"/>
+	<label commandName="ForgeSelectChainEdge" devLabel="Select Edge" translation="Kante auswählen"/>
+	<label commandName="ForgeSelectCorner" devLabel="Specify next corner or Select first point to complete" translation="Nächste Ecke angeben oder ersten Punkt zum Abschließen auswählen"/>
+	<label commandName="ForgeSelectEdgeFillHole" devLabel="Select boundary edges" translation="Begrenzungskanten auswählen"/>
+	<label commandName="ForgeSelectFaceSymmetry" devLabel="Select face for symmetry." translation="Wählen Sie die Fläche für die Symmetrie aus."/>
+	<label commandName="ForgeSelectFirstCorner" devLabel="Specify first corner" translation="Erste Ecke angeben"/>
+	<label commandName="ForgeSelectFirstEdgeSymmetry" devLabel="Select edge on master side" translation="Kante auf Hauptseite auswählen"/>
+	<label commandName="ForgeSelectFirstFaceSymmetry" devLabel="Select face on master side" translation="Wählen Sie die Fläche auf der Hauptseite aus."/>
+	<label commandName="ForgeSelectFirstPoint" devLabel="Specify first corner" translation="Erste Ecke angeben"/>
+	<label commandName="ForgeSelectFirstRetopoCorner" devLabel="Specify first corner" translation="Erste Ecke angeben"/>
+	<label commandName="ForgeSelectFirstVertexSymmetry" devLabel="Select vertex on master side" translation="Scheitelpunkt auf Hauptseite auswählen"/>
+	<label commandName="ForgeSelectFourthCorner" devLabel="Specify fourth corner" translation="Vierte Ecke angeben"/>
+	<label commandName="ForgeSelectFourthRetopoCorner" devLabel="Specify fourth corner" translation="Vierte Ecke angeben"/>
+	<label commandName="ForgeSelectInterpolateSurface" devLabel="Select body" translation="Körper auswählen"/>
+	<label commandName="ForgeSelectPlaneSymmetry" devLabel="Select a plane or planar face" translation="Ebene oder ebene Fläche auswählen"/>
+	<label commandName="ForgeSelectPullFaces" devLabel="Select target" translation="Ziel auswählen"/>
+	<label commandName="ForgeSelectRetoPoint" devLabel="Specify first corner" translation="Erste Ecke angeben"/>
+	<label commandName="ForgeSelectRetopoCorner" devLabel="Specify next corner or Select first point to complete" translation="Nächste Ecke angeben oder ersten Punkt zum Abschließen auswählen"/>
+	<label commandName="ForgeSelectSecondCorner" devLabel="Specify second corner" translation="Zweite Ecke angeben"/>
+	<label commandName="ForgeSelectSecondEdgeSymmetry" devLabel="Select edge on mirror side" translation="Kante auf Spiegelseite auswählen"/>
+	<label commandName="ForgeSelectSecondFaceSymmetry" devLabel="Select face on mirror side" translation="Fläche auf der Spiegelseite auswählen"/>
+	<label commandName="ForgeSelectSecondPoint" devLabel="Specify size of rectangle" translation="Größe des Rechtecks angeben"/>
+	<label commandName="ForgeSelectSecondRetopoCorner" devLabel="Specify second corner" translation="Zweite Ecke angeben"/>
+	<label commandName="ForgeSelectSecondVertexSymmetry" devLabel="Select vertex on mirror side" translation="Scheitelpunkt auf Spiegelseite auswählen"/>
+	<label commandName="ForgeSelectSizeOfRectangle" devLabel="Specify size of rectangle" translation="Größe des Rechtecks angeben"/>
+	<label commandName="ForgeSelectSketchPlane" devLabel="" translation=""/>
+	<label commandName="ForgeSelectSketchPlaneClear" devLabel="" translation=""/>
+	<label commandName="ForgeSelectSketchPlaneFirst" devLabel="Select plane or Snap first point" translation="Ebene auswählen oder ersten Punkt fangen"/>
+	<label commandName="ForgeSelectSketchPlaneFourth" devLabel="Select plane or Snap fourth point" translation="Ebene auswählen oder vierten Punkt fangen"/>
+	<label commandName="ForgeSelectSketchPlaneNoValue" devLabel="" translation=""/>
+	<label commandName="ForgeSelectSketchPlaneSecond" devLabel="Select plane or Snap second point" translation="Ebene auswählen oder zweiten Punkt fangen"/>
+	<label commandName="ForgeSelectSketchPlaneThird" devLabel="Select plane or Snap third point" translation="Ebene auswählen oder dritten Punkt fangen"/>
+	<label commandName="ForgeSelectSurfaceForThicken" devLabel="Select body" translation="Körper auswählen"/>
+	<label commandName="ForgeSelectSurfaceSymmetry" devLabel="Select T-Spline body" translation="T-Spline-Körper auswählen"/>
+	<label commandName="ForgeSelectThirdCorner" devLabel="Specify third corner" translation="Dritte Ecke angeben"/>
+	<label commandName="ForgeSelectThirdRetopoCorner" devLabel="Specify third corner" translation="Dritte Ecke angeben"/>
+	<label commandName="ForgeSelectVertices" devLabel="Select vertices" translation="Scheitelpunkte auswählen"/>
+	<label commandName="ForgeSpecifyCenterPoint" devLabel="Specify center point" translation="Mittelpunkt angeben"/>
+	<label commandName="ForgeSpecifyFirstCorner" devLabel="Specify first corner" translation="Erste Ecke angeben"/>
+	<label commandName="ForgeSpecifyRadiusOfCircle" devLabel="Specify Diameter of Cylinder" translation="Durchmesser des Zylinders angeben"/>
+	<label commandName="ForgeSpecifyRadiusOfTorus" devLabel="Specify diameter of torus" translation="Durchmesser des Torus angeben"/>
+	<label commandName="ForgeSpecifySizeOfRectangle" devLabel="Specify size of rectangle" translation="Größe des Rechtecks angeben"/>
+	<label commandName="ForgeTSplineMakeUniformCmd" devLabel="Select T-Spline bodies" translation="T-Spline-Körper auswählen"/>
+	<label commandName="ForgeTSplineUpgradeSurfaceVersionCmd" devLabel="Select T-Spline bodies" translation="T-Spline-Körper auswählen"/>
+	<label commandName="FrameTransformInput" devLabel="coordinate" translation="Koordinate"/>
+	<label commandName="FreezeInput" devLabel="T-Spline Faces/Edges" translation="T-Spline-Flächen/-Kanten"/>
+	<label commandName="FreezeResult" devLabel="Freeze Result" translation="Ergebnis einfrieren"/>
+	<label commandName="FrozenSurfChangedNonPreview" devLabel="The last operation unfroze a frozen region to make the requested shape change. Undo this operation to revert the shape change and restore the frozen region" translation="Beim letzten Vorgang wurde eine eingefrorene Region freigegeben, um die gewünschte Formänderung vorzunehmen. Machen Sie diesen Vorgang rückgängig, um die Formänderung zu entfernen und die eingefrorene Region wiederherzustellen."/>
+	<label commandName="FrozenSurfChangedPreview" devLabel="This operation will need to unfreeze a frozen region to make the requested shape change." translation="Bei diesem Vorgang muss eine eingefrorene Region freigegeben werden, damit die gewünschte Formänderung vorgenommen werden kann."/>
+	<label commandName="Full" devLabel="Full" translation="Vollständig"/>
+	<label commandName="FusionSelectAxis" devLabel="Select sketch curve, edge or axis" translation="Skizzierkurve, Kante oder Achse auswählen"/>
+	<label commandName="FusionSelectPathPipe" devLabel="Select sketch curves or edges" translation="Skizzierkurven oder Kanten auswählen"/>
+	<label commandName="FusionSelectPathSweep" devLabel="Select sketch curves or edges" translation="Skizzierkurven oder Kanten auswählen"/>
+	<label commandName="FusionSelectProfileCurveSweep" devLabel="Select sketch profiles or planar faces to sweep" translation="Skizzierprofile oder ebene Flächen für Sweeping auswählen"/>
+	<label commandName="FusionSelectSketchPlane" devLabel="Select a plane or planar face" translation="Ebene oder ebene Fläche auswählen"/>
+	<label commandName="GeometrylabelGroup" devLabel="Geometry Labels" translation="Geometriebezeichnungen"/>
+	<label commandName="GlobalSetting" devLabel="Global Settings" translation="Globale Einstellungen"/>
+	<label commandName="GrowShrinkInput" devLabel="Grow/Shrink" translation="Vergrößern/verkleinern"/>
+	<label commandName="HeightFaces" devLabel="Height Faces" translation="Höhenflächen"/>
+	<label commandName="HeightSymmetry" devLabel="Height Symmetry" translation="Höhensymmetrie"/>
+	<label commandName="High Face Count Warning" devLabel="%1% is a large number of faces that could impact performance.  You can proceed or modify the number of faces." translation="%1% ist eine große Anzahl von Flächen, die sich auf die Leistung auswirken kann. Sie können fortfahren oder die Anzahl der Flächen ändern."/>
+	<label commandName="HoldShiftSelectDrivingCurveCVs" devLabel="Hold Shift to select multiple control points or edit driving curve" translation="UMSCHALTTASTE gedrückt halten, um mehrere Kontrollpunkte auszuwählen oder die Leitkurve zu bearbeiten"/>
+	<label commandName="Imperial" devLabel="ft" translation="ft"/>
+	<label commandName="InchImperial" devLabel="in" translation="in"/>
+	<label commandName="InputType" devLabel="Input Type" translation="Eingabetyp"/>
+	<label commandName="InputTypeFace" devLabel="Face" translation="Fläche"/>
+	<label commandName="InputTypeFaceEdgeVertices" devLabel="Face Edge Vertices" translation="Flächenkanten-Scheitelpunkte"/>
+	<label commandName="InsertEdgeMode" devLabel="Insertion Mode" translation="Einfügemodus"/>
+	<label commandName="InsertEdgeModeExact" devLabel="Exact" translation="Genau"/>
+	<label commandName="InsertEdgeModeSimple" devLabel="Simple" translation="Einfach"/>
+	<label commandName="InsertEdgeSide" devLabel="Insertion Side" translation="Einfügeseite"/>
+	<label commandName="InsertPointCommandInput" devLabel="Insertion Point" translation="Einfügepunkt"/>
+	<label commandName="InsertPointMode" devLabel="Insertion Mode" translation="Einfügemodus"/>
+	<label commandName="InsertPointModeExact" devLabel="Exact" translation="Genau"/>
+	<label commandName="InsertPointModeSimple" devLabel="Simple" translation="Einfach"/>
+	<label commandName="InsertPointOnPathCommand" devLabel="Insert Section" translation="Schnitt einfügen"/>
+	<label commandName="InvertInput" devLabel="Invert  Selection" translation="Auswahl invertieren"/>
+	<label commandName="IsolateSymmetry3" devLabel="Select faces, edges or vertices" translation="Flächen, Kanten oder Scheitelpunkte auswählen"/>
+	<label commandName="JointInput" devLabel="Handle" translation="Griff"/>
+	<label commandName="JointType" devLabel="End Type" translation="Endentyp"/>
+	<label commandName="LengthSymmetry" devLabel="Length Symmetry" translation="Längensymmetrie"/>
+	<label commandName="Line" devLabel="Line" translation="Linie"/>
+	<label commandName="LoftPOPInput" devLabel="PointMappingInput" translation="Eingabe für Punktzuweisung"/>
+	<label commandName="LoopGrowInput" devLabel="Loop Grow Selection" translation="Kontur aus Auswahl erweitern"/>
+	<label commandName="LoopGrowShrinkInput" devLabel="Loop Grow/Shrink" translation="Kontur vergrößern/verkleinern"/>
+	<label commandName="LoopInput" devLabel="Loop  Selection" translation="Durch die Auswahl &quot;Schleife&quot;"/>
+	<label commandName="LoopShrinkInput" devLabel="Loop Shrink Selection" translation="Kontur aus Auswahl einschränken"/>
+	<label commandName="MMKS" devLabel="m" translation="m"/>
+	<label commandName="MaintainCreaseEdgesOption" devLabel="Maintain Crease Edges" translation="Kanten knicken beibehalten"/>
+	<label commandName="Make Uniform" devLabel="Make Uniform" translation="Einheitlich machen"/>
+	<label commandName="MatchCurvatureMode" devLabel="Curvature" translation="Krümmung"/>
+	<label commandName="MatchCurveParamWeight" devLabel="Curvature Scale" translation="Krümmungsmaßstab"/>
+	<label commandName="MatchFalloffRange" devLabel="Falloff Range" translation="Falloff-Bereich"/>
+	<label commandName="MatchFlipAlignmentDirection" devLabel="Flip Direction" translation="Richtung umkehren"/>
+	<label commandName="MatchFlipTangentDirection" devLabel="Tangent Direction" translation="Tangentenrichtung"/>
+	<label commandName="MatchProfileInput" devLabel="T-Spline Edges" translation="T-Spline-Kanten"/>
+	<label commandName="MatchProfileMatchInput" devLabel="Target Edges" translation="Zielkanten"/>
+	<label commandName="MatchRefinementTolerance" devLabel="Tolerance" translation="Toleranz"/>
+	<label commandName="MatchTangentScale" devLabel="Tangent Weight" translation="Tangentengewicht"/>
+	<label commandName="MatchUniformMode" devLabel="Uniform" translation="Einheitlich"/>
+	<label commandName="MatchUsePropagation" devLabel="Falloff" translation="Falloff"/>
+	<label commandName="MatchUseRefinement" devLabel="Tolerance" translation="Toleranz"/>
+	<label commandName="MaxErrorDeviationKey" devLabel="MaxErrorDeviation" translation="MaxErrorDeviation"/>
+	<label commandName="MaxErrorDeviationString" devLabel="Max Deviation: " translation="Max. Abweichung: "/>
+	<label commandName="MergeEdgeSelection1" devLabel="Select side one boundary edges" translation="Begrenzungskanten von Seite 1 auswählen"/>
+	<label commandName="MergeEdgeSelection2" devLabel="Select side two boundary edges" translation="Begrenzungskanten von Seite 2 auswählen"/>
+	<label commandName="MergeEdgeSideOne" devLabel="Edge Group One" translation="Kantengruppe 1"/>
+	<label commandName="MergeEdgeSideTwo" devLabel="Edge Group Two" translation="Kantengruppe 2"/>
+	<label commandName="MmMKS" devLabel="mm" translation="mm"/>
+	<label commandName="MoreLabel" devLabel="More" translation="Mehr"/>
+	<label commandName="NGons" devLabel="Number of Sides" translation="Anzahl der Seiten"/>
+	<label commandName="NewBodyInNewCompType" devLabel="New Component" translation="Neue Komponente"/>
+	<label commandName="NewBodyType" devLabel="New Body" translation="Neuer Körper"/>
+	<label commandName="NextUInput1" devLabel="NextU  Selection" translation="NextU-Auswahl"/>
+	<label commandName="NextUInput2" devLabel="Next U Selection" translation="Nächste U-Auswahl"/>
+	<label commandName="NextUInput3" devLabel="NextU  Selection" translation="NextU-Auswahl"/>
+	<label commandName="NextUInput4" devLabel="Next U Selection" translation="Nächste U-Auswahl"/>
+	<label commandName="NextVInput1" devLabel="NextV  Selection" translation="NextV-Auswahl"/>
+	<label commandName="NextVInput2" devLabel="Next V Selection" translation="Nächste V-Auswahl"/>
+	<label commandName="NextVInput3" devLabel="NextV  Selection" translation="NextV-Auswahl"/>
+	<label commandName="NextVInput4" devLabel="Next V Selection" translation="Nächste V-Auswahl"/>
+	<label commandName="No Edge" devLabel="No Edge" translation="Keine Kante"/>
+	<label commandName="NoComponentsExist1" devLabel="This operation affects one or more frozen regions." translation="Dieser Vorgang wirkt sich auf mindestens eine eingefrorene Region aus."/>
+	<label commandName="NumericalInputsGroup" devLabel="Numerical Inputs" translation="Numerische Eingaben"/>
+	<label commandName="OneSide" devLabel="One Side" translation="Eine Seite"/>
+	<label commandName="OpenType" devLabel="Open" translation="Öffnen"/>
+	<label commandName="Operation" devLabel="Operation" translation="Vorgang"/>
+	<label commandName="Performance" devLabel="Performance" translation="Leistung"/>
+	<label commandName="PipeJoints" devLabel="End Types" translation="Endentypen"/>
+	<label commandName="PipePathInput" devLabel="Path" translation="Pfad"/>
+	<label commandName="PipeSections" devLabel="Sections" translation="Schnitte"/>
+	<label commandName="PipeSegments" devLabel="Segments" translation="Segmente"/>
+	<label commandName="PlanarCurve" devLabel="Planar Curve" translation="Planare Kurve"/>
+	<label commandName="Plane" devLabel="Plane" translation="Ebene"/>
+	<label commandName="PlaneSelection" devLabel="Mirror Plane" translation="Spiegelebene"/>
+	<label commandName="PossibleSymmetry" devLabel="%1% sided symmetry [%2%]" translation="%1%-seitige Symmetrie [%2%]"/>
+	<label commandName="PossibleSymmetry1" devLabel="%1% sided symmetry" translation="%1%-seitige Symmetrie"/>
+	<label commandName="PossibleSymmetryKey" devLabel="%1%%2%" translation="%1%%2%"/>
+	<label commandName="PossibleSymmetryKey1" devLabel="%1%" translation="%1%"/>
+	<label commandName="PrevUInput1" devLabel="PrevU  Selection" translation="PrevU-Auswahl"/>
+	<label commandName="PrevUInput2" devLabel="Prev U Selection" translation="Vorherige U-Auswahl"/>
+	<label commandName="PrevUInput3" devLabel="PrevU  Selection" translation="PrevU-Auswahl"/>
+	<label commandName="PrevUInput4" devLabel="Prev U Selection" translation="Vorherige U-Auswahl"/>
+	<label commandName="PrevVInput1" devLabel="PrevV  Selection" translation="PrevV-Auswahl"/>
+	<label commandName="PrevVInput2" devLabel="Prev V Selection" translation="Vorherige V-Auswahl"/>
+	<label commandName="PrevVInput3" devLabel="PrevV  Selection" translation="PrevV-Auswahl"/>
+	<label commandName="PrevVInput4" devLabel="Prev V Selection" translation="Vorherige V-Auswahl"/>
+	<label commandName="ProfileChainSelect" devLabel="Chain Selection" translation="Kette auswählen"/>
+	<label commandName="ProfileChainSelection" devLabel="Profile Chain Selection" translation="Profil-Kettenauswahl"/>
+	<label commandName="ProfileChainSelectionOption" devLabel="Chain Selection" translation="Kette auswählen"/>
+	<label commandName="ProfileChainSelectionOption2" devLabel="Profile Chain Selection" translation="Profil-Kettenauswahl"/>
+	<label commandName="PullType" devLabel="Pull Type" translation="Zugtyp"/>
+	<label commandName="RangeInput" devLabel="Range  Selection" translation="Bereich Auswahl"/>
+	<label commandName="RangeSelection" devLabel="Range Selection" translation="Bereichsauswahl"/>
+	<label commandName="ReapirBodySelectBody" devLabel="Select body" translation="Körper auswählen"/>
+	<label commandName="ReapirBodySelectBodyVertex" devLabel="Select body or vertex" translation="Körper oder Scheitelpunkt auswählen"/>
+	<label commandName="RectType" devLabel="Rectangle Type" translation="Rechtecktyp"/>
+	<label commandName="RectType2Point" devLabel="2-Point" translation="Zwei Punkte"/>
+	<label commandName="RectTypeCenter" devLabel="Center" translation="Mittelpunkt"/>
+	<label commandName="RemoveInput" devLabel="Shrink  Selection" translation="Auswahl einschränken"/>
+	<label commandName="RemoveSection" devLabel="Remove Section" translation="Abschnitt entfernen"/>
+	<label commandName="ResetJoint" devLabel="Reset End Type" translation="Endentyp zurücksetzen"/>
+	<label commandName="ResetSection" devLabel="Reset Section" translation="Schnitt zurücksetzen"/>
+	<label commandName="ResetSegment" devLabel="Reset Segment" translation="Segment zurücksetzen"/>
+	<label commandName="RetopoOptionGroup" devLabel="Object Snap" translation="Objektfang"/>
+	<label commandName="RetopoOptionInput" devLabel="Object Snap" translation="Objektfang"/>
+	<label commandName="RetopoPointInput" devLabel="Retopo Point" translation="Topologie von Punkt erneuern"/>
+	<label commandName="RevolveAgainstAngleInput" devLabel="Angle" translation="Winkel"/>
+	<label commandName="RevolveAlongAngleInput" devLabel="Angle" translation="Winkel"/>
+	<label commandName="RevolveAxisInput" devLabel="Axis" translation="Achse"/>
+	<label commandName="RevolveFailed" devLabel="Curve Extraction failed" translation="Fehler bei Kurvenextraktion"/>
+	<label commandName="RevolveProfileInput" devLabel="Profile" translation="Profil"/>
+	<label commandName="RevolveSelection" devLabel="Select sketch profiles, planar faces or T-Spline edges to revolve" translation="Skizzierprofile, ebene Flächen oder T-Spline-Kanten für Drehung auswählen"/>
+	<label commandName="RingGrowInput" devLabel="Ring Grow Selection" translation="Ring Auswahl erweitern"/>
+	<label commandName="RingGrowShrinkInput" devLabel="Ring Grow/Shrink" translation="Ring erweitern/verkleinern"/>
+	<label commandName="RingInput" devLabel="Ring  Selection" translation="Ringauswahl"/>
+	<label commandName="RingShrinkInput" devLabel="Ring Shrink Selection" translation="Ring Auswahl einschränken"/>
+	<label commandName="RotateXAngle" devLabel="X Angle" translation="X-Winkel"/>
+	<label commandName="RotateXInput" devLabel="X Angle" translation="X-Winkel"/>
+	<label commandName="RotateYAngle" devLabel="Y Angle" translation="Y-Winkel"/>
+	<label commandName="RotateYInput" devLabel="Y Angle" translation="Y-Winkel"/>
+	<label commandName="RotateZAngle" devLabel="Z Angle" translation="Z-Winkel"/>
+	<label commandName="RotateZInput" devLabel="Z Angle" translation="Z-Winkel"/>
+	<label commandName="S" devLabel="S" translation="S"/>
+	<label commandName="SamplingType" devLabel="Spacing" translation="Abstand"/>
+	<label commandName="SectionAngle" devLabel="Angle" translation="Winkel"/>
+	<label commandName="SectionDefaultDiameter" devLabel="Global Diameter" translation="Globaler Durchmesser"/>
+	<label commandName="SectionDiameter" devLabel="Diameter" translation="Durchmesser"/>
+	<label commandName="SectionInput" devLabel="Section" translation="Schnitt"/>
+	<label commandName="SectionPosition" devLabel="Position" translation="Position"/>
+	<label commandName="SegmentAspectRatioInput" devLabel="Density" translation="Dichte"/>
+	<label commandName="SegmentCountInput" devLabel="Segments" translation="Segmente"/>
+	<label commandName="SegmentInput" devLabel="Segment" translation="Segment"/>
+	<label commandName="SelOptionGroup" devLabel="Selection Options" translation="Auswahloptionen"/>
+	<label commandName="SelectBevelEdges" devLabel="Select edges" translation="Kanten auswählen"/>
+	<label commandName="SelectDirection" devLabel="Select Plane" translation="Ebene auswählen"/>
+	<label commandName="SelectDirectionAxis" devLabel="Axis" translation="Achse"/>
+	<label commandName="SelectDirectionNormal" devLabel="Normal" translation="Normale"/>
+	<label commandName="SelectDrivingCurveCVs" devLabel="Select control points" translation="Steuerpunkte auswählen"/>
+	<label commandName="SelectEdge" devLabel="Select Edge" translation="Kante auswählen"/>
+	<label commandName="SelectEdgeToInsert" devLabel="Select edges" translation="Kanten auswählen"/>
+	<label commandName="SelectEdges" devLabel="Select edges" translation="Kanten auswählen"/>
+	<label commandName="SelectFacesEraseFill" devLabel="Select faces to erase and fill" translation="Zu löschende und zu füllende Flächen auswählen"/>
+	<label commandName="SelectInsertEdge" devLabel="Select edges" translation="Kanten auswählen"/>
+	<label commandName="SelectLine" devLabel="Select Line" translation="Linie auswählen"/>
+	<label commandName="SelectParallelDirection" devLabel="Select Parallel Plane" translation="Parallele Ebene auswählen"/>
+	<label commandName="SelectParallelLine" devLabel="Select Parallel Line" translation="Parallele Linie auswählen"/>
+	<label commandName="SelectPlaneOrSnapNextPointOrSnapFirstPointToComplete" devLabel="Select Plane or Snap next point or Snap first point to complete" translation="Ebene auswählen oder nächsten Punkt oder ersten Punkt fangen zum Abschließen"/>
+	<label commandName="SelectPointOnCurveToInsertSection" devLabel="Insert Section " translation="Schnitt einfügen "/>
+	<label commandName="SelectPointOnEdgeOrVertexToInsert" devLabel="Select vertex or edge" translation="Knoten oder Kante wählen"/>
+	<label commandName="SelectSecondVertexWeld" devLabel="Select vertices" translation="Scheitelpunkte auswählen"/>
+	<label commandName="SelectSurfaceClearSymmetry" devLabel="Select T-Spline body" translation="T-Spline-Körper auswählen"/>
+	<label commandName="SelectTwoPoints" devLabel="Select Two Points" translation="Zwei Punkte auswählen"/>
+	<label commandName="SelectTwoVertexToWeld" devLabel="Select vertices" translation="Scheitelpunkte auswählen"/>
+	<label commandName="SelectionForIsolateSymmetry" devLabel="Isolate Symmetry" translation="Symmetrie isolieren"/>
+	<label commandName="SelectionForSymmetry" devLabel="Symmetry" translation="Symmetrie"/>
+	<label commandName="SelectionReorderCommandInput" devLabel="ProfileOrder" translation="Profilreihenfolge"/>
+	<label commandName="SelectionSpaceMode" devLabel="Selection Space" translation="Auswahlbereich"/>
+	<label commandName="ShadedBox" devLabel="Box" translation="Quader"/>
+	<label commandName="ShadedSmooth" devLabel="Smooth" translation="Glatt"/>
+	<label commandName="Sharp" devLabel="Sharp" translation="Scharf"/>
+	<label commandName="ShowDeviation" devLabel="Show Deviation" translation="Abweichung anzeigen"/>
+	<label commandName="Simple" devLabel="Simple" translation="Einfach"/>
+	<label commandName="Simple Mode" devLabel="Select vertex or edge" translation="Knoten oder Kante wählen"/>
+	<label commandName="Single" devLabel="Single" translation="Einzeln"/>
+	<label commandName="SketchFirstPointInput" devLabel="Sketch first point" translation="Ersten Punkt skizzieren"/>
+	<label commandName="SketchSecondPointInput" devLabel="Sketch second point" translation="Zweiten Punkt skizzieren"/>
+	<label commandName="Smooth" devLabel="Wireframe Smooth" translation="Drahtkörper glätten"/>
+	<label commandName="SmoothDisplayInput" devLabel="Smooth Display" translation="Glatte Darstellung"/>
+	<label commandName="SmoothModeBrush" devLabel="Brush" translation="Pinsel"/>
+	<label commandName="SmoothModeSelection" devLabel="Selection" translation="Auswahl"/>
+	<label commandName="SnapDirection" devLabel="Snap direction" translation="Fangrichtung"/>
+	<label commandName="Soft" devLabel="Soft" translation="Weich"/>
+	<label commandName="SoftBulgeFalloff" devLabel="Bulge" translation="Ausbuchtung"/>
+	<label commandName="SoftLinearFalloff" devLabel="Linear" translation="Linear"/>
+	<label commandName="SoftSelDistance" devLabel="Distance" translation="Abstand"/>
+	<label commandName="SoftSelExtent" devLabel="Extent" translation="Größe"/>
+	<label commandName="SoftSelFaceCount" devLabel="Face Count" translation="Flächenanzahl"/>
+	<label commandName="SoftSelOptionGroup" devLabel="Soft Modification" translation="Weiche Änderungen"/>
+	<label commandName="SoftSelRectFaceCount" devLabel="Rectangular Face Count" translation="Anzahl Rechteckflächen"/>
+	<label commandName="SoftSelTransition" devLabel="Transition" translation="Übergang"/>
+	<label commandName="SoftSmoothFalloff" devLabel="Smooth" translation="Glatt"/>
+	<label commandName="SomePossibleSymmetry" devLabel="%1%%2%" translation="%1%%2%"/>
+	<label commandName="SomePossibleSymmetry1" devLabel="%1%" translation="%1%"/>
+	<label commandName="SpacingMode" devLabel="Spacing" translation="Abstand"/>
+	<label commandName="SpanCount" devLabel="Segments" translation="Segmente"/>
+	<label commandName="Specify" devLabel="Specify" translation="Angeben"/>
+	<label commandName="SpikeType" devLabel="Spike" translation="Spitze"/>
+	<label commandName="SquareType" devLabel="Square" translation="Quadrat"/>
+	<label commandName="StraightenSelectLine" devLabel="Select a line to straighten along" translation="Linie zum Begradigen auswählen"/>
+	<label commandName="StraightenSelectParallelLine" devLabel="Select a parallel line to straighten along" translation="Parallele Linie zum Begradigen auswählen"/>
+	<label commandName="StraightenSelectTwoPoints" devLabel="Select two points to define a line to straighten along" translation="Zwei Punkte zum Definieren einer Linie zum Begradigen auswählen"/>
+	<label commandName="StraightenSelectVertices" devLabel="Select vertices to straighten" translation="Zu begradigende Scheitelpunkte auswählen"/>
+	<label commandName="StraightenType" devLabel="Straighten Type" translation="Begradigen - Typ"/>
+	<label commandName="StrutHoleSelTip" devLabel="Strut/Hole Selection" translation="Streben-/Bohrungsauswahl"/>
+	<label commandName="SubDivideNGonWarning" devLabel="Specifying the number of subdivisions can only be applied to four sided faces." translation="Die Anzahl der Unterteilungen kann nur für vierseitige Flächen festgelegt werden."/>
+	<label commandName="SubSet" devLabel="Select faces" translation="Flächen auswählen"/>
+	<label commandName="SubSetMode" devLabel="Insert Mode" translation="Einfügemodus"/>
+	<label commandName="SubSetModeExact" devLabel="Exact" translation="Genau"/>
+	<label commandName="SubSetModeSimple" devLabel="Simple" translation="Einfach"/>
+	<label commandName="Subdivide" devLabel="Subdivide" translation="Unterteilen"/>
+	<label commandName="SurfaceSelection" devLabel="Select Surface" translation="Fläche auswählen"/>
+	<label commandName="SweepFullPathInput" devLabel="Full Path" translation="Vollständiger Pfad"/>
+	<label commandName="SweepOrientationType" devLabel="Orientation" translation="Ausrichtung"/>
+	<label commandName="SweepPOPAgainstInput" devLabel="Distance" translation="Abstand"/>
+	<label commandName="SweepPOPAlongInput" devLabel="Distance" translation="Abstand"/>
+	<label commandName="SweepParallel" devLabel="Parallel" translation="Parallel"/>
+	<label commandName="SweepPathInput" devLabel="Path" translation="Pfad"/>
+	<label commandName="SweepPerpendicular" devLabel="Perpendicular" translation="Lotrecht"/>
+	<label commandName="SweepProfileInput" devLabel="Profile" translation="Profil"/>
+	<label commandName="SymSegmentInput" devLabel="Symmetric Faces" translation="Symmetrische Flächen"/>
+	<label commandName="Symmetric" devLabel="Symmetric" translation="Symmetrisch"/>
+	<label commandName="SymmetricFaces" devLabel="Symmetric Faces" translation="Symmetrische Flächen"/>
+	<label commandName="SymmetryCircular" devLabel="Circular" translation="Rund"/>
+	<label commandName="SymmetryMirror" devLabel="Mirror" translation="Spiegeln"/>
+	<label commandName="SymmetryNone" devLabel="None" translation="Keine"/>
+	<label commandName="SymmetryToleranceValue" devLabel="Weld Tolerance" translation="Schweißtoleranz"/>
+	<label commandName="SymmetryType" devLabel="Symmetry" translation="Symmetrie"/>
+	<label commandName="SymmetryWeldType" devLabel="Weld" translation="Schweißen"/>
+	<label commandName="TSMFilesFilter" devLabel="TSM File(*.tsm)" translation="TSM-Datei (*.tsm)"/>
+	<label commandName="TSpline Environment TT" devLabel="Form" translation="Form"/>
+	<label commandName="TSplineAppendFaceCommand" devLabel="Face" translation="Fläche"/>
+	<label commandName="TSplineBetterDisplay" devLabel="Switching to T-Spline Better Display mode.  Large models could edit more slowly.  Display and analysis will be best quality." translation="Es wird in den Modus Bessere Darstellung des T-Spline gewechselt. Die Bearbeitung großer Modelle ist möglicherweise verlangsamt. Anzeige und Analyse haben die beste Qualität."/>
+	<label commandName="TSplineBevelEdge" devLabel="Bevel Edge" translation="Abschrägungskante"/>
+	<label commandName="TSplineBody" devLabel="T-Spline Body" translation="T-Spline-Körper"/>
+	<label commandName="TSplineBoxHtSegErr" devLabel="Height faces should be greater than or equal to 1" translation="Der Wert für Höhenflächen muss größer als oder gleich 1 sein."/>
+	<label commandName="TSplineBoxLenSegErr" devLabel="Length faces should be greater than or equal to 1" translation="Der Wert für Längenflächen muss größer als oder gleich 1 sein."/>
+	<label commandName="TSplineBoxTotalSegErr" devLabel="The total number of faces cannot exceed 100,000" translation="Die Gesamtzahl der Flächen darf 100,000 nicht überschreiten"/>
+	<label commandName="TSplineBoxWidSegErr" devLabel="Width faces should be greater than or equal to 1" translation="Der Wert für Breitenflächen muss größer als oder gleich 1 sein."/>
+	<label commandName="TSplineBridgeSubDCmd" devLabel="Bridge" translation="Brücke"/>
+	<label commandName="TSplineClearSymmetryCommand" devLabel="Clear Symmetry" translation="Symmetrie löschen"/>
+	<label commandName="TSplineClosedEdgeLoopWarning" devLabel="The selection formed a closed loop, which cannot be used for Edit by Curve. The last selected edge has been deselected." translation="Die Auswahl hat eine geschlossene Kontur gebildet, die nicht für Nach Kurve bearbeiten verwendet werden kann. Die letzte ausgewählte Kante wurde abgewählt."/>
+	<label commandName="TSplineCreasedEdge" devLabel="Crease" translation="Knicken"/>
+	<label commandName="TSplineCylCirSymErr" devLabel="To apply circular symmetry, symmetric faces should be greater than or equal to 1" translation="Um kreisförmige Symmetrie anzuwenden, müssen symmetrische Flächen größer als oder gleich 1 sein."/>
+	<label commandName="TSplineCylDiaSegErr" devLabel="Radius faces should be greater than or equal to 3" translation="Radiusflächen müssen größer als oder gleich 3 sein."/>
+	<label commandName="TSplineCylDiaSegSymErr" devLabel="To apply X or Y symmetry, radius faces should be greater than or equal to 4" translation="Um X- oder Y-Symmetrie anzuwenden, müssen Radiusflächen größer als oder gleich 4 sein."/>
+	<label commandName="TSplineCylHtSegErr" devLabel="Height faces should be greater than or equal to 1" translation="Der Wert für Höhenflächen muss größer als oder gleich 1 sein."/>
+	<label commandName="TSplineCylHtSegSymErr" devLabel="To apply Z symmetry, height faces should be greater than or equal to 1" translation="Um Z-Symmetrie anzuwenden, muss der Wert für Höhenflächen größer als oder gleich 1 sein."/>
+	<label commandName="TSplineCylMirSymErr" devLabel="To apply both X and Y symmetry, radius faces should be multiples of 4" translation="Um sowohl X- als auch Y-Symmetrie anzuwenden, müssen Radiusflächen ein Vielfaches von 4 sein."/>
+	<label commandName="TSplineCylTotalSegErr" devLabel="The total number of faces cannot exceed 100,000" translation="Die Gesamtzahl der Flächen darf 100,000 nicht überschreiten"/>
+	<label commandName="TSplineCylindrifyCmd" devLabel="Cylindrify" translation="Zylindrisch machen"/>
+	<label commandName="TSplineDiagnosticCommand" devLabel="T-Spline Diagnostics" translation="T-Spline-Analyse"/>
+	<label commandName="TSplineDiagnosticCommandDesc" devLabel="T-Spline Diagnostics Info" translation="Info zu T-Spline-Analyse"/>
+	<label commandName="TSplineDumpEntityCommand" devLabel="T-Spline Entity Info" translation="Info zu T-Spline-Objekt"/>
+	<label commandName="TSplineDumpEntityCommandDesc" devLabel="T-Spline Entity Info" translation="Info zu T-Spline-Objekt"/>
+	<label commandName="TSplineEdge" devLabel="T-Spline Edge" translation="T-Spline-Kante"/>
+	<label commandName="TSplineEdges" devLabel="T-Spline Edges" translation="T-Spline-Kanten"/>
+	<label commandName="TSplineEditByCurve" devLabel="Edit By Curve" translation="Nach Kurve bearbeiten"/>
+	<label commandName="TSplineEditCommand" devLabel="Edit Form" translation="Form bearbeiten"/>
+	<label commandName="TSplineEntity" devLabel="T-Spline Entity" translation="T-Spline-Objekt"/>
+	<label commandName="TSplineEntitySelection" devLabel="T-Spline Entity" translation="T-Spline-Objekt"/>
+	<label commandName="TSplineEraseAndFillCmd" devLabel="Erase And Fill" translation="Löschen und füllen"/>
+	<label commandName="TSplineFaces" devLabel="T-Spline Faces" translation="T-Spline-Flächen"/>
+	<label commandName="TSplineFillHoleCmd" devLabel="Fill Hole" translation="Bohrung füllen"/>
+	<label commandName="TSplineFlattenSubDCmd" devLabel="Flatten" translation="Abflachen"/>
+	<label commandName="TSplineFreezeCancel" devLabel="Cancel" translation="Abbrechen"/>
+	<label commandName="TSplineFreezeCmd" devLabel="Freeze" translation="Einfrieren"/>
+	<label commandName="TSplineFreezeSelection" devLabel="Select faces or edges to freeze" translation="Flächen oder Kanten zum Einfrieren auswählen"/>
+	<label commandName="TSplineImpCantFindComp" devLabel="Cannot find appropriate component for adding T-Spline!" translation="Keine entsprechende Komponente zum Hinzufügen von T-Spline gefunden"/>
+	<label commandName="TSplineImportCommand" devLabel="Insert T-Spline" translation="T-Spline einfügen"/>
+	<label commandName="TSplineInsertEdge" devLabel="Insert Edge" translation="Kante einfügen"/>
+	<label commandName="TSplineInsertPointCommand" devLabel="Insert Point" translation="Punkt einfügen"/>
+	<label commandName="TSplineInternalCircularSymmetryCmd" devLabel="Circular - Internal" translation="Rund - intern"/>
+	<label commandName="TSplineInternalMirrorSymmetryCmd" devLabel="Mirror - Internal" translation="Spiegeln - Intern"/>
+	<label commandName="TSplineInterpolateSubDCmd" devLabel="Interpolate" translation="Interpolieren"/>
+	<label commandName="TSplineIsolateSymmetryCmd" devLabel="Isolate Symmetry" translation="Symmetrie isolieren"/>
+	<label commandName="TSplineIsolateSymmetryWarningSelection" devLabel="Only entities lying on symmetric surfaces can be selected for isolate symmetry command." translation="Nur Objekte auf symmetrischen Oberflächen können für den Befehl Symmetrie isolieren ausgewählt werden."/>
+	<label commandName="TSplineMatchCmd" devLabel="Match" translation="Anpassen"/>
+	<label commandName="TSplineMatchSelectCurveMatch" devLabel="Select edges or sketch" translation="Kanten oder Skizze auswählen"/>
+	<label commandName="TSplineMatchSelectEdgeModify" devLabel="Select T-Spline edges" translation="T-Spline-Kanten auswählen"/>
+	<label commandName="TSplineMatchTarCrvCantJoin" devLabel="Target curves can't be joined together." translation="Zielkurven können nicht verbunden werden."/>
+	<label commandName="TSplineMergeEdgeCmd" devLabel="Merge Edge" translation="Kante verbinden"/>
+	<label commandName="TSplineNonManifoldWarning" devLabel="Selected T-Spline surface is not manufacturable. Modify the T-Spline surface." translation="Die ausgewählte T-Spline-Fläche kann nicht gefertigt werden. Ändern Sie die T-Spline-Fläche."/>
+	<label commandName="TSplinePipe" devLabel="TSpline Pipe" translation="T-Spline-Rohr"/>
+	<label commandName="TSplinePipeEdit" devLabel="Edit Pipe" translation="Leitung bearbeiten"/>
+	<label commandName="TSplinePlnLenSegErr" devLabel="Length faces should be greater than or equal to 1" translation="Der Wert für Längenflächen muss größer als oder gleich 1 sein."/>
+	<label commandName="TSplinePlnLenSymErr" devLabel="To apply X symmetry, length faces should be greater than or equal to 2" translation="Um X-Symmetrie anzuwenden, muss der Wert für Längenflächen größer als oder gleich 2 sein."/>
+	<label commandName="TSplinePlnTotalSegErr" devLabel="The total number of faces cannot exceed 100,000" translation="Die Gesamtzahl der Flächen darf 100,000 nicht überschreiten"/>
+	<label commandName="TSplinePlnWidSegErr" devLabel="Width faces should be greater than or equal to 1" translation="Der Wert für Breitenflächen muss größer als oder gleich 1 sein."/>
+	<label commandName="TSplinePlnWidSymErr" devLabel="To apply Y symmetry, width faces should be greater than or equal to 2" translation="Um Y-Symmetrie anzuwenden, muss der Wert für Breitenflächen größer als oder gleich 2 sein."/>
+	<label commandName="TSplinePrimitiveBoxCommand" devLabel="Box" translation="Quader"/>
+	<label commandName="TSplinePrimitiveCylinderCommand" devLabel="Cylinder" translation="Zylinder"/>
+	<label commandName="TSplinePrimitivePipe" devLabel="Pipe" translation="Leitung"/>
+	<label commandName="TSplinePrimitivePlaneCommand" devLabel="Plane" translation="Ebene"/>
+	<label commandName="TSplinePrimitiveQuadBallCommand" devLabel="Quadball" translation="QuadBall"/>
+	<label commandName="TSplinePrimitiveSphereCommand" devLabel="Sphere" translation="Kugel"/>
+	<label commandName="TSplinePrimitiveTorusCommand" devLabel="Torus" translation="Torus"/>
+	<label commandName="TSplinePullSubDCmd" devLabel="Pull" translation="Ziehen"/>
+	<label commandName="TSplineQuadSpnSegErr" devLabel="Span faces should be greater than or equal to 1" translation="Überspannte Flächen müssen größer als oder gleich 1 sein."/>
+	<label commandName="TSplineQuadTotalSegErr" devLabel="The total number of faces cannot exceed 100,000" translation="Die Gesamtzahl der Flächen darf 100,000 nicht überschreiten"/>
+	<label commandName="TSplineReflectionCircularSymmetryCmd" devLabel="Circular - Duplicate" translation="Rund - doppelt"/>
+	<label commandName="TSplineReflectionMirrorSymmetryCmd" devLabel="Mirror - Duplicate" translation="Spiegeln - doppelt"/>
+	<label commandName="TSplineRepairBodyCmd" devLabel="Repair Body" translation="Körper reparieren"/>
+	<label commandName="TSplineRevCreateFailed" devLabel="Failed to create the revolve for selected profile and axis" translation="Fehler beim Erstellen der Drehung für das ausgewählte Profil und die Achse"/>
+	<label commandName="TSplineRevolveCommand" devLabel="Revolve" translation="Drehen"/>
+	<label commandName="TSplineSaveAsTSMCommand" devLabel="Save *.tsm file" translation="*.tsm-Datei speichern"/>
+	<label commandName="TSplineSelectSketchPlaneInput" devLabel="Select a plane or planar face" translation="Ebene oder ebene Fläche auswählen"/>
+	<label commandName="TSplineSelectSketchPlaneOrSnapPoint" devLabel="Select a plane, planar face or vertex" translation="Ebene, ebene Fläche oder Scheitelpunkt auswählen"/>
+	<label commandName="TSplineSketchPlaneInput" devLabel="Sketch plane" translation="Skizzierebene"/>
+	<label commandName="TSplineSlideEdge" devLabel="Slide Edge" translation="Kante schieben"/>
+	<label commandName="TSplineSmooth" devLabel="Smooth" translation="Glatt"/>
+	<label commandName="TSplineSmoothBrushSizeInput" devLabel="Brush Size" translation="Pinselgröße"/>
+	<label commandName="TSplineSmoothDisplayWarning" devLabel="Cannot display selected T-Spline surface in Smooth Display Mode. Try the Repair Body command or modify the T-Spline surface." translation="Die ausgewählte T-Spline-Fläche kann im geglätteten Anzeigemodus nicht angezeigt werden. Verwenden Sie den Befehl Körper reparieren, oder ändern Sie die T-Spline-Fläche."/>
+	<label commandName="TSplineSmoothRateInput" devLabel="Smoothing" translation="Glättungsfilter"/>
+	<label commandName="TSplineSmoothSelectionFacets" devLabel="Select Faces" translation="Flächen auswählen"/>
+	<label commandName="TSplineSmoothingMode" devLabel="Smoothing Mode" translation="Modus Glätten"/>
+	<label commandName="TSplineSphereTotalSegErr" devLabel="The total number of faces cannot exceed 100,000" translation="Die Gesamtzahl der Flächen darf 100,000 nicht überschreiten"/>
+	<label commandName="TSplineSprCirSymErr" devLabel="To apply circular symmetry, symmetric faces should be greater than or equal to 1" translation="Um kreisförmige Symmetrie anzuwenden, müssen symmetrische Flächen größer als oder gleich 1 sein."/>
+	<label commandName="TSplineSprLanSegErr" devLabel="Longitude faces should be greater than or equal to 3" translation="Flächen in der Länge müssen größer als oder gleich 3 sein."/>
+	<label commandName="TSplineSprLatSegErr" devLabel="Latitude faces should be greater than or equal to 2" translation="Flächen in der Breite müssen größer als oder gleich 2 sein."/>
+	<label commandName="TSplineSprMirSymBothErr" devLabel="To apply both X and Y symmetry, longitude faces should be multiples of 4" translation="Um sowohl X- als auch Y-Symmetrie anzuwenden, müssen die Flächen in der Länge ein Vielfaches von 4 sein."/>
+	<label commandName="TSplineSprMirSymErr" devLabel="To apply X or Y symmetry, longitude faces should be greater than or equal to 4" translation="Um X- oder Y-Symmetrie anzuwenden, müssen die Flächen in der Länge größer als oder gleich 4 sein."/>
+	<label commandName="TSplineStraighten" devLabel="Straighten" translation="Begradigen"/>
+	<label commandName="TSplineStraigtenSurfacePointsError" devLabel="Straighten operation failed. When you use the Surface Points option, ensure that the T-Spline surface can be displayed in Smooth display mode." translation="Begradigen fehlgeschlagen. Wenn Sie die Option Oberflächenpunkte verwenden, stellen Sie sicher, dass die T-Spline-Fläche im glatten Anzeigemodus angezeigt werden kann."/>
+	<label commandName="TSplineStraigtenTwoPointsError" devLabel="Could not find a line from the given inputs." translation="In den angegebenen Eingaben wurde keine Linie gefunden."/>
+	<label commandName="TSplineSurfaceVersionUpdateAllWarning" devLabel="Upgrade all T-Spline bodies in this document" translation="Alle T-Spline-Körper in diesem Dokument aktualisieren"/>
+	<label commandName="TSplineSurfaceVersionWarning" devLabel="This body can be upgraded to take advantage of improved T-Spline modeling capabilities.  Some modification to the shape may occur.  Upgrade this body?" translation="Dieser Körper kann aktualisiert werden, um die Vorteile der verbesserten T-Spline Modellierungsfunktionen.  Einige Änderungen an der Form auftreten.  Aktualisieren der Körper?"/>
+	<label commandName="TSplineSurfaceVersionWarningTitle" devLabel="T-Spline Surface Version Upgrade" translation="T-Spline-Fläche Version aktualisieren"/>
+	<label commandName="TSplineSurfacesInterpolate" devLabel="T-Spline Body" translation="T-Spline-Körper"/>
+	<label commandName="TSplineSweepCommand" devLabel="Sweep" translation="Sweeping"/>
+	<label commandName="TSplineThicken" devLabel="Thicken" translation="Verdicken"/>
+	<label commandName="TSplineToggleCommand" devLabel="Select T-Spline Entities" translation="T-Spline-Objekte auswählen"/>
+	<label commandName="TSplineTorCirSymErr" devLabel="To apply circular symmetry, symmetric faces should be greater than or equal to 1" translation="Um kreisförmige Symmetrie anzuwenden, müssen symmetrische Flächen größer als oder gleich 1 sein."/>
+	<label commandName="TSplineTorDiaSegErr" devLabel="Radius faces should be greater than or equal to 3" translation="Radiusflächen müssen größer als oder gleich 3 sein."/>
+	<label commandName="TSplineTorDiaSegSymErr" devLabel="To apply mirror symmetry, radius faces should be greater than or equal to 4" translation="Um Spiegelsymmetrie anzuwenden, müssen Radiusflächen größer als oder gleich 4 sein."/>
+	<label commandName="TSplineTorMirSymBothErr" devLabel="To apply both X and Y symmetry, radius segments should be multiples of 4" translation="Um sowohl X- als auch Y-Symmetrie anzuwenden, müssen Radiussegmente ein Vielfaches von 4 sein."/>
+	<label commandName="TSplineTorRngSegErr" devLabel="Ring faces should be greater than or equal to 3" translation="Ringflächen müssen größer als oder gleich 3 sein."/>
+	<label commandName="TSplineTorRngSegSymErr" devLabel="To apply mirror symmetry, ring faces should be greater than or equal to 4" translation="Um Spiegelsymmetrie anzuwenden, müssen Ringflächen größer als oder gleich 4 sein."/>
+	<label commandName="TSplineTorusTotalSegErr" devLabel="The total number of faces cannot exceed 100,000" translation="Die Gesamtzahl der Flächen darf 100,000 nicht überschreiten"/>
+	<label commandName="TSplineUnCreasedEdge" devLabel="UnCrease" translation="Knicke entfernen"/>
+	<label commandName="TSplineUnFreeze" devLabel="Unfreeze" translation="Freigeben"/>
+	<label commandName="TSplineUnFreezeCmd" devLabel="UnFreeze" translation="Freigeben"/>
+	<label commandName="TSplineUnFreezeSelection" devLabel="Select frozen faces or edges to unfreeze" translation="Eingefrorene Flächen oder Kanten zum Freigeben auswählen"/>
+	<label commandName="TSplineUnWeldCommand" devLabel="UnWeld Edges" translation="Schweißung von Kanten auflösen"/>
+	<label commandName="TSplineVertices" devLabel="T-Spline Vertices" translation="T-Spline-Scheitelpunkte"/>
+	<label commandName="TSplineWeldCommand" devLabel="Weld Vertices" translation="Schweiß-Scheitelpunkte"/>
+	<label commandName="TSplinesVertices" devLabel="T-Spline Vertices" translation="T-Spline-Scheitelpunkte"/>
+	<label commandName="TargetFaces" devLabel="Targets" translation="Ziele"/>
+	<label commandName="TargetSelectType" devLabel="Target Select" translation="Zielauswahl"/>
+	<label commandName="Thicken Type" devLabel="Thicken Type" translation="Verdickungstyp"/>
+	<label commandName="ThickenAxis" devLabel="Axis" translation="Achse"/>
+	<label commandName="ThickenAxisSelect" devLabel="Select axis or edge" translation="Achse oder Kante auswählen"/>
+	<label commandName="ToggleDisplayMode" devLabel="Display Mode" translation="Anzeigemodus"/>
+	<label commandName="ToggleLink" devLabel="Link tangent handle" translation="Tangentengriff verknüpfen"/>
+	<label commandName="Tolerance" devLabel="With Tolerance" translation="Mit Toleranz"/>
+	<label commandName="ToleranceToggle" devLabel="Specify Tolerance" translation="Toleranz festlegen"/>
+	<label commandName="ToleranceValue" devLabel="Weld Tolerance" translation="Schweißtoleranz"/>
+	<label commandName="TransformManip" devLabel="Transform Manipulator" translation="Transformierungsmanipulator"/>
+	<label commandName="TransformMode" devLabel="Transform Mode" translation="Umwandlungsmodus"/>
+	<label commandName="TsplineExtrudeSpanCount" devLabel="Faces" translation="Flächen"/>
+	<label commandName="TwoPoints" devLabel="Two Points" translation="Zwei Punkte"/>
+	<label commandName="TwoSide" devLabel="Two Side" translation="Zwei Seiten"/>
+	<label commandName="Type" devLabel="Type" translation="Typ"/>
+	<label commandName="UVNormalMatrix" devLabel="Local Per Entity" translation="Lokal pro Objekt"/>
+	<label commandName="UnCrease edges/vertices" devLabel="Select edges or vertices" translation="Kanten oder Scheitelpunkte auswählen"/>
+	<label commandName="UnWeld Edges" devLabel="Select edges" translation="Kanten auswählen"/>
+	<label commandName="UnifiedScaleInput" devLabel="UnifiedScale" translation="Einheitlicher Maßstab"/>
+	<label commandName="Uniform" devLabel="Uniform" translation="Einheitlich"/>
+	<label commandName="Upgrade Surface Version" devLabel="Upgrade Surface Version" translation="Flächenversion aktualisieren"/>
+	<label commandName="VertRangeSelToolTip" devLabel="Click to select a range of vertices" translation="Klicken Sie, um einen Bereich von Scheitelpunkten auszuwählen"/>
+	<label commandName="Vertex" devLabel="Vertex" translation="Scheitelpunkt"/>
+	<label commandName="VertexSelection" devLabel="Select Vertex" translation="Scheitelpunkt auswählen"/>
+	<label commandName="ViewSpaceMatrix" devLabel="View Space" translation="Ansichtsbereich"/>
+	<label commandName="Weld" devLabel="Weld" translation="Schweißen"/>
+	<label commandName="Weld Vertices" devLabel="Select vertices" translation="Scheitelpunkte auswählen"/>
+	<label commandName="WeldCenterVerticesOption" devLabel="Weld Center Vertices" translation="Mittlere Scheitelpunkte verschweißen"/>
+	<label commandName="WeldMode" devLabel="Weld Mode" translation="Schweißmodus"/>
+	<label commandName="WeldModeVertex" devLabel="Vertex to Vertex" translation="Scheitelpunkt zu Scheitelpunkt"/>
+	<label commandName="WeldType" devLabel="Weld Type" translation="Schweißtyp"/>
+	<label commandName="WidthSymmetry" devLabel="Width Symmetry" translation="Breitensymmetrie"/>
+	<label commandName="WorldSpaceMatrix" devLabel="World Space" translation="Weltbereich"/>
+	<label commandName="WrongEntity" devLabel="Entity can't be selected from this surface" translation="Objekt kann von dieser Fläche nicht ausgewählt werden"/>
+	<label commandName="XAxisScaleInput" devLabel="XAxisScale" translation="Maßstab X-Achse"/>
+	<label commandName="XYPlaneScaleInput" devLabel="XYPlaneScale" translation="Maßstab der XY-Ebene"/>
+	<label commandName="XZPlaneScaleInput" devLabel="XZPlaneScale" translation="Maßstab der XZ-Ebene"/>
+	<label commandName="YAxisScaleInput" devLabel="YAxisScale" translation="Y-Achsen-Maßstab"/>
+	<label commandName="YZPlaneScaleInput" devLabel="YZPlaneScale" translation="Maßstab der YZ-Ebene"/>
+	<label commandName="ZAxisScaleInput" devLabel="ZAxisScale" translation="Maßstab Z-Achse"/>
+	<label commandName="autoFeatureSelTooltip" devLabel="Automatically select and preview entire features." translation="Wählen Sie ganze Elemente automatisch aus, und zeigen Sie eine Vorschau an."/>
+	<label commandName="autoSelect" devLabel="Auto" translation="Autom."/>
+	<label commandName="chainMode" devLabel="Chain" translation="Kette"/>
+	<label commandName="circularAxisSelect" devLabel="Select axis or edge" translation="Achse oder Kante auswählen"/>
+	<label commandName="controlPointsType" devLabel="Control Points" translation="Kontrollpunkte"/>
+	<label commandName="controlPointsTypeTip" devLabel="Fits control points of selected edges to driving curve" translation="Passt Kontrollpunkte ausgewählter Kanten an die Leitkurve an"/>
+	<label commandName="createMode" devLabel="Mode" translation="Modus"/>
+	<label commandName="cylindrifyFaceSelCursorPromptAutoOff" devLabel="Select faces to cylindrify" translation="Flächen auswählen, um sie zylindrisch zu machen"/>
+	<label commandName="cylindrifyFaceSelCursorPromptAutoOn" devLabel="Select faces on features to cylindrify" translation="Flächen auf Elementen auswählen, um sie zylindrisch zu machen"/>
+	<label commandName="cylindrifyFaceSelTooltip" devLabel="Select faces to cylindrify." translation="Wählen Sie die Flächen aus, die Sie zylindrisch machen möchten."/>
+	<label commandName="degreeTooltip" devLabel="Select degree of driving curve" translation="Grad für Leitkurve auswählen"/>
+	<label commandName="drivingCurveCVSelTooltip" devLabel="Select control points to edit on driving curve" translation="Kontrollpunkte zum Bearbeiten auf Leitkurve auswählen"/>
+	<label commandName="edgeLengthDistrib" devLabel="Edge Length" translation="Kantenlänge"/>
+	<label commandName="edgeLengthDistribTip" devLabel="Distributes control points in proportion to lengths of T-Spline edges" translation="Verteilt Kontrollpunkte im Verhältnis zu den Längen von T-Spline-Kanten"/>
+	<label commandName="edgeMode" devLabel="Edge" translation="Kante"/>
+	<label commandName="edgeSelTooltip" devLabel="Select edges on a T-Spline body" translation="Kanten auf einem T-Spline-Körper auswählen"/>
+	<label commandName="edgeSelection" devLabel="Edge" translation="Kante"/>
+	<label commandName="forwardDirectionType" devLabel="Control Points" translation="Kontrollpunkte"/>
+	<label commandName="heightDirection" devLabel="Direction" translation="Richtung"/>
+	<label commandName="heightDirectionOneSide" devLabel="One Side" translation="Eine Seite"/>
+	<label commandName="heightDirectionSymmetry" devLabel="Symmetric" translation="Symmetrisch"/>
+	<label commandName="infoWeldMidPointMode" devLabel="Vertex to Midpoint" translation="Scheitelpunkt zu Mittelpunkt"/>
+	<label commandName="infoWeldToToleranceMode" devLabel="Weld to Tolerance" translation="Schweißen in Toleranz"/>
+	<label commandName="lclTSplineBevelEdgeTipsAndTricksDesc" devLabel="The closer you make the bevel the sharper the corner will appear. The segment settings adds more edges to the beveled region." translation="Je enger Sie die Abschrägung erstellen, desto schärfer wird die Ecke dargestellt. Über die Segmenteinstellungen können der abgeschrägten Region weitere Kanten hinzugefügt werden."/>
+	<label commandName="lclTSplineBridgeTipsAndTricksDesc" devLabel="You can specify the number of faces between the edges. The Follow Curve option will use a sketch curve to influence the shape of the bridged faces." translation="Sie können die Anzahl der Flächen zwischen den Kanten angeben. Bei der Option Kurve folgen wird eine Skizzierkurve verwendet, um die Form der überbrückten Flächen zu steuern."/>
+	<label commandName="lclTSplineConvertTipsAndTricksDesc" devLabel="BRep faces, T-Spline bodies or Mesh bodies can be filtered for selection.  The options available depends on the filter selected." translation="BRep-Flächen, T-Spline-Körper oder Netzkörper können für die Auswahl gefiltert werden. Die verfügbaren Optionen hängen vom ausgewählten Filter ab."/>
+	<label commandName="lclTSplineCreaseEdgeTipsAndTricksDesc" devLabel="Regions around star/cap points (highlighted yellow) will cause edge creases to end abruptly. Boundary corner vertices (indicated by yellow dots at the surface boundary) can also be creased and uncreased." translation="Regionen um Stern-/Kappenpunkte (gelb hervorgehoben) führen dazu, dass Kantenknicke abrupt enden. Umgrenzungseckscheitelpunkte (gekennzeichnet durch gelbe Punkte auf der Flächenbegrenzung) können auch geknickt bzw. die Knicke entfernt werden."/>
+	<label commandName="lclTSplineCylindrifyTipsAndTricksDesc" devLabel="You can use Cylindrify to smooth uneven struts and holes from generative design results." translation="Sie können Zylindrisch machen verwenden, um ungleichmäßige Streben und Bohrungen aus den Ergebnissen des generativen Designs zu glätten."/>
+	<label commandName="lclTSplineDisplayModeTipsAndTricksDesc" devLabel="Toggle between modes by holding Ctrl (Windows) or Control (Mac) and the 1, 2, or 3 key. This function is also available in the Edit Form dialog box in Selection Options." translation="Schalten Sie zwischen Modi um, indem Sie die STRG- (Windows) oder Befehlstaste (Mac) und die Taste 1, 2 oder 3 gedrückt halten. Diese Funktion steht auch im Dialogfeld Form bearbeiten in den Auswahloptionen zur Verfügung."/>
+	<label commandName="lclTSplineEditByCurveTipsAndTricksDesc" devLabel="Adjust the Display Mode to see the effect of Curve Fit more easily. Use Box Display for Control Points and Smooth Display for Surface Points. Control Points (curve fitting only) performs faster than Surface Points (curve and surface fitting)." translation="Passen Sie den Anzeigemodus an, um die Auswirkungen der Kurvenangleichung besser zu sehen. Verwenden Sie die Quaderanzeige für Steuerpunkte und die glatte Darstellung für Flächenpunkte. Steuerpunkte (nur Kurvenangleichung) sind schneller als Flächenpunkte (Kurven- und Flächenangleichung)."/>
+	<label commandName="lclTSplineEraseAndFillTipsAndTricksDesc" devLabel="Fill Star will fill using a single face.  Reduced Star will fill with mulitple faces to minimize star points." translation="Mit Stern füllen können Sie mit einer einzelnen Fläche eine Füllung vornehmen. Mit Reduzierter Stern können Sie mit mehreren Flächen eine Füllung vornehmen, um Sternpunkte zu minimieren"/>
+	<label commandName="lclTSplineFillHoleTipsAndTricksDesc" devLabel="Fill Star will fill using a single face.  Reduced Star will fill with mulitple faces to minimize star points. Collapse brings all vertices together at a single vertex." translation="Mit Stern füllen können Sie mit einer einzelnen Fläche eine Füllung vornehmen. Mit Reduzierter Stern können Sie mit mehreren Flächen eine Füllung vornehmen, um Sternpunkte zu minimieren. Mit Ausblenden werden alle Scheitelpunkte an einem einzelnen Scheitelpunkt zusammengebracht."/>
+	<label commandName="lclTSplineFlattenTipsAndTricksDesc" devLabel="The minimum number of vertices per surface for Flatten operation depends on Direction type: 4 for Fit, 1 for Plane, and 2 for Parallel Plane. If you flatten linked tangency handles, they will get unlinked from their vertices. The more vertices in the region the better the flatten result will look. Use the Subdivide command to add more geometry for better flattening." translation="Die Mindestanzahl von Scheitelpunkten pro Oberfläche für den Vorgang Abflachen hängt vom Richtungstyp ab: 4 für Einpassen, 1 für Ebene und 2 für Parallele Ebene. Wenn Sie verknüpfte Tangentengriffe abflachen, wird die Verknüpfung mit den zugehörigen Scheitelpunkten gelöst. Je mehr Scheitelpunkte im Bereich sind, desto besser ist das Abflachungsergebnis. Verwenden Sie den Befehl Unterteilen, um mehr Geometrie für ein besseres Abflachungsergebnis hinzuzufügen."/>
+	<label commandName="lclTSplineFreezeCmdTipsAndTricksDesc" devLabel="Light blue edges represent user-frozen regions. Darker blue edges show the buffer regions that are automatically locked to prevent shape changes in the user-frozen regions." translation="Hellblaue Kanten markieren vom Benutzer eingefrorene Regionen. Dunkelblaue Kanten zeigen die Pufferregionen an, die automatisch gesperrt werden, um zu verhindern, dass Änderungen an der Form in den vom Benutzer eingefrorenen Regionen vorgenommen werden."/>
+	<label commandName="lclTSplineInsertEdgeTipsAndTricksDesc" devLabel="Set the Insertion Mode to Exact to insert the edge without changing the shape of the T-Spline, however this will add more faces to maintain the shape." translation="Legen Sie den Einfügemodus auf Genau fest, um die Kante ohne Änderung der Form des T-Spline einzufügen. Dadurch werden jedoch weitere Flächen hinzugefügt, um die Form beizubehalten."/>
+	<label commandName="lclTSplineInsertPointTipsAndTricksDesc" devLabel="Slide the pointer along the edge until a red dot is shown, this is the midpoint of the edge. Set the Insertion Mode to Exact to insert the point without changing the shape of the T-Spline body, however this will add more faces to maintain the shape." translation="Bewegen Sie den Mauszeiger entlang der Kante, bis ein roter Punkt angezeigt wird. Dies ist der Mittelpunkt der Kante. Legen Sie den Einfügemodus auf Genau fest, um den Punkt ohne Änderung der Form des T-Spline-Körpers einzufügen. Dadurch werden jedoch weitere Flächen hinzugefügt, um die Form beizubehalten."/>
+	<label commandName="lclTSplineInternalCircularTipsAndTricksDesc" devLabel="The possible areas of symmetry are calculated automatically based on the selected face and the body." translation="Die möglichen Symmetriebereiche werden basierend auf der ausgewählten Fläche und dem Körper automatisch berechnet."/>
+	<label commandName="lclTSplineInternalMirrorTipsAndTricksDesc" devLabel="Symmetry lines are displayed in green." translation="Symmetrielinien werden in grün angezeigt."/>
+	<label commandName="lclTSplineInterpolateTipsAndTricksDesc" devLabel="Interpolate is best used in conjunction with the Control Frame Display mode (Ctrl + 2)." translation="Das Interpolieren eignet sich am besten in Verbindung mit dem Modus Rahmenanzeige steuern (Strg + 2)."/>
+	<label commandName="lclTSplineIsolateSymmetryTipsAndTricksDesc" devLabel="The non-symmetric faces are displayed in red." translation="Die nicht symmetrischen Flächen werden in rot angezeigt."/>
+	<label commandName="lclTSplineMakeUniformTipsAndTricksDesc" devLabel="This command may change the shape of the T-Spline body if there are areas that are non-uniform." translation="Mit diesem Befehl kann die Form des T-Spline-Körpers geändert werden, wenn nicht gleichmäßige Bereiche vorhanden sind."/>
+	<label commandName="lclTSplineMatchTipsAndTricksDesc" devLabel="Use the Spacing and Tolerance options to control the faces and deviation from the target edges." translation="Verwenden Sie die Optionen Abstand und Toleranz, um die Flächen und die Abweichung von den Zielkanten zu steuern."/>
+	<label commandName="lclTSplineMergeEdgeTipsAndTricksDesc" devLabel="Use Merge Edge in place of Weld Vertices when connecting multiple vertices along the selected edges." translation="Verwenden Sie Kante verbinden anstatt Schweiß-Scheitelpunkte, wenn Sie mehrere Scheitelpunkte entlang der ausgewählten Kanten verbinden möchten."/>
+	<label commandName="lclTSplinePullTipsAndTricksDesc" devLabel="Change the Target Select to specify targets. Set the Pull Type to move surface points or control points." translation="Ändern Sie die Zielauswahl, um Ziele festzulegen. Legen Sie den Zugtyp fest, um Oberflächenunkte zu verschieben oder Punkte zu steuern."/>
+	<label commandName="lclTSplineReflectionCircularTipsAndTricksDesc" devLabel="The weld option will join the bodies where they intersect within the specified tolerance." translation="Mit der Schweiß-Option werden die Körper an den Stellen verbunden, an denen sie sich innerhalb der angegebenen Toleranz schneiden."/>
+	<label commandName="lclTSplineReflectionMirrorTipsAndTricksDesc" devLabel="The weld option will join the bodies where they intersect within the specified tolerance." translation="Mit der Schweiß-Option werden die Körper an den Stellen verbunden, an denen sie sich innerhalb der angegebenen Toleranz schneiden."/>
+	<label commandName="lclTSplineRepairBodyTipsAndTricksDesc" devLabel="Clicking on a Star will convert it to a T-Junction and vise versa. Use Autorepair to let the software try to repair the model." translation="Wenn Sie auf einen Stern klicken, wird dieser in eine T-Kreuzung konvertiert und umgekehrt. Verwenden Sie Autom. Reparatur, wenn die Software versuchen soll, das Modell zu reparieren."/>
+	<label commandName="lclTSplineSlideEdgeTipsAndTricksDesc" devLabel="Slide the selected edge closer to another to make the transition between the two sharper." translation="Schieben Sie die ausgewählte Kante näher an eine andere Kante, um den Übergang zwischen den beiden schärfer zu gestalten."/>
+	<label commandName="lclTSplineSmoothTipsAndTricksDesc" devLabel="Select the faces and set smoothing rate." translation="Wählen Sie die Flächen aus, und legen Sie die Glättungsrate fest."/>
+	<label commandName="lclTSplineStraightenTipsAndTricksDesc" devLabel="If you straighten linked tangency handles, they will unlink from their vertices." translation="Wenn Sie verknüpfte Tangentengriffe begradigen, wird die Verknüpfung mit ihren Scheitelpunkten aufgehoben."/>
+	<label commandName="lclTSplineSubsetTipsAndTricksDesc" devLabel="Enable the Specify option and set the number of faces that are added." translation="Aktivieren Sie die Option Angeben, und legen Sie die Anzahl der Flächen fest, die hinzugefügt werden."/>
+	<label commandName="lclTSplineThickenTipsAndTricksDesc" devLabel="Thicken tool does not check for self intersections during creating and can create surfaces that will not convert to a solid." translation="Das Werkzeug Verdicken führt während der Erstellung keine Prüfung auf sich selbst schneidende Flächen durch und kann Flächen erstellen, die nicht in Volumenkörper konvertiert werden."/>
+	<label commandName="lclTSplineUnCreaseEdgeTipsAndTricksDesc" devLabel="Regions around star/cap points (highlighted yellow) will cause edge creases to end abruptly. Boundary corner vertices (indicated by yellow dots at the surface boundary) can also be creased and uncreased." translation="Regionen um Stern-/Kappenpunkte (gelb hervorgehoben) führen dazu, dass Kantenknicke abrupt enden. Umgrenzungseckscheitelpunkte (gekennzeichnet durch gelbe Punkte auf der Flächenbegrenzung) können auch geknickt bzw. die Knicke entfernt werden."/>
+	<label commandName="lclTSplineUnFreezeCmdTipsAndTricksDesc" devLabel="Light blue edges represent user-frozen regions. Darker blue edges show the buffer regions that are automatically locked to prevent shape changes in the user-frozen regions." translation="Hellblaue Kanten markieren vom Benutzer eingefrorene Regionen. Dunkelblaue Kanten zeigen die Pufferregionen an, die automatisch gesperrt werden, um zu verhindern, dass Änderungen an der Form in den vom Benutzer eingefrorenen Regionen vorgenommen werden."/>
+	<label commandName="lclTSplineUnWeldTipsAndTricksDesc" devLabel="A darker line indicates that the edge has been unwelded and is no longer connected." translation="Eine dunkle Linie gibt an, dass die Kante nicht verschweißt wurde und nicht mehr verbunden ist."/>
+	<label commandName="lclTSplineWeldTipsAndTricksDesc" devLabel="Use the Weld Mode to weld the first vertex to the second or weld both selections to the midpoint." translation="Verwenden Sie den Schweißmodus, um den ersten mit dem zweiten Scheitelpunkt oder beide Auswahlen mit dem Mittelpunkt zu verschweißen."/>
+	<label commandName="lclzMergeEdgeTipsAndTricksTips" devLabel="Select the first set of edges then the second set of edges." translation="Wählen Sie den ersten Satz Kanten und dann den zweiten Satz Kanten aus."/>
+	<label commandName="lclzSTSplineSlideEdgeipsAndTricksTips" devLabel="Select the edges then specify the new position." translation="Wählen Sie die Kanten aus, und geben Sie dann die neue Position an."/>
+	<label commandName="lclzSculptWorkspaceTitle" devLabel="Creates organic geometry. Access commands to create T-Spline bodies." translation="Erstellt organische Geometrie. Zugriff auf die Befehle zum Erstellen von T-Spline-Körpern."/>
+	<label commandName="lclzTSpline2BRepDesc1" devLabel="Changes the body type of the selected object. Converts BRep (solid or surface) faces to a T-Spline face. Converts a T-Spline body to a BRep body. Converts a quad mesh to a T-Spline body." translation="Ändert den Körpertyp des ausgewählten Objekts. Konvertiert BREP-Flächen (Volumenkörper oder Oberfläche) in eine T-Spline-Fläche. Konvertiert einen T-Spline-Körper in einen BREP-Körper. Konvertiert ein Quad-Netz in einen T-Spline-Körper."/>
+	<label commandName="lclzTSpline2BRepDesc2" devLabel="Select the object to convert." translation="Wählen Sie das zu konvertierende Objekt aus."/>
+	<label commandName="lclzTSplineAppendFace1" devLabel="Creates individual T-Spline faces." translation="Erstellt einzelne T-Spline-Flächen"/>
+	<label commandName="lclzTSplineAppendFace2" devLabel="Select a plane to begin defining vertices or select vertices from a T-Spline body." translation="Wählen Sie eine Ebene, um mit dem Definieren von Scheitelpunkten zu beginnen, oder wählen Sie Scheitelpunkte von einem T-Spline-Körper aus."/>
+	<label commandName="lclzTSplineAppendFaceTipsAndTricksDesc" devLabel="Pick existing vertices to connect the face to that geometry. Enable Object Snap to position new vertices on the closest solid, surface, or mesh body." translation="Wählen Sie vorhandene Scheitelpunkte aus, um die Fläche mit dieser Geometrie zu verbinden. Aktivieren Sie den Objektfang, um neue Scheitelpunkte auf dem nächsten Volumenkörper, Netzkörper oder der nächsten Fläche zu positionieren."/>
+	<label commandName="lclzTSplineAppendFaceTipsAndTricksTitle" devLabel="Face Information" translation="Fläche - Informationen"/>
+	<label commandName="lclzTSplineAppendTipsAndTricksTips" devLabel="Select a plane or existing vertex to begin. Continue setting points to define the face." translation="Wählen Sie zunächst eine Ebene oder einen vorhandenen Scheitelpunkt aus. Legen Sie anschließend Punkte fest, um die Fläche zu definieren."/>
+	<label commandName="lclzTSplineBevelEdgeDesc1" devLabel="Replaces a single edge with a specified number of adjacent edges." translation="Ersetzt eine einzelne Kante durch eine bestimmte Anzahl von angrenzenden Kanten"/>
+	<label commandName="lclzTSplineBevelEdgeDesc2" devLabel="Select the edges then specify the position of the bevel." translation="Wählen Sie die Kanten aus, und geben Sie dann die Position der Abschrägung an."/>
+	<label commandName="lclzTSplineBevelEdgeTipsAndTricksTips" devLabel="Select the edges then specify the position of the bevel." translation="Wählen Sie die Kanten aus, und geben Sie dann die Position der Abschrägung an."/>
+	<label commandName="lclzTSplineBevelEdgeTipsAndTricksTitle" devLabel="Bevel Edge Information" translation="Abschrägungskante - Informationen"/>
+	<label commandName="lclzTSplineBoxTipsAndTricksDesc" devLabel="Direction changes how the box is built releative to your original input rectangle.  Mirror allows you to maintain symmetry in subsequent modeling edits" translation="Mit Richtung können Sie ändern, wie der Quader relativ zum ursprünglich eingegebenen Rechteck erstellt wird. Mit Spiegeln können Sie die Symmetrie in nachfolgenden Modellbearbeitungen beibehalten."/>
+	<label commandName="lclzTSplineBoxTipsAndTricksTips" devLabel="Select a plane and draw a rectangle.  Use the manipulators or input fields to specify the height and number of faces." translation="Wählen Sie eine Ebene aus, und zeichnen Sie ein Rechteck. Verwenden Sie die Manipulatoren oder Eingabefelder, um die Höhe und die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplineBoxTipsAndTricksTitle" devLabel="Box Information" translation="Quader - Informationen"/>
+	<label commandName="lclzTSplineBridgeSubDDesc1" devLabel="Creates segments to connect two opposing faces within a body or between two bodies." translation="Erstellt Segmente, mit denen zwei gegenüberliegende Flächen in einem Körper oder zwischen zwei Körpern verbunden werden"/>
+	<label commandName="lclzTSplineBridgeSubDDesc2" devLabel="Select the first set of edges then select the second set of edges." translation="Wählen Sie den ersten Satz Kanten und dann den zweiten Satz Kanten aus."/>
+	<label commandName="lclzTSplineBridgeTipsAndTricksTips" devLabel="Select the first set of edges then select the second set of edges. The number of edges on each side must be equal to or a multiple of each other. " translation="Wählen Sie den ersten Satz Kanten und dann den zweiten Satz Kanten aus. Die Anzahl der Kanten auf den einzelnen Seiten muss gleich oder ein Vielfaches voneinander sein. "/>
+	<label commandName="lclzTSplineBridgeTipsAndTricksTitle" devLabel="Bridge Information" translation="Brücke - Informationen"/>
+	<label commandName="lclzTSplineCapSettingCommand" devLabel="Toggles between better performance or better display. Better display shows the bodies at highest quality (G1 conditions at star points). Better performance calculates modification by applying G0 conditions at star points." translation="Schaltet zwischen besserer Leistung und besserer Anzeige um. Bei besserer Anzeige werden die Körper in höchster Qualität angezeigt (G1-Bedingungen bei Sternpunkten). Bei besserer Leistung werden Änderungen durch Anwendung von G0-Bedingungen auf Sternpunkte berechnet."/>
+	<label commandName="lclzTSplineClearSymmetry1" devLabel="Remove symmetry constraint from individual bodies or a series of bodies." translation="Entfernen Sie Symmetrieabhängigkeiten von einzelnen Körpern oder einer Reihe von Körpern."/>
+	<label commandName="lclzTSplineClearSymmetry2" devLabel="Select the symmetric bodies." translation="Wählen Sie die symmetrischen Körper aus."/>
+	<label commandName="lclzTSplineClearSymmetryTipsAndTricksTips" devLabel="Select the symmetric bodies." translation="Wählen Sie die symmetrischen Körper aus."/>
+	<label commandName="lclzTSplineClearSymmetryTipsAndTricksTitle" devLabel="Clear Symmetry Information" translation="Symmetrie löschen - Informationen"/>
+	<label commandName="lclzTSplineConvertTipsAndTricksTips" devLabel="Select the object to convert." translation="Wählen Sie das zu konvertierende Objekt aus."/>
+	<label commandName="lclzTSplineConvertTipsAndTricksTitle" devLabel="Convert Information" translation="Konvertieren - Informationen"/>
+	<label commandName="lclzTSplineCreaseEdgeTipsAndTricksTips" devLabel="Select edges to crease." translation="Kanten zum Knicken auswählen"/>
+	<label commandName="lclzTSplineCreaseEdgeTipsAndTricksTitle" devLabel="Crease Information" translation="Knicken - Informationen"/>
+	<label commandName="lclzTSplineCreasedEdgeDesc1" devLabel="Creates a sharp edge between faces." translation="Erstellt eine scharfe Kante zwischen Flächen"/>
+	<label commandName="lclzTSplineCreasedEdgeDesc2" devLabel="Select edges to crease." translation="Kanten zum Knicken auswählen"/>
+	<label commandName="lclzTSplineCylinderTipsAndTricksDesc" devLabel="Direction changes how the cylinder is built releative to your original input circle. Mirror allows you to maintain symmetry in subsequent modeling edits" translation="Mit Richtung können Sie ändern, wie der Zylinder relativ zum ursprünglich eingegebenen Kreis erstellt wird. Mit Spiegeln können Sie die Symmetrie in nachfolgenden Modellbearbeitungen beibehalten."/>
+	<label commandName="lclzTSplineCylinderTipsAndTricksTips" devLabel="Select a plane and draw a circle.  Use the manipulators or input fields to specify the height and number of faces." translation="Wählen Sie eine Ebene aus, und zeichnen Sie einen Kreis. Verwenden Sie die Manipulatoren oder Eingabefelder, um die Höhe und die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplineCylinderTipsAndTricksTitle" devLabel="Cylinder Information" translation="Zylinder - Informationen"/>
+	<label commandName="lclzTSplineCylindrifyDesc1" devLabel="Forms uneven T-Spline geometry into a smooth cylindrical shape." translation="Bringt ungleichmäßige T-Spline-Geometrie in eine glatte, zylindrische Form."/>
+	<label commandName="lclzTSplineCylindrifyDesc2" devLabel="Select a face on the feature to cylindrify. The preview displays automatically. Uncheck Auto Feature Selection to select individual faces." translation="Wählen Sie eine Fläche auf dem Element aus, die Sie zylindrisch machen möchten. Die Vorschau wird automatisch angezeigt. Deaktivieren Sie Automatische Elementauswahl, um einzelne Flächen auszuwählen."/>
+	<label commandName="lclzTSplineCylindrifyTipsAndTricksTips" devLabel="Cylindrify applies to all selected faces on a T-Spline body. You can select multiple strut or hole features on a T-Spline body at once, or uncheck Auto Feature Selection to select individual faces." translation="Zylindrisch gilt für alle ausgewählten Flächen eines T-Spline-Körpers. Sie können mehrere Streben- oder Bohrungselemente auf einem T-Spline-Körper gleichzeitig auswählen oder die Option Automatische Elementauswahl deaktivieren, um einzelne Flächen auszuwählen."/>
+	<label commandName="lclzTSplineCylindrifyTipsAndTricksTitle" devLabel="Cylindrify Information" translation="Informationen zur Zylinderform"/>
+	<label commandName="lclzTSplineDisplayModeTipsAndTricksTips" devLabel="Select the desired display mode. If there is more than one T-Spline body, you need to select the body to change the display." translation="Wählen Sie den gewünschten Anzeigemodus aus. Wenn mehr als ein T-Spline-Körper existiert, müssen Sie den Körper auswählen, um die Anzeige zu ändern."/>
+	<label commandName="lclzTSplineDisplayModeTipsAndTricksTitle" devLabel="Display Mode Information" translation="Anzeigemodus - Informationen"/>
+	<label commandName="lclzTSplineEditByCurveDesc1" devLabel="Manipulates T-Spline edges using a driving curve." translation="Bearbeitet T-Spline-Kanten mithilfe einer Leitkurve."/>
+	<label commandName="lclzTSplineEditByCurveDesc2" devLabel="Select edges to create a driving curve. Move the control points to adjust the shape of the T-Spline edges." translation="Wählen Sie Kanten aus, um eine Leitkurve zu erstellen. Verschieben Sie die Steuerpunkte, um die Form der T-Spline-Kanten anzupassen."/>
+	<label commandName="lclzTSplineEditByCurveTipsAndTricksTips" devLabel="The driving curve appears when at least two continuous edges are selected. You can adjust the rotation and scale settings when you select at least two control points of the driving curve." translation="Die Leitkurve wird angezeigt, wenn mindestens zwei fortlaufende Kanten ausgewählt sind. Sie können die Einstellungen zum Drehen und Skalieren anpassen, wenn Sie mindestens zwei Kontrollpunkte der Leitkurve auswählen."/>
+	<label commandName="lclzTSplineEditByCurveTipsAndTricksTitle" devLabel="Edit By Curve Information" translation="Nach Kurve bearbeiten - Informationen"/>
+	<label commandName="lclzTSplineEditDesc1" devLabel="Manipulates faces, edges and vertices with transform, scale and rotate editing." translation="Bearbeitet Flächen, Kanten und Scheitelpunkte durch Transformations-, Skalierungs- und Drehungsbearbeitung"/>
+	<label commandName="lclzTSplineEditDesc2" devLabel="Select faces, edges, or vertices to enable the manipulator. Double click a face or edge to select a loop." translation="Wählen Sie Flächen, Kanten oder Scheitelpunkte aus, um den Manipulator zu aktivieren. Doppelklicken Sie auf eine Fläche oder Kante, um eine Kontur auszuwählen."/>
+	<label commandName="lclzTSplineEditTipsAndTricksDesc" devLabel="Hold the Alt key and drag a manipulator to insert new geometry based on the action." translation="Halten Sie die ALT-Taste gedrückt, und ziehen Sie einen Manipulator zum Einfügen neuer Geometrie auf Grundlage der Aktion."/>
+	<label commandName="lclzTSplineEditTipsAndTricksTips" devLabel="Select faces, edges, or vertices to enable the manipulator. Double click a face or edge to select a loop." translation="Wählen Sie Flächen, Kanten oder Scheitelpunkte aus, um den Manipulator zu aktivieren. Doppelklicken Sie auf eine Fläche oder Kante, um eine Kontur auszuwählen."/>
+	<label commandName="lclzTSplineEditTipsAndTricksTitle" devLabel="Edit Form Information" translation="Form bearbeiten - Informationen"/>
+	<label commandName="lclzTSplineEraseAndFillDesc1" devLabel="Deletes a part of connected T-Spline geometry and fills new gaps with faces. You can use this to remove struts or bridges." translation="Löscht einen Teil von vernetzter T-Spline-Geometrie und füllt neue Lücken mit Flächen. Sie können dies verwenden, um Streben oder Brücken zu entfernen."/>
+	<label commandName="lclzTSplineEraseAndFillDesc2" devLabel="Select the faces to erase and select fill type." translation="Wählen Sie die zu löschenden Flächen und den Füllungstyp aus."/>
+	<label commandName="lclzTSplineEraseAndFillTipsAndTricksTips" devLabel="Select the faces to erase and set the fill type." translation="Wählen Sie die zu löschenden Flächen aus, und legen Sie den Füllungstyp fest."/>
+	<label commandName="lclzTSplineEraseAndFillTipsAndTricksTitle" devLabel="Erase and Fill Information" translation="Löschen und füllen - Informationen"/>
+	<label commandName="lclzTSplineExtrude1" devLabel="Creates or modifies a T-Spline body by adding faces along a vector." translation="Erstellt oder ändert einen T-Spline-Körper durch Hinzufügen von Flächen entlang eines Vektors"/>
+	<label commandName="lclzTSplineExtrude2" devLabel="Select sketch curves, profiles or faces. Use the manipulators or input fields to specify the distance and number of faces." translation="Wählen Sie Skizzierkurven, Profile oder Flächen aus. Verwenden Sie die Manipulatoren oder Eingabefelder, um den Abstand und die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplineExtrudeTipsAndTricksDesc" devLabel="Set the Spacing setting to Curvature to add faces in areas of higher curvature." translation="Legen Sie die Einstellung Abstand auf Krümmung fest, um Flächen in Bereichen mit hoher Krümmung hinzuzufügen."/>
+	<label commandName="lclzTSplineExtrudeTipsAndTricksTips" devLabel="Select sketch curves, profiles or faces.  Use the manipulators or input fields to specify the distance and number of faces." translation="Wählen Sie Skizzierkurven, Profile oder Flächen aus. Verwenden Sie die Manipulatoren oder Eingabefelder, um den Abstand und die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplineExtrudeTipsAndTricksTitle" devLabel="Extrude Information" translation="Extrusion - Informationen"/>
+	<label commandName="lclzTSplineFillHoleDesc1" devLabel="Fills an internal hole in T-Spline body." translation="Füllt eine interne Bohrung in einem T-Spline-Körper"/>
+	<label commandName="lclzTSplineFillHoleDesc2" devLabel="Select the edge of the hole and set the fill type." translation="Wählen Sie die Kante der Bohrung aus, und legen Sie den Füllungstyp fest."/>
+	<label commandName="lclzTSplineFillHoleTipsAndTricksTips" devLabel="Select the edge of the hole and set the fill type." translation="Wählen Sie die Kante der Bohrung aus, und legen Sie den Füllungstyp fest."/>
+	<label commandName="lclzTSplineFillHoleTipsAndTricksTitle" devLabel="Fill Hole Information" translation="Bohrung füllen - Informationen"/>
+	<label commandName="lclzTSplineFlattenSubDEdgeDesc1" devLabel="Projects vertices to a best fit or user defined plane." translation="Projiziert die Scheitelpunkte auf eine am besten passende oder benutzerdefinierte Ebene"/>
+	<label commandName="lclzTSplineFlattenSubDEdgeDesc2" devLabel="Select the vertices and/or tangency handles to flatten." translation="Wählen Sie die abzuflachenden Scheitelpunkte und/oder Tangentengriffe aus."/>
+	<label commandName="lclzTSplineFlattenTipsAndTricksTips" devLabel="To easily see the effect of Flatten Type, use Box Display for Control Points and Smooth Display for Surface Points. Valid selection types for Plane are a work plane and planar B-rep face." translation="Um die Wirkung von Abflachen - Typ einfach anzuzeigen, verwenden Sie für Kontrollpunkte die Option Quaderanzeige und für Oberflächenpunkte die Option Glatte Darstellung. Gültige Auswahltypen für Ebene sind Arbeitsebenen und planare B-Rep-Flächen."/>
+	<label commandName="lclzTSplineFlattenTipsAndTricksTitle" devLabel="Flatten Information" translation="Abflachen - Informationen"/>
+	<label commandName="lclzTSplineFreezeCmd1" devLabel="Freezes faces and edges on the model to prevent accidental changes." translation="Friert die Flächen und Kanten auf dem Modell ein, um versehentliche Änderungen zu verhindern."/>
+	<label commandName="lclzTSplineFreezeCmd2" devLabel="Select faces or edges to freeze." translation="Wählen Sie die einzufrierenden Flächen oder Kanten aus."/>
+	<label commandName="lclzTSplineFreezeCmdTipsAndTricksTips" devLabel="Select faces or edges to freeze them." translation="Wählen Sie Flächen oder Kanten aus, um diese einzufrieren."/>
+	<label commandName="lclzTSplineFreezeCmdTipsAndTricksTitle" devLabel="Freeze Information" translation="Einfrieren - Informationen"/>
+	<label commandName="lclzTSplineImportDesc1" devLabel="Inserts a T-Spline (TSM) file as T-Spline bodies." translation="Fügt eine T-Spline (TSM)-Datei als T-Spline-Körper ein"/>
+	<label commandName="lclzTSplineInsertEdgeDesc1" devLabel="Inserts edges at a specified position from the original edge." translation="Fügt Kanten an einer bestimmten Position von der ursprünglichen Kante ein"/>
+	<label commandName="lclzTSplineInsertEdgeDesc2" devLabel="Select an edge or double click to select a loop." translation="Wählen Sie eine Kante aus, oder doppelklicken Sie zum Auswählen einer Kontur."/>
+	<label commandName="lclzTSplineInsertEdgeTipsAndTricksTips" devLabel="Select an edge or double click to select a loop then spedify the position of the new edge." translation="Wählen Sie eine Kante aus, oder doppelklicken Sie zum Auswählen einer Kontur, und geben Sie dann die Position der neuen Kante an."/>
+	<label commandName="lclzTSplineInsertEdgeTipsAndTricksTitle" devLabel="Insert Edge Information" translation="Kante einfügen - Informationen"/>
+	<label commandName="lclzTSplineInsertPointDesc1" devLabel="Inserts an edge by selecting two points." translation="Fügt eine Kante durch Auswahl von zwei Punkten ein"/>
+	<label commandName="lclzTSplineInsertPointDesc2" devLabel="Select a point on an edge to start. Continue selecting points on additional edges to divide multiple faces." translation="Wählen Sie zunächst einen Punkt auf einer Kante aus. Wählen Sie dann Punkte auf zusätzlichen Kanten aus, um mehrere Flächen zu unterteilen."/>
+	<label commandName="lclzTSplineInsertPointTipsAndTricksTips" devLabel="Select a point on an edge to start. Continue selecting points on additional edges to divide multiple faces." translation="Wählen Sie zunächst einen Punkt auf einer Kante aus. Wählen Sie dann Punkte auf zusätzlichen Kanten aus, um mehrere Flächen zu unterteilen."/>
+	<label commandName="lclzTSplineInsertPointTipsAndTricksTitle" devLabel="Insert Point Information" translation="Punkt einfügen - Informationen"/>
+	<label commandName="lclzTSplineInternalCircularSymmetry1" devLabel="Creates circular symmetry with the elements of a T-Spline body." translation="Erstellt kreisförmige Symmetrie mit Elementen eines T-Spline-Körpers"/>
+	<label commandName="lclzTSplineInternalCircularSymmetry2" devLabel="Select a face on the body then select the number of symmetry lines." translation="Wählen Sie eine Fläche auf dem Körper und dann die Anzahl der Symmetrielinien aus."/>
+	<label commandName="lclzTSplineInternalCircularTipsAndTricksTips" devLabel="Select a face on the body then select the number of symmetry lines." translation="Wählen Sie eine Fläche auf dem Körper und dann die Anzahl der Symmetrielinien aus."/>
+	<label commandName="lclzTSplineInternalCircularTipsAndTricksTitle" devLabel="Circular Internal Information" translation="Rund - Interne Informationen"/>
+	<label commandName="lclzTSplineInternalMirrorSymmetry1" devLabel="Creates a mirror symmetry with the elements of a T-Spline body." translation="Erstellt eine Spiegelsymmetrie mit Elementen eines T-Spline-Körpers"/>
+	<label commandName="lclzTSplineInternalMirrorSymmetry2" devLabel="Select a face on each side of the body. If needed select edges on each side, then vertices." translation="Wählen Sie eine Fläche auf jeder Seite des Körpers aus. Falls erforderlich, wählen Sie Kanten auf beiden Seiten und anschließend Scheitelpunkte aus."/>
+	<label commandName="lclzTSplineInternalMirrorTipsAndTricksTips" devLabel="Select a face on each side of the body. If needed select edges on each side, then vertices." translation="Wählen Sie eine Fläche auf jeder Seite des Körpers aus. Falls erforderlich, wählen Sie Kanten auf beiden Seiten und anschließend Scheitelpunkte aus."/>
+	<label commandName="lclzTSplineInternalMirrorTipsAndTricksTitle" devLabel="Mirror Internal Information" translation="Spiegeln - Interne Informationen"/>
+	<label commandName="lclzTSplineInterpolateSubDDesc1" devLabel="Switches the location of the surface and the control points to improve fitting. Select whether to move the control points to the surface or the surface to the control points." translation="Ändert die Position der Fläche und der Kontrollpunkte, um die Passung zu verbessern. Wählen Sie aus, ob die Kontrollpunkte zur Fläche oder die Fläche zu den Kontrollpunkten verschoben werden sollen."/>
+	<label commandName="lclzTSplineInterpolateSubDDesc2" devLabel="Select the body then set whether you are moving control points or surface points." translation="Wählen Sie den Körper aus, und legen Sie dann fest, ob Sie Kontrollpunkte oder Oberflächenpunkte verschieben möchten."/>
+	<label commandName="lclzTSplineInterpolateTipsAndTricksTips" devLabel="Select the body then set whether you are moving control points or surface points." translation="Wählen Sie den Körper aus, und legen Sie dann fest, ob Sie Kontrollpunkte oder Oberflächenpunkte verschieben möchten."/>
+	<label commandName="lclzTSplineInterpolateTipsAndTricksTitle" devLabel="Interpolate Information" translation="Interpolieren - Informationen"/>
+	<label commandName="lclzTSplineIsolateSymmetry1" devLabel="Prevents symmetric transformations from being applied to the selected vertex, edge or face." translation="Verhindert, dass symmetrische Transformationen auf ausgewählte Scheitelpunkte, Kanten oder Flächen angewendet werden"/>
+	<label commandName="lclzTSplineIsolateSymmetry2" devLabel="Select the faces, edges, or vertices to remove symmetry from." translation="Wählen Sie die Flächen, Kanten oder Scheitelpunkte aus, von denen Symmetrie entfernt werden soll."/>
+	<label commandName="lclzTSplineIsolateSymmetryTipsAndTricksTips" devLabel="Select the faces, edges, or vertices to remove symmetry from." translation="Wählen Sie die Flächen, Kanten oder Scheitelpunkte aus, von denen Symmetrie entfernt werden soll."/>
+	<label commandName="lclzTSplineIsolateSymmetryTipsAndTricksTitle" devLabel="Isolate Symmetry Information" translation="Symmetrie isolieren - Informationen"/>
+	<label commandName="lclzTSplineMakeUniformDesc1" devLabel="Removes pinching near star points. Changes non-uniform faces to uniform." translation="Entfernt zusammengedrückte Elemente in der Nähe von Sternpunkten. Ändert nicht einheitliche Flächen in einheitliche Flächen."/>
+	<label commandName="lclzTSplineMakeUniformDesc2" devLabel="Select the body to regularize." translation="Wählen Sie den zu regulierenden Körper aus."/>
+	<label commandName="lclzTSplineMakeUniformTipsAndTricksTips" devLabel="Select the body to regularize." translation="Wählen Sie den zu regulierenden Körper aus."/>
+	<label commandName="lclzTSplineMakeUniformTipsAndTricksTitle" devLabel="Make Uniform Information" translation="Einheitlich machen - Informationen"/>
+	<label commandName="lclzTSplineMatchDesc1" devLabel="Aligns the edges of a T-Spline body with the edges of a surface or solid or with sketch curves." translation="Richtet die Kanten eines T-Spline-Körpers an den Kanten einer Fläche oder eines Volumenkörpers oder an Skizzierkurven aus."/>
+	<label commandName="lclzTSplineMatchDesc2" devLabel="Select the edges to modify then select the target edges or sketch curves." translation="Wählen Sie die zu ändernden Kanten und dann die Zielkanten oder Skizzierkurven aus."/>
+	<label commandName="lclzTSplineMatchTipsAndTricksTips" devLabel="Select the edges to modify then select the target edges or sketch curves." translation="Wählen Sie die zu ändernden Kanten und dann die Zielkanten oder Skizzierkurven aus."/>
+	<label commandName="lclzTSplineMatchTipsAndTricksTitle" devLabel="Match Information" translation="Anpassen - Informationen"/>
+	<label commandName="lclzTSplineMergeEdgeDesc1" devLabel="Aligns the first set of selected edges to a second set of selected edges." translation="Richtet den ersten Satz ausgewählter Kanten an einem zweiten Satz ausgewählter Kanten aus"/>
+	<label commandName="lclzTSplineMergeEdgeDesc2" devLabel="Select the first set of edges then the second set of edges." translation="Wählen Sie den ersten Satz Kanten und dann den zweiten Satz Kanten aus."/>
+	<label commandName="lclzTSplineMergeEdgeTipsAndTricksTitle" devLabel="Merge Edge Information" translation="Kante verbinden - Informationen"/>
+	<label commandName="lclzTSplinePipeTipsAndTricksDesc" devLabel="In Sections, click points on the path to make local diameter changes. In End Types, select open ends to change their shape. In Segments, define the number of faces between pipe sections." translation="Klicken Sie unter Schnitte auf Punkte auf dem Pfad, um lokale Durchmesseränderungen vorzunehmen. Wählen Sie unter Endentypen die offenen Enden aus, um deren Form zu ändern. Definieren Sie unter Segmente die Anzahl der Flächen zwischen Rohrschnitten."/>
+	<label commandName="lclzTSplinePipeTipsAndTricksTips" devLabel="Select the input path, specify the global diameter then modify sections, paths, and the number of faces." translation="Wählen Sie den Eingabepfad aus, legen Sie den globalen Durchmesser fest, und ändern Sie dann Schnitte, Pfade und die Anzahl der Flächen."/>
+	<label commandName="lclzTSplinePipeTipsAndTricksTitle" devLabel="Pipe Information" translation="Leitung - Informationen"/>
+	<label commandName="lclzTSplinePlaneTipsAndTricks1Desc" devLabel="Mirror allows you to maintain symmetry in subsequent modeling edits" translation="Mit Spiegeln können Sie die Symmetrie in nachfolgenden Modellbearbeitungen beibehalten"/>
+	<label commandName="lclzTSplinePlaneTipsAndTricksTips" devLabel="Select a plane and draw a rectangle.  Use the manipulators or input fields to specify the number of faces." translation="Wählen Sie eine Ebene aus, und zeichnen Sie ein Rechteck. Verwenden Sie die Manipulatoren oder Eingabefelder, um die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplinePlaneTipsAndTricksTitle" devLabel="Plane Information" translation="Ebene - Informationen"/>
+	<label commandName="lclzTSplinePrimitiveBox1" devLabel="Creates a T-Spline box." translation="Erstellt ein T-Spline-Quader"/>
+	<label commandName="lclzTSplinePrimitiveBox2" devLabel="Select a plane and draw a rectangle.  Use the manipulators or input fields to specify the height and number of faces." translation="Wählen Sie eine Ebene aus, und zeichnen Sie ein Rechteck. Verwenden Sie die Manipulatoren oder Eingabefelder, um die Höhe und die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplinePrimitiveCylinder1" devLabel="Creates a T-Spline cylinder." translation="Erstellt einen T-Spline-Zylinder"/>
+	<label commandName="lclzTSplinePrimitiveCylinder2" devLabel="Select a plane and draw a circle.  Use the manipulators or input fields to specify the height and number of faces." translation="Wählen Sie eine Ebene aus, und zeichnen Sie einen Kreis. Verwenden Sie die Manipulatoren oder Eingabefelder, um die Höhe und die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplinePrimitivePipe1" devLabel="Manages the creation of complex topologies base on selected curves. Paths can be sketch geometry and edges of bodies." translation="Verwaltet die Erstellung komplexer Topologien basierend auf ausgewählten Kurven. Pfade können Skizziergeometrien und Körperkanten sein."/>
+	<label commandName="lclzTSplinePrimitivePipe2" devLabel="Select the input path, specify the global diameter then modify sections, paths, and the number of faces." translation="Wählen Sie den Eingabepfad aus, legen Sie den globalen Durchmesser fest, und ändern Sie dann Schnitte, Pfade und die Anzahl der Flächen."/>
+	<label commandName="lclzTSplinePrimitivePlane1" devLabel="Creates a T-Spline plane." translation="Erstellt eine T-Spline-Ebene"/>
+	<label commandName="lclzTSplinePrimitivePlane2" devLabel="Select a plane and draw a rectangle. Use the manipulators or input fields to specify the height and number of faces." translation="Wählen Sie eine Ebene aus, und zeichnen Sie ein Rechteck. Verwenden Sie die Manipulatoren oder Eingabefelder, um die Höhe und die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplinePrimitiveQuadBall1" devLabel="Creates a T-Spline quadball." translation="Erstellt einen T-Spline-QuadBall"/>
+	<label commandName="lclzTSplinePrimitiveQuadBall2" devLabel="Select a plane then a center point for the sphere.  Use the manipulators or input fields to specify the diameter and number of faces." translation="Wählen Sie eine Ebene und dann einen Mittelpunkt für die Kugel aus. Verwenden Sie die Manipulatoren oder Eingabefelder, um den Durchmesser und die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplinePrimitiveSphere1" devLabel="Creates a T-Spline sphere." translation="Erstellt eine T-Spline-Kugel"/>
+	<label commandName="lclzTSplinePrimitiveSphere2" devLabel="Select a plane then a center point for the sphere.  Use the manipulators or input fields to specify the diameter and number of faces." translation="Wählen Sie eine Ebene und dann einen Mittelpunkt für die Kugel aus. Verwenden Sie die Manipulatoren oder Eingabefelder, um den Durchmesser und die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplinePrimitiveTorus1" devLabel="Creates a T-Spline torus." translation="Erstellt einen T-Spline-Torus"/>
+	<label commandName="lclzTSplinePrimitiveTorus2" devLabel="Select a plane and draw a circle.  Use the manipulators or input fields to specify major and minor diameters and the number of faces." translation="Wählen Sie eine Ebene aus, und zeichnen Sie einen Kreis. Verwenden Sie die Manipulatoren oder Eingabefelder, um den Innen- und Außendurchmesser sowie die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplinePullSubDDesc1" devLabel="Snaps selected T-Spline vertices to a face or surface. The vertices could be control points or surface points." translation="Fängt ausgewählte T-Spline-Scheitelpunkte an einer Fläche oder Oberfläche. Die Scheitelpunkte können Kontrollpunkte oder Flächenpunkte sein."/>
+	<label commandName="lclzTSplinePullSubDDesc2" devLabel="Select the vertices to move and the vertices will automatically move to the nearest body." translation="Wählen Sie die zu verschiebenden Scheitelpunkte aus. Die Scheitelpunkte werden automatisch zum nächsten Körper verschoben."/>
+	<label commandName="lclzTSplinePullTipsAndTricksTips" devLabel="Select the vertices to move and the vertices will automatically move to the nearest body." translation="Wählen Sie die zu verschiebenden Scheitelpunkte aus. Die Scheitelpunkte werden automatisch zum nächsten Körper verschoben."/>
+	<label commandName="lclzTSplinePullTipsAndTricksTitle" devLabel="Pull Information" translation="Ziehen - Informationen"/>
+	<label commandName="lclzTSplineQuadBallTipsAndTricksDesc" devLabel="The Quadball is approximately a sphere with no polar points. Mirror allows you to maintain symmetry in subsequent modeling edits." translation="Der QuadBall entspricht in etwa einer Kugel ohne polare Punkte. Mit Spiegeln können Sie die Symmetrie in nachfolgenden Modellbearbeitungen beibehalten."/>
+	<label commandName="lclzTSplineQuadBallTipsAndTricksTips" devLabel="Select a plane then a center point for the sphere.  Use the manipulators or input fields to specify the diameter and number of faces." translation="Wählen Sie eine Ebene und dann einen Mittelpunkt für die Kugel aus. Verwenden Sie die Manipulatoren oder Eingabefelder, um den Durchmesser und die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplineQuadBallTipsAndTricksTitle" devLabel="Quadball Information" translation="QuadBall - Informationen"/>
+	<label commandName="lclzTSplineReflectionCircularSymmetry1" devLabel="Create specified number of duplicate bodies around a selected axis." translation="Erstellen Sie eine bestimmte Anzahl doppelter Körper um eine ausgewählte Achse."/>
+	<label commandName="lclzTSplineReflectionCircularSymmetry2" devLabel="Select the body to copy then select the axis to revolve around." translation="Wählen Sie den zu kopierenden Körper und dann die Achse für die Drehung aus."/>
+	<label commandName="lclzTSplineReflectionCircularTipsAndTricksTips" devLabel="Select the body to copy then select the axis to revolve around." translation="Wählen Sie den zu kopierenden Körper und dann die Achse für die Drehung aus."/>
+	<label commandName="lclzTSplineReflectionCircularTipsAndTricksTitle" devLabel="Circular Duplicate Information" translation="Rund - doppelt - Informationen"/>
+	<label commandName="lclzTSplineReflectionMirrorSymmetry1" devLabel="Create a duplicate body mirrored across a specified plane." translation="Erstellen Sie eine Kopie des Körpers, die auf einer bestimmten Ebene gespiegelt ist."/>
+	<label commandName="lclzTSplineReflectionMirrorSymmetry2" devLabel="Select the body to copy then select the mirror plane." translation="Wählen Sie den zu kopierenden Körper und dann die Spiegelebene aus."/>
+	<label commandName="lclzTSplineReflectionMirrorTipsAndTricksTips" devLabel="Select the body to copy then select the mirror plane." translation="Wählen Sie den zu kopierenden Körper und dann die Spiegelebene aus."/>
+	<label commandName="lclzTSplineReflectionMirrorTipsAndTricksTitle" devLabel="Mirror Duplicate Information" translation="Spiegeln - doppelt - Informationen"/>
+	<label commandName="lclzTSplineRepairBodyDesc1" devLabel="Analyzes the T-Spline body and displays information about the mesh. Corrects Error T and Error Star conditions." translation="Analysiert den T-Spline-Körper und zeigt Informationen über das Netz an. Korrigiert Fehler-T- und Fehler-Stern-Bedingungen"/>
+	<label commandName="lclzTSplineRepairBodyDesc2" devLabel="Select the body to analyze." translation="Wählen Sie den zu analysierenden Körper aus."/>
+	<label commandName="lclzTSplineRepairBodyTipsAndTricksTips" devLabel="Select the body to analyze. This command can be used to evaluate a body without repairing or making any changes." translation="Wählen Sie den zu analysierenden Körper aus. Dieser Befehl kann verwendet werden, um einen Körper auszuwerten, ohne ihn zu reparieren oder Änderungen vorzunehmen."/>
+	<label commandName="lclzTSplineRepairBodyTipsAndTricksTitle" devLabel="Repair Body Information" translation="Körper reparieren - Informationen"/>
+	<label commandName="lclzTSplineRevolve1" devLabel="Creates a T-Spline body by revolving edges or sketch geometry around a selected axis." translation="Erstellt einen T-Spline-Körper durch Drehen von Kanten oder Skizziergeometrie um eine ausgewählte Achse"/>
+	<label commandName="lclzTSplineRevolve2" devLabel="Select sketch curves, profiles, planar faces, or edges then select the axis to revolve around. Use the manipulators or input fields to specify the number of faces." translation="Wählen Sie Skizzierkurven, Profile, ebene Flächen oder Kanten und dann die Achse für die Drehung aus. Verwenden Sie die Manipulatoren oder Eingabefelder, um die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplineRevolveTipsAndTricksDesc" devLabel="Set the Spacing setting to Curvature to add faces in areas of higher curvature. Circular Symmetry allows you to maintain symmetry in subsequent modeling edits" translation="Legen Sie die Einstellung Abstand auf Krümmung fest, um Flächen in Bereichen mit hoher Krümmung hinzuzufügen. Mit Kreissymmetrie können Sie die Symmetrie in nachfolgenden Modellbearbeitungen beibehalten."/>
+	<label commandName="lclzTSplineRevolveTipsAndTricksTips" devLabel="Select sketch curves, profiles, planar faces, or edges then select the axis to revolve around. Use the manipulators or input fields to specify the number of faces." translation="Wählen Sie Skizzierkurven, Profile, ebene Flächen oder Kanten und dann die Achse für die Drehung aus. Verwenden Sie die Manipulatoren oder Eingabefelder, um die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplineRevolveTipsAndTricksTitle" devLabel="Revolve Information" translation="Drehen - Informationen"/>
+	<label commandName="lclzTSplineSlideEdgeDesc1" devLabel="Moves the selected edge along the control polygon." translation="Verschiebt die ausgewählte Kante entlang des Steuerpolygons"/>
+	<label commandName="lclzTSplineSlideEdgeDesc2" devLabel="Select the edges then specify the new position." translation="Wählen Sie die Kanten aus, und geben Sie dann die neue Position an."/>
+	<label commandName="lclzTSplineSlideEdgeTipsAndTricksTitle" devLabel="Slide Edge Information" translation="Kante schieben - Informationen"/>
+	<label commandName="lclzTSplineSmoothDesc1" devLabel="Smoothes an area of the T-Spline geometry." translation="Glättet einen Bereich der T-Spline-Geometrie."/>
+	<label commandName="lclzTSplineSmoothDesc2" devLabel="Select the faces to smooth and the smoothing rate." translation="Wählen Sie die zu glättenden Flächen und die Glättungsrate aus."/>
+	<label commandName="lclzTSplineSmoothTipsAndTricksTips" devLabel="Select around the desired area and play with the smoothing rate for desired result. Change the smoothing rate to see results in real-time." translation="Wählen Sie den gewünschten Bereich aus, und ändern Sie die Glättungsrate, bis Sie mit dem Ergebnis zufrieden sind. Die Änderung der Glättungsrate wird in Echtzeit angezeigt."/>
+	<label commandName="lclzTSplineSmoothTipsAndTricksTitle" devLabel="Smooth Information" translation="Glätten - Informationen"/>
+	<label commandName="lclzTSplineSphereTipsAndTricksDesc" devLabel="Reducing the number of faces below 8 or 4 in either directioin, the body will no longer be spherical. Mirror allows you to maintain symmetry in subsequent modeling edits." translation="Nach dem Reduzieren der Anzahl an Flächen auf unter 8 bzw. 4 in jeder Richtung ist der Körper nicht mehr kugelförmig. Mit Spiegeln können Sie die Symmetrie in nachfolgenden Modellbearbeitungen beibehalten."/>
+	<label commandName="lclzTSplineSphereTipsAndTricksTips" devLabel="Select a plane then a center point for the sphere.  Use the manipulators or input fields to specify the diameter and number of faces." translation="Wählen Sie eine Ebene und dann einen Mittelpunkt für die Kugel aus. Verwenden Sie die Manipulatoren oder Eingabefelder, um den Durchmesser und die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplineSphereTipsAndTricksTitle" devLabel="Sphere Information" translation="Kugel - Informationen"/>
+	<label commandName="lclzTSplineStraightenDesc1" devLabel="Straightens vertices to a best fit line, an existing line, or a line through two selected points." translation="Begradigt Scheitelpunkte bis zur besten Einpassungslinie, einer vorhandenen Linie oder einer Linie durch zwei ausgewählte Punkte."/>
+	<label commandName="lclzTSplineStraightenDesc2" devLabel="Select the direction type, select a line or two points to define the line, then select the vertices or tangency handles to straighten." translation="Wählen Sie den Richtungstyp aus, wählen Sie eine Linie oder zwei Punkte aus, um die Linie zu definieren, und wählen Sie dann die Scheitelpunkte oder Tangentengriffe aus, um sie zu begradigen."/>
+	<label commandName="lclzTSplineStraightenTipsAndTricksTips" devLabel="Adjust the Display Mode to see the effect of each Straighten Type more easily. Use Box Display for Control Points and Smooth Display for Surface Points." translation="Passen Sie den Anzeigemodus an, um die Auswirkungen der einzelnen Begradigungstypen einfacher zu sehen. Verwenden Sie die Quaderanzeige für Steuerpunkte und die glatte Darstellung für Flächenpunkte."/>
+	<label commandName="lclzTSplineStraightenTipsAndTricksTitle" devLabel="Straighten Information" translation="Begradigen - Informationen"/>
+	<label commandName="lclzTSplineSubsetDesc1" devLabel="Divides one or more faces into a subset of faces." translation="Unterteilt eine oder mehrere Flächen in einen untergeordneten Satz von Flächen."/>
+	<label commandName="lclzTSplineSubsetDesc2" devLabel="Select the faces to divide. Hold Ctrl (Windows) or Command (Mac) to select multiple faces." translation="Wählen Sie die zu teilenden Flächen aus. Halten Sie die STRG- (Windows) oder Befehlstaste (Mac) gedrückt, um mehrere Flächen auszuwählen."/>
+	<label commandName="lclzTSplineSubsetTipsAndTricksTips" devLabel="Select the faces to divide. Hold Ctrl (Windows) or Command (Mac) to select multiple faces." translation="Wählen Sie die zu teilenden Flächen aus. Halten Sie die STRG- (Windows) oder Befehlstaste (Mac) gedrückt, um mehrere Flächen auszuwählen."/>
+	<label commandName="lclzTSplineSubsetTipsAndTricksTitle" devLabel="Subdivide Information" translation="Unterteilen - Informationen"/>
+	<label commandName="lclzTSplineSweep1" devLabel="Creates a T-Spline body by sweeping edges or sketch curves along a selected path." translation="Erstellt einen T-Spline-Körper durch das Sweeping von Kanten oder Skizzierkurven entlang einem ausgewählten Pfad"/>
+	<label commandName="lclzTSplineSweep2" devLabel="Select sketch curves or profiles then select the path to sweep along.  Use the manipulators or input fields to specify percentage length of the path and the number of faces." translation="Wählen Sie Skizzierkurven oder Profile und dann den Pfad für das Sweeping aus. Verwenden Sie die Manipulatoren oder Eingabefelder, um den Längenprozentsatz des Pfads und die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplineSweepTipsAndTricksDesc" devLabel="Set Curvature in the Spacing setting to add faces in areas of higher curvature. Changing the Orientation will affect the topology of your geometry." translation="Stellen Sie die Option Krümmung in der Einstellung Abstand ein, um Flächen in Bereichen mit hoher Krümmung hinzuzufügen. Wenn Sie die Ausrichtung ändern, wirkt sich dies auf die Topologie der Geometrie aus."/>
+	<label commandName="lclzTSplineSweepTipsAndTricksTips" devLabel="Select sketch curves or profiles then select the path to sweep along.  Use the manipulators or input fields to specify percentage length of the path and the number of faces." translation="Wählen Sie Skizzierkurven oder Profile und dann den Pfad für das Sweeping aus. Verwenden Sie die Manipulatoren oder Eingabefelder, um den Längenprozentsatz des Pfads und die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplineSweepTipsAndTricksTitle" devLabel="Sweep Information" translation="Sweeping - Informationen"/>
+	<label commandName="lclzTSplineThickenDesc1" devLabel="Creates a body offset." translation="Erstellt einen Körperversatz"/>
+	<label commandName="lclzTSplineThickenDesc2" devLabel="Select the body then set the thickness and end treatments." translation="Wählen Sie den Körper aus, und legen Sie dann die Dicke und Endbearbeitung fest."/>
+	<label commandName="lclzTSplineThickenTipsAndTricksTips" devLabel="Select the body then set the thickness and end treatments." translation="Wählen Sie den Körper aus, und legen Sie dann die Dicke und Endbearbeitung fest."/>
+	<label commandName="lclzTSplineThickenTipsAndTricksTitle" devLabel="Thicken Information" translation="Verdicken - Informationen"/>
+	<label commandName="lclzTSplineToggleTessModeDesc1" devLabel="Sets the body display to smooth, box, or control frame. Smooth shows the actual model. Box displays only the control framework. Control frame displays the framework and the actual model." translation="Legt für die Körperanzeige Glatt, Quader oder Steuerungsrahmen fest. Glatt zeigt das tatsächliche Modell. Quader zeigt nur den Steuerungsrahmen. Steuerungsrahmen zeigt den Rahmen und das tatsächliche Modell."/>
+	<label commandName="lclzTSplineToggleTessModeDesc2" devLabel="Select the desired display mode. If there is more than one T-Spline body, you need to select the body to change the display." translation="Wählen Sie den gewünschten Anzeigemodus aus. Wenn mehr als ein T-Spline-Körper existiert, müssen Sie den Körper auswählen, um die Anzeige zu ändern."/>
+	<label commandName="lclzTSplineTorusTipsAndTricks1Desc" devLabel="Reducing the number of faces below 8 in either directioin, the body will no longer be round. Mirror allows you to maintain symmetry in subsequent modeling edits." translation="Nach dem Reduzieren der Anzahl an Flächen auf unter 8 in jeder Richtung ist der Körper nicht mehr rund. Mit Spiegeln können Sie die Symmetrie in nachfolgenden Modellbearbeitungen beibehalten."/>
+	<label commandName="lclzTSplineTorusTipsAndTricksTips" devLabel="Select a plane and draw a circle.  Use the manipulators or input fields to specify major and minor diameters and the number of faces." translation="Wählen Sie eine Ebene aus, und zeichnen Sie einen Kreis. Verwenden Sie die Manipulatoren oder Eingabefelder, um den Innen- und Außendurchmesser sowie die Anzahl der Flächen anzugeben."/>
+	<label commandName="lclzTSplineTorusTipsAndTricksTitle" devLabel="Torus Information" translation="Torus - Informationen"/>
+	<label commandName="lclzTSplineUnCreaseEdgeDesc1" devLabel="Restores previously creased edges to their original state." translation="Stellt den ursprünglichen Zustand zuvor geknickter Kanten wieder her"/>
+	<label commandName="lclzTSplineUnCreaseEdgeDesc2" devLabel="Select creased edges to uncrease." translation="Wählen Sie geknickte Kanten aus, um die Knicke zu entfernen."/>
+	<label commandName="lclzTSplineUnCreaseEdgeTipsAndTricksTips" devLabel="Select edges to uncrease." translation="Wählen Sie die Kanten aus, deren Knicke Sie entfernen möchten."/>
+	<label commandName="lclzTSplineUnCreaseEdgeTipsAndTricksTitle" devLabel="Uncrease Information" translation="Knicke entfernen - Informationen"/>
+	<label commandName="lclzTSplineUnFreezeCmd1" devLabel="Unfreezes faces and edges that have previously been frozen." translation="Gibt die Flächen und Kanten frei, die zuvor eingefroren waren."/>
+	<label commandName="lclzTSplineUnFreezeCmd2" devLabel="Select faces or edges to unfreeze." translation="Wählen Sie die freizugebenden Flächen oder Kanten aus."/>
+	<label commandName="lclzTSplineUnFreezeCmdTipsAndTricksTips" devLabel="Select frozen faces or edges to unfreeze them." translation="Wählen Sie die eingefrorenen Flächen oder Kanten aus, um sie freizugeben."/>
+	<label commandName="lclzTSplineUnFreezeCmdTipsAndTricksTitle" devLabel="Unfreeze Information" translation="Freigeben - Informationen"/>
+	<label commandName="lclzTSplineUnWeldDesc1" devLabel="Disconnects an edge or loop." translation="Löst die Verbindung einer Kante oder Kontur"/>
+	<label commandName="lclzTSplineUnWeldDesc2" devLabel="Select an edge or double click to select a loop. Hold Ctrl (Windows) or Command (Mac) to select multiple edges." translation="Wählen Sie eine Kante aus, oder doppelklicken Sie zum Auswählen einer Kontur. Halten Sie die STRG- (Windows) oder Befehlstaste (Mac) gedrückt, um mehrere Kanten auszuwählen."/>
+	<label commandName="lclzTSplineUnWeldTipsAndTricksTips" devLabel="Select an edge or double click to select a loop. Hold Ctrl (Windows) or Command (Mac) to select multiple edges." translation="Wählen Sie eine Kante aus, oder doppelklicken Sie zum Auswählen einer Kontur. Halten Sie die STRG- (Windows) oder Befehlstaste (Mac) gedrückt, um mehrere Kanten auszuwählen."/>
+	<label commandName="lclzTSplineUnWeldTipsAndTricksTitle" devLabel="UnWeld Information" translation="Schweißung auflösen - Informationen"/>
+	<label commandName="lclzTSplineWeldDesc1" devLabel="Joins two or more vertices." translation="Verbindet zwei oder mehr Scheitelpunkte."/>
+	<label commandName="lclzTSplineWeldDesc2" devLabel="Select two vertices to join. Window select vertices to weld within the specified tolerance." translation="Wählen Sie zwei Scheitelpunkte zum Verbinden aus. Verwenden Sie die Fensterauswahl, um die innerhalb der angegebenen Toleranz zu schweißenden Scheitelpunkte auszuwählen."/>
+	<label commandName="lclzTSplineWeldTipsAndTricksTips" devLabel="Select two vertices to join. Window select vertices to weld within the specified tolerance." translation="Wählen Sie zwei Scheitelpunkte zum Verbinden aus. Verwenden Sie die Fensterauswahl, um die innerhalb der angegebenen Toleranz zu schweißenden Scheitelpunkte auszuwählen."/>
+	<label commandName="lclzTSplineWeldTipsAndTricksTitle" devLabel="Weld Information" translation="Schweißen - Informationen"/>
+	<label commandName="multi" devLabel="Multi" translation="Mehrfach"/>
+	<label commandName="nGonsFour" devLabel="Four Sides" translation="Vier Seiten"/>
+	<label commandName="nGonsNonFour" devLabel="Multiple Sides" translation="Mehrere Seiten"/>
+	<label commandName="planarCurveTooltip" devLabel="Check to create driving curve on a best fit plane" translation="Aktivieren, um eine Leitkurve auf einer Ebene mit bester Einpassung zu erstellen"/>
+	<label commandName="primitiveDiameter" devLabel="Diameter" translation="Durchmesser"/>
+	<label commandName="primitiveDiameter1" devLabel="Diameter 1" translation="Durchmesser 1"/>
+	<label commandName="primitiveDiameterDimensionInput" devLabel="Diameter" translation="Durchmesser"/>
+	<label commandName="primitiveHeightDimensionInput" devLabel="Height" translation="Höhe"/>
+	<label commandName="primitiveHeightSegmentInput" devLabel="Height Faces" translation="Höhenflächen"/>
+	<label commandName="primitiveLatitudeSegmentInput" devLabel="Latitude Faces" translation="Flächen in der Breite"/>
+	<label commandName="primitiveLengthDimensionInput" devLabel="Length" translation="Länge"/>
+	<label commandName="primitiveLengthSegmentInput" devLabel="Length Faces" translation="Längenflächen"/>
+	<label commandName="primitiveLongitudeSegmentInput" devLabel="Longitude Faces" translation="Flächen in der Länge"/>
+	<label commandName="primitiveRingDimensionInput" devLabel="Diameter 2" translation="Durchmesser 2"/>
+	<label commandName="primitiveRingSegmentInput" devLabel="Diameter 2 Faces" translation="Durchmesser 2 Flächen"/>
+	<label commandName="primitiveSpanSegmentInput" devLabel="Span Faces" translation="Flächen überspannen"/>
+	<label commandName="primitiveWidthDimensionInput" devLabel="Width" translation="Breite"/>
+	<label commandName="primitiveWidthSegmentInput" devLabel="Width Faces" translation="Breitenflächen"/>
+	<label commandName="profileSegmentInput" devLabel="Faces" translation="Flächen"/>
+	<label commandName="retoOffsetDistanceInput" devLabel="Offset" translation="Versatz"/>
+	<label commandName="reverseDirectionType" devLabel="Surface Points" translation="Oberflächenpunkte"/>
+	<label commandName="revolveRadiusSegmentInput" devLabel="Faces" translation="Flächen"/>
+	<label commandName="rotation" devLabel="Rotation" translation="Drehung"/>
+	<label commandName="scale" devLabel="Scale" translation="Maßstab"/>
+	<label commandName="selectNextBTNInput" devLabel="Select Next" translation="Nächste(s) auswählen"/>
+	<label commandName="selectTarget" devLabel="Select Targets" translation="Ziele auswählen"/>
+	<label commandName="simpleMode" devLabel="Simple" translation="Einfach"/>
+	<label commandName="softDistanceInput" devLabel="Distance" translation="Abstand"/>
+	<label commandName="softGrowFaceCountInput" devLabel="Face Count" translation="Flächenanzahl"/>
+	<label commandName="softManipInput" devLabel="Soft Modification" translation="Weiche Änderungen"/>
+	<label commandName="softRadiusInput1" devLabel="Radius1" translation="Radius1"/>
+	<label commandName="softRectLengthInput" devLabel="Length Face Count" translation="Anzahl Längenflächen"/>
+	<label commandName="softRectWidthInput" devLabel="Width Face Count" translation="Anzahl Breitenflächen"/>
+	<label commandName="softWeightInput" devLabel="Weight" translation="Gewicht"/>
+	<label commandName="surfaceCopy" devLabel="Copy" translation="Kopieren"/>
+	<label commandName="surfacePointsType" devLabel="Surface Points" translation="Oberflächenpunkte"/>
+	<label commandName="surfacePointsTypeTip" devLabel="Fits vertices on smooth surface to driving curve" translation="Passt Scheitelpunkte auf einer glatten Fläche an eine Leitkurve an"/>
+	<label commandName="sweepPathSegmentInput" devLabel="Faces" translation="Flächen"/>
+	<label commandName="sweepSegmentInput" devLabel="Faces" translation="Flächen"/>
+	<label commandName="translation" devLabel="Translation" translation="Translation"/>
+	<label commandName="tsSplineBevelEdgePreviewInput" devLabel="Bevel Location " translation="Abschrägungsposition "/>
+	<label commandName="tsSplineInsertEdgePreviewInput" devLabel="Insert Location " translation="Einfügeposition "/>
+	<label commandName="tsSplineSlideEdgePreviewInput" devLabel="Slide Location " translation="Schiebereglerposition "/>
+	<label commandName="tsSplineThicknessInput" devLabel="Thickness" translation="Dicke"/>
+	<label commandName="uniformDistib" devLabel="Uniform" translation="Einheitlich"/>
+	<label commandName="uniformDistibTip" devLabel="Distributes control points uniformly along curve" translation="Verteilt Kontrollpunkte gleichmäßig entlang der Kurve"/>
+	<label commandName="weldVertexOption" devLabel="Weld" translation="Schweißen"/>
+</Resource>

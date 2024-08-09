@@ -1,0 +1,567 @@
+20210611T142434 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml successfully		ThreadID: 22124, Function: Ns::OptionGroup::load, Line: 616
+20210611T142434 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml successfully		ThreadID: 22124, Function: Ns::OptionGroup::load, Line: 616
+20210611T142436 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml successfully		ThreadID: 22124, Function: Ns::OptionGroup::load, Line: 616
+20210611T142436 I Version : 2.0.10253
+20210611T142436 I UTC offset : 5
+20210611T142436 I Loading configuration from:C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/e69ac0f55aa8512db83c718906bbdedf0daa2f89/Fusion 360.server.config
+20210611T142438 I SLM: device id = 110199ce-fff2-2393-fcca-8732023f5e36
+20210611T142438 I SLM: Initialized
+20210611T142438 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml successfully		ThreadID: 22124, Function: Ns::OptionGroup::load, Line: 616
+20210611T142438 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NGlobalOptions.xml successfully		ThreadID: 22124, Function: Ns::OptionGroup::load, Line: 616
+20210611T142439 I WorkflowTrackManager Initialized with:0 items
+20210611T142439 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml successfully		ThreadID: 22124, Function: Ns::OptionGroup::load, Line: 616
+20210611T142439 I Disk capacity: 2,24,810MB Disk free: 1,09,413MB Percentage free: 48 UIThread: no Time: 0.00037s
+20210611T142439 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NGlobalOptions.xml successfully		ThreadID: 22124, Function: Ns::OptionGroup::load, Line: 616
+20210611T142439 I ADP - 499e0e6d-3c36-4885-b967-2487c86ac23d
+20210611T142439 I AnalyticItemCounts Initialized with:0 items
+20210611T142439 I 	searchAndLoad exec path: C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/e69ac0f55aa8512db83c718906bbdedf0daa2f89/Fusion360.exe
+20210611T142439 I PROXY: WindowsProxyOptionId set to Automatic
+20210611T142439 W PROXY: failed to query IE proxy configuration - The Proxy Auto-configuration URL was not found.
+
+20210611T142439 I PROXY: proxy server set to DIRECT
+20210611T142439 W PROXY: failed to query IE proxy configuration - The Proxy Auto-configuration URL was not found.
+
+20210611T142440 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c324cf-4f88e2c8869e4967ab91a6a0
+20210611T142441 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c324d0-1999a85c087a441a9c69ca46
+20210611T142441 I Request(https://ui-dls360.autodesk.com/fusion/version.txt) - workflow: attempt:0 status:200 requestId:
+20210611T142445 I SYNHUB: Loading config files in directory C:/Users/admin/AppData/Roaming/Autodesk/Synergy
+
+20210611T142445 I SYNHUB: Loading config file C:/Users/admin/AppData/Roaming/Autodesk/Synergy/NLauncher.syncfg
+
+20210611T142445 I LaunchDarkly client initialization process is finished successfully!		ThreadID: 25280, Function: Ns::LDCSDKWrapper::initLDCallback, Line: 336
+20210611T142445 I LD CSDK for type Global was initialized with a total time of 0.000023 seconds		ThreadID: 22832, Function: Ns::CSDKLDFeatureFlagsManager::getFlagValue, Line: 137
+20210611T142447 I Load Feature Toggle Xml:C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/e69ac0f55aa8512db83c718906bbdedf0daa2f89/Fusion/Server/Fusion/Resources/FeatureToggle/FeatureToggle.xml
+20210611T142450 I Load Feature Toggle Xml:C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/e69ac0f55aa8512db83c718906bbdedf0daa2f89/FusionDoc/Server/FusionDoc/Resources/FeatureToggle/FeatureToggle.xml
+20210611T142452 I C:\Users\admin\AppData\Local\Autodesk\webdeploy\production\e69ac0f55aa8512db83c718906bbdedf0daa2f89\Applications\Simulation\SimCommon10.dll		ThreadID: 22124, Function: DllMain, Line: 22
+20210611T142452 I Process attach		ThreadID: 22124, Function: DllMain, Line: 23
+20210611T142455 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml successfully		ThreadID: 22124, Function: Ns::OptionGroup::load, Line: 616
+20210611T142456 I C:\Users\admin\AppData\Local\Autodesk\webdeploy\production\e69ac0f55aa8512db83c718906bbdedf0daa2f89\Applications\CAM360\SimIdealizations10.dll		ThreadID: 22124, Function: DllMain, Line: 16
+20210611T142456 I Process attach		ThreadID: 22124, Function: DllMain, Line: 17
+20210611T142500 I Libeagle app mode: Hosted		ThreadID: 22124, Function: void __cdecl Application::cEagleAppPrivate::Init(void), Line: 315
+20210611T142500 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/electronoptiongroup_eagle.rc successfully		ThreadID: 22124, Function: Ns::OptionGroup::load, Line: 616
+20210611T142504 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NGlobalOptions.xml successfully		ThreadID: 22124, Function: Ns::OptionGroup::load, Line: 616
+20210611T142504 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NGlobalOptions.xml successfully		ThreadID: 22124, Function: Ns::OptionGroup::load, Line: 616
+20210611T142505 I Toolbar loader: Stopping...
+20210611T142505 I Toolbar loader: Stopped
+20210611T142505 I ***startSession: BEGIN
+20210611T142505 I the maintenance window is OFF
+20210611T142505 I getEntitlement
+20210611T142505 I authenticate:begin
+20210611T142505 I login start
+20210611T142539 I ServicesHealthStatus: Health Status changed from unknown to operational
+20210611T142611 I ElectronOptionGroup::onReset		ThreadID: 22124, Function: NaElectronUI::ElectronOptionGroup::onReset, Line: 181
+20210611T142611 I Going to load toolbar customizations files		ThreadID: 22124, Function: Nu::ToolbarManager::loadCustomization, Line: 419
+20210611T142611 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/NGlobalOptions.xml successfully		ThreadID: 22124, Function: Ns::OptionGroup::load, Line: 616
+20210611T142611 I Completed loading toolbar customizations files		ThreadID: 22124, Function: Nu::ToolbarManager::loadCustomization, Line: 421
+20210611T142611 I AnalyticItemCounts Terminating with:0 items
+20210611T142611 I AnalyticItemCounts Initialized with:0 items
+20210611T142611 I WorkflowTrackManager Terminating with:0 items
+20210611T142611 I WorkflowTrackManager Initialized with:0 items
+20210611T142611 W Login - Login Dialog Exit
+20210611T142611 I Disk capacity: 2,24,810MB Disk free: 1,09,411MB Percentage free: 48 UIThread: no Time: 0.00034s
+20210611T142611 I Going to load toolbar customizations files		ThreadID: 22124, Function: Nu::ToolbarManager::loadCustomization, Line: 419
+20210611T142611 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/NGlobalOptions.xml successfully		ThreadID: 22124, Function: Ns::OptionGroup::load, Line: 616
+20210611T142611 I Completed loading toolbar customizations files		ThreadID: 22124, Function: Nu::ToolbarManager::loadCustomization, Line: 421
+20210611T142611 I AnalyticItemCounts Terminating with:0 items
+20210611T142611 I AnalyticItemCounts Initialized with:0 items
+20210611T142611 I WorkflowTrackManager Terminating with:0 items
+20210611T142611 I Workflow start: GetUserAnaticsId 1-60c3252b-2770480dc2ab43678ffbb0fa
+20210611T142611 I WorkflowTrackManager Initialized with:0 items
+20210611T142611 I login end 0
+20210611T142611 I Autosave background thread started with saveTime: 5
+20210611T142611 I Request(https://js.prd.fusionapi.autodesk.com/fusion360-runtime-config/config.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3252b-c4f2e354aaa24ad8b5935b85
+20210611T142611 I SLM: Enabled (Production)
+20210611T142611 I SLM: Start session deviceId=110199ce-fff2-2393-fcca-8732023f5e36 deviceName=YASHISH
+20210611T142611 I Workflow start: SLM_startSession 1-60c3252b-69016e844d6a45b5a2faa665
+20210611T142612 I Request(https://accounts.autodesk.com/api/security/v1/analytics/user/JDF3L3FH3CC8) - workflow:GetUserAnaticsId attempt:0 status:200 requestId:f360_GetUserAnaticsId__1-60c3252b-2770480dc2ab43678ffbb0fa
+20210611T142612 I LaunchDarkly client initialization process is not finished successfully!		ThreadID: 22832, Function: Ns::LDCSDKWrapper::initLDCallback, Line: 340
+20210611T142612 I LaunchDarkly client initialization process is finished successfully!		ThreadID: 25280, Function: Ns::LDCSDKWrapper::initLDCallback, Line: 336
+20210611T142612 I LD CSDK for type Nonhub was initialized with a total time of 0.518003 seconds		ThreadID: 22832, Function: Ns::CSDKLDFeatureFlagsManager::getFlagValue, Line: 137
+20210611T142612 I LD CSDK for type Nonhub was initialized with a total time of 0.000002 seconds		ThreadID: 22832, Function: Ns::CSDKLDFeatureFlagsManager::getFlagValue, Line: 137
+20210611T142612 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions) - workflow:SLM_startSession attempt:0 status:200 requestId:f360_SLM_startSession__1-60c3252b-69016e844d6a45b5a2faa665
+20210611T142612 I SLM: session = 24363700
+20210611T142613 I OfflineFileCache: update g^[EdSBECKPBeK		ThreadID: 22124, Function: _updateTimeBomb, Line: 209
+20210611T142613 I Request(https://login.autodesk360.com/login/api/system/info) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3252c-4a6743c31b7d4c6a9c949759
+20210611T142613 I BrowserCache file size: 594 KB, "C:\Users\admin\AppData\Local\Autodesk\Autodesk Fusion 360\JDF3L3FH3CC8/NsCloudBrowserCache_gmail1126073.dat"
+20210611T142613 I BrowserCache: number of thumbnails: 16
+20210611T142613 I Workflow start: /v1/licenses 1-60c3252d-909889a7c85a40708ce19c3d
+20210611T142617 I Request(https://api.v3license.access.clic.autodesk.com/v1/licenses) - workflow:/v1/licenses attempt:0 status:200 requestId:f360_/v1/licenses__1-60c3252d-909889a7c85a40708ce19c3d
+20210611T142618 I Request(https://metering.autodesk.com/api/accounts/v1/JDF3L3FH3CC8) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c32531-7a15bdc145454cf295161d4f
+20210611T142619 I Request(https://frv.ui-dls360.autodesk.com/api/v1/checkAccess) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c32532-48e59ebf8a5b4ef08853ffdf
+20210611T142619 I Workflow start: GLE 1-60c32533-69c5131f4a914e82af70f37b
+20210611T142620 I Request(https://accounts.autodesk.com/api/license/entitlements/v1/user/JDF3L3FH3CC8?format=json&oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=5a2f9f22a9854a058bae262e6d5db174&oauth_signature=gleVyYW0SypuZ8q2NKqRLNFQGeQ%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1623401779&oauth_token=B%2BaVz04wibGrhAyPf%2F54E8ejDyQ%3D&oauth_version=1.0&trialinfo=all) - workflow:GLE attempt:0 status:200 requestId:f360_GLE__1-60c32533-69c5131f4a914e82af70f37b
+20210611T142620 I Workflow start: GEP 1-60c32534-707207448e444017a0b24080
+20210611T142620 I authenticate:end
+20210611T142620 I succesfully authenticated
+20210611T142620 I TOSS accepted
+20210611T142620 I Hub type: personal
+20210611T142620 I CheckingEntitlements
+20210611T142620 I  UserType: Hobbyist EntitlementType: Subscription
+20210611T142620 I Entitlement changed
+20210611T142620 I 1623401780332 1623401780780 GET https://accounts.autodesk.com/api/profile/education/v1/user/JDF3L3FH3CC8?format=json&oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=58e46587520e4d0eb8df028473660510&oauth_signature=XTZ%2BtXko5bVXxDl2C%2B7D4dEkt9A%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1623401780&oauth_token=B%2BaVz04wibGrhAyPf%2F54E8ejDyQ%3D&oauth_version=1.0&trialinfo=all 404 {"error":{"errorCode":"ID-EDU-002","errorDescription":"The user's education profile has not fully setup."}}
+20210611T142620 I Request(https://accounts.autodesk.com/api/profile/education/v1/user/JDF3L3FH3CC8?format=json&oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=58e46587520e4d0eb8df028473660510&oauth_signature=XTZ%2BtXko5bVXxDl2C%2B7D4dEkt9A%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1623401780&oauth_token=B%2BaVz04wibGrhAyPf%2F54E8ejDyQ%3D&oauth_version=1.0&trialinfo=all) - workflow:GEP attempt:0 status:404 requestId:f360_GEP__1-60c32534-707207448e444017a0b24080
+20210611T142621 I Hub  hasAPersonalSite=0, hasTeamHub=1, eHubStatus=0, isEntitled=1
+20210611T142621 I Workflow start: get_teamhub_preferences 1-60c32535-1b82e69f024c419ea5ac0a82
+20210611T142621 I Request(https://gmail1126073.autodesk360.com/login/rest/facade/corporateInviteSettings?oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=8b1ee215c74e453aafd5c85af3574ef1&oauth_signature=s0AeZfbeHAQvjOn7Y3xAmuqBYHI%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1623401781&oauth_token=B%2BaVz04wibGrhAyPf%2F54E8ejDyQ%3D&oauth_version=1.0) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c32535-780ebe5b51e94e88a0c8ff12
+20210611T142622 E Network failed request - response NOT OK:
+URI:https://developer.api.autodesk.com/fhq/v1/spaces?type=FLC&fusionId=urn:adsk.fusion:scope:99f2d66c-4f1e-4c2f-8490-9f6754fd1582
+...X-Request-ID: ContentBrowser(a2e7b6d3-ba6b-476c-abb7-82524451a31d)_GET_FLC_URN_GET_FLC_URN 
+...response: HTTP/1.1 404 Not Found
+Connection: keep-alive
+Content-Length: 375
+Content-Type: application/json
+Date: Fri, 11 Jun 2021 08:56:23 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-ID: ContentBrowser(a2e7b6d3-ba6b-476c-abb7-82524451a31d)_GET_FLC_URN_GET_FLC_URN
+X-XSS-Protection: 1; mode=block
+
+{"requestId":"ContentBrowser(a2e7b6d3-ba6b-476c-abb7-82524451a31d)_GET_FLC_URN_GET_FLC_URN","httpStatus":404,"detailedMessage":"Not able to find any SPACE with given search parameters","errors":[{"type":"errors","code":"FHQ-404","message":"Not able to find any SPACE with given search parameters","links":{"self":"https://developer.api.autodesk.com/fhq/v1/errors/FHQ-404"}}]}		ThreadID: 27884, Function: void __cdecl Ns::Network::ReqUtils::logRequestError(const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,class std::shared_ptr<class Ns::Network::Request>), Line: 317
+20210611T142622 W FHQService: failed to get FLC URN, response code: 
+20210611T142622 I Migrate Options
+20210611T142622 I Load Cloud Options
+20210611T142622 I PIMMgr: [launchProvisionPIMSpaceCollection]: Feature flag disabled for current session.				 Disabling PIM - will not invoke PIM Provisioning.
+20210611T142622 I PIMMgr: [launchProvisionPIMSpaceCollectionAndMigration]: Did not provision a space collection. Will not launch a migration request.
+20210611T142623 I Request(https://developer.api.autodesk.com/symphonydm/v2/hubs/gmail1126073/preferences) - workflow:get_teamhub_preferences attempt:0 status:200 requestId:f360_get_teamhub_preferences_get_teamhub_preferences_1-60c32535-1b82e69f024c419ea5ac0a82
+20210611T142623 I Request(https://login.autodesk360.com/login/api/preferences/guid?oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=1ffe65bbd48045308430f9965b06d394&oauth_signature=IhafwnU%2F9CGy2r1Ec6%2FpRKnMppM%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1623401782&oauth_token=B%2BaVz04wibGrhAyPf%2F54E8ejDyQ%3D&oauth_version=1.0) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c32536-01b60d94d2e24a4a83130ff4
+20210611T142623 I LaunchDarkly client initialization process is not finished successfully!		ThreadID: 22832, Function: Ns::LDCSDKWrapper::initLDCallback, Line: 340
+20210611T142623 I LaunchDarkly client initialization process is finished successfully!		ThreadID: 25280, Function: Ns::LDCSDKWrapper::initLDCallback, Line: 336
+20210611T142629 I Reloaded option files: C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/NGlobalOptions.xml
+20210611T142629 I ***startSession: END
+20210611T142629 I GAThread::queueReport the sending thread started
+20210611T142630 I Workflow start: GAWrapper 1-60c3253d-58eb37012c53445a9e9b7a7e
+20210611T142630 I Graphics Card: NVIDIA GeForce MX230, Rating: Unknown, Workarounds: 0 
+20210611T142630 I OGS Device: VirtualDeviceDx11
+20210611T142630 I Workflow start: GAWrapper 1-60c3253d-d4ddd074314349fb8ba44994
+20210611T142631 I Workflow start: GAWrapper 1-60c3253e-36648df5ba8a412c8db8b17f
+20210611T142631 I Workflow start: GAWrapper 1-60c3253e-34f40cda555d48019fb1ea9f
+20210611T142632 I Workflow start: GAWrapper 1-60c3253f-69b5d274b7224cf0ba432918
+20210611T142632 I 			Running Add-In Name:100KGarages Path:C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/e69ac0f55aa8512db83c718906bbdedf0daa2f89/Api/InternalAddins/100KGarages/100KGarages.py Internal:1
+20210611T142632 I Workflow start: GAWrapper 1-60c3253f-48ed1d63c40b42cf9d039c0f
+20210611T142632 I 			Running Add-In Name:ElectronicsPackageGenerator Path:C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/e69ac0f55aa8512db83c718906bbdedf0daa2f89/Api/InternalAddins/ElectronicsPackageGenerator/ElectronicsPackageGenerator.py Internal:1
+20210611T142633 I Workflow start: GAWrapper 1-60c32540-b1adbd53ebd047a3ab2ffbb8
+20210611T142633 I Workflow start: GAWrapper 1-60c32540-21df015b860f4102b68cb118
+20210611T142633 I 			Running Add-In Name:parts4cad Path:C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/e69ac0f55aa8512db83c718906bbdedf0daa2f89/Api/InternalAddins/parts4cad/parts4cad.py Internal:1
+20210611T142633 I 			Running Add-In Name:traceparts Path:C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/e69ac0f55aa8512db83c718906bbdedf0daa2f89/Api/InternalAddins/traceparts/traceparts.py Internal:1
+20210611T142633 I Local cache scan: 0.0340565 seconds, 11 items
+20210611T142633 I DownloadManager::started
+20210611T142633 I savingVersionLaunched		ThreadID: 22124, Function: Nu::WhatsNewBannerCmdDef::applicationReady, Line: 94
+20210611T142633 I last version: 2.0.10244		ThreadID: 22124, Function: Nu::UIApplication::saveVersionLaunched, Line: 85
+20210611T142633 I current version: 2.0.10253		ThreadID: 22124, Function: Nu::UIApplication::saveVersionLaunched, Line: 86
+20210611T142633 I Saved option file: C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/NGlobalOptions.xml
+20210611T142633 I Saved option file: C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml
+20210611T142634 I Workflow start: GAWrapper 1-60c32541-87eedfc4f2dc437ea1ff6cbb
+20210611T142634 I Workflow start: GAWrapper 1-60c32541-dcbeb8f8d9944aed9e9e2a58
+20210611T142637 I JSManager - extracted archive to C:\Users\admin\AppData\Local\Temp\Neutron\e4007897-b152-4607-8ea0-40db98aa8905
+20210611T142637 I Dashboard Size: initial size: width 100 height 30
+20210611T142637 I Dashboard Size: use parent size: width 0 height 600
+20210611T142637 I Dashboard Size createWebControl parent area - width 0 height: 600
+20210611T142638 I Request(https://gmail1126073.autodesk360.com/login/api/hubs/gmail1126073/preferences/fusion.implicit.reservation.enabledForHub?oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=1a0dc5dea2ff405a8e9882fd1ae043f0&oauth_signature=YqP%2FDexl3ofuYSc4Y54zUd99ECY%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1623401797&oauth_token=B%2BaVz04wibGrhAyPf%2F54E8ejDyQ%3D&oauth_version=1.0) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c32545-a1576b9f2c144e848c5d419b
+20210611T142641 I JSManager - extracted archive to C:\Users\admin\AppData\Local\Temp\Neutron\0e04d956-9051-4ce4-9489-76b82d320c77
+20210611T142641 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml successfully		ThreadID: 22124, Function: Ns::OptionGroup::load, Line: 616
+20210611T142642 I Workflow start: GAWrapper 1-60c32549-d7a99e61aab64980a85ebfbe
+20210611T142642 I Live update: start update check.
+20210611T142642 I Live update: Skip the first Etag check
+20210611T142642 I Live update: Start update process in Streamer side.
+20210611T142642 I PIMMgr: [launchProvisionPIMSpaceCollection]: Feature flag disabled for current session.				 Disabling PIM - will not invoke PIM Provisioning.
+20210611T142642 I PIMMgr: [launchProvisionPIMSpaceCollectionAndMigration]: Did not provision a space collection. Will not launch a migration request.
+20210611T142643 I Workflow start: GAWrapper 1-60c3254a-d87017f971ee47aa98a59983
+20210611T142643 I Tool library url: file:///C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/e69ac0f55aa8512db83c718906bbdedf0daa2f89/Applications/CAM360/tool-library/index.html?language=en-US&serverType=FUSION_DESKTOP
+
+20210611T142643 I Live update: Start pending updates check.
+20210611T142643 I Live update: Update is in progress.
+20210611T142643 I Workflow start: GAWrapper 1-60c3254a-64ae211bcc6c46888fb7391b
+20210611T142643 I Request(https://metering.autodesk.com/api/price/v1/JDF3L3FH3CC8/fusion360manufacturingext?format=json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3254a-41dbf1867da24161b00d27fe
+20210611T142643 I Saved option file: C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml
+20210611T142643 I OfflineFileCache: update g^[EdSBECKPB`J		ThreadID: 22124, Function: _updateTimeBomb, Line: 209
+20210611T142643 D Entered into Online mode result: 1
+20210611T142643 I Collaboration setSingleUserHub: From MultiUserHub To SingleUserHub
+20210611T142643 I EvergageWrapper:networkOk changed to:1
+20210611T142643 I Workflow start: /v1/license-check 1-60c3254b-3e1ee7c2dd7a4d29b35e2217
+20210611T142643 I Local render: Sync to cloud started. Checking for jobs to sync.
+20210611T142643 I Local render: Quit syncing to cloud. No more jobs in queue.
+20210611T142643 I Request(https://metering.autodesk.com/api/price/v1/JDF3L3FH3CC8/fusion360nestingext?format=json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3254a-a16bfee8e3914a1f8f74039a
+20210611T142644 I Circuit Breaker OSS : Reset to Closed
+20210611T142644 I Circuit Breaker FusionDM : Reset to Closed
+20210611T142644 I Circuit Breaker A360 : Reset to Closed
+20210611T142644 I Circuit Breaker WIP : Reset to Closed
+20210611T142644 I OnlineStatus OnlineUI online
+20210611T142644 I WIPService::getLineages lineages array is empty. This may be normal.
+20210611T142644 I Request(https://metering.autodesk.com/api/price/v1/JDF3L3FH3CC8/fusion360additivesim?format=json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3254a-5102aa46abc042ef93b7101b
+20210611T142644 I Request(https://metering.autodesk.com/api/price/v1/JDF3L3FH3CC8/fusion360additiveext?format=json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3254a-bc45819831f744b885b15f04
+20210611T142644 I Request(https://metering.autodesk.com/api/price/v1/JDF3L3FH3CC8/fusion360manufacturingext?format=json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3254a-45c58c3b0e7942c994a0eada
+20210611T142644 I (total 128.756s diff 128.756s) 	PERF: DashboardReady 128.756s (time from start), version: 2.0.10253
+20210611T142644 I Workflow start: GAWrapper 1-60c3254b-1909d569b6ee495f8a05107d
+20210611T142644 D ActiveDocumentCache:  periodic update thread started
+20210611T142644 I Request(https://metering.autodesk.com/api/accounts/v1/JDF3L3FH3CC8) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3254b-c3a93e302c2746aca0530a5e
+20210611T142644 I Workflow start: GAWrapper 1-60c3254b-66079b2cb8bc446fad8851a7
+20210611T142645 I Request(https://metering.autodesk.com/api/authvalidate/v1/JDF3L3FH3CC8/fusion360/201809181017510) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3254b-d3f9c8e19e4e4fdbb1bbb645
+20210611T142645 I Workflow start: GAWrapper 1-60c3254c-12b0559da32449a38a20dd0a
+20210611T142645 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3254b-9a834717ec354ef293c8dd47
+20210611T142645 I Request(https://api.v3license.access.clic.autodesk.com/v1/license-check) - workflow:/v1/license-check attempt:0 status:200 requestId:f360_/v1/license-check__1-60c3254b-3e1ee7c2dd7a4d29b35e2217
+20210611T142645 I urn:adsk.objects:os.object:fusion.prefs.login/JDF3L3FH3CC8__ActiveDocuments 11240 15 218 8885
+20210611T142645 I 1623401803566 1623401804837 5242880 8 16 60000 urn:adsk.objects:os.object:fusion.prefs.login/JDF3L3FH3CC8__ActiveDocuments 11240 200 
+20210611T142645 I ActiveDocumentCache:  periodic update thread performed a refresh from the cloud
+20210611T142645 I Workflow start: GAWrapper 1-60c3254c-0ea789d92452459096bc3190
+20210611T142646 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3254c-afd1149ea86745f6b1f6a14d
+20210611T142646 I Workflow start: GAWrapper 1-60c3254d-ce4f1186806b41d49426c67a
+20210611T142646 I Workflow start: GAWrapper 1-60c3254d-4eb7057cfae2486ba5249ab4
+20210611T142647 I Workflow start: GAWrapper 1-60c3254e-dd1dffffff9b41a6887febab
+20210611T142647 I urn:adsk.objects:os.object:fusion.prefs.login/JDF3L3FH3CC8_NGlobalOptions.xml 31566 0 0 28853
+20210611T142647 E The operation completed successfully
+20210611T142647 I 1623401805549 1623401806651 5242880 8 16 60000 urn:adsk.objects:os.object:fusion.prefs.login/JDF3L3FH3CC8_NGlobalOptions.xml 31566 200 {"bucket_key":"fusion.prefs.login","key":"JDF3L3FH3CC8_NGlobalOptions.xml","id":"urn:adsk.objects:os.object:fusion.prefs.login/JDF3L3FH3CC8_NGlobalOptions.xml","size":"31566","sha1":"0ac2562c52f7dd969b0df893fcf0bd9eec416fde","content_type":"application/stream","location":"https://developer.api.autodesk.com/oss/v2/buckets/fusion.prefs.login/objects/JDF3L3FH3CC8_NGlobalOptions.xml"}
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 D OK
+20210611T142647 I urn:adsk.objects:os.object:fusion.prefs.login/JDF3L3FH3CC8_notificationsTEST.json 20 0 0 45
+20210611T142647 I 1623401806773 1623401807215 5242880 8 16 5000 urn:adsk.objects:os.object:fusion.prefs.login/JDF3L3FH3CC8_notificationsTEST.json 20 200 
+20210611T142647 I Workflow start: GAWrapper 1-60c3254f-93dd68a488544b03b8d89e15
+20210611T142648 I Workflow start: GAWrapper 1-60c3254f-e507f502931942d2b51355fc
+20210611T142648 D OK
+20210611T142648 D OK
+20210611T142648 I : urlChanged: file:///C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/e69ac0f55aa8512db83c718906bbdedf0daa2f89/FusionCDEHostApps/team-switcher/index.html?locale=en-US
+20210611T142648 I Workflow start: GAWrapper 1-60c32550-dbf64c2e37554a39b9c035c1
+20210611T142649 I CDE Log: {"message":"fetchTeams","level":"INFO"}
+20210611T142649 I "fetchTeams"
+20210611T142649 D Unexpected command type: evergage
+20210611T142649 I : loadFinished: 
+20210611T142649 I CDE Log: {"message":"fetchTeams","level":"INFO"}
+20210611T142649 I "fetchTeams"
+20210611T142649 I Workflow start: GAWrapper 1-60c32550-13654c7dcc8a4f26bf31dca2
+20210611T142649 I (total 134.294s diff 5.538s) 	PERF: ModelingReady
+20210611T142649 I Workflow start: GAWrapper 1-60c32551-4ca8650cd71042e3b3f76123
+20210611T142649 I checkVersion		ThreadID: 22124, Function: Nu::WhatsNewBannerCmdDef::updateNoAction, Line: 100
+20210611T142649 I current version: 2.0.10253		ThreadID: 22124, Function: Nu::UIApplication::firstTimeVersionLaunched, Line: 114
+20210611T142649 I last version: 2.0.10244		ThreadID: 22124, Function: Nu::UIApplication::firstTimeVersionLaunched, Line: 118
+20210611T142649 I display Banner.		ThreadID: 22124, Function: Nu::WhatsNewBannerCmdDef::updateNoAction, Line: 103
+20210611T142650 I Workflow start: GAWrapper 1-60c32551-ce0b39b08a694bd58617f4da
+20210611T142650 I Workflow start: GAWrapper 1-60c32551-dcb3961287124166a02ffe50
+20210611T142650 I Workflow start: GAWrapper 1-60c32552-19e092d4dde04406958727e4
+20210611T142651 I current version: 2.0.10253		ThreadID: 22124, Function: Nu::UIApplication::firstTimeVersionLaunched, Line: 114
+20210611T142651 I last version: 2.0.10244		ThreadID: 22124, Function: Nu::UIApplication::firstTimeVersionLaunched, Line: 118
+20210611T142651 I Workflow start: GAWrapper 1-60c32552-6d35044dbe484815a805229e
+20210611T142656 I Workflow start: GAWrapper 1-60c32557-cfb223a05e23466cbbabdc8d
+20210611T142739 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32582-29026d865ee34117b5f672bd
+20210611T142743 I [Missing-Content-Repair] Attempting repair
+20210611T142743 I Workflow start: missing_content_repair 1-60c32587-fa0fd02b2b494216a21435e3
+20210611T142746 I Request(https://developer.api.autodesk.com/wipdata-serv/storage/v3/entities/get) - workflow:missing_content_repair attempt:0 status:200 requestId:f360_missing_content_repair_entities_1-60c32587-fa0fd02b2b494216a21435e3
+20210611T142746 I Saved option file: C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml
+20210611T142746 I 
+[Missing-Content-Repair] Summary:
+=====
+11 files found under cloud cache
+0 files in upload queue already
+0 files skipped as they are in upload queue already
+Status of 11 versions asked from WIP - 11 received
+0 files queued for repair
+=====
+20210611T142746 I Workflow start: GAWrapper 1-60c32589-5dcb57db073341a486cf0871
+20210611T142840 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c325bf-d982cbef30df4329b4222937
+20210611T142941 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c325fc-0d2de1c0abb54b6cb8373bc2
+20210611T143042 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32638-1d5ca984107d488bb9afe216
+20210611T143111 I Trial Survey notification blocked by not a Trial user
+20210611T143143 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32675-30df39d2d08e4a0695619445
+20210611T143244 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c326b2-dd498d0c136049b08f20fdb2
+20210611T143343 I Workflow start: GAWrapper 1-60c326ee-81dcf64567e645539d5e2c1a
+20210611T143344 I Dashboard Size timer - width 68 height: 831
+20210611T143344 I Workflow start: GAWrapper 1-60c326f0-b0915ee74161439e8c246b15
+20210611T143344 I Dashboard Size timer - width 383 height: 831
+20210611T143344 I Dashboard Size timer - width 402 height: 831
+20210611T143345 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c326ef-6c4c5665c2f1459ca5a3c99e
+20210611T143348 I Dashboard Size timer - width 391 height: 831
+20210611T143348 I Workflow start: GAWrapper 1-60c326f3-0b0d3ce1d81a403b9a6acbdc
+20210611T143348 I Dashboard Size timer - width 89 height: 831
+20210611T143348 I Dashboard Size timer - width 1 height: 831
+20210611T143348 I Dashboard Size timer - width 0 height: 831
+20210611T143356 I Dashboard Size timer - width 57 height: 831
+20210611T143356 I Workflow start: GAWrapper 1-60c326fc-f65f7c9e8b3c467e86cc926e
+20210611T143356 I Dashboard Size timer - width 351 height: 831
+20210611T143356 I Dashboard Size timer - width 401 height: 831
+20210611T143357 I Dashboard Size timer - width 402 height: 831
+20210611T143446 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3272c-48fdcf7b734440849055d716
+20210611T143546 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32769-f1cb7e2d640b419b96f2fa31
+20210611T143611 I Saved option file: C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/NGlobalOptions.xml
+20210611T143611 D OK
+20210611T143621 I urn:adsk.objects:os.object:fusion.prefs.login/JDF3L3FH3CC8_NGlobalOptions.xml 31780 15 203 17385
+20210611T143621 E The operation completed successfully
+20210611T143621 I 1623402379568 1623402381400 5242880 8 16 60000 urn:adsk.objects:os.object:fusion.prefs.login/JDF3L3FH3CC8_NGlobalOptions.xml 31780 200 {"bucket_key":"fusion.prefs.login","key":"JDF3L3FH3CC8_NGlobalOptions.xml","id":"urn:adsk.objects:os.object:fusion.prefs.login/JDF3L3FH3CC8_NGlobalOptions.xml","size":"31780","sha1":"711c3cdbd2913b163da4eb40ee89c808b70bbf09","content_type":"application/stream","location":"https://developer.api.autodesk.com/oss/v2/buckets/fusion.prefs.login/objects/JDF3L3FH3CC8_NGlobalOptions.xml"}
+20210611T143647 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c327a6-a94ba5ebda4c4f63a6d44f05
+20210611T143748 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c327e3-eaf71e594cf8432782aa2bcf
+20210611T143849 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32820-f8b99531e50c4637b8dcc9a7
+20210611T143947 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3285a-724578faa7424d788705e4ec
+20210611T143948 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3285b-5d9d8ade879641e7a41d02d5
+20210611T143950 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3285d-b1986efbedb742918212c385
+20210611T144051 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3289a-32d5fd22f94e4f1e9385ba92
+20210611T144152 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c328d7-6cfd3a0503df49f291992b3b
+20210611T144253 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32914-f9b93ac5981f4bf9acb02dc6
+20210611T144354 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32951-dc2e011a95e54431b5b4b810
+20210611T144455 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3298e-c57caf8d812c45b5be19e3e6
+20210611T144557 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c329cb-83aadd0d218d4bd9a036ae65
+20210611T144658 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32a09-89cdd20fa6884590a69ad943
+20210611T144800 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32a45-579395ce489e4387a0d244d7
+20210611T144901 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32a83-c37c67f28ed04682add129ed
+20210611T145002 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32ac0-3a808fff313a4b4d88d4513d
+20210611T145102 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32afd-28013ec0f2984ba69c2db4aa
+20210611T145203 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32b39-4f6919ed3f8b439993924ca3
+20210611T145304 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32b76-b5e1ca0e31404e4095139ab1
+20210611T145405 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32bb3-ecae64af7c9041d787404e1d
+20210611T145455 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c32be4-0f872828217547a4862746e1
+20210611T145456 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c32be6-07bd2831e729436c8a7c724b
+20210611T145507 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32bf0-e1e850b1fbf94bd0abe4d609
+20210611T145607 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32c2e-3ef9c8f16b77436c8c35329f
+20210611T145708 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32c6b-34de8a15528f421285c88dff
+20210611T145809 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32ca8-cce038184aec4993aab0f4cc
+20210611T145910 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32ce4-401799f258384df2bb93b51e
+20210611T150011 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32d21-6805a47345154774a4130de5
+20210611T150112 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32d5e-71170cab9bb34bdea2ebfc0a
+20210611T150213 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32d9b-a7e67a87f5a24fd5a24371fd
+20210611T150314 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32dd9-4cdc15e4d39e4aa6908bc41b
+20210611T150415 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32e15-2b071c9b608c4f30b7aba524
+20210611T150516 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32e52-ba9781d145c0459aae07e076
+20210611T150617 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32e90-f06601888ffc4ac19e4b1fb4
+20210611T150718 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32ecd-a3ceffe03f504beba4177e8c
+20210611T150819 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32f0a-adf718f7628846fa9a944810
+20210611T150920 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32f46-bc71ba86805b4dc088c24e8e
+20210611T151002 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c32f6f-49168913adfb4c23a7cb8205
+20210611T151003 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c32f72-8e16644f27804710a207cf15
+20210611T151020 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32f83-48a876b5a99344e8a1e64be4
+20210611T151121 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32fc0-7d923871e7204c1b8b2d24dd
+20210611T151222 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c32ffc-9a38b6d45f1445c799525677
+20210611T151323 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3303a-b22784a179ff4cf9b2c78074
+20210611T151423 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33077-57eaed7d6c284cd28c8dc594
+20210611T151524 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c330b3-fcc097e92da34995a9c9eb05
+20210611T151625 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c330f0-1dbfada2db144b55804f53e2
+20210611T151726 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3312d-f6cc95fb4a9140f1b9502961
+20210611T151827 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3316a-75264760fcf74e19b82bb118
+20210611T151928 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c331a7-91dcf1129b03497394a4a24f
+20210611T152029 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c331e4-8fa77053e1754fa4b129367d
+20210611T152130 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33221-de923e2dbe3e4469a8731958
+20210611T152231 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3325d-0f04fa64c78a4806abd64a99
+20210611T152332 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3329a-22ff13a7569c45b794b6301e
+20210611T152433 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c332d7-fea23196d3d24d1ab2c7b41d
+20210611T152509 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c332fa-41ea5731828e47a4b1b34a8f
+20210611T152509 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c332fc-47a290e2e3f94bacb3b5b143
+20210611T152534 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33314-e3e9c76ce50944d7863e8f38
+20210611T152630 I Request(https://metering.autodesk.com/api/report/v1/JDF3L3FH3CC8/fusion360/JJ23P56FXC3S/HEARTBEAT) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3334c-f1f03b82038a4b59ace5c72c
+20210611T152634 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33351-17cb524fa8ff4818ad775f5f
+20210611T152735 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3338e-52cb13766d664da78bd52913
+20210611T152836 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c333ca-1b2e371a8721480eb1d23089
+20210611T152937 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33408-3236760201aa46cba2fa6d49
+20210611T153038 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33444-32227a6aee7f4e84b191a917
+20210611T153139 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33481-846c1ee3917843e4af28c528
+20210611T153240 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c334bf-e8443104f90942bc9bae67df
+20210611T153341 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c334fb-4d5f467ca73541ab97f02476
+20210611T153442 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33538-d83d930d95484a909365e649
+20210611T153542 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33575-16c245fce27543f391a106f7
+20210611T153643 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c335b2-aaa4a457984f4f93a93ee91e
+20210611T153744 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c335ef-f841cae8ec9c41e59380500f
+20210611T153845 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3362c-b6f1b1168e54459ab33843ad
+20210611T153946 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33669-b1f1c8a9ac4446229db66a27
+20210611T154014 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c33684-796ffbbea03b42c499962b3d
+20210611T154014 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c33685-749563511842438c8ddf6d9e
+20210611T154047 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c336a6-7938e87650c34c148b0e3447
+20210611T154147 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c336e2-cb1549a225da4b96836c344d
+20210611T154248 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3371f-8bbce150319142a581972e29
+20210611T154350 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3375c-0013025907424cfc845e0907
+20210611T154451 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33799-d88cc6fbf3d14a4691e5f944
+20210611T154551 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c337d6-eef37488dd544a7dbce1b2ad
+20210611T154652 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33813-85f77e27cba84f2cbe5f5877
+20210611T154753 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33850-7203b91c557048f7bc2e355f
+20210611T154854 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3388d-80e0b12028824e0a8c5b11a8
+20210611T154955 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c338ca-f59442651a864aa793a799fd
+20210611T155056 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33907-843ae40b9a9a487a8f7e1c52
+20210611T155157 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33944-837071e9a44240b6bfb87bdd
+20210611T155259 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33981-4fe2fe2c433d4af49c25df6b
+20210611T155400 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c339be-6fb1958c1afb473a885eccf9
+20210611T155501 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c339fb-129c86b1195d4546aa16c471
+20210611T155519 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c33a0e-b2876be33cc44ac587af0667
+20210611T155520 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c33a0f-dba87465507c43ec8c1e0e4a
+20210611T155602 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33a39-f0803faf7ebf477ab46f23d2
+20210611T155703 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33a76-51b6f02db4754263b065ddf2
+20210611T155804 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33ab3-1b3e289c41a242f38fb6876d
+20210611T155905 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33af0-5d9d5f7e50cc4cce81f91526
+20210611T160007 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33b2d-a1bcfacf4308480184372831
+20210611T160109 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33b6b-fb4e5574beb44d559eabab4f
+20210611T160210 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33ba8-774d1755526e46ceaad5e23e
+20210611T160311 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33be5-9e7d3fbe6a7b43c58a327703
+20210611T160412 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33c22-8a745d68e4e74fb3a2e3dde8
+20210611T160513 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33c5f-e339aa5e13f946a9b3002661
+20210611T160614 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33c9c-90a077e6a0af4f4bb7f16f9b
+20210611T160715 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33cd9-cae9e4532486406f94cc97b1
+20210611T160816 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33d16-c84b2d8e2db141be8aa3097d
+20210611T160917 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33d53-271effc838c741d49af7d814
+20210611T161018 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33d90-9246576dbd814d9db64ff2b6
+20210611T161027 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c33d98-7b2f98b41acc43818d0254d6
+20210611T161027 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c33d9a-e042a1c847c54d1eb859ba06
+20210611T161118 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33dcd-d6b9f037072845e79f71d797
+20210611T161219 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33e0a-1556d7d262ef493bbc450ba9
+20210611T161320 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33e47-dfbc0b9d3ac74dafb02564e1
+20210611T161420 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33e83-89146a88b16e490db7ab9d3c
+20210611T161521 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33ec0-52d97f8920584f7392724da1
+20210611T161622 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33efd-4ea1089e9ee449e1b5cae64f
+20210611T161723 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33f3a-7778494699fe435faea40f4c
+20210611T161824 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33f77-634e82f9dc6a475fbbedc6bb
+20210611T161925 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33fb4-60a8c133ba744e259c765bd8
+20210611T162026 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c33ff0-e503af66e9334a09854ca604
+20210611T162126 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3402d-b2fb97066bc04a3c838ad787
+20210611T162227 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3406a-19f10a4eb766474c9c7bf910
+20210611T162328 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c340a7-58897dc5bad4486f8e969b38
+20210611T162429 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c340e4-f060b7aab96d48a89272c437
+20210611T162531 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34121-3ee8b43eae48447e95568f50
+20210611T162534 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c34124-d1690fab45594efc8f96130f
+20210611T162535 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c34125-07ed88bd26704fdc915a66bd
+20210611T162632 I Request(https://metering.autodesk.com/api/report/v1/JDF3L3FH3CC8/fusion360/JJ23P56FXC3S/HEARTBEAT) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3415e-3add29c7a31742fe908e255b
+20210611T162633 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3415f-817d33a1c537446497eee2c9
+20210611T162734 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3419c-0fc5e1f99c77478d934dad30
+20210611T162834 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c341d9-8d6359bd7b70404188d9ff97
+20210611T162936 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34215-540921371e054ae29798d0b5
+20210611T163037 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34253-61f21c9188fd46839f1a9aaf
+20210611T163137 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34290-c143c34fa6fd465e9496347c
+20210611T163239 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c342cd-2f73ec09dca1427587d79223
+20210611T163339 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3430a-e15cdf494a2f44b3987149cc
+20210611T163440 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34347-d74c2c271e49407fa350bb7c
+20210611T163541 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34384-b8e169c1ad8e46dfa3f42a6e
+20210611T163642 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c343c1-5f104c75f192405faf21aa9b
+20210611T163743 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c343fe-72dc52ced036425fb9038351
+20210611T163843 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3443a-aa26d0e40aca411a855d6bd4
+20210611T163945 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34477-4c62994a16c24baebe77120c
+20210611T164041 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c344ae-7d9a0ba63a08436bba1ab59a
+20210611T164041 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c344b0-ce7924734b0140a48c14a08f
+20210611T164045 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c344b4-a0427921a6804fcea8c02608
+20210611T164146 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c344f1-20a2c342149a4425806ad805
+20210611T164247 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3452e-cb1a64db34584dbb91a35406
+20210611T164348 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3456b-9016a60b876145a3be3776e2
+20210611T164449 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c345a8-c8ec0e2a068d4bed963ee834
+20210611T164550 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c345e4-c07ea1423cc24e36ac30a7ac
+20210611T164651 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34621-61580716aac84b4f93bc81de
+20210611T164752 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3465e-0e35bb904c484f549d0fbee0
+20210611T164853 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3469b-17a957393bea44e990e3d48e
+20210611T164954 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c346d9-8852f6bf04b74e589436b0c5
+20210611T165055 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34715-80b82433796b44b2933c48a3
+20210611T165156 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34752-cad2ba0d81ab4c49932ed508
+20210611T165257 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34790-5e5548ab60574368bb164101
+20210611T165358 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c347cd-6287f3d74de04b4dbfe403e0
+20210611T165459 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3480a-ade70288cdf04bf1b813b2b5
+20210611T165546 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c34838-8ea642c1d10542ebb43e5a76
+20210611T165546 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c3483a-ad0c697f109e4c30a2752153
+20210611T165600 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34847-8c0361232e76403abe144d29
+20210611T165701 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34884-3506b4e06aba4b23aa6ee852
+20210611T165801 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c348c1-65b25e049be74fdc8b039ef5
+20210611T165902 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c348fd-f15a1b8d75ac4f7bb97c9d30
+20210611T170004 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c3493a-74108a386d1c4a0d9e357cc1
+20210611T170105 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34977-90b0073fddf047ae9d669d61
+20210611T170206 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c349b4-bc82670b1dc84ccbab5d1233
+20210611T170307 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c349f1-39e5980cb38a44169d9f0739
+20210611T170408 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34a2e-2ee7c095b6ba4ce0a3846031
+20210611T170509 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34a6b-99475010d0844b07a559f00c
+20210611T170609 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34aa8-e501bb7489bc41a397b971eb
+20210611T170710 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34ae5-dab219968e6f4bcea3c15150
+20210611T170811 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34b22-ab65b726816b4ed78efb1382
+20210611T170912 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34b5f-b4709d7a5b09435fbb16632e
+20210611T171013 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34b9b-7cc4fef744aa43ebab1197f0
+20210611T171053 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c34bc2-06ad3ce91d04449b943354d5
+20210611T171053 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c34bc4-6d5572165e2b4a80b2cd5e25
+20210611T171113 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34bd8-3953973481a04ac693cb39b9
+20210611T171215 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34c15-fd3f08634b3142f583968222
+20210611T171316 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34c52-b288ac53ffb548d8ac448455
+20210611T171417 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34c8f-5de9c4e117cb4a8cb878e9dc
+20210611T171518 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34ccc-7210c85c6f404bd8b558d417
+20210611T171619 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34d09-9ee19fc96dd346cd844cc34d
+20210611T171720 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34d46-e14382bdb990448aacff94fe
+20210611T171821 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34d83-78b7e94ebf1c4c9ead96b891
+20210611T171922 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34dc0-3e5096995376404e8a8f28dc
+20210611T172023 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34dfd-d5fd04413d9a4a8494ad5cb1
+20210611T172124 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34e3a-1141278f2b124ee280d13561
+20210611T172225 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34e77-91b6d9d4392d4e9ab441402c
+20210611T172326 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34eb4-f69fc98990df4095a540ddc7
+20210611T172427 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34ef1-c461c94dfeee4b14ab3233e9
+20210611T172527 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34f2e-5157c9557f1544fd9f1ac4ad
+20210611T172559 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c34f4c-c3811504df6946eca68d63c2
+20210611T172559 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c34f4e-0a6bca276b144ff18057ace7
+20210611T172628 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34f6b-7cf100c554ad4d88b7d84292
+20210611T172632 I Request(https://metering.autodesk.com/api/report/v1/JDF3L3FH3CC8/fusion360/JJ23P56FXC3S/HEARTBEAT) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60c34f6f-95b869be8fd2400faa7344ca
+20210611T172729 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60c34fa8-15e790aad90a436da1e74c82
+20210611T172838 E 1623412718563 1623412718689 GET https://ui-dls360.autodesk.com/fusion/version.txt 6 Could not resolve host: ui-dls360.autodesk.com
+20210611T172838 I Request(https://ui-dls360.autodesk.com/fusion/version.txt) - workflow: attempt:0 status:0 requestId:
+20210611T172838 E 1623412718691 1623412718722 GET https://ui-dls360.autodesk.com/fusion/version.txt 6 Could not resolve host: ui-dls360.autodesk.com
+20210611T172838 I Request(https://ui-dls360.autodesk.com/fusion/version.txt) - workflow: attempt:0 status:0 requestId:
+20210611T172838 E 1623412718723 1623412718728 GET https://ui-dls360.autodesk.com/fusion/version.txt 6 Could not resolve host: ui-dls360.autodesk.com
+20210611T172838 I Request(https://ui-dls360.autodesk.com/fusion/version.txt) - workflow: attempt:0 status:0 requestId:
+20210611T172838 I GAWrapper:networkOk changed to:0
+20210611T172838 I OfflineFileCache: get g^[EdSBECKPB`J		ThreadID: 22124, Function: getCachedTime, Line: 168
+20210611T172838 I OfflineFileCache: update g^[EdSBEBBPLgA		ThreadID: 22124, Function: _updateTimeBomb, Line: 209
+20210611T172839 I OfflineFileCache: get g^[EdSBEBBPLgA		ThreadID: 22124, Function: getCachedTime, Line: 168
+20210611T172839 D Entered into Offline mode. Reason: 
+20210611T172839 I EvergageWrapper:networkOk changed to:0
+20210611T172839 E 1623412709641 1623412719156 PUT https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700 42 Callback aborted
+20210611T172839 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/24363700) - workflow:SLM_heartbeat attempt:0 status:0 requestId:f360_SLM_heartbeat__1-60c34fe5-5788440b75ce4e43b38d5bba
+20210611T172839 I SLM: Heartbeat failure 0
+20210611T172839 D DesignPIMMgrEventsHandler: [onlineStatusChanged]: No space collection for this hub. Disabling PIM.
+20210611T172839 I Circuit Breaker OSS : Reset to Closed
+20210611T172839 I Circuit Breaker FusionDM : Reset to Closed
+20210611T172839 I Circuit Breaker A360 : Reset to Closed
+20210611T172839 I Circuit Breaker WIP : Reset to Closed
+20210611T172839 I OnlineStatus OfflineUI connectivity
+20210611T172839 D OK
+20210611T172839 E Cloud browser API FAILED workflow name :
+20210611T172839 E get_alerts
+20210611T172839 E Cloud browser API FAILED workflow parameters :
+20210611T172839 E {}
+20210611T172839 E System in offline state
+20210611T172909 I Executing exit command
+20210611T172909 I Running deferred session release tasks
+20210611T172909 I Signal shutdown to script manager
+20210611T172909 W PROXY: failed to query IE proxy configuration - The Proxy Auto-configuration URL was not found.
+
+20210611T172909 W Reqest: Call failed: https://js.prd.fusionapi.autodesk.com/hds/fusion360.json : WinHttpSendRequest: 12007: The server name or address could not be resolved
+
+20210611T172909 W ServicesHealthStatus: invalid HDS request
+20210611T172909 I Script manager shut down done
+20210611T172909 I Exit now
+20210611T172909 I Start QTApplication::exit
+20210611T172909 I Done QTApplication::exit
+20210611T172909 I Exit command end
+20210611T172909 I fireApplicationClosing: 1
+20210611T172909 D ActiveDocumentCache:  periodic update thread ended
+20210611T172909 I fireApplicationClosing: done
+20210611T172909 I SYNHUB: Finalizing SynHub.
+
+20210611T172909 I SYNHUB: ...done finalizing SynHub.
+
+20210611T172912 I DownloadManager::stopped
+20210611T172912 I Deleting files that are older than 360 days from the cache
+20210611T172912 I SLM: Shutdown
+20210611T172912 I fireApplicationClosing: 2
+20210611T172912 I fireApplicationClosing: done
+20210611T172913 I GAThread::stop wait for the sending thread to exit
+20210611T172913 I GAThread::stop sending thread exits now, stats:GAThread=>Pending:0, Running:0, Sent:35, Fail:0, 			
+ Throttle:0, SessionIdle:10515.1, SessionSent:35 			
+ Limits: SessionLimits:500, ThrottleLimits:50, GATimeout:14400 seconds
+20210611T172913 I GAWrapper terminating:GAWrapper Status=> Network:0, NetworkChangedTimes:1, IgnoredReportsDuringNetworkdown:4, totalReports:39
+20210611T172913 I AnalyticItemCounts Terminating with:0 items
+20210611T172913 I WorkflowTrackManager Terminating with:0 items

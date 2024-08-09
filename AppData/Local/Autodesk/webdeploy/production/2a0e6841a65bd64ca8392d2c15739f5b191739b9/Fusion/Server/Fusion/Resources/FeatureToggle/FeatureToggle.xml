@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+
+<!-- 
+This XML is used for features that working in progress in specific branches. Use this XML to config what branch to enable those features.
+
+Group: 		        Module name, used to get all features under this group
+Id: 		          Feature ID, unique among all features
+EnableAtBranch:   Branch name, defined in softwareVersionInfo.h, should be name of parent folder of /src in P4
+IsAlwaysEnable:   Is always enable this feature at all branches
+
+Usages:
+1. Use FeatureToggleMgr::isFeatureEnabled to check one in progress feature is enabled at current branch or not
+2. Use text command Options.FeatureToggle to list current feature toggle info
+3. Feature is disabled by default, feature becomes disabled if you remove config in this file
+4. If you want to make feature always enabled, you could set IsAlwaysEnable="1", or remove config and make sure cleanup all codes checking feature together
+
+-->
+
+<FeatureToggle>
+  <!--<Feature Group="Drawing" Id="Drawing_TrailLine" IsAlwaysEnable="0" 	EnableAtBranch="Documentation2012"/>-->
+</FeatureToggle>

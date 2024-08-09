@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+  <CommandDefinition Id="LaunchScreencastCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzLaunchScreencastText" _LCLZText="Launch Screencast Recorder"/>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzLaunchScreencast" _LCLZText="Captures Fusion 360 workflows and commands used into shareable videos."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+</CommandDefinitions>

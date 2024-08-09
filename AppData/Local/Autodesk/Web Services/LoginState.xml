@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<WebServices LastSavedByVersion="12.3.3.1803" LastSavedBy="Fusion360.exe">
+    <Settings LastLoginReminderDate="" CurrentServer="ProductionServer" SuppressLoginReminder="False" LogoutDate=""/>
+    <LoginSession UserId="JDF3L3FH3CC8" Server="ProductionServer" UserName="yashishkumar964" SessionExpiryDate="2021-06-25T08:56:09Z" LdapDomainKey="" LoginDate="2021-06-11T08:56:10Z">
+        <ClientId><![CDATA[AAAAgBHu+Yi44YkxrPxSRN5LVCJBNO/aNo4/vlPEJufx9WHFxiKxd3DYETDFYxnHeEhUxFmKRz5NehEtahz+6304dcRd3mjhrnsMubetTYxv3+plaWM8OXFUsO0U8iOY6xmcjDWnwcht7vlZmwDXtwFwwgLuDCweqiJ+3Ok+6tysvE6yAAAAgIvAVDMgJ89kvXeuwSlnclRjFyO+1UuGX+sVLeph3XjDEzrkplPI5jlxWdsY1Te0eloSGKs76DUz7zpHbkd3mQjXwgEggjWBeU/n4HGvwqa6TEXSLew3tjyCJERzgP38CJ2nqehMM+14k8140JF0nk85djvQfOb1g+CwOTkUWV4ZAAAAgGOIfVemYcR2SuN2Wx/eMCs6HT0dN8s0boChLy3YnxU/vUjTMwCEgQ03cHpDQuiMXV+V0BaX1kQ9MFNvyoX6xDjN28BmJ60mpjeii6U503blIikHga8PI5p/tCmNLghOiNdoZu+oxs7NXTM3mm6Prnh6y1xG3mQXiI5GPLLn2OQv]]></ClientId>
+        <Products>
+            <Product SerialNumber="" Server="ProductionServer" TokenExpiryDate="2021-06-13T08:56:09Z" OAuth2TokenScope="" Name="Fusion360" ExeName="Fusion360" ProductKey="b8670f04-9acc-4ad0-8bcc-a21ba95bec91">
+                <AccessToken><![CDATA[aHfZcgdtoLKEQgvakB9dJNbJrKIXsXNOkvW7/33qdkCA14hs80PHbmbK+h0CNhwXdPQ6b3DKX8vt4PYP9yQherbw9enDov7+vnYwWbDe9tqhRP5Ie+fAh7FKRzXvXDxrd6KXuZnePCb8+yAeQ08Y9laTGNQDbscyXzisW1DpQkA=]]></AccessToken>
+                <AccessTokenSecret><![CDATA[SzuGxTTDmpNZDYeqvDGzldmk9K1PMSs5IXXSz9Veo+//V4NtjExbV5xP37gKfFJque6v/ALn4r5XC3gNd6JmIs/rlaO8GIyXT+sNvo3yyfKuVf60556zQtPC5AnnHtoEDKPdF69t93CsZ6ng37tXVOoztxGrXwOyu6PvMLOim+M=]]></AccessTokenSecret>
+                <SessionHandle><![CDATA[km4NH4aMPGNOA0hC3WBKM626Q+L42ApRDf6AgEf3Xxv6wwnb9w+4lF0vJPtxZGG8iXQksS8N78uWvuK18qmVBe3MI9X1VHpsDeOpoPGYZh2HOA8npAFQ3H9sHFcVLA5nDFvmLbpWaokbu/ik/43pbUT/uOO6av9inHVhEn0nvgs=]]></SessionHandle>
+                <OAuth2Tokens>
+                    <OAuth2Token ExpiryDate="2021-06-11T12:41:13Z" Type="JWT" Scope="data:read%20data:write%20data:create%20data:search%20user-profile:read%20account:read%20account:write">
+                        <Token><![CDATA[7fsdUHsj69gLIaq59NC6RkrbUShVpEKdoQ5MfNTlDfUywuD6ctEh+PP+yDvnPzuXOWBvL8oEnnvzssJB/POU91VjOrcEuL3TE17/7FGs/KiPjzTTJT00X9qTByfsbzR8f/AWKuN3LzC+5VBzp23HC7/+LSFRoMsqpXqLlkl8S8DipAeoCzE/3oxRiMi7El69gwBWl5fnAAzTPs1xUze60+A+8ugiWp1FCWr3Xr3JJ2brHQRWU3v94Ojp2ZPBp+vZsgUU55gIKLsSDWTLt+NtXkm8Au7BAAGLS42kvbQF1HzfP9+bfPnxMXhPz+0a/+P5EKxY7ltoGVVA7LphOq5OyS7u0D+CdM3gwiGO6OyOlbyBLVA+Mz10YQ2FumxZTfghDS1I9YerAL07XKS8Tl4IpTCS6VjQZZ3myxhGyFpMdXt1SgLAt7R4pgnFvvE4HBbQcWhPKH750cHun59C4GXr94nMpMzbJbuiUSECzkfkgopMvSewN+B2XJ+MrlSiZraWKg20giQgxSieXDM7UZe3Uy0eyuH8B+8T+aTYmz4HD/3n2Y9xMaV4mFyUxkknuUrPgUizx52/3dWkhrvLZs2Q1TjchGFwQQY/R3zL9IM3zwOZ9h8jtKbSgogUHZvfsA+CWieRcnjj37J1g1V//PoEvPEclb0rJGfrrfb/AxCqPdqL3F8AUB2TdPlrrznOJn35ELZ6CeDI2RBz5mAxPnDU99dXBsxVU9aHj9mThnPp29+x6MRFdXvGNfYoJb+LrQX8DuF+UfO+fHdB1bRjqEjX4ECQzxXzHpR2wQ9eIWWRIpbwz5BibEyMol8i3+4rYUGE7LQt6qLHABIoyTVQ+0ZE7+gWakoZ4CNx9hRzg21CfM9JA0QLwNLHCnWpOebzXDcDFOZwgVtb9GjjJ9kxWHG5Cu5F6xLrE1/yoAoffgRnudcTgupwQZaXss3p2j/xZju6luIr6Ds8yslftz+VsM/o+Rja60RMy85RcUzcWvZJBP5vMbM7NElRNt5AWmOClH1iZljVbkneUz7Al4gCxe4n/y2mfGC85k7Wy/4Rucq+FTrooCQwxXwbycJu4vePiprZRpnRss4VXKpqsx4ErwPQJsTDXDT4aEfGdolnbsONrYs=]]></Token>
+                    </OAuth2Token>
+                </OAuth2Tokens>
+            </Product>
+        </Products>
+        <Cookies>
+            <LoginCookies><![CDATA[]]></LoginCookies>
+        </Cookies>
+    </LoginSession>
+</WebServices>

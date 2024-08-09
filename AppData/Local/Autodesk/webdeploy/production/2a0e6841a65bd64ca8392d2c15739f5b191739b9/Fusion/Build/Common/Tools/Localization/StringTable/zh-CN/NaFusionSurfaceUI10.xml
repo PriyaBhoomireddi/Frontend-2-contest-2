@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="BasicType" devLabel="Basic" translation="基本"/>
+	<label commandName="BasicTypeTooltip" devLabel="Basic = Geometry checks, Standard = Basic + Face/Face and Edge/Edge intersecton tests." translation="基本 = 几何图元检查，标准 = 基本 + 面/面和边/边相交测试。"/>
+	<label commandName="BooleanTypeOperation" devLabel="Operation" translation="操作"/>
+	<label commandName="Boundary" devLabel="Boundary %1%" translation="边界 %1%"/>
+	<label commandName="Chain" devLabel="Chain" translation="链"/>
+	<label commandName="ChainSelCmdInput" devLabel="BoundarySelectionType" translation="BoundarySelectionType"/>
+	<label commandName="ChainSelectionOptionInput" devLabel="Chain Selection" translation="链选"/>
+	<label commandName="CheckingLevel" devLabel="Checking Level" translation="检查级别"/>
+	<label commandName="ConnectivityTypeConnected" devLabel="Connected (G0)" translation="相连(G0)"/>
+	<label commandName="ConnectivityTypeCurvature" devLabel="Curvature (G2)" translation="曲率(G2)"/>
+	<label commandName="ConnectivityTypeTangent" devLabel="Tangent (G1)" translation="相切(G1)"/>
+	<label commandName="CurveTable" devLabel="Curve %1%" translation="曲线 %1%"/>
+	<label commandName="CutType" devLabel="Cut" translation="剪切"/>
+	<label commandName="Edge" devLabel="Edge" translation="边"/>
+	<label commandName="EdgeTable" devLabel="Edge %1%" translation="边 %1%"/>
+	<label commandName="FreeEdgesInput" devLabel="Free Edges" translation="自由边"/>
+	<label commandName="FusionDcMidSurfaceEditCommand" devLabel="Edit Feature " translation="编辑特征"/>
+	<label commandName="FusionDcReverseNormalEdit" devLabel="Edit Feature " translation="编辑特征"/>
+	<label commandName="FusionDcSurfaceDeleteFaceEditCommand" devLabel="Edit Feature " translation="编辑特征"/>
+	<label commandName="FusionDcSurfaceOffsetEditCommand" devLabel="Edit Feature " translation="编辑特征"/>
+	<label commandName="FusionDcSurfaceOffsetShellEditCommand" devLabel="Edit Feature " translation="编辑特征"/>
+	<label commandName="FusionDcSurfaceRuledEditCommand" devLabel="Edit Feature " translation="编辑特征"/>
+	<label commandName="FusionDcSurfaceShellEditCommand" devLabel="Edit Feature " translation="编辑特征"/>
+	<label commandName="FusionDcSurfaceTrimEditCommand" devLabel="Edit Feature " translation="编辑特征"/>
+	<label commandName="FusionDcSurfaceUntrimEditCommand" devLabel="Edit Feature " translation="编辑特征"/>
+	<label commandName="FusionSurfaceDeleteFaces" devLabel="Delete Faces" translation="删除面"/>
+	<label commandName="FusionSurfaceEditMidsurfaceShell" devLabel="Edit Midsurface Shell" translation="编辑中间曲面抽壳"/>
+	<label commandName="FusionSurfaceMerge" devLabel="Merge" translation="合并"/>
+	<label commandName="FusionSurfaceMidsurfaceShell" devLabel="Midsurface Shell" translation="中间曲面抽壳"/>
+	<label commandName="FusionSurfaceOffset" devLabel="Offset" translation="偏移"/>
+	<label commandName="FusionSurfaceOffsetShell" devLabel="Offset Shell" translation="偏移抽壳"/>
+	<label commandName="FusionSurfacePatch" devLabel="Patch" translation="面片"/>
+	<label commandName="FusionSurfacePatchEdit" devLabel="Edit Feature " translation="编辑特征"/>
+	<label commandName="FusionSurfaceReverseNormal" devLabel="Reverse Normal" translation="翻转法向"/>
+	<label commandName="FusionSurfaceRuled" devLabel="Ruled" translation="直纹"/>
+	<label commandName="FusionSurfaceRuledSelectDirection" devLabel="Select a linear edge, plane or axis for direction" translation="选择线性边、平面或轴以指定方向"/>
+	<label commandName="FusionSurfaceSelectionTransparency" devLabel="Toggle Surface Body Transparency" translation="切换曲面体透明度"/>
+	<label commandName="FusionSurfaceStitch" devLabel="Stitch" translation="缝合"/>
+	<label commandName="FusionSurfaceStitchEdit" devLabel="Edit Feature " translation="编辑特征"/>
+	<label commandName="FusionSurfaceSurfaceShell" devLabel="Edit Surface Shell" translation="编辑曲面抽壳"/>
+	<label commandName="FusionSurfaceTransparency" devLabel="Transparent Surfaces Toggle" translation="透明曲面切换"/>
+	<label commandName="FusionSurfaceTrim" devLabel="Trim" translation="修剪"/>
+	<label commandName="FusionSurfaceUnStitch" devLabel="Unstitch" translation="取消缝合"/>
+	<label commandName="FusionSurfaceUnStitchEdit" devLabel="Edit Feature " translation="编辑特征"/>
+	<label commandName="FusionSurfaceUntrim" devLabel="Untrim" translation="取消修剪"/>
+	<label commandName="FusionSurfaceValidate" devLabel="Validate" translation="验证"/>
+	<label commandName="FusionUntrimEdgeInputCursorPrompt" devLabel="Hold %1% to modify selection" translation="按住 %1% 以修改选择"/>
+	<label commandName="FusionUntrimEdgesInputCursorPrompt" devLabel="Select edges to untrim" translation="选择要取消修剪的边"/>
+	<label commandName="FusionUntrimFaceInputCursorPrompt" devLabel="Select faces to untrim" translation="选择要取消修剪的面"/>
+	<label commandName="GapToleranceInput" devLabel="Gap Healing" translation="间隙修复"/>
+	<label commandName="GapToleranceTooltip" devLabel="Maximim gap size to heal, must be 2X small edge/face removal size if this is enabled." translation="要修复的最大间隙大小，它必须是小边/面删除尺寸(如果已启用)的 2 倍。"/>
+	<label commandName="IntersectType" devLabel="Intersect" translation="相交"/>
+	<label commandName="JoinType" devLabel="Join" translation="合并"/>
+	<label commandName="MaxGap" devLabel="Max Gap" translation="最大间隙"/>
+	<label commandName="MergeSelectionPrompt" devLabel="Select faces" translation="选择面"/>
+	<label commandName="MissingDeleteFaces" devLabel="missing faces" translation="缺少面"/>
+	<label commandName="MissingMidsurfaceInputBodies" devLabel="missing bodies" translation="缺少实体"/>
+	<label commandName="MissingOffsetFaces" devLabel="missing faces" translation="缺少面"/>
+	<label commandName="MissingPatchBoundaries" devLabel="missing boundary paths" translation="缺少边界路径"/>
+	<label commandName="MissingPatchProfiles" devLabel="missing profiels" translation="缺少轮廓"/>
+	<label commandName="MissingRuledSurfaceEdges" devLabel="Missing edges" translation="缺少边"/>
+	<label commandName="MissingRuledSurfaceRefDir" devLabel="Reselect missing direction reference" translation="重新选择缺少的方向参考"/>
+	<label commandName="MissingStitchSurfaces" devLabel="missing surfaces" translation="缺少曲面"/>
+	<label commandName="MissingSurfReverseFaces" devLabel="missing faces" translation="缺少面"/>
+	<label commandName="MissingSurfUntrimFaces" devLabel="Missing faces" translation="缺少面"/>
+	<label commandName="MissingSurfaceShellInputBodies" devLabel="missing bodies" translation="缺少实体"/>
+	<label commandName="MissingTrimTools" devLabel="missing trim tools" translation="缺少修剪工具"/>
+	<label commandName="MissingUnstitchObjects" devLabel="missing target bodies or faces" translation="缺少目标实体或面"/>
+	<label commandName="MissingUntrimSurfaceEdges" devLabel="Missing edges" translation="缺少边"/>
+	<label commandName="NewBodyInNewCompType" devLabel="New Component" translation="新建零部件"/>
+	<label commandName="NewBodyType" devLabel="New Body" translation="新建实体"/>
+	<label commandName="NothingStitched" devLabel="Modeling Error: Nothing has stitched." translation="建模错误: 未进行任何缝合。"/>
+	<label commandName="OffsetChainSelectionInput" devLabel="Chain Selection" translation="链选"/>
+	<label commandName="PatchContinuity" devLabel="PatchContinuity%1%" translation="PatchContinuity%1%"/>
+	<label commandName="PatchContinuityInput" devLabel="Continuity" translation="连续性"/>
+	<label commandName="PatchContinuityOptionToolTip" devLabel="Continuity" translation="连续性"/>
+	<label commandName="PatchFlipToolTip" devLabel="Continuity Direction" translation="连续性方向"/>
+	<label commandName="PatchInteriorConstraintsSelectionPrompt" devLabel="Select edges, sketch curves or points to define patch interior constraints" translation="选择边、草图曲线或点以定义面片内部约束"/>
+	<label commandName="PatchSelectionPrompt" devLabel="Select edges, sketch profiles or sketch curves to define patch boundary" translation="选择边、草图轮廓或草图曲线以定义面片边界"/>
+	<label commandName="PatchTable" devLabel="PatchTable" translation="PatchTable"/>
+	<label commandName="PatchTableAdd" devLabel="Add" translation="添加"/>
+	<label commandName="PatchTableRemvoe" devLabel="Remove" translation="移除"/>
+	<label commandName="PatchTableRowLabel" devLabel="Boundray" translation="边界"/>
+	<label commandName="PatchTangentFlip" devLabel="PatchFlip%1%" translation="PatchFlip%1%"/>
+	<label commandName="PatchTangentFlipInput" devLabel="Flip" translation="反向"/>
+	<label commandName="PatchTangentWeight" devLabel="PatchScale%1%" translation="PatchScale%1%"/>
+	<label commandName="PatchTangentWeightInput" devLabel="Scale" translation="缩放"/>
+	<label commandName="PatchTangentWeightToolTip" devLabel="Weight" translation="重量"/>
+	<label commandName="PatchTypeBounded" devLabel="Bounded" translation="已添加边界"/>
+	<label commandName="PatchTypeTrimmed" devLabel="Trimmed" translation="已修剪"/>
+	<label commandName="Profile" devLabel="Profile %1%" translation="轮廓 %1%"/>
+	<label commandName="SelectStitchSurfaces" devLabel="Select Surfaces to Stitch" translation="选择要缝合的曲面"/>
+	<label commandName="SelectTrimToolProfile" devLabel="Select a trimming tool" translation="选择修剪工具"/>
+	<label commandName="SelectValidateBodies" devLabel="Select Bodies to validate" translation="选择要验证的实体"/>
+	<label commandName="SelectionListControlCmdInput" devLabel="Edge Sets" translation="边集"/>
+	<label commandName="SelectionListCtrlGroup" devLabel="Unstitched Edges" translation="未缝合的边"/>
+	<label commandName="ShellfromSurface" devLabel="Shell from Surface" translation="从曲面抽壳"/>
+	<label commandName="SimAutomaticSelectionEnabled" devLabel="Automatic" translation="自动"/>
+	<label commandName="SimAutomaticSelectionSlider" devLabel="Size" translation="尺寸"/>
+	<label commandName="SimNativeSurfaceCmdSelection" devLabel="Selection" translation="选择"/>
+	<label commandName="SimNativeSurfaceCmdThickness" devLabel="Thickness" translation="厚度"/>
+	<label commandName="SimPreviewEnabledCheckbox" devLabel="Preview" translation="预览"/>
+	<label commandName="SimThinShellDistanceGroup" devLabel="Maximum Face Pair Distance" translation="最大面对距离"/>
+	<label commandName="SimThinShellDistanceSlider" devLabel="Distance" translation="距离"/>
+	<label commandName="SimThinShellDistanceSliderEnabled" devLabel="Automatic Distance" translation="自动距离"/>
+	<label commandName="SimThinShellDistanceValue" devLabel="Distance" translation="距离"/>
+	<label commandName="SimThinShellOptionGroup" devLabel="Options" translation="选项"/>
+	<label commandName="SimThinShellPreview" devLabel="Preview" translation="预览"/>
+	<label commandName="SimThinShellSmallFaceRemovalPerc" devLabel="Remove Small Faces (%)" translation="删除较小的面(%)"/>
+	<label commandName="SimThinShellThicknessOverride" devLabel="Thickness" translation="厚度"/>
+	<label commandName="SimThinShellThicknessOverrideEnabled" devLabel="Override Thickness" translation="替代厚度"/>
+	<label commandName="SimThinShellThicknessReset" devLabel="Reset Thickness" translation="重置厚度"/>
+	<label commandName="SmallEdgeFaceToleranceTooltip" devLabel="Maximim Face/Edge size to remove, will be skipped if the body has errors." translation="要删除的最大面/边尺寸，如果实体包含错误，则将跳过。"/>
+	<label commandName="SmallEdgeFacesToleranceInput" devLabel="Small Edge/Face Removal" translation="小边/面删除"/>
+	<label commandName="StandardType" devLabel="Standard" translation="标准"/>
+	<label commandName="StitchFreeEdge" devLabel="Free Edge" translation="自由边"/>
+	<label commandName="StitchResultsInput" devLabel="Stitch Result" translation="缝合结果"/>
+	<label commandName="StitchTolInput" devLabel="" translation=""/>
+	<label commandName="StitchToleranceInput" devLabel="Tolerance" translation="公差"/>
+	<label commandName="StitchedEdgesInput" devLabel="Edges to be Stitched" translation="要缝合的边"/>
+	<label commandName="SufaceRefitToleranceInput" devLabel="Refit Bad Surfaces" translation="重新拟合不良曲面"/>
+	<label commandName="SurfTrimNotargetFaceToRem" devLabel="No Target Face selected to remove!" translation="未选择要移除的目标面！"/>
+	<label commandName="SurfaceDeleteFacesInput" devLabel="Faces" translation="面"/>
+	<label commandName="SurfaceFaceStitchSetTolerance" devLabel="Set Max Gap as Stitch Tolerance" translation="将“最大间隙”设为缝合公差"/>
+	<label commandName="SurfaceMergeChainSelectionInput" devLabel="Select Chain" translation="选择链"/>
+	<label commandName="SurfaceMergeSelectionInput" devLabel="Selection" translation="选择"/>
+	<label commandName="SurfaceMidsurfaceBodiesInput" devLabel="Bodies" translation="实体"/>
+	<label commandName="SurfaceOffsetDistanceInput" devLabel="Distance" translation="距离"/>
+	<label commandName="SurfaceOffsetFacesInput" devLabel="Faces / Surface Bodies" translation="面/曲面体"/>
+	<label commandName="SurfaceOffsetThicknessInput" devLabel="Thickness" translation="厚度"/>
+	<label commandName="SurfacePatchChainInput" devLabel="Boundary Edges" translation="边界边"/>
+	<label commandName="SurfacePatchChainSelectionInput" devLabel="Enable Chaining" translation="启用链选"/>
+	<label commandName="SurfacePatchConnectivityInput" devLabel="Continuity" translation="连续性"/>
+	<label commandName="SurfacePatchGroupInput" devLabel="Group Edges" translation="组边"/>
+	<label commandName="SurfacePatchInteriorRailsAndPointsInput" devLabel="Interior Rails/Points" translation="内部轨道/点"/>
+	<label commandName="SurfacePatchPatchType" devLabel="Patch Type" translation="面片类型"/>
+	<label commandName="SurfaceRefitFaceToleranceTooltip" devLabel="Maximim distance between the repaired face and the original face." translation="已修复面与原始面之间的最大距离。"/>
+	<label commandName="SurfaceReverseNormalInput" devLabel="Faces" translation="面"/>
+	<label commandName="SurfaceRevolve" devLabel="Revolve" translation="旋转"/>
+	<label commandName="SurfaceRuledAltFacesInput" devLabel="Alternate Faces" translation="替换面"/>
+	<label commandName="SurfaceRuledAltFacesInputDesc" devLabel="Flips direction or angle when edges share more than one face" translation="当边共享多个面时翻转方向或角度"/>
+	<label commandName="SurfaceRuledAngleInput" devLabel="Angle" translation="角度"/>
+	<label commandName="SurfaceRuledAngleInputDesc" devLabel="Specify rotation angle" translation="指定旋转角度"/>
+	<label commandName="SurfaceRuledChainInput" devLabel="Chain Selection" translation="链选"/>
+	<label commandName="SurfaceRuledChainInputDesc" devLabel="Automatically select connected geometry" translation="自动选择相连的几何图元"/>
+	<label commandName="SurfaceRuledDirectionInput" devLabel="Direction" translation="方向"/>
+	<label commandName="SurfaceRuledDirectionInputDesc" devLabel="Select a linear edge, plane, or axis" translation="选择线性边、平面或轴"/>
+	<label commandName="SurfaceRuledDistanceInput" devLabel="Distance" translation="距离"/>
+	<label commandName="SurfaceRuledDistanceInputDesc" devLabel="Specify distance to extend" translation="指定要延伸的距离"/>
+	<label commandName="SurfaceRuledProfileInput" devLabel="Edges" translation="边"/>
+	<label commandName="SurfaceRuledProfileInputDesc" devLabel="Select edges" translation="选择边"/>
+	<label commandName="SurfaceRuledTypeDirectionInput" devLabel="Direction" translation="方向"/>
+	<label commandName="SurfaceRuledTypeDirectionInputDesc" devLabel="Creates a ruled surface in a direction that you select" translation="在您选择的方向上创建直纹曲面"/>
+	<label commandName="SurfaceRuledTypeInput" devLabel="Type" translation="类型"/>
+	<label commandName="SurfaceRuledTypeNormalInput" devLabel="Normal" translation="法向"/>
+	<label commandName="SurfaceRuledTypeNormalInputDesc" devLabel="Creates a ruled surface normal to the face of selected edges" translation="创建与选定边的面垂直的直纹曲面"/>
+	<label commandName="SurfaceRuledTypeTangentDesc" devLabel="Creates a ruled surface tangent to the face of selected edges" translation="创建与选定边的面相切的直纹曲面"/>
+	<label commandName="SurfaceRuledTypeTangentInput" devLabel="Tangent" translation="相切"/>
+	<label commandName="SurfaceShellThicknessTip" devLabel="The thickness direction is symmetric about the selected surface." translation="厚度方向关于选定曲面对称。"/>
+	<label commandName="SurfaceStitchChainInput" devLabel="Stitch Surfaces" translation="缝合曲面"/>
+	<label commandName="SurfaceStitchFindInWindow" devLabel="Find Edge in Window" translation="在窗口中查找边"/>
+	<label commandName="SurfaceSweep" devLabel="Sweep" translation="扫掠"/>
+	<label commandName="SurfaceTrimChainInput" devLabel="Trim Tool" translation="修剪工具"/>
+	<label commandName="SurfaceTrimFaceSelInput" devLabel="FaceRemoveSel" translation="FaceRemoveSel"/>
+	<label commandName="SurfaceUnStitchFacesInput" devLabel="Faces / Bodies" translation="面/实体"/>
+	<label commandName="SurfaceUntrimEdgesInput" devLabel="Edges" translation="边"/>
+	<label commandName="SurfaceUntrimEdgesInputDesc" devLabel="Select edges to untrim.&#xA;Hold %1% to suppress command preview and select multiple edges." translation="选择要取消修剪的边。&#xA;按住 %1% 以抑制命令预览并选择多条边。"/>
+	<label commandName="SurfaceUntrimExtensionInput" devLabel="Extend" translation="延伸"/>
+	<label commandName="SurfaceUntrimExtensionInputDesc" devLabel="Specify distance to extend untrimmed surface." translation="指定距离以延伸未修剪的曲面。"/>
+	<label commandName="SurfaceUntrimFacesInput" devLabel="Faces" translation="面"/>
+	<label commandName="SurfaceUntrimFacesInputDesc" devLabel="Select faces to untrim." translation="选择要取消修剪的面。"/>
+	<label commandName="SurfaceUntrimKeepCopyInput" devLabel="Keep Copy" translation="保留副本"/>
+	<label commandName="SurfaceUntrimKeepCopyInputDesc" devLabel="Creates a copy of original trimmed surface." translation="创建原始修剪曲面的副本。"/>
+	<label commandName="SurfaceUntrimTypeAllEdgesInput" devLabel="All Edges" translation="所有边"/>
+	<label commandName="SurfaceUntrimTypeAllEdgesInputDesc" devLabel="Untrims all internal and external edges of a surface." translation="取消修剪曲面的所有内边和外边。"/>
+	<label commandName="SurfaceUntrimTypeExternalEdgesInput" devLabel="External Edges" translation="外边缘"/>
+	<label commandName="SurfaceUntrimTypeExternalEdgesInputDesc" devLabel="Untrims external edges only." translation="仅取消修剪外边。"/>
+	<label commandName="SurfaceUntrimTypeInput" devLabel="Type" translation="类型"/>
+	<label commandName="SurfaceUntrimTypeInternalEdgesDesc" devLabel="Untrims internal edges only." translation="仅取消修剪内边。"/>
+	<label commandName="SurfaceUntrimTypeInternalEdgesInput" devLabel="Internal Edges" translation="内边缘"/>
+	<label commandName="SurfaceUntrimTypeManualInput" devLabel="Manual" translation="手动"/>
+	<label commandName="SurfaceUntrimTypeManualInputDesc" devLabel="Untrims manually selected edges of a face.&#xA;Hold %1% to suppress command preview and select multiple edges." translation="取消修剪手动选择的面边。&#xA;按住 %1% 以抑制命令预览并选择多条边。"/>
+	<label commandName="SurfaceValidateBodyInput" devLabel="Validate Bodies" translation="验证实体"/>
+	<label commandName="SurfaceValidateDefectiveNodeName" devLabel="Defective Surface" translation="有缺陷的曲面"/>
+	<label commandName="SurfaceValidateEdgesRemovedCount" devLabel="Number of edges removed: %1%" translation="已删除的边数: %1%"/>
+	<label commandName="SurfaceValidateFacesRemovedCount" devLabel="Number of faces removed: %1%" translation="已删除的面数: %1%"/>
+	<label commandName="SurfaceValidateFixedCount" devLabel="Number of surfaces repaired: %1%" translation="修复的曲面数: %1%"/>
+	<label commandName="SurfaceValidateIntersectNodeName" devLabel="Intersecting Surface" translation="横截面"/>
+	<label commandName="SurfaceValidateIntersectingCount" devLabel="Number of intersecting or overlapping surfaces: %1%" translation="相交或重叠的曲面数: %1%"/>
+	<label commandName="SurfaceValidateInvalidCount" devLabel="Number of invalid surfaces: %1%" translation="无效曲面数: %1%"/>
+	<label commandName="SurfaceValidateNoIssue" devLabel="No issues were found" translation="未发现问题"/>
+	<label commandName="SurfaceValidateSmallEdgeFaceRemovalSkipped" devLabel="Small Edge/Face Removal has been skipped." translation="已跳过小边/面删除。"/>
+	<label commandName="SurfaceValidateSummary" devLabel="Validate Summary:" translation="验证概要:"/>
+	<label commandName="SurfaceValidateUnstitchableCount" devLabel="Number of surfaces that cause stitching failure: %1%" translation="导致缝合失败的曲面数: %1%"/>
+	<label commandName="SurfaceValidateUnstitchableNodeName" devLabel="Unstitchable Surface" translation="不可缝合曲面"/>
+	<label commandName="TTSurfaceEnvironment" devLabel="Surface" translation="曲面"/>
+	<label commandName="UnStitchedEdgeTitle" devLabel="Edge" translation="边"/>
+	<label commandName="UnStitchedGapTitle" devLabel="Max Gap" translation="最大间隙"/>
+	<label commandName="UnStitchedTableFindInWindow" devLabel="Find in Window" translation="在窗口中查找"/>
+	<label commandName="UnStitchedTableSetTolerance" devLabel="Set Tolerance" translation="设置公差"/>
+	<label commandName="UnstitchedEdgeName" devLabel="UnStitchedEdgeName" translation="UnStitchedEdgeName"/>
+	<label commandName="UnstitchedGapLength" devLabel="UnStitchedGapLength" translation="UnStitchedGapLength"/>
+	<label commandName="ValidateEnableGapRepair" devLabel="Gap Healing" translation="间隙修复"/>
+	<label commandName="ValidateEnableRepair" devLabel="Repair" translation="修复"/>
+	<label commandName="ValidateEnableSmallEdgeFaceRemoval" devLabel="Small Edge/Face Removal" translation="小边/面删除"/>
+	<label commandName="ValidateEnableSurfaceRefit" devLabel="Refit Bad Surfaces" translation="重新拟合不良曲面"/>
+	<label commandName="lclzFusionReverseNormalCommand1" devLabel="Flips the normal direction of the selected surface body." translation="翻转选定曲面体的法向方向。"/>
+	<label commandName="lclzFusionSurfaceMergeCommand1" devLabel="Combines the selected faces into a single quilt surface." translation="将选定面合并为单个缝合曲面。"/>
+	<label commandName="lclzFusionSurfaceMergeCommand2" devLabel="Select the faces to merge. You can select solid or surface faces." translation="选择要合并的面。您可以选择实体或曲面。"/>
+	<label commandName="lclzFusionSurfaceMidsurfaceShellCommand1" devLabel="Creates a new midsurface shell from the selected body." translation="从选定实体创建新中间曲面壳体。"/>
+	<label commandName="lclzFusionSurfaceMidsurfaceShellCommand2" devLabel="Select the face to midsurface." translation="选择要创建中间曲面的面。"/>
+	<label commandName="lclzFusionSurfaceOffsetCommand1" devLabel="Creates a new surface at a given distance from the selected face." translation="在距选定面的指定距离处创建新曲面。"/>
+	<label commandName="lclzFusionSurfaceOffsetCommand2" devLabel="Select the face to offset then specify the distance." translation="选择要偏移的面，然后指定距离。"/>
+	<label commandName="lclzFusionSurfaceOffsetShellCommand1" devLabel="Creates a new offset shell at a given distance from the selected face." translation="在距选定面的指定距离处创建新偏移抽壳。"/>
+	<label commandName="lclzFusionSurfaceOffsetShellCommand2" devLabel="Select the face to offset then specify the distance." translation="选择要偏移的面，然后指定距离。"/>
+	<label commandName="lclzFusionSurfacePatchCommand1" devLabel="Creates a planar or 3D surface within the boundary of a specified closed loop." translation="在指定的闭合回路的边界内创建平面或三维曲面。"/>
+	<label commandName="lclzFusionSurfacePatchCommand2" devLabel="Select the loop to patch then apply connected (G0), tangent (G1), and curvature (G2) boundary conditions." translation="选择要补片的回路，然后应用相连(G0)、相切(G1)和曲率(G2)边界条件。"/>
+	<label commandName="lclzFusionSurfaceRuledCommand1" devLabel="Creates a ruled surface from selected edges." translation="从选定边创建直纹曲面。"/>
+	<label commandName="lclzFusionSurfaceRuledCommand2" devLabel="Select a ruled surface type, select edges, then specify the direction, distance, and angle." translation="选择直纹曲面类型，选择边，然后指定方向、距离和角度。"/>
+	<label commandName="lclzFusionSurfaceShellConvertCommand1" devLabel="Creates a new surface shell from the surface." translation="通过该曲面创建新的曲面抽壳。"/>
+	<label commandName="lclzFusionSurfaceShellConvertCommand2" devLabel="Select the surface to surface shell." translation="选择曲面到曲面抽壳。"/>
+	<label commandName="lclzFusionSurfaceStitchCommand1" devLabel="Joins surfaces to make a single surface body or solid body." translation="合并曲面以形成单个曲面体或实体。"/>
+	<label commandName="lclzFusionSurfaceStitchCommand2" devLabel="Select the surfaces to join. Edges within the tolerance are highlighted green." translation="选择要合并的曲面。公差范围内的边将以绿色亮显。"/>
+	<label commandName="lclzFusionSurfaceTrimCommand1" devLabel="Removes the selected area of a surface body using the specified cutting tool." translation="使用指定的切割工具移除曲面体的选定区域。"/>
+	<label commandName="lclzFusionSurfaceTrimCommand2" devLabel="Select the cutting tool to use then select faces or surface bodies to remove." translation="选择要使用的切割工具，然后选择要移除的面或曲面体。"/>
+	<label commandName="lclzFusionSurfaceUnStitchCommand1" devLabel="Breaks joined surfaces into individual surfaces." translation="将联接的曲面打断为单独的曲面。"/>
+	<label commandName="lclzFusionSurfaceUnStitchCommand2" devLabel="Select faces to unstitch. The selected face is unhooked from the parent body and the result body contains the unhooked face." translation="选择要取消缝合的面。选定的面与父实体分离，并且结果实体包含分离的面。"/>
+	<label commandName="lclzFusionSurfaceUntrimCommand1" devLabel="Extends trimmed surfaces and fills gaps, holes, or empty regions." translation="延伸修剪曲面并填充间隙、孔或空白区域。"/>
+	<label commandName="lclzFusionSurfaceUntrimCommand2" devLabel="Select the surface to untrim, then select the untrim type. You can untrim all edges, internal edges, external edges, or manually select the edges you want to untrim." translation="选择要取消修剪的曲面，然后选择取消修剪类型。可以取消修剪所有边、内边、外边，或手动选择要取消修剪的边。"/>
+	<label commandName="lclzFusionSurfaceValidate1" devLabel="Checks the quality of selected surfaces and attempts to heal surfaces before stitching into quilts and solids." translation="检查选定曲面的质量，并在缝合到缝合曲面和实体之前尝试修复曲面。"/>
+	<label commandName="lclzFusionSurfaceValidate2" devLabel="Select the surfaces to check, specify a tolerance then select the type of validation to perform." translation="选择要检查的曲面，指定公差，然后选择要执行的验证类型。"/>
+	<label commandName="lclzMergeTipsAndTricksTips" devLabel="Select the surfaces to merge. You can select solid or surface faces." translation="选择要合并的曲面。您可以选择实体或曲面。"/>
+	<label commandName="lclzMergeTipsAndTricksTitle" devLabel="Merge Information" translation="合并信息"/>
+	<label commandName="lclzMidsurfaceShellTipsAndTricksDesc" devLabel="The use of shells can reduce mesh requirements and solve time.  Using this command on a complex body may require slight adjustments with other shellcommands such as Gap Fill." translation="使用抽壳可以降低网格要求并缩短求解时间。对复杂实体使用此命令可能需要通过其他抽壳命令(如间隙填充)进行少许调整。"/>
+	<label commandName="lclzMidsurfaceShellTipsAndTricksTips" devLabel="Creates a shell part in the middle of the selected body or bodies using the thickness of the selected body." translation="使用选定实体的厚度在一个或多个实体的中间创建抽壳零件。"/>
+	<label commandName="lclzMidsurfaceShellTipsAndTricksTitle" devLabel="Midsurface Shell Information" translation="中间曲面抽壳信息"/>
+	<label commandName="lclzOffsetShellTipsAndTricksDesc" devLabel="Using the Offset Shell command will create a shell to represent the selected body and remove the selected body from the Simulation Model. To recover the original body the Shell must be removed from the timeline, or a new Simulation Model must be created." translation="使用“偏移抽壳”命令将创建抽壳以表示选定的实体，并从仿真模型中删除选定的实体。若要恢复原始实体，必须从时间轴中删除抽壳，或者必须创建新仿真模型。"/>
+	<label commandName="lclzOffsetShellTipsAndTricksTips" devLabel="Creates a new shell at a specified distance from selected faces of a 3D body." translation="在距三维实体选定面的指定距离处创建新的抽壳。"/>
+	<label commandName="lclzOffsetShellTipsAndTricksTitle" devLabel="Offset Shell Information" translation="偏移抽壳信息"/>
+	<label commandName="lclzOffsetTipsAndTricksDesc" devLabel="Select multiple faces to offset them simultaneously." translation="选择多个面以同时对其进行偏移。"/>
+	<label commandName="lclzOffsetTipsAndTricksTips" devLabel="Select the face to offset then specify the distance." translation="选择要偏移的面，然后指定距离。"/>
+	<label commandName="lclzOffsetTipsAndTricksTitle" devLabel="Offset Information" translation="偏移信息"/>
+	<label commandName="lclzPatchWorkspaceTitle" devLabel="Creates construction surfaces and repairs surface geometry. Access commands to create surface bodies." translation="创建构造曲面并修复曲面几何图元。访问命令以创建曲面体。"/>
+	<label commandName="lclzReverseNormalTipsAndTricksTips" devLabel="Select the faces to modify." translation="选择要修改的面。"/>
+	<label commandName="lclzReverseNormalTipsAndTricksTitle" devLabel="Reverse Normal Information" translation="翻转法向信息"/>
+	<label commandName="lclzRuledTipsAndTricksDesc" devLabel="You can use the Ruled command to add extensions to existing surfaces, create parting surfaces, or add a drafted surface that follows selected reference geometry." translation="您可以使用“直纹”命令为现有曲面添加延伸面、创建分模面，或添加跟随选定参考几何图元的拔模曲面。"/>
+	<label commandName="lclzRuledTipsAndTricksTips" devLabel="Adjust Type to create ruled surfaces normal or tangent to the face connected to the selected edges, or in a direction that you define." translation="调整“类型”以创建与连接到选定边的面垂直或相切的直纹曲面，或者按您定义的方向创建直纹曲面。"/>
+	<label commandName="lclzRuledTipsAndTricksTitle" devLabel="Ruled Information" translation="直纹信息"/>
+	<label commandName="lclzStitchTipsAndTricksDesc" devLabel="Green indicates closed edges, whereas red indicates open edges." translation="绿色表示闭合边，而红色表示开放边。"/>
+	<label commandName="lclzStitchTipsAndTricksTips" devLabel="Select the surfaces to join." translation="选择要合并的曲面。"/>
+	<label commandName="lclzStitchTipsAndTricksTitle" devLabel="Stitch Information" translation="缝合信息"/>
+	<label commandName="lclzSurfacePatchTipsAndTricksDesc" devLabel="Use Patch to fill an open body with a new surface. Surfaces can be knit together using the Stitch tool." translation="使用“面片”工具，以新曲面填充开放实体。使用“缝合”工具可将曲面缝合在一起。"/>
+	<label commandName="lclzSurfacePatchTipsAndTricksTips" devLabel="Select the loop to patch then apply connected (G0), tangent (G1), and curvature (G2) boundary conditions." translation="选择要补片的回路，然后应用相连(G0)、相切(G1)和曲率(G2)边界条件。"/>
+	<label commandName="lclzSurfacePatchTipsAndTricksTitle" devLabel="Patch Information" translation="面片信息"/>
+	<label commandName="lclzSurfaceRevolve1" devLabel="Revolves a sketch profile or planar face around a selected axis." translation="绕选定轴旋转草图轮廓或平整面。"/>
+	<label commandName="lclzSurfaceRevolve2" devLabel="Select the profile or planar face then select the axis of revolution." translation="选择轮廓或平整面，然后选择旋转轴。"/>
+	<label commandName="lclzSurfaceRevolveTipsAndTricksDesc" devLabel="After selecting the profile and axis, you can select faces or points to set the angular value." translation="选择轮廓和轴后，可以选择面或点以设置角度值。"/>
+	<label commandName="lclzSurfaceRevolveTipsAndTricksTips" devLabel="Select the profile or planar face then select the axis of revolution." translation="选择轮廓或平整面，然后选择旋转轴。"/>
+	<label commandName="lclzSurfaceRevolveTipsAndTricksTitle" devLabel="Revolve Information" translation="旋转信息"/>
+	<label commandName="lclzSurfaceShellConvertTipsAndTricksDesc" devLabel="A suface body itself will not be considered in simulation until it is transformed into a shell and given a thickness." translation="在仿真中不会考虑曲面实体本身，直到曲面实体转换为抽壳并具有厚度。"/>
+	<label commandName="lclzSurfaceShellConvertTipsAndTricksTips" devLabel="Transform surface bodies into shells for Simulation." translation="将曲面实体转换为抽壳以用于仿真。"/>
+	<label commandName="lclzSurfaceShellConvertTipsAndTricksTitle" devLabel="Shell from Surface Information" translation="从曲面抽壳信息"/>
+	<label commandName="lclzSurfaceSweep1" devLabel="Sweeps a sketch profile or planar face along a selected path." translation="沿选定的路径扫掠草图轮廓或平整面。"/>
+	<label commandName="lclzSurfaceSweep2" devLabel="Select the profile then select the sweep path. The distance for the sweep is a decimal percentage of the selected path." translation="选择轮廓，然后选择扫掠路径。扫掠的距离为选定路径的十进制百分比。"/>
+	<label commandName="lclzSurfaceSweepTipsAndTricksDesc" devLabel="The distance for the sweep is a decimal percentage of the length of the path." translation="扫掠的距离为该路径长度的十进制百分比。"/>
+	<label commandName="lclzSurfaceSweepTipsAndTricksTips" devLabel="Select the profile and the sweep path." translation="选择轮廓和扫掠路径。"/>
+	<label commandName="lclzSurfaceSweepTipsAndTricksTitle" devLabel="Sweep Information" translation="扫掠信息"/>
+	<label commandName="lclzTrimTipsAndTricksDesc" devLabel="Surfaces to be trimmed will turn red." translation="要修剪的曲面将变为红色。"/>
+	<label commandName="lclzTrimTipsAndTricksTips" devLabel="Select a plane or a sketch intersecting a surface as the cutting tool, then select the desired surface to trim." translation="选择与曲面相交的平面或草图作为切割工具，然后选择要修剪的目标曲面。"/>
+	<label commandName="lclzTrimTipsAndTricksTitle" devLabel="Trim Information" translation="修剪信息"/>
+	<label commandName="lclzUnStitchTipsAndTricksTips" devLabel="Select the faces or bodies to unstitch." translation="选择要取消缝合的面或实体。"/>
+	<label commandName="lclzUnStitchTipsAndTricksTitle" devLabel="Unstitch Information" translation="取消缝合信息"/>
+	<label commandName="lclzUntrimTipsAndTricksDesc" devLabel="For the Manual untrim type, hold Ctrl (Windows) or Command (MacOS) to suppress the preview and select multiple edges to untrim." translation="对于“手动”取消修剪类型，请按住 Ctrl 键(Windows)或 Command 键(MacOS)以抑制预览，并选择多条边以取消修剪。"/>
+	<label commandName="lclzUntrimTipsAndTricksTips" devLabel="Use Untrim to remove unwanted holes or extend and rebuild clean surface intersections." translation="使用“取消修剪”删除不需要的孔，或延伸并重建干净的曲面相交。"/>
+	<label commandName="lclzUntrimTipsAndTricksTitle" devLabel="Untrim Information" translation="取消修剪信息"/>
+	<label commandName="lclzValidateTipsAndTricksTips" devLabel="Select the surfaces to check, specify a tolerance then select the type of validation to perform." translation="选择要检查的曲面，指定公差，然后选择要执行的验证类型。"/>
+	<label commandName="lclzValidateTipsAndTricksTitle" devLabel="Validate Information" translation="验证信息"/>
+	<label commandName="midsurfaceSelectSolid" devLabel="Select solid bodies to midsurface" translation="选择要创建中间曲面的实体"/>
+	<label commandName="offsetSelectSurface" devLabel="Select faces or surface bodies to offset" translation="选择要偏移的面或曲面体"/>
+	<label commandName="pInputSet" devLabel="Select objects to delete" translation="选择要删除的对象"/>
+	<label commandName="pInputSurfaceQuiltSet" devLabel="Select surface body" translation="选择曲面体"/>
+	<label commandName="ruledSelectProfileNoSel" devLabel="Select edges" translation="选择边"/>
+	<label commandName="ruledSelectProfileSel" devLabel="Adjust distance and angle or modify selection" translation="调整距离和角度，或修改所做选择"/>
+	<label commandName="unstitchSelectSurface" devLabel="Select bodies to unstitch" translation="选择要取消缝合的实体"/>
+</Resource>

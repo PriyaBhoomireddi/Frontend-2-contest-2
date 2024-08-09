@@ -1,0 +1,11 @@
+{
+    "build"     : "Release",
+
+    "platform"  : "win32",
+
+    "packageId" : "SMTK",
+
+	"package-files" : {
+		"third-party-var" : "_SMTK"
+	}
+}

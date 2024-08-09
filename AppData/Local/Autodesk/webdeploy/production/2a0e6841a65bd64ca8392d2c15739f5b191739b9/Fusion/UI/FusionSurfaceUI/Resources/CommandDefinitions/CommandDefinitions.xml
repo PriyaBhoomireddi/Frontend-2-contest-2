@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+  <EnvironmentDefinition Id="FusionSurfaceEnvironment">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/patch_workspace.png">
+        <TextBlock _LCLZId="lclzPatchWorkspaceTitle" _LCLZText="Creates construction surfaces and repairs surface geometry. Access commands to create surface bodies."/>
+        <TextBlock/>       
+      </ExpandedContent>
+    </Tooltip>    
+  </EnvironmentDefinition>
+<!---->
+<!--Surface Create commands-->
+<!---->
+   <CommandDefinition Id="SurfaceRevolve" EditId="FusionSurfaceRevolveEditCommand">
+      <Tooltip>
+         <ExpandedContent>
+            <TextBlock _LCLZId="lclzSurfaceRevolve1" _LCLZText="Revolves a sketch profile or planar face around a selected axis."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzSurfaceRevolve2" _LCLZText="Select the profile or planar face then select the axis of revolution."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="SURFACE-REVOLVE-CMD">
+       <Title _LCLZId="lclzSurfaceRevolveTipsAndTricksTitle" _LCLZText="Revolve Information"/>
+       <Tips _LCLZId="lclzSurfaceRevolveTipsAndTricksTips" _LCLZText="Select the profile or planar face then select the axis of revolution."/>
+       <Description _LCLZId="lclzSurfaceRevolveTipsAndTricksDesc" _LCLZText="After selecting the profile and axis, you can select faces or points to set the angular value."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="SurfaceSweep" EditId="FusionSurfaceSweepEditCommand">
+      <Tooltip>
+         <ExpandedContent>
+            <TextBlock _LCLZId="lclzSurfaceSweep1" _LCLZText="Sweeps a sketch profile or planar face along a selected path."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzSurfaceSweep2" _LCLZText="Select the profile then select the sweep path. The distance for the sweep is a decimal percentage of the selected path."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="SURFACE-SWEEP-CMD">
+       <Title _LCLZId="lclzSurfaceSweepTipsAndTricksTitle" _LCLZText="Sweep Information"/>
+       <Tips _LCLZId="lclzSurfaceSweepTipsAndTricksTips" _LCLZText="Select the profile and the sweep path."/>
+       <Description _LCLZId="lclzSurfaceSweepTipsAndTricksDesc" _LCLZText="The distance for the sweep is a decimal percentage of the length of the path."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="FusionSurfacePatchCommand" EditId="FusionSurfacePatchEditCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/patch.png">
+            <TextBlock _LCLZId="lclzFusionSurfacePatchCommand1" _LCLZText="Creates a planar or 3D surface within the boundary of a specified closed loop."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzFusionSurfacePatchCommand2" _LCLZText="Select the loop to patch then apply connected (G0), tangent (G1), and curvature (G2) boundary conditions."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="SURFACE-PATCH-CMD">
+       <Title _LCLZId="lclzSurfacePatchTipsAndTricksTitle" _LCLZText="Patch Information"/>
+       <Tips _LCLZId="lclzSurfacePatchTipsAndTricksTips" _LCLZText="Select the loop to patch then apply connected (G0), tangent (G1), and curvature (G2) boundary conditions."/>
+       <Description _LCLZId="lclzSurfacePatchTipsAndTricksDesc" _LCLZText="Use Patch to fill an open body with a new surface. Surfaces can be knit together using the Stitch tool."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+  <CommandDefinition Id="FusionSurfaceRuledCommand" EditId="FusionDcSurfaceRuledEditCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzFusionSurfaceRuledCommand1" _LCLZText="Creates a ruled surface from selected edges."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzFusionSurfaceRuledCommand2" _LCLZText="Select a ruled surface type, select edges, then specify the direction, distance, and angle."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SURFACE-RULED-CMD">
+      <Title _LCLZId="lclzRuledTipsAndTricksTitle" _LCLZText="Ruled Information"/>
+      <Tips _LCLZId="lclzRuledTipsAndTricksTips" _LCLZText="Adjust Type to create ruled surfaces normal or tangent to the face connected to the selected edges, or in a direction that you define."/>
+      <Description _LCLZId="lclzRuledTipsAndTricksDesc" _LCLZText="You can use the Ruled command to add extensions to existing surfaces, create parting surfaces, or add a drafted surface that follows selected reference geometry."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+   <CommandDefinition Id="FusionSurfaceOffsetCommand" EditId="FusionDcSurfaceOffsetEditCommand">
+      <Tooltip>
+         <ExpandedContent>
+            <TextBlock _LCLZId="lclzFusionSurfaceOffsetCommand1" _LCLZText="Creates a new surface at a given distance from the selected face."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzFusionSurfaceOffsetCommand2" _LCLZText="Select the face to offset then specify the distance."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="SURFACE-OFFSET-CMD">
+       <Title _LCLZId="lclzOffsetTipsAndTricksTitle" _LCLZText="Offset Information"/>
+       <Tips _LCLZId="lclzOffsetTipsAndTricksTips" _LCLZText="Select the face to offset then specify the distance."/>
+       <Description _LCLZId="lclzOffsetTipsAndTricksDesc" _LCLZText="Select multiple faces to offset them simultaneously."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+  <CommandDefinition Id="FusionSurfaceMidsurfaceShellCommand" EditId="FusionDcMidSurfaceEditCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzFusionSurfaceMidsurfaceShellCommand1" _LCLZText="Creates a new midsurface shell from the selected body."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzFusionSurfaceMidsurfaceShellCommand2" _LCLZText="Select the face to midsurface."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SURFACE-MIDSURFACE-SHELL-CMD">
+      <Title _LCLZId="lclzMidsurfaceShellTipsAndTricksTitle" _LCLZText="Midsurface Shell Information"/>
+      <Tips _LCLZId="lclzMidsurfaceShellTipsAndTricksTips" _LCLZText="Creates a shell part in the middle of the selected body or bodies using the thickness of the selected body."/>
+      <Description _LCLZId="lclzMidsurfaceShellTipsAndTricksDesc" _LCLZText="The use of shells can reduce mesh requirements and solve time.  Using this command on a complex body may require slight adjustments with other shellcommands such as Gap Fill."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SurfaceShellConvertCommand" EditId="FusionDcSurfaceShellEditCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzFusionSurfaceShellConvertCommand1" _LCLZText="Creates a new surface shell from the surface."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzFusionSurfaceShellConvertCommand2" _LCLZText="Select the surface to surface shell."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SURFACE-SHELL-CONVERT-CMD">
+      <Title _LCLZId="lclzSurfaceShellConvertTipsAndTricksTitle" _LCLZText="Shell from Surface Information"/>
+      <Tips _LCLZId="lclzSurfaceShellConvertTipsAndTricksTips" _LCLZText="Transform surface bodies into shells for Simulation."/>
+      <Description _LCLZId="lclzSurfaceShellConvertTipsAndTricksDesc" _LCLZText="A suface body itself will not be considered in simulation until it is transformed into a shell and given a thickness."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="FusionSurfaceOffsetShellCommand" EditId="FusionDcSurfaceOffsetShellEditCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzFusionSurfaceOffsetShellCommand1" _LCLZText="Creates a new offset shell at a given distance from the selected face."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzFusionSurfaceOffsetShellCommand2" _LCLZText="Select the face to offset then specify the distance."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SURFACE-OFFSET-SHELL-CMD">
+      <Title _LCLZId="lclzOffsetShellTipsAndTricksTitle" _LCLZText="Offset Shell Information"/>
+      <Tips _LCLZId="lclzOffsetShellTipsAndTricksTips" _LCLZText="Creates a new shell at a specified distance from selected faces of a 3D body."/>
+      <Description _LCLZId="lclzOffsetShellTipsAndTricksDesc" _LCLZText="Using the Offset Shell command will create a shell to represent the selected body and remove the selected body from the Simulation Model. To recover the original body the Shell must be removed from the timeline, or a new Simulation Model must be created."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+<!---->
+<!--Surface Modify commands-->
+<!---->
+   <CommandDefinition Id="FusionSurfaceTrimCommand" EditId="FusionDcSurfaceTrimEditCommand">
+      <Tooltip>
+         <ExpandedContent>
+            <TextBlock _LCLZId="lclzFusionSurfaceTrimCommand1" _LCLZText="Removes the selected area of a surface body using the specified cutting tool."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzFusionSurfaceTrimCommand2" _LCLZText="Select the cutting tool to use then select faces or surface bodies to remove."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="SURFACE-TRIM-CMD">
+       <Title _LCLZId="lclzTrimTipsAndTricksTitle" _LCLZText="Trim Information"/>
+       <Tips _LCLZId="lclzTrimTipsAndTricksTips" _LCLZText="Select a plane or a sketch intersecting a surface as the cutting tool, then select the desired surface to trim."/>
+       <Description _LCLZId="lclzTrimTipsAndTricksDesc" _LCLZText="Surfaces to be trimmed will turn red."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+  <CommandDefinition Id="FusionSurfaceUntrimCommand" EditId="FusionDcSurfaceUntrimEditCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzFusionSurfaceUntrimCommand1" _LCLZText="Extends trimmed surfaces and fills gaps, holes, or empty regions."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzFusionSurfaceUntrimCommand2" _LCLZText="Select the surface to untrim, then select the untrim type. You can untrim all edges, internal edges, external edges, or manually select the edges you want to untrim."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SFC-UNTRIM">
+      <Title _LCLZId="lclzUntrimTipsAndTricksTitle" _LCLZText="Untrim Information"/>
+      <Tips _LCLZId="lclzUntrimTipsAndTricksTips" _LCLZText="Use Untrim to remove unwanted holes or extend and rebuild clean surface intersections."/>
+      <Description _LCLZId="lclzUntrimTipsAndTricksDesc" _LCLZText="For the Manual untrim type, hold Ctrl (Windows) or Command (MacOS) to suppress the preview and select multiple edges to untrim."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="FusionSurfaceStitchCommand" EditId="FusionSurfaceStitchEditCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/stitch.png">
+            <TextBlock _LCLZId="lclzFusionSurfaceStitchCommand1" _LCLZText="Joins surfaces to make a single surface body or solid body."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzFusionSurfaceStitchCommand2" _LCLZText="Select the surfaces to join. Edges within the tolerance are highlighted green."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="SURFACE-STITCH-CMD">
+       <Title _LCLZId="lclzStitchTipsAndTricksTitle" _LCLZText="Stitch Information"/>
+       <Tips _LCLZId="lclzStitchTipsAndTricksTips" _LCLZText="Select the surfaces to join."/>
+       <Description _LCLZId="lclzStitchTipsAndTricksDesc" _LCLZText="Green indicates closed edges, whereas red indicates open edges."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="FusionSurfaceUnStitchCommand" EditId="FusionSurfaceUnStitchEditCommand">
+      <Tooltip>
+         <ExpandedContent>
+            <TextBlock _LCLZId="lclzFusionSurfaceUnStitchCommand1" _LCLZText="Breaks joined surfaces into individual surfaces."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzFusionSurfaceUnStitchCommand2" _LCLZText="Select faces to unstitch. The selected face is unhooked from the parent body and the result body contains the unhooked face."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="SURFACE-UNSTITCH-CMD">
+       <Title _LCLZId="lclzUnStitchTipsAndTricksTitle" _LCLZText="Unstitch Information"/>
+       <Tips _LCLZId="lclzUnStitchTipsAndTricksTips" _LCLZText="Select the faces or bodies to unstitch."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="FusionSurfaceMergeCommand">
+      <Tooltip>
+         <ExpandedContent>
+            <TextBlock _LCLZId="lclzFusionSurfaceMergeCommand1" _LCLZText="Combines the selected faces into a single quilt surface."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzFusionSurfaceMergeCommand2" _LCLZText="Select the faces to merge. You can select solid or surface faces."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="SURFACE-MERGE-CMD">
+       <Title _LCLZId="lclzMergeTipsAndTricksTitle" _LCLZText="Merge Information"/>
+       <Tips _LCLZId="lclzMergeTipsAndTricksTips" _LCLZText="Select the surfaces to merge. You can select solid or surface faces."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="FusionSurfaceReverseNormalCommand" EditId="FusionDcReverseNormalEdit">
+      <Tooltip>
+         <ExpandedContent>
+            <TextBlock _LCLZId="lclzFusionReverseNormalCommand1" _LCLZText="Flips the normal direction of the selected surface body."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="SURFACE-REVERSE-NORMAL-CMD">
+       <Title _LCLZId="lclzReverseNormalTipsAndTricksTitle" _LCLZText="Reverse Normal Information"/>
+       <Tips _LCLZId="lclzReverseNormalTipsAndTricksTips" _LCLZText="Select the faces to modify."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+<!---->
+<!--Surface Inspect commands-->
+<!---->
+   <CommandDefinition Id="FusionSurfaceValidateCommand">
+      <Tooltip>
+         <ExpandedContent>
+            <TextBlock _LCLZId="lclzFusionSurfaceValidate1" _LCLZText="Checks the quality of selected surfaces and attempts to heal surfaces before stitching into quilts and solids."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzFusionSurfaceValidate2" _LCLZText="Select the surfaces to check, specify a tolerance then select the type of validation to perform."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="DESIGN-INSPECT-VALIDATE-CMD">
+       <Title _LCLZId="lclzValidateTipsAndTricksTitle" _LCLZText="Validate Information"/>
+       <Tips _LCLZId="lclzValidateTipsAndTricksTips" _LCLZText="Select the surfaces to check, specify a tolerance then select the type of validation to perform."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+</CommandDefinitions>

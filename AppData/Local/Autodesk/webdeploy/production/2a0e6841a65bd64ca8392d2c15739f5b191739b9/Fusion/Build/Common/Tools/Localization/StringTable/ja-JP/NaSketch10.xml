@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="CannotChangeCVSpline" devLabel="Can not open/close CV spline" translation="CV スプラインを開く/閉じることができません"/>
+	<label commandName="CircularPattern" devLabel="Circular Pattern" translation="円形状パターン"/>
+	<label commandName="CircularPatternConstraintSelectionId" devLabel="Circular Pattern Constraint" translation="円形状パターン拘束"/>
+	<label commandName="Coincident" devLabel="Coincident" translation="一致"/>
+	<label commandName="CoincidentConstraintSelectionId" devLabel="Coincident Constraint" translation="一致拘束"/>
+	<label commandName="Collinear" devLabel="Collinear" translation="同一直線上"/>
+	<label commandName="CollinearConstraintSelectionId" devLabel="Collinear Constraint" translation="同一直線上拘束"/>
+	<label commandName="Concentric" devLabel="Concentric" translation="同心円"/>
+	<label commandName="ConcentricConstraintSelectionId" devLabel="Concentric Constraint" translation="同心円拘束"/>
+	<label commandName="CurvatureConstraintSelectionId" devLabel="Curvature Constraint" translation="曲率拘束"/>
+	<label commandName="CurveError" devLabel="One selected curve is degenerated!" translation="選択した 1 つの曲線が破損しています。"/>
+	<label commandName="EllipseOffsetInvalidWarning" devLabel="Could not offset ellipse." translation="楕円をオフセットできませんでした。"/>
+	<label commandName="Equal" devLabel="Equal" translation="等しい"/>
+	<label commandName="EqualConstraintSelectionId" devLabel="Equal Constraint" translation="同一拘束"/>
+	<label commandName="ExtendConicCurveError" devLabel="Extend conic curve error!" translation="円錐曲線の延長時にエラーが発生しました。"/>
+	<label commandName="ExtendSplineError" devLabel="Extend spline error!" translation="スプラインの延長時にエラーが発生しました。"/>
+	<label commandName="FIT_CURVES_TO_SECTION_ADD_CONSTRAINT_FAIL" devLabel="Failed to add tangent sketch constraint." translation="接線のスケッチ拘束の追加に失敗しました。"/>
+	<label commandName="FIT_CURVES_TO_SECTION_BAD_INPUTS" devLabel="Failed to process inputs to fit curve to section." translation="曲線を断面にフィットさせるための入力の処理に失敗しました。"/>
+	<label commandName="FIT_CURVES_TO_SECTION_ERROR_NO_CURVES" devLabel="Failed to fit curve to section." translation="断面への曲線のフィットに失敗しました。"/>
+	<label commandName="FIT_CURVES_TO_SECTION_LIN_OR_DEG_ARC_FIT" devLabel="Include more points to fit an arc." translation="円弧にフィットさせる点をさらに多く含めます。"/>
+	<label commandName="FIT_CURVES_TO_SECTION_NO_SKETCH" devLabel="Include more points to fit an arc." translation="円弧にフィットさせる点をさらに多く含めます。"/>
+	<label commandName="FailedToSolve" devLabel="Failed to solve." translation="解析に失敗しました。"/>
+	<label commandName="FitPointError" devLabel="Fit point index wrong!" translation="フィット点のインデックスが正しくありません。"/>
+	<label commandName="Fixed" devLabel="Fixed" translation="固定"/>
+	<label commandName="FixedConstraintSelectionId" devLabel="Fixed Constraint" translation="固定拘束"/>
+	<label commandName="Horizontal" devLabel="Horizontal" translation="水平"/>
+	<label commandName="HorizontalConstraintSelectionId" devLabel="Horizontal Constraint" translation="水平拘束"/>
+	<label commandName="InactiveMidPointSelectionId" devLabel="InactiveMidPoint" translation="非アクティブな中点"/>
+	<label commandName="InactiveMidPointSelectionsId" devLabel="InactiveMidPoints" translation="InactiveMidPoints"/>
+	<label commandName="InactiveTangentSelectionId" devLabel="Inactive Tangent Handle" translation="非アクティブな接線ハンドル"/>
+	<label commandName="InactiveTangentSelectionsId" devLabel="InactiveTangents" translation="InactiveTangents"/>
+	<label commandName="InactiveTextGripSelectionId" devLabel="Text Frame Snap Point" translation="文字枠のスナップ点"/>
+	<label commandName="InactiveTextGripSelectionsId" devLabel="Text Frame Snap Points" translation="文字枠のスナップ点"/>
+	<label commandName="InputAxisError" devLabel="Input major axis error!" translation="主軸の入力時にエラーが発生しました。"/>
+	<label commandName="InvalidSplineforcontrolframe" devLabel="Control Frame could not be displayed as selected sketch curve do not support control frame." translation="選択したスケッチ曲線がコントロール フレームをサポートしていないため、コントロール フレームを表示できませんでした。"/>
+	<label commandName="InvalidSplinesNoCFMultiselection" devLabel="Control Frames could not be displayed as all the selected sketch curves don't support control frame." translation="選択したすべてのスケッチ曲線がコントロール フレームをサポートしていないため、コントロール フレームを表示できませんでした。"/>
+	<label commandName="InvalidSplinesforcontrolframeMultiselection" devLabel="Control Frames could not be displayed for some selected sketch curves as they don't support control frame." translation="コントロール フレームがサポートされていないため、選択した一部のスケッチ曲線でコントロール フレームを表示できませんでした。"/>
+	<label commandName="LineMidPoint" devLabel="Mid Point" translation="中点"/>
+	<label commandName="MeshPlanarSectionDefaultUserName" devLabel="MeshSection" translation="MeshSection"/>
+	<label commandName="MeshPlanarSectionSelectionId" devLabel="MeshPlanarSection" translation="MeshPlanarSection"/>
+	<label commandName="MeshPlanarSectionSelectionsId" devLabel="MeshPlanarSections" translation="MeshPlanarSections"/>
+	<label commandName="MidpointConstraintSelectionId" devLabel="Midpoint Constraint" translation="中点拘束"/>
+	<label commandName="NO_VADIL_SKETCH" devLabel="No valid sketch found!" translation="有効なスケッチが見つかりません。"/>
+	<label commandName="NoPathSelected" devLabel="Please select path curve" translation="パス曲線を選択してください"/>
+	<label commandName="NoTextProfileWarning" devLabel="Could not retrieve the profiles of the selected text!" translation="選択したテキストのプロファイルを取得できませんでした。"/>
+	<label commandName="NonPlanarCurve" devLabel="Please select planar curve" translation="平面の曲線を選択してください"/>
+	<label commandName="OffsetConstraintSelectionId" devLabel="Offset Constraint" translation="オフセット拘束"/>
+	<label commandName="OffsetSketchNoGeomError" devLabel="The sketch offset created no geometry. Modify the offset dimension or verify the changes are correct." translation="スケッチ オフセットでは、ジオメトリが作成されませんでした。オフセット寸法を修正するか、変更内容が正しいことを確認してください。"/>
+	<label commandName="PROFILE_BUILD_ERROR_ILLEGALCURVES" devLabel="Some sketch curves cannot be converted to profile edges." translation="一部のスケッチ曲線をプロファイル エッジに変換できません。"/>
+	<label commandName="PROFILE_BUILD_FAILTOGENPROFILE" devLabel="Failed to generate profile as, curves do not precisely overlap." translation="曲線が正確にオーバーラップしないので、プロファイルの生成に失敗しました。"/>
+	<label commandName="Parallel" devLabel="Parallel" translation="平行"/>
+	<label commandName="ParallelConstraintSelectionId" devLabel="Parallel Constraint" translation="平行拘束"/>
+	<label commandName="Perpendicular" devLabel="Perpendicular" translation="直交"/>
+	<label commandName="PerpendicularConstraintSelectionId" devLabel="Perpendicular Constraint" translation="直交拘束"/>
+	<label commandName="PleaseDeleteConstraints" devLabel="&#xA;Please delete or modify one of the following constraints/dimensions&#xA;" translation="&#xA;次の拘束または寸法のいずれかを削除または修正してください。&#xA;"/>
+	<label commandName="Polygon" devLabel="Polygon" translation="ポリゴン"/>
+	<label commandName="PolygonConstraintSelectionId" devLabel="Polygon Constraint" translation="ポリゴン拘束"/>
+	<label commandName="ProfileCategory" devLabel="Sketch Profiles" translation="スケッチ プロファイル"/>
+	<label commandName="ProfileSelectionId" devLabel="Profile" translation="プロファイル"/>
+	<label commandName="ProfilebuildError_TrimStageTwo" devLabel="profile trim failed in stage two" translation="第 2 段階でプロファイルのトリムに失敗しました"/>
+	<label commandName="ProfilesSelectionId" devLabel="Profiles" translation="プロファイル"/>
+	<label commandName="RectangularPattern" devLabel="Rectangular Pattern" translation="矩形状パターン"/>
+	<label commandName="RectangularPatternConstraintSelectionId" devLabel="Rectangular Pattern Constraint" translation="矩形状パターン拘束"/>
+	<label commandName="SharedPointCoincidentSelectionId" devLabel="Coincident Constraint" translation="一致拘束"/>
+	<label commandName="SharedPointCoincidentSelectionsId" devLabel="Coincident Constraints" translation="一致拘束"/>
+	<label commandName="SketchConicCurveSelectionID" devLabel="Sketch Conic Curve" translation="スケッチ円錐曲線"/>
+	<label commandName="SketchConstraintCategory" devLabel="Sketch Geometry Constraint" translation="スケッチ ジオメトリの拘束"/>
+	<label commandName="SketchConstraintHasSameConstraint" devLabel="Constraint has already been applied to the selected sketch object." translation="拘束は既に選択したスケッチ オブジェクトに適用されています。"/>
+	<label commandName="SketchDimensionSelectionId" devLabel="Sketch Dimension" translation="スケッチ寸法"/>
+	<label commandName="SketchDimensionSelectionsId" devLabel="Sketch Dimensions" translation="スケッチ寸法"/>
+	<label commandName="SketchGeomConstSelectionsId" devLabel="Sketch Geometry Constraints" translation="スケッチ ジオメトリの拘束"/>
+	<label commandName="SketchGeometryConstraintSelectionId" devLabel="Sketch Geometry Constraint" translation="スケッチ ジオメトリの拘束"/>
+	<label commandName="SketchInvisibleProjectGeometries" devLabel="The Projected Geometries you have just created is not visible. Please toggle Show Project Geometries option in sketch palette." translation="作成したばかりの投影されたジオメトリは表示されません。スケッチ パレットで[投影されたジオメトリを表示]オプションを切り替えてください。"/>
+	<label commandName="SketchProjectedGeomSelectionId" devLabel="SketchProjectedGeom" translation="スケッチジオメトリを投影"/>
+	<label commandName="SketchProjectedGeomSelectionsId" devLabel="SketchProjectedGeoms" translation="スケッチジオメトリを投影"/>
+	<label commandName="Smooth" devLabel="Smooth" translation="スムーズ"/>
+	<label commandName="Symmetric" devLabel="Symmetric" translation="対称"/>
+	<label commandName="SymmetryConstraintSelectionId" devLabel="Symmetry Constraint" translation="対称拘束"/>
+	<label commandName="Tangent" devLabel="Tangent" translation="接線"/>
+	<label commandName="TangentConstraintSelectionId" devLabel="Tangent Constraint" translation="接線拘束"/>
+	<label commandName="TangentExists" devLabel="Tangent already exists on selected fit point" translation="接線は、選択したフィット点に既に存在します"/>
+	<label commandName="TextFrameConstraintSelectionId" devLabel="Text Frame Constraint" translation="文字枠の拘束"/>
+	<label commandName="TooFewFitPoints" devLabel="A close spline must at least have 3 fit points" translation="閉じたスプラインには、少なくとも 3 つのフィット点が必要です"/>
+	<label commandName="Vertical" devLabel="Vertical" translation="垂直"/>
+	<label commandName="VerticalConstraintSelectionId" devLabel="Vertical Constraint" translation="垂直拘束"/>
+	<label commandName="lclzSketchError" devLabel="Invalid sketch curve" translation="スケッチ曲線が無効です"/>
+</Resource>

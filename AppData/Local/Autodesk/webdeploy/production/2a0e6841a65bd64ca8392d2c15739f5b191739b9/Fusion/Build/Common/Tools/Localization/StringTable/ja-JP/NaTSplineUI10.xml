@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="AddInput" devLabel="Grow  Selection" translation="選択範囲を拡大"/>
+	<label commandName="AgainstExtrudeDistance" devLabel="Distance" translation="距離"/>
+	<label commandName="All" devLabel="All" translation="すべて"/>
+	<label commandName="AlongExtrudeDistance" devLabel="Distance" translation="距離"/>
+	<label commandName="Angle" devLabel="Angle" translation="角度"/>
+	<label commandName="ArcLength" devLabel="Uniform" translation="均一"/>
+	<label commandName="AssemblyInfoCommand" devLabel="Assembly Info" translation="アセンブリ情報"/>
+	<label commandName="AssemblyInfoCommandDesc" devLabel="Assembly Info" translation="アセンブリ情報"/>
+	<label commandName="AutoFeatureSelMode" devLabel="Auto Feature Selection" translation="自動フィーチャ選択"/>
+	<label commandName="AutoJoin" devLabel="Auto Join" translation="自動結合"/>
+	<label commandName="AutoRepair" devLabel="AutoRepair" translation="自動修復"/>
+	<label commandName="AxisXInput" devLabel="X Distance" translation="X 距離"/>
+	<label commandName="AxisYInput" devLabel="Y Distance" translation="Y 距離"/>
+	<label commandName="AxisZInput" devLabel="Z Distance" translation="Z 距離"/>
+	<label commandName="BetterDisplay" devLabel="Better Display" translation="高品質の表示"/>
+	<label commandName="BetterPerformance" devLabel="Enable Better Performance" translation="パフォーマンス向上を有効にする"/>
+	<label commandName="Body" devLabel="Body" translation="ボディ"/>
+	<label commandName="BooleanInput" devLabel="Embed Symmetry" translation="対称を埋め込み"/>
+	<label commandName="Both" devLabel="Both" translation="両方"/>
+	<label commandName="Box" devLabel="Wireframe Box" translation="ワイヤフレーム ボックス"/>
+	<label commandName="BoxDisplayInput" devLabel="Box Display" translation="ボックス表示"/>
+	<label commandName="BridgeCurveRotation" devLabel="Curve Rotation" translation="曲線の回転"/>
+	<label commandName="BridgeErrBridgeFailed" devLabel="Bridge failed" translation="ブリッジに失敗しました"/>
+	<label commandName="BridgeErrNumSegments" devLabel="Number of segments should be greater than twists" translation="セグメント数には、ねじり数より大きな値を指定する必要があります"/>
+	<label commandName="BridgeErrSameTSpline" devLabel="Please select faces or boundary edges from same body" translation="同じボディから面または境界エッジを選択してください。"/>
+	<label commandName="BridgeFlipDirectionInput1" devLabel="Flip Direction1" translation="方向 1 を反転"/>
+	<label commandName="BridgeFlipDirectionInput2" devLabel="Flip Direction2" translation="方向 2 を反転"/>
+	<label commandName="BridgeFollowCurve" devLabel="Follow Curve" translation="曲線に追従"/>
+	<label commandName="BridgeGuideCurve" devLabel="Select bridge guide curve" translation="橋のガイド曲線を選択"/>
+	<label commandName="BridgeInputOrientVertex" devLabel="OrientVertex" translation="頂点の方向を変更"/>
+	<label commandName="BridgeSegmentsInput" devLabel="Faces" translation="面"/>
+	<label commandName="BridgeShowPreview" devLabel="Preview" translation="プレビュー"/>
+	<label commandName="BridgeSideE1" devLabel="Select side one boundary edges" translation="側面 1 の境界エッジを選択"/>
+	<label commandName="BridgeSideE2" devLabel="Select side two boundary edges" translation="側面 2 の境界エッジを選択"/>
+	<label commandName="BridgeSideEF1" devLabel="Select side one faces or boundary edges" translation="側面 1 の面または境界エッジを選択"/>
+	<label commandName="BridgeSideEF2" devLabel="Select side two faces or boundary edges" translation="側面 2 の面または境界エッジを選択"/>
+	<label commandName="BridgeSideF1" devLabel="Select side one faces" translation="側面 1 の面を選択"/>
+	<label commandName="BridgeSideF2" devLabel="Select side two faces" translation="側面 2 の面を選択"/>
+	<label commandName="BridgeSideOne" devLabel="Side One" translation="側面 1"/>
+	<label commandName="BridgeSideTwo" devLabel="Side Two" translation="側面 2"/>
+	<label commandName="BridgeSideVE1" devLabel="Select side one boundary edges or direction vertex" translation="側面 1 の境界エッジまたは方向の頂点を選択"/>
+	<label commandName="BridgeSideVE2" devLabel="Select side two boundary edges or direction vertex" translation="側面 2 の境界エッジまたは方向の頂点を選択"/>
+	<label commandName="BridgeSideVEF1" devLabel="Select side one faces or boundary edges or direction vertex" translation="側面 1 の面、境界エッジ、または方向の頂点を選択"/>
+	<label commandName="BridgeSideVEF2" devLabel="Select side two faces or boundary edges or direction vertex" translation="側面 2 の面、境界エッジ、または方向の頂点を選択"/>
+	<label commandName="BridgeSideVF1" devLabel="Select side one faces or direction vertex" translation="側面 1 の面または方向の頂点を選択"/>
+	<label commandName="BridgeSideVF2" devLabel="Select side two faces or direction vertex" translation="側面 2 の面または方向の頂点を選択"/>
+	<label commandName="BridgeTwistsInput" devLabel="Twists" translation="ねじり"/>
+	<label commandName="Circular Symmetry Warning" devLabel="%1% is a large number of circular instances that could impact performance.  You can proceed or modify the number of instances." translation="%1% には円形インスタンスが大量にあり、パフォーマンスに影響が生じる可能性があります。続行するか、インスタンスの数を修正することができます。"/>
+	<label commandName="CircularAxis" devLabel="Axis" translation="軸"/>
+	<label commandName="CircularGrid" devLabel="Circular Grid" translation="円形状グリッド"/>
+	<label commandName="CircularSymmetryPossibleLoop" devLabel="Possible symmetries" translation="有効な対称"/>
+	<label commandName="ClearSymmetrySeperateBody" devLabel="Separate Bodies" translation="個別のボディ"/>
+	<label commandName="CmMKS" devLabel="cm" translation="cm"/>
+	<label commandName="ContinuityMode" devLabel="Continuity" translation="連続性"/>
+	<label commandName="ContinuityModeCurvature" devLabel="Curvature (G2)" translation="曲率(G2)"/>
+	<label commandName="ContinuityModePositional" devLabel="Connected (G0)" translation="接続(G0)"/>
+	<label commandName="ContinuityModeTangential" devLabel="Tangent (G1)" translation="接線(G1)"/>
+	<label commandName="ControlFrameDisplayInput" devLabel="Control Frame Display" translation="コントロール フレーム表示"/>
+	<label commandName="ControlFrameEntity" devLabel="ControlFrameEntity" translation="ControlFrameEntity"/>
+	<label commandName="ControlFrameEntitySelection2" devLabel="T-Spline Face, Edge or Surface" translation="T スプライン面、エッジ、またはサーフェス"/>
+	<label commandName="ControlFrameEntitySelection3" devLabel="T-Spline Vertices or Edges" translation="T スプラインの頂点またはエッジ"/>
+	<label commandName="ControlFrameEntitySelection4" devLabel="T-Spline Vertices or Edges" translation="T スプラインの頂点またはエッジ"/>
+	<label commandName="ControlFrameEntitySelection5" devLabel="T-Spline Edges" translation="T スプライン エッジ"/>
+	<label commandName="CoordinateSpace" devLabel="Coordinate Space" translation="座標空間"/>
+	<label commandName="Crease edges/vertices" devLabel="Select edges or vertices" translation="エッジまたは頂点を選択"/>
+	<label commandName="CreateFaceChainNoPossible" devLabel="Chain creation failed, select edge to start new chain" translation="チェーンの作成に失敗しました。エッジを選択して、新しいチェーンを開始してください"/>
+	<label commandName="CreateOrConvertBodies" devLabel="To apply this change, the affected regions need to be unfrozen. Do you wish to continue?" translation="この変更を適用するには、影響を受ける領域をフリーズ解除する必要があります。続行しますか?"/>
+	<label commandName="CrvSensitive" devLabel="Curvature" translation="曲率"/>
+	<label commandName="CurveFit" devLabel="Curve Fit" translation="カーブ フィット"/>
+	<label commandName="CurveSplit" devLabel="Display Curve Splits" translation="曲線の分割を表示"/>
+	<label commandName="CurveToleranceValueInput" devLabel="Curve Tolerance" translation="曲線の許容差"/>
+	<label commandName="DeformJoint" devLabel="Deform" translation="変形"/>
+	<label commandName="Degree" devLabel="Degree" translation="度"/>
+	<label commandName="DeleteGlobalHandle" devLabel="Global sections may not be deleted" translation="全体断面は削除することができません"/>
+	<label commandName="DeleteKeyPressed" devLabel="Delete Key" translation="キーを削除"/>
+	<label commandName="Diameter1Faces" devLabel="Diameter 1 Faces" translation="直径 1 の面"/>
+	<label commandName="DiameterFaces" devLabel="Diameter Faces" translation="直径の面"/>
+	<label commandName="DirectionType" devLabel="Direction" translation="方向"/>
+	<label commandName="DirectionTypeTowards" devLabel="Towards" translation="方向"/>
+	<label commandName="DisplayMode" devLabel="Display Mode" translation="表示モード"/>
+	<label commandName="DisplayType" devLabel="Display" translation="表示"/>
+	<label commandName="Distribution" devLabel="Distribution" translation="分布"/>
+	<label commandName="DragPreviewToShiftPosition" devLabel="Move manipulator or enter parameter value" translation="マニピュレータを移動するか、パラメータ値を入力"/>
+	<label commandName="DrivingCurveCVSelection" devLabel="Curve Control Points" translation="カーブ制御点"/>
+	<label commandName="EFillHoleMode" devLabel="Fill Hole Mode" translation="穴の塗り潰しモード"/>
+	<label commandName="ELayoutDisplayErrorStarInput" devLabel="Error Star" translation="エラー スター"/>
+	<label commandName="ELayoutDisplayLPointsInput" devLabel="L Points" translation="L 点"/>
+	<label commandName="ELayoutDisplayNGonsInput" devLabel="NGons" translation="N 角形"/>
+	<label commandName="ELayoutDisplayNakedEdgesInput" devLabel="Free Edges" translation="フリー エッジ"/>
+	<label commandName="ELayoutDisplaySeaShellsInput" devLabel="Error T Points" translation="T 点でエラーが発生しました"/>
+	<label commandName="ELayoutDisplayStarPointsInput" devLabel="Star Points" translation="スターのポイント"/>
+	<label commandName="ELayoutDisplayTPointsInput" devLabel="T Points" translation="T 点"/>
+	<label commandName="Edge" devLabel="Edge" translation="エッジ"/>
+	<label commandName="EdgeGroupOneNotConnected" devLabel="Edge Group One is not connected." translation="エッジ グループ 1 が接続されていません。"/>
+	<label commandName="EdgeGroupTwoNotConnected" devLabel="Edge Group Two is not connected." translation="エッジ グループ 2 が接続されていません。"/>
+	<label commandName="EdgeSelection" devLabel="EdgeSelection" translation="エッジ選択"/>
+	<label commandName="EdgeSelectionForBevel" devLabel="T-Spline Edge" translation="T スプライン エッジ"/>
+	<label commandName="EdgeSelectionForInsertion" devLabel="T-Spline Edge" translation="T スプライン エッジ"/>
+	<label commandName="EditFormSelectionA" devLabel="Select vertex, edge or face. Alt Key to extrude" translation="頂点、エッジ、または面を選択します。押し出すには、[Alt]キーを押します"/>
+	<label commandName="EditFormSelectionE" devLabel="Select edges. Alt Key to extrude" translation="エッジを選択します。押し出すには[Alt]キーを押します"/>
+	<label commandName="EditFormSelectionF" devLabel="Select faces. Alt Key to extrude" translation="面を選択します。押し出すには[Alt]キーを押します"/>
+	<label commandName="EditFormSelectionS" devLabel="Select T-Spline or mesh bodies" translation="T スプライン ボディまたはメッシュ ボディを選択"/>
+	<label commandName="EditFormSelectionV" devLabel="Select vertices or tangency handles" translation="頂点または接線ハンドルを選択"/>
+	<label commandName="EnableBetterDisplay" devLabel="Enable Better Display" translation="高品質の表示を有効にする"/>
+	<label commandName="EntitySelection" devLabel="Profile" translation="プロファイル"/>
+	<label commandName="ErrorlabelGroup" devLabel="Error Labels" translation="エラー ラベル"/>
+	<label commandName="Exact Mode" devLabel="Select point on edge" translation="エッジ上の点を選択"/>
+	<label commandName="ExtrudeBackSegmentsInput" devLabel="Back Faces" translation="背面"/>
+	<label commandName="ExtrudeFailed" devLabel="Curve Extraction failed" translation="曲線の抽出に失敗しました"/>
+	<label commandName="ExtrudeFrontSegmentsInput" devLabel="Front Faces" translation="正面の面"/>
+	<label commandName="ExtrudeLengthSegmentsInput" devLabel="Length Faces" translation="長さの面"/>
+	<label commandName="ExtrudeSelection" devLabel="Select sketch profiles or planar faces to extrude" translation="押し出すスケッチ プロファイルまたは平面を選択"/>
+	<label commandName="ExtrudeSubD" devLabel="Extrude" translation="押し出し"/>
+	<label commandName="ExtrudeTaperAngleInput" devLabel="Angle" translation="角度"/>
+	<label commandName="ExtrudeWidthSegmentsInput" devLabel="Width Faces" translation="幅の面"/>
+	<label commandName="Face" devLabel="Face" translation="面"/>
+	<label commandName="FaceEdgeVertSelectionForSmooth" devLabel="Faces" translation="面"/>
+	<label commandName="FaceSelection" devLabel="Select Face" translation="面を選択"/>
+	<label commandName="FaceSelectionForSubSet" devLabel="T-Spline Face" translation="T スプライン面"/>
+	<label commandName="FasterBetterPerformance" devLabel="Switching to faster performance mode.  Editing will be faster.  Display and analysis may be compromised." translation="高パフォーマンス モードに切り替えます。編集の処理速度が速くなります。ただし、表示および解析の品質が低下する可能性があります。"/>
+	<label commandName="FasterModeling" devLabel="Faster Modeling" translation="モデル化(高速)"/>
+	<label commandName="FeatSelInput" devLabel="Feature Selection" translation="フィーチャ選択"/>
+	<label commandName="FewerLabel" devLabel="Fewer" translation="簡易"/>
+	<label commandName="FillHoleCollapse" devLabel="Collapse" translation="折りたたむ"/>
+	<label commandName="FillHoleNGON" devLabel="Fill Star" translation="スターを塗り潰し"/>
+	<label commandName="FillHoleTessellation" devLabel="Reduced Star" translation="低減したスター"/>
+	<label commandName="FilterType" devLabel="Selection Filter" translation="選択フィルタ"/>
+	<label commandName="FitDirection" devLabel="Fit" translation="フィット"/>
+	<label commandName="FlattenSelectPlane" devLabel="Select a work plane or planar B-rep face" translation="作業平面または平面 B-Rep 面を選択"/>
+	<label commandName="FlattenSelectVertices" devLabel="Select vertices and/or tangency handles to flatten" translation="平坦化する頂点または接線ハンドルを選択"/>
+	<label commandName="FlattenType" devLabel="Flatten Type" translation="平坦化のタイプ"/>
+	<label commandName="FlipFollowCurve" devLabel="Flip Curve" translation="曲線を反転"/>
+	<label commandName="ForgeSelectAxisSymmetry" devLabel="Select axis or edge" translation="軸またはエッジを選択"/>
+	<label commandName="ForgeSelectAxisThicken" devLabel="Select axis or edge" translation="軸またはエッジを選択"/>
+	<label commandName="ForgeSelectChainEdge" devLabel="Select Edge" translation="エッジを選択"/>
+	<label commandName="ForgeSelectCorner" devLabel="Specify next corner or Select first point to complete" translation="次のコーナーを指定するか、最初の点を選択して完了します"/>
+	<label commandName="ForgeSelectEdgeFillHole" devLabel="Select boundary edges" translation="境界エッジを選択"/>
+	<label commandName="ForgeSelectFaceSymmetry" devLabel="Select face for symmetry." translation="対称にする面を選択します。"/>
+	<label commandName="ForgeSelectFirstCorner" devLabel="Specify first corner" translation="最初のコーナーを指定"/>
+	<label commandName="ForgeSelectFirstEdgeSymmetry" devLabel="Select edge on master side" translation="マスターの側面上でエッジを選択"/>
+	<label commandName="ForgeSelectFirstFaceSymmetry" devLabel="Select face on master side" translation="マスター側の面を選択します。"/>
+	<label commandName="ForgeSelectFirstPoint" devLabel="Specify first corner" translation="最初のコーナーを指定"/>
+	<label commandName="ForgeSelectFirstRetopoCorner" devLabel="Specify first corner" translation="最初のコーナーを指定"/>
+	<label commandName="ForgeSelectFirstVertexSymmetry" devLabel="Select vertex on master side" translation="マスターの側面上で頂点を選択"/>
+	<label commandName="ForgeSelectFourthCorner" devLabel="Specify fourth corner" translation="4 番目のコーナーを指定"/>
+	<label commandName="ForgeSelectFourthRetopoCorner" devLabel="Specify fourth corner" translation="4 番目のコーナーを指定"/>
+	<label commandName="ForgeSelectInterpolateSurface" devLabel="Select body" translation="ボディを選択"/>
+	<label commandName="ForgeSelectPlaneSymmetry" devLabel="Select a plane or planar face" translation="平面を選択"/>
+	<label commandName="ForgeSelectPullFaces" devLabel="Select target" translation="ターゲットを選択"/>
+	<label commandName="ForgeSelectRetoPoint" devLabel="Specify first corner" translation="最初のコーナーを指定"/>
+	<label commandName="ForgeSelectRetopoCorner" devLabel="Specify next corner or Select first point to complete" translation="次のコーナーを指定するか、最初の点を選択して完了します"/>
+	<label commandName="ForgeSelectSecondCorner" devLabel="Specify second corner" translation="2 番目のコーナーを指定"/>
+	<label commandName="ForgeSelectSecondEdgeSymmetry" devLabel="Select edge on mirror side" translation="ミラーの側面上でエッジを選択"/>
+	<label commandName="ForgeSelectSecondFaceSymmetry" devLabel="Select face on mirror side" translation="ミラー側の面を選択"/>
+	<label commandName="ForgeSelectSecondPoint" devLabel="Specify size of rectangle" translation="長方形のサイズを指定"/>
+	<label commandName="ForgeSelectSecondRetopoCorner" devLabel="Specify second corner" translation="2 番目のコーナーを指定"/>
+	<label commandName="ForgeSelectSecondVertexSymmetry" devLabel="Select vertex on mirror side" translation="ミラーの側面上で頂点を選択"/>
+	<label commandName="ForgeSelectSizeOfRectangle" devLabel="Specify size of rectangle" translation="長方形のサイズを指定"/>
+	<label commandName="ForgeSelectSketchPlane" devLabel="" translation=""/>
+	<label commandName="ForgeSelectSketchPlaneClear" devLabel="" translation=""/>
+	<label commandName="ForgeSelectSketchPlaneFirst" devLabel="Select plane or Snap first point" translation="平面を選択するか、最初の点をスナップします"/>
+	<label commandName="ForgeSelectSketchPlaneFourth" devLabel="Select plane or Snap fourth point" translation="平面を選択するか、4 番目の点をスナップします"/>
+	<label commandName="ForgeSelectSketchPlaneNoValue" devLabel="" translation=""/>
+	<label commandName="ForgeSelectSketchPlaneSecond" devLabel="Select plane or Snap second point" translation="平面を選択または 2 番目の点をスナップ"/>
+	<label commandName="ForgeSelectSketchPlaneThird" devLabel="Select plane or Snap third point" translation="平面を選択または 3 番目の点をスナップ"/>
+	<label commandName="ForgeSelectSurfaceForThicken" devLabel="Select body" translation="ボディを選択"/>
+	<label commandName="ForgeSelectSurfaceSymmetry" devLabel="Select T-Spline body" translation="T スプライン ボディを選択"/>
+	<label commandName="ForgeSelectThirdCorner" devLabel="Specify third corner" translation="3 番目のコーナーを指定"/>
+	<label commandName="ForgeSelectThirdRetopoCorner" devLabel="Specify third corner" translation="3 番目のコーナーを指定"/>
+	<label commandName="ForgeSelectVertices" devLabel="Select vertices" translation="頂点を選択"/>
+	<label commandName="ForgeSpecifyCenterPoint" devLabel="Specify center point" translation="中心点を指定"/>
+	<label commandName="ForgeSpecifyFirstCorner" devLabel="Specify first corner" translation="最初のコーナーを指定"/>
+	<label commandName="ForgeSpecifyRadiusOfCircle" devLabel="Specify Diameter of Cylinder" translation="円柱の直径を指定"/>
+	<label commandName="ForgeSpecifyRadiusOfTorus" devLabel="Specify diameter of torus" translation="トーラスの直径を指定"/>
+	<label commandName="ForgeSpecifySizeOfRectangle" devLabel="Specify size of rectangle" translation="長方形のサイズを指定"/>
+	<label commandName="ForgeTSplineMakeUniformCmd" devLabel="Select T-Spline bodies" translation="T スプライン ボディを選択"/>
+	<label commandName="ForgeTSplineUpgradeSurfaceVersionCmd" devLabel="Select T-Spline bodies" translation="T スプライン ボディを選択"/>
+	<label commandName="FrameTransformInput" devLabel="coordinate" translation="座標"/>
+	<label commandName="FreezeInput" devLabel="T-Spline Faces/Edges" translation="T スプライン面/エッジ"/>
+	<label commandName="FreezeResult" devLabel="Freeze Result" translation="結果をフリーズ"/>
+	<label commandName="FrozenSurfChangedNonPreview" devLabel="The last operation unfroze a frozen region to make the requested shape change. Undo this operation to revert the shape change and restore the frozen region" translation="直前の操作では、要求した形状の変更を行うために、フリーズした領域が解除されました。この操作を元に戻すと、形状の変更が元に戻され、フリーズした領域が復元されます"/>
+	<label commandName="FrozenSurfChangedPreview" devLabel="This operation will need to unfreeze a frozen region to make the requested shape change." translation="この操作では、要求した形状の変更を行うために、フリーズした領域を解除する必要があります。"/>
+	<label commandName="Full" devLabel="Full" translation="完全"/>
+	<label commandName="FusionSelectAxis" devLabel="Select sketch curve, edge or axis" translation="スケッチ曲線、エッジ、または軸を選択"/>
+	<label commandName="FusionSelectPathPipe" devLabel="Select sketch curves or edges" translation="スケッチ曲線またはエッジを選択"/>
+	<label commandName="FusionSelectPathSweep" devLabel="Select sketch curves or edges" translation="スケッチ曲線またはエッジを選択"/>
+	<label commandName="FusionSelectProfileCurveSweep" devLabel="Select sketch profiles or planar faces to sweep" translation="スイープするスケッチ プロファイルまたは平面を選択"/>
+	<label commandName="FusionSelectSketchPlane" devLabel="Select a plane or planar face" translation="平面を選択"/>
+	<label commandName="GeometrylabelGroup" devLabel="Geometry Labels" translation="ジオメトリ ラベル"/>
+	<label commandName="GlobalSetting" devLabel="Global Settings" translation="グローバル設定"/>
+	<label commandName="GrowShrinkInput" devLabel="Grow/Shrink" translation="拡大/縮小"/>
+	<label commandName="HeightFaces" devLabel="Height Faces" translation="高さの面"/>
+	<label commandName="HeightSymmetry" devLabel="Height Symmetry" translation="対称の高さ"/>
+	<label commandName="High Face Count Warning" devLabel="%1% is a large number of faces that could impact performance.  You can proceed or modify the number of faces." translation="%1% には大量の面があり、パフォーマンスに影響が生じる可能性があります。続行するか、面の数を修正することができます。"/>
+	<label commandName="HoldShiftSelectDrivingCurveCVs" devLabel="Hold Shift to select multiple control points or edit driving curve" translation="[Shift]を押したまま複数の制御点を選択するか駆動曲線を編集します"/>
+	<label commandName="Imperial" devLabel="ft" translation="ft"/>
+	<label commandName="InchImperial" devLabel="in" translation="in"/>
+	<label commandName="InputType" devLabel="Input Type" translation="入力のタイプ"/>
+	<label commandName="InputTypeFace" devLabel="Face" translation="面"/>
+	<label commandName="InputTypeFaceEdgeVertices" devLabel="Face Edge Vertices" translation="面エッジ頂点"/>
+	<label commandName="InsertEdgeMode" devLabel="Insertion Mode" translation="挿入モード"/>
+	<label commandName="InsertEdgeModeExact" devLabel="Exact" translation="固定"/>
+	<label commandName="InsertEdgeModeSimple" devLabel="Simple" translation="単純"/>
+	<label commandName="InsertEdgeSide" devLabel="Insertion Side" translation="挿入側"/>
+	<label commandName="InsertPointCommandInput" devLabel="Insertion Point" translation="挿入点"/>
+	<label commandName="InsertPointMode" devLabel="Insertion Mode" translation="挿入モード"/>
+	<label commandName="InsertPointModeExact" devLabel="Exact" translation="固定"/>
+	<label commandName="InsertPointModeSimple" devLabel="Simple" translation="単純"/>
+	<label commandName="InsertPointOnPathCommand" devLabel="Insert Section" translation="断面を挿入"/>
+	<label commandName="InvertInput" devLabel="Invert  Selection" translation="選択を反転"/>
+	<label commandName="IsolateSymmetry3" devLabel="Select faces, edges or vertices" translation="面、エッジ、または頂点を選択"/>
+	<label commandName="JointInput" devLabel="Handle" translation="ハンドル"/>
+	<label commandName="JointType" devLabel="End Type" translation="終端タイプ"/>
+	<label commandName="LengthSymmetry" devLabel="Length Symmetry" translation="長さの対称性"/>
+	<label commandName="Line" devLabel="Line" translation="線分"/>
+	<label commandName="LoftPOPInput" devLabel="PointMappingInput" translation="ポイントマッピング入力"/>
+	<label commandName="LoopGrowInput" devLabel="Loop Grow Selection" translation="ループ選択範囲を拡大"/>
+	<label commandName="LoopGrowShrinkInput" devLabel="Loop Grow/Shrink" translation="ループの拡大/縮小"/>
+	<label commandName="LoopInput" devLabel="Loop  Selection" translation="ループ選択"/>
+	<label commandName="LoopShrinkInput" devLabel="Loop Shrink Selection" translation="ループ選択範囲を収縮"/>
+	<label commandName="MMKS" devLabel="m" translation="m"/>
+	<label commandName="MaintainCreaseEdgesOption" devLabel="Maintain Crease Edges" translation="エッジの折り目を維持"/>
+	<label commandName="Make Uniform" devLabel="Make Uniform" translation="均一化"/>
+	<label commandName="MatchCurvatureMode" devLabel="Curvature" translation="曲率"/>
+	<label commandName="MatchCurveParamWeight" devLabel="Curvature Scale" translation="曲率の尺度"/>
+	<label commandName="MatchFalloffRange" devLabel="Falloff Range" translation="フォールオフの範囲"/>
+	<label commandName="MatchFlipAlignmentDirection" devLabel="Flip Direction" translation="方向反転"/>
+	<label commandName="MatchFlipTangentDirection" devLabel="Tangent Direction" translation="接線方向"/>
+	<label commandName="MatchProfileInput" devLabel="T-Spline Edges" translation="T スプライン エッジ"/>
+	<label commandName="MatchProfileMatchInput" devLabel="Target Edges" translation="ターゲット エッジ"/>
+	<label commandName="MatchRefinementTolerance" devLabel="Tolerance" translation="許容差"/>
+	<label commandName="MatchTangentScale" devLabel="Tangent Weight" translation="接線ウェイト"/>
+	<label commandName="MatchUniformMode" devLabel="Uniform" translation="均一"/>
+	<label commandName="MatchUsePropagation" devLabel="Falloff" translation="フォールオフ"/>
+	<label commandName="MatchUseRefinement" devLabel="Tolerance" translation="許容差"/>
+	<label commandName="MaxErrorDeviationKey" devLabel="MaxErrorDeviation" translation="MaxErrorDeviation"/>
+	<label commandName="MaxErrorDeviationString" devLabel="Max Deviation: " translation="最大偏差: "/>
+	<label commandName="MergeEdgeSelection1" devLabel="Select side one boundary edges" translation="側面 1 の境界エッジを選択"/>
+	<label commandName="MergeEdgeSelection2" devLabel="Select side two boundary edges" translation="側面 2 の境界エッジを選択"/>
+	<label commandName="MergeEdgeSideOne" devLabel="Edge Group One" translation="エッジ グループ 1"/>
+	<label commandName="MergeEdgeSideTwo" devLabel="Edge Group Two" translation="エッジ グループ 2"/>
+	<label commandName="MmMKS" devLabel="mm" translation="mm"/>
+	<label commandName="MoreLabel" devLabel="More" translation="詳細"/>
+	<label commandName="NGons" devLabel="Number of Sides" translation="側面の数"/>
+	<label commandName="NewBodyInNewCompType" devLabel="New Component" translation="新規コンポーネント"/>
+	<label commandName="NewBodyType" devLabel="New Body" translation="新規ボディ"/>
+	<label commandName="NextUInput1" devLabel="NextU  Selection" translation="次の U の選択"/>
+	<label commandName="NextUInput2" devLabel="Next U Selection" translation="次の U 選択"/>
+	<label commandName="NextUInput3" devLabel="NextU  Selection" translation="次の U の選択"/>
+	<label commandName="NextUInput4" devLabel="Next U Selection" translation="次の U 選択"/>
+	<label commandName="NextVInput1" devLabel="NextV  Selection" translation="次の V の選択"/>
+	<label commandName="NextVInput2" devLabel="Next V Selection" translation="次の V 選択"/>
+	<label commandName="NextVInput3" devLabel="NextV  Selection" translation="次の V の選択"/>
+	<label commandName="NextVInput4" devLabel="Next V Selection" translation="次の V 選択"/>
+	<label commandName="No Edge" devLabel="No Edge" translation="エッジなし"/>
+	<label commandName="NoComponentsExist1" devLabel="This operation affects one or more frozen regions." translation="この操作は、1 つまたは複数のフリーズした領域に影響します。"/>
+	<label commandName="NumericalInputsGroup" devLabel="Numerical Inputs" translation="数値入力"/>
+	<label commandName="OneSide" devLabel="One Side" translation="片側"/>
+	<label commandName="OpenType" devLabel="Open" translation="開く"/>
+	<label commandName="Operation" devLabel="Operation" translation="操作"/>
+	<label commandName="Performance" devLabel="Performance" translation="パフォーマンス"/>
+	<label commandName="PipeJoints" devLabel="End Types" translation="終端タイプ"/>
+	<label commandName="PipePathInput" devLabel="Path" translation="パス"/>
+	<label commandName="PipeSections" devLabel="Sections" translation="断面"/>
+	<label commandName="PipeSegments" devLabel="Segments" translation="セグメント"/>
+	<label commandName="PlanarCurve" devLabel="Planar Curve" translation="平面の曲線"/>
+	<label commandName="Plane" devLabel="Plane" translation="平面"/>
+	<label commandName="PlaneSelection" devLabel="Mirror Plane" translation="対称面"/>
+	<label commandName="PossibleSymmetry" devLabel="%1% sided symmetry [%2%]" translation="%1% 角形の対称 [%2%]"/>
+	<label commandName="PossibleSymmetry1" devLabel="%1% sided symmetry" translation="%1% 角形の対称"/>
+	<label commandName="PossibleSymmetryKey" devLabel="%1%%2%" translation="%1%%2%"/>
+	<label commandName="PossibleSymmetryKey1" devLabel="%1%" translation="%1%"/>
+	<label commandName="PrevUInput1" devLabel="PrevU  Selection" translation="前の U の選択"/>
+	<label commandName="PrevUInput2" devLabel="Prev U Selection" translation="前の U 選択"/>
+	<label commandName="PrevUInput3" devLabel="PrevU  Selection" translation="前の U の選択"/>
+	<label commandName="PrevUInput4" devLabel="Prev U Selection" translation="前の U 選択"/>
+	<label commandName="PrevVInput1" devLabel="PrevV  Selection" translation="前の V の選択"/>
+	<label commandName="PrevVInput2" devLabel="Prev V Selection" translation="前の V 選択"/>
+	<label commandName="PrevVInput3" devLabel="PrevV  Selection" translation="前の V の選択"/>
+	<label commandName="PrevVInput4" devLabel="Prev V Selection" translation="前の V 選択"/>
+	<label commandName="ProfileChainSelect" devLabel="Chain Selection" translation="チェーン選択"/>
+	<label commandName="ProfileChainSelection" devLabel="Profile Chain Selection" translation="プロファイル チェーン選択"/>
+	<label commandName="ProfileChainSelectionOption" devLabel="Chain Selection" translation="チェーン選択"/>
+	<label commandName="ProfileChainSelectionOption2" devLabel="Profile Chain Selection" translation="プロファイル チェーン選択"/>
+	<label commandName="PullType" devLabel="Pull Type" translation="プル タイプ"/>
+	<label commandName="RangeInput" devLabel="Range  Selection" translation="範囲選択"/>
+	<label commandName="RangeSelection" devLabel="Range Selection" translation="範囲選択"/>
+	<label commandName="ReapirBodySelectBody" devLabel="Select body" translation="ボディを選択"/>
+	<label commandName="ReapirBodySelectBodyVertex" devLabel="Select body or vertex" translation="ボディまたは頂点を選択"/>
+	<label commandName="RectType" devLabel="Rectangle Type" translation="長方形のタイプ"/>
+	<label commandName="RectType2Point" devLabel="2-Point" translation="2 点"/>
+	<label commandName="RectTypeCenter" devLabel="Center" translation="中心"/>
+	<label commandName="RemoveInput" devLabel="Shrink  Selection" translation="選択範囲を収縮"/>
+	<label commandName="RemoveSection" devLabel="Remove Section" translation="断面を削除"/>
+	<label commandName="ResetJoint" devLabel="Reset End Type" translation="終端タイプをリセット"/>
+	<label commandName="ResetSection" devLabel="Reset Section" translation="断面をリセット"/>
+	<label commandName="ResetSegment" devLabel="Reset Segment" translation="セグメントをリセット"/>
+	<label commandName="RetopoOptionGroup" devLabel="Object Snap" translation="オブジェクト スナップ"/>
+	<label commandName="RetopoOptionInput" devLabel="Object Snap" translation="オブジェクト スナップ"/>
+	<label commandName="RetopoPointInput" devLabel="Retopo Point" translation="リトポロジの点"/>
+	<label commandName="RevolveAgainstAngleInput" devLabel="Angle" translation="角度"/>
+	<label commandName="RevolveAlongAngleInput" devLabel="Angle" translation="角度"/>
+	<label commandName="RevolveAxisInput" devLabel="Axis" translation="軸"/>
+	<label commandName="RevolveFailed" devLabel="Curve Extraction failed" translation="曲線の抽出に失敗しました"/>
+	<label commandName="RevolveProfileInput" devLabel="Profile" translation="プロファイル"/>
+	<label commandName="RevolveSelection" devLabel="Select sketch profiles, planar faces or T-Spline edges to revolve" translation="回転するスケッチ プロファイル、平面、または T スプライン エッジを選択"/>
+	<label commandName="RingGrowInput" devLabel="Ring Grow Selection" translation="リング選択範囲を拡大"/>
+	<label commandName="RingGrowShrinkInput" devLabel="Ring Grow/Shrink" translation="リングの拡大/縮小"/>
+	<label commandName="RingInput" devLabel="Ring  Selection" translation="リング選択"/>
+	<label commandName="RingShrinkInput" devLabel="Ring Shrink Selection" translation="リング選択範囲を収縮"/>
+	<label commandName="RotateXAngle" devLabel="X Angle" translation="X 角度"/>
+	<label commandName="RotateXInput" devLabel="X Angle" translation="X 角度"/>
+	<label commandName="RotateYAngle" devLabel="Y Angle" translation="Y 角度"/>
+	<label commandName="RotateYInput" devLabel="Y Angle" translation="Y 角度"/>
+	<label commandName="RotateZAngle" devLabel="Z Angle" translation="Z 角度"/>
+	<label commandName="RotateZInput" devLabel="Z Angle" translation="Z 角度"/>
+	<label commandName="S" devLabel="S" translation="S"/>
+	<label commandName="SamplingType" devLabel="Spacing" translation="間隔"/>
+	<label commandName="SectionAngle" devLabel="Angle" translation="角度"/>
+	<label commandName="SectionDefaultDiameter" devLabel="Global Diameter" translation="全体直径"/>
+	<label commandName="SectionDiameter" devLabel="Diameter" translation="直径"/>
+	<label commandName="SectionInput" devLabel="Section" translation="断面"/>
+	<label commandName="SectionPosition" devLabel="Position" translation="位置"/>
+	<label commandName="SegmentAspectRatioInput" devLabel="Density" translation="密度"/>
+	<label commandName="SegmentCountInput" devLabel="Segments" translation="セグメント"/>
+	<label commandName="SegmentInput" devLabel="Segment" translation="セグメント"/>
+	<label commandName="SelOptionGroup" devLabel="Selection Options" translation="選択オプション"/>
+	<label commandName="SelectBevelEdges" devLabel="Select edges" translation="エッジを選択"/>
+	<label commandName="SelectDirection" devLabel="Select Plane" translation="平面を選択"/>
+	<label commandName="SelectDirectionAxis" devLabel="Axis" translation="軸"/>
+	<label commandName="SelectDirectionNormal" devLabel="Normal" translation="標準"/>
+	<label commandName="SelectDrivingCurveCVs" devLabel="Select control points" translation="制御点を選択"/>
+	<label commandName="SelectEdge" devLabel="Select Edge" translation="エッジを選択"/>
+	<label commandName="SelectEdgeToInsert" devLabel="Select edges" translation="エッジを選択"/>
+	<label commandName="SelectEdges" devLabel="Select edges" translation="エッジを選択"/>
+	<label commandName="SelectFacesEraseFill" devLabel="Select faces to erase and fill" translation="消去して塗り潰す面を選択"/>
+	<label commandName="SelectInsertEdge" devLabel="Select edges" translation="エッジを選択"/>
+	<label commandName="SelectLine" devLabel="Select Line" translation="線分を選択"/>
+	<label commandName="SelectParallelDirection" devLabel="Select Parallel Plane" translation="平行な平面を選択"/>
+	<label commandName="SelectParallelLine" devLabel="Select Parallel Line" translation="平行線を選択"/>
+	<label commandName="SelectPlaneOrSnapNextPointOrSnapFirstPointToComplete" devLabel="Select Plane or Snap next point or Snap first point to complete" translation="完了するには、平面を選択するか、次の点または最初の点をスナップします"/>
+	<label commandName="SelectPointOnCurveToInsertSection" devLabel="Insert Section " translation="断面を挿入 "/>
+	<label commandName="SelectPointOnEdgeOrVertexToInsert" devLabel="Select vertex or edge" translation="頂点またはエッジを選択"/>
+	<label commandName="SelectSecondVertexWeld" devLabel="Select vertices" translation="頂点を選択"/>
+	<label commandName="SelectSurfaceClearSymmetry" devLabel="Select T-Spline body" translation="T スプライン ボディを選択"/>
+	<label commandName="SelectTwoPoints" devLabel="Select Two Points" translation="2 つの点を選択"/>
+	<label commandName="SelectTwoVertexToWeld" devLabel="Select vertices" translation="頂点を選択"/>
+	<label commandName="SelectionForIsolateSymmetry" devLabel="Isolate Symmetry" translation="対称を選択表示"/>
+	<label commandName="SelectionForSymmetry" devLabel="Symmetry" translation="対称"/>
+	<label commandName="SelectionReorderCommandInput" devLabel="ProfileOrder" translation="プロファイルの順序"/>
+	<label commandName="SelectionSpaceMode" devLabel="Selection Space" translation="選択空間"/>
+	<label commandName="ShadedBox" devLabel="Box" translation="直方体"/>
+	<label commandName="ShadedSmooth" devLabel="Smooth" translation="スムーズ"/>
+	<label commandName="Sharp" devLabel="Sharp" translation="シャープ"/>
+	<label commandName="ShowDeviation" devLabel="Show Deviation" translation="偏差を表示"/>
+	<label commandName="Simple" devLabel="Simple" translation="単純"/>
+	<label commandName="Simple Mode" devLabel="Select vertex or edge" translation="頂点またはエッジを選択"/>
+	<label commandName="Single" devLabel="Single" translation="単一"/>
+	<label commandName="SketchFirstPointInput" devLabel="Sketch first point" translation="スケッチの 1 番目の点"/>
+	<label commandName="SketchSecondPointInput" devLabel="Sketch second point" translation="スケッチの 2 番目の点"/>
+	<label commandName="Smooth" devLabel="Wireframe Smooth" translation="ワイヤフレームのスムーズ"/>
+	<label commandName="SmoothDisplayInput" devLabel="Smooth Display" translation="スムーズの表示"/>
+	<label commandName="SmoothModeBrush" devLabel="Brush" translation="ブラシ"/>
+	<label commandName="SmoothModeSelection" devLabel="Selection" translation="選択"/>
+	<label commandName="SnapDirection" devLabel="Snap direction" translation="スナップの方向"/>
+	<label commandName="Soft" devLabel="Soft" translation="ソフト"/>
+	<label commandName="SoftBulgeFalloff" devLabel="Bulge" translation="ふくらみ"/>
+	<label commandName="SoftLinearFalloff" devLabel="Linear" translation="線形"/>
+	<label commandName="SoftSelDistance" devLabel="Distance" translation="距離"/>
+	<label commandName="SoftSelExtent" devLabel="Extent" translation="範囲"/>
+	<label commandName="SoftSelFaceCount" devLabel="Face Count" translation="面の数"/>
+	<label commandName="SoftSelOptionGroup" devLabel="Soft Modification" translation="ソフト修正"/>
+	<label commandName="SoftSelRectFaceCount" devLabel="Rectangular Face Count" translation="矩形面の数"/>
+	<label commandName="SoftSelTransition" devLabel="Transition" translation="遷移"/>
+	<label commandName="SoftSmoothFalloff" devLabel="Smooth" translation="スムーズ"/>
+	<label commandName="SomePossibleSymmetry" devLabel="%1%%2%" translation="%1%%2%"/>
+	<label commandName="SomePossibleSymmetry1" devLabel="%1%" translation="%1%"/>
+	<label commandName="SpacingMode" devLabel="Spacing" translation="間隔"/>
+	<label commandName="SpanCount" devLabel="Segments" translation="セグメント"/>
+	<label commandName="Specify" devLabel="Specify" translation="指定"/>
+	<label commandName="SpikeType" devLabel="Spike" translation="スパイク"/>
+	<label commandName="SquareType" devLabel="Square" translation="正方形"/>
+	<label commandName="StraightenSelectLine" devLabel="Select a line to straighten along" translation="直線化に使用する線分を選択"/>
+	<label commandName="StraightenSelectParallelLine" devLabel="Select a parallel line to straighten along" translation="直線化に使用する平行線を選択"/>
+	<label commandName="StraightenSelectTwoPoints" devLabel="Select two points to define a line to straighten along" translation="直線化に使用する線分を定義する 2 つの点を選択"/>
+	<label commandName="StraightenSelectVertices" devLabel="Select vertices to straighten" translation="直線化する頂点を選択"/>
+	<label commandName="StraightenType" devLabel="Straighten Type" translation="直線化のタイプ"/>
+	<label commandName="StrutHoleSelTip" devLabel="Strut/Hole Selection" translation="支柱または穴の選択"/>
+	<label commandName="SubDivideNGonWarning" devLabel="Specifying the number of subdivisions can only be applied to four sided faces." translation="サブディビジョン数の指定は、四角形にのみ適用できます。"/>
+	<label commandName="SubSet" devLabel="Select faces" translation="面を選択"/>
+	<label commandName="SubSetMode" devLabel="Insert Mode" translation="挿入モード"/>
+	<label commandName="SubSetModeExact" devLabel="Exact" translation="固定"/>
+	<label commandName="SubSetModeSimple" devLabel="Simple" translation="単純"/>
+	<label commandName="Subdivide" devLabel="Subdivide" translation="再分割"/>
+	<label commandName="SurfaceSelection" devLabel="Select Surface" translation="サーフェスを選択"/>
+	<label commandName="SweepFullPathInput" devLabel="Full Path" translation="絶対パス"/>
+	<label commandName="SweepOrientationType" devLabel="Orientation" translation="方向"/>
+	<label commandName="SweepPOPAgainstInput" devLabel="Distance" translation="距離"/>
+	<label commandName="SweepPOPAlongInput" devLabel="Distance" translation="距離"/>
+	<label commandName="SweepParallel" devLabel="Parallel" translation="平行"/>
+	<label commandName="SweepPathInput" devLabel="Path" translation="パス"/>
+	<label commandName="SweepPerpendicular" devLabel="Perpendicular" translation="直交"/>
+	<label commandName="SweepProfileInput" devLabel="Profile" translation="プロファイル"/>
+	<label commandName="SymSegmentInput" devLabel="Symmetric Faces" translation="対称面"/>
+	<label commandName="Symmetric" devLabel="Symmetric" translation="対称"/>
+	<label commandName="SymmetricFaces" devLabel="Symmetric Faces" translation="対称面"/>
+	<label commandName="SymmetryCircular" devLabel="Circular" translation="円形"/>
+	<label commandName="SymmetryMirror" devLabel="Mirror" translation="ミラー"/>
+	<label commandName="SymmetryNone" devLabel="None" translation="なし"/>
+	<label commandName="SymmetryToleranceValue" devLabel="Weld Tolerance" translation="溶接許容"/>
+	<label commandName="SymmetryType" devLabel="Symmetry" translation="対称"/>
+	<label commandName="SymmetryWeldType" devLabel="Weld" translation="溶接"/>
+	<label commandName="TSMFilesFilter" devLabel="TSM File(*.tsm)" translation="TSM ファイル(*.tsm)"/>
+	<label commandName="TSpline Environment TT" devLabel="Form" translation="フォーム"/>
+	<label commandName="TSplineAppendFaceCommand" devLabel="Face" translation="面"/>
+	<label commandName="TSplineBetterDisplay" devLabel="Switching to T-Spline Better Display mode.  Large models could edit more slowly.  Display and analysis will be best quality." translation="T スプラインの高品質の表示モードに切り替えます。大きなモデルの場合、編集処理の所要時間が長くなることがあります。ただし、画質と解析精度は最高になります。"/>
+	<label commandName="TSplineBevelEdge" devLabel="Bevel Edge" translation="ベベル エッジ"/>
+	<label commandName="TSplineBody" devLabel="T-Spline Body" translation="T スプライン ボディ"/>
+	<label commandName="TSplineBoxHtSegErr" devLabel="Height faces should be greater than or equal to 1" translation="高さの面が 1 つ以上必要です"/>
+	<label commandName="TSplineBoxLenSegErr" devLabel="Length faces should be greater than or equal to 1" translation="長さの面が 1 つ以上必要です"/>
+	<label commandName="TSplineBoxTotalSegErr" devLabel="The total number of faces cannot exceed 100,000" translation="面の合計数は 100,000 を超えることはできません"/>
+	<label commandName="TSplineBoxWidSegErr" devLabel="Width faces should be greater than or equal to 1" translation="幅の面が 1 つ以上必要です"/>
+	<label commandName="TSplineBridgeSubDCmd" devLabel="Bridge" translation="ブリッジ"/>
+	<label commandName="TSplineClearSymmetryCommand" devLabel="Clear Symmetry" translation="対称をクリア"/>
+	<label commandName="TSplineClosedEdgeLoopWarning" devLabel="The selection formed a closed loop, which cannot be used for Edit by Curve. The last selected edge has been deselected." translation="選択対象が閉じたループを形成しました。[曲線で編集]では使用できません。最後に選択したエッジが選択解除されています。"/>
+	<label commandName="TSplineCreasedEdge" devLabel="Crease" translation="折り目"/>
+	<label commandName="TSplineCylCirSymErr" devLabel="To apply circular symmetry, symmetric faces should be greater than or equal to 1" translation="円形対称を適用するには、対称面が 1 つ以上必要です"/>
+	<label commandName="TSplineCylDiaSegErr" devLabel="Radius faces should be greater than or equal to 3" translation="半径の面が 3 つ以上必要です"/>
+	<label commandName="TSplineCylDiaSegSymErr" devLabel="To apply X or Y symmetry, radius faces should be greater than or equal to 4" translation="X 対称または Y 対称を適用するには、半径の面が 4 つ以上必要です"/>
+	<label commandName="TSplineCylHtSegErr" devLabel="Height faces should be greater than or equal to 1" translation="高さの面が 1 つ以上必要です"/>
+	<label commandName="TSplineCylHtSegSymErr" devLabel="To apply Z symmetry, height faces should be greater than or equal to 1" translation="Z 対称を適用するには、高さの面が 1 つ以上必要です"/>
+	<label commandName="TSplineCylMirSymErr" devLabel="To apply both X and Y symmetry, radius faces should be multiples of 4" translation="X 対称と Y 対称の両方を適用するには、4 の倍数の半径の面が必要です"/>
+	<label commandName="TSplineCylTotalSegErr" devLabel="The total number of faces cannot exceed 100,000" translation="面の合計数は 100,000 を超えることはできません"/>
+	<label commandName="TSplineCylindrifyCmd" devLabel="Cylindrify" translation="円柱化"/>
+	<label commandName="TSplineDiagnosticCommand" devLabel="T-Spline Diagnostics" translation="T スプライン診断"/>
+	<label commandName="TSplineDiagnosticCommandDesc" devLabel="T-Spline Diagnostics Info" translation="T スプライン診断の情報"/>
+	<label commandName="TSplineDumpEntityCommand" devLabel="T-Spline Entity Info" translation="T スプライン エンティティの情報"/>
+	<label commandName="TSplineDumpEntityCommandDesc" devLabel="T-Spline Entity Info" translation="T スプライン エンティティの情報"/>
+	<label commandName="TSplineEdge" devLabel="T-Spline Edge" translation="T スプライン エッジ"/>
+	<label commandName="TSplineEdges" devLabel="T-Spline Edges" translation="T スプライン エッジ"/>
+	<label commandName="TSplineEditByCurve" devLabel="Edit By Curve" translation="曲線で編集"/>
+	<label commandName="TSplineEditCommand" devLabel="Edit Form" translation="フォームを編集"/>
+	<label commandName="TSplineEntity" devLabel="T-Spline Entity" translation="T スプライン エンティティ"/>
+	<label commandName="TSplineEntitySelection" devLabel="T-Spline Entity" translation="T スプライン エンティティ"/>
+	<label commandName="TSplineEraseAndFillCmd" devLabel="Erase And Fill" translation="消去と塗り潰し"/>
+	<label commandName="TSplineFaces" devLabel="T-Spline Faces" translation="T スプライン面"/>
+	<label commandName="TSplineFillHoleCmd" devLabel="Fill Hole" translation="穴の塗り潰し"/>
+	<label commandName="TSplineFlattenSubDCmd" devLabel="Flatten" translation="平坦化"/>
+	<label commandName="TSplineFreezeCancel" devLabel="Cancel" translation="キャンセル"/>
+	<label commandName="TSplineFreezeCmd" devLabel="Freeze" translation="フリーズ"/>
+	<label commandName="TSplineFreezeSelection" devLabel="Select faces or edges to freeze" translation="フリーズ対象の面またはエッジを選択"/>
+	<label commandName="TSplineImpCantFindComp" devLabel="Cannot find appropriate component for adding T-Spline!" translation="T スプラインを追加するのに適切なコンポーネントが見つかりません。"/>
+	<label commandName="TSplineImportCommand" devLabel="Insert T-Spline" translation="T スプラインを挿入"/>
+	<label commandName="TSplineInsertEdge" devLabel="Insert Edge" translation="エッジを挿入"/>
+	<label commandName="TSplineInsertPointCommand" devLabel="Insert Point" translation="挿入点"/>
+	<label commandName="TSplineInternalCircularSymmetryCmd" devLabel="Circular - Internal" translation="円形 - 内部"/>
+	<label commandName="TSplineInternalMirrorSymmetryCmd" devLabel="Mirror - Internal" translation="ミラー - 内部"/>
+	<label commandName="TSplineInterpolateSubDCmd" devLabel="Interpolate" translation="補間"/>
+	<label commandName="TSplineIsolateSymmetryCmd" devLabel="Isolate Symmetry" translation="対称を選択表示"/>
+	<label commandName="TSplineIsolateSymmetryWarningSelection" devLabel="Only entities lying on symmetric surfaces can be selected for isolate symmetry command." translation="[対称を選択表示]コマンドでは、対称サーフェス上にあるエンティティのみを選択できます。"/>
+	<label commandName="TSplineMatchCmd" devLabel="Match" translation="一致"/>
+	<label commandName="TSplineMatchSelectCurveMatch" devLabel="Select edges or sketch" translation="エッジまたはスケッチを選択"/>
+	<label commandName="TSplineMatchSelectEdgeModify" devLabel="Select T-Spline edges" translation="T スプライン エッジを選択"/>
+	<label commandName="TSplineMatchTarCrvCantJoin" devLabel="Target curves can't be joined together." translation="ターゲット曲線を結合できません。"/>
+	<label commandName="TSplineMergeEdgeCmd" devLabel="Merge Edge" translation="エッジを結合"/>
+	<label commandName="TSplineNonManifoldWarning" devLabel="Selected T-Spline surface is not manufacturable. Modify the T-Spline surface." translation="選択した T スプライン サーフェスは製造可能ではありません。T スプライン サーフェスを修正してください。"/>
+	<label commandName="TSplinePipe" devLabel="TSpline Pipe" translation="T スプライン パイプ"/>
+	<label commandName="TSplinePipeEdit" devLabel="Edit Pipe" translation="パイプを編集"/>
+	<label commandName="TSplinePlnLenSegErr" devLabel="Length faces should be greater than or equal to 1" translation="長さの面が 1 つ以上必要です"/>
+	<label commandName="TSplinePlnLenSymErr" devLabel="To apply X symmetry, length faces should be greater than or equal to 2" translation="X 対称を適用するには、長さの面が 2 つ以上必要です"/>
+	<label commandName="TSplinePlnTotalSegErr" devLabel="The total number of faces cannot exceed 100,000" translation="面の合計数は 100,000 を超えることはできません"/>
+	<label commandName="TSplinePlnWidSegErr" devLabel="Width faces should be greater than or equal to 1" translation="幅の面が 1 つ以上必要です"/>
+	<label commandName="TSplinePlnWidSymErr" devLabel="To apply Y symmetry, width faces should be greater than or equal to 2" translation="Y 対称を適用するには、幅の面が 2 つ以上必要です"/>
+	<label commandName="TSplinePrimitiveBoxCommand" devLabel="Box" translation="直方体"/>
+	<label commandName="TSplinePrimitiveCylinderCommand" devLabel="Cylinder" translation="円柱"/>
+	<label commandName="TSplinePrimitivePipe" devLabel="Pipe" translation="パイプ"/>
+	<label commandName="TSplinePrimitivePlaneCommand" devLabel="Plane" translation="平面"/>
+	<label commandName="TSplinePrimitiveQuadBallCommand" devLabel="Quadball" translation="クワッド ボール"/>
+	<label commandName="TSplinePrimitiveSphereCommand" devLabel="Sphere" translation="球"/>
+	<label commandName="TSplinePrimitiveTorusCommand" devLabel="Torus" translation="トーラス"/>
+	<label commandName="TSplinePullSubDCmd" devLabel="Pull" translation="プル"/>
+	<label commandName="TSplineQuadSpnSegErr" devLabel="Span faces should be greater than or equal to 1" translation="スパンの面が 1 つ以上必要です"/>
+	<label commandName="TSplineQuadTotalSegErr" devLabel="The total number of faces cannot exceed 100,000" translation="面の合計数は 100,000 を超えることはできません"/>
+	<label commandName="TSplineReflectionCircularSymmetryCmd" devLabel="Circular - Duplicate" translation="円形 - 複製"/>
+	<label commandName="TSplineReflectionMirrorSymmetryCmd" devLabel="Mirror - Duplicate" translation="ミラー - 複製"/>
+	<label commandName="TSplineRepairBodyCmd" devLabel="Repair Body" translation="ボディを修復"/>
+	<label commandName="TSplineRevCreateFailed" devLabel="Failed to create the revolve for selected profile and axis" translation="選択したプロファイルおよび軸の回転の作成に失敗しました"/>
+	<label commandName="TSplineRevolveCommand" devLabel="Revolve" translation="回転"/>
+	<label commandName="TSplineSaveAsTSMCommand" devLabel="Save *.tsm file" translation="*.tsm ファイルを保存"/>
+	<label commandName="TSplineSelectSketchPlaneInput" devLabel="Select a plane or planar face" translation="平面を選択"/>
+	<label commandName="TSplineSelectSketchPlaneOrSnapPoint" devLabel="Select a plane, planar face or vertex" translation="平面または頂点を選択"/>
+	<label commandName="TSplineSketchPlaneInput" devLabel="Sketch plane" translation="スケッチ平面"/>
+	<label commandName="TSplineSlideEdge" devLabel="Slide Edge" translation="エッジをスライド"/>
+	<label commandName="TSplineSmooth" devLabel="Smooth" translation="スムーズ"/>
+	<label commandName="TSplineSmoothBrushSizeInput" devLabel="Brush Size" translation="ブラシ サイズ"/>
+	<label commandName="TSplineSmoothDisplayWarning" devLabel="Cannot display selected T-Spline surface in Smooth Display Mode. Try the Repair Body command or modify the T-Spline surface." translation="選択した T スプライン サーフェスはスムーズ表示モードで表示できません。[ボディを修復]コマンドを実行するか、T スプライン サーフェスを修正してください。"/>
+	<label commandName="TSplineSmoothRateInput" devLabel="Smoothing" translation="スムーズ化"/>
+	<label commandName="TSplineSmoothSelectionFacets" devLabel="Select Faces" translation="面を選択"/>
+	<label commandName="TSplineSmoothingMode" devLabel="Smoothing Mode" translation="スムージング モード"/>
+	<label commandName="TSplineSphereTotalSegErr" devLabel="The total number of faces cannot exceed 100,000" translation="面の合計数は 100,000 を超えることはできません"/>
+	<label commandName="TSplineSprCirSymErr" devLabel="To apply circular symmetry, symmetric faces should be greater than or equal to 1" translation="円形対称を適用するには、対称面が 1 つ以上必要です"/>
+	<label commandName="TSplineSprLanSegErr" devLabel="Longitude faces should be greater than or equal to 3" translation="経度の面が 3 つ以上必要です"/>
+	<label commandName="TSplineSprLatSegErr" devLabel="Latitude faces should be greater than or equal to 2" translation="緯度の面が 3 つ以上必要です"/>
+	<label commandName="TSplineSprMirSymBothErr" devLabel="To apply both X and Y symmetry, longitude faces should be multiples of 4" translation="X 対称と Y 対称の両方を適用するには、4 の倍数の経度の面が必要です"/>
+	<label commandName="TSplineSprMirSymErr" devLabel="To apply X or Y symmetry, longitude faces should be greater than or equal to 4" translation="X 対称または Y 対称を適用するには、経度の面が 4 つ以上必要です"/>
+	<label commandName="TSplineStraighten" devLabel="Straighten" translation="直線化"/>
+	<label commandName="TSplineStraigtenSurfacePointsError" devLabel="Straighten operation failed. When you use the Surface Points option, ensure that the T-Spline surface can be displayed in Smooth display mode." translation="直線化操作に失敗しました。[サーフェス点]オプションを使用する場合は、T スプライン サーフェスを[スムーズ]表示モードで表示できることを確認してください。"/>
+	<label commandName="TSplineStraigtenTwoPointsError" devLabel="Could not find a line from the given inputs." translation="指定された入力から線分が見つかりませんでした。"/>
+	<label commandName="TSplineSurfaceVersionUpdateAllWarning" devLabel="Upgrade all T-Spline bodies in this document" translation="このドキュメント内の T スプライン ボディをすべてアップグレード"/>
+	<label commandName="TSplineSurfaceVersionWarning" devLabel="This body can be upgraded to take advantage of improved T-Spline modeling capabilities.  Some modification to the shape may occur.  Upgrade this body?" translation="このボディは、アップグレードして、改良された T スプライン モデリング機能を活用することができます。この場合、形状が一部修正される可能性があります。このボディをアップグレードしますか?"/>
+	<label commandName="TSplineSurfaceVersionWarningTitle" devLabel="T-Spline Surface Version Upgrade" translation="T スプライン サーフェスのバージョンのアップグレード"/>
+	<label commandName="TSplineSurfacesInterpolate" devLabel="T-Spline Body" translation="T スプライン ボディ"/>
+	<label commandName="TSplineSweepCommand" devLabel="Sweep" translation="スイープ"/>
+	<label commandName="TSplineThicken" devLabel="Thicken" translation="厚み"/>
+	<label commandName="TSplineToggleCommand" devLabel="Select T-Spline Entities" translation="T スプライン エンティティを選択"/>
+	<label commandName="TSplineTorCirSymErr" devLabel="To apply circular symmetry, symmetric faces should be greater than or equal to 1" translation="円形対称を適用するには、対称面が 1 つ以上必要です"/>
+	<label commandName="TSplineTorDiaSegErr" devLabel="Radius faces should be greater than or equal to 3" translation="半径の面が 3 つ以上必要です"/>
+	<label commandName="TSplineTorDiaSegSymErr" devLabel="To apply mirror symmetry, radius faces should be greater than or equal to 4" translation="ミラー対称を適用するには、半径の面が 4 つ以上必要です"/>
+	<label commandName="TSplineTorMirSymBothErr" devLabel="To apply both X and Y symmetry, radius segments should be multiples of 4" translation="X 対称と Y 対称の両方を適用するには、4 の倍数の半径セグメントが必要です"/>
+	<label commandName="TSplineTorRngSegErr" devLabel="Ring faces should be greater than or equal to 3" translation="リングの面が 3 つ以上必要です"/>
+	<label commandName="TSplineTorRngSegSymErr" devLabel="To apply mirror symmetry, ring faces should be greater than or equal to 4" translation="ミラー対称を適用するには、リングの面が 4 つ以上必要です"/>
+	<label commandName="TSplineTorusTotalSegErr" devLabel="The total number of faces cannot exceed 100,000" translation="面の合計数は 100,000 を超えることはできません"/>
+	<label commandName="TSplineUnCreasedEdge" devLabel="UnCrease" translation="折り目解除"/>
+	<label commandName="TSplineUnFreeze" devLabel="Unfreeze" translation="フリーズ解除"/>
+	<label commandName="TSplineUnFreezeCmd" devLabel="UnFreeze" translation="フリーズ解除"/>
+	<label commandName="TSplineUnFreezeSelection" devLabel="Select frozen faces or edges to unfreeze" translation="フリーズ解除対象のフリーズされた面またはエッジを選択"/>
+	<label commandName="TSplineUnWeldCommand" devLabel="UnWeld Edges" translation="エッジを溶接解除"/>
+	<label commandName="TSplineVertices" devLabel="T-Spline Vertices" translation="T スプラインの頂点"/>
+	<label commandName="TSplineWeldCommand" devLabel="Weld Vertices" translation="頂点を溶接"/>
+	<label commandName="TSplinesVertices" devLabel="T-Spline Vertices" translation="T スプラインの頂点"/>
+	<label commandName="TargetFaces" devLabel="Targets" translation="ターゲット"/>
+	<label commandName="TargetSelectType" devLabel="Target Select" translation="ターゲットを選択"/>
+	<label commandName="Thicken Type" devLabel="Thicken Type" translation="厚さのタイプ"/>
+	<label commandName="ThickenAxis" devLabel="Axis" translation="軸"/>
+	<label commandName="ThickenAxisSelect" devLabel="Select axis or edge" translation="軸またはエッジを選択"/>
+	<label commandName="ToggleDisplayMode" devLabel="Display Mode" translation="表示モード"/>
+	<label commandName="ToggleLink" devLabel="Link tangent handle" translation="接線ハンドルをリンク"/>
+	<label commandName="Tolerance" devLabel="With Tolerance" translation="許容差を使用"/>
+	<label commandName="ToleranceToggle" devLabel="Specify Tolerance" translation="公差を指定"/>
+	<label commandName="ToleranceValue" devLabel="Weld Tolerance" translation="溶接許容"/>
+	<label commandName="TransformManip" devLabel="Transform Manipulator" translation="変換マニピュレータ"/>
+	<label commandName="TransformMode" devLabel="Transform Mode" translation="移動モード"/>
+	<label commandName="TsplineExtrudeSpanCount" devLabel="Faces" translation="面"/>
+	<label commandName="TwoPoints" devLabel="Two Points" translation="2 つの点"/>
+	<label commandName="TwoSide" devLabel="Two Side" translation="2 つの側面"/>
+	<label commandName="Type" devLabel="Type" translation="タイプ"/>
+	<label commandName="UVNormalMatrix" devLabel="Local Per Entity" translation="エンティティごとにローカル"/>
+	<label commandName="UnCrease edges/vertices" devLabel="Select edges or vertices" translation="エッジまたは頂点を選択"/>
+	<label commandName="UnWeld Edges" devLabel="Select edges" translation="エッジを選択"/>
+	<label commandName="UnifiedScaleInput" devLabel="UnifiedScale" translation="統一尺度"/>
+	<label commandName="Uniform" devLabel="Uniform" translation="均一"/>
+	<label commandName="Upgrade Surface Version" devLabel="Upgrade Surface Version" translation="サーフェスのバージョンをアップグレード"/>
+	<label commandName="VertRangeSelToolTip" devLabel="Click to select a range of vertices" translation="クリックして頂点の範囲を選択します"/>
+	<label commandName="Vertex" devLabel="Vertex" translation="頂点"/>
+	<label commandName="VertexSelection" devLabel="Select Vertex" translation="頂点を選択"/>
+	<label commandName="ViewSpaceMatrix" devLabel="View Space" translation="ビュー空間"/>
+	<label commandName="Weld" devLabel="Weld" translation="溶接"/>
+	<label commandName="Weld Vertices" devLabel="Select vertices" translation="頂点を選択"/>
+	<label commandName="WeldCenterVerticesOption" devLabel="Weld Center Vertices" translation="溶接の中心の頂点"/>
+	<label commandName="WeldMode" devLabel="Weld Mode" translation="溶接モード"/>
+	<label commandName="WeldModeVertex" devLabel="Vertex to Vertex" translation="頂点から頂点"/>
+	<label commandName="WeldType" devLabel="Weld Type" translation="溶接タイプ"/>
+	<label commandName="WidthSymmetry" devLabel="Width Symmetry" translation="幅の対称度"/>
+	<label commandName="WorldSpaceMatrix" devLabel="World Space" translation="ワールド空間"/>
+	<label commandName="WrongEntity" devLabel="Entity can't be selected from this surface" translation="このサーフェスからエンティティを選択できません"/>
+	<label commandName="XAxisScaleInput" devLabel="XAxisScale" translation="XAxisScale"/>
+	<label commandName="XYPlaneScaleInput" devLabel="XYPlaneScale" translation="XY 平面の尺度"/>
+	<label commandName="XZPlaneScaleInput" devLabel="XZPlaneScale" translation="XZ 平面の尺度"/>
+	<label commandName="YAxisScaleInput" devLabel="YAxisScale" translation="Y 軸尺度"/>
+	<label commandName="YZPlaneScaleInput" devLabel="YZPlaneScale" translation="YZ 平面の尺度"/>
+	<label commandName="ZAxisScaleInput" devLabel="ZAxisScale" translation="Z 軸の尺度"/>
+	<label commandName="autoFeatureSelTooltip" devLabel="Automatically select and preview entire features." translation="フィーチャ全体を自動的に選択してプレビューします。"/>
+	<label commandName="autoSelect" devLabel="Auto" translation="自動"/>
+	<label commandName="chainMode" devLabel="Chain" translation="チェーン"/>
+	<label commandName="circularAxisSelect" devLabel="Select axis or edge" translation="軸またはエッジを選択"/>
+	<label commandName="controlPointsType" devLabel="Control Points" translation="制御点"/>
+	<label commandName="controlPointsTypeTip" devLabel="Fits control points of selected edges to driving curve" translation="選択したエッジの制御点を駆動曲線にフィット"/>
+	<label commandName="createMode" devLabel="Mode" translation="モード"/>
+	<label commandName="cylindrifyFaceSelCursorPromptAutoOff" devLabel="Select faces to cylindrify" translation="円柱化する面を選択"/>
+	<label commandName="cylindrifyFaceSelCursorPromptAutoOn" devLabel="Select faces on features to cylindrify" translation="円柱化するフィーチャ上の面を選択"/>
+	<label commandName="cylindrifyFaceSelTooltip" devLabel="Select faces to cylindrify." translation="円柱化する面を選択します。"/>
+	<label commandName="degreeTooltip" devLabel="Select degree of driving curve" translation="駆動曲線の角度を選択"/>
+	<label commandName="drivingCurveCVSelTooltip" devLabel="Select control points to edit on driving curve" translation="駆動曲線上で編集する制御点を選択"/>
+	<label commandName="edgeLengthDistrib" devLabel="Edge Length" translation="エッジ長"/>
+	<label commandName="edgeLengthDistribTip" devLabel="Distributes control points in proportion to lengths of T-Spline edges" translation="T スプライン エッジの長さに比例して制御点を分布"/>
+	<label commandName="edgeMode" devLabel="Edge" translation="エッジ"/>
+	<label commandName="edgeSelTooltip" devLabel="Select edges on a T-Spline body" translation="T スプライン ボディ上のエッジを選択"/>
+	<label commandName="edgeSelection" devLabel="Edge" translation="エッジ"/>
+	<label commandName="forwardDirectionType" devLabel="Control Points" translation="制御点"/>
+	<label commandName="heightDirection" devLabel="Direction" translation="方向"/>
+	<label commandName="heightDirectionOneSide" devLabel="One Side" translation="片側"/>
+	<label commandName="heightDirectionSymmetry" devLabel="Symmetric" translation="対称"/>
+	<label commandName="infoWeldMidPointMode" devLabel="Vertex to Midpoint" translation="頂点から中点"/>
+	<label commandName="infoWeldToToleranceMode" devLabel="Weld to Tolerance" translation="許容差内の溶接"/>
+	<label commandName="lclTSplineBevelEdgeTipsAndTricksDesc" devLabel="The closer you make the bevel the sharper the corner will appear. The segment settings adds more edges to the beveled region." translation="ベベルを近づけるほど、コーナーはシャープに表示されます。セグメントの設定では、ベベル処理された領域にエッジがさらに追加されます。"/>
+	<label commandName="lclTSplineBridgeTipsAndTricksDesc" devLabel="You can specify the number of faces between the edges. The Follow Curve option will use a sketch curve to influence the shape of the bridged faces." translation="エッジ間の面の数を指定できます。[曲線に追従]オプションでは、スケッチ曲線を使用して、ブリッジされた面の形状に影響を及ぼします。"/>
+	<label commandName="lclTSplineConvertTipsAndTricksDesc" devLabel="BRep faces, T-Spline bodies or Mesh bodies can be filtered for selection.  The options available depends on the filter selected." translation="BRep 面、T スプライン ボディ、メッシュ ボディをフィルタして選択できます。指定できるオプションは、選択したフィルタによって異なります。"/>
+	<label commandName="lclTSplineCreaseEdgeTipsAndTricksDesc" devLabel="Regions around star/cap points (highlighted yellow) will cause edge creases to end abruptly. Boundary corner vertices (indicated by yellow dots at the surface boundary) can also be creased and uncreased." translation="スター ポイント/キャップ ポイントの周囲の領域(黄色でハイライト表示された領域)では、エッジの折り目が突然終了します。境界のコーナーの頂点(サーフェス境界に黄色の点で示された頂点)も折り目を作成したり折り目を解除することができます。"/>
+	<label commandName="lclTSplineCylindrifyTipsAndTricksDesc" devLabel="You can use Cylindrify to smooth uneven struts and holes from generative design results." translation="[円柱化]を使用すると、ジェネレーティブ デザインの結果の不均一な支柱や穴をスムーズにすることができます。"/>
+	<label commandName="lclTSplineDisplayModeTipsAndTricksDesc" devLabel="Toggle between modes by holding Ctrl (Windows) or Control (Mac) and the 1, 2, or 3 key. This function is also available in the Edit Form dialog box in Selection Options." translation="モードを切り替えるには、[Ctrl](Windows)または[Control](Mac)を押しながら[1]、[2]、または[3]キーを押します。この機能は、[フォームを編集]ダイアログ ボックスの[選択オプション]でも使用できます。"/>
+	<label commandName="lclTSplineEditByCurveTipsAndTricksDesc" devLabel="Adjust the Display Mode to see the effect of Curve Fit more easily. Use Box Display for Control Points and Smooth Display for Surface Points. Control Points (curve fitting only) performs faster than Surface Points (curve and surface fitting)." translation="表示モードを調整して、カーブ フィットの効果をより簡単に確認します。[制御点]に[ボックス表示]、[サーフェス点]に[スムーズの表示]を使用します。[制御点](曲線フィットのみ)は、[サーフェス点](曲線およびサーフェス フィット)よりも高速になります。"/>
+	<label commandName="lclTSplineEraseAndFillTipsAndTricksDesc" devLabel="Fill Star will fill using a single face.  Reduced Star will fill with mulitple faces to minimize star points." translation="[スターを塗り潰し]を使用すると、単一の面で塗り潰されます。[低減したスター]を使用すると、複数の面で塗り潰されるため、スター ポイントの数が最小限に抑えられます。"/>
+	<label commandName="lclTSplineFillHoleTipsAndTricksDesc" devLabel="Fill Star will fill using a single face.  Reduced Star will fill with mulitple faces to minimize star points. Collapse brings all vertices together at a single vertex." translation="[スターを塗り潰し]を使用すると、単一の面で塗り潰されます。[低減したスター]を使用すると、複数の面で塗り潰されるため、スター ポイントの数が最小限に抑えられます。[折りたたむ]を使用すると、すべての頂点が単一の頂点に集約されます。"/>
+	<label commandName="lclTSplineFlattenTipsAndTricksDesc" devLabel="The minimum number of vertices per surface for Flatten operation depends on Direction type: 4 for Fit, 1 for Plane, and 2 for Parallel Plane. If you flatten linked tangency handles, they will get unlinked from their vertices. The more vertices in the region the better the flatten result will look. Use the Subdivide command to add more geometry for better flattening." translation="平坦化操作でのサーフェスごとの最小頂点数は、方向タイプに応じて異なります: フィットは 4、平面は 1、平行な平面は 2 です。リンクされた接線ハンドルを平坦化すると、頂点からのリンクが解除されます。領域内の頂点数が多いほど、平坦化の結果の見た目が向上します。[再分割]コマンドを使用すると、ジオメトリを追加して平坦化の向上を図ることができます。"/>
+	<label commandName="lclTSplineFreezeCmdTipsAndTricksDesc" devLabel="Light blue edges represent user-frozen regions. Darker blue edges show the buffer regions that are automatically locked to prevent shape changes in the user-frozen regions." translation="水色のエッジは、ユーザがフリーズした領域を表します。濃い青は、バッファ領域を表します。バッファ領域は、ユーザがフリーズした領域内の形状が変更されないように自動的にロックされます。"/>
+	<label commandName="lclTSplineInsertEdgeTipsAndTricksDesc" devLabel="Set the Insertion Mode to Exact to insert the edge without changing the shape of the T-Spline, however this will add more faces to maintain the shape." translation="T スプラインの形状を変更せずに、エッジを挿入するには、[挿入モード]を[固定]に設定します。ただし、形状を維持するために、面がさらに追加されます。"/>
+	<label commandName="lclTSplineInsertPointTipsAndTricksDesc" devLabel="Slide the pointer along the edge until a red dot is shown, this is the midpoint of the edge. Set the Insertion Mode to Exact to insert the point without changing the shape of the T-Spline body, however this will add more faces to maintain the shape." translation="赤色の点が表示されるまで、エッジに沿ってポインタをスライドします。これは、エッチの中点になります。T スプライン ボディの形状を変更せずに、点を挿入するには、[挿入モード]を[固定]に設定します。ただし、形状を維持するために、面がさらに追加されます。"/>
+	<label commandName="lclTSplineInternalCircularTipsAndTricksDesc" devLabel="The possible areas of symmetry are calculated automatically based on the selected face and the body." translation="選択した面およびボディに基づいて、対称の該当する領域が自動的に計算されます。"/>
+	<label commandName="lclTSplineInternalMirrorTipsAndTricksDesc" devLabel="Symmetry lines are displayed in green." translation="対称線は緑で表示されます。"/>
+	<label commandName="lclTSplineInterpolateTipsAndTricksDesc" devLabel="Interpolate is best used in conjunction with the Control Frame Display mode (Ctrl + 2)." translation="[補間]は、コントロール フレーム表示モード([Ctrl]+[2])とともに使用する場合に最適です。"/>
+	<label commandName="lclTSplineIsolateSymmetryTipsAndTricksDesc" devLabel="The non-symmetric faces are displayed in red." translation="対称でない面は赤で表示されます。"/>
+	<label commandName="lclTSplineMakeUniformTipsAndTricksDesc" devLabel="This command may change the shape of the T-Spline body if there are areas that are non-uniform." translation="このコマンドでは、均一でない領域がある場合に、T スプライン ボディの形状を変更することができます。"/>
+	<label commandName="lclTSplineMatchTipsAndTricksDesc" devLabel="Use the Spacing and Tolerance options to control the faces and deviation from the target edges." translation="面およびターゲット エッジからの偏差をコントロールするには、[間隔]および[許容差]オプションを使用します。"/>
+	<label commandName="lclTSplineMergeEdgeTipsAndTricksDesc" devLabel="Use Merge Edge in place of Weld Vertices when connecting multiple vertices along the selected edges." translation="選択したエッジに沿って複数の頂点を接続する場合は、[頂点を溶接]の代わりに[エッジを結合]を使用します。"/>
+	<label commandName="lclTSplinePullTipsAndTricksDesc" devLabel="Change the Target Select to specify targets. Set the Pull Type to move surface points or control points." translation="[ターゲットを選択]を変更して、ターゲットを指定します。サーフェス点または制御点を移動するには、[プル タイプ]を設定します。"/>
+	<label commandName="lclTSplineReflectionCircularTipsAndTricksDesc" devLabel="The weld option will join the bodies where they intersect within the specified tolerance." translation="[溶接]オプションでは、指定した許容差の範囲内で交差するボディを結合します。"/>
+	<label commandName="lclTSplineReflectionMirrorTipsAndTricksDesc" devLabel="The weld option will join the bodies where they intersect within the specified tolerance." translation="[溶接]オプションでは、指定した許容差の範囲内で交差するボディを結合します。"/>
+	<label commandName="lclTSplineRepairBodyTipsAndTricksDesc" devLabel="Clicking on a Star will convert it to a T-Junction and vise versa. Use Autorepair to let the software try to repair the model." translation="スターをクリックすると、T 接合に変換されます。T 接合をクリックすると、スターに変換されます。[自動修復]を使用すると、ソフトウェアでモデルの修復を試行できます。"/>
+	<label commandName="lclTSplineSlideEdgeTipsAndTricksDesc" devLabel="Slide the selected edge closer to another to make the transition between the two sharper." translation="選択したエッジを別のエッジの近くにスライドして、2 つのエッジ間の遷移をさらにシャープにします。"/>
+	<label commandName="lclTSplineSmoothTipsAndTricksDesc" devLabel="Select the faces and set smoothing rate." translation="面を選択してスムージング レートを設定します。"/>
+	<label commandName="lclTSplineStraightenTipsAndTricksDesc" devLabel="If you straighten linked tangency handles, they will unlink from their vertices." translation="リンクされた接線ハンドルを直線化すると、頂点からのリンクが解除されます。"/>
+	<label commandName="lclTSplineSubsetTipsAndTricksDesc" devLabel="Enable the Specify option and set the number of faces that are added." translation="[指定]オプションを有効にして、追加する面の数を設定します。"/>
+	<label commandName="lclTSplineThickenTipsAndTricksDesc" devLabel="Thicken tool does not check for self intersections during creating and can create surfaces that will not convert to a solid." translation="[厚み]ツールでは、作成時に自己交差が確認されないため、ソリッドに変換されないサーフェスが作成される可能性があります。"/>
+	<label commandName="lclTSplineUnCreaseEdgeTipsAndTricksDesc" devLabel="Regions around star/cap points (highlighted yellow) will cause edge creases to end abruptly. Boundary corner vertices (indicated by yellow dots at the surface boundary) can also be creased and uncreased." translation="スター ポイント/キャップ ポイントの周囲の領域(黄色でハイライト表示された領域)では、エッジの折り目が突然終了します。境界のコーナーの頂点(サーフェス境界に黄色の点で示された頂点)も折り目を作成したり折り目を解除することができます。"/>
+	<label commandName="lclTSplineUnFreezeCmdTipsAndTricksDesc" devLabel="Light blue edges represent user-frozen regions. Darker blue edges show the buffer regions that are automatically locked to prevent shape changes in the user-frozen regions." translation="水色のエッジは、ユーザがフリーズした領域を表します。濃い青は、バッファ領域を表します。バッファ領域は、ユーザがフリーズした領域内の形状が変更されないように自動的にロックされます。"/>
+	<label commandName="lclTSplineUnWeldTipsAndTricksDesc" devLabel="A darker line indicates that the edge has been unwelded and is no longer connected." translation="濃い線は、エッジが溶接解除されて、接続されていないことを示します。"/>
+	<label commandName="lclTSplineWeldTipsAndTricksDesc" devLabel="Use the Weld Mode to weld the first vertex to the second or weld both selections to the midpoint." translation="溶接モードでは、最初の頂点を 2 番目の頂点に溶接したり、選択した両方の頂点を中点に溶接することができます。"/>
+	<label commandName="lclzMergeEdgeTipsAndTricksTips" devLabel="Select the first set of edges then the second set of edges." translation="エッジの最初のセットを選択し、エッジの 2 番目のセットを選択します。"/>
+	<label commandName="lclzSTSplineSlideEdgeipsAndTricksTips" devLabel="Select the edges then specify the new position." translation="エッジを選択し、新しい位置を指定します。"/>
+	<label commandName="lclzSculptWorkspaceTitle" devLabel="Creates organic geometry. Access commands to create T-Spline bodies." translation="有機的なジオメトリを作成します。T スプライン ボディを作成するコマンドにアクセスします。"/>
+	<label commandName="lclzTSpline2BRepDesc1" devLabel="Changes the body type of the selected object. Converts BRep (solid or surface) faces to a T-Spline face. Converts a T-Spline body to a BRep body. Converts a quad mesh to a T-Spline body." translation="選択したオブジェクトのボディのタイプを変更します。BRep (ソリッドまたはサーフェス)面を T スプライン面に変換します。T スプライン ボディを BRep ボディに変換します。クワッド メッシュを T スプライン ボディに変換します。"/>
+	<label commandName="lclzTSpline2BRepDesc2" devLabel="Select the object to convert." translation="変換するオブジェクトを選択します。"/>
+	<label commandName="lclzTSplineAppendFace1" devLabel="Creates individual T-Spline faces." translation="T スプライン面を個別に作成します。"/>
+	<label commandName="lclzTSplineAppendFace2" devLabel="Select a plane to begin defining vertices or select vertices from a T-Spline body." translation="平面を選択して頂点の定義を開始するか、T スプライン ボディから頂点を選択します。"/>
+	<label commandName="lclzTSplineAppendFaceTipsAndTricksDesc" devLabel="Pick existing vertices to connect the face to that geometry. Enable Object Snap to position new vertices on the closest solid, surface, or mesh body." translation="既存の頂点を選択して、このジオメトリに面を接続します。[オブジェクト スナップ]を有効にすると、最も近いソリッド、サーフェス、メッシュ ボディに新しい頂点を配置できます。"/>
+	<label commandName="lclzTSplineAppendFaceTipsAndTricksTitle" devLabel="Face Information" translation="[面]に関する情報"/>
+	<label commandName="lclzTSplineAppendTipsAndTricksTips" devLabel="Select a plane or existing vertex to begin. Continue setting points to define the face." translation="最初に、平面または既存の頂点を選択します。次に、点を設定して、面を定義します。"/>
+	<label commandName="lclzTSplineBevelEdgeDesc1" devLabel="Replaces a single edge with a specified number of adjacent edges." translation="指定した数の隣接エッジに単一エッジを置換します。"/>
+	<label commandName="lclzTSplineBevelEdgeDesc2" devLabel="Select the edges then specify the position of the bevel." translation="エッジを選択し、ベベルの位置を指定します。"/>
+	<label commandName="lclzTSplineBevelEdgeTipsAndTricksTips" devLabel="Select the edges then specify the position of the bevel." translation="エッジを選択し、ベベルの位置を指定します。"/>
+	<label commandName="lclzTSplineBevelEdgeTipsAndTricksTitle" devLabel="Bevel Edge Information" translation="[ベベル エッジ]に関する情報"/>
+	<label commandName="lclzTSplineBoxTipsAndTricksDesc" devLabel="Direction changes how the box is built releative to your original input rectangle.  Mirror allows you to maintain symmetry in subsequent modeling edits" translation="[方向]では、入力した元の長方形を基準に直方体の構築方法を変更します。[ミラー]では、以降のモデリング編集において、対称を維持することができます。"/>
+	<label commandName="lclzTSplineBoxTipsAndTricksTips" devLabel="Select a plane and draw a rectangle.  Use the manipulators or input fields to specify the height and number of faces." translation="平面を選択し、長方形を描画します。マニピュレータまたは入力フィールドを使用して、高さおよび面の数を指定します。"/>
+	<label commandName="lclzTSplineBoxTipsAndTricksTitle" devLabel="Box Information" translation="[直方体]に関する情報"/>
+	<label commandName="lclzTSplineBridgeSubDDesc1" devLabel="Creates segments to connect two opposing faces within a body or between two bodies." translation="ボディ内の 2 つの対向する面、または 2 つのボディ間を接続するセグメントを作成します。"/>
+	<label commandName="lclzTSplineBridgeSubDDesc2" devLabel="Select the first set of edges then select the second set of edges." translation="最初のエッジのセットを選択し、2 番目のエッジのセットを選択します。"/>
+	<label commandName="lclzTSplineBridgeTipsAndTricksTips" devLabel="Select the first set of edges then select the second set of edges. The number of edges on each side must be equal to or a multiple of each other. " translation="最初のエッジのセットを選択し、2 番目のエッジのセットを選択します。各側面のエッジの数は、相互に同じにするか倍数にする必要があります。"/>
+	<label commandName="lclzTSplineBridgeTipsAndTricksTitle" devLabel="Bridge Information" translation="[ブリッジ]に関するヒント"/>
+	<label commandName="lclzTSplineCapSettingCommand" devLabel="Toggles between better performance or better display. Better display shows the bodies at highest quality (G1 conditions at star points). Better performance calculates modification by applying G0 conditions at star points." translation="[パフォーマンス向上]と[高品質の表示]を切り替えます。[パフォーマンス向上]では、最高品質(スターのポイントでの G1 条件)でボディが表示されます。[高品質の表示]では、スターのポイントで G0 条件を適用することで修正が計算されます。"/>
+	<label commandName="lclzTSplineClearSymmetry1" devLabel="Remove symmetry constraint from individual bodies or a series of bodies." translation="個々のボディまたは一連のボディから対称拘束を解除します。"/>
+	<label commandName="lclzTSplineClearSymmetry2" devLabel="Select the symmetric bodies." translation="対称のボディを選択します。"/>
+	<label commandName="lclzTSplineClearSymmetryTipsAndTricksTips" devLabel="Select the symmetric bodies." translation="対称のボディを選択します。"/>
+	<label commandName="lclzTSplineClearSymmetryTipsAndTricksTitle" devLabel="Clear Symmetry Information" translation="[対称をクリア]に関する情報"/>
+	<label commandName="lclzTSplineConvertTipsAndTricksTips" devLabel="Select the object to convert." translation="変換するオブジェクトを選択します。"/>
+	<label commandName="lclzTSplineConvertTipsAndTricksTitle" devLabel="Convert Information" translation="[変換]に関する情報"/>
+	<label commandName="lclzTSplineCreaseEdgeTipsAndTricksTips" devLabel="Select edges to crease." translation="折り目を付けるエッジを選択します。"/>
+	<label commandName="lclzTSplineCreaseEdgeTipsAndTricksTitle" devLabel="Crease Information" translation="[折り目]に関する情報"/>
+	<label commandName="lclzTSplineCreasedEdgeDesc1" devLabel="Creates a sharp edge between faces." translation="面と面の間に鋭角エッジを作成します。"/>
+	<label commandName="lclzTSplineCreasedEdgeDesc2" devLabel="Select edges to crease." translation="折り目を付けるエッジを選択します。"/>
+	<label commandName="lclzTSplineCylinderTipsAndTricksDesc" devLabel="Direction changes how the cylinder is built releative to your original input circle. Mirror allows you to maintain symmetry in subsequent modeling edits" translation="[方向]では、入力した元の円を基準に円柱の構築方法を変更します。[ミラー]では、以降のモデリング編集において、対称を維持することができます。"/>
+	<label commandName="lclzTSplineCylinderTipsAndTricksTips" devLabel="Select a plane and draw a circle.  Use the manipulators or input fields to specify the height and number of faces." translation="平面を選択し、円を描画します。マニピュレータまたは入力フィールドを使用して、高さおよび面の数を指定します。"/>
+	<label commandName="lclzTSplineCylinderTipsAndTricksTitle" devLabel="Cylinder Information" translation="[円柱]に関する情報"/>
+	<label commandName="lclzTSplineCylindrifyDesc1" devLabel="Forms uneven T-Spline geometry into a smooth cylindrical shape." translation="不均一な T スプライン ジオメトリを滑らかな円柱状の形状にします。"/>
+	<label commandName="lclzTSplineCylindrifyDesc2" devLabel="Select a face on the feature to cylindrify. The preview displays automatically. Uncheck Auto Feature Selection to select individual faces." translation="円柱化するフィーチャ上の面を選択します。プレビューは自動的に表示されます。個々の面を選択するには[自動フィーチャ選択]をオフにします。"/>
+	<label commandName="lclzTSplineCylindrifyTipsAndTricksTips" devLabel="Cylindrify applies to all selected faces on a T-Spline body. You can select multiple strut or hole features on a T-Spline body at once, or uncheck Auto Feature Selection to select individual faces." translation="円柱化は、T スプライン ボディ上で選択されたすべての面に適用されます。T スプライン ボディ上の複数の支柱または穴フィーチャを一度に選択する、または[自動フィーチャ選択]をオフにして個々の面を選択することができます。"/>
+	<label commandName="lclzTSplineCylindrifyTipsAndTricksTitle" devLabel="Cylindrify Information" translation="[円柱化]に関する情報"/>
+	<label commandName="lclzTSplineDisplayModeTipsAndTricksTips" devLabel="Select the desired display mode. If there is more than one T-Spline body, you need to select the body to change the display." translation="目的の表示モードを選択します。T スプライン ボディが複数ある場合は、表示を変更するボディを選択する必要があります。"/>
+	<label commandName="lclzTSplineDisplayModeTipsAndTricksTitle" devLabel="Display Mode Information" translation="[表示モード]に関する情報"/>
+	<label commandName="lclzTSplineEditByCurveDesc1" devLabel="Manipulates T-Spline edges using a driving curve." translation="駆動曲線を使用して T スプライン エッジを操作します。"/>
+	<label commandName="lclzTSplineEditByCurveDesc2" devLabel="Select edges to create a driving curve. Move the control points to adjust the shape of the T-Spline edges." translation="駆動曲線を作成するエッジを選択します。制御点を移動して、T スプライン エッジの形状を調整します。"/>
+	<label commandName="lclzTSplineEditByCurveTipsAndTricksTips" devLabel="The driving curve appears when at least two continuous edges are selected. You can adjust the rotation and scale settings when you select at least two control points of the driving curve." translation="駆動曲線は、少なくとも 2 つの連続するエッジを選択すると表示されます。駆動曲線の少なくとも 2 つの制御点を選択すると、回転と尺度の設定を調整できます。"/>
+	<label commandName="lclzTSplineEditByCurveTipsAndTricksTitle" devLabel="Edit By Curve Information" translation="[曲線で編集]に関する情報"/>
+	<label commandName="lclzTSplineEditDesc1" devLabel="Manipulates faces, edges and vertices with transform, scale and rotate editing." translation="面、エッジ、および頂点の移動、尺度指定、回転の編集操作を行います。"/>
+	<label commandName="lclzTSplineEditDesc2" devLabel="Select faces, edges, or vertices to enable the manipulator. Double click a face or edge to select a loop." translation="マニピュレータを有効にする面、エッジ、または頂点を選択します。ループを選択するには、面またはエッジをダブルクリックします。"/>
+	<label commandName="lclzTSplineEditTipsAndTricksDesc" devLabel="Hold the Alt key and drag a manipulator to insert new geometry based on the action." translation="操作に基づいて新しいジオメトリを挿入するには、[Alt]キーを押しながらマニピュレータをドラッグします。"/>
+	<label commandName="lclzTSplineEditTipsAndTricksTips" devLabel="Select faces, edges, or vertices to enable the manipulator. Double click a face or edge to select a loop." translation="マニピュレータを有効にする面、エッジ、または頂点を選択します。ループを選択するには、面またはエッジをダブルクリックします。"/>
+	<label commandName="lclzTSplineEditTipsAndTricksTitle" devLabel="Edit Form Information" translation="[フォームを編集]に関する情報"/>
+	<label commandName="lclzTSplineEraseAndFillDesc1" devLabel="Deletes a part of connected T-Spline geometry and fills new gaps with faces. You can use this to remove struts or bridges." translation="接続された T スプライン ジオメトリの一部を削除し、新しいギャップを面で埋めます。これにより、支柱またはブリッジを除去できます。"/>
+	<label commandName="lclzTSplineEraseAndFillDesc2" devLabel="Select the faces to erase and select fill type." translation="消去する面を選択し、塗り潰しタイプを選択します。"/>
+	<label commandName="lclzTSplineEraseAndFillTipsAndTricksTips" devLabel="Select the faces to erase and set the fill type." translation="消去する面を選択し、塗り潰しタイプを設定します。"/>
+	<label commandName="lclzTSplineEraseAndFillTipsAndTricksTitle" devLabel="Erase and Fill Information" translation="消去と塗り潰しに関する情報"/>
+	<label commandName="lclzTSplineExtrude1" devLabel="Creates or modifies a T-Spline body by adding faces along a vector." translation="ベクトルに沿って面を追加して、T スプライン ボディを作成または修正します。"/>
+	<label commandName="lclzTSplineExtrude2" devLabel="Select sketch curves, profiles or faces. Use the manipulators or input fields to specify the distance and number of faces." translation="スケッチ曲線、プロファイル、または面を選択します。マニピュレータまたは入力フィールドを使用して、距離および面の数を指定します。"/>
+	<label commandName="lclzTSplineExtrudeTipsAndTricksDesc" devLabel="Set the Spacing setting to Curvature to add faces in areas of higher curvature." translation="曲率が相対的に高い領域に面を追加するには、[間隔]の設定を[曲率]に設定します。"/>
+	<label commandName="lclzTSplineExtrudeTipsAndTricksTips" devLabel="Select sketch curves, profiles or faces.  Use the manipulators or input fields to specify the distance and number of faces." translation="スケッチ曲線、プロファイル、または面を選択します。マニピュレータまたは入力フィールドを使用して、距離および面の数を指定します。"/>
+	<label commandName="lclzTSplineExtrudeTipsAndTricksTitle" devLabel="Extrude Information" translation="[押し出し]に関する情報"/>
+	<label commandName="lclzTSplineFillHoleDesc1" devLabel="Fills an internal hole in T-Spline body." translation="T スプライン ボディの内側の穴を塗り潰します。"/>
+	<label commandName="lclzTSplineFillHoleDesc2" devLabel="Select the edge of the hole and set the fill type." translation="穴のエッジを選択し、塗り潰しタイプを設定します。"/>
+	<label commandName="lclzTSplineFillHoleTipsAndTricksTips" devLabel="Select the edge of the hole and set the fill type." translation="穴のエッジを選択し、塗り潰しタイプを設定します。"/>
+	<label commandName="lclzTSplineFillHoleTipsAndTricksTitle" devLabel="Fill Hole Information" translation="[穴の塗り潰し]に関する情報"/>
+	<label commandName="lclzTSplineFlattenSubDEdgeDesc1" devLabel="Projects vertices to a best fit or user defined plane." translation="頂点を最適フィットまたはユーザ定義の平面に投影します。"/>
+	<label commandName="lclzTSplineFlattenSubDEdgeDesc2" devLabel="Select the vertices and/or tangency handles to flatten." translation="平坦化する頂点または接線ハンドルを選択します。"/>
+	<label commandName="lclzTSplineFlattenTipsAndTricksTips" devLabel="To easily see the effect of Flatten Type, use Box Display for Control Points and Smooth Display for Surface Points. Valid selection types for Plane are a work plane and planar B-rep face." translation="[平坦化のタイプ]の効果を簡単に確認するには、[制御点]に[ボックス表示]、[サーフェス点]に[スムーズの表示]を使用します。平面に対して有効な選択タイプは、作業平面および平面 B-Rep 面です。"/>
+	<label commandName="lclzTSplineFlattenTipsAndTricksTitle" devLabel="Flatten Information" translation="[平坦化]に関する情報"/>
+	<label commandName="lclzTSplineFreezeCmd1" devLabel="Freezes faces and edges on the model to prevent accidental changes." translation="モデル上の面またはエッジをフリーズして、誤って変更されないようにします。"/>
+	<label commandName="lclzTSplineFreezeCmd2" devLabel="Select faces or edges to freeze." translation="フリーズする面またはエッジを選択します。"/>
+	<label commandName="lclzTSplineFreezeCmdTipsAndTricksTips" devLabel="Select faces or edges to freeze them." translation="面またはエッジを選択してフリーズします。"/>
+	<label commandName="lclzTSplineFreezeCmdTipsAndTricksTitle" devLabel="Freeze Information" translation="[フリーズ]に関する情報"/>
+	<label commandName="lclzTSplineImportDesc1" devLabel="Inserts a T-Spline (TSM) file as T-Spline bodies." translation="T スプライン(TSM)ファイルを T スプライン ボディとして挿入します。"/>
+	<label commandName="lclzTSplineInsertEdgeDesc1" devLabel="Inserts edges at a specified position from the original edge." translation="元のエッジから指定した位置にエッジを挿入します。"/>
+	<label commandName="lclzTSplineInsertEdgeDesc2" devLabel="Select an edge or double click to select a loop." translation="エッジを選択するか、ダブルクリックしてループを選択します。"/>
+	<label commandName="lclzTSplineInsertEdgeTipsAndTricksTips" devLabel="Select an edge or double click to select a loop then spedify the position of the new edge." translation="エッジを選択するか、ダブルクリックしてループを選択し、新しいエッジの位置を指定します。"/>
+	<label commandName="lclzTSplineInsertEdgeTipsAndTricksTitle" devLabel="Insert Edge Information" translation="[エッジを挿入]に関する情報"/>
+	<label commandName="lclzTSplineInsertPointDesc1" devLabel="Inserts an edge by selecting two points." translation="2 つの点を選択してエッジを挿入します。"/>
+	<label commandName="lclzTSplineInsertPointDesc2" devLabel="Select a point on an edge to start. Continue selecting points on additional edges to divide multiple faces." translation="開始するエッジ上の点を選択します。複数の面を分割するには、引き続き追加のエッジ上の点を選択します。"/>
+	<label commandName="lclzTSplineInsertPointTipsAndTricksTips" devLabel="Select a point on an edge to start. Continue selecting points on additional edges to divide multiple faces." translation="開始するエッジ上の点を選択します。複数の面を分割するには、引き続き追加のエッジ上の点を選択します。"/>
+	<label commandName="lclzTSplineInsertPointTipsAndTricksTitle" devLabel="Insert Point Information" translation="[挿入点]に関する情報"/>
+	<label commandName="lclzTSplineInternalCircularSymmetry1" devLabel="Creates circular symmetry with the elements of a T-Spline body." translation="T スプライン ボディの要素で円形の対称を作成します。"/>
+	<label commandName="lclzTSplineInternalCircularSymmetry2" devLabel="Select a face on the body then select the number of symmetry lines." translation="ボディの面を選択し、対称線の数を選択します。"/>
+	<label commandName="lclzTSplineInternalCircularTipsAndTricksTips" devLabel="Select a face on the body then select the number of symmetry lines." translation="ボディの面を選択し、対称線の数を選択します。"/>
+	<label commandName="lclzTSplineInternalCircularTipsAndTricksTitle" devLabel="Circular Internal Information" translation="[円形 - 内部]に関する情報"/>
+	<label commandName="lclzTSplineInternalMirrorSymmetry1" devLabel="Creates a mirror symmetry with the elements of a T-Spline body." translation="T スプライン ボディの要素でミラー対称を作成します。"/>
+	<label commandName="lclzTSplineInternalMirrorSymmetry2" devLabel="Select a face on each side of the body. If needed select edges on each side, then vertices." translation="ボディの各側の面を選択します。必要に応じて、各側のエッジを選択し、頂点を選択します。"/>
+	<label commandName="lclzTSplineInternalMirrorTipsAndTricksTips" devLabel="Select a face on each side of the body. If needed select edges on each side, then vertices." translation="ボディの各側の面を選択します。必要に応じて、各側のエッジを選択し、頂点を選択します。"/>
+	<label commandName="lclzTSplineInternalMirrorTipsAndTricksTitle" devLabel="Mirror Internal Information" translation="[ミラー - 内部]に関する情報"/>
+	<label commandName="lclzTSplineInterpolateSubDDesc1" devLabel="Switches the location of the surface and the control points to improve fitting. Select whether to move the control points to the surface or the surface to the control points." translation="サーフェスおよび制御点の位置を切り替えて、適合性を高めます。制御点をサーフェスに移動するか、サーフェスを制御点に移動するかを選択します。"/>
+	<label commandName="lclzTSplineInterpolateSubDDesc2" devLabel="Select the body then set whether you are moving control points or surface points." translation="ボディを選択し、制御点を移動するか、サーフェス点を移動するかを設定します。"/>
+	<label commandName="lclzTSplineInterpolateTipsAndTricksTips" devLabel="Select the body then set whether you are moving control points or surface points." translation="ボディを選択し、制御点を移動するか、サーフェス点を移動するかを設定します。"/>
+	<label commandName="lclzTSplineInterpolateTipsAndTricksTitle" devLabel="Interpolate Information" translation="[補間]に関する情報"/>
+	<label commandName="lclzTSplineIsolateSymmetry1" devLabel="Prevents symmetric transformations from being applied to the selected vertex, edge or face." translation="選択した頂点、エッジ、または面に対称変換を適用できないようにします。"/>
+	<label commandName="lclzTSplineIsolateSymmetry2" devLabel="Select the faces, edges, or vertices to remove symmetry from." translation="対称を削除する面、エッジ、または頂点を選択します。"/>
+	<label commandName="lclzTSplineIsolateSymmetryTipsAndTricksTips" devLabel="Select the faces, edges, or vertices to remove symmetry from." translation="対称を削除する面、エッジ、または頂点を選択します。"/>
+	<label commandName="lclzTSplineIsolateSymmetryTipsAndTricksTitle" devLabel="Isolate Symmetry Information" translation="[対称を選択表示]に関する情報"/>
+	<label commandName="lclzTSplineMakeUniformDesc1" devLabel="Removes pinching near star points. Changes non-uniform faces to uniform." translation="スター ポイントの近くにあるピンチを除去します。不均一な面を均一な面に変更します。"/>
+	<label commandName="lclzTSplineMakeUniformDesc2" devLabel="Select the body to regularize." translation="正則化するボディを選択します。"/>
+	<label commandName="lclzTSplineMakeUniformTipsAndTricksTips" devLabel="Select the body to regularize." translation="正則化するボディを選択します。"/>
+	<label commandName="lclzTSplineMakeUniformTipsAndTricksTitle" devLabel="Make Uniform Information" translation="[均一化]に関する情報"/>
+	<label commandName="lclzTSplineMatchDesc1" devLabel="Aligns the edges of a T-Spline body with the edges of a surface or solid or with sketch curves." translation="T スプライン ボディのエッジをサーフェスまたはソリッドのエッジに位置合わせするか、スケッチ曲線に位置合わせします。"/>
+	<label commandName="lclzTSplineMatchDesc2" devLabel="Select the edges to modify then select the target edges or sketch curves." translation="修正するエッジを選択し、ターゲット エッジまたはスケッチ曲線を選択します。"/>
+	<label commandName="lclzTSplineMatchTipsAndTricksTips" devLabel="Select the edges to modify then select the target edges or sketch curves." translation="修正するエッジを選択し、ターゲット エッジまたはスケッチ曲線を選択します。"/>
+	<label commandName="lclzTSplineMatchTipsAndTricksTitle" devLabel="Match Information" translation="[一致]に関する情報"/>
+	<label commandName="lclzTSplineMergeEdgeDesc1" devLabel="Aligns the first set of selected edges to a second set of selected edges." translation="選択したエッジの最初のセットを、選択したエッジの 2 番目のセットに位置合わせします。"/>
+	<label commandName="lclzTSplineMergeEdgeDesc2" devLabel="Select the first set of edges then the second set of edges." translation="エッジの最初のセットを選択し、エッジの 2 番目のセットを選択します。"/>
+	<label commandName="lclzTSplineMergeEdgeTipsAndTricksTitle" devLabel="Merge Edge Information" translation="[エッジを結合]に関する情報"/>
+	<label commandName="lclzTSplinePipeTipsAndTricksDesc" devLabel="In Sections, click points on the path to make local diameter changes. In End Types, select open ends to change their shape. In Segments, define the number of faces between pipe sections." translation="[断面]で、ローカルの直径を変更するパスの点をクリックします。[終端タイプ]で、形状を変更する開いた終端を選択します。[セグメント]で、パイプ断面間の面の数を定義します。"/>
+	<label commandName="lclzTSplinePipeTipsAndTricksTips" devLabel="Select the input path, specify the global diameter then modify sections, paths, and the number of faces." translation="入力パスを選択し、グローバルの直径を指定して、断面、パス、面の数を修正します。"/>
+	<label commandName="lclzTSplinePipeTipsAndTricksTitle" devLabel="Pipe Information" translation="[パイプ]に関する情報"/>
+	<label commandName="lclzTSplinePlaneTipsAndTricks1Desc" devLabel="Mirror allows you to maintain symmetry in subsequent modeling edits" translation="[ミラー]では、以降のモデリング編集において、対称を維持することができます"/>
+	<label commandName="lclzTSplinePlaneTipsAndTricksTips" devLabel="Select a plane and draw a rectangle.  Use the manipulators or input fields to specify the number of faces." translation="平面を選択し、長方形を描画します。マニピュレータまたは入力フィールドを使用して、面の数を指定します。"/>
+	<label commandName="lclzTSplinePlaneTipsAndTricksTitle" devLabel="Plane Information" translation="[平面]に関する情報"/>
+	<label commandName="lclzTSplinePrimitiveBox1" devLabel="Creates a T-Spline box." translation="T スプライン直方体を作成します。"/>
+	<label commandName="lclzTSplinePrimitiveBox2" devLabel="Select a plane and draw a rectangle.  Use the manipulators or input fields to specify the height and number of faces." translation="平面を選択し、長方形を描画します。マニピュレータまたは入力フィールドを使用して、高さおよび面の数を指定します。"/>
+	<label commandName="lclzTSplinePrimitiveCylinder1" devLabel="Creates a T-Spline cylinder." translation="T スプライン円柱を作成します。"/>
+	<label commandName="lclzTSplinePrimitiveCylinder2" devLabel="Select a plane and draw a circle.  Use the manipulators or input fields to specify the height and number of faces." translation="平面を選択し、円を描画します。マニピュレータまたは入力フィールドを使用して、高さおよび面の数を指定します。"/>
+	<label commandName="lclzTSplinePrimitivePipe1" devLabel="Manages the creation of complex topologies base on selected curves. Paths can be sketch geometry and edges of bodies." translation="選択した曲線に基づいて、複雑なトポロジの作成を管理します。パスには、スケッチ ジオメトリまたはボディのエッジを指定できます。"/>
+	<label commandName="lclzTSplinePrimitivePipe2" devLabel="Select the input path, specify the global diameter then modify sections, paths, and the number of faces." translation="入力パスを選択し、グローバルの直径を指定して、断面、パス、面の数を修正します。"/>
+	<label commandName="lclzTSplinePrimitivePlane1" devLabel="Creates a T-Spline plane." translation="T スプライン平面を作成します。"/>
+	<label commandName="lclzTSplinePrimitivePlane2" devLabel="Select a plane and draw a rectangle. Use the manipulators or input fields to specify the height and number of faces." translation="平面を選択し、長方形を描画します。マニピュレータまたは入力フィールドを使用して、高さおよび面の数を指定します。"/>
+	<label commandName="lclzTSplinePrimitiveQuadBall1" devLabel="Creates a T-Spline quadball." translation="T スプライン クワッド ボールを作成します。"/>
+	<label commandName="lclzTSplinePrimitiveQuadBall2" devLabel="Select a plane then a center point for the sphere.  Use the manipulators or input fields to specify the diameter and number of faces." translation="平面を選択し、球の中心点を選択します。マニピュレータまたは入力フィールドを使用して、高さおよび面の数を指定します。"/>
+	<label commandName="lclzTSplinePrimitiveSphere1" devLabel="Creates a T-Spline sphere." translation="T スプライン球を作成します。"/>
+	<label commandName="lclzTSplinePrimitiveSphere2" devLabel="Select a plane then a center point for the sphere.  Use the manipulators or input fields to specify the diameter and number of faces." translation="平面を選択し、球の中心点を選択します。マニピュレータまたは入力フィールドを使用して、高さおよび面の数を指定します。"/>
+	<label commandName="lclzTSplinePrimitiveTorus1" devLabel="Creates a T-Spline torus." translation="T スプライン トーラスを作成します。"/>
+	<label commandName="lclzTSplinePrimitiveTorus2" devLabel="Select a plane and draw a circle.  Use the manipulators or input fields to specify major and minor diameters and the number of faces." translation="平面を選択し、円を描画します。マニピュレータまたは入力フィールドを使用して、外径と内径および面の数を指定します。"/>
+	<label commandName="lclzTSplinePullSubDDesc1" devLabel="Snaps selected T-Spline vertices to a face or surface. The vertices could be control points or surface points." translation="選択した T スプラインの頂点を面またはサーフェスにスナップします。頂点には、制御点またはサーフェス点を指定できます。"/>
+	<label commandName="lclzTSplinePullSubDDesc2" devLabel="Select the vertices to move and the vertices will automatically move to the nearest body." translation="移動する頂点を選択します。最も近いボディに頂点が自動的に移動します。"/>
+	<label commandName="lclzTSplinePullTipsAndTricksTips" devLabel="Select the vertices to move and the vertices will automatically move to the nearest body." translation="移動する頂点を選択します。最も近いボディに頂点が自動的に移動します。"/>
+	<label commandName="lclzTSplinePullTipsAndTricksTitle" devLabel="Pull Information" translation="[プル]に関する情報"/>
+	<label commandName="lclzTSplineQuadBallTipsAndTricksDesc" devLabel="The Quadball is approximately a sphere with no polar points. Mirror allows you to maintain symmetry in subsequent modeling edits." translation="クワッド ボールは、極点がない球と基本的に同じです。[ミラー]では、以降のモデリング編集において、対称を維持することができます。"/>
+	<label commandName="lclzTSplineQuadBallTipsAndTricksTips" devLabel="Select a plane then a center point for the sphere.  Use the manipulators or input fields to specify the diameter and number of faces." translation="平面を選択し、球の中心点を選択します。マニピュレータまたは入力フィールドを使用して、高さおよび面の数を指定します。"/>
+	<label commandName="lclzTSplineQuadBallTipsAndTricksTitle" devLabel="Quadball Information" translation="[クワッド ボール]に関する情報"/>
+	<label commandName="lclzTSplineReflectionCircularSymmetry1" devLabel="Create specified number of duplicate bodies around a selected axis." translation="選択した軸を中心に指定した数の複製ボディを作成します。"/>
+	<label commandName="lclzTSplineReflectionCircularSymmetry2" devLabel="Select the body to copy then select the axis to revolve around." translation="コピーするボディを選択し、回転軸を選択します。"/>
+	<label commandName="lclzTSplineReflectionCircularTipsAndTricksTips" devLabel="Select the body to copy then select the axis to revolve around." translation="コピーするボディを選択し、回転軸を選択します。"/>
+	<label commandName="lclzTSplineReflectionCircularTipsAndTricksTitle" devLabel="Circular Duplicate Information" translation="[円形 - 複製]に関する情報"/>
+	<label commandName="lclzTSplineReflectionMirrorSymmetry1" devLabel="Create a duplicate body mirrored across a specified plane." translation="指定した平面でミラー化した複製ボディを作成します。"/>
+	<label commandName="lclzTSplineReflectionMirrorSymmetry2" devLabel="Select the body to copy then select the mirror plane." translation="コピーするボディを選択し、対称面を選択します。"/>
+	<label commandName="lclzTSplineReflectionMirrorTipsAndTricksTips" devLabel="Select the body to copy then select the mirror plane." translation="コピーするボディを選択し、対称面を選択します。"/>
+	<label commandName="lclzTSplineReflectionMirrorTipsAndTricksTitle" devLabel="Mirror Duplicate Information" translation="[ミラー - 複製]に関する情報"/>
+	<label commandName="lclzTSplineRepairBodyDesc1" devLabel="Analyzes the T-Spline body and displays information about the mesh. Corrects Error T and Error Star conditions." translation="T スプライン ボディを解析し、メッシュに関する情報を表示します。エラー T とエラー スターの条件を修正します。"/>
+	<label commandName="lclzTSplineRepairBodyDesc2" devLabel="Select the body to analyze." translation="解析するボディを選択します。"/>
+	<label commandName="lclzTSplineRepairBodyTipsAndTricksTips" devLabel="Select the body to analyze. This command can be used to evaluate a body without repairing or making any changes." translation="解析するボディを選択します。このコマンドを使用すると、修復または変更を行わずに、ボディを評価することができます。"/>
+	<label commandName="lclzTSplineRepairBodyTipsAndTricksTitle" devLabel="Repair Body Information" translation="[ボディを修復]に関する情報"/>
+	<label commandName="lclzTSplineRevolve1" devLabel="Creates a T-Spline body by revolving edges or sketch geometry around a selected axis." translation="選択した軸を中心にエッジまたはスケッチ ジオメトリを回転して、T スプライン ボディを作成します。"/>
+	<label commandName="lclzTSplineRevolve2" devLabel="Select sketch curves, profiles, planar faces, or edges then select the axis to revolve around. Use the manipulators or input fields to specify the number of faces." translation="スケッチ曲線、プロファイル、平面、またはエッジを選択し、回転軸を選択します。マニピュレータまたは入力フィールドを使用して、面の数を指定します。"/>
+	<label commandName="lclzTSplineRevolveTipsAndTricksDesc" devLabel="Set the Spacing setting to Curvature to add faces in areas of higher curvature. Circular Symmetry allows you to maintain symmetry in subsequent modeling edits" translation="曲率が相対的に高い領域に面を追加するには、[間隔]の設定を[曲率]に設定します。[円形対称]では、後続のモデリングの編集で対称を維持することができます。"/>
+	<label commandName="lclzTSplineRevolveTipsAndTricksTips" devLabel="Select sketch curves, profiles, planar faces, or edges then select the axis to revolve around. Use the manipulators or input fields to specify the number of faces." translation="スケッチ曲線、プロファイル、平面、またはエッジを選択し、回転軸を選択します。マニピュレータまたは入力フィールドを使用して、面の数を指定します。"/>
+	<label commandName="lclzTSplineRevolveTipsAndTricksTitle" devLabel="Revolve Information" translation="[回転]に関する情報"/>
+	<label commandName="lclzTSplineSlideEdgeDesc1" devLabel="Moves the selected edge along the control polygon." translation="選択したエッジを制御ポリゴンに沿って移動します。"/>
+	<label commandName="lclzTSplineSlideEdgeDesc2" devLabel="Select the edges then specify the new position." translation="エッジを選択し、新しい位置を指定します。"/>
+	<label commandName="lclzTSplineSlideEdgeTipsAndTricksTitle" devLabel="Slide Edge Information" translation="[エッジをスライド]に関する情報"/>
+	<label commandName="lclzTSplineSmoothDesc1" devLabel="Smoothes an area of the T-Spline geometry." translation="T スプライン ジオメトリの領域をスムーズ化します。"/>
+	<label commandName="lclzTSplineSmoothDesc2" devLabel="Select the faces to smooth and the smoothing rate." translation="スムーズ化する面とスムージング レートを選択します。"/>
+	<label commandName="lclzTSplineSmoothTipsAndTricksTips" devLabel="Select around the desired area and play with the smoothing rate for desired result. Change the smoothing rate to see results in real-time." translation="目的の領域の周囲を選択し、求める結果を得るためにスムージング レートを操作します。スムージング レートを変更すると結果をリアルタイムで確認できます。"/>
+	<label commandName="lclzTSplineSmoothTipsAndTricksTitle" devLabel="Smooth Information" translation="スムーズに関する情報"/>
+	<label commandName="lclzTSplineSphereTipsAndTricksDesc" devLabel="Reducing the number of faces below 8 or 4 in either directioin, the body will no longer be spherical. Mirror allows you to maintain symmetry in subsequent modeling edits." translation="面の数をいずれかの方向に 8 未満または 4 未満に減らした場合、ボディは球状でなくなります。[ミラー]では、後続のモデリングの編集で対称を維持することができます。"/>
+	<label commandName="lclzTSplineSphereTipsAndTricksTips" devLabel="Select a plane then a center point for the sphere.  Use the manipulators or input fields to specify the diameter and number of faces." translation="平面を選択し、球の中心点を選択します。マニピュレータまたは入力フィールドを使用して、高さおよび面の数を指定します。"/>
+	<label commandName="lclzTSplineSphereTipsAndTricksTitle" devLabel="Sphere Information" translation="[球]に関する情報"/>
+	<label commandName="lclzTSplineStraightenDesc1" devLabel="Straightens vertices to a best fit line, an existing line, or a line through two selected points." translation="最適フィットの線分、既存の線分、または選択した 2 つの点を通過する線分に対して頂点を直線化します。"/>
+	<label commandName="lclzTSplineStraightenDesc2" devLabel="Select the direction type, select a line or two points to define the line, then select the vertices or tangency handles to straighten." translation="方向タイプを選択し、線分または線分を定義する 2 つの点を選択してから、直線化する頂点または接線ハンドルを選択します。"/>
+	<label commandName="lclzTSplineStraightenTipsAndTricksTips" devLabel="Adjust the Display Mode to see the effect of each Straighten Type more easily. Use Box Display for Control Points and Smooth Display for Surface Points." translation="表示モードを調整して、各直線化タイプの効果をより簡単に確認します。[制御点]に[ボックス表示]、[サーフェス点]に[スムーズの表示]を使用します。"/>
+	<label commandName="lclzTSplineStraightenTipsAndTricksTitle" devLabel="Straighten Information" translation="[直線化]に関する情報"/>
+	<label commandName="lclzTSplineSubsetDesc1" devLabel="Divides one or more faces into a subset of faces." translation="1 つまたは複数の面を面のサブセットに分割します。"/>
+	<label commandName="lclzTSplineSubsetDesc2" devLabel="Select the faces to divide. Hold Ctrl (Windows) or Command (Mac) to select multiple faces." translation="分割する面を選択します。複数の面を選択するには、[Ctrl](Windows)または[Command](Mac)を押しながら選択します。"/>
+	<label commandName="lclzTSplineSubsetTipsAndTricksTips" devLabel="Select the faces to divide. Hold Ctrl (Windows) or Command (Mac) to select multiple faces." translation="分割する面を選択します。複数の面を選択するには、[Ctrl](Windows)または[Command](Mac)を押しながら選択します。"/>
+	<label commandName="lclzTSplineSubsetTipsAndTricksTitle" devLabel="Subdivide Information" translation="[再分割]に関する情報"/>
+	<label commandName="lclzTSplineSweep1" devLabel="Creates a T-Spline body by sweeping edges or sketch curves along a selected path." translation="選択したパスに沿ってエッジまたはスケッチ曲線をスイープして、T スプライン ボディを作成します。"/>
+	<label commandName="lclzTSplineSweep2" devLabel="Select sketch curves or profiles then select the path to sweep along.  Use the manipulators or input fields to specify percentage length of the path and the number of faces." translation="スケッチ曲線またはプロファイルを選択し、スイープするパスを選択します。マニピュレータまたは入力フィールドを使用して、パスの長さの比率をパーセンテージで指定し、面の数を指定します。"/>
+	<label commandName="lclzTSplineSweepTipsAndTricksDesc" devLabel="Set Curvature in the Spacing setting to add faces in areas of higher curvature. Changing the Orientation will affect the topology of your geometry." translation="曲率が相対的に高い領域に面を追加するには、[間隔]の設定で[曲率]を設定します。[方向]を変更すると、ジオメトリのトポロジに適用されます。"/>
+	<label commandName="lclzTSplineSweepTipsAndTricksTips" devLabel="Select sketch curves or profiles then select the path to sweep along.  Use the manipulators or input fields to specify percentage length of the path and the number of faces." translation="スケッチ曲線またはプロファイルを選択し、スイープするパスを選択します。マニピュレータまたは入力フィールドを使用して、パスの長さの比率をパーセンテージで指定し、面の数を指定します。"/>
+	<label commandName="lclzTSplineSweepTipsAndTricksTitle" devLabel="Sweep Information" translation="[スイープ]に関する情報"/>
+	<label commandName="lclzTSplineThickenDesc1" devLabel="Creates a body offset." translation="ボディのオフセットを作成します。"/>
+	<label commandName="lclzTSplineThickenDesc2" devLabel="Select the body then set the thickness and end treatments." translation="ボディを選択し、厚さおよび末端処理を設定します。"/>
+	<label commandName="lclzTSplineThickenTipsAndTricksTips" devLabel="Select the body then set the thickness and end treatments." translation="ボディを選択し、厚さおよび末端処理を設定します。"/>
+	<label commandName="lclzTSplineThickenTipsAndTricksTitle" devLabel="Thicken Information" translation="[厚み]に関する情報"/>
+	<label commandName="lclzTSplineToggleTessModeDesc1" devLabel="Sets the body display to smooth, box, or control frame. Smooth shows the actual model. Box displays only the control framework. Control frame displays the framework and the actual model." translation="ボディの表示を[スムーズ]、[直方体]、または[幾何公差記号]に設定します。[スムーズ]では、実際のモデルが表示されます。[直方体]では、幾何公差記号のみが表示されます。[幾何公差記号]では、幾何公差記号と実際のモデルが表示されます。"/>
+	<label commandName="lclzTSplineToggleTessModeDesc2" devLabel="Select the desired display mode. If there is more than one T-Spline body, you need to select the body to change the display." translation="目的の表示モードを選択します。T スプライン ボディが複数ある場合は、表示を変更するボディを選択する必要があります。"/>
+	<label commandName="lclzTSplineTorusTipsAndTricks1Desc" devLabel="Reducing the number of faces below 8 in either directioin, the body will no longer be round. Mirror allows you to maintain symmetry in subsequent modeling edits." translation="面の数をいずれかの方向に 8 未満に減らした場合、ボディは円形でなくなります。[ミラー]では、後続のモデリングの編集で対称を維持することができます。"/>
+	<label commandName="lclzTSplineTorusTipsAndTricksTips" devLabel="Select a plane and draw a circle.  Use the manipulators or input fields to specify major and minor diameters and the number of faces." translation="平面を選択し、円を描画します。マニピュレータまたは入力フィールドを使用して、外径と内径および面の数を指定します。"/>
+	<label commandName="lclzTSplineTorusTipsAndTricksTitle" devLabel="Torus Information" translation="[トーラス]に関する情報"/>
+	<label commandName="lclzTSplineUnCreaseEdgeDesc1" devLabel="Restores previously creased edges to their original state." translation="過去に作成した折り目エッジを元の状態に復元します。"/>
+	<label commandName="lclzTSplineUnCreaseEdgeDesc2" devLabel="Select creased edges to uncrease." translation="折り目解除する折り目エッジを選択します。"/>
+	<label commandName="lclzTSplineUnCreaseEdgeTipsAndTricksTips" devLabel="Select edges to uncrease." translation="折り目解除するエッジを選択します。"/>
+	<label commandName="lclzTSplineUnCreaseEdgeTipsAndTricksTitle" devLabel="Uncrease Information" translation="[折り目解除]に関する情報"/>
+	<label commandName="lclzTSplineUnFreezeCmd1" devLabel="Unfreezes faces and edges that have previously been frozen." translation="フリーズされている面およびエッジをフリーズ解除します。"/>
+	<label commandName="lclzTSplineUnFreezeCmd2" devLabel="Select faces or edges to unfreeze." translation="フリーズ解除する面またはエッジを選択します。"/>
+	<label commandName="lclzTSplineUnFreezeCmdTipsAndTricksTips" devLabel="Select frozen faces or edges to unfreeze them." translation="フリーズされた面またはエッジを選択してフリーズ解除します。"/>
+	<label commandName="lclzTSplineUnFreezeCmdTipsAndTricksTitle" devLabel="Unfreeze Information" translation="[フリーズ解除]に関する情報"/>
+	<label commandName="lclzTSplineUnWeldDesc1" devLabel="Disconnects an edge or loop." translation="エッジまたはループを切断します。"/>
+	<label commandName="lclzTSplineUnWeldDesc2" devLabel="Select an edge or double click to select a loop. Hold Ctrl (Windows) or Command (Mac) to select multiple edges." translation="エッジを選択するか、ダブルクリックしてループを選択します。複数の面を選択するには、[Ctrl](Windows)または[Command](Mac)を押しながら選択します。"/>
+	<label commandName="lclzTSplineUnWeldTipsAndTricksTips" devLabel="Select an edge or double click to select a loop. Hold Ctrl (Windows) or Command (Mac) to select multiple edges." translation="エッジを選択するか、ダブルクリックしてループを選択します。複数の面を選択するには、[Ctrl](Windows)または[Command](Mac)を押しながら選択します。"/>
+	<label commandName="lclzTSplineUnWeldTipsAndTricksTitle" devLabel="UnWeld Information" translation="[溶接解除]に関する情報"/>
+	<label commandName="lclzTSplineWeldDesc1" devLabel="Joins two or more vertices." translation="2 つ以上の頂点を結合します。"/>
+	<label commandName="lclzTSplineWeldDesc2" devLabel="Select two vertices to join. Window select vertices to weld within the specified tolerance." translation="結合する 2 つの頂点を選択します。指定した許容差の範囲内で溶接するには、頂点をウィンドウ選択します。"/>
+	<label commandName="lclzTSplineWeldTipsAndTricksTips" devLabel="Select two vertices to join. Window select vertices to weld within the specified tolerance." translation="結合する 2 つの頂点を選択します。指定した許容差の範囲内で溶接するには、頂点をウィンドウ選択します。"/>
+	<label commandName="lclzTSplineWeldTipsAndTricksTitle" devLabel="Weld Information" translation="[溶接]に関する情報"/>
+	<label commandName="multi" devLabel="Multi" translation="マルチ"/>
+	<label commandName="nGonsFour" devLabel="Four Sides" translation="4 側面"/>
+	<label commandName="nGonsNonFour" devLabel="Multiple Sides" translation="複数の側面"/>
+	<label commandName="planarCurveTooltip" devLabel="Check to create driving curve on a best fit plane" translation="最適フィット平面上に駆動曲線を作成する場合はチェックします"/>
+	<label commandName="primitiveDiameter" devLabel="Diameter" translation="直径"/>
+	<label commandName="primitiveDiameter1" devLabel="Diameter 1" translation="直径 1"/>
+	<label commandName="primitiveDiameterDimensionInput" devLabel="Diameter" translation="直径"/>
+	<label commandName="primitiveHeightDimensionInput" devLabel="Height" translation="高さ"/>
+	<label commandName="primitiveHeightSegmentInput" devLabel="Height Faces" translation="高さの面"/>
+	<label commandName="primitiveLatitudeSegmentInput" devLabel="Latitude Faces" translation="緯度の面"/>
+	<label commandName="primitiveLengthDimensionInput" devLabel="Length" translation="長さ"/>
+	<label commandName="primitiveLengthSegmentInput" devLabel="Length Faces" translation="長さの面"/>
+	<label commandName="primitiveLongitudeSegmentInput" devLabel="Longitude Faces" translation="経度の面"/>
+	<label commandName="primitiveRingDimensionInput" devLabel="Diameter 2" translation="直径 2"/>
+	<label commandName="primitiveRingSegmentInput" devLabel="Diameter 2 Faces" translation="直径 2 の面"/>
+	<label commandName="primitiveSpanSegmentInput" devLabel="Span Faces" translation="スパンの面"/>
+	<label commandName="primitiveWidthDimensionInput" devLabel="Width" translation="幅"/>
+	<label commandName="primitiveWidthSegmentInput" devLabel="Width Faces" translation="幅の面"/>
+	<label commandName="profileSegmentInput" devLabel="Faces" translation="面"/>
+	<label commandName="retoOffsetDistanceInput" devLabel="Offset" translation="オフセット"/>
+	<label commandName="reverseDirectionType" devLabel="Surface Points" translation="サーフェス点"/>
+	<label commandName="revolveRadiusSegmentInput" devLabel="Faces" translation="面"/>
+	<label commandName="rotation" devLabel="Rotation" translation="回転"/>
+	<label commandName="scale" devLabel="Scale" translation="尺度"/>
+	<label commandName="selectNextBTNInput" devLabel="Select Next" translation="次を選択"/>
+	<label commandName="selectTarget" devLabel="Select Targets" translation="ターゲットを選択"/>
+	<label commandName="simpleMode" devLabel="Simple" translation="単純"/>
+	<label commandName="softDistanceInput" devLabel="Distance" translation="距離"/>
+	<label commandName="softGrowFaceCountInput" devLabel="Face Count" translation="面の数"/>
+	<label commandName="softManipInput" devLabel="Soft Modification" translation="ソフト修正"/>
+	<label commandName="softRadiusInput1" devLabel="Radius1" translation="半径 1"/>
+	<label commandName="softRectLengthInput" devLabel="Length Face Count" translation="長さの面の数"/>
+	<label commandName="softRectWidthInput" devLabel="Width Face Count" translation="幅の面の数"/>
+	<label commandName="softWeightInput" devLabel="Weight" translation="ウエイト"/>
+	<label commandName="surfaceCopy" devLabel="Copy" translation="コピー"/>
+	<label commandName="surfacePointsType" devLabel="Surface Points" translation="サーフェス点"/>
+	<label commandName="surfacePointsTypeTip" devLabel="Fits vertices on smooth surface to driving curve" translation="スムーズ サーフェス上の頂点を駆動曲線にフィットさせます"/>
+	<label commandName="sweepPathSegmentInput" devLabel="Faces" translation="面"/>
+	<label commandName="sweepSegmentInput" devLabel="Faces" translation="面"/>
+	<label commandName="translation" devLabel="Translation" translation="変換"/>
+	<label commandName="tsSplineBevelEdgePreviewInput" devLabel="Bevel Location " translation="ベベルの位置 "/>
+	<label commandName="tsSplineInsertEdgePreviewInput" devLabel="Insert Location " translation="挿入位置 "/>
+	<label commandName="tsSplineSlideEdgePreviewInput" devLabel="Slide Location " translation="スライドの位置 "/>
+	<label commandName="tsSplineThicknessInput" devLabel="Thickness" translation="厚さ"/>
+	<label commandName="uniformDistib" devLabel="Uniform" translation="均一"/>
+	<label commandName="uniformDistibTip" devLabel="Distributes control points uniformly along curve" translation="曲線に沿って制御点を均一に分布させます"/>
+	<label commandName="weldVertexOption" devLabel="Weld" translation="溶接"/>
+</Resource>

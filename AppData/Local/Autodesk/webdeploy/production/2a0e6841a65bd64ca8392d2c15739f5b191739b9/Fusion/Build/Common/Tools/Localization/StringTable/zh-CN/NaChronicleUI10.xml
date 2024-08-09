@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="CancelCommand" devLabel="CancelCommand" translation="取消命令"/>
+	<label commandName="Chronicle Environment" devLabel="Chronicle" translation="Chronicle"/>
+	<label commandName="CommitCommand" devLabel="CommitCommand" translation="提交命令"/>
+	<label commandName="LaunchScreencastCommand" devLabel="Launch Screencast Recorder" translation="启动 Screencast 录制器"/>
+	<label commandName="Manipulator" devLabel="Manipulator" translation="操纵器"/>
+	<label commandName="SelectCommand" devLabel="SelectCommand" translation="选择命令"/>
+	<label commandName="lclzLaunchScreencast" devLabel="Captures Fusion 360 workflows and commands used into shareable videos." translation="将使用的 Fusion 360 工作流和命令捕获到可共享视频中。"/>
+	<label commandName="lclzLaunchScreencastText" devLabel="Launch Screencast Recorder" translation="启动 Screencast 录制器"/>
+</Resource>

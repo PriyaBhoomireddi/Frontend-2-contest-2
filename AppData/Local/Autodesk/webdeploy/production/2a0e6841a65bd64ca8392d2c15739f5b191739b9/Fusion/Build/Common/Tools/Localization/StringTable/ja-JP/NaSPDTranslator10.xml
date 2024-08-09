@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="frontNamedView" devLabel="FRONT" translation="前"/>
+	<label commandName="homeNamedView" devLabel="HOME" translation="ホーム"/>
+	<label commandName="rightNamedView" devLabel="RIGHT" translation="右"/>
+	<label commandName="topNamedView" devLabel="TOP" translation="上"/>
+</Resource>

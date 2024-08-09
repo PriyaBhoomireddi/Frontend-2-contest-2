@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Toolbars>
+  <Toolbar Movable="False" TransparentBackground="True" Style="ToolbarSmallStyle" Right="True" Id="QATRight">
+      <Button Id="LaunchScreencastCommand"/>
+  </Toolbar>
+</Toolbars>

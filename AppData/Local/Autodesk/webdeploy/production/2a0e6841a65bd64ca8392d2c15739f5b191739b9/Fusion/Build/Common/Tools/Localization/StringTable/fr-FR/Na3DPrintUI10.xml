@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="3DPrint Environment" devLabel="3DPrint" translation="IMPRESS3D"/>
+	<label commandName="BaseDiameter" devLabel="Base Diameter" translation="Diamètre de base"/>
+	<label commandName="BrepBodySelection" devLabel="Components/Bodies" translation="Composants/corps"/>
+	<label commandName="ChooseObjectsCommand" devLabel="Choose Objects" translation="Choisir des objets"/>
+	<label commandName="CustomRefinementOption" devLabel="Custom" translation="Personnalisé(e)"/>
+	<label commandName="DLPPrinter" devLabel="DLP Printer" translation="Imprimante DLP"/>
+	<label commandName="DefaultPrinter" devLabel="Default" translation="Par défaut"/>
+	<label commandName="Dremel" devLabel="Dremel 3D IdeaBuilder" translation="Dremel 3D Idea Builder"/>
+	<label commandName="DremelIdeaBuilder" devLabel="Dremel 3D Idea Builder" translation="Dremel 3D Idea Builder"/>
+	<label commandName="EmberPrinter" devLabel="Autodesk Ember" translation="Autodesk Ember"/>
+	<label commandName="GenerateSupportsCommand" devLabel="Supports" translation="Supports"/>
+	<label commandName="GridAspectRatio" devLabel="Aspect Ratio" translation="Rapport de linéarité"/>
+	<label commandName="HighRefinementOption" devLabel="High" translation="Elevé"/>
+	<label commandName="InspectFor3DPrintCommand" devLabel="Inspect For 3DPrint" translation="Inspecter pour IMPRESS3D"/>
+	<label commandName="LowRefinementOption" devLabel="Low" translation="Faible"/>
+	<label commandName="Makerbot2mm" devLabel="Replicator 2mm" translation="Duplicateur 2 mm"/>
+	<label commandName="Makerbot2mmHeavy" devLabel="Replicator 2mm Heavy" translation="Duplicateur 2 mm - Lourd"/>
+	<label commandName="Makerbot2mmThick" devLabel="Replicator 2mm Thick" translation="Duplicateur 2 mm - Epais"/>
+	<label commandName="Makerbot3mm" devLabel="Replicator 3mm" translation="Duplicateur 3 mm"/>
+	<label commandName="MaximumEdgeLength" devLabel="Maximum Edge Length" translation="Longueur d'arête maximale"/>
+	<label commandName="MediumRefinementOption" devLabel="Medium" translation="Moyen"/>
+	<label commandName="MeshEntitySelection" devLabel="Mesh Body" translation="Corps de maillage"/>
+	<label commandName="NormalTolerance" devLabel="Normal Deviation" translation="Ecart des normales"/>
+	<label commandName="NumberOfTriangles" devLabel="Number of Triangles" translation="Nombre de triangles"/>
+	<label commandName="PostDiameter" devLabel="Post Diameter" translation="Diamètre du poteau"/>
+	<label commandName="PreviewGroupStart" devLabel="Preview" translation="Aperçu"/>
+	<label commandName="PreviewMesh" devLabel="Preview Mesh" translation="Afficher un aperçu du maillage"/>
+	<label commandName="PrintConfigurationActivateCommand" devLabel="Activate PrintSetup" translation="Activer PrintSetup"/>
+	<label commandName="PrintConfigurationActivateCommandTooltip" devLabel="Activate PrintSetup" translation="Activer PrintSetup"/>
+	<label commandName="PrintConfigurationGroupBrowserLabel" devLabel="Print Setups" translation="Configurations d'impressions"/>
+	<label commandName="PrintSetupCommand" devLabel="Setup 3D Printer" translation="Configurer une imprimante 3D"/>
+	<label commandName="Printer" devLabel="Printer" translation="Imprimante"/>
+	<label commandName="PushBrepTo3DPrintWorkspaceCmd" devLabel="Send Body to 3D Print" translation="Envoyer le corps pour l'impression 3D"/>
+	<label commandName="RefinementGroupStart" devLabel="Refinement Options" translation="Options d'affinement"/>
+	<label commandName="RefinementOptionsInput" devLabel="Refinement" translation="Affinement"/>
+	<label commandName="SelectBodies" devLabel="Select bodies to add to 3DPrint" translation="Sélectionner les corps à ajouter à IMPRESS3D"/>
+	<label commandName="SelectMeshBodies" devLabel="Select mesh bodies" translation="Sélectionner les corps de maillage"/>
+	<label commandName="SupportDensity" devLabel="Support Density" translation="Densité des supports"/>
+	<label commandName="SupportMinimumAngle" devLabel="Minimum Angle for Supports" translation="Angle minimum des supports"/>
+	<label commandName="SupportsType" devLabel="Supports Type" translation="Type des supports"/>
+	<label commandName="SurfaceTolerance" devLabel="Surface Deviation" translation="Ecart des surfaces"/>
+	<label commandName="TipDiameter" devLabel="Tip Diameter" translation="Diamètre de pointe"/>
+	<label commandName="TypeA" devLabel="Type A Series 1" translation="Type A série 1"/>
+	<label commandName="Ultimaker2_3mm" devLabel="Ultimaker2 3mm" translation="Ultimaker 2, 3 mm"/>
+	<label commandName="lclz3DPrintModify" devLabel="Modify" translation="Modifier"/>
+	<label commandName="lclz3DPrintSetup" devLabel="Setup" translation="Configuration"/>
+	<label commandName="lclz3DPrintTab" devLabel="3D Print" translation="Impression 3D"/>
+	<label commandName="lclzInspectFor3DPrintDesc1" devLabel="Inspects a mesh for issues related to printability." translation="Recherche d'éventuels problèmes en matière d'imprimabilité dans le maillage."/>
+	<label commandName="lclzPrintSetupCmdDesc1" devLabel="Set up a 3D Print Job." translation="Configurez une tâche d'impression 3D."/>
+</Resource>

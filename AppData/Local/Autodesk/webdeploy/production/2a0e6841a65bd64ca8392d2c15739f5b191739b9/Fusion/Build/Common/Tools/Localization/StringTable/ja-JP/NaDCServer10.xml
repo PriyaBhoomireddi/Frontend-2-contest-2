@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="ComputeInMouseDragToolTip" devLabel="Switch on/off compute in mouse drag for push / pull." translation="プッシュまたはプルに応じて、マウスのドラッグ操作での計算のオン/オフを切り替えます。"/>
+	<label commandName="ComputeInMouseDragUserName" devLabel="ComputeInMouseDrag enable" translation="ComputeInMouseDrag が有効"/>
+	<label commandName="ComputeInPreviewToolTip" devLabel="Switch on/off compute in preview for push / pull." translation="プッシュまたはプルに応じて、プレビューでの計算のオン/オフを切り替えます。"/>
+	<label commandName="ComputeInPreviewUserName" devLabel="ComputeInPreview enable" translation="ComputeInPreview が有効"/>
+	<label commandName="ComputeInThreadToolTip" devLabel="Switch on/off compute in another thread for push / pull dragging." translation="プッシュまたはプルのドラッグ操作に応じて、別のスレッドでの計算のオン/オフを切り替えます。"/>
+	<label commandName="ComputeInThreadUserName" devLabel="ComputeInThread enable" translation="ComputeInThread が有効"/>
+	<label commandName="CycleDependencyInComputeCommon" devLabel="The operation will be aborted due to cyclic dependency error. Please report this issue to Autodesk!" translation="操作は、循環従属エラーが発生したため中止されます。この問題をオートデスクに報告してください。"/>
+	<label commandName="MinimumComputeTimeToolTip" devLabel="set the minimum compute time for thread compute." translation="スレッド計算の最小計算時間を設定します。"/>
+	<label commandName="MinimumComputeTimeUserName" devLabel="MinimumComputeTime" translation="最小計算時間"/>
+	<label commandName="MinimumSpeedUpRatioToolTip" devLabel="set the minimum speed up ratio(serialTime/parallelTime)" translation="最小加速率(シリアルタイム/パラレルタイム)を設定します"/>
+	<label commandName="MinimumSpeedUpRatioUserName" devLabel="MinimumSpeedUpRatio" translation="MinimumSpeedUpRatio"/>
+	<label commandName="ParallelComputingToolTip" devLabel="Switch on/off parallel computing option." translation="並列コンピューティング オプションのオン/オフを切り替えます。"/>
+	<label commandName="ParallelComputingUserName" devLabel="ParallelComputing enable" translation="並列コンピューティングが有効"/>
+	<label commandName="XRefPlaceToolTip" devLabel="Switch on/off XRef import options." translation="外部参照インポート オプションのオン/オフを切り替えます。"/>
+	<label commandName="XRefPlaceUserName" devLabel="XRef Place enable" translation="外部参照の配置が有効"/>
+</Resource>

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<root DllName="NaFusion10" Identifier="Fusion" IsCoreAddIn="0" IsUIAddIn="0" IsApplicationAddIn="1" AppName ="Fusion360" Name="Fusion">
+  <NeededAddIns>
+    <NeededAddIn>Scene</NeededAddIn>
+    <NeededAddIn>CommonData</NeededAddIn>
+    <NeededAddIn>Component</NeededAddIn>
+    <NeededAddIn>Body</NeededAddIn>
+    <NeededAddIn>EntityTracking</NeededAddIn>
+    <NeededAddIn>DirectModeling</NeededAddIn>
+    <NeededAddIn>Sketch</NeededAddIn>
+    <NeededAddIn>DCServer</NeededAddIn>
+    <NeededAddIn>TagUtility</NeededAddIn>
+    <NeededAddIn>FeatureValidation</NeededAddIn>
+    <NeededAddIn>FeatureRecognizer</NeededAddIn>
+    <NeededAddIn>MeshMixerInterface</NeededAddIn>
+  </NeededAddIns>
+  <DocumentType DocTypeId="FusionDocType" Extension=".f3d" Name="LOCID=FusionDocName" Description="LOCID=FusionDocDesc">
+	<LOC Module="NaFusion" _LCLZId="FusionDocName" _LCLZText="Fusion Document"/>
+	<LOC Module="NaFusion" _LCLZId="FusionDocDesc" _LCLZText="A Fusion Document"/>
+  </DocumentType>
+  <AssetType Name="FusionAssetName" Identifier="FusionAssetType" BaseServerIdentifier="Neutron3DAssetType" AddInId="Fusion" DefaultDocTypeId="FusionDocType"/>
+  <DependentApps></DependentApps>
+  <Extensions></Extensions>
+</root>

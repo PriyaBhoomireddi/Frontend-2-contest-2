@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" 
+    AutodeskProduct="Fusion360" 
+    Name="OffsetPlaneSampleAddIn" 
+    Description="Simple Neutron Add-in" 
+    AppVersion="1.0.0" 
+    ProductType="Application" 
+    Author="Autodesk Inc" 
+    ProductCode="{7249DBBF-5AE7-4643-A58B-C33A84D799E6}" 
+    Icon="./Resource/32x32.png"
+    HelpFile="./Resources/Help.html">
+  <CompanyDetails Name="Autodesk Inc" Url="http://www.autodesk.com" Email="sales@autodesk.com" />
+  <Components>
+    <RuntimeRequirements OS="Win64" Platform="Fusion360" SeriesMin="1.6.601" SeriesMax="1.6.601" />
+	<ComponentEntry AppName="OffsetPlaneSampleAddIn" Version="1.0" ModuleName="./OffsetPlaneSampleAddIn.dll"/>
+  </Components>
+</ApplicationPackage>

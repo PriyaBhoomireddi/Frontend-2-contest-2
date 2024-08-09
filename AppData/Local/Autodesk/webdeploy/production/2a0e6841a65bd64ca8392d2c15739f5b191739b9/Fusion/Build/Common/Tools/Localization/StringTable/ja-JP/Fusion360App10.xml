@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="lclzExpirationMessage" devLabel="Licensing for this product has expired." translation="この製品のライセンスの有効期限が切れています。"/>
+	<label commandName="lclzTutorialCatDesc1" devLabel="Learn different design techniques to create various parts of the lamp." translation="ランプのさまざまなパーツを作成するための各種のデザイン手法について説明します。"/>
+	<label commandName="lclzTutorialCatDesc2" devLabel="Take the lamp design further by adding joints and realistic materials." translation="ジョイントとリアリスティックなマテリアルを追加して、ランプのデザインをさらに洗練されたものにします。"/>
+	<label commandName="lclzTutorialCatDesc3" devLabel="Make it real by using various manufacturing workflows to fabricate the lamp design." translation="さまざまなファブリケーション ワークフローを使用して、ランプ デザインの加工を実現します。"/>
+	<label commandName="lclzTutorialCatDesc4" devLabel="Learn how to manage projects, collaborate with team members, and share designs with clients." translation="プロジェクトの管理、チームのメンバーとのコラボレーション、顧客とのデザインの共有について説明します。"/>
+	<label commandName="lclzTutorialCatFabricate" devLabel="FABRICATE" translation="ファブリケーション"/>
+	<label commandName="lclzTutorialCatForm" devLabel="FORM" translation="フォーム"/>
+	<label commandName="lclzTutorialCatFunction" devLabel="FUNCTION" translation="機能"/>
+	<label commandName="lclzTutorialCatManage" devLabel="MANAGE" translation="管理"/>
+	<label commandName="lclzTutorialType3Axis" devLabel="3 AXIS MACHINE" translation="3 軸機械加工"/>
+	<label commandName="lclzTutorialType3DPrint" devLabel="3D PRINT" translation="3D プリント"/>
+	<label commandName="lclzTutorialTypeAnimate" devLabel="ANIMATE" translation="アニメーション"/>
+	<label commandName="lclzTutorialTypeAssemble" devLabel="ASSEMBLE" translation="アセンブリ"/>
+	<label commandName="lclzTutorialTypeBasic" devLabel="PART DESIGN" translation="パーツ デザイン"/>
+	<label commandName="lclzTutorialTypeDesc1" devLabel="Design the foundation of your lamp with basic solid modeling tools." translation="基本的なソリッド モデリング ツールを使用して、ランプの基礎をデザインします。"/>
+	<label commandName="lclzTutorialTypeDesc10" devLabel="Prep your design and 3D print with our easy-to-use 3D print utility." translation="デザインを準備し、操作性に優れた 3D プリント ユーティリティで 3D プリントを行います。"/>
+	<label commandName="lclzTutorialTypeDesc11" devLabel="Create and save a sketch as DXF format to use for laser cutting." translation="スケッチを作成し、レーザー カットに使用する DXF 形式で保存します。"/>
+	<label commandName="lclzTutorialTypeDesc111" devLabel="Set up and simulate a CAM toolpath of a lamp base plate." translation="ランプのベース プレートの CAM ツールパスを設定し、シミュレーションを実行します。"/>
+	<label commandName="lclzTutorialTypeDesc12" devLabel="Set up a more advanced 3 Axis toolpath and simulate how the lamp base will be machined." translation="より高度な 3 軸ツールパスを設定して、ランプの基部を機械加工する方法をシミュレーションします。"/>
+	<label commandName="lclzTutorialTypeDesc13" devLabel="Invite collaborators to a new design and keep track of new versions." translation="新しいデザインに共有メンバーを招待して、新しいバージョンを追跡管理します。"/>
+	<label commandName="lclzTutorialTypeDesc14" devLabel="Bring an external part into your design and archive the final assembly." translation="外部パーツをデザインに取り込み、最終的なアセンブリをアーカイブします。"/>
+	<label commandName="lclzTutorialTypeDesc15" devLabel="Get a quick overview of how to get around Fusion 360 and navigate around your design." translation="Fusion 360 の操作方法やデザインのナビゲーション方法の概要を把握できます。"/>
+	<label commandName="lclzTutorialTypeDesc16" devLabel="Create basic 3D geometry using 3 different modeling techniques." translation="3 種類のモデリング技法を使用して、基本的な 3D ジオメトリを作成します。"/>
+	<label commandName="lclzTutorialTypeDesc2" devLabel="Add a sophisticated lamp switch based on it's on-off position." translation="オンとオフの位置に基づいた高度なランプのスイッチを追加します。"/>
+	<label commandName="lclzTutorialTypeDesc3" devLabel="Use sketches to draw and model a power cord for the lamp model." translation="スケッチを使用して、ランプの電源コードを描画し、モデルを作成します。"/>
+	<label commandName="lclzTutorialTypeDesc4" devLabel="Use various sculpt tools to create a stylized lamp shade." translation="さまざまなスカルプト ツールを使用して、定型化されたランプ シェードを作成します。"/>
+	<label commandName="lclzTutorialTypeDesc5" devLabel="Render the lamp and make it look real with built-in ray tracing technology." translation="ランプをレンダリングして、組み込みのレイ トレーシング技術で本物のような外観にします。"/>
+	<label commandName="lclzTutorialTypeDesc6" devLabel="Add simple joints between components and assemble the final lamp design." translation="コンポーネント間にシンプルなジョイントを追加して、最終的なランプ デザインを組み立てます。"/>
+	<label commandName="lclzTutorialTypeDesc7" devLabel="Animate an exploded view, assembly and disassembly process of the lamp." translation="ランプの分解ビュー、アセンブリおよびアセンブリ解除のプロセスをアニメーションします。"/>
+	<label commandName="lclzTutorialTypeDesc8" devLabel="Determine how the design will deform under various structural loads and boundary conditions." translation="さまざまな構造荷重および境界条件で、デザインがどのように変形するかを特定します。"/>
+	<label commandName="lclzTutorialTypeDesc9" devLabel="Examine how design behaves under various vibrational or modal frequencies" translation="さまざまな振動周波数またはモード周波数で、デザインがどのように動作するかを調べます。"/>
+	<label commandName="lclzTutorialTypeFreeform" devLabel="FREEFORM DESIGN" translation="フリーフォーム デザイン"/>
+	<label commandName="lclzTutorialTypeLasercut" devLabel="LASER CUT" translation="レーザー カット"/>
+	<label commandName="lclzTutorialTypeMachine" devLabel="MACHINE" translation="機械加工"/>
+	<label commandName="lclzTutorialTypeModelingBasics" devLabel="MODELING BASICS" translation="モデリングの基本"/>
+	<label commandName="lclzTutorialTypeRender" devLabel="RENDER" translation="レンダリング"/>
+	<label commandName="lclzTutorialTypeSave" devLabel="SAVE" translation="保存"/>
+	<label commandName="lclzTutorialTypeSimmodal" devLabel="MODAL FREQUENCIES" translation="モード周波数"/>
+	<label commandName="lclzTutorialTypeSketech" devLabel="SKETCH DESIGN" translation="スケッチ デザイン"/>
+	<label commandName="lclzTutorialTypeStatic" devLabel="STATIC STRESS" translation="静的応力"/>
+	<label commandName="lclzTutorialTypeTopDown" devLabel="TOP-DOWN DESIGN" translation="トップダウン デザイン"/>
+	<label commandName="lclzTutorialTypeUpload" devLabel="UPLOAD" translation="アップロード"/>
+	<label commandName="lclzTutorialTypeWorkspace" devLabel="INTRO TO WORKSPACES" translation="作業スペースの概要"/>
+</Resource>

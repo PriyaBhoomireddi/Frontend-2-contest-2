@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="ActivateGenWorkingModel" devLabel="Activate Generative Model" translation="Activer le modèle génératif"/>
+	<label commandName="ActivateGenerativeModel" devLabel="Activate Generative Model" translation="Activer le modèle génératif"/>
+	<label commandName="ActivateModel" devLabel="Activate Model" translation="Activer le modèle"/>
+	<label commandName="ActivateSimulationModel" devLabel="Activate Simulation Model" translation="Activer le modèle de simulation"/>
+	<label commandName="ActivateWorkingModel" devLabel="Activate Simulation Model" translation="Activer le modèle de simulation"/>
+	<label commandName="ActivateWorkingModelText" devLabel="Activate Simulation Model" translation="Activer le modèle de simulation"/>
+	<label commandName="ConvertSurfaceBody2TSCommand" devLabel="Convert Surface Body to TSpline" translation="Convertir le corps surfacique en TSpline"/>
+	<label commandName="CopyActiveWorkingModelFailure1" devLabel="Suspended command!" translation="Commande suspendue."/>
+	<label commandName="CopyActiveWorkingModelFailure2" devLabel="No Active asset session!" translation="Aucune session de ressource active."/>
+	<label commandName="CopyActiveWorkingModelFailure3" devLabel="No Active WM asset session!" translation="Aucune session de ressource de modèle de travail active."/>
+	<label commandName="CopyActiveWorkingModelFailure4" devLabel="Copy of active WM failed" translation="Échec de la copie du modèle de travail actif"/>
+	<label commandName="CopyWorkingModel" devLabel="Copy Working Model" translation="Copier le modèle de travail"/>
+	<label commandName="CopyWorkingModelAndImport" devLabel="Copy Working Model, activate it and import gemetry" translation="Copier le modèle de travail, l'activer et importer la géométrie"/>
+	<label commandName="CopyWorkingModelText" devLabel="Copy Simulation Model" translation="Copier le modèle de simulation"/>
+	<label commandName="DeleteWorkingModel" devLabel="Delete Working Model" translation="Supprimer le modèle de travail"/>
+	<label commandName="DeleteWorkingModelText" devLabel="Delete Simulation Model" translation="Supprimer le modèle de simulation"/>
+	<label commandName="ExtractTSSurfaceBodyCommand" devLabel="Extract TSpline from Surface Body" translation="Extraire la TSpline du corps surfacique"/>
+	<label commandName="FinishEditModelCommand" devLabel="Finish Edit Model" translation="TERMINER"/>
+	<label commandName="FinishEditModelCommandModelText" devLabel="Enables you to return to the Generative Design workspace." translation="Permet de revenir à l'espace de travail de conception générative."/>
+	<label commandName="FinishSimplifyCommand" devLabel="Finish Simplify" translation="Terminer la simplification"/>
+	<label commandName="FinishSimplifyCommandModelText" devLabel="Click Finish Simplify to return to the Simulation workspace." translation="Cliquez sur Terminer la simplification pour revenir à l'espace de travail Simulation."/>
+	<label commandName="FusionComponentInstanceFoldername" devLabel="Model Components" translation="Composants du modèle"/>
+	<label commandName="FusionDeleteOverrideCommand" devLabel="Delete" translation="Supprimer"/>
+	<label commandName="GenWorkingModelEnvironment" devLabel="Edit Model" translation="Modifier le modèle"/>
+	<label commandName="GenerativeModels" devLabel="Generative Models" translation="Modèles génératifs"/>
+	<label commandName="InvalidAssetSelectedForDeletion" devLabel="No valid model selected for deletion." translation="Aucun modèle valide n'est sélectionné pour suppression."/>
+	<label commandName="Models" devLabel="Models" translation="Modèles"/>
+	<label commandName="SimPromoteSolidIsProbablySurface" devLabel="A closed solid could not be produced from the Optimization Result. The generated surface body(ies) may need to be Patched and Stitched." translation="Impossible de générer un solide fermé à partir du résultat de l'optimisation. Le ou les corps surfaciques générés ont peut-être besoin d'être corrigés et cousus."/>
+	<label commandName="SimulationModels" devLabel="Simulation Models" translation="Modèles de simulation"/>
+	<label commandName="SoftDeleteAllUnselected" devLabel="Remove All Except Selected" translation="Supprimer tout sauf la sélection"/>
+	<label commandName="SoftDeleteAllUnselectedText" devLabel="Remove All Except Selected" translation="Supprimer tout sauf la sélection"/>
+	<label commandName="SuppressGeometry" devLabel="Suppress" translation="Masquer"/>
+	<label commandName="UnSuppressGeometry" devLabel="UnSuppress" translation="Annuler le masquage"/>
+	<label commandName="WorkingModelEnvironment" devLabel="Simplify" translation="Simplifier"/>
+	<label commandName="lclzFusionRepairBrowserCaption" devLabel="Repair Browser" translation="Réparer le navigateur"/>
+	<label commandName="lclzGenWorkingModelWorkspaceTitle" devLabel="Edits a generative model by creating bodies to represent preserve, obstacle, and starting shape geometries in a design problem." translation="Modifie un modèle génératif en créant des corps qui représentent les géométries conservées, les obstacles et les formes de départ dans un problème de conception."/>
+</Resource>

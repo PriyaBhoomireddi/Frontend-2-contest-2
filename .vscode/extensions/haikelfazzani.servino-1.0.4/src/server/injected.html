@@ -1,0 +1,43 @@
+<script>
+  function reloadCSS() {
+    let sheets = [].slice.call(document.getElementsByTagName("link"));
+    let head = document.getElementsByTagName("head")[0];
+    for (let i = 0; i < sheets.length; ++i) {
+      let element = sheets[i];
+      head.removeChild(element);
+      let rel = element.rel;
+      if (element.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+        let url = element.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+        element.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+      }
+      head.appendChild(element);
+    }
+  }
+
+  const protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+  const address = protocol + window.location.host + window.location.pathname + '/ws';
+  const ws = new WebSocket(address);
+
+  const onMessages = (msg) => {
+    const { message, content, inject, fileExtension } = JSON.parse(msg.data);
+
+    if (message && message === 'close-socket') {
+      ws.removeEventListener('message', onMessages);
+      ws.close();
+      console.log('%cLive reload is disabled.', 'color: #bada55');
+      return;
+    }
+
+    if (inject === false) {
+      window.location.reload();
+    }
+    else {
+      if (['.html', '.htm', '.xhtml'].includes(fileExtension)) document.getElementsByTagName("html")[0].innerHTML = content;
+      if (['.js', '.ts', '.json'].includes(fileExtension)) Function(content.replace('\n', ';').replace('\n', ';'))();
+      if (['.css', '.scss', '.less'].includes(fileExtension)) reloadCSS();
+    }
+
+    console.log('%cLive reload is enabled.', 'color: #bada55');
+  }
+  ws.addEventListener('message', onMessages);
+</script>

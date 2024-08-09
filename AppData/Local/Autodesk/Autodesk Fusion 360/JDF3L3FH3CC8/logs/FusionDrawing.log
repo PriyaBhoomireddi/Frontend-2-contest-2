@@ -1,0 +1,415 @@
+[19:52:41 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:52:44 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:52:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:52:46 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:52:46 - PID:34068] cmd Finished: DIM Reason: 1
+[19:52:46 - PID:34068] cmd will Start: DIM
+[19:52:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:52:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:52:52 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:52:55 - PID:34068] cmd Finished: DIM Reason: 3
+[19:52:55 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:52:55 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:52:55 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:52:55 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:52:55 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:52:56 - PID:34068] cmd will Start: ERASE
+[19:52:56 - PID:34068] cmd Finished: ERASE Reason: 1
+[19:52:57 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:52:57 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:53:00 - PID:34068] cmd will Start: ERASE
+[19:53:00 - PID:34068] cmd Finished: ERASE Reason: 1
+[19:53:01 - PID:34068] cmd will Start: ERASE
+[19:53:01 - PID:34068] cmd Finished: ERASE Reason: 1
+[19:53:06 - PID:34068] cmd will Start: DIM
+[19:53:06 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:53:06 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:53:06 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:53:08 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:53:09 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:53:09 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:53:09 - PID:34068] cmd Finished: DIM Reason: 1
+[19:53:09 - PID:34068] cmd will Start: DIM
+[19:53:09 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:53:09 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:53:09 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:53:16 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:53:17 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:53:17 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:53:17 - PID:34068] cmd Finished: DIM Reason: 1
+[19:53:17 - PID:34068] cmd will Start: DIM
+[19:53:17 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:53:17 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:53:17 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:53:23 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:53:24 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:53:24 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:53:24 - PID:34068] cmd Finished: DIM Reason: 1
+[19:53:24 - PID:34068] cmd will Start: DIM
+[19:53:24 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:53:24 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:53:24 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:53:35 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:53:36 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:53:36 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:53:36 - PID:34068] cmd Finished: DIM Reason: 1
+[19:53:36 - PID:34068] cmd will Start: DIM
+[19:53:36 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:53:36 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:53:37 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:53:42 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:53:42 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:53:43 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:53:43 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:53:43 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:53:45 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:53:45 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:53:45 - PID:34068] cmd Finished: DIM Reason: 1
+[19:53:45 - PID:34068] cmd will Start: DIM
+[19:53:45 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:53:45 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:53:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:53:49 - PID:34068] cmd will Start: PAN
+[19:53:58 - PID:34068] show MarkingMenu
+[19:54:02 - PID:34068] cmd Finished: PAN Reason: 1
+[19:54:02 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:54:02 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:54:04 - PID:34068] cmd will Start: PAN
+[19:54:11 - PID:34068] cmd Finished: PAN Reason: 1
+[19:54:11 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:54:11 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:54:16 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:54:17 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:54:17 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:54:17 - PID:34068] cmd Finished: DIM Reason: 1
+[19:54:32 - PID:34068] cmd will Start: DIM
+[19:54:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:54:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:54:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:54:42 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:54:42 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:54:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:54:46 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:54:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:54:47 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:54:47 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:54:48 - PID:34068] cmd Finished: DIM Reason: 1
+[19:54:48 - PID:34068] cmd will Start: DIM
+[19:54:48 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:54:48 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:54:48 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:54:57 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:54:57 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:54:59 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:54:59 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:54:59 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:02 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:02 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:55:02 - PID:34068] cmd Finished: DIM Reason: 1
+[19:55:02 - PID:34068] cmd will Start: DIM
+[19:55:02 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:02 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:02 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:04 - PID:34068] cmd Finished: DIM Reason: 3
+[19:55:04 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:04 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:04 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:04 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:04 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:06 - PID:34068] cmd will Start: GRIP_STRETCH
+[19:55:06 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:06 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:06 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:09 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:09 - PID:34068] cmd Finished: GRIP_STRETCH Reason: 1
+[19:55:09 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:09 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:24 - PID:34068] cmd will Start: DIM
+[19:55:24 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:24 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:24 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:30 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:30 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:32 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:55:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:34 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:34 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:55:34 - PID:34068] cmd Finished: DIM Reason: 1
+[19:55:34 - PID:34068] cmd will Start: DIM
+[19:55:34 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:34 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:34 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:52 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:52 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:54 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:54 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:55:54 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:55 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:55 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:55:55 - PID:34068] cmd Finished: DIM Reason: 1
+[19:55:55 - PID:34068] cmd will Start: DIM
+[19:55:55 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:55:55 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:55:56 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:10 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 2
+[19:56:12 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:12 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 2 new: 0
+[19:56:12 - PID:34068] cmd Finished: DIM Reason: 1
+[19:56:12 - PID:34068] cmd will Start: DIM
+[19:56:12 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:12 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:12 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:15 - PID:34068] cmd will Start: PAN
+[19:56:20 - PID:34068] cmd Finished: PAN Reason: 1
+[19:56:20 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:20 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:25 - PID:34068] cmd will Start: PAN
+[19:56:30 - PID:34068] cmd Finished: PAN Reason: 1
+[19:56:30 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:30 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:32 - PID:34068] cmd Finished: DIM Reason: 3
+[19:56:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:33 - PID:34068] cmd will Start: ERASE
+[19:56:33 - PID:34068] cmd Finished: ERASE Reason: 1
+[19:56:39 - PID:34068] cmd will Start: DIM
+[19:56:39 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:39 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:39 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:40 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:40 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:43 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:43 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:56:43 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:46 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:56:46 - PID:34068] cmd Finished: DIM Reason: 3
+[19:56:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:46 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:56:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:46 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:56:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:46 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:50 - PID:34068] cmd will Start: DIM
+[19:56:50 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:50 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:50 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:52 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:52 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:53 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:53 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:56:53 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:54 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:54 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:56:54 - PID:34068] cmd Finished: DIM Reason: 1
+[19:56:54 - PID:34068] cmd will Start: DIM
+[19:56:54 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:54 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:54 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:57 - PID:34068] cmd Finished: DIM Reason: 3
+[19:56:57 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:57 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:57 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:57 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:57 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:59 - PID:34068] cmd will Start: GRIP_STRETCH
+[19:56:59 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:56:59 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:56:59 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:02 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:57:02 - PID:34068] cmd Finished: GRIP_STRETCH Reason: 1
+[19:57:04 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:04 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:57:10 - PID:34068] cmd will Start: FD_DIMENSIONEDIT
+[19:57:29 - PID:34068] cmd Finished: FD_DIMENSIONEDIT Reason: 1
+[19:57:31 - PID:34068] cmd will Start: UNDO
+[19:57:31 - PID:34068] cmd Finished: UNDO Reason: 1
+[19:57:32 - PID:34068] cmd will Start: UNDO
+[19:57:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:57:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:57:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:57:32 - PID:34068] cmd Finished: UNDO Reason: 1
+[19:57:35 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:35 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:57:37 - PID:34068] cmd will Start: GRIP_STRETCH
+[19:57:37 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:37 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:57:37 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:38 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:57:38 - PID:34068] cmd Finished: GRIP_STRETCH Reason: 1
+[19:57:39 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:39 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:57:48 - PID:34068] cmd will Start: DIM
+[19:57:48 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:48 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:57:48 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:50 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:57:54 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:57:54 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:57:54 - PID:34068] cmd Finished: DIM Reason: 1
+[19:57:54 - PID:34068] cmd will Start: DIM
+[19:57:54 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:54 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:57:55 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:57 - PID:34068] cmd Finished: DIM Reason: 3
+[19:57:57 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:57:57 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:57 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:57:57 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:57:57 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:58:00 - PID:34068] cmd will Start: GRIP_STRETCH
+[19:58:00 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:58:00 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:58:00 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:58:07 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:58:07 - PID:34068] cmd Finished: GRIP_STRETCH Reason: 1
+[19:58:08 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:58:08 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:58:10 - PID:34068] cmd will Start: GRIP_STRETCH
+[19:58:10 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:58:10 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:58:10 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:58:11 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:58:11 - PID:34068] cmd Finished: GRIP_STRETCH Reason: 1
+[19:58:12 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:58:12 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:58:21 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:58:21 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:58:22 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:58:22 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:58:23 - PID:34068] cmd will Start: MTEXT
+[19:58:23 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:58:23 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:58:23 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:58:26 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:58:26 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:58:29 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:58:29 - PID:34068] sysVar change sent: TEXTEDITOR old: 0 new: 1
+[19:58:55 - PID:34068] sysVar change sent: TEXTEDITOR old: 1 new: 0
+[19:58:55 - PID:34068] cmd Finished: MTEXT Reason: 1
+[19:59:13 - PID:34068] cmd will Start: GRIP_STRETCH
+[19:59:13 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:59:13 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:59:13 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:59:16 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:59:17 - PID:34068] cmd Finished: GRIP_STRETCH Reason: 1
+[19:59:17 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:59:17 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:59:29 - PID:34068] cmd will Start: DIM
+[19:59:29 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:59:29 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:59:29 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:59:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:59:32 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:59:34 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:59:34 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[19:59:34 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:59:35 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:59:35 - PID:34068] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[19:59:35 - PID:34068] cmd Finished: DIM Reason: 1
+[19:59:35 - PID:34068] cmd will Start: DIM
+[19:59:35 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:59:35 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:59:35 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:59:38 - PID:34068] cmd Finished: DIM Reason: 3
+[19:59:38 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:59:38 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:59:38 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:59:38 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:59:38 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:59:41 - PID:34068] cmd will Start: GRIP_STRETCH
+[19:59:41 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:59:41 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:59:41 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:59:44 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:59:44 - PID:34068] cmd Finished: GRIP_STRETCH Reason: 1
+[19:59:45 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[19:59:45 - PID:34068] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[19:59:50 - PID:34068] start save Dwg  C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/14c2fe0b-4f97-4ce4-9f5e-99f74e9b386e/Document1.dwg
+[19:59:52 - PID:34068] end save Dwg saveAs ret: 0 isSaveAsDwg: 0
+[20:00:06 - PID:34068] cmd will Start: FD_CMD
+[20:00:06 - PID:34068] doCommand(), json={"action":"print","data":{"LayoutName":["Sheet1"],"IsLineweights":false,"PrinterName":"Microsoft Print to PDF","FilePath":"","PrintFileNamePrefix":""}}
+[20:00:06 - PID:34068] start save Dwg  C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/14c2fe0b-4f97-4ce4-9f5e-99f74e9b386e/Document1.dwg
+[20:00:06 - PID:34068] end save Dwg saveAs ret: 0 isSaveAsDwg: 0
+[20:00:22 - PID:34068] cmd Finished: FD_CMD Reason: 1
+[20:10:29 - PID:34068] start save Dwg  C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/14c2fe0b-4f97-4ce4-9f5e-99f74e9b386e/Document1.dwg
+[20:10:29 - PID:34068] end save Dwg saveAs ret: 0 isSaveAsDwg: 0
+[20:10:29 - PID:34068] show MarkingMenu
+[20:10:32 - PID:34068] closing dwg: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/14c2fe0b-4f97-4ce4-9f5e-99f74e9b386e/Document1.dwg
+[20:10:33 - PID:34068] unloading AcFusionService.crx
+[20:11:47 - PID:9752] cmd will Start: FD_CMD
+[20:11:47 - PID:9752] doCommand(), json={"action":"opendoc","data":{"TempDir":"C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/fcfa8b01-d847-4891-8360-a158f3315801/","AssetID":75,"SmallImageName":"small.png","DwgName":"Document1.dwg","DesignModified":true,"FDocTemplate":false,"OpenNewDrawingType":""}}
+[20:11:47 - PID:9752] cmd Finished: FD_CMD Reason: 1
+[20:12:19 - PID:9752] cmd will Start: DIM
+[20:12:19 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:12:19 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:12:19 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:12:25 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:12:25 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:12:49 - PID:9752] cmd Finished: DIM Reason: 3
+[20:12:49 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:12:49 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:12:49 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:12:49 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:12:49 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:12:49 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:12:49 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:13:00 - PID:9752] cmd will Start: DIMRADIUS
+[20:13:28 - PID:9752] cmd Finished: DIMRADIUS Reason: 3
+[20:13:29 - PID:9752] cmd will Start: DIMRADIUS
+[20:13:37 - PID:9752] cmd Finished: DIMRADIUS Reason: 3
+[20:13:37 - PID:9752] cmd will Start: DIM
+[20:13:37 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:13:37 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:13:37 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:13:46 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:13:46 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:13:51 - PID:9752] cmd Finished: DIM Reason: 3
+[20:13:51 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:13:51 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:13:51 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:13:51 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:13:51 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:13:51 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:13:51 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:13:53 - PID:9752] cmd will Start: DIM
+[20:13:53 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:13:53 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:13:53 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:13:58 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:13:58 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:14:25 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:14:25 - PID:9752] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[20:14:25 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:14:30 - PID:9752] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[20:14:30 - PID:9752] cmd Finished: DIM Reason: 3
+[20:14:30 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:14:30 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:14:30 - PID:9752] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 0 new: 1
+[20:14:30 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:14:30 - PID:9752] sysVar change sent: SMARTDIMJIGMODELOCKMENU old: 1 new: 0
+[20:14:30 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:14:30 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:14:30 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:14:30 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:14:30 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 0 new: 1
+[20:14:30 - PID:9752] sysVar change sent: FDSHOWOSNAPOVERRIDE old: 1 new: 0
+[20:14:30 - PID:9752] cmd will Start: DIMRADIUS
+[20:14:33 - PID:9752] cmd Finished: DIMRADIUS Reason: 3
+[20:14:37 - PID:9752] closing dwg: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/fcfa8b01-d847-4891-8360-a158f3315801/Document1.dwg
+[20:14:38 - PID:9752] unloading AcFusionService.crx

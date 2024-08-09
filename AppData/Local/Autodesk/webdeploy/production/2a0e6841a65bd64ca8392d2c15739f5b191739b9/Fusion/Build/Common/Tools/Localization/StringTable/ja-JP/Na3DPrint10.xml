@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="CmMKSUnitSystemName" devLabel="cm modeling length with MKS (m, kg, second, Celsius) units" translation="MKS (m、kg、秒、摂氏)単位でのモデリングの長さ単位は cm です"/>
+	<label commandName="GenerateSupportsGenericError" devLabel="Supports generation failed due to invalid input" translation="入力が無効であるため、サポート材の生成に失敗しました"/>
+	<label commandName="ImperialUnitSystemName" devLabel="Imperial (foot, lbmass, second, Fahrenheit) units" translation="インペリアル(フィート、lbmass、秒、華氏)単位"/>
+	<label commandName="InchImperialUnitSystemName" devLabel="inch modeling length with imperial (foot, lbmass, second, Fahrenheit) units" translation="インペリアル(フィート、lbmass、秒、華氏)単位でのモデリングの長さ単位はインチです"/>
+	<label commandName="MeshConvFail" devLabel="BRep Convert Failed" translation="BRep の変換に失敗しました"/>
+	<label commandName="MmMKSUnitSystemName" devLabel="mm modeling length with MKS (m, kg, second, Celsius) units" translation="MKS (m、kg、秒、摂氏)単位でのモデリングの長さ単位は mm です"/>
+	<label commandName="NextValidChildPrintConfigurationName" devLabel="Print Setup" translation="プリント設定"/>
+	<label commandName="PrintConfigurationSelectionId" devLabel="PrintConfiguration" translation="プリント環境設定"/>
+	<label commandName="PrintConfigurationsSelectionCategory" devLabel="Configuration Collection" translation="環境設定コレクション"/>
+</Resource>

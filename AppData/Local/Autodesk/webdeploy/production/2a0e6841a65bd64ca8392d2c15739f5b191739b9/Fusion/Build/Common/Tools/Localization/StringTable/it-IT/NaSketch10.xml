@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="CannotChangeCVSpline" devLabel="Can not open/close CV spline" translation="Impossibile aprire/chiudere la spline CV"/>
+	<label commandName="CircularPattern" devLabel="Circular Pattern" translation="Serie circolare"/>
+	<label commandName="CircularPatternConstraintSelectionId" devLabel="Circular Pattern Constraint" translation="Vincolo serie circolare"/>
+	<label commandName="Coincident" devLabel="Coincident" translation="Coincidente"/>
+	<label commandName="CoincidentConstraintSelectionId" devLabel="Coincident Constraint" translation="Vincolo coincidente"/>
+	<label commandName="Collinear" devLabel="Collinear" translation="Collineare"/>
+	<label commandName="CollinearConstraintSelectionId" devLabel="Collinear Constraint" translation="Vincolo collineare"/>
+	<label commandName="Concentric" devLabel="Concentric" translation="Concentrico"/>
+	<label commandName="ConcentricConstraintSelectionId" devLabel="Concentric Constraint" translation="Vincolo concentrico"/>
+	<label commandName="CurvatureConstraintSelectionId" devLabel="Curvature Constraint" translation="Vincolo di curvatura"/>
+	<label commandName="CurveError" devLabel="One selected curve is degenerated!" translation="Una curva selezionata è degenerata."/>
+	<label commandName="EllipseOffsetInvalidWarning" devLabel="Could not offset ellipse." translation="Impossibile eseguire l'offset di un'ellisse."/>
+	<label commandName="Equal" devLabel="Equal" translation="Uguale"/>
+	<label commandName="EqualConstraintSelectionId" devLabel="Equal Constraint" translation="Vincolo di uguaglianza"/>
+	<label commandName="ExtendConicCurveError" devLabel="Extend conic curve error!" translation="Errore di estensione della curva conica."/>
+	<label commandName="ExtendSplineError" devLabel="Extend spline error!" translation="Errore durante l'estensione della spline."/>
+	<label commandName="FIT_CURVES_TO_SECTION_ADD_CONSTRAINT_FAIL" devLabel="Failed to add tangent sketch constraint." translation="Impossibile aggiungere vincolo di schizzo tangente."/>
+	<label commandName="FIT_CURVES_TO_SECTION_BAD_INPUTS" devLabel="Failed to process inputs to fit curve to section." translation="Impossibile elaborare gli input per adattare la curva alla sezione."/>
+	<label commandName="FIT_CURVES_TO_SECTION_ERROR_NO_CURVES" devLabel="Failed to fit curve to section." translation="Impossibile adattare la curva alla sezione."/>
+	<label commandName="FIT_CURVES_TO_SECTION_LIN_OR_DEG_ARC_FIT" devLabel="Include more points to fit an arc." translation="Includere più punti per adattare un arco."/>
+	<label commandName="FIT_CURVES_TO_SECTION_NO_SKETCH" devLabel="Include more points to fit an arc." translation="Includere più punti per adattare un arco."/>
+	<label commandName="FailedToSolve" devLabel="Failed to solve." translation="Impossibile risolvere."/>
+	<label commandName="FitPointError" devLabel="Fit point index wrong!" translation="Indice punti di adattamento errato."/>
+	<label commandName="Fixed" devLabel="Fixed" translation="Fisso"/>
+	<label commandName="FixedConstraintSelectionId" devLabel="Fixed Constraint" translation="Vincolo fisso"/>
+	<label commandName="Horizontal" devLabel="Horizontal" translation="Orizzontale"/>
+	<label commandName="HorizontalConstraintSelectionId" devLabel="Horizontal Constraint" translation="Vincolo orizzontale"/>
+	<label commandName="InactiveMidPointSelectionId" devLabel="InactiveMidPoint" translation="PuntoMedioInattivo"/>
+	<label commandName="InactiveMidPointSelectionsId" devLabel="InactiveMidPoints" translation="PuntiMediInattivi"/>
+	<label commandName="InactiveTangentSelectionId" devLabel="Inactive Tangent Handle" translation="Maniglia tangente non attiva"/>
+	<label commandName="InactiveTangentSelectionsId" devLabel="InactiveTangents" translation="TangentiInattive"/>
+	<label commandName="InactiveTextGripSelectionId" devLabel="Text Frame Snap Point" translation="Punto di snap cornice testo"/>
+	<label commandName="InactiveTextGripSelectionsId" devLabel="Text Frame Snap Points" translation="Punti di snap cornice testo"/>
+	<label commandName="InputAxisError" devLabel="Input major axis error!" translation="Errore di input dell'asse maggiore."/>
+	<label commandName="InvalidSplineforcontrolframe" devLabel="Control Frame could not be displayed as selected sketch curve do not support control frame." translation="Impossibile visualizzare il riquadro di controllo poiché non è supportato dalla curva dello schizzo selezionata."/>
+	<label commandName="InvalidSplinesNoCFMultiselection" devLabel="Control Frames could not be displayed as all the selected sketch curves don't support control frame." translation="Impossibile visualizzare i riquadri di controllo poiché non sono supportati da tutte le curve dello schizzo selezionate."/>
+	<label commandName="InvalidSplinesforcontrolframeMultiselection" devLabel="Control Frames could not be displayed for some selected sketch curves as they don't support control frame." translation="Impossibile visualizzare i riquadri di controllo per alcune curve di schizzo selezionate poiché non supportano il riquadro di controllo."/>
+	<label commandName="LineMidPoint" devLabel="Mid Point" translation="Punto medio"/>
+	<label commandName="MeshPlanarSectionDefaultUserName" devLabel="MeshSection" translation="SezioneMesh"/>
+	<label commandName="MeshPlanarSectionSelectionId" devLabel="MeshPlanarSection" translation="SezionePianaMesh"/>
+	<label commandName="MeshPlanarSectionSelectionsId" devLabel="MeshPlanarSections" translation="SezioniPianeMesh"/>
+	<label commandName="MidpointConstraintSelectionId" devLabel="Midpoint Constraint" translation="Vincolo punto medio"/>
+	<label commandName="NO_VADIL_SKETCH" devLabel="No valid sketch found!" translation="Nessuno schizzo valido trovato."/>
+	<label commandName="NoPathSelected" devLabel="Please select path curve" translation="Selezionare la curva della traiettoria"/>
+	<label commandName="NoTextProfileWarning" devLabel="Could not retrieve the profiles of the selected text!" translation="Impossibile recuperare i profili del testo selezionato."/>
+	<label commandName="NonPlanarCurve" devLabel="Please select planar curve" translation="Selezionare curva piana"/>
+	<label commandName="OffsetConstraintSelectionId" devLabel="Offset Constraint" translation="Vincolo di offset"/>
+	<label commandName="OffsetSketchNoGeomError" devLabel="The sketch offset created no geometry. Modify the offset dimension or verify the changes are correct." translation="L'offset dello schizzo non ha creato alcuna geometria. Modificare la quota di offset o verificare che le modifiche siano corrette."/>
+	<label commandName="PROFILE_BUILD_ERROR_ILLEGALCURVES" devLabel="Some sketch curves cannot be converted to profile edges." translation="Alcune curve di schizzo non possono essere convertite in spigoli del profilo."/>
+	<label commandName="PROFILE_BUILD_FAILTOGENPROFILE" devLabel="Failed to generate profile as, curves do not precisely overlap." translation="Impossibile generare il profilo in quanto le curve non si sovrappongono in modo preciso."/>
+	<label commandName="Parallel" devLabel="Parallel" translation="Parallelo"/>
+	<label commandName="ParallelConstraintSelectionId" devLabel="Parallel Constraint" translation="Vincolo parallelo"/>
+	<label commandName="Perpendicular" devLabel="Perpendicular" translation="Perpendicolare"/>
+	<label commandName="PerpendicularConstraintSelectionId" devLabel="Perpendicular Constraint" translation="Vincolo perpendicolare"/>
+	<label commandName="PleaseDeleteConstraints" devLabel="&#xA;Please delete or modify one of the following constraints/dimensions&#xA;" translation="&#xA;Eliminare o modificare uno dei seguenti vincoli/quote&#xA;"/>
+	<label commandName="Polygon" devLabel="Polygon" translation="Poligono"/>
+	<label commandName="PolygonConstraintSelectionId" devLabel="Polygon Constraint" translation="Vincolo poligono"/>
+	<label commandName="ProfileCategory" devLabel="Sketch Profiles" translation="Profili dello schizzo"/>
+	<label commandName="ProfileSelectionId" devLabel="Profile" translation="Profilo"/>
+	<label commandName="ProfilebuildError_TrimStageTwo" devLabel="profile trim failed in stage two" translation="ritaglio del profilo non riuscito nella seconda fase"/>
+	<label commandName="ProfilesSelectionId" devLabel="Profiles" translation="Profili"/>
+	<label commandName="RectangularPattern" devLabel="Rectangular Pattern" translation="Serie rettangolare"/>
+	<label commandName="RectangularPatternConstraintSelectionId" devLabel="Rectangular Pattern Constraint" translation="Vincolo serie rettangolare"/>
+	<label commandName="SharedPointCoincidentSelectionId" devLabel="Coincident Constraint" translation="Vincolo coincidente"/>
+	<label commandName="SharedPointCoincidentSelectionsId" devLabel="Coincident Constraints" translation="Vincoli coincidenti"/>
+	<label commandName="SketchConicCurveSelectionID" devLabel="Sketch Conic Curve" translation="Curva conica schizzo"/>
+	<label commandName="SketchConstraintCategory" devLabel="Sketch Geometry Constraint" translation="Vincolo di geometria dello schizzo"/>
+	<label commandName="SketchConstraintHasSameConstraint" devLabel="Constraint has already been applied to the selected sketch object." translation="Il vincolo è già stato applicato all'oggetto di schizzo selezionato."/>
+	<label commandName="SketchDimensionSelectionId" devLabel="Sketch Dimension" translation="Quota dello schizzo"/>
+	<label commandName="SketchDimensionSelectionsId" devLabel="Sketch Dimensions" translation="Quote di schizzo"/>
+	<label commandName="SketchGeomConstSelectionsId" devLabel="Sketch Geometry Constraints" translation="Vincoli di geometria dello schizzo"/>
+	<label commandName="SketchGeometryConstraintSelectionId" devLabel="Sketch Geometry Constraint" translation="Vincolo di geometria dello schizzo"/>
+	<label commandName="SketchInvisibleProjectGeometries" devLabel="The Projected Geometries you have just created is not visible. Please toggle Show Project Geometries option in sketch palette." translation="Le geometrie proiettate appena create non sono visibili. Attivare l'opzione Mostra geometrie progetto nella tavolozza dello schizzo."/>
+	<label commandName="SketchProjectedGeomSelectionId" devLabel="SketchProjectedGeom" translation="Geometria proiettata schizzo"/>
+	<label commandName="SketchProjectedGeomSelectionsId" devLabel="SketchProjectedGeoms" translation="Geometrie proiettate schizzi"/>
+	<label commandName="Smooth" devLabel="Smooth" translation="Uniforme"/>
+	<label commandName="Symmetric" devLabel="Symmetric" translation="Simmetrico"/>
+	<label commandName="SymmetryConstraintSelectionId" devLabel="Symmetry Constraint" translation="Vincolo di simmetria"/>
+	<label commandName="Tangent" devLabel="Tangent" translation="Tangente"/>
+	<label commandName="TangentConstraintSelectionId" devLabel="Tangent Constraint" translation="Vincolo tangente"/>
+	<label commandName="TangentExists" devLabel="Tangent already exists on selected fit point" translation="La tangente esiste già sul punto di adattamento selezionato"/>
+	<label commandName="TextFrameConstraintSelectionId" devLabel="Text Frame Constraint" translation="Vincolo cornice testo"/>
+	<label commandName="TooFewFitPoints" devLabel="A close spline must at least have 3 fit points" translation="Una spline chiusa deve disporre di almeno 3 punti di adattamento"/>
+	<label commandName="Vertical" devLabel="Vertical" translation="Verticale"/>
+	<label commandName="VerticalConstraintSelectionId" devLabel="Vertical Constraint" translation="Vincolo verticale"/>
+	<label commandName="lclzSketchError" devLabel="Invalid sketch curve" translation="Curva dello schizzo non valida"/>
+</Resource>

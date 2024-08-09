@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="AllSupportedFiles" devLabel="All supported files ( %1% ) ;;" translation="Tutti i file supportati (%1%) ;;"/>
+	<label commandName="BRep2MeshCommand" devLabel="BRep to Mesh" translation="B-Rep in mesh"/>
+	<label commandName="BestFitType" devLabel="Best Fit" translation="Adatta"/>
+	<label commandName="BodyEntitySelection" devLabel="Body" translation="Corpo"/>
+	<label commandName="BooleanTypeOperation" devLabel="Operation" translation="Operazione"/>
+	<label commandName="CenterTransform" devLabel="Center" translation="Centro"/>
+	<label commandName="CmMKS" devLabel="Centimeter" translation="Centimetro"/>
+	<label commandName="CombineKeepToolsOptionInput" devLabel="Keep Tool Bodies" translation="Mantieni corpi utensile"/>
+	<label commandName="CompColorCycleOptionWarning1" devLabel="Component color cycling has been disabled temporarily." translation="Rotazione dei colori dei componenti temporaneamente disabilitata."/>
+	<label commandName="CustomRefinementOption" devLabel="Custom" translation="Personalizzato"/>
+	<label commandName="CylinderType" devLabel="Cylinder" translation="Cilindro"/>
+	<label commandName="ExitMeshPanel" devLabel="Close" translation="Chiudi"/>
+	<label commandName="ExpandToConnectedSel" devLabel="Expand to Connected" translation="Espandi a Connesso"/>
+	<label commandName="ExpandToGroupSel" devLabel="Expand to Face Group" translation="Espandi a Gruppo facce"/>
+	<label commandName="Facet Count" devLabel="Facet Count" translation="Numero di sfaccettature"/>
+	<label commandName="FitType" devLabel="Meshing Type" translation="Tipo di creazione mesh"/>
+	<label commandName="FlatMeshShading" devLabel="Flat Shaded" translation="Ombreggiatura piatta"/>
+	<label commandName="FlatType" devLabel="Uniform" translation="Uniforme"/>
+	<label commandName="FusionMeshPlanarSectionBodyPrompt" devLabel="Select a mesh body" translation="Selezionare un corpo mesh"/>
+	<label commandName="FusionMeshPlanarSectionPlanePrompt" devLabel="Move the plane" translation="Spostare il piano"/>
+	<label commandName="FusionMeshPlanarSectionPrompt" devLabel="Select a plane (optional)" translation="Selezionare un piano (facoltativo)"/>
+	<label commandName="FusionPositionMesh" devLabel="Insert Mesh" translation="Inserisci mesh"/>
+	<label commandName="GenerateFGAngle" devLabel="Threshold Angle" translation="Angolo soglia"/>
+	<label commandName="GridAspectRatio" devLabel="Aspect Ratio" translation="Rapporto prospettico"/>
+	<label commandName="GroundTransform" devLabel="Move to Ground" translation="Sposta sul piano di base"/>
+	<label commandName="GrowMeshSel" devLabel="Grow Selection" translation="Espandi selezione"/>
+	<label commandName="HighRefinementOption" devLabel="High" translation="Alto"/>
+	<label commandName="Imperial" devLabel="Foot" translation="Piede"/>
+	<label commandName="InchImperial" devLabel="Inch" translation="Pollice"/>
+	<label commandName="InsertAlignMeshCommand" devLabel="Insert Mesh" translation="Inserisci mesh"/>
+	<label commandName="InsertMeshCommand" devLabel="Insert Mesh" translation="Inserisci mesh"/>
+	<label commandName="InvertMeshSel" devLabel="Invert Selection" translation="Inverti selezione"/>
+	<label commandName="LowRefinementOption" devLabel="Low" translation="Basso"/>
+	<label commandName="MMKS" devLabel="Meter" translation="Metro"/>
+	<label commandName="MaximumEdgeLength" devLabel="Maximum Edge Length" translation="Lunghezza spigolo massima"/>
+	<label commandName="MediumRefinementOption" devLabel="Medium" translation="Medio"/>
+	<label commandName="Mesh" devLabel="Mesh" translation="Mesh"/>
+	<label commandName="Mesh Environment" devLabel="Mesh" translation="Mesh"/>
+	<label commandName="Mesh2BRep Conversion Warning" devLabel="&lt;b&gt;Mesh to BRep conversion&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Warning: This mesh contains a large number of facets. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Mesh surface content:&lt;br&gt;Facets = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversion has been aborted. &lt;/br&gt;" translation="&lt;b&gt;Conversione da mesh a B-Rep&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Avviso: questa mesh contiene un numero elevato di sfaccettature. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Contenuti superficie mesh:&lt;br&gt;Sfaccettature = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversione interrotta. &lt;/br&gt;"/>
+	<label commandName="Mesh2BRep Conversion Warning_1" devLabel="&lt;b&gt;Mesh to BRep conversion&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Warning: This mesh contains a large number of facets. &lt;/br&gt;&lt;br&gt;Proceeding will result in slow performance.&lt;/br&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt;Mesh surface content:&lt;br&gt;Facets = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversion is not recommended. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Proceed with conversion?&lt;/br&gt;" translation="&lt;b&gt;Conversione da mesh a B-Rep&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Avviso: questa mesh contiene un numero elevato di sfaccettature. &lt;/br&gt;&lt;br&gt;Il procedimento determinerà un rallentamento delle prestazioni.&lt;/br&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt;Contenuti superficie mesh:&lt;br&gt;Sfaccettature = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversione non consigliata. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Procedere con la conversione?&lt;/br&gt;"/>
+	<label commandName="Mesh2BRep conversion aborted." devLabel="Mesh to BRep conversion aborted." translation="Conversione della mesh in B-Rep interrotta."/>
+	<label commandName="Mesh2BRepCommand" devLabel="Mesh to BRep" translation="Mesh in B-Rep"/>
+	<label commandName="MeshBodiesSelection" devLabel="Mesh Bodies" translation="Corpi mesh"/>
+	<label commandName="MeshBodySelection" devLabel="Mesh Body" translation="Corpo mesh"/>
+	<label commandName="MeshClearFGCommand" devLabel="Clear Face Group" translation="Annulla gruppo facce"/>
+	<label commandName="MeshColorCommand" devLabel="Face Groups" translation="Gruppi facce"/>
+	<label commandName="MeshCombineCommand" devLabel="Merge Bodies" translation="Unisci corpi"/>
+	<label commandName="MeshCombineGenericError" devLabel="Combine failed due to invalid input" translation="Combinazione non riuscita a causa di input non valido"/>
+	<label commandName="MeshCreateFGCommand" devLabel="Create Face Group" translation="Crea gruppo facce"/>
+	<label commandName="MeshCutSplitFaces" devLabel="Split Faces" translation="Dividi facce"/>
+	<label commandName="MeshDeleteTrianglesCommand" devLabel="Delete Faces" translation="Elimina facce"/>
+	<label commandName="MeshDensity" devLabel="Density" translation="Densità"/>
+	<label commandName="MeshDistance" devLabel="Offset" translation="Offset"/>
+	<label commandName="MeshEntitySelection" devLabel="Mesh Body" translation="Corpo mesh"/>
+	<label commandName="MeshFACESelection" devLabel="Mesh Faces" translation="Facce mesh"/>
+	<label commandName="MeshFaceBodySelection" devLabel="Mesh Faces/Body" translation="Facce/corpo mesh"/>
+	<label commandName="MeshFaceGroupOffCommand" devLabel="FaceGroup Off" translation="GruppoFacce - Off"/>
+	<label commandName="MeshFaceGroupOnCommand" devLabel="FaceGroup On" translation="GruppoFacce - On"/>
+	<label commandName="MeshFacetSelection" devLabel="Mesh Facet" translation="Sfaccettatura mesh"/>
+	<label commandName="MeshFacetSelection_1" devLabel="Mesh Faces/Body" translation="Facce/corpo mesh"/>
+	<label commandName="MeshFacetSelection_2" devLabel="Mesh Faces/Body" translation="Facce/corpo mesh"/>
+	<label commandName="MeshFittingCommand" devLabel="Fit Surface to Mesh" translation="Adatta superficie alla mesh"/>
+	<label commandName="MeshGenerateFGCommand" devLabel="Generate Face Groups" translation="Genera gruppi facce"/>
+	<label commandName="MeshGenerateFGGenericError" devLabel="GenerateFG failed due to invalid input" translation="Impossibile generare gruppo facce a causa di input non valido"/>
+	<label commandName="MeshMakeSolidBeginComputation" devLabel="Starting conversion..." translation="Avvio della conversione in corso..."/>
+	<label commandName="MeshMakeSolidCommand" devLabel="Make Closed Mesh" translation="Crea mesh chiusa"/>
+	<label commandName="MeshPlanarSectionCommand" devLabel="Create Mesh Section Sketch" translation="Crea schizzo sezione mesh"/>
+	<label commandName="MeshPlaneCutBodySel" devLabel="Mesh Body" translation="Corpo mesh"/>
+	<label commandName="MeshPlaneCutCommand" devLabel="Plane Cut" translation="Ritaglio piano"/>
+	<label commandName="MeshPlaneCutFillMinimal" devLabel="Minimal" translation="Minimo"/>
+	<label commandName="MeshPlaneCutFillNone" devLabel="No Fill" translation="Nessun riempimento"/>
+	<label commandName="MeshPlaneCutFillType" devLabel="Fill Type" translation="Tipo di riempimento"/>
+	<label commandName="MeshPlaneCutFillUniform" devLabel="Uniform" translation="Uniforme"/>
+	<label commandName="MeshPlaneCutFlipTrimDir" devLabel="Flip" translation="Inverti"/>
+	<label commandName="MeshPlaneCutMeshSelectPrompt" devLabel="Select a mesh body" translation="Selezionare un corpo mesh"/>
+	<label commandName="MeshPlaneCutPlanePrompt" devLabel="Select a plane" translation="Selezionare un piano"/>
+	<label commandName="MeshPlaneCutPlaneSel" devLabel="Plane" translation="Piano"/>
+	<label commandName="MeshPlaneCutSplitBody" devLabel="Split Body" translation="Divisione corpo"/>
+	<label commandName="MeshPlaneCutTransfPlane" devLabel="Transform Plane" translation="Piano di trasformazione"/>
+	<label commandName="MeshPlaneCutTransformPlanePrompt" devLabel="Position the plane" translation="Posizionare il piano"/>
+	<label commandName="MeshPlaneCutTrim" devLabel="Trim" translation="Ritaglia"/>
+	<label commandName="MeshPlaneCutType" devLabel="Cut Type" translation="Tipo di taglio"/>
+	<label commandName="MeshRebuildSolidGenericError" devLabel="Make Closed Mesh failed due to invalid input" translation="Creazione mesh chiusa non riuscita a causa di input non valido"/>
+	<label commandName="MeshReduceCommand" devLabel="Reduce" translation="Riduci"/>
+	<label commandName="MeshReduceGenericError" devLabel="Reduce failed due to invalid input" translation="Riduzione non riuscita a causa di input non valido"/>
+	<label commandName="MeshRemeshCommand" devLabel="Remesh" translation="Rigenera mesh"/>
+	<label commandName="MeshRemeshGenericError" devLabel="Remesh failed due to invalid input" translation="Rigenerazione della mesh non riuscita a causa di input non valido"/>
+	<label commandName="MeshReplaceCommand" devLabel="Erase and Fill" translation="Cancella e Riempi"/>
+	<label commandName="MeshReverseNormalsCommand" devLabel="Reverse Normal" translation="Inverti normale"/>
+	<label commandName="MeshSectionBodyInput" devLabel="Mesh Body" translation="Corpo mesh"/>
+	<label commandName="MeshSectionPlaneInput" devLabel="Plane" translation="Piano"/>
+	<label commandName="MeshSectionTransformInput" devLabel="Transform" translation="Trasforma"/>
+	<label commandName="MeshSelection" devLabel="Mesh Faces/Body" translation="Facce/corpo mesh"/>
+	<label commandName="MeshSelectionPalette" devLabel="Mesh Palette" translation="Tavolozza mesh"/>
+	<label commandName="MeshSmoothCommand" devLabel="Smooth" translation="Uniforme"/>
+	<label commandName="MeshSmoothGenericError" devLabel="Smooth failed due to invalid input" translation="Impossibile eseguire l'opzione Uniforme a causa di input non valido."/>
+	<label commandName="MeshStyleCommand" devLabel="Mesh Display" translation="Visualizzazione della mesh"/>
+	<label commandName="MeshSubsetCommand" devLabel="Separate" translation="Separa"/>
+	<label commandName="MeshTriangulateCommand" devLabel="Triangulate Mesh" translation="Triangolazione mesh"/>
+	<label commandName="MeshingTypeOption" devLabel="Reduce Type" translation="Tipo di riduzione"/>
+	<label commandName="MeshingTypeOption_1" devLabel="Meshing Type" translation="Tipo di creazione mesh"/>
+	<label commandName="MinimalType" devLabel="Minimal" translation="Minimo"/>
+	<label commandName="MissingMoveBodies" devLabel="missing bodies" translation="corpi mancanti"/>
+	<label commandName="MmMKS" devLabel="Millimeter" translation="Millimetro"/>
+	<label commandName="MoveSelectionInputPrompt4" devLabel="Position mesh bodies" translation="Posiziona corpi mesh"/>
+	<label commandName="NewBodyInNewCompType" devLabel="New Component" translation="Nuovo componente"/>
+	<label commandName="NewBodyType" devLabel="New Body" translation="Nuovo corpo"/>
+	<label commandName="NewComponent" devLabel="Operation" translation="Operazione"/>
+	<label commandName="NormalTolerance" devLabel="Normal Deviation" translation="Scostamento perpendicolare"/>
+	<label commandName="NumberOfTriangles" devLabel="Number Of Triangles" translation="Numero di triangoli"/>
+	<label commandName="NumericalInputsGroup" devLabel="Numerical Inputs" translation="Input numerici"/>
+	<label commandName="OBJFilesFilter" devLabel="OBJ File(*.obj);;" translation="File OBJ (*obj);;"/>
+	<label commandName="PhysicalMaterialProperty" devLabel="Physical Material" translation="Materiale fisico"/>
+	<label commandName="PlaneType" devLabel="Plane" translation="Piano"/>
+	<label commandName="PositionMeshSelectionInput" devLabel="Selection" translation="Selezione"/>
+	<label commandName="PositionMeshTransformInput" devLabel="Distance" translation="Distanza"/>
+	<label commandName="PreviewDeviation" devLabel="Deviation Preview" translation="Anteprima scostamento"/>
+	<label commandName="PreviewGroupStart" devLabel="Preview" translation="Anteprima"/>
+	<label commandName="PreviewInput" devLabel="Preview" translation="Anteprima"/>
+	<label commandName="PreviewMesh" devLabel="Preview Mesh" translation="Anteprima mesh"/>
+	<label commandName="ReduceFacetCount" devLabel="Face Count" translation="Numero di facce"/>
+	<label commandName="ReducePBOptionInput" devLabel="Preserve Boundaries" translation="Mantieni contorni"/>
+	<label commandName="ReducePercentage" devLabel="Density" translation="Densità"/>
+	<label commandName="ReduceType" devLabel="Reduce Target" translation="Riduci destinazione"/>
+	<label commandName="RefinementGroupStart" devLabel="Refinement" translation="Rifinitura"/>
+	<label commandName="RefinementOptionsInput" devLabel="Refinement Options" translation="Opzioni di rifinitura"/>
+	<label commandName="RemeshBoundaryOptionInput" devLabel="Preserve Boundaries" translation="Mantieni contorni"/>
+	<label commandName="RemeshDensity" devLabel="Density" translation="Densità"/>
+	<label commandName="RemeshNormalThresholdInput" devLabel="Shape Preservation" translation="Mantenimento della forma"/>
+	<label commandName="RemeshSharpOptionInput" devLabel="Preserve Sharp Edges" translation="Mantieni spigoli rettilinei"/>
+	<label commandName="ReplaceDensity" devLabel="Density" translation="Densità"/>
+	<label commandName="ReplaceScale" devLabel="Weight" translation="Peso"/>
+	<label commandName="ResetTransform" devLabel="Reset Transformation" translation="Ripristina trasformazione"/>
+	<label commandName="STLFilesFilter" devLabel="STL File(*.stl)" translation="File STL (*.stl)"/>
+	<label commandName="SelectBodies" devLabel="Select bodies" translation="Seleziona corpi"/>
+	<label commandName="SelectMeshBodies" devLabel="Select mesh bodies" translation="Seleziona corpi mesh"/>
+	<label commandName="SelectMeshFacet" devLabel="Select mesh facet" translation="Seleziona sfaccettatura mesh"/>
+	<label commandName="ShrinkMeshSel" devLabel="Shrink Selection" translation="Riduci selezione"/>
+	<label commandName="SmoothAdaptive" devLabel="Adaptive" translation="Adattivo"/>
+	<label commandName="SmoothMeshShading" devLabel="Smooth Shaded" translation="Ombreggiatura uniforme"/>
+	<label commandName="SmoothScale" devLabel="Smoothing" translation="Arrotondamento"/>
+	<label commandName="SolidType" devLabel="Rebuild Mode" translation="Modalità Ricrea"/>
+	<label commandName="Sphere Type" devLabel="Sphere" translation="Sfera"/>
+	<label commandName="SurfaceDeviationTolerance" devLabel="Deviation Tolerance" translation="Tolleranza di scostamento"/>
+	<label commandName="SurfaceFitTolerance" devLabel="Fit Tolerance" translation="Tolleranza di adattamento"/>
+	<label commandName="SurfaceTolerance" devLabel="Surface Deviation" translation="Scostamento della superficie"/>
+	<label commandName="SurfaceType" devLabel="Surface to Fit" translation="Superficie da adattare"/>
+	<label commandName="Tolerance" devLabel="Tolerance" translation="Tolleranza"/>
+	<label commandName="Torus Type" devLabel="Torus" translation="Toro"/>
+	<label commandName="TransformTriad" devLabel="Transform" translation="Trasforma"/>
+	<label commandName="TransformTriadPrompt" devLabel="" translation=""/>
+	<label commandName="TriangulatedQuadMeshWarning" devLabel="The inserted mesh has been automatically converted to a triangle mesh to make it compatible with the mesh editing tools. You can disable this automatic triangulation in Preferences &gt; Mesh." translation="La mesh inserita è stata convertita automaticamente in una mesh a triangoli per renderla compatibile con gli strumenti di modifica della mesh. È possibile disabilitare questa triangolazione automatica in Preferenze &gt; Mesh."/>
+	<label commandName="UnitsType" devLabel="Unit Type" translation="Tipo di unità"/>
+	<label commandName="UpDirType" devLabel="Flip Up Direction" translation="Inverti direzione verso l'alto"/>
+	<label commandName="VisualMaterialProperty" devLabel="Appearance" translation="Aspetto"/>
+	<label commandName="accurateType" devLabel="Accurate" translation="Preciso"/>
+	<label commandName="blockyType" devLabel="Blocky" translation="Squadrato"/>
+	<label commandName="fastType" devLabel="Standard" translation="Standard"/>
+	<label commandName="infoAdaptiveType" devLabel="Adaptive" translation="Adattivo"/>
+	<label commandName="infoUniformType" devLabel="Uniform" translation="Uniforme"/>
+	<label commandName="lclzBRep2MeshDesc1" devLabel="Converts a BRep body to a Mesh body" translation="Converte un corpo B-Rep in un corpo mesh."/>
+	<label commandName="lclzFitCurvesToSectionCmd1" devLabel="Fits sketch curves to a mesh cross section." translation="Adatta le curve di schizzo ad una sezione trasversale della mesh."/>
+	<label commandName="lclzFitCurvesToSectionCmd2" devLabel="Choose the sketch curve type, then select the start and end points on the mesh section. Create multiple curves within the same command with various join conditions." translation="Scegliere il tipo di curva di schizzo, quindi selezionare i punti iniziale e finale sulla sezione della mesh. Creare curve multiple all'interno dello stesso comando con diverse condizioni di unione."/>
+	<label commandName="lclzInsertAlignMeshDesc1" devLabel="Inserts the selected OBJ or STL mesh file into the active design." translation="Inserisce il file mesh STL o OBJ selezionato all'interno del progetto attivo."/>
+	<label commandName="lclzInsertAlignMeshDesc2" devLabel="Choose an OBJ or STL file to insert, then use the options and manipulators to orient and position the mesh." translation="Scegliere un file OBJ o STL da inserire, quindi utilizzare le opzioni e i manipolatori per orientare e posizionare la mesh."/>
+	<label commandName="lclzInsertMeshDesc1" devLabel="Inserts the selected OBJ or STL mesh file into the active design." translation="Inserisce il file mesh STL o OBJ selezionato all'interno del progetto attivo."/>
+	<label commandName="lclzInsertMeshDesc2" devLabel="Choose an OBJ or STL file to insert, then use the options and manipulators to orient and position the mesh." translation="Scegliere un file OBJ o STL da inserire, quindi utilizzare le opzioni e i manipolatori per orientare e posizionare la mesh."/>
+	<label commandName="lclzMesh2BRepDesc1" devLabel="Converts a Mesh to a BRep (surface or solid) body type. Meshes more than 10,000 facets can affect performance." translation="Converte una mesh in un tipo di corpo B-Rep (superficie o solido). Le mesh con più di 10.000 sfaccettature possono incidere negativamente sulle prestazioni."/>
+	<label commandName="lclzMesh2BRepTipsAndTricks1Item1" devLabel="&lt;b&gt;Mesh to BRep:&lt;/b&gt; Meshes that have originated from CAD models or reality capture scans of limited size can be converted to a BRep surface or solid.  Each facet of the input mesh will be converted to a single planar surface." translation="&lt;b&gt;Mesh in B-Rep:&lt;/b&gt; le mesh che sono state originate da modelli CAD o da formati RCS di dimensioni limitate possono essere convertite in una superficie o in un solido B-Rep. Ciascuna sfaccettatura della mesh di input verrà convertita in una singola superficie piana."/>
+	<label commandName="lclzMesh2BRepTipsAndTricks1Item2" devLabel="&lt;Meshes larger than 10,000 polygons can be time consuming to convert and the resulting BRep body will have poor performance in modeling commands." translation="&lt;La conversione di mesh con più di 10.000 poligoni richiede molto tempo e le prestazioni ottenute con i comandi di modellazione per il corpo B-Rep risultante saranno scarse."/>
+	<label commandName="lclzMesh2BRepTipsAndTricksTitle" devLabel="Convert Tips and Tricks" translation="Suggerimenti per la conversione"/>
+	<label commandName="lclzMeshBaseFeatureCreationDesc1" devLabel="Enters Mesh mode and inserts a mesh feature into the timeline. Use Mesh tools to modify and repair mesh geometry." translation="Attiva la modalità Mesh e inserisce una lavorazione mesh nella rappresentazione lineare. Utilizzare gli strumenti Mesh per modificare e correggere la geometria mesh."/>
+	<label commandName="lclzMeshBaseFeatureCreationDesc2" devLabel="Select Finish Mesh to exit out of the mode." translation="Selezionare Termina mesh per uscire dalla modalità."/>
+	<label commandName="lclzMeshBaseFeatureStopDesc1" devLabel="Finishes the Mesh feature." translation="Termina la lavorazione mesh."/>
+	<label commandName="lclzMeshDeleteFacesCmd1" devLabel="Deletes the selected mesh faces." translation="Elimina le facce mesh selezionate."/>
+	<label commandName="lclzMeshEraseAndFillCmd1" devLabel="Fills a hole in a mesh, or erases and replaces a selected portion of a mesh." translation="Riempie un foro in una mesh o cancella e sostituisce una parte selezionata di una mesh."/>
+	<label commandName="lclzMeshEraseAndFillCmd2" devLabel="Select the boundary of the hole to fill, or the set of mesh faces to replace." translation="Selezionare il contorno del foro da riempire o il gruppo di facce mesh da sostituire."/>
+	<label commandName="lclzMeshGenerateFaceGroupsCmd1" devLabel="Generates face groups on a mesh body." translation="Genera gruppi facce su un corpo mesh."/>
+	<label commandName="lclzMeshGenerateFaceGroupsCmd2" devLabel="Select a mesh body then adjust the angle to control the face group segmentation." translation="Selezionare un corpo mesh, quindi regolare l'angolo per controllare la segmentazione del gruppo facce."/>
+	<label commandName="lclzMeshMergeBodiesCmd1" devLabel="Merges two or more mesh bodies into a single body." translation="Unisce due o più corpi mesh in un unico corpo."/>
+	<label commandName="lclzMeshMergeBodiesCmd2" devLabel="Select two or more mesh bodies to merge. Overlapping boundary edges will be stitched." translation="Selezionare due o più corpi mesh da unire. Gli spigoli dei contorni sovrapposti verranno uniti."/>
+	<label commandName="lclzMeshPlanarSectionCommand1" devLabel="Creates a new sketch containing a mesh cross section as reference geometry." translation="Crea un nuovo schizzo contenente una sezione trasversale della mesh come geometria di riferimento."/>
+	<label commandName="lclzMeshPlanarSectionCommand2" devLabel="Select a mesh body then move the section plane. To fit sketch curves to the mesh section, follow with the Fit Mesh Section Curves command." translation="Selezionare un corpo mesh, quindi spostare il piano della sezione. Per adattare le curve di schizzo alla sezione della mesh, eseguire il comando Adatta curve di schizzo della mesh."/>
+	<label commandName="lclzMeshPlaneCut2" devLabel="Select a mesh body then move the cutting plane. The cut can trim the body, split the body into multiple bodies, or split the faces only." translation="Selezionare un corpo mesh, quindi spostare il piano di taglio. Il taglio può ritagliare il corpo, dividere il corpo in più corpi o dividere solo le facce."/>
+	<label commandName="lclzMeshPlaneCutCommand1" devLabel="Splits a mesh body using a plane." translation="Divide un corpo mesh utilizzando un piano."/>
+	<label commandName="lclzMeshRebuildAsSolidCmd1" devLabel="Rebuilds a mesh body as a new watertight solid mesh." translation="Ricrea un corpo mesh come nuova mesh solida ermetica."/>
+	<label commandName="lclzMeshRebuildAsSolidCmd2" devLabel="Select a mesh body then choose the rebuild mode and density of the output mesh." translation="Selezionare un corpo mesh, quindi scegliere la modalità Ricrea e la densità della mesh di output."/>
+	<label commandName="lclzMeshReduceCmd1" devLabel="Reduces the number of faces in a mesh." translation="Riduce il numero di facce in una mesh."/>
+	<label commandName="lclzMeshReduceCmd2" devLabel="Select a mesh body or faces then choose a reduction target." translation="Selezionare un corpo o delle facce mesh, quindi scegliere una destinazione di riduzione."/>
+	<label commandName="lclzMeshRemeshCmd1" devLabel="Retiles a mesh with a new set of faces." translation="Affianca nuovamente una mesh ad un nuovo gruppo di facce."/>
+	<label commandName="lclzMeshRemeshCmd2" devLabel="Select a mesh body or faces then set the density and characteristics of the new faces." translation="Selezionare un corpo mesh o delle facce, quindi impostare la densità e le caratteristiche delle nuove facce."/>
+	<label commandName="lclzMeshReverseNormalCmd1" devLabel="Reverses the normal direction of selected mesh faces." translation="Inverte la direzione perpendicolare delle facce mesh selezionate."/>
+	<label commandName="lclzMeshSeparateCmd1" devLabel="Splits a mesh body into two separate bodies." translation="Divide un corpo mesh in due corpi separati."/>
+	<label commandName="lclzMeshSeparateCmd2" devLabel="Select the mesh faces to split into a separate body." translation="Selezionare le facce mesh da dividere in un corpo separato."/>
+	<label commandName="lclzMeshSmoothCmd1" devLabel="Smooths a mesh." translation="Uniforma una mesh."/>
+	<label commandName="lclzMeshSmoothCmd2" devLabel="Select a mesh body or faces then adjust the amount of smoothing." translation="Selezionare un corpo o delle facce mesh, quindi regolare la quantità di arrotondamento."/>
+	<label commandName="lclzMeshWorkspaceTitle" devLabel="Repairs mesh geometry. Access commands to remesh and repair triangulated mesh bodies." translation="Corregge la geometria mesh. Accedere ai comandi per rigenerare la mesh e correggere i corpi mesh triangolati."/>
+	<label commandName="lclzRemeshCmd1" devLabel="Create a face group from the selected mesh faces." translation="Creare un gruppo di facce dalle facce mesh selezionate."/>
+	<label commandName="lclzRemeshCmd2" devLabel="Clears face groups from the selected mesh body or faces." translation="Cancella i gruppi facce dal corpo o delle facce mesh selezionati."/>
+	<label commandName="pInputSet" devLabel="Select faces to clear facegroup" translation="Selezionare le facce per cancellare il gruppo facce"/>
+	<label commandName="pInputSet_1" devLabel="Select faces to delete" translation="Selezionare le facce da eliminare"/>
+	<label commandName="pInputSet_9" devLabel="Select faces to reverse normals" translation="Selezionare le facce da invertire perpendicolarmente"/>
+	<label commandName="percentage" devLabel="Density" translation="Densità"/>
+	<label commandName="sharpEdgesType" devLabel="Preserve Sharp Edges" translation="Mantieni spigoli rettilinei"/>
+	<label commandName="tolerance" devLabel="Tolerance" translation="Tolleranza"/>
+	<label commandName="triCount" devLabel="Face Count" translation="Numero di facce"/>
+</Resource>

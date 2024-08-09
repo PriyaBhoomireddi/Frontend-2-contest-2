@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16" standalone="no"?>
+<root Description="Fusion360"  AppName ="Fusion360">
+  <NeededApplications>
+    <NeededApplication>Fusion</NeededApplication>
+    <NeededApplication>Simulation</NeededApplication>
+    <NeededApplication>CAM360</NeededApplication>
+    <NeededApplication>FusionDrawing</NeededApplication>
+    <NeededApplication>NTest</NeededApplication>
+    <NeededApplication>Electron</NeededApplication>
+    <NeededApplication>Fabrication</NeededApplication>
+    <NeededApplication>VolumetricField</NeededApplication>
+    <NeededApplication>ParaMesh</NeededApplication>
+  </NeededApplications>
+  <NeededExtensions>
+    <NeededExtension>SimDesignVariationsUI</NeededExtension>
+  </NeededExtensions>
+</root>

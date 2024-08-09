@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="2bendIntersection" devLabel="2 Bend Intersection" translation="2 折弯交点"/>
+	<label commandName="3bendIntersection" devLabel="3 Bend Intersection" translation="3 折弯交点"/>
+	<label commandName="ADSKRule1" devLabel="Steel (mm)" translation="钢(mm)"/>
+	<label commandName="ADSKRule2" devLabel="Stainless Steel (mm)" translation="不锈钢(mm)"/>
+	<label commandName="ADSKRule3" devLabel="Aluminum (mm)" translation="铝(mm)"/>
+	<label commandName="ADSKRule4" devLabel="Steel (in)" translation="钢(in)"/>
+	<label commandName="ADSKRule5" devLabel="Stainless Steel (in)" translation="不锈钢(in)"/>
+	<label commandName="ADSKRule6" devLabel="Aluminum (in)" translation="铝(in)"/>
+	<label commandName="AGDFeatureForm" devLabel="Organic" translation="有机"/>
+	<label commandName="AGDObstacleBodyName" devLabel="Obstacle%1%" translation="障碍物 %1%"/>
+	<label commandName="AGDOrganicBodyName" devLabel="Organic%1%" translation="有机 %1%"/>
+	<label commandName="AGDPreserveBodyName" devLabel="Preserve%1%" translation="保留 %1%"/>
+	<label commandName="AGD_DESIGN_DESCRIPTION" devLabel="Created from generative design outcome" translation="已从衍生式设计结果创建"/>
+	<label commandName="ALL_TOOL_BODY_REFERENCE_LOST" devLabel="All tool bodies are lost, try editing this feature to reselect tool bodies." translation="所有刀具实体均缺失，请尝试编辑该特征以重新选择刀具实体。"/>
+	<label commandName="APIFeature" devLabel="APIFeature" translation="APIFeature"/>
+	<label commandName="API_DEFINITION_MISSING" devLabel="The extension that owns this feature is not running." translation="拥有此功能的扩展程序没有运行。"/>
+	<label commandName="API_ERROR_PARALLEL" devLabel="This feature does not support parallel compute." translation="此特征不支持并行计算。"/>
+	<label commandName="ARRANGE_2D_NO_GEOMETRY" devLabel="Component does not have a body or sketch, which is required for 2D arrangement." translation="零部件不具有二维排列所必需的实体或草图。"/>
+	<label commandName="ARRANGE_3D_BODY_MISSING" devLabel="Component does not have a body, which is required for 3D arrangement." translation="零部件不具有三维排列所必需的实体。"/>
+	<label commandName="ARRANGE_ERROR_INVALID_GEOMETRY" devLabel="These items could not be arranged due to geometry issues. Try checking all components and their geometry to make sure they are suitable for arranging; arrangeable items should have flat patterns and closed contours." translation="由于几何形状问题，无法排列这些项目。请尝试检查所有零部件及其几何形状以确保它们适合于排列；可排列的项目应具有展开模式和闭合轮廓。"/>
+	<label commandName="ARRANGE_ERROR_MISSING_BODY" devLabel="Missing body: cannot arrange these items. Try editing this feature to fix the problem." translation="缺少实体: 无法排列这些项目。请尝试编辑此特征以修复该问题。"/>
+	<label commandName="ARRANGE_ERROR_MISSING_COMP" devLabel="Missing component: cannot arrange these items. Try editing this feature to fix the problem." translation="缺少零部件: 无法排列这些项目。请尝试编辑此特征以修复该问题。"/>
+	<label commandName="ARRANGE_ERROR_MISSING_FACE" devLabel="Missing planar face: cannot arrange these items. Try editing this feature to fix the problem." translation="缺少平面: 无法排列这些项目。请尝试编辑此特征以修复该问题。"/>
+	<label commandName="ARRANGE_ERROR_MISSING_SKETCH" devLabel="Missing sketch: cannot arrange these items. Try editing this feature to fix the problem." translation="缺少草图: 无法排列这些项目。请尝试编辑此特征以修复该问题。"/>
+	<label commandName="ARRANGE_ERROR_NOT_ARRANGED" devLabel="Could not arrange these items." translation="无法排列这些项目。"/>
+	<label commandName="ARRANGE_ERROR_NOT_CLOSED" devLabel="At least one shape can't be arranged because its outer contour is not closed." translation="无法排列至少一个形状，因为其外轮廓未闭合。"/>
+	<label commandName="ARRANGE_ERROR_NOT_COMPLETE" devLabel="Arrangement could not be completed." translation="无法完成排列。"/>
+	<label commandName="ARRANGE_ERROR_NOT_FIT" devLabel="There is not enough room to arrange all selected items. Edit this feature and try enlarging the area where they will be arranged." translation="没有足够的空间来排列所有选定项目。请编辑此特征并尝试扩大要排列这些项目的区域。"/>
+	<label commandName="ARRANGE_ERROR_NO_ROOM" devLabel="There is not enough room to arrange all selected items. Edit this feature and try selecting fewer items or enlarging the area where they will be arranged." translation="没有足够的空间来排列所有选定项目。请编辑此特征并尝试选择较少项目或扩大要排列这些项目的区域。"/>
+	<label commandName="ARRANGE_ITEM_GROUNDED" devLabel="Grounded component cannot be arranged." translation="无法排列固定零部件。"/>
+	<label commandName="ARRANGE_ITEM_OVERFLOW" devLabel="Component did not fit in the envelope." translation="零部件未装入到包覆面中。"/>
+	<label commandName="ARRANGE_NOT_LEAF_COMPONENTS" devLabel="Some items cannot be arranged because they have child components. This is either because the design has been modified,																 or was made with an older version of Fusion 360. Try re-selecting only leaf components for arrangement. (A leaf has no child components.)" translation="无法排列某些项目，因为它们具有子零部件。这是因为设计已被修改，																或者设计是使用早期版本的 Fusion 360 创建的。请尝试重新选择仅最下级零部件进行排列。(最下级零部件没有子零部件。)"/>
+	<label commandName="AXIS_LOST" devLabel="The axis is lost, try editing this feature to reselect the axis." translation="轴缺失，请编辑该特征以重新选择轴。"/>
+	<label commandName="AccessibilityAnalysisDefaultUserName" devLabel="Accessibility" translation="可访问性"/>
+	<label commandName="AddPlannarFaceEdgeVertices" devLabel="Could not determine the symmetry from the selections. Do both sides have the same number of faces?" translation="无法通过选择项确定对称。两侧是否具有相同数目的面？"/>
+	<label commandName="AddPlannarFaces" devLabel="Could not determine the symmetry from the selections. Continue selecting edges and vertices, master side followed by mirror side." translation="无法从选择项确定对称。请继续选择边和顶点，再选择主要侧，然后选择次要侧。"/>
+	<label commandName="AddSymmetryFailed" devLabel="Failed to add symmetry" translation="无法添加对称"/>
+	<label commandName="AddSymmetryFailedEntitiesSameSurface" devLabel="All selected entities should be on the same surface." translation="所有选定的实体都应位于同一曲面上。"/>
+	<label commandName="AddSymmetryFailedFaceEdge" devLabel="Face Edge Vertex selection is not consistent." translation="面边顶点选择不一致。"/>
+	<label commandName="AddSymmetryFailedSameSurface" devLabel="Both faces should be on the same surface." translation="两个面应该位于同一曲面上。"/>
+	<label commandName="AlignGeometryNotFound" devLabel="The referenced geometry for Align cannot be found." translation="找不到“对齐”命令的参考几何图元。"/>
+	<label commandName="AlignSolveFailed" devLabel="Align Feature solve failed." translation="对齐特征求解失败。"/>
+	<label commandName="AnnihilatedSketchDimension" devLabel="This dimension value causes the dimensioned geometry to be destroyed. The original dimension will be restored." translation="此尺寸值会导致带有尺寸标注的几何图元被损坏。将恢复原始尺寸。"/>
+	<label commandName="AnsiMetricMProfile" devLabel="Ansi Metric M Profile" translation="ANSI 公制 M 牙形"/>
+	<label commandName="AnsiUnifiedScrewThreads" devLabel="Ansi Unified Screw Threads" translation="ANSI 统一标准螺钉螺纹"/>
+	<label commandName="AnyCADWMCloneFeatureName" devLabel="Component Link %1% v%2%" translation="零部件链接 %1% v%2%"/>
+	<label commandName="AppendFaceFailed" devLabel="Append Face failed" translation="附加面失败"/>
+	<label commandName="ArrangeRequest.AlgId" devLabel="The given algorithm ID is invalid." translation="给定的算法 ID 无效。"/>
+	<label commandName="AssetAdapterIsMissing" devLabel="Asset adapter is missing" translation="缺少资源适配器"/>
+	<label commandName="AxisGeometryMissing" devLabel="Axis geometry is missing" translation="缺少轴几何图元"/>
+	<label commandName="BAD_JOINT_DOF" devLabel="Motion Link joint DOF is wrong type" translation="运动链接联接自由度的类型不正确"/>
+	<label commandName="BEND_GENERIC_FEATURE_FAILURE" devLabel="Can't bend the part with current parameters. Check bend angle and position in Bend dialog. Adjust values in the Sheet Metal rule. Make sure the body has uniform thickness and a flat, wide area is picked as stationary side." translation="无法使用当前参数折弯零件。请在“折弯”对话框中检查折弯角度和位置。调整钣金规则中的值。确保实体具有统一厚度，并且拾取宽阔平坦区域作为固定侧。"/>
+	<label commandName="BEND_INSUFFICIENT_REMNANT_ERROR" devLabel="Bend relief cannot be created for the given width and minimum remnant values. Verify inputs." translation="使用给定的宽度值和最小余量值无法创建折弯释压。请验证输入。"/>
+	<label commandName="BEND_INVALID_ANGLE" devLabel="Bend angle must be non zero, greater than -180 and less than 180 degree." translation="折弯角度必须不为零，大于 -180 度且小于 180 度。"/>
+	<label commandName="BEND_INVALID_ANGLE_LEGACY" devLabel="Bend angle must be greater than 0 and less than 180 degree." translation="折弯角度必须大于 0 且小于 180 度。"/>
+	<label commandName="BEND_INVALID_BEND_LINE" devLabel="Bend line is no longer valid. Pick another bend line or edit sketch and verify line position." translation="折弯线不再有效。请拾取其他折弯线或编辑草图，然后验证线的位置。"/>
+	<label commandName="BEND_INVALID_K_FACTOR" devLabel="Sheet metal K factor value must be between 0 and 1." translation="钣金 K 系数值必须介于 0 到 1 之间。"/>
+	<label commandName="BEND_INVALID_RADIUS" devLabel="Bend radius is too small, try increasing the value." translation="折弯半径太小，请尝试增大该值。"/>
+	<label commandName="BEND_INVALID_SHEET_METAL_BODY" devLabel="Not a valid sheet metal body." translation="无效的钣金实体。"/>
+	<label commandName="BEND_INVALID_STATIONARY_FACE" devLabel="Not a valid sheet metal face." translation="无效的钣金面。"/>
+	<label commandName="BEND_LINE_OUTSIDE_FACE_ERROR" devLabel="Bend line must lie on the face to bend." translation="折弯线必须位于要折弯的面上。"/>
+	<label commandName="BEND_LOST_STATIONARY_FACE" devLabel="Stationary side is lost. Most likely due to a geometry change. This will require reselecting stationary face and all bend lines." translation="固定侧缺失。最可能的原因是几何图元发生更改。这需要重新选择固定面和所有折弯线。"/>
+	<label commandName="BEND_RELIEF_BODY_FAILURE" devLabel="Can't create Bend Relief. Adjust bend radius and rule values like relief type and size." translation="无法创建折弯释压。请调整折弯半径和规则值，例如释压类型和大小。"/>
+	<label commandName="BEND_RELIEF_WIRE_FAILURE" devLabel="Can't create Bend Relief. Adjust bend radius and rule values like relief type and size" translation="无法创建折弯释压。请调整折弯半径和规则值，例如释压类型和大小"/>
+	<label commandName="BEND_UNEXPECTED_SPLIT_DETECTED" devLabel="Can't successfully create new geometry. Most likely caused by multiple bends interfering each other. Also make sure body thickness is even in all areas." translation="无法成功创建新几何图元。很可能是由彼此干涉的多个折弯所致。此外，请确保所有区域都具有均匀的实体厚度。"/>
+	<label commandName="BEND_WARNING_SELF_INTERSECTING_BODY" devLabel="Body is self intersecting for the given inputs for bend." translation="对于给定的折弯输入，实体出现自交。"/>
+	<label commandName="BODY_REFERENCE_LOST" devLabel="The body reference is lost, try editing this feature to reselect the lost body." translation="实体参考缺失，请尝试编辑该特征以重新选择缺失的实体。"/>
+	<label commandName="BODY_SKETCH_NOT_INTERSECT" devLabel="The body and sketch plane do not intersect, please modify the body or redefine sketch!" translation="实体和草图平面不相交，请修改实体或重新定义草图！"/>
+	<label commandName="BOX_CREATE_BLOCK_FAILED" devLabel="Failed to create box solid body." translation="未能创建对话框实体。"/>
+	<label commandName="BOX_LENGTH_VALUE_INVALID" devLabel="The box length is invalid." translation="长方体的长度无效。"/>
+	<label commandName="BOX_WIDTH_VALUE_INVALID" devLabel="The box width is invalid." translation="长方体的宽度无效。"/>
+	<label commandName="BRepConvFail" devLabel="BRep Convert Failed" translation="BRep 转换失败"/>
+	<label commandName="BadGuideRail" devLabel="There is a problem with the guide rail. Check that it pierces the profile plane and that it is on the same side of the profile plane as the path." translation="引导轨道存在问题。请检查其是否穿透轮廓平面，并且是否与路径位于轮廓平面的同一侧。"/>
+	<label commandName="BadSweepPath" devLabel="There is a problem with the sweep path. Check that it pierces the profile plane." translation="扫掠路径存在问题。请检查其是否穿透轮廓平面。"/>
+	<label commandName="BaseFeature" devLabel="Base Feature" translation="基础特征"/>
+	<label commandName="BaseFeatureObstacles" devLabel="Obstacles" translation="障碍物"/>
+	<label commandName="BaseFeaturePreserves" devLabel="Preserves" translation="保留"/>
+	<label commandName="BaseFlange" devLabel="No target component." translation="无目标零部件。"/>
+	<label commandName="BaseMeshBodySelectionCategory" devLabel="Base Mesh Bodies" translation="基础网格实体"/>
+	<label commandName="BaseMeshSelectionsId" devLabel="Base Mesh Bodies" translation="基础网格实体"/>
+	<label commandName="BendLinesGroupName" devLabel="Bend Lines" translation="折弯线"/>
+	<label commandName="BendLinesGroupSelectionId" devLabel="BendLinesGroup" translation="BendLinesGroup"/>
+	<label commandName="BevelEdgeFailed" devLabel="Bevel Edge operation failed with specific input edge set" translation="使用特定的输入边集时，倒角边操作失败"/>
+	<label commandName="BoardCreationFailure" devLabel="Error occurs when creating or updating 3d board!" translation="创建或更新三维电路板时出错！"/>
+	<label commandName="BoardOutlineMissing" devLabel="There's no board outline to generate 3d board shape!" translation="没有可用于生成三维电路板形状的电路板轮廓！"/>
+	<label commandName="BoardProfileBuildFailure" devLabel="The board profile is not generated successfully, it might be not closed!" translation="未能成功生成电路板轮廓，该轮廓可能未闭合！"/>
+	<label commandName="BoardProfileMissing" devLabel="No profile is selected for board edit." translation="未选择用于编辑电路板的轮廓。"/>
+	<label commandName="BoardSketchEliminated" devLabel="The board sketch is rolled out, please roll forward it before update!" translation="电路板草图已滚动到末尾，请先向前滚动该草图，然后再更新！"/>
+	<label commandName="BodyConversionFailed" devLabel="Could not create body from Mesh." translation="无法从网格创建实体。"/>
+	<label commandName="BodySelectionCategory" devLabel="Bodies" translation="实体"/>
+	<label commandName="BreakLinkCloneError" devLabel="Break Link command failed for some reason, probably it would have created cyclic references." translation="“断开链接”命令由于某种原因失败，它可能已创建循环引用。"/>
+	<label commandName="BreakLinkDeriveVersionClash" devLabel="The Target Design currently references a different version of the Source Design &lt;b&gt;%1%&lt;/b&gt;.A Target design can have multiple references to a Source design only if they are the same version.The referencing designs must be updated to reference the same version of the target design before this operation can be conducted." translation="目标设计当前引用了源设计 &lt;b&gt;%1%&lt;/b&gt; 的其他版本。目标设计可以有指向源设计的多个引用，但前提是这些引用必须为同一版本。必须先将引用的设计更新为引用目标设计的同一版本，然后才能执行此操作。"/>
+	<label commandName="BuildEdgeCurvesFailed" devLabel="build Edge Curves failed" translation="构建边曲线失败"/>
+	<label commandName="BuildSurfacesFailed" devLabel="build Surfaces failed" translation="构建曲面失败"/>
+	<label commandName="C2SM_Feature_Compute_Warning" devLabel="Compute Warning" translation="计算警告"/>
+	<label commandName="CANNOT_CHAMFER_FREE_EDGE" devLabel="Cannot create chamfer feature from selected edges. Select edges with two adjacent faces." translation="无法从选定边创建倒角特征。请选择具有两个相邻面的边。"/>
+	<label commandName="CANNOT_DEFINE_CSYS" devLabel="Cannot define coordinate system" translation="无法定义坐标系"/>
+	<label commandName="CANNOT_DELETE_DEAD_INSTANCE" devLabel="Cannot delete instance already deleted" translation="无法删除已经删除的实例"/>
+	<label commandName="CANNOT_DERIVE_INSERTED_DOC" devLabel="The source design &lt;b&gt;%1%&lt;/b&gt; is inserted into &lt;b&gt;%2%&lt;/b&gt;. Deriving from an inserted design is not supported." translation="源设计 &lt;b&gt;%1%&lt;/b&gt; 已插入到 &lt;b&gt;%2%&lt;/b&gt; 中。不支持从插入的设计中进行衍生。"/>
+	<label commandName="CANNOT_DERIVE_SAME_ASSET" devLabel="The source design asset cannot be selected as the target asset for Derive." translation="不能选择源设计资源作为“衍生”的目标资源。"/>
+	<label commandName="CANNOT_DERIVE_SAME_DOC" devLabel="The source design cannot be selected as the target for Derive." translation="不能选择源设计作为衍生目标。"/>
+	<label commandName="CANNOT_DERIVE_SAME_NESTED_DOC" devLabel="The selected Target Design creates a cyclical dependency with the Source Design. Break the link in the Source Design or select a different Target Design." translation="选定目标设计创建了与源设计的循环从属关系。请断开源设计中的链接或选择其他目标设计。"/>
+	<label commandName="CANNOT_FILLET_FREE_EDGE" devLabel="Some edges can not be filleted due to they changed to free edges." translation="由于某些边已成为自由边，因此无法对其倒圆角。"/>
+	<label commandName="CANNOT_MOVE_GROUNDED_OCC" devLabel="Capture Position cannot move grounded Component occurrence." translation="“捕获位置”无法移动固定的零部件实例。"/>
+	<label commandName="CFLANGE_CLOSE_LOOP" devLabel="Sketch curve with closed loop is not allowed" translation="不支持包含闭合回路的草图曲线"/>
+	<label commandName="CFLANGE_CURVE_NOT_TANGENT" devLabel="Selected Sketch curve is not tangent." translation="选定的草图曲线不是切线。"/>
+	<label commandName="CFLANGE_CURVE_RADIUS_TOO_SMALL" devLabel="Sketch curve radius is too small." translation="草图曲线半径太小。"/>
+	<label commandName="CFLANGE_INVALID_CURVE_FOR_MULTIEDGE_CFJOIN" devLabel="Could not create multi-edge contour flange. The selected sketch must start on one of the selected edges to create contour flanges on multiple edges. Try editing the sketch to make it start on a selected edge." translation="无法创建多边轮廓凸缘。选定的草图必须起始于选定边之一才能在多条边上创建轮廓凸缘。请尝试编辑该草图以使其起始于选定边。"/>
+	<label commandName="CFLANGE_INVALID_GEOM" devLabel="Invalid input sketch curve." translation="输入草图曲线无效。"/>
+	<label commandName="CHAMFER_BRANCHING_CHAIN_ERROR" devLabel="Cannot maintain first distance for all edges in selection set. Move branching edges to a separate selection set or adjust Type to Equal Distance." translation="无法保留选择集中所有边的第一个距离。请将分支边移到单独的选择集或将“类型”调整为“等距”。"/>
+	<label commandName="CHAMFER_GENERIC_FEATURE_FAILURE" devLabel="Cannot create chamfer feature. Adjust chamfer type, edges, faces, features, distance, angle, or corner type options." translation="无法创建倒角特征。请调整倒角类型、边、面、特征、距离、角度或拐角类型选项。"/>
+	<label commandName="CHAMFER_INVALID_DISTANCE" devLabel="Chamfer distance value is invalid. Adjust distance." translation="倒角距离值无效。请调整距离。"/>
+	<label commandName="CHAMFER_NO_EDGE_FOUND" devLabel="Cannot find edge to chamfer. Adjust edge, face, or feature selection." translation="找不到要创建倒角的边。请调整边、面或特征选择。"/>
+	<label commandName="CHANGE_SMRULE_FAIL" devLabel="Could not change the Sheet Metal Rule." translation="无法更改钣金规则。"/>
+	<label commandName="CIRCULAR_PATTERN_MISSING_AXIS" devLabel="Missing axis" translation="缺少轴"/>
+	<label commandName="COIL_BUILD_COIL_FAILED" devLabel="Failed to build coil tool body." translation="未能构建螺旋刀具实体。"/>
+	<label commandName="COIL_BUILD_HELIX_FAILED" devLabel="Failed to build coil helix path." translation="未能构建螺旋路径。"/>
+	<label commandName="COMPUTE_TIME_CHAINING_CONFLICT" devLabel="Cannot compute Tangent Chain. Some geometry in the tangent chain is already selected in other selection set rows. Tangent Chain disabled. Adjust selection sets to enable Tangent Chain." translation="无法计算相切链。相切链中的某些几何图元在其他选择集行中处于选定状态。相切链已禁用。请调整选择集以启用相切链。"/>
+	<label commandName="COMPUTE_TIME_CHAINING_CONFLICT_FEATURECOMPUTE" devLabel="Cannot compute Tangent Chain. Some geometry in the tangent chain is already selected in other selection set rows. Tangent Chain disabled. Edit the feature to adjust selection sets and reactivate Tangent Chain." translation="无法计算相切链。相切链中的某些几何图元在其他选择集行中处于选定状态。相切链已禁用。请编辑该特征以调整选择集并重新激活相切链。"/>
+	<label commandName="COMPUTE_TIME_CHAINING_ISSUE" devLabel="Cannot compute Tangent Chain. Some geometry in the tangent chain is already selected in other selection set rows. Adjust selection sets before enabling Tangent Chain." translation="无法计算相切链。相切链中的某些几何图元在其他选择集行中处于选定状态。请先调整选择集，然后再启用相切链。"/>
+	<label commandName="CONNECTOBSTACLE_NORMAL_ERROR" devLabel="Start and end selection normal is not parallel, please check inputs" translation="选定起点和终点的法向不平行，请检查输入"/>
+	<label commandName="CONVERT_TO_SM_ALREADY_SM_BODY" devLabel="Selected body is already a Sheet Metal body." translation="选定实体已经是钣金实体。"/>
+	<label commandName="CONVERT_TO_SM_CANNOT_SHARE_RULES" devLabel="Using the same rule for more than one converted component can affect parametric computation of the design. Select another rule or use the Rules dialog to duplicate a rule, then try again." translation="将同一规则用于多个转换的零部件会影响设计的参数化计算。请选择其他规则或使用“规则”对话框复制规则，然后重试。"/>
+	<label commandName="CONVERT_TO_SM_COMPONENT_THICKNESS_MISMATCH" devLabel="Body thickness and Sheet Metal component rule thickness are different. Move body to a non-Sheet Metal component or change rule thickness to continue." translation="实体厚度和钣金零部件规则厚度不同。请将实体移动到非钣金零部件或更改规则厚度以继续。"/>
+	<label commandName="CONVERT_TO_SM_GENERIC_FAILURE" devLabel="Can't convert to Sheet Metal. Verify inputs like body type, thickness, or rule settings, then try again. Contact Autodesk Support if the issue persists." translation="无法转换为钣金。请验证输入内容(如实体类型、厚度或规则设置)，然后重试。如果问题仍然存在，请与 Autodesk 支持联系。"/>
+	<label commandName="CONVERT_TO_SM_INCORRECT_RULE_THICKNESS" devLabel="Body thickness does not match with rule thickness. Please modify the rule thickness or change rule." translation="实体厚度与规则厚度不匹配。请修改规则厚度或更改规则。"/>
+	<label commandName="CONVERT_TO_SM_INVALID_BASE_FACE" devLabel="Can't convert to Sheet Metal. Select the base face of a valid Sheet Metal body (typically a wide, flat area)." translation="无法转换为钣金。请选择有效钣金实体的基础面(通常为宽阔的平坦区域)。"/>
+	<label commandName="CONVERT_TO_SM_INVALID_OPPOSITE_FACE" devLabel="Not a valid opposite face for convert to sheet metal." translation="不是可用于转换为钣金的有效相对面。"/>
+	<label commandName="CONVERT_TO_SM_NON_PARALLEL_FACES" devLabel="Can't calculate body thickness. Please make sure the input body is valid for sheet metal and has uniform thickness." translation="无法计算实体厚度。请确保输入实体对钣金有效，并且具有均匀的厚度。"/>
+	<label commandName="CONVERT_TO_SM_THICKNESS_FIND_FAILURE" devLabel="Can't calculate body thickness. Select the base face of a valid Sheet Metal body (typically a wide, flat area)." translation="无法计算实体厚度。请选择有效钣金实体的基础面(通常为宽阔的平坦区域)。"/>
+	<label commandName="CONVERT_TO_SM_UNSUPPORTED_BODY_TYPE" devLabel="Can't convert body type to Sheet Metal. Select a solid body instead." translation="无法将实体类型转换为钣金。请改为选择实体。"/>
+	<label commandName="CONVERT_TO_SM_UNSUPPORTED_THICKNESS_VALUE" devLabel="Body thickness value is not supported." translation="实体厚度值不受支持。"/>
+	<label commandName="CONVERT_TO_SM_WARNING_RULE_THICKNESS_WILL_CHANGE" devLabel="Geometry changed. Need to recompute thickness. Right-click, select Edit Feature, and confirm thickness value is correct." translation="几何图元已更改。需要重新计算厚度。请单击鼠标右键，选择“编辑特征”，并确认厚度值正确。"/>
+	<label commandName="CORNER_RELIEF_BODY_FAILURE" devLabel="Can't create corner relief. Adjust bend radius and rule values like relief type and size." translation="无法创建拐角释压。请调整折弯半径和规则值，例如释压类型和大小。"/>
+	<label commandName="CORNER_RELIEF_WIRE_FAILURE" devLabel="Can't create corner relief. Adjust bend radius and rule values like relief type and size." translation="无法创建拐角释压。请调整折弯半径和规则值，例如释压类型和大小。"/>
+	<label commandName="COSMETIC_TAPER_THREAD_TOOL_BODY_FAILED" devLabel="Failed to build taper thread tool body." translation="未能构建锥螺纹刀具实体。"/>
+	<label commandName="CPatternFeatureName" devLabel="C-Pattern" translation="C-阵列"/>
+	<label commandName="CR3Intersection" devLabel="Intersection" translation="交点"/>
+	<label commandName="CR3RadiusSize" devLabel="Relief radius" translation="释压半径"/>
+	<label commandName="CRArcWeld" devLabel="Arc Weld" translation="电弧焊"/>
+	<label commandName="CRFullRound" devLabel="Full Round" translation="全圆角"/>
+	<label commandName="CRLinearWeld" devLabel="Linear Weld" translation="线状焊缝"/>
+	<label commandName="CRNoReplacement" devLabel="No Replacement" translation="无替换"/>
+	<label commandName="CRRoundWithRadius" devLabel="Round with Radius" translation="使用半径画圆"/>
+	<label commandName="CRSquare" devLabel="Square" translation="方形"/>
+	<label commandName="CRTangent" devLabel="Tangent" translation="相切"/>
+	<label commandName="CRTrimToBend" devLabel="Trim to Bend" translation="修剪到折弯"/>
+	<label commandName="CRVertex" devLabel="Vertex" translation="顶点"/>
+	<label commandName="CYLINDER_CREATE_CYLINDER_FAILED" devLabel="Failed to create cylinder solid body." translation="未能创建圆柱体实体。"/>
+	<label commandName="CYLINDER_DIAMETER_VALUE_INVALID" devLabel="The cylinder diameter is invalid." translation="圆柱体直径无效。"/>
+	<label commandName="CannotDeleteAppearanceHeader" devLabel="This appearance cannot be deleted because it is linked with an applied Physical Material: %s. To delete the appearance, first unassign and delete this material from the Physical Material command." translation="无法删除此外观，因为其链接到了已应用的物理材料: %s。若要删除外观，请先通过“物理材料”命令取消指定并删除此材料。"/>
+	<label commandName="CannotDeleteAppearanceTitle" devLabel="Warning" translation="警告"/>
+	<label commandName="CanvasDefaultUserName" devLabel="Canvas" translation="画布"/>
+	<label commandName="CanvasGroupCategory" devLabel="Canvas Group" translation="画布组"/>
+	<label commandName="CanvasGroupDefaultName" devLabel="Canvas Group" translation="画布组"/>
+	<label commandName="CanvasGroupSelectionId" devLabel="CanvasGroup" translation="画布组"/>
+	<label commandName="CanvasSelectionCategory" devLabel="Canvas" translation="画布"/>
+	<label commandName="CanvasSelectionId" devLabel="Canvas" translation="画布"/>
+	<label commandName="CanvasSelectionPluralId" devLabel="Canvases" translation="画布"/>
+	<label commandName="CanvasesSelectionId" devLabel="Canvases" translation="画布"/>
+	<label commandName="CenterLineBody" devLabel="Center Lines" translation="中心线"/>
+	<label commandName="CenterOfMassDefaultUserName" devLabel="CenterOfMass" translation="质心"/>
+	<label commandName="CenterOfMassSelectionId" devLabel="Center Of Mass" translation="质心"/>
+	<label commandName="CfEdgeSelectionId" devLabel="Edge" translation="边"/>
+	<label commandName="CfEdgesSelectionId" devLabel="Edges" translation="边"/>
+	<label commandName="CfFacetSelectionId" devLabel="Face" translation="面"/>
+	<label commandName="CfFacetsSelectionId" devLabel="Faces" translation="面"/>
+	<label commandName="CfGripSelectionId" devLabel="Tangency Handle" translation="切线控制柄"/>
+	<label commandName="CfGripSelectionPluralId" devLabel="Tangency Handles" translation="切线控制柄"/>
+	<label commandName="CfVertexSelectionId" devLabel="Vertex" translation="顶点"/>
+	<label commandName="CfVerticesSelectionId" devLabel="Vertices" translation="顶点"/>
+	<label commandName="ChainUpdateFailure" devLabel="Failed to Get Latest version of one of the Component Instances of selected path" translation="未能获取最新版本的一个选定路径的零部件实例"/>
+	<label commandName="ChamferFeatureName" devLabel="Chamfer" translation="倒角"/>
+	<label commandName="CircularDependencyFound" devLabel="Circular dependency found!" translation="发现循环依赖！"/>
+	<label commandName="CircularDependencyFound2" devLabel="Circular dependency found: from %1% to %2%." translation="发现循环依赖: 从 %1% 到 %2%。"/>
+	<label commandName="CmMKSUnitSystemName" devLabel="cm modeling length with MKS (m, kg, second, Celsius) units" translation="使用 MKS (米、千克、秒、摄氏度)单位的厘米建模长度"/>
+	<label commandName="Coil" devLabel="No target component." translation="无目标零部件。"/>
+	<label commandName="CoilFeatureName" devLabel="Coil" translation="螺旋"/>
+	<label commandName="ConnectorObstacle" devLabel="Connector Obstacle" translation="接头障碍物"/>
+	<label commandName="Context" devLabel="Context" translation="上下文"/>
+	<label commandName="ConversionErrorFor" devLabel="Conversion error for: " translation="以下对象转换错误:"/>
+	<label commandName="ConversionFailed" devLabel="Could not create surface from Mesh." translation="无法从网格创建曲面。"/>
+	<label commandName="ConversionFailed1" devLabel="Non extractable Body. Use Repair Tool." translation="实体不可执行。请使用“修复”工具。"/>
+	<label commandName="ConversionWarningFor" devLabel="Conversion warning for: " translation="有关以下项的转换警告: "/>
+	<label commandName="Convert2TSplineFailed" devLabel="Failed to convert the face to T-Spline" translation="无法将面转换为 T-Spline"/>
+	<label commandName="ConvertRuleSuffix" devLabel=" (Convert)" translation=" (转换)"/>
+	<label commandName="CopperHolesName" devLabel="CopperHoles" translation="CopperHoles"/>
+	<label commandName="CouldNotCreateNewEdge" devLabel="Could not create new edge" translation="无法创建新边"/>
+	<label commandName="CouldNotCreateNewEdgeDueToHolesOnBothSidesOfTheLoop" devLabel="Could not create new edge due to holes on both sides of the loop" translation="由于回路两边上孔的原因，无法创建新边"/>
+	<label commandName="CouldNotCreateNewEdgeDueToHolesOnBothSidesOfTheLoop2" devLabel="Insert Edge will not work on faces which are not four sided. Try using Subdivide or Insert Point." translation="在非四边形的面上，“插入边”将不起作用。请尝试使用“细分”或“插入点”。"/>
+	<label commandName="CouldNotDuplicateEdgeDueToTOrLpointsOnTheSelectedEdge" devLabel="Could not duplicate edge due to T or L-points on the selected edge" translation="由于选定边上 T 点或 L 点的原因，无法复制边"/>
+	<label commandName="CouldntFindAnyFaceLoops" devLabel="Couldn't find any face loops" translation="找不到任何面回路"/>
+	<label commandName="CountersunkFlatHeadHexSocketScrewDINENISO10642" devLabel="Countersunk Flat Head Hex Socket Screw DIN EN ISO 10642" translation="沉头平头六角凹头螺钉 DIN EN ISO 10642"/>
+	<label commandName="CountersunkFlatHeadHexSocketScrewISO10642" devLabel="Countersunk Flat Head Hex Socket Screw ISO 10642" translation="沉头平头六角凹头螺钉 ISO 10642"/>
+	<label commandName="CountersunkFlatHeadScrew" devLabel="Countersunk Flat Head Screw" translation="沉头平头螺钉"/>
+	<label commandName="CountersunkFlatHeadScrewDINENISO2009" devLabel="Countersunk Flat Head Screw DIN EN ISO 2009" translation="沉头平头螺钉 DIN EN ISO 2009"/>
+	<label commandName="CountersunkFlatHeadScrewISO2009/7046" devLabel="Countersunk Flat Head Screw ISO 2009/7046" translation="沉头平头螺钉 ISO 2009/7046"/>
+	<label commandName="CountersunkHead+WasherGOST12876-67" devLabel="Countersunk Head + Washer GOST 12876-67" translation="沉头 + 垫片 GOST 12876-67"/>
+	<label commandName="CountersunkHeadGOST12876-67" devLabel="Countersunk Head GOST 12876-67" translation="沉头 GOST 12876-67"/>
+	<label commandName="CountersunkRaisedHeadScrew" devLabel="Countersunk Raised Head Screw" translation="凸面沉头螺钉"/>
+	<label commandName="CountersunkRaisedHeadScrewISO2010" devLabel="Countersunk Raised Head Screw ISO 2010" translation="凸面沉头螺钉 ISO 2010"/>
+	<label commandName="CountersunkRaisedHeadScrewISO2010/7047" devLabel="Countersunk Raised Head Screw ISO 2010/7047" translation="凸面沉头螺钉 ISO 2010/7047"/>
+	<label commandName="CountourFlange" devLabel="No target component." translation="无目标零部件。"/>
+	<label commandName="CreaseEdgeFailed" devLabel="Failed to crease the given edges." translation="无法锐化给定的边。"/>
+	<label commandName="CreaseVerticesFailed" devLabel="Failed to crease the given vertices." translation="无法锐化给定的顶点。"/>
+	<label commandName="CreateBoxFailed" devLabel="Failed to create Box" translation="无法创建长方体"/>
+	<label commandName="CreateComponentFromBodyError" devLabel="Create Component From Body failed:  invalid input" translation="从实体创建零部件失败: 输入无效"/>
+	<label commandName="CreateCylFailed" devLabel="Failed to create Cylinder" translation="无法创建圆柱体"/>
+	<label commandName="CreateFaceFailed" devLabel="Create Face failed" translation="创建面失败"/>
+	<label commandName="CreateGroupFeatureCommandError" devLabel="Create Group Feature Error:  rolled back features not allowed" translation="创建组特征错误: 不允许回滚特征"/>
+	<label commandName="CreateGroupFeatureCommandErrorTwoFeatures" devLabel="Create Group Feature Error:  At least 2 features needed for a group" translation="创建组特征错误: 一个组至少需要 2 个特征"/>
+	<label commandName="CreateNurbsFailed" devLabel="Failed to create surface" translation="无法创建曲面"/>
+	<label commandName="CreatePCBComponent_BottomCanvas" devLabel="Board Bottom" translation="电路板底部"/>
+	<label commandName="CreatePCBComponent_BottomSilkscreen" devLabel="Silkscreen Bottom" translation="丝印层底部"/>
+	<label commandName="CreatePCBComponent_TopCanvas" devLabel="Board Top" translation="电路板顶部"/>
+	<label commandName="CreatePCBComponent_TopSilkscreen" devLabel="Silkscreen Top" translation="丝印层顶部"/>
+	<label commandName="CreatePlaneFailed" devLabel="Failed to create Plane" translation="无法创建平面"/>
+	<label commandName="CreateQuadFailed" devLabel="Failed to create Quadball" translation="无法创建四分球"/>
+	<label commandName="CreateSphFailed" devLabel="Failed to create Sphere" translation="无法创建球体"/>
+	<label commandName="CreateTorusFailed" devLabel="Failed to create Torus" translation="无法创建圆环体"/>
+	<label commandName="CurvatureCombAnalysisDefaultUserName" devLabel="Curvature" translation="曲率"/>
+	<label commandName="CurvatureMapAnalysisDefaultUserName" devLabel="CurvatureMap" translation="曲率映射"/>
+	<label commandName="CuttingToolDoesNotIntersectAnySurface" devLabel="Cutting Tool does not intersect any surface!" translation="切割工具与任何曲面都不相交！"/>
+	<label commandName="CuttingToolNoIntersectionToSurface" devLabel="Cutting Tool does not intersect any surface!" translation="切割工具与任何曲面都不相交！"/>
+	<label commandName="CycleDependencyError" devLabel="The Break Link operation will be aborted due to cyclic dependency error. Please report this issue to Autodesk!" translation="由于发生循环依赖错误，“断开链接”操作将会中止。请将该问题报告给 Autodesk！"/>
+	<label commandName="CyclicDependencyNotAllowed" devLabel="Cyclic dependency not allowed!! The document being referenced %1% already depends on the referencing document %2%, either on disk or in memory!!" translation="不允许存在循环依赖！%1% 所参考的文档当前依赖于磁盘或内存中的参考文档 %2%！"/>
+	<label commandName="CyclicDependencyNotAllowed2" devLabel="This insertion operation, along with undo or redo of previously committed commands, will result in a cyclic dependency between %1% and %2%. To prevent that, the insertion operation was canceled!!" translation="在撤消或重做了先前提交的命令的情况下，此插入操作将导致 %1% 与 %2% 之间存在循环依赖。为了避免这种情况的发生，已取消此插入操作！"/>
+	<label commandName="CylindricalHeadHexSocketScrew+WasherGOST12876-67" devLabel="Cylindrical Head Hex Socket Screw + Washer GOST 12876-67" translation="圆柱头六角凹头螺钉 + 垫片 GOST 12876-67"/>
+	<label commandName="CylindricalHeadHexSocketScrewGOST12876-67" devLabel="Cylindrical Head Hex Socket Screw GOST 12876-67" translation="圆柱头六角凹头螺钉 GOST 12876-67"/>
+	<label commandName="CylindricalHeadSlottedScrew+WasherGOST12876-67" devLabel="Cylindrical Head Slotted Screw + Washer GOST 12876-67" translation="圆柱头凹头螺钉 + 垫片 GOST 12876-67"/>
+	<label commandName="CylindricalHeadSlottedScrewGOST12876-67" devLabel="Cylindrical Head Slotted Screw  GOST 12876-67" translation="圆柱头凹头螺钉 GOST 12876-67"/>
+	<label commandName="CylindrifyFailed" devLabel="Cannot cylindrify selected faces. Adjust selection or toggle Auto Feature Selection." translation="无法圆柱化选定的面。请调整选择或切换“自动特征选择”。"/>
+	<label commandName="DELETE_FACES_FAILED_TO_FILL_GAP" devLabel="Cannot delete individual faces. To delete the whole body, please use the Browser or Selection Filters." translation="无法删除单个面。若要删除整个实体，请使用浏览器或选择过滤器。"/>
+	<label commandName="DERIVED_CONTEXT_NOT_FOUND" devLabel="Corresponding context not found in referenced design." translation="在参考设计中未找到对应的上下文。"/>
+	<label commandName="DERIVED_SOURCE_MISSING" devLabel="The source FusionComponent cannot be found!" translation="找不到源 FusionComponent！"/>
+	<label commandName="DIN" devLabel="DIN" translation="DIN"/>
+	<label commandName="DRAFT_DATA_CORRUPT" devLabel="Draft data model corrupt!" translation="拔模数据模型已损坏！"/>
+	<label commandName="DRAFT_MISSING_FACE_REFERENCES" devLabel="Missing face references" translation="缺少面参考"/>
+	<label commandName="DRAFT_MISSING_REFERENCE_PLANE" devLabel="Missing reference plane" translation="缺少参考平面"/>
+	<label commandName="DRAFT_PARTING_LINE_FAILED_SWITCH_DRAFT_SIDE" devLabel="Cannot create draft in the specified direction. Adjust Draft Sides to Symmetric or Two Sides." translation="无法在指定方向上创建拔模。请将“拔模侧”调整为“对称”或“两侧”。"/>
+	<label commandName="DRMATRIX_COMPUTE_FAILED" devLabel="Failed to evaluate the matrix due to the invalid input" translation="由于输入无效，无法评估矩阵"/>
+	<label commandName="DRMATRIX_NON_LINEAR_GEOM_ERROR" devLabel="Failed to track line segment" translation="未能追踪线段"/>
+	<label commandName="DRPOINT_COMPUTE_FAILED" devLabel="Failed to evaluate the point due to the invalid input" translation="由于输入无效，无法评估点"/>
+	<label commandName="DRVECTOR_COMPUTE_FAILED" devLabel="Failed to evaluate the direction due to the invalid input" translation="由于输入无效，未能评估方向"/>
+	<label commandName="DcArrangeAlgorithm.EnvelopeBodyFace" devLabel="2D arrangement using a body requires that a face be selected." translation="使用实体进行二维排列要求选择面。"/>
+	<label commandName="DcArrangeAlgorithm.EnvelopeLenWidth" devLabel="2D arrangement using a work plane as the envelope requires the length and width to also be set." translation="使用工作平面作为包覆面的二维排列要求同时设置长度和宽度。"/>
+	<label commandName="DcArrangeAlgorithm.EnvelopeMissing" devLabel="No envelope geometry defined." translation="未定义包覆面几何图元。"/>
+	<label commandName="DcArrangeAlgorithm.EnvelopeTypeInvalid" devLabel="2D arrangement requires the envelope to be a face, work plane, or sketch." translation="二维排列要求包覆面是面、工作平面或草图。"/>
+	<label commandName="DcArrangeAlgorithm.Envlope3DBody" devLabel="3D arrangement requires a body to be selected for the envelope." translation="三维排列要求选择实体作为包覆面。"/>
+	<label commandName="DcArrangeAlgorithm.NoItems" devLabel="Nothing has been selected to arrange." translation="未选择要排列的对象。"/>
+	<label commandName="DcArrangeAlgorithm.UnsupportedDimension" devLabel="Algorithm does not support the requested arrangement dimension." translation="算法不支持请求的排列尺寸。"/>
+	<label commandName="DcArrangeFeature.MissingAlg" devLabel="Cannot find the arrangement algorithm." translation="找不到排列算法。"/>
+	<label commandName="DcArrangeFeatureImplNoneLeafComps" devLabel="Some items cannot be arranged because they have child components. This is either because the design has been modified, or was made with an older version of Fusion 360.			 Try re-selecting only leaf components for arrangement. (A leaf has no child components.)" translation="无法排列某些项目，因为它们具有子零部件。这是因为设计已被修改，或者设计是使用早期版本的 Fusion 360 创建的。			请尝试重新选择仅最下级零部件进行排列。(最下级零部件没有子零部件。)"/>
+	<label commandName="DcDerivedContextFeature_SourceNotMappable" devLabel="Object cannot be mapped from source to derived" translation="无法将对象从源映射到衍生对象"/>
+	<label commandName="DcDerivedContextFeature_UpdateFailed" devLabel="Update of sources to derive failed" translation="源到衍生的更新失败"/>
+	<label commandName="DcFacesMove" devLabel="MoveFace" translation="MoveFace"/>
+	<label commandName="DcGroupFeatureDefaultName" devLabel="Group" translation="组"/>
+	<label commandName="DcGroupFeatureName" devLabel="DcGroupFeature" translation="DcGroupFeature"/>
+	<label commandName="DcJointAssembleFeatureMakeFailure" devLabel="Creation of Joint Feature failed" translation="创建联接特征失败"/>
+	<label commandName="DcPatternSourceError" devLabel="Invalid pattern feature" translation="无效的阵列特征"/>
+	<label commandName="DecalCreationError" devLabel="No targets specified" translation="未指定目标"/>
+	<label commandName="DecalPatchDefaultUserName" devLabel="Decal" translation="贴图"/>
+	<label commandName="DecalPatchSelectionId" devLabel="DecalPatch" translation="贴图面片"/>
+	<label commandName="DecalPatchSelectionPluralId" devLabel="DecalPatches" translation="贴图面片"/>
+	<label commandName="DecalSelectionCategory" devLabel="Decal" translation="贴图"/>
+	<label commandName="DecalsSelectionId" devLabel="Decals" translation="贴图"/>
+	<label commandName="DefaultMeshOptionGroupMesh" devLabel="Mesh" translation="网格"/>
+	<label commandName="DefaultMeshOptionGroupPreferences" devLabel="Preferences that control inserting a mesh" translation="用于控制插入网格的首选项"/>
+	<label commandName="DefaultMeshShadingTypeToolTip" devLabel="Render the mesh as smooth shaded or flat shaded" translation="将网格渲染为平滑着色或平面着色"/>
+	<label commandName="DefaultMeshShadingTypeeUserName" devLabel="Default Shading" translation="默认着色"/>
+	<label commandName="DeleteCauseDownstreamFailures" devLabel="Deletion cause downstream feature failures" translation="删除会导致下游特征失效"/>
+	<label commandName="DeleteHandleFailed" devLabel="Sections cannot be inserted within the regions controlled by global sections (i.e. where a path curve ends, or where multiple path curves meet). Try inserting the section in a different location, or control the shape using the existing global sections." translation="截面不能插入由全局截面控制的区域内(即，路径曲线结束或多条路径曲线相交的位置)。请尝试在其他位置插入截面，或使用现有全局截面控制形状。"/>
+	<label commandName="DeleteHandleFailed2" devLabel="Unable to delete handle" translation="无法删除控制柄"/>
+	<label commandName="DeleteRootComponentError" devLabel="It's not allowed to delete root component" translation="不允许删除根零部件"/>
+	<label commandName="DeleteTopologyFailed" devLabel="Failed deleting T-Spline entity" translation="无法删除 T-Spline 实体"/>
+	<label commandName="DeriveContinueButton" devLabel="Continue" translation="继续"/>
+	<label commandName="DeriveDownStreamFeaturesImpacted" devLabel="Derive" translation="衍生"/>
+	<label commandName="DeriveDownStreamFeaturesImpactedMsg1" devLabel="One or more down stream features might lose their dependent geometry. If the feature can be repaired it will be shown as sick. If it cannot be repaired it will be deleted." translation="一个或多个下游特征可能会丢失其相关几何图元。如果该特征可修复，它将被显示为“出现问题”。如果该特征不可修复，则其将被删除。"/>
+	<label commandName="DeriveEntitiesCreateComponentsFromBodiesIsNotSupported" devLabel="This operation is not supported for Derived entities, they will not participate in the operation." translation="不支持对衍生实体执行此操作，它们将不会参与此操作。"/>
+	<label commandName="DerivedBaseFeature" devLabel="Derived Base Feature" translation="衍生的基础特征"/>
+	<label commandName="DerivedContext" devLabel="DerivedContext" translation="DerivedContext"/>
+	<label commandName="DerivedSuffix" devLabel="(Derive)" translation="(衍生)"/>
+	<label commandName="DetachedFromBaseAsset" devLabel="Could not %1% because we're detached from the base Asset" translation="无法%1%，因为我们脱离了基础资源"/>
+	<label commandName="DetectCircularDependencyInRestructure" devLabel="The restructure is rejected because it will cause circular dependency." translation="由于重新构造会导致循环依赖，因此被拒绝执行。"/>
+	<label commandName="DetectPositionFeatureDependency" devLabel="Detect some position features may result downstream features fail after restructure." translation="重新构造后，检测某些位置特征可能会导致下游特征失败。"/>
+	<label commandName="DisallowAnyCADBreakLink" devLabel="&lt;b&gt;%1%&lt;/b&gt; is associatively imported in this design. Break Link is not supported." translation="在该设计中已关联导入 &lt;b&gt;%1%&lt;/b&gt;。不支持插入断开链接。"/>
+	<label commandName="DisallowDeriveBreakLink" devLabel="&lt;b&gt;%1%&lt;/b&gt; is already Derived into this design. Break Link is not supported." translation="&lt;b&gt;%1%&lt;/b&gt; 已衍生到此设计中。不支持断开链接。"/>
+	<label commandName="DocumentIsMissing" devLabel="Document is missing" translation="文档丢失"/>
+	<label commandName="DoesNotExistDecalError" devLabel="The image file does not exist" translation="图像文件不存在"/>
+	<label commandName="DownloadError1" devLabel="Could not download latest referenced files. Rate limited by service" translation="无法下载最新的参考文件。速率受服务限制"/>
+	<label commandName="DownloadError2" devLabel="Could not download latest referenced files. No content available" translation="无法下载最新的参考文件。没有可用的内容"/>
+	<label commandName="DownloadError3" devLabel="Could not download latest referenced files. Referenced document(s) is missing" translation="无法下载最新的参考文件。缺少参考文档"/>
+	<label commandName="DownloadError4" devLabel="Could not download latest referenced files" translation="无法下载最新的参考文件"/>
+	<label commandName="DownloadError5" devLabel="Could not download latest referenced files" translation="无法下载最新的参考文件"/>
+	<label commandName="DraftAnalysisDefaultUserName" devLabel="Draft" translation="拔模"/>
+	<label commandName="DraftFeatureName" devLabel="Draft" translation="拔模"/>
+	<label commandName="DraftPartingLineFailed" devLabel="Draft operation failed. Adjust the pull direction, parting tool, faces, or angle." translation="拔模操作失败。请调整拔模方向、分模工具、面或角度。"/>
+	<label commandName="DraftPartingLineNoIntersect" devLabel="Parting line does not intersect the body. Select a parting tool that intersects the body." translation="分模线与实体不相交。请选择与实体相交的分模工具。"/>
+	<label commandName="EDGE1_SELECTION_MISSING" devLabel="Missing edge1" translation="缺少边 1"/>
+	<label commandName="EDGE2_SELECTION_MISSING" devLabel="Missing edge2" translation="缺少边 2"/>
+	<label commandName="EDGEFLANGE_NO_EDGE_FOUND" devLabel="No edge found for flange." translation="未找到凸缘的边。"/>
+	<label commandName="EDGE_REFERENCE_LOST" devLabel="The edge reference is lost, try editing this feature to reselect the lost edge." translation="边参考缺失，请尝试编辑该特征来重新选择缺失的边。"/>
+	<label commandName="EDGE_SELECTIONS_FROM_DIFF_SM_BODIES" devLabel="Edge selections from different sheetmetal bodies are not allowed to create Edge flange." translation="不允许使用从不同钣金实体中选择的边来创建边凸缘。"/>
+	<label commandName="EDITED_XREF_OCC_NOT_FOUND" devLabel="The edited occurrence of the referenced design is missing." translation="缺少经过编辑的参考设计实例。"/>
+	<label commandName="EICInvalidOccPath" devLabel="Invalid Component Selection Path to activate EIP." translation="用于激活 EIP 的零部件选择路径无效。"/>
+	<label commandName="EICUnresolvedComp" devLabel="Selected Component to activate EIP is unresolved." translation="无法解析用于激活 EIP 的选定零部件。"/>
+	<label commandName="EIPContextDefaultUserName" devLabel="Context" translation="上下文"/>
+	<label commandName="EIPContextLocal" devLabel="Local" translation="局部"/>
+	<label commandName="EIPContextSelectionId" devLabel="Context" translation="上下文"/>
+	<label commandName="EIPContextsSelectionId" devLabel="Contexts" translation="上下文"/>
+	<label commandName="EIPDetachedContext" devLabel="Detached context cannot reference parent assembly" translation="拆离的上下文无法参考父部件"/>
+	<label commandName="EIPDirectModelParentRef" devLabel="Direct model cannot have associative reference to parent assembly" translation="直接模型不能具有与父部件关联的参考"/>
+	<label commandName="EIPInvalidAsset" devLabel="Invalid EIP asset" translation="EIP 资源无效"/>
+	<label commandName="EIPInvalidObjectPath" devLabel="Invalid EIP selection path." translation="EIP 选择路径无效。"/>
+	<label commandName="EIPInvalidOccPath" devLabel="OccurrencePath does not follow EIP path." translation="OccurrencePath 未遵循 EIP 路径。"/>
+	<label commandName="EIPSelectionNotInCachedObject" devLabel="Selection not found in cached body or sketch." translation="在缓存的实体或草图中找不到选择。"/>
+	<label commandName="EIPSelectionNotMatched" devLabel="Selection lost after cache compute." translation="缓存计算后选择丢失。"/>
+	<label commandName="EIPSessionExpected" devLabel="Expected edit-in-place session" translation="应为在位编辑会话"/>
+	<label commandName="EIPUnsupportedObjectPath" devLabel="ObjectPath does not follow EIP path." translation="ObjectPath 未遵循 EIP 路径。"/>
+	<label commandName="EIP_UPDATE_CONTEXT_ASSETLOAD_FAILED" devLabel="Failed to load source design." translation="未能加载源设计。"/>
+	<label commandName="EIP_UPDATE_CONTEXT_FAILED" devLabel="Failed to synchronize the context. It looks like you aren't connected to the internet. Please check your connection and try again." translation="未能同步上下文。您似乎未连接到 Internet。请检查连接，然后重试。"/>
+	<label commandName="EIP_UPDATE_CONTEXT_OPENSOURCE_FAILED" devLabel="Failed to open source design." translation="未能打开源设计。"/>
+	<label commandName="EIP_UPDATE_CONTEXT_ROLLBACK_FAILED" devLabel="Failed to roll back source design." translation="无法回滚源设计。"/>
+	<label commandName="EIP_UPDATE_CONTEXT_SOURCE_UNAVAILABLE" devLabel="Failed to access source design." translation="未能访问源设计。"/>
+	<label commandName="EMBOSS_CANNOT_ORIENT_PROFILE" devLabel="Cannot emboss selected profile on selected faces. Adjust proximity of sketch profiles to selected faces. Ensure each selected face is a developable surface on a solid body." translation="无法在选定的面上凸雕选定的轮廓。请调整草图轮廓与选定面的邻近程度。确保每个选定的面是实体上的可延展曲面。"/>
+	<label commandName="EMBOSS_DISCONNECTED_TARGET_FACES" devLabel="Selected faces are not connected. If disconnected faces are automatically selected, uncheck Tangent Chain, then select adjacent faces." translation="选定的面未连接。如果自动选择断开连接的面，请取消选中“相切链”，然后选择相邻面。"/>
+	<label commandName="EMBOSS_ERROR_CANNOT_BE_WRAPPED" devLabel="Cannot emboss selected faces. Ensure each selected face is a developable surface on a solid body." translation="无法凸雕选定的面。请确保每个选定的面是实体上的可延展曲面。"/>
+	<label commandName="EMBOSS_ERROR_NON_PLANAR_PROFILES" devLabel="Sketch profiles are not coplanar. Deselect sketch profiles that are not on the same plane." translation="草图轮廓不共面。请取消选择不在同一平面上的草图轮廓。"/>
+	<label commandName="EMBOSS_ERROR_OPEN_WIRE" devLabel="Selection is an open sketch curve. Select a closed sketch profile." translation="所选项是开放的草图曲线。请选择封闭的草图轮廓。"/>
+	<label commandName="EMBOSS_ERROR_TARGET_BODY_NOT_SOLID" devLabel="Selected faces are not on a solid body. Ensure each selected face is a developable surface on a solid body." translation="选定的面不在实体上。请确保每个选定的面是实体上的可延展曲面。"/>
+	<label commandName="EMBOSS_ERROR_TARGET_FACES_FROM_DIFF_BODIES" devLabel="Selected faces are not on the same body. Select faces on the same body to emboss." translation="选定的面不在同一实体上。请选择要凸雕的同一实体上的面。"/>
+	<label commandName="EMBOSS_GENERIC_FEATURE_FAILURE" devLabel="Cannot create emboss feature. Adjust sketch profiles, faces, emboss depth, effect, or alignment options." translation="无法创建凸雕特征。请调整草图轮廓、面、凸雕深度、效果或对齐选项。"/>
+	<label commandName="EMBOSS_INVALID_DEPTH" devLabel="Emboss depth value is invalid. Adjust depth." translation="凸雕深度值无效。请调整深度。"/>
+	<label commandName="EMBOSS_INVALID_ROTATION_ANGLE" devLabel="Emboss rotation angle value is invalid. Adjust rotation angle." translation="凸雕旋转角度值无效。请调整旋转角度。"/>
+	<label commandName="EMBOSS_NO_WRAP_GEOMETRY" devLabel="Emboss result falls outside boundary of selected faces. Add adjacent faces to selection, adjust distance and rotation angle, or adjust proximity of sketch profiles to selected faces." translation="凸雕结果位于选定面的边界之外。请在所选项中添加相邻面，调整距离和旋转角度，或者调整草图轮廓与选定面的邻近程度。"/>
+	<label commandName="EMBOSS_SELF_INTERSECTING_BODY" devLabel="Sketch profiles create a self-intersecting body. Adjust depth of emboss or size of sketch profile." translation="草图轮廓会创建自交实体。请调整凸雕深度或草图轮廓的大小。"/>
+	<label commandName="EMBOSS_SOURCE_PROFILE_LOST" devLabel="Sketch profiles are invalid. Ensure sketch profiles are closed, do not use single line fonts, and have not been deleted." translation="草图轮廓无效。请确保草图轮廓已闭合，不使用单线字体，并且尚未删除。"/>
+	<label commandName="EMBOSS_TARGET_FACE_LOST" devLabel="Faces to emboss are invalid. Ensure each selected face is a developable surface on a solid body." translation="要凸雕的面无效。请确保每个选定的面是实体上的可延展曲面。"/>
+	<label commandName="EMBOSS_THICKEN_FAILURE" devLabel="Cannot create emboss feature at specified depth. Adjust depth." translation="无法在指定的深度创建凸雕特征。请调整深度。"/>
+	<label commandName="ENTITY_REFERENCE_LOST" devLabel="Some input geometry cannot be found. Try editing this feature to reselect the lost inputs." translation="找不到某些输入几何图元。请尝试编辑此特征以重新选择缺失的输入。"/>
+	<label commandName="ENTITY_REFERENCE_LOST_USE_CACHE" devLabel="The model is using cached geometry to solve. Please reselect reference geometry for failed features in the timeline." translation="模型将使用缓存的几何图元进行求解。请为时间轴中的失效特征重新选择参考几何图元。"/>
+	<label commandName="ERROR_CREATING_DERIVE_FEATURE" devLabel="Error creating external derive feature." translation="创建外部衍生特征时出错。"/>
+	<label commandName="EXTRUDE_MULTIPLE_WIRE_ERROR" devLabel="Cannot create toolbody as multiple wired body is not allowed" translation="无法创建刀具实体，因为不允许存在多个线框体"/>
+	<label commandName="EXTRUDE_THROUGH_ALL_ERROR" devLabel="Cannot create toolbody for Through All, please check inputs" translation="无法创建用于贯通的工具体，请检查输入"/>
+	<label commandName="EdgeFlange" devLabel="No target component." translation="无目标零部件。"/>
+	<label commandName="EdgesForJONotParallelOrIntersectError" devLabel="Joint Origin from two edges failed:  Input lines must intersect or be parallel" translation="从两条边联接原点失败: 输入直线必须相交或平行"/>
+	<label commandName="EditDcCanvasError" devLabel="Invalid canvas feature" translation="无效的画布特征"/>
+	<label commandName="EditPCBPackageFileError" devLabel="Input package file not opened" translation="输入包文件未打开"/>
+	<label commandName="EditPCBPackageInputModelError" devLabel="Input package model is invalid" translation="输入包模型无效"/>
+	<label commandName="EditingOffsetSketchError" devLabel="Invalid editing input found" translation="找到无效的编辑输入"/>
+	<label commandName="EmbossFeatureName" devLabel="Emboss" translation="凸雕"/>
+	<label commandName="EmptyComponentName" devLabel="Component Name is empty." translation="零部件名称为空。"/>
+	<label commandName="EmptyFolderInput" devLabel="Location is empty." translation="位置为空。"/>
+	<label commandName="Enclosure Feature" devLabel="Fluid Volume" translation="流体体积"/>
+	<label commandName="EnclosureExternal" devLabel="No external void has been detected for given inputs. Please try to increase the offset." translation="针对给定输入未检测到外部空隙。请尝试增加偏移量。"/>
+	<label commandName="ErrAsmEntData" devLabel="Body, face, edge or vertex" translation="实体、面、边或顶点"/>
+	<label commandName="ErrBodyData" devLabel="Body" translation="实体"/>
+	<label commandName="ErrEdgeData" devLabel="Edge" translation="边"/>
+	<label commandName="ErrFaceData" devLabel="Face" translation="面"/>
+	<label commandName="ErrProfileData" devLabel="Profile" translation="轮廓"/>
+	<label commandName="ErrVertData" devLabel="Vertex" translation="顶点"/>
+	<label commandName="ErrorLoadingDesignAsset" devLabel="Could not load Design Asset in latest target document:%1%!!" translation="无法加载最新目标文档 %1% 中的设计资源！"/>
+	<label commandName="ErrorLoadingOtherDesignAsset" devLabel="Could not load other Assets in the latest target document: %1%!!" translation="无法加载最新目标文档 %1% 中的其他资源！"/>
+	<label commandName="ErrorOpeningFile" devLabel="Could not open latest file %1% into memory" translation="无法在内存中打开最新文件 %1%"/>
+	<label commandName="ExtentLineBody" devLabel="Extent Lines" translation="范围线"/>
+	<label commandName="ExternalDeriveFeatureName" devLabel="Derived from %1% v%2%" translation="衍生自 %1% v%2%"/>
+	<label commandName="ExternalDeriveRequestNotCloud" devLabel="Cannot derive from versionless design" translation="无法从无版本的设计衍生"/>
+	<label commandName="ExternalDerived" devLabel="ExternalDerived" translation="外部衍生"/>
+	<label commandName="ExternalDerivedSuffix" devLabel=" (Derived)" translation=" (已衍生)"/>
+	<label commandName="Extrude" devLabel="No target component." translation="无目标零部件。"/>
+	<label commandName="ExtrudeFeatureName" devLabel="Extrude" translation="拉伸"/>
+	<label commandName="FACE_REFERENCE_LOST" devLabel="The face reference is lost, try editing this feature to reselect the lost face." translation="面参考缺失，请尝试编辑该特征以重新选择缺失的面。"/>
+	<label commandName="FAIL_TO_CUT_INSTANCE" devLabel="Cut of instance failed" translation="剪切实例失败"/>
+	<label commandName="FEATURE_ENTITY_TYPE_INVALID" devLabel="Entity type is invalid" translation="实体类型无效"/>
+	<label commandName="FEATURE_FAILED_TO_CREATE" devLabel="Failed to create feature" translation="无法创建特征"/>
+	<label commandName="FEATURE_MISSING_INPUTS" devLabel="Missing inputs" translation="缺少输入"/>
+	<label commandName="FEATURE_OPERATION_ID_ERROR" devLabel="No allocated operation ids" translation="没有已分配的操作编号"/>
+	<label commandName="FEATURE_REFERENCE_LOST" devLabel="Reference is lost" translation="参考丢失"/>
+	<label commandName="FEATURE_SOLVER_NO_SOLUTION_FOUND" devLabel="Solver did not reach a solution" translation="求解器未得出解"/>
+	<label commandName="FILLET_DATA_CORRUPT" devLabel="Virable radius fillet data modle corrupt!" translation="可变半径圆角数据模型已损坏！"/>
+	<label commandName="FILLET_NO_EDGE_FOUND" devLabel="No fillet edge found." translation="未找到圆角边。"/>
+	<label commandName="FILLET_NO_FACE_FOUND" devLabel="A crucial face is missing." translation="缺少关键面。"/>
+	<label commandName="FILLET_TANGENT_CHAIN_ISSUE" devLabel="There was a problem accepting the sequences of edges to fillet. Tangent Chain option was turned off " translation="接受要倒圆角的边序列时出现问题。“相切链”选项已禁用 "/>
+	<label commandName="FLANGE_OPN_NEEDS_EDGE" devLabel="Please select Edge(s) to Join..." translation="请选择要合并的边..."/>
+	<label commandName="FLANGE_OPN_NOT_YET_SUPPORTED" devLabel="This Flange operation is not yet supported." translation="此凸缘操作尚不受支持。"/>
+	<label commandName="FLATPATTERN_COLLISION" devLabel="Collisions found while flattening, cannot generate flatpattern." translation="展平时发现冲突，无法生成展开模式。"/>
+	<label commandName="FLATPATTERN_ERROR" devLabel="Flatpattern generation failed." translation="展开模式生成失败。"/>
+	<label commandName="FLATPATTERN_FEATURE_NO_ALIGN_FACE" devLabel="Alignment face not available.   " translation="对齐面不可用。   "/>
+	<label commandName="FLATPATTERN_USING_CACHE_ALIGN_FACE" devLabel="Align face not found. Used a cached face for flattening.   " translation="未找到对齐面。已使用缓存的面进行展平。   "/>
+	<label commandName="FPExportDXFError" devLabel="There was an unexpected problem with exporting the flat pattern as a DXF file." translation="将展开模式导出为 DXF 文件时出现意外问题。"/>
+	<label commandName="FUSION_SERVER_FEATURE_REQUIREMENTS_ERROR" devLabel="Feature inputs not meeting minimum requirements to execute the request" translation="特征输入不符合执行请求的最低要求"/>
+	<label commandName="FUSION_SERVER_INTERNAL_ERROR" devLabel="Server internal error" translation="服务器内部错误"/>
+	<label commandName="FaceSetName" devLabel="FaceSet" translation="面集"/>
+	<label commandName="FailedToAdd3DPackage" devLabel=": Failed to get 3D model from library." translation=": 未能从库中获取三维模型。"/>
+	<label commandName="FailedToCreateBox" devLabel=": Failed to get box from library." translation=": 未能从库中获取长方体。"/>
+	<label commandName="FailedToCreatePCBComponents" devLabel="Failed to create PCB components." translation="未能创建 PCB 元件。"/>
+	<label commandName="FailedToCreateSimModelAsset" devLabel="Failed to create Model asset." translation="无法创建模型资源。"/>
+	<label commandName="FailedToEraseAndFillGivenFaces" devLabel="Failed to erase and fill given faces." translation="无法删除并填充给定的面。"/>
+	<label commandName="FailedToFillHoleWithGivenEedge" devLabel="Failed to fill hole with given edge." translation="无法用指定边填充孔。"/>
+	<label commandName="FailedToGetPackageTransform" devLabel=": Failed to get the transform of the 3D model from library." translation=": 无法从库中获取三维模型的变换。"/>
+	<label commandName="Feature" devLabel="Feature" translation="特征"/>
+	<label commandName="FeatureAlign" devLabel="Align" translation="对齐"/>
+	<label commandName="FeatureArrange" devLabel="Arrange" translation="排列"/>
+	<label commandName="FeatureAsBuilt" devLabel="As-built" translation="快速"/>
+	<label commandName="FeatureAssemble" devLabel="Assemble" translation="装配"/>
+	<label commandName="FeatureBodyComp" devLabel="Body-&gt;Comp" translation="实体-&gt;零部件"/>
+	<label commandName="FeatureBoxPrimitive" devLabel="BoxPrimitive" translation="长方体基本要素"/>
+	<label commandName="FeatureCanvas" devLabel="Canvas" translation="画布"/>
+	<label commandName="FeatureCategory" devLabel="Features" translation="特征"/>
+	<label commandName="FeatureChamfer" devLabel="Chamfer" translation="倒角"/>
+	<label commandName="FeatureCircularComponentPattern" devLabel="C-Pattern" translation="C-阵列"/>
+	<label commandName="FeatureCircularPattern" devLabel="C-Pattern" translation="C-阵列"/>
+	<label commandName="FeatureCoilPrimitive" devLabel="CoilPrimitive" translation="螺旋基本要素"/>
+	<label commandName="FeatureCombine" devLabel="Combine" translation="合并"/>
+	<label commandName="FeatureConvertToSheetMetal" devLabel="ConvertToSheetMetal" translation="转换为钣金"/>
+	<label commandName="FeatureCopyPaste" devLabel="CopyPaste" translation="复制和粘贴"/>
+	<label commandName="FeatureCopyPasteBodies" devLabel="CopyPasteBodies" translation="复制和粘贴实体"/>
+	<label commandName="FeatureCreateComponent" devLabel="CreateComponent" translation="创建零部件"/>
+	<label commandName="FeatureCutPaste" devLabel="CutPaste" translation="剪切和粘贴"/>
+	<label commandName="FeatureCutPasteBodies" devLabel="CutPasteBodies" translation="剪切和粘贴实体"/>
+	<label commandName="FeatureCylinderPrimitive" devLabel="CylinderPrimitive" translation="圆柱体基本要素"/>
+	<label commandName="FeatureDecal" devLabel="Decal" translation="贴图"/>
+	<label commandName="FeatureDeleteBody" devLabel="RemoveBody" translation="移除实体"/>
+	<label commandName="FeatureDeleteFace" devLabel="DeleteFace" translation="删除面"/>
+	<label commandName="FeatureDeleteInstance" devLabel="RemoveInstance" translation="移除实例"/>
+	<label commandName="FeatureDraft" devLabel="Draft" translation="拔模"/>
+	<label commandName="FeatureExtrude" devLabel="Extrude" translation="拉伸"/>
+	<label commandName="FeatureFillet" devLabel="Fillet" translation="圆角"/>
+	<label commandName="FeatureForm" devLabel="Form" translation="造型"/>
+	<label commandName="FeatureGround" devLabel="Ground" translation="地面"/>
+	<label commandName="FeatureHole" devLabel="Hole" translation="孔"/>
+	<label commandName="FeatureJointOrigin" devLabel="JointOrigin" translation="联接原点"/>
+	<label commandName="FeatureLoft" devLabel="Loft" translation="放样"/>
+	<label commandName="FeatureMesh" devLabel="Mesh" translation="网格"/>
+	<label commandName="FeatureMidSurface" devLabel="MidSurface" translation="中间曲面"/>
+	<label commandName="FeatureMirrorPattern" devLabel="Mirror" translation="镜像"/>
+	<label commandName="FeatureModEmboss" devLabel="Emboss" translation="凸雕"/>
+	<label commandName="FeatureMotionLink" devLabel="MotionLink" translation="运动链接"/>
+	<label commandName="FeatureMove" devLabel="Move" translation="移动"/>
+	<label commandName="FeatureMoveBody" devLabel="MoveBody" translation="移动实体"/>
+	<label commandName="FeatureOffsetFaces" devLabel="OffsetFaces" translation="偏移面"/>
+	<label commandName="FeaturePCB" devLabel="PCB" translation="PCB"/>
+	<label commandName="FeaturePCBExtrude" devLabel="PCBExtrude" translation="PCBExtrude"/>
+	<label commandName="FeaturePCBHole" devLabel="PCBHole" translation="PCB 孔"/>
+	<label commandName="FeaturePathComponentPattern" devLabel="PathPattern" translation="路径阵列"/>
+	<label commandName="FeaturePathPattern" devLabel="PathPattern" translation="路径阵列"/>
+	<label commandName="FeaturePipe" devLabel="Pipe" translation="管道"/>
+	<label commandName="FeatureRectangularComponentPattern" devLabel="R-Pattern" translation="R-阵列"/>
+	<label commandName="FeatureRectangularPattern" devLabel="R-Pattern" translation="R-阵列"/>
+	<label commandName="FeatureRemoveFaces" devLabel="RemoveFaces" translation="删除面"/>
+	<label commandName="FeatureRemoveFeatures" devLabel="RemoveFeatures" translation="删除特征"/>
+	<label commandName="FeatureReplaceFace" devLabel="ReplaceFace" translation="替换面"/>
+	<label commandName="FeatureRevolve" devLabel="Revolve" translation="旋转"/>
+	<label commandName="FeatureRib" devLabel="Rib" translation="加强筋"/>
+	<label commandName="FeatureSMBaseFace" devLabel="Face" translation="面"/>
+	<label commandName="FeatureSMContourFlange" devLabel="ContourFlange" translation="ContourFlange"/>
+	<label commandName="FeatureSMEdgeFlange" devLabel="EdgeFlange" translation="边凸缘"/>
+	<label commandName="FeatureScale" devLabel="Scale" translation="缩放"/>
+	<label commandName="FeatureSelectionPluralId" devLabel="Features" translation="特征"/>
+	<label commandName="FeatureSheetMetalFlatPattern" devLabel="FlatPattern" translation="展开模式"/>
+	<label commandName="FeatureSheetMetalFlatPatternAlign" devLabel="FlatPatternAlign" translation="FlatPatternAlign"/>
+	<label commandName="FeatureSheetmetalRefold" devLabel="Refold" translation="重新折叠"/>
+	<label commandName="FeatureSheetmetalSheetMetalBend" devLabel="Bend" translation="折弯"/>
+	<label commandName="FeatureSheetmetalUnfold" devLabel="Unfold" translation="展开"/>
+	<label commandName="FeatureShell" devLabel="Shell" translation="抽壳"/>
+	<label commandName="FeatureSilhouetteSplit" devLabel="SilhouetteSplit" translation="轮廓分割"/>
+	<label commandName="FeatureSketch" devLabel="Sketch" translation="草图"/>
+	<label commandName="FeatureSnapshot" devLabel="Position" translation="位置"/>
+	<label commandName="FeatureSpherePrimitive" devLabel="SpherePrimitive" translation="球体基本要素"/>
+	<label commandName="FeatureSplit" devLabel="Split" translation="分割"/>
+	<label commandName="FeatureSplitFace" devLabel="SplitFace" translation="分割面"/>
+	<label commandName="FeatureSurfaceDeleteFace" devLabel="SurfaceDeleteFace" translation="曲面删除面"/>
+	<label commandName="FeatureSurfaceExtend" devLabel="SurfaceExtend" translation="曲面延伸"/>
+	<label commandName="FeatureSurfaceGapFill" devLabel="Gap Fill" translation="间隙填充"/>
+	<label commandName="FeatureSurfaceOffset" devLabel="SurfaceOffset" translation="偏移曲面"/>
+	<label commandName="FeatureSurfacePatch" devLabel="SurfacePatch" translation="曲面面片"/>
+	<label commandName="FeatureSurfaceRuled" devLabel="SurfaceRuled" translation="直纹曲面"/>
+	<label commandName="FeatureSurfaceStitch" devLabel="SurfaceStitch" translation="曲面缝合"/>
+	<label commandName="FeatureSurfaceTrim" devLabel="SurfaceTrim" translation="曲面修剪"/>
+	<label commandName="FeatureSurfaceUntrim" devLabel="SurfaceUntrim" translation="SurfaceUntrim"/>
+	<label commandName="FeatureSweep" devLabel="Sweep" translation="扫掠"/>
+	<label commandName="FeatureThicken" devLabel="Thicken" translation="加厚"/>
+	<label commandName="FeatureThread" devLabel="Thread" translation="螺纹"/>
+	<label commandName="FeatureTorusPrimitive" devLabel="TorusPrimitive" translation="圆环体基本要素"/>
+	<label commandName="FeatureUnStitch" devLabel="UnStitch" translation="取消缝合"/>
+	<label commandName="FeatureWeb" devLabel="Web" translation="网状加强筋"/>
+	<label commandName="FeatureWorkAxis" devLabel="WorkAxis" translation="工作轴"/>
+	<label commandName="FeatureWorkPlane" devLabel="WorkPlane" translation="工作平面"/>
+	<label commandName="FeatureWorkPoint" devLabel="WorkPoint" translation="工作点"/>
+	<label commandName="FeatureXRef" devLabel="Component Insert" translation="插入零部件"/>
+	<label commandName="Feature_Compute_Error" devLabel="Compute Failed" translation="计算失败"/>
+	<label commandName="Feature_Input_Compute_Error" devLabel="Reference Failures" translation="参考失败"/>
+	<label commandName="FilletEdgeNoBodiesError" devLabel="There are no bodies specified to fillet." translation="没有指定要圆角化的实体。"/>
+	<label commandName="FilletEdgeSplitError" devLabel="There was a problem accepting the sequences of edges to fillet. Try turning the Tangent Chain option off and splitting the edge sequences into shorter Selection Edge Sets." translation="接受要创建圆角的边的序列时发生问题。请尝试禁用“相切链”选项，并将边序列拆分为更短的选择边集。"/>
+	<label commandName="FilletFeatureName" devLabel="Fillet" translation="圆角"/>
+	<label commandName="FilletHelpPointError" devLabel="There was a problem accepting the fillet help points. " translation="接受圆角帮助点时出现问题。"/>
+	<label commandName="FlangeFeatureName" devLabel="Flange" translation="凸缘"/>
+	<label commandName="FlatHeadMachineScrew" devLabel="Flat Head Machine Screw" translation="平头机器螺钉"/>
+	<label commandName="FlatHeadMachineScrew(100)" devLabel="Flat Head Machine Screw (100)" translation="平头机器螺钉(100)"/>
+	<label commandName="FlatHeadMachineScrew(82)" devLabel="Flat Head Machine Screw (82)" translation="平头机器螺钉(82)"/>
+	<label commandName="FlatPattern" devLabel="Flat Pattern" translation="展开模式"/>
+	<label commandName="FlatPatternUpdateInvalidAsset" devLabel="Invalid source Flat Pattern asset found during Flat Pattern update operation." translation="执行“展开模式”更新操作期间，发现无效的源“展开模式”资源。"/>
+	<label commandName="FlatPatternUpdateNULLAsset" devLabel="Could not find the flat pattern asset during Flat Pattern update operation." translation="执行“展开模式”更新操作期间，找不到“展开模式”资源。"/>
+	<label commandName="FlatPatternUpdateNULLDocument" devLabel="Document is missing during Flat Pattern update operation." translation="执行“展开模式”更新操作期间，文档丢失。"/>
+	<label commandName="FlatPatternUpdateNULLSourceComponent" devLabel="Base component is not available during Flat Pattern update operation." translation="在执行展开模式更新操作期间，基础零部件不可用。"/>
+	<label commandName="FlatPatternUpdateNULLWorkingComponent" devLabel="Flat Pattern component is not available during Flat Pattern update operation." translation="执行“展开模式”更新操作期间，“展开模式”组件不可用。"/>
+	<label commandName="FlatShadingType" devLabel="Flat Shaded (Prismatic shapes with sharp edges)" translation="平面着色(带锐边的棱柱形状)"/>
+	<label commandName="FlattenFailed" devLabel="Failed to flatten the given points." translation="未能展平给定点。"/>
+	<label commandName="FrozenSurfChangedNonPreview" devLabel="The last operation unfroze a frozen region to make the requested shape change. Undo this operation to revert the shape change and restore the frozen region" translation="上次操作会对冻结区域进行解冻以进行请求的形状更改。撤消此操作会撤消形状更改并恢复冻结区域"/>
+	<label commandName="FrozenSurfChangedPreview" devLabel="This operation will need to unfreeze a frozen region to make the requested shape change." translation="此操作需要对冻结区域进行解冻以进行请求的形状更改。"/>
+	<label commandName="FrozenSurfChangedSimExacNonPreview" devLabel="The last operation unfroze a frozen region to make the requested shape change. Undo this operation to revert the shape change and restore the frozen region. Change the Insertion Mode to Exact to avoid this issue." translation="上次操作会对冻结区域进行解冻以进行请求的形状更改。撤消此操作会撤消形状更改并恢复冻结区域。将“插入模式”更改为“精确”可避免此问题。"/>
+	<label commandName="FrozenSurfChangedSimExacPreview" devLabel="This operation will need to unfreeze a frozen region to make the requested shape change. Change the Insertion Mode to Exact to avoid this issue" translation="上次操作需要对冻结区域进行解冻以进行请求的形状更改。将“插入模式”更改为“精确”可避免此问题。"/>
+	<label commandName="FusionComponentRootDefaultUserName" devLabel="FusionComponent" translation="Fusion 零部件"/>
+	<label commandName="FusionDefaultUnitsOptionsToolTip" devLabel="Preferences that sets default units used in new documents" translation="设置新文档中使用的默认单位的首选项"/>
+	<label commandName="FusionDefaultUnitsOptionsUserName" devLabel="Design" translation="设计"/>
+	<label commandName="FusionDocDesc" devLabel="A Fusion Document" translation="一个 Fusion 文档"/>
+	<label commandName="FusionDocName" devLabel="Fusion Document" translation="Fusion 文档"/>
+	<label commandName="FusionFROutputFindFeatures2NullBody" devLabel="No valid body for feature recognition" translation="没有有效实体进行特征识别"/>
+	<label commandName="FusionFROutputFindFeaturesNullBody" devLabel="No valid body for feature recognition" translation="没有有效实体进行特征识别"/>
+	<label commandName="FusionFROutputRemoveFeaturesNotFound" devLabel="Call findFeatures before removeFeatures" translation="在删除特征之前调用查找特征"/>
+	<label commandName="FusionJointAssembleRequestErrorJointId" devLabel="Missing first joint origin associativity" translation="缺少第一个联接原点关联性"/>
+	<label commandName="FusionJointAssembleRequestErrorMatrix3dId" devLabel="Joint could not be created with the given input." translation="使用给定的输入无法创建联接。"/>
+	<label commandName="FusionRemoveFeaturesNoFeaturesRemoved" devLabel="No features were able to be removed from this part" translation="任何特征都无法从此零件中删除"/>
+	<label commandName="FusionRemoveFeaturesNoFeaturesRemoved_" devLabel="No features were able to be removed" translation="任何特征都无法删除"/>
+	<label commandName="FusionRemoveFeaturesNotAllFeaturesRemoved" devLabel="Not all features were able to be removed from this part" translation="部分特征无法从此零件中删除"/>
+	<label commandName="FusionRemoveFeaturesNotAllFeaturesRemoved_" devLabel="Not all features were able to be removed" translation="部分特征无法删除"/>
+	<label commandName="FusionTextCommandUsedOutsideFusion" devLabel="Fusion scripting can only be used in a fusion asset" translation="Fusion 脚本仅可用于 Fusion 资源"/>
+	<label commandName="GAPFILL_NO_TOOLBODY" devLabel="Modeling Error: Can't create toolbody for gap fill, please check the inputs." translation="建模错误: 无法创建用于间隙填充的工具体，请检查输入。"/>
+	<label commandName="GOST" devLabel="GOST" translation="GOST"/>
+	<label commandName="GapFillExtendNFFaces_ExtendExtensionFace" devLabel="Unable to extend the extension face." translation="无法延伸延伸面。"/>
+	<label commandName="GapFillExtendNFFaces_MakeExtensionWireBody" devLabel="Unable to copy source body of the selected edge." translation="无法复制选定边的源实体。"/>
+	<label commandName="GapFillExtendNFFaces_MakeFirstExtensionBody" devLabel="Unable to trim the extension face." translation="无法修剪延伸面。"/>
+	<label commandName="GapFillExtendNFFaces_MakeFirstExtensionWireBody" devLabel="Unable to create wire body from the extension face." translation="无法从延伸面创建线实体。"/>
+	<label commandName="GapFillExtendOneFaceExtendExtensionFace" devLabel="Unable to extend the extension face." translation="无法延伸延伸面。"/>
+	<label commandName="GapFillExtendOneFaceFaceIntersection" devLabel="The extension face and the termination face have an invalid face intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="延伸面和终止面具有无效的面交点。请尝试使用“在面之间放样”选项或“边界嵌片”选项。"/>
+	<label commandName="GapFillExtendOneFaceMakeBlankBody" devLabel="Unable to trim the extension face." translation="无法修剪延伸面。"/>
+	<label commandName="GapFillExtendOneFaceMakeExtensionBody" devLabel="Unable to trim the extension face." translation="无法修剪延伸面。"/>
+	<label commandName="GapFillExtendOneFaceMakeExtensionWireBody" devLabel="Unable to extend the extension face." translation="无法延伸延伸面。"/>
+	<label commandName="GapFillExtendOneFaceMakeTerminationBody" devLabel="Unable to trim the extension face." translation="无法修剪延伸面。"/>
+	<label commandName="GapFillExtendOneFaceNoIntersection" devLabel="The extension face and the termination face do not intersect." translation="延伸面和终止面不相交。"/>
+	<label commandName="GapFillExtendOneFaceNoIntersectionGraph" devLabel="The extension face and the termination face have an invalid intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="延伸面和终止面具有无效的交点。请尝试使用“在面之间放样”选项或“边界嵌片”选项。"/>
+	<label commandName="GapFillExtendOneFaceStitch" devLabel="Unable to stitch the body." translation="无法缝合体。"/>
+	<label commandName="GapFillExtendOneFaceTrim" devLabel="Unable to trim the extension face." translation="无法修剪延伸面。"/>
+	<label commandName="GapFillExtendOneNFFace_ExtendEdge" devLabel="Unable to extend the selected egde." translation="无法延伸选定边。"/>
+	<label commandName="GapFillExtendOneNFFace_ExtendFirstExtensionFace" devLabel="Unable to extend the first extension face." translation="无法延伸第一个延伸面。"/>
+	<label commandName="GapFillExtendOneNFFace_ExtendSecondExtensionFace" devLabel="Unable to extend the first extension face." translation="无法延伸第一个延伸面。"/>
+	<label commandName="GapFillExtendOneNFFace_FaceIntersection" devLabel="The first extension face and the second selected face have an invalid face intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="第一个延伸面和第二个选定面没有有效的面相交。请尝试使用“在面之间放样”选项或“边界嵌片”选项。"/>
+	<label commandName="GapFillExtendOneNFFace_FirstEdge" devLabel="The first selected edge doesn't have faces." translation="第一条选定边没有面。"/>
+	<label commandName="GapFillExtendOneNFFace_MakeExtensionBody" devLabel="Unable to trim the extension face." translation="无法修剪延伸面。"/>
+	<label commandName="GapFillExtendOneNFFace_NoIntersection" devLabel="The first extension face and the second selected face do not intersect." translation="第一个延伸面和第二个选定面不相交。"/>
+	<label commandName="GapFillExtendOneNFFace_NoIntersectionGraph" devLabel="The first extension face and the second selected face have an invalid intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="第一个延伸面和第二个选定面没有有效的相交。请尝试使用“在面之间放样”选项或“边界嵌片”选项。"/>
+	<label commandName="GapFillExtendOneNFFace_Stitch" devLabel="Unable to stitch the body." translation="无法缝合实体。"/>
+	<label commandName="GapFillExtendOneNFFace_Trim" devLabel="Unable to trim the extension face." translation="无法修剪延伸面。"/>
+	<label commandName="GapFillExtendTwoFacesExtendFirstExtensionFace" devLabel="Unable to extend the first extension face." translation="无法延伸第一个延伸面。"/>
+	<label commandName="GapFillExtendTwoFacesExtendFirstOrSecondExtensionFace" devLabel="Unable to extend the first extension face or second extension face." translation="无法延伸第一个延伸面或第二个延伸面。"/>
+	<label commandName="GapFillExtendTwoFacesExtendSecondExtensionFace" devLabel="Unable to extend the second extension face." translation="无法延伸第二个延伸面。"/>
+	<label commandName="GapFillExtendTwoFacesFaceInvalidIntersection" devLabel="The first extension face and the second extension face have an invalid face intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="第一个延伸面和第二个延伸面没有有效的面相交。请尝试使用“在面之间放样”选项或“边界嵌片”选项。"/>
+	<label commandName="GapFillExtendTwoFacesMakeBlankBody" devLabel="Unable to trim the first extension face or the second extension face." translation="无法修剪第一个延伸面或第二个延伸面。"/>
+	<label commandName="GapFillExtendTwoFacesMakeFirstExtensionBody" devLabel="Unable to trim the first extension face." translation="无法修剪第一个延伸面。"/>
+	<label commandName="GapFillExtendTwoFacesMakeSecondExtensionBody" devLabel="Unable to trim the second extension face." translation="无法修剪第二个延伸面。"/>
+	<label commandName="GapFillExtendTwoFacesMakeSecondExtensionWireBody" devLabel="Unable to extend the second extension face." translation="无法延伸第二个延伸面。"/>
+	<label commandName="GapFillExtendTwoFacesNoIntersection" devLabel="The first extension face and the second extension face do not intersect." translation="第一个延伸面和第二个延伸面不相交。"/>
+	<label commandName="GapFillExtendTwoFacesNoIntersectionGraph" devLabel="The first extension face and the second extension face have an invalid intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="第一个延伸面和第二个延伸面具有无效的交点。请尝试使用“在面之间放样”选项或“边界嵌片”选项。"/>
+	<label commandName="GapFillExtendTwoFacesStitch" devLabel="Unable to stitch the body." translation="无法缝合体。"/>
+	<label commandName="GapFillExtendTwoFacesTrim" devLabel="Unable to trim the first extension face or the second extension face." translation="无法修剪第一个延伸面或第二个延伸面。"/>
+	<label commandName="GapFillExtendTwoFacescoplanarFaces" devLabel="Unable to trim coplanar faces. Please try the Loft between faces option or the Extend one face option." translation="无法修剪共面的面。请尝试使用“在面之间放样”选项或“延伸一个面”选项。"/>
+	<label commandName="GapFillExtendTwoNFFaces_ExtendEdges" devLabel="Unable to extend the selected egdes." translation="无法延伸选定的边。"/>
+	<label commandName="GapFillExtendTwoNFFaces_ExtendFirstExtensionFace" devLabel="Unable to extend the first extension face." translation="无法延伸第一个延伸面。"/>
+	<label commandName="GapFillExtendTwoNFFaces_ExtendSecondExtensionFace" devLabel="Unable to extend the second extension face." translation="无法延伸第二个延伸面。"/>
+	<label commandName="GapFillExtendTwoNFFaces_FaceIntersection1" devLabel="The first extension face and the second extension face have an invalid face intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="第一个延伸面和第二个延伸面没有有效的面相交。请尝试使用“在面之间放样”选项或“边界嵌片”选项。"/>
+	<label commandName="GapFillExtendTwoNFFaces_FaceIntersection2" devLabel="The first extension face and the second extension face don't have an intersection. Please try the Loft between faces option or the Boundary Patch option." translation="第一个延伸面和第二个延伸面没有相交。请尝试使用“在面之间放样”选项或“边界嵌片”选项。"/>
+	<label commandName="GapFillExtendTwoNFFaces_FaceIntersection2_MAC" devLabel="The first extension face and the second extension face don't have an intersection.&#xA;Please try the Loft between faces option&#xA;or the Boundary Patch option." translation="第一个延伸面和第二个延伸面没有相交。&#xA;请尝试使用“在面之间放样”选项&#xA;或“边界嵌片”选项。"/>
+	<label commandName="GapFillExtendTwoNFFaces_FirstEdge" devLabel="The first selected edge doesn't have faces." translation="第一条选定边没有面。"/>
+	<label commandName="GapFillExtendTwoNFFaces_MakeFirstExtensionBody" devLabel="Unable to trim the first extension face." translation="无法修剪第一个延伸面。"/>
+	<label commandName="GapFillExtendTwoNFFaces_MakeSecondExtensionBody" devLabel="Unable to trim the second extension face." translation="无法修剪第二个延伸面。"/>
+	<label commandName="GapFillExtendTwoNFFaces_NoIntersection" devLabel="The first extension face and the second extension face do not intersect." translation="第一个延伸面和第二个延伸面不相交。"/>
+	<label commandName="GapFillExtendTwoNFFaces_NoIntersectionGraph" devLabel="The first extension face and the second extension face have an invalid intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="第一个延伸面和第二个延伸面具有无效的相交。请尝试使用“在面之间放样”选项或“边界嵌片”选项。"/>
+	<label commandName="GapFillExtendTwoNFFaces_SecondEdge" devLabel="The second selected edge doesn't have faces." translation="第二条选定边没有面。"/>
+	<label commandName="GapFillExtendTwoNFFaces_Stitch" devLabel="Unable to stitch the body." translation="无法缝合实体。"/>
+	<label commandName="GapFillExtendTwoNFFaces_Trim" devLabel="Unable to trim the first extension face or the second extension face." translation="无法修剪第一个延伸面或第二个延伸面。"/>
+	<label commandName="GapFillLoftBetweenFacesLoft" devLabel="Unable to loft between the profiles." translation="无法在轮廓之间放样。"/>
+	<label commandName="GapFillLoftBetweenFacesStitch" devLabel="Unable to stitch the body." translation="无法缝合体。"/>
+	<label commandName="GeneralUnitsValue0" devLabel="mm" translation="mm"/>
+	<label commandName="GeneralUnitsValue1" devLabel="cm" translation="cm"/>
+	<label commandName="GeneralUnitsValue2" devLabel="m" translation="m"/>
+	<label commandName="GeneralUnitsValue3" devLabel="in" translation="in"/>
+	<label commandName="GeneralUnitsValue4" devLabel="ft" translation="ft"/>
+	<label commandName="GenericModelingError" devLabel="Modeling operation failed." translation="建模操作失败。"/>
+	<label commandName="GeometryPointMissing" devLabel="Some referenced point cannot be found." translation="找不到某些参考点。"/>
+	<label commandName="GetLatestCmdCancelled" devLabel="%1% is canceled" translation="“%1%”操作已取消"/>
+	<label commandName="GetNormalFailed1" devLabel="Failed to get the normal due to get more faces from the edge" translation="由于从边获取更多面，未能获取法向"/>
+	<label commandName="GetNormalFailed2" devLabel="Failed to get the normal due to the edges are not co-planar" translation="由于边不共面，无法获取法向"/>
+	<label commandName="HOLE_CANNOT_CREATE_TOOLBODY" devLabel="Can't create hole toolbody, please check inputs." translation="无法创建钻孔刀具实体，请检查输入。"/>
+	<label commandName="HOLE_DEPTH_ERR_TAPERED_THREAD" devLabel="Hole depth is less than standard taper thread height." translation="孔深度小于标准锥螺纹高度。"/>
+	<label commandName="HOLE_END_FACE_LOST" devLabel="End face is lost" translation="端面丢失"/>
+	<label commandName="HOLE_MISSING_CENTERS" devLabel="Missing hole centers, please check inputs" translation="缺少孔中心，请检查输入"/>
+	<label commandName="HexHeadBolt" devLabel="Hex Head Bolt" translation="六角头螺栓"/>
+	<label commandName="HexHeadBolt/Nut(EnlargedWasher)GOST12876-67" devLabel="Hex Head Bolt / Nut (Enlarged Washer) GOST 12876-67" translation="六角头螺栓/螺母(增大的垫片) GOST 12876-67"/>
+	<label commandName="HexHeadBolt/Nut(ReducedSize)GOST12876-67" devLabel="Hex Head Bolt / Nut (Reduced Size) GOST 12876-67" translation="六角头螺栓/螺母(微型) GOST 12876-67"/>
+	<label commandName="HexHeadBolt/NutGOST12876-67" devLabel="Hex Head Bolt / Nut GOST 12876-67" translation="六角头螺栓/螺母 GOST 12876-67"/>
+	<label commandName="HexHeadCapScrew" devLabel="Hex Head Cap Screw" translation="六角头螺钉"/>
+	<label commandName="HexHeadCapScrewDINEN24014(Spotface)" devLabel="Hex Head Cap Screw DIN EN 24014 (Spotface)" translation="六角头螺钉 DIN EN 24014 (沉头平面孔)"/>
+	<label commandName="HexHeadCapScrewDINEN24017" devLabel="Hex Head Cap Screw DIN EN 24017" translation="六角头螺钉 DIN EN 24017"/>
+	<label commandName="HexHeadCapScrewISO24014(Spotface)" devLabel="Hex Head Cap Screw ISO 24014 (Spotface)" translation="六角头螺钉 ISO 24014 (沉头平面孔)"/>
+	<label commandName="HexHeadCapScrewISO24017" devLabel="Hex Head Cap Screw ISO 24017" translation="六角头螺钉 ISO 24017"/>
+	<label commandName="HexHeadMachineScrew" devLabel="Hex Head Machine Screw" translation="六角头机器螺钉"/>
+	<label commandName="HexHeadScrew" devLabel="Hex Head Screw" translation="六角头螺钉"/>
+	<label commandName="HexMachineScrew" devLabel="Hex Machine Screw" translation="六角机器螺钉"/>
+	<label commandName="HexSocketHeadCapScrew" devLabel="Hex Socket Head Cap Screw" translation="六角凹头螺钉"/>
+	<label commandName="Hole" devLabel="No target component." translation="无目标零部件。"/>
+	<label commandName="HoleFeatureName" devLabel="Hole" translation="孔"/>
+	<label commandName="HoleToolBodyCreationReferenceError" devLabel="Referenced Edge is not parallel to the hole origin plane." translation="参考边与孔基准平面不平行。"/>
+	<label commandName="INVALID_3BENDCORNERRELIEF_RADIUS" devLabel="The 3 bend corner relief radius value is invalid. Try specifying a different value." translation="3 折弯拐角释压半径值无效。请尝试指定其他值。"/>
+	<label commandName="INVALID_BENDRELIEF_DEPTH" devLabel="The bend relief depth value is invalid. Try specifying a different value." translation="折弯释压深度值无效。请尝试指定其他值。"/>
+	<label commandName="INVALID_BENDRELIEF_REMNANT" devLabel="The bend relief minimum remnant value is invalid. Try specifying a different value." translation="折弯释压最小余量值无效。请尝试指定其他值。"/>
+	<label commandName="INVALID_BENDRELIEF_WIDTH" devLabel="The bend relief width value is invalid. Try specifying a different value." translation="折弯释压宽度值无效。请尝试指定其他值。"/>
+	<label commandName="INVALID_BEND_LINE_POSITION" devLabel="Unexpected bend parameters encountered. Please use Edit Feature to verify all values." translation="遇到意外的折弯参数。请使用“编辑特征”来验证所有值。"/>
+	<label commandName="INVALID_BEND_RADIUS" devLabel="The bend radius value is invalid. Try specifying a different value." translation="折弯半径值无效。请尝试指定其他值。"/>
+	<label commandName="INVALID_CORNERRELIEF_SIZE" devLabel="The 2 bend corner relief size value is invalid. Try specifying a different value." translation="2 折弯拐角释压大小值无效。请尝试指定其他值。"/>
+	<label commandName="INVALID_FLANGE_INPUTS" devLabel="Invalid input(s) to create flange." translation="输入无效，无法创建凸缘。"/>
+	<label commandName="INVALID_OPERANTS" devLabel="Invalid operands" translation="操作数无效"/>
+	<label commandName="INVALID_PARTINGLINE_BODY" devLabel="No target body or more than one target body!" translation="没有目标实体或有多个目标实体！"/>
+	<label commandName="INVALID_PASTE_INSTANCE" devLabel="The instance is invalid to be Cut &amp; Pasted into target component." translation="实例无效，无法剪切并粘贴到目标零部件。"/>
+	<label commandName="INVALID_ROUND_BENDRELIEF_DEPTH" devLabel="The bend relief depth value is invalid. When using a Round relief, the relief depth value must be greater than or equal to 1/2 of the relief width value." translation="折弯释压深度值无效。当使用圆形释压时，释压深度值必须大于或等于释压宽度值的 1/2。"/>
+	<label commandName="INVALID_SKPATTERN_INPUT" devLabel="Invalid Input. Please check: count is larger than 0 and angle is between -2*PI to 2*PI, and count should be 1 if distance is 0.0" translation="输入无效。请检查: 计数大于 0 且角度介于 -2*PI 到 2*PI 之间，并且如果距离为 0.0，则计数应为 1"/>
+	<label commandName="INVALID_SOURCE_BODY" devLabel="No valid source Body found, cache will be used" translation="未找到有效的源实体，将使用缓存"/>
+	<label commandName="INVALID_SOURCE_BODY2" devLabel="more than one bodies are selected in editing!" translation="在编辑中选择了多个实体！"/>
+	<label commandName="INVALID_SVG" devLabel="Invalid SVG file" translation="无效的 SVG 文件"/>
+	<label commandName="INVALID_TARGET_INSTANCE" devLabel="Invalid target component instance" translation="无效的目标零部件实例"/>
+	<label commandName="ISO" devLabel="ISO" translation="ISO"/>
+	<label commandName="IllegalRestructure" devLabel="Illegal restructure. It will cause bad dependency." translation="非法的重新构造。它将产生不良依赖。"/>
+	<label commandName="ImperialUnitSystemName" devLabel="Imperial (foot, lbmass, second, Fahrenheit) units" translation="英制(英尺、磅、秒、华氏度)单位"/>
+	<label commandName="ImportFailed" devLabel="Import failed" translation="导入失败"/>
+	<label commandName="InchImperialUnitSystemName" devLabel="inch modeling length with imperial (foot, lbmass, second, Fahrenheit) units" translation="使用英制(英尺、磅、秒、华氏度)单位的英制建模长度"/>
+	<label commandName="IndependentXRefInstanceRequired" devLabel="The selected instance has some essential dependent instances. Break Link is currently not supported!" translation="选定实例含有一些基本的相关实例。“断开链接”当前不受支持！"/>
+	<label commandName="IndependentXRefsRequired" devLabel="The selected referenced component or one of its children has dependent features like Pattern associated with it. Please remove the dependent features and try again." translation="选定的参考零部件或其子项之一具有相关特征，例如具有与其关联的阵列。请删除该相关特征，然后重试。"/>
+	<label commandName="InitializeFailed" devLabel="initialize failed" translation="初始化失败"/>
+	<label commandName="InsertPointFailed" devLabel="Insert Point failed to perform insertion" translation="“插入点”命令无法执行插入"/>
+	<label commandName="Instance_pattern_error" devLabel="Cannot find source component instance" translation="找不到源零部件实例"/>
+	<label commandName="InterferenceComponent" devLabel="Intersections" translation="交点"/>
+	<label commandName="Invalid Face" devLabel="Some faces cannot be deleted" translation="无法删除某些面"/>
+	<label commandName="InvalidAxisInput" devLabel="Invalid input" translation="无效的输入"/>
+	<label commandName="InvalidOccPath" devLabel="Invalid Occurrence Path." translation="引用路径无效。"/>
+	<label commandName="InvalidOccurrencePath" devLabel="Occurrence Path is not active" translation="实例路径未处于激活状态"/>
+	<label commandName="InvalidOffsetSketchError" devLabel="Offset profile must be a simple (possibly closed) chain of curves." translation="偏移轮廓必须是一个简单的(可能闭合的)曲线链。"/>
+	<label commandName="InvalidPlaneNormal" devLabel="Invalid reference plane due to some reference point is merged." translation="由于某些参考点已合并，参考平面无效。"/>
+	<label commandName="InvalidReferringDocType" devLabel="External Component can not be created in incompatible or legacy document types." translation="无法在不兼容或旧文档类型中创建外部零部件。"/>
+	<label commandName="InvalidRibTool" devLabel="Invalid tool body for rib" translation="刀具实体对加强筋无效"/>
+	<label commandName="InvalidSketchConstraint" devLabel="Invalid sketch constraint!" translation="无效的草图约束！"/>
+	<label commandName="InvalidSketchDimension" devLabel="Invalid sketch dimension!" translation="无效的草图标注！"/>
+	<label commandName="InvalidWPntInput" devLabel="Invalid input" translation="无效的输入"/>
+	<label commandName="InvalidWebTool" devLabel="Invalid tool body for web" translation="刀具实体对网状加强筋无效"/>
+	<label commandName="IsoCurveAnalysisDefaultUserName" devLabel="IsoCurve" translation="等参曲线"/>
+	<label commandName="IsolateSymmetry1" devLabel="One of the T-Spline bodies selected for this operation does not contain symmetry.  That portion of the model will be highlighted and isolated from the symmetric portion of the model.  The isolated faces will be removed when symmetry is cleared." translation="为此操作选择的 T-Spline 实体之一不包含对称。该部分模型将亮显，并与模型的对称部分相隔离。当清除对称时，将删除隔离的面。"/>
+	<label commandName="IsolateSymmetry2" devLabel="Failed to isolate symmetry." translation="无法隔离对称。"/>
+	<label commandName="JIS" devLabel="JIS" translation="JIS"/>
+	<label commandName="JOINT_LOST" devLabel="Motion Link joint is missing" translation="缺少运动链接联接"/>
+	<label commandName="JOINT_LOST_ORIGIN1" devLabel="Missing joint origin 1, using cached position" translation="缺少联接原点 1，因此将使用缓存的位置"/>
+	<label commandName="JOINT_LOST_ORIGIN2" devLabel="Missing joint origin 2, using cached position" translation="缺少联接原点 2，因此将使用缓存的位置"/>
+	<label commandName="JO_ASSOCIATION_LOST" devLabel="Joint Origin geometry associations are missing" translation="缺少联接原点几何图元关联"/>
+	<label commandName="JointHandleFailed" devLabel="Modification of EndType failed" translation="修改末端类型失败"/>
+	<label commandName="JointHomeWarning" devLabel="Joint could not be reset to Home position" translation="联接无法重置到初始位置"/>
+	<label commandName="JointOriginFeatureCreationFailure" devLabel="Joint Origin feature creation failed." translation="创建联接原点特征失败。"/>
+	<label commandName="JointOriginIdCloningFailed" devLabel="JointOrigin cloning failed" translation="联接原点克隆失败"/>
+	<label commandName="JointsHomeWarning" devLabel="One or more joints could not be reset to Home position" translation="一个或多个联接无法重置到初始位置"/>
+	<label commandName="KnotsTechnicallyMatchButItsProbablyJustRoundoffFromASeashell" devLabel="Knots technically match, but it's probably just roundoff from a seashell" translation="结在技术上匹配，但其可能只是从 Seashell 舍入"/>
+	<label commandName="LINK_PATH_LOST" devLabel="Motion Link path to joint is missing" translation="缺少联接的运动链接路径"/>
+	<label commandName="LOFT_CENTER_LINE_LOST" devLabel="Minimum of two profiles are required to create a Loft! Please select sketch curve as a Centerline." translation="至少需要两个轮廓才能创建放样！请选择草图曲线作为中心线。"/>
+	<label commandName="LOFT_COINCIDENT_POINT_SECTION" devLabel="A point profile can not be coincident with a non-point profile for a Loft." translation="点轮廓不能与放样的非点轮廓重合。"/>
+	<label commandName="LOFT_COPLANAR_CLOSED_SECTIONS" devLabel="Closed profiles can not be coplanar for a Loft." translation="若要进行放样，闭合轮廓不能共面。"/>
+	<label commandName="LOFT_FOLLOWING_POINT_SECTION" devLabel="There must be at least one intermediate non-point profile for a Loft." translation="放样必须至少有一个中间非点轮廓。"/>
+	<label commandName="LOFT_GUIDE_RAILS_LOST" devLabel="Minimum of two profiles are required to create a Loft! Please select sketch curve(s) as a Rail(s)." translation="至少需要两个轮廓才能创建放样！请选择草图曲线作为轨道。"/>
+	<label commandName="LOFT_GUIDE_RAIL_POINT_SPLIT" devLabel="Split the incorrect rail at the point profile,&#xA;    and use the add button before each selection." translation="在点轮廓处拆分不正确的轨道，&#xA;并在每个选择之前使用“添加”按钮。"/>
+	<label commandName="LOFT_ILLEGAL_POINT_SECTION" devLabel="There was a problem with one or more of the point profiles.&#xA;    Try changing or removing the point profiles." translation="一个或多个点轮廓存在问题。&#xA;    请尝试更改或删除点轮廓。"/>
+	<label commandName="LOFT_INTERNAL_POINT_SECTION" devLabel="A point profile can only be used as the first or last profile of a Loft." translation="点轮廓只能用作放样的第一个或最后一个轮廓。"/>
+	<label commandName="LOFT_MIN_PROFILES_NOT_MEET" devLabel="Minimum of two profiles are required to create a Loft." translation="至少需要两个轮廓才能创建放样。"/>
+	<label commandName="LOFT_NO_TOOLBODY" devLabel="Modeling Error: Can't create loft toolbody, please check the inputs." translation="建模错误: 无法创建放样刀具实体，请检查输入。"/>
+	<label commandName="LOFT_TOOLBODY_CREATE_FAIL" devLabel="Tool body creation failed" translation="刀具实体创建失败"/>
+	<label commandName="LatestDocEmptyPath" devLabel="Could not get the latest path for the base document" translation="无法获取基础文档的最新路径"/>
+	<label commandName="LatestDocEmptyPath2" devLabel="Could not get the latest path for the referenced document" translation="无法获取参考文档的最新路径"/>
+	<label commandName="LatestXRefDocOpenFailed" devLabel="Could not open linked document." translation="无法打开链接的文档。"/>
+	<label commandName="LatticeEdgeSelectionCategory" devLabel="Lattice Edge" translation="晶格边"/>
+	<label commandName="LatticeEdgeSelectionId" devLabel="LatticeEdge" translation="晶格边"/>
+	<label commandName="LatticeEdgeSelectionPluralId" devLabel="LatticeEdges" translation="晶格边"/>
+	<label commandName="LatticeEntitySelectionId" devLabel="LatticeEntity" translation="晶格实体"/>
+	<label commandName="LatticeEntitySelectionsId" devLabel="LatticeEntities" translation="晶格实体"/>
+	<label commandName="LatticeFaceSelectionCategory" devLabel="Lattice Face" translation="晶格面"/>
+	<label commandName="LatticeFaceSelectionId" devLabel="LatticeFace" translation="晶格面"/>
+	<label commandName="LatticeFaceSelectionsId" devLabel="LatticeFaces" translation="晶格面"/>
+	<label commandName="LatticeRigDeformDefaultUserName" devLabel="Lattice" translation="晶格"/>
+	<label commandName="LatticeRigDeformSelectionId" devLabel="LatticeRigDeform" translation="晶格装备变形"/>
+	<label commandName="LatticeRigDeformSelectionsId" devLabel="LatticeRigDeforms" translation="晶格装备变形"/>
+	<label commandName="LatticeRigDeformersSelectionId" devLabel="LatticeRigDeformers" translation="晶格装备变形器"/>
+	<label commandName="LatticeRigDeformersSelectionsId" devLabel="LatticeRigDeformers" translation="晶格装备变形器"/>
+	<label commandName="LatticeRigSelectionCategory" devLabel="Lattice Rig" translation="晶格装备"/>
+	<label commandName="LatticeVertexSelectionCategory" devLabel="Lattice vertex" translation="晶格顶点"/>
+	<label commandName="LatticeVertexSelectionId" devLabel="LatticeVertex" translation="晶格顶点"/>
+	<label commandName="LatticeVertexSelectionsId" devLabel="LatticeVertices" translation="晶格顶点"/>
+	<label commandName="LoadPackagesAsXRef" devLabel="XRef Packages" translation="外部参照数据包"/>
+	<label commandName="LoadPackagesAsXRefToolTip" devLabel="Load packages as XRef when generating PCB 3d document" translation="生成 PCB 三维文档时加载数据包作为外部参照"/>
+	<label commandName="Loft" devLabel="No target component." translation="无目标零部件。"/>
+	<label commandName="LoftFeatureName" devLabel="Loft" translation="放样"/>
+	<label commandName="MESH_SELECTION_OPTION_GROUP" devLabel="Modify Selection" translation="修改选择"/>
+	<label commandName="MESH_SELECTOR_BRUSH_SIZE" devLabel="Brush Size" translation="笔刷大小"/>
+	<label commandName="MESH_SELECTOR_EXPANDTOCONNECTED_MESH_SEL_ACTION" devLabel="Expand to Connected" translation="扩展到“相连”"/>
+	<label commandName="MESH_SELECTOR_EXPANDTOGROUP_MESH_SEL_ACTION" devLabel="Expand to Face Group" translation="扩展到“面组”"/>
+	<label commandName="MESH_SELECTOR_GROW_MESH_SEL" devLabel="Grow" translation="扩大"/>
+	<label commandName="MESH_SELECTOR_GROW_SHRINK_MESH_SEL_EXPAND" devLabel="Expand" translation="展开"/>
+	<label commandName="MESH_SELECTOR_GROW_SHRINK_MESH_SEL_GROW" devLabel="Grow/Shrink" translation="扩大/收缩"/>
+	<label commandName="MESH_SELECTOR_INVERT_MESH_SEL" devLabel="Invert" translation="反转"/>
+	<label commandName="MESH_SELECTOR_INVERT_MESH_SEL_ACTION" devLabel="Invert Selection" translation="反向选择"/>
+	<label commandName="MESH_SELECTOR_N_SELECTED_TRIANGLES" devLabel="Selected Faces" translation="选定的面"/>
+	<label commandName="MESH_SELECTOR_SHRINK_MESH_SEL" devLabel="Shrink" translation="收缩"/>
+	<label commandName="MIRROR_PATTERN_JOIN_UNSUCCESSFUL" devLabel="Could not join, multiple bodies created." translation="无法合并，已创建多个实体。"/>
+	<label commandName="MIRROR_PATTERN_MISSING_PLANE" devLabel="Missing mirror plane" translation="缺少镜像平面"/>
+	<label commandName="MISSING_REF_ERROR" devLabel="Missing reference" translation="缺少参考"/>
+	<label commandName="MMKSUnitSystemName" devLabel="standard MKS (m, kg, second, Celsius) units" translation="标准 MKS (米、千克、秒、摄氏度)单位"/>
+	<label commandName="MOTION_LINK_OUT_OF_DATE" devLabel="Motion Link offset could not be updated. Cached offset will be used" translation="无法更新运动链接偏移。将使用缓存的偏移"/>
+	<label commandName="MULTIPLE_TARGET_UNSUPPORTED" devLabel="The feature doesn't support multiple targets, please edit the feature to select one target." translation="该特征不支持多个目标，请编辑该特征以选择一个目标。"/>
+	<label commandName="MakeDeletionFeature" devLabel="A Delete feature will be added to the timeline." translation="删除特征将添加到时间轴。"/>
+	<label commandName="MarkTransactionBoundaryError" devLabel="ASM mark transaction boundary error." translation="ASM 标记事务边界错误。"/>
+	<label commandName="MatchAPIFailed" devLabel="Match failed" translation="匹配失败"/>
+	<label commandName="MatchAddParmFailed" devLabel="Invalid input" translation="无效的输入"/>
+	<label commandName="MatchAddParmFailedTargetInput" devLabel="Invalid Target input" translation="目标输入无效"/>
+	<label commandName="MatchGetInputEdgesFailed" devLabel="Invalid input edges" translation="无效的输入边"/>
+	<label commandName="MatrixAxisGeometryMissing" devLabel="Axis geometry is missing" translation="缺少轴几何图元"/>
+	<label commandName="MatrixEdgeGeometryMissing" devLabel="Edge geometry is missing" translation="缺少边几何图元"/>
+	<label commandName="MatrixOriginGeometryMissing" devLabel="Origin geometry is missing" translation="缺少源几何图元"/>
+	<label commandName="MatrixPlaneGeometryMissing" devLabel="Plane geometry is missing" translation="缺少平面几何图元"/>
+	<label commandName="MatrixXAxisGeometryMissing" devLabel="X axis geometry is missing" translation="缺少 X 轴几何图元"/>
+	<label commandName="MergeEdgeFailed" devLabel="Merge Edge operation failed." translation="“合并边”操作失败。"/>
+	<label commandName="MeshBodyDefaultUserName" devLabel="MeshBody" translation="网格实体"/>
+	<label commandName="MeshBodySelectionCategory" devLabel="Mesh Bodies" translation="网格实体"/>
+	<label commandName="MeshClearFGGenericError" devLabel="ClearFG failed due to invalid input" translation="由于输入无效，清除 FG 失败"/>
+	<label commandName="MeshCombineComponentError" devLabel="Combine failed due to invalid target component" translation="由于目标零部件无效，合并失败"/>
+	<label commandName="MeshCombineGenericError" devLabel="Combine failed due to invalid input" translation="由于输入无效，合并失败"/>
+	<label commandName="MeshConvFail" devLabel="Mesh Convert Failed" translation="网格转换失败"/>
+	<label commandName="MeshFaceGroupToolTip" devLabel="Color mesh bodies by face group" translation="按面组"/>
+	<label commandName="MeshFaceGroupUserName" devLabel="Face Groups" translation="面组"/>
+	<label commandName="MeshFacetSelection" devLabel="Mesh Facet" translation="网格面"/>
+	<label commandName="MeshFacetSelectionCategory" devLabel="Mesh Facets" translation="网格面"/>
+	<label commandName="MeshFacetSelection_Plural" devLabel="Mesh Facets" translation="网格面"/>
+	<label commandName="MeshGenerateFGGenericError" devLabel="GenerateFG failed due to invalid input" translation="由于输入无效，生成 FG 失败"/>
+	<label commandName="MeshMakeSolidGenericError" devLabel="MakeSolid failed due to invalid input" translation="由于输入无效，生成实体失败"/>
+	<label commandName="MeshMakeSolidOutputError" devLabel="MakeSolid failed due to invalid output" translation="由于输出无效，生成实体失败"/>
+	<label commandName="MeshPlanarSectionRequestFailed" devLabel="Mesh section failed." translation="创建网格截面失败。"/>
+	<label commandName="MeshPlaneCutFailed" devLabel="Plane Cut failed." translation="平面剪切失败。"/>
+	<label commandName="MeshPointSelectionCategory" devLabel="Mesh Points" translation="网格点"/>
+	<label commandName="MeshPointSelectionId" devLabel="Mesh Point" translation="网格点"/>
+	<label commandName="MeshPointsSelectionId" devLabel="Mesh Points" translation="网格点"/>
+	<label commandName="MeshReduceGenericError" devLabel="Reduce failed due to invalid input" translation="由于输入无效，减少失败"/>
+	<label commandName="MeshRemeshGenericError" devLabel="Remesh failed due to invalid input" translation="由于输入无效，重新划分网格失败"/>
+	<label commandName="MeshReplaceGenericError" devLabel="Replace failed due to invalid input" translation="由于输入无效，替换失败"/>
+	<label commandName="MeshReverseNormalsGenericError" devLabel="ReverseNormals failed due to invalid input" translation="由于输入无效，反转法向失败"/>
+	<label commandName="MeshScaleGenericError" devLabel="Scale failed due to invalid input" translation="由于输入无效，缩放失败"/>
+	<label commandName="MeshSelectionsId" devLabel="Mesh Bodies" translation="网格实体"/>
+	<label commandName="MeshSmoothGenericError" devLabel="Smooth failed due to invalid input" translation="由于输入无效，平滑处理失败"/>
+	<label commandName="MeshStyleOptionGroup" devLabel="Mesh Style" translation="网格样式"/>
+	<label commandName="MeshStyleOptionGroupToolTip" devLabel="Preferences that set Mesh rendering style" translation="用于设置网格渲染样式的首选项"/>
+	<label commandName="MeshToolProps" devLabel="Mesh Selection Tool" translation="网格选择工具"/>
+	<label commandName="MidSurfaceError_NoSource" devLabel="Source bodies lost!" translation="源实体丢失！"/>
+	<label commandName="MidSurfaceShellCreationFailure" devLabel="Failed to generate a mid-surface shell" translation="无法生成中间曲面抽壳"/>
+	<label commandName="MidSurfaceShell_DefaultName" devLabel="Midsurface" translation="中间曲面"/>
+	<label commandName="MinimumRadiusAnalysisDefaultUserName" devLabel="MinimumRadius" translation="最小半径"/>
+	<label commandName="MirrorComponent" devLabel="MirrorComponent" translation="镜像零部件"/>
+	<label commandName="MirrorPatternFeatureName" devLabel="Mirror" translation="镜像"/>
+	<label commandName="MirrorReNameComponnet" devLabel="(Mirror)" translation="(镜像)"/>
+	<label commandName="MirrorSuffix" devLabel="(Mirror)" translation="(镜像)"/>
+	<label commandName="MissingJORef" devLabel="Missing snap reference" translation="缺少捕捉参考"/>
+	<label commandName="MmMKSUnitSystemName" devLabel="mm modeling length with MKS (m, kg, second, Celsius) units" translation="使用 MKS (米、千克、秒、摄氏度)单位的毫米建模长度"/>
+	<label commandName="ModelingError" devLabel="Modeling Error: Can't create hole toolbody, please check inputs" translation="建模错误: 无法创建钻孔刀具实体，请检查输入"/>
+	<label commandName="ModelingErrorBadInputToLoft4" devLabel="Modeling Error: Minimum two profiles are required to create a Loft! Please select sketch curve as a Centerline" translation="建模错误: 至少需要两个轮廓才能创建放样！请选择草图曲线作为中心线"/>
+	<label commandName="ModelingErrorBadInputToLoft5" devLabel="Modeling Error: Minimum two profiles are required to create a Loft! Please select sketch curve(s) as a Rail(s)" translation="建模错误: 至少需要两个轮廓才能创建放样！请选择草图曲线作为轨道"/>
+	<label commandName="ModelingErrorBadInputToLoft6" devLabel="Modeling Error: Minimum two profiles are required to create a Loft!" translation="建模错误: 至少需要两个轮廓才能创建放样！"/>
+	<label commandName="ModelingErrorBadInputToLoft7" devLabel="Modeling Error: Minimum two profiles are required to create a Loft!" translation="建模错误: 至少需要两个轮廓才能创建放样！"/>
+	<label commandName="ModelingErrorConnectorObstacleRequest" devLabel="Modeling Error: Can't create connector obstacle toolbody, please check inputs" translation="建模错误: 无法创建接头障碍物工具体，请检查输入"/>
+	<label commandName="MoveFaceGeneralError" devLabel="Move Face fails due to unexpected result" translation="由于出现意外结果，移动面失败"/>
+	<label commandName="MultipleAreaBoardError" devLabel="The outline could generate multiple areas to defind board, which is not expected, please check the source outline to make it form single area for board!" translation="该轮廓可能生成多个区域以定义电路板，但这不是预期结果，请检查源轮廓以使其形成单一区域来定义电路板！"/>
+	<label commandName="MultipleEIPContextSelectionId" devLabel="Contexts" translation="上下文"/>
+	<label commandName="NONROOT_OCCURRENCE_PATH_ROOT" devLabel="Occurrence Path must be from root component" translation="实例路径必须从根零部件开始"/>
+	<label commandName="NO_EXTEND_EDGE" devLabel="No Extend Edge Found!" translation="未找到延伸边！"/>
+	<label commandName="NO_REF_POINT" devLabel="No reference point found!" translation="未找到参考点！"/>
+	<label commandName="NO_SOURCE_FACES" devLabel="No Source Faces Found!" translation="未找到源面！"/>
+	<label commandName="NO_TARGET_BODY" devLabel="No target body!" translation="没有目标实体！"/>
+	<label commandName="NegativeGuideRail" devLabel="Guide Rail Distance cannot be negative." translation="引导轨道距离不能为负值。"/>
+	<label commandName="NestedOffsetSketchError" devLabel="One or more of the selected curves has already been offset. Consider offsetting the original profile again instead." translation="选定的一条或多条曲线已偏移。请考虑重新偏移原始轮廓。"/>
+	<label commandName="NoBoxCreated" devLabel=": No box is created." translation=": 未创建长方体。"/>
+	<label commandName="NoDesignAsset" devLabel="The latest target document %1% does not contain a Design Asset" translation="最新的目标文档 %1% 不包含设计资源"/>
+	<label commandName="NoGripsInTopos" devLabel="No valid selection for smoothing" translation="没有为平滑选择有效的选项"/>
+	<label commandName="NoIntersectingTargetBodyError" devLabel="No intersecting target body was found." translation="未找到相交的目标实体。"/>
+	<label commandName="NoLinkBetweenDocs" devLabel="Could not find link between source document: %1% and target document: %2%" translation="找不到源文档 %1% 与目标文档 %2% 之间的链接"/>
+	<label commandName="NoLinkMgr" devLabel="Could not find Link Mgr in the source document %1%!!" translation="在源文档 %1% 中找不到链接管理器"/>
+	<label commandName="NoPackage3dFileOnThisFootprint" devLabel=": This version of device might not have any package 3D file." translation=": 此版本的设备可能没有任何三维数据包文件。"/>
+	<label commandName="NoShellBodySelectionCategory" devLabel="No Shell Bodies" translation="无抽壳实体"/>
+	<label commandName="NoSourceWMPlaceholder" devLabel="Working Model missing design placeholder." translation="Working Model missing design placeholder."/>
+	<label commandName="NoSurfacesToTrim" devLabel="Cutting Tool does not intersect any seletected surface!" translation="切割工具不与任何选定的曲面相交！"/>
+	<label commandName="NoTargetBodyError" devLabel="No target body found to cut or intersect!" translation="未找到要剪切或相交的目标实体！"/>
+	<label commandName="NoThreeDModelInPackageFile" devLabel=": This version of package 3d file might have no 3d model." translation=": 此版本的三维数据包文件可能没有三维模型。"/>
+	<label commandName="NoValidDecalError" devLabel="no valid decal patch to use" translation="没有有效的贴图面片供使用"/>
+	<label commandName="NoVisibleSurfacesToTrim1" devLabel="Cutting Tool does not intersect any surface!" translation="切割工具与任何曲面都不相交！"/>
+	<label commandName="NoVisibleSurfacesToTrim2" devLabel="There are no visible Surfaces to trim" translation="没有可见的曲面供修剪"/>
+	<label commandName="NotExportTSpline" devLabel="Tspline bodies cannot be exported, and will not appear in the exported document. Use the Convert command to create bodies which will be exported." translation="T-Spline 实体无法导出，因此不会显示在导出的文档中。请使用“转换”命令来创建要导出的实体。"/>
+	<label commandName="NotSupported1" devLabel="%1% command is not supported for non-associative references" translation="“%1%”命令不受非关联参考支持"/>
+	<label commandName="NotSupported2" devLabel="%1% command is only supported for Fusion assets" translation="“%1%”命令仅受 Fusion 资源支持"/>
+	<label commandName="NotSupported3" devLabel="%1% command can only work with valid Fusion root components" translation="“%1%”命令仅能用于有效的 Fusion 根零部件"/>
+	<label commandName="NotSupported4" devLabel="Get Latest command is only supported on Fusion design data" translation="“获取最新版本”命令仅在 Fusion 设计数据上受支持"/>
+	<label commandName="NotSupportedEdit" devLabel="Parameter edit type not supported!" translation="参数编辑类型不受支持！"/>
+	<label commandName="NotSupportedUnitEdit" devLabel="Parameter unit edit not supported!" translation="不支持编辑参数单位！"/>
+	<label commandName="NothingConvertToDMFeature" devLabel="Nothing converted." translation="未转换任何对象。"/>
+	<label commandName="NothingStitched" devLabel="Modeling Error: Nothing has stitched." translation="建模错误: 未进行任何缝合。"/>
+	<label commandName="OCCURRENCE_LOST" devLabel="Fails to find occurrence and cache is used" translation="未能找到个体，已使用缓存的内容"/>
+	<label commandName="OCCURRENCE_MATCH_FAIL" devLabel="Occurrence Path is not matched" translation="实例路径不匹配"/>
+	<label commandName="OCCURRENCE_PATH_LOST" devLabel="Failed to find occurrence path" translation="找不到引用路径"/>
+	<label commandName="OCCURRENCE_TRANSFORM_NOT_FOUND" devLabel="Occurrence transform for feature not found" translation="未找到特征的实例变换"/>
+	<label commandName="ORIGIN_AXIS_GEOMETRY_MISSING" devLabel="Axis geometry is missing" translation="缺少轴几何图元"/>
+	<label commandName="ORIGIN_SELECTION_MISSING" devLabel="Origin geometry is missing." translation="缺少原始几何图元。"/>
+	<label commandName="ORIGIN_X_AXIS_REF_EDGE_MISSING" devLabel="Origin's reference x-axis selection is missing." translation="选择的原点的参考 X 轴丢失。"/>
+	<label commandName="ORIGIN_Z_AXIS_REF_MISSING" devLabel="Origin's primary axis selection is missing." translation="选择的原点的主轴丢失。"/>
+	<label commandName="OWNER_OCCURRENCE_LOST" devLabel="Failed to get owner occurrence transform" translation="未能获取所属个体转换"/>
+	<label commandName="ObjectPathReadonlyWarning" devLabel="some selected object is readonly and cannot be deleted." translation="某些选定对象为只读对象，无法删除。"/>
+	<label commandName="OccurrenceName" devLabel="Occurrence" translation="引用"/>
+	<label commandName="OfflineFailedGetLatestMsg" devLabel="Latest version of the file %1% is not available in Offline mode. Please switch to Online mode to perform the %2% command." translation="文件 %1% 的最新版本在脱机模式下不可用。请切换到联机模式以执行“%2%”命令。"/>
+	<label commandName="OffsetFacesFailed" devLabel="Brep transaction boundary is not set correctly." translation="未正确设置 BRep 事务边界。"/>
+	<label commandName="OffsetShell_DefaultName" devLabel="Midsurface" translation="中间曲面"/>
+	<label commandName="OffsetSketchBadCurvesError" devLabel="Could not offset curves." translation="无法偏移曲线。"/>
+	<label commandName="OffsetSketchFailedError" devLabel="Offset creation failed." translation="创建偏移失败。"/>
+	<label commandName="OffsetSketchNoGeomError" devLabel="The sketch offset created no geometry. Modify the offset dimension or verify the changes are correct." translation="草图偏移未创建任何几何图元。请修改偏移尺寸或验证更改是否正确。"/>
+	<label commandName="OvalHeadMachineScrew" devLabel="Oval Head Machine Screw" translation="椭圆头机器螺钉"/>
+	<label commandName="PATCH_NO_TOOLBODY" devLabel="Modeling Error: Can't create patch toolbody, please check the inputs." translation="建模错误: 无法创建面片工具体，请检查输入。"/>
+	<label commandName="PATH_PATTERN_INVALID_COUNT" devLabel="Invalid count" translation="无效的计数"/>
+	<label commandName="PATH_PATTERN_INVALID_START_RANGE" devLabel="Invalid start range" translation="无效的起始范围"/>
+	<label commandName="PATH_PATTERN_MISSING_OBJECTS_OR_PATH" devLabel="Missing objects or path" translation="缺少对象或路径"/>
+	<label commandName="PATTERN_BODY_LOST" devLabel="Could not resolve the body being patterned" translation="无法读取要阵列化的实体"/>
+	<label commandName="PATTERN_FACE_LOST" devLabel="Could not resolve the face being patterned" translation="无法读取要阵列化的面"/>
+	<label commandName="PATTERN_SOURCE_LOST_BODY" devLabel="A body is lost which is used as input for pattern. Try to edit the feature to repair it." translation="用作阵列输入的实体缺失。请尝试编辑该特征以将其修复。"/>
+	<label commandName="PATTERN_SOURCE_LOST_COMPINSTANCE" devLabel="A component instance is lost which is used as input for pattern. Try to edit the feature to repair it." translation="用作阵列输入的零部件实例缺失。请尝试编辑该特征以将其修复。"/>
+	<label commandName="PATTERN_SOURCE_LOST_FACESET" devLabel="A face is lost which is used as input for pattern. Try to edit the feature to repair it." translation="用作阵列输入的面缺失。请尝试编辑该特征以将其修复。"/>
+	<label commandName="PATTERN_SOURCE_LOST_FEATURE" devLabel="A feature is lost which is used as input for pattern. Try to edit the feature to repair it." translation="用作阵列输入的特征缺失。请尝试编辑该特征以将其修复。"/>
+	<label commandName="PCBBoardName" devLabel="Board" translation="电路板"/>
+	<label commandName="PCBNewBoard" devLabel="Board" translation="电路板"/>
+	<label commandName="PIMApprovedBy" devLabel="Approved By" translation="批准者"/>
+	<label commandName="PIMApprovedDate" devLabel="Approved Date" translation="批准日期"/>
+	<label commandName="PIMDesignMass" devLabel="Mass" translation="质量"/>
+	<label commandName="PIMDesignMaterial" devLabel="Material" translation="材料"/>
+	<label commandName="PIMDesigner" devLabel="Designer" translation="设计者"/>
+	<label commandName="PIMManufacturer" devLabel="Manufacturer" translation="制造商"/>
+	<label commandName="PIMManufacturingEngineer" devLabel="Manufacturing Engineer" translation="制造工程师"/>
+	<label commandName="PIMMechanicalEngineer" devLabel="Mechanical Engineer" translation="机械工程师"/>
+	<label commandName="PIMPartDescription" devLabel="Description" translation="描述"/>
+	<label commandName="PIMPartName" devLabel="Part Name" translation="零件名称"/>
+	<label commandName="PIMPartNumber" devLabel="Part Number" translation="零件代号"/>
+	<label commandName="PIMProject" devLabel="Project" translation="项目"/>
+	<label commandName="PIMStatus" devLabel="Status" translation="状态"/>
+	<label commandName="PIMStockNumber" devLabel="Stock Number" translation="库存编号"/>
+	<label commandName="PIMTitle" devLabel="Title" translation="标题"/>
+	<label commandName="PIPE_PATH_NOT_FOUND" devLabel="The path for pipe cannot be found!" translation="找不到管道的路径！"/>
+	<label commandName="PLANE1_SELECTION_MISSING" devLabel="Missing plane1" translation="缺少平面 1"/>
+	<label commandName="PLANE2_SELECTION_MISSING" devLabel="Missing plane2" translation="缺少平面 2"/>
+	<label commandName="PRIMITIVE_PROFILE_REFERENCE_LOST" devLabel="The primitive profile reference is lost." translation="基本体轮廓参考缺失。"/>
+	<label commandName="PROFILE_NON_PLANAR" devLabel="Curves tracked in old profile are not coplanar anymore. The downstream result may be not your intent." translation="在旧轮廓中跟踪的曲线不再共面。后续结果可能与预期不符。"/>
+	<label commandName="PROFILE_REFERENCE_LOST" devLabel="The profile reference is lost, try editing this the feature to reselect the lost profile." translation="轮廓参考缺失，请尝试编辑该特征以重新选择缺失的轮廓。"/>
+	<label commandName="PROJECT_TO_SURFACE_FAILED" devLabel="Project to surface failed, please check the surface or the vector!" translation="投影到曲面失败，请检查曲面或矢量！"/>
+	<label commandName="ParameterEditErrorStatus" devLabel="%1%" translation="%1%"/>
+	<label commandName="PartingFaceSplitFailure" devLabel="Failed to split faces" translation="无法分割面"/>
+	<label commandName="PartingLineFailure" devLabel="Failed to create parting lines" translation="无法创建分模线"/>
+	<label commandName="PartingLineNonPlanarParting" devLabel="Split Solid Body mode only supports coplanar parting lines." translation="分割实体模式仅支持共面分模线。"/>
+	<label commandName="PartingSplitFailure" devLabel="Failed to split the body" translation="无法分割该实体"/>
+	<label commandName="PartingSplittingSheetFailure" devLabel="Failed to create splitting surface" translation="无法创建分割曲面"/>
+	<label commandName="PartingSurfaceExtendWarning" devLabel="Failed to extend parting surfaces" translation="无法延伸分型面"/>
+	<label commandName="PathPatternFeatureName" devLabel="PathPattern" translation="路径阵列"/>
+	<label commandName="PathPatternFeatureNameNumbered" devLabel="PathPattern%1%" translation="路径阵列%1%"/>
+	<label commandName="PatternComputeError" devLabel="Cannot find source body for the pattern compute." translation="找不到用于阵列计算的源实体。"/>
+	<label commandName="PatternFeatureName" devLabel="Pattern" translation="阵列"/>
+	<label commandName="PatternReNameComponent" devLabel="(Pattern)" translation="(阵列)"/>
+	<label commandName="Pattern_Feature_Input_Compute_Error" devLabel="Pattern Source Lost" translation="阵列源缺失"/>
+	<label commandName="PipeFeatureName" devLabel="Pipe" translation="管道"/>
+	<label commandName="PipeJointId" devLabel="Pipe EndType" translation="管端类型"/>
+	<label commandName="PipeJointsId" devLabel="Pipe EndTypes" translation="管端类型"/>
+	<label commandName="PipeSectionId" devLabel="Pipe Section" translation="管道截面"/>
+	<label commandName="PipeSectionsId" devLabel="Pipe Sections" translation="管道截面"/>
+	<label commandName="PipeSegmentId" devLabel="Pipe Segment" translation="管段"/>
+	<label commandName="PipeSegmentsId" devLabel="Pipe Segments" translation="管段"/>
+	<label commandName="ProjectSourceLost" devLabel="The project source is lost, Cache is used!" translation="项目源缺失，已使用缓存！"/>
+	<label commandName="ProjectSourceVectorLost" devLabel="The project direction line is lost, Cache is used!" translation="投影方向线缺失，已使用缓存！"/>
+	<label commandName="ProjectSurfaceLost" devLabel="The project surface is lost, Cache is used!" translation="投影曲面缺失，已使用缓存！"/>
+	<label commandName="ProjectToSurfaceComputeUtil_Fail01" devLabel="Failed to project the selected geometries. Please check that the project direction and selected faces are sensible, or try changing project type." translation="无法投影选定的几何图元。请检查投影方向和选定的面是否合理，或尝试更改投影类型。"/>
+	<label commandName="ProjectToSurfaceComputeUtil_Fail02" devLabel="Failed to project the selected geometries. Please check that the selected geometries and faces are sensible, or try changing project type." translation="无法投影选定的几何图元。请检查选定的几何图元和面是否合理，或尝试更改投影类型。"/>
+	<label commandName="ProjectToSurfaceComputeUtil_FailToProjectPartial" devLabel="Have certain selected curves couldn't be projected!" translation="无法投影某些选定的曲线！"/>
+	<label commandName="RADIUS_TOO_SMALL" devLabel="The radius is too small!" translation="半径太小！"/>
+	<label commandName="RECTANGULAR_PATTERN_MISSING_OBJECTS_OR_AXES" devLabel="Missing objects or axes" translation="缺少对象或轴"/>
+	<label commandName="REFOLD_NO_BODY_INPUT" devLabel="It looks like the sheet metal body was removed. Undo the features or delete the features in the timeline to refold. You can also delete the unfold feature to return to the folded state." translation="似乎钣金实体已删除。请撤消特征或删除时间轴中要重新折叠的特征。也可以删除展开特征以恢复到折叠状态。"/>
+	<label commandName="REFOLD_NO_VALID_INPUT" devLabel="Failed to refold the body. Please provide a valid input." translation="无法重新折叠实体。请提供有效的输入。"/>
+	<label commandName="RELATIVE_POSITION_LOST" devLabel="Fails to get associated relative position" translation="未能获取关联的相对位置"/>
+	<label commandName="REORIENT_PRIMARY_AXIS_MISSING" devLabel="The reoriented primary axis selection is missing." translation="选择的重定向的主轴丢失。"/>
+	<label commandName="REORIENT_SECONDARY_AXIS_MISSING" devLabel="The reoriented secondary axis selection is missing." translation="选择的重定向的次轴丢失。"/>
+	<label commandName="REPLACE_FACE_TARGET_LOST" devLabel="The target face is lost" translation="目标面缺失"/>
+	<label commandName="REPLACE_FACE_TOOL_LOST" devLabel="The source face is lost" translation="源面缺失"/>
+	<label commandName="REPLACE_WITH_PRIMITIVE_OUT_OF_DATE" devLabel="Replace with Primitives Feature is out of date." translation="使用基本体替换特征已过期。"/>
+	<label commandName="REVOLVE_INVALID_AXIS" devLabel="Axis is invalid" translation="轴无效"/>
+	<label commandName="RIGID_GROUP_OPERAND_LOST" devLabel="Rigid group operands are missing" translation="缺少刚性组操作数"/>
+	<label commandName="RPatternFeatureName" devLabel="R-Pattern" translation="R-阵列"/>
+	<label commandName="RULED_SURFACE_INVALID_ANGLE" devLabel="Cannot set angle value to 90 degrees. Adjust angle value." translation="无法将角度值设置为 90 度。请调整角度值。"/>
+	<label commandName="RULED_SURFACE_NO_INPUT" devLabel="Cannot find input geometry. Edit the feature to reselect lost inputs." translation="找不到输入几何图元。请编辑该特征以重新选择缺失的输入。"/>
+	<label commandName="Reconstruction_prefix" devLabel="Reconstructed-" translation="重新构造 -"/>
+	<label commandName="RedirectProblem" devLabel="Could not redirect the target file %1% to the _XRef_ location" translation="无法将目标文件 %1% 重定向到 _XRef_ 位置"/>
+	<label commandName="RefDataMiss" devLabel="missing" translation="缺失"/>
+	<label commandName="ReloadDocumentCannotFetch" devLabel="Could not fetch the latest version of the document" translation="Could not fetch the latest version of the document"/>
+	<label commandName="ReloadDocumentCannotOpen" devLabel="Could not reload the latest version of the document" translation="无法重新加载文档的最新版本"/>
+	<label commandName="ReplaceWithPrimitiveFeature" devLabel="Replace With Primitive" translation="使用基本体替换"/>
+	<label commandName="ReplaceWithPrimitivesRequest_Rename" devLabel="Simplified Primitive" translation="简化的基本体"/>
+	<label commandName="RequireSaveBeforeInsert" devLabel="Please save this design before inserting components" translation="在插入零部件之前，请保存该设计"/>
+	<label commandName="ResolveProblem" devLabel="Could not resolve the latest version of the target document. To-Path: %1%!!" translation="无法读取目标文档的最新版本。目标路径: %1%"/>
+	<label commandName="ResolveProblem2" devLabel="Could not resolve the latest version of the target document. From-Path: %1%, To-Path: %2%!!" translation="无法读取目标文档的最新版本。源路径: %1%，目标路径: %2%"/>
+	<label commandName="RevolveFeatureName" devLabel="Revolve" translation="旋转"/>
+	<label commandName="Rib" devLabel="No target component." translation="无目标零部件。"/>
+	<label commandName="RibComputeError" devLabel="Fail to compute rib profile!" translation="无法计算加强筋轮廓！"/>
+	<label commandName="RibComputeFailed" devLabel="Rib compute failed" translation="加强筋计算失败"/>
+	<label commandName="RibFeatureName" devLabel="Rib" translation="加强筋"/>
+	<label commandName="RuleName" devLabel="Rule Name" translation="规则名称"/>
+	<label commandName="RuleUnitsExpressionLineEdit1" devLabel="Please complete the expression" translation="请输入完整的表达式"/>
+	<label commandName="RuleUnitsExpressionLineEdit2" devLabel="Please enter a valid expression" translation="请输入有效的表达式"/>
+	<label commandName="RuleUnitsExpressionLineEdit3" devLabel="For Round relief, relief depth value should be greater than or equal to 1/2 of relief width value" translation="对于“圆形”释压，释压深度值应大于或等于释压宽度值的 1/2"/>
+	<label commandName="SCULPT_BUILD_CELLS_FAILED" devLabel="Failed to build cells." translation="未能构建单元。"/>
+	<label commandName="SCULPT_CELL_MISMATCHED" devLabel="Some sculpt cells are mismatched." translation="某些造型单元不匹配。"/>
+	<label commandName="SCULPT_CREATE_BODY_FROM_CELL" devLabel="Failed to create bodies from cells." translation="未能从单元创建实体。"/>
+	<label commandName="SCULPT_MAKE_FACE_FROM_PLANE" devLabel="Failed to make sheet face from work plane." translation="未能从工作平面创建薄板面。"/>
+	<label commandName="SKETCH_MISFIT_EDGE_ENTITY" devLabel="Misfit edge entity" translation="边实体不适用"/>
+	<label commandName="SKETCH_MISFIT_VERTEX_ENTITY" devLabel="Misfit vertex entity" translation="顶点实体不适用"/>
+	<label commandName="SKETCH_SOLVER_NO_SOLUTION_FOUND" devLabel="Solver did not reach a solution" translation="求解器未得出解"/>
+	<label commandName="SMEdgeSelectionCategory" devLabel="Sheet Metal Body Edges" translation="钣金实体边"/>
+	<label commandName="SMRuleNotActivated" devLabel="Could not set the Rule as Default." translation="无法将该规则设置为默认规则。"/>
+	<label commandName="SMRuleNotCloned" devLabel="Could not duplicate a Rule." translation="无法复制规则。"/>
+	<label commandName="SMRuleNotDeleted" devLabel="Could not delete a Rule as some component is using it or the Rule does not exist." translation="无法删除规则，因为某个零部件正在使用该规则或该规则不存在。"/>
+	<label commandName="SMRuleNotUpdated" devLabel="Could not update a Rule." translation="无法更新规则。"/>
+	<label commandName="SNAPSHOT_NOTHING_CHANGE" devLabel="Capture Position has no positions for current Components and Joints" translation="“捕获位置”没有当前零部件和接头的位置"/>
+	<label commandName="SOURCE_BODY_LOST" devLabel="Source body not found!" translation="未找到源实体！"/>
+	<label commandName="SOURCE_INSTANCE_LOST" devLabel="Paste instance source occurrence context is lost" translation="粘贴实例的源引用上下文丢失"/>
+	<label commandName="SOURCE_MODEL_NOT_AVAILABLE" devLabel="The source design was unavailable during compute. Cached data will be used." translation="源设计在计算期间不可用。将使用缓存的数据。"/>
+	<label commandName="SPHERE_CREATE_SPHERE_FAILED" devLabel="Failed to build sphere tool body." translation="未能构建球形刀具实体。"/>
+	<label commandName="SPHERE_DIAMETER_VALUE_INVALID" devLabel="The sphere diameter is invalid." translation="球体直径无效。"/>
+	<label commandName="SPLIT_NO_TARGET_FACES" devLabel="No target faces for executing face split." translation="没有任何目标面可用于执行面分割。"/>
+	<label commandName="SPLIT_TARGET_TOOL_NOT_INTERSECT" devLabel="No intersection between target(s) and split tool." translation="目标与切割工具之间无交点。"/>
+	<label commandName="SPLIT_TOOL_INTERSECTING_SHEET" devLabel="There is unhandled intersecting tool data. Try without intersecting tools." translation="存在未处理的相交工具数据。请在没有相交工具的情况下尝试。"/>
+	<label commandName="SPLIT_TOOL_NON_MANIFOLD_SOLID" devLabel="Coincident tools would create illegal or non-manufacturable bodies. Try with separate tools." translation="同时使用多个工具会创建非法或不可制造的实体。请尝试使用单独的工具。"/>
+	<label commandName="SameDecalError" devLabel="Same image file path" translation="相同图像文件路径"/>
+	<label commandName="SameReferencedDoc" devLabel="The referenced file being opened is the same as the one currently open. Path of file: %1%!!" translation="要打开的参考文件与当前打开的文件相同。文件路径: %1%"/>
+	<label commandName="Sculpt" devLabel="No target component." translation="无目标零部件。"/>
+	<label commandName="SculptComputeFailedErr" devLabel="Failed to compute sculpt!" translation="无法计算造型！"/>
+	<label commandName="SculptFeatureName" devLabel="BoundaryFill" translation="边界填充"/>
+	<label commandName="SeashellIsoparmPatternExistsStandardizationIsImpossible" devLabel="Seashell isoparm pattern exists, standardization is impossible" translation="Seashell 等参线阵列已存在，无法实现标准化"/>
+	<label commandName="SectionViewAnalysisDefaultUserName" devLabel="Section" translation="截面"/>
+	<label commandName="SelectBackFacets" devLabel="Select Back Faces" translation="选择背面"/>
+	<label commandName="SelectedVerticesAreNotWithinWeldTolerance" devLabel="Selected vertices are not within weld tolerance" translation="选定的顶点不在焊接公差范围内"/>
+	<label commandName="SelectionInputBaseMeshBodyClientType" devLabel="Base Mesh Body" translation="基础网格实体"/>
+	<label commandName="SelectionInputMeshBodyClientType" devLabel="Mesh Body" translation="网格实体"/>
+	<label commandName="SheetMetalBend" devLabel="No target component." translation="无目标零部件。"/>
+	<label commandName="ShellBodySelectionCategory" devLabel="Shell Bodies" translation="抽壳实体"/>
+	<label commandName="ShellBodySelectionId" devLabel="ShellBody" translation="抽壳实体"/>
+	<label commandName="ShellBody_DefaultName" devLabel="Shell" translation="抽壳"/>
+	<label commandName="ShellFeatureName" devLabel="Shell" translation="抽壳"/>
+	<label commandName="SimAssetIsMissing" devLabel="Asset is missing" translation="缺少资源"/>
+	<label commandName="SimpleConversionFailed" devLabel="T-Spline conversion failed." translation="T-Spline 转换失败。"/>
+	<label commandName="SketchConstraintHasSameDimension" devLabel="Already has same dimension on referenced geometry!" translation="参考几何图元上已有相同尺寸！"/>
+	<label commandName="SketchInvisibleDimension" devLabel="The dimension you have just created is not visible. Please toggle Show Dimension option in sketch palette." translation="您刚刚创建的尺寸标注不可见。请在“草图选项板”中启用“显示尺寸标注”选项。"/>
+	<label commandName="SketchInvisibleProjectGeometries" devLabel="The Projected Geometries you have just created is not visible. Please toggle Show Project Geometries option in sketch palette." translation="您刚刚创建的投影几何图元不可见。请在“草图选项板”中启用“显示投影几何图元”选项。"/>
+	<label commandName="SketchPlaneLost" devLabel="The sketch plane is lost, Cache is used. Please redefine the sketch to select other plane!" translation="草图平面缺失，已使用缓存。请重新定义草图以选择其他平面！"/>
+	<label commandName="SketchProject" devLabel="Project" translation="项目"/>
+	<label commandName="SlideEdgeFailed" devLabel="Slide Edge operation failed with specific input edge set" translation="使用特定的输入边集时，滑动边操作失败"/>
+	<label commandName="SlottedCheeseHeadScrewDIN84" devLabel="Slotted Cheese Head Screw DIN 84" translation="开槽圆柱头螺钉 DIN 84"/>
+	<label commandName="SlottedCheeseHeadScrewISO1207" devLabel="Slotted Cheese Head Screw ISO 1207" translation="开槽圆柱头螺钉 ISO 1207"/>
+	<label commandName="SmRuleCopyToLibraryStr" devLabel="Copy to Library" translation="复制到库"/>
+	<label commandName="SmoothShadingType" devLabel="Smooth shaded (Organic/smooth shapes; increased performance)" translation="平滑着色(有机/平滑的形状；提高了性能)"/>
+	<label commandName="SmoothSurfaceFailed" devLabel="Smooth surface operation failed" translation="平滑曲面操作失败"/>
+	<label commandName="SmoothingRateNotInRange" devLabel="The smoothing rate is not in range" translation="平滑率超出范围"/>
+	<label commandName="SocketHeadCapScrew" devLabel="Socket Head Cap Screw" translation="凹头螺钉"/>
+	<label commandName="SocketHeadCapScrewDINENISO4762" devLabel="Socket Head Cap Screw DIN EN ISO 4762" translation="凹头螺钉 DIN EN ISO 4762"/>
+	<label commandName="SocketHeadCapScrewISO4762" devLabel="Socket Head Cap Screw ISO 4762" translation="凹头螺钉 ISO 4762"/>
+	<label commandName="StraightenFailed" devLabel="Failed to straighten the given points." translation="未能拉直给定点。"/>
+	<label commandName="SubDSurfaceDefaultUserName" devLabel="Body" translation="实体"/>
+	<label commandName="SubDSurfaceNodeSelectionId" devLabel="T-Spline Body" translation="T-Spline 实体"/>
+	<label commandName="SubDSurfaceNodeSelectionsId" devLabel="T-Spline Bodies" translation="T-Spline 实体"/>
+	<label commandName="SubDivideFailed" devLabel="Subdivide operation can be applied only on manifold Surfaces." translation="只能对流形曲面应用细分操作。"/>
+	<label commandName="SubDivideFailedUnknown" devLabel="Subdivide operations failed." translation="细分操作失败。"/>
+	<label commandName="SuppressOrDissolveWarning" devLabel="Deleted geometry is part of a pattern, suppressed the instance or dissolved the pattern." translation="删除的几何图元是阵列的一部分，因此实例已被抑制或阵列已被分解。"/>
+	<label commandName="Suppress_error" devLabel="No target feature" translation="没有目标特征"/>
+	<label commandName="SurfaceAlreadySmoothAsPossible" devLabel="Surface is already as smooth as possible" translation="曲面已尽可能地平滑"/>
+	<label commandName="SurfaceMergeFailed" devLabel="Failed to merge surfaces" translation="无法合并曲面"/>
+	<label commandName="SurfaceMergeFailedCopy" devLabel="Failed to copy tool body" translation="无法复制刀具实体"/>
+	<label commandName="SurfaceMergeFailedToolBody" devLabel="Failed to copy tool body" translation="无法复制刀具实体"/>
+	<label commandName="SurfaceOffsetFeatureName" devLabel="SurfaceOffset" translation="偏移曲面"/>
+	<label commandName="SurfacePatchFeatureName" devLabel="SurfacePatch" translation="曲面面片"/>
+	<label commandName="SurfaceRuledFeatureName" devLabel="SurfaceRuled" translation="直纹曲面"/>
+	<label commandName="SurfaceShellFeature" devLabel="SurfaceShell" translation="曲面抽壳"/>
+	<label commandName="SurfaceShell_DefaultName" devLabel="SurfaceShell" translation="曲面抽壳"/>
+	<label commandName="SurfaceStitch" devLabel="No target component." translation="无目标零部件。"/>
+	<label commandName="SurfaceStitchFailed" devLabel="Failed to stitch merge body" translation="无法缝合合并实体"/>
+	<label commandName="SurfaceThicken" devLabel="No target component." translation="无目标零部件。"/>
+	<label commandName="SurfaceUnionFailed" devLabel="Failed to union to merge body" translation="无法并入合并实体"/>
+	<label commandName="Sweep" devLabel="No target component." translation="无目标零部件。"/>
+	<label commandName="SweepFeatureName" devLabel="Sweep" translation="扫掠"/>
+	<label commandName="SweepProfileNonPlanarError" devLabel="The selected profile is non-planar. Parallel sweep requires a planar profile." translation="选定的轮廓不是平面。平行扫掠需要平面轮廓。"/>
+	<label commandName="SweepProfilePlaneNotIntersecting" devLabel="The path does not intersect the profile. For best results, the path should intersect the profile." translation="路径与轮廓不相交。为获得最佳结果，路径应与轮廓相交。"/>
+	<label commandName="SweepTaggingError" devLabel="Sweep creation failed. Try reselecting the inputs." translation="扫掠创建失败。请尝试重新选择输入。"/>
+	<label commandName="SymmetryRemoved" devLabel="The symmetry applied to this T-Spline body will be removed as a result of this operation.  You can proceed or cancel the operation." translation="执行该操作会移除应用于该 T-Spline 实体的对称。您可以继续操作，也可以取消操作。"/>
+	<label commandName="SymmetrySplit" devLabel="Surface failed to split due to symmetry. Use Clear Symmetry command to remove the symmetry." translation="由于对称曲面无法分割。请使用“清除对称”命令移除对称。"/>
+	<label commandName="TARGET_BODY_REFERENCE_LOST" devLabel="The target body is lost, try editing this feature to reselect target body." translation="目标实体缺失，请尝试编辑该特征以重新选择目标实体。"/>
+	<label commandName="TARGET_INSTANCE_LOST" devLabel="Paste instance target occurrence context is lost" translation="粘贴实例的目标引用上下文丢失"/>
+	<label commandName="TARGET_OCCURRENCE_LOST" devLabel="Failed to get target occurrence transform" translation="未能获取目标个体转换"/>
+	<label commandName="THREAD_BUILD_HELIXPATH_FAILED" devLabel="Failed to build thread helix path." translation="未能构建螺纹的螺旋路径。"/>
+	<label commandName="THREAD_BUILD_PROFILE_FAILED" devLabel="Failed to build thread profile." translation="未能构建螺纹轮廓。"/>
+	<label commandName="THREAD_CREATE_THREAD_BODY_FAILED" devLabel="Failed to build thread tool body." translation="未能构建螺纹刀具实体。"/>
+	<label commandName="THREAD_CUT_TOOL_FROM_TARGET_FAILED" devLabel="Failed to cut thread tool body from target body." translation="未能从目标实体切割螺纹刀具实体。"/>
+	<label commandName="THREAD_REFERENCE_FACE_LOST" devLabel="Thread face reference is lost, try editing this feature to reselect the reference face." translation="螺纹面参考缺失，请尝试编辑该特征以重新选择参考面。"/>
+	<label commandName="THREAD_REFERENCE_FACE_OFFSET_FAILED" devLabel="Thread size is bigger than the body. Unable to create hole and thread. Reduce hole/thread size and try again." translation="螺纹尺寸大于实体。无法创建孔和螺纹。请减小孔/螺纹尺寸，然后重试。"/>
+	<label commandName="TOOLBODY_CREATION_FAIL_ERROR" devLabel="Tool body creation failed" translation="刀具实体创建失败"/>
+	<label commandName="TOOLBODY_CREATION_FAIL_WARNING" devLabel="Some profiles failed to create tool bodies" translation="某些轮廓无法创建刀具实体"/>
+	<label commandName="TOOL_BODY_REFERENCE_LOST" devLabel="The tool body is lost, try editing this feature to reselect tool body." translation="刀具实体缺失，请尝试编辑该特征以重新选择刀具实体。"/>
+	<label commandName="TORUS_CREATE_TORUS_FAILED" devLabel="Failed to create torus solid body." translation="未能创建圆环实体。"/>
+	<label commandName="TORUS_MAJOR_DIAMETER_VALUE_INVALID" devLabel="The torus inner diameter is invalid." translation="圆环内径无效。"/>
+	<label commandName="TORUS_MINOR_DIAMETER_VALUE_INVALID" devLabel="The torus diameter is invalid." translation="圆环直径无效。"/>
+	<label commandName="TSPlineAddRefSymPlaneNotSel" devLabel="Plane not selected" translation="未选定平面"/>
+	<label commandName="TSPlineBridgeInvalidSelection" devLabel="Bridge Failed. Invalid Selection" translation="桥接失败。选择内容无效"/>
+	<label commandName="TSplineBodySelectionCategory" devLabel="T-Spline Body" translation="T-Spline 实体"/>
+	<label commandName="TSplineEdgeSelectionCategory" devLabel="T-Spline Edges" translation="T-Spline 边"/>
+	<label commandName="TSplineEntitySelectionCategory" devLabel="T-Spline Geometry" translation="T-Spline 几何图元"/>
+	<label commandName="TSplineExtrudeFailed" devLabel="Extrude failed with current selection set" translation="使用当前选择集拉伸失败"/>
+	<label commandName="TSplineFaceSelectionCategory" devLabel="T-Spline Faces" translation="T-Spline 面"/>
+	<label commandName="TSplineGripSelectionCategory" devLabel="T-Spline Tangency Handles" translation="T-Spline 切线控制柄"/>
+	<label commandName="TSplinePipeFeatureName" devLabel="Pipe" translation="管道"/>
+	<label commandName="TSplinePipeJointSelectionCategory" devLabel="Pipe Joint" translation="管接头"/>
+	<label commandName="TSplinePipeSectionSelectionCategory" devLabel="Pipe Section" translation="管道截面"/>
+	<label commandName="TSplinePipeSegmentSelectionCategory" devLabel="Pipe Segment" translation="管段"/>
+	<label commandName="TSplineStraigtenSurfacePointsError" devLabel="Straighten operation failed. When you use the Surface Points option, ensure that the T-Spline surface can be displayed in Smooth display mode." translation="拉直操作失败。使用“曲面点”选项时，请确保 T-Spline 曲面可以在“平滑”显示模式下显示。"/>
+	<label commandName="TSplineSurfaceUpgrade" devLabel="Both of the selected T-Spline bodies were upgraded to the latest version." translation="两个选定的 T-Spline 实体都已升级到最新版本。"/>
+	<label commandName="TSplineSurfaceUpgrade2" devLabel="Selected T-Spline bodies were upgraded to the latest version." translation="选定的 T-Spline 实体已升级到最新版本。"/>
+	<label commandName="TSplineToASMSurfaceOverloadFailed" devLabel="T-SplineToASM (surface overload) failed." translation="T-SplineToASM (曲面过载)失败。"/>
+	<label commandName="TSplineVertexSelectionCategory" devLabel="T-Spline Vertices" translation="T-Spline 顶点"/>
+	<label commandName="TWO_BEND_CORNER_RELIEF_PLACEMENT_UNSUPPORTED" devLabel="Bend feature can automatically create corner reliefs if shape type is set to Square, Round or Tear and relief placement is set to Intersection in Sheet Metal rule. Modify the rule or use Override in Bend dialog if you need corner reliefs." translation="如果形状类型设置为“方形”、“圆形”或“水滴形”且释压位置设置为“钣金规则中的交点”，折弯特征可以自动创建拐角释压。如果需要拐角释压，请修改规则或者使用“折弯中的替代”对话框。"/>
+	<label commandName="TWO_BEND_CORNER_RELIEF_SHAPE_UNSUPPORTED" devLabel="Bend feature can automatically create corner reliefs if shape type is set to Square, Round or Tear in Sheet Metal rule. Modify the rule or use Override in Bend dialog if you need corner reliefs." translation="如果在钣金规则中将形状类型设置为“方形”、“圆形”或“水滴形”，折弯特征可以自动创建拐角释压。如果需要拐角释压，请修改规则或者使用“折弯中的替代”对话框。"/>
+	<label commandName="TargetBodyCollectionNotVisible" devLabel="The visibility of Bodies folder is turned on." translation="“实体”文件夹的可见性已打开。"/>
+	<label commandName="TargetComponentReadonly" devLabel="The selected target component for Insert is in a readonly XRef. Please select another one." translation="选定要插入的目标零部件位于只读外部参照中。请选择其他外部参照。"/>
+	<label commandName="TargetDocumentNotFound" devLabel="Target document not found!!" translation="找不到目标文档！"/>
+	<label commandName="Target_Body_Compute_Failure" devLabel="Target Body Error" translation="目标实体错误"/>
+	<label commandName="TheMatchingKnotsGuaranteeIsNotMet" devLabel="The matching knots guarantee is not met" translation="不满足匹配结保证"/>
+	<label commandName="TheMeshContainsDegenerateFacesZeroLengthEdges" devLabel="The mesh contains degenerate faces/zero-length edges" translation="该网格包含退化面/长度为零的边"/>
+	<label commandName="TheMeshContainsValence2StarPoints" devLabel="The mesh contains valence-2 star points" translation="该网格包含 valence-2 星形点"/>
+	<label commandName="TheMeshIsNotManifold" devLabel="The mesh is not manifold" translation="网格不是流形"/>
+	<label commandName="ThickenFailed1" devLabel="Thicken operation can be applied only on manifold surfaces" translation="只能对流形曲面应用加厚操作"/>
+	<label commandName="ThickenFailed2" devLabel="Thicken operation can be applied only on manifold surfaces" translation="只能对流形曲面应用加厚操作"/>
+	<label commandName="ThickenFeatureName" devLabel="Thicken" translation="加厚"/>
+	<label commandName="Thread for Hole" devLabel="No possible thread faces found." translation="未找到合适的螺纹面。"/>
+	<label commandName="ThreadFeatureName" devLabel="Thread" translation="螺纹"/>
+	<label commandName="ThreadProfileAcmeST" devLabel="ACME Screw Threads" translation="ACME 螺钉螺纹"/>
+	<label commandName="ThreadProfileAfbmaLocknuts" devLabel="AFBMA Standard Locknuts" translation="AFBMA 标准锁紧螺母"/>
+	<label commandName="ThreadProfileAnsiMetricM" devLabel="ANSI Metric M Profile" translation="ANSI 公制螺纹规格"/>
+	<label commandName="ThreadProfileAnsiUnifiedST" devLabel="ANSI Unified Screw Threads" translation="ANSI 统一标准螺钉螺纹"/>
+	<label commandName="ThreadProfileBSPTaperInternal" devLabel="BSP Taper Internal" translation="BSP 锥内螺纹"/>
+	<label commandName="ThreadProfileBspPT" devLabel="BSP Pipe Threads" translation="BSP 管螺纹"/>
+	<label commandName="ThreadProfileDINPipeTaperInternal" devLabel="DIN Pipe Taper Internal" translation="DIN 锥内管螺纹"/>
+	<label commandName="ThreadProfileDinPT" devLabel="DIN Pipe Threads" translation="DIN 管螺纹"/>
+	<label commandName="ThreadProfileGbMetric" devLabel="GB Metric Profile" translation="GB 公制螺纹规格"/>
+	<label commandName="ThreadProfileGbNoSealPT" devLabel="GB Pipe Threads" translation="GB 管螺纹"/>
+	<label commandName="ThreadProfileGostST" devLabel="GOST Self-tapping Screw Thread" translation="GOST 自攻丝螺钉螺纹"/>
+	<label commandName="ThreadProfileISOTaperInternal" devLabel="ISO Taper Internal" translation="ISO 锥内螺纹"/>
+	<label commandName="ThreadProfileInchTT" devLabel="Inch Tapping Threads" translation="英制自攻螺纹"/>
+	<label commandName="ThreadProfileIsoMetric" devLabel="ISO Metric profile" translation="ISO 公制螺纹规格"/>
+	<label commandName="ThreadProfileIsoMetricTT" devLabel="ISO Metric Trapezoidal Threads" translation="ISO 公制梯形螺纹"/>
+	<label commandName="ThreadProfileIsoPT" devLabel="ISO Pipe Threads" translation="ISO 管螺纹"/>
+	<label commandName="ThreadProfileJISTaperInternal" devLabel="JIS Taper Internal" translation="JIS 锥内螺纹"/>
+	<label commandName="ThreadProfileJisPT" devLabel="JIS Pipe Threads" translation="JIS 管螺纹"/>
+	<label commandName="ThreadProfileMetricFormingST" devLabel="Metric Forming Screw Threads" translation="公制形式螺钉螺纹"/>
+	<label commandName="ThreadProfileNPT" devLabel="NPT" translation="NPT"/>
+	<label commandName="ThreadProfileNPTforPVCPipeAndFitting" devLabel="NPT for PVC Pipe and Fitting" translation="适用于 PVC 管材与配件的 NPT"/>
+	<label commandName="ToolBodyCreationFailError" devLabel="Tool body creation failed" translation="刀具实体创建失败"/>
+	<label commandName="ToolBodyStitchFailError" devLabel="Unable to stitch the bodies." translation="无法缝合体。"/>
+	<label commandName="ToolCreationFailure" devLabel="Cutting Tool does not generate successfully!" translation="切割工具未成功生成！"/>
+	<label commandName="Tool_Body_Compute_Failure" devLabel="Tool Body Error" translation="刀具实体错误"/>
+	<label commandName="TriangulateToolTip" devLabel="Convert polygon facets in the imported mesh to triangles. Only applicable in Mesh Preview." translation="将导入的网格中的多边形面转换为三角形。仅适用于网格预览。"/>
+	<label commandName="TriangulateUserName" devLabel="Triangulate mesh polygons" translation="将网格多边形分成三角形"/>
+	<label commandName="UNFOLD_COLLISION" devLabel="Collisions found while unfolding, cannot unfold." translation="展开时发现冲突，无法展开。"/>
+	<label commandName="UNFOLD_ERROR" devLabel="Unfolding failed." translation="展开失败。"/>
+	<label commandName="UNFOLD_FEATURE_BENDFACE_REF_LOST" devLabel="Bend face is not available." translation="折弯面不可用。"/>
+	<label commandName="UNFOLD_FEATURE_NO_STATIONARY_FACE" devLabel="Stationary face not available." translation="固定面不可用。"/>
+	<label commandName="UNFOLD_NO_BENDS_FOR_STATIONARAY" devLabel="The selected stationary entity is not connected to any bends. Please select a different stationary entity." translation="选定的固定实体未连接到任何折弯。请选择其他固定实体。"/>
+	<label commandName="UnCreaseVerticesFailed" devLabel="Failed to uncrease the given vertices." translation="无法取消锐化给定的顶点。"/>
+	<label commandName="UnWeldFailed" devLabel="UnWeld failed with given input" translation="使用给定输入进行开焊失败"/>
+	<label commandName="UnableToPromoteMeshToDesign" devLabel="Unable to promote mesh to design workspace, since the component data is unavailable." translation="无法将网格升级为设计工作空间，因为零部件数据不可用。"/>
+	<label commandName="UncreaseEdgeFailed" devLabel="Failed to uncrease the given edges." translation="无法对指定边取消锐化。"/>
+	<label commandName="Unfold" devLabel="No target component." translation="无目标零部件。"/>
+	<label commandName="UnitGeneralUnitsToolTip" devLabel="Default unit system for new design" translation="新设计的默认单位制"/>
+	<label commandName="UnitGeneralUnitsUserName" devLabel="Default units for new design" translation="新设计的默认单位"/>
+	<label commandName="UnsavedDocumentLabel" devLabel="(Unsaved)" translation="(未保存)"/>
+	<label commandName="UpdatePCBPackageFailure" devLabel="Failed to update PCB Component package" translation="未能更新 PCB 元件包"/>
+	<label commandName="UserParameter" devLabel="User Parameter" translation="用户参数"/>
+	<label commandName="UserPropertyOnComponent__Description" devLabel="Description" translation="描述"/>
+	<label commandName="UserPropertyOnComponent__ITEM_ID" devLabel="Item" translation="项目"/>
+	<label commandName="UserPropertyOnComponent__MATERIAL" devLabel="Material" translation="材料"/>
+	<label commandName="UserPropertyOnComponent__Mass" devLabel="Mass" translation="质量"/>
+	<label commandName="UserPropertyOnComponent__Part Name" devLabel="Part Name" translation="零件名称"/>
+	<label commandName="UserPropertyOnComponent__Part Number" devLabel="Part Number" translation="零件代号"/>
+	<label commandName="UserPropertyOnComponent__QTY" devLabel="Qty" translation="数量"/>
+	<label commandName="VERTEX_REFERENCE_LOST" devLabel="The vertex reference is lost, try editing this feature to reselect the lost vertex." translation="顶点参考缺失，请尝试编辑该特征以重新选择缺失的顶点。"/>
+	<label commandName="VisualAnalysesSelectionId" devLabel="VisualAnalyses" translation="视觉分析"/>
+	<label commandName="VisualAnalysisSelectionId" devLabel="VisualAnalysis" translation="VisualAnalysis"/>
+	<label commandName="WMFailedToRemoveWorkingModel" devLabel="Failed to remove Working Model(s)." translation="无法删除工作模型。"/>
+	<label commandName="WMLightWeightBaseAssetLoadFailed" devLabel="Failure loading Base Asset during Lightweight Working Model update operation." translation="在执行轻量化工作模型更新操作的过程中，加载基础资源失败。"/>
+	<label commandName="WMLightWeightInvalidAsset" devLabel="Context asset is not working model asset during Lightweight Working Model update operation." translation="在执行轻量化工作模型更新操作的过程中，上下文资源不是工作模型资源。"/>
+	<label commandName="WMLightWeightInvalidBaseAsset" devLabel="Base Asset not found during Lightweight Working Model update operation." translation="在执行轻量化工作模型更新操作的过程中，未找到基础资源。"/>
+	<label commandName="WMLightWeightNULLWorkingComponent" devLabel="Working component is null during Working Model Light weight update operation." translation="在执行工作模型轻量化更新操作过程中，工作零部件为空。"/>
+	<label commandName="WMNoWorkingModelIsSelected" devLabel="No Working Model is selected." translation="未选择工作模型。"/>
+	<label commandName="WMNotAWorkingModel" devLabel="Input asset is not a Working Model Asset." translation="输入资源不是工作模型资源。"/>
+	<label commandName="WMPlaceholderEntityCreateFailed" devLabel="Failed to create PlaceholderEntity for WorkingModel." translation="无法创建 WorkingModel 的 PlaceholderEntity。"/>
+	<label commandName="WMPlaceholderEntityGetFailed" devLabel="Failed to get PlaceholderEntity for WorkingModel." translation="无法获取 WorkingModel 的 PlaceholderEntity。"/>
+	<label commandName="WMUpdateInvalidAsset" devLabel="Source asset is found but is not working model asset during Working Model update operation." translation="源资源已找到，但不是执行工作模型更新操作过程中的工作模型资源。"/>
+	<label commandName="WMUpdateNULLAsset" devLabel="Input WM asset is null during Working Model update operation." translation="在执行工作模型更新操作过程中，输入 WM 资源为空。"/>
+	<label commandName="WMUpdateNULLDocument" devLabel="Document is missing during Working Model update operation." translation="在执行工作模型更新操作过程中，缺少文档。"/>
+	<label commandName="WMUpdateNULLWorkingComponent" devLabel="Working component is null during Working Model update operation." translation="在执行工作模型更新操作过程中，工作零部件为空。"/>
+	<label commandName="WMWorkingModelIsActive" devLabel="Not possible to delete active Working Model." translation="无法删除激活的工作模型。"/>
+	<label commandName="WORK_AXIS_MISSING_INPUTS" devLabel="Missing inputs" translation="缺少输入"/>
+	<label commandName="WORK_PLANE_INVALID_REFERENCE_PLANE" devLabel="Invalid reference plane" translation="无效的参考平面"/>
+	<label commandName="WORK_PLANE_MISSING_INPUTS" devLabel="Missing inputs" translation="缺少输入"/>
+	<label commandName="WORK_POINT_EXPECTING_FACE_OR_EDGE" devLabel="Invalid center, expecting face or edge" translation="中心无效，应为面或边"/>
+	<label commandName="WORK_POINT_MISSING_INPUTS" devLabel="Missing inputs" translation="缺少输入"/>
+	<label commandName="WRONG RIB SKETCH" devLabel="The curve you are selecting does not intersect a solid body. Select another curve." translation="您选择的曲线与实体不相交。请选择其他曲线。"/>
+	<label commandName="WebComputeError" devLabel="Fail to compute web profile!" translation="无法计算网状加强筋轮廓！"/>
+	<label commandName="WebFeatureName" devLabel="Web" translation="网状加强筋"/>
+	<label commandName="WeldFailed" devLabel="Weld failed" translation="焊接失败"/>
+	<label commandName="WorkAxisFromLocationAndVectorRequestGenericError" devLabel="Work Axis failed due to invalid input" translation="由于输入无效，创建工作轴失败"/>
+	<label commandName="WorkAxisFromTwoPlanesRequestParallelPlanesError" devLabel="Work Axis From Two Planes failed: input planes do not intersect" translation="从两个平面创建工作轴失败: 输入平面不相交"/>
+	<label commandName="WorkGeomRecontructor_NoValidParent" devLabel="Cannot find a valid root component" translation="未找到有效的根零部件"/>
+	<label commandName="WorkPlaneFromLocationAndVectorRequestGenericError" devLabel="Work Plane failed due to invalid input" translation="由于输入无效，创建工作平面失败"/>
+	<label commandName="WorkPlaneFromTwoLinesRequestLinesNotParallelOrIntersectError" devLabel="Work Plane From Two Lines failed:  Input lines must intersect or be parallel" translation="从两条直线创建工作平面失败: 输入直线必须相交或平行"/>
+	<label commandName="WorkPlaneTangentByRefPlaneInvalidRefPlnError" devLabel="Invalid reference plane" translation="无效的参考平面"/>
+	<label commandName="WorkPlaneTangentByRefPlaneInvalidTargetError" devLabel="Invalid target face" translation="无效的目标面"/>
+	<label commandName="WorkPlaneTangentByRefPlaneRefPlaneLostError" devLabel="Reference plane lost" translation="参考平面丢失"/>
+	<label commandName="WorkPlaneTangentByRefPlaneRequestGenericError" devLabel="Tangent Work Plane failed due to invalid input" translation="由于输入无效，创建相切工作平面失败"/>
+	<label commandName="WorkPlaneTangentByRefPlaneTargetLostError" devLabel="Target cylindrical/conical face lost" translation="目标圆柱面/圆锥面丢失"/>
+	<label commandName="WorkPlaneTangentToCylinderRequestGenericError" devLabel="Tangent Work Plane failed due to invalid input" translation="由于输入无效，创建相切工作平面失败"/>
+	<label commandName="WorkPointFromLineAndPlaneRequestLineAndFaceInvalidInputError" devLabel="Work Point From Line and Plane failed due to invalid input" translation="由于输入无效，从直线和平面创建工作点失败"/>
+	<label commandName="WorkPointFromLineAndPlaneRequestLineAndFaceParallelError" devLabel="Work Point From Line and Plane failed: Selected Face and Line are parallel" translation="从直线和平面创建工作点失败: 选定的面和直线平行"/>
+	<label commandName="WorkPointFromSphereRequestGenericError" devLabel="Cannot create point" translation="无法创建点"/>
+	<label commandName="WorkPointFromThreePlanesParallelPlanesError" devLabel="Work Point From Three Planes failed: input planes do not intersect" translation="从三个平面创建工作点失败: 输入平面不相交"/>
+	<label commandName="WorkPointFromTwoLinesError" devLabel="Work Point From Two Lines failed: lines do not intersect" translation="从两条直线创建工作点失败: 直线不相交"/>
+	<label commandName="WorkingComponent" devLabel="Fusion Working Model" translation="Fusion 工作模型"/>
+	<label commandName="WorkingModel" devLabel="WorkingModel" translation="WorkingModel"/>
+	<label commandName="WorkingModelBaseComponentInvalid" devLabel="Base component of cloning operation failed sanity check. Not a Fusion component" translation="克隆操作的基础零部件未通过准确性检查。不是 Fusion 零部件"/>
+	<label commandName="WorkingModelCloneFeatureFailure" devLabel="Target component is missing!" translation="缺少目标零部件！"/>
+	<label commandName="WorkingModelCloneFeatureFailure1" devLabel="Error Creating Working Model Clone feature!" translation="创建工作模型克隆特征时出错！"/>
+	<label commandName="WorkingModelCopyFailed" devLabel="An error occurred during Working Model copy operation." translation="执行工作模型复制操作过程中发生错误。"/>
+	<label commandName="WorkingModelDocumentInavlid" devLabel="Not a valid document" translation="不是有效文档"/>
+	<label commandName="WorkingModelInvalidAssetSubtype" devLabel="Asset Subtype provided is not registered with Asset Subtype Mgr." translation="未向资源子类型管理器注册提供的资源子类型。"/>
+	<label commandName="WorkingModelRenameFailed" devLabel="An error occurred during Working Model rename operation." translation="执行工作模型重命名操作过程中发生错误。"/>
+	<label commandName="WorkingModelSelectionId" devLabel="Flat Pattern" translation="展开模式"/>
+	<label commandName="WorkingModelSourceComponentInvalid3" devLabel="Unknown internal type of working model requested!" translation="请求了未知内部类型的工作模型！"/>
+	<label commandName="WorkingModelTargetAssetInvalid" devLabel="Target asset of cloning operation failed sanity check!" translation="克隆操作的目标资源未通过完整性检查！"/>
+	<label commandName="WorkingModelTargetComponentInvalid" devLabel="Target component of cloning operation failed sanity check!" translation="克隆操作的目标零部件未通过完整性检查！"/>
+	<label commandName="WrongDocumentEnv" devLabel="Wrong Document Environment!" translation="文档环境错误！"/>
+	<label commandName="WrongDownloadPath" devLabel="Downloaded path %1% is not proper" translation="下载的路径 %1% 不正确"/>
+	<label commandName="WrongDownloadPath2" devLabel="Downloaded path %1% is not proper" translation="下载的路径 %1% 不正确"/>
+	<label commandName="WrongDownloadPath3" devLabel="Downloaded path %1% is not proper" translation="下载的路径 %1% 不正确"/>
+	<label commandName="XRefDesignMissing" devLabel="Some indirect referenced design cannot be found!" translation="找不到某些间接参考设计！"/>
+	<label commandName="XRefDifferentVersionAlreadyExists" devLabel="A different version of the referenced document already exists. Please update that to latest version first." translation="不同版本的参考文档已存在。请先将其更新为最新版本。"/>
+	<label commandName="XRefDifferentVersionAlreadyExistsInPaste" devLabel="A different version of the referenced document already exists. We'll use this version for paste." translation="不同版本的参考文档已存在。我们将使用此版本进行粘贴。"/>
+	<label commandName="XRefDifferentVersionAlreadyExistsSameWillBeInserted" devLabel="The active document is already referencing a different version of the document %1%. The same version will be inserted again." translation="活动文档参考的是文档 %1% 的其他版本。将再次插入同一版本。"/>
+	<label commandName="XRefLoadGroupToolTip" devLabel="Load Packages as XRef by XRef Load group" translation="按“外部参照加载组”加载数据包作为外部参照"/>
+	<label commandName="XRefLoadGroupUserName" devLabel="XRef Load Groups" translation="外部参照加载组"/>
+	<label commandName="XRefTargetComponentMissing" devLabel="The referenced design cannot be found!" translation="找不到参考设计！"/>
+	<label commandName="ZERO_DISTANCE_ERROR" devLabel="Zero distance" translation="零距离"/>
+	<label commandName="ZebraAnalysisDefaultUserName" devLabel="Zebra" translation="斑纹"/>
+	<label commandName="_isLatestVersion" devLabel="An unexpected error occurred while calling isLatestVersion." translation="调用 isLatestVersion 时发生意外错误。"/>
+	<label commandName="applyToselection" devLabel="Apply to selection" translation="应用于选定对象"/>
+	<label commandName="bendConditions" devLabel="Bend Conditions" translation="折弯条件"/>
+	<label commandName="bendRadius" devLabel="Bend radius" translation="折弯半径"/>
+	<label commandName="bendTransition" devLabel="Bend transition" translation="折弯过渡"/>
+	<label commandName="clearSysmetryFailed" devLabel="Failed in clearing symmetry" translation="无法清除对称"/>
+	<label commandName="cloningNotSupportedForIntersectingEdgesMatrix3dId" devLabel="Cloning not supported for IntersectingEdgesMatrix3dId" translation="IntersectingEdgesMatrix3dId 不支持克隆"/>
+	<label commandName="cloningNotSupportedForMidPlaneMatrix3dId" devLabel="Cloning not supported for MidPlaneMatrix3dId" translation="MidPlaneMatrix3dId 不支持克隆"/>
+	<label commandName="cornerConditions" devLabel="Corner Conditions" translation="角点条件"/>
+	<label commandName="createDesignRulesHeaderToolTip" devLabel="Create or edit sheet metal rules in this design" translation="在此设计中创建或编辑钣金规则"/>
+	<label commandName="createLibraryRulesHeaderToolTip" devLabel="Create or edit sheet metal rules in the cloud library" translation="在云库中创建或编辑钣金规则"/>
+	<label commandName="createPoint3dBetweenFacesFailed" devLabel="Creation of point between faces failed." translation="在面之间创建点失败。"/>
+	<label commandName="createPoint3dCenterIdFailed" devLabel="Creation of point at geometry center failed." translation="在几何图元中心处创建点失败。"/>
+	<label commandName="createPoint3dOnConeAxisIdFailed" devLabel="Creation of point on cone edge failed." translation="在圆锥体边上创建点失败。"/>
+	<label commandName="createPoint3dOnLinearEdgeIdFailed" devLabel="Creation of point on linear edge failed." translation="在线性边上创建点失败。"/>
+	<label commandName="createPoint3dOnPoint3dOnPlaneUVIdFailed" devLabel="Creation of point on plane failed." translation="在平面上创建点失败。"/>
+	<label commandName="createPoint3dRefPointIdFailed" devLabel="Creation of point on plane failed." translation="在平面上创建点失败。"/>
+	<label commandName="createPointBetweenEdgesFailed" devLabel="Creation of point between edges failed." translation="在边之间创建点失败。"/>
+	<label commandName="createVector3dIdFailed" devLabel="Creation of vector from geometry failed." translation="通过几何图元创建矢量失败。"/>
+	<label commandName="createVector3dOrthoIdFailed" devLabel="Creation of ortho vector failed." translation="创建正交矢量失败。"/>
+	<label commandName="designRulesHeaderToolTip" devLabel="Select a sheet metal rule already in use in this design" translation="选择已在此设计中使用的钣金规则"/>
+	<label commandName="differentEntityTypeRelinked" devLabel="Constraints and dimensions applied on target geometry are removed due to different geometry types in relinking." translation="由于重新链接时存在不同类型的几何图元，应用于目标几何图元的约束和尺寸标注已被移除。"/>
+	<label commandName="duplicateAndEdit" devLabel="Duplicate and edit rule" translation="复制并编辑规则"/>
+	<label commandName="editRule" devLabel="Edit Rule" translation="编辑规则"/>
+	<label commandName="extendBooleanFail" devLabel="Extent boolean fail. The termination entity might be not fully intersected with the tool body built along the operation direction" translation="范围的布尔运算失败。终止实体可能与沿操作方向构建的工具体不完全相交"/>
+	<label commandName="failToProjectProfileToRemoteSurface" devLabel="Fail to project profile to remote surface" translation="无法将轮廓投影到远端曲面"/>
+	<label commandName="failToProjectSomeProfileToRemoteSurface" devLabel="Fail to project some profile(s) to remote surface" translation="无法将某些轮廓投影到远端曲面"/>
+	<label commandName="failTofindToNextTarget" devLabel="Fail to find To-Next target body along the operation direction in the active component" translation="在激活零部件中沿操作方向找不到 To-Next 目标体"/>
+	<label commandName="flatPatternBendAngle" devLabel="flat pattern bend angle" translation="展开模式折弯角度"/>
+	<label commandName="imprintExternalLoop" devLabel="Failed to imprint external loop" translation="无法压印外部回路"/>
+	<label commandName="imprintInternalLoop" devLabel="Failed to imprint internal loop" translation="无法压印内部回路"/>
+	<label commandName="inThisDesign" devLabel="In this design" translation="在此设计中"/>
+	<label commandName="initMatrix3dIdFailed" devLabel="Creation origin geometry failed." translation="创建源几何图元失败。"/>
+	<label commandName="invalidSurface" devLabel="T-Spline surface is invalid." translation="T-Spline 曲面无效。"/>
+	<label commandName="jointIdMissingJointOrigins" devLabel="Update of joint geometry failed due to missing Joint Origin information." translation="由于缺少联接原点信息，更新联接几何图元失败。"/>
+	<label commandName="kFactor" devLabel="K Factor" translation="K 系数"/>
+	<label commandName="lclzBooleanFailure" devLabel="Failed to Boolean bodies together" translation="无法通过布尔运算合并实体"/>
+	<label commandName="lclzFailedToRevolveSE" devLabel="Failed to revolve the selected entities" translation="无法旋转选定的实体"/>
+	<label commandName="lclzInvalidSelection" devLabel="Invalid selection." translation="选择内容无效。"/>
+	<label commandName="lclzManualAbort" devLabel="Operation aborted by user manually" translation="用户手动中止了操作"/>
+	<label commandName="lclzTEFOSMBETOAMOTOS" devLabel="The edges from one side must be equal to or a multiple of the other side." translation="一侧的边数必须等于另一侧的边数或是其整数倍。"/>
+	<label commandName="lclzUTBPTNP" devLabel="Unable to bridge periodic to non-periodic." translation="无法将定期桥接到非定期。"/>
+	<label commandName="lclzUTDFSB" devLabel="Unable to determine face selection border." translation="无法确定面选择边框。"/>
+	<label commandName="library" devLabel="Library" translation="库"/>
+	<label commandName="libraryRulesHeaderToolTip" devLabel="Select a sheet metal rule from the cloud library" translation="从云库中选择钣金规则"/>
+	<label commandName="m_dThicknessError_NoSource" devLabel="Source bodies lost!" translation="源实体丢失！"/>
+	<label commandName="makeExtentSheet" devLabel="Failed to create extended sheet" translation="无法创建扩展图纸"/>
+	<label commandName="makeUniformFailed" devLabel="Make Uniform failed with given input" translation="使用给定输入执行“均匀分布”操作失败"/>
+	<label commandName="miter" devLabel="Miter/rip/seam gap" translation="斜接/接缝/接缝间距"/>
+	<label commandName="modeling-featurepack-desc" devLabel="This section controls optional capabilities within the Modeling workspaces." translation="此部分可控制“建模”工作空间中的任意功能。"/>
+	<label commandName="modeling-featurepack-title" devLabel="Modeling" translation="建模"/>
+	<label commandName="mt-compute-title" devLabel="Enable Multi-threaded component compute" translation="启用多线程零部件计算"/>
+	<label commandName="newRule" devLabel="New Rule" translation="新建规则"/>
+	<label commandName="nonExtractable" devLabel="T-Spline topology problem.  Use Modify - Utilities - Repair Body to remove error." translation="T-Spline 拓扑问题。请使用“修改”-“实用程序”-“修复实体”来移除错误。"/>
+	<label commandName="patternInstances" devLabel="Too many pattern instances. Consider using Optimized/Identical compute option." translation="阵列实例太多。请考虑使用“已优化”/“相同”计算选项。"/>
+	<label commandName="physicalMaterial" devLabel="Physical material" translation="物理材料"/>
+	<label commandName="reliefDepth" devLabel="Relief depth" translation="释压深度"/>
+	<label commandName="reliefPlacement" devLabel="Relief placement" translation="释压位置"/>
+	<label commandName="reliefRemnant" devLabel="Relief remnant" translation="释压余量"/>
+	<label commandName="reliefShape" devLabel="Relief shape" translation="释压形状"/>
+	<label commandName="reliefShapeRound" devLabel="Round" translation="圆形"/>
+	<label commandName="reliefShapeStraight" devLabel="Straight" translation="直线"/>
+	<label commandName="reliefShapeTear" devLabel="Tear" translation="水滴形"/>
+	<label commandName="reliefSize" devLabel="Relief size" translation="释压大小"/>
+	<label commandName="reliefWidth" devLabel="Relief width" translation="释压宽度"/>
+	<label commandName="reportBendAngle" devLabel="Report bend angle" translation="报告折弯角度"/>
+	<label commandName="saveRule" devLabel="Save Rule" translation="保存规则"/>
+	<label commandName="setAsDefault" devLabel="Set as Default" translation="设为默认"/>
+	<label commandName="sketchdisplay-by-constraint-desc" devLabel="Need a description for this" translation="需要为此提供说明:"/>
+	<label commandName="sketchdisplay-by-constraint-title" devLabel="Sketch Display by Constraint" translation="按约束显示草图"/>
+	<label commandName="solveNewJointInconsistent" devLabel="Selected joint type will result in conflict" translation="选定的联接类型将导致冲突"/>
+	<label commandName="thickness" devLabel="Thickness" translation="厚度"/>
+	<label commandName="unfoldMethod" devLabel="Unfold method" translation="展开方式"/>
+	<label commandName="updateJointId" devLabel="Update of joint geometry failed." translation="更新联接几何图元失败。"/>
+	<label commandName="upgradeSurfaceVersionFailed" devLabel="Surface version upgrade failed" translation="曲面版本升级失败"/>
+</Resource>

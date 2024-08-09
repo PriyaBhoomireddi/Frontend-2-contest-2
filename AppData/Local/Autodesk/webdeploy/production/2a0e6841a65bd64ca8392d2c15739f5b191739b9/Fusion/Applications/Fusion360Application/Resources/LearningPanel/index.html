@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Fusion Offline</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/launchdarkly-js-client-sdk@2"></script>
+</head>
+<body>
+    <div id="onlineContainer" class="offlineContainer">
+        <h2>Connecting...</h2>
+        <h4>Additional content will appear here.</h4>
+    </div>
+    <div id="offlineContainer" class="offlineContainer">
+        <img src="images/not_visible.png" class="notVisible">
+        <h2>Looks like<br> you're offline.</h2>
+        <h4>Additional content will appear when you get back online.</h4>
+        <img src="images/online.gif" class="onlineGif">
+        <h4>Check your Internet connection or try switching Fusion 360 back to "Working Online".</h4>
+        <br />
+        <input id="action-btn" type="button" value="" />
+    </div>
+</body>
+</html>
+
+<script>
+    function ShowElement(id) {
+        let element = document.getElementById(id);
+        if (element) {
+            element.style.display = 'flex';
+        }
+    }
+    function HideElement(id) {
+        let element = document.getElementById(id);
+        if (element) {
+            element.style.display = 'none';
+        }
+    }
+
+    function ShowOnlineMode() {
+        HideElement('offlineContainer');
+        ShowElement('onlineContainer');
+    }
+    function ShowOfflineMode() {
+        HideElement('onlineContainer');
+        ShowElement('offlineContainer');
+    }
+
+    function executeQuery(cmdId, args) {
+        var ret = {};
+        if (typeof neutronJavaScriptObject != 'undefined') {
+            try {
+                ret = JSON.parse(neutronJavaScriptObject.executeQuery(cmdId, JSON.stringify(args)));
+            }
+            catch(e) {
+                console.log('Error parsing response from Fusion: ' + e);
+            }
+        }
+        return ret;
+    }
+
+    window.neutronJavaScriptHandler = {
+        handle: function (action, raw_data) {
+            try {
+                var data = JSON.parse(raw_data)
+                if (action === 'debugger') {
+                    debugger;
+                }
+                if (action === 'evergage') {
+                    switch (data.action) {
+                        case "connection":
+                            if (data['args']['online'] === true)
+                                window.location.reload();
+                            break;
+                    }
+                }
+            } catch (e) {
+                console.log('exception caught with command: ' + action + ', data: ' + raw_data + ', exception: ' + e);
+            }
+            return 'OK';
+        }
+    };
+    window.onload = function() {
+        var probeTimeout = null;
+        var probeInProgress = false;
+
+        var onlineScriptUrl = executeQuery('fusion', {onlineContentUrl:''});
+        onlineScriptUrl = onlineScriptUrl['url'] || 'https://ui-dls360.autodesk.com/fusion-learning-panel/online.js'; // Production URL by default
+
+        function loadOnlineContent(callback) {
+            var script = document.createElement('script');
+            script.onload = function () {
+                if (callback)
+                    callback(false);
+            };
+
+            script.onerror = function () {
+                if (callback)
+                    callback(true);
+            }
+
+            script.src = onlineScriptUrl + '?rnd=' + Math.round(Math.random() *1000000000);
+            document.head.appendChild(script);
+        }
+
+        function probeOnlineContent(ignoreAttempts) {
+            if (probeInProgress)
+                return;
+
+            probeInProgress = true;
+
+            if (probeTimeout != null) {
+                clearTimeout(probeTimeout);
+                probeTimeout = null;
+            }
+            
+            loadOnlineContent(function (error) {
+                console.log('Online script load:' + error);
+                probeInProgress = false;
+
+                if (probeTimeout != null) {
+                    clearTimeout(probeTimeout);
+                    probeTimeout = null;
+                }
+
+                if (error) {
+                    if (ignoreAttempts)
+                        ignoreAttempts--;
+                    else
+                        ShowOfflineMode();
+
+                    probeTimeout = setTimeout(()=>probeOnlineContent(ignoreAttempts), 10000);
+                }
+            });
+        }
+
+        function initContent() {
+            let connection = executeQuery('fusion', { connection: "" });
+            let btn = document.getElementById('action-btn');
+            if (connection['online']) {
+                btn.setAttribute('value', 'Refresh')
+                btn.onclick = probeOnlineContent;
+                ShowOnlineMode();
+                probeOnlineContent(1);
+            }
+            else {
+                btn.setAttribute('value', 'Work Online')
+                btn.onclick = () => {
+                    ShowOnlineMode();
+                    executeQuery('fusion', { connection: { online: true } });
+                }
+                setTimeout(initContent, 5000);
+                ShowOfflineMode();
+            }
+        }
+        setTimeout(initContent, 100); // This is important for DOM be rendered and styles applied properly.
+    };
+</script>

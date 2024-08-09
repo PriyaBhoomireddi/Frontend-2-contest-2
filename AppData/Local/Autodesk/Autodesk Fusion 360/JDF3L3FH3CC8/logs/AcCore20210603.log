@@ -1,0 +1,1064 @@
+[ Fusion 360 Drawings - Thu Jun 03 19:28:02 2021  ]----------------------------------------
+
+**** System Variable Changed ****
+3 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.
+
+Loading Mechanical modules.....
+
+Loader application completed
+
+
+Command: 
+Command: 
+
+Command: 
+Command:  JSON:
+
+Command:  JSON:
+Regenerating layout.
+Regenerating layout.
+_.REGEN Regenerating layout.
+Regenerating layout.
+
+Command:  JSON:
+
+Command:  JSON:
+Bad JSON data issued to FD_CMD: {}
+
+Command:  JSON:
+Bad JSON data issued to FD_CMD: {}
+
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/1e0678b0-b395-4a78-82f8-cc10b42d9385/
+
+Enter Fusion Source File Name [DesignInfo]: 1_FullAssembly
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:2
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view *Cancel*
+
+Command: 
+Command: _.MOVE 1 found
+
+Specify base point1.901130,294.214855,0.000000 
+Specify second point.
+Command: *Cancel*
+
+Command:  Current settings: Auto = Off, Control = All, Combine = Yes, Layer = Yes
+Enter the number of operations to undo or [Auto/Control/BEgin/End/Mark/Back] <1>: 
+MOVE GROUP 
+Command: 
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: _.QUIT
+
+Command: 
+**** System Variable Changed ****
+2 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.
+[ Fusion 360 Drawings - Thu Jun 03 19:29:35 2021  ]----------------------------------------
+
+**** System Variable Changed ****
+3 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.
+
+Loading Mechanical modules.....
+
+Loader application completed
+
+
+Command: 
+Command: 
+
+Command: 
+Command:  JSON:
+
+Command:  JSON:
+Regenerating layout.
+Regenerating layout.
+_.REGEN Regenerating layout.
+Regenerating layout.
+
+Command:  JSON:
+
+Command:  JSON:
+Bad JSON data issued to FD_CMD: {}
+
+Command:  JSON:
+Bad JSON data issued to FD_CMD: {}
+
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/ae5e2001-e95c-4fb0-a114-71bc81c29bdd/
+
+Enter Fusion Source File Name [DesignInfo]: 1_Component
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:2
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view *Cancel*
+
+Command:  JSON:
+_.REGEN Regenerating layout.
+
+Command: Specify opposite corner
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/ae5e2001-e95c-4fb0-a114-71bc81c29bdd/
+
+Enter Fusion Source File Name [DesignInfo]: 2_FullAssembly
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:2
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view 
+Select option [Representation/Orientation/Hidden lines/Scale/Visibility/Move/eXit] <eXit>: 
+
+Base view created successfully.
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/ae5e2001-e95c-4fb0-a114-71bc81c29bdd/
+
+Enter Fusion Source File Name [DesignInfo]: 3_FullAssembly
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:2
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view 
+Select option [Representation/Orientation/Hidden lines/Scale/Visibility/Move/eXit] <eXit>: 
+
+Base view created successfully.
+Command: 
+Command: _.MOVE 1 found
+
+Specify base point297.546468,186.257883,0.000000 
+Specify second point.
+Command: 
+Command: _.MOVE 1 found
+
+Specify base point132.311864,185.168127,0.000000 
+Specify second point.
+Command: *Cancel*
+
+Command: 
+Command: _.VIEWEDIT 
+Select option [Representation/Hidden lines/Scale/Visibility/eXit] <eXit>: 
+
+Select option [Representation/Hidden lines/Scale/Visibility/eXit] <eXit>: 
+
+Select option [Representation/Hidden lines/Scale/Visibility/eXit] <eXit>: 
+
+Command: *Cancel*
+
+Command:  Current settings: Auto = Off, Control = All, Combine = Yes, Layer = Yes
+Enter the number of operations to undo or [Auto/Control/BEgin/End/Mark/Back] <1>: 
+VIEWEDIT Regenerating layout.
+Regenerating model - caching viewports.
+
+Command: *Cancel*
+
+Command:  Current settings: Auto = Off, Control = All, Combine = Yes, Layer = Yes
+Enter the number of operations to undo or [Auto/Control/BEgin/End/Mark/Back] <1>: 
+
+Command: *Cancel*
+
+Command:  Current settings: Auto = Off, Control = All, Combine = Yes, Layer = Yes
+Enter the number of operations to undo or [Auto/Control/BEgin/End/Mark/Back] <1>: 
+MOVE GROUP 
+Command: *Cancel*
+
+Command:  Current settings: Auto = Off, Control = All, Combine = Yes, Layer = Yes
+Enter the number of operations to undo or [Auto/Control/BEgin/End/Mark/Back] <1>: 
+MOVE GROUP 
+Command: *Cancel*
+
+Command:  Current settings: Auto = Off, Control = All, Combine = Yes, Layer = Yes
+Enter the number of operations to undo or [Auto/Control/BEgin/End/Mark/Back] <1>: 
+VIEWBASE 
+Command: *Cancel*
+
+Command:  Current settings: Auto = Off, Control = All, Combine = Yes, Layer = Yes
+Enter the number of operations to undo or [Auto/Control/BEgin/End/Mark/Back] <1>: 
+VIEWBASE 
+Command: *Cancel*
+
+Command:  
+Enter number of actions or [All/Last]: 
+Nothing to redo
+
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/ae5e2001-e95c-4fb0-a114-71bc81c29bdd/
+
+Enter Fusion Source File Name [DesignInfo]: 2_FullAssembly
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:2
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view 
+Select option [Representation/Orientation/Hidden lines/Scale/Visibility/Move/eXit] <eXit>: 
+
+Base view created successfully.
+Command: 
+Command: _.MOVE 1 found
+
+Specify base point127.820532,200.863298,0.000000 
+Specify second point.
+Command: 
+Command: _.MOVE 1 found
+
+Specify base point138.401715,201.594589,0.000000 
+Specify second point.
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/ae5e2001-e95c-4fb0-a114-71bc81c29bdd/
+
+Enter Fusion Source File Name [DesignInfo]: 3_FullAssembly
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:2
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view 
+Select option [Representation/Orientation/Hidden lines/Scale/Visibility/Move/eXit] <eXit>: 
+
+Base view created successfully.
+Command: 
+Command: _.MOVE 1 found
+
+Specify base point281.497261,198.867502,0.000000 
+Specify second point.
+Command: 
+Command: 
+Command: _CENTERLINE
+
+Select first edge
+Select second edge
+Command: 
+Command: 
+Command: _CENTERLINE
+
+Select first edge*Cancel*
+
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command:  Current settings: Auto = Off, Control = All, Combine = Yes, Layer = Yes
+Enter the number of operations to undo or [Auto/Control/BEgin/End/Mark/Back] <1>: 
+CENTERLINE CENTERLINE 
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: Saving C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/ae5e2001-e95c-4fb0-a114-71bc81c29bdd/Document1.dwg
+[ Fusion 360 Drawings - Thu Jun 03 19:39:22 2021  ]----------------------------------------
+
+**** System Variable Changed ****
+3 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.
+
+Loading Mechanical modules.....
+
+Loader application completed
+
+
+Command: 
+Command: 
+
+Command: 
+Command:  JSON:
+
+Command:  JSON:
+Regenerating layout.
+_.REGEN Regenerating layout.
+
+Command:  JSON:
+
+Command:  JSON:
+Bad JSON data issued to FD_CMD: {}
+
+Command:  JSON:
+Bad JSON data issued to FD_CMD: {}
+
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/2a746e56-946d-483e-9d61-e99620dac372/
+
+Enter Fusion Source File Name [DesignInfo]: 1_Component
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:2
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view 
+Select option [Representation/Orientation/Hidden lines/Scale/Visibility/Move/eXit] <eXit>: 
+
+Base view created successfully.
+Command: 
+Command: _.MOVE 1 found
+
+Specify base point121.893647,192.406216,0.000000 
+Specify second point.
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/2a746e56-946d-483e-9d61-e99620dac372/
+
+Enter Fusion Source File Name [DesignInfo]: 2_FullAssembly
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:2
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view 
+Select option [Representation/Orientation/Hidden lines/Scale/Visibility/Move/eXit] <eXit>: 
+
+Base view created successfully.
+Command: 
+Command: 
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: Saving C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/2a746e56-946d-483e-9d61-e99620dac372/Document1.dwg
+[ Fusion 360 Drawings - Thu Jun 03 19:45:24 2021  ]----------------------------------------
+
+**** System Variable Changed ****
+3 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.
+
+Loading Mechanical modules.....
+
+Loader application completed
+
+
+Command: 
+Command: 
+
+Command: 
+Command:  JSON:
+
+Command:  JSON:
+Regenerating layout.
+_.REGEN Regenerating layout.
+Regenerating layout.
+
+Command:  JSON:
+
+Command:  JSON:
+Bad JSON data issued to FD_CMD: {}
+
+Command:  JSON:
+Bad JSON data issued to FD_CMD: {}
+
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/95ca5ed9-5a43-42a3-97f7-f74a81fb09b1/
+
+Enter Fusion Source File Name [DesignInfo]: 1_Component
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:5
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view 
+Select option [Representation/Orientation/Hidden lines/Scale/Visibility/Move/eXit] <eXit>: 
+
+Base view created successfully.
+Command: 
+Command: _.MOVE 1 found
+
+Specify base point126.699977,199.162450,0.000000 
+Specify second point.
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/95ca5ed9-5a43-42a3-97f7-f74a81fb09b1/
+
+Enter Fusion Source File Name [DesignInfo]: 2_FullAssembly
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:5
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view 
+Select option [Representation/Orientation/Hidden lines/Scale/Visibility/Move/eXit] <eXit>: 
+
+Base view created successfully.
+Command: 
+Command: _.MOVE 1 found
+
+Specify base point277.847265,183.722465,0.000000 
+Specify second point.
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/95ca5ed9-5a43-42a3-97f7-f74a81fb09b1/
+
+Enter Fusion Source File Name [DesignInfo]: 3_FullAssembly
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:5
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view 
+Select option [Representation/Orientation/Hidden lines/Scale/Visibility/Move/eXit] <eXit>: 
+
+Base view created successfully.
+Command: 
+Command: 
+** MOVE **
+Place view.
+**** System Variable Changed ****
+2 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.
+
+**** System Variable Changed ****
+3 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.
+
+Command: 
+** MOVE **
+Place view.
+**** System Variable Changed ****
+2 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.
+
+**** System Variable Changed ****
+3 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.
+
+Command: Specify opposite corner
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/95ca5ed9-5a43-42a3-97f7-f74a81fb09b1/
+
+Enter Fusion Source File Name [DesignInfo]: 4_FullAssembly
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:5
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view 
+Select option [Representation/Orientation/Hidden lines/Scale/Visibility/Move/eXit] <eXit>: *Cancel*
+
+Command: 
+Command: 
+Command: _DIM
+
+
+Select edge or specify point on an object
+
+
+
+
+
+
+
+Place dimension
+
+
+Place dimension
+Command: 
+Command: 
+Command: _DIM
+
+
+Select edge or specify point on an object
+
+
+
+
+
+
+
+Place dimension
+
+
+Place dimension
+Command: 
+Command: 
+Command: _DIM
+
+
+Select edge or specify point on an object
+
+
+
+
+
+
+
+
+Place dimension
+
+
+Place dimension
+Command: 
+Command: 
+Command: _DIM
+
+
+Select edge or specify point on an object
+Command: *Cancel*
+
+Command:  Current settings: Auto = Off, Control = All, Combine = Yes, Layer = Yes
+Enter the number of operations to undo or [Auto/Control/BEgin/End/Mark/Back] <1>: 
+DIM DIM 
+Command: 
+Command: 
+Command: _DIM
+
+
+Select edge or specify point on an object
+
+
+
+
+
+Place dimension
+
+
+Place dimension
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: _.QUIT
+
+Command: 
+**** System Variable Changed ****
+2 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.
+[ Fusion 360 Drawings - Thu Jun 03 19:49:35 2021  ]----------------------------------------
+
+**** System Variable Changed ****
+3 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.
+
+Loading Mechanical modules.....
+
+Loader application completed
+
+
+Command: 
+Command: 
+
+Command: 
+Command:  JSON:
+
+Command:  JSON:
+Regenerating layout.
+_.REGEN Regenerating layout.
+Regenerating layout.
+
+Command:  JSON:
+
+Command:  JSON:
+Bad JSON data issued to FD_CMD: {}
+
+Command:  JSON:
+Bad JSON data issued to FD_CMD: {}
+
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/14c2fe0b-4f97-4ce4-9f5e-99f74e9b386e/
+
+Enter Fusion Source File Name [DesignInfo]: 1_Component
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:5
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view 
+Select option [Representation/Orientation/Hidden lines/Scale/Visibility/Move/eXit] <eXit>: 
+
+Base view created successfully.
+Command: 
+Command: 
+** MOVE **
+Place view.
+**** System Variable Changed ****
+2 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.
+
+**** System Variable Changed ****
+3 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.
+
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/14c2fe0b-4f97-4ce4-9f5e-99f74e9b386e/
+
+Enter Fusion Source File Name [DesignInfo]: 2_FullAssembly
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:5
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view 
+Select option [Representation/Orientation/Hidden lines/Scale/Visibility/Move/eXit] <eXit>: 
+
+Base view created successfully.
+Command: 
+Command: 
+Command: _VIEWBASE 
+Specify model source [Model space/File] <File>: _S
+
+Enter Autodesk Fusion model folder path: C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/14c2fe0b-4f97-4ce4-9f5e-99f74e9b386e/
+
+Enter Fusion Source File Name [DesignInfo]: 3_FullAssembly
+
+Type = Base only  Hidden Lines = Visible and hidden lines  Scale = 1:5
+Place base view _T
+
+Enter a view creation option [Base only/base and Projected] <Base only>: _B
+
+Place base view _O
+
+Select orientation [Current/Top/Bottom/Left/Right/Front/BAck/SW iso/SE iso/NE iso/NW iso/cuStom] <>: _S
+
+Specify view direction0.00000000,1.00000000,0.00000000
+
+Specify up vector or [Undo]0.00000000,0.00000000,1.00000000
+
+Place base view 
+Select option [Representation/Orientation/Hidden lines/Scale/Visibility/Move/eXit] <eXit>: 
+
+Base view created successfully.
+Command: 
+Command: 
+Command: _DIM
+
+
+Select edge or specify point on an object
+
+
+
+Select edge or specify point on an object
+
+Specify point on an object
+
+
+Place dimension
+Command: 
+Command: 
+Command: _DIM
+
+
+Select edge or specify point on an object
+
+
+
+
+
+
+
+
+
+
+
+Select edge or specify point on an object
+
+
+
+Specify point on an object
+
+Place dimension
+Command: 
+Command: 
+Command: _DIM
+
+
+Select edge or specify point on an object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Select edge or specify point on an object
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: Saving C:/Users/admin/AppData/Local/Temp/Neutron/FusionFileOutput/14c2fe0b-4f97-4ce4-9f5e-99f74e9b386e/Document1.dwg
+[ Fusion 360 Drawings - Thu Jun 03 20:11:47 2021  ]----------------------------------------
+
+**** System Variable Changed ****
+3 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.
+
+
+Command: 
+
+Autodesk DWG.  This file is a TrustedDWG last saved by an Autodesk application or Autodesk licensed application.
+
+Command: 
+
+Command: 
+Command:  JSON:
+
+Command: *Cancel*
+
+Command: 
+Command: 
+Command: _DIM
+
+
+Select edge or specify point on an object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Select edge or specify point on an object
+
+
+Specify point on an object*Cancel*
+
+Command: 
+Command: 
+Command: _DIMRADIUS
+
+Select edge
+Object selected is not a circle or arc.
+
+Select edge
+Object selected is not a circle or arc.
+
+Select edge*Cancel*
+
+Command: 
+Command: 
+Command: _DIMRADIUS
+
+Select edge
+Object selected is not a circle or arc.
+
+Select edge
+Object selected is not a circle or arc.
+
+Select edge
+Object selected is not a circle or arc.
+
+Select edge
+Object selected is not a circle or arc.
+
+Select edge
+Object selected is not a circle or arc.
+
+Select edge*Cancel*
+
+Command: 
+Command: 
+Command: _DIM
+
+
+Select edge or specify point on an object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Select edge or specify point on an object
+
+
+
+Specify point on an object
+Command: 
+Command: 
+Command: _DIM
+
+
+Select edge or specify point on an object
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Select edge or specify point on an object
+
+
+
+
+
+
+
+Specify point on an object
+
+
+
+
+
+Place dimension
+Command: 
+Command: 
+Command: _DIMRADIUS
+
+Select edge
+Object selected is not a circle or arc.
+
+Select edge*Cancel*
+
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: *Cancel*
+
+Command: _.QUIT
+
+Command: 
+**** System Variable Changed ****
+2 of the monitored system variables have changed from the preferred value. Use SYSVARMONITOR command to view changes.

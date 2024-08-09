@@ -1,0 +1,12 @@
+{
+	"build" : "Release",
+
+	"platform" : "darwin",
+
+	"packageId": "codesigned",
+
+	"included-files" : [
+		"Autodesk Fusion 360.app/Contents/_CodeSignature",
+		"Autodesk Fusion 360.app/Contents/MacOS"
+	]
+}

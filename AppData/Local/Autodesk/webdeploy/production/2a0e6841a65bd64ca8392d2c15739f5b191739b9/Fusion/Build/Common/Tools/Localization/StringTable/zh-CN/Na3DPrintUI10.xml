@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="3DPrint Environment" devLabel="3DPrint" translation="3D 打印"/>
+	<label commandName="BaseDiameter" devLabel="Base Diameter" translation="基圆直径"/>
+	<label commandName="BrepBodySelection" devLabel="Components/Bodies" translation="零部件/实体"/>
+	<label commandName="ChooseObjectsCommand" devLabel="Choose Objects" translation="选择对象"/>
+	<label commandName="CustomRefinementOption" devLabel="Custom" translation="自定义"/>
+	<label commandName="DLPPrinter" devLabel="DLP Printer" translation="DLP 打印机"/>
+	<label commandName="DefaultPrinter" devLabel="Default" translation="默认"/>
+	<label commandName="Dremel" devLabel="Dremel 3D IdeaBuilder" translation="Dremel 3D IdeaBuilder"/>
+	<label commandName="DremelIdeaBuilder" devLabel="Dremel 3D Idea Builder" translation="Dremel 3D Idea Builder"/>
+	<label commandName="EmberPrinter" devLabel="Autodesk Ember" translation="Autodesk Ember"/>
+	<label commandName="GenerateSupportsCommand" devLabel="Supports" translation="支架"/>
+	<label commandName="GridAspectRatio" devLabel="Aspect Ratio" translation="纵横比"/>
+	<label commandName="HighRefinementOption" devLabel="High" translation="高"/>
+	<label commandName="InspectFor3DPrintCommand" devLabel="Inspect For 3DPrint" translation="检查是否可以进行 3D 打印"/>
+	<label commandName="LowRefinementOption" devLabel="Low" translation="低"/>
+	<label commandName="Makerbot2mm" devLabel="Replicator 2mm" translation="Replicator 2mm"/>
+	<label commandName="Makerbot2mmHeavy" devLabel="Replicator 2mm Heavy" translation="Replicator 2mm Heavy"/>
+	<label commandName="Makerbot2mmThick" devLabel="Replicator 2mm Thick" translation="Replicator 2mm Thick"/>
+	<label commandName="Makerbot3mm" devLabel="Replicator 3mm" translation="Replicator 3mm"/>
+	<label commandName="MaximumEdgeLength" devLabel="Maximum Edge Length" translation="最大边长度"/>
+	<label commandName="MediumRefinementOption" devLabel="Medium" translation="中等"/>
+	<label commandName="MeshEntitySelection" devLabel="Mesh Body" translation="网格实体"/>
+	<label commandName="NormalTolerance" devLabel="Normal Deviation" translation="法向偏差"/>
+	<label commandName="NumberOfTriangles" devLabel="Number of Triangles" translation="三角形数"/>
+	<label commandName="PostDiameter" devLabel="Post Diameter" translation="立柱直径"/>
+	<label commandName="PreviewGroupStart" devLabel="Preview" translation="预览"/>
+	<label commandName="PreviewMesh" devLabel="Preview Mesh" translation="预览网格"/>
+	<label commandName="PrintConfigurationActivateCommand" devLabel="Activate PrintSetup" translation="激活打印设置"/>
+	<label commandName="PrintConfigurationActivateCommandTooltip" devLabel="Activate PrintSetup" translation="激活打印设置"/>
+	<label commandName="PrintConfigurationGroupBrowserLabel" devLabel="Print Setups" translation="打印设置"/>
+	<label commandName="PrintSetupCommand" devLabel="Setup 3D Printer" translation="设置 3D 打印机"/>
+	<label commandName="Printer" devLabel="Printer" translation="打印机"/>
+	<label commandName="PushBrepTo3DPrintWorkspaceCmd" devLabel="Send Body to 3D Print" translation="将实体发送到 3D 打印"/>
+	<label commandName="RefinementGroupStart" devLabel="Refinement Options" translation="优化选项"/>
+	<label commandName="RefinementOptionsInput" devLabel="Refinement" translation="优化"/>
+	<label commandName="SelectBodies" devLabel="Select bodies to add to 3DPrint" translation="选择实体以添加到 3D 打印"/>
+	<label commandName="SelectMeshBodies" devLabel="Select mesh bodies" translation="选择网格实体"/>
+	<label commandName="SupportDensity" devLabel="Support Density" translation="支架密度"/>
+	<label commandName="SupportMinimumAngle" devLabel="Minimum Angle for Supports" translation="支架的最小角度"/>
+	<label commandName="SupportsType" devLabel="Supports Type" translation="支架类型"/>
+	<label commandName="SurfaceTolerance" devLabel="Surface Deviation" translation="曲面偏差"/>
+	<label commandName="TipDiameter" devLabel="Tip Diameter" translation="齿顶圆直径"/>
+	<label commandName="TypeA" devLabel="Type A Series 1" translation="A 型 1 系列"/>
+	<label commandName="Ultimaker2_3mm" devLabel="Ultimaker2 3mm" translation="Ultimaker2 3mm"/>
+	<label commandName="lclz3DPrintModify" devLabel="Modify" translation="修改"/>
+	<label commandName="lclz3DPrintSetup" devLabel="Setup" translation="设置"/>
+	<label commandName="lclz3DPrintTab" devLabel="3D Print" translation="3D 打印"/>
+	<label commandName="lclzInspectFor3DPrintDesc1" devLabel="Inspects a mesh for issues related to printability." translation="检查网格是否存在适印性方面的问题。"/>
+	<label commandName="lclzPrintSetupCmdDesc1" devLabel="Set up a 3D Print Job." translation="设置 3D 打印作业。"/>
+</Resource>

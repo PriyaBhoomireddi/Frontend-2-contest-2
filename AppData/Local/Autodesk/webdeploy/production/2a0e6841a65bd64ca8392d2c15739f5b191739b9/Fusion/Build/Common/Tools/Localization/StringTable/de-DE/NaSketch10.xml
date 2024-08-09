@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="CannotChangeCVSpline" devLabel="Can not open/close CV spline" translation="Fehler beim Öffnen/Schließen des Kontrollscheitelpunktsplines"/>
+	<label commandName="CircularPattern" devLabel="Circular Pattern" translation="Runde Anordnung"/>
+	<label commandName="CircularPatternConstraintSelectionId" devLabel="Circular Pattern Constraint" translation="Abhängigkeit Runde Anordnung"/>
+	<label commandName="Coincident" devLabel="Coincident" translation="Koinzident"/>
+	<label commandName="CoincidentConstraintSelectionId" devLabel="Coincident Constraint" translation="Abhängigkeit Koinzident"/>
+	<label commandName="Collinear" devLabel="Collinear" translation="Kollinear"/>
+	<label commandName="CollinearConstraintSelectionId" devLabel="Collinear Constraint" translation="Abhängigkeit Kollinear"/>
+	<label commandName="Concentric" devLabel="Concentric" translation="Konzentrisch"/>
+	<label commandName="ConcentricConstraintSelectionId" devLabel="Concentric Constraint" translation="Abhängigkeit Konzentrisch"/>
+	<label commandName="CurvatureConstraintSelectionId" devLabel="Curvature Constraint" translation="Krümmungsabhängigkeit"/>
+	<label commandName="CurveError" devLabel="One selected curve is degenerated!" translation="Eine ausgewählte Kurve ist beschädigt."/>
+	<label commandName="EllipseOffsetInvalidWarning" devLabel="Could not offset ellipse." translation="Ellipse konnte nicht versetzt werden."/>
+	<label commandName="Equal" devLabel="Equal" translation="Gleich"/>
+	<label commandName="EqualConstraintSelectionId" devLabel="Equal Constraint" translation="Abhängigkeit Gleich"/>
+	<label commandName="ExtendConicCurveError" devLabel="Extend conic curve error!" translation="Fehler beim Dehnen von konischer Kurve."/>
+	<label commandName="ExtendSplineError" devLabel="Extend spline error!" translation="Fehler beim Dehnen des Spline"/>
+	<label commandName="FIT_CURVES_TO_SECTION_ADD_CONSTRAINT_FAIL" devLabel="Failed to add tangent sketch constraint." translation="Fehler beim Hinzufügen von tangentialen Skizzenabhängigkeiten."/>
+	<label commandName="FIT_CURVES_TO_SECTION_BAD_INPUTS" devLabel="Failed to process inputs to fit curve to section." translation="Fehler beim Verarbeiten von Eingaben zum Anpassen der Kurve an den Schnitt."/>
+	<label commandName="FIT_CURVES_TO_SECTION_ERROR_NO_CURVES" devLabel="Failed to fit curve to section." translation="Fehler beim Anpassen der Kurve an den Schnitt."/>
+	<label commandName="FIT_CURVES_TO_SECTION_LIN_OR_DEG_ARC_FIT" devLabel="Include more points to fit an arc." translation="Beziehen Sie mehrere Punkte zum Anpassen eines Bogens ein."/>
+	<label commandName="FIT_CURVES_TO_SECTION_NO_SKETCH" devLabel="Include more points to fit an arc." translation="Beziehen Sie mehrere Punkte zum Anpassen eines Bogens ein."/>
+	<label commandName="FailedToSolve" devLabel="Failed to solve." translation="Fehler beim Lösen."/>
+	<label commandName="FitPointError" devLabel="Fit point index wrong!" translation="Anpassungspunkt-Index falsch."/>
+	<label commandName="Fixed" devLabel="Fixed" translation="Fest"/>
+	<label commandName="FixedConstraintSelectionId" devLabel="Fixed Constraint" translation="Festgelegte Abhängigkeit"/>
+	<label commandName="Horizontal" devLabel="Horizontal" translation="Horizontal"/>
+	<label commandName="HorizontalConstraintSelectionId" devLabel="Horizontal Constraint" translation="Abhängigkeit Horizontal"/>
+	<label commandName="InactiveMidPointSelectionId" devLabel="InactiveMidPoint" translation="InactiveMidPoint"/>
+	<label commandName="InactiveMidPointSelectionsId" devLabel="InactiveMidPoints" translation="InactiveMidPoints"/>
+	<label commandName="InactiveTangentSelectionId" devLabel="Inactive Tangent Handle" translation="Inaktiver Tangentengriff"/>
+	<label commandName="InactiveTangentSelectionsId" devLabel="InactiveTangents" translation="InactiveTangents"/>
+	<label commandName="InactiveTextGripSelectionId" devLabel="Text Frame Snap Point" translation="Textrahmen-Fangpunkt"/>
+	<label commandName="InactiveTextGripSelectionsId" devLabel="Text Frame Snap Points" translation="Textrahmen-Fangpunkte"/>
+	<label commandName="InputAxisError" devLabel="Input major axis error!" translation="Fehler beim Eingeben der Hauptachse."/>
+	<label commandName="InvalidSplineforcontrolframe" devLabel="Control Frame could not be displayed as selected sketch curve do not support control frame." translation="Der Steuerrahmen konnte nicht angezeigt werden, da die ausgewählte Skizzierkurve keinen Steuerrahmen unterstützt."/>
+	<label commandName="InvalidSplinesNoCFMultiselection" devLabel="Control Frames could not be displayed as all the selected sketch curves don't support control frame." translation="Die Steuerrahmen konnten nicht angezeigt werden, da keine der ausgewählten Skizzierkurven einen Steuerrahmen unterstützt."/>
+	<label commandName="InvalidSplinesforcontrolframeMultiselection" devLabel="Control Frames could not be displayed for some selected sketch curves as they don't support control frame." translation="Die Steuerrahmen konnten für einige ausgewählte Skizzierkurven nicht angezeigt werden, da diese keinen Steuerrahmen unterstützen."/>
+	<label commandName="LineMidPoint" devLabel="Mid Point" translation="Mittelpunkt"/>
+	<label commandName="MeshPlanarSectionDefaultUserName" devLabel="MeshSection" translation="MeshSection"/>
+	<label commandName="MeshPlanarSectionSelectionId" devLabel="MeshPlanarSection" translation="MeshPlanarSection"/>
+	<label commandName="MeshPlanarSectionSelectionsId" devLabel="MeshPlanarSections" translation="MeshPlanarSections"/>
+	<label commandName="MidpointConstraintSelectionId" devLabel="Midpoint Constraint" translation="Abhängigkeit Mittelpunkt"/>
+	<label commandName="NO_VADIL_SKETCH" devLabel="No valid sketch found!" translation="Keine gültige Skizze gefunden!"/>
+	<label commandName="NoPathSelected" devLabel="Please select path curve" translation="Pfadkurve auswählen"/>
+	<label commandName="NoTextProfileWarning" devLabel="Could not retrieve the profiles of the selected text!" translation="Die Profile des ausgewählten Texts konnten nicht abgerufen werden!"/>
+	<label commandName="NonPlanarCurve" devLabel="Please select planar curve" translation="Planare Kurve auswählen"/>
+	<label commandName="OffsetConstraintSelectionId" devLabel="Offset Constraint" translation="Abhängigkeit Versatz"/>
+	<label commandName="OffsetSketchNoGeomError" devLabel="The sketch offset created no geometry. Modify the offset dimension or verify the changes are correct." translation="Mit dem Skizzenversatz wurde keine Geometrie erstellt. Ändern Sie die Versatzbemaßung, oder überprüfen Sie, ob die Änderungen korrekt sind."/>
+	<label commandName="PROFILE_BUILD_ERROR_ILLEGALCURVES" devLabel="Some sketch curves cannot be converted to profile edges." translation="Einige Skizzenkurven können nicht in Profilkanten konvertiert werden."/>
+	<label commandName="PROFILE_BUILD_FAILTOGENPROFILE" devLabel="Failed to generate profile as, curves do not precisely overlap." translation="Fehler beim Erstellen des Profils, da die Kurven nicht exakt überlappen."/>
+	<label commandName="Parallel" devLabel="Parallel" translation="Parallel"/>
+	<label commandName="ParallelConstraintSelectionId" devLabel="Parallel Constraint" translation="Abhängigkeit Parallel"/>
+	<label commandName="Perpendicular" devLabel="Perpendicular" translation="Lotrecht"/>
+	<label commandName="PerpendicularConstraintSelectionId" devLabel="Perpendicular Constraint" translation="Abhängigkeit Lotrecht"/>
+	<label commandName="PleaseDeleteConstraints" devLabel="&#xA;Please delete or modify one of the following constraints/dimensions&#xA;" translation="&#xA;Löschen oder ändern Sie eine der folgenden Abhängigkeiten/Bemaßungen&#xA;"/>
+	<label commandName="Polygon" devLabel="Polygon" translation="Polygon"/>
+	<label commandName="PolygonConstraintSelectionId" devLabel="Polygon Constraint" translation="Polygon-Abhängigkeit"/>
+	<label commandName="ProfileCategory" devLabel="Sketch Profiles" translation="Skizzenprofile"/>
+	<label commandName="ProfileSelectionId" devLabel="Profile" translation="Profil"/>
+	<label commandName="ProfilebuildError_TrimStageTwo" devLabel="profile trim failed in stage two" translation="Profil stutzen in Phase zwei fehlgeschlagen"/>
+	<label commandName="ProfilesSelectionId" devLabel="Profiles" translation="Profile"/>
+	<label commandName="RectangularPattern" devLabel="Rectangular Pattern" translation="Rechteckige Anordnung"/>
+	<label commandName="RectangularPatternConstraintSelectionId" devLabel="Rectangular Pattern Constraint" translation="Abhängigkeit Rechteckige Anordnung"/>
+	<label commandName="SharedPointCoincidentSelectionId" devLabel="Coincident Constraint" translation="Abhängigkeit Koinzident"/>
+	<label commandName="SharedPointCoincidentSelectionsId" devLabel="Coincident Constraints" translation="Abhängigkeiten Koinzident"/>
+	<label commandName="SketchConicCurveSelectionID" devLabel="Sketch Conic Curve" translation="Konische Skizzierkurve"/>
+	<label commandName="SketchConstraintCategory" devLabel="Sketch Geometry Constraint" translation="Skizziergeometrie-Abhängigkeit"/>
+	<label commandName="SketchConstraintHasSameConstraint" devLabel="Constraint has already been applied to the selected sketch object." translation="Abhängigkeit wurde bereits auf das ausgewählte Skizzenobjekt angewendet."/>
+	<label commandName="SketchDimensionSelectionId" devLabel="Sketch Dimension" translation="Skizzenbemaßung"/>
+	<label commandName="SketchDimensionSelectionsId" devLabel="Sketch Dimensions" translation="Skizzenbemaßungen"/>
+	<label commandName="SketchGeomConstSelectionsId" devLabel="Sketch Geometry Constraints" translation="Skizzengeometrie-Abhängigkeiten"/>
+	<label commandName="SketchGeometryConstraintSelectionId" devLabel="Sketch Geometry Constraint" translation="Skizziergeometrie-Abhängigkeit"/>
+	<label commandName="SketchInvisibleProjectGeometries" devLabel="The Projected Geometries you have just created is not visible. Please toggle Show Project Geometries option in sketch palette." translation="Die soeben erstellten projizierten Geometrien sind nicht sichtbar. Aktivieren Sie die Option Projizierte Geometrien anzeigen in der Skizzenpalette."/>
+	<label commandName="SketchProjectedGeomSelectionId" devLabel="SketchProjectedGeom" translation="ProjizierteSkizziergeometrie"/>
+	<label commandName="SketchProjectedGeomSelectionsId" devLabel="SketchProjectedGeoms" translation="ProjizierteSkizziergeometrien"/>
+	<label commandName="Smooth" devLabel="Smooth" translation="Glatt"/>
+	<label commandName="Symmetric" devLabel="Symmetric" translation="Symmetrisch"/>
+	<label commandName="SymmetryConstraintSelectionId" devLabel="Symmetry Constraint" translation="Symmetrieabhängigkeit"/>
+	<label commandName="Tangent" devLabel="Tangent" translation="Tangente"/>
+	<label commandName="TangentConstraintSelectionId" devLabel="Tangent Constraint" translation="Abhängigkeit Tangential"/>
+	<label commandName="TangentExists" devLabel="Tangent already exists on selected fit point" translation="Tangente ist bereits auf ausgewähltem Anpassungspunkt vorhanden"/>
+	<label commandName="TextFrameConstraintSelectionId" devLabel="Text Frame Constraint" translation="Textrahmen-Abhängigkeit"/>
+	<label commandName="TooFewFitPoints" devLabel="A close spline must at least have 3 fit points" translation="Ein geschlossener Spline muss mindestens 3 Einpassungspunkte haben."/>
+	<label commandName="Vertical" devLabel="Vertical" translation="Vertikal"/>
+	<label commandName="VerticalConstraintSelectionId" devLabel="Vertical Constraint" translation="Abhängigkeit Vertikal"/>
+	<label commandName="lclzSketchError" devLabel="Invalid sketch curve" translation="Ungültige Skizzierkurve"/>
+</Resource>

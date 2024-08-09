@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="NON_SM_ENTITIES_FOUND" devLabel="Failed to identify sheet metal faces for some edges. Ensure the body is a valid sheet metal body that keeps opposite faces separate." translation="无法识别某些边的钣金平板。请确保实体是保持相对面分离的有效钣金实体。"/>
+	<label commandName="NoStationaryEntity" devLabel="Invalid Stationary Reference for Unfolding." translation="固定参考无效，无法进行展开。"/>
+	<label commandName="RefoldComputeError" devLabel="Failed to get Entity History." translation="无法获取实体的历史。"/>
+	<label commandName="SM_COMPUTE_FLANGE_PROFILE" devLabel="Failed to compute the Flange profile." translation="未能计算凸缘轮廓。"/>
+	<label commandName="SM_FLANGE_ANGLE_INVALID" devLabel="Can't create Flange because of a problem with the bend angle. Adjust parameters, then try again." translation="由于折弯角度存在问题，无法创建凸缘。请调整参数，然后重试。"/>
+	<label commandName="SM_FLANGE_ANGLE_TOO_SMALL" devLabel="Can't create Flange. Bend angle is too small. Adjust parameters, then try again." translation="无法创建凸缘。折弯角度太小。请调整参数，然后重试。"/>
+	<label commandName="SM_FLANGE_CFLANGE_BEND_FAILED" devLabel="One or more parameters are invalid. Try increasing flange height." translation="一个或多个参数无效。请尝试增加凸缘高度。"/>
+	<label commandName="SM_FLANGE_INTERSECTION_DETECTED" devLabel="The flange is intersecting the body. Creating this flange will probably result in the body being unable to unfold or flatten." translation="凸缘与实体相交。创建此凸缘可能会导致实体无法展开或展平。"/>
+	<label commandName="SM_FLANGE_INVALID_CONDITIONS" devLabel="Can't create Flange. Check the body and bend parameters, then try again." translation="无法创建凸缘。请检查实体和折弯参数，然后重试。"/>
+	<label commandName="SM_GENERIC_FAILURE" devLabel="Can't complete Sheet Metal operation due to an internal error. Check the body and bend parameters, then try again." translation="由于内部错误，无法完成钣金操作。请检查实体和折弯参数，然后重试。"/>
+	<label commandName="SM_MODELING_ERROR" devLabel="Can't complete Sheet Metal operation due to a model error. Check the body, then try again." translation="由于模型错误，无法完成钣金操作。请检查实体，然后重试。"/>
+	<label commandName="SM_MODELING_EXCEPTION" devLabel="Can't complete Sheet Metal operation due to a model error. Check the body, then try again." translation="由于模型错误，无法完成钣金操作。请检查实体，然后重试。"/>
+	<label commandName="SM_NO_VALID_EDGE" devLabel="Can't create Flange. Could not find valid edge. Check the body, then try again." translation="无法创建凸缘。找不到有效的边。请检查实体，然后重试。"/>
+	<label commandName="SM_SWEEP_RELATED" devLabel="Can't complete Sheet Metal operation due to an internal error. Check the body and bend parameters, then try again." translation="由于内部错误，无法完成钣金操作。请检查实体和折弯参数，然后重试。"/>
+	<label commandName="SM_UNFOLDER_RELATED" devLabel="Can't successfully process relief geometry. Check the body and parameters, then try again." translation="无法成功处理释压几何图元。请检查实体和参数，然后重试。"/>
+	<label commandName="SM_UNFOLD_NON_MANIFOLD_EDGE" devLabel="Can't unfold. Part is not a valid Sheet Metal body. Ensure thickness is uniform. Ensure flanges do not self-intersect the body. Remove tear relief corners." translation="无法展开。零件不是有效的钣金实体。请确保厚度均匀，并确保凸缘未与实体自交。然后删除水滴形释压拐角。"/>
+	<label commandName="SM_UNFOLD_RELATED1" devLabel="Can't complete Sheet Metal operation due to a model error. Check the body, then try again." translation="由于模型错误，无法完成钣金操作。请检查实体，然后重试。"/>
+	<label commandName="SM_UNFOLD_RELATED2" devLabel="Can't complete Sheet Metal operation because of a problem with thickness. Adjust parameters, then try again." translation="由于厚度问题，无法完成钣金操作。请调整参数，然后重试。"/>
+	<label commandName="SM_UNFOLD_RELATED3" devLabel="Can't complete Sheet Metal operation due to an internal error. Check the body and bend parameters, then try again." translation="由于内部错误，无法完成钣金操作。请检查实体和折弯参数，然后重试。"/>
+	<label commandName="SM_USER_INTERRUPT" devLabel="Sheet Metal operation was interrupted before it could be completed. Try again later." translation="钣金操作在完成之前已中断。请稍后重试。"/>
+</Resource>

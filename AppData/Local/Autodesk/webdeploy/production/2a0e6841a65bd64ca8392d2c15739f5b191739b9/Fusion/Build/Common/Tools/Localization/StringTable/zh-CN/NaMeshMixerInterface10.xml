@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="AMM_ERROR_DISCONNECTED_MESH" devLabel="The target mesh needs to be a connected mesh." translation="目标网格必须是相连的网格。"/>
+	<label commandName="AMM_ERROR_EMPTY_SELECTION" devLabel="Failure due to empty selection." translation="失败，因为未选择任何对象。"/>
+	<label commandName="AMM_ERROR_FAILED_TO_CREATE_MESH" devLabel="Failed to generate the mesh. Try different parameter settings if possible." translation="未能生成网格。如有可能，请尝试使用不同的参数设置。"/>
+	<label commandName="AMM_ERROR_FAILED_TO_OPEN_FILE" devLabel="Failed to open mesh file." translation="未能打开网格文件。"/>
+	<label commandName="AMM_ERROR_FAILED_TO_SAVE_FILE" devLabel="Failed to save mesh file." translation="未能保存网格文件。"/>
+	<label commandName="AMM_ERROR_FAILED_TO_SLICE_MESH" devLabel="Failed to slice the mesh with the specified plane." translation="未能使用指定的平面剖切网格。"/>
+	<label commandName="AMM_ERROR_NO_OVERHANGS_FOR_SUPPORT" devLabel="No supports are required because there are no overhangs in the mesh." translation="由于网格中不存在悬垂部分，因此不需要支架。"/>
+	<label commandName="AMM_ERROR_REPAIR_FAILED" devLabel="The repair tool failed to reduce the number of defects." translation="修复工具未能减少缺陷数量。"/>
+	<label commandName="AMM_ERROR_SELECTION_ALREADY_DRAWING" devLabel="Error during paint selection." translation="对选定对象进行着色时出错。"/>
+	<label commandName="AMM_ERROR_SELECTION_FAILED" devLabel="Error creating selection." translation="创建选择集时出错。"/>
+	<label commandName="AMM_ERROR_TOO_SMALL_FOR_SUPPORT" devLabel="Mesh is too small for support generation." translation="网格太小，无法生成支架。"/>
+	<label commandName="AMM_ERROR_UNABLE_TO_EXPORT_MULTIPLE_MESHES" devLabel="Mesh export failed." translation="网格导出失败。"/>
+	<label commandName="AMM_ERROR_UNABLE_TO_FIND_CONSISTENT_NORMAL" devLabel="Unsable to find consistent normals for the mesh. Try repairing any non-manifold regions first." translation="找不到网格的一致法向。请尝试先修复任何非流形区域。"/>
+	<label commandName="AMM_ERROR_WRONG_BRUSH_STROKE_ORDER" devLabel="Error during paint selection." translation="对选定对象进行着色时出错。"/>
+	<label commandName="AMM_FAILED" devLabel="Mesh operation failed." translation="网格操作失败。"/>
+	<label commandName="MMIGenerateMeshFromVoxelSolid" devLabel="Generating mesh from voxelized body..." translation="正在从体素化实体生成网格..."/>
+	<label commandName="MMIGenerateVoxelSolid" devLabel="Generating voxel representation..." translation="正在生成体素表达..."/>
+	<label commandName="MMIProjectResultSolid" devLabel="Projecting result on original mesh..." translation="正在将结果投影到原始网格上..."/>
+	<label commandName="MMIReduceMeshSolid" devLabel="Reducing mesh body..." translation="正在减少网格实体..."/>
+	<label commandName="MMIRepairMeshSolid" devLabel="Repairing mesh body..." translation="正在修复网格实体..."/>
+	<label commandName="MMISmoothVoxelSolid" devLabel="Smoothing voxelized body..." translation="正在平滑处理体素化实体..."/>
+	<label commandName="MMIThickenVoxelSolid" devLabel="Thickening voxelized body..." translation="正在加厚体素化实体..."/>
+</Resource>

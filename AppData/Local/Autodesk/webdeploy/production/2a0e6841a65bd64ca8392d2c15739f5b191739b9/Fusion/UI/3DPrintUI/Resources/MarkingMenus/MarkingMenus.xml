@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Menus>
+  <MarkingMenu EnvId="3DPrintEnvironment">
+    <Menu TypeId="BaseMenu">
+      <MenuItem Id="RepeatCommand" Position="North" />
+      <MenuItem Id="RedoCommand" Position="East" />
+      <MenuItem Id="ChooseObjectsCmd" Position="South" />
+      <MenuItem Id="UndoCommand" Position="West" />
+    </Menu>
+    <!-- DM - the overflow menu is the same as the context menu -->
+    <!-- The following commands will appear in the following order if -->
+    <!-- a. the select command is running -->
+    <!-- b. the command does not already appear in the context menu -->
+    <!-- c. the command def's onAddToContextMenu returns true -->
+    <Menu TypeId="Overflow">
+      <MenuItem Id="FusionDeleteCommand" />
+      <Separator />
+      <MenuItem Id="VisibilityToggleCmd"/>
+      <MenuItem Id="SelectabilityToggleCmd"/>
+    </Menu>
+  </MarkingMenu>
+
+</Menus>

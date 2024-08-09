@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="CancelCommand" devLabel="CancelCommand" translation="AnnullaComando"/>
+	<label commandName="Chronicle Environment" devLabel="Chronicle" translation="Cronologia"/>
+	<label commandName="CommitCommand" devLabel="CommitCommand" translation="ComandoConferma"/>
+	<label commandName="LaunchScreencastCommand" devLabel="Launch Screencast Recorder" translation="Avvia Registratore Screencast"/>
+	<label commandName="Manipulator" devLabel="Manipulator" translation="Manipolatore"/>
+	<label commandName="SelectCommand" devLabel="SelectCommand" translation="ComandoSeleziona"/>
+	<label commandName="lclzLaunchScreencast" devLabel="Captures Fusion 360 workflows and commands used into shareable videos." translation="Acquisisce i flussi di lavoro e i comandi di Fusion 360 utilizzati in video condivisibili."/>
+	<label commandName="lclzLaunchScreencastText" devLabel="Launch Screencast Recorder" translation="Avvia Registratore Screencast"/>
+</Resource>

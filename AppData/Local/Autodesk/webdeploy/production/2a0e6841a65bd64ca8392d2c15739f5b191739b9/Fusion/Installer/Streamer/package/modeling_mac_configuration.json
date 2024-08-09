@@ -1,0 +1,68 @@
+{
+	"build" : "Release",
+
+	"platform" : "darwin",
+
+	"packageId": "91fa5489c2e24e9398320426ea613284",
+
+	"included-files" : [
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/DirectModeling",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFusion10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFusionUI10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFusionSurfaceUI10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFeatureRecognizer10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFeatureValidation10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaTagUtility10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFusionCompanionUI10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaTagDefs10.dylib",
+        "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaTPFTranslator10.dylib",
+        "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/DesignVariations10.dylib",
+        "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/DesignVariationsUI10.dylib",
+        "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaSheetmetal10.dylib",
+        "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFusionSheetMetalUI10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFusion10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFusionUI10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFusionSurfaceUI10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFeatureRecognizer10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFeatureValidation10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaTagUtility10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFusionCompanionUI10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaTagDefs10.xml",
+        "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaTPFTranslator10.xml",
+        "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaSheetmetal10.xml",
+        "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFusionSheetMetalUI10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/Fusion/",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaDCServer10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaDCServer10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaChronicleUI10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaChronicleUI10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/FusionXLayer10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/FusionXLayer10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/FusionXLayerUI10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/FusionXLayerUI10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Neutron/FusionXInterface10.dylib",
+        "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/Configuration/AdWebservicesURLs-Development.config",
+	    "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/Configuration/AdWebservicesURLs-Staging.config",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/Configuration/AdWebservicesURLs.config",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaMeshMixerInterface10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaMeshMixerInterface10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaMeshUI10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaMeshUI10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaPCBUI10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaPCBUI10.xml",
+        "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/DesignVariations10.xml",
+        "Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/DesignVariationsUI10.xml",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFusionCompanion10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaFusionCompanion10.xml"
+	],
+
+    "packageLinkDirectory" : "Frameworks",
+
+    "packageLinks" : [
+        "CHRONICLE"
+	],
+	
+	"packageDependencies": [
+		"SMTK"
+	]
+}

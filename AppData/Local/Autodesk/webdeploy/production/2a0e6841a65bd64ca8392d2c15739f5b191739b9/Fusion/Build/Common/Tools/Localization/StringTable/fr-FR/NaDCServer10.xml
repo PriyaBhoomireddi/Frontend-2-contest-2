@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="ComputeInMouseDragToolTip" devLabel="Switch on/off compute in mouse drag for push / pull." translation="Activer/désactiver le calcul lors du glissement de la souris pour les opérations de type pousser/tirer"/>
+	<label commandName="ComputeInMouseDragUserName" devLabel="ComputeInMouseDrag enable" translation="Activer ComputeInMouseDrag"/>
+	<label commandName="ComputeInPreviewToolTip" devLabel="Switch on/off compute in preview for push / pull." translation="Activer/désactiver le calcul dans l'aperçu pour les opérations de type pousser/tirer"/>
+	<label commandName="ComputeInPreviewUserName" devLabel="ComputeInPreview enable" translation="Activer ComputeInPreview"/>
+	<label commandName="ComputeInThreadToolTip" devLabel="Switch on/off compute in another thread for push / pull dragging." translation="Activer/désactiver le calcul dans un autre filetage pour les opérations de glissement de type pousser/tirer"/>
+	<label commandName="ComputeInThreadUserName" devLabel="ComputeInThread enable" translation="Activer ComputeInThread"/>
+	<label commandName="CycleDependencyInComputeCommon" devLabel="The operation will be aborted due to cyclic dependency error. Please report this issue to Autodesk!" translation="L'opération va être abandonnée en raison d'une erreur de dépendance cyclique. Signalez ce problème à Autodesk."/>
+	<label commandName="MinimumComputeTimeToolTip" devLabel="set the minimum compute time for thread compute." translation="Définir le temps de calcul minimal pour le filetage"/>
+	<label commandName="MinimumComputeTimeUserName" devLabel="MinimumComputeTime" translation="MinimumComputeTime"/>
+	<label commandName="MinimumSpeedUpRatioToolTip" devLabel="set the minimum speed up ratio(serialTime/parallelTime)" translation="Définir le ratio d'accélération minimal (serialTime/parallelTime)"/>
+	<label commandName="MinimumSpeedUpRatioUserName" devLabel="MinimumSpeedUpRatio" translation="MinimumSpeedUpRatio"/>
+	<label commandName="ParallelComputingToolTip" devLabel="Switch on/off parallel computing option." translation="Activer/désactiver l'option de calcul parallèle"/>
+	<label commandName="ParallelComputingUserName" devLabel="ParallelComputing enable" translation="Activer ParallelComputing"/>
+	<label commandName="XRefPlaceToolTip" devLabel="Switch on/off XRef import options." translation="Activer/désactiver les options d'importation des XRéf"/>
+	<label commandName="XRefPlaceUserName" devLabel="XRef Place enable" translation="Activer XRefPlace"/>
+</Resource>

@@ -1,0 +1,110 @@
+{
+    "de-DE": {
+        "InsertName": {
+            "devLabel": "Insert TraceParts Supplier Components",
+            "translation": "Einfügen von TraceParts-Herstellerkomponenten"
+        },
+        "InsertDescription": {
+            "devLabel": "With TraceParts, boost your design productivity and access millions of CAD models from hundreds of supplier catalogs.",
+            "translation": "Steigern Sie Ihre Design-Produktivität mit TraceParts, indem Sie auf Millionen CAD-Modelle aus Hunderten Bauteilkatalogen von Industriekomponenten zugreifen."
+        },
+        "CatalogURL": {
+            "devLabel": "https://www.traceparts.com/els/fusion-360/en/",
+            "translation": "https://www.traceparts.com/els/fusion-360/de/"
+        },
+        "PaletteName": {
+            "devLabel": "Autodesk Fusion 360 Design Library - powered by TraceParts",
+            "translation": ""
+        }
+    },
+    "en-US": {
+        "InsertName": {
+            "devLabel": "Insert TraceParts Supplier Components",
+            "translation": ""
+        },
+        "InsertDescription": {
+            "devLabel": "With TraceParts, boost your design productivity and access millions of CAD models from hundreds of supplier catalogs.",
+            "translation": ""
+        },
+        "CatalogURL": {
+            "devLabel": "https://www.traceparts.com/els/fusion-360/en/",
+            "translation": ""
+        },
+        "PaletteName": {
+            "devLabel": "Autodesk Fusion 360 Design Library - powered by TraceParts",
+            "translation": ""
+        }
+    },
+    "fr-FR": {
+        "InsertName": {
+            "devLabel": "Insert TraceParts Supplier Components",
+            "translation": "Insérer des composants fournisseur de TraceParts"
+        },
+        "InsertDescription": {
+            "devLabel": "With TraceParts, boost your design productivity and access millions of CAD models from hundreds of supplier catalogs.",
+            "translation": "Avec TraceParts, optimisez la productivité de votre conception en accédant à des millions de modèles CAO issus de centaines de catalogues de fournisseurs"
+        },
+        "CatalogURL": {
+            "devLabel": "https://www.traceparts.com/els/fusion-360/en/",
+            "translation": "https://www.traceparts.com/els/fusion-360/fr/"
+        },
+        "PaletteName": {
+            "devLabel": "Autodesk Fusion 360 Design Library - powered by TraceParts",
+            "translation": ""
+        }
+    },
+    "it-IT": {
+        "InsertName": {
+            "devLabel": "Insert TraceParts Supplier Components",
+            "translation": "Inserire i componenti fornitore di TraceParts"
+        },
+        "InsertDescription": {
+            "devLabel": "With TraceParts, boost your design productivity and access millions of CAD models from hundreds of supplier catalogs.",
+            "translation": "Con TraceParts, aumenta la  produttività durante la progettazione accedendo a milioni di modelli CAD provenienti da centinaia di cataloghi di fornitori."
+        },
+        "CatalogURL": {
+            "devLabel": "https://www.traceparts.com/els/fusion-360/en/",
+            "translation": "https://www.traceparts.com/els/fusion-360/it/"
+        },
+        "PaletteName": {
+            "devLabel": "Autodesk Fusion 360 Design Library - powered by TraceParts",
+            "translation": ""
+        }
+    },
+    "ja-JP": {
+        "InsertName": {
+            "devLabel": "Insert TraceParts Supplier Components",
+            "translation": "TracePartsサプライヤーコンポーネントを挿入します"
+        },
+        "InsertDescription": {
+            "devLabel": "With TraceParts, boost your design productivity and access millions of CAD models from hundreds of supplier catalogs.",
+            "translation": "TracePartsを使用すると、数百万ものサプライヤーカタログ構成部品のCADモデルにアクセスして設計の生産性を向上。"
+        },
+        "CatalogURL": {
+            "devLabel": "https://www.traceparts.com/els/fusion-360/en/",
+            "translation": "https://www.traceparts.com/els/fusion-360/ja/"
+        },
+        "PaletteName": {
+            "devLabel": "Autodesk Fusion 360 Design Library - powered by TraceParts",
+            "translation": ""
+        }
+    },
+    "zh-CN": {
+        "InsertName": {
+            "devLabel": "Insert TraceParts Supplier Components",
+            "translation": "插入TraceParts供应商零件"
+        },
+        "InsertDescription": {
+            "devLabel": "With TraceParts, boost your design productivity and access millions of CAD models from hundreds of supplier catalogs.",
+            "translation": "通过TraceParts CAD 内容平台，从我们供应商零件库里可以找到您所需要的产品数据，这既节省采购时间，也节省绘图时间。"
+        },
+        "CatalogURL": {
+            "devLabel": "https://www.traceparts.com/els/fusion-360/en/",
+            "translation": "https://www.traceparts.cn/els/fusion-360/zh/"
+        },
+        "PaletteName": {
+            "devLabel": "Autodesk Fusion 360 Design Library - powered by TraceParts",
+            "translation": ""
+        }
+    }
+}

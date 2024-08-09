@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="CannotChangeCVSpline" devLabel="Can not open/close CV spline" translation="Impossible d'ouvrir/de fermer la spline CV"/>
+	<label commandName="CircularPattern" devLabel="Circular Pattern" translation="Réseau circulaire"/>
+	<label commandName="CircularPatternConstraintSelectionId" devLabel="Circular Pattern Constraint" translation="Contrainte de réseau circulaire"/>
+	<label commandName="Coincident" devLabel="Coincident" translation="Coïncident"/>
+	<label commandName="CoincidentConstraintSelectionId" devLabel="Coincident Constraint" translation="Contrainte de coïncidence"/>
+	<label commandName="Collinear" devLabel="Collinear" translation="Colinéaire"/>
+	<label commandName="CollinearConstraintSelectionId" devLabel="Collinear Constraint" translation="Contrainte de colinéarité"/>
+	<label commandName="Concentric" devLabel="Concentric" translation="Concentrique"/>
+	<label commandName="ConcentricConstraintSelectionId" devLabel="Concentric Constraint" translation="Contrainte de concentricité"/>
+	<label commandName="CurvatureConstraintSelectionId" devLabel="Curvature Constraint" translation="Contrainte de courbure"/>
+	<label commandName="CurveError" devLabel="One selected curve is degenerated!" translation="Une courbe sélectionnée est dégénérée."/>
+	<label commandName="EllipseOffsetInvalidWarning" devLabel="Could not offset ellipse." translation="Impossible de décaler l'ellipse."/>
+	<label commandName="Equal" devLabel="Equal" translation="Egal"/>
+	<label commandName="EqualConstraintSelectionId" devLabel="Equal Constraint" translation="Contrainte d'égalité"/>
+	<label commandName="ExtendConicCurveError" devLabel="Extend conic curve error!" translation="Erreur concernant la prolongation de la courbe conique."/>
+	<label commandName="ExtendSplineError" devLabel="Extend spline error!" translation="Erreur lors du prolongement de la cannelure."/>
+	<label commandName="FIT_CURVES_TO_SECTION_ADD_CONSTRAINT_FAIL" devLabel="Failed to add tangent sketch constraint." translation="Echec de l'ajout de la contrainte de tangence de l'esquisse."/>
+	<label commandName="FIT_CURVES_TO_SECTION_BAD_INPUTS" devLabel="Failed to process inputs to fit curve to section." translation="Echec du traitement des entrées en vue d'ajuster la courbe à la section."/>
+	<label commandName="FIT_CURVES_TO_SECTION_ERROR_NO_CURVES" devLabel="Failed to fit curve to section." translation="Echec de l'ajustement de la courbe à la section."/>
+	<label commandName="FIT_CURVES_TO_SECTION_LIN_OR_DEG_ARC_FIT" devLabel="Include more points to fit an arc." translation="Rajoutez des points pour ajuster la courbe à l'arc."/>
+	<label commandName="FIT_CURVES_TO_SECTION_NO_SKETCH" devLabel="Include more points to fit an arc." translation="Rajoutez des points pour ajuster la courbe à l'arc."/>
+	<label commandName="FailedToSolve" devLabel="Failed to solve." translation="Echec de la résolution."/>
+	<label commandName="FitPointError" devLabel="Fit point index wrong!" translation="Index des points de lissage incorrect."/>
+	<label commandName="Fixed" devLabel="Fixed" translation="Fixe"/>
+	<label commandName="FixedConstraintSelectionId" devLabel="Fixed Constraint" translation="Contrainte de fixité"/>
+	<label commandName="Horizontal" devLabel="Horizontal" translation="Horizontal"/>
+	<label commandName="HorizontalConstraintSelectionId" devLabel="Horizontal Constraint" translation="Contrainte d'horizontalité"/>
+	<label commandName="InactiveMidPointSelectionId" devLabel="InactiveMidPoint" translation="InactiveMidPoint"/>
+	<label commandName="InactiveMidPointSelectionsId" devLabel="InactiveMidPoints" translation="InactiveMidPoints"/>
+	<label commandName="InactiveTangentSelectionId" devLabel="Inactive Tangent Handle" translation="Poignée de tangente inactive"/>
+	<label commandName="InactiveTangentSelectionsId" devLabel="InactiveTangents" translation="InactiveTangents"/>
+	<label commandName="InactiveTextGripSelectionId" devLabel="Text Frame Snap Point" translation="Point d'accroche du cadre de texte"/>
+	<label commandName="InactiveTextGripSelectionsId" devLabel="Text Frame Snap Points" translation="Points d'accroche du cadre de texte"/>
+	<label commandName="InputAxisError" devLabel="Input major axis error!" translation="Erreur lors de la saisie du grand axe."/>
+	<label commandName="InvalidSplineforcontrolframe" devLabel="Control Frame could not be displayed as selected sketch curve do not support control frame." translation="Impossible d'afficher le tolérancement géométrique, car la courbe d'esquisse sélectionnée ne prend pas en charge le tolérancement géométrique."/>
+	<label commandName="InvalidSplinesNoCFMultiselection" devLabel="Control Frames could not be displayed as all the selected sketch curves don't support control frame." translation="Impossible d'afficher les tolérancements géométriques, car toutes les courbes d'esquisse sélectionnées ne prennent pas en charge le tolérancement géométrique."/>
+	<label commandName="InvalidSplinesforcontrolframeMultiselection" devLabel="Control Frames could not be displayed for some selected sketch curves as they don't support control frame." translation="Impossible d'afficher les tolérancements géométriques pour certaines courbes d'esquisse sélectionnées, car elles ne prennent pas en charge le tolérancement géométrique."/>
+	<label commandName="LineMidPoint" devLabel="Mid Point" translation="Milieu"/>
+	<label commandName="MeshPlanarSectionDefaultUserName" devLabel="MeshSection" translation="MeshSection"/>
+	<label commandName="MeshPlanarSectionSelectionId" devLabel="MeshPlanarSection" translation="MeshPlanarSection"/>
+	<label commandName="MeshPlanarSectionSelectionsId" devLabel="MeshPlanarSections" translation="MeshPlanarSections"/>
+	<label commandName="MidpointConstraintSelectionId" devLabel="Midpoint Constraint" translation="Contrainte de milieu"/>
+	<label commandName="NO_VADIL_SKETCH" devLabel="No valid sketch found!" translation="Aucune esquisse valide n'a été trouvée."/>
+	<label commandName="NoPathSelected" devLabel="Please select path curve" translation="Sélectionnez la courbe de la trajectoire"/>
+	<label commandName="NoTextProfileWarning" devLabel="Could not retrieve the profiles of the selected text!" translation="Impossible de récupérer les contours du texte sélectionné."/>
+	<label commandName="NonPlanarCurve" devLabel="Please select planar curve" translation="Sélectionnez une courbe plane"/>
+	<label commandName="OffsetConstraintSelectionId" devLabel="Offset Constraint" translation="Contrainte de décalage"/>
+	<label commandName="OffsetSketchNoGeomError" devLabel="The sketch offset created no geometry. Modify the offset dimension or verify the changes are correct." translation="Aucune géométrie n'a été créée suite au décalage de l'esquisse. Modifiez la cote de décalage ou vérifiez que les modifications sont correctes."/>
+	<label commandName="PROFILE_BUILD_ERROR_ILLEGALCURVES" devLabel="Some sketch curves cannot be converted to profile edges." translation="Certaines courbes d'esquisse ne peuvent pas être converties en arêtes de contour."/>
+	<label commandName="PROFILE_BUILD_FAILTOGENPROFILE" devLabel="Failed to generate profile as, curves do not precisely overlap." translation="Échec de la génération du contour en tant que. Les courbes ne se chevauchent pas précisément."/>
+	<label commandName="Parallel" devLabel="Parallel" translation="Parallèle"/>
+	<label commandName="ParallelConstraintSelectionId" devLabel="Parallel Constraint" translation="Contrainte de parallélisme"/>
+	<label commandName="Perpendicular" devLabel="Perpendicular" translation="Perpendiculaire"/>
+	<label commandName="PerpendicularConstraintSelectionId" devLabel="Perpendicular Constraint" translation="Contrainte de perpendicularité"/>
+	<label commandName="PleaseDeleteConstraints" devLabel="&#xA;Please delete or modify one of the following constraints/dimensions&#xA;" translation="&#xA;Veuillez supprimer ou modifier l'une des contraintes suivantes/cotes suivantes.&#xA;"/>
+	<label commandName="Polygon" devLabel="Polygon" translation="Polygone"/>
+	<label commandName="PolygonConstraintSelectionId" devLabel="Polygon Constraint" translation="Contrainte de polygone"/>
+	<label commandName="ProfileCategory" devLabel="Sketch Profiles" translation="Contours d'esquisse"/>
+	<label commandName="ProfileSelectionId" devLabel="Profile" translation="Contour"/>
+	<label commandName="ProfilebuildError_TrimStageTwo" devLabel="profile trim failed in stage two" translation="échec de l'ajustement du contour lors de la deuxième étape"/>
+	<label commandName="ProfilesSelectionId" devLabel="Profiles" translation="Contours"/>
+	<label commandName="RectangularPattern" devLabel="Rectangular Pattern" translation="Réseau rectangulaire"/>
+	<label commandName="RectangularPatternConstraintSelectionId" devLabel="Rectangular Pattern Constraint" translation="Contrainte de réseau rectangulaire"/>
+	<label commandName="SharedPointCoincidentSelectionId" devLabel="Coincident Constraint" translation="Contrainte de coïncidence"/>
+	<label commandName="SharedPointCoincidentSelectionsId" devLabel="Coincident Constraints" translation="Contrainte de coïncidence"/>
+	<label commandName="SketchConicCurveSelectionID" devLabel="Sketch Conic Curve" translation="Esquisser une courbe conique"/>
+	<label commandName="SketchConstraintCategory" devLabel="Sketch Geometry Constraint" translation="Contrainte de géométrie d'esquisse"/>
+	<label commandName="SketchConstraintHasSameConstraint" devLabel="Constraint has already been applied to the selected sketch object." translation="La contrainte a déjà été appliquée à l'objet d'esquisse sélectionné."/>
+	<label commandName="SketchDimensionSelectionId" devLabel="Sketch Dimension" translation="Cote d'esquisse"/>
+	<label commandName="SketchDimensionSelectionsId" devLabel="Sketch Dimensions" translation="Cotes d'esquisse"/>
+	<label commandName="SketchGeomConstSelectionsId" devLabel="Sketch Geometry Constraints" translation="Contraintes de géométrie d'esquisse"/>
+	<label commandName="SketchGeometryConstraintSelectionId" devLabel="Sketch Geometry Constraint" translation="Contrainte de géométrie d'esquisse"/>
+	<label commandName="SketchInvisibleProjectGeometries" devLabel="The Projected Geometries you have just created is not visible. Please toggle Show Project Geometries option in sketch palette." translation="Les géométries projetées que vous venez de créer ne sont pas visibles. Activez l'option Afficher les géométries du projet dans la palette d'esquisses."/>
+	<label commandName="SketchProjectedGeomSelectionId" devLabel="SketchProjectedGeom" translation="SketchProjectedGeom"/>
+	<label commandName="SketchProjectedGeomSelectionsId" devLabel="SketchProjectedGeoms" translation="SketchProjectedGeoms"/>
+	<label commandName="Smooth" devLabel="Smooth" translation="Lissage"/>
+	<label commandName="Symmetric" devLabel="Symmetric" translation="Symétrique"/>
+	<label commandName="SymmetryConstraintSelectionId" devLabel="Symmetry Constraint" translation="Contrainte de symétrie"/>
+	<label commandName="Tangent" devLabel="Tangent" translation="Tangente"/>
+	<label commandName="TangentConstraintSelectionId" devLabel="Tangent Constraint" translation="Contrainte de tangence"/>
+	<label commandName="TangentExists" devLabel="Tangent already exists on selected fit point" translation="Une tangente existe déjà sur le point de lissage sélectionné."/>
+	<label commandName="TextFrameConstraintSelectionId" devLabel="Text Frame Constraint" translation="Contrainte d'encadrement du texte"/>
+	<label commandName="TooFewFitPoints" devLabel="A close spline must at least have 3 fit points" translation="Une cannelure fermée doit comporter au moins 3 points de lissage."/>
+	<label commandName="Vertical" devLabel="Vertical" translation="Verticale"/>
+	<label commandName="VerticalConstraintSelectionId" devLabel="Vertical Constraint" translation="Contrainte de verticalité"/>
+	<label commandName="lclzSketchError" devLabel="Invalid sketch curve" translation="Courbe d'esquisse incorrecte"/>
+</Resource>

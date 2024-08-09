@@ -1,0 +1,1246 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="2bendIntersection" devLabel="2 Bend Intersection" translation="2 曲げ交差"/>
+	<label commandName="3bendIntersection" devLabel="3 Bend Intersection" translation="3 曲げ交差"/>
+	<label commandName="ADSKRule1" devLabel="Steel (mm)" translation="鋼(mm)"/>
+	<label commandName="ADSKRule2" devLabel="Stainless Steel (mm)" translation="ステンレス鋼(mm)"/>
+	<label commandName="ADSKRule3" devLabel="Aluminum (mm)" translation="アルミニウム(mm)"/>
+	<label commandName="ADSKRule4" devLabel="Steel (in)" translation="鋼(in)"/>
+	<label commandName="ADSKRule5" devLabel="Stainless Steel (in)" translation="ステンレス鋼(in)"/>
+	<label commandName="ADSKRule6" devLabel="Aluminum (in)" translation="アルミニウム(in)"/>
+	<label commandName="AGDFeatureForm" devLabel="Organic" translation="有機的"/>
+	<label commandName="AGDObstacleBodyName" devLabel="Obstacle%1%" translation="障害物%1%"/>
+	<label commandName="AGDOrganicBodyName" devLabel="Organic%1%" translation="有機的%1%"/>
+	<label commandName="AGDPreserveBodyName" devLabel="Preserve%1%" translation="保持%1%"/>
+	<label commandName="AGD_DESIGN_DESCRIPTION" devLabel="Created from generative design outcome" translation="ジェネレーティブ デザインの結果から作成されました"/>
+	<label commandName="ALL_TOOL_BODY_REFERENCE_LOST" devLabel="All tool bodies are lost, try editing this feature to reselect tool bodies." translation="すべてのツール ボディが失われています。このフィーチャを編集して、ツール ボディを再選択してください。"/>
+	<label commandName="APIFeature" devLabel="APIFeature" translation="APIFeature"/>
+	<label commandName="API_DEFINITION_MISSING" devLabel="The extension that owns this feature is not running." translation="この機能を所有する拡張機能は実行されていません。"/>
+	<label commandName="API_ERROR_PARALLEL" devLabel="This feature does not support parallel compute." translation="このフィーチャは並列計算をサポートしていません。"/>
+	<label commandName="ARRANGE_2D_NO_GEOMETRY" devLabel="Component does not have a body or sketch, which is required for 2D arrangement." translation="2D 整列に必要なボディまたはスケッチがコンポーネントにありません。"/>
+	<label commandName="ARRANGE_3D_BODY_MISSING" devLabel="Component does not have a body, which is required for 3D arrangement." translation="3D 整列に必要なボディがコンポーネントにありません。"/>
+	<label commandName="ARRANGE_ERROR_INVALID_GEOMETRY" devLabel="These items could not be arranged due to geometry issues. Try checking all components and their geometry to make sure they are suitable for arranging; arrangeable items should have flat patterns and closed contours." translation="これらのアイテムはジオメトリの問題により整列できませんでした。すべてのコンポーネントとそのジオメトリを確認して、整列に適していることを確認してください。整列対象のアイテムには、フラット パターンと閉じた輪郭が必要です。"/>
+	<label commandName="ARRANGE_ERROR_MISSING_BODY" devLabel="Missing body: cannot arrange these items. Try editing this feature to fix the problem." translation="ボディが見つかりません: これらのアイテムを整列できません。このフィーチャを編集して問題を修正してください。"/>
+	<label commandName="ARRANGE_ERROR_MISSING_COMP" devLabel="Missing component: cannot arrange these items. Try editing this feature to fix the problem." translation="コンポーネントが見つかりません: これらのアイテムを整列できません。このフィーチャを編集して問題を修正してください。"/>
+	<label commandName="ARRANGE_ERROR_MISSING_FACE" devLabel="Missing planar face: cannot arrange these items. Try editing this feature to fix the problem." translation="平面が見つかりません: これらのアイテムを整列できません。このフィーチャを編集して問題を修正してください。"/>
+	<label commandName="ARRANGE_ERROR_MISSING_SKETCH" devLabel="Missing sketch: cannot arrange these items. Try editing this feature to fix the problem." translation="スケッチが見つかりません: これらのアイテムを整列できません。このフィーチャを編集して問題を修正してください。"/>
+	<label commandName="ARRANGE_ERROR_NOT_ARRANGED" devLabel="Could not arrange these items." translation="これらのアイテムを整列できませんでした。"/>
+	<label commandName="ARRANGE_ERROR_NOT_CLOSED" devLabel="At least one shape can't be arranged because its outer contour is not closed." translation="外側輪郭が閉じていないため、少なくとも 1 つの形状を整列できません。"/>
+	<label commandName="ARRANGE_ERROR_NOT_COMPLETE" devLabel="Arrangement could not be completed." translation="整列を完了できませんでした。"/>
+	<label commandName="ARRANGE_ERROR_NOT_FIT" devLabel="There is not enough room to arrange all selected items. Edit this feature and try enlarging the area where they will be arranged." translation="選択したすべてのアイテムを整列するための十分なスペースがありません。この機能を編集して、整列する領域を拡大してください。"/>
+	<label commandName="ARRANGE_ERROR_NO_ROOM" devLabel="There is not enough room to arrange all selected items. Edit this feature and try selecting fewer items or enlarging the area where they will be arranged." translation="選択したすべてのアイテムを整列するための十分なスペースがありません。この機能を編集して選択するアイテムの数を減らすか、整列する領域を拡大してください。"/>
+	<label commandName="ARRANGE_ITEM_GROUNDED" devLabel="Grounded component cannot be arranged." translation="固定コンポーネントは整列できません。"/>
+	<label commandName="ARRANGE_ITEM_OVERFLOW" devLabel="Component did not fit in the envelope." translation="コンポーネントがエンベロープにフィットしませんでした。"/>
+	<label commandName="ARRANGE_NOT_LEAF_COMPONENTS" devLabel="Some items cannot be arranged because they have child components. This is either because the design has been modified,																 or was made with an older version of Fusion 360. Try re-selecting only leaf components for arrangement. (A leaf has no child components.)" translation="子コンポーネントがあるため、いくつかのアイテムを整列できません。デザインが変更されたか、旧バージョンの Fusion 360 で作成されています。整列用のリーフ コンポーネントのみを再選択してください。(リーフには子コンポーネントがありません。)"/>
+	<label commandName="AXIS_LOST" devLabel="The axis is lost, try editing this feature to reselect the axis." translation="軸が失われています。このフィーチャを編集して、軸を再選択してください。"/>
+	<label commandName="AccessibilityAnalysisDefaultUserName" devLabel="Accessibility" translation="アクセシビリティ"/>
+	<label commandName="AddPlannarFaceEdgeVertices" devLabel="Could not determine the symmetry from the selections. Do both sides have the same number of faces?" translation="選択内容から対称を決定できませんでした。両側の面の数は同じですか?"/>
+	<label commandName="AddPlannarFaces" devLabel="Could not determine the symmetry from the selections. Continue selecting edges and vertices, master side followed by mirror side." translation="選択内容から対称を決定できませんでした。エッジと頂点の選択を続行し、ミラー側の基準となるマスター側を選択してください。"/>
+	<label commandName="AddSymmetryFailed" devLabel="Failed to add symmetry" translation="対称の追加に失敗しました"/>
+	<label commandName="AddSymmetryFailedEntitiesSameSurface" devLabel="All selected entities should be on the same surface." translation="選択したエンティティはすべて同じサーフェス上に配置されている必要があります。"/>
+	<label commandName="AddSymmetryFailedFaceEdge" devLabel="Face Edge Vertex selection is not consistent." translation="面/エッジ/頂点の選択に矛盾があります。"/>
+	<label commandName="AddSymmetryFailedSameSurface" devLabel="Both faces should be on the same surface." translation="両方の面は、同じサーフェス上に配置されている必要があります。"/>
+	<label commandName="AlignGeometryNotFound" devLabel="The referenced geometry for Align cannot be found." translation="位置合わせの参照ジオメトリが見つかりません。"/>
+	<label commandName="AlignSolveFailed" devLabel="Align Feature solve failed." translation="位置合わせフィーチャの解析に失敗しました。"/>
+	<label commandName="AnnihilatedSketchDimension" devLabel="This dimension value causes the dimensioned geometry to be destroyed. The original dimension will be restored." translation="この寸法値を使用すると、寸法記入したジオメトリが破棄されます。元の寸法が復元されます。"/>
+	<label commandName="AnsiMetricMProfile" devLabel="Ansi Metric M Profile" translation="ANSI メートル M プロファイル"/>
+	<label commandName="AnsiUnifiedScrewThreads" devLabel="Ansi Unified Screw Threads" translation="ANSI ユニファイねじ"/>
+	<label commandName="AnyCADWMCloneFeatureName" devLabel="Component Link %1% v%2%" translation="コンポーネント リンク %1% v%2%"/>
+	<label commandName="AppendFaceFailed" devLabel="Append Face failed" translation="面の追加に失敗しました"/>
+	<label commandName="ArrangeRequest.AlgId" devLabel="The given algorithm ID is invalid." translation="指定されたアルゴリズム ID は無効です。"/>
+	<label commandName="AssetAdapterIsMissing" devLabel="Asset adapter is missing" translation="アセット アダプタが見つかりません"/>
+	<label commandName="AxisGeometryMissing" devLabel="Axis geometry is missing" translation="軸のジオメトリが見つかりません"/>
+	<label commandName="BAD_JOINT_DOF" devLabel="Motion Link joint DOF is wrong type" translation="モーション リンクのジョイント自由度のタイプが正しくありません"/>
+	<label commandName="BEND_GENERIC_FEATURE_FAILURE" devLabel="Can't bend the part with current parameters. Check bend angle and position in Bend dialog. Adjust values in the Sheet Metal rule. Make sure the body has uniform thickness and a flat, wide area is picked as stationary side." translation="現在のパラメータを使用してパーツを曲げることはできません。[曲げ]ダイアログで、曲げの角度と位置を確認してください。シート メタル規則で値を調整してください。ボディの厚さが均一であり、フラットで広い領域が固定側の面として選択されていることを確認してください。"/>
+	<label commandName="BEND_INSUFFICIENT_REMNANT_ERROR" devLabel="Bend relief cannot be created for the given width and minimum remnant values. Verify inputs." translation="指定した幅と最小レムナントの値で曲げレリーフを作成することはできません。入力を確認してください。"/>
+	<label commandName="BEND_INVALID_ANGLE" devLabel="Bend angle must be non zero, greater than -180 and less than 180 degree." translation="曲げ角度は、ゼロ以外で、-180 度より大きく 180 度より小さい必要があります。"/>
+	<label commandName="BEND_INVALID_ANGLE_LEGACY" devLabel="Bend angle must be greater than 0 and less than 180 degree." translation="曲げ角度は、0 より大きく 180 度より小さい必要があります。"/>
+	<label commandName="BEND_INVALID_BEND_LINE" devLabel="Bend line is no longer valid. Pick another bend line or edit sketch and verify line position." translation="曲げ線は有効ではなくなりました。別の曲げ線を選択するか、スケッチを編集して線分の位置を確認してください。"/>
+	<label commandName="BEND_INVALID_K_FACTOR" devLabel="Sheet metal K factor value must be between 0 and 1." translation="シート メタルの K 係数値は 0 と 1 の間である必要があります。"/>
+	<label commandName="BEND_INVALID_RADIUS" devLabel="Bend radius is too small, try increasing the value." translation="曲げ半径が小さすぎます。値を大きくしてください。"/>
+	<label commandName="BEND_INVALID_SHEET_METAL_BODY" devLabel="Not a valid sheet metal body." translation="有効なシート メタル ボディではありません。"/>
+	<label commandName="BEND_INVALID_STATIONARY_FACE" devLabel="Not a valid sheet metal face." translation="有効なシート メタル面ではありません。"/>
+	<label commandName="BEND_LINE_OUTSIDE_FACE_ERROR" devLabel="Bend line must lie on the face to bend." translation="曲げ線は、曲げる面の上にある必要があります。"/>
+	<label commandName="BEND_LOST_STATIONARY_FACE" devLabel="Stationary side is lost. Most likely due to a geometry change. This will require reselecting stationary face and all bend lines." translation="固定側が失われています。ジオメトリの変更が原因である可能性が高いです。このため、固定側の面およびすべての曲げ線を再選択する必要があります。"/>
+	<label commandName="BEND_RELIEF_BODY_FAILURE" devLabel="Can't create Bend Relief. Adjust bend radius and rule values like relief type and size." translation="曲げレリーフを作成できません。曲げ半径と規則の値(レリーフのタイプやサイズなど)を調整してください。"/>
+	<label commandName="BEND_RELIEF_WIRE_FAILURE" devLabel="Can't create Bend Relief. Adjust bend radius and rule values like relief type and size" translation="曲げレリーフを作成できません。曲げ半径と規則の値(レリーフのタイプやサイズなど)を調整してください"/>
+	<label commandName="BEND_UNEXPECTED_SPLIT_DETECTED" devLabel="Can't successfully create new geometry. Most likely caused by multiple bends interfering each other. Also make sure body thickness is even in all areas." translation="新しいジオメトリを正常に作成できません。複数の曲げが互いに干渉している可能性があります。また、ボディの厚さがすべての領域で均等になっていることを確認してください。"/>
+	<label commandName="BEND_WARNING_SELF_INTERSECTING_BODY" devLabel="Body is self intersecting for the given inputs for bend." translation="曲げに指定された入力に対してボディが自己交差しています。"/>
+	<label commandName="BODY_REFERENCE_LOST" devLabel="The body reference is lost, try editing this feature to reselect the lost body." translation="ボディの参照が失われています。このフィーチャを編集して、失われたボディを再選択してください。"/>
+	<label commandName="BODY_SKETCH_NOT_INTERSECT" devLabel="The body and sketch plane do not intersect, please modify the body or redefine sketch!" translation="ボディとスケッチ平面が交差していません。ボディを修正するか、スケッチを再定義してください。"/>
+	<label commandName="BOX_CREATE_BLOCK_FAILED" devLabel="Failed to create box solid body." translation="直方体のソリッド ボディの作成に失敗しました。"/>
+	<label commandName="BOX_LENGTH_VALUE_INVALID" devLabel="The box length is invalid." translation="直方体の長さが無効です。"/>
+	<label commandName="BOX_WIDTH_VALUE_INVALID" devLabel="The box width is invalid." translation="直方体の幅が無効です。"/>
+	<label commandName="BRepConvFail" devLabel="BRep Convert Failed" translation="BRep の変換に失敗しました"/>
+	<label commandName="BadGuideRail" devLabel="There is a problem with the guide rail. Check that it pierces the profile plane and that it is on the same side of the profile plane as the path." translation="ガイド レールで問題が発生しました。ガイド レールがプロファイル平面を貫通しているか、パスと同じプロファイル平面の側にあるかを確認してください。"/>
+	<label commandName="BadSweepPath" devLabel="There is a problem with the sweep path. Check that it pierces the profile plane." translation="スイープ パスで問題が発生しました。スイープ パスがプロファイル平面を貫通しているかを確認してください。"/>
+	<label commandName="BaseFeature" devLabel="Base Feature" translation="基準フィーチャ"/>
+	<label commandName="BaseFeatureObstacles" devLabel="Obstacles" translation="障害物"/>
+	<label commandName="BaseFeaturePreserves" devLabel="Preserves" translation="保持"/>
+	<label commandName="BaseFlange" devLabel="No target component." translation="ターゲット コンポーネントがありません。"/>
+	<label commandName="BaseMeshBodySelectionCategory" devLabel="Base Mesh Bodies" translation="ベース メッシュ ボディ"/>
+	<label commandName="BaseMeshSelectionsId" devLabel="Base Mesh Bodies" translation="ベース メッシュ ボディ"/>
+	<label commandName="BendLinesGroupName" devLabel="Bend Lines" translation="曲げ線"/>
+	<label commandName="BendLinesGroupSelectionId" devLabel="BendLinesGroup" translation="曲げ線グループ"/>
+	<label commandName="BevelEdgeFailed" devLabel="Bevel Edge operation failed with specific input edge set" translation="特定の入力エッジ セットでベベル エッジ操作に失敗しました。"/>
+	<label commandName="BoardCreationFailure" devLabel="Error occurs when creating or updating 3d board!" translation="3D ボードの作成または更新中にエラーが発生しました。"/>
+	<label commandName="BoardOutlineMissing" devLabel="There's no board outline to generate 3d board shape!" translation="3D ボード形状を生成するためのボードのアウトラインがありません。"/>
+	<label commandName="BoardProfileBuildFailure" devLabel="The board profile is not generated successfully, it might be not closed!" translation="ボード プロファイルが正常に生成されませんでした。閉じていない可能性があります。"/>
+	<label commandName="BoardProfileMissing" devLabel="No profile is selected for board edit." translation="ボード編集用にプロファイルが選択されていません。"/>
+	<label commandName="BoardSketchEliminated" devLabel="The board sketch is rolled out, please roll forward it before update!" translation="ボード スケッチがロール アウトされています。更新する前にロール フォワードしてください。"/>
+	<label commandName="BodyConversionFailed" devLabel="Could not create body from Mesh." translation="メッシュからボディを作成できませんでした。"/>
+	<label commandName="BodySelectionCategory" devLabel="Bodies" translation="ボディ"/>
+	<label commandName="BreakLinkCloneError" devLabel="Break Link command failed for some reason, probably it would have created cyclic references." translation="[リンクの解除]コマンドが何らかの理由で失敗しました。循環参照が作成されている可能性があります。"/>
+	<label commandName="BreakLinkDeriveVersionClash" devLabel="The Target Design currently references a different version of the Source Design &lt;b&gt;%1%&lt;/b&gt;.A Target design can have multiple references to a Source design only if they are the same version.The referencing designs must be updated to reference the same version of the target design before this operation can be conducted." translation="ターゲット デザインは、現在は異なるバージョンのソース デザイン &lt;b&gt;%1%&lt;/b&gt; を参照しています。同じバージョンである場合にのみ、ターゲット デザインは複数のソース デザインを参照することができます。この操作を実行する前に、ターゲット デザインの同じバージョンを参照するように参照元のデザインを更新する必要があります。"/>
+	<label commandName="BuildEdgeCurvesFailed" devLabel="build Edge Curves failed" translation="エッジ曲線の作成に失敗しました"/>
+	<label commandName="BuildSurfacesFailed" devLabel="build Surfaces failed" translation="サーフェスの作成に失敗しました"/>
+	<label commandName="C2SM_Feature_Compute_Warning" devLabel="Compute Warning" translation="計算の警告"/>
+	<label commandName="CANNOT_CHAMFER_FREE_EDGE" devLabel="Cannot create chamfer feature from selected edges. Select edges with two adjacent faces." translation="選択したエッジから面取りフィーチャを作成できません。隣接する 2 つの面を持つエッジを選択してください。"/>
+	<label commandName="CANNOT_DEFINE_CSYS" devLabel="Cannot define coordinate system" translation="座標系を定義できません"/>
+	<label commandName="CANNOT_DELETE_DEAD_INSTANCE" devLabel="Cannot delete instance already deleted" translation="既に削除されたインスタンスは削除できません"/>
+	<label commandName="CANNOT_DERIVE_INSERTED_DOC" devLabel="The source design &lt;b&gt;%1%&lt;/b&gt; is inserted into &lt;b&gt;%2%&lt;/b&gt;. Deriving from an inserted design is not supported." translation="ソース デザイン &lt;b&gt;%1%&lt;/b&gt; が &lt;b&gt;%2%&lt;/b&gt; に挿入されます。挿入されたデザインからの派生はサポートされません。"/>
+	<label commandName="CANNOT_DERIVE_SAME_ASSET" devLabel="The source design asset cannot be selected as the target asset for Derive." translation="ソース デザイン アセットを派生のターゲット アセットとして選択することはできません。"/>
+	<label commandName="CANNOT_DERIVE_SAME_DOC" devLabel="The source design cannot be selected as the target for Derive." translation="ソース デザインを派生のターゲットとして選択することはできません。"/>
+	<label commandName="CANNOT_DERIVE_SAME_NESTED_DOC" devLabel="The selected Target Design creates a cyclical dependency with the Source Design. Break the link in the Source Design or select a different Target Design." translation="選択したターゲット デザインとソース デザインとの間に循環依存が作成されます。ソース デザインでリンクを解除するか、別のターゲット デザインを選択してください。"/>
+	<label commandName="CANNOT_FILLET_FREE_EDGE" devLabel="Some edges can not be filleted due to they changed to free edges." translation="一部のエッジは、フリー エッジに変更されたためフィレットすることができません。"/>
+	<label commandName="CANNOT_MOVE_GROUNDED_OCC" devLabel="Capture Position cannot move grounded Component occurrence." translation="キャプチャ位置では、固定コンポーネントのオカレンスを移動できません。"/>
+	<label commandName="CFLANGE_CLOSE_LOOP" devLabel="Sketch curve with closed loop is not allowed" translation="閉じたループのあるスケッチ曲線は使用できません"/>
+	<label commandName="CFLANGE_CURVE_NOT_TANGENT" devLabel="Selected Sketch curve is not tangent." translation="選択したスケッチ曲線は接線ではありません。"/>
+	<label commandName="CFLANGE_CURVE_RADIUS_TOO_SMALL" devLabel="Sketch curve radius is too small." translation="スケッチ曲線の半径が小さすぎます。"/>
+	<label commandName="CFLANGE_INVALID_CURVE_FOR_MULTIEDGE_CFJOIN" devLabel="Could not create multi-edge contour flange. The selected sketch must start on one of the selected edges to create contour flanges on multiple edges. Try editing the sketch to make it start on a selected edge." translation="複数のエッジを含むコンター フランジを作成できませんでした。複数のエッジにコンター フランジを作成するには、選択したスケッチが、選択したエッジの 1 つから開始する必要があります。選択したエッジから開始するようにスケッチを編集してください。"/>
+	<label commandName="CFLANGE_INVALID_GEOM" devLabel="Invalid input sketch curve." translation="スケッチ曲線の入力が無効です。"/>
+	<label commandName="CHAMFER_BRANCHING_CHAIN_ERROR" devLabel="Cannot maintain first distance for all edges in selection set. Move branching edges to a separate selection set or adjust Type to Equal Distance." translation="選択セット内のすべてのエッジの最初の距離を維持できません。分岐エッジを別の選択セットに移動するか、[タイプ]を[等距離]に調整してください。"/>
+	<label commandName="CHAMFER_GENERIC_FEATURE_FAILURE" devLabel="Cannot create chamfer feature. Adjust chamfer type, edges, faces, features, distance, angle, or corner type options." translation="面取りフィーチャを作成できません。面取りのタイプ、エッジ、面、フィーチャ、距離、角度、またはコーナーのタイプの各オプションを調整してください。"/>
+	<label commandName="CHAMFER_INVALID_DISTANCE" devLabel="Chamfer distance value is invalid. Adjust distance." translation="面取り距離の値が無効です。距離を調整してください。"/>
+	<label commandName="CHAMFER_NO_EDGE_FOUND" devLabel="Cannot find edge to chamfer. Adjust edge, face, or feature selection." translation="面取りするエッジが見つかりません。エッジ、面、またはフィーチャの選択を調整してください。"/>
+	<label commandName="CHANGE_SMRULE_FAIL" devLabel="Could not change the Sheet Metal Rule." translation="シート メタル規則を変更できませんでした。"/>
+	<label commandName="CIRCULAR_PATTERN_MISSING_AXIS" devLabel="Missing axis" translation="軸が見つかりません"/>
+	<label commandName="COIL_BUILD_COIL_FAILED" devLabel="Failed to build coil tool body." translation="コイル ツール ボディの作成に失敗しました。"/>
+	<label commandName="COIL_BUILD_HELIX_FAILED" devLabel="Failed to build coil helix path." translation="コイルのらせんパスの作成に失敗しました。"/>
+	<label commandName="COMPUTE_TIME_CHAINING_CONFLICT" devLabel="Cannot compute Tangent Chain. Some geometry in the tangent chain is already selected in other selection set rows. Tangent Chain disabled. Adjust selection sets to enable Tangent Chain." translation="接面チェーンを計算できません。接面チェーンの一部のジオメトリが他の選択セット行で既に選択されています。接面チェーンが無効になっています。接面チェーンを有効にするには、選択セットを調整してください。"/>
+	<label commandName="COMPUTE_TIME_CHAINING_CONFLICT_FEATURECOMPUTE" devLabel="Cannot compute Tangent Chain. Some geometry in the tangent chain is already selected in other selection set rows. Tangent Chain disabled. Edit the feature to adjust selection sets and reactivate Tangent Chain." translation="接面チェーンを計算できません。接面チェーンの一部のジオメトリが他の選択セット行で既に選択されています。接面チェーンが無効になっています。フィーチャを編集して選択セットを調整し、接面チェーンを再度アクティブにしてください。"/>
+	<label commandName="COMPUTE_TIME_CHAINING_ISSUE" devLabel="Cannot compute Tangent Chain. Some geometry in the tangent chain is already selected in other selection set rows. Adjust selection sets before enabling Tangent Chain." translation="接面チェーンを計算できません。接面チェーンの一部のジオメトリが他の選択セット行で既に選択されています。選択セットを調整してから接面チェーンを有効にしてください。"/>
+	<label commandName="CONNECTOBSTACLE_NORMAL_ERROR" devLabel="Start and end selection normal is not parallel, please check inputs" translation="開始と終了の選択法線が平行ではありません。入力を確認してください"/>
+	<label commandName="CONVERT_TO_SM_ALREADY_SM_BODY" devLabel="Selected body is already a Sheet Metal body." translation="選択したボディは既にシート メタル ボディです。"/>
+	<label commandName="CONVERT_TO_SM_CANNOT_SHARE_RULES" devLabel="Using the same rule for more than one converted component can affect parametric computation of the design. Select another rule or use the Rules dialog to duplicate a rule, then try again." translation="変換された複数のコンポーネントに対して同じルールを使用すると、デザインのパラメトリック計算に影響を与える可能性があります。別のルールを選択するか、[ルール]ダイアログを使用してルールを複製してから、再試行してください。"/>
+	<label commandName="CONVERT_TO_SM_COMPONENT_THICKNESS_MISMATCH" devLabel="Body thickness and Sheet Metal component rule thickness are different. Move body to a non-Sheet Metal component or change rule thickness to continue." translation="ボディの厚さとシート メタル コンポーネントのルールの厚さが異なります。続行するには、ボディをシート メタル以外のコンポーネントに移動するか、ルールの厚さを変更してください。"/>
+	<label commandName="CONVERT_TO_SM_GENERIC_FAILURE" devLabel="Can't convert to Sheet Metal. Verify inputs like body type, thickness, or rule settings, then try again. Contact Autodesk Support if the issue persists." translation="シート メタルに変換できません。ボディ タイプ、厚さ、シート メタル規則の設定などの入力を確認してから再試行してください。問題が解決されない場合は、オートデスク サポートにお問い合わせください。"/>
+	<label commandName="CONVERT_TO_SM_INCORRECT_RULE_THICKNESS" devLabel="Body thickness does not match with rule thickness. Please modify the rule thickness or change rule." translation="ボディの厚さがシート メタル規則の厚さに一致しません。シート メタル規則の厚さを修正するか、シート メタル規則を変更してください。"/>
+	<label commandName="CONVERT_TO_SM_INVALID_BASE_FACE" devLabel="Can't convert to Sheet Metal. Select the base face of a valid Sheet Metal body (typically a wide, flat area)." translation="シート メタルに変換できません。有効なシート メタル ボディの基準面(通常は広い平面領域)を選択してください。"/>
+	<label commandName="CONVERT_TO_SM_INVALID_OPPOSITE_FACE" devLabel="Not a valid opposite face for convert to sheet metal." translation="シート メタルに変換するための有効な反対側の面ではありません。"/>
+	<label commandName="CONVERT_TO_SM_NON_PARALLEL_FACES" devLabel="Can't calculate body thickness. Please make sure the input body is valid for sheet metal and has uniform thickness." translation="ボディの厚さを計算できません。入力ボディがシート メタルに対して有効であり、厚さが均一であることを確認してください。"/>
+	<label commandName="CONVERT_TO_SM_THICKNESS_FIND_FAILURE" devLabel="Can't calculate body thickness. Select the base face of a valid Sheet Metal body (typically a wide, flat area)." translation="ボディの厚さを計算できません。有効なシート メタル ボディの基準面(通常は広い平面領域)を選択してください。"/>
+	<label commandName="CONVERT_TO_SM_UNSUPPORTED_BODY_TYPE" devLabel="Can't convert body type to Sheet Metal. Select a solid body instead." translation="ボディ タイプをシート メタルに変換できません。代わりにソリッド ボディを選択してください。"/>
+	<label commandName="CONVERT_TO_SM_UNSUPPORTED_THICKNESS_VALUE" devLabel="Body thickness value is not supported." translation="ボディの厚さの値がサポートされていません。"/>
+	<label commandName="CONVERT_TO_SM_WARNING_RULE_THICKNESS_WILL_CHANGE" devLabel="Geometry changed. Need to recompute thickness. Right-click, select Edit Feature, and confirm thickness value is correct." translation="ジオメトリが変更されました。厚さを再計算する必要があります。右クリックして[フィーチャ編集]を選択し、厚さの値が正しいことを確認してください。"/>
+	<label commandName="CORNER_RELIEF_BODY_FAILURE" devLabel="Can't create corner relief. Adjust bend radius and rule values like relief type and size." translation="コーナー レリーフを作成できません。曲げ半径と規則の値(レリーフのタイプやサイズなど)を調整してください。"/>
+	<label commandName="CORNER_RELIEF_WIRE_FAILURE" devLabel="Can't create corner relief. Adjust bend radius and rule values like relief type and size." translation="コーナー レリーフを作成できません。曲げ半径と規則の値(レリーフのタイプやサイズなど)を調整してください。"/>
+	<label commandName="COSMETIC_TAPER_THREAD_TOOL_BODY_FAILED" devLabel="Failed to build taper thread tool body." translation="テーパねじツール ボディの作成に失敗しました。"/>
+	<label commandName="CPatternFeatureName" devLabel="C-Pattern" translation="C パターン"/>
+	<label commandName="CR3Intersection" devLabel="Intersection" translation="交差"/>
+	<label commandName="CR3RadiusSize" devLabel="Relief radius" translation="レリーフ半径"/>
+	<label commandName="CRArcWeld" devLabel="Arc Weld" translation="アーク溶接"/>
+	<label commandName="CRFullRound" devLabel="Full Round" translation="フルラウンド"/>
+	<label commandName="CRLinearWeld" devLabel="Linear Weld" translation="直線結合"/>
+	<label commandName="CRNoReplacement" devLabel="No Replacement" translation="置換なし"/>
+	<label commandName="CRRoundWithRadius" devLabel="Round with Radius" translation="半径のあるコーナー"/>
+	<label commandName="CRSquare" devLabel="Square" translation="正方形"/>
+	<label commandName="CRTangent" devLabel="Tangent" translation="接線"/>
+	<label commandName="CRTrimToBend" devLabel="Trim to Bend" translation="トリムして曲げ"/>
+	<label commandName="CRVertex" devLabel="Vertex" translation="頂点"/>
+	<label commandName="CYLINDER_CREATE_CYLINDER_FAILED" devLabel="Failed to create cylinder solid body." translation="円柱のソリッド ボディの作成に失敗しました。"/>
+	<label commandName="CYLINDER_DIAMETER_VALUE_INVALID" devLabel="The cylinder diameter is invalid." translation="円柱の直径が無効です。"/>
+	<label commandName="CannotDeleteAppearanceHeader" devLabel="This appearance cannot be deleted because it is linked with an applied Physical Material: %s. To delete the appearance, first unassign and delete this material from the Physical Material command." translation="この外観は、適用した物理マテリアル %s にリンクしているため削除できません。外観を削除するには、このマテリアルを最初に割り当て解除し、[物理マテリアル]コマンドで削除します。"/>
+	<label commandName="CannotDeleteAppearanceTitle" devLabel="Warning" translation="警告"/>
+	<label commandName="CanvasDefaultUserName" devLabel="Canvas" translation="キャンバス"/>
+	<label commandName="CanvasGroupCategory" devLabel="Canvas Group" translation="キャンバス グループ"/>
+	<label commandName="CanvasGroupDefaultName" devLabel="Canvas Group" translation="キャンバス グループ"/>
+	<label commandName="CanvasGroupSelectionId" devLabel="CanvasGroup" translation="CanvasGroup"/>
+	<label commandName="CanvasSelectionCategory" devLabel="Canvas" translation="キャンバス"/>
+	<label commandName="CanvasSelectionId" devLabel="Canvas" translation="キャンバス"/>
+	<label commandName="CanvasSelectionPluralId" devLabel="Canvases" translation="キャンバス"/>
+	<label commandName="CanvasesSelectionId" devLabel="Canvases" translation="キャンバス"/>
+	<label commandName="CenterLineBody" devLabel="Center Lines" translation="中心線"/>
+	<label commandName="CenterOfMassDefaultUserName" devLabel="CenterOfMass" translation="重心"/>
+	<label commandName="CenterOfMassSelectionId" devLabel="Center Of Mass" translation="重心"/>
+	<label commandName="CfEdgeSelectionId" devLabel="Edge" translation="エッジ"/>
+	<label commandName="CfEdgesSelectionId" devLabel="Edges" translation="エッジ"/>
+	<label commandName="CfFacetSelectionId" devLabel="Face" translation="面"/>
+	<label commandName="CfFacetsSelectionId" devLabel="Faces" translation="面"/>
+	<label commandName="CfGripSelectionId" devLabel="Tangency Handle" translation="接線ハンドル"/>
+	<label commandName="CfGripSelectionPluralId" devLabel="Tangency Handles" translation="接線ハンドル"/>
+	<label commandName="CfVertexSelectionId" devLabel="Vertex" translation="頂点"/>
+	<label commandName="CfVerticesSelectionId" devLabel="Vertices" translation="頂点"/>
+	<label commandName="ChainUpdateFailure" devLabel="Failed to Get Latest version of one of the Component Instances of selected path" translation="選択したパスのコンポーネント インスタンスのうちの 1 つの最新バージョンの取得に失敗しました"/>
+	<label commandName="ChamferFeatureName" devLabel="Chamfer" translation="面取り"/>
+	<label commandName="CircularDependencyFound" devLabel="Circular dependency found!" translation="循環従属が見つかりました。"/>
+	<label commandName="CircularDependencyFound2" devLabel="Circular dependency found: from %1% to %2%." translation="循環従属が見つかりました: %1% から %2% までです。"/>
+	<label commandName="CmMKSUnitSystemName" devLabel="cm modeling length with MKS (m, kg, second, Celsius) units" translation="MKS (m、kg、秒、摂氏)単位でのモデリングの長さ単位は cm です"/>
+	<label commandName="Coil" devLabel="No target component." translation="ターゲット コンポーネントがありません。"/>
+	<label commandName="CoilFeatureName" devLabel="Coil" translation="コイル"/>
+	<label commandName="ConnectorObstacle" devLabel="Connector Obstacle" translation="コネクタ障害物"/>
+	<label commandName="Context" devLabel="Context" translation="コンテキスト"/>
+	<label commandName="ConversionErrorFor" devLabel="Conversion error for: " translation="変換エラー: "/>
+	<label commandName="ConversionFailed" devLabel="Could not create surface from Mesh." translation="メッシュからサーフェスを作成できませんでした。"/>
+	<label commandName="ConversionFailed1" devLabel="Non extractable Body. Use Repair Tool." translation="抽出不可能なボディです。修復ツールを使用してください。"/>
+	<label commandName="ConversionWarningFor" devLabel="Conversion warning for: " translation="変換に関する警告: "/>
+	<label commandName="Convert2TSplineFailed" devLabel="Failed to convert the face to T-Spline" translation="面の T スプラインへの変換に失敗しました"/>
+	<label commandName="ConvertRuleSuffix" devLabel=" (Convert)" translation=" (変換)"/>
+	<label commandName="CopperHolesName" devLabel="CopperHoles" translation="銅穴"/>
+	<label commandName="CouldNotCreateNewEdge" devLabel="Could not create new edge" translation="新しいエッジを作成できませんでした"/>
+	<label commandName="CouldNotCreateNewEdgeDueToHolesOnBothSidesOfTheLoop" devLabel="Could not create new edge due to holes on both sides of the loop" translation="ループの両側に穴があるため、新しいエッジを作成できませんでした"/>
+	<label commandName="CouldNotCreateNewEdgeDueToHolesOnBothSidesOfTheLoop2" devLabel="Insert Edge will not work on faces which are not four sided. Try using Subdivide or Insert Point." translation="[エッジを挿入]は、四角形でない面では機能しません。[再分割]または[挿入点]を使用してください。"/>
+	<label commandName="CouldNotDuplicateEdgeDueToTOrLpointsOnTheSelectedEdge" devLabel="Could not duplicate edge due to T or L-points on the selected edge" translation="選択したエッジの T 点または L 点により、エッジを複製できませんでした"/>
+	<label commandName="CouldntFindAnyFaceLoops" devLabel="Couldn't find any face loops" translation="面ループが見つかりませんでした"/>
+	<label commandName="CountersunkFlatHeadHexSocketScrewDINENISO10642" devLabel="Countersunk Flat Head Hex Socket Screw DIN EN ISO 10642" translation="六角穴付き皿小ねじ DIN EN ISO 10642"/>
+	<label commandName="CountersunkFlatHeadHexSocketScrewISO10642" devLabel="Countersunk Flat Head Hex Socket Screw ISO 10642" translation="六角穴付き皿小ねじ ISO 10642"/>
+	<label commandName="CountersunkFlatHeadScrew" devLabel="Countersunk Flat Head Screw" translation="平皿ねじ"/>
+	<label commandName="CountersunkFlatHeadScrewDINENISO2009" devLabel="Countersunk Flat Head Screw DIN EN ISO 2009" translation="皿小ねじ DIN EN ISO 2009"/>
+	<label commandName="CountersunkFlatHeadScrewISO2009/7046" devLabel="Countersunk Flat Head Screw ISO 2009/7046" translation="皿小ねじ DIN EN ISO 2009/7046"/>
+	<label commandName="CountersunkHead+WasherGOST12876-67" devLabel="Countersunk Head + Washer GOST 12876-67" translation="皿小ねじ + 座金 GOST 12876-67"/>
+	<label commandName="CountersunkHeadGOST12876-67" devLabel="Countersunk Head GOST 12876-67" translation="皿小ねじ GOST 12876-67"/>
+	<label commandName="CountersunkRaisedHeadScrew" devLabel="Countersunk Raised Head Screw" translation="丸皿小ねじ"/>
+	<label commandName="CountersunkRaisedHeadScrewISO2010" devLabel="Countersunk Raised Head Screw ISO 2010" translation="丸皿小ねじ ISO 2010"/>
+	<label commandName="CountersunkRaisedHeadScrewISO2010/7047" devLabel="Countersunk Raised Head Screw ISO 2010/7047" translation="丸皿小ねじ ISO 2010/7047"/>
+	<label commandName="CountourFlange" devLabel="No target component." translation="ターゲット コンポーネントがありません。"/>
+	<label commandName="CreaseEdgeFailed" devLabel="Failed to crease the given edges." translation="指定のエッジの折り目付けに失敗しました。"/>
+	<label commandName="CreaseVerticesFailed" devLabel="Failed to crease the given vertices." translation="指定した頂点の折り目付けに失敗しました。"/>
+	<label commandName="CreateBoxFailed" devLabel="Failed to create Box" translation="直方体の作成に失敗しました"/>
+	<label commandName="CreateComponentFromBodyError" devLabel="Create Component From Body failed:  invalid input" translation="ボディからコンポーネントを作成するのに失敗しました: 入力が無効です"/>
+	<label commandName="CreateCylFailed" devLabel="Failed to create Cylinder" translation="円柱の作成に失敗しました"/>
+	<label commandName="CreateFaceFailed" devLabel="Create Face failed" translation="面の作成に失敗しました"/>
+	<label commandName="CreateGroupFeatureCommandError" devLabel="Create Group Feature Error:  rolled back features not allowed" translation="グループ フィーチャの作成エラー: ロール バックされたフィーチャは許可されません"/>
+	<label commandName="CreateGroupFeatureCommandErrorTwoFeatures" devLabel="Create Group Feature Error:  At least 2 features needed for a group" translation="グループ フィーチャの作成エラー: グループには少なくとも 2 つのフィーチャが必要です"/>
+	<label commandName="CreateNurbsFailed" devLabel="Failed to create surface" translation="サーフェスの作成に失敗しました"/>
+	<label commandName="CreatePCBComponent_BottomCanvas" devLabel="Board Bottom" translation="ボード下部"/>
+	<label commandName="CreatePCBComponent_BottomSilkscreen" devLabel="Silkscreen Bottom" translation="シルクスクリーン下部"/>
+	<label commandName="CreatePCBComponent_TopCanvas" devLabel="Board Top" translation="ボード上部"/>
+	<label commandName="CreatePCBComponent_TopSilkscreen" devLabel="Silkscreen Top" translation="シルクスクリーン上部"/>
+	<label commandName="CreatePlaneFailed" devLabel="Failed to create Plane" translation="平面の作成に失敗しました"/>
+	<label commandName="CreateQuadFailed" devLabel="Failed to create Quadball" translation="クワッドボールの作成に失敗しました"/>
+	<label commandName="CreateSphFailed" devLabel="Failed to create Sphere" translation="球の作成に失敗しました"/>
+	<label commandName="CreateTorusFailed" devLabel="Failed to create Torus" translation="トーラスの作成に失敗しました"/>
+	<label commandName="CurvatureCombAnalysisDefaultUserName" devLabel="Curvature" translation="曲率"/>
+	<label commandName="CurvatureMapAnalysisDefaultUserName" devLabel="CurvatureMap" translation="曲率マップ"/>
+	<label commandName="CuttingToolDoesNotIntersectAnySurface" devLabel="Cutting Tool does not intersect any surface!" translation="カットツールは、どのサーフェスとも交差していません。"/>
+	<label commandName="CuttingToolNoIntersectionToSurface" devLabel="Cutting Tool does not intersect any surface!" translation="カットツールは、どのサーフェスとも交差していません。"/>
+	<label commandName="CycleDependencyError" devLabel="The Break Link operation will be aborted due to cyclic dependency error. Please report this issue to Autodesk!" translation="[リンクの解除]の操作は、循環従属エラーが発生したため中止されます。この問題をオートデスクに報告してください。"/>
+	<label commandName="CyclicDependencyNotAllowed" devLabel="Cyclic dependency not allowed!! The document being referenced %1% already depends on the referencing document %2%, either on disk or in memory!!" translation="循環従属は許可されません。参照しているドキュメント %1% は、ディスクまたはメモリの参照ドキュメント %2% に既に従属しています。"/>
+	<label commandName="CyclicDependencyNotAllowed2" devLabel="This insertion operation, along with undo or redo of previously committed commands, will result in a cyclic dependency between %1% and %2%. To prevent that, the insertion operation was canceled!!" translation="以前にコミットしたコマンドを元に戻したりやり直す操作とともに、挿入操作を実行すると、%1% と %2% との間に循環従属が発生します。循環従属の発生を防止するために、挿入操作はキャンセルされました。"/>
+	<label commandName="CylindricalHeadHexSocketScrew+WasherGOST12876-67" devLabel="Cylindrical Head Hex Socket Screw + Washer GOST 12876-67" translation="六角穴付き平小ねじ + 座金 GOST 12876-67"/>
+	<label commandName="CylindricalHeadHexSocketScrewGOST12876-67" devLabel="Cylindrical Head Hex Socket Screw GOST 12876-67" translation="六角穴付き平小ねじ GOST 12876-67"/>
+	<label commandName="CylindricalHeadSlottedScrew+WasherGOST12876-67" devLabel="Cylindrical Head Slotted Screw + Washer GOST 12876-67" translation="すりわり付き平小ねじ + 座金 GOST 12876-67"/>
+	<label commandName="CylindricalHeadSlottedScrewGOST12876-67" devLabel="Cylindrical Head Slotted Screw  GOST 12876-67" translation="すりわり付き平小ねじ GOST 12876-67"/>
+	<label commandName="CylindrifyFailed" devLabel="Cannot cylindrify selected faces. Adjust selection or toggle Auto Feature Selection." translation="選択した面を円柱化できません。選択を調整するか、[自動フィーチャ選択]を切り替えてください。"/>
+	<label commandName="DELETE_FACES_FAILED_TO_FILL_GAP" devLabel="Cannot delete individual faces. To delete the whole body, please use the Browser or Selection Filters." translation="個々の面を削除できません。ボディ全体を削除するには、ブラウザまたは選択フィルタを使用してください。"/>
+	<label commandName="DERIVED_CONTEXT_NOT_FOUND" devLabel="Corresponding context not found in referenced design." translation="対応するコンテキストが参照先のデザイン内に見つかりませんでした。"/>
+	<label commandName="DERIVED_SOURCE_MISSING" devLabel="The source FusionComponent cannot be found!" translation="ソース Fusion コンポーネントが見つかりません。"/>
+	<label commandName="DIN" devLabel="DIN" translation="DIN"/>
+	<label commandName="DRAFT_DATA_CORRUPT" devLabel="Draft data model corrupt!" translation="勾配データ モデルが破損しています。"/>
+	<label commandName="DRAFT_MISSING_FACE_REFERENCES" devLabel="Missing face references" translation="面の参照が見つかりません"/>
+	<label commandName="DRAFT_MISSING_REFERENCE_PLANE" devLabel="Missing reference plane" translation="基準平面が見つかりません"/>
+	<label commandName="DRAFT_PARTING_LINE_FAILED_SWITCH_DRAFT_SIDE" devLabel="Cannot create draft in the specified direction. Adjust Draft Sides to Symmetric or Two Sides." translation="指定した方向に勾配を作成できません。[勾配側面]を[対称]または[2 つの側面]に調整してください。"/>
+	<label commandName="DRMATRIX_COMPUTE_FAILED" devLabel="Failed to evaluate the matrix due to the invalid input" translation="入力が無効であるため、マトリックスの評価に失敗しました"/>
+	<label commandName="DRMATRIX_NON_LINEAR_GEOM_ERROR" devLabel="Failed to track line segment" translation="線分セグメントのトラッキングに失敗しました"/>
+	<label commandName="DRPOINT_COMPUTE_FAILED" devLabel="Failed to evaluate the point due to the invalid input" translation="入力が無効であるため、点の評価に失敗しました"/>
+	<label commandName="DRVECTOR_COMPUTE_FAILED" devLabel="Failed to evaluate the direction due to the invalid input" translation="無効な入力のため、方向の検証に失敗しました"/>
+	<label commandName="DcArrangeAlgorithm.EnvelopeBodyFace" devLabel="2D arrangement using a body requires that a face be selected." translation="ボディを使用した 2D 整列では、面を選択する必要があります。"/>
+	<label commandName="DcArrangeAlgorithm.EnvelopeLenWidth" devLabel="2D arrangement using a work plane as the envelope requires the length and width to also be set." translation="作業平面をエンベロープとして使用する 2D 整列では、長さと幅も設定する必要があります。"/>
+	<label commandName="DcArrangeAlgorithm.EnvelopeMissing" devLabel="No envelope geometry defined." translation="エンベロープのジオメトリが定義されていません。"/>
+	<label commandName="DcArrangeAlgorithm.EnvelopeTypeInvalid" devLabel="2D arrangement requires the envelope to be a face, work plane, or sketch." translation="2D 整列では、エンベロープを面、作業平面、またはスケッチにする必要があります。"/>
+	<label commandName="DcArrangeAlgorithm.Envlope3DBody" devLabel="3D arrangement requires a body to be selected for the envelope." translation="3D 整列では、エンベロープ用にボディを選択する必要があります。"/>
+	<label commandName="DcArrangeAlgorithm.NoItems" devLabel="Nothing has been selected to arrange." translation="整列対象が選択されていません。"/>
+	<label commandName="DcArrangeAlgorithm.UnsupportedDimension" devLabel="Algorithm does not support the requested arrangement dimension." translation="アルゴリズムは要求された整列寸法をサポートしていません。"/>
+	<label commandName="DcArrangeFeature.MissingAlg" devLabel="Cannot find the arrangement algorithm." translation="整列アルゴリズムが見つかりません。"/>
+	<label commandName="DcArrangeFeatureImplNoneLeafComps" devLabel="Some items cannot be arranged because they have child components. This is either because the design has been modified, or was made with an older version of Fusion 360.			 Try re-selecting only leaf components for arrangement. (A leaf has no child components.)" translation="子コンポーネントがあるため、いくつかのアイテムを整列できません。デザインが変更されたか、旧バージョンの Fusion 360 で作成されています。			整列用のリーフ コンポーネントのみを再選択してください。(リーフには子コンポーネントがありません。)"/>
+	<label commandName="DcDerivedContextFeature_SourceNotMappable" devLabel="Object cannot be mapped from source to derived" translation="ソースから派生にオブジェクトをマップすることはできません"/>
+	<label commandName="DcDerivedContextFeature_UpdateFailed" devLabel="Update of sources to derive failed" translation="ソースから派生への更新に失敗しました"/>
+	<label commandName="DcFacesMove" devLabel="MoveFace" translation="面を移動"/>
+	<label commandName="DcGroupFeatureDefaultName" devLabel="Group" translation="グループ"/>
+	<label commandName="DcGroupFeatureName" devLabel="DcGroupFeature" translation="DcGroupFeature"/>
+	<label commandName="DcJointAssembleFeatureMakeFailure" devLabel="Creation of Joint Feature failed" translation="ジョイント フィーチャの作成に失敗しました"/>
+	<label commandName="DcPatternSourceError" devLabel="Invalid pattern feature" translation="無効なパターン フィーチャです"/>
+	<label commandName="DecalCreationError" devLabel="No targets specified" translation="ターゲットが指定されていません"/>
+	<label commandName="DecalPatchDefaultUserName" devLabel="Decal" translation="デカール"/>
+	<label commandName="DecalPatchSelectionId" devLabel="DecalPatch" translation="デカール パッチ"/>
+	<label commandName="DecalPatchSelectionPluralId" devLabel="DecalPatches" translation="DecalPatches"/>
+	<label commandName="DecalSelectionCategory" devLabel="Decal" translation="デカール"/>
+	<label commandName="DecalsSelectionId" devLabel="Decals" translation="デカール"/>
+	<label commandName="DefaultMeshOptionGroupMesh" devLabel="Mesh" translation="メッシュ"/>
+	<label commandName="DefaultMeshOptionGroupPreferences" devLabel="Preferences that control inserting a mesh" translation="メッシュの挿入をコントロールする基本設定"/>
+	<label commandName="DefaultMeshShadingTypeToolTip" devLabel="Render the mesh as smooth shaded or flat shaded" translation="スムーズ シェーディングまたはフラット シェーディングとしてメッシュをレンダリング"/>
+	<label commandName="DefaultMeshShadingTypeeUserName" devLabel="Default Shading" translation="既定のシェーディング"/>
+	<label commandName="DeleteCauseDownstreamFailures" devLabel="Deletion cause downstream feature failures" translation="削除を実行すると、下位フィーチャでエラーが発生します"/>
+	<label commandName="DeleteHandleFailed" devLabel="Sections cannot be inserted within the regions controlled by global sections (i.e. where a path curve ends, or where multiple path curves meet). Try inserting the section in a different location, or control the shape using the existing global sections." translation="全体断面でコントロールされている領域内(パス曲線の終点や複数のパス曲線の交点)に断面を挿入できません。別の位置に断面を挿入するか、既存の全体断面を使用して形状をコントロールしてください。"/>
+	<label commandName="DeleteHandleFailed2" devLabel="Unable to delete handle" translation="ハンドルを削除できません"/>
+	<label commandName="DeleteRootComponentError" devLabel="It's not allowed to delete root component" translation="ルート コンポーネントを削除することはできません"/>
+	<label commandName="DeleteTopologyFailed" devLabel="Failed deleting T-Spline entity" translation="T スプライン エンティティの削除に失敗しました"/>
+	<label commandName="DeriveContinueButton" devLabel="Continue" translation="続行"/>
+	<label commandName="DeriveDownStreamFeaturesImpacted" devLabel="Derive" translation="派生"/>
+	<label commandName="DeriveDownStreamFeaturesImpactedMsg1" devLabel="One or more down stream features might lose their dependent geometry. If the feature can be repaired it will be shown as sick. If it cannot be repaired it will be deleted." translation="1 つまたは複数の下位フィーチャが従属ジオメトリを失う可能性があります。フィーチャを修復できる場合は異常として表示されます。修復できない場合は削除されます。"/>
+	<label commandName="DeriveEntitiesCreateComponentsFromBodiesIsNotSupported" devLabel="This operation is not supported for Derived entities, they will not participate in the operation." translation="この操作は派生エンティティにはサポートされていません。操作には参加しません。"/>
+	<label commandName="DerivedBaseFeature" devLabel="Derived Base Feature" translation="派生した基準フィーチャ"/>
+	<label commandName="DerivedContext" devLabel="DerivedContext" translation="DerivedContext"/>
+	<label commandName="DerivedSuffix" devLabel="(Derive)" translation="(派生)"/>
+	<label commandName="DetachedFromBaseAsset" devLabel="Could not %1% because we're detached from the base Asset" translation="ベースのアセットからアタッチ解除されたため、%1% できませんでした"/>
+	<label commandName="DetectCircularDependencyInRestructure" devLabel="The restructure is rejected because it will cause circular dependency." translation="循環従属が発生するため再構築は拒否されます。"/>
+	<label commandName="DetectPositionFeatureDependency" devLabel="Detect some position features may result downstream features fail after restructure." translation="一部の位置フィーチャの検出を行うと、再構築後に下位フィーチャでエラーが発生する可能性があります。"/>
+	<label commandName="DisallowAnyCADBreakLink" devLabel="&lt;b&gt;%1%&lt;/b&gt; is associatively imported in this design. Break Link is not supported." translation="このデザインに &lt;b&gt;%1%&lt;/b&gt; が関連付けられてインポートされます。リンクの解除はサポートされていません。"/>
+	<label commandName="DisallowDeriveBreakLink" devLabel="&lt;b&gt;%1%&lt;/b&gt; is already Derived into this design. Break Link is not supported." translation="&lt;b&gt;%1%&lt;/b&gt; は既にこのデザインに派生されています。リンクの解除はサポートされていません。"/>
+	<label commandName="DocumentIsMissing" devLabel="Document is missing" translation="ドキュメントが見つかりません"/>
+	<label commandName="DoesNotExistDecalError" devLabel="The image file does not exist" translation="イメージ ファイルが存在しません"/>
+	<label commandName="DownloadError1" devLabel="Could not download latest referenced files. Rate limited by service" translation="最新の参照ファイルをダウンロードできませんでした。サービスにより速度が制限されています"/>
+	<label commandName="DownloadError2" devLabel="Could not download latest referenced files. No content available" translation="最新の参照ファイルをダウンロードできませんでした。使用可能なコンテンツがありません"/>
+	<label commandName="DownloadError3" devLabel="Could not download latest referenced files. Referenced document(s) is missing" translation="最新の参照ファイルをダウンロードできませんでした。参照ドキュメントが見つかりません"/>
+	<label commandName="DownloadError4" devLabel="Could not download latest referenced files" translation="最新の参照ファイルをダウンロードできませんでした"/>
+	<label commandName="DownloadError5" devLabel="Could not download latest referenced files" translation="最新の参照ファイルをダウンロードできませんでした"/>
+	<label commandName="DraftAnalysisDefaultUserName" devLabel="Draft" translation="勾配"/>
+	<label commandName="DraftFeatureName" devLabel="Draft" translation="勾配"/>
+	<label commandName="DraftPartingLineFailed" devLabel="Draft operation failed. Adjust the pull direction, parting tool, faces, or angle." translation="勾配操作に失敗しました。抜き方向、パーティング ツール、面、または角度を調整してください。"/>
+	<label commandName="DraftPartingLineNoIntersect" devLabel="Parting line does not intersect the body. Select a parting tool that intersects the body." translation="パーティング ラインがボディと交差していません。ボディと交差するパーティング ツールを選択してください。"/>
+	<label commandName="EDGE1_SELECTION_MISSING" devLabel="Missing edge1" translation="エッジ 1 が見つかりません"/>
+	<label commandName="EDGE2_SELECTION_MISSING" devLabel="Missing edge2" translation="エッジ 2 が見つかりません"/>
+	<label commandName="EDGEFLANGE_NO_EDGE_FOUND" devLabel="No edge found for flange." translation="フランジのエッジが見つかりません。"/>
+	<label commandName="EDGE_REFERENCE_LOST" devLabel="The edge reference is lost, try editing this feature to reselect the lost edge." translation="エッジの参照が失われています。このフィーチャを編集して、失われたエッジを再選択してください。"/>
+	<label commandName="EDGE_SELECTIONS_FROM_DIFF_SM_BODIES" devLabel="Edge selections from different sheetmetal bodies are not allowed to create Edge flange." translation="異なるシートメタル ボディからエッジを選択してエッジ フランジを作成することはできません。"/>
+	<label commandName="EDITED_XREF_OCC_NOT_FOUND" devLabel="The edited occurrence of the referenced design is missing." translation="参照するデザインの編集オカレンスが見つかりません。"/>
+	<label commandName="EICInvalidOccPath" devLabel="Invalid Component Selection Path to activate EIP." translation="インプレイス編集をアクティブにするためのコンポーネント選択パスが無効です。"/>
+	<label commandName="EICUnresolvedComp" devLabel="Selected Component to activate EIP is unresolved." translation="インプレイス編集をアクティブにするために選択されたコンポーネントは解決されていません。"/>
+	<label commandName="EIPContextDefaultUserName" devLabel="Context" translation="コンテキスト"/>
+	<label commandName="EIPContextLocal" devLabel="Local" translation="ローカル"/>
+	<label commandName="EIPContextSelectionId" devLabel="Context" translation="コンテキスト"/>
+	<label commandName="EIPContextsSelectionId" devLabel="Contexts" translation="コンテキスト"/>
+	<label commandName="EIPDetachedContext" devLabel="Detached context cannot reference parent assembly" translation="アタッチ解除されたコンテキストは親アセンブリを参照できません"/>
+	<label commandName="EIPDirectModelParentRef" devLabel="Direct model cannot have associative reference to parent assembly" translation="ダイレクト モデルには、親アセンブリに関連付けられた参照を設定できません"/>
+	<label commandName="EIPInvalidAsset" devLabel="Invalid EIP asset" translation="無効なインプレイス編集アセット"/>
+	<label commandName="EIPInvalidObjectPath" devLabel="Invalid EIP selection path." translation="無効なインプレイス編集選択パスです。"/>
+	<label commandName="EIPInvalidOccPath" devLabel="OccurrencePath does not follow EIP path." translation="オカレンス パスがインプレイス編集パスに従っていません。"/>
+	<label commandName="EIPSelectionNotInCachedObject" devLabel="Selection not found in cached body or sketch." translation="キャッシュされたボディまたはスケッチで選択内容が見つかりません。"/>
+	<label commandName="EIPSelectionNotMatched" devLabel="Selection lost after cache compute." translation="キャッシュ計算後に選択内容が失われました。"/>
+	<label commandName="EIPSessionExpected" devLabel="Expected edit-in-place session" translation="インプレイス編集セッションが予期されました"/>
+	<label commandName="EIPUnsupportedObjectPath" devLabel="ObjectPath does not follow EIP path." translation="オブジェクト パスがインプレイス編集パスに従っていません。"/>
+	<label commandName="EIP_UPDATE_CONTEXT_ASSETLOAD_FAILED" devLabel="Failed to load source design." translation="ソース デザインをロードできませんでした。"/>
+	<label commandName="EIP_UPDATE_CONTEXT_FAILED" devLabel="Failed to synchronize the context. It looks like you aren't connected to the internet. Please check your connection and try again." translation="コンテキストの同期に失敗しました。インターネットに接続されていないようです。接続を確認してもう一度試してください。"/>
+	<label commandName="EIP_UPDATE_CONTEXT_OPENSOURCE_FAILED" devLabel="Failed to open source design." translation="ソース デザインを開けませんでした。"/>
+	<label commandName="EIP_UPDATE_CONTEXT_ROLLBACK_FAILED" devLabel="Failed to roll back source design." translation="ソース デザインをロール バックできませんでした。"/>
+	<label commandName="EIP_UPDATE_CONTEXT_SOURCE_UNAVAILABLE" devLabel="Failed to access source design." translation="ソース デザインにアクセスできませんでした。"/>
+	<label commandName="EMBOSS_CANNOT_ORIENT_PROFILE" devLabel="Cannot emboss selected profile on selected faces. Adjust proximity of sketch profiles to selected faces. Ensure each selected face is a developable surface on a solid body." translation="選択した面上で選択したプロファイルをエンボスできません。選択した面に対するスケッチ プロファイルの近接性を調整してください。選択した各面がソリッド ボディ上の展開可能なサーフェスであることを確認してください。"/>
+	<label commandName="EMBOSS_DISCONNECTED_TARGET_FACES" devLabel="Selected faces are not connected. If disconnected faces are automatically selected, uncheck Tangent Chain, then select adjacent faces." translation="選択した面は接続されていません。接続されていない面が自動的に選択される場合は、[接面チェーン]をオフにして、隣接する面を選択します。"/>
+	<label commandName="EMBOSS_ERROR_CANNOT_BE_WRAPPED" devLabel="Cannot emboss selected faces. Ensure each selected face is a developable surface on a solid body." translation="選択した面をエンボスできません。選択した各面がソリッド ボディ上の展開可能なサーフェスであることを確認してください。"/>
+	<label commandName="EMBOSS_ERROR_NON_PLANAR_PROFILES" devLabel="Sketch profiles are not coplanar. Deselect sketch profiles that are not on the same plane." translation="スケッチ プロファイルが同一平面上にありません。同一平面上にないスケッチ プロファイルの選択を解除してください。"/>
+	<label commandName="EMBOSS_ERROR_OPEN_WIRE" devLabel="Selection is an open sketch curve. Select a closed sketch profile." translation="選択は開いたスケッチ曲線です。閉じたスケッチ プロファイルを選択してください。"/>
+	<label commandName="EMBOSS_ERROR_TARGET_BODY_NOT_SOLID" devLabel="Selected faces are not on a solid body. Ensure each selected face is a developable surface on a solid body." translation="選択した面はソリッド ボディ上にありません。選択した各面がソリッド ボディ上の展開可能なサーフェスであることを確認してください。"/>
+	<label commandName="EMBOSS_ERROR_TARGET_FACES_FROM_DIFF_BODIES" devLabel="Selected faces are not on the same body. Select faces on the same body to emboss." translation="選択した面は同じボディ上にありません。エンボスする同じボディ上の面を選択してください。"/>
+	<label commandName="EMBOSS_GENERIC_FEATURE_FAILURE" devLabel="Cannot create emboss feature. Adjust sketch profiles, faces, emboss depth, effect, or alignment options." translation="エンボス フィーチャを作成できません。スケッチ プロファイル、面、エンボスの深さ、効果、または位置合わせオプションを調整してください。"/>
+	<label commandName="EMBOSS_INVALID_DEPTH" devLabel="Emboss depth value is invalid. Adjust depth." translation="エンボスの深さの値が無効です。深さを調整してください。"/>
+	<label commandName="EMBOSS_INVALID_ROTATION_ANGLE" devLabel="Emboss rotation angle value is invalid. Adjust rotation angle." translation="エンボスの回転角度の値が無効です。回転角度を調整してください。"/>
+	<label commandName="EMBOSS_NO_WRAP_GEOMETRY" devLabel="Emboss result falls outside boundary of selected faces. Add adjacent faces to selection, adjust distance and rotation angle, or adjust proximity of sketch profiles to selected faces." translation="エンボスの結果が、選択した面の境界の外側に出ています。隣接する面を選択に追加するか、距離と回転角度を調整するか、選択した面に対するスケッチ プロファイルの近接性を調整してください。"/>
+	<label commandName="EMBOSS_SELF_INTERSECTING_BODY" devLabel="Sketch profiles create a self-intersecting body. Adjust depth of emboss or size of sketch profile." translation="スケッチ プロファイルによって自己交差するボディが作成されます。エンボスの深さまたはスケッチ プロファイルのサイズを調整してください。"/>
+	<label commandName="EMBOSS_SOURCE_PROFILE_LOST" devLabel="Sketch profiles are invalid. Ensure sketch profiles are closed, do not use single line fonts, and have not been deleted." translation="スケッチ プロファイルが無効です。スケッチ プロファイルが閉じていること、シングル ライン フォントを使用していないこと、削除されていないことを確認してください。"/>
+	<label commandName="EMBOSS_TARGET_FACE_LOST" devLabel="Faces to emboss are invalid. Ensure each selected face is a developable surface on a solid body." translation="エンボスする面が無効です。選択した各面がソリッド ボディ上の展開可能なサーフェスであることを確認してください。"/>
+	<label commandName="EMBOSS_THICKEN_FAILURE" devLabel="Cannot create emboss feature at specified depth. Adjust depth." translation="指定した深さでエンボス フィーチャを作成できません。深さを調整してください。"/>
+	<label commandName="ENTITY_REFERENCE_LOST" devLabel="Some input geometry cannot be found. Try editing this feature to reselect the lost inputs." translation="一部の入力ジオメトリが見つかりません。このフィーチャを編集して、失われた入力ジオメトリを再選択してください。"/>
+	<label commandName="ENTITY_REFERENCE_LOST_USE_CACHE" devLabel="The model is using cached geometry to solve. Please reselect reference geometry for failed features in the timeline." translation="モデルの解析に、キャッシュされたジオメトリを使用しています。タイムラインで、失敗したフィーチャの参照ジオメトリを再選択してください。"/>
+	<label commandName="ERROR_CREATING_DERIVE_FEATURE" devLabel="Error creating external derive feature." translation="外部派生フィーチャの作成時にエラーが発生しました。"/>
+	<label commandName="EXTRUDE_MULTIPLE_WIRE_ERROR" devLabel="Cannot create toolbody as multiple wired body is not allowed" translation="複数のワイヤ ボディは許可されていないため、ツールボディを作成できません"/>
+	<label commandName="EXTRUDE_THROUGH_ALL_ERROR" devLabel="Cannot create toolbody for Through All, please check inputs" translation="貫通用のツールボディを作成できません。入力を確認してください。"/>
+	<label commandName="EdgeFlange" devLabel="No target component." translation="ターゲット コンポーネントがありません。"/>
+	<label commandName="EdgesForJONotParallelOrIntersectError" devLabel="Joint Origin from two edges failed:  Input lines must intersect or be parallel" translation="2 つのエッジからジョイントの原点を作成するのに失敗しました: 入力した線分は交差しているか平行である必要があります"/>
+	<label commandName="EditDcCanvasError" devLabel="Invalid canvas feature" translation="無効なキャンバス フィーチャです"/>
+	<label commandName="EditPCBPackageFileError" devLabel="Input package file not opened" translation="入力パッケージ ファイルが開いていません"/>
+	<label commandName="EditPCBPackageInputModelError" devLabel="Input package model is invalid" translation="入力パッケージ モデルが無効です"/>
+	<label commandName="EditingOffsetSketchError" devLabel="Invalid editing input found" translation="無効な編集入力が見つかりました"/>
+	<label commandName="EmbossFeatureName" devLabel="Emboss" translation="エンボス"/>
+	<label commandName="EmptyComponentName" devLabel="Component Name is empty." translation="コンポーネント名が空です。"/>
+	<label commandName="EmptyFolderInput" devLabel="Location is empty." translation="場所が空です。"/>
+	<label commandName="Enclosure Feature" devLabel="Fluid Volume" translation="液量"/>
+	<label commandName="EnclosureExternal" devLabel="No external void has been detected for given inputs. Please try to increase the offset." translation="指定した入力について外部空間は検出されませんでした。オフセットを増加してください。"/>
+	<label commandName="ErrAsmEntData" devLabel="Body, face, edge or vertex" translation="ボディ、面、エッジ、または頂点"/>
+	<label commandName="ErrBodyData" devLabel="Body" translation="ボディ"/>
+	<label commandName="ErrEdgeData" devLabel="Edge" translation="エッジ"/>
+	<label commandName="ErrFaceData" devLabel="Face" translation="面"/>
+	<label commandName="ErrProfileData" devLabel="Profile" translation="プロファイル"/>
+	<label commandName="ErrVertData" devLabel="Vertex" translation="頂点"/>
+	<label commandName="ErrorLoadingDesignAsset" devLabel="Could not load Design Asset in latest target document:%1%!!" translation="最新のターゲット ドキュメント %1% でデザイン アセットをロードできませんでした。"/>
+	<label commandName="ErrorLoadingOtherDesignAsset" devLabel="Could not load other Assets in the latest target document: %1%!!" translation="最新のターゲット ドキュメント %1% で他のアセットをロードできませんでした!"/>
+	<label commandName="ErrorOpeningFile" devLabel="Could not open latest file %1% into memory" translation="最新のファイル %1% をメモリで開くことができませんでした"/>
+	<label commandName="ExtentLineBody" devLabel="Extent Lines" translation="範囲線"/>
+	<label commandName="ExternalDeriveFeatureName" devLabel="Derived from %1% v%2%" translation="%1% v%2% から派生"/>
+	<label commandName="ExternalDeriveRequestNotCloud" devLabel="Cannot derive from versionless design" translation="バージョンのないデザインから派生させることはできません"/>
+	<label commandName="ExternalDerived" devLabel="ExternalDerived" translation="外部派生"/>
+	<label commandName="ExternalDerivedSuffix" devLabel=" (Derived)" translation=" (派生)"/>
+	<label commandName="Extrude" devLabel="No target component." translation="ターゲット コンポーネントがありません。"/>
+	<label commandName="ExtrudeFeatureName" devLabel="Extrude" translation="押し出し"/>
+	<label commandName="FACE_REFERENCE_LOST" devLabel="The face reference is lost, try editing this feature to reselect the lost face." translation="面の参照が失われています。このフィーチャを編集して、失われた面を再選択してください。"/>
+	<label commandName="FAIL_TO_CUT_INSTANCE" devLabel="Cut of instance failed" translation="インスタンスの切り取りに失敗しました"/>
+	<label commandName="FEATURE_ENTITY_TYPE_INVALID" devLabel="Entity type is invalid" translation="エンティティ タイプが無効です"/>
+	<label commandName="FEATURE_FAILED_TO_CREATE" devLabel="Failed to create feature" translation="フィーチャの作成に失敗しました"/>
+	<label commandName="FEATURE_MISSING_INPUTS" devLabel="Missing inputs" translation="入力が見つかりません"/>
+	<label commandName="FEATURE_OPERATION_ID_ERROR" devLabel="No allocated operation ids" translation="割り当てられた演算子 ID がありません"/>
+	<label commandName="FEATURE_REFERENCE_LOST" devLabel="Reference is lost" translation="参照が失われました"/>
+	<label commandName="FEATURE_SOLVER_NO_SOLUTION_FOUND" devLabel="Solver did not reach a solution" translation="ソルバーで解析結果が得られませんでした"/>
+	<label commandName="FILLET_DATA_CORRUPT" devLabel="Virable radius fillet data modle corrupt!" translation="可変半径のフィレット データ モデルが壊れています。"/>
+	<label commandName="FILLET_NO_EDGE_FOUND" devLabel="No fillet edge found." translation="フィレット エッジが見つかりませんでした。"/>
+	<label commandName="FILLET_NO_FACE_FOUND" devLabel="A crucial face is missing." translation="重要な面が見つかりません。"/>
+	<label commandName="FILLET_TANGENT_CHAIN_ISSUE" devLabel="There was a problem accepting the sequences of edges to fillet. Tangent Chain option was turned off " translation="フィレットするエッジのシーケンスを受け入れているときに問題が発生しました。[接面チェーン]オプションがオフになっています"/>
+	<label commandName="FLANGE_OPN_NEEDS_EDGE" devLabel="Please select Edge(s) to Join..." translation="結合するエッジ(S)を選択してください..."/>
+	<label commandName="FLANGE_OPN_NOT_YET_SUPPORTED" devLabel="This Flange operation is not yet supported." translation="このフランジ操作はまだサポートされていません。"/>
+	<label commandName="FLATPATTERN_COLLISION" devLabel="Collisions found while flattening, cannot generate flatpattern." translation="フラット化中に衝突が見つかりました。フラット パターンを生成できません。"/>
+	<label commandName="FLATPATTERN_ERROR" devLabel="Flatpattern generation failed." translation="フラット パターンの生成に失敗しました。"/>
+	<label commandName="FLATPATTERN_FEATURE_NO_ALIGN_FACE" devLabel="Alignment face not available.   " translation="位置合わせ面は使用できません。   "/>
+	<label commandName="FLATPATTERN_USING_CACHE_ALIGN_FACE" devLabel="Align face not found. Used a cached face for flattening.   " translation="位置合わせ面が見つかりません。フラット化用にキャッシュされた面を使用しました。   "/>
+	<label commandName="FPExportDXFError" devLabel="There was an unexpected problem with exporting the flat pattern as a DXF file." translation="フラット パターンを DXF ファイルとしてエクスポートする際に予期しない問題が発生しました。"/>
+	<label commandName="FUSION_SERVER_FEATURE_REQUIREMENTS_ERROR" devLabel="Feature inputs not meeting minimum requirements to execute the request" translation="フィーチャの入力は、要求を実行するための最小要件を満たしていません"/>
+	<label commandName="FUSION_SERVER_INTERNAL_ERROR" devLabel="Server internal error" translation="サーバの内部エラー"/>
+	<label commandName="FaceSetName" devLabel="FaceSet" translation="面セット"/>
+	<label commandName="FailedToAdd3DPackage" devLabel=": Failed to get 3D model from library." translation=": ライブラリから 3D モデルを取得できませんでした。"/>
+	<label commandName="FailedToCreateBox" devLabel=": Failed to get box from library." translation=": ライブラリからボックスを取得できませんでした。"/>
+	<label commandName="FailedToCreatePCBComponents" devLabel="Failed to create PCB components." translation="PCB コンポーネントの作成に失敗しました。"/>
+	<label commandName="FailedToCreateSimModelAsset" devLabel="Failed to create Model asset." translation="モデル アセットの作成に失敗しました。"/>
+	<label commandName="FailedToEraseAndFillGivenFaces" devLabel="Failed to erase and fill given faces." translation="指定された面の消去と塗り潰しに失敗しました。"/>
+	<label commandName="FailedToFillHoleWithGivenEedge" devLabel="Failed to fill hole with given edge." translation="指定したエッジでの穴の塗り潰しに失敗しました。"/>
+	<label commandName="FailedToGetPackageTransform" devLabel=": Failed to get the transform of the 3D model from library." translation=": ライブラリから 3D モデルの変換を取得できませんでした。"/>
+	<label commandName="Feature" devLabel="Feature" translation="フィーチャ"/>
+	<label commandName="FeatureAlign" devLabel="Align" translation="位置合わせ"/>
+	<label commandName="FeatureArrange" devLabel="Arrange" translation="整列"/>
+	<label commandName="FeatureAsBuilt" devLabel="As-built" translation="現況"/>
+	<label commandName="FeatureAssemble" devLabel="Assemble" translation="アセンブリ"/>
+	<label commandName="FeatureBodyComp" devLabel="Body-&gt;Comp" translation="ボディ -&gt; コンポーネント"/>
+	<label commandName="FeatureBoxPrimitive" devLabel="BoxPrimitive" translation="直方体プリミティブ"/>
+	<label commandName="FeatureCanvas" devLabel="Canvas" translation="キャンバス"/>
+	<label commandName="FeatureCategory" devLabel="Features" translation="フィーチャ"/>
+	<label commandName="FeatureChamfer" devLabel="Chamfer" translation="面取り"/>
+	<label commandName="FeatureCircularComponentPattern" devLabel="C-Pattern" translation="C パターン"/>
+	<label commandName="FeatureCircularPattern" devLabel="C-Pattern" translation="C パターン"/>
+	<label commandName="FeatureCoilPrimitive" devLabel="CoilPrimitive" translation="コイル プリミティブ"/>
+	<label commandName="FeatureCombine" devLabel="Combine" translation="結合"/>
+	<label commandName="FeatureConvertToSheetMetal" devLabel="ConvertToSheetMetal" translation="ConvertToSheetMetal"/>
+	<label commandName="FeatureCopyPaste" devLabel="CopyPaste" translation="コピーと貼り付け"/>
+	<label commandName="FeatureCopyPasteBodies" devLabel="CopyPasteBodies" translation="ボディのコピーと貼り付け"/>
+	<label commandName="FeatureCreateComponent" devLabel="CreateComponent" translation="CreateComponent"/>
+	<label commandName="FeatureCutPaste" devLabel="CutPaste" translation="CutPaste"/>
+	<label commandName="FeatureCutPasteBodies" devLabel="CutPasteBodies" translation="CutPasteBodies"/>
+	<label commandName="FeatureCylinderPrimitive" devLabel="CylinderPrimitive" translation="円柱プリミティブ"/>
+	<label commandName="FeatureDecal" devLabel="Decal" translation="デカール"/>
+	<label commandName="FeatureDeleteBody" devLabel="RemoveBody" translation="RemoveBody"/>
+	<label commandName="FeatureDeleteFace" devLabel="DeleteFace" translation="面を削除"/>
+	<label commandName="FeatureDeleteInstance" devLabel="RemoveInstance" translation="RemoveInstance"/>
+	<label commandName="FeatureDraft" devLabel="Draft" translation="勾配"/>
+	<label commandName="FeatureExtrude" devLabel="Extrude" translation="押し出し"/>
+	<label commandName="FeatureFillet" devLabel="Fillet" translation="フィレット"/>
+	<label commandName="FeatureForm" devLabel="Form" translation="フォーム"/>
+	<label commandName="FeatureGround" devLabel="Ground" translation="固定"/>
+	<label commandName="FeatureHole" devLabel="Hole" translation="穴"/>
+	<label commandName="FeatureJointOrigin" devLabel="JointOrigin" translation="JointOrigin"/>
+	<label commandName="FeatureLoft" devLabel="Loft" translation="ロフト"/>
+	<label commandName="FeatureMesh" devLabel="Mesh" translation="メッシュ"/>
+	<label commandName="FeatureMidSurface" devLabel="MidSurface" translation="中間サーフェス"/>
+	<label commandName="FeatureMirrorPattern" devLabel="Mirror" translation="ミラー"/>
+	<label commandName="FeatureModEmboss" devLabel="Emboss" translation="エンボス"/>
+	<label commandName="FeatureMotionLink" devLabel="MotionLink" translation="MotionLink"/>
+	<label commandName="FeatureMove" devLabel="Move" translation="移動"/>
+	<label commandName="FeatureMoveBody" devLabel="MoveBody" translation="ボディを移動"/>
+	<label commandName="FeatureOffsetFaces" devLabel="OffsetFaces" translation="面をオフセット"/>
+	<label commandName="FeaturePCB" devLabel="PCB" translation="PCB"/>
+	<label commandName="FeaturePCBExtrude" devLabel="PCBExtrude" translation="PCB 押し出し"/>
+	<label commandName="FeaturePCBHole" devLabel="PCBHole" translation="PCB 穴"/>
+	<label commandName="FeaturePathComponentPattern" devLabel="PathPattern" translation="パス パターン"/>
+	<label commandName="FeaturePathPattern" devLabel="PathPattern" translation="パス パターン"/>
+	<label commandName="FeaturePipe" devLabel="Pipe" translation="パイプ"/>
+	<label commandName="FeatureRectangularComponentPattern" devLabel="R-Pattern" translation="R パターン"/>
+	<label commandName="FeatureRectangularPattern" devLabel="R-Pattern" translation="R パターン"/>
+	<label commandName="FeatureRemoveFaces" devLabel="RemoveFaces" translation="面を削除"/>
+	<label commandName="FeatureRemoveFeatures" devLabel="RemoveFeatures" translation="フィーチャを削除"/>
+	<label commandName="FeatureReplaceFace" devLabel="ReplaceFace" translation="面を置換"/>
+	<label commandName="FeatureRevolve" devLabel="Revolve" translation="回転"/>
+	<label commandName="FeatureRib" devLabel="Rib" translation="リブ"/>
+	<label commandName="FeatureSMBaseFace" devLabel="Face" translation="面"/>
+	<label commandName="FeatureSMContourFlange" devLabel="ContourFlange" translation="コンターフランジ"/>
+	<label commandName="FeatureSMEdgeFlange" devLabel="EdgeFlange" translation="エッジフランジ"/>
+	<label commandName="FeatureScale" devLabel="Scale" translation="尺度"/>
+	<label commandName="FeatureSelectionPluralId" devLabel="Features" translation="フィーチャ"/>
+	<label commandName="FeatureSheetMetalFlatPattern" devLabel="FlatPattern" translation="フラット パターン"/>
+	<label commandName="FeatureSheetMetalFlatPatternAlign" devLabel="FlatPatternAlign" translation="フラット パターン位置合わせ"/>
+	<label commandName="FeatureSheetmetalRefold" devLabel="Refold" translation="再折り曲げ"/>
+	<label commandName="FeatureSheetmetalSheetMetalBend" devLabel="Bend" translation="曲げ"/>
+	<label commandName="FeatureSheetmetalUnfold" devLabel="Unfold" translation="展開"/>
+	<label commandName="FeatureShell" devLabel="Shell" translation="シェル"/>
+	<label commandName="FeatureSilhouetteSplit" devLabel="SilhouetteSplit" translation="シルエットを分割"/>
+	<label commandName="FeatureSketch" devLabel="Sketch" translation="スケッチ"/>
+	<label commandName="FeatureSnapshot" devLabel="Position" translation="位置"/>
+	<label commandName="FeatureSpherePrimitive" devLabel="SpherePrimitive" translation="球プリミティブ"/>
+	<label commandName="FeatureSplit" devLabel="Split" translation="分割"/>
+	<label commandName="FeatureSplitFace" devLabel="SplitFace" translation="面を分割"/>
+	<label commandName="FeatureSurfaceDeleteFace" devLabel="SurfaceDeleteFace" translation="サーフェス削除面"/>
+	<label commandName="FeatureSurfaceExtend" devLabel="SurfaceExtend" translation="サーフェス延長"/>
+	<label commandName="FeatureSurfaceGapFill" devLabel="Gap Fill" translation="ギャップ埋め"/>
+	<label commandName="FeatureSurfaceOffset" devLabel="SurfaceOffset" translation="サーフェス オフセット"/>
+	<label commandName="FeatureSurfacePatch" devLabel="SurfacePatch" translation="サーフェス パッチ"/>
+	<label commandName="FeatureSurfaceRuled" devLabel="SurfaceRuled" translation="ルールド サーフェス"/>
+	<label commandName="FeatureSurfaceStitch" devLabel="SurfaceStitch" translation="サーフェス ステッチ"/>
+	<label commandName="FeatureSurfaceTrim" devLabel="SurfaceTrim" translation="サーフェス トリム"/>
+	<label commandName="FeatureSurfaceUntrim" devLabel="SurfaceUntrim" translation="SurfaceUntrim"/>
+	<label commandName="FeatureSweep" devLabel="Sweep" translation="スイープ"/>
+	<label commandName="FeatureThicken" devLabel="Thicken" translation="厚み"/>
+	<label commandName="FeatureThread" devLabel="Thread" translation="ねじ"/>
+	<label commandName="FeatureTorusPrimitive" devLabel="TorusPrimitive" translation="トーラス プリミティブ"/>
+	<label commandName="FeatureUnStitch" devLabel="UnStitch" translation="ステッチ解除"/>
+	<label commandName="FeatureWeb" devLabel="Web" translation="ウェブ"/>
+	<label commandName="FeatureWorkAxis" devLabel="WorkAxis" translation="作業軸"/>
+	<label commandName="FeatureWorkPlane" devLabel="WorkPlane" translation="作業平面"/>
+	<label commandName="FeatureWorkPoint" devLabel="WorkPoint" translation="作業点"/>
+	<label commandName="FeatureXRef" devLabel="Component Insert" translation="コンポーネントの挿入"/>
+	<label commandName="Feature_Compute_Error" devLabel="Compute Failed" translation="計算に失敗しました"/>
+	<label commandName="Feature_Input_Compute_Error" devLabel="Reference Failures" translation="参照エラー"/>
+	<label commandName="FilletEdgeNoBodiesError" devLabel="There are no bodies specified to fillet." translation="フィレットに指定されたボディがありません。"/>
+	<label commandName="FilletEdgeSplitError" devLabel="There was a problem accepting the sequences of edges to fillet. Try turning the Tangent Chain option off and splitting the edge sequences into shorter Selection Edge Sets." translation="フィレットするエッジのシーケンスを受け入れているときに問題が発生しました。[接面チェーン]オプションをオフにして、より短いエッジの選択セットにエッジのシーケンスを分割してください。"/>
+	<label commandName="FilletFeatureName" devLabel="Fillet" translation="フィレット"/>
+	<label commandName="FilletHelpPointError" devLabel="There was a problem accepting the fillet help points. " translation="フィレットのヘルプ ポイントを受け入れているときに問題が発生しました。"/>
+	<label commandName="FlangeFeatureName" devLabel="Flange" translation="フランジ"/>
+	<label commandName="FlatHeadMachineScrew" devLabel="Flat Head Machine Screw" translation="すりわり付き平小ねじ"/>
+	<label commandName="FlatHeadMachineScrew(100)" devLabel="Flat Head Machine Screw (100)" translation="すりわり付き平小ねじ(100)"/>
+	<label commandName="FlatHeadMachineScrew(82)" devLabel="Flat Head Machine Screw (82)" translation="すりわり付き平小ねじ(82)"/>
+	<label commandName="FlatPattern" devLabel="Flat Pattern" translation="フラット パターン"/>
+	<label commandName="FlatPatternUpdateInvalidAsset" devLabel="Invalid source Flat Pattern asset found during Flat Pattern update operation." translation="フラット パターンの更新操作中に、無効なソースのフラット パターンのアセットが見つかりました。"/>
+	<label commandName="FlatPatternUpdateNULLAsset" devLabel="Could not find the flat pattern asset during Flat Pattern update operation." translation="フラット パターンの更新操作中に、フラット パターンのアセットが見つかりませんでした。"/>
+	<label commandName="FlatPatternUpdateNULLDocument" devLabel="Document is missing during Flat Pattern update operation." translation="フラット パターンの更新操作中に、ドキュメントが見つかりません。"/>
+	<label commandName="FlatPatternUpdateNULLSourceComponent" devLabel="Base component is not available during Flat Pattern update operation." translation="フラット パターンの更新操作中はベースコンポーネントを使用できません。"/>
+	<label commandName="FlatPatternUpdateNULLWorkingComponent" devLabel="Flat Pattern component is not available during Flat Pattern update operation." translation="フラット パターンの更新操作中に、フラット パターンのコンポーネントは使用できません。"/>
+	<label commandName="FlatShadingType" devLabel="Flat Shaded (Prismatic shapes with sharp edges)" translation="フラット シェーディング(シャープなエッジの角柱形状)"/>
+	<label commandName="FlattenFailed" devLabel="Failed to flatten the given points." translation="指定の点の平坦化に失敗しました。"/>
+	<label commandName="FrozenSurfChangedNonPreview" devLabel="The last operation unfroze a frozen region to make the requested shape change. Undo this operation to revert the shape change and restore the frozen region" translation="直前の操作では、要求した形状の変更を行うために、フリーズした領域が解除されました。この操作を元に戻すと、形状の変更が元に戻され、フリーズした領域が復元されます"/>
+	<label commandName="FrozenSurfChangedPreview" devLabel="This operation will need to unfreeze a frozen region to make the requested shape change." translation="この操作では、要求した形状の変更を行うために、フリーズした領域を解除する必要があります。"/>
+	<label commandName="FrozenSurfChangedSimExacNonPreview" devLabel="The last operation unfroze a frozen region to make the requested shape change. Undo this operation to revert the shape change and restore the frozen region. Change the Insertion Mode to Exact to avoid this issue." translation="直前の操作では、要求した形状の変更を行うために、フリーズした領域が解除されました。この操作を元に戻すと、形状の変更が元に戻され、フリーズした領域が復元されます。この問題を解消するには、[挿入モード]を[固定]に変更してください。"/>
+	<label commandName="FrozenSurfChangedSimExacPreview" devLabel="This operation will need to unfreeze a frozen region to make the requested shape change. Change the Insertion Mode to Exact to avoid this issue" translation="この操作では、要求した形状の変更を行うために、フリーズした領域を解除する必要があります。この問題を解消するには、[挿入モード]を[固定]に変更してください。"/>
+	<label commandName="FusionComponentRootDefaultUserName" devLabel="FusionComponent" translation="Fusion コンポーネント"/>
+	<label commandName="FusionDefaultUnitsOptionsToolTip" devLabel="Preferences that sets default units used in new documents" translation="新規ドキュメントで使用する既定の単位を設定する基本設定です"/>
+	<label commandName="FusionDefaultUnitsOptionsUserName" devLabel="Design" translation="デザイン"/>
+	<label commandName="FusionDocDesc" devLabel="A Fusion Document" translation="Fusion ドキュメント"/>
+	<label commandName="FusionDocName" devLabel="Fusion Document" translation="Fusion ドキュメント"/>
+	<label commandName="FusionFROutputFindFeatures2NullBody" devLabel="No valid body for feature recognition" translation="フィーチャを認識するのに有効なボディがありません"/>
+	<label commandName="FusionFROutputFindFeaturesNullBody" devLabel="No valid body for feature recognition" translation="フィーチャを認識するのに有効なボディがありません"/>
+	<label commandName="FusionFROutputRemoveFeaturesNotFound" devLabel="Call findFeatures before removeFeatures" translation="[フィーチャを削除]の前に[フィーチャを検索]を呼び出します"/>
+	<label commandName="FusionJointAssembleRequestErrorJointId" devLabel="Missing first joint origin associativity" translation="最初のジョイントの原点の関連付けが見つかりません"/>
+	<label commandName="FusionJointAssembleRequestErrorMatrix3dId" devLabel="Joint could not be created with the given input." translation="指定した入力でジョイントを作成できませんでした。"/>
+	<label commandName="FusionRemoveFeaturesNoFeaturesRemoved" devLabel="No features were able to be removed from this part" translation="このパーツからフィーチャを削除できませんでした"/>
+	<label commandName="FusionRemoveFeaturesNoFeaturesRemoved_" devLabel="No features were able to be removed" translation="フィーチャを削除できませんでした"/>
+	<label commandName="FusionRemoveFeaturesNotAllFeaturesRemoved" devLabel="Not all features were able to be removed from this part" translation="このパーツから一部のフィーチャを削除できませんでした"/>
+	<label commandName="FusionRemoveFeaturesNotAllFeaturesRemoved_" devLabel="Not all features were able to be removed" translation="一部のフィーチャを削除できませんでした"/>
+	<label commandName="FusionTextCommandUsedOutsideFusion" devLabel="Fusion scripting can only be used in a fusion asset" translation="Fusion スクリプトは Fusion アセットでのみ使用できます"/>
+	<label commandName="GAPFILL_NO_TOOLBODY" devLabel="Modeling Error: Can't create toolbody for gap fill, please check the inputs." translation="モデリング エラー: ギャップ埋めのツールボディを作成できません。入力を確認してください。"/>
+	<label commandName="GOST" devLabel="GOST" translation="GOST"/>
+	<label commandName="GapFillExtendNFFaces_ExtendExtensionFace" devLabel="Unable to extend the extension face." translation="延長面の延長はできません。"/>
+	<label commandName="GapFillExtendNFFaces_MakeExtensionWireBody" devLabel="Unable to copy source body of the selected edge." translation="選択したエッジのソース ボディをコピーできません。"/>
+	<label commandName="GapFillExtendNFFaces_MakeFirstExtensionBody" devLabel="Unable to trim the extension face." translation="延長面のトリムはできません。"/>
+	<label commandName="GapFillExtendNFFaces_MakeFirstExtensionWireBody" devLabel="Unable to create wire body from the extension face." translation="延長面からワイヤ ボディを作成できません。"/>
+	<label commandName="GapFillExtendOneFaceExtendExtensionFace" devLabel="Unable to extend the extension face." translation="延長面の延長はできません。"/>
+	<label commandName="GapFillExtendOneFaceFaceIntersection" devLabel="The extension face and the termination face have an invalid face intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="延長面と終端面に無効な面の交差があります。[面の間のロフト]オプションまたは[境界パッチ]オプションを試してください。"/>
+	<label commandName="GapFillExtendOneFaceMakeBlankBody" devLabel="Unable to trim the extension face." translation="延長面のトリムはできません。"/>
+	<label commandName="GapFillExtendOneFaceMakeExtensionBody" devLabel="Unable to trim the extension face." translation="延長面のトリムはできません。"/>
+	<label commandName="GapFillExtendOneFaceMakeExtensionWireBody" devLabel="Unable to extend the extension face." translation="延長面の延長はできません。"/>
+	<label commandName="GapFillExtendOneFaceMakeTerminationBody" devLabel="Unable to trim the extension face." translation="延長面のトリムはできません。"/>
+	<label commandName="GapFillExtendOneFaceNoIntersection" devLabel="The extension face and the termination face do not intersect." translation="延長面と終端面が交差していません。"/>
+	<label commandName="GapFillExtendOneFaceNoIntersectionGraph" devLabel="The extension face and the termination face have an invalid intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="延長面と終端面に無効な交差があります。[面の間のロフト]オプションまたは[境界パッチ]オプションを試してください。"/>
+	<label commandName="GapFillExtendOneFaceStitch" devLabel="Unable to stitch the body." translation="ボディをステッチできません。"/>
+	<label commandName="GapFillExtendOneFaceTrim" devLabel="Unable to trim the extension face." translation="延長面のトリムはできません。"/>
+	<label commandName="GapFillExtendOneNFFace_ExtendEdge" devLabel="Unable to extend the selected egde." translation="選択したエッジを延長できません。"/>
+	<label commandName="GapFillExtendOneNFFace_ExtendFirstExtensionFace" devLabel="Unable to extend the first extension face." translation="1 番目の延長面の延長はできません。"/>
+	<label commandName="GapFillExtendOneNFFace_ExtendSecondExtensionFace" devLabel="Unable to extend the first extension face." translation="1 番目の延長面の延長はできません。"/>
+	<label commandName="GapFillExtendOneNFFace_FaceIntersection" devLabel="The first extension face and the second selected face have an invalid face intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="1 番目の延長面と 2 番目の選択した面には無効な面の交差があります。[面の間のロフト]オプションまたは[境界パッチ]オプションを試してください。"/>
+	<label commandName="GapFillExtendOneNFFace_FirstEdge" devLabel="The first selected edge doesn't have faces." translation="1 番目に選択したエッジに面がありません。"/>
+	<label commandName="GapFillExtendOneNFFace_MakeExtensionBody" devLabel="Unable to trim the extension face." translation="延長面のトリムはできません。"/>
+	<label commandName="GapFillExtendOneNFFace_NoIntersection" devLabel="The first extension face and the second selected face do not intersect." translation="1 番目の延長面と 2 番目に選択した面が交差しません。"/>
+	<label commandName="GapFillExtendOneNFFace_NoIntersectionGraph" devLabel="The first extension face and the second selected face have an invalid intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="1 番目の延長面と 2 番目の選択した面には無効な交差があります。[面の間のロフト]オプションまたは[境界パッチ]オプションを試してください。"/>
+	<label commandName="GapFillExtendOneNFFace_Stitch" devLabel="Unable to stitch the body." translation="ボディをステッチできません。"/>
+	<label commandName="GapFillExtendOneNFFace_Trim" devLabel="Unable to trim the extension face." translation="延長面のトリムはできません。"/>
+	<label commandName="GapFillExtendTwoFacesExtendFirstExtensionFace" devLabel="Unable to extend the first extension face." translation="1 番目の延長面の延長はできません。"/>
+	<label commandName="GapFillExtendTwoFacesExtendFirstOrSecondExtensionFace" devLabel="Unable to extend the first extension face or second extension face." translation="1 番目の延長面および 2 番目の延長面の延長はできません。"/>
+	<label commandName="GapFillExtendTwoFacesExtendSecondExtensionFace" devLabel="Unable to extend the second extension face." translation="2 番目の延長面の延長はできません。"/>
+	<label commandName="GapFillExtendTwoFacesFaceInvalidIntersection" devLabel="The first extension face and the second extension face have an invalid face intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="1 番目の延長面と 2 番目の延長面には無効な面の交差があります。[面の間のロフト]オプションまたは[境界パッチ]オプションを試してください。"/>
+	<label commandName="GapFillExtendTwoFacesMakeBlankBody" devLabel="Unable to trim the first extension face or the second extension face." translation="1 番目の延長面および 2 番目の延長面のトリムはできません。"/>
+	<label commandName="GapFillExtendTwoFacesMakeFirstExtensionBody" devLabel="Unable to trim the first extension face." translation="1 番目の延長面のトリムはできません。"/>
+	<label commandName="GapFillExtendTwoFacesMakeSecondExtensionBody" devLabel="Unable to trim the second extension face." translation="2 番目の延長面のトリムはできません。"/>
+	<label commandName="GapFillExtendTwoFacesMakeSecondExtensionWireBody" devLabel="Unable to extend the second extension face." translation="2 番目の延長面の延長はできません。"/>
+	<label commandName="GapFillExtendTwoFacesNoIntersection" devLabel="The first extension face and the second extension face do not intersect." translation="1 番目の延長面と 2 番目の延長面が交差しません。"/>
+	<label commandName="GapFillExtendTwoFacesNoIntersectionGraph" devLabel="The first extension face and the second extension face have an invalid intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="1 番目の延長面と 2 番目の延長面には無効な交差があります。[面の間のロフト]オプションまたは[境界パッチ]オプションを試してください。"/>
+	<label commandName="GapFillExtendTwoFacesStitch" devLabel="Unable to stitch the body." translation="ボディをステッチできません。"/>
+	<label commandName="GapFillExtendTwoFacesTrim" devLabel="Unable to trim the first extension face or the second extension face." translation="1 番目の延長面および 2 番目の延長面のトリムはできません。"/>
+	<label commandName="GapFillExtendTwoFacescoplanarFaces" devLabel="Unable to trim coplanar faces. Please try the Loft between faces option or the Extend one face option." translation="同一平面上にある面のトリムはできません。[面の間のロフト]オプションまたは[1 つの面を延長]オプションを試してください。"/>
+	<label commandName="GapFillExtendTwoNFFaces_ExtendEdges" devLabel="Unable to extend the selected egdes." translation="選択したエッジを延長できません。"/>
+	<label commandName="GapFillExtendTwoNFFaces_ExtendFirstExtensionFace" devLabel="Unable to extend the first extension face." translation="1 番目の延長面の延長はできません。"/>
+	<label commandName="GapFillExtendTwoNFFaces_ExtendSecondExtensionFace" devLabel="Unable to extend the second extension face." translation="2 番目の延長面の延長はできません。"/>
+	<label commandName="GapFillExtendTwoNFFaces_FaceIntersection1" devLabel="The first extension face and the second extension face have an invalid face intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="1 番目の延長面と 2 番目の延長面には無効な面の交差があります。[面の間のロフト]オプションまたは[境界パッチ]オプションを試してください。"/>
+	<label commandName="GapFillExtendTwoNFFaces_FaceIntersection2" devLabel="The first extension face and the second extension face don't have an intersection. Please try the Loft between faces option or the Boundary Patch option." translation="1 番目の延長面と 2 番目の延長面に交差がありません。[面の間のロフト]オプションまたは[境界パッチ]オプション試してください。"/>
+	<label commandName="GapFillExtendTwoNFFaces_FaceIntersection2_MAC" devLabel="The first extension face and the second extension face don't have an intersection.&#xA;Please try the Loft between faces option&#xA;or the Boundary Patch option." translation="1 番目の延長面と 2 番目の延長面に交差がありません。&#xA;[面の間のロフト]オプションまたは&#xA;[境界パッチ]オプションを試してください。"/>
+	<label commandName="GapFillExtendTwoNFFaces_FirstEdge" devLabel="The first selected edge doesn't have faces." translation="1 番目に選択したエッジに面がありません。"/>
+	<label commandName="GapFillExtendTwoNFFaces_MakeFirstExtensionBody" devLabel="Unable to trim the first extension face." translation="1 番目の延長面のトリムはできません。"/>
+	<label commandName="GapFillExtendTwoNFFaces_MakeSecondExtensionBody" devLabel="Unable to trim the second extension face." translation="2 番目の延長面のトリムはできません。"/>
+	<label commandName="GapFillExtendTwoNFFaces_NoIntersection" devLabel="The first extension face and the second extension face do not intersect." translation="1 番目の延長面と 2 番目の延長面が交差しません。"/>
+	<label commandName="GapFillExtendTwoNFFaces_NoIntersectionGraph" devLabel="The first extension face and the second extension face have an invalid intersection.  Please try the Loft between faces option or the Boundary Patch option." translation="1 番目の延長面と 2 番目の延長面には無効な交差があります。[面の間のロフト]オプションまたは[境界パッチ]オプションを試してください。"/>
+	<label commandName="GapFillExtendTwoNFFaces_SecondEdge" devLabel="The second selected edge doesn't have faces." translation="2 番目に選択したエッジに面がありません。"/>
+	<label commandName="GapFillExtendTwoNFFaces_Stitch" devLabel="Unable to stitch the body." translation="ボディをステッチできません。"/>
+	<label commandName="GapFillExtendTwoNFFaces_Trim" devLabel="Unable to trim the first extension face or the second extension face." translation="1 番目の延長面および 2 番目の延長面のトリムはできません。"/>
+	<label commandName="GapFillLoftBetweenFacesLoft" devLabel="Unable to loft between the profiles." translation="プロファイルの間のロフトができません。"/>
+	<label commandName="GapFillLoftBetweenFacesStitch" devLabel="Unable to stitch the body." translation="ボディをステッチできません。"/>
+	<label commandName="GeneralUnitsValue0" devLabel="mm" translation="mm"/>
+	<label commandName="GeneralUnitsValue1" devLabel="cm" translation="cm"/>
+	<label commandName="GeneralUnitsValue2" devLabel="m" translation="m"/>
+	<label commandName="GeneralUnitsValue3" devLabel="in" translation="in"/>
+	<label commandName="GeneralUnitsValue4" devLabel="ft" translation="ft"/>
+	<label commandName="GenericModelingError" devLabel="Modeling operation failed." translation="モデリング操作に失敗しました。"/>
+	<label commandName="GeometryPointMissing" devLabel="Some referenced point cannot be found." translation="一部の参照点が見つかりません。"/>
+	<label commandName="GetLatestCmdCancelled" devLabel="%1% is canceled" translation="%1% がキャンセルされました"/>
+	<label commandName="GetNormalFailed1" devLabel="Failed to get the normal due to get more faces from the edge" translation="エッジから取得する面がさらに多くなるため、法線の取得に失敗しました"/>
+	<label commandName="GetNormalFailed2" devLabel="Failed to get the normal due to the edges are not co-planar" translation="法線はエッジによる取得に失敗しましたが平面ではありません"/>
+	<label commandName="HOLE_CANNOT_CREATE_TOOLBODY" devLabel="Can't create hole toolbody, please check inputs." translation="穴ツールボディを作成できません。入力を確認してください。"/>
+	<label commandName="HOLE_DEPTH_ERR_TAPERED_THREAD" devLabel="Hole depth is less than standard taper thread height." translation="穴の深さが標準のテーパねじの高さより小さくなっています。"/>
+	<label commandName="HOLE_END_FACE_LOST" devLabel="End face is lost" translation="終端面が失われました"/>
+	<label commandName="HOLE_MISSING_CENTERS" devLabel="Missing hole centers, please check inputs" translation="穴中心が見つかりません。入力を確認してください"/>
+	<label commandName="HexHeadBolt" devLabel="Hex Head Bolt" translation="六角ボルト"/>
+	<label commandName="HexHeadBolt/Nut(EnlargedWasher)GOST12876-67" devLabel="Hex Head Bolt / Nut (Enlarged Washer) GOST 12876-67" translation="六角ボルト/ナット(大型座金)GOST 12876-67"/>
+	<label commandName="HexHeadBolt/Nut(ReducedSize)GOST12876-67" devLabel="Hex Head Bolt / Nut (Reduced Size) GOST 12876-67" translation="六角ボルト/ナット(小型)GOST 12876-67"/>
+	<label commandName="HexHeadBolt/NutGOST12876-67" devLabel="Hex Head Bolt / Nut GOST 12876-67" translation="六角ボルト/ナット GOST 12876-67"/>
+	<label commandName="HexHeadCapScrew" devLabel="Hex Head Cap Screw" translation="六角穴付き小ねじ"/>
+	<label commandName="HexHeadCapScrewDINEN24014(Spotface)" devLabel="Hex Head Cap Screw DIN EN 24014 (Spotface)" translation="六角穴付き小ねじ DIN EN 24014(ざぐり(SF))"/>
+	<label commandName="HexHeadCapScrewDINEN24017" devLabel="Hex Head Cap Screw DIN EN 24017" translation="六角穴付き小ねじ DIN EN 24017"/>
+	<label commandName="HexHeadCapScrewISO24014(Spotface)" devLabel="Hex Head Cap Screw ISO 24014 (Spotface)" translation="六角穴付き小ねじ ISO 24014(ざぐり(SF))"/>
+	<label commandName="HexHeadCapScrewISO24017" devLabel="Hex Head Cap Screw ISO 24017" translation="六角穴付き小ねじ ISO 24017"/>
+	<label commandName="HexHeadMachineScrew" devLabel="Hex Head Machine Screw" translation="すりわり付き六角頭小ねじ"/>
+	<label commandName="HexHeadScrew" devLabel="Hex Head Screw" translation="六角小ねじ"/>
+	<label commandName="HexMachineScrew" devLabel="Hex Machine Screw" translation="すりわり付き六角小ねじ"/>
+	<label commandName="HexSocketHeadCapScrew" devLabel="Hex Socket Head Cap Screw" translation="六角穴付き小ねじ"/>
+	<label commandName="Hole" devLabel="No target component." translation="ターゲット コンポーネントがありません。"/>
+	<label commandName="HoleFeatureName" devLabel="Hole" translation="穴"/>
+	<label commandName="HoleToolBodyCreationReferenceError" devLabel="Referenced Edge is not parallel to the hole origin plane." translation="参照エッジは、穴の基準平面と平行ではありません。"/>
+	<label commandName="INVALID_3BENDCORNERRELIEF_RADIUS" devLabel="The 3 bend corner relief radius value is invalid. Try specifying a different value." translation="3 つの曲げコーナーのレリーフ半径の値が無効です。異なる値を指定してみてください。"/>
+	<label commandName="INVALID_BENDRELIEF_DEPTH" devLabel="The bend relief depth value is invalid. Try specifying a different value." translation="曲げレリーフの深さの値が無効です。異なる値を指定してみてください。"/>
+	<label commandName="INVALID_BENDRELIEF_REMNANT" devLabel="The bend relief minimum remnant value is invalid. Try specifying a different value." translation="曲げレリーフの最小レムナントの値が無効です。異なる値を指定してみてください。"/>
+	<label commandName="INVALID_BENDRELIEF_WIDTH" devLabel="The bend relief width value is invalid. Try specifying a different value." translation="曲げレリーフの幅の値が無効です。異なる値を指定してみてください。"/>
+	<label commandName="INVALID_BEND_LINE_POSITION" devLabel="Unexpected bend parameters encountered. Please use Edit Feature to verify all values." translation="予期しない曲げパラメータが見つかりました。[フィーチャ編集]を使用してすべての値を確認してください。"/>
+	<label commandName="INVALID_BEND_RADIUS" devLabel="The bend radius value is invalid. Try specifying a different value." translation="曲げ半径の値が無効です。異なる値を指定してみてください。"/>
+	<label commandName="INVALID_CORNERRELIEF_SIZE" devLabel="The 2 bend corner relief size value is invalid. Try specifying a different value." translation="2 つの曲げコーナーのレリーフ サイズの値が無効です。異なる値を指定してみてください。"/>
+	<label commandName="INVALID_FLANGE_INPUTS" devLabel="Invalid input(s) to create flange." translation="フランジを作成するには無効な入力です。"/>
+	<label commandName="INVALID_OPERANTS" devLabel="Invalid operands" translation="無効なオペランドです"/>
+	<label commandName="INVALID_PARTINGLINE_BODY" devLabel="No target body or more than one target body!" translation="ターゲット ボディがないか、複数のターゲット ボディがあります。"/>
+	<label commandName="INVALID_PASTE_INSTANCE" devLabel="The instance is invalid to be Cut &amp; Pasted into target component." translation="このインスタンスを切り取って、ターゲット コンポーネントに貼り付けるのは無効です。"/>
+	<label commandName="INVALID_ROUND_BENDRELIEF_DEPTH" devLabel="The bend relief depth value is invalid. When using a Round relief, the relief depth value must be greater than or equal to 1/2 of the relief width value." translation="曲げレリーフの深さの値が無効です。丸めレリーフでは、レリーフの深さの値をレリーフの幅の値の 1/2 以上に設定する必要があります。"/>
+	<label commandName="INVALID_SKPATTERN_INPUT" devLabel="Invalid Input. Please check: count is larger than 0 and angle is between -2*PI to 2*PI, and count should be 1 if distance is 0.0" translation="無効な入力です。個数が 0 より多く、角度が -2*PI ～ 2*PI の範囲内にあることを確認してください距離が 0.0 の場合、個数には 1 を指定する必要があります"/>
+	<label commandName="INVALID_SOURCE_BODY" devLabel="No valid source Body found, cache will be used" translation="有効なソース ボディが見つかりません。キャッシュが使用されます"/>
+	<label commandName="INVALID_SOURCE_BODY2" devLabel="more than one bodies are selected in editing!" translation="複数のボディの編集で選択されています。"/>
+	<label commandName="INVALID_SVG" devLabel="Invalid SVG file" translation="無効な SVG ファイルです"/>
+	<label commandName="INVALID_TARGET_INSTANCE" devLabel="Invalid target component instance" translation="ターゲット コンポーネント インスタンスが無効です"/>
+	<label commandName="ISO" devLabel="ISO" translation="ISO"/>
+	<label commandName="IllegalRestructure" devLabel="Illegal restructure. It will cause bad dependency." translation="再構築が正しくありません。従属に誤りが生じます。"/>
+	<label commandName="ImperialUnitSystemName" devLabel="Imperial (foot, lbmass, second, Fahrenheit) units" translation="インペリアル(フィート、lbmass、秒、華氏)単位"/>
+	<label commandName="ImportFailed" devLabel="Import failed" translation="インポートに失敗しました"/>
+	<label commandName="InchImperialUnitSystemName" devLabel="inch modeling length with imperial (foot, lbmass, second, Fahrenheit) units" translation="インペリアル(フィート、lbmass、秒、華氏)単位でのモデリングの長さ単位はインチです"/>
+	<label commandName="IndependentXRefInstanceRequired" devLabel="The selected instance has some essential dependent instances. Break Link is currently not supported!" translation="選択したインスタンスには、複数の基本従属インスタンスがあります。現在、[リンクの解除]はサポートされていません。"/>
+	<label commandName="IndependentXRefsRequired" devLabel="The selected referenced component or one of its children has dependent features like Pattern associated with it. Please remove the dependent features and try again." translation="選択した参照コンポーネントまたはその子の 1 つに、関連付けられているパターンなどの従属フィーチャがあります。従属フィーチャを削除して、再試行してください。"/>
+	<label commandName="InitializeFailed" devLabel="initialize failed" translation="初期化に失敗しました"/>
+	<label commandName="InsertPointFailed" devLabel="Insert Point failed to perform insertion" translation="挿入点での挿入に失敗しました"/>
+	<label commandName="Instance_pattern_error" devLabel="Cannot find source component instance" translation="ソース コンポーネント インスタンスが見つかりません"/>
+	<label commandName="InterferenceComponent" devLabel="Intersections" translation="交差"/>
+	<label commandName="Invalid Face" devLabel="Some faces cannot be deleted" translation="一部の面を削除できません"/>
+	<label commandName="InvalidAxisInput" devLabel="Invalid input" translation="無効な入力です"/>
+	<label commandName="InvalidOccPath" devLabel="Invalid Occurrence Path." translation="無効なオカレンス パスです。"/>
+	<label commandName="InvalidOccurrencePath" devLabel="Occurrence Path is not active" translation="オカレンス パスがアクティブではありません"/>
+	<label commandName="InvalidOffsetSketchError" devLabel="Offset profile must be a simple (possibly closed) chain of curves." translation="オフセット プロファイルは、曲線の単純な(可能な限り閉じた)チェーンである必要があります。"/>
+	<label commandName="InvalidPlaneNormal" devLabel="Invalid reference plane due to some reference point is merged." translation="一部の参照点により無効な基準平面が結合されます。"/>
+	<label commandName="InvalidReferringDocType" devLabel="External Component can not be created in incompatible or legacy document types." translation="外部コンポーネントは互換性のないドキュメント タイプまたは旧バージョンのドキュメント タイプでは作成できません。"/>
+	<label commandName="InvalidRibTool" devLabel="Invalid tool body for rib" translation="無効なリブのツール ボディです"/>
+	<label commandName="InvalidSketchConstraint" devLabel="Invalid sketch constraint!" translation="無効なスケッチ拘束です。"/>
+	<label commandName="InvalidSketchDimension" devLabel="Invalid sketch dimension!" translation="無効なスケッチ寸法です。"/>
+	<label commandName="InvalidWPntInput" devLabel="Invalid input" translation="無効な入力です"/>
+	<label commandName="InvalidWebTool" devLabel="Invalid tool body for web" translation="無効なウェブのツール ボディです"/>
+	<label commandName="IsoCurveAnalysisDefaultUserName" devLabel="IsoCurve" translation="IsoCurve"/>
+	<label commandName="IsolateSymmetry1" devLabel="One of the T-Spline bodies selected for this operation does not contain symmetry.  That portion of the model will be highlighted and isolated from the symmetric portion of the model.  The isolated faces will be removed when symmetry is cleared." translation="この操作に選択した T スプライン ボディの 1 つに対称がありません。モデルのこの部分はハイライト表示され、モデルの対称部から切り離されます。切り離された面は、対称をクリアすると削除されます。"/>
+	<label commandName="IsolateSymmetry2" devLabel="Failed to isolate symmetry." translation="対称の選択表示に失敗しました。"/>
+	<label commandName="JIS" devLabel="JIS" translation="JIS"/>
+	<label commandName="JOINT_LOST" devLabel="Motion Link joint is missing" translation="モーション リンクのジョイントが見つかりません"/>
+	<label commandName="JOINT_LOST_ORIGIN1" devLabel="Missing joint origin 1, using cached position" translation="ジョイントの原点 1 が見つかりません。キャッシュされた位置を使用しています"/>
+	<label commandName="JOINT_LOST_ORIGIN2" devLabel="Missing joint origin 2, using cached position" translation="ジョイントの原点 2 が見つかりません。キャッシュされた位置を使用しています"/>
+	<label commandName="JO_ASSOCIATION_LOST" devLabel="Joint Origin geometry associations are missing" translation="ジョイントの原点のジオメトリの関連付けが見つかりません"/>
+	<label commandName="JointHandleFailed" devLabel="Modification of EndType failed" translation="終端タイプの修正に失敗しました"/>
+	<label commandName="JointHomeWarning" devLabel="Joint could not be reset to Home position" translation="ジョイントをホームの位置にリセットできませんでした。"/>
+	<label commandName="JointOriginFeatureCreationFailure" devLabel="Joint Origin feature creation failed." translation="ジョイントの原点フィーチャの作成に失敗しました。"/>
+	<label commandName="JointOriginIdCloningFailed" devLabel="JointOrigin cloning failed" translation="ジョイントの原点のクローン化に失敗しました"/>
+	<label commandName="JointsHomeWarning" devLabel="One or more joints could not be reset to Home position" translation="1 つまたは複数のジョイントをホームの位置にリセットできませんでした"/>
+	<label commandName="KnotsTechnicallyMatchButItsProbablyJustRoundoffFromASeashell" devLabel="Knots technically match, but it's probably just roundoff from a seashell" translation="節点は技術的には一致しますが、完全一致から丸められている可能性があります"/>
+	<label commandName="LINK_PATH_LOST" devLabel="Motion Link path to joint is missing" translation="モーション リンクのジョイントへのパスが見つかりません"/>
+	<label commandName="LOFT_CENTER_LINE_LOST" devLabel="Minimum of two profiles are required to create a Loft! Please select sketch curve as a Centerline." translation="ロフトを作成するには、最低 2 つのプロファイルが必要です。スケッチ曲線を中心線として選択してください。"/>
+	<label commandName="LOFT_COINCIDENT_POINT_SECTION" devLabel="A point profile can not be coincident with a non-point profile for a Loft." translation="点のプロファイルは、ロフト用の点以外のプロファイルと一致させることはできません。"/>
+	<label commandName="LOFT_COPLANAR_CLOSED_SECTIONS" devLabel="Closed profiles can not be coplanar for a Loft." translation="閉じたプロファイルは、ロフトに対して同一平面上に配置できません。"/>
+	<label commandName="LOFT_FOLLOWING_POINT_SECTION" devLabel="There must be at least one intermediate non-point profile for a Loft." translation="ロフトには、少なくとも 1 つの点以外の中間プロファイルが必要です。"/>
+	<label commandName="LOFT_GUIDE_RAILS_LOST" devLabel="Minimum of two profiles are required to create a Loft! Please select sketch curve(s) as a Rail(s)." translation="ロフトを作成するには、最低 2 つのプロファイルが必要です。スケッチ曲線をレールとして選択してください。"/>
+	<label commandName="LOFT_GUIDE_RAIL_POINT_SPLIT" devLabel="Split the incorrect rail at the point profile,&#xA;    and use the add button before each selection." translation="点のプロファイルで不正なレールを分割し、&#xA;各選択の前に追加ボタンを使用します。"/>
+	<label commandName="LOFT_ILLEGAL_POINT_SECTION" devLabel="There was a problem with one or more of the point profiles.&#xA;    Try changing or removing the point profiles." translation="1 つまたは複数の点のプロファイルで問題が発生しました。&#xA;    点のプロファイルを変更するか削除してください。"/>
+	<label commandName="LOFT_INTERNAL_POINT_SECTION" devLabel="A point profile can only be used as the first or last profile of a Loft." translation="点のプロファイルは、ロフトの最初または最後のプロファイルとしてのみ使用できます。"/>
+	<label commandName="LOFT_MIN_PROFILES_NOT_MEET" devLabel="Minimum of two profiles are required to create a Loft." translation="ロフトを作成するには、最低 2 つのプロファイルが必要です。"/>
+	<label commandName="LOFT_NO_TOOLBODY" devLabel="Modeling Error: Can't create loft toolbody, please check the inputs." translation="モデリング エラー: ロフト ツールボディを作成できません。入力を確認してください。"/>
+	<label commandName="LOFT_TOOLBODY_CREATE_FAIL" devLabel="Tool body creation failed" translation="ツール ボディの作成に失敗しました"/>
+	<label commandName="LatestDocEmptyPath" devLabel="Could not get the latest path for the base document" translation="ベース ドキュメントの最新のパスを取得できませんでした"/>
+	<label commandName="LatestDocEmptyPath2" devLabel="Could not get the latest path for the referenced document" translation="参照ドキュメントの最新のパスを取得できませんでした"/>
+	<label commandName="LatestXRefDocOpenFailed" devLabel="Could not open linked document." translation="リンクされたドキュメントを開くことができませんでした。"/>
+	<label commandName="LatticeEdgeSelectionCategory" devLabel="Lattice Edge" translation="ラティス エッジ"/>
+	<label commandName="LatticeEdgeSelectionId" devLabel="LatticeEdge" translation="LatticeEdge"/>
+	<label commandName="LatticeEdgeSelectionPluralId" devLabel="LatticeEdges" translation="LatticeEdges"/>
+	<label commandName="LatticeEntitySelectionId" devLabel="LatticeEntity" translation="LatticeEntity"/>
+	<label commandName="LatticeEntitySelectionsId" devLabel="LatticeEntities" translation="LatticeEntities"/>
+	<label commandName="LatticeFaceSelectionCategory" devLabel="Lattice Face" translation="ラティスの面"/>
+	<label commandName="LatticeFaceSelectionId" devLabel="LatticeFace" translation="LatticeFace"/>
+	<label commandName="LatticeFaceSelectionsId" devLabel="LatticeFaces" translation="LatticeFaces"/>
+	<label commandName="LatticeRigDeformDefaultUserName" devLabel="Lattice" translation="ラティス"/>
+	<label commandName="LatticeRigDeformSelectionId" devLabel="LatticeRigDeform" translation="LatticeRigDeform"/>
+	<label commandName="LatticeRigDeformSelectionsId" devLabel="LatticeRigDeforms" translation="LatticeRigDeforms"/>
+	<label commandName="LatticeRigDeformersSelectionId" devLabel="LatticeRigDeformers" translation="LatticeRigDeformers"/>
+	<label commandName="LatticeRigDeformersSelectionsId" devLabel="LatticeRigDeformers" translation="LatticeRigDeformers"/>
+	<label commandName="LatticeRigSelectionCategory" devLabel="Lattice Rig" translation="Lattice Rig"/>
+	<label commandName="LatticeVertexSelectionCategory" devLabel="Lattice vertex" translation="ラティスの頂点"/>
+	<label commandName="LatticeVertexSelectionId" devLabel="LatticeVertex" translation="LatticeVertex"/>
+	<label commandName="LatticeVertexSelectionsId" devLabel="LatticeVertices" translation="LatticeVertices"/>
+	<label commandName="LoadPackagesAsXRef" devLabel="XRef Packages" translation="外部参照パッケージ"/>
+	<label commandName="LoadPackagesAsXRefToolTip" devLabel="Load packages as XRef when generating PCB 3d document" translation="PCB 3D ドキュメントの生成時にパッケージを外部参照としてロード"/>
+	<label commandName="Loft" devLabel="No target component." translation="ターゲット コンポーネントがありません。"/>
+	<label commandName="LoftFeatureName" devLabel="Loft" translation="ロフト"/>
+	<label commandName="MESH_SELECTION_OPTION_GROUP" devLabel="Modify Selection" translation="選択を修正"/>
+	<label commandName="MESH_SELECTOR_BRUSH_SIZE" devLabel="Brush Size" translation="ブラシ サイズ"/>
+	<label commandName="MESH_SELECTOR_EXPANDTOCONNECTED_MESH_SEL_ACTION" devLabel="Expand to Connected" translation="接続済みに展開"/>
+	<label commandName="MESH_SELECTOR_EXPANDTOGROUP_MESH_SEL_ACTION" devLabel="Expand to Face Group" translation="面のグループに展開"/>
+	<label commandName="MESH_SELECTOR_GROW_MESH_SEL" devLabel="Grow" translation="拡大"/>
+	<label commandName="MESH_SELECTOR_GROW_SHRINK_MESH_SEL_EXPAND" devLabel="Expand" translation="展開"/>
+	<label commandName="MESH_SELECTOR_GROW_SHRINK_MESH_SEL_GROW" devLabel="Grow/Shrink" translation="拡大/縮小"/>
+	<label commandName="MESH_SELECTOR_INVERT_MESH_SEL" devLabel="Invert" translation="反転"/>
+	<label commandName="MESH_SELECTOR_INVERT_MESH_SEL_ACTION" devLabel="Invert Selection" translation="選択内容を反転"/>
+	<label commandName="MESH_SELECTOR_N_SELECTED_TRIANGLES" devLabel="Selected Faces" translation="選択された面"/>
+	<label commandName="MESH_SELECTOR_SHRINK_MESH_SEL" devLabel="Shrink" translation="縮小"/>
+	<label commandName="MIRROR_PATTERN_JOIN_UNSUCCESSFUL" devLabel="Could not join, multiple bodies created." translation="結合できませんでした。複数のボディが作成されました。"/>
+	<label commandName="MIRROR_PATTERN_MISSING_PLANE" devLabel="Missing mirror plane" translation="対称面がありません"/>
+	<label commandName="MISSING_REF_ERROR" devLabel="Missing reference" translation="参照が見つかりません"/>
+	<label commandName="MMKSUnitSystemName" devLabel="standard MKS (m, kg, second, Celsius) units" translation="標準 mks (m、kg、秒、摂氏)単位"/>
+	<label commandName="MOTION_LINK_OUT_OF_DATE" devLabel="Motion Link offset could not be updated. Cached offset will be used" translation="モーション リンクのオフセットを更新できませんでした。キャッシュされたオフセットが使用されます"/>
+	<label commandName="MULTIPLE_TARGET_UNSUPPORTED" devLabel="The feature doesn't support multiple targets, please edit the feature to select one target." translation="このフィーチャは複数のターゲットをサポートしていません。このフィーチャを編集して、1 つのターゲットを選択してください。"/>
+	<label commandName="MakeDeletionFeature" devLabel="A Delete feature will be added to the timeline." translation="削除したフィーチャがタイムラインに追加されます。"/>
+	<label commandName="MarkTransactionBoundaryError" devLabel="ASM mark transaction boundary error." translation="ASM マーク トランザクション境界エラーが発生しました。"/>
+	<label commandName="MatchAPIFailed" devLabel="Match failed" translation="一致に失敗しました"/>
+	<label commandName="MatchAddParmFailed" devLabel="Invalid input" translation="無効な入力です"/>
+	<label commandName="MatchAddParmFailedTargetInput" devLabel="Invalid Target input" translation="無効なターゲットの入力です"/>
+	<label commandName="MatchGetInputEdgesFailed" devLabel="Invalid input edges" translation="無効な入力エッジです"/>
+	<label commandName="MatrixAxisGeometryMissing" devLabel="Axis geometry is missing" translation="軸のジオメトリが見つかりません"/>
+	<label commandName="MatrixEdgeGeometryMissing" devLabel="Edge geometry is missing" translation="エッジ ジオメトリが見つかりません"/>
+	<label commandName="MatrixOriginGeometryMissing" devLabel="Origin geometry is missing" translation="原点のジオメトリが見つかりません"/>
+	<label commandName="MatrixPlaneGeometryMissing" devLabel="Plane geometry is missing" translation="平面のジオメトリが見つかりません"/>
+	<label commandName="MatrixXAxisGeometryMissing" devLabel="X axis geometry is missing" translation="X 軸のジオメトリが見つかりません"/>
+	<label commandName="MergeEdgeFailed" devLabel="Merge Edge operation failed." translation="エッジの結合操作に失敗しました。"/>
+	<label commandName="MeshBodyDefaultUserName" devLabel="MeshBody" translation="メッシュ ボディ"/>
+	<label commandName="MeshBodySelectionCategory" devLabel="Mesh Bodies" translation="メッシュ ボディ"/>
+	<label commandName="MeshClearFGGenericError" devLabel="ClearFG failed due to invalid input" translation="入力が無効であるため、面のグループのクリアに失敗しました"/>
+	<label commandName="MeshCombineComponentError" devLabel="Combine failed due to invalid target component" translation="ターゲット コンポーネントが無効であるため、結合に失敗しました"/>
+	<label commandName="MeshCombineGenericError" devLabel="Combine failed due to invalid input" translation="入力が無効であるため、結合に失敗しました"/>
+	<label commandName="MeshConvFail" devLabel="Mesh Convert Failed" translation="メッシュの変換に失敗しました"/>
+	<label commandName="MeshFaceGroupToolTip" devLabel="Color mesh bodies by face group" translation="面のグループごとにメッシュ ボディを色付け"/>
+	<label commandName="MeshFaceGroupUserName" devLabel="Face Groups" translation="面のグループ"/>
+	<label commandName="MeshFacetSelection" devLabel="Mesh Facet" translation="メッシュ ファセット"/>
+	<label commandName="MeshFacetSelectionCategory" devLabel="Mesh Facets" translation="メッシュ ファセット"/>
+	<label commandName="MeshFacetSelection_Plural" devLabel="Mesh Facets" translation="メッシュ ファセット"/>
+	<label commandName="MeshGenerateFGGenericError" devLabel="GenerateFG failed due to invalid input" translation="入力が無効であるため、面のグループの生成に失敗しました"/>
+	<label commandName="MeshMakeSolidGenericError" devLabel="MakeSolid failed due to invalid input" translation="入力が無効であるため、ソリッドの作成に失敗しました"/>
+	<label commandName="MeshMakeSolidOutputError" devLabel="MakeSolid failed due to invalid output" translation="出力が無効であるため、ソリッドの作成に失敗しました"/>
+	<label commandName="MeshPlanarSectionRequestFailed" devLabel="Mesh section failed." translation="メッシュ断面化に失敗しました。"/>
+	<label commandName="MeshPlaneCutFailed" devLabel="Plane Cut failed." translation="平面切断に失敗しました。"/>
+	<label commandName="MeshPointSelectionCategory" devLabel="Mesh Points" translation="メッシュ点"/>
+	<label commandName="MeshPointSelectionId" devLabel="Mesh Point" translation="メッシュ点"/>
+	<label commandName="MeshPointsSelectionId" devLabel="Mesh Points" translation="メッシュ点"/>
+	<label commandName="MeshReduceGenericError" devLabel="Reduce failed due to invalid input" translation="入力が無効であるため、削減に失敗しました"/>
+	<label commandName="MeshRemeshGenericError" devLabel="Remesh failed due to invalid input" translation="入力が無効であるため、再メッシュに失敗しました"/>
+	<label commandName="MeshReplaceGenericError" devLabel="Replace failed due to invalid input" translation="入力が無効であるため、置換に失敗しました"/>
+	<label commandName="MeshReverseNormalsGenericError" devLabel="ReverseNormals failed due to invalid input" translation="入力が無効であるため、法線の反転に失敗しました"/>
+	<label commandName="MeshScaleGenericError" devLabel="Scale failed due to invalid input" translation="入力が無効であるため、尺度設定に失敗しました"/>
+	<label commandName="MeshSelectionsId" devLabel="Mesh Bodies" translation="メッシュ ボディ"/>
+	<label commandName="MeshSmoothGenericError" devLabel="Smooth failed due to invalid input" translation="入力が無効であるため、スムーズ化に失敗しました"/>
+	<label commandName="MeshStyleOptionGroup" devLabel="Mesh Style" translation="メッシュ スタイル"/>
+	<label commandName="MeshStyleOptionGroupToolTip" devLabel="Preferences that set Mesh rendering style" translation="メッシュのレンダリング スタイルを設定する基本設定です"/>
+	<label commandName="MeshToolProps" devLabel="Mesh Selection Tool" translation="メッシュ選択ツール"/>
+	<label commandName="MidSurfaceError_NoSource" devLabel="Source bodies lost!" translation="ソース ボディが失われました。"/>
+	<label commandName="MidSurfaceShellCreationFailure" devLabel="Failed to generate a mid-surface shell" translation="中間サーフェス シェルの生成に失敗しました"/>
+	<label commandName="MidSurfaceShell_DefaultName" devLabel="Midsurface" translation="中間サーフェス"/>
+	<label commandName="MinimumRadiusAnalysisDefaultUserName" devLabel="MinimumRadius" translation="最小半径"/>
+	<label commandName="MirrorComponent" devLabel="MirrorComponent" translation="コンポーネントをミラー化"/>
+	<label commandName="MirrorPatternFeatureName" devLabel="Mirror" translation="ミラー"/>
+	<label commandName="MirrorReNameComponnet" devLabel="(Mirror)" translation="(ミラー)"/>
+	<label commandName="MirrorSuffix" devLabel="(Mirror)" translation="(ミラー)"/>
+	<label commandName="MissingJORef" devLabel="Missing snap reference" translation="スナップ参照が見つかりません"/>
+	<label commandName="MmMKSUnitSystemName" devLabel="mm modeling length with MKS (m, kg, second, Celsius) units" translation="MKS (m、kg、秒、摂氏)単位でのモデリングの長さ単位は mm です"/>
+	<label commandName="ModelingError" devLabel="Modeling Error: Can't create hole toolbody, please check inputs" translation="モデリング エラー: 穴ツールボディを作成できません。入力を確認してください。"/>
+	<label commandName="ModelingErrorBadInputToLoft4" devLabel="Modeling Error: Minimum two profiles are required to create a Loft! Please select sketch curve as a Centerline" translation="モデリング エラー: ロフトを作成するには、最低 2 つのプロファイルが必要です。スケッチ曲線を中心線として選択してください"/>
+	<label commandName="ModelingErrorBadInputToLoft5" devLabel="Modeling Error: Minimum two profiles are required to create a Loft! Please select sketch curve(s) as a Rail(s)" translation="モデリング エラー: ロフトを作成するには、最低 2 つのプロファイルが必要です。スケッチ曲線をレールとして選択してください。"/>
+	<label commandName="ModelingErrorBadInputToLoft6" devLabel="Modeling Error: Minimum two profiles are required to create a Loft!" translation="モデリング エラー: ロフトを作成するには、最低 2 つのプロファイルが必要です。"/>
+	<label commandName="ModelingErrorBadInputToLoft7" devLabel="Modeling Error: Minimum two profiles are required to create a Loft!" translation="モデリング エラー: ロフトを作成するには、最低 2 つのプロファイルが必要です。"/>
+	<label commandName="ModelingErrorConnectorObstacleRequest" devLabel="Modeling Error: Can't create connector obstacle toolbody, please check inputs" translation="モデリング エラー: コネクタ障害物ツールボディを作成できません。入力を確認してください"/>
+	<label commandName="MoveFaceGeneralError" devLabel="Move Face fails due to unexpected result" translation="予期しない結果により面の移動が失敗しました"/>
+	<label commandName="MultipleAreaBoardError" devLabel="The outline could generate multiple areas to defind board, which is not expected, please check the source outline to make it form single area for board!" translation="アウトラインが定義済みボードに対して複数の領域を生成する可能性がありますが、これは予期されていません。ソース アウトラインを確認し、ボードに対して単一の領域を形成するようにしてください。"/>
+	<label commandName="MultipleEIPContextSelectionId" devLabel="Contexts" translation="コンテキスト"/>
+	<label commandName="NONROOT_OCCURRENCE_PATH_ROOT" devLabel="Occurrence Path must be from root component" translation="オカレンスパスルートコンポーネントにする必要があります"/>
+	<label commandName="NO_EXTEND_EDGE" devLabel="No Extend Edge Found!" translation="延長エッジが見つかりません。"/>
+	<label commandName="NO_REF_POINT" devLabel="No reference point found!" translation="参照点が見つかりません。"/>
+	<label commandName="NO_SOURCE_FACES" devLabel="No Source Faces Found!" translation="ソース面が見つかりません。"/>
+	<label commandName="NO_TARGET_BODY" devLabel="No target body!" translation="ターゲット ボディがありません。"/>
+	<label commandName="NegativeGuideRail" devLabel="Guide Rail Distance cannot be negative." translation="ガイド レールの距離を負にすることはできません。"/>
+	<label commandName="NestedOffsetSketchError" devLabel="One or more of the selected curves has already been offset. Consider offsetting the original profile again instead." translation="選択した曲線のうち 1 つまたは複数の曲線は既にオフセットされています。代わりに、元のプロファイルを再度オフセットすることを検討してください。"/>
+	<label commandName="NoBoxCreated" devLabel=": No box is created." translation=": ボックスは作成されません。"/>
+	<label commandName="NoDesignAsset" devLabel="The latest target document %1% does not contain a Design Asset" translation="最新のターゲット ドキュメント %1% にデザイン アセットが含まれていません"/>
+	<label commandName="NoGripsInTopos" devLabel="No valid selection for smoothing" translation="スムーズ化用の有効な選択がありません"/>
+	<label commandName="NoIntersectingTargetBodyError" devLabel="No intersecting target body was found." translation="交差するターゲット ボディが見つかりませんでした。"/>
+	<label commandName="NoLinkBetweenDocs" devLabel="Could not find link between source document: %1% and target document: %2%" translation="ソース ドキュメント %1% とターゲット ドキュメント %2% とのリンクが見つかりませんでした"/>
+	<label commandName="NoLinkMgr" devLabel="Could not find Link Mgr in the source document %1%!!" translation="ソース ドキュメント %1% でリンク マネージャが見つかりません! !"/>
+	<label commandName="NoPackage3dFileOnThisFootprint" devLabel=": This version of device might not have any package 3D file." translation=": このバージョンのデバイスにはパッケージ 3D ファイルがない可能性があります。"/>
+	<label commandName="NoShellBodySelectionCategory" devLabel="No Shell Bodies" translation="シェル ボディがありません"/>
+	<label commandName="NoSourceWMPlaceholder" devLabel="Working Model missing design placeholder." translation="Working Model missing design placeholder."/>
+	<label commandName="NoSurfacesToTrim" devLabel="Cutting Tool does not intersect any seletected surface!" translation="カット ツールは、選択したどのサーフェスとも交差していません。"/>
+	<label commandName="NoTargetBodyError" devLabel="No target body found to cut or intersect!" translation="切り取りまたは交差を行うターゲット ボディがありません。"/>
+	<label commandName="NoThreeDModelInPackageFile" devLabel=": This version of package 3d file might have no 3d model." translation=": このバージョンのパッケージ 3D ファイルには 3D モデルがない可能性があります。"/>
+	<label commandName="NoValidDecalError" devLabel="no valid decal patch to use" translation="使用できる有効なデカール パッチがありません"/>
+	<label commandName="NoVisibleSurfacesToTrim1" devLabel="Cutting Tool does not intersect any surface!" translation="カットツールは、どのサーフェスとも交差していません。"/>
+	<label commandName="NoVisibleSurfacesToTrim2" devLabel="There are no visible Surfaces to trim" translation="トリムするサーフェスが表示されていません。"/>
+	<label commandName="NotExportTSpline" devLabel="Tspline bodies cannot be exported, and will not appear in the exported document. Use the Convert command to create bodies which will be exported." translation="T スプライン ボディはエクスポートできません。また、エクスポートしたドキュメントに表示されません。エクスポートするボディを作成するには、[変換]コマンドを使用します。"/>
+	<label commandName="NotSupported1" devLabel="%1% command is not supported for non-associative references" translation="%1% コマンドは、関連付けのない参照をサポートしていません"/>
+	<label commandName="NotSupported2" devLabel="%1% command is only supported for Fusion assets" translation="%1% コマンドは、Fusion アセットでのみサポートされています"/>
+	<label commandName="NotSupported3" devLabel="%1% command can only work with valid Fusion root components" translation="%1% コマンドは、有効な Fusion ルート コンポーネントでのみ動作します"/>
+	<label commandName="NotSupported4" devLabel="Get Latest command is only supported on Fusion design data" translation="[最新を取得]コマンドは、Fusion のデザイン データでのみサポートしています"/>
+	<label commandName="NotSupportedEdit" devLabel="Parameter edit type not supported!" translation="パラメータの編集タイプがサポートされていません。"/>
+	<label commandName="NotSupportedUnitEdit" devLabel="Parameter unit edit not supported!" translation="パラメータの単位の編集はサポートされていません。"/>
+	<label commandName="NothingConvertToDMFeature" devLabel="Nothing converted." translation="何も変換されませんでした。"/>
+	<label commandName="NothingStitched" devLabel="Modeling Error: Nothing has stitched." translation="モデリング エラー: 何もステッチされていません。"/>
+	<label commandName="OCCURRENCE_LOST" devLabel="Fails to find occurrence and cache is used" translation="オカレンスの検索に失敗しました。キャッシュが使用されています"/>
+	<label commandName="OCCURRENCE_MATCH_FAIL" devLabel="Occurrence Path is not matched" translation="オカレンスパスが一致しません"/>
+	<label commandName="OCCURRENCE_PATH_LOST" devLabel="Failed to find occurrence path" translation="オカレンス パスの検索に失敗しました"/>
+	<label commandName="OCCURRENCE_TRANSFORM_NOT_FOUND" devLabel="Occurrence transform for feature not found" translation="フィーチャオカレンスのトランスフォームが見つかりません"/>
+	<label commandName="ORIGIN_AXIS_GEOMETRY_MISSING" devLabel="Axis geometry is missing" translation="軸のジオメトリが見つかりません"/>
+	<label commandName="ORIGIN_SELECTION_MISSING" devLabel="Origin geometry is missing." translation="原点のジオメトリが見つかりません。"/>
+	<label commandName="ORIGIN_X_AXIS_REF_EDGE_MISSING" devLabel="Origin's reference x-axis selection is missing." translation="原点の参照 X 軸の選択が見つかりません。"/>
+	<label commandName="ORIGIN_Z_AXIS_REF_MISSING" devLabel="Origin's primary axis selection is missing." translation="原点の主軸の選択が見つかりません。"/>
+	<label commandName="OWNER_OCCURRENCE_LOST" devLabel="Failed to get owner occurrence transform" translation="所有者のオカレンスの移動の取得に失敗しました"/>
+	<label commandName="ObjectPathReadonlyWarning" devLabel="some selected object is readonly and cannot be deleted." translation="選択した一部のオブジェクトは、読み取り専用のため削除できません。"/>
+	<label commandName="OccurrenceName" devLabel="Occurrence" translation="オカレンス"/>
+	<label commandName="OfflineFailedGetLatestMsg" devLabel="Latest version of the file %1% is not available in Offline mode. Please switch to Online mode to perform the %2% command." translation="ファイル %1% の最新バージョンはオフライン モードで使用できません。オンライン モードに切り替え、%2% コマンドを実行してください。"/>
+	<label commandName="OffsetFacesFailed" devLabel="Brep transaction boundary is not set correctly." translation="Brep トランザクション境界が正しく設定されていません。"/>
+	<label commandName="OffsetShell_DefaultName" devLabel="Midsurface" translation="中間サーフェス"/>
+	<label commandName="OffsetSketchBadCurvesError" devLabel="Could not offset curves." translation="曲線をオフセットできませんでした。"/>
+	<label commandName="OffsetSketchFailedError" devLabel="Offset creation failed." translation="オフセットの作成に失敗しました。"/>
+	<label commandName="OffsetSketchNoGeomError" devLabel="The sketch offset created no geometry. Modify the offset dimension or verify the changes are correct." translation="スケッチ オフセットでは、ジオメトリが作成されませんでした。オフセット寸法を修正するか、変更内容が正しいことを確認してください。"/>
+	<label commandName="OvalHeadMachineScrew" devLabel="Oval Head Machine Screw" translation="すりわり付き丸小ねじ"/>
+	<label commandName="PATCH_NO_TOOLBODY" devLabel="Modeling Error: Can't create patch toolbody, please check the inputs." translation="モデリング エラー: パッチ ツールボディを作成できません。入力を確認してください。"/>
+	<label commandName="PATH_PATTERN_INVALID_COUNT" devLabel="Invalid count" translation="無効な数"/>
+	<label commandName="PATH_PATTERN_INVALID_START_RANGE" devLabel="Invalid start range" translation="無効な開始範囲"/>
+	<label commandName="PATH_PATTERN_MISSING_OBJECTS_OR_PATH" devLabel="Missing objects or path" translation="オブジェクトまたはパスが見つかりません"/>
+	<label commandName="PATTERN_BODY_LOST" devLabel="Could not resolve the body being patterned" translation="パターン化中のボディを解決できませんでした"/>
+	<label commandName="PATTERN_FACE_LOST" devLabel="Could not resolve the face being patterned" translation="パターン化中の面を解決できませんでした"/>
+	<label commandName="PATTERN_SOURCE_LOST_BODY" devLabel="A body is lost which is used as input for pattern. Try to edit the feature to repair it." translation="パターンの入力に使用されるボディが失われています。フィーチャを編集して修復してください。"/>
+	<label commandName="PATTERN_SOURCE_LOST_COMPINSTANCE" devLabel="A component instance is lost which is used as input for pattern. Try to edit the feature to repair it." translation="パターンの入力に使用されるコンポーネント インスタンスが失われています。フィーチャを編集して修復してください。"/>
+	<label commandName="PATTERN_SOURCE_LOST_FACESET" devLabel="A face is lost which is used as input for pattern. Try to edit the feature to repair it." translation="パターンの入力に使用される面が失われています。フィーチャを編集して修復してください。"/>
+	<label commandName="PATTERN_SOURCE_LOST_FEATURE" devLabel="A feature is lost which is used as input for pattern. Try to edit the feature to repair it." translation="パターンの入力に使用されるフィーチャが失われています。フィーチャを編集して修復してください。"/>
+	<label commandName="PCBBoardName" devLabel="Board" translation="ボード"/>
+	<label commandName="PCBNewBoard" devLabel="Board" translation="ボード"/>
+	<label commandName="PIMApprovedBy" devLabel="Approved By" translation="承認者"/>
+	<label commandName="PIMApprovedDate" devLabel="Approved Date" translation="承認日"/>
+	<label commandName="PIMDesignMass" devLabel="Mass" translation="質量"/>
+	<label commandName="PIMDesignMaterial" devLabel="Material" translation="マテリアル"/>
+	<label commandName="PIMDesigner" devLabel="Designer" translation="デザイナー"/>
+	<label commandName="PIMManufacturer" devLabel="Manufacturer" translation="製造元"/>
+	<label commandName="PIMManufacturingEngineer" devLabel="Manufacturing Engineer" translation="製造エンジニア"/>
+	<label commandName="PIMMechanicalEngineer" devLabel="Mechanical Engineer" translation="機械エンジニア"/>
+	<label commandName="PIMPartDescription" devLabel="Description" translation="説明"/>
+	<label commandName="PIMPartName" devLabel="Part Name" translation="パーツ名"/>
+	<label commandName="PIMPartNumber" devLabel="Part Number" translation="パーツ番号"/>
+	<label commandName="PIMProject" devLabel="Project" translation="プロジェクト"/>
+	<label commandName="PIMStatus" devLabel="Status" translation="ステータス"/>
+	<label commandName="PIMStockNumber" devLabel="Stock Number" translation="ストック番号"/>
+	<label commandName="PIMTitle" devLabel="Title" translation="タイトル"/>
+	<label commandName="PIPE_PATH_NOT_FOUND" devLabel="The path for pipe cannot be found!" translation="パイプのパスが見つかりません。"/>
+	<label commandName="PLANE1_SELECTION_MISSING" devLabel="Missing plane1" translation="平面 1 が見つかりません"/>
+	<label commandName="PLANE2_SELECTION_MISSING" devLabel="Missing plane2" translation="平面 2 が見つかりません"/>
+	<label commandName="PRIMITIVE_PROFILE_REFERENCE_LOST" devLabel="The primitive profile reference is lost." translation="プリミティブ プロファイルの参照が失われています。"/>
+	<label commandName="PROFILE_NON_PLANAR" devLabel="Curves tracked in old profile are not coplanar anymore. The downstream result may be not your intent." translation="古いプロファイルでトラッキングされた曲線は同一平面上にありません。下流プロセスを実行すると、結果が意図と異なる可能性があります。"/>
+	<label commandName="PROFILE_REFERENCE_LOST" devLabel="The profile reference is lost, try editing this the feature to reselect the lost profile." translation="プロファイルの参照が失われています。このフィーチャを編集して、失われたプロファイルを再選択してください。"/>
+	<label commandName="PROJECT_TO_SURFACE_FAILED" devLabel="Project to surface failed, please check the surface or the vector!" translation="サーフェスへの投影に失敗しました。サーフェスまたはベクトルを確認してください。"/>
+	<label commandName="ParameterEditErrorStatus" devLabel="%1%" translation="%1%"/>
+	<label commandName="PartingFaceSplitFailure" devLabel="Failed to split faces" translation="面の分割に失敗しました"/>
+	<label commandName="PartingLineFailure" devLabel="Failed to create parting lines" translation="パーティング ラインの作成に失敗しました"/>
+	<label commandName="PartingLineNonPlanarParting" devLabel="Split Solid Body mode only supports coplanar parting lines." translation="ソリッド ボディ分割モードでは、同一平面のパーティング ラインのみがサポートされます。"/>
+	<label commandName="PartingSplitFailure" devLabel="Failed to split the body" translation="ボディの分割に失敗しました"/>
+	<label commandName="PartingSplittingSheetFailure" devLabel="Failed to create splitting surface" translation="分割サーフェスの作成に失敗しました"/>
+	<label commandName="PartingSurfaceExtendWarning" devLabel="Failed to extend parting surfaces" translation="パーティング面の延長に失敗しました"/>
+	<label commandName="PathPatternFeatureName" devLabel="PathPattern" translation="パス パターン"/>
+	<label commandName="PathPatternFeatureNameNumbered" devLabel="PathPattern%1%" translation="パス パターン %1%"/>
+	<label commandName="PatternComputeError" devLabel="Cannot find source body for the pattern compute." translation="パターンの計算のソース ボディが見つかりません。"/>
+	<label commandName="PatternFeatureName" devLabel="Pattern" translation="パターン"/>
+	<label commandName="PatternReNameComponent" devLabel="(Pattern)" translation="(パターン)"/>
+	<label commandName="Pattern_Feature_Input_Compute_Error" devLabel="Pattern Source Lost" translation="パターンのソースが失われました"/>
+	<label commandName="PipeFeatureName" devLabel="Pipe" translation="パイプ"/>
+	<label commandName="PipeJointId" devLabel="Pipe EndType" translation="パイプの終端タイプ"/>
+	<label commandName="PipeJointsId" devLabel="Pipe EndTypes" translation="パイプの終端タイプ"/>
+	<label commandName="PipeSectionId" devLabel="Pipe Section" translation="パイプ断面"/>
+	<label commandName="PipeSectionsId" devLabel="Pipe Sections" translation="パイプ断面"/>
+	<label commandName="PipeSegmentId" devLabel="Pipe Segment" translation="パイプ セグメント"/>
+	<label commandName="PipeSegmentsId" devLabel="Pipe Segments" translation="パイプ セグメント"/>
+	<label commandName="ProjectSourceLost" devLabel="The project source is lost, Cache is used!" translation="投影のソースが失われています。キャッシュが使用されています。"/>
+	<label commandName="ProjectSourceVectorLost" devLabel="The project direction line is lost, Cache is used!" translation="投影の方向線が失われています。キャッシュが使用されています。"/>
+	<label commandName="ProjectSurfaceLost" devLabel="The project surface is lost, Cache is used!" translation="投影のサーフェスが失われています。キャッシュが使用されています。"/>
+	<label commandName="ProjectToSurfaceComputeUtil_Fail01" devLabel="Failed to project the selected geometries. Please check that the project direction and selected faces are sensible, or try changing project type." translation="選択したジオメトリの投影に失敗しました。投影方向および選択した面が適切であるかを確認するか、投影タイプを変更してください。"/>
+	<label commandName="ProjectToSurfaceComputeUtil_Fail02" devLabel="Failed to project the selected geometries. Please check that the selected geometries and faces are sensible, or try changing project type." translation="選択したジオメトリの投影に失敗しました。選択したジオメトリおよび面が適切であるかを確認するか、投影タイプを変更してください。"/>
+	<label commandName="ProjectToSurfaceComputeUtil_FailToProjectPartial" devLabel="Have certain selected curves couldn't be projected!" translation="選択した特定の曲線を投影できませんでした。"/>
+	<label commandName="RADIUS_TOO_SMALL" devLabel="The radius is too small!" translation="半径が小さすぎます。"/>
+	<label commandName="RECTANGULAR_PATTERN_MISSING_OBJECTS_OR_AXES" devLabel="Missing objects or axes" translation="オブジェクトまたは軸が見つかりません"/>
+	<label commandName="REFOLD_NO_BODY_INPUT" devLabel="It looks like the sheet metal body was removed. Undo the features or delete the features in the timeline to refold. You can also delete the unfold feature to return to the folded state." translation="シート メタル ボディが削除されたように見えます。元に戻すか、タイムラインでフィーチャを削除して再折り曲げします。また、展開フィーチャを削除して曲げ状態に戻すこともできます。"/>
+	<label commandName="REFOLD_NO_VALID_INPUT" devLabel="Failed to refold the body. Please provide a valid input." translation="ボディの再折り曲げに失敗しました。有効な値を入力してください。"/>
+	<label commandName="RELATIVE_POSITION_LOST" devLabel="Fails to get associated relative position" translation="関連付けられた相対的な位置の取得に失敗しました"/>
+	<label commandName="REORIENT_PRIMARY_AXIS_MISSING" devLabel="The reoriented primary axis selection is missing." translation="方向を変更した主軸の選択が見つかりません。"/>
+	<label commandName="REORIENT_SECONDARY_AXIS_MISSING" devLabel="The reoriented secondary axis selection is missing." translation="方向を変更した第 2 軸の選択が見つかりません。"/>
+	<label commandName="REPLACE_FACE_TARGET_LOST" devLabel="The target face is lost" translation="ターゲット面が失われています"/>
+	<label commandName="REPLACE_FACE_TOOL_LOST" devLabel="The source face is lost" translation="ソース面が失われています"/>
+	<label commandName="REPLACE_WITH_PRIMITIVE_OUT_OF_DATE" devLabel="Replace with Primitives Feature is out of date." translation="[プリミティブに置換]フィーチャが最新ではありません。"/>
+	<label commandName="REVOLVE_INVALID_AXIS" devLabel="Axis is invalid" translation="軸が無効です"/>
+	<label commandName="RIGID_GROUP_OPERAND_LOST" devLabel="Rigid group operands are missing" translation="剛性グループのオペランドが見つかりません"/>
+	<label commandName="RPatternFeatureName" devLabel="R-Pattern" translation="R パターン"/>
+	<label commandName="RULED_SURFACE_INVALID_ANGLE" devLabel="Cannot set angle value to 90 degrees. Adjust angle value." translation="角度の値を 90 度に設定できません。角度の値を調整してください。"/>
+	<label commandName="RULED_SURFACE_NO_INPUT" devLabel="Cannot find input geometry. Edit the feature to reselect lost inputs." translation="入力ジオメトリが見つかりません。フィーチャを編集して、失われた入力を再選択してください。"/>
+	<label commandName="Reconstruction_prefix" devLabel="Reconstructed-" translation="再構築-"/>
+	<label commandName="RedirectProblem" devLabel="Could not redirect the target file %1% to the _XRef_ location" translation="外部参照の場所へターゲット ファイル %1% をリダイレクトできませんでした"/>
+	<label commandName="RefDataMiss" devLabel="missing" translation="見つかりません"/>
+	<label commandName="ReloadDocumentCannotFetch" devLabel="Could not fetch the latest version of the document" translation="Could not fetch the latest version of the document"/>
+	<label commandName="ReloadDocumentCannotOpen" devLabel="Could not reload the latest version of the document" translation="ドキュメントの最新バージョンを再ロードできませんでした"/>
+	<label commandName="ReplaceWithPrimitiveFeature" devLabel="Replace With Primitive" translation="プリミティブに置換"/>
+	<label commandName="ReplaceWithPrimitivesRequest_Rename" devLabel="Simplified Primitive" translation="簡略化プリミティブ"/>
+	<label commandName="RequireSaveBeforeInsert" devLabel="Please save this design before inserting components" translation="コンポーネントを挿入する前に、このデザインを保存してください"/>
+	<label commandName="ResolveProblem" devLabel="Could not resolve the latest version of the target document. To-Path: %1%!!" translation="ターゲット ドキュメントの最新バージョンを解決できませんでした。 To-Path: %1%"/>
+	<label commandName="ResolveProblem2" devLabel="Could not resolve the latest version of the target document. From-Path: %1%, To-Path: %2%!!" translation="ターゲット ドキュメントの最新バージョンを解決できませんでした。 From-Path: %1%、To-Path: %2%"/>
+	<label commandName="RevolveFeatureName" devLabel="Revolve" translation="回転"/>
+	<label commandName="Rib" devLabel="No target component." translation="ターゲット コンポーネントがありません。"/>
+	<label commandName="RibComputeError" devLabel="Fail to compute rib profile!" translation="リブ プロファイルの計算に失敗しました。"/>
+	<label commandName="RibComputeFailed" devLabel="Rib compute failed" translation="リブの計算に失敗しました"/>
+	<label commandName="RibFeatureName" devLabel="Rib" translation="リブ"/>
+	<label commandName="RuleName" devLabel="Rule Name" translation="ルール名"/>
+	<label commandName="RuleUnitsExpressionLineEdit1" devLabel="Please complete the expression" translation="式を完成させてください"/>
+	<label commandName="RuleUnitsExpressionLineEdit2" devLabel="Please enter a valid expression" translation="有効な式を入力してください。"/>
+	<label commandName="RuleUnitsExpressionLineEdit3" devLabel="For Round relief, relief depth value should be greater than or equal to 1/2 of relief width value" translation="丸めレリーフでは、レリーフの深さの値をレリーフの幅の値の 1/2 以上に設定する必要があります"/>
+	<label commandName="SCULPT_BUILD_CELLS_FAILED" devLabel="Failed to build cells." translation="セルの作成に失敗しました。"/>
+	<label commandName="SCULPT_CELL_MISMATCHED" devLabel="Some sculpt cells are mismatched." translation="一部のスカルプト セルが一致していません。"/>
+	<label commandName="SCULPT_CREATE_BODY_FROM_CELL" devLabel="Failed to create bodies from cells." translation="セルからのボディの作成に失敗しました。"/>
+	<label commandName="SCULPT_MAKE_FACE_FROM_PLANE" devLabel="Failed to make sheet face from work plane." translation="作業平面からのシート面の作成に失敗しました。"/>
+	<label commandName="SKETCH_MISFIT_EDGE_ENTITY" devLabel="Misfit edge entity" translation="不一致のエッジ エンティティ"/>
+	<label commandName="SKETCH_MISFIT_VERTEX_ENTITY" devLabel="Misfit vertex entity" translation="不一致の頂点エンティティ"/>
+	<label commandName="SKETCH_SOLVER_NO_SOLUTION_FOUND" devLabel="Solver did not reach a solution" translation="ソルバーで解析結果が得られませんでした"/>
+	<label commandName="SMEdgeSelectionCategory" devLabel="Sheet Metal Body Edges" translation="シート メタル ボディのエッジ"/>
+	<label commandName="SMRuleNotActivated" devLabel="Could not set the Rule as Default." translation="シート メタル規則を既定に設定できませんでした。"/>
+	<label commandName="SMRuleNotCloned" devLabel="Could not duplicate a Rule." translation="シート メタル規則を複製できませんでした。"/>
+	<label commandName="SMRuleNotDeleted" devLabel="Could not delete a Rule as some component is using it or the Rule does not exist." translation="一部のコンポーネントでシート メタル規則が使用されているか、もしくは存在しないため、シート メタル規則を削除できませんでした。"/>
+	<label commandName="SMRuleNotUpdated" devLabel="Could not update a Rule." translation="シート メタル規則を更新できませんでした。"/>
+	<label commandName="SNAPSHOT_NOTHING_CHANGE" devLabel="Capture Position has no positions for current Components and Joints" translation="キャプチャ位置には、現在のコンポーネントおよびジョイントの位置情報は含まれていません"/>
+	<label commandName="SOURCE_BODY_LOST" devLabel="Source body not found!" translation="ソース ボディが見つかりません。"/>
+	<label commandName="SOURCE_INSTANCE_LOST" devLabel="Paste instance source occurrence context is lost" translation="インスタンスの貼り付けで、ソース オカレンスのコンテキストが失われました"/>
+	<label commandName="SOURCE_MODEL_NOT_AVAILABLE" devLabel="The source design was unavailable during compute. Cached data will be used." translation="ソース デザインは計算中のため使用できませんでした。キャッシュされたデータが使用されます。"/>
+	<label commandName="SPHERE_CREATE_SPHERE_FAILED" devLabel="Failed to build sphere tool body." translation="球ツール ボディの作成に失敗しました。"/>
+	<label commandName="SPHERE_DIAMETER_VALUE_INVALID" devLabel="The sphere diameter is invalid." translation="球の直径が無効です。"/>
+	<label commandName="SPLIT_NO_TARGET_FACES" devLabel="No target faces for executing face split." translation="面分割を実行するターゲット面がありません。"/>
+	<label commandName="SPLIT_TARGET_TOOL_NOT_INTERSECT" devLabel="No intersection between target(s) and split tool." translation="ターゲットと分割ツールとの間に交差がありません。"/>
+	<label commandName="SPLIT_TOOL_INTERSECTING_SHEET" devLabel="There is unhandled intersecting tool data. Try without intersecting tools." translation="未処理の交差ツール データがあります。交差ツールを使用せずに試してください。"/>
+	<label commandName="SPLIT_TOOL_NON_MANIFOLD_SOLID" devLabel="Coincident tools would create illegal or non-manufacturable bodies. Try with separate tools." translation="同時に複数のツールを使用すると、不正または製造不可能なボディが作成されることがあります。別個のツールを使用して試してください。"/>
+	<label commandName="SameDecalError" devLabel="Same image file path" translation="イメージ ファイルのパスが同じです"/>
+	<label commandName="SameReferencedDoc" devLabel="The referenced file being opened is the same as the one currently open. Path of file: %1%!!" translation="開こうとしている参照ファイルは、現在開いているファイルと同じです。ファイルのパス: %1%"/>
+	<label commandName="Sculpt" devLabel="No target component." translation="ターゲット コンポーネントがありません。"/>
+	<label commandName="SculptComputeFailedErr" devLabel="Failed to compute sculpt!" translation="スカルプトの計算に失敗しました。"/>
+	<label commandName="SculptFeatureName" devLabel="BoundaryFill" translation="境界塗り潰し"/>
+	<label commandName="SeashellIsoparmPatternExistsStandardizationIsImpossible" devLabel="Seashell isoparm pattern exists, standardization is impossible" translation="シーシェルのアイソパラム パターンが存在するため標準化できません"/>
+	<label commandName="SectionViewAnalysisDefaultUserName" devLabel="Section" translation="断面"/>
+	<label commandName="SelectBackFacets" devLabel="Select Back Faces" translation="背面を選択"/>
+	<label commandName="SelectedVerticesAreNotWithinWeldTolerance" devLabel="Selected vertices are not within weld tolerance" translation="選択した頂点は溶接許容の範囲内にありません"/>
+	<label commandName="SelectionInputBaseMeshBodyClientType" devLabel="Base Mesh Body" translation="ベース メッシュ ボディ"/>
+	<label commandName="SelectionInputMeshBodyClientType" devLabel="Mesh Body" translation="メッシュ ボディ"/>
+	<label commandName="SheetMetalBend" devLabel="No target component." translation="ターゲット コンポーネントがありません。"/>
+	<label commandName="ShellBodySelectionCategory" devLabel="Shell Bodies" translation="シェル ボディ"/>
+	<label commandName="ShellBodySelectionId" devLabel="ShellBody" translation="シェルボディ"/>
+	<label commandName="ShellBody_DefaultName" devLabel="Shell" translation="シェル"/>
+	<label commandName="ShellFeatureName" devLabel="Shell" translation="シェル"/>
+	<label commandName="SimAssetIsMissing" devLabel="Asset is missing" translation="アセットが見つかりません"/>
+	<label commandName="SimpleConversionFailed" devLabel="T-Spline conversion failed." translation="T スプラインの変換に失敗しました。"/>
+	<label commandName="SketchConstraintHasSameDimension" devLabel="Already has same dimension on referenced geometry!" translation="参照先のジオメトリに同じ寸法が既にあります。"/>
+	<label commandName="SketchInvisibleDimension" devLabel="The dimension you have just created is not visible. Please toggle Show Dimension option in sketch palette." translation="作成したばかりの寸法は表示されません。スケッチ パレットで[寸法を表示]オプションを切り替えてください。"/>
+	<label commandName="SketchInvisibleProjectGeometries" devLabel="The Projected Geometries you have just created is not visible. Please toggle Show Project Geometries option in sketch palette." translation="作成したばかりの投影されたジオメトリは表示されません。スケッチ パレットで[投影されたジオメトリを表示]オプションを切り替えてください。"/>
+	<label commandName="SketchPlaneLost" devLabel="The sketch plane is lost, Cache is used. Please redefine the sketch to select other plane!" translation="スケッチ平面が失われています。キャッシュが使用されています。スケッチを再定義して、他の平面を選択してください。"/>
+	<label commandName="SketchProject" devLabel="Project" translation="プロジェクト"/>
+	<label commandName="SlideEdgeFailed" devLabel="Slide Edge operation failed with specific input edge set" translation="特定の入力エッジ セットでエッジのスライド操作に失敗しました。"/>
+	<label commandName="SlottedCheeseHeadScrewDIN84" devLabel="Slotted Cheese Head Screw DIN 84" translation="すりわり付きチーズ小ねじ DIN 84"/>
+	<label commandName="SlottedCheeseHeadScrewISO1207" devLabel="Slotted Cheese Head Screw ISO 1207" translation="すりわり付きチーズ小ねじ ISO 1207"/>
+	<label commandName="SmRuleCopyToLibraryStr" devLabel="Copy to Library" translation="ライブラリにコピー"/>
+	<label commandName="SmoothShadingType" devLabel="Smooth shaded (Organic/smooth shapes; increased performance)" translation="スムーズ シェーディング(有機的/スムーズ形状。パフォーマンスは向上)"/>
+	<label commandName="SmoothSurfaceFailed" devLabel="Smooth surface operation failed" translation="サーフェスのスムーズ化の操作に失敗しました"/>
+	<label commandName="SmoothingRateNotInRange" devLabel="The smoothing rate is not in range" translation="スムージング レートが範囲内ではありません"/>
+	<label commandName="SocketHeadCapScrew" devLabel="Socket Head Cap Screw" translation="六角穴付き小ねじ"/>
+	<label commandName="SocketHeadCapScrewDINENISO4762" devLabel="Socket Head Cap Screw DIN EN ISO 4762" translation="六角穴付き小ねじ DIN EN ISO 4762"/>
+	<label commandName="SocketHeadCapScrewISO4762" devLabel="Socket Head Cap Screw ISO 4762" translation="六角穴付き小ねじ ISO 4762"/>
+	<label commandName="StraightenFailed" devLabel="Failed to straighten the given points." translation="指定の点の直線化に失敗しました。"/>
+	<label commandName="SubDSurfaceDefaultUserName" devLabel="Body" translation="ボディ"/>
+	<label commandName="SubDSurfaceNodeSelectionId" devLabel="T-Spline Body" translation="T スプライン ボディ"/>
+	<label commandName="SubDSurfaceNodeSelectionsId" devLabel="T-Spline Bodies" translation="T スプライン ボディ"/>
+	<label commandName="SubDivideFailed" devLabel="Subdivide operation can be applied only on manifold Surfaces." translation="再分割操作はマニホールド サーフェスにのみ適用することができます。"/>
+	<label commandName="SubDivideFailedUnknown" devLabel="Subdivide operations failed." translation="再分割操作に失敗しました。"/>
+	<label commandName="SuppressOrDissolveWarning" devLabel="Deleted geometry is part of a pattern, suppressed the instance or dissolved the pattern." translation="削除したジオメトリはパターンの一部です。インスタンスが抑制されるか、パターンが解除されます。"/>
+	<label commandName="Suppress_error" devLabel="No target feature" translation="ターゲット フィーチャがありません"/>
+	<label commandName="SurfaceAlreadySmoothAsPossible" devLabel="Surface is already as smooth as possible" translation="サーフェスは既に可能な限りスムーズです"/>
+	<label commandName="SurfaceMergeFailed" devLabel="Failed to merge surfaces" translation="サーフェスの結合に失敗しました"/>
+	<label commandName="SurfaceMergeFailedCopy" devLabel="Failed to copy tool body" translation="ツール ボディのコピーに失敗しました"/>
+	<label commandName="SurfaceMergeFailedToolBody" devLabel="Failed to copy tool body" translation="ツール ボディのコピーに失敗しました"/>
+	<label commandName="SurfaceOffsetFeatureName" devLabel="SurfaceOffset" translation="サーフェス オフセット"/>
+	<label commandName="SurfacePatchFeatureName" devLabel="SurfacePatch" translation="サーフェス パッチ"/>
+	<label commandName="SurfaceRuledFeatureName" devLabel="SurfaceRuled" translation="ルールド サーフェス"/>
+	<label commandName="SurfaceShellFeature" devLabel="SurfaceShell" translation="サーフェス シェル"/>
+	<label commandName="SurfaceShell_DefaultName" devLabel="SurfaceShell" translation="サーフェス シェル"/>
+	<label commandName="SurfaceStitch" devLabel="No target component." translation="ターゲット コンポーネントがありません。"/>
+	<label commandName="SurfaceStitchFailed" devLabel="Failed to stitch merge body" translation="結合ボディのステッチに失敗しました"/>
+	<label commandName="SurfaceThicken" devLabel="No target component." translation="ターゲット コンポーネントがありません。"/>
+	<label commandName="SurfaceUnionFailed" devLabel="Failed to union to merge body" translation="ボディの結合に失敗しました"/>
+	<label commandName="Sweep" devLabel="No target component." translation="ターゲット コンポーネントがありません。"/>
+	<label commandName="SweepFeatureName" devLabel="Sweep" translation="スイープ"/>
+	<label commandName="SweepProfileNonPlanarError" devLabel="The selected profile is non-planar. Parallel sweep requires a planar profile." translation="選択したプロファイルは非平面です。平行スイープには平面プロファイルが必要です。"/>
+	<label commandName="SweepProfilePlaneNotIntersecting" devLabel="The path does not intersect the profile. For best results, the path should intersect the profile." translation="パスがプロファイルと交差しません。最良の結果を得るには、パスがプロファイルに交差している必要があります。"/>
+	<label commandName="SweepTaggingError" devLabel="Sweep creation failed. Try reselecting the inputs." translation="スイープの作成に失敗しました。入力項目を再選択してみてください。"/>
+	<label commandName="SymmetryRemoved" devLabel="The symmetry applied to this T-Spline body will be removed as a result of this operation.  You can proceed or cancel the operation." translation="この操作を実行すると、この T スプライン ボディに適用されている対称が削除されます。操作を続行するか、キャンセルすることができます。"/>
+	<label commandName="SymmetrySplit" devLabel="Surface failed to split due to symmetry. Use Clear Symmetry command to remove the symmetry." translation="対称が存在するためサーフェスの分割に失敗しました。[対称をクリア]コマンドをクリックして対称を解除してください。"/>
+	<label commandName="TARGET_BODY_REFERENCE_LOST" devLabel="The target body is lost, try editing this feature to reselect target body." translation="ターゲット ボディが失われています。このフィーチャを編集して、ターゲット ボディを再選択してください。"/>
+	<label commandName="TARGET_INSTANCE_LOST" devLabel="Paste instance target occurrence context is lost" translation="インスタンスの貼り付けで、ターゲット オカレンスのコンテキストが失われました"/>
+	<label commandName="TARGET_OCCURRENCE_LOST" devLabel="Failed to get target occurrence transform" translation="ターゲットのオカレンスの移動の取得に失敗しました"/>
+	<label commandName="THREAD_BUILD_HELIXPATH_FAILED" devLabel="Failed to build thread helix path." translation="ねじのらせんパスの作成に失敗しました。"/>
+	<label commandName="THREAD_BUILD_PROFILE_FAILED" devLabel="Failed to build thread profile." translation="ねじのプロファイルの作成に失敗しました。"/>
+	<label commandName="THREAD_CREATE_THREAD_BODY_FAILED" devLabel="Failed to build thread tool body." translation="ねじツール ボディの作成に失敗しました。"/>
+	<label commandName="THREAD_CUT_TOOL_FROM_TARGET_FAILED" devLabel="Failed to cut thread tool body from target body." translation="ターゲット ボディからのねじツール ボディの切り取りに失敗しました。"/>
+	<label commandName="THREAD_REFERENCE_FACE_LOST" devLabel="Thread face reference is lost, try editing this feature to reselect the reference face." translation="ねじ面の参照が失われています。このフィーチャを編集して、参照面を再選択してください。"/>
+	<label commandName="THREAD_REFERENCE_FACE_OFFSET_FAILED" devLabel="Thread size is bigger than the body. Unable to create hole and thread. Reduce hole/thread size and try again." translation="ねじのサイズがボディより大きくなっています。穴とねじを作成できません。穴およびねじのサイズを小さくしてから、再試行してください。"/>
+	<label commandName="TOOLBODY_CREATION_FAIL_ERROR" devLabel="Tool body creation failed" translation="ツール ボディの作成に失敗しました"/>
+	<label commandName="TOOLBODY_CREATION_FAIL_WARNING" devLabel="Some profiles failed to create tool bodies" translation="ツールボディの作成に失敗しました。 一部のプロファイル"/>
+	<label commandName="TOOL_BODY_REFERENCE_LOST" devLabel="The tool body is lost, try editing this feature to reselect tool body." translation="ツール ボディが失われています。このフィーチャを編集して、ツール ボディを再選択してください。"/>
+	<label commandName="TORUS_CREATE_TORUS_FAILED" devLabel="Failed to create torus solid body." translation="トーラスのソリッド ボディの作成に失敗しました。"/>
+	<label commandName="TORUS_MAJOR_DIAMETER_VALUE_INVALID" devLabel="The torus inner diameter is invalid." translation="トーラスの内径が無効です。"/>
+	<label commandName="TORUS_MINOR_DIAMETER_VALUE_INVALID" devLabel="The torus diameter is invalid." translation="トーラスの直径が無効です。"/>
+	<label commandName="TSPlineAddRefSymPlaneNotSel" devLabel="Plane not selected" translation="平面が選択されていません"/>
+	<label commandName="TSPlineBridgeInvalidSelection" devLabel="Bridge Failed. Invalid Selection" translation="ブリッジに失敗しました。選択が無効です"/>
+	<label commandName="TSplineBodySelectionCategory" devLabel="T-Spline Body" translation="T スプライン ボディ"/>
+	<label commandName="TSplineEdgeSelectionCategory" devLabel="T-Spline Edges" translation="T スプライン エッジ"/>
+	<label commandName="TSplineEntitySelectionCategory" devLabel="T-Spline Geometry" translation="T スプライン ジオメトリ"/>
+	<label commandName="TSplineExtrudeFailed" devLabel="Extrude failed with current selection set" translation="現在の選択セットで押し出しに失敗しました"/>
+	<label commandName="TSplineFaceSelectionCategory" devLabel="T-Spline Faces" translation="T スプライン面"/>
+	<label commandName="TSplineGripSelectionCategory" devLabel="T-Spline Tangency Handles" translation="T スプライン接線ハンドル"/>
+	<label commandName="TSplinePipeFeatureName" devLabel="Pipe" translation="パイプ"/>
+	<label commandName="TSplinePipeJointSelectionCategory" devLabel="Pipe Joint" translation="パイプの継手"/>
+	<label commandName="TSplinePipeSectionSelectionCategory" devLabel="Pipe Section" translation="パイプ断面"/>
+	<label commandName="TSplinePipeSegmentSelectionCategory" devLabel="Pipe Segment" translation="パイプ セグメント"/>
+	<label commandName="TSplineStraigtenSurfacePointsError" devLabel="Straighten operation failed. When you use the Surface Points option, ensure that the T-Spline surface can be displayed in Smooth display mode." translation="直線化操作に失敗しました。[サーフェス点]オプションを使用する場合は、T スプライン サーフェスを[スムーズ]表示モードで表示できることを確認してください。"/>
+	<label commandName="TSplineSurfaceUpgrade" devLabel="Both of the selected T-Spline bodies were upgraded to the latest version." translation="選択した T スプライン ボディの両方が最新バージョンにアップグレードされました。"/>
+	<label commandName="TSplineSurfaceUpgrade2" devLabel="Selected T-Spline bodies were upgraded to the latest version." translation="選択した T スプライン ボディは最新バージョンにアップグレードされました。"/>
+	<label commandName="TSplineToASMSurfaceOverloadFailed" devLabel="T-SplineToASM (surface overload) failed." translation="サーフェスのオーバーロードにより T-SplineToASM に失敗しました。"/>
+	<label commandName="TSplineVertexSelectionCategory" devLabel="T-Spline Vertices" translation="T スプラインの頂点"/>
+	<label commandName="TWO_BEND_CORNER_RELIEF_PLACEMENT_UNSUPPORTED" devLabel="Bend feature can automatically create corner reliefs if shape type is set to Square, Round or Tear and relief placement is set to Intersection in Sheet Metal rule. Modify the rule or use Override in Bend dialog if you need corner reliefs." translation="シート メタル規則で形状のタイプが[角]、[丸め]、または[ティア]に設定されていて、レリーフの配置が[交差]に設定されている場合、曲げフィーチャによって自動的にコーナー レリーフが作成されることがあります。コーナー レリーフが必要な場合は、規則を修正するか[曲げ]ダイアログで[オーバーライド]を使用してください。"/>
+	<label commandName="TWO_BEND_CORNER_RELIEF_SHAPE_UNSUPPORTED" devLabel="Bend feature can automatically create corner reliefs if shape type is set to Square, Round or Tear in Sheet Metal rule. Modify the rule or use Override in Bend dialog if you need corner reliefs." translation="シート メタル規則で形状のタイプが[角]、[丸め]、または[ティア]に設定されている場合、曲げフィーチャによって自動的にコーナー レリーフが作成されることがあります。コーナー レリーフが必要な場合は、規則を修正するか[曲げ]ダイアログで[オーバーライド]を使用してください。"/>
+	<label commandName="TargetBodyCollectionNotVisible" devLabel="The visibility of Bodies folder is turned on." translation="ボディ フォルダの表示設定をオンにします。"/>
+	<label commandName="TargetComponentReadonly" devLabel="The selected target component for Insert is in a readonly XRef. Please select another one." translation="挿入に選択したターゲット コンポーネントは、読み取り専用の外部参照です。別のターゲット コンポーネントを選択してください。"/>
+	<label commandName="TargetDocumentNotFound" devLabel="Target document not found!!" translation="ターゲット ドキュメントが見つかりません。"/>
+	<label commandName="Target_Body_Compute_Failure" devLabel="Target Body Error" translation="ターゲット ボディ エラー"/>
+	<label commandName="TheMatchingKnotsGuaranteeIsNotMet" devLabel="The matching knots guarantee is not met" translation="節点の一致の保証要件が満たされていません"/>
+	<label commandName="TheMeshContainsDegenerateFacesZeroLengthEdges" devLabel="The mesh contains degenerate faces/zero-length edges" translation="メッシュには展開された面または長さゼロのエッジがあります。"/>
+	<label commandName="TheMeshContainsValence2StarPoints" devLabel="The mesh contains valence-2 star points" translation="メッシュには価数が 2 のスターのポイントがあります。"/>
+	<label commandName="TheMeshIsNotManifold" devLabel="The mesh is not manifold" translation="メッシュがマニホルドではありません"/>
+	<label commandName="ThickenFailed1" devLabel="Thicken operation can be applied only on manifold surfaces" translation="厚さ設定の操作は、マニホールド サーフェスにのみ適用できます"/>
+	<label commandName="ThickenFailed2" devLabel="Thicken operation can be applied only on manifold surfaces" translation="厚さ設定の操作は、マニホールド サーフェスにのみ適用できます"/>
+	<label commandName="ThickenFeatureName" devLabel="Thicken" translation="厚み"/>
+	<label commandName="Thread for Hole" devLabel="No possible thread faces found." translation="有効なねじ面が見つかりません。"/>
+	<label commandName="ThreadFeatureName" devLabel="Thread" translation="ねじ"/>
+	<label commandName="ThreadProfileAcmeST" devLabel="ACME Screw Threads" translation="アクメねじ"/>
+	<label commandName="ThreadProfileAfbmaLocknuts" devLabel="AFBMA Standard Locknuts" translation="AFBMA 規格止めナット"/>
+	<label commandName="ThreadProfileAnsiMetricM" devLabel="ANSI Metric M Profile" translation="ANSI メートル M プロファイル"/>
+	<label commandName="ThreadProfileAnsiUnifiedST" devLabel="ANSI Unified Screw Threads" translation="ANSI ユニファイねじ"/>
+	<label commandName="ThreadProfileBSPTaperInternal" devLabel="BSP Taper Internal" translation="BSP テーパめねじ"/>
+	<label commandName="ThreadProfileBspPT" devLabel="BSP Pipe Threads" translation="BSP 管用ねじ"/>
+	<label commandName="ThreadProfileDINPipeTaperInternal" devLabel="DIN Pipe Taper Internal" translation="DIN 管用テーパめねじ"/>
+	<label commandName="ThreadProfileDinPT" devLabel="DIN Pipe Threads" translation="DIN 管用ねじ"/>
+	<label commandName="ThreadProfileGbMetric" devLabel="GB Metric Profile" translation="GB メートル プロファイル"/>
+	<label commandName="ThreadProfileGbNoSealPT" devLabel="GB Pipe Threads" translation="GB 管用ねじ"/>
+	<label commandName="ThreadProfileGostST" devLabel="GOST Self-tapping Screw Thread" translation="GOST セルフタッピンねじ"/>
+	<label commandName="ThreadProfileISOTaperInternal" devLabel="ISO Taper Internal" translation="ISO テーパめねじ"/>
+	<label commandName="ThreadProfileInchTT" devLabel="Inch Tapping Threads" translation="タッピングねじ(インチ)"/>
+	<label commandName="ThreadProfileIsoMetric" devLabel="ISO Metric profile" translation="ISO メートル プロファイル"/>
+	<label commandName="ThreadProfileIsoMetricTT" devLabel="ISO Metric Trapezoidal Threads" translation="ISO メートル台形ねじ"/>
+	<label commandName="ThreadProfileIsoPT" devLabel="ISO Pipe Threads" translation="ISO 管用ねじ"/>
+	<label commandName="ThreadProfileJISTaperInternal" devLabel="JIS Taper Internal" translation="JIS テーパめねじ"/>
+	<label commandName="ThreadProfileJisPT" devLabel="JIS Pipe Threads" translation="JIS 管用ねじ"/>
+	<label commandName="ThreadProfileMetricFormingST" devLabel="Metric Forming Screw Threads" translation="メートル フォーミングねじ"/>
+	<label commandName="ThreadProfileNPT" devLabel="NPT" translation="NPT"/>
+	<label commandName="ThreadProfileNPTforPVCPipeAndFitting" devLabel="NPT for PVC Pipe and Fitting" translation="NPT 塩ビ管用および塩ビ継手用"/>
+	<label commandName="ToolBodyCreationFailError" devLabel="Tool body creation failed" translation="ツール ボディの作成に失敗しました"/>
+	<label commandName="ToolBodyStitchFailError" devLabel="Unable to stitch the bodies." translation="ボディをステッチできません。"/>
+	<label commandName="ToolCreationFailure" devLabel="Cutting Tool does not generate successfully!" translation="カット ツールが正常に生成されませんでした。"/>
+	<label commandName="Tool_Body_Compute_Failure" devLabel="Tool Body Error" translation="ツール ボディのエラー"/>
+	<label commandName="TriangulateToolTip" devLabel="Convert polygon facets in the imported mesh to triangles. Only applicable in Mesh Preview." translation="インポートされたメッシュ内のポリゴン ファセットを三角形に変換します。メッシュのプレビューにのみ適用されます。"/>
+	<label commandName="TriangulateUserName" devLabel="Triangulate mesh polygons" translation="メッシュのポリゴンを三角形分割"/>
+	<label commandName="UNFOLD_COLLISION" devLabel="Collisions found while unfolding, cannot unfold." translation="展開中に衝突が見つかりました。展開できません。"/>
+	<label commandName="UNFOLD_ERROR" devLabel="Unfolding failed." translation="展開に失敗しました。"/>
+	<label commandName="UNFOLD_FEATURE_BENDFACE_REF_LOST" devLabel="Bend face is not available." translation="曲げ面は使用できません。"/>
+	<label commandName="UNFOLD_FEATURE_NO_STATIONARY_FACE" devLabel="Stationary face not available." translation="固定面は使用できません。"/>
+	<label commandName="UNFOLD_NO_BENDS_FOR_STATIONARAY" devLabel="The selected stationary entity is not connected to any bends. Please select a different stationary entity." translation="選択した固定エンティティはいずれの曲げにも接続されていません。別の固定エンティティを選択してください。"/>
+	<label commandName="UnCreaseVerticesFailed" devLabel="Failed to uncrease the given vertices." translation="指定した頂点の折り目解除に失敗しました。"/>
+	<label commandName="UnWeldFailed" devLabel="UnWeld failed with given input" translation="指定した入力で溶接解除に失敗しました"/>
+	<label commandName="UnableToPromoteMeshToDesign" devLabel="Unable to promote mesh to design workspace, since the component data is unavailable." translation="コンポーネントのデータを使用できないため、デザイン作業スペースにメッシュをプロモートすることができません。"/>
+	<label commandName="UncreaseEdgeFailed" devLabel="Failed to uncrease the given edges." translation="指定のエッジの折り目解除に失敗しました。"/>
+	<label commandName="Unfold" devLabel="No target component." translation="ターゲット コンポーネントがありません。"/>
+	<label commandName="UnitGeneralUnitsToolTip" devLabel="Default unit system for new design" translation="新規デザインの既定の単位系"/>
+	<label commandName="UnitGeneralUnitsUserName" devLabel="Default units for new design" translation="新規デザインの既定の単位"/>
+	<label commandName="UnsavedDocumentLabel" devLabel="(Unsaved)" translation="(未保存)"/>
+	<label commandName="UpdatePCBPackageFailure" devLabel="Failed to update PCB Component package" translation="PCB コンポーネント パッケージの更新に失敗しました"/>
+	<label commandName="UserParameter" devLabel="User Parameter" translation="ユーザ パラメータ"/>
+	<label commandName="UserPropertyOnComponent__Description" devLabel="Description" translation="説明"/>
+	<label commandName="UserPropertyOnComponent__ITEM_ID" devLabel="Item" translation="項目"/>
+	<label commandName="UserPropertyOnComponent__MATERIAL" devLabel="Material" translation="マテリアル"/>
+	<label commandName="UserPropertyOnComponent__Mass" devLabel="Mass" translation="質量"/>
+	<label commandName="UserPropertyOnComponent__Part Name" devLabel="Part Name" translation="パーツ名"/>
+	<label commandName="UserPropertyOnComponent__Part Number" devLabel="Part Number" translation="パーツ番号"/>
+	<label commandName="UserPropertyOnComponent__QTY" devLabel="Qty" translation="数量"/>
+	<label commandName="VERTEX_REFERENCE_LOST" devLabel="The vertex reference is lost, try editing this feature to reselect the lost vertex." translation="頂点の参照が失われています。このフィーチャを編集して、失われた頂点を再選択してください。"/>
+	<label commandName="VisualAnalysesSelectionId" devLabel="VisualAnalyses" translation="視覚的な解析"/>
+	<label commandName="VisualAnalysisSelectionId" devLabel="VisualAnalysis" translation="VisualAnalysis"/>
+	<label commandName="WMFailedToRemoveWorkingModel" devLabel="Failed to remove Working Model(s)." translation="作業モデルの削除に失敗しました。"/>
+	<label commandName="WMLightWeightBaseAssetLoadFailed" devLabel="Failure loading Base Asset during Lightweight Working Model update operation." translation="軽量化作業モデルの更新操作中にベース アセットのロードに失敗しました。"/>
+	<label commandName="WMLightWeightInvalidAsset" devLabel="Context asset is not working model asset during Lightweight Working Model update operation." translation="軽量化作業モデルの更新操作中に、コンテキスト アセットが作業モデル アセットではありません。"/>
+	<label commandName="WMLightWeightInvalidBaseAsset" devLabel="Base Asset not found during Lightweight Working Model update operation." translation="軽量化作業モデルの更新操作中にベース アセットが見つかりません。"/>
+	<label commandName="WMLightWeightNULLWorkingComponent" devLabel="Working component is null during Working Model Light weight update operation." translation="作業モデル軽量の更新操作中の作業コンポーネントが null です。"/>
+	<label commandName="WMNoWorkingModelIsSelected" devLabel="No Working Model is selected." translation="作業モデルが選択されていません。"/>
+	<label commandName="WMNotAWorkingModel" devLabel="Input asset is not a Working Model Asset." translation="入力アセットが作業モデル アセットではありません。"/>
+	<label commandName="WMPlaceholderEntityCreateFailed" devLabel="Failed to create PlaceholderEntity for WorkingModel." translation="作業モデル用のプレースホルダエンティティの作成に失敗しました。"/>
+	<label commandName="WMPlaceholderEntityGetFailed" devLabel="Failed to get PlaceholderEntity for WorkingModel." translation="作業モデル用のプレースホルダエンティティの取得に失敗しました。"/>
+	<label commandName="WMUpdateInvalidAsset" devLabel="Source asset is found but is not working model asset during Working Model update operation." translation="作業モデルの更新操作中にソース アセットは見つかりましたが、作業モデル アセットが見つかりません。"/>
+	<label commandName="WMUpdateNULLAsset" devLabel="Input WM asset is null during Working Model update operation." translation="作業モデルの更新操作中の入力 WM アセットが null です。"/>
+	<label commandName="WMUpdateNULLDocument" devLabel="Document is missing during Working Model update operation." translation="作業モデルの更新操作中に、ドキュメントが見つかりません。"/>
+	<label commandName="WMUpdateNULLWorkingComponent" devLabel="Working component is null during Working Model update operation." translation="作業モデルの更新操作中の作業コンポーネントが null です。"/>
+	<label commandName="WMWorkingModelIsActive" devLabel="Not possible to delete active Working Model." translation="アクティブな作業モデルを削除することはできません。"/>
+	<label commandName="WORK_AXIS_MISSING_INPUTS" devLabel="Missing inputs" translation="入力が見つかりません"/>
+	<label commandName="WORK_PLANE_INVALID_REFERENCE_PLANE" devLabel="Invalid reference plane" translation="無効な基準平面"/>
+	<label commandName="WORK_PLANE_MISSING_INPUTS" devLabel="Missing inputs" translation="入力が見つかりません"/>
+	<label commandName="WORK_POINT_EXPECTING_FACE_OR_EDGE" devLabel="Invalid center, expecting face or edge" translation="無効な中心です。面かエッジを要求しています"/>
+	<label commandName="WORK_POINT_MISSING_INPUTS" devLabel="Missing inputs" translation="入力が見つかりません"/>
+	<label commandName="WRONG RIB SKETCH" devLabel="The curve you are selecting does not intersect a solid body. Select another curve." translation="選択している曲線はソリッド ボディと交差しません。別の曲線を選択してください。"/>
+	<label commandName="WebComputeError" devLabel="Fail to compute web profile!" translation="ウェブ プロファイルの計算に失敗しました。"/>
+	<label commandName="WebFeatureName" devLabel="Web" translation="ウェブ"/>
+	<label commandName="WeldFailed" devLabel="Weld failed" translation="溶接に失敗しました"/>
+	<label commandName="WorkAxisFromLocationAndVectorRequestGenericError" devLabel="Work Axis failed due to invalid input" translation="無効な入力のため作業軸の作成に失敗しました"/>
+	<label commandName="WorkAxisFromTwoPlanesRequestParallelPlanesError" devLabel="Work Axis From Two Planes failed: input planes do not intersect" translation="2 つの平面から作業軸を作成するのに失敗しました: 入力した平面は交差していません"/>
+	<label commandName="WorkGeomRecontructor_NoValidParent" devLabel="Cannot find a valid root component" translation="有効なルート コンポーネントが見つかりません"/>
+	<label commandName="WorkPlaneFromLocationAndVectorRequestGenericError" devLabel="Work Plane failed due to invalid input" translation="入力が無効であるため、作業平面の作成に失敗しました"/>
+	<label commandName="WorkPlaneFromTwoLinesRequestLinesNotParallelOrIntersectError" devLabel="Work Plane From Two Lines failed:  Input lines must intersect or be parallel" translation="2 つの線分から作業平面を作成するのに失敗しました: 入力した線分は交差しているか平行である必要があります"/>
+	<label commandName="WorkPlaneTangentByRefPlaneInvalidRefPlnError" devLabel="Invalid reference plane" translation="無効な基準平面"/>
+	<label commandName="WorkPlaneTangentByRefPlaneInvalidTargetError" devLabel="Invalid target face" translation="無効なターゲット面"/>
+	<label commandName="WorkPlaneTangentByRefPlaneRefPlaneLostError" devLabel="Reference plane lost" translation="基準平面が失われています"/>
+	<label commandName="WorkPlaneTangentByRefPlaneRequestGenericError" devLabel="Tangent Work Plane failed due to invalid input" translation="入力が無効であるため、曲面に接する作業平面の作成に失敗しました"/>
+	<label commandName="WorkPlaneTangentByRefPlaneTargetLostError" devLabel="Target cylindrical/conical face lost" translation="ターゲット円柱面または円錐面が失われています"/>
+	<label commandName="WorkPlaneTangentToCylinderRequestGenericError" devLabel="Tangent Work Plane failed due to invalid input" translation="入力が無効であるため、曲面に接する作業平面の作成に失敗しました"/>
+	<label commandName="WorkPointFromLineAndPlaneRequestLineAndFaceInvalidInputError" devLabel="Work Point From Line and Plane failed due to invalid input" translation="入力が無効であるため、線分と平面からの作業点の作成に失敗しました"/>
+	<label commandName="WorkPointFromLineAndPlaneRequestLineAndFaceParallelError" devLabel="Work Point From Line and Plane failed: Selected Face and Line are parallel" translation="線分と平面から作業点を作成するのに失敗しました: 選択した面と線分が平行です"/>
+	<label commandName="WorkPointFromSphereRequestGenericError" devLabel="Cannot create point" translation="点を作成できません"/>
+	<label commandName="WorkPointFromThreePlanesParallelPlanesError" devLabel="Work Point From Three Planes failed: input planes do not intersect" translation="3 平面からの作業点の作成に失敗しました: 入力した平面が交差していません"/>
+	<label commandName="WorkPointFromTwoLinesError" devLabel="Work Point From Two Lines failed: lines do not intersect" translation="2 本の線分から作業点を作成するのに失敗しました: 線分が交差していません"/>
+	<label commandName="WorkingComponent" devLabel="Fusion Working Model" translation="Fusion 作業中モデル"/>
+	<label commandName="WorkingModel" devLabel="WorkingModel" translation="作業モデル"/>
+	<label commandName="WorkingModelBaseComponentInvalid" devLabel="Base component of cloning operation failed sanity check. Not a Fusion component" translation="クローン操作の基準コンポーネントの整合性チェックに失敗しました。Fusion コンポーネントではありません。"/>
+	<label commandName="WorkingModelCloneFeatureFailure" devLabel="Target component is missing!" translation="ターゲット コンポーネントが見つかりません。"/>
+	<label commandName="WorkingModelCloneFeatureFailure1" devLabel="Error Creating Working Model Clone feature!" translation="作業モデルのクローン フィーチャの作成中にエラーが発生しました。"/>
+	<label commandName="WorkingModelCopyFailed" devLabel="An error occurred during Working Model copy operation." translation="作業モデルのコピー操作中にエラーが発生しました。"/>
+	<label commandName="WorkingModelDocumentInavlid" devLabel="Not a valid document" translation="ドキュメントが有効ではありません"/>
+	<label commandName="WorkingModelInvalidAssetSubtype" devLabel="Asset Subtype provided is not registered with Asset Subtype Mgr." translation="提供されたアセット サブタイプがアセット サブタイプ マネージャに登録されていません。"/>
+	<label commandName="WorkingModelRenameFailed" devLabel="An error occurred during Working Model rename operation." translation="作業モデルの名前の変更操作中にエラーが発生しました。"/>
+	<label commandName="WorkingModelSelectionId" devLabel="Flat Pattern" translation="フラット パターン"/>
+	<label commandName="WorkingModelSourceComponentInvalid3" devLabel="Unknown internal type of working model requested!" translation="要求された作業モデルの内部タイプが不明です。"/>
+	<label commandName="WorkingModelTargetAssetInvalid" devLabel="Target asset of cloning operation failed sanity check!" translation="クローン操作のターゲット アセットの整合性チェックに失敗しました。"/>
+	<label commandName="WorkingModelTargetComponentInvalid" devLabel="Target component of cloning operation failed sanity check!" translation="クローン操作のターゲット コンポーネントの整合性チェックに失敗しました!"/>
+	<label commandName="WrongDocumentEnv" devLabel="Wrong Document Environment!" translation="正しくないドキュメント環境です。"/>
+	<label commandName="WrongDownloadPath" devLabel="Downloaded path %1% is not proper" translation="ダウンロード パス %1% は、適切ではありません"/>
+	<label commandName="WrongDownloadPath2" devLabel="Downloaded path %1% is not proper" translation="ダウンロード パス %1% は、適切ではありません"/>
+	<label commandName="WrongDownloadPath3" devLabel="Downloaded path %1% is not proper" translation="ダウンロード パス %1% は、適切ではありません"/>
+	<label commandName="XRefDesignMissing" devLabel="Some indirect referenced design cannot be found!" translation="一部の間接的に参照されているデザインが見つかりません。"/>
+	<label commandName="XRefDifferentVersionAlreadyExists" devLabel="A different version of the referenced document already exists. Please update that to latest version first." translation="参照先のドキュメントの異なるバージョンが既に存在します。最初に最新バージョンに更新してください。"/>
+	<label commandName="XRefDifferentVersionAlreadyExistsInPaste" devLabel="A different version of the referenced document already exists. We'll use this version for paste." translation="参照先のドキュメントの異なるバージョンが既に存在します。このバージョンを貼り付けに使用します。"/>
+	<label commandName="XRefDifferentVersionAlreadyExistsSameWillBeInserted" devLabel="The active document is already referencing a different version of the document %1%. The same version will be inserted again." translation="アクティブなドキュメントは、既にドキュメント %1% の異なるバージョンを参照しています。同じバージョンが再び挿入されます。"/>
+	<label commandName="XRefLoadGroupToolTip" devLabel="Load Packages as XRef by XRef Load group" translation="外部参照ロード グループごとに外部参照としてパッケージをロード"/>
+	<label commandName="XRefLoadGroupUserName" devLabel="XRef Load Groups" translation="外部参照ロード グループ"/>
+	<label commandName="XRefTargetComponentMissing" devLabel="The referenced design cannot be found!" translation="参照先のデザインが見つかりません。"/>
+	<label commandName="ZERO_DISTANCE_ERROR" devLabel="Zero distance" translation="距離ゼロ"/>
+	<label commandName="ZebraAnalysisDefaultUserName" devLabel="Zebra" translation="ゼブラ"/>
+	<label commandName="_isLatestVersion" devLabel="An unexpected error occurred while calling isLatestVersion." translation="isLatestVersion の呼び出し中に予期しないエラーが発生しました。"/>
+	<label commandName="applyToselection" devLabel="Apply to selection" translation="選択に適用"/>
+	<label commandName="bendConditions" devLabel="Bend Conditions" translation="曲げ条件"/>
+	<label commandName="bendRadius" devLabel="Bend radius" translation="曲げ半径"/>
+	<label commandName="bendTransition" devLabel="Bend transition" translation="曲げ遷移"/>
+	<label commandName="clearSysmetryFailed" devLabel="Failed in clearing symmetry" translation="対称のクリアに失敗しました"/>
+	<label commandName="cloningNotSupportedForIntersectingEdgesMatrix3dId" devLabel="Cloning not supported for IntersectingEdgesMatrix3dId" translation="IntersectingEdgesMatrix3dId ではクローン作成はサポートされません"/>
+	<label commandName="cloningNotSupportedForMidPlaneMatrix3dId" devLabel="Cloning not supported for MidPlaneMatrix3dId" translation="MidPlaneMatrix3dId では、クローン化はサポートされていません"/>
+	<label commandName="cornerConditions" devLabel="Corner Conditions" translation="コーナー条件"/>
+	<label commandName="createDesignRulesHeaderToolTip" devLabel="Create or edit sheet metal rules in this design" translation="このデザインでシート メタル規則を作成または編集する"/>
+	<label commandName="createLibraryRulesHeaderToolTip" devLabel="Create or edit sheet metal rules in the cloud library" translation="クラウド ライブラリでシート メタル規則を作成または編集する"/>
+	<label commandName="createPoint3dBetweenFacesFailed" devLabel="Creation of point between faces failed." translation="面間で点を作成するのに失敗しました。"/>
+	<label commandName="createPoint3dCenterIdFailed" devLabel="Creation of point at geometry center failed." translation="ジオメトリの中心点の作成に失敗しました。"/>
+	<label commandName="createPoint3dOnConeAxisIdFailed" devLabel="Creation of point on cone edge failed." translation="円錐のエッジ上の点の作成に失敗しました。"/>
+	<label commandName="createPoint3dOnLinearEdgeIdFailed" devLabel="Creation of point on linear edge failed." translation="直線状エッジ上の点の作成に失敗しました。"/>
+	<label commandName="createPoint3dOnPoint3dOnPlaneUVIdFailed" devLabel="Creation of point on plane failed." translation="平面上で点を作成するのに失敗しました。"/>
+	<label commandName="createPoint3dRefPointIdFailed" devLabel="Creation of point on plane failed." translation="平面上で点を作成するのに失敗しました。"/>
+	<label commandName="createPointBetweenEdgesFailed" devLabel="Creation of point between edges failed." translation="エッジ間の点の作成に失敗しました。"/>
+	<label commandName="createVector3dIdFailed" devLabel="Creation of vector from geometry failed." translation="ジオメトリからのベクトルの作成に失敗しました。"/>
+	<label commandName="createVector3dOrthoIdFailed" devLabel="Creation of ortho vector failed." translation="正投影ベクトルの作成に失敗しました。"/>
+	<label commandName="designRulesHeaderToolTip" devLabel="Select a sheet metal rule already in use in this design" translation="このデザインで既に使用されているシート メタル規則を選択する"/>
+	<label commandName="differentEntityTypeRelinked" devLabel="Constraints and dimensions applied on target geometry are removed due to different geometry types in relinking." translation="再リンクのジオメトリ タイプが異なるため、ターゲット ジオメトリに適用されている拘束と寸法は削除されます。"/>
+	<label commandName="duplicateAndEdit" devLabel="Duplicate and edit rule" translation="ルールの複製と編集"/>
+	<label commandName="editRule" devLabel="Edit Rule" translation="ルールを編集"/>
+	<label commandName="extendBooleanFail" devLabel="Extent boolean fail. The termination entity might be not fully intersected with the tool body built along the operation direction" translation="範囲のブール演算に失敗しました。終端エンティティが操作の方向に沿って構築されたツール ボディと完全に交差していない可能性があります"/>
+	<label commandName="failToProjectProfileToRemoteSurface" devLabel="Fail to project profile to remote surface" translation="リモート サーフェスへのプロファイルの投影に失敗しました"/>
+	<label commandName="failToProjectSomeProfileToRemoteSurface" devLabel="Fail to project some profile(s) to remote surface" translation="リモート サーフェスへのいくつかのプロファイルの投影に失敗しました"/>
+	<label commandName="failTofindToNextTarget" devLabel="Fail to find To-Next target body along the operation direction in the active component" translation="アクティブなコンポーネントの操作方向に沿った[次へ]のターゲット ボディが見つかりません"/>
+	<label commandName="flatPatternBendAngle" devLabel="flat pattern bend angle" translation="フラット パターン曲げ角度"/>
+	<label commandName="imprintExternalLoop" devLabel="Failed to imprint external loop" translation="外部ループのインプリントに失敗しました"/>
+	<label commandName="imprintInternalLoop" devLabel="Failed to imprint internal loop" translation="内部ループのインプリントに失敗しました"/>
+	<label commandName="inThisDesign" devLabel="In this design" translation="このデザイン内"/>
+	<label commandName="initMatrix3dIdFailed" devLabel="Creation origin geometry failed." translation="原点のジオメトリの作成に失敗しました。"/>
+	<label commandName="invalidSurface" devLabel="T-Spline surface is invalid." translation="T スプライン サーフェスが無効です。"/>
+	<label commandName="jointIdMissingJointOrigins" devLabel="Update of joint geometry failed due to missing Joint Origin information." translation="ジョイントの原点の情報がないため、ジョイント ジオメトリの更新に失敗しました。"/>
+	<label commandName="kFactor" devLabel="K Factor" translation="K 係数"/>
+	<label commandName="lclzBooleanFailure" devLabel="Failed to Boolean bodies together" translation="複数ボディのブール演算に失敗しました"/>
+	<label commandName="lclzFailedToRevolveSE" devLabel="Failed to revolve the selected entities" translation="選択したエンティティの回転に失敗しました"/>
+	<label commandName="lclzInvalidSelection" devLabel="Invalid selection." translation="選択が無効です。"/>
+	<label commandName="lclzManualAbort" devLabel="Operation aborted by user manually" translation="ユーザにより手動で操作が中断されました"/>
+	<label commandName="lclzTEFOSMBETOAMOTOS" devLabel="The edges from one side must be equal to or a multiple of the other side." translation="一方の側のエッジ数は、反対側と同じか倍数の数が必要です。"/>
+	<label commandName="lclzUTBPTNP" devLabel="Unable to bridge periodic to non-periodic." translation="周期的から非周期的にブリッジできません。"/>
+	<label commandName="lclzUTDFSB" devLabel="Unable to determine face selection border." translation="面選択枠を特定できません。"/>
+	<label commandName="library" devLabel="Library" translation="ライブラリ"/>
+	<label commandName="libraryRulesHeaderToolTip" devLabel="Select a sheet metal rule from the cloud library" translation="クラウド ライブラリからシート メタル規則を選択する"/>
+	<label commandName="m_dThicknessError_NoSource" devLabel="Source bodies lost!" translation="ソース ボディが失われました。"/>
+	<label commandName="makeExtentSheet" devLabel="Failed to create extended sheet" translation="拡張シートの作成に失敗しました"/>
+	<label commandName="makeUniformFailed" devLabel="Make Uniform failed with given input" translation="指定した入力で均一化に失敗しました"/>
+	<label commandName="miter" devLabel="Miter/rip/seam gap" translation="マイタ/裂け目/継ぎ目のギャップ"/>
+	<label commandName="modeling-featurepack-desc" devLabel="This section controls optional capabilities within the Modeling workspaces." translation="このセクションでは、[モデリング]作業スペース内のオプションの機能をコントロールします。"/>
+	<label commandName="modeling-featurepack-title" devLabel="Modeling" translation="モデリング"/>
+	<label commandName="mt-compute-title" devLabel="Enable Multi-threaded component compute" translation="マルチスレッド コンポーネント計算を有効化"/>
+	<label commandName="newRule" devLabel="New Rule" translation="新しいルール"/>
+	<label commandName="nonExtractable" devLabel="T-Spline topology problem.  Use Modify - Utilities - Repair Body to remove error." translation="T スプラインのトポロジに問題があります。エラーを解消するには、[修正] &gt; [ユーティリティ] &gt; [ボディを修復]を使用します。"/>
+	<label commandName="patternInstances" devLabel="Too many pattern instances. Consider using Optimized/Identical compute option." translation="パターン インスタンスの数が多すぎます。[最適化]または[同一]計算オプションの使用を検討してください。"/>
+	<label commandName="physicalMaterial" devLabel="Physical material" translation="物理マテリアル"/>
+	<label commandName="reliefDepth" devLabel="Relief depth" translation="レリーフの深さ"/>
+	<label commandName="reliefPlacement" devLabel="Relief placement" translation="レリーフの配置"/>
+	<label commandName="reliefRemnant" devLabel="Relief remnant" translation="レリーフ レムナント"/>
+	<label commandName="reliefShape" devLabel="Relief shape" translation="レリーフの形状"/>
+	<label commandName="reliefShapeRound" devLabel="Round" translation="円形"/>
+	<label commandName="reliefShapeStraight" devLabel="Straight" translation="直線"/>
+	<label commandName="reliefShapeTear" devLabel="Tear" translation="ティア"/>
+	<label commandName="reliefSize" devLabel="Relief size" translation="レリーフ サイズ"/>
+	<label commandName="reliefWidth" devLabel="Relief width" translation="レリーフの幅"/>
+	<label commandName="reportBendAngle" devLabel="Report bend angle" translation="曲げ角度をレポート"/>
+	<label commandName="saveRule" devLabel="Save Rule" translation="ルールを保存"/>
+	<label commandName="setAsDefault" devLabel="Set as Default" translation="既定として設定"/>
+	<label commandName="sketchdisplay-by-constraint-desc" devLabel="Need a description for this" translation="説明が必要"/>
+	<label commandName="sketchdisplay-by-constraint-title" devLabel="Sketch Display by Constraint" translation="拘束ごとのスケッチ表示"/>
+	<label commandName="solveNewJointInconsistent" devLabel="Selected joint type will result in conflict" translation="選択したジョイント タイプでは競合が発生します"/>
+	<label commandName="thickness" devLabel="Thickness" translation="厚さ"/>
+	<label commandName="unfoldMethod" devLabel="Unfold method" translation="展開方法"/>
+	<label commandName="updateJointId" devLabel="Update of joint geometry failed." translation="ジョイント ジオメトリの更新に失敗しました。"/>
+	<label commandName="upgradeSurfaceVersionFailed" devLabel="Surface version upgrade failed" translation="サーフェスのバージョンのアップグレードに失敗しました"/>
+</Resource>

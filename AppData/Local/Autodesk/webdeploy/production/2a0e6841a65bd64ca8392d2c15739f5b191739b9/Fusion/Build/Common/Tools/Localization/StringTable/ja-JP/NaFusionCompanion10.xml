@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="CFDImportSatToMat" devLabel="CFD ImportSatToMat" translation="CFD ImportSatToMat"/>
+	<label commandName="CFDLoadLibrary" devLabel="Load CFD Library" translation="CFD ライブラリをロード"/>
+	<label commandName="GetProcAddressCFDProdInfo" devLabel="Unable to Set Fusion Product Information" translation="Fusion の製品情報を設定できません"/>
+	<label commandName="GetProcAddressMoldflowProdInfo" devLabel="Unable to Set Fusion Product Information" translation="Fusion の製品情報を設定できません"/>
+	<label commandName="MoldflowLoadLibrary" devLabel="Load Moldflow Library" translation="Moldflow ライブラリをロード"/>
+	<label commandName="PushFusionToCFD" devLabel="Unable to push data from Fusion 360 to CFD." translation="Fusion 360 から CFD にデータをプッシュできません。"/>
+	<label commandName="PushFusionToCFDBusy" devLabel="Unable to push data from Fusion 360 to CFD. CFD application may be busy" translation="Fusion 360 から CFD にデータをプッシュできません。CFD アプリケーションがビジー状態である可能性があります"/>
+	<label commandName="PushFusionToCFDMat" devLabel="Unable to push data from Fusion 360 to CFD." translation="Fusion 360 から CFD にデータをプッシュできません。"/>
+	<label commandName="PushFusionToCFDPlugin" devLabel="Unable to communicate with Fusion 360 to CFD plugin." translation="Fusion 360 と CFD プラグインが通信できません。"/>
+	<label commandName="PushFusionToMoldflow" devLabel="Unable to push data from Fusion 360 to Moldflow." translation="Fusion 360 から Moldflow にデータをプッシュできません。"/>
+	<label commandName="PushFusionToMoldflowBusy" devLabel="Unable to push data from Fusion 360 to Moldflow. Moldflow application may be busy" translation="Fusion 360 から Moldflow にデータをプッシュできません。Moldflow アプリケーションがビジー状態である可能性があります"/>
+	<label commandName="PushFusionToMoldflowPlugin" devLabel="Unable to communicate with Fusion 360 to Moldflow plugin." translation="Fusion 360 と Moldflow プラグインが通信できません。"/>
+	<label commandName="PushFusionToMoldflowSetPath" devLabel="Unable to push data from Fusion 360 to Moldflow." translation="Fusion 360 から Moldflow にデータをプッシュできません。"/>
+	<label commandName="WinAPIFailed" devLabel="Windows API %s failed with error %d: %s" translation="Windows API %s はエラー %d で失敗しました: %s"/>
+</Resource>

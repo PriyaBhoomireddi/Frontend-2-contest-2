@@ -1,0 +1,17 @@
+{
+	"typeid": "Fusion:PartData-1.0.0",
+	"inherits": ["NamedProperty"],
+	"annotation": { "description": "Part (Component) Data" },
+	"properties": [
+		{ "id": "partNumber", "typeid": "String" },
+		{ "id": "partName", "typeid": "String" },
+		{ "id": "quantity", "typeid": "Uint32", "value": 1 },
+		{ "id": "description", "typeid": "String" },
+		{ "id": "physicalMaterial", "typeid": "String" },
+		{ "id": "mass", "typeid": "Float64" },
+		{ "id": "area", "typeid": "Float64" },
+		{ "id": "volume", "typeid": "Float64" },
+		{ "id": "cost", "typeid": "Float64" },
+		{ "id": "vendor", "typeid": "String" }
+	]
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+  <CommandDefinition Id="InspectFor3DPrintCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzInspectFor3DPrintDesc1" _LCLZText="Inspects a mesh for issues related to printability."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  
+  <CommandDefinition Id="PrintSetupCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzPrintSetupCmdDesc1" _LCLZText="Set up a 3D Print Job."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+</CommandDefinitions>

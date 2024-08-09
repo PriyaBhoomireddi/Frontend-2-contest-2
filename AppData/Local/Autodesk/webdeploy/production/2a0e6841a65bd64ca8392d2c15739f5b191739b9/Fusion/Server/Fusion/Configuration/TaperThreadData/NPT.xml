@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ThreadType>
+	<Name>NPT</Name>
+	<CustomName>NPT</CustomName>
+	<Unit>in</Unit>
+	<SortOrder>8</SortOrder>
+	<ThreadSize>
+		<Size>1/16</Size>
+		<Designation>
+			<ThreadDesignation>1/16 - 27 NPT</ThreadDesignation>
+			<CTD>1/16 - 27 NPT</CTD>
+			<Pitch>0.037037037</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>0.234</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>0.2711</UTL>
+				<WMInternalDia>0.26424</WMInternalDia>
+				<HeightOfThread>0.02963</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>1/8</Size>
+		<Designation>
+			<ThreadDesignation>1/8 - 27 NPT</ThreadDesignation>
+			<CTD>1/8 - 27 NPT</CTD>
+			<Pitch>0.037037037</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>0.313</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>0.2726</UTL>
+				<WMInternalDia>0.35656</WMInternalDia>
+				<HeightOfThread>0.02963</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>1/4</Size>
+		<Designation>
+			<ThreadDesignation>1/4 - 18 NPT</ThreadDesignation>
+			<CTD>1/4 - 18 NPT</CTD>
+			<Pitch>0.055555556</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>0.422</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>0.3945</UTL>
+				<WMInternalDia>0.46697</WMInternalDia>
+				<HeightOfThread>0.04444</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>3/8</Size>
+		<Designation>
+			<ThreadDesignation>3/8 - 18 NPT</ThreadDesignation>
+			<CTD>3/8 - 18 NPT</CTD>
+			<Pitch>0.055555556</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>0.5468</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>0.4067</UTL>
+				<WMInternalDia>0.6016</WMInternalDia>
+				<HeightOfThread>0.04444</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>1/2</Size>
+		<Designation>
+			<ThreadDesignation>1/2 - 14 NPT</ThreadDesignation>
+			<CTD>1/2 - 14 NPT</CTD>
+			<Pitch>0.071428571</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>0.688</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>0.5343</UTL>
+				<WMInternalDia>0.74504</WMInternalDia>
+				<HeightOfThread>0.05714</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>3/4</Size>
+		<Designation>
+			<ThreadDesignation>3/4 - 14 NPT</ThreadDesignation>
+			<CTD>3/4 - 14 NPT</CTD>
+			<Pitch>0.071428571</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>0.891</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>0.5533</UTL>
+				<WMInternalDia>0.95429</WMInternalDia>
+				<HeightOfThread>0.05714</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>1</Size>
+		<Designation>
+			<ThreadDesignation>1 - 11.5 NPT</ThreadDesignation>
+			<CTD>1 - 11.5 NPT</CTD>
+			<Pitch>0.086956522</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>1.125</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>0.6609</UTL>
+				<WMInternalDia>1.19733</WMInternalDia>
+				<HeightOfThread>0.06957</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>1 1/4</Size>
+		<Designation>
+			<ThreadDesignation>1 1/4 - 11.5 NPT</ThreadDesignation>
+			<CTD>1 1/4 - 11.5 NPT</CTD>
+			<Pitch>0.086956522</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>1.469</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>0.6809</UTL>
+				<WMInternalDia>1.54083</WMInternalDia>
+				<HeightOfThread>0.06957</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>1 1/2</Size>
+		<Designation>
+			<ThreadDesignation>1 1/2 - 11.5 NPT</ThreadDesignation>
+			<CTD>1 1/2 - 11.5 NPT</CTD>
+			<Pitch>0.086956522</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>1.703</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>0.6809</UTL>
+				<WMInternalDia>1.77978</WMInternalDia>
+				<HeightOfThread>0.06957</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>2</Size>
+		<Designation>
+			<ThreadDesignation>2 - 11.5 NPT</ThreadDesignation>
+			<CTD>2 - 11.5 NPT</CTD>
+			<Pitch>0.086956522</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>2.172</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>0.6969</UTL>
+				<WMInternalDia>2.25272</WMInternalDia>
+				<HeightOfThread>0.06957</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>2 1/2</Size>
+		<Designation>
+			<ThreadDesignation>2 1/2 - 8 NPT</ThreadDesignation>
+			<CTD>2 1/2 - 8 NPT</CTD>
+			<Pitch>0.125</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>2.578</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>0.932</UTL>
+				<WMInternalDia>2.70391</WMInternalDia>
+				<HeightOfThread>0.1</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>3</Size>
+		<Designation>
+			<ThreadDesignation>3 - 8 NPT</ThreadDesignation>
+			<CTD>3 - 8 NPT</CTD>
+			<Pitch>0.125</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>3.25</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>1.016</UTL>
+				<WMInternalDia>3.325</WMInternalDia>
+				<HeightOfThread>0.1</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>3 1/2</Size>
+		<Designation>
+			<ThreadDesignation>3 1/2 - 8 NPT</ThreadDesignation>
+			<CTD>3 1/2 - 8 NPT</CTD>
+			<Pitch>0.125</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>3.75</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>1.071</UTL>
+				<WMInternalDia>3.82188</WMInternalDia>
+				<HeightOfThread>0.1</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>4</Size>
+		<Designation>
+			<ThreadDesignation>4 - 8 NPT</ThreadDesignation>
+			<CTD>4 - 8 NPT</CTD>
+			<Pitch>0.125</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>4.25</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>1.094</UTL>
+				<WMInternalDia>4.31875</WMInternalDia>
+				<HeightOfThread>0.1</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>5</Size>
+		<Designation>
+			<ThreadDesignation>5 - 8 NPT</ThreadDesignation>
+			<CTD>5 - 8 NPT</CTD>
+			<Pitch>0.125</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>5.25</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>1.187</UTL>
+				<WMInternalDia>5.37511</WMInternalDia>
+				<HeightOfThread>0.1</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>6</Size>
+		<Designation>
+			<ThreadDesignation>6 - 8 NPT</ThreadDesignation>
+			<CTD>6 - 8 NPT</CTD>
+			<Pitch>0.125</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>6.375</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>1.208</UTL>
+				<WMInternalDia>6.43047</WMInternalDia>
+				<HeightOfThread>0.1</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>8</Size>
+		<Designation>
+			<ThreadDesignation>8 - 8 NPT</ThreadDesignation>
+			<CTD>8 - 8 NPT</CTD>
+			<Pitch>0.125</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>8.375</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>1.313</UTL>
+				<WMInternalDia>8.41797</WMInternalDia>
+				<HeightOfThread>0.1</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>10</Size>
+		<Designation>
+			<ThreadDesignation>10 - 8 NPT</ThreadDesignation>
+			<CTD>10 - 8 NPT</CTD>
+			<Pitch>0.125</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>10.4375</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>1.46</UTL>
+				<WMInternalDia>10.52969</WMInternalDia>
+				<HeightOfThread>0.1</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+	<ThreadSize>
+		<Size>12</Size>
+		<Designation>
+			<ThreadDesignation>12 - 8 NPT</ThreadDesignation>
+			<CTD>12 - 8 NPT</CTD>
+			<Pitch>0.125</Pitch>
+			<Thread>
+				<Gender>internal</Gender>
+				<TapDrill>12.4375</TapDrill>
+				<TaperAngle>3.5798</TaperAngle>
+				<UTL>1.61</UTL>
+				<WMInternalDia>12.51719</WMInternalDia>
+				<HeightOfThread>0.1</HeightOfThread>
+			</Thread>
+		</Designation>
+	</ThreadSize>
+</ThreadType>

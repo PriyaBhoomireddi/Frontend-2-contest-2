@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbars>
+  <CommandToolbar Id="FlatPatternAssetType">
+
+    <DropDownButton Id="ActivateEnvironmentCommand" ShowText="true" SynchronizedWithCurrentItem="true" />
+
+    <Tab Id="FlatPatternSolidTab"
+         _LCLZId="lclzFlatPatternSolidTab"
+         _LCLZText="FLAT PATTERN SOLID"
+         Panels="SolidCreatePanel;SolidModifyPanel;ConstructionPanel;InspectPanel;InsertPanel;SelectPanel;SheetmetalFlatPatternExportPanel;SheetmetalFlatPatternExitPanel"
+         Environment="FusionSolidEnvironment"
+         ContextualFinishId="FusionSheetMetalExitFlatPatternCmd" />
+    <Tab Id="FlatPatternSurfaceTab"
+         _LCLZId="lclzFlatPatternSurfaceTab"
+         _LCLZText="FLAT PATTERN SURFACE"
+         Panels="SurfaceCreatePanel;SurfaceModifyPanel;SolidUtilityPanel;ConstructionPanel;InspectPanel;InsertPanel;SelectPanel;SheetmetalFlatPatternExportPanel;SheetmetalFlatPatternExitPanel"
+         Environment="FusionSolidEnvironment"
+         ContextualFinishId="FusionSheetMetalExitFlatPatternCmd" />
+    <Tab Id="SketchTab"
+          _LCLZId="lclzSketchTab"
+          _LCLZText="SKETCH"
+          Panels="SketchCreatePanel;SketchModifyPanel;SketchConstraintsPanel;InspectPanel;InsertPanel;SelectPanel;StopSketchPanel"
+          Environment="FusionSolidEnvironment"
+          ContextualFinishId="SketchStop" />    
+
+    <!-- ********************************** -->
+    <!-- ** Create Panel (Design::Solid) ** -->
+    <!-- ********************************** -->
+    <Panel Id="SolidCreatePanel" _LCLZId="lclzCreate" _LCLZText="Create" >
+      <Controls>
+        <Button Id="SketchCreate" />
+        <Button Id="Extrude" />
+        <Button Id="Revolve" />
+        <Button Id="FusionHoleCommand" />
+        <Button Id="PatternRectangular" />
+        <Button Id="TSplineBaseFeatureCreationCommand" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="FusionCreateNewComponentCommand" />
+        <Button Id="SketchCreate" />
+        <Button Id="TSplineBaseFeatureCreationCommand" />
+        <Separator />
+        <Button Id="Extrude" />
+        <Button Id="Revolve" />
+        <Button Id="Sweep" />
+        <Button Id="SolidLoft" />
+        <Button Id="FusionRibCommand" />
+        <Button Id="FusionWebCommand" />
+		<Button Id="EmbossCmd" />
+        <Separator />
+        <Button Id="FusionHoleCommand" />
+        <Button Id="FusionThreadCommand" />
+        <Separator />
+        <Button Id="PrimitiveBox" />
+        <Button Id="PrimitiveCylinder" />
+        <Button Id="PrimitiveSphere" />
+        <Button Id="PrimitiveTorus" />
+        <Button Id="PrimitiveCoil" />
+        <Button Id="PrimitivePipe" />
+        <Separator />
+        <DropDownButton _LCLZId="lclzPattern" _LCLZText="Pattern" >
+          <Button Id="PatternRectangular" />
+          <Button Id="PatternCircular" />
+          <Button Id="PatternOnPath" />
+        </DropDownButton>
+        <Button Id="MirrorCommand" />
+        <Separator />
+        <Button Id="FusionSurfaceThickenCommand" />
+        <Button Id="SurfaceSculpt" />
+        <Separator />
+        <Button Id="FusionFindFeaturesCommand" />
+        <Button Id="EnclosureCommand" />
+        <Separator />
+        <Button Id="MeshBaseFeatureCreationCommand" />
+        <Button Id="BaseFeatureCreationCommand" />
+        <Button Id="PCBCreateCmd" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- ********************************** -->
+    <!-- ** Modify Panel (Design::Solid) ** -->
+    <!-- ********************************** -->
+    <Panel Id="SolidModifyPanel" _LCLZId="lclzModify" _LCLZText="Modify" >
+      <Controls>
+        <Button Id="FusionPressPullCommand" />
+        <Button Id="FusionFilletEdgesCommand" />
+        <Button Id="FusionShellBodyCommand" />
+        <Button Id="FusionCombineCommand" />
+        <Button Id="FusionSplitBodyCommand" />
+        <Button Id="FusionMoveCommand" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="FusionPressPullCommand" />
+        <Button Id="EditFaceCommand" />
+        <Separator />
+        <Button Id="FusionFilletEdgesCommand" />
+        <Button Id="FusionChamferCommand" />
+        <Separator />
+        <Button Id="FusionShellBodyCommand" />
+        <Button Id="FusionDraftCommand" />
+        <Button Id="ModifyScale" />
+        <Button Id="FusionCombineCommand" />
+        <Button Id="FusionReplaceFaceCommand" />
+        <Button Id="FusionSplitFaceCommand" />
+        <Button Id="FusionSplitBodyCommand" />
+        <Button Id="FusionPartingLineSplitCmd" />
+        <Separator />
+        <Button Id="FusionMoveCommand" />
+        <Button Id="AlignCmd" />
+        <Button Id="FusionDeleteCommand" />
+        <Separator />
+        <Button Id="PhysicalMaterialCommand"/>
+        <Button Id="AppearanceCommand" />
+        <Button Id="MaterialCommand" />
+        <Separator />
+        <Button Id="ChangeParameterCommand" />
+        <Button Id="FusionComputeAllCommand" />
+        <Separator />
+        <Button Id="TSpline2BRepCommand" />
+        <DropDownButton _LCLZId="lclzMesh" _LCLZText="Mesh" >
+          <Button Id="Mesh2BRepCommand" />
+          <Button Id="BRep2MeshCommand" />
+        </DropDownButton>
+      </PanelDropdown>
+    </Panel>
+
+    <!-- ************************************ -->
+    <!-- ** Create Panel (Design::Surface) ** -->
+    <!-- ************************************ -->
+    <Panel Id="SurfaceCreatePanel" _LCLZId="lclzSurface" _LCLZText="Create" >
+      <Controls>
+        <Button Id="FusionSurfacePatchCommand" />
+        <Button Id="SurfaceExtrude" />
+        <Button Id="SurfaceRevolve" />
+        <Button Id="SurfaceSweep" />
+        <Button Id="SurfaceLoft" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="FusionCreateNewComponentCommand" />
+        <Button Id="SketchCreate" />
+        <Separator />
+        <Button Id="SurfaceExtrude" />
+        <Button Id="SurfaceRevolve" />
+        <Button Id="SurfaceSweep" />
+        <Button Id="SurfaceLoft" />
+        <Button Id="FusionSurfacePatchCommand" />
+        <Button Id="FusionSurfaceOffsetCommand" />
+        <Separator />
+        <Button Id="SurfPrimitiveBox" />
+        <Button Id="SurfPrimitiveCylinder" />
+        <Button Id="SurfPrimitiveSphere" />
+        <Button Id="SurfPrimitiveTorus" />
+        <Button Id="SurfPrimitiveCoil" />
+        <Button Id="SurfPrimitivePipe" />
+        <Separator />
+        <DropDownButton _LCLZId="lclzPattern" _LCLZText="Pattern" >
+          <Button Id="PatternRectangular" />
+          <Button Id="PatternCircular" />
+          <Button Id="PatternOnPath" />
+        </DropDownButton>
+        <Button Id="MirrorCommand" />
+        <Separator />
+        <Button Id="FusionSurfaceThickenCommand" />
+        <Button Id="SurfaceSculpt" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- ************************************ -->
+    <!-- ** Modify Panel (Design::Surface) ** -->
+    <!-- ************************************ -->
+    <Panel Id="SurfaceModifyPanel" _LCLZId="lclzModify" _LCLZText="Modify" >
+      <Controls>
+        <Button Id="FusionSurfaceStitchCommand" />
+        <Button Id="FusionSurfaceUnStitchCommand" />
+        <Button Id="FusionSurfaceTrimCommand" />
+        <Button Id="FusionExtendCommand" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="FusionPressPullCommand" />
+        <Button Id="EditFaceCommand" />
+        <Separator />
+        <Button Id="FusionFilletEdgesCommand" />
+        <Button Id="FusionChamferCommand" />
+        <Separator />
+        <Button Id="FusionSurfaceTrimCommand" />
+        <Button Id="FusionExtendCommand" />
+        <Button Id="FusionSurfaceStitchCommand" />
+        <Button Id="FusionSurfaceUnStitchCommand" />
+        <Button Id="FusionSurfaceMergeCommand" />
+        <Button Id="FusionSurfaceReverseNormalCommand" />
+        <Button Id="ModifyScale" />
+        <Button Id="FusionSplitFaceCommand" />
+        <Button Id="FusionSplitBodyCommand" />
+        <Separator />
+        <Button Id="FusionMoveCommand" />
+        <Button Id="AlignCmd" />
+        <Button Id="FusionDeleteCommand" />
+        <Separator />
+        <Button Id="TSpline2BRepCommand" />
+        <DropDownButton _LCLZId="lclzMesh" _LCLZText="Mesh" >
+          <Button Id="Mesh2BRepCommand" />
+          <Button Id="BRep2MeshCommand" />
+        </DropDownButton>
+        <Separator />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- ******************************************************** -->
+    <!-- ** Construction Panel (Common for Design environment) ** -->
+    <!-- ******************************************************** -->
+    <Panel Id="ConstructionPanel" _LCLZId="lclzConstruction" _LCLZText="Construct" >
+      <Controls>
+        <Button Id="WorkPlaneOffsetFromPlaneCommand" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="WorkPlaneOffsetFromPlaneCommand" />
+        <Button Id="WorkPlaneFromLineAndAngleCommand" />
+        <Button Id="WorkPlaneTangentToCylinderCommand" />
+        <Button Id="WorkPlaneFromTwoPlanesCommand" />
+        <Button Id="WorkPlaneFromTwoLinesCommand" />
+        <Button Id="WorkPlaneFromThreePointsCommand" />
+        <Button Id="WorkPlaneFromPointAndFaceCommand" />
+        <Button Id="WorkPlaneAlongPathCommand" />
+        <!--<Button Id="ConstructionPlanePointDirection" />-->
+        <Separator />
+        <Button Id="WorkAxisThroughCylinderCommand" />
+        <Button Id="WorkAxisNormalToFaceCommand" />
+        <Button Id="WorkAxisFromTwoPlanesCommand" />
+        <Button Id="WorkAxisFromTwoPointsCommand" />
+        <Button Id="WorkAxisFromLineCommand" />
+        <Button Id="WorkAxisFromPointAndFaceCommand" />-->
+        <Separator />
+        <Button Id="WorkPointFromPointCommand" />
+        <Button Id="WorkPointFromTwoLinesCommand" />
+        <Button Id="WorkPointFromThreePlanesCommand" />
+        <Button Id="WorkPointFromCircleOrSphereCommand" />
+        <Button Id="WorkPointFromLineAndPlaneCommand" />
+        <Button Id="WorkPointAlongPathCommand" />
+      </PanelDropdown>
+    </Panel>
+
+
+    <!-- ************************************** -->
+    <!-- ** Inspect Panel  ** -->
+    <!-- ************************************** -->
+    <Panel Id="InspectPanel" _LCLZId="lclzInspect" _LCLZText="Inspect" >
+      <Controls>
+        <Button Id="MeasureCommand" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="MeasureCommand" />
+        <Button Id="InterferenceCheckCommand" />
+        <Button Id="FusionSurfaceValidateCommand" />
+        <Separator />
+        <Button Id="FusionCurvatureCombAnalysisCommand" />
+        <Button Id="FusionZebraAnalysisCommand" />
+        <Button Id="FusionDraftAnalysisCommand" />
+        <Button Id="FusionCurvatureMapAnalysisCommand" />
+        <Button Id="FusionAccessibilityAnalysisCommand" />
+        <Button Id="FusionMinimumRadiusAnalysisCommand" />
+        <Button Id="FusionHalfSectionViewCommand" />
+        <Button Id="FusionCenterOfMassCommand" />
+        <Separator />
+        <Button Id="FusionViewColorCyclingToggleCmd"/>
+      </PanelDropdown>
+    </Panel>
+
+    <!-- ************************************** -->
+    <!-- ** Insert Panel (All Environments) ** -->
+    <!-- ************************************** -->
+    <Panel Id="InsertPanel" _LCLZId="lclzInsert" _LCLZText="Insert" >
+      <Controls>
+        <Button Id="FusionAddCanvasCommand" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="FusionAddEditDecalCommand" />
+        <Button Id="FusionAddCanvasCommand" />
+        <Button Id="FusionAddBackgroundCanvasCommand" />
+        <Separator />
+        <Button Id="TSplineImportCommand" />
+        <Button Id="InsertAlignMeshCommand" />
+        <Button Id="SketchImportSVG" />
+        <Button Id="ImportDxfFileCommand" />
+        <Button Id="InsertMcMasterCarrComponentCommand" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- *********************************** -->
+    <!-- ** Create Panel (Design::Sketch) ** -->
+    <!-- *********************************** -->
+    <Panel Id="SketchCreatePanel" _LCLZId="lclzCREATE" _LCLZText="CREATE" >
+      <Controls>
+        <Button Id="DrawPolyline" />
+        <Button Id="ShapeRectangleTwoPoint" />
+        <Button Id="CircleCenterRadius" />
+        <Button Id="DrawSpline" />
+        <Button Id="MirrorSketchCommand" />
+        <Button Id="SketchDimension" />
+      </Controls>
+      <PanelDropdown  >
+        <Button Id="DrawPolyline" />
+        <DropDownButton _LCLZId="lclzRectangle" _LCLZText="Rectangle" >
+          <Button Id="ShapeRectangleTwoPoint" />
+          <Button Id="ShapeRectangleThreePoint" />
+          <Button Id="ShapeRectangleCenter" />
+        </DropDownButton>
+        <DropDownButton _LCLZId="lclzCircle" _LCLZText="Circle" >
+          <Button Id="CircleCenterRadius" />
+          <Button Id="CircleTwoPoint"   />
+          <Button Id="CircleThreePoint" />
+          <Button Id="CircleTanTanRadius" />
+          <Button Id="CircleThreeTangent" />
+        </DropDownButton>
+        <DropDownButton _LCLZId="lclzArc" _LCLZText="Arc" >
+          <Button Id="ArcThreePoint" />
+          <Button Id="ArcCenterTwoPoint" />
+          <Button Id="ArcTangent" />
+          <!--<Button Id="ArcLength" />
+          <Button Id="ArcCenterAngle" /> -->
+        </DropDownButton>
+        <DropDownButton _LCLZId="lclzPolygon" _LCLZText="Polygon" >
+          <Button Id="ShapePolygonCircumscribed" />
+          <Button Id="ShapePolygonInscribed" />
+          <Button Id="ShapePolygonEdge" />
+        </DropDownButton>
+        <Button Id="CircleElipse" />
+        <DropDownButton _LCLZId="lclzSlot" _LCLZText="Slot" >
+          <Button Id="ShapeSlotCenterToCenter" />
+          <Button Id="ShapeSlotOverall" />
+          <Button Id="ShapeSlotCenterPoint" />
+          <Button Id="ShapeArcSlotThreePoint" />
+          <Button Id="ShapeArcSlotCenterTwoPoint" />
+        </DropDownButton>
+        <!-- <Button Id="ShapeSlotCenterRadius" /> -->
+        <Button Id="DrawSpline" />
+        <!--<Button Id="DrawCoil" />-->
+        <Button Id="ConicCurveCmd" />
+        <Button Id="DrawPoint" />
+        <Button Id="TextCmd" />
+        <Button Id="MTextCmd" />
+
+        <Separator />
+        <Button Id="MirrorSketchCommand" />
+        <Button Id="CircularSketchPatternCommand"/>
+        <Button Id="RectangularSketchPatternCommand"/>
+        <Separator />
+        <DropDownButton _LCLZId="lclzProjectInclude" _LCLZText="Project / Include" >
+          <Button Id="ProjectNewCmd" />
+          <Button Id="IntersectCmd" />
+          <Separator />
+          <Button Id="Include3DGeometry" />
+          <Separator />
+          <Button Id="ProjectToSurface" />
+          <Button Id="IntersectionCurve" />
+        </DropDownButton>
+        <DropDownButton _LCLZId="lclzSketchMeshMenu" _LCLZText="Mesh" >
+          <Button Id="MeshPlanarSectionCommand" />
+          <Button Id="FitCurvesToSectionCommand" />
+        </DropDownButton>
+        <Separator />
+        <Button Id="SketchDimension" />
+        <Separator />
+        <Button Id="SketchStop" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- *********************************** -->
+    <!-- ** Modify Panel (Design::Sketch) ** -->
+    <!-- *********************************** -->
+    <Panel Id="SketchModifyPanel" _LCLZId="lclzMODIFY" _LCLZText="MODIFY" >
+      <Controls>
+        <Button Id="FilletSketchCmd" />
+        <Button Id="TrimSketchCmd" />
+        <Button Id="Offset" />
+      </Controls>
+      <PanelDropdown  >
+        <Button Id="FilletSketchCmd" />
+        <DropDownButton _LCLZId="lclzSketchChamfer" _LCLZText="Chamfer" >
+          <Button Id="ChamferSketchEqualDistance" />
+          <Button Id="ChamferSketchDistanceAngle" />
+          <Button Id="ChamferSketchDistanceDistance" />
+        </DropDownButton>
+        <Button Id="TrimSketchCmd" />
+        <Button Id="ExtendSketchCmd" />
+        <Button Id="BreakSketchCmd" />
+        <Button Id="SketchScaleCmd" />
+        <Button Id="Offset" />
+        <Separator />
+        <Button Id="FusionMoveCommand" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- **************************************** -->
+    <!-- ** Constraints Panel (Design::Sketch) ** -->
+    <!-- **************************************** -->
+    <Panel Id="SketchConstraintsPanel" _LCLZId="lclzCONSTRAINTS" _LCLZText="CONSTRAINTS" >
+      <Controls>
+        <Button Id="ConstraintCoincident" />
+        <Button Id="ConstraintMidPoint" />
+        <Button Id="ConstraintFix" />
+        <Button Id="ConstraintPerpendicular" />
+        <Button Id="ConstraintHorizontalVertical" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="ConstraintCoincident" />
+        <Button Id="ConstraintCollinear" />
+        <Button Id="ConstraintConcentric" />
+        <Button Id="ConstraintMidPoint" />
+        <Button Id="ConstraintFix" />
+        <Button Id="ConstraintParallel" />
+        <Button Id="ConstraintPerpendicular" />
+        <Button Id="ConstraintHorizontalVertical" />
+        <Button Id="ConstraintTangent" />
+        <Button Id="ConstraintEqual" />
+        <Button Id="ConstraintSymmetry" />
+      </PanelDropdown>
+    </Panel>
+
+      <!-- ************************************* -->
+      <!-- ** Select Panel (All Environments) ** -->
+      <!-- ************************************* -->
+      <Panel Id="SelectPanel" _LCLZId="lclzSelect" _LCLZText="Select" Environment="FusionSolidEnvironment;FusionSurfaceEnvironment;FusionSheetMetalEnvironment">
+          <Controls>
+              <Button Id="SelectCommand" />
+          </Controls>
+          <PanelDropdown>
+              <Button Id="SelectCommand" />
+              <Separator />
+              <Button Id="selectWindow" />
+              <Button Id="selectFreeForm" />
+              <Button Id="selectPaint" />
+              <Separator />
+              <DropDownButton _LCLZId="lclzSelectionTools" _LCLZText="Selection Tools">
+                  <Button Id="SelectByNameCommand" />
+                  <Button Id="SelectByBoundaryCommand" />
+                  <Button Id="FusionSelectBodiesBySizeCommand" />
+                  <Button Id="SelectByInvertCommand"/>
+              </DropDownButton>
+              <Separator />
+              <Button Id="FusionDragCompControlsCmd" Checkable="true"/>
+              <Separator />
+              <DropDownButton _LCLZId="lclzSelectionPriorityCommands" _LCLZText="Selection Priority">
+                  <Button Id="SelectBodyPriorityCommand" />
+                  <Button Id="SelectFacePriorityCommand" />
+                  <Button Id="SelectEdgePriorityCommand" />
+                  <Button Id="SelectComponentPriorityCommand" />
+              </DropDownButton>
+              <DropDownButton Id="SelectionFilterCommand" CheckBoxList="true" />
+          </PanelDropdown>
+      </Panel>
+      
+    <Panel Id="SheetmetalFlatPatternExportPanel" _LCLZId="lclzSheetMetalFlatPatternExport" _LCLZText="Export" Environment="FusionSolidEnvironment;FusionSurfaceEnvironment;TSplineEnvironment;FusionSheetMetalEnvironment;MeshEnvironment" >
+      <Controls>
+        <Button Id="FlatPatternDXFExportCmd" />
+      </Controls>
+    </Panel>
+
+    <Panel Id="SheetmetalFlatPatternExitPanel" _LCLZId="lclzSheetMetalFlatPatternExitPanel" _LCLZText="Finish Flat Pattern"  ContextualFinishId="FusionSheetMetalExitFlatPatternCmd" AvailableBaseTabs="{none}" >
+      <Controls>
+        <Button Id="FusionSheetMetalExitFlatPatternCmd" />
+      </Controls>
+    </Panel>
+
+    <Panel Id="StopSketchPanel" _LCLZId="lclzStopSketchTT" _LCLZText="Finish Sketch" ContextualFinishId="SketchStop" >
+      <Controls>
+        <Button Id="SketchStop" />
+      </Controls>
+    </Panel>    
+
+  </CommandToolbar>
+  </Toolbars>

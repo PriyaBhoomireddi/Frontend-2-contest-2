@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="AppStoreAddInDownloadError" devLabel="Failed to download the add-in from app store" translation="Échec du téléchargement du complément à partir de l'App Store"/>
+	<label commandName="AppStoreAddInInstallUnknownError" devLabel="Unknown error occurred. Failed to install the add-in!" translation="Une erreur inconnue s'est produite. Échec de l'installation du complément!"/>
+	<label commandName="AppStoreAddInRunTimeError" devLabel="Failed to run the add-in after download" translation="Échec de l'exécution du complément après le téléchargement"/>
+	<label commandName="lclzInsertingDistributedDesignNotSupported" devLabel="Inserting a distributed design from another project is not currently supported." translation="L'insertion d'une conception distribuée provenant d'un autre projet n'est pas prise en charge."/>
+</Resource>

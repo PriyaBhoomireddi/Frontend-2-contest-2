@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="BasicType" devLabel="Basic" translation="De base"/>
+	<label commandName="BasicTypeTooltip" devLabel="Basic = Geometry checks, Standard = Basic + Face/Face and Edge/Edge intersecton tests." translation="De base = vérifications de la géométrie. Standard = De base + tests d'intersection face/face et arête/arête."/>
+	<label commandName="BooleanTypeOperation" devLabel="Operation" translation="Opération"/>
+	<label commandName="Boundary" devLabel="Boundary %1%" translation="Limite %1%"/>
+	<label commandName="Chain" devLabel="Chain" translation="Chaîne"/>
+	<label commandName="ChainSelCmdInput" devLabel="BoundarySelectionType" translation="BoundarySelectionType"/>
+	<label commandName="ChainSelectionOptionInput" devLabel="Chain Selection" translation="Sélection en chaîne"/>
+	<label commandName="CheckingLevel" devLabel="Checking Level" translation="Niveau de vérification"/>
+	<label commandName="ConnectivityTypeConnected" devLabel="Connected (G0)" translation="Connecté (G0)"/>
+	<label commandName="ConnectivityTypeCurvature" devLabel="Curvature (G2)" translation="Courbure (G2)"/>
+	<label commandName="ConnectivityTypeTangent" devLabel="Tangent (G1)" translation="Tangence (G1)"/>
+	<label commandName="CurveTable" devLabel="Curve %1%" translation="Courbe %1%"/>
+	<label commandName="CutType" devLabel="Cut" translation="Couper"/>
+	<label commandName="Edge" devLabel="Edge" translation="Arête"/>
+	<label commandName="EdgeTable" devLabel="Edge %1%" translation="Arête %1%"/>
+	<label commandName="FreeEdgesInput" devLabel="Free Edges" translation="Arêtes isolées"/>
+	<label commandName="FusionDcMidSurfaceEditCommand" devLabel="Edit Feature " translation="Modifier la fonction "/>
+	<label commandName="FusionDcReverseNormalEdit" devLabel="Edit Feature " translation="Modifier la fonction "/>
+	<label commandName="FusionDcSurfaceDeleteFaceEditCommand" devLabel="Edit Feature " translation="Modifier la fonction "/>
+	<label commandName="FusionDcSurfaceOffsetEditCommand" devLabel="Edit Feature " translation="Modifier la fonction "/>
+	<label commandName="FusionDcSurfaceOffsetShellEditCommand" devLabel="Edit Feature " translation="Modifier la fonction "/>
+	<label commandName="FusionDcSurfaceRuledEditCommand" devLabel="Edit Feature " translation="Modifier la fonction "/>
+	<label commandName="FusionDcSurfaceShellEditCommand" devLabel="Edit Feature " translation="Modifier la fonction "/>
+	<label commandName="FusionDcSurfaceTrimEditCommand" devLabel="Edit Feature " translation="Modifier la fonction "/>
+	<label commandName="FusionDcSurfaceUntrimEditCommand" devLabel="Edit Feature " translation="Modifier la fonction "/>
+	<label commandName="FusionSurfaceDeleteFaces" devLabel="Delete Faces" translation="Supprimer des faces"/>
+	<label commandName="FusionSurfaceEditMidsurfaceShell" devLabel="Edit Midsurface Shell" translation="Modifier la coque de surface intermédiaire"/>
+	<label commandName="FusionSurfaceMerge" devLabel="Merge" translation="Fusionner"/>
+	<label commandName="FusionSurfaceMidsurfaceShell" devLabel="Midsurface Shell" translation="Coque de surface intermédiaire"/>
+	<label commandName="FusionSurfaceOffset" devLabel="Offset" translation="Décalage"/>
+	<label commandName="FusionSurfaceOffsetShell" devLabel="Offset Shell" translation="Coque décalée"/>
+	<label commandName="FusionSurfacePatch" devLabel="Patch" translation="Face fermeture"/>
+	<label commandName="FusionSurfacePatchEdit" devLabel="Edit Feature " translation="Modifier la fonction "/>
+	<label commandName="FusionSurfaceReverseNormal" devLabel="Reverse Normal" translation="Inverser la normale"/>
+	<label commandName="FusionSurfaceRuled" devLabel="Ruled" translation="Réglée"/>
+	<label commandName="FusionSurfaceRuledSelectDirection" devLabel="Select a linear edge, plane or axis for direction" translation="Sélectionnez une arête linéaire, un plan ou un axe pour la direction"/>
+	<label commandName="FusionSurfaceSelectionTransparency" devLabel="Toggle Surface Body Transparency" translation="Activer/Désactiver la transparence de corps surfacique"/>
+	<label commandName="FusionSurfaceStitch" devLabel="Stitch" translation="Coudre"/>
+	<label commandName="FusionSurfaceStitchEdit" devLabel="Edit Feature " translation="Modifier la fonction "/>
+	<label commandName="FusionSurfaceSurfaceShell" devLabel="Edit Surface Shell" translation="Modifier la coque de surface"/>
+	<label commandName="FusionSurfaceTransparency" devLabel="Transparent Surfaces Toggle" translation="Activer/désactiver les surfaces transparentes"/>
+	<label commandName="FusionSurfaceTrim" devLabel="Trim" translation="Ajuster"/>
+	<label commandName="FusionSurfaceUnStitch" devLabel="Unstitch" translation="Découdre"/>
+	<label commandName="FusionSurfaceUnStitchEdit" devLabel="Edit Feature " translation="Modifier la fonction "/>
+	<label commandName="FusionSurfaceUntrim" devLabel="Untrim" translation="Supprimer les restrictions"/>
+	<label commandName="FusionSurfaceValidate" devLabel="Validate" translation="Valider"/>
+	<label commandName="FusionUntrimEdgeInputCursorPrompt" devLabel="Hold %1% to modify selection" translation="Maintenir la touche %1% enfoncée pour modifier la sélection"/>
+	<label commandName="FusionUntrimEdgesInputCursorPrompt" devLabel="Select edges to untrim" translation="Sélectionner des arêtes auxquelles supprimer des restrictions"/>
+	<label commandName="FusionUntrimFaceInputCursorPrompt" devLabel="Select faces to untrim" translation="Sélectionnez les faces pour lesquelles supprimer des restrictions"/>
+	<label commandName="GapToleranceInput" devLabel="Gap Healing" translation="Correction des espaces"/>
+	<label commandName="GapToleranceTooltip" devLabel="Maximim gap size to heal, must be 2X small edge/face removal size if this is enabled." translation="La taille maximale des espaces à corriger doit être deux fois plus grande que la taille de suppression des petites arêtes/faces, si cette option est activée."/>
+	<label commandName="IntersectType" devLabel="Intersect" translation="Intersection"/>
+	<label commandName="JoinType" devLabel="Join" translation="Joindre"/>
+	<label commandName="MaxGap" devLabel="Max Gap" translation="Jeu max."/>
+	<label commandName="MergeSelectionPrompt" devLabel="Select faces" translation="Sélectionner les faces"/>
+	<label commandName="MissingDeleteFaces" devLabel="missing faces" translation="faces manquantes"/>
+	<label commandName="MissingMidsurfaceInputBodies" devLabel="missing bodies" translation="corps manquants"/>
+	<label commandName="MissingOffsetFaces" devLabel="missing faces" translation="faces manquantes"/>
+	<label commandName="MissingPatchBoundaries" devLabel="missing boundary paths" translation="chemins de contour manquants"/>
+	<label commandName="MissingPatchProfiles" devLabel="missing profiels" translation="contours manquants"/>
+	<label commandName="MissingRuledSurfaceEdges" devLabel="Missing edges" translation="Arêtes manquantes"/>
+	<label commandName="MissingRuledSurfaceRefDir" devLabel="Reselect missing direction reference" translation="Resélectionner la référence de direction manquante"/>
+	<label commandName="MissingStitchSurfaces" devLabel="missing surfaces" translation="surfaces manquantes"/>
+	<label commandName="MissingSurfReverseFaces" devLabel="missing faces" translation="faces manquantes"/>
+	<label commandName="MissingSurfUntrimFaces" devLabel="Missing faces" translation="Faces manquantes"/>
+	<label commandName="MissingSurfaceShellInputBodies" devLabel="missing bodies" translation="corps manquants"/>
+	<label commandName="MissingTrimTools" devLabel="missing trim tools" translation="outils de découpe manquants"/>
+	<label commandName="MissingUnstitchObjects" devLabel="missing target bodies or faces" translation="corps ou faces cibles manquants"/>
+	<label commandName="MissingUntrimSurfaceEdges" devLabel="Missing edges" translation="Arêtes manquantes"/>
+	<label commandName="NewBodyInNewCompType" devLabel="New Component" translation="Nouveau composant"/>
+	<label commandName="NewBodyType" devLabel="New Body" translation="Nouveau corps"/>
+	<label commandName="NothingStitched" devLabel="Modeling Error: Nothing has stitched." translation="Erreur de modélisation: rien n'a été cousu."/>
+	<label commandName="OffsetChainSelectionInput" devLabel="Chain Selection" translation="Sélection en chaîne"/>
+	<label commandName="PatchContinuity" devLabel="PatchContinuity%1%" translation="PatchContinuity%1%"/>
+	<label commandName="PatchContinuityInput" devLabel="Continuity" translation="Continuité"/>
+	<label commandName="PatchContinuityOptionToolTip" devLabel="Continuity" translation="Continuité"/>
+	<label commandName="PatchFlipToolTip" devLabel="Continuity Direction" translation="Direction de continuité"/>
+	<label commandName="PatchInteriorConstraintsSelectionPrompt" devLabel="Select edges, sketch curves or points to define patch interior constraints" translation="Sélectionner des arêtes, des points ou des courbes d'esquisse pour définir les contraintes intérieures de la face de fermeture"/>
+	<label commandName="PatchSelectionPrompt" devLabel="Select edges, sketch profiles or sketch curves to define patch boundary" translation="Sélectionnez les arêtes, les contours d'esquisse ou les courbes d'esquisse pour définir la limite de fermeture"/>
+	<label commandName="PatchTable" devLabel="PatchTable" translation="PatchTable"/>
+	<label commandName="PatchTableAdd" devLabel="Add" translation="Ajouter"/>
+	<label commandName="PatchTableRemvoe" devLabel="Remove" translation="Supprimer"/>
+	<label commandName="PatchTableRowLabel" devLabel="Boundray" translation="Limite"/>
+	<label commandName="PatchTangentFlip" devLabel="PatchFlip%1%" translation="PatchFlip%1%"/>
+	<label commandName="PatchTangentFlipInput" devLabel="Flip" translation="Inverser"/>
+	<label commandName="PatchTangentWeight" devLabel="PatchScale%1%" translation="PatchScale%1%"/>
+	<label commandName="PatchTangentWeightInput" devLabel="Scale" translation="Echelle"/>
+	<label commandName="PatchTangentWeightToolTip" devLabel="Weight" translation="Poids"/>
+	<label commandName="PatchTypeBounded" devLabel="Bounded" translation="Délimité"/>
+	<label commandName="PatchTypeTrimmed" devLabel="Trimmed" translation="Ajusté"/>
+	<label commandName="Profile" devLabel="Profile %1%" translation="Contour %1%"/>
+	<label commandName="SelectStitchSurfaces" devLabel="Select Surfaces to Stitch" translation="Sélectionner des surfaces à coudre"/>
+	<label commandName="SelectTrimToolProfile" devLabel="Select a trimming tool" translation="Sélectionner un outil d'ajustement"/>
+	<label commandName="SelectValidateBodies" devLabel="Select Bodies to validate" translation="Sélectionner les corps à valider"/>
+	<label commandName="SelectionListControlCmdInput" devLabel="Edge Sets" translation="Ensembles d'arêtes"/>
+	<label commandName="SelectionListCtrlGroup" devLabel="Unstitched Edges" translation="Arêtes décousues"/>
+	<label commandName="ShellfromSurface" devLabel="Shell from Surface" translation="Coque à partir de la surface"/>
+	<label commandName="SimAutomaticSelectionEnabled" devLabel="Automatic" translation="Automatique"/>
+	<label commandName="SimAutomaticSelectionSlider" devLabel="Size" translation="Taille"/>
+	<label commandName="SimNativeSurfaceCmdSelection" devLabel="Selection" translation="Sélection"/>
+	<label commandName="SimNativeSurfaceCmdThickness" devLabel="Thickness" translation="Epaisseur"/>
+	<label commandName="SimPreviewEnabledCheckbox" devLabel="Preview" translation="Aperçu"/>
+	<label commandName="SimThinShellDistanceGroup" devLabel="Maximum Face Pair Distance" translation="Distance maximale de la paire de faces"/>
+	<label commandName="SimThinShellDistanceSlider" devLabel="Distance" translation="Distance"/>
+	<label commandName="SimThinShellDistanceSliderEnabled" devLabel="Automatic Distance" translation="Distance automatique"/>
+	<label commandName="SimThinShellDistanceValue" devLabel="Distance" translation="Distance"/>
+	<label commandName="SimThinShellOptionGroup" devLabel="Options" translation="Options"/>
+	<label commandName="SimThinShellPreview" devLabel="Preview" translation="Aperçu"/>
+	<label commandName="SimThinShellSmallFaceRemovalPerc" devLabel="Remove Small Faces (%)" translation="Supprimer les petites faces (%)"/>
+	<label commandName="SimThinShellThicknessOverride" devLabel="Thickness" translation="Epaisseur"/>
+	<label commandName="SimThinShellThicknessOverrideEnabled" devLabel="Override Thickness" translation="Remplacer l'épaisseur"/>
+	<label commandName="SimThinShellThicknessReset" devLabel="Reset Thickness" translation="Réinitialiser l'épaisseur"/>
+	<label commandName="SmallEdgeFaceToleranceTooltip" devLabel="Maximim Face/Edge size to remove, will be skipped if the body has errors." translation="La taille maximale des faces/arêtes à supprimer est ignorée si le corps comporte des erreurs."/>
+	<label commandName="SmallEdgeFacesToleranceInput" devLabel="Small Edge/Face Removal" translation="Suppression des petites arêtes/faces"/>
+	<label commandName="StandardType" devLabel="Standard" translation="Standard"/>
+	<label commandName="StitchFreeEdge" devLabel="Free Edge" translation="Arête libre"/>
+	<label commandName="StitchResultsInput" devLabel="Stitch Result" translation="Résultat de la couture"/>
+	<label commandName="StitchTolInput" devLabel="" translation=""/>
+	<label commandName="StitchToleranceInput" devLabel="Tolerance" translation="Tolérance"/>
+	<label commandName="StitchedEdgesInput" devLabel="Edges to be Stitched" translation="Arêtes à coudre"/>
+	<label commandName="SufaceRefitToleranceInput" devLabel="Refit Bad Surfaces" translation="Réajuster les surfaces incorrectes"/>
+	<label commandName="SurfTrimNotargetFaceToRem" devLabel="No Target Face selected to remove!" translation="Aucune face cible à supprimer."/>
+	<label commandName="SurfaceDeleteFacesInput" devLabel="Faces" translation="Faces"/>
+	<label commandName="SurfaceFaceStitchSetTolerance" devLabel="Set Max Gap as Stitch Tolerance" translation="Définir l'écart maximal comme tolérance de couture"/>
+	<label commandName="SurfaceMergeChainSelectionInput" devLabel="Select Chain" translation="Sélectionner une chaîne"/>
+	<label commandName="SurfaceMergeSelectionInput" devLabel="Selection" translation="Sélection"/>
+	<label commandName="SurfaceMidsurfaceBodiesInput" devLabel="Bodies" translation="Corps"/>
+	<label commandName="SurfaceOffsetDistanceInput" devLabel="Distance" translation="Distance"/>
+	<label commandName="SurfaceOffsetFacesInput" devLabel="Faces / Surface Bodies" translation="Faces/Corps surfaciques"/>
+	<label commandName="SurfaceOffsetThicknessInput" devLabel="Thickness" translation="Epaisseur"/>
+	<label commandName="SurfacePatchChainInput" devLabel="Boundary Edges" translation="Arêtes de limite"/>
+	<label commandName="SurfacePatchChainSelectionInput" devLabel="Enable Chaining" translation="Activer le chaînage"/>
+	<label commandName="SurfacePatchConnectivityInput" devLabel="Continuity" translation="Continuité"/>
+	<label commandName="SurfacePatchGroupInput" devLabel="Group Edges" translation="Grouper les arêtes"/>
+	<label commandName="SurfacePatchInteriorRailsAndPointsInput" devLabel="Interior Rails/Points" translation="Rails/Points intérieurs"/>
+	<label commandName="SurfacePatchPatchType" devLabel="Patch Type" translation="Type de face de fermeture"/>
+	<label commandName="SurfaceRefitFaceToleranceTooltip" devLabel="Maximim distance between the repaired face and the original face." translation="Distance maximale entre la face réparée et la face d'origine."/>
+	<label commandName="SurfaceReverseNormalInput" devLabel="Faces" translation="Faces"/>
+	<label commandName="SurfaceRevolve" devLabel="Revolve" translation="Révolution"/>
+	<label commandName="SurfaceRuledAltFacesInput" devLabel="Alternate Faces" translation="Alterner les faces"/>
+	<label commandName="SurfaceRuledAltFacesInputDesc" devLabel="Flips direction or angle when edges share more than one face" translation="Inverse la direction ou l'angle lorsque les arêtes partagent plusieurs faces"/>
+	<label commandName="SurfaceRuledAngleInput" devLabel="Angle" translation="Angle"/>
+	<label commandName="SurfaceRuledAngleInputDesc" devLabel="Specify rotation angle" translation="Spécifier un angle de rotation"/>
+	<label commandName="SurfaceRuledChainInput" devLabel="Chain Selection" translation="Sélection en chaîne"/>
+	<label commandName="SurfaceRuledChainInputDesc" devLabel="Automatically select connected geometry" translation="Sélectionner automatiquement la géométrie connectée"/>
+	<label commandName="SurfaceRuledDirectionInput" devLabel="Direction" translation="Direction"/>
+	<label commandName="SurfaceRuledDirectionInputDesc" devLabel="Select a linear edge, plane, or axis" translation="Sélectionnez une arête linéaire, un plan ou un axe"/>
+	<label commandName="SurfaceRuledDistanceInput" devLabel="Distance" translation="Distance"/>
+	<label commandName="SurfaceRuledDistanceInputDesc" devLabel="Specify distance to extend" translation="Spécifier la distance à prolonger"/>
+	<label commandName="SurfaceRuledProfileInput" devLabel="Edges" translation="Arêtes"/>
+	<label commandName="SurfaceRuledProfileInputDesc" devLabel="Select edges" translation="Sélectionner les arêtes"/>
+	<label commandName="SurfaceRuledTypeDirectionInput" devLabel="Direction" translation="Direction"/>
+	<label commandName="SurfaceRuledTypeDirectionInputDesc" devLabel="Creates a ruled surface in a direction that you select" translation="Crée une surface réglée dans la direction que vous sélectionnez"/>
+	<label commandName="SurfaceRuledTypeInput" devLabel="Type" translation="Type"/>
+	<label commandName="SurfaceRuledTypeNormalInput" devLabel="Normal" translation="Normale"/>
+	<label commandName="SurfaceRuledTypeNormalInputDesc" devLabel="Creates a ruled surface normal to the face of selected edges" translation="Crée une surface réglée normale aux faces des arêtes sélectionnées"/>
+	<label commandName="SurfaceRuledTypeTangentDesc" devLabel="Creates a ruled surface tangent to the face of selected edges" translation="Crée une surface réglée tangente aux faces des arêtes sélectionnées"/>
+	<label commandName="SurfaceRuledTypeTangentInput" devLabel="Tangent" translation="Tangente"/>
+	<label commandName="SurfaceShellThicknessTip" devLabel="The thickness direction is symmetric about the selected surface." translation="La direction de l'épaisseur est symétrique à la surface sélectionnée."/>
+	<label commandName="SurfaceStitchChainInput" devLabel="Stitch Surfaces" translation="Coudre des surfaces"/>
+	<label commandName="SurfaceStitchFindInWindow" devLabel="Find Edge in Window" translation="Rechercher l'arête dans la fenêtre"/>
+	<label commandName="SurfaceSweep" devLabel="Sweep" translation="Balayage"/>
+	<label commandName="SurfaceTrimChainInput" devLabel="Trim Tool" translation="Outil de découpe"/>
+	<label commandName="SurfaceTrimFaceSelInput" devLabel="FaceRemoveSel" translation="FaceRemoveSel"/>
+	<label commandName="SurfaceUnStitchFacesInput" devLabel="Faces / Bodies" translation="Faces/Corps"/>
+	<label commandName="SurfaceUntrimEdgesInput" devLabel="Edges" translation="Arêtes"/>
+	<label commandName="SurfaceUntrimEdgesInputDesc" devLabel="Select edges to untrim.&#xA;Hold %1% to suppress command preview and select multiple edges." translation="Sélectionnez les arêtes pour lesquelles supprimer des restrictions.&#xA;Maintenez la touche %1% enfoncée pour masquer l'aperçu de la commande et sélectionner plusieurs arêtes."/>
+	<label commandName="SurfaceUntrimExtensionInput" devLabel="Extend" translation="Prolonger"/>
+	<label commandName="SurfaceUntrimExtensionInputDesc" devLabel="Specify distance to extend untrimmed surface." translation="Spécifiez la distance de prolongement de la surface non restreinte."/>
+	<label commandName="SurfaceUntrimFacesInput" devLabel="Faces" translation="Faces"/>
+	<label commandName="SurfaceUntrimFacesInputDesc" devLabel="Select faces to untrim." translation="Sélectionnez les faces pour la suppression des restrictions."/>
+	<label commandName="SurfaceUntrimKeepCopyInput" devLabel="Keep Copy" translation="Conserver la copie"/>
+	<label commandName="SurfaceUntrimKeepCopyInputDesc" devLabel="Creates a copy of original trimmed surface." translation="Crée une copie de la surface ajustée d'origine."/>
+	<label commandName="SurfaceUntrimTypeAllEdgesInput" devLabel="All Edges" translation="Toutes les arêtes"/>
+	<label commandName="SurfaceUntrimTypeAllEdgesInputDesc" devLabel="Untrims all internal and external edges of a surface." translation="Supprime les restrictions de toutes les arêtes internes et externes d'une surface."/>
+	<label commandName="SurfaceUntrimTypeExternalEdgesInput" devLabel="External Edges" translation="Arêtes externes"/>
+	<label commandName="SurfaceUntrimTypeExternalEdgesInputDesc" devLabel="Untrims external edges only." translation="Supprime les restrictions des arêtes externes uniquement."/>
+	<label commandName="SurfaceUntrimTypeInput" devLabel="Type" translation="Type"/>
+	<label commandName="SurfaceUntrimTypeInternalEdgesDesc" devLabel="Untrims internal edges only." translation="Supprime les restrictions des arêtes internes uniquement."/>
+	<label commandName="SurfaceUntrimTypeInternalEdgesInput" devLabel="Internal Edges" translation="Arêtes internes"/>
+	<label commandName="SurfaceUntrimTypeManualInput" devLabel="Manual" translation="Manuel"/>
+	<label commandName="SurfaceUntrimTypeManualInputDesc" devLabel="Untrims manually selected edges of a face.&#xA;Hold %1% to suppress command preview and select multiple edges." translation="Annule les restrictions des arêtes sélectionnées manuellement sur une face.&#xA;Maintenez la touche %1% enfoncée pour masquer l'aperçu de la commande et sélectionner plusieurs arêtes."/>
+	<label commandName="SurfaceValidateBodyInput" devLabel="Validate Bodies" translation="Valider les corps"/>
+	<label commandName="SurfaceValidateDefectiveNodeName" devLabel="Defective Surface" translation="Surface défectueuse"/>
+	<label commandName="SurfaceValidateEdgesRemovedCount" devLabel="Number of edges removed: %1%" translation="Nombre d'arêtes supprimées: %1%"/>
+	<label commandName="SurfaceValidateFacesRemovedCount" devLabel="Number of faces removed: %1%" translation="Nombre de faces supprimées: %1%"/>
+	<label commandName="SurfaceValidateFixedCount" devLabel="Number of surfaces repaired: %1%" translation="Nombre de surfaces réparées: %1%"/>
+	<label commandName="SurfaceValidateIntersectNodeName" devLabel="Intersecting Surface" translation="Surface sécante"/>
+	<label commandName="SurfaceValidateIntersectingCount" devLabel="Number of intersecting or overlapping surfaces: %1%" translation="Nombre de surfaces sécantes ou superposées: %1%"/>
+	<label commandName="SurfaceValidateInvalidCount" devLabel="Number of invalid surfaces: %1%" translation="Nombre de surfaces incorrectes: %1%"/>
+	<label commandName="SurfaceValidateNoIssue" devLabel="No issues were found" translation="Aucun problème détecté"/>
+	<label commandName="SurfaceValidateSmallEdgeFaceRemovalSkipped" devLabel="Small Edge/Face Removal has been skipped." translation="La suppression des petites arêtes/faces a été ignorée."/>
+	<label commandName="SurfaceValidateSummary" devLabel="Validate Summary:" translation="Valider le récapitulatif:"/>
+	<label commandName="SurfaceValidateUnstitchableCount" devLabel="Number of surfaces that cause stitching failure: %1%" translation="Nombre de surfaces entraînant un échec de la couture: %1%"/>
+	<label commandName="SurfaceValidateUnstitchableNodeName" devLabel="Unstitchable Surface" translation="Surface pouvant être décousue"/>
+	<label commandName="TTSurfaceEnvironment" devLabel="Surface" translation="Surface"/>
+	<label commandName="UnStitchedEdgeTitle" devLabel="Edge" translation="Arête"/>
+	<label commandName="UnStitchedGapTitle" devLabel="Max Gap" translation="Jeu max."/>
+	<label commandName="UnStitchedTableFindInWindow" devLabel="Find in Window" translation="Rechercher dans la fenêtre"/>
+	<label commandName="UnStitchedTableSetTolerance" devLabel="Set Tolerance" translation="Définir la tolérance"/>
+	<label commandName="UnstitchedEdgeName" devLabel="UnStitchedEdgeName" translation="UnStitchedEdgeName"/>
+	<label commandName="UnstitchedGapLength" devLabel="UnStitchedGapLength" translation="UnStitchedGapLength"/>
+	<label commandName="ValidateEnableGapRepair" devLabel="Gap Healing" translation="Correction des espaces"/>
+	<label commandName="ValidateEnableRepair" devLabel="Repair" translation="Réparer"/>
+	<label commandName="ValidateEnableSmallEdgeFaceRemoval" devLabel="Small Edge/Face Removal" translation="Suppression des petites arêtes/faces"/>
+	<label commandName="ValidateEnableSurfaceRefit" devLabel="Refit Bad Surfaces" translation="Réajuster les surfaces incorrectes"/>
+	<label commandName="lclzFusionReverseNormalCommand1" devLabel="Flips the normal direction of the selected surface body." translation="Inverse la direction normale du corps surfacique sélectionné."/>
+	<label commandName="lclzFusionSurfaceMergeCommand1" devLabel="Combines the selected faces into a single quilt surface." translation="Combine les faces sélectionnées dans une surface composée unique."/>
+	<label commandName="lclzFusionSurfaceMergeCommand2" devLabel="Select the faces to merge. You can select solid or surface faces." translation="Sélectionnez les faces à fusionner. Vous pouvez sélectionner des faces solides ou surfaciques."/>
+	<label commandName="lclzFusionSurfaceMidsurfaceShellCommand1" devLabel="Creates a new midsurface shell from the selected body." translation="Crée une coque de surface intermédiaire à partir du corps sélectionné."/>
+	<label commandName="lclzFusionSurfaceMidsurfaceShellCommand2" devLabel="Select the face to midsurface." translation="Sélectionnez la face à la surface intermédiaire."/>
+	<label commandName="lclzFusionSurfaceOffsetCommand1" devLabel="Creates a new surface at a given distance from the selected face." translation="Permet de créer une surface à une distance donnée de la face sélectionnée."/>
+	<label commandName="lclzFusionSurfaceOffsetCommand2" devLabel="Select the face to offset then specify the distance." translation="Sélectionnez la face à décaler, puis indiquez la distance."/>
+	<label commandName="lclzFusionSurfaceOffsetShellCommand1" devLabel="Creates a new offset shell at a given distance from the selected face." translation="Permet de créer une nouvelle coque décalée à une distance donnée de la face sélectionnée."/>
+	<label commandName="lclzFusionSurfaceOffsetShellCommand2" devLabel="Select the face to offset then specify the distance." translation="Sélectionnez la face à décaler, puis indiquez la distance."/>
+	<label commandName="lclzFusionSurfacePatchCommand1" devLabel="Creates a planar or 3D surface within the boundary of a specified closed loop." translation="Permet de créer une surface plane ou 3D dans la limite d'un contour fermé défini."/>
+	<label commandName="lclzFusionSurfacePatchCommand2" devLabel="Select the loop to patch then apply connected (G0), tangent (G1), and curvature (G2) boundary conditions." translation="Sélectionnez la boucle de la face de fermeture, puis appliquez les conditions aux limites (G0) connectées, (G1) de tangence et (G2) de courbure."/>
+	<label commandName="lclzFusionSurfaceRuledCommand1" devLabel="Creates a ruled surface from selected edges." translation="Crée une surface réglée à partir des arêtes sélectionnées."/>
+	<label commandName="lclzFusionSurfaceRuledCommand2" devLabel="Select a ruled surface type, select edges, then specify the direction, distance, and angle." translation="Sélectionnez un type de surface réglée, sélectionnez des arêtes, puis spécifiez la direction, la distance et l'angle."/>
+	<label commandName="lclzFusionSurfaceShellConvertCommand1" devLabel="Creates a new surface shell from the surface." translation="Crée une coque de surface à partir de la surface."/>
+	<label commandName="lclzFusionSurfaceShellConvertCommand2" devLabel="Select the surface to surface shell." translation="Sélectionnez la surface à partir de laquelle créer la coque de surface."/>
+	<label commandName="lclzFusionSurfaceStitchCommand1" devLabel="Joins surfaces to make a single surface body or solid body." translation="Permet de lier des surfaces pour créer un corps surfacique ou un corps solide unique."/>
+	<label commandName="lclzFusionSurfaceStitchCommand2" devLabel="Select the surfaces to join. Edges within the tolerance are highlighted green." translation="Sélectionnez les surfaces à joindre. Les arêtes comprises dans la tolérance sont mises en surbrillance en vert."/>
+	<label commandName="lclzFusionSurfaceTrimCommand1" devLabel="Removes the selected area of a surface body using the specified cutting tool." translation="Supprime la zone sélectionnée d'un corps surfacique à l'aide de l'outil de coupe spécifié."/>
+	<label commandName="lclzFusionSurfaceTrimCommand2" devLabel="Select the cutting tool to use then select faces or surface bodies to remove." translation="Sélectionnez l'outil de coupe à utiliser, puis sélectionnez les faces ou les corps surfaciques à supprimer."/>
+	<label commandName="lclzFusionSurfaceUnStitchCommand1" devLabel="Breaks joined surfaces into individual surfaces." translation="Coupe les surfaces liées pour en faire des surfaces individuelles."/>
+	<label commandName="lclzFusionSurfaceUnStitchCommand2" devLabel="Select faces to unstitch. The selected face is unhooked from the parent body and the result body contains the unhooked face." translation="Sélectionnez des faces à découdre. La face sélectionnée est décrochée du corps parent et le corps obtenu contient la face décrochée."/>
+	<label commandName="lclzFusionSurfaceUntrimCommand1" devLabel="Extends trimmed surfaces and fills gaps, holes, or empty regions." translation="Prolonge les surfaces ajustées et remplit les espaces, les perçages ou les zones vides."/>
+	<label commandName="lclzFusionSurfaceUntrimCommand2" devLabel="Select the surface to untrim, then select the untrim type. You can untrim all edges, internal edges, external edges, or manually select the edges you want to untrim." translation="Sélectionnez la surface pour la suppression des restrictions, puis sélectionnez le type de suppression. Vous pouvez supprimer les restrictions sur toutes les arêtes, sur les arêtes internes, sur les arêtes externes ou sur des arêtes sélectionnées manuellement."/>
+	<label commandName="lclzFusionSurfaceValidate1" devLabel="Checks the quality of selected surfaces and attempts to heal surfaces before stitching into quilts and solids." translation="Vérifie la qualité des surfaces sélectionnées et tente de corriger les surfaces avant de les coudre dans les surfaces composées et les solides."/>
+	<label commandName="lclzFusionSurfaceValidate2" devLabel="Select the surfaces to check, specify a tolerance then select the type of validation to perform." translation="Sélectionnez les surfaces à vérifier, spécifiez une tolérance, puis choisissez le type de validation à effectuer."/>
+	<label commandName="lclzMergeTipsAndTricksTips" devLabel="Select the surfaces to merge. You can select solid or surface faces." translation="Sélectionnez les surfaces à fusionner. Vous pouvez sélectionner des faces solides ou surfaciques."/>
+	<label commandName="lclzMergeTipsAndTricksTitle" devLabel="Merge Information" translation="Informations sur la commande Fusionner"/>
+	<label commandName="lclzMidsurfaceShellTipsAndTricksDesc" devLabel="The use of shells can reduce mesh requirements and solve time.  Using this command on a complex body may require slight adjustments with other shellcommands such as Gap Fill." translation="L'utilisation de coques permet de réduire les exigences de maillage et le temps de résolution. L'utilisation de cette commande sur un corps complexe peut nécessiter de légers ajustements avec d'autres commandes de coques, telles que Remplissage des espaces."/>
+	<label commandName="lclzMidsurfaceShellTipsAndTricksTips" devLabel="Creates a shell part in the middle of the selected body or bodies using the thickness of the selected body." translation="Crée une pièce correspondant à la coque au milieu du ou des corps sélectionnés en utilisant l'épaisseur du corps sélectionné."/>
+	<label commandName="lclzMidsurfaceShellTipsAndTricksTitle" devLabel="Midsurface Shell Information" translation="Informations sur la commande Coque de surface intermédiaire"/>
+	<label commandName="lclzOffsetShellTipsAndTricksDesc" devLabel="Using the Offset Shell command will create a shell to represent the selected body and remove the selected body from the Simulation Model. To recover the original body the Shell must be removed from the timeline, or a new Simulation Model must be created." translation="La commande Coque décalée permet de créer une coque représentant le corps sélectionné et de supprimer le corps sélectionné du modèle de simulation. Pour récupérer le corps d'origine, vous devez supprimer la coque du plan de montage chronologique ou créer un autre modèle de simulation."/>
+	<label commandName="lclzOffsetShellTipsAndTricksTips" devLabel="Creates a new shell at a specified distance from selected faces of a 3D body." translation="Crée une coque à une distance spécifiée des faces sélectionnées d'un corps 3D."/>
+	<label commandName="lclzOffsetShellTipsAndTricksTitle" devLabel="Offset Shell Information" translation="Informations sur la commande Coque décalée"/>
+	<label commandName="lclzOffsetTipsAndTricksDesc" devLabel="Select multiple faces to offset them simultaneously." translation="Sélectionnez plusieurs faces à décaler simultanément."/>
+	<label commandName="lclzOffsetTipsAndTricksTips" devLabel="Select the face to offset then specify the distance." translation="Sélectionnez la face à décaler, puis indiquez la distance."/>
+	<label commandName="lclzOffsetTipsAndTricksTitle" devLabel="Offset Information" translation="Informations sur la commande Décalage"/>
+	<label commandName="lclzPatchWorkspaceTitle" devLabel="Creates construction surfaces and repairs surface geometry. Access commands to create surface bodies." translation="Crée des surfaces de construction et répare la géométrie de la surface. Accédez aux commandes permettant de créer des corps surfaciques."/>
+	<label commandName="lclzReverseNormalTipsAndTricksTips" devLabel="Select the faces to modify." translation="Sélectionnez les faces à modifier."/>
+	<label commandName="lclzReverseNormalTipsAndTricksTitle" devLabel="Reverse Normal Information" translation="Informations sur la commande Inverser la normale"/>
+	<label commandName="lclzRuledTipsAndTricksDesc" devLabel="You can use the Ruled command to add extensions to existing surfaces, create parting surfaces, or add a drafted surface that follows selected reference geometry." translation="Vous pouvez utiliser la commande Réglée pour ajouter des extensions aux surfaces existantes, créer des plans de joint ou ajouter une surface dépouillée qui suit la géométrie de référence sélectionnée."/>
+	<label commandName="lclzRuledTipsAndTricksTips" devLabel="Adjust Type to create ruled surfaces normal or tangent to the face connected to the selected edges, or in a direction that you define." translation="Ajustez le type pour créer des surfaces réglées normales ou tangentes à la face connectée aux arêtes sélectionnées, ou dans une direction que vous définissez."/>
+	<label commandName="lclzRuledTipsAndTricksTitle" devLabel="Ruled Information" translation="Informations sur les éléments réglés"/>
+	<label commandName="lclzStitchTipsAndTricksDesc" devLabel="Green indicates closed edges, whereas red indicates open edges." translation="La couleur verte indique des arêtes fermées, tandis que la couleur rouge indique des arêtes ouvertes."/>
+	<label commandName="lclzStitchTipsAndTricksTips" devLabel="Select the surfaces to join." translation="Sélectionnez les surfaces à relier."/>
+	<label commandName="lclzStitchTipsAndTricksTitle" devLabel="Stitch Information" translation="Informations sur la commande Coudre"/>
+	<label commandName="lclzSurfacePatchTipsAndTricksDesc" devLabel="Use Patch to fill an open body with a new surface. Surfaces can be knit together using the Stitch tool." translation="Utilisez la commande Face fermeture pour remplir un corps vide avec une nouvelle surface. Les surfaces peuvent être cousues entre elles à l'aide de l'outil Coudre."/>
+	<label commandName="lclzSurfacePatchTipsAndTricksTips" devLabel="Select the loop to patch then apply connected (G0), tangent (G1), and curvature (G2) boundary conditions." translation="Sélectionnez la boucle de la face de fermeture, puis appliquez les conditions aux limites (G0) connectées, (G1) de tangence et (G2) de courbure."/>
+	<label commandName="lclzSurfacePatchTipsAndTricksTitle" devLabel="Patch Information" translation="Informations sur la commande Face de fermeture"/>
+	<label commandName="lclzSurfaceRevolve1" devLabel="Revolves a sketch profile or planar face around a selected axis." translation="Fait pivoter un contour d'esquisse ou une face plane autour de l'axe sélectionné."/>
+	<label commandName="lclzSurfaceRevolve2" devLabel="Select the profile or planar face then select the axis of revolution." translation="Sélectionnez le contour ou la face plane, puis l'axe de révolution."/>
+	<label commandName="lclzSurfaceRevolveTipsAndTricksDesc" devLabel="After selecting the profile and axis, you can select faces or points to set the angular value." translation="Après avoir sélectionné le contour et l'axe, vous pouvez sélectionner des faces ou des points afin de définir la valeur angulaire."/>
+	<label commandName="lclzSurfaceRevolveTipsAndTricksTips" devLabel="Select the profile or planar face then select the axis of revolution." translation="Sélectionnez le contour ou la face plane, puis l'axe de révolution."/>
+	<label commandName="lclzSurfaceRevolveTipsAndTricksTitle" devLabel="Revolve Information" translation="Informations sur la commande Révolution"/>
+	<label commandName="lclzSurfaceShellConvertTipsAndTricksDesc" devLabel="A suface body itself will not be considered in simulation until it is transformed into a shell and given a thickness." translation="Pour qu'un corps surfacique soit pris en compte dans la simulation, vous devez d'abord le transformer en coque et définir son épaisseur."/>
+	<label commandName="lclzSurfaceShellConvertTipsAndTricksTips" devLabel="Transform surface bodies into shells for Simulation." translation="Transformez des corps surfaciques en coques pour la simulation."/>
+	<label commandName="lclzSurfaceShellConvertTipsAndTricksTitle" devLabel="Shell from Surface Information" translation="Informations sur la commande Coque à partir de la surface"/>
+	<label commandName="lclzSurfaceSweep1" devLabel="Sweeps a sketch profile or planar face along a selected path." translation="Balaie un contour d'esquisse ou une face plane le long de la trajectoire sélectionnée."/>
+	<label commandName="lclzSurfaceSweep2" devLabel="Select the profile then select the sweep path. The distance for the sweep is a decimal percentage of the selected path." translation="Sélectionnez le contour et la trajectoire de balayage. La distance de balayage est un pourcentage décimal de la trajectoire sélectionnée."/>
+	<label commandName="lclzSurfaceSweepTipsAndTricksDesc" devLabel="The distance for the sweep is a decimal percentage of the length of the path." translation="La distance de balayage est un pourcentage sous forme décimale de la longueur de la trajectoire."/>
+	<label commandName="lclzSurfaceSweepTipsAndTricksTips" devLabel="Select the profile and the sweep path." translation="Sélectionnez le contour et la trajectoire de balayage."/>
+	<label commandName="lclzSurfaceSweepTipsAndTricksTitle" devLabel="Sweep Information" translation="Informations sur la commande Balayage"/>
+	<label commandName="lclzTrimTipsAndTricksDesc" devLabel="Surfaces to be trimmed will turn red." translation="Les surfaces à ajuster s'afficheront en rouge."/>
+	<label commandName="lclzTrimTipsAndTricksTips" devLabel="Select a plane or a sketch intersecting a surface as the cutting tool, then select the desired surface to trim." translation="Sélectionnez un plan ou une esquisse qui coupe une surface de la même manière qu'avec l'outil de coupe, puis sélectionnez la surface à ajuster."/>
+	<label commandName="lclzTrimTipsAndTricksTitle" devLabel="Trim Information" translation="Informations sur la commande Ajuster"/>
+	<label commandName="lclzUnStitchTipsAndTricksTips" devLabel="Select the faces or bodies to unstitch." translation="Sélectionnez les faces ou les corps à découdre."/>
+	<label commandName="lclzUnStitchTipsAndTricksTitle" devLabel="Unstitch Information" translation="Informations sur la commande Découdre"/>
+	<label commandName="lclzUntrimTipsAndTricksDesc" devLabel="For the Manual untrim type, hold Ctrl (Windows) or Command (MacOS) to suppress the preview and select multiple edges to untrim." translation="Pour le type de suppression Manuel, maintenez la touche Ctrl (Windows) ou Commande (MacOS) enfoncée pour masquer l'aperçu et sélectionnez les arêtes sur lesquelles appliquer la suppression des restrictions."/>
+	<label commandName="lclzUntrimTipsAndTricksTips" devLabel="Use Untrim to remove unwanted holes or extend and rebuild clean surface intersections." translation="Utilisez la commande Supprimer les restrictions pour supprimer les perçages indésirables ou prolonger et reconstruire des intersections de surfaces nettes."/>
+	<label commandName="lclzUntrimTipsAndTricksTitle" devLabel="Untrim Information" translation="Informations sur la commande Supprimer les restrictions"/>
+	<label commandName="lclzValidateTipsAndTricksTips" devLabel="Select the surfaces to check, specify a tolerance then select the type of validation to perform." translation="Sélectionnez les surfaces à vérifier, spécifiez une tolérance, puis choisissez le type de validation à effectuer."/>
+	<label commandName="lclzValidateTipsAndTricksTitle" devLabel="Validate Information" translation="Informations sur la commande Valider"/>
+	<label commandName="midsurfaceSelectSolid" devLabel="Select solid bodies to midsurface" translation="Sélectionnez les corps solides pour la surface intermédiaire"/>
+	<label commandName="offsetSelectSurface" devLabel="Select faces or surface bodies to offset" translation="Sélectionnez les faces ou les corps surfaciques à décaler"/>
+	<label commandName="pInputSet" devLabel="Select objects to delete" translation="Sélectionner les objets à supprimer"/>
+	<label commandName="pInputSurfaceQuiltSet" devLabel="Select surface body" translation="Sélectionner le corps de surface"/>
+	<label commandName="ruledSelectProfileNoSel" devLabel="Select edges" translation="Sélectionner les arêtes"/>
+	<label commandName="ruledSelectProfileSel" devLabel="Adjust distance and angle or modify selection" translation="Ajuster la distance et l'angle ou modifier la sélection"/>
+	<label commandName="unstitchSelectSurface" devLabel="Select bodies to unstitch" translation="Sélectionner les corps à découdre"/>
+</Resource>

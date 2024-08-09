@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="CFDImportSatToMat" devLabel="CFD ImportSatToMat" translation="CFD ImportSatToMat"/>
+	<label commandName="CFDLoadLibrary" devLabel="Load CFD Library" translation="加载 CFD 库"/>
+	<label commandName="GetProcAddressCFDProdInfo" devLabel="Unable to Set Fusion Product Information" translation="无法设置 Fusion 产品信息"/>
+	<label commandName="GetProcAddressMoldflowProdInfo" devLabel="Unable to Set Fusion Product Information" translation="无法设置 Fusion 产品信息"/>
+	<label commandName="MoldflowLoadLibrary" devLabel="Load Moldflow Library" translation="加载 Moldflow 库"/>
+	<label commandName="PushFusionToCFD" devLabel="Unable to push data from Fusion 360 to CFD." translation="无法将数据从 Fusion 360 推送到 CFD。"/>
+	<label commandName="PushFusionToCFDBusy" devLabel="Unable to push data from Fusion 360 to CFD. CFD application may be busy" translation="无法将数据从 Fusion 360 推送到 CFD。CFD 应用程序可能正忙"/>
+	<label commandName="PushFusionToCFDMat" devLabel="Unable to push data from Fusion 360 to CFD." translation="无法将数据从 Fusion 360 推送到 CFD。"/>
+	<label commandName="PushFusionToCFDPlugin" devLabel="Unable to communicate with Fusion 360 to CFD plugin." translation="无法与“Fusion 360 到 CFD”插件进行通信。"/>
+	<label commandName="PushFusionToMoldflow" devLabel="Unable to push data from Fusion 360 to Moldflow." translation="无法将数据从 Fusion 360 推送到 Moldflow。"/>
+	<label commandName="PushFusionToMoldflowBusy" devLabel="Unable to push data from Fusion 360 to Moldflow. Moldflow application may be busy" translation="无法将数据从 Fusion 360 推送到 Moldflow。Moldflow 应用程序可能正忙"/>
+	<label commandName="PushFusionToMoldflowPlugin" devLabel="Unable to communicate with Fusion 360 to Moldflow plugin." translation="无法与“Fusion 360 到 Moldflow”插件进行通信。"/>
+	<label commandName="PushFusionToMoldflowSetPath" devLabel="Unable to push data from Fusion 360 to Moldflow." translation="无法将数据从 Fusion 360 推送到 Moldflow。"/>
+	<label commandName="WinAPIFailed" devLabel="Windows API %s failed with error %d: %s" translation="Windows API %s 出现错误 %d: %s"/>
+</Resource>

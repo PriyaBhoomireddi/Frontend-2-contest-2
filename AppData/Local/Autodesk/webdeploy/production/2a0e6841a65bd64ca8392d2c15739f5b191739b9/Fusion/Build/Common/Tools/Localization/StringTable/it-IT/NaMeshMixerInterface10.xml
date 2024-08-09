@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="AMM_ERROR_DISCONNECTED_MESH" devLabel="The target mesh needs to be a connected mesh." translation="La mesh di destinazione deve essere una mesh connessa."/>
+	<label commandName="AMM_ERROR_EMPTY_SELECTION" devLabel="Failure due to empty selection." translation="Si è verificato un errore a causa di una selezione vuota."/>
+	<label commandName="AMM_ERROR_FAILED_TO_CREATE_MESH" devLabel="Failed to generate the mesh. Try different parameter settings if possible." translation="Impossibile generare la mesh. Provare diverse impostazioni di parametro, se possibile."/>
+	<label commandName="AMM_ERROR_FAILED_TO_OPEN_FILE" devLabel="Failed to open mesh file." translation="Impossibile aprire il file mesh."/>
+	<label commandName="AMM_ERROR_FAILED_TO_SAVE_FILE" devLabel="Failed to save mesh file." translation="Impossibile salvare il file mesh."/>
+	<label commandName="AMM_ERROR_FAILED_TO_SLICE_MESH" devLabel="Failed to slice the mesh with the specified plane." translation="Impossibile tagliare la mesh con il piano specificato."/>
+	<label commandName="AMM_ERROR_NO_OVERHANGS_FOR_SUPPORT" devLabel="No supports are required because there are no overhangs in the mesh." translation="Non è necessario alcun supporto poiché non vi sono sporgenze nella mesh."/>
+	<label commandName="AMM_ERROR_REPAIR_FAILED" devLabel="The repair tool failed to reduce the number of defects." translation="Impossibile ridurre il numero di difetti con lo strumento di correzione."/>
+	<label commandName="AMM_ERROR_SELECTION_ALREADY_DRAWING" devLabel="Error during paint selection." translation="Errore durante la selezione a pennello."/>
+	<label commandName="AMM_ERROR_SELECTION_FAILED" devLabel="Error creating selection." translation="Errore durante la creazione della selezione."/>
+	<label commandName="AMM_ERROR_TOO_SMALL_FOR_SUPPORT" devLabel="Mesh is too small for support generation." translation="La mesh è troppo piccola per supportare la generazione."/>
+	<label commandName="AMM_ERROR_UNABLE_TO_EXPORT_MULTIPLE_MESHES" devLabel="Mesh export failed." translation="Esportazione mesh non riuscita."/>
+	<label commandName="AMM_ERROR_UNABLE_TO_FIND_CONSISTENT_NORMAL" devLabel="Unsable to find consistent normals for the mesh. Try repairing any non-manifold regions first." translation="Impossibile trovare perpendicolari coerenti per la mesh. Correggere prima le aree non manifold."/>
+	<label commandName="AMM_ERROR_WRONG_BRUSH_STROKE_ORDER" devLabel="Error during paint selection." translation="Errore durante la selezione a pennello."/>
+	<label commandName="AMM_FAILED" devLabel="Mesh operation failed." translation="Operazione mesh non riuscita."/>
+	<label commandName="MMIGenerateMeshFromVoxelSolid" devLabel="Generating mesh from voxelized body..." translation="Generazione mesh dal corpo con voxel in corso..."/>
+	<label commandName="MMIGenerateVoxelSolid" devLabel="Generating voxel representation..." translation="Generazione rappresentazione voxel in corso..."/>
+	<label commandName="MMIProjectResultSolid" devLabel="Projecting result on original mesh..." translation="Proiezione risultato su mesh originale in corso..."/>
+	<label commandName="MMIReduceMeshSolid" devLabel="Reducing mesh body..." translation="Riduzione corpo mesh in corso..."/>
+	<label commandName="MMIRepairMeshSolid" devLabel="Repairing mesh body..." translation="Riparazione corpo mesh in corso..."/>
+	<label commandName="MMISmoothVoxelSolid" devLabel="Smoothing voxelized body..." translation="Arrotondamento corpo con voxel in corso..."/>
+	<label commandName="MMIThickenVoxelSolid" devLabel="Thickening voxelized body..." translation="Ispessimento corpo con voxel in corso..."/>
+</Resource>

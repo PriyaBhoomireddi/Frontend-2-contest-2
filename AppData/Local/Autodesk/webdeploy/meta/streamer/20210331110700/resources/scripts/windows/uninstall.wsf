@@ -1,0 +1,186 @@
+<?XML version="1.0" ?>
+<job>
+    <script language="JScript">
+    <![CDATA[
+        var oFSO = WScript.CreateObject('Scripting.FileSystemObject');
+        var sPath = WScript.ScriptFullName;
+        var succeeded = false;
+        sPath = oFSO.GetParentFolderName(sPath);
+        sPath = oFSO.BuildPath(sPath, 'streamer');
+
+        if (oFSO.FolderExists(sPath)) {
+            oFolder = oFSO.GetFolder(sPath);
+            var fc = new Enumerator(oFolder.SubFolders);
+            var list = []
+            var streamer_pat = /\\\d{14}$/
+            for (; !fc.atEnd(); fc.moveNext()) {
+                var path = fc.item()
+                if (streamer_pat.test(path)) {
+                    list.push(path);
+                }
+            }
+
+            list.sort();
+            list.reverse();
+
+            if (list.length) {
+                var sStreamerPath = oFSO.BuildPath(list[0], 'streamer.exe');
+                if (oFSO.FileExists(sStreamerPath)) {
+                    var args = [];
+                    for (var i = 0; i < WScript.Arguments.length; i++) {
+                        args.push(WScript.Arguments(i));
+                    }
+                    var oShell = WScript.CreateObject('WScript.Shell');
+                    oShell.Run('"' + sStreamerPath + '" ' + args.join(' '));
+                    succeeded = true;
+                }
+            }
+            
+        }
+
+        if (!succeeded) {
+            WScript.Echo('Could not find uninstaller to launch');
+            WScript.Quit(1);
+        }
+    ]]>
+    </script>
+
+<signature>
+** SIG ** MIIRfwYJKoZIhvcNAQcCoIIRcDCCEWwCAQExCzAJBgUr
+** SIG ** DgMCGgUAMGcGCisGAQQBgjcCAQSgWTBXMDIGCisGAQQB
+** SIG ** gjcCAR4wJAIBAQQQcAVhGs441BGiowAQS9NQkAIBAAIB
+** SIG ** AAIBAAIBAAIBADAhMAkGBSsOAwIaBQAEFAPdbWA437u+
+** SIG ** l8aPSZEz228fr9L0oIIOsDCCBKQwggOMoAMCAQICEH2O
+** SIG ** oXsJMD8lwJqoPemNlI0wDQYJKoZIhvcNAQELBQAwgYQx
+** SIG ** CzAJBgNVBAYTAlVTMR0wGwYDVQQKExRTeW1hbnRlYyBD
+** SIG ** b3Jwb3JhdGlvbjEfMB0GA1UECxMWU3ltYW50ZWMgVHJ1
+** SIG ** c3QgTmV0d29yazE1MDMGA1UEAxMsU3ltYW50ZWMgQ2xh
+** SIG ** c3MgMyBTSEEyNTYgQ29kZSBTaWduaW5nIENBIC0gRzIw
+** SIG ** HhcNMjAxMTE3MDAwMDAwWhcNMjExMTE4MjM1OTU5WjB3
+** SIG ** MQswCQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5p
+** SIG ** YTETMBEGA1UEBwwKU2FuIFJhZmFlbDEXMBUGA1UECgwO
+** SIG ** QXV0b2Rlc2ssIEluYy4xDDAKBgNVBAsMA01DUDEXMBUG
+** SIG ** A1UEAwwOQXV0b2Rlc2ssIEluYy4wggEiMA0GCSqGSIb3
+** SIG ** DQEBAQUAA4IBDwAwggEKAoIBAQCjLypp0yHEeZkUimzZ
+** SIG ** NHUf1gB4/RrIX6VLCzVhrlNRSjBsSrw20O7Qp3bPUqTM
+** SIG ** jslgT2YXT04BCrwwkkGso5RNway18jCKlnBlsSxBjL2O
+** SIG ** AgPoMBE5ihjpGZ9XPGLm4ivEo0G/RId4oGQlkf/VD4fX
+** SIG ** 5lygmA8cfiyk3Q2tV8Z37kgw9HQsE1gOiNvu38SAKdJ7
+** SIG ** 1TGX+wd7VA3fakJftmNyJYYjFe/b3NgEREACegj0Zuxl
+** SIG ** lgJk6zfwMRvNrHqEbJOSZ6Um9sFVEkZ6NmqOuuOV0ahf
+** SIG ** 08wTqxx07bzamx1bqr+6XHL8KRId2usPFLijp6sHhp6b
+** SIG ** eMgttDgbzTikmyp5AgMBAAGjggEcMIIBGDAJBgNVHRME
+** SIG ** AjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggr
+** SIG ** BgEFBQcDAzA/BgNVHSAEODA2MDQGBmeBDAEEATAqMCgG
+** SIG ** CCsGAQUFBwIBFhxodHRwczovL3d3dy5kaWdpY2VydC5j
+** SIG ** b20vQ1BTMB8GA1UdIwQYMBaAFNTABiJJ6zlL3ZPiXKG4
+** SIG ** R3YJcgNYMCsGA1UdHwQkMCIwIKAeoByGGmh0dHA6Ly9y
+** SIG ** Yi5zeW1jYi5jb20vcmIuY3JsMFcGCCsGAQUFBwEBBEsw
+** SIG ** STAfBggrBgEFBQcwAYYTaHR0cDovL3JiLnN5bWNkLmNv
+** SIG ** bTAmBggrBgEFBQcwAoYaaHR0cDovL3JiLnN5bWNiLmNv
+** SIG ** bS9yYi5jcnQwDQYJKoZIhvcNAQELBQADggEBADZIiK4q
+** SIG ** Q3O7b0KLig3zycdFI1y8fOn1aslWtx4xjGtJsmz7tm8V
+** SIG ** 7kuD7VbQiglCK/xGEAJIXl37QPnQHazcZxe3kIvjb6MT
+** SIG ** D/7538AcXrn3UXscL3rhC7j6KpxYejwFDEZIdf/XD4UD
+** SIG ** V30pTamR1b4o+muA2Npb+hsjT5WtsiSXfCnkL2WIylLA
+** SIG ** ARv7zhZ50nRziY1nTvvohBMoGi6N132qT1EK/wPjNkZV
+** SIG ** h6ivr79KM4O+Afc0DrhaFlYpUQcIerz8LqcA6p6g9K+F
+** SIG ** 1Bhw/m+3FY4Br/eQeZqjQUGIXFS99loIzzfXkjXW95yU
+** SIG ** 8lnAJzyoH1NNMNrV8dtrsUT/7OUwggS5MIIDoaADAgEC
+** SIG ** AhBAGsRkIbMTIQMOu+QSGsUdMA0GCSqGSIb3DQEBCwUA
+** SIG ** MIG9MQswCQYDVQQGEwJVUzEXMBUGA1UEChMOVmVyaVNp
+** SIG ** Z24sIEluYy4xHzAdBgNVBAsTFlZlcmlTaWduIFRydXN0
+** SIG ** IE5ldHdvcmsxOjA4BgNVBAsTMShjKSAyMDA4IFZlcmlT
+** SIG ** aWduLCBJbmMuIC0gRm9yIGF1dGhvcml6ZWQgdXNlIG9u
+** SIG ** bHkxODA2BgNVBAMTL1ZlcmlTaWduIFVuaXZlcnNhbCBS
+** SIG ** b290IENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTA4
+** SIG ** MDQwMjAwMDAwMFoXDTM3MTIwMTIzNTk1OVowgb0xCzAJ
+** SIG ** BgNVBAYTAlVTMRcwFQYDVQQKEw5WZXJpU2lnbiwgSW5j
+** SIG ** LjEfMB0GA1UECxMWVmVyaVNpZ24gVHJ1c3QgTmV0d29y
+** SIG ** azE6MDgGA1UECxMxKGMpIDIwMDggVmVyaVNpZ24sIElu
+** SIG ** Yy4gLSBGb3IgYXV0aG9yaXplZCB1c2Ugb25seTE4MDYG
+** SIG ** A1UEAxMvVmVyaVNpZ24gVW5pdmVyc2FsIFJvb3QgQ2Vy
+** SIG ** dGlmaWNhdGlvbiBBdXRob3JpdHkwggEiMA0GCSqGSIb3
+** SIG ** DQEBAQUAA4IBDwAwggEKAoIBAQDHYTdesQE022LXFZv/
+** SIG ** WFqMIyPWYI6R15CYg3rmWBk4jMX25WSFtKJx++29udrN
+** SIG ** TQC0yC1zpcdpcZUfOTyyRAec6A76TUrEId8pYY8yImGC
+** SIG ** xYcfbox8XxYgUUTRcE9X6uMc48x57ljYDsKzRZPALOea
+** SIG ** Fyt7ADd6QTN44TPi8xAaf4csvvb190Li5b+HYolfAEvf
+** SIG ** xd3kdUQyQToecW5pywt1RgjRytIrldDP+7lAa2SMV038
+** SIG ** ExF5hO1eVPY0nwgB8xAlBhdK2vEdemZrmGBmpNnv0i6C
+** SIG ** 8fDvCepEyRVq4gNuM9Osn1UAx/YIapS5X9zgM/GEYPlb
+** SIG ** JxG0/Bbyu1ZqgCWNAgMBAAGjgbIwga8wDwYDVR0TAQH/
+** SIG ** BAUwAwEB/zAOBgNVHQ8BAf8EBAMCAQYwbQYIKwYBBQUH
+** SIG ** AQwEYTBfoV2gWzBZMFcwVRYJaW1hZ2UvZ2lmMCEwHzAH
+** SIG ** BgUrDgMCGgQUj+XTGoasjY5rw8+AatRIGCx7GS4wJRYj
+** SIG ** aHR0cDovL2xvZ28udmVyaXNpZ24uY29tL3ZzbG9nby5n
+** SIG ** aWYwHQYDVR0OBBYEFLZ3+mlIR59TEtXC6gcydgfRlwcZ
+** SIG ** MA0GCSqGSIb3DQEBCwUAA4IBAQBK+PiwA+YsZ3vklHdj
+** SIG ** zG5M+X0ODdzIuTW5cE9j+iT6bIOMR507Y/Oa+XYylZGx
+** SIG ** d7ysmr6x5DEhxoGVVloOscLUsaZZrPFjy7hMHVmQSu+Q
+** SIG ** FigfWq4Q+4FQOAxszPE9w/Vj47PjIckkOen9FWZG9BsR
+** SIG ** 0E1zo31G+T3tqF9i1PE/+OB0VysYnYG0xCjalJelcOus
+** SIG ** Hb4HEfDV293ljPDVMrCD5lfij7++oaq/PR211Djq17Bc
+** SIG ** Ok9qP4/AZmxjqunZpBb0gdGVFA59zZU02dKPcHOBe5x+
+** SIG ** vZhh2EWHmJDF64YwxjW/8P/DVYiDS+8FkgZx8riYk7fs
+** SIG ** zYJh8TjmT5eYKlqNMIIFRzCCBC+gAwIBAgIQfBs1NUrn
+** SIG ** 23TnQV8RacprqDANBgkqhkiG9w0BAQsFADCBvTELMAkG
+** SIG ** A1UEBhMCVVMxFzAVBgNVBAoTDlZlcmlTaWduLCBJbmMu
+** SIG ** MR8wHQYDVQQLExZWZXJpU2lnbiBUcnVzdCBOZXR3b3Jr
+** SIG ** MTowOAYDVQQLEzEoYykgMjAwOCBWZXJpU2lnbiwgSW5j
+** SIG ** LiAtIEZvciBhdXRob3JpemVkIHVzZSBvbmx5MTgwNgYD
+** SIG ** VQQDEy9WZXJpU2lnbiBVbml2ZXJzYWwgUm9vdCBDZXJ0
+** SIG ** aWZpY2F0aW9uIEF1dGhvcml0eTAeFw0xNDA3MjIwMDAw
+** SIG ** MDBaFw0yNDA3MjEyMzU5NTlaMIGEMQswCQYDVQQGEwJV
+** SIG ** UzEdMBsGA1UEChMUU3ltYW50ZWMgQ29ycG9yYXRpb24x
+** SIG ** HzAdBgNVBAsTFlN5bWFudGVjIFRydXN0IE5ldHdvcmsx
+** SIG ** NTAzBgNVBAMTLFN5bWFudGVjIENsYXNzIDMgU0hBMjU2
+** SIG ** IENvZGUgU2lnbmluZyBDQSAtIEcyMIIBIjANBgkqhkiG
+** SIG ** 9w0BAQEFAAOCAQ8AMIIBCgKCAQEA15VD1NzfZ645+1Kk
+** SIG ** tiYxBHDpt45bKro3aTWVj7vAMOeG2HO73+vRdj+KVo7r
+** SIG ** LUvwVxhOsY2lM9MLdSPVankn3aPT9w6HZbXerRzx9TW0
+** SIG ** IlGvIqHBXUuQf8BZTqudeakC1x5JsTtNh/7CeKu/71Ku
+** SIG ** nK8I2TnlmlE+aV8wEE5xY2xY4fAgMxsPdL5byxLh24zE
+** SIG ** gJRyu/ZFmp7BJQv7oxye2KYJcHHswEdMj33D3hnOPu4E
+** SIG ** co4X0//wsgUyGUzTsByf/qV4IEJwQbAmjG8AyDoAEUF6
+** SIG ** QbCnipEEoJl49He082Aq5mxQBLcUYP8NUfSoi4T+Idpc
+** SIG ** Xn31KXlPsER0b21y/wIDAQABo4IBeDCCAXQwLgYIKwYB
+** SIG ** BQUHAQEEIjAgMB4GCCsGAQUFBzABhhJodHRwOi8vcy5z
+** SIG ** eW1jZC5jb20wEgYDVR0TAQH/BAgwBgEB/wIBADBmBgNV
+** SIG ** HSAEXzBdMFsGC2CGSAGG+EUBBxcDMEwwIwYIKwYBBQUH
+** SIG ** AgEWF2h0dHBzOi8vZC5zeW1jYi5jb20vY3BzMCUGCCsG
+** SIG ** AQUFBwICMBkaF2h0dHBzOi8vZC5zeW1jYi5jb20vcnBh
+** SIG ** MDYGA1UdHwQvMC0wK6ApoCeGJWh0dHA6Ly9zLnN5bWNi
+** SIG ** LmNvbS91bml2ZXJzYWwtcm9vdC5jcmwwEwYDVR0lBAww
+** SIG ** CgYIKwYBBQUHAwMwDgYDVR0PAQH/BAQDAgEGMCkGA1Ud
+** SIG ** EQQiMCCkHjAcMRowGAYDVQQDExFTeW1hbnRlY1BLSS0x
+** SIG ** LTcyNDAdBgNVHQ4EFgQU1MAGIknrOUvdk+JcobhHdgly
+** SIG ** A1gwHwYDVR0jBBgwFoAUtnf6aUhHn1MS1cLqBzJ2B9GX
+** SIG ** BxkwDQYJKoZIhvcNAQELBQADggEBAH/ryqfqi3ZC6z6O
+** SIG ** IFQw47e53PpIPhbHD0WVEM0nhqNm8wLtcfiqwlWXkXCD
+** SIG ** +VJ+Umk8yfHglEaAGLuh1KRWpvMdAJHVhvNIh+DLxDRo
+** SIG ** IF60y/kF7ZyvcFMnueg+flGgaXGL3FHtgDolMp9Er25D
+** SIG ** KNMhdbuX2IuLjP6pBEYEhfcVnEsRjcQsF/7Vbn+a4laS
+** SIG ** 8ZazrS359N/aiZnOsjhEwPdHe8olufoqaDObUHLeqJ/U
+** SIG ** zSwLNL2LMHhA4I2OJxuQbxq+CBWBXesv4lHnUR7JeCnn
+** SIG ** HmW/OO8BSgEJJA4WxBR5wUE3NNA9kVKUneFo7wjw4mmc
+** SIG ** Z26QCxqTcdQmAsPAWiMxggI7MIICNwIBATCBmTCBhDEL
+** SIG ** MAkGA1UEBhMCVVMxHTAbBgNVBAoTFFN5bWFudGVjIENv
+** SIG ** cnBvcmF0aW9uMR8wHQYDVQQLExZTeW1hbnRlYyBUcnVz
+** SIG ** dCBOZXR3b3JrMTUwMwYDVQQDEyxTeW1hbnRlYyBDbGFz
+** SIG ** cyAzIFNIQTI1NiBDb2RlIFNpZ25pbmcgQ0EgLSBHMgIQ
+** SIG ** fY6hewkwPyXAmqg96Y2UjTAJBgUrDgMCGgUAoHgwGAYK
+** SIG ** KwYBBAGCNwIBDDEKMAigAoAAoQKAADAZBgkqhkiG9w0B
+** SIG ** CQMxDAYKKwYBBAGCNwIBBDAcBgorBgEEAYI3AgELMQ4w
+** SIG ** DAYKKwYBBAGCNwIBFTAjBgkqhkiG9w0BCQQxFgQUu6JN
+** SIG ** /ufj3+SXT6cQAz0WMTxPRtUwDQYJKoZIhvcNAQEBBQAE
+** SIG ** ggEAIXCIyMS847Hw3dPbLyagZ0f2RIJ0b/RXTFyYolgR
+** SIG ** l4w79xYeALApWoJNANMaIkwVNr/8b7+4RVERyTutCBhu
+** SIG ** Jxaxmgq1g4HSdTRdlHEHBOnqPPHLGAIIUymZ+QgIvKz5
+** SIG ** Uswg/+CZIp/sNhwTgo0+cVicILIrlb6ZGy1Io2W9TMwI
+** SIG ** Fv5HBE+fxtpj1f/D4Y+pan5tskUDYF1G9qL6epPqLkn7
+** SIG ** RdvoR2Mn8yfleeDrYMJKi0cNr+Ui6Saymi+hMJErnf4n
+** SIG ** gtgahQkgcJpxrpxcQSQEA4zZ+7xKMaYSFVPPRrSetSqy
+** SIG ** lYvHyqlx04uEkaIshzxuPiyQqAMM2OqzgQkQ6g==
+</signature>
+</job>

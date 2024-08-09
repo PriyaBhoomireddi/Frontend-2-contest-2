@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="CmMKSUnitSystemName" devLabel="cm modeling length with MKS (m, kg, second, Celsius) units" translation="使用 MKS (米、千克、秒、摄氏度)单位的厘米建模长度"/>
+	<label commandName="GenerateSupportsGenericError" devLabel="Supports generation failed due to invalid input" translation="由于输入无效，支架生成失败"/>
+	<label commandName="ImperialUnitSystemName" devLabel="Imperial (foot, lbmass, second, Fahrenheit) units" translation="英制(英尺、磅、秒、华氏度)单位"/>
+	<label commandName="InchImperialUnitSystemName" devLabel="inch modeling length with imperial (foot, lbmass, second, Fahrenheit) units" translation="使用英制(英尺、磅、秒、华氏度)单位的英制建模长度"/>
+	<label commandName="MeshConvFail" devLabel="BRep Convert Failed" translation="BRep 转换失败"/>
+	<label commandName="MmMKSUnitSystemName" devLabel="mm modeling length with MKS (m, kg, second, Celsius) units" translation="使用 MKS (米、千克、秒、摄氏度)单位的毫米建模长度"/>
+	<label commandName="NextValidChildPrintConfigurationName" devLabel="Print Setup" translation="打印设置"/>
+	<label commandName="PrintConfigurationSelectionId" devLabel="PrintConfiguration" translation="打印配置"/>
+	<label commandName="PrintConfigurationsSelectionCategory" devLabel="Configuration Collection" translation="配置集合"/>
+</Resource>

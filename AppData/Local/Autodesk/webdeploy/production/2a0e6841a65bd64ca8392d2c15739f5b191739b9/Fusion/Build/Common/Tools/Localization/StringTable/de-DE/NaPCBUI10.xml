@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="3D PCB Environment" devLabel="3D PCB" translation="3D-Leiterplatte"/>
+	<label commandName="3DPCBTypeCanvas" devLabel="Canvas" translation="Ansichtsbereich"/>
+	<label commandName="3DPCBTypeComplete" devLabel="Complete 3D" translation="3D abschließen"/>
+	<label commandName="3DPCBTypeInput" devLabel="3D PCB Type" translation="3D-Leiterplattentyp"/>
+	<label commandName="3DPCBTypeSimple" devLabel="Simple 3D" translation="Einfaches 3D"/>
+	<label commandName="ChooseEagleProfile" devLabel="Choose EAGLE Board Shape" translation="EAGLE-Leiterplattenform wählen"/>
+	<label commandName="ChooseFusionProfile" devLabel="Choose Fusion Board Shape" translation="Fusion-Leiterplattenform wählen"/>
+	<label commandName="Create Hole on Board" devLabel="PCBHole" translation="Leiterplattenbohrung"/>
+	<label commandName="Create PCB" devLabel="Create 3D PCB" translation="3D-Leiterplatte erstellen"/>
+	<label commandName="Create PCB Document" devLabel="New 3D PCB" translation="Neue 3D-Leiterplatte"/>
+	<label commandName="Create PCB Workspace" devLabel="Create PCB" translation="Leiterplatte erstellen"/>
+	<label commandName="CreatePCBFlipInput" devLabel="Flip" translation="Umkehren"/>
+	<label commandName="CreatePCBHeightInput" devLabel="Thickness" translation="Dicke"/>
+	<label commandName="CreatePCBProfileInput" devLabel="Profile" translation="Profil"/>
+	<label commandName="Edit PCB Board" devLabel="Edit Board" translation="Leiterplatte bearbeiten"/>
+	<label commandName="EnterIntoPCBEnvironment" devLabel="You have entered into the PCB Mechanical Environment." translation="Sie befinden sich in der Umgebung für mechanische Leiterplattenkonstruktion."/>
+	<label commandName="FusionPCB3DFlipComponent" devLabel="Flip 3D PCB Component" translation="3D-Leiterplattenkomponente umkehren"/>
+	<label commandName="FusionPCBActivate" devLabel="Edit" translation="Bearbeiten"/>
+	<label commandName="FusionPCBFlipComponent" devLabel="Flip Component" translation="Komponente umkehren"/>
+	<label commandName="FusionPCBStop" devLabel="Finish PCB" translation="Leiterplatte fertig stellen"/>
+	<label commandName="FusionPCBUpdateDocument" devLabel="Update 3D PCB" translation="3D-Leiterplatte aktualisieren"/>
+	<label commandName="FusionSelectDeriveProfileError" devLabel="Can't select 3d sketch to derive" translation="Zum Ableiten kann keine 3D-Skizze ausgewählt werden"/>
+	<label commandName="FusionSelectFaceForHole" devLabel="Select face to locate hole" translation="Fläche zum Positionieren der Bohrung auswählen"/>
+	<label commandName="FusionSelectOriginRefPCBDefineBoard" devLabel="Select sketch point for PCB board origin reference" translation="Skizzierpunkt für Ursprungsreferenz der Leiterplatte auswählen"/>
+	<label commandName="FusionSelectPCBComponent" devLabel="Select PCB components" translation="Leiterplattenkomponenten auswählen"/>
+	<label commandName="FusionSelectPCBComponentBodyEdit" devLabel="Select Body from PCB component" translation="Körper aus Leiterplattenkomponente auswählen"/>
+	<label commandName="FusionSelectPCBComponentEdit" devLabel="Select a PCB component" translation="Leiterplattenkomponente auswählen"/>
+	<label commandName="FusionSelectProfileCreatePCB" devLabel="Select sketch profile(s) for PCB" translation="Skizzierprofil(e) für Leiterplatte auswählen"/>
+	<label commandName="FusionSelectProfileError" devLabel="Can't select 3d sketch to create PCB" translation="Fehler beim Auswählen der 3D-Skizze zum Erstellen der Leiterplatte"/>
+	<label commandName="FusionSelectProfilePCBDefine3DBoard" devLabel="Select sketch profile for PCB" translation="Skizzierprofil für Leiterplatte auswählen"/>
+	<label commandName="FusionSelectProfilePCBDefineBoard" devLabel="Select sketch profile(s) and origin for PCB" translation="Skizzierprofil(e) und Ursprung für Leiterplatte auswählen"/>
+	<label commandName="FusionSelectReferencesForHole" devLabel="Select linear or circular reference edges to fully define hole location" translation="Zum vollständigen Definieren der Bohrungsposition lineare oder kreisförmige Referenzkanten auswählen"/>
+	<label commandName="FusionSelectSingleForHole" devLabel="Select face to locate hole" translation="Fläche zum Positionieren der Bohrung auswählen"/>
+	<label commandName="FusionSelectXDirPointRefPCBDefineBoard" devLabel="Select Sketch Line for board secondary axis orientation" translation="Skizzierlinie für sekundäre Achsenausrichtung der Leiterplatte auswählen"/>
+	<label commandName="InvalidProfileSelection" devLabel="The selected profiles must be able to be merged into single one!" translation="Die ausgewählten Profile müssen zu einem einzigen Profil zusammengeführt werden können."/>
+	<label commandName="MissingExtrudeProfile" devLabel="Missing profiles" translation="Fehlende Profile"/>
+	<label commandName="MissingHoleOrigin" devLabel="missing face" translation="fehlende Fläche"/>
+	<label commandName="MissingPCBAxis" devLabel="Missing axis" translation="Fehlende Achse"/>
+	<label commandName="MissingPCBOrigin" devLabel="Missing origin" translation="Fehlender Ursprung"/>
+	<label commandName="Move 3D PCB components" devLabel="Move" translation="Verschieben"/>
+	<label commandName="Move PCB component Body" devLabel="Move PCB Component body" translation="Leiterplattenkomponenten-Körper verschieben"/>
+	<label commandName="Move PCB components" devLabel="Move PCB Components" translation="Leiterplattenkomponenten verschieben"/>
+	<label commandName="PCB Environment" devLabel="PCB" translation="Leiterplatte"/>
+	<label commandName="PCB Profile" devLabel="PCB Profile" translation="Leiterplattenprofil"/>
+	<label commandName="PCB Sketch" devLabel="Edit EAGLE Profile" translation="EAGLE-Profil bearbeiten"/>
+	<label commandName="PCB3DBoardOutlineEditCommand" devLabel="Edit Sketch" translation="Skizze bearbeiten"/>
+	<label commandName="PCBConstruction" devLabel="Construction" translation="Konstruktion"/>
+	<label commandName="PCBCreateLimitText" devLabel="The maximum number of PCBs within a Design, %1%, has been reached.&#xA;PCBs can be inserted from other Designs." translation="Die maximale Anzahl für Leiterplatten innerhalb einer Konstruktion (%1%) wurde erreicht.&#xA;Leiterplatten können aus anderen Konstruktionen eingefügt werden."/>
+	<label commandName="PCBCreateLimitTitle" devLabel="PCB Limit Reached" translation="Grenze für Leiterplatten erreicht"/>
+	<label commandName="PCBCreateSimExisting" devLabel="The PCB Feature does not currently support syncing PCBs in Fusion assemblies containing linked components or simulation studies.            &#xA;&#xA;Remove linked components or simulation studies in your assembly to continue, or put the PCB in a separate Fusion design and insert it into your assembly." translation="Das Leiterplattenelement unterstützt derzeit keine Synchronisierung von Leiterplatten in Fusion-Baugruppen mit verknüpften Komponenten oder Simulationsstudien.            &#xA;&#xA;Entfernen Sie verknüpfte Komponenten oder Simulationsstudien aus der Baugruppe, um fortzufahren, oder legen Sie die Leiterplatte in einer separaten Fusion-Konstruktion ab, und fügen Sie sie in die Baugruppe ein."/>
+	<label commandName="PCBCreateXRefExisting" devLabel="The PCB Feature does not currently support syncing PCBs in Fusion assemblies containing linked components or simulation studies.            &#xA;&#xA;Remove linked components or simulation studies in your assembly to continue, or put the PCB in a separate Fusion design and insert it into your assembly." translation="Das Leiterplattenelement unterstützt derzeit keine Synchronisierung von Leiterplatten in Fusion-Baugruppen mit verknüpften Komponenten oder Simulationsstudien.            &#xA;&#xA;Entfernen Sie verknüpfte Komponenten oder Simulationsstudien aus der Baugruppe, um fortzufahren, oder legen Sie die Leiterplatte in einer separaten Fusion-Konstruktion ab, und fügen Sie sie in die Baugruppe ein."/>
+	<label commandName="PCBDefineBoardFlipInput" devLabel="Flip" translation="Umkehren"/>
+	<label commandName="PCBDefineBoardHeightInput" devLabel="Thickness" translation="Dicke"/>
+	<label commandName="PCBDefineBoardOriginGroup" devLabel="Origin" translation="Ursprung"/>
+	<label commandName="PCBDefineBoardOriginRefInput" devLabel="Origin" translation="Ursprung"/>
+	<label commandName="PCBDefineBoardProfileInput" devLabel="Profile" translation="Profil"/>
+	<label commandName="PCBDefineBoardProfileOnBottom" devLabel="PCB Bottom Layer" translation="Unterer Leiterplatten-Layer"/>
+	<label commandName="PCBDefineBoardProfileOnInput" devLabel="Profile On" translation="Profil ein"/>
+	<label commandName="PCBDefineBoardProfileOnTop" devLabel="PCB Top Layer" translation="Oberer Leiterplatten-Layer"/>
+	<label commandName="PCBDefineBoardReorientInput" devLabel="Reorient" translation="Neu ausrichten"/>
+	<label commandName="PCBDefineBoardShapeGroup" devLabel="Shape" translation="Form"/>
+	<label commandName="PCBDefineBoardTopInput" devLabel="PCB Top" translation="Leiterplatte oben"/>
+	<label commandName="PCBDefineBoardXDirRefInput" devLabel="X Axis" translation="X-Achse"/>
+	<label commandName="PCBDerive" devLabel="Derive PCB from Sketch" translation="Leiterplatte aus Skizze ableiten"/>
+	<label commandName="PCBFixed" devLabel="Fixed" translation="Fest"/>
+	<label commandName="PCBHoleCenterInput" devLabel="Center" translation="Mittelpunkt"/>
+	<label commandName="PCBHoleDiameterInput" devLabel="Diameter" translation="Durchmesser"/>
+	<label commandName="PCBHoleEdit" devLabel="Edit" translation="Bearbeiten"/>
+	<label commandName="PCBHoleFaceInput" devLabel="Face" translation="Fläche"/>
+	<label commandName="PCBHoleRef0" devLabel="Distance" translation="Abstand"/>
+	<label commandName="PCBHoleRef0Btn" devLabel="Reference" translation="Referenz"/>
+	<label commandName="PCBHoleRef1" devLabel="Distance" translation="Abstand"/>
+	<label commandName="PCBHoleRef1Btn" devLabel="Reference" translation="Referenz"/>
+	<label commandName="PCBImprintEagle" devLabel="Copy EAGLE Profile" translation="EAGLE-Profil kopieren"/>
+	<label commandName="PCBImprintSelPrompt" devLabel="Select destination plane or sketch" translation="Zielebene oder Skizze auswählen"/>
+	<label commandName="PCBMoveBodySelectionInput" devLabel="Selection" translation="Auswahl"/>
+	<label commandName="PCBMoveBodyTransformInput" devLabel="Distance" translation="Abstand"/>
+	<label commandName="PCBMoveRerouteInput" devLabel="Reroute" translation="Verbindung neu erstellen"/>
+	<label commandName="PCBMoveSelectionInput" devLabel="Selection" translation="Auswahl"/>
+	<label commandName="PCBMoveTransformInput" devLabel="Distance" translation="Abstand"/>
+	<label commandName="PCBMoveUpdateInput" devLabel="Update PCB" translation="Leiterplatte aktualisieren"/>
+	<label commandName="PCBOpenFileInput" devLabel="Select Board file" translation="Leiterplattendatei auswählen"/>
+	<label commandName="PCBSketchSelect" devLabel="Destination" translation="Ziel"/>
+	<label commandName="PCBStatus" devLabel="PCB Status" translation="Leiterplattenstatus"/>
+	<label commandName="PCBStatusBoardHeight" devLabel="Board Height" translation="Leiterplattenhöhe"/>
+	<label commandName="PCBStatusBoardShape" devLabel="Board Shape" translation="Leiterplattenform"/>
+	<label commandName="PCBStatusChanged" devLabel="Changed" translation="Geändert"/>
+	<label commandName="PCBStatusComponents" devLabel="PCB Components" translation="Leiterplattenkomponenten"/>
+	<label commandName="PCBStatusEagleInput" devLabel="EAGLE Board Shape" translation="EAGLE-Leiterplattenform"/>
+	<label commandName="PCBStatusFusionInput" devLabel="Fusion Board Shape" translation="Fusion-Leiterplattenform"/>
+	<label commandName="PCBStatusUnchanged" devLabel="Unchanged" translation="Unverändert"/>
+	<label commandName="PushDeriveInvalidSelectionMsg" devLabel="Unexpected invalid selection" translation="Unerwartete ungültige Auswahl"/>
+	<label commandName="PushDeriveToExistingTxnMessage" devLabel="New Derive Feature" translation="Neues Ableitungselement"/>
+	<label commandName="Replace PCB component" devLabel="Replace Component Body" translation="Komponentenkörper ersetzen"/>
+	<label commandName="StepFFilesFilter" devLabel="STEP Files (*.stp *.step)" translation="STEP-Dateien (*.stp; *.step)"/>
+	<label commandName="UnSupportedDeriveObject" devLabel="Target document is 3D PCB, which only accepts sketch for derive" translation="Das Zieldokument ist eine 3D-Leiterplatte, die nur Skizzen zum Ableiten akzeptiert"/>
+	<label commandName="Update PCB component" devLabel="Update PCB Component" translation="Leiterplattenkomponente aktualisieren"/>
+	<label commandName="XmlFilesFilter" devLabel="Xml Files (*.xml)" translation="XML-Dateien (*.xml)"/>
+	<label commandName="lclzPCB3DWorkspaceTitle" devLabel="Mechanical 3D PCB Workspace" translation="Arbeitsbereich Mechanische 3D-Leiterplattenkonstruktion"/>
+	<label commandName="lclzPCBBoardSketchEditCmd1" devLabel="Edit the sketch generated from EAGLE board." translation="Bearbeiten Sie die aus EAGLE Board generierte Skizze."/>
+	<label commandName="lclzPCBBoardSketchEditCmdTipsAndTricksDesc" devLabel="This command is only available when there's sketch generated from EAGLE board." translation="Dieser Befehl ist nur verfügbar, wenn eine aus EAGLE Board generierte Skizze vorhanden ist."/>
+	<label commandName="lclzPCBBoardSketchEditCmdTipsAndTricksTips" devLabel="This command will activate the sketch generated from EAGLE board for editing." translation="Dieser Befehl aktiviert die aus EAGLE Board generierte Skizze zur Bearbeitung."/>
+	<label commandName="lclzPCBBoardSketchEditCmdTipsAndTricksTitle" devLabel="Edit the sketch generated from EAGLE board" translation="Aus EAGLE Board generierte Skizze bearbeiten"/>
+	<label commandName="lclzPCBCreateCommand1" devLabel="Create a 3D PCB document from the selected sketch or face." translation="Erstellen Sie aus der ausgewählten Skizze oder Fläche ein 3D-Leiterplattendokument."/>
+	<label commandName="lclzPCBCreateCommand2" devLabel="Use the 3D PCB document as an external reference in the enclosure design." translation="Verwenden Sie das 3D-Leiterplattendokument als externe Referenz in der Gehäusekonstruktion."/>
+	<label commandName="lclzPCBDefineBoardCmd1" devLabel="Define the shape of the PCB via a sketched profile." translation="Definieren Sie die Form der Leiterplatte über ein skizziertes Profil."/>
+	<label commandName="lclzPCBDefineBoardCmd2" devLabel="Select a profile and an origin point." translation="Wählen Sie ein Profil und einen Ursprungspunkt aus."/>
+	<label commandName="lclzPCBDefineBoardCmdTipsAndTricksDesc" devLabel="After selecting the profile, you must choose an origin to ensure the communication with EAGLE is precise. One corner of the PCB normally works well. Decide if the profile is on the top or bottom of the PCB, and be sure that the extrusion direction is correct. The PCB shape will become visible to EAGLE after the model is saved, and the EAGLE user can change the shape of the board as well." translation="Nach der Profilauswahl müssen Sie einen Ursprung wählen, um eine präzise Kommunikation mit EAGLE sicherzustellen. Eine Ecke der Leiterplatte ist normalerweise ausreichend. Legen Sie fest, ob das Profil sich auf der oberen oder unteren Seite der Leiterplatte befindet, und vergewissern Sie sich, dass die Richtung der Extrusion korrekt ist. Die Leiterplattenform wird nach dem Speichern des Modells für EAGLE sichtbar, und der EAGLE-Benutzer kann dann ebenfalls die Form der Leiterplatte bearbeiten."/>
+	<label commandName="lclzPCBDefineBoardCmdTipsAndTricksTips" devLabel="Select a profile and an origin point." translation="Wählen Sie ein Profil und einen Ursprungspunkt aus."/>
+	<label commandName="lclzPCBDefineBoardCmdTipsAndTricksTitle" devLabel="PCB Define Board Information" translation="Leiterplatten-Informationen definieren"/>
+	<label commandName="lclzPCBDeriveCommand1" devLabel="Derive a sketch from this design to a 3D PCB design. The selected profiles will be used to create the board outline. " translation="Leiten Sie eine Skizze aus dieser Konstruktion in eine 3D-Leiterplattenkonstruktion ab. Die ausgewählten Profile werden verwendet, um die Leiterplattenkontur zu erstellen. "/>
+	<label commandName="lclzPCBDeriveCommand2" devLabel="The board outline updates with changes to this design." translation="Die Leiterplattenkontur wird mit den Änderungen an dieser Konstruktion aktualisiert."/>
+	<label commandName="lclzPCBImprintCmd1" devLabel="Copies the profile supplied from EAGLE to an upstream Fusion sketch." translation="Kopiert das Profil aus EAGLE in eine vorgelagerte Fusion-Skizze."/>
+	<label commandName="lclzPCBImprintCmdTipsAndTricksDesc" devLabel="This command is primarily useful when both the Fusion and EAGLE user are actively changing the shape of the PCB." translation="Dieser Befehl ist vor allem dann nützlich, wenn sowohl der Fusion- als auch der EAGLE-Benutzer gerade aktiv die Form der Leiterplatte ändern."/>
+	<label commandName="lclzPCBImprintCmdTipsAndTricksTips" devLabel="Copies the profile supplied from EAGLE to an upstream Fusion sketch. You can copy to a pre-existing sketch, or create a new sketch by selecting a planar face or construction plane. The selected sketch or plane must be parallel to the PCB.  If there is already an upstream sketch that drives the PCB feature, that sketch will be selected by default." translation="Kopiert das Profil aus EAGLE in eine übergeordnete Fusion-Skizze. Sie können in eine vorab vorhandene Skizze kopieren oder eine neue Skizze erstellen, indem Sie eine planare Fläche oder Konstruktionsebene auswählen. Die ausgewählte Skizze oder Ebene muss parallel zur Leiterplatte sein. Wenn bereits eine vorgelagerte Skizze für die Steuerung des Leiterplattenelements vorliegt, wird diese Skizze vorgabemäßig ausgewählt."/>
+	<label commandName="lclzPCBImprintCmdTipsAndTricksTitle" devLabel="Copy EAGLE Profile Information" translation="EAGLE-Profilinformationen kopieren"/>
+	<label commandName="lclzPCBMoveComponentBodyCommand1" devLabel="Move PCB component body to align with the footprint on the board." translation="Verschieben Sie den Körper einer Leiterplattenkomponente zum Ausrichten mit dem Grundriss auf der Leiterplatte."/>
+	<label commandName="lclzPCBMoveComponentBodyCommand2" devLabel="Select a body from PCB component and move it by dragging or typing in values." translation="Wählen Sie einen Körper aus der Leiterplattenkomponente aus, und verschieben Sie ihn durch Ziehen oder Eingabe von Werten."/>
+	<label commandName="lclzPCBMoveComponentBodyCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the new locations will be remembered by Fusion." translation="Beachten Sie, dass in der Zeitachse kein Verschieben-Element erstellt wird. Die neuen Positionen werden jedoch in Fusion beibehalten."/>
+	<label commandName="lclzPCBMoveComponentBodyCommandTipsAndTricksTips" devLabel="Select a body from PCB component and move it by dragging or typing in values." translation="Wählen Sie einen Körper aus der Leiterplattenkomponente aus, und verschieben Sie ihn durch Ziehen oder Eingabe von Werten."/>
+	<label commandName="lclzPCBMoveComponentBodyCommandTipsAndTricksTitle" devLabel="Move PCB Component Body Information" translation="Informationen zu Leiterplattenkomponenten-Körper verschieben"/>
+	<label commandName="lclzPCBMoveComponentsCommand1" devLabel="Move PCB components to new locations on the board." translation="Verschieben Sie Leiterplattenkomponenten an neue Positionen auf der Leiterplatte."/>
+	<label commandName="lclzPCBMoveComponentsCommand2" devLabel="Select a component and move it by dragging or typing in values." translation="Wählen Sie eine Komponente aus, und verschieben Sie sie durch Ziehen oder die Eingabe von Werten."/>
+	<label commandName="lclzPCBMoveComponentsCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the new locations will be remembered by Fusion, and will become visible to EAGLE after the model is saved, and the EAGLE user can move the components as well." translation="Beachten Sie, dass in der Zeitachse kein Verschieben-Element erstellt wird. Die neuen Positionen werden jedoch in Fusion beibehalten und nach dem Speichern des Modells in EAGLE sichtbar. EAGLE-Benutzer können die Komponenten ebenso verschieben."/>
+	<label commandName="lclzPCBMoveComponentsCommandTipsAndTricksTips" devLabel="Select a component and move it by dragging or typing in values." translation="Wählen Sie eine Komponente aus, und verschieben Sie sie durch Ziehen oder die Eingabe von Werten."/>
+	<label commandName="lclzPCBMoveComponentsCommandTipsAndTricksTitle" devLabel="Move PCB Components Information" translation="Leiterplattenkomponenten-Informationen verschieben"/>
+	<label commandName="lclzPCBReplaceComponentCommand1" devLabel="Replace PCB component with different one." translation="Ersetzen Sie eine Leiterplattenkomponente durch eine andere."/>
+	<label commandName="lclzPCBReplaceComponentCommand2" devLabel="Select a PCB 3d model(step, stp file format) to replace existing PCB component." translation="Wählen Sie ein 3D-Leiterplattenmodell (STEP-, STP-Dateiformat), um bestehende Leiterplattenkomponenten zu ersetzen."/>
+	<label commandName="lclzPCBReplaceComponentCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the PCB component will be replace with new model, the change will not able to get back to eagle." translation="Beachten Sie, dass in der Zeitachse kein Verschieben-Element erstellt wird. Die Leiterplattenkomponente wird jedoch durch das neue Modell ersetzt. Die Änderung kann nicht in EAGLE sichtbar gemacht werden."/>
+	<label commandName="lclzPCBReplaceComponentCommandTipsAndTricksTips" devLabel="Select a model to replace selected PCB component and move it to adjust its position." translation="Wählen Sie ein Modell zum Ersetzen der ausgewählten Leiterplattenkomponente aus, und verschieben Sie es, um seine Position anzupassen."/>
+	<label commandName="lclzPCBReplaceComponentCommandTipsAndTricksTitle" devLabel="Replace PCB Component Information" translation="Informationen zur Leiterplattenkomponente ersetzen"/>
+	<label commandName="lclzPCBStatusCommand1" devLabel="Check the status of the PCB shape and component positions. " translation="Prüfen Sie den Status der Leiterplattenform und Komponentenpositionen. "/>
+	<label commandName="lclzPCBStatusCommand2" devLabel="Both the board shape and the component positions can be driven by either Fusion or EAGLE. Use this command to understand the state of the model." translation="Sowohl die Leiterplattenform als auch die Komponentenpositionen können entweder in Fusion oder EAGLE gesteuert werden. Verwenden Sie diesen Befehl, um den Status des Modells zu ermitteln."/>
+	<label commandName="lclzPCBStatusCommandTipsAndTricksDesc" devLabel="If the board shape and/or component positions have been edited in Fusion after the last EAGLE update, this command will allow you to see both PCB shapes. Also, it will tell you if your current component positions are different from the last EAGLE update." translation="Wenn die Leiterplattenform und/oder die Komponentenpositionen nach der letzten Aktualisierung von EAGLE in Fusion bearbeitet wurden, können Sie mit diesem Befehl beide Leiterplattenformen anzeigen. Außerdem sehen Sie, ob sich die aktuellen Komponentenpositionen von denen der letzten EAGLE-Aktualisierung unterscheiden."/>
+	<label commandName="lclzPCBStatusCommandTipsAndTricksTips" devLabel="Both the board shape and the component positions can be driven by either Fusion or EAGLE. Use this command to understand the state of the model." translation="Sowohl die Leiterplattenform als auch die Komponentenpositionen können entweder in Fusion oder EAGLE gesteuert werden. Verwenden Sie diesen Befehl, um den Status des Modells zu ermitteln."/>
+	<label commandName="lclzPCBStatusCommandTipsAndTricksTitle" devLabel="PCB Status Information" translation="Leiterplatten-Statusinformationen"/>
+	<label commandName="lclzPCBStop1" devLabel="Return to the Model workspace." translation="Kehren Sie zum Arbeitsbereich Modell zurück."/>
+	<label commandName="lclzPCBUpdateComponentCommand1" devLabel="Update PCB component from library." translation="Aktualisieren Sie die Leiterplattenkomponente aus der Bibliothek."/>
+	<label commandName="lclzPCBUpdateComponentCommand2" devLabel="Download PCB component from library to replace existing PCB component." translation="Laden Sie eine Leiterplattenkomponente aus der Bibliothek herunter, um die vorhandene Leiterplattenkomponente zu ersetzen."/>
+	<label commandName="lclzPCBUpdateComponentCommandTipsAndTricksDesc" devLabel="Note that no Move feature will be created in the timeline. However, the PCB component will be replace with new model, the change will not able to get back to eagle." translation="Beachten Sie, dass in der Zeitachse kein Verschieben-Element erstellt wird. Die Leiterplattenkomponente wird jedoch durch das neue Modell ersetzt. Die Änderung kann nicht in EAGLE sichtbar gemacht werden."/>
+	<label commandName="lclzPCBUpdateComponentCommandTipsAndTricksTips" devLabel="Download PCB component from library to replace the selected PCB component and move it to adjust its position." translation="Laden Sie eine Leiterplattenkomponente aus der Bibliothek herunter, um die ausgewählte Leiterplattenkomponente zu ersetzen, und verschieben Sie sie, um ihre Position anzupassen."/>
+	<label commandName="lclzPCBUpdateComponentCommandTipsAndTricksTitle" devLabel="Update PCB Component Information" translation="Leiterplattenkomponente aktualisieren - Informationen"/>
+	<label commandName="lclzPCBWorkspaceTitle" devLabel="Mechanical PCB Workspace" translation="Arbeitsbereich Mechanische Leiterplattenkonstruktion"/>
+</Resource>

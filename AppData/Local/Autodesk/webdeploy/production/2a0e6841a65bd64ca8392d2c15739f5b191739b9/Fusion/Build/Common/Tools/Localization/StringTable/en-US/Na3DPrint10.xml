@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Resource>
+	<label commandName="CmMKSUnitSystemName" devLabel="cm modeling length with MKS (m, kg, second, Celsius) units" translation="" />
+	<label commandName="GenerateSupportsGenericError" devLabel="Supports generation failed due to invalid input" translation="" />
+	<label commandName="ImperialUnitSystemName" devLabel="Imperial (foot, lbmass, second, Fahrenheit) units" translation="" />
+	<label commandName="InchImperialUnitSystemName" devLabel="inch modeling length with imperial (foot, lbmass, second, Fahrenheit) units" translation="" />
+	<label commandName="MeshConvFail" devLabel="BRep Convert Failed" translation="" />
+	<label commandName="MmMKSUnitSystemName" devLabel="mm modeling length with MKS (m, kg, second, Celsius) units" translation="" />
+	<label commandName="NextValidChildPrintConfigurationName" devLabel="Print Setup" translation="" />
+	<label commandName="PrintConfigurationSelectionId" devLabel="PrintConfiguration" translation="" />
+	<label commandName="PrintConfigurationsSelectionCategory" devLabel="Configuration Collection" translation="" />
+</Resource>

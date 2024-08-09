@@ -1,0 +1,15 @@
+{
+	"build" : "Release",
+
+	"platform" : "darwin",
+
+	"packageId": "5cdb062ac66041bdbffd0d3d74a4efd3",
+	
+	"major-update-version" : "1.1.1",
+
+	"included-files" : [
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaTSplineUI10.dylib",
+		"Autodesk Fusion 360.app/Contents/Libraries/Applications/Fusion/NaTSplineUI10.xml"
+	]
+
+}

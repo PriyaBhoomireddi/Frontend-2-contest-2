@@ -1,0 +1,344 @@
+20210606T221327 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221329 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221329 I Version : 2.0.10244
+20210606T221329 I UTC offset : 5
+20210606T221329 I Loading configuration from:C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/eba7fbfbb17ff9a9d7c25530f6f766b5ffb15678/Fusion 360.server.config
+20210606T221330 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/NGlobalOptions.xml successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221330 I SLM: device id = 110199ce-fff2-2393-fcca-8732023f5e36
+20210606T221330 I SLM: Initialized
+20210606T221330 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/NGlobalOptions.xml successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221330 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221330 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/NGlobalOptions.xml successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221330 I WorkflowTrackManager Initialized with:0 items
+20210606T221330 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221330 I Disk capacity: 2,24,810MB Disk free: 1,15,822MB Percentage free: 51 UIThread: no Time: 0.00059s
+20210606T221330 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/NGlobalOptions.xml successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221330 I ADP - 463a585d-5173-49ee-a1c5-af81be186e15
+20210606T221330 I AnalyticItemCounts Initialized with:0 items
+20210606T221330 I 	searchAndLoad exec path: C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/eba7fbfbb17ff9a9d7c25530f6f766b5ffb15678/Fusion360.exe
+20210606T221330 I PROXY: WindowsProxyOptionId set to Automatic
+20210606T221330 W PROXY: failed to query IE proxy configuration - The Proxy Auto-configuration URL was not found.
+
+20210606T221330 I PROXY: proxy server set to DIRECT
+20210606T221330 I SYNHUB: Loading config files in directory C:/Users/admin/AppData/Roaming/Autodesk/Synergy
+
+20210606T221330 I SYNHUB: Loading config file C:/Users/admin/AppData/Roaming/Autodesk/Synergy/NLauncher.syncfg
+
+20210606T221331 I Request(https://ui-dls360.autodesk.com/fusion/version.txt) - workflow: attempt:0 status:200 requestId:
+20210606T221332 I Load Feature Toggle Xml:C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/eba7fbfbb17ff9a9d7c25530f6f766b5ffb15678/Fusion/Server/Fusion/Resources/FeatureToggle/FeatureToggle.xml
+20210606T221332 I LaunchDarkly client initialization process is finished successfully!		ThreadID: 4308, Function: Ns::LDCSDKWrapper::initLDCallback, Line: 336
+20210606T221332 I LD CSDK for type Global was initialized with a total time of 0.000003 seconds		ThreadID: 11152, Function: Ns::CSDKLDFeatureFlagsManager::getFlagValue, Line: 137
+20210606T221333 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb31-f3987611f13943da89a4602c
+20210606T221333 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/NGlobalOptions.xml successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221333 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb34-3fbc7d91d07b4abe8d3433dd
+20210606T221334 I Load Feature Toggle Xml:C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/eba7fbfbb17ff9a9d7c25530f6f766b5ffb15678/FusionDoc/Server/FusionDoc/Resources/FeatureToggle/FeatureToggle.xml
+20210606T221334 I C:\Users\admin\AppData\Local\Autodesk\webdeploy\production\eba7fbfbb17ff9a9d7c25530f6f766b5ffb15678\Applications\Simulation\SimCommon10.dll		ThreadID: 11944, Function: DllMain, Line: 22
+20210606T221334 I Process attach		ThreadID: 11944, Function: DllMain, Line: 23
+20210606T221335 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221335 I C:\Users\admin\AppData\Local\Autodesk\webdeploy\production\eba7fbfbb17ff9a9d7c25530f6f766b5ffb15678\Applications\CAM360\SimIdealizations10.dll		ThreadID: 11944, Function: DllMain, Line: 16
+20210606T221335 I Process attach		ThreadID: 11944, Function: DllMain, Line: 17
+20210606T221336 I Libeagle app mode: Hosted		ThreadID: 11944, Function: void __cdecl Application::cEagleAppPrivate::Init(void), Line: 315
+20210606T221336 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/electronoptiongroup_eagle.rc successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221337 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/NGlobalOptions.xml successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221337 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/NGlobalOptions.xml successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221337 I Toolbar loader: Stopping...
+20210606T221337 I Toolbar loader: Stopped
+20210606T221337 I ***startSession: BEGIN
+20210606T221337 I the maintenance window is OFF
+20210606T221337 I getEntitlement
+20210606T221337 I authenticate:begin
+20210606T221337 I login start
+20210606T221337 I Going to load toolbar customizations files		ThreadID: 11944, Function: Nu::ToolbarManager::loadCustomization, Line: 419
+20210606T221337 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/NGlobalOptions.xml successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221337 I Completed loading toolbar customizations files		ThreadID: 11944, Function: Nu::ToolbarManager::loadCustomization, Line: 421
+20210606T221337 I AnalyticItemCounts Terminating with:0 items
+20210606T221337 I AnalyticItemCounts Initialized with:0 items
+20210606T221337 I WorkflowTrackManager Terminating with:0 items
+20210606T221337 I WorkflowTrackManager Initialized with:0 items
+20210606T221337 I login end 0
+20210606T221337 I Autosave background thread started with saveTime: 5
+20210606T221337 I LaunchDarkly client initialization process is not finished successfully!		ThreadID: 11152, Function: Ns::LDCSDKWrapper::initLDCallback, Line: 340
+20210606T221339 I LaunchDarkly client initialization process is finished successfully!		ThreadID: 4308, Function: Ns::LDCSDKWrapper::initLDCallback, Line: 336
+20210606T221339 I LD CSDK for type Nonhub was initialized with a total time of 1.538812 seconds		ThreadID: 11152, Function: Ns::CSDKLDFeatureFlagsManager::getFlagValue, Line: 137
+20210606T221339 I LD CSDK for type Nonhub was initialized with a total time of 0.000002 seconds		ThreadID: 11152, Function: Ns::CSDKLDFeatureFlagsManager::getFlagValue, Line: 137
+20210606T221339 I Request(https://js.prd.fusionapi.autodesk.com/fusion360-runtime-config/config.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb38-7162124daee94e19b8b08d04
+20210606T221339 I SLM: Enabled (Production)
+20210606T221339 I SLM: Start session deviceId=110199ce-fff2-2393-fcca-8732023f5e36 deviceName=YASHISH
+20210606T221339 I Workflow start: SLM_startSession 1-60bcfb3a-6663b6b62b8b49558eb6a1a6
+20210606T221341 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions) - workflow:SLM_startSession attempt:0 status:200 requestId:f360_SLM_startSession__1-60bcfb3a-6663b6b62b8b49558eb6a1a6
+20210606T221341 I SLM: session = 23481082
+20210606T221344 I Request(https://login.autodesk360.com/login/api/system/info) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb3e-e586c54fe37640f9817945a8
+20210606T221345 I Workflow start: /v1/licenses 1-60bcfb40-c33beea8845346e09dfb6788
+20210606T221349 I Request(https://api.v3license.access.clic.autodesk.com/v1/licenses) - workflow:/v1/licenses attempt:0 status:200 requestId:f360_/v1/licenses__1-60bcfb40-c33beea8845346e09dfb6788
+20210606T221350 I Request(https://metering.autodesk.com/api/accounts/v1/JDF3L3FH3CC8) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb44-a437a0ffc5204f4f864b89a2
+20210606T221354 I Request(https://frv.ui-dls360.autodesk.com/api/v1/checkAccess) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb45-6632fc2123cd4f9aabb2a96b
+20210606T221354 I Workflow start: GLE 1-60bcfb49-f49d1d4ba25c49e7acebde85
+20210606T221355 I Request(https://accounts.autodesk.com/api/license/entitlements/v1/user/JDF3L3FH3CC8?format=json&oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=6ed8cf09ba5d4a02879675b26c403725&oauth_signature=GGbNPKfpRb7iAVchwLcgD2HTrgA%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1622997833&oauth_token=xDex5y%2Ftlxo8dBgxARwVIcygLsY%3D&oauth_version=1.0&trialinfo=all) - workflow:GLE attempt:0 status:200 requestId:f360_GLE__1-60bcfb49-f49d1d4ba25c49e7acebde85
+20210606T221355 I Workflow start: GEP 1-60bcfb4a-9e2bd4ab75984615a94cee5a
+20210606T221355 I authenticate:end
+20210606T221355 I succesfully authenticated
+20210606T221355 I TOSS accepted
+20210606T221355 I Hub type: personal
+20210606T221355 I CheckingEntitlements
+20210606T221355 I  UserType: Hobbyist EntitlementType: Subscription
+20210606T221355 I Entitlement changed
+20210606T221356 I 1622997834632 1622997835371 GET https://accounts.autodesk.com/api/profile/education/v1/user/JDF3L3FH3CC8?format=json&oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=d2dfd77916684ed79d38978095736823&oauth_signature=htu9IsBIBY18fji3sO9M2vDf%2F14%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1622997834&oauth_token=xDex5y%2Ftlxo8dBgxARwVIcygLsY%3D&oauth_version=1.0&trialinfo=all 404 {"error":{"errorCode":"ID-EDU-002","errorDescription":"The user's education profile has not fully setup."}}
+20210606T221356 I Request(https://accounts.autodesk.com/api/profile/education/v1/user/JDF3L3FH3CC8?format=json&oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=d2dfd77916684ed79d38978095736823&oauth_signature=htu9IsBIBY18fji3sO9M2vDf%2F14%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1622997834&oauth_token=xDex5y%2Ftlxo8dBgxARwVIcygLsY%3D&oauth_version=1.0&trialinfo=all) - workflow:GEP attempt:0 status:404 requestId:f360_GEP__1-60bcfb4a-9e2bd4ab75984615a94cee5a
+20210606T221357 I Hub  hasAPersonalSite=0, hasTeamHub=1, eHubStatus=0, isEntitled=1
+20210606T221357 I Workflow start: get_teamhub_preferences 1-60bcfb4c-a3ab67ad4eeb4509bdd527d8
+20210606T221358 I Request(https://gmail1126073.autodesk360.com/login/rest/facade/corporateInviteSettings?oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=2e4dbdd0721a4aafb257795d7ec0eaf5&oauth_signature=w2w3nDOhNjpUdyHdIirj3qvQjFA%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1622997836&oauth_token=xDex5y%2Ftlxo8dBgxARwVIcygLsY%3D&oauth_version=1.0) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb4c-0c2cffdb3e724e6da1d3299b
+20210606T221400 I Request(https://developer.api.autodesk.com/symphonydm/v2/hubs/gmail1126073/preferences) - workflow:get_teamhub_preferences attempt:0 status:200 requestId:f360_get_teamhub_preferences_get_teamhub_preferences_1-60bcfb4c-a3ab67ad4eeb4509bdd527d8
+20210606T221401 E Network failed request - response NOT OK:
+URI:https://developer.api.autodesk.com/fhq/v1/spaces?type=FLC&fusionId=urn:adsk.fusion:scope:99f2d66c-4f1e-4c2f-8490-9f6754fd1582
+...X-Request-ID: ContentBrowser(081570a2-c3a6-44bf-a070-b5650ed0e449)_GET_FLC_URN_GET_FLC_URN 
+...response: HTTP/1.1 404 Not Found
+Connection: keep-alive
+Content-Length: 375
+Content-Type: application/json
+Date: Sun, 06 Jun 2021 16:44:01 GMT
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-Request-ID: ContentBrowser(081570a2-c3a6-44bf-a070-b5650ed0e449)_GET_FLC_URN_GET_FLC_URN
+X-XSS-Protection: 1; mode=block
+
+{"requestId":"ContentBrowser(081570a2-c3a6-44bf-a070-b5650ed0e449)_GET_FLC_URN_GET_FLC_URN","httpStatus":404,"detailedMessage":"Not able to find any SPACE with given search parameters","errors":[{"type":"errors","code":"FHQ-404","message":"Not able to find any SPACE with given search parameters","links":{"self":"https://developer.api.autodesk.com/fhq/v1/errors/FHQ-404"}}]}		ThreadID: 21992, Function: void __cdecl Ns::Network::ReqUtils::logRequestError(const class std::basic_string<wchar_t,struct std::char_traits<wchar_t>,class std::allocator<wchar_t> > &,class std::shared_ptr<class Ns::Network::Request>), Line: 317
+20210606T221401 W FHQService: failed to get FLC URN, response code: 
+20210606T221401 I Migrate Options
+20210606T221401 I Load Cloud Options
+20210606T221401 I PIMMgr: [launchProvisionPIMSpaceCollection]: Feature flag disabled for current session.				 Disabling PIM - will not invoke PIM Provisioning.
+20210606T221401 I PIMMgr: [launchProvisionPIMSpaceCollectionAndMigration]: Did not provision a space collection. Will not launch a migration request.
+20210606T221402 I Request(https://login.autodesk360.com/login/api/preferences/guid?oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=b3bc5a4f61d74f9d91c682c61fc8303a&oauth_signature=eHtliT2lkJinP%2BcEkbU1CdXTGQ8%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1622997841&oauth_token=xDex5y%2Ftlxo8dBgxARwVIcygLsY%3D&oauth_version=1.0) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb51-d062a7301d2e478685a58f00
+20210606T221402 I LaunchDarkly client initialization process is not finished successfully!		ThreadID: 11152, Function: Ns::LDCSDKWrapper::initLDCallback, Line: 340
+20210606T221404 I LaunchDarkly client initialization process is finished successfully!		ThreadID: 4308, Function: Ns::LDCSDKWrapper::initLDCallback, Line: 336
+20210606T221411 I Reloaded option files: C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/JDF3L3FH3CC8/NGlobalOptions.xml
+20210606T221411 I ***startSession: END
+20210606T221411 I GAThread::queueReport the sending thread started
+20210606T221411 I Workflow start: GAWrapper 1-60bcfb5a-1e4cc8b1f93543c48bd1e23f
+20210606T221412 I Graphics Card: NVIDIA GeForce MX230, Rating: Unknown, Workarounds: 0 
+20210606T221412 I OGS Device: VirtualDeviceDx11
+20210606T221412 I 			Running Add-In Name:100KGarages Path:C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/eba7fbfbb17ff9a9d7c25530f6f766b5ffb15678/Api/InternalAddins/100KGarages/100KGarages.py Internal:1
+20210606T221412 I 			Running Add-In Name:ElectronicsPackageGenerator Path:C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/eba7fbfbb17ff9a9d7c25530f6f766b5ffb15678/Api/InternalAddins/ElectronicsPackageGenerator/ElectronicsPackageGenerator.py Internal:1
+20210606T221412 I 			Running Add-In Name:parts4cad Path:C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/eba7fbfbb17ff9a9d7c25530f6f766b5ffb15678/Api/InternalAddins/parts4cad/parts4cad.py Internal:1
+20210606T221413 I 			Running Add-In Name:traceparts Path:C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/eba7fbfbb17ff9a9d7c25530f6f766b5ffb15678/Api/InternalAddins/traceparts/traceparts.py Internal:1
+20210606T221413 I Local cache scan: 0.0307582 seconds, 11 items
+20210606T221413 I DownloadManager::started
+20210606T221413 I savingVersionLaunched		ThreadID: 11944, Function: Nu::WhatsNewBannerCmdDef::applicationReady, Line: 94
+20210606T221413 I last version: 2.0.10244		ThreadID: 11944, Function: Nu::UIApplication::saveVersionLaunched, Line: 85
+20210606T221413 I current version: 2.0.10244		ThreadID: 11944, Function: Nu::UIApplication::saveVersionLaunched, Line: 86
+20210606T221413 I Workflow start: GAWrapper 1-60bcfb5c-e2bcf7b6c4e54ef1a998b6d0
+20210606T221414 I Request(https://gmail1126073.autodesk360.com/login/api/hubs/gmail1126073/preferences/fusion.implicit.reservation.enabledForHub?oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=a2926adbd12643e68e7622040cb553ff&oauth_signature=0hsunk%2FGmoQj42h50EhAXce3Bp4%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1622997852&oauth_token=xDex5y%2Ftlxo8dBgxARwVIcygLsY%3D&oauth_version=1.0) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb5c-a64a94e16fc54f96b5a4f47c
+20210606T221414 I Request(https://gmail1126073.autodesk360.com/login/api/hubs/gmail1126073/preferences/fusion.implicit.reservation.enabledForHub?oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=74306b6659ca4d1f9560359de427a1b6&oauth_signature=IF7X%2F5DGK1mT1axukSmeV34lfl8%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1622997852&oauth_token=xDex5y%2Ftlxo8dBgxARwVIcygLsY%3D&oauth_version=1.0) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb5c-37db6de62d5b4879b3665256
+20210606T221414 I JSManager - extracted archive to C:\Users\admin\AppData\Local\Temp\Neutron\4a841667-27bc-44ad-88b2-9b9a3d04e3c7
+20210606T221414 I Dashboard Size: initial size: width 100 height 30
+20210606T221414 I Dashboard Size: use parent size: width 0 height 841
+20210606T221414 I Dashboard Size createWebControl parent area - width 0 height: 841
+20210606T221416 I JSManager - extracted archive to C:\Users\admin\AppData\Local\Temp\Neutron\b085a151-7062-4ea1-ae6a-153f8aa1bd5b
+20210606T221416 I Just loaded Options file C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml successfully		ThreadID: 11944, Function: Ns::OptionGroup::load, Line: 616
+20210606T221416 I Workflow start: GAWrapper 1-60bcfb5f-59742002ff5d49b4908b71a2
+20210606T221416 I Live update: start update check.
+20210606T221416 I Live update: Skip the first Etag check
+20210606T221416 I Live update: Start update process in Streamer side.
+20210606T221416 I PIMMgr: [launchProvisionPIMSpaceCollection]: Feature flag disabled for current session.				 Disabling PIM - will not invoke PIM Provisioning.
+20210606T221416 I PIMMgr: [launchProvisionPIMSpaceCollectionAndMigration]: Did not provision a space collection. Will not launch a migration request.
+20210606T221416 I Workflow start: /v1/licenses 1-60bcfb5f-8f0dded45ea4416ebe73f262
+20210606T221418 I Workflow start: GAWrapper 1-60bcfb62-036fde89daef49ddbde5c622
+20210606T221420 I Workflow start: GAWrapper 1-60bcfb63-768fe634b6ee4597acd8cec7
+20210606T221420 I Workflow start: GAWrapper 1-60bcfb63-310e8727337f40d49b37733c
+20210606T221421 I Workflow start: GAWrapper 1-60bcfb64-6daef287ce7b42e49d764b8a
+20210606T221422 I Workflow start: GAWrapper 1-60bcfb65-b771900aca684a6497021423
+20210606T221422 I Request(https://api.v3license.access.clic.autodesk.com/v1/licenses) - workflow:/v1/licenses attempt:0 status:200 requestId:f360_/v1/licenses__1-60bcfb5f-8f0dded45ea4416ebe73f262
+20210606T221423 I Request(https://metering.autodesk.com/api/accounts/v1/JDF3L3FH3CC8) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb66-88b94428adda4f0694bf94ad
+20210606T221424 I Request(https://frv.ui-dls360.autodesk.com/api/v1/checkAccess) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb66-07bd47adea0446c5b3e8b5bd
+20210606T221424 I Workflow start: GLE 1-60bcfb68-784a7fc61ecd4db8bcddbf8a
+20210606T221425 I Request(https://accounts.autodesk.com/api/license/entitlements/v1/user/JDF3L3FH3CC8?format=json&oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=50bfe50fb46747758f0ada81bcd1a991&oauth_signature=wQxHwmHddAyJ6KIDGD%2FBjJvVAtk%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1622997864&oauth_token=xDex5y%2Ftlxo8dBgxARwVIcygLsY%3D&oauth_version=1.0&trialinfo=all) - workflow:GLE attempt:0 status:200 requestId:f360_GLE__1-60bcfb68-784a7fc61ecd4db8bcddbf8a
+20210606T221425 I Workflow start: GEP 1-60bcfb69-21a91b2be6c64fbf934c94d1
+20210606T221425 I Workflow start: GAWrapper 1-60bcfb69-f601fe1bb93c4055b9747057
+20210606T221426 I Tool library url: file:///C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/eba7fbfbb17ff9a9d7c25530f6f766b5ffb15678/Applications/CAM360/tool-library/index.html?language=en-US&serverType=FUSION_DESKTOP
+
+20210606T221426 I ServicesHealthStatus: Health Status changed from unknown to operational
+20210606T221426 I Live update: Start pending updates check.
+20210606T221426 I Live update: Update is in progress.
+20210606T221426 I Workflow start: GAWrapper 1-60bcfb69-c82914686e764452b26728fb
+20210606T221426 I 1622997865051 1622997865748 GET https://accounts.autodesk.com/api/profile/education/v1/user/JDF3L3FH3CC8?format=json&oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=1dc46b67e269427f9bcf3b660434acdb&oauth_signature=LfDXwfGS%2FAkcLhpVyq3d1WeRIHw%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1622997865&oauth_token=xDex5y%2Ftlxo8dBgxARwVIcygLsY%3D&oauth_version=1.0&trialinfo=all 404 {"error":{"errorCode":"ID-EDU-002","errorDescription":"The user's education profile has not fully setup."}}
+20210606T221426 I Request(https://accounts.autodesk.com/api/profile/education/v1/user/JDF3L3FH3CC8?format=json&oauth_consumer_key=b8670f04-9acc-4ad0-8bcc-a21ba95bec91&oauth_nonce=1dc46b67e269427f9bcf3b660434acdb&oauth_signature=LfDXwfGS%2FAkcLhpVyq3d1WeRIHw%3D&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1622997865&oauth_token=xDex5y%2Ftlxo8dBgxARwVIcygLsY%3D&oauth_version=1.0&trialinfo=all) - workflow:GEP attempt:0 status:404 requestId:f360_GEP__1-60bcfb69-21a91b2be6c64fbf934c94d1
+20210606T221426 I Saved option file: C:/Users/admin/AppData/Roaming/Autodesk/Neutron Platform/Options/NMachineSpecificOptions.xml
+20210606T221426 I OfflineFileCache: update g^[EdSCBBEQ@fL		ThreadID: 11944, Function: _updateTimeBomb, Line: 209
+20210606T221426 D Entered into Online mode result: 1
+20210606T221426 I Collaboration setSingleUserHub: From MultiUserHub To SingleUserHub
+20210606T221426 I Request(https://metering.autodesk.com/api/price/v1/JDF3L3FH3CC8/fusion360nestingext?format=json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb69-068fd239fe87451d8cafe56a
+20210606T221427 I EvergageWrapper:networkOk changed to:1
+20210606T221427 I Workflow start: /v1/license-check 1-60bcfb6b-3c573953614049b0b88dbd2a
+20210606T221427 I Local render: Sync to cloud started. Checking for jobs to sync.
+20210606T221427 I Local render: Quit syncing to cloud. No more jobs in queue.
+20210606T221428 I Circuit Breaker FusionDM : Reset to Closed
+20210606T221428 I Circuit Breaker OSS : Reset to Closed
+20210606T221428 I Circuit Breaker A360 : Reset to Closed
+20210606T221428 I Circuit Breaker WIP : Reset to Closed
+20210606T221428 I OnlineStatus OnlineUI online
+20210606T221428 I Workflow start: GAWrapper 1-60bcfb6b-f863b0a8c71a40389057417b
+20210606T221428 I Request(https://metering.autodesk.com/api/price/v1/JDF3L3FH3CC8/fusion360additivesim?format=json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb69-5badb827b22144e095a9821a
+20210606T221428 I WIPService::getLineages lineages array is empty. This may be normal.
+20210606T221428 D ActiveDocumentCache:  periodic update thread started
+20210606T221428 I (total 60.724s diff 60.724s) 	PERF: DashboardReady 60.7243s (time from start), version: 2.0.10244
+20210606T221428 I Workflow start: GAWrapper 1-60bcfb6c-0ac546bda1f04475ac4cc765
+20210606T221428 I Request(https://metering.autodesk.com/api/accounts/v1/JDF3L3FH3CC8) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb6b-80a40d2350c44666a968fe7b
+20210606T221429 I Workflow start: GAWrapper 1-60bcfb6c-3ba39d171e57487f876c5a15
+20210606T221429 I Request(https://metering.autodesk.com/api/authvalidate/v1/JDF3L3FH3CC8/fusion360/201809181017510) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb6c-fcaee82b31d247249cd35364
+20210606T221429 I Request(https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb6b-b7b8309da75d49fdb8fb1d78
+20210606T221430 I Workflow start: GAWrapper 1-60bcfb6d-95837d361ea84499842d0dd4
+20210606T221430 I : urlChanged: file:///C:/Users/admin/AppData/Local/Autodesk/webdeploy/production/eba7fbfbb17ff9a9d7c25530f6f766b5ffb15678/FusionCDEHostApps/team-switcher/index.html?locale=en-US
+20210606T221430 I CDE Log: {"message":"fetchTeams","level":"INFO"}
+20210606T221430 I "fetchTeams"
+20210606T221430 I : loadFinished: 
+20210606T221430 I CDE Log: {"message":"fetchTeams","level":"INFO"}
+20210606T221430 I "fetchTeams"
+20210606T221430 I (total 62.977s diff 2.253s) 	PERF: ModelingReady
+20210606T221430 I Request(https://ui-dls360.autodesk.com/fusion/maintenace_services.txt) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb6c-39b71770ad594224930f45d0
+20210606T221430 I Request(https://api.v3license.access.clic.autodesk.com/v1/license-check) - workflow:/v1/license-check attempt:0 status:200 requestId:f360_/v1/license-check__1-60bcfb6b-3c573953614049b0b88dbd2a
+20210606T221431 I Workflow start: GAWrapper 1-60bcfb6e-101857c2490745f3838d614a
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 D OK
+20210606T221431 I urn:adsk.objects:os.object:fusion.prefs.login/JDF3L3FH3CC8__ActiveDocuments 11240 0 328 3346
+20210606T221431 I 1622997867726 1622997871093 5242880 8 16 60000 urn:adsk.objects:os.object:fusion.prefs.login/JDF3L3FH3CC8__ActiveDocuments 11240 200 
+20210606T221431 I ActiveDocumentCache:  periodic update thread performed a refresh from the cloud
+20210606T221431 I Workflow start: GAWrapper 1-60bcfb6f-c12f7b4123594de4ad9add30
+20210606T221432 I urn:adsk.objects:os.object:fusion.prefs.login/JDF3L3FH3CC8_notificationsTEST.json 20 0 250 13
+20210606T221432 I Request(https://metering.autodesk.com/api/price/v1/JDF3L3FH3CC8/fusion360additiveext?format=json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb69-52043713a9fb4c6c9e20446f
+20210606T221432 I 1622997870102 1622997871543 5242880 8 16 5000 urn:adsk.objects:os.object:fusion.prefs.login/JDF3L3FH3CC8_notificationsTEST.json 20 200 
+20210606T221432 I Request(https://metering.autodesk.com/api/price/v1/JDF3L3FH3CC8/fusion360manufacturingext?format=json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb69-ec2efffee4fc49338df30be3
+20210606T221432 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/23481082) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60bcfb6d-d2fe68c9990f4120a7b208b1
+20210606T221432 I Workflow start: GAWrapper 1-60bcfb6f-ab4c8a37d2ea4634a4e669a2
+20210606T221433 I checkVersion		ThreadID: 11944, Function: Nu::WhatsNewBannerCmdDef::updateNoAction, Line: 100
+20210606T221433 I current version: 2.0.10244		ThreadID: 11944, Function: Nu::UIApplication::firstTimeVersionLaunched, Line: 114
+20210606T221433 I last version: 2.0.10244		ThreadID: 11944, Function: Nu::UIApplication::firstTimeVersionLaunched, Line: 118
+20210606T221433 I current version: 2.0.10244		ThreadID: 11944, Function: Nu::UIApplication::firstTimeVersionLaunched, Line: 114
+20210606T221433 I last version: 2.0.10244		ThreadID: 11944, Function: Nu::UIApplication::firstTimeVersionLaunched, Line: 118
+20210606T221433 D OK
+20210606T221433 I Dashboard Size timer - width 46 height: 841
+20210606T221433 I Request(https://metering.autodesk.com/api/price/v1/JDF3L3FH3CC8/fusion360manufacturingext?format=json) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb6f-9bf0bc722a6d4e0995df2602
+20210606T221433 I Dashboard Size timer - width 365 height: 841
+20210606T221433 I Dashboard Size timer - width 398 height: 841
+20210606T221433 I Workflow start: GAWrapper 1-60bcfb71-f98284f942834e34b6006044
+20210606T221433 I Dashboard Size timer - width 402 height: 841
+20210606T221434 I Workflow start: GAWrapper 1-60bcfb72-973713967967421ca6c6f1b8
+20210606T221435 I Workflow start: GAWrapper 1-60bcfb72-a48d95f77e224727ab69634f
+20210606T221435 I Workflow start: GAWrapper 1-60bcfb73-7923c9e867b845588f5cf996
+20210606T221436 I Workflow start: GAWrapper 1-60bcfb73-66f6413f721e454ab4ba33be
+20210606T221436 I Workflow start: GAWrapper 1-60bcfb74-1ee9bbc36940433a95eb4e24
+20210606T221437 I Workflow start: GAWrapper 1-60bcfb74-42e7d82fd7d24c178a3e15a0
+20210606T221441 I Workflow start: GAWrapper 1-60bcfb78-89c342cb42354d1d9d514c8d
+20210606T221441 I Begin:	Open the Document with Lineage URI : urn:adsk.wipprod:dm.lineage:zuVquQV3S3ep9sCHOnwHLQ
+20210606T221441 D {"payload":"","retCode":0}
+20210606T221441 I Workflow start: open 1-60bcfb79-f69df40bef59441081eeb880
+20210606T221441 I Opening latest version of the document: , lineage: urn:adsk.wipprod:dm.lineage:zuVquQV3S3ep9sCHOnwHLQ		ThreadID: 11944, Function: Nu::Commands::PLM360OpenAttachmentCmd::openAttachment, Line: 690
+20210606T221443 I Request(https://developer.api.autodesk.com/wipdata-serv/storage/v3/lineages/urn%3Aadsk.wipprod%3Adm.lineage%3AzuVquQV3S3ep9sCHOnwHLQ) - workflow:open attempt:0 status:200 requestId:f360_open_getl2_1-60bcfb79-f69df40bef59441081eeb880
+20210606T221444 I Request(https://developer.api.autodesk.com/wipdata-serv/storage/v3/relationships/queryaccess) - workflow:open attempt:0 status:200 requestId:f360_open_rqa1_1-60bcfb79-f69df40bef59441081eeb880
+20210606T221444 I Begin:	Opening the document: FINAL CENTRIFUGAL PUMP v15 at path: C:/Users/admin/AppData/Local/Autodesk/Autodesk Fusion 360/JDF3L3FH3CC8/W.login/F/_IMPELLER FINAL.05714027-a7b8-42e8-8b00-f8052b93d887.f3d
+20210606T221444 I Workflow start: WIPRequest7 1-60bcfb7c-6a3beec9cf1a4e04872f05b2
+20210606T221445 I Time Taken:	0.39311629999999997
+20210606T221445 I End:	Opening the document: FINAL CENTRIFUGAL PUMP v15 at path: C:/Users/admin/AppData/Local/Autodesk/Autodesk Fusion 360/JDF3L3FH3CC8/W.login/F/_IMPELLER FINAL.05714027-a7b8-42e8-8b00-f8052b93d887.f3d
+20210606T221445 I PushNotification using new pub nub
+20210606T221445 I PushNotification using new pub nub
+20210606T221445 I Workflow start: WIPRequest7 1-60bcfb7c-ca0f20807b7e41ad9c6f404f
+20210606T221445 I Opened Document : _IMPELLER FINAL.05714027-a7b8-42e8-8b00-f8052b93d887.f3d
+20210606T221445 I Time Taken:	3.5589124999999999
+20210606T221445 I End:	Open the Document with Lineage URI : urn:adsk.wipprod:dm.lineage:zuVquQV3S3ep9sCHOnwHLQ
+20210606T221445 I Workflow start: GAWrapper 1-60bcfb7c-142adb452db6485e988cea5f
+20210606T221445 I Graphics Rendering time in opening the document : 0.49521375901908055
+20210606T221445 I Total time in opening the document for user interaction : 4.0541082590190802
+20210606T221445 I Workflow start: GAWrapper 1-60bcfb7d-d1794bb7a64f4c54a0e1205c
+20210606T221445 D OK
+20210606T221445 D {"payload":"","retCode":0}
+20210606T221445 D {"payload":"","retCode":0}
+20210606T221445 D OK
+20210606T221446 I Request(https://developer.api.autodesk.com/wipdata-serv/storage/v3/lineages/urn%3Aadsk.wipprod%3Adm.lineage%3AzuVquQV3S3ep9sCHOnwHLQ/versions?limit=10&sort=DESC) - workflow:WIPRequest7 attempt:0 status:200 requestId:f360_WIPRequest7__1-60bcfb7c-6a3beec9cf1a4e04872f05b2
+20210606T221446 I Workflow start: WIPRequest4 1-60bcfb7d-15f3508338884ff2b4fb7264
+20210606T221446 I Request(https://developer.api.autodesk.com/wipdata-serv/storage/v3/system) - workflow:WIPRequest7 attempt:0 status:200 requestId:f360_WIPRequest7__1-60bcfb7c-ca0f20807b7e41ad9c6f404f
+20210606T221446 I Request(https://developer.api.autodesk.com/comments/v2/resources/dXJuOmFkc2sud2lwcHJvZDpkbS5saW5lYWdlOnp1VnF1UVYzUzNlcDlzQ0hPbndITFE=) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfb7c-08c105c1d0504454ab356069
+20210606T221446 I Workflow start: GAWrapper 1-60bcfb7e-4af8cae7d1324f03916f59f4
+20210606T221447 I Workflow start: GAWrapper 1-60bcfb7e-73dfa223ab8341b7931b29d3
+20210606T221447 I Request(https://developer.api.autodesk.com/fusiondm/v3/collaborations) - workflow:collaborator attempt:0 status:200 requestId:f360_collaborator_getCollaborators_singleUser_openAttachmentCmd_1-60bcfb7d-665502cfac3c49bb94889c84
+20210606T221447 I Request(https://developer.api.autodesk.com/wipdata-serv/storage/v3/lineages/urn%3Aadsk.wipprod%3Adm.lineage%3AzuVquQV3S3ep9sCHOnwHLQ) - workflow:WIPRequest4 attempt:0 status:200 requestId:f360_WIPRequest4__1-60bcfb7d-15f3508338884ff2b4fb7264
+20210606T221447 I Workflow start: GAWrapper 1-60bcfb7f-fa61bb1c8b694648848c1348
+20210606T221448 I Request(https://notifications.prd.fusionapi.autodesk.com/v1/channel/urn:adsk.wipprod:dm.lineage:zuVquQV3S3ep9sCHOnwHLQ) - workflow:PushNotificationManager attempt:0 status:200 requestId:f360_PushNotificationManager__1-60bcfb7d-c4009ee5ee3047c5ac019ea4
+20210606T221448 I PushNotification got channel:AQ5wb6jL+n1LJvWrI4IKSdnEDM=
+20210606T221448 I PushNotification starting channelName:urn:adsk.wipprod:dm.lineage:zuVquQV3S3ep9sCHOnwHLQ subscriberType:lineageSubscription ChannelId:AQ5wb6jL+n1LJvWrI4IKSdnEDM=
+20210606T221448 I Request(https://notifications.prd.fusionapi.autodesk.com/v1/channel/a360prod%3Agroup%3A78817105) - workflow:PushNotificationManager attempt:0 status:200 requestId:f360_PushNotificationManager__1-60bcfb7d-efb2cd49ebb940acb6c161ee
+20210606T221448 I PushNotification got channel:cKNGoIfsJT6cW5cpBksnATcI=
+20210606T221448 I PushNotification starting channelName:a360prod:group:78817105 subscriberType:groupSubscription ChannelId:cKNGoIfsJT6cW5cpBksnATcI=
+20210606T221520 I Workflow start: GAWrapper 1-60bcfb9f-94de0fbc38c64813abdee9e8
+20210606T221533 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/23481082) - workflow:SLM_heartbeat attempt:0 status:200 requestId:f360_SLM_heartbeat__1-60bcfbab-0e19cfa0224946a8985c0ead
+20210606T221550 I Workflow start: GAWrapper 1-60bcfbbe-fa350fc1f69f4964bd70c45c
+20210606T221551 I Workflow start: GAWrapper 1-60bcfbbe-2b311acb0c14435db8941d65
+20210606T221556 I Dashboard Size timer - width 349 height: 841
+20210606T221556 I Workflow start: GAWrapper 1-60bcfbc3-59860c0663c347928647d959
+20210606T221556 I Dashboard Size timer - width 37 height: 841
+20210606T221556 I Dashboard Size timer - width 1 height: 841
+20210606T221556 I Dashboard Size timer - width 0 height: 841
+20210606T221603 I PushNotification destroySubscriber channelName:urn:adsk.wipprod:dm.lineage:zuVquQV3S3ep9sCHOnwHLQ
+20210606T221603 I PushNotification destroySubscriber channelName:a360prod:group:78817105
+20210606T221603 I Workflow start: GAWrapper 1-60bcfbcb-9cabfb47a4c84ea6b2c86510
+20210606T221604 D OK
+20210606T221604 D OK
+20210606T221604 I Workflow start: GAWrapper 1-60bcfbcc-c96d95ab18f347ce839b8d76
+20210606T221606 I Checking job manager state
+20210606T221606 I Executing exit command
+20210606T221606 I Running deferred session release tasks
+20210606T221606 I Signal shutdown to script manager
+20210606T221607 I Script manager shut down done
+20210606T221607 I Exit now
+20210606T221607 I Workflow start: GAWrapper 1-60bcfbce-6698c9b0c0144a98a405132c
+20210606T221608 I Request(https://metering.autodesk.com/api/report/v1/JDF3L3FH3CC8/fusion360/ZC4PLAR4MKLX/STOP) - workflow:HTTPClient attempt:0 status:200 requestId:f360_HTTPClient__1-60bcfbce-f1ece23672a54a0292e0c770
+20210606T221608 I Workflow start: SLM_closeSession 1-60bcfbcf-f001b0fc2fa845b3a24788c5
+20210606T221609 I Request(https://f360sc-p-ue1.api.cosv2-p-ue1-dn.autodesk.com/api/v1/sessions/23481082) - workflow:SLM_closeSession attempt:0 status:200 requestId:f360_SLM_closeSession__1-60bcfbcf-f001b0fc2fa845b3a24788c5
+20210606T221609 I SLM: session cleared
+20210606T221609 I Start QTApplication::exit
+20210606T221609 I Done QTApplication::exit
+20210606T221609 I Exit command end
+20210606T221609 I fireApplicationClosing: 1
+20210606T221609 I Workflow start: GAWrapper 1-60bcfbd1-cea36473f56a456d9542c892
+20210606T221609 E 1622997969183 1622997969184 POST https://ssl.google-analytics.com/collect 42 Callback aborted
+20210606T221609 E GAThread::sendReport failed to send this record
+20210606T221609 D ActiveDocumentCache:  periodic update thread ended
+20210606T221609 I fireApplicationClosing: done
+20210606T221609 I SYNHUB: Finalizing SynHub.
+
+20210606T221609 I SYNHUB: ...done finalizing SynHub.
+
+20210606T221612 I DownloadManager::stopped
+20210606T221612 I Deleting files that are older than 360 days from the cache
+20210606T221612 I OfflineFileCache: update g^[EdSCBBEQBeK		ThreadID: 11944, Function: _updateTimeBomb, Line: 209
+20210606T221612 I SLM: Shutdown
+20210606T221612 I fireApplicationClosing: 2
+20210606T221612 I fireApplicationClosing: done
+20210606T221613 I GAThread::stop wait for the sending thread to exit
+20210606T221613 I GAThread::stop sending thread exits now, stats:GAThread=>Pending:0, Running:0, Sent:37, Fail:1, 			
+ Throttle:0, SessionIdle:3.61464, SessionSent:38 			
+ Limits: SessionLimits:500, ThrottleLimits:50, GATimeout:14400 seconds
+20210606T221613 I GAWrapper terminating:GAWrapper Status=> Network:1, NetworkChangedTimes:0, IgnoredReportsDuringNetworkdown:2, totalReports:40
+20210606T221613 I AnalyticItemCounts Terminating with:0 items
+20210606T221613 I WorkflowTrackManager Terminating with:0 items

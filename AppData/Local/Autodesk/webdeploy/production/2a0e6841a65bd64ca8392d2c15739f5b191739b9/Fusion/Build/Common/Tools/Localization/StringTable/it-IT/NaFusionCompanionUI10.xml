@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="Fusion360ToCFD" devLabel="Unable to push data from Fusion 360 to CFD. CFD application may be busy" translation="Impossibile eseguire il push dei dati da Fusion 360 a CFD. L'applicazione CFD potrebbe essere occupata."/>
+	<label commandName="Fusion360ToCFD1" devLabel="Unable to push data from Fusion 360 to CFD." translation="Impossibile eseguire il push dei dati da Fusion 360 a CFD."/>
+	<label commandName="Fusion360ToCFDPlugin" devLabel="Unable to communicate with Fusion 360 to CFD plugin." translation="Impossibile comunicare con il plug-in da Fusion 360 a CFD."/>
+	<label commandName="Fusion360ToCFDPluginBusy" devLabel="Unable to push data from Fusion 360 to CFD. CFD application may be busy" translation="Impossibile eseguire il push dei dati da Fusion 360 a CFD. L'applicazione CFD potrebbe essere occupata."/>
+	<label commandName="Fusion360ToMFAdviser" devLabel="Unable to push data from Fusion 360 to Moldflow." translation="Impossibile eseguire il push dei dati da Fusion 360 a Moldflow."/>
+	<label commandName="Fusion360ToMFInsight" devLabel="Unable to push data from Fusion 360 to Moldflow." translation="Impossibile eseguire il push dei dati da Fusion 360 a Moldflow."/>
+	<label commandName="Fusion360ToMFInsightBusy" devLabel="Unable to push data from Fusion 360 to Moldflow. Moldflow application may be busy" translation="Impossibile eseguire il push dei dati da Fusion 360 a Moldflow. L'applicazione Moldflow potrebbe essere occupata."/>
+	<label commandName="Fusion360ToMFInsightBusy1" devLabel="Unable to push data from Fusion 360 to Moldflow. Moldflow application may be busy" translation="Impossibile eseguire il push dei dati da Fusion 360 a Moldflow. L'applicazione Moldflow potrebbe essere occupata."/>
+	<label commandName="Fusion360ToMFInsightPlugin" devLabel="Unable to communicate with Fusion 360 to Moldflow plugin." translation="Impossibile comunicare con il plug-in da Fusion 360 a Moldflow."/>
+	<label commandName="Fusion360ToMat" devLabel="Unable to push data from Fusion 360 to CFD." translation="Impossibile eseguire il push dei dati da Fusion 360 a CFD."/>
+	<label commandName="Fusion360ToMoldflowBusy" devLabel="Unable to push data from Fusion 360 to Moldflow. Moldflow application may be busy" translation="Impossibile eseguire il push dei dati da Fusion 360 a Moldflow. L'applicazione Moldflow potrebbe essere occupata."/>
+	<label commandName="Fusion360ToMoldflowPlugin" devLabel="Unable to communicate with Fusion 360 to Moldflow plugin." translation="Impossibile comunicare con il plug-in da Fusion 360 a Moldflow."/>
+	<label commandName="FusionCFDModelAssessmentTool" devLabel="CFD Model Assessment Tool" translation="Strumento di valutazione del modello CFD"/>
+	<label commandName="FusionCFDModelAssessmentToolCommandDefDesc1" devLabel="Open in CFD Model Assessment Tool." translation="Aprire nello strumento di valutazione del modello CFD."/>
+	<label commandName="FusionCFDModelAssessmentToolCommandDefDesc2" devLabel="Opens Autodesk CFD and imports your model into the Assessment Tool before creating a new Design Study." translation="Apre Autodesk CFD e importa il modello nello strumento di valutazione prima di creare un nuovo studio di progettazione."/>
+	<label commandName="FusionCompanionDataDoesNotExist" devLabel="The data file does not exist." translation="Il file di dati non esiste."/>
+	<label commandName="FusionCompanionInteractiveBodySelection" devLabel="Select body" translation="Seleziona corpo"/>
+	<label commandName="FusionCompanionInteractiveBodySelectionInput" devLabel="Select Body" translation="Seleziona corpo"/>
+	<label commandName="FusionCompanionInteractiveBodyStringInput" devLabel="Body Name" translation="Nome corpo"/>
+	<label commandName="FusionCompanionSaveDocumentAndDataFailed" devLabel="Unable to save the document and data files!" translation="Impossibile salvare il documento e i file di dati."/>
+	<label commandName="FusionCompanionUnableToRemoveFile" devLabel="Unable to remove the file at:" translation="Impossibile rimuovere il file in:"/>
+	<label commandName="FusionSimulateInCFD" devLabel="Simulate in CFD" translation="Simula in CFD"/>
+	<label commandName="FusionSimulateInCFD2020" devLabel="Simulate in CFD" translation="Simula in CFD"/>
+	<label commandName="FusionSimulateInCFD2021" devLabel="Simulate in CFD" translation="Simula in CFD"/>
+	<label commandName="FusionSimulateInCFDCommandDefDesc1" devLabel="Launches your model in Autodesk CFD." translation="Avvia il modello in Autodesk CFD."/>
+	<label commandName="FusionSimulateInCFDCommandDefDesc2" devLabel="Opens CFD and imports your model into a new file. Setup and run your CFD simulation using your verified geometry." translation="Apre CFD e importa il modello in un nuovo file. Configurare ed eseguire la simulazione CFD utilizzando la geometria verificata."/>
+	<label commandName="FusionSimulateInMoldflowAdviser" devLabel="Simulate in Moldflow Adviser" translation="Simula in Moldflow Adviser"/>
+	<label commandName="FusionSimulateInMoldflowAdviserCommandDefDesc1" devLabel="Launches your model in Autodesk Moldflow Adviser." translation="Avvia il modello in Autodesk Moldflow Adviser."/>
+	<label commandName="FusionSimulateInMoldflowAdviserCommandDefDesc2" devLabel="Opens Moldflow Adviser and imports your model into a new file. Setup and run your Moldflow simulation using your verified geometry." translation="Apre Moldflow Adviser e importa il modello in un nuovo file. Configurare ed eseguire la simulazione Moldflow utilizzando la geometria verificata."/>
+	<label commandName="FusionSimulateInMoldflowInsight" devLabel="Simulate in Moldflow Insight" translation="Simula in Moldflow Insight"/>
+	<label commandName="FusionSimulateInMoldflowInsightCommandDefDesc1" devLabel="Launches your model in Autodesk Moldflow Insight." translation="Avvia il modello in Autodesk Moldflow Insight."/>
+	<label commandName="FusionSimulateInMoldflowInsightCommandDefDesc2" devLabel="Opens Moldflow Synergy and imports your model into a new file. Setup and run your Moldflow simulation using your verified geometry." translation="Apre Moldflow Synergy e importa il modello in un nuovo file. Configurare ed eseguire la simulazione Moldflow utilizzando la geometria verificata."/>
+	<label commandName="lclzExpirationMessage" devLabel="Licensing for this product has expired." translation="La licenza per questo prodotto è scaduta."/>
+</Resource>

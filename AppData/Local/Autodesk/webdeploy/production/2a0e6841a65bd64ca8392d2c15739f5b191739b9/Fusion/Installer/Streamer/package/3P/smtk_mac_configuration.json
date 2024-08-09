@@ -1,0 +1,11 @@
+{
+    "build"     : "Release",
+
+    "platform"  : "darwin",
+
+    "packageId" : "SMTK",
+
+	"package-files" : {
+		"third-party-var" : "_SMTK"
+	}
+}

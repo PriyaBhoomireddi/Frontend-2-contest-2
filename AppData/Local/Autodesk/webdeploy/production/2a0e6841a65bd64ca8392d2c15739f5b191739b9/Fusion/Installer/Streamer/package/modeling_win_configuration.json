@@ -1,0 +1,68 @@
+{
+	"build"	   : "Release",
+
+	"platform" : "win32",
+
+
+	"packageId": "91fa5489c2e24e9398320426ea613284",
+
+
+    "included-files":[  
+        "DirectModeling",
+        "Applications/DirectModeling",
+        "Applications/Fusion/ForgeTechnologyHelp.pdf",
+        "Applications/Fusion/forgeWelcomeScreenVideosInfo.xml",
+        "Applications/Fusion/NaFeatureRecognizer10.dll",
+        "Applications/Fusion/NaFeatureRecognizer10.xml",
+        "Applications/Fusion/NaFeatureValidation10.dll",
+        "Applications/Fusion/NaFeatureValidation10.xml",
+        "Applications/Fusion/NaFusion10.dll",
+        "Applications/Fusion/NaFusion10.xml",
+        "Applications/Fusion/NaSheetmetal10.dll",
+        "Applications/Fusion/NaSheetmetal10.xml",
+        "Applications/Fusion/NaFusionCompanionUI10.dll",
+        "Applications/Fusion/NaFusionCompanionUI10.xml",
+        "Applications/Fusion/NaFusionSurfaceUI10.dll",
+        "Applications/Fusion/NaFusionSurfaceUI10.xml",
+        "Applications/Fusion/NaFusionSheetMetalUI10.dll",
+        "Applications/Fusion/NaFusionSheetMetalUI10.xml",
+		"Applications/Fusion/NaPCBUI10.dll",
+		"Applications/Fusion/NaPCBUI10.xml",			
+        "Applications/Fusion/NaFusionUI10.dll",
+        "Applications/Fusion/NaFusionUI10.xml",
+        "Applications/Fusion/NaTagDefs10.dll",
+        "Applications/Fusion/NaTagDefs10.xml",
+        "Applications/Fusion/NaTagUtility10.dll",
+        "Applications/Fusion/NaTagUtility10.xml",
+        "Fusion/",
+        "FusionXInterface10.dll",
+        "BauhausCM10.dll",
+        "BauhausCM10.xml",
+        "Applications/Fusion/NaDCServer10.dll",
+        "Applications/Fusion/NaDCServer10.xml",
+        "Applications/Fusion/NaChronicleUI10.dll",
+        "Applications/Fusion/NaChronicleUI10.xml",
+        "Applications/Fusion/FusionXLayer10.dll",
+        "Applications/Fusion/FusionXLayer10.xml",
+        "Applications/Fusion/FusionXLayerUI10.dll",
+        "Applications/Fusion/FusionXLayerUI10.xml",
+        "Applications/Fusion/NaMeshMixerInterface10.dll",
+        "Applications/Fusion/NaMeshMixerInterface10.xml",
+        "Applications/Fusion/NaMeshUI10.dll",
+        "Applications/Fusion/NaMeshUI10.xml",
+		"Applications/Fusion/DesignVariations10.dll",
+		"Applications/Fusion/DesignVariations10.xml",
+		"Applications/Fusion/DesignVariationsUI10.dll",
+		"Applications/Fusion/DesignVariationsUI10.xml",
+		"Applications/Fusion/WorkingModel10.dll",
+		"Applications/Fusion/WorkingModel10.xml",
+		"Applications/Fusion/WorkingModelUI10.dll",
+		"Applications/Fusion/WorkingModelUI10.xml",
+        "Applications/Fusion/NaFusionCompanion10.dll",
+        "Applications/Fusion/NaFusionCompanion10.xml"
+    ],
+
+    "packageDependencies": [
+        "SMTK"
+    ]
+}

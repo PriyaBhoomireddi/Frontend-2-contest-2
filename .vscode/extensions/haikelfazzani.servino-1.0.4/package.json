@@ -1,0 +1,92 @@
+{
+	"name": "servino",
+	"publisher": "HaikelFazzani",
+	"repository": "https://gitlab.com/vscode-extension2/servino",
+	"displayName": "servino",
+	"icon": "logo.png",
+	"description": "Fast and simple HTTP server with hot reload",
+	"version": "1.0.4",
+	"engines": {
+		"vscode": "^1.71.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:servino.start",
+		"onCommand:servino.stop"
+	],
+	"main": "./src/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "servino.start",
+				"title": "Start Server | Servino"
+			},
+			{
+				"command": "servino.stop",
+				"title": "Stop Server | Servino"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"command": "servino.start",
+					"group": "ServinoGroup@1",
+					"when": "editorLangId == html"
+				},
+				{
+					"command": "servino.stop",
+					"group": "ServinoGroup@1",
+					"when": "editorLangId == html"
+				}
+			]
+		}
+	},
+	"scripts": {
+		"package": "vsce package",
+		"lint": "eslint .",
+		"pretest": "npm run lint"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.1.1",
+		"@types/node": "16.x",
+		"@types/vscode": "^1.71.0",
+		"@vscode/test-electron": "^2.1.5",
+		"eslint": "^8.20.0",
+		"glob": "^8.0.3",
+		"mocha": "^10.0.0",
+		"typescript": "^4.7.4"
+	},
+	"dependencies": {
+		"chokidar": "^3.5.3",
+		"faye-websocket": "^0.11.4",
+		"finalhandler": "^1.2.0",
+		"minimist": "^1.2.6",
+		"open": "^8.4.0",
+		"parseurl": "^1.3.3",
+		"serve-index": "^1.9.1",
+		"serve-static": "^1.15.0"
+	},
+	"keywords": [
+		"html",
+		"live-preview",
+		"live-server",
+		"http-server",
+		"reload",
+		"refresh",
+		"livepreview"
+	],
+	"__metadata": {
+		"id": "3c6821c3-eb63-406e-8bab-539f9f8bf661",
+		"publisherId": "4d6b3199-24fc-468a-a405-14438e930023",
+		"publisherDisplayName": "Haikel Fazzani",
+		"targetPlatform": "undefined",
+		"updated": false,
+		"isPreReleaseVersion": false,
+		"hasPreReleaseVersion": false,
+		"installedTimestamp": 1720078359483,
+		"pinned": false
+	}
+}

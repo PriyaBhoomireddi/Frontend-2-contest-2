@@ -1,0 +1,11 @@
+{
+    "build"     : "Release",
+
+    "platform"  : "win32",
+
+    "packageId" : "opencv",
+
+	"package-files" : {
+		"third-party-var" : "_OPENCV"
+	}
+}

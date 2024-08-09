@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="AllSupportedFiles" devLabel="All supported files ( %1% ) ;;" translation="サポートされているすべてのファイル( %1% ) ;;"/>
+	<label commandName="BRep2MeshCommand" devLabel="BRep to Mesh" translation="BRep からメッシュ"/>
+	<label commandName="BestFitType" devLabel="Best Fit" translation="最適フィット"/>
+	<label commandName="BodyEntitySelection" devLabel="Body" translation="ボディ"/>
+	<label commandName="BooleanTypeOperation" devLabel="Operation" translation="操作"/>
+	<label commandName="CenterTransform" devLabel="Center" translation="中心"/>
+	<label commandName="CmMKS" devLabel="Centimeter" translation="センチメートル"/>
+	<label commandName="CombineKeepToolsOptionInput" devLabel="Keep Tool Bodies" translation="ツール ボディを維持"/>
+	<label commandName="CompColorCycleOptionWarning1" devLabel="Component color cycling has been disabled temporarily." translation="コンポーネントのカラー サイクルが一時的に無効になっています。"/>
+	<label commandName="CustomRefinementOption" devLabel="Custom" translation="カスタム"/>
+	<label commandName="CylinderType" devLabel="Cylinder" translation="円柱"/>
+	<label commandName="ExitMeshPanel" devLabel="Close" translation="閉じる"/>
+	<label commandName="ExpandToConnectedSel" devLabel="Expand to Connected" translation="接続済みに展開"/>
+	<label commandName="ExpandToGroupSel" devLabel="Expand to Face Group" translation="面のグループに展開"/>
+	<label commandName="Facet Count" devLabel="Facet Count" translation="ファセットの数"/>
+	<label commandName="FitType" devLabel="Meshing Type" translation="メッシュのタイプ"/>
+	<label commandName="FlatMeshShading" devLabel="Flat Shaded" translation="フラット シェーディング"/>
+	<label commandName="FlatType" devLabel="Uniform" translation="均一"/>
+	<label commandName="FusionMeshPlanarSectionBodyPrompt" devLabel="Select a mesh body" translation="メッシュ ボディを選択"/>
+	<label commandName="FusionMeshPlanarSectionPlanePrompt" devLabel="Move the plane" translation="平面を移動"/>
+	<label commandName="FusionMeshPlanarSectionPrompt" devLabel="Select a plane (optional)" translation="平面を選択(省略可能)"/>
+	<label commandName="FusionPositionMesh" devLabel="Insert Mesh" translation="メッシュを挿入"/>
+	<label commandName="GenerateFGAngle" devLabel="Threshold Angle" translation="角度のしきい値"/>
+	<label commandName="GridAspectRatio" devLabel="Aspect Ratio" translation="縦横比"/>
+	<label commandName="GroundTransform" devLabel="Move to Ground" translation="地面に移動"/>
+	<label commandName="GrowMeshSel" devLabel="Grow Selection" translation="選択を拡大"/>
+	<label commandName="HighRefinementOption" devLabel="High" translation="高"/>
+	<label commandName="Imperial" devLabel="Foot" translation="フィート"/>
+	<label commandName="InchImperial" devLabel="Inch" translation="インチ"/>
+	<label commandName="InsertAlignMeshCommand" devLabel="Insert Mesh" translation="メッシュを挿入"/>
+	<label commandName="InsertMeshCommand" devLabel="Insert Mesh" translation="メッシュを挿入"/>
+	<label commandName="InvertMeshSel" devLabel="Invert Selection" translation="選択内容を反転"/>
+	<label commandName="LowRefinementOption" devLabel="Low" translation="低"/>
+	<label commandName="MMKS" devLabel="Meter" translation="メートル"/>
+	<label commandName="MaximumEdgeLength" devLabel="Maximum Edge Length" translation="エッジの最大長さ"/>
+	<label commandName="MediumRefinementOption" devLabel="Medium" translation="中"/>
+	<label commandName="Mesh" devLabel="Mesh" translation="メッシュ"/>
+	<label commandName="Mesh Environment" devLabel="Mesh" translation="メッシュ"/>
+	<label commandName="Mesh2BRep Conversion Warning" devLabel="&lt;b&gt;Mesh to BRep conversion&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Warning: This mesh contains a large number of facets. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Mesh surface content:&lt;br&gt;Facets = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversion has been aborted. &lt;/br&gt;" translation="&lt;b&gt;メッシュから BREP への変換&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; 警告: このメッシュには多数のファセットが含まれています。&lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;メッシュ サーフェスのコンテンツ:&lt;br&gt;ファセット = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;変換は中止されました。&lt;/br&gt;"/>
+	<label commandName="Mesh2BRep Conversion Warning_1" devLabel="&lt;b&gt;Mesh to BRep conversion&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Warning: This mesh contains a large number of facets. &lt;/br&gt;&lt;br&gt;Proceeding will result in slow performance.&lt;/br&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt;Mesh surface content:&lt;br&gt;Facets = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversion is not recommended. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Proceed with conversion?&lt;/br&gt;" translation="&lt;b&gt;メッシュから BREP への変換&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; 警告: このメッシュには多数のファセットが含まれています。&lt;/br&gt;&lt;br&gt;続行するとパフォーマンスが低下します。&lt;/br&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt;メッシュ サーフェスのコンテンツ:&lt;br&gt;ファセット = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;変換はお勧めしません。&lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;変換を続行しますか?&lt;/br&gt;"/>
+	<label commandName="Mesh2BRep conversion aborted." devLabel="Mesh to BRep conversion aborted." translation="メッシュから BRep への変換が中止されました。"/>
+	<label commandName="Mesh2BRepCommand" devLabel="Mesh to BRep" translation="メッシュから BRep"/>
+	<label commandName="MeshBodiesSelection" devLabel="Mesh Bodies" translation="メッシュ ボディ"/>
+	<label commandName="MeshBodySelection" devLabel="Mesh Body" translation="メッシュ ボディ"/>
+	<label commandName="MeshClearFGCommand" devLabel="Clear Face Group" translation="面のグループをクリア"/>
+	<label commandName="MeshColorCommand" devLabel="Face Groups" translation="面のグループ"/>
+	<label commandName="MeshCombineCommand" devLabel="Merge Bodies" translation="ボディを結合"/>
+	<label commandName="MeshCombineGenericError" devLabel="Combine failed due to invalid input" translation="入力が無効であるため、結合に失敗しました"/>
+	<label commandName="MeshCreateFGCommand" devLabel="Create Face Group" translation="面のグループを作成"/>
+	<label commandName="MeshCutSplitFaces" devLabel="Split Faces" translation="面を分割"/>
+	<label commandName="MeshDeleteTrianglesCommand" devLabel="Delete Faces" translation="面を削除"/>
+	<label commandName="MeshDensity" devLabel="Density" translation="密度"/>
+	<label commandName="MeshDistance" devLabel="Offset" translation="オフセット"/>
+	<label commandName="MeshEntitySelection" devLabel="Mesh Body" translation="メッシュ ボディ"/>
+	<label commandName="MeshFACESelection" devLabel="Mesh Faces" translation="メッシュ面"/>
+	<label commandName="MeshFaceBodySelection" devLabel="Mesh Faces/Body" translation="メッシュ面/ボディ"/>
+	<label commandName="MeshFaceGroupOffCommand" devLabel="FaceGroup Off" translation="面のグループをオフ"/>
+	<label commandName="MeshFaceGroupOnCommand" devLabel="FaceGroup On" translation="面のグループをオン"/>
+	<label commandName="MeshFacetSelection" devLabel="Mesh Facet" translation="メッシュ ファセット"/>
+	<label commandName="MeshFacetSelection_1" devLabel="Mesh Faces/Body" translation="メッシュ面/ボディ"/>
+	<label commandName="MeshFacetSelection_2" devLabel="Mesh Faces/Body" translation="メッシュ面/ボディ"/>
+	<label commandName="MeshFittingCommand" devLabel="Fit Surface to Mesh" translation="サーフェスをメッシュにフィット"/>
+	<label commandName="MeshGenerateFGCommand" devLabel="Generate Face Groups" translation="面のグループを生成"/>
+	<label commandName="MeshGenerateFGGenericError" devLabel="GenerateFG failed due to invalid input" translation="入力が無効であるため、面のグループの生成に失敗しました"/>
+	<label commandName="MeshMakeSolidBeginComputation" devLabel="Starting conversion..." translation="変換を開始しています..."/>
+	<label commandName="MeshMakeSolidCommand" devLabel="Make Closed Mesh" translation="閉じたメッシュを作成"/>
+	<label commandName="MeshPlanarSectionCommand" devLabel="Create Mesh Section Sketch" translation="メッシュ断面スケッチを作成"/>
+	<label commandName="MeshPlaneCutBodySel" devLabel="Mesh Body" translation="メッシュ ボディ"/>
+	<label commandName="MeshPlaneCutCommand" devLabel="Plane Cut" translation="平面切断"/>
+	<label commandName="MeshPlaneCutFillMinimal" devLabel="Minimal" translation="最小"/>
+	<label commandName="MeshPlaneCutFillNone" devLabel="No Fill" translation="塗り潰しなし"/>
+	<label commandName="MeshPlaneCutFillType" devLabel="Fill Type" translation="塗り潰しタイプ"/>
+	<label commandName="MeshPlaneCutFillUniform" devLabel="Uniform" translation="均一"/>
+	<label commandName="MeshPlaneCutFlipTrimDir" devLabel="Flip" translation="反転"/>
+	<label commandName="MeshPlaneCutMeshSelectPrompt" devLabel="Select a mesh body" translation="メッシュ ボディを選択"/>
+	<label commandName="MeshPlaneCutPlanePrompt" devLabel="Select a plane" translation="平面を選択"/>
+	<label commandName="MeshPlaneCutPlaneSel" devLabel="Plane" translation="平面"/>
+	<label commandName="MeshPlaneCutSplitBody" devLabel="Split Body" translation="ボディを分割"/>
+	<label commandName="MeshPlaneCutTransfPlane" devLabel="Transform Plane" translation="平面を移動"/>
+	<label commandName="MeshPlaneCutTransformPlanePrompt" devLabel="Position the plane" translation="平面を配置"/>
+	<label commandName="MeshPlaneCutTrim" devLabel="Trim" translation="トリム"/>
+	<label commandName="MeshPlaneCutType" devLabel="Cut Type" translation="切断タイプ"/>
+	<label commandName="MeshRebuildSolidGenericError" devLabel="Make Closed Mesh failed due to invalid input" translation="入力が無効であるため、閉じたメッシュの作成に失敗しました"/>
+	<label commandName="MeshReduceCommand" devLabel="Reduce" translation="削減"/>
+	<label commandName="MeshReduceGenericError" devLabel="Reduce failed due to invalid input" translation="入力が無効であるため、削減に失敗しました"/>
+	<label commandName="MeshRemeshCommand" devLabel="Remesh" translation="再メッシュ"/>
+	<label commandName="MeshRemeshGenericError" devLabel="Remesh failed due to invalid input" translation="入力が無効であるため、再メッシュに失敗しました"/>
+	<label commandName="MeshReplaceCommand" devLabel="Erase and Fill" translation="消去と塗り潰し"/>
+	<label commandName="MeshReverseNormalsCommand" devLabel="Reverse Normal" translation="法線を反転"/>
+	<label commandName="MeshSectionBodyInput" devLabel="Mesh Body" translation="メッシュ ボディ"/>
+	<label commandName="MeshSectionPlaneInput" devLabel="Plane" translation="平面"/>
+	<label commandName="MeshSectionTransformInput" devLabel="Transform" translation="移動"/>
+	<label commandName="MeshSelection" devLabel="Mesh Faces/Body" translation="メッシュ面/ボディ"/>
+	<label commandName="MeshSelectionPalette" devLabel="Mesh Palette" translation="メッシュ パレット"/>
+	<label commandName="MeshSmoothCommand" devLabel="Smooth" translation="スムーズ"/>
+	<label commandName="MeshSmoothGenericError" devLabel="Smooth failed due to invalid input" translation="入力が無効であるため、スムーズ化に失敗しました"/>
+	<label commandName="MeshStyleCommand" devLabel="Mesh Display" translation="メッシュ表示"/>
+	<label commandName="MeshSubsetCommand" devLabel="Separate" translation="分離"/>
+	<label commandName="MeshTriangulateCommand" devLabel="Triangulate Mesh" translation="メッシュを三角形分割"/>
+	<label commandName="MeshingTypeOption" devLabel="Reduce Type" translation="削減のタイプ"/>
+	<label commandName="MeshingTypeOption_1" devLabel="Meshing Type" translation="メッシュのタイプ"/>
+	<label commandName="MinimalType" devLabel="Minimal" translation="最小"/>
+	<label commandName="MissingMoveBodies" devLabel="missing bodies" translation="ボディが見つかりません"/>
+	<label commandName="MmMKS" devLabel="Millimeter" translation="ミリメートル"/>
+	<label commandName="MoveSelectionInputPrompt4" devLabel="Position mesh bodies" translation="メッシュ ボディを配置"/>
+	<label commandName="NewBodyInNewCompType" devLabel="New Component" translation="新規コンポーネント"/>
+	<label commandName="NewBodyType" devLabel="New Body" translation="新規ボディ"/>
+	<label commandName="NewComponent" devLabel="Operation" translation="操作"/>
+	<label commandName="NormalTolerance" devLabel="Normal Deviation" translation="法線の偏差"/>
+	<label commandName="NumberOfTriangles" devLabel="Number Of Triangles" translation="三角形の数"/>
+	<label commandName="NumericalInputsGroup" devLabel="Numerical Inputs" translation="数値入力"/>
+	<label commandName="OBJFilesFilter" devLabel="OBJ File(*.obj);;" translation="OBJ ファイル(*.obj);;"/>
+	<label commandName="PhysicalMaterialProperty" devLabel="Physical Material" translation="物理マテリアル"/>
+	<label commandName="PlaneType" devLabel="Plane" translation="平面"/>
+	<label commandName="PositionMeshSelectionInput" devLabel="Selection" translation="選択"/>
+	<label commandName="PositionMeshTransformInput" devLabel="Distance" translation="距離"/>
+	<label commandName="PreviewDeviation" devLabel="Deviation Preview" translation="偏差のプレビュー"/>
+	<label commandName="PreviewGroupStart" devLabel="Preview" translation="プレビュー"/>
+	<label commandName="PreviewInput" devLabel="Preview" translation="プレビュー"/>
+	<label commandName="PreviewMesh" devLabel="Preview Mesh" translation="メッシュをプレビュー"/>
+	<label commandName="ReduceFacetCount" devLabel="Face Count" translation="面の数"/>
+	<label commandName="ReducePBOptionInput" devLabel="Preserve Boundaries" translation="境界を保持"/>
+	<label commandName="ReducePercentage" devLabel="Density" translation="密度"/>
+	<label commandName="ReduceType" devLabel="Reduce Target" translation="ターゲットを削減"/>
+	<label commandName="RefinementGroupStart" devLabel="Refinement" translation="リファインメント"/>
+	<label commandName="RefinementOptionsInput" devLabel="Refinement Options" translation="リファインメント オプション"/>
+	<label commandName="RemeshBoundaryOptionInput" devLabel="Preserve Boundaries" translation="境界を保持"/>
+	<label commandName="RemeshDensity" devLabel="Density" translation="密度"/>
+	<label commandName="RemeshNormalThresholdInput" devLabel="Shape Preservation" translation="形状の保持"/>
+	<label commandName="RemeshSharpOptionInput" devLabel="Preserve Sharp Edges" translation="シャープなエッジを保持"/>
+	<label commandName="ReplaceDensity" devLabel="Density" translation="密度"/>
+	<label commandName="ReplaceScale" devLabel="Weight" translation="ウエイト"/>
+	<label commandName="ResetTransform" devLabel="Reset Transformation" translation="変換をリセット"/>
+	<label commandName="STLFilesFilter" devLabel="STL File(*.stl)" translation="STL ファイル(*.stl)"/>
+	<label commandName="SelectBodies" devLabel="Select bodies" translation="ボディを選択"/>
+	<label commandName="SelectMeshBodies" devLabel="Select mesh bodies" translation="メッシュ ボディを選択"/>
+	<label commandName="SelectMeshFacet" devLabel="Select mesh facet" translation="メッシュのファセットを選択"/>
+	<label commandName="ShrinkMeshSel" devLabel="Shrink Selection" translation="選択を縮小"/>
+	<label commandName="SmoothAdaptive" devLabel="Adaptive" translation="アダプティブ"/>
+	<label commandName="SmoothMeshShading" devLabel="Smooth Shaded" translation="スムーズ シェーディング"/>
+	<label commandName="SmoothScale" devLabel="Smoothing" translation="スムーズ化"/>
+	<label commandName="SolidType" devLabel="Rebuild Mode" translation="再作成モード"/>
+	<label commandName="Sphere Type" devLabel="Sphere" translation="球"/>
+	<label commandName="SurfaceDeviationTolerance" devLabel="Deviation Tolerance" translation="偏差の許容差"/>
+	<label commandName="SurfaceFitTolerance" devLabel="Fit Tolerance" translation="フィット許容差"/>
+	<label commandName="SurfaceTolerance" devLabel="Surface Deviation" translation="サーフェスの偏差"/>
+	<label commandName="SurfaceType" devLabel="Surface to Fit" translation="フィットさせるサーフェス"/>
+	<label commandName="Tolerance" devLabel="Tolerance" translation="許容差"/>
+	<label commandName="Torus Type" devLabel="Torus" translation="トーラス"/>
+	<label commandName="TransformTriad" devLabel="Transform" translation="移動"/>
+	<label commandName="TransformTriadPrompt" devLabel="" translation=""/>
+	<label commandName="TriangulatedQuadMeshWarning" devLabel="The inserted mesh has been automatically converted to a triangle mesh to make it compatible with the mesh editing tools. You can disable this automatic triangulation in Preferences &gt; Mesh." translation="挿入したメッシュは自動的に三角形メッシュに変換され、メッシュ編集ツールとの互換性を確保します。[基本設定]&gt;[メッシュ]でこの自動的な三角形分割を無効にできます。"/>
+	<label commandName="UnitsType" devLabel="Unit Type" translation="単位のタイプ"/>
+	<label commandName="UpDirType" devLabel="Flip Up Direction" translation="上方向を反転"/>
+	<label commandName="VisualMaterialProperty" devLabel="Appearance" translation="外観"/>
+	<label commandName="accurateType" devLabel="Accurate" translation="正確"/>
+	<label commandName="blockyType" devLabel="Blocky" translation="ブロック"/>
+	<label commandName="fastType" devLabel="Standard" translation="標準"/>
+	<label commandName="infoAdaptiveType" devLabel="Adaptive" translation="アダプティブ"/>
+	<label commandName="infoUniformType" devLabel="Uniform" translation="均一"/>
+	<label commandName="lclzBRep2MeshDesc1" devLabel="Converts a BRep body to a Mesh body" translation="BRep ボディをメッシュ ボディに変換します"/>
+	<label commandName="lclzFitCurvesToSectionCmd1" devLabel="Fits sketch curves to a mesh cross section." translation="スケッチ曲線をメッシュ断面にフィットさせます。"/>
+	<label commandName="lclzFitCurvesToSectionCmd2" devLabel="Choose the sketch curve type, then select the start and end points on the mesh section. Create multiple curves within the same command with various join conditions." translation="スケッチ曲線のタイプを選択し、メッシュ断面の始点と終点を選択します。さまざまな結合条件で、同じコマンド内に複数の曲線を作成します。"/>
+	<label commandName="lclzInsertAlignMeshDesc1" devLabel="Inserts the selected OBJ or STL mesh file into the active design." translation="選択した OBJ または STL メッシュ ファイルをアクティブなデザインに挿入します。"/>
+	<label commandName="lclzInsertAlignMeshDesc2" devLabel="Choose an OBJ or STL file to insert, then use the options and manipulators to orient and position the mesh." translation="挿入する OBJ または STL ファイルを選択し、オプションとマニピュレータを使用してメッシュの方向を設定して配置します。"/>
+	<label commandName="lclzInsertMeshDesc1" devLabel="Inserts the selected OBJ or STL mesh file into the active design." translation="選択した OBJ または STL メッシュ ファイルをアクティブなデザインに挿入します。"/>
+	<label commandName="lclzInsertMeshDesc2" devLabel="Choose an OBJ or STL file to insert, then use the options and manipulators to orient and position the mesh." translation="挿入する OBJ または STL ファイルを選択し、オプションとマニピュレータを使用してメッシュの方向を設定して配置します。"/>
+	<label commandName="lclzMesh2BRepDesc1" devLabel="Converts a Mesh to a BRep (surface or solid) body type. Meshes more than 10,000 facets can affect performance." translation="メッシュを BRep (サーフェスまたはソリッド)のボディのタイプに変換します。ファセットの数が 10,000 を超えるメッシュの場合、パフォーマンスに影響が生じることがあります。"/>
+	<label commandName="lclzMesh2BRepTipsAndTricks1Item1" devLabel="&lt;b&gt;Mesh to BRep:&lt;/b&gt; Meshes that have originated from CAD models or reality capture scans of limited size can be converted to a BRep surface or solid.  Each facet of the input mesh will be converted to a single planar surface." translation="&lt;b&gt;メッシュから BRep:&lt;/b&gt; CAD モデルまたは制限されたサイズのリアリティ キャプチャ スキャンから作成されたメッシュを、BRep サーフェスまたはソリッドに変換することができます。入力したメッシュの各ファセットは単一の平面サーフェスに変換されます。"/>
+	<label commandName="lclzMesh2BRepTipsAndTricks1Item2" devLabel="&lt;Meshes larger than 10,000 polygons can be time consuming to convert and the resulting BRep body will have poor performance in modeling commands." translation="10,000 ポリゴンより大きなメッシュは変換に時間がかかり、BRep ボディのモデリング コマンドのパフォーマンスが低下します。"/>
+	<label commandName="lclzMesh2BRepTipsAndTricksTitle" devLabel="Convert Tips and Tricks" translation="[変換]のヒントとテクニック"/>
+	<label commandName="lclzMeshBaseFeatureCreationDesc1" devLabel="Enters Mesh mode and inserts a mesh feature into the timeline. Use Mesh tools to modify and repair mesh geometry." translation="メッシュ モードに入り、メッシュ フィーチャをタイムラインに挿入します。メッシュ ツールを使用して、メッシュ ジオメトリを修正および修復します。"/>
+	<label commandName="lclzMeshBaseFeatureCreationDesc2" devLabel="Select Finish Mesh to exit out of the mode." translation="このモードを終了するには、[メッシュを完了]を選択します。"/>
+	<label commandName="lclzMeshBaseFeatureStopDesc1" devLabel="Finishes the Mesh feature." translation="メッシュ フィーチャを終了します。"/>
+	<label commandName="lclzMeshDeleteFacesCmd1" devLabel="Deletes the selected mesh faces." translation="選択したメッシュの面を削除します。"/>
+	<label commandName="lclzMeshEraseAndFillCmd1" devLabel="Fills a hole in a mesh, or erases and replaces a selected portion of a mesh." translation="メッシュ内の穴を塗り潰すか、選択したメッシュの一部分を消去して置き換えます。"/>
+	<label commandName="lclzMeshEraseAndFillCmd2" devLabel="Select the boundary of the hole to fill, or the set of mesh faces to replace." translation="塗り潰す穴の境界、または置換するメッシュ面のセットを選択します。"/>
+	<label commandName="lclzMeshGenerateFaceGroupsCmd1" devLabel="Generates face groups on a mesh body." translation="メッシュ ボディ上に面のグループを生成します。"/>
+	<label commandName="lclzMeshGenerateFaceGroupsCmd2" devLabel="Select a mesh body then adjust the angle to control the face group segmentation." translation="メッシュ ボディを選択して角度を調整し、面のグループのセグメンテーションをコントロールします。"/>
+	<label commandName="lclzMeshMergeBodiesCmd1" devLabel="Merges two or more mesh bodies into a single body." translation="2 つ以上のメッシュ ボディを 1 つのボディに結合します。"/>
+	<label commandName="lclzMeshMergeBodiesCmd2" devLabel="Select two or more mesh bodies to merge. Overlapping boundary edges will be stitched." translation="結合する 2 つ以上のメッシュ ボディを選択します。オーバーラップしている境界エッジはステッチされます。"/>
+	<label commandName="lclzMeshPlanarSectionCommand1" devLabel="Creates a new sketch containing a mesh cross section as reference geometry." translation="メッシュの断面を含む新しいスケッチを参照ジオメトリとして作成します。"/>
+	<label commandName="lclzMeshPlanarSectionCommand2" devLabel="Select a mesh body then move the section plane. To fit sketch curves to the mesh section, follow with the Fit Mesh Section Curves command." translation="メッシュ ボディを選択して断面平面を移動します。スケッチ曲線をメッシュ断面にフィットさせるには、[メッシュ断面曲線をフィット]コマンドを実行します。"/>
+	<label commandName="lclzMeshPlaneCut2" devLabel="Select a mesh body then move the cutting plane. The cut can trim the body, split the body into multiple bodies, or split the faces only." translation="メッシュ ボディを選択して、切断平面を移動します。切断では、ボディのトリム、複数のボディへの分割、または面のみの分割を行うことができます。"/>
+	<label commandName="lclzMeshPlaneCutCommand1" devLabel="Splits a mesh body using a plane." translation="平面を使用して、メッシュ ボディを分割します。"/>
+	<label commandName="lclzMeshRebuildAsSolidCmd1" devLabel="Rebuilds a mesh body as a new watertight solid mesh." translation="メッシュ ボディを、隙間のない新しいソリッド メッシュとして再作成します。"/>
+	<label commandName="lclzMeshRebuildAsSolidCmd2" devLabel="Select a mesh body then choose the rebuild mode and density of the output mesh." translation="メッシュ ボディを選択して、再作成モードと出力メッシュの密度を選択します。"/>
+	<label commandName="lclzMeshReduceCmd1" devLabel="Reduces the number of faces in a mesh." translation="メッシュ内の面の数を減らします。"/>
+	<label commandName="lclzMeshReduceCmd2" devLabel="Select a mesh body or faces then choose a reduction target." translation="メッシュ ボディまたは面を選択して、削減のターゲットを選択します。"/>
+	<label commandName="lclzMeshRemeshCmd1" devLabel="Retiles a mesh with a new set of faces." translation="メッシュに新しい面のセットを並べ直します。"/>
+	<label commandName="lclzMeshRemeshCmd2" devLabel="Select a mesh body or faces then set the density and characteristics of the new faces." translation="メッシュ ボディまたは面を選択し、新しい面の密度と特性を設定します。"/>
+	<label commandName="lclzMeshReverseNormalCmd1" devLabel="Reverses the normal direction of selected mesh faces." translation="選択したメッシュ面の法線方向を反転します。"/>
+	<label commandName="lclzMeshSeparateCmd1" devLabel="Splits a mesh body into two separate bodies." translation="メッシュ ボディを 2 つの別個のボディに分割します。"/>
+	<label commandName="lclzMeshSeparateCmd2" devLabel="Select the mesh faces to split into a separate body." translation="別のボディに分割するメッシュの面を選択します。"/>
+	<label commandName="lclzMeshSmoothCmd1" devLabel="Smooths a mesh." translation="メッシュをスムーズ化します。"/>
+	<label commandName="lclzMeshSmoothCmd2" devLabel="Select a mesh body or faces then adjust the amount of smoothing." translation="メッシュ ボディまたは面を選択し、スムーズ化の量を調整します。"/>
+	<label commandName="lclzMeshWorkspaceTitle" devLabel="Repairs mesh geometry. Access commands to remesh and repair triangulated mesh bodies." translation="メッシュ ジオメトリを修復します。三角形のメッシュ ボディを再メッシュして修復するコマンドにアクセスします。"/>
+	<label commandName="lclzRemeshCmd1" devLabel="Create a face group from the selected mesh faces." translation="選択したメッシュ面から面のグループを作成します。"/>
+	<label commandName="lclzRemeshCmd2" devLabel="Clears face groups from the selected mesh body or faces." translation="選択したメッシュ ボディまたは面から、面のグループをクリアします。"/>
+	<label commandName="pInputSet" devLabel="Select faces to clear facegroup" translation="面のグループをクリアする面を選択"/>
+	<label commandName="pInputSet_1" devLabel="Select faces to delete" translation="削除する面を選択"/>
+	<label commandName="pInputSet_9" devLabel="Select faces to reverse normals" translation="法線を反転する面を選択"/>
+	<label commandName="percentage" devLabel="Density" translation="密度"/>
+	<label commandName="sharpEdgesType" devLabel="Preserve Sharp Edges" translation="シャープなエッジを保持"/>
+	<label commandName="tolerance" devLabel="Tolerance" translation="許容差"/>
+	<label commandName="triCount" devLabel="Face Count" translation="面の数"/>
+</Resource>

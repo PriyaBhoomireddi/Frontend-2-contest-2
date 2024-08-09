@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<machine xmlns="http://www.hsmworks.com/xml/2009/machine">
+
+  <vendor>HAAS</vendor>
+
+  <model>VF-6 TR210</model>
+
+  <description>Haas VF-6 TR210</description>
+
+  <control>NGC</control>
+
+  <machining additive="no" inspection="no" jet="no" milling="yes" turning="no" />
+
+  <dimensions depth="2660mm" height="3217mm" weight="11839kg" width="4000mm" />
+
+  <capacities depth="0mm" height="0mm" weight="226.80000000000001kg" width="0mm" />
+
+  <png128>https://cam.autodesk.com/machines/machines/haas%20vf6%20tr210.png</png128>
+
+  <mtk />
+
+  <controllerConfigurations />
+
+  <fusion>
+    <model>https://cam.autodesk.com/machines/machines/haas%20vf6%20tr210.f3d</model>
+  </fusion>
+
+  <custom>
+    <data />
+    <name />
+    <softwareVersion />
+    <network ip="" port="" protocol="" />
+    <serial />
+  </custom>
+
+  <coolant options="FLOOD THROUGH_TOOL AIR AIR_THROUGH_TOOL FLOOD_THROUGH_TOOL" />
+
+  <multiAxis adjust="yes" angle="10deg" cone="3deg" feedRateType="tcp" linearizationTolerance="0.040000000000000001mm" method="off" reconfigure="no" tolerance="0.040000000000000001mm" />
+
+  <tooling maximumToolDiameter="127mm" maximumToolLength="406mm" maximumToolWeight="5.4000000000000004kg" numberOfTools="30" toolChanger="yes" toolPreload="yes" />
+
+  <machiningTime ratio="1" toolChangeTime="2.7999999999999998s" />
+
+  <capabilities maximumBlockProcessingSpeed="0" maximumFeedrate="12700mm/min" workOffsets="6" />
+
+  <simulation retractOnIndexing="yes" shortestAngularRotation="yes" tableAttachPoint="0mm 0mm 0mm" toolAttachPoint="0mm 0mm 553.53580000000011mm" wcs="0mm 0mm 0mm">
+    <machineAssembly />
+  </simulation>
+
+  <post>
+    <postProcessor>system://machinesimulation.cps</postProcessor>
+    <postProperties>
+      <Parameters />
+    </postProperties>
+    <setupSheet />
+    <setupSheetProperties />
+  </post>
+
+  <axis actuator="linear" coordinate="Z" homePosition="0mm" id="Z" link="head" maximumFeed="0mm/min" name="" offset="0mm 0mm 0mm" range="-761mm 0mm" rapidFeed="0mm/min" resolution="0mm" />
+
+  <spindle axis="0 0 1" maximumSpeed="0rpm" minimumSpeed="0rpm">
+    <description />
+  </spindle>
+
+  <axis actuator="linear" coordinate="Y" homePosition="0mm" id="Y" link="table" maximumFeed="0mm/min" name="" offset="0mm 0mm 0mm" range="-406.5mm 406.5mm" rapidFeed="0mm/min" resolution="0mm" />
+
+  <axis actuator="linear" coordinate="X" homePosition="0mm" id="X" link="table" maximumFeed="0mm/min" name="" offset="0mm 0mm 0mm" range="-813.00000000000011mm 813.00000000000011mm" rapidFeed="0mm/min" resolution="0mm" />
+
+  <axis actuator="rotational" axis="1 0 0" control="driven" coordinate="X" cyclic="no" homePosition="0deg" id="U" link="table" maximumFeed="21600deg/min" name="" offset="-350.26600000000599mm 0.19538467400350995mm 3.22580000000002mm" preference="dont care" range="-120deg 120deg" rapidFeed="0deg/min" resolution="0deg" tcp="yes" />
+
+  <axis actuator="rotational" axis="0 0 1" control="driven" coordinate="Z" cyclic="no" homePosition="0deg" id="V" link="table" maximumFeed="21600deg/min" name="" offset="0mm 0mm -35.424577373211989mm" preference="dont care" rapidFeed="0deg/min" resolution="0deg" tcp="yes" />
+
+</machine>

@@ -1,0 +1,11 @@
+{
+	"build"     : "Release",
+
+	"platform"  : "darwin",
+
+	"packageId" : "lib3mf",
+
+	"package-files" : {
+		"third-party-var" : "_LIB3MF"
+	}
+}

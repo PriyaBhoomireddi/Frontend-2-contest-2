@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="ActivateGenWorkingModel" devLabel="Activate Generative Model" translation="激活衍生式模型"/>
+	<label commandName="ActivateGenerativeModel" devLabel="Activate Generative Model" translation="激活衍生式模型"/>
+	<label commandName="ActivateModel" devLabel="Activate Model" translation="激活模型"/>
+	<label commandName="ActivateSimulationModel" devLabel="Activate Simulation Model" translation="激活仿真模型"/>
+	<label commandName="ActivateWorkingModel" devLabel="Activate Simulation Model" translation="激活仿真模型"/>
+	<label commandName="ActivateWorkingModelText" devLabel="Activate Simulation Model" translation="激活仿真模型"/>
+	<label commandName="ConvertSurfaceBody2TSCommand" devLabel="Convert Surface Body to TSpline" translation="将曲面体转换为 T-Spline"/>
+	<label commandName="CopyActiveWorkingModelFailure1" devLabel="Suspended command!" translation="已挂起命令！"/>
+	<label commandName="CopyActiveWorkingModelFailure2" devLabel="No Active asset session!" translation="无活动资源会话！"/>
+	<label commandName="CopyActiveWorkingModelFailure3" devLabel="No Active WM asset session!" translation="无活动 WM 资源会话！"/>
+	<label commandName="CopyActiveWorkingModelFailure4" devLabel="Copy of active WM failed" translation="复制活动 WM 失败"/>
+	<label commandName="CopyWorkingModel" devLabel="Copy Working Model" translation="复制工作模型"/>
+	<label commandName="CopyWorkingModelAndImport" devLabel="Copy Working Model, activate it and import gemetry" translation="复制工作模型，将其激活并导入几何图元"/>
+	<label commandName="CopyWorkingModelText" devLabel="Copy Simulation Model" translation="复制仿真模型"/>
+	<label commandName="DeleteWorkingModel" devLabel="Delete Working Model" translation="删除工作模型"/>
+	<label commandName="DeleteWorkingModelText" devLabel="Delete Simulation Model" translation="删除仿真模型"/>
+	<label commandName="ExtractTSSurfaceBodyCommand" devLabel="Extract TSpline from Surface Body" translation="从曲面体中提取 T-Spline"/>
+	<label commandName="FinishEditModelCommand" devLabel="Finish Edit Model" translation="完成编辑模型"/>
+	<label commandName="FinishEditModelCommandModelText" devLabel="Enables you to return to the Generative Design workspace." translation="允许您返回到“衍生式设计”工作空间。"/>
+	<label commandName="FinishSimplifyCommand" devLabel="Finish Simplify" translation="完成简化"/>
+	<label commandName="FinishSimplifyCommandModelText" devLabel="Click Finish Simplify to return to the Simulation workspace." translation="单击“完成简化”以返回到“仿真”工作空间。"/>
+	<label commandName="FusionComponentInstanceFoldername" devLabel="Model Components" translation="模型零部件"/>
+	<label commandName="FusionDeleteOverrideCommand" devLabel="Delete" translation="删除"/>
+	<label commandName="GenWorkingModelEnvironment" devLabel="Edit Model" translation="编辑模型"/>
+	<label commandName="GenerativeModels" devLabel="Generative Models" translation="衍生式模型"/>
+	<label commandName="InvalidAssetSelectedForDeletion" devLabel="No valid model selected for deletion." translation="未选择要删除的有效模型。"/>
+	<label commandName="Models" devLabel="Models" translation="模型"/>
+	<label commandName="SimPromoteSolidIsProbablySurface" devLabel="A closed solid could not be produced from the Optimization Result. The generated surface body(ies) may need to be Patched and Stitched." translation="无法从优化结果生成闭合实体。生成的曲面体可能需要修补和缝合。"/>
+	<label commandName="SimulationModels" devLabel="Simulation Models" translation="仿真模型"/>
+	<label commandName="SoftDeleteAllUnselected" devLabel="Remove All Except Selected" translation="删除所有排除的选定项"/>
+	<label commandName="SoftDeleteAllUnselectedText" devLabel="Remove All Except Selected" translation="删除所有排除的选定项"/>
+	<label commandName="SuppressGeometry" devLabel="Suppress" translation="抑制"/>
+	<label commandName="UnSuppressGeometry" devLabel="UnSuppress" translation="解除抑制"/>
+	<label commandName="WorkingModelEnvironment" devLabel="Simplify" translation="简化"/>
+	<label commandName="lclzFusionRepairBrowserCaption" devLabel="Repair Browser" translation="修复浏览器"/>
+	<label commandName="lclzGenWorkingModelWorkspaceTitle" devLabel="Edits a generative model by creating bodies to represent preserve, obstacle, and starting shape geometries in a design problem." translation="通过创建实体以表示设计问题中的保留几何图元、障碍物几何图元和起始形状几何图元，从而编辑衍生式模型。"/>
+</Resource>

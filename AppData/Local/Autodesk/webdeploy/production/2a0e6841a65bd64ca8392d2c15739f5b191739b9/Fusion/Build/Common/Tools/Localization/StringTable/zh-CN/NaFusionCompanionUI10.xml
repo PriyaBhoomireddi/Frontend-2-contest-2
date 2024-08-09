@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?><Resource>
+	<label commandName="Fusion360ToCFD" devLabel="Unable to push data from Fusion 360 to CFD. CFD application may be busy" translation="无法将数据从 Fusion 360 推送到 CFD。CFD 应用程序可能正忙"/>
+	<label commandName="Fusion360ToCFD1" devLabel="Unable to push data from Fusion 360 to CFD." translation="无法将数据从 Fusion 360 推送到 CFD。"/>
+	<label commandName="Fusion360ToCFDPlugin" devLabel="Unable to communicate with Fusion 360 to CFD plugin." translation="无法与“Fusion 360 到 CFD”插件进行通信。"/>
+	<label commandName="Fusion360ToCFDPluginBusy" devLabel="Unable to push data from Fusion 360 to CFD. CFD application may be busy" translation="无法将数据从 Fusion 360 推送到 CFD。CFD 应用程序可能正忙"/>
+	<label commandName="Fusion360ToMFAdviser" devLabel="Unable to push data from Fusion 360 to Moldflow." translation="无法将数据从 Fusion 360 推送到 Moldflow。"/>
+	<label commandName="Fusion360ToMFInsight" devLabel="Unable to push data from Fusion 360 to Moldflow." translation="无法将数据从 Fusion 360 推送到 Moldflow。"/>
+	<label commandName="Fusion360ToMFInsightBusy" devLabel="Unable to push data from Fusion 360 to Moldflow. Moldflow application may be busy" translation="无法将数据从 Fusion 360 推送到 Moldflow。Moldflow 应用程序可能正忙"/>
+	<label commandName="Fusion360ToMFInsightBusy1" devLabel="Unable to push data from Fusion 360 to Moldflow. Moldflow application may be busy" translation="无法将数据从 Fusion 360 推送到 Moldflow。Moldflow 应用程序可能正忙"/>
+	<label commandName="Fusion360ToMFInsightPlugin" devLabel="Unable to communicate with Fusion 360 to Moldflow plugin." translation="无法与“Fusion 360 到 Moldflow”插件进行通信。"/>
+	<label commandName="Fusion360ToMat" devLabel="Unable to push data from Fusion 360 to CFD." translation="无法将数据从 Fusion 360 推送到 CFD。"/>
+	<label commandName="Fusion360ToMoldflowBusy" devLabel="Unable to push data from Fusion 360 to Moldflow. Moldflow application may be busy" translation="无法将数据从 Fusion 360 推送到 Moldflow。Moldflow 应用程序可能正忙"/>
+	<label commandName="Fusion360ToMoldflowPlugin" devLabel="Unable to communicate with Fusion 360 to Moldflow plugin." translation="无法与“Fusion 360 到 Moldflow”插件进行通信。"/>
+	<label commandName="FusionCFDModelAssessmentTool" devLabel="CFD Model Assessment Tool" translation="CFD 模型评估工具"/>
+	<label commandName="FusionCFDModelAssessmentToolCommandDefDesc1" devLabel="Open in CFD Model Assessment Tool." translation="在 CFD 模型评估工具中打开。"/>
+	<label commandName="FusionCFDModelAssessmentToolCommandDefDesc2" devLabel="Opens Autodesk CFD and imports your model into the Assessment Tool before creating a new Design Study." translation="打开 Autodesk CFD 并将您的模型导入到评估工具，然后创建一个新设计分析。"/>
+	<label commandName="FusionCompanionDataDoesNotExist" devLabel="The data file does not exist." translation="数据文件不存在。"/>
+	<label commandName="FusionCompanionInteractiveBodySelection" devLabel="Select body" translation="选择实体"/>
+	<label commandName="FusionCompanionInteractiveBodySelectionInput" devLabel="Select Body" translation="选择实体"/>
+	<label commandName="FusionCompanionInteractiveBodyStringInput" devLabel="Body Name" translation="实体名称"/>
+	<label commandName="FusionCompanionSaveDocumentAndDataFailed" devLabel="Unable to save the document and data files!" translation="无法保存文档和数据文件！"/>
+	<label commandName="FusionCompanionUnableToRemoveFile" devLabel="Unable to remove the file at:" translation="无法删除文件:"/>
+	<label commandName="FusionSimulateInCFD" devLabel="Simulate in CFD" translation="在 CFD 中模拟"/>
+	<label commandName="FusionSimulateInCFD2020" devLabel="Simulate in CFD" translation="在 CFD 中模拟"/>
+	<label commandName="FusionSimulateInCFD2021" devLabel="Simulate in CFD" translation="在 CFD 中模拟"/>
+	<label commandName="FusionSimulateInCFDCommandDefDesc1" devLabel="Launches your model in Autodesk CFD." translation="在 Autodesk CFD 中启动您的模型。"/>
+	<label commandName="FusionSimulateInCFDCommandDefDesc2" devLabel="Opens CFD and imports your model into a new file. Setup and run your CFD simulation using your verified geometry." translation="打开 CFD 并将您的模型导入到一个新文件。请使用验证的几何图元设置并运行您的 CFD 仿真。"/>
+	<label commandName="FusionSimulateInMoldflowAdviser" devLabel="Simulate in Moldflow Adviser" translation="在 Moldflow Adviser 中模拟"/>
+	<label commandName="FusionSimulateInMoldflowAdviserCommandDefDesc1" devLabel="Launches your model in Autodesk Moldflow Adviser." translation="在 Autodesk Moldflow Adviser 中启动您的模型。"/>
+	<label commandName="FusionSimulateInMoldflowAdviserCommandDefDesc2" devLabel="Opens Moldflow Adviser and imports your model into a new file. Setup and run your Moldflow simulation using your verified geometry." translation="打开 Moldflow Adviser 并将您的模型导入到一个新文件。请使用验证的几何图元设置并运行您的 Moldflow 仿真。"/>
+	<label commandName="FusionSimulateInMoldflowInsight" devLabel="Simulate in Moldflow Insight" translation="在 Moldflow Insight 中仿真"/>
+	<label commandName="FusionSimulateInMoldflowInsightCommandDefDesc1" devLabel="Launches your model in Autodesk Moldflow Insight." translation="在 Autodesk Moldflow Insight 中启动您的模型。"/>
+	<label commandName="FusionSimulateInMoldflowInsightCommandDefDesc2" devLabel="Opens Moldflow Synergy and imports your model into a new file. Setup and run your Moldflow simulation using your verified geometry." translation="打开 Moldflow Synergy 并将模型输入到一个新文件中。使用验证的几何图元设置和运行 Moldflow 模拟。"/>
+	<label commandName="lclzExpirationMessage" devLabel="Licensing for this product has expired." translation="本产品的许可已过期。"/>
+</Resource>

@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Resource>
+	<label commandName="AllSupportedFiles" devLabel="All supported files ( %1% ) ;;" translation="" />
+	<label commandName="BRep2MeshCommand" devLabel="BRep to Mesh" translation="" />
+	<label commandName="BestFitType" devLabel="Best Fit" translation="" />
+	<label commandName="BodyEntitySelection" devLabel="Body" translation="" />
+	<label commandName="BooleanTypeOperation" devLabel="Operation" translation="" />
+	<label commandName="CenterTransform" devLabel="Center" translation="" />
+	<label commandName="CmMKS" devLabel="Centimeter" translation="" />
+	<label commandName="CombineKeepToolsOptionInput" devLabel="Keep Tool Bodies" translation="" />
+	<label commandName="CompColorCycleOptionWarning1" devLabel="Component color cycling has been disabled temporarily." translation="" />
+	<label commandName="CustomRefinementOption" devLabel="Custom" translation="" />
+	<label commandName="CylinderType" devLabel="Cylinder" translation="" />
+	<label commandName="ExitMeshPanel" devLabel="Close" translation="" />
+	<label commandName="ExpandToConnectedSel" devLabel="Expand to Connected" translation="" />
+	<label commandName="ExpandToGroupSel" devLabel="Expand to Face Group" translation="" />
+	<label commandName="Facet Count" devLabel="Facet Count" translation="" />
+	<label commandName="FitType" devLabel="Meshing Type" translation="" />
+	<label commandName="FlatMeshShading" devLabel="Flat Shaded" translation="" />
+	<label commandName="FlatType" devLabel="Uniform" translation="" />
+	<label commandName="FusionMeshPlanarSectionBodyPrompt" devLabel="Select a mesh body" translation="" />
+	<label commandName="FusionMeshPlanarSectionPlanePrompt" devLabel="Move the plane" translation="" />
+	<label commandName="FusionMeshPlanarSectionPrompt" devLabel="Select a plane (optional)" translation="" />
+	<label commandName="FusionPositionMesh" devLabel="Insert Mesh" translation="" />
+	<label commandName="GenerateFGAngle" devLabel="Threshold Angle" translation="" />
+	<label commandName="GridAspectRatio" devLabel="Aspect Ratio" translation="" />
+	<label commandName="GroundTransform" devLabel="Move to Ground" translation="" />
+	<label commandName="GrowMeshSel" devLabel="Grow Selection" translation="" />
+	<label commandName="HighRefinementOption" devLabel="High" translation="" />
+	<label commandName="Imperial" devLabel="Foot" translation="" />
+	<label commandName="InchImperial" devLabel="Inch" translation="" />
+	<label commandName="InsertAlignMeshCommand" devLabel="Insert Mesh" translation="" />
+	<label commandName="InsertMeshCommand" devLabel="Insert Mesh" translation="" />
+	<label commandName="InvertMeshSel" devLabel="Invert Selection" translation="" />
+	<label commandName="LowRefinementOption" devLabel="Low" translation="" />
+	<label commandName="MMKS" devLabel="Meter" translation="" />
+	<label commandName="MaximumEdgeLength" devLabel="Maximum Edge Length" translation="" />
+	<label commandName="MediumRefinementOption" devLabel="Medium" translation="" />
+	<label commandName="Mesh" devLabel="Mesh" translation="" />
+	<label commandName="Mesh Environment" devLabel="Mesh" translation="" />
+	<label commandName="Mesh2BRep Conversion Warning" devLabel="&lt;b&gt;Mesh to BRep conversion&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Warning: This mesh contains a large number of facets. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Mesh surface content:&lt;br&gt;Facets = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversion has been aborted. &lt;/br&gt;" translation="" />
+	<label commandName="Mesh2BRep Conversion Warning_1" devLabel="&lt;b&gt;Mesh to BRep conversion&lt;/b&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt; Warning: This mesh contains a large number of facets. &lt;/br&gt;&lt;br&gt;Proceeding will result in slow performance.&lt;/br&gt; &lt;br&gt;&lt;/br&gt;&lt;br&gt;Mesh surface content:&lt;br&gt;Facets = %1% &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Conversion is not recommended. &lt;/br&gt;&lt;br&gt;&lt;/br&gt;&lt;br&gt;Proceed with conversion?&lt;/br&gt;" translation="" />
+	<label commandName="Mesh2BRep conversion aborted." devLabel="Mesh to BRep conversion aborted." translation="" />
+	<label commandName="Mesh2BRepCommand" devLabel="Mesh to BRep" translation="" />
+	<label commandName="MeshBodiesSelection" devLabel="Mesh Bodies" translation="" />
+	<label commandName="MeshBodySelection" devLabel="Mesh Body" translation="" />
+	<label commandName="MeshClearFGCommand" devLabel="Clear Face Group" translation="" />
+	<label commandName="MeshColorCommand" devLabel="Face Groups" translation="" />
+	<label commandName="MeshCombineCommand" devLabel="Merge Bodies" translation="" />
+	<label commandName="MeshCombineGenericError" devLabel="Combine failed due to invalid input" translation="" />
+	<label commandName="MeshCreateFGCommand" devLabel="Create Face Group" translation="" />
+	<label commandName="MeshCutSplitFaces" devLabel="Split Faces" translation="" />
+	<label commandName="MeshDeleteTrianglesCommand" devLabel="Delete Faces" translation="" />
+	<label commandName="MeshDensity" devLabel="Density" translation="" />
+	<label commandName="MeshDistance" devLabel="Offset" translation="" />
+	<label commandName="MeshEntitySelection" devLabel="Mesh Body" translation="" />
+	<label commandName="MeshFACESelection" devLabel="Mesh Faces" translation="" />
+	<label commandName="MeshFaceBodySelection" devLabel="Mesh Faces/Body" translation="" />
+	<label commandName="MeshFaceGroupOffCommand" devLabel="FaceGroup Off" translation="" />
+	<label commandName="MeshFaceGroupOnCommand" devLabel="FaceGroup On" translation="" />
+	<label commandName="MeshFacetSelection" devLabel="Mesh Facet" translation="" />
+	<label commandName="MeshFacetSelection_1" devLabel="Mesh Faces/Body" translation="" />
+	<label commandName="MeshFacetSelection_2" devLabel="Mesh Faces/Body" translation="" />
+	<label commandName="MeshFittingCommand" devLabel="Fit Surface to Mesh" translation="" />
+	<label commandName="MeshGenerateFGCommand" devLabel="Generate Face Groups" translation="" />
+	<label commandName="MeshGenerateFGGenericError" devLabel="GenerateFG failed due to invalid input" translation="" />
+	<label commandName="MeshMakeSolidBeginComputation" devLabel="Starting conversion..." translation="" />
+	<label commandName="MeshMakeSolidCommand" devLabel="Make Closed Mesh" translation="" />
+	<label commandName="MeshPlanarSectionCommand" devLabel="Create Mesh Section Sketch" translation="" />
+	<label commandName="MeshPlaneCutBodySel" devLabel="Mesh Body" translation="" />
+	<label commandName="MeshPlaneCutCommand" devLabel="Plane Cut" translation="" />
+	<label commandName="MeshPlaneCutFillMinimal" devLabel="Minimal" translation="" />
+	<label commandName="MeshPlaneCutFillNone" devLabel="No Fill" translation="" />
+	<label commandName="MeshPlaneCutFillType" devLabel="Fill Type" translation="" />
+	<label commandName="MeshPlaneCutFillUniform" devLabel="Uniform" translation="" />
+	<label commandName="MeshPlaneCutFlipTrimDir" devLabel="Flip" translation="" />
+	<label commandName="MeshPlaneCutMeshSelectPrompt" devLabel="Select a mesh body" translation="" />
+	<label commandName="MeshPlaneCutPlanePrompt" devLabel="Select a plane" translation="" />
+	<label commandName="MeshPlaneCutPlaneSel" devLabel="Plane" translation="" />
+	<label commandName="MeshPlaneCutSplitBody" devLabel="Split Body" translation="" />
+	<label commandName="MeshPlaneCutTransfPlane" devLabel="Transform Plane" translation="" />
+	<label commandName="MeshPlaneCutTransformPlanePrompt" devLabel="Position the plane" translation="" />
+	<label commandName="MeshPlaneCutTrim" devLabel="Trim" translation="" />
+	<label commandName="MeshPlaneCutType" devLabel="Cut Type" translation="" />
+	<label commandName="MeshRebuildSolidGenericError" devLabel="Make Closed Mesh failed due to invalid input" translation="" />
+	<label commandName="MeshReduceCommand" devLabel="Reduce" translation="" />
+	<label commandName="MeshReduceGenericError" devLabel="Reduce failed due to invalid input" translation="" />
+	<label commandName="MeshRemeshCommand" devLabel="Remesh" translation="" />
+	<label commandName="MeshRemeshGenericError" devLabel="Remesh failed due to invalid input" translation="" />
+	<label commandName="MeshReplaceCommand" devLabel="Erase and Fill" translation="" />
+	<label commandName="MeshReverseNormalsCommand" devLabel="Reverse Normal" translation="" />
+	<label commandName="MeshSectionBodyInput" devLabel="Mesh Body" translation="" />
+	<label commandName="MeshSectionPlaneInput" devLabel="Plane" translation="" />
+	<label commandName="MeshSectionTransformInput" devLabel="Transform" translation="" />
+	<label commandName="MeshSelection" devLabel="Mesh Faces/Body" translation="" />
+	<label commandName="MeshSelectionPalette" devLabel="Mesh Palette" translation="" />
+	<label commandName="MeshSmoothCommand" devLabel="Smooth" translation="" />
+	<label commandName="MeshSmoothGenericError" devLabel="Smooth failed due to invalid input" translation="" />
+	<label commandName="MeshStyleCommand" devLabel="Mesh Display" translation="" />
+	<label commandName="MeshSubsetCommand" devLabel="Separate" translation="" />
+	<label commandName="MeshTriangulateCommand" devLabel="Triangulate Mesh" translation="" />
+	<label commandName="MeshingTypeOption" devLabel="Reduce Type" translation="" />
+	<label commandName="MeshingTypeOption_1" devLabel="Meshing Type" translation="" />
+	<label commandName="MinimalType" devLabel="Minimal" translation="" />
+	<label commandName="MissingMoveBodies" devLabel="missing bodies" translation="" />
+	<label commandName="MmMKS" devLabel="Millimeter" translation="" />
+	<label commandName="MoveSelectionInputPrompt4" devLabel="Position mesh bodies" translation="" />
+	<label commandName="NewBodyInNewCompType" devLabel="New Component" translation="" />
+	<label commandName="NewBodyType" devLabel="New Body" translation="" />
+	<label commandName="NewComponent" devLabel="Operation" translation="" />
+	<label commandName="NormalTolerance" devLabel="Normal Deviation" translation="" />
+	<label commandName="NumberOfTriangles" devLabel="Number Of Triangles" translation="" />
+	<label commandName="NumericalInputsGroup" devLabel="Numerical Inputs" translation="" />
+	<label commandName="OBJFilesFilter" devLabel="OBJ File(*.obj);;" translation="" />
+	<label commandName="PhysicalMaterialProperty" devLabel="Physical Material" translation="" />
+	<label commandName="PlaneType" devLabel="Plane" translation="" />
+	<label commandName="PositionMeshSelectionInput" devLabel="Selection" translation="" />
+	<label commandName="PositionMeshTransformInput" devLabel="Distance" translation="" />
+	<label commandName="PreviewDeviation" devLabel="Deviation Preview" translation="" />
+	<label commandName="PreviewGroupStart" devLabel="Preview" translation="" />
+	<label commandName="PreviewInput" devLabel="Preview" translation="" />
+	<label commandName="PreviewMesh" devLabel="Preview Mesh" translation="" />
+	<label commandName="ReduceFacetCount" devLabel="Face Count" translation="" />
+	<label commandName="ReducePBOptionInput" devLabel="Preserve Boundaries" translation="" />
+	<label commandName="ReducePercentage" devLabel="Density" translation="" />
+	<label commandName="ReduceType" devLabel="Reduce Target" translation="" />
+	<label commandName="RefinementGroupStart" devLabel="Refinement" translation="" />
+	<label commandName="RefinementOptionsInput" devLabel="Refinement Options" translation="" />
+	<label commandName="RemeshBoundaryOptionInput" devLabel="Preserve Boundaries" translation="" />
+	<label commandName="RemeshDensity" devLabel="Density" translation="" />
+	<label commandName="RemeshNormalThresholdInput" devLabel="Shape Preservation" translation="" />
+	<label commandName="RemeshSharpOptionInput" devLabel="Preserve Sharp Edges" translation="" />
+	<label commandName="ReplaceDensity" devLabel="Density" translation="" />
+	<label commandName="ReplaceScale" devLabel="Weight" translation="" />
+	<label commandName="ResetTransform" devLabel="Reset Transformation" translation="" />
+	<label commandName="STLFilesFilter" devLabel="STL File(*.stl)" translation="" />
+	<label commandName="SelectBodies" devLabel="Select bodies" translation="" />
+	<label commandName="SelectMeshBodies" devLabel="Select mesh bodies" translation="" />
+	<label commandName="SelectMeshFacet" devLabel="Select mesh facet" translation="" />
+	<label commandName="ShrinkMeshSel" devLabel="Shrink Selection" translation="" />
+	<label commandName="SmoothAdaptive" devLabel="Adaptive" translation="" />
+	<label commandName="SmoothMeshShading" devLabel="Smooth Shaded" translation="" />
+	<label commandName="SmoothScale" devLabel="Smoothing" translation="" />
+	<label commandName="SolidType" devLabel="Rebuild Mode" translation="" />
+	<label commandName="Sphere Type" devLabel="Sphere" translation="" />
+	<label commandName="SurfaceDeviationTolerance" devLabel="Deviation Tolerance" translation="" />
+	<label commandName="SurfaceFitTolerance" devLabel="Fit Tolerance" translation="" />
+	<label commandName="SurfaceTolerance" devLabel="Surface Deviation" translation="" />
+	<label commandName="SurfaceType" devLabel="Surface to Fit" translation="" />
+	<label commandName="Tolerance" devLabel="Tolerance" translation="" />
+	<label commandName="Torus Type" devLabel="Torus" translation="" />
+	<label commandName="TransformTriad" devLabel="Transform" translation="" />
+	<label commandName="TransformTriadPrompt" devLabel="" translation="" />
+	<label commandName="TriangulatedQuadMeshWarning" devLabel="The inserted mesh has been automatically converted to a triangle mesh to make it compatible with the mesh editing tools. You can disable this automatic triangulation in Preferences &gt; Mesh." translation="" />
+	<label commandName="UnitsType" devLabel="Unit Type" translation="" />
+	<label commandName="UpDirType" devLabel="Flip Up Direction" translation="" />
+	<label commandName="VisualMaterialProperty" devLabel="Appearance" translation="" />
+	<label commandName="accurateType" devLabel="Accurate" translation="" />
+	<label commandName="blockyType" devLabel="Blocky" translation="" />
+	<label commandName="fastType" devLabel="Standard" translation="" />
+	<label commandName="infoAdaptiveType" devLabel="Adaptive" translation="" />
+	<label commandName="infoUniformType" devLabel="Uniform" translation="" />
+	<label commandName="lclzBRep2MeshDesc1" devLabel="Converts a BRep body to a Mesh body" translation="" />
+	<label commandName="lclzFitCurvesToSectionCmd1" devLabel="Fits sketch curves to a mesh cross section." translation="" />
+	<label commandName="lclzFitCurvesToSectionCmd2" devLabel="Choose the sketch curve type, then select the start and end points on the mesh section. Create multiple curves within the same command with various join conditions." translation="" />
+	<label commandName="lclzInsertAlignMeshDesc1" devLabel="Inserts the selected OBJ or STL mesh file into the active design." translation="" />
+	<label commandName="lclzInsertAlignMeshDesc2" devLabel="Choose an OBJ or STL file to insert, then use the options and manipulators to orient and position the mesh." translation="" />
+	<label commandName="lclzInsertMeshDesc1" devLabel="Inserts the selected OBJ or STL mesh file into the active design." translation="" />
+	<label commandName="lclzInsertMeshDesc2" devLabel="Choose an OBJ or STL file to insert, then use the options and manipulators to orient and position the mesh." translation="" />
+	<label commandName="lclzMesh2BRepDesc1" devLabel="Converts a Mesh to a BRep (surface or solid) body type. Meshes more than 10,000 facets can affect performance." translation="" />
+	<label commandName="lclzMesh2BRepTipsAndTricks1Item1" devLabel="&lt;b&gt;Mesh to BRep:&lt;/b&gt; Meshes that have originated from CAD models or reality capture scans of limited size can be converted to a BRep surface or solid.  Each facet of the input mesh will be converted to a single planar surface." translation="" />
+	<label commandName="lclzMesh2BRepTipsAndTricks1Item2" devLabel="&lt;Meshes larger than 10,000 polygons can be time consuming to convert and the resulting BRep body will have poor performance in modeling commands." translation="" />
+	<label commandName="lclzMesh2BRepTipsAndTricksTitle" devLabel="Convert Tips and Tricks" translation="" />
+	<label commandName="lclzMeshBaseFeatureCreationDesc1" devLabel="Enters Mesh mode and inserts a mesh feature into the timeline. Use Mesh tools to modify and repair mesh geometry." translation="" />
+	<label commandName="lclzMeshBaseFeatureCreationDesc2" devLabel="Select Finish Mesh to exit out of the mode." translation="" />
+	<label commandName="lclzMeshBaseFeatureStopDesc1" devLabel="Finishes the Mesh feature." translation="" />
+	<label commandName="lclzMeshDeleteFacesCmd1" devLabel="Deletes the selected mesh faces." translation="" />
+	<label commandName="lclzMeshEraseAndFillCmd1" devLabel="Fills a hole in a mesh, or erases and replaces a selected portion of a mesh." translation="" />
+	<label commandName="lclzMeshEraseAndFillCmd2" devLabel="Select the boundary of the hole to fill, or the set of mesh faces to replace." translation="" />
+	<label commandName="lclzMeshGenerateFaceGroupsCmd1" devLabel="Generates face groups on a mesh body." translation="" />
+	<label commandName="lclzMeshGenerateFaceGroupsCmd2" devLabel="Select a mesh body then adjust the angle to control the face group segmentation." translation="" />
+	<label commandName="lclzMeshMergeBodiesCmd1" devLabel="Merges two or more mesh bodies into a single body." translation="" />
+	<label commandName="lclzMeshMergeBodiesCmd2" devLabel="Select two or more mesh bodies to merge. Overlapping boundary edges will be stitched." translation="" />
+	<label commandName="lclzMeshPlanarSectionCommand1" devLabel="Creates a new sketch containing a mesh cross section as reference geometry." translation="" />
+	<label commandName="lclzMeshPlanarSectionCommand2" devLabel="Select a mesh body then move the section plane. To fit sketch curves to the mesh section, follow with the Fit Mesh Section Curves command." translation="" />
+	<label commandName="lclzMeshPlaneCut2" devLabel="Select a mesh body then move the cutting plane. The cut can trim the body, split the body into multiple bodies, or split the faces only." translation="" />
+	<label commandName="lclzMeshPlaneCutCommand1" devLabel="Splits a mesh body using a plane." translation="" />
+	<label commandName="lclzMeshRebuildAsSolidCmd1" devLabel="Rebuilds a mesh body as a new watertight solid mesh." translation="" />
+	<label commandName="lclzMeshRebuildAsSolidCmd2" devLabel="Select a mesh body then choose the rebuild mode and density of the output mesh." translation="" />
+	<label commandName="lclzMeshReduceCmd1" devLabel="Reduces the number of faces in a mesh." translation="" />
+	<label commandName="lclzMeshReduceCmd2" devLabel="Select a mesh body or faces then choose a reduction target." translation="" />
+	<label commandName="lclzMeshRemeshCmd1" devLabel="Retiles a mesh with a new set of faces." translation="" />
+	<label commandName="lclzMeshRemeshCmd2" devLabel="Select a mesh body or faces then set the density and characteristics of the new faces." translation="" />
+	<label commandName="lclzMeshReverseNormalCmd1" devLabel="Reverses the normal direction of selected mesh faces." translation="" />
+	<label commandName="lclzMeshSeparateCmd1" devLabel="Splits a mesh body into two separate bodies." translation="" />
+	<label commandName="lclzMeshSeparateCmd2" devLabel="Select the mesh faces to split into a separate body." translation="" />
+	<label commandName="lclzMeshSmoothCmd1" devLabel="Smooths a mesh." translation="" />
+	<label commandName="lclzMeshSmoothCmd2" devLabel="Select a mesh body or faces then adjust the amount of smoothing." translation="" />
+	<label commandName="lclzMeshWorkspaceTitle" devLabel="Repairs mesh geometry. Access commands to remesh and repair triangulated mesh bodies." translation="" />
+	<label commandName="lclzRemeshCmd1" devLabel="Create a face group from the selected mesh faces." translation="" />
+	<label commandName="lclzRemeshCmd2" devLabel="Clears face groups from the selected mesh body or faces." translation="" />
+	<label commandName="pInputSet" devLabel="Select faces to clear facegroup" translation="" />
+	<label commandName="pInputSet_1" devLabel="Select faces to delete" translation="" />
+	<label commandName="pInputSet_9" devLabel="Select faces to reverse normals" translation="" />
+	<label commandName="percentage" devLabel="Density" translation="" />
+	<label commandName="sharpEdgesType" devLabel="Preserve Sharp Edges" translation="" />
+	<label commandName="tolerance" devLabel="Tolerance" translation="" />
+	<label commandName="triCount" devLabel="Face Count" translation="" />
+</Resource>
