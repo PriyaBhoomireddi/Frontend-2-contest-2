@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+	<CommandDefinition Id="SimFEACSPreSolveCheckCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimFEACSPreSolveCheckDesc1" _LCLZText="Checks the active simulation study to ensure it has all data required to solve the given study type. The icon changes the color according to the study state:"/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFEACSPreSolveCheckDesc2" _LCLZText="Red"/>
+				<TextBlock _LCLZId="SimFEACSPreSolveCheckDesc3" _LCLZText="The study cannot be solved because some important inputs are missing - for example, for static stress simulation, a load is not applied. For thermal study, a temperature load is missing. Or, for any study, there are incorrect material data."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFEACSPreSolveCheckDesc4" _LCLZText="Orange"/>
+				<TextBlock _LCLZId="SimFEACSPreSolveCheckDesc5" _LCLZText="There are some potential issues with the study, but it can still be solved. For example, the design is not fully constrained (not enough constraints), or contacts are missing."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFEACSPreSolveCheckDesc6" _LCLZText="Green"/>
+				<TextBlock _LCLZId="SimFEACSPreSolveCheckDesc7" _LCLZText="The study has no predictable issues; therefore it can be solved."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="GenFEACSPreSolveCheckCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="GenFEACSPreSolveCheckDesc1" _LCLZText="Checks the active generative study to ensure the setup meets the requirements to generate outcomes. The icon changes color according to the study status."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="GenFEACSPreSolveCheckDesc2" _LCLZText="Red"/>
+				<TextBlock _LCLZId="GenFEACSPreSolveCheckDesc3" _LCLZText="You can't generate outcomes because the study setup doesn’t meet some requirements. For example, there is less than the minimum number of preserve geometries or a material is missing."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="GenFEACSPreSolveCheckDesc4" _LCLZText="Yellow"/>
+				<TextBlock _LCLZId="GenFEACSPreSolveCheckDesc5" _LCLZText="You can generate outcomes, but there are potential issues with the study. For example, a preserve, obstacle, or starting shape body is missing, but the study includes the minimum number of preserve geometries."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="GenFEACSPreSolveCheckDesc6" _LCLZText="Green"/>
+				<TextBlock _LCLZId="GenFEACSPreSolveCheckDesc7" _LCLZText="The study setup meets the requirements."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimShowJobsDlgCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimShowJobsDlgCmdDesc1" _LCLZText="View the list of the Simulation solves related to all the open documents which are in progress or have already been done."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimShowJobsDlgCmdDesc2" _LCLZText="The available list allows you to track progress of the solve, cancel the solve in progress or view the results for the successfully finished solve."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="GenShowJobsDlgCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="GenShowJobsDlgCmdDesc1" _LCLZText="Displays the list of generative jobs that are in progress or have completed for all open documents."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="GenShowJobsDlgCmdDesc2" _LCLZText="The list enables you to track processing status of each generative job and cancel the job in progress."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="GenShowJobsDlgCmdDesc3" _LCLZText="You can cancel a generative job before one iteration of any outcome is generated."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFEACSDataCheckCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimFEACSDataCheckDesc1" _LCLZText="Check explicit solve."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFEACSMeshSolveCmd" Hotkey="m">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/MeshSolve.png">
+				<TextBlock _LCLZId="SimFEACSMeshSolveDesc1" _LCLZText="Computes a mesh for your simulation model based on settings specified. Automatic contacts are generated first."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFEACSMeshSolveDesc2" _LCLZText="Your computer will be used to perform the compute process."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+  <!--
+  <CommandDefinition Id="SimFEACSMeshSolveASynLocalCmd">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="SimFEACSMeshSolveASynLocalDesc1" _LCLZText="Use this command to generate and inspect the mesh prior to solving, especially if you have customized the mesh settings."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="SimFEACSMeshSolveASynLocalDesc2" _LCLZText="Because the mesh is automatically created when you start solving, this step is optional. In many cases, however, it is good to inspect the mesh and make adjustments before solving."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="SimFEACSMeshSolveASynLocalDesc3" _LCLZText="Note that you can monitor the mesh generation progress in the Simulation Job Manager."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  -->
+	<CommandDefinition Id="SimFEACSMeshCloudSolveCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimFEACSMeshCloudSolveDesc1" _LCLZText="Use this command to generate and inspect the mesh prior to solving on the cloud, especially if you have customized the mesh settings."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFEACSMeshCloudSolveDesc2" _LCLZText="Because the mesh is automatically created when you start solving on the cloud, this step is optional. In many cases, however, it is good to inspect the mesh and make adjustments before solving."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFEACSMeshCloudSolveDesc3" _LCLZText="Note that you can monitor the mesh generation progress in the Simulation Job Manager."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFEACSSolveCmd">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/Solve.png">
+				<TextBlock _LCLZId="SimFEACSSolveDesc1" _LCLZText="Runs your simulations based on the settings you select. Progress bar displays to view the state of the solve. Automatic contacts and mesh are generated first."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFEACSCloudSolveCmd">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/Solve.png">
+				<TextBlock _LCLZId="SimFEACSCloudSolveDesc1" _LCLZText="Runs your simulations on cloud based on the settings you select."/>
+			</ExpandedContent>
+		</Tooltip>    
+	</CommandDefinition>
+	<CommandDefinition Id="SimSolveCmd">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/Solve.png">
+				<TextBlock _LCLZId="SimSolveDesc1" _LCLZText="Performs your simulations based on the specified settings. You are able to schedule to solve simulations on cloud or locally."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimSolveDesc2" _LCLZText="Automatic contacts and mesh are generated first. Progress bar displays to view the state of the solve."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="GenSolveCmd">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/GenerativeSolve.png">
+				<TextBlock _LCLZId="GenSolveDesc1" _LCLZText="Generates outcomes that satisfy the design requirements specified in the generative study."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="GenSolveDesc2" _LCLZText="You can select one or more studies in your design. Track the processing status in the Job Status dialog."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFEACSEditSolveCmd">
+		<Tooltip>
+			<!--
+			<ExpandedContent ToolClip="ToolClip/Solve.png">
+			<TextBlock _LCLZId="SimFEACSSolveDesc1" _LCLZText="Edit Nastran file and then runs your simulations based on the settings you select. Progress bar displays to view the state of the solve."/>
+			</ExpandedContent>
+			-->
+		</Tooltip>
+	</CommandDefinition>
+  <!--
+	<CommandDefinition Id="SimFEACSASynLocalSolveCmd">
+	    <Tooltip>
+	      <ExpandedContent ToolClip="ToolClip/Solve.png">
+	        <TextBlock _LCLZId="SimFEACSASynLocalSolveDesc1" _LCLZText="Run your simulation"/>
+	        <TextBlock/>
+	        <TextBlock _LCLZId="SimFEACSASynLocalSolveDesc2" _LCLZText="The color shown in the 'traffic light' icon indicates the status of the simulation model:"/>
+	        <TextBlock/>
+	        <TextBlock _LCLZId="SimFEACSASynLocalSolveDesc3" _LCLZText="Green = The study satisfies all required criteria, and is ready to run."/>
+	        <TextBlock/>
+	        <TextBlock _LCLZId="SimFEACSASynLocalSolveDesc4" _LCLZText="Yellow = The study contains one or more warnings, but can still be run."/>
+	        <TextBlock/>
+	        <TextBlock _LCLZId="SimFEACSASynLocalSolveDesc5" _LCLZText="Red = The study is incomplete, and cannot be run."/>
+	      </ExpandedContent>
+	    </Tooltip>
+	</CommandDefinition>
+  -->
+	<!-- <CommandDefinition Id="SimFEACSOptimizationCloudSolveCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimFEACSOptimizationCloudSolveDesc1" _LCLZText="Run your simulation"/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFEACSOptimizationCloudSolveDesc2" _LCLZText="The color shown in the 'traffic light' icon indicates the status of the simulation model:"/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFEACSOptimizationCloudSolveDesc3" _LCLZText="Green = The study satisfies all required criteria, and is ready to run."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFEACSOptimizationCloudSolveDesc4" _LCLZText="Yellow = The study contains one or more warnings, but can still be run."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFEACSOptimizationCloudSolveDesc5" _LCLZText="Red = The study is incomplete, and cannot be run."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition> -->
+	<CommandDefinition Id="SimFEACSTopologyOptimizationSolveCmd">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/Solve.png">
+				<TextBlock _LCLZId="SimFEACSTopologyOptimizationSolveDesc1" _LCLZText="Runs your simulations based on the settings you select. Progress bar displays to view the state of the solve."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFEACSTopologyOptimizationSynchronousSolveCmd">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/Solve.png">
+				<TextBlock _LCLZId="SimFEACSTopologyOptimizationSolveDesc1" _LCLZText="Runs your simulations based on the settings you select. Progress bar displays to view the state of the solve."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFEACSAutoContactsCmd">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/AutoContacts.png">
+				<TextBlock _LCLZId="SimFEACSAutoContactsDesc1" _LCLZText="Automatically calculates the contact types between all bodies and components that overlap or touch each other."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFEACSAutoContactsDesc2" _LCLZText="To ensure all contacts are included in the simulation, run Automatic Contacts before assigning manual contacts. Note, you can then later change the contact types from the automatically generated one to the desired type. Also, you can suppress contacts to be excluded from the simulation."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimManualContactCommand">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/ManualContact.png">
+				<TextBlock _LCLZId="SimManualContactDesc1" _LCLZText="Applies contact conditions to component geometries."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimManualContactDesc2" _LCLZText="After you detect all automatic contacts, you can create additional contacts between components. The simulation type determines the availability of contact types."/>
+			</ExpandedContent>
+		</Tooltip>
+		<TipsAndTricks MoreInfo="SIM-CONTACTS-CMD">
+			<Title _LCLZId="SimContactTipsAndTricksTitle" _LCLZText="Contact Information"/>
+			<Tips _LCLZId="SimContactTipsAndTricksTips" _LCLZText="Select the two bodies or components that participate in the contact first. This will isolate those two bodies. The command automatically toggles between the selected bodies when you click the geometric entities where the contact applies."/>
+			<Description _LCLZId="SimContactTipsAndTricksDesc" _LCLZText=""/>
+		</TipsAndTricks>
+	</CommandDefinition>
+	<CommandDefinition Id="SimEditContactCommand">
+		<TipsAndTricks MoreInfo="SIM-CONTACTS-CMD">
+			<Title _LCLZId="SimEditContactTipsAndTricksTitle" _LCLZText="Contact Information"/>
+			<Tips _LCLZId="SimEditContactTipsAndTricksTips" _LCLZText="Select a new contact type.&lt;br&gt;For manual contacts, unselect the target geometries or bodies, and select new ones."/>
+			<Description _LCLZId="SimEditContactTipsAndTricksDesc" _LCLZText=""/>
+		</TipsAndTricks>
+	</CommandDefinition>
+	<CommandDefinition Id="SimContactBondedCommand">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/ManualContact.png">
+				<TextBlock _LCLZId="SimBondedManualContactDesc1" _LCLZText="Bonded surfaces mean the two surfaces are in full contact."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimBondedManualContactDesc2" _LCLZText="All loads from a surface will be fully transferred to another surface in contact. This means that deflections and temperatures are identical where the parts meet, and heat flows without resistance between the adjacent parts."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimBondedManualContactDesc3" _LCLZText="Please note that before manually applying contacts, you should run Automatic Contacts."/>
+			</ExpandedContent>
+		</Tooltip>
+		<TipsAndTricks MoreInfo="SIM-CONTACTS-CMD">
+			<Title _LCLZId="SimContactTipsAndTricksTitle" _LCLZText="Contact Information"/>
+			<Tips _LCLZId="SimContactTipsAndTricksTips" _LCLZText="Select the two bodies or components that participate in the contact first. This will isolate those two bodies. The command automatically toggles between the selected bodies when you click the geometric entities where the contact applies."/>
+			<Description _LCLZId="SimContactTipsAndTricksDesc" _LCLZText=""/>
+		</TipsAndTricks>
+	</CommandDefinition>
+	<CommandDefinition Id="SimContactSeparationSlidingCommand">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/ContactSeparationSliding.png">
+				<TextBlock _LCLZId="SimSeparationSlidingManualContactDesc1" _LCLZText="Contact surfaces can separate freely from each other in the normal direction and move freely relative to each other in the tangential direction."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimSeparationSlidingManualContactDesc2" _LCLZText="Please note that before manually applying contacts, you should run Automatic Contacts."/>
+			</ExpandedContent>
+		</Tooltip>
+		<TipsAndTricks MoreInfo="SIM-CONTACTS-CMD">
+			<Title _LCLZId="SimContactTipsAndTricksTitle" _LCLZText="Contact Information"/>
+			<Tips _LCLZId="SimContactTipsAndTricksTips" _LCLZText="Select the two bodies or components that participate in the contact first. This will isolate those two bodies. The command automatically toggles between the selected bodies when you click the geometric entities where the contact applies."/>
+			<Description _LCLZId="SimContactTipsAndTricksDesc" _LCLZText=""/>
+		</TipsAndTricks>
+	</CommandDefinition>
+	<CommandDefinition Id="SimContactSeparationNoSlidingCommand">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/ContactSeparationNoSliding.png">
+				<TextBlock _LCLZId="SimSeparationNoSlidingManualContactDesc1" _LCLZText="Contact surfaces can move freely away from each other (but not pass through each other) in the normal direction, and cannot move in the relative tangential direction once they come in contact."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimSeparationNoSlidingManualContactDesc2" _LCLZText="Please note that before manually applying contacts, you should run Automatic Contacts."/>
+			</ExpandedContent>
+		</Tooltip>
+		<TipsAndTricks MoreInfo="SIM-CONTACTS-CMD">
+			<Title _LCLZId="SimContactTipsAndTricksTitle" _LCLZText="Contact Information"/>
+			<Tips _LCLZId="SimContactTipsAndTricksTips" _LCLZText="Select the two bodies or components that participate in the contact first. This will isolate those two bodies. The command automatically toggles between the selected bodies when you click the geometric entities where the contact applies."/>
+			<Description _LCLZId="SimContactTipsAndTricksDesc" _LCLZText=""/>
+		</TipsAndTricks>
+	</CommandDefinition>
+	<CommandDefinition Id="SimContactSlidingNoSeparationCommand">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/ContactSlidingNoSeparation.png">
+				<TextBlock _LCLZId="SimSlidingNoSeparationManualContactDesc1" _LCLZText="Contact surfaces can move freely in the relative tangential direction, but cannot move relative to each other in the normal direction."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimSlidingNoSeparationManualContactDesc2" _LCLZText="Please note that before manually applying contacts, you should run Automatic Contacts."/>
+			</ExpandedContent>
+		</Tooltip>
+		<TipsAndTricks MoreInfo="SIM-CONTACTS-CMD">
+			<Title _LCLZId="SimContactTipsAndTricksTitle" _LCLZText="Contact Information"/>
+			<Tips _LCLZId="SimContactTipsAndTricksTips" _LCLZText="Select the two bodies or components that participate in the contact first. This will isolate those two bodies. The command automatically toggles between the selected bodies when you click the geometric entities where the contact applies."/>
+			<Description _LCLZId="SimContactTipsAndTricksDesc" _LCLZText=""/>
+		</TipsAndTricks>
+	</CommandDefinition>
+	<CommandDefinition Id="SimContactOffsetBondedCommand">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/ManualContact.png">
+				<TextBlock _LCLZId="SimContactOffsetBondedContactDesc1" _LCLZText="Offset Bonded Contact."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimContactOffsetBondedContactDesc2" _LCLZText="Please note that before manually applying contacts, you should run Automatic Contacts."/>
+			</ExpandedContent>
+		</Tooltip>
+		<TipsAndTricks>
+			<Title _LCLZId="SimContactTipsAndTricksTitle" _LCLZText="Contact Information"/>
+			<Tips _LCLZId="SimContactTipsAndTricksTips" _LCLZText="Select the two bodies or components that participate in the contact first. This will isolate those two bodies. The command automatically toggles between the selected bodies when you click the geometric entities where the contact applies."/>
+			<Description _LCLZId="SimContactTipsAndTricksDesc" _LCLZText=""/>
+		</TipsAndTricks>
+	</CommandDefinition>
+	<CommandDefinition Id="SimShowMeshingIssuesCmd">
+		<Tooltip>
+			<!-- <ExpandedContent ToolClip="ToolClip/ShowMeshingIssues.png"> -->
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimShowMeshingIssuesDesc1" _LCLZText="Shows meshing issues on the model."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimShowMeshingIssuesDesc2" _LCLZText="Meshing issues."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimHideMeshingIssuesCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimHideMeshingIssuesDesc1" _LCLZText="Hides meshing issues."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimHideMeshingIssuesDesc2" _LCLZText="Meshing issues."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimContactsManagerCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimContactsManagerDesc1" _LCLZText="View the list of all contacts."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimContactsManagerDesc2" _LCLZText="The list allows you to sort, edit, rename, suppress, and isolate contacts."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFEACSReactionForceCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimFEACSReactionForceDesc1" _LCLZText="Shows resulting reaction forces and moments."/>
+			</ExpandedContent>
+		</Tooltip>
+		<TipsAndTricks>
+			<Title _LCLZId="SimFEACSReactionForceTipsAndTricksTitle" _LCLZText="Reactions Information"/>
+			<Tips _LCLZId="SimFEACSReactionForceTipsAndTricksTips" _LCLZText="Select a constrained face, edge or vertex to see reaction values."/>
+			<Description _LCLZId="SimFEACSReactionForceTipsAndTricksDesc" _LCLZText=""/>
+		</TipsAndTricks>
+	</CommandDefinition>
+	<CommandDefinition Id="SimMeshRefinementByEntitiesCmd">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/MeshRefinementByEntities.png">
+				<TextBlock _LCLZId="SimMeshRefinementByEntitiesCmdDesc1" _LCLZText="Refine the mesh in specific locations by modifying the mesh distribution on Faces and edges."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimMeshRefinementByEntitiesCmdDesc2" _LCLZText="To improve results fidelity, strategically refine the mesh at certain locations. Refine the mesh in areas that have a large result gradient or have small geometric features that the global mesh size may not capture. Select Surfaces or edges, and drag the slider. Validate that the mesh is sufficient before running the simulation using the Generate Mesh command."/>
+			</ExpandedContent>
+		</Tooltip>
+		<TipsAndTricks MoreInfo="SIM-LOCAL-MESH-CONTROL-CMD">
+			<Title _LCLZId="SimMeshRefinementByEntitiesCmdTipsAndTricksTitle" _LCLZText="Local Mesh Control Information"/>
+			<Tips _LCLZId="SimMeshRefinementByEntitiesCmdTipsAndTricksTips" _LCLZText="Select a surface or edge and drag the slider to modify the local mesh distribution. You can also manually enter the element length. The green dots provide an approximate nodal distribution on edges, but the final mesh may differ slightly due to neighboring features."/>
+			<Description _LCLZId="SimMeshRefinementByEntitiesCmdTipsAndTricksDesc" _LCLZText="To improve results fidelity, strategically refine the mesh at specific locations. Refine the mesh in areas that have a large result gradient or have small geometric features that the global mesh size may not capture. Select Surfaces or edges, and drag the slider. Validate that the mesh is sufficient before running the simulation using the Generate Mesh command."/>
+		</TipsAndTricks>
+	</CommandDefinition>
+	<CommandDefinition Id="SimOptimizationSetupCommand">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimOptimizationSetupCommandDesc1" _LCLZText="Specify the optimization objectives and load case constraints."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimOptimizationSetupCommandDesc2" _LCLZText="Set the target mass, objectives, manufacturing constraints, and maximum allowed displacement."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+  <CommandDefinition Id="SimGenerativeObjectivesCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="SimGenerativeObjectivesCommandDesc1" _LCLZText="Specifies the optimization objectives and limits that the outcomes should satisfy."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="SimGenerativeObjectivesCommandDesc2" _LCLZText="You can specify the Safety Factor for the objectives. For the Maximize Stiffness objective, you can also specify the Mass Target."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="GENERATE-OBJECTIVES-AND-LIMITS-CMD">
+			<Title _LCLZId="SimGenerativeObjectivesCommandTipsAndTricksTitle" _LCLZText="Objectives and Limits Information"/>
+			<Tips _LCLZId="SimGenerativeObjectivesCommandTipsAndTricksTips" _LCLZText="If you select Minimize Mass, enter a Safety Factor or accept the default value. If you select Maximize Stiffness, specify a Safety Factor and Mass Target."/>
+		</TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SimGenerativeManufacturingCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="SimGenerativeManufacturingCommandDesc1" _LCLZText="Specifies the manufacturing constraints for the design process."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="SimGenerativeManufacturingCommandDesc2" _LCLZText="Available options include: Unrestricted, Additive, and Milling. You can select all options and compare outcomes generated for each option."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="GENERATE-MANUFACTURING-CMD">
+			<Title _LCLZId="SimGenerativeManufacturingCommandTipsAndTricksTitle" _LCLZText="Manufacturing Information"/>
+			<Tips _LCLZId="SimGenerativeManufacturingCommandTipsAndTricksTips" _LCLZText="To include additive constraints, select Additive and specify the Overhang Angle and Minimum Thickness. To include milling constraints, select Milling and specify the Tool Direction, Minimum Tool Diameter, Tool Shoulder Length, and Head Diameter. To avoid manufacturing constraints during the design process, select Unrestricted."/>
+      <Description _LCLZId="SimGenerativeManufacturingCommandTipsAndTricksDesc" _LCLZText="Outcomes are generated for each manufacturing option that you select."/>
+		</TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SimGenerativePreviewCmd">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/GenerativePreviewer.png">
+        <TextBlock _LCLZId="SimGenerativePreviewCmddDesc1" _LCLZText="Generates an outcome preview based on the study setup before you run a job."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="SimGenerativePreviewCmdDesc2" _LCLZText="Use Previewer to see how the setup affects outcomes. Then adjust the setup, if needed. Previewer ignores manufacturing and material settings. It generates the preview after Pre-check verifies that the study is ready to generate."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ToggleLearningPanelCmd">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="ToggleLearningPanelCmdDesc1" _LCLZText="Toggles display of the Learning Panel where you can view the Generative Guide."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="ToggleLearningPanelCmdDesc2" _LCLZText="It walks you through the steps to set up a generative study. Each step is updated based on your model and study setup. After completing all steps you can generate outcomes."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="SimExplicitElementDeletionCommand">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ExplicitElementDeletion.png">
+        <TextBlock _LCLZId="SimExplicitElementDeletionDesc1"
+          _LCLZText="Deletes elements from the mesh that, during the event simulation, fall into the region of emerging cracks, breaks, and holes." />
+        <TextBlock/>
+        <TextBlock _LCLZId="SimExplicitElementDeletionDesc2"
+          _LCLZText="Define the criteria that must be met for elements to be deleted. Select the target body, the deletion criterion, and the value. Only mesh elements of the selected body that meet the deletion criteria are deleted." />
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SIM-ELEMENT-DELETION-TASK">
+      <Title _LCLZId="SimExplicitElementDeletionTipsAndTricksTitle" _LCLZText="Element Deletion Information"/>
+      <Tips _LCLZId="SimExplicitElementDeletionTipsAndTricksTips" _LCLZText="Provides options for deleting elements from the mesh based upon criteria defined."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SimEditExplicitElementDeletionCommand">
+    <TipsAndTricks MoreInfo="SIM-ELEMENT-DELETION-TASK">
+      <Title _LCLZId="SimExplicitElementDeletionTipsAndTricksTitle" _LCLZText="Element Deletion Information"/>
+      <Tips _LCLZId="SimExplicitElementDeletionTipsAndTricksTips" _LCLZText="Provides options for deleting elements from the mesh based upon criteria defined."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+	<!-- <CommandDefinition Id="SimCreateFatigueCaseCmd">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/NewFatigueCase.png">
+				<TextBlock _LCLZId="SimCreateFatigueCaseDesc1" _LCLZText="Create a fatigue simulation in the active study. Note that a simulation study can only contain one fatigue case. Fatigue simulations are available for Static and Thermal simulation types."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFatigueCaseOvMaterialCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimFatigueCaseOvMaterialDesc1" _LCLZText="Assign the materials to be used in the fatigue analysis."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFatigueCaseOvMaterialDesc2" _LCLZText="Successful fatigue analysis depends on accurate material data. Please consult the extensive material database for stress life curves (SN) and strain life curves (EN)."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFatigueMaterialViewCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimFatigueMaterialViewDesc1" _LCLZText="View the physical properties of the materials in the material library."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFatigueCaseSurfaceFinishCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimFatigueCaseSurfaceFinishDesc1" _LCLZText="Specify endurance modifiers such as Surface Finish, Stress Concentration Factor (Kf), and other Limit Factors."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFatigueCaseSurfaceFinishDesc2" _LCLZText="These factors modify the basis of the fatigue calculation to account for surface roughness effects and stress concentrations. Such effects are common in many typical structural features, and can decrease fatigue life."/>
+			</ExpandedContent>
+		</Tooltip>
+		<TipsAndTricks>
+			<Title _LCLZId="SimFatigueCaseSurfaceFinishTipsAndTricksTitle" _LCLZText="Fatigue Life Factors Information"/>
+			<Description _LCLZId="SimFatigueCaseSurfaceFinishTipsAndTricksDesc" _LCLZText="Choose the surface finish condition that most closely matches the manufacturing method of your parts. If the mesh is fine enough to accurately capture stress concentrations (such as near holes, stepped shaft fillets, or keyways), leave Kf = 1.  Otherwise, increase Kf."/>
+		</TipsAndTricks>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFatigueCycleHistoryCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimFatigueCycleHistoryDesc1" _LCLZText="Define the cyclic loading of the fatigue calculation."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFatigueCycleHistoryDesc2" _LCLZText="Use the interactive plot to define the Fatigue Cycle for the selected load case. The Fatigue Cycle describes how the stresses or strains calculated in the stress simulation vary with time."/>
+			</ExpandedContent>
+		</Tooltip>
+		<TipsAndTricks>
+			<Title _LCLZId="SimFatigueCycleHistoryTipsAndTricksTitle" _LCLZText="Fatigue Cycle History Information"/>
+			<Description _LCLZId="SimFatigueCycleHistoryTipsAndTricksDesc" _LCLZText="To change the amplitude or the offset of the Fatigue Cycle curve, drag either the clear circle at the peak or the x-axis, respectively. To use a custom loading, click Import Curve, and select a .csv file that defines a single fatigue cycle. This cycle can contain multiple loading cycles of varying amplitude and sign. The entire sequence, however is counted as a single fatigue cycle."/>
+		</TipsAndTricks>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFatigueCaseSettingCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimFatigueCaseSettingDesc1" _LCLZText="Select the Fatigue Calculation method."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFatigueCaseSettingDesc2" _LCLZText="Select either the Stress based (SN) life, Strain based (EN) life, or Fatigue Safety Factor."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFatigueSuppressPartCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimFatigueSuppressPartDesc1" _LCLZText="Exclude a part or body from the fatigue calculation by unchecking it."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFatigueOutputOptCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimFatigueOutputOptDesc1" _LCLZText="Define the parameters for the type of fatigue calculation specified in the Settings command."/>
+			</ExpandedContent>
+		</Tooltip>
+		<TipsAndTricks>
+			<Title _LCLZId="SimFatigueOutputOptTipsAndTricksTitle" _LCLZText="Output Options Information"/>
+			<Description _LCLZId="SimFatigueOutputOptTipsAndTricksDesc" _LCLZText="For the Stress based (SN) method, define the Lifecycle, and select the Mean Stress Corrections (None, Gerber, and Goodman). For the Strain based (EN) method, define the Lifecycle, and select the Mean Stress Corrections (None, Morrow, and Smith-Watson-Topper). For the Safety Factor, select the calculation methods (Constant Stress Ratio and Constant Mean). If you do not require one or more of these methods to account for mean stresses, disable them to shorten the simulation time."/>
+		</TipsAndTricks>
+	</CommandDefinition>
+	<CommandDefinition Id="SimFatigueCalcOptCmd">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimFatigueCalcOptDesc1" _LCLZText="Customize analysis parameters to better suit your particular study and to improve the overall accuracy and performance of the fatigue simulation."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimFatigueCalcOptDesc2" _LCLZText="Use the Runtime Reduction controls to reduce simulation time. Use the Stress Options tab to specify the stress result to use as the basis of the fatigue calculation."/>
+			</ExpandedContent>
+		</Tooltip>
+		<TipsAndTricks>
+			<Title _LCLZId="SimFatigueCalcOptTipsAndTricksTitle" _LCLZText="Calculation Options Information"/>
+			<Description _LCLZId="SimFatigueCalcOptTipsAndTricksDesc" _LCLZText="On the Runtime Reduction tab, the selection of the top percentage of nodes is based on the maximum nodal stress range in the stress history. Be careful to ensure that nodes at critical locations are not omitted from the fatigue calculation. You should have a good understanding of the possible effects when reducing this value. It is good practice to perform a final analysis on all nodes to ensure that all critical locations are included. On the Stress Options tab, selecting either of the Critical Plane approaches increases solution times significantly. This is due to the resolution of stress tensors into many planes (18 by default). A separate fatigue calculation runs on each of these planes. Before using the critical plane approaches, perform an initial analysis. Use one of the stress invariant methods to identify any fatigue critical areas of the model, then perform a critical plane analysis only on these isolated areas."/>
+		</TipsAndTricks>
+	</CommandDefinition> -->
+</CommandDefinitions>

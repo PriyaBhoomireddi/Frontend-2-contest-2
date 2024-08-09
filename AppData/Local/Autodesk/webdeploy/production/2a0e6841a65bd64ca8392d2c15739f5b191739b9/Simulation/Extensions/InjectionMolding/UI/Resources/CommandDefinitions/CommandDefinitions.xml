@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+
+  <CommandDefinition Id="StudyMaterialsCommand">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/InjectionMoldingMaterials.png">
+        <TextBlock _LCLZId="MaterialDesc1" _LCLZText="Opens the materials database for you to select an appropriate polymer."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="MaterialDesc2" _LCLZText="The polymer used to mold the part is a key component of the injection molding process. Select a material that matches the actual material closely, to ensure an accurate simulation."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SIM-PIM-STUDY-MATERIALS-DIALOG">
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="MaterialPropertiesCommand">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipInjectionMoldingProperties.png">
+        <TextBlock _LCLZId="InjectionMaterialPropertiesCommand1" _LCLZText="Displays the properties of the chosen study material."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="InjectionMaterialPropertiesCommand2" _LCLZText="From the list on the left of the dialog, select different property categories, such as Recommended Processing conditions, to see the associated values on the right. Use this data to select a material, and to set appropriate processing conditions."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SIM-PIM-MATERIAL-PROPERTIES-DIALOG">
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="InjectionPointCommand">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipInjectionMolding.png">
+        <TextBlock _LCLZId="InjectionPointCommand1" _LCLZText="Defines the locations where the polymer is injected into the part."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="InjectionPointCommand2" _LCLZText="Select the optimal injection locations to fill the extreme parts of the mold at the same time and under the same pressure. Avoid faces with a high aesthetic requirement. "/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SIM-PIM-INJ-LOCATION-DIALOG">
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="InjectionPointEditCommand">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipInjectionMolding.png">
+        <TextBlock _LCLZId="InjectionPointEditCommand1" _LCLZText="Edit existing injection locations where plastic material will be injected into the mold."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SIM-PIM-INJ-LOCATION-DIALOG">
+    </TipsAndTricks>
+  </CommandDefinition>
+
+  <CommandDefinition Id="InjectionMoldingSolveCommand">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipInjectionMoldingSolve.png">
+        <TextBlock _LCLZId="lclzInjectionMoldingSolveCommand1" _LCLZText="Solves the simulation on the cloud, based on the specified settings."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzInjectionMoldingSolveCommand2" _LCLZText="Run the Precheck before launching the analysis. Close the Solve dialog to set up more studies. Open it again to view the job status and manage your cloud credits."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  
+  <CommandDefinition Id="WebViewerCmd">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipWebViewer.png">
+        <TextBlock _LCLZId="lclzWebViewerCmd1" _LCLZText="View the results to see if your part is likely to fill, warp, or have visual defects."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzWebViewerCmd2" _LCLZText="Result are viewable as soon as the analysis is complete. View Guided Results for assistance to intepret the Fill, Warp and Visual Defects results. View Results to see all results."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+
+  <CommandDefinition Id="VisualFacesCommand" HotKey="Shift+V">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipVisualFaces.png">
+        <TextBlock _LCLZId="VisualFacesCommand1" _LCLZText="Defines faces with a high aesthetic requirement, that must be free from blemishes."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="VisualFacesCommand2" _LCLZText="Select faces that should be visually appealing in your model. These faces display in yellow on the canvas. Make sure you don't place the injection locations on aesthetic faces, because it causes blemishes."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SIM-PIM-AESTHETIC-FACES-DIALOG">
+    </TipsAndTricks>
+  </CommandDefinition>
+  
+  <CommandDefinition Id="InjectionBodyCommand">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipInjectionMolding.png">
+        <TextBlock _LCLZId="InectionBodyCommand1" _LCLZText="Select the body that will be used for injection molding"/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SIM-PIM-TARGET-BODY-DIALOG">
+    </TipsAndTricks>
+  </CommandDefinition>
+  
+  <CommandDefinition Id="ProcessSettingsCommand">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipProcessSettings.png">
+        <TextBlock _LCLZId="ProcessSettingsDesc1" _LCLZText="Sets an Injection Time and other process settings, such as a Melt temperature and Mold Surface Temperature."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="ProcessSettingsDesc2" _LCLZText="Use the default settings which come from the material database or are calculated by the solver, or modify them if you prefer. If you modify them, stay within the values recommended by the material manufacturer."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SIM-PIM-PROC-SETTINGS-DIALOG">
+    </TipsAndTricks>
+  </CommandDefinition>
+
+  <CommandDefinition Id="FlatnessCommand">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipFlatness.png">
+        <TextBlock _LCLZId="FlatnessDesc1" _LCLZText="Indicates the flatness of selected faces, relative to a specified flatness plane."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="FlatnessDesc2" _LCLZText="Select the Warpage tab of the Guided Results to activate this command. Change the flatness indicator threshold to match your model's flatness tolerance."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+
+  <CommandDefinition Id="SurfaceRoughnessCommand">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipSurfaceRoughness.png">
+        <TextBlock _LCLZId="SurfaceRoughnessDesc1" _LCLZText="Emulates the effect of applying surface texture to the part."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="SurfaceRoughnessDesc2" _LCLZText="Select the Visual defects tab of the Guided Results to activate this command. Adjust the reflectivity and surface texture to see how the surface defects might be made less apparent."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+
+  <CommandDefinition Id="IMSurfaceProbesCommand">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipSurfaceProbes.png">
+        <TextBlock _LCLZId="SurfaceProbesDesc1" _LCLZText="Queries the data at specified surface locations and records the information with labels."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="SurfaceProbesDesc2" _LCLZText="Probe as many points as necessary. Hover to preview the data, click the surface to attach the labels, and select OK to save the probe locations."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+
+  <CommandDefinition Id="IMShowAllProbesCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="IMShowAllProbesCmdDesc1" _LCLZText="Shows all probe labels showing query results."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  
+  <CommandDefinition Id="IMHideAllProbesCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="IMHideAllProbesCmdDesc1" _LCLZText="Hide all probe labels showing query results."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  
+  <CommandDefinition Id="IMDeleteAllProbesCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="IMDeleteAllProbesCmdDesc1" _LCLZText="Remove all probe labels showing query results."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  
+</CommandDefinitions>

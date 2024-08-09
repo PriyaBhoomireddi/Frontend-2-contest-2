@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+  <EnvironmentDefinition Id="MeshEnvironment">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/mesh_workspace.png">
+        <TextBlock _LCLZId="lclzMeshWorkspaceTitle" _LCLZText="Repairs mesh geometry. Access commands to remesh and repair triangulated mesh bodies."/>
+        <TextBlock/>        
+      </ExpandedContent>
+    </Tooltip>    
+  </EnvironmentDefinition>
+  <CommandDefinition Id="MeshBaseFeatureCreationCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMeshBaseFeatureCreationDesc1" _LCLZText="Enters Mesh mode and inserts a mesh feature into the timeline. Use Mesh tools to modify and repair mesh geometry."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzMeshBaseFeatureCreationDesc2" _LCLZText="Select Finish Mesh to exit out of the mode."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshBaseFeatureStop">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMeshBaseFeatureStopDesc1" _LCLZText="Finishes the Mesh feature."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="InsertMeshCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzInsertMeshDesc1" _LCLZText="Inserts the selected OBJ or STL mesh file into the active design."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzInsertMeshDesc2" _LCLZText="Choose an OBJ or STL file to insert, then use the options and manipulators to orient and position the mesh."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+    <CommandDefinition Id="InsertAlignMeshCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzInsertAlignMeshDesc1" _LCLZText="Inserts the selected OBJ or STL mesh file into the active design."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzInsertAlignMeshDesc2" _LCLZText="Choose an OBJ or STL file to insert, then use the options and manipulators to orient and position the mesh."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="Mesh2BRepCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMesh2BRepDesc1" _LCLZText="Converts a Mesh to a BRep (surface or solid) body type. Meshes more than 10,000 facets can affect performance."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SLD-MESH-TO-BREP">
+      <Title _LCLZId="lclzMesh2BRepTipsAndTricksTitle" _LCLZText="Convert Tips and Tricks"/>
+      <TextBlock _LCLZId="lclzMesh2BRepTipsAndTricks1Item1" _LCLZText="&lt;b&gt;Mesh to BRep:&lt;/b&gt; Meshes that have originated from CAD models or reality capture scans of limited size can be converted to a BRep surface or solid.  Each facet of the input mesh will be converted to a single planar surface."/>
+      <TextBlock _LCLZId="lclzMesh2BRepTipsAndTricks1Item2" _LCLZText="&lt;Meshes larger than 10,000 polygons can be time consuming to convert and the resulting BRep body will have poor performance in modeling commands."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="BRep2MeshCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzBRep2MeshDesc1" _LCLZText="Converts a BRep body to a Mesh body"/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshPlaneCutCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMeshPlaneCutCommand1" _LCLZText="Splits a mesh body using a plane." />
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzMeshPlaneCut2" _LCLZText="Select a mesh body then move the cutting plane. The cut can trim the body, split the body into multiple bodies, or split the faces only."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshPlanarSectionCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMeshPlanarSectionCommand1" _LCLZText="Creates a new sketch containing a mesh cross section as reference geometry."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzMeshPlanarSectionCommand2" _LCLZText="Select a mesh body then move the section plane. To fit sketch curves to the mesh section, follow with the Fit Mesh Section Curves command."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="FitCurvesToSectionCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzFitCurvesToSectionCmd1" _LCLZText="Fits sketch curves to a mesh cross section."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzFitCurvesToSectionCmd2" _LCLZText="Choose the sketch curve type, then select the start and end points on the mesh section. Create multiple curves within the same command with various join conditions."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshRemeshCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMeshRemeshCmd1" _LCLZText="Retiles a mesh with a new set of faces."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzMeshRemeshCmd2" _LCLZText="Select a mesh body or faces then set the density and characteristics of the new faces."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshReduceCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMeshReduceCmd1" _LCLZText="Reduces the number of faces in a mesh."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzMeshReduceCmd2" _LCLZText="Select a mesh body or faces then choose a reduction target."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshMakeSolidCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMeshRebuildAsSolidCmd1" _LCLZText="Rebuilds a mesh body as a new watertight solid mesh."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzMeshRebuildAsSolidCmd2" _LCLZText="Select a mesh body then choose the rebuild mode and density of the output mesh."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshReplaceCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMeshEraseAndFillCmd1" _LCLZText="Fills a hole in a mesh, or erases and replaces a selected portion of a mesh."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzMeshEraseAndFillCmd2" _LCLZText="Select the boundary of the hole to fill, or the set of mesh faces to replace."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshSmoothCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMeshSmoothCmd1" _LCLZText="Smooths a mesh."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzMeshSmoothCmd2" _LCLZText="Select a mesh body or faces then adjust the amount of smoothing."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshReverseNormalsCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMeshReverseNormalCmd1" _LCLZText="Reverses the normal direction of selected mesh faces."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshDeleteTrianglesCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMeshDeleteFacesCmd1" _LCLZText="Deletes the selected mesh faces."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshSubsetCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMeshSeparateCmd1" _LCLZText="Splits a mesh body into two separate bodies."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzMeshSeparateCmd2" _LCLZText="Select the mesh faces to split into a separate body."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshCombineCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMeshMergeBodiesCmd1" _LCLZText="Merges two or more mesh bodies into a single body."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzMeshMergeBodiesCmd2" _LCLZText="Select two or more mesh bodies to merge. Overlapping boundary edges will be stitched."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshGenerateFGCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzMeshGenerateFaceGroupsCmd1" _LCLZText="Generates face groups on a mesh body."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzMeshGenerateFaceGroupsCmd2" _LCLZText="Select a mesh body then adjust the angle to control the face group segmentation."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshCreateFGCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzRemeshCmd1" _LCLZText="Create a face group from the selected mesh faces."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeshClearFGCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzRemeshCmd2" _LCLZText="Clears face groups from the selected mesh body or faces."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+</CommandDefinitions>

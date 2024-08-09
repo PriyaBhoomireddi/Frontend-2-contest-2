@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<CommandDefinitions>
+	<CommandDefinition Id="SimMassParticipationCommand">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimMassParticipationDesc1" _LCLZText="Use the Mass Participation Factor to assess the percentage of the system mass that participates per direction for each mode."/>
+				<TextBlock _LCLZId="SimMassParticipationDesc2" _LCLZText="Note that modes with a large effective mass participation typically have a stronger influence on the system response. The compact dialog displays the mass participation for the active mode. To display all modes, expand the dialog."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+	<CommandDefinition Id="SimGlobalExplicitContactsCommand">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimGlobalExplicitContactsDesc1"
+					_LCLZText="Use the Global Contacts command to automatically generate contact pairs." />
+				<TextBlock _LCLZId="SimGlobalExplicitContactsDesc2"
+					_LCLZText="Contact pairs are only generated between bodies, not between faces or edges." />
+			</ExpandedContent>
+		</Tooltip>
+    		<TipsAndTricks MoreInfo="PRE-EVENT-SIM-CONTACTS">
+      			<Title _LCLZId="SimGlobalExplicitContactsTipsAndTricksTitle" _LCLZText="Global Contacts Information"/>
+      			<Tips _LCLZId="SimGlobalExplicitContactsTipsAndTricksTips" _LCLZText="Generate a Contact pair relationship between all Bodies in the Study. Use the Global Separation Contact option to ensure bodies can separate over time after initial contact. Turn off to default to Bonded.Use the Proximity Bonded Contact option to declare initial Bodies within a tolerance distance to be considered bonded and inseparable."/>
+    		</TipsAndTricks>
+	</CommandDefinition>
+	<CommandDefinition Id="SimExplicitContactsManagerCommand">
+		<Tooltip>
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimExplicitContactsManagerCommandDesc1" _LCLZText="View the list of all contacts."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="SimExplicitContactsManagerCommandDesc2" _LCLZText="The list allows you to edit, and suppress contacts."/>
+			</ExpandedContent>
+		</Tooltip>
+		<TipsAndTricks MoreInfo="PRE-EVENT-SIM-CONTACTS">
+      			<Title _LCLZId="SimExplicitContactsManagerTipsAndTricksTitle" _LCLZText="Manage Contacts Information"/>
+      			<Tips _LCLZId="SimExplicitContactsManagerTipsAndTricksTips" _LCLZText="A table of all Contact pairs in the Study. Take actions on one or more Contacts, including Edit, Change Type, Suppress and Delete. Restore Defaults will revert to the Default table state."/>
+    		</TipsAndTricks>
+	</CommandDefinition>
+	<CommandDefinition Id="SimGenerativeStudyMaterialsCommand">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/GenerativeStudyMaterials.png">
+				<TextBlock _LCLZId="lclzSimGenerativeStudyMaterialsCommand1" _LCLZText="Selects materials to use in the design process."/>
+				<TextBlock/>
+				<TextBlock _LCLZId="lclzSimGenerativeStudyMaterialsCommand2" _LCLZText="Select at least one material for your study. Outcomes are generated for each material that you select."/>
+			</ExpandedContent>
+		</Tooltip>
+		<TipsAndTricks MoreInfo="GENERATE-STUDY-MATERIALS-CMD">
+			<Title _LCLZId="lclzSimGenerativeStudyMaterialsTipsAndTricksTitle" _LCLZText="Study Materials Information"/>
+			<Tips _LCLZId="lclzSimGenerativeStudyMaterialsTipsAndTricksTips" _LCLZText="Select a material in the Library section and drag it to the In This Study section."/>
+			<Description _LCLZId="lclzSimGenerativeStudyMaterialsTipsAndTricksDesc" _LCLZText="You can select from one to seven materials for your study."/>
+		</TipsAndTricks>
+	</CommandDefinition>
+	<EnvironmentDefinition Id="GenerativeEnvironment">
+		<Tooltip>
+			<ExpandedContent ToolClip="ToolClip/GenerativeDesignWorkspace.png">
+				<TextBlock _LCLZId="lclzGenerativeWorkspaceTitle" _LCLZText="Creates multiple designs that meet your manufacturing, performance, and cost requirements."/>
+				<TextBlock/>
+			</ExpandedContent>
+		</Tooltip>
+	</EnvironmentDefinition>
+</CommandDefinitions>

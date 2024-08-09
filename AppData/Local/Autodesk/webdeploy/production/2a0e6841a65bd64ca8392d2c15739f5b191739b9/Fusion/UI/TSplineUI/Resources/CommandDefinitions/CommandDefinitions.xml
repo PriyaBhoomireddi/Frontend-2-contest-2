@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+  <EnvironmentDefinition Id="TSplineEnvironment">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/sculpt_workspace.png">
+        <TextBlock _LCLZId="lclzSculptWorkspaceTitle" _LCLZText="Creates organic geometry. Access commands to create T-Spline bodies."/>
+        <TextBlock/>        
+      </ExpandedContent>
+    </Tooltip>    
+  </EnvironmentDefinition>
+  
+<!---->
+  <!--TSplines Create commands-->
+  <!---->
+   <CommandDefinition Id="TSplinePrimitiveBoxCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/box.png">
+            <TextBlock _LCLZId="lclzTSplinePrimitiveBox1" _LCLZText="Creates a T-Spline box."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplinePrimitiveBox2" _LCLZText="Select a plane and draw a rectangle.  Use the manipulators or input fields to specify the height and number of faces."/>
+         </ExpandedContent>
+      </Tooltip>
+      <TipsAndTricks MoreInfo="FORM-BOX-CMD">
+        <Title _LCLZId="lclzTSplineBoxTipsAndTricksTitle" _LCLZText="Box Information"/>
+        <Tips _LCLZId="lclzTSplineBoxTipsAndTricksTips" _LCLZText="Select a plane and draw a rectangle.  Use the manipulators or input fields to specify the height and number of faces."/>
+        <Description _LCLZId="lclzTSplineBoxTipsAndTricksDesc" _LCLZText="Direction changes how the box is built releative to your original input rectangle.  Mirror allows you to maintain symmetry in subsequent modeling edits"/>
+      </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplinePrimitivePlaneCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/plane.png">
+            <TextBlock _LCLZId="lclzTSplinePrimitivePlane1" _LCLZText="Creates a T-Spline plane."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplinePrimitivePlane2" _LCLZText="Select a plane and draw a rectangle. Use the manipulators or input fields to specify the height and number of faces."/>  
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FRM-CREATE-PLANE">
+       <Title _LCLZId="lclzTSplinePlaneTipsAndTricksTitle" _LCLZText="Plane Information"/>
+       <Tips _LCLZId="lclzTSplinePlaneTipsAndTricksTips" _LCLZText="Select a plane and draw a rectangle.  Use the manipulators or input fields to specify the number of faces."/>
+       <Description _LCLZId="lclzTSplinePlaneTipsAndTricks1Desc" _LCLZText="Mirror allows you to maintain symmetry in subsequent modeling edits"/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplinePrimitiveCylinderCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/cylinder.png">
+            <TextBlock _LCLZId="lclzTSplinePrimitiveCylinder1" _LCLZText="Creates a T-Spline cylinder."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplinePrimitiveCylinder2" _LCLZText="Select a plane and draw a circle.  Use the manipulators or input fields to specify the height and number of faces."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-CYLINDER-CMD">
+       <Title _LCLZId="lclzTSplineCylinderTipsAndTricksTitle" _LCLZText="Cylinder Information"/>
+       <Tips _LCLZId="lclzTSplineCylinderTipsAndTricksTips" _LCLZText="Select a plane and draw a circle.  Use the manipulators or input fields to specify the height and number of faces."/>
+       <Description _LCLZId="lclzTSplineCylinderTipsAndTricksDesc" _LCLZText="Direction changes how the cylinder is built releative to your original input circle. Mirror allows you to maintain symmetry in subsequent modeling edits"/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplinePrimitiveSphereCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/sphere.png">
+            <TextBlock _LCLZId="lclzTSplinePrimitiveSphere1" _LCLZText="Creates a T-Spline sphere."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplinePrimitiveSphere2" _LCLZText="Select a plane then a center point for the sphere.  Use the manipulators or input fields to specify the diameter and number of faces."/>  
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-SPHERE-CMD">
+       <Title _LCLZId="lclzTSplineSphereTipsAndTricksTitle" _LCLZText="Sphere Information"/>
+       <Tips _LCLZId="lclzTSplineSphereTipsAndTricksTips" _LCLZText="Select a plane then a center point for the sphere.  Use the manipulators or input fields to specify the diameter and number of faces."/>
+       <Description _LCLZId="lclzTSplineSphereTipsAndTricksDesc" _LCLZText="Reducing the number of faces below 8 or 4 in either directioin, the body will no longer be spherical. Mirror allows you to maintain symmetry in subsequent modeling edits."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplinePrimitiveTorusCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/torus.png">
+            <TextBlock _LCLZId="lclzTSplinePrimitiveTorus1" _LCLZText="Creates a T-Spline torus."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplinePrimitiveTorus2" _LCLZText="Select a plane and draw a circle.  Use the manipulators or input fields to specify major and minor diameters and the number of faces."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-TORUS-CMD">
+       <Title _LCLZId="lclzTSplineTorusTipsAndTricksTitle" _LCLZText="Torus Information"/>
+       <Tips _LCLZId="lclzTSplineTorusTipsAndTricksTips" _LCLZText="Select a plane and draw a circle.  Use the manipulators or input fields to specify major and minor diameters and the number of faces."/>
+       <Description _LCLZId="lclzTSplineTorusTipsAndTricks1Desc" _LCLZText="Reducing the number of faces below 8 in either directioin, the body will no longer be round. Mirror allows you to maintain symmetry in subsequent modeling edits."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplinePrimitiveQuadBallCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/quadball.png">
+            <TextBlock _LCLZId="lclzTSplinePrimitiveQuadBall1" _LCLZText="Creates a T-Spline quadball."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplinePrimitiveQuadBall2" _LCLZText="Select a plane then a center point for the sphere.  Use the manipulators or input fields to specify the diameter and number of faces."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-QUADBALL-CMD">
+       <Title _LCLZId="lclzTSplineQuadBallTipsAndTricksTitle" _LCLZText="Quadball Information"/>
+       <Tips _LCLZId="lclzTSplineQuadBallTipsAndTricksTips" _LCLZText="Select a plane then a center point for the sphere.  Use the manipulators or input fields to specify the diameter and number of faces."/>
+       <Description _LCLZId="lclzTSplineQuadBallTipsAndTricksDesc" _LCLZText="The Quadball is approximately a sphere with no polar points. Mirror allows you to maintain symmetry in subsequent modeling edits."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplinePrimitivePipe" EditId="TSplinePipeEditCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/pipe.png">
+            <TextBlock _LCLZId="lclzTSplinePrimitivePipe1" _LCLZText="Manages the creation of complex topologies base on selected curves. Paths can be sketch geometry and edges of bodies."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplinePrimitivePipe2" _LCLZText="Select the input path, specify the global diameter then modify sections, paths, and the number of faces."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-PIPE-CMD">
+       <Title _LCLZId="lclzTSplinePipeTipsAndTricksTitle" _LCLZText="Pipe Information"/>
+       <Tips _LCLZId="lclzTSplinePipeTipsAndTricksTips" _LCLZText="Select the input path, specify the global diameter then modify sections, paths, and the number of faces."/>
+       <Description _LCLZId="lclzTSplinePipeTipsAndTricksDesc" _LCLZText="In Sections, click points on the path to make local diameter changes. In End Types, select open ends to change their shape. In Segments, define the number of faces between pipe sections."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineAppendFaceCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/face.png">
+            <TextBlock _LCLZId="lclzTSplineAppendFace1" _LCLZText="Creates individual T-Spline faces."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineAppendFace2" _LCLZText="Select a plane to begin defining vertices or select vertices from a T-Spline body."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-FACE-CMD">
+       <Title _LCLZId="lclzTSplineAppendFaceTipsAndTricksTitle" _LCLZText="Face Information"/>
+       <Tips _LCLZId="lclzTSplineAppendTipsAndTricksTips" _LCLZText="Select a plane or existing vertex to begin. Continue setting points to define the face."/>
+       <Description _LCLZId="lclzTSplineAppendFaceTipsAndTricksDesc" _LCLZText="Pick existing vertices to connect the face to that geometry. Enable Object Snap to position new vertices on the closest solid, surface, or mesh body."/>
+      </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineExtrudeCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/extrude.png">
+            <TextBlock _LCLZId="lclzTSplineExtrude1" _LCLZText="Creates or modifies a T-Spline body by adding faces along a vector."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineExtrude2" _LCLZText="Select sketch curves, profiles or faces. Use the manipulators or input fields to specify the distance and number of faces."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FRM-EXTRUDE">
+       <Title _LCLZId="lclzTSplineExtrudeTipsAndTricksTitle" _LCLZText="Extrude Information"/>
+       <Tips _LCLZId="lclzTSplineExtrudeTipsAndTricksTips" _LCLZText="Select sketch curves, profiles or faces.  Use the manipulators or input fields to specify the distance and number of faces."/>
+       <Description _LCLZId="lclzTSplineExtrudeTipsAndTricksDesc" _LCLZText="Set the Spacing setting to Curvature to add faces in areas of higher curvature."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineRevolveCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/revolve.png">
+            <TextBlock _LCLZId="lclzTSplineRevolve1" _LCLZText="Creates a T-Spline body by revolving edges or sketch geometry around a selected axis."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineRevolve2" _LCLZText="Select sketch curves, profiles, planar faces, or edges then select the axis to revolve around. Use the manipulators or input fields to specify the number of faces."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-REVOLVE-CMD">
+       <Title _LCLZId="lclzTSplineRevolveTipsAndTricksTitle" _LCLZText="Revolve Information"/>
+       <Tips _LCLZId="lclzTSplineRevolveTipsAndTricksTips" _LCLZText="Select sketch curves, profiles, planar faces, or edges then select the axis to revolve around. Use the manipulators or input fields to specify the number of faces."/>
+       <Description _LCLZId="lclzTSplineRevolveTipsAndTricksDesc" _LCLZText="Set the Spacing setting to Curvature to add faces in areas of higher curvature. Circular Symmetry allows you to maintain symmetry in subsequent modeling edits"/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineSweepCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/sweep.png">
+            <TextBlock _LCLZId="lclzTSplineSweep1" _LCLZText="Creates a T-Spline body by sweeping edges or sketch curves along a selected path."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineSweep2" _LCLZText="Select sketch curves or profiles then select the path to sweep along.  Use the manipulators or input fields to specify percentage length of the path and the number of faces."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-SWEEP-CMD">
+       <Title _LCLZId="lclzTSplineSweepTipsAndTricksTitle" _LCLZText="Sweep Information"/>
+       <Tips _LCLZId="lclzTSplineSweepTipsAndTricksTips" _LCLZText="Select sketch curves or profiles then select the path to sweep along.  Use the manipulators or input fields to specify percentage length of the path and the number of faces."/>
+       <Description _LCLZId="lclzTSplineSweepTipsAndTricksDesc" _LCLZText="Set Curvature in the Spacing setting to add faces in areas of higher curvature. Changing the Orientation will affect the topology of your geometry."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+  <!---->
+  <!--TSplines Modify commands-->
+  <!---->
+  <CommandDefinition Id="TSplineEditCommand">
+      <Tooltip>         
+         <ExpandedContent>
+         <TextBlock _LCLZId="lclzTSplineEditDesc1" _LCLZText="Manipulates faces, edges and vertices with transform, scale and rotate editing."/>          
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineEditDesc2" _LCLZText="Select faces, edges, or vertices to enable the manipulator. Double click a face or edge to select a loop."/>
+         </ExpandedContent>
+      </Tooltip>
+      <TipsAndTricks MoreInfo="FRM-MODIFY-EDIT-FORM">
+        <Title _LCLZId="lclzTSplineEditTipsAndTricksTitle" _LCLZText="Edit Form Information"/>
+        <Tips _LCLZId="lclzTSplineEditTipsAndTricksTips" _LCLZText="Select faces, edges, or vertices to enable the manipulator. Double click a face or edge to select a loop."/>
+        <Description _LCLZId="lclzTSplineEditTipsAndTricksDesc" _LCLZText="Hold the Alt key and drag a manipulator to insert new geometry based on the action."/>
+      </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineInsertEdgeCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/insert_edge.png">
+            <TextBlock _LCLZId="lclzTSplineInsertEdgeDesc1" _LCLZText="Inserts edges at a specified position from the original edge."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineInsertEdgeDesc2" _LCLZText="Select an edge or double click to select a loop."/>            
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-INSERT-EDGE-CMD">
+         <Title _LCLZId="lclzTSplineInsertEdgeTipsAndTricksTitle" _LCLZText="Insert Edge Information"/>
+       <Tips _LCLZId="lclzTSplineInsertEdgeTipsAndTricksTips" _LCLZText="Select an edge or double click to select a loop then spedify the position of the new edge."/>
+       <Description _LCLZId="lclTSplineInsertEdgeTipsAndTricksDesc" _LCLZText="Set the Insertion Mode to Exact to insert the edge without changing the shape of the T-Spline, however this will add more faces to maintain the shape."/>
+      </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineSlideEdgeCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/slide_edge.png">
+            <TextBlock _LCLZId="lclzTSplineSlideEdgeDesc1" _LCLZText="Moves the selected edge along the control polygon."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineSlideEdgeDesc2" _LCLZText="Select the edges then specify the new position."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-SLIDE-EDGE-CMD">
+       <Title _LCLZId="lclzTSplineSlideEdgeTipsAndTricksTitle" _LCLZText="Slide Edge Information"/>
+       <Tips _LCLZId="lclzSTSplineSlideEdgeipsAndTricksTips" _LCLZText="Select the edges then specify the new position."/>
+       <Description _LCLZId="lclTSplineSlideEdgeTipsAndTricksDesc" _LCLZText="Slide the selected edge closer to another to make the transition between the two sharper."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineBevelEdgeCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/bevel.png">
+            <TextBlock _LCLZId="lclzTSplineBevelEdgeDesc1" _LCLZText="Replaces a single edge with a specified number of adjacent edges."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineBevelEdgeDesc2" _LCLZText="Select the edges then specify the position of the bevel."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-BEVEL-EDGE-CMD">
+	     <Title _LCLZId="lclzTSplineBevelEdgeTipsAndTricksTitle" _LCLZText="Bevel Edge Information"/>
+       <Tips _LCLZId="lclzTSplineBevelEdgeTipsAndTricksTips" _LCLZText="Select the edges then specify the position of the bevel."/>
+       <Description _LCLZId="lclTSplineBevelEdgeTipsAndTricksDesc" _LCLZText="The closer you make the bevel the sharper the corner will appear. The segment settings adds more edges to the beveled region."/>
+      </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineInsertPointCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/insert_point.png">
+            <TextBlock _LCLZId="lclzTSplineInsertPointDesc1" _LCLZText="Inserts an edge by selecting two points."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineInsertPointDesc2" _LCLZText="Select a point on an edge to start. Continue selecting points on additional edges to divide multiple faces."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-INSERT-POINT-CMD">
+	     <Title _LCLZId="lclzTSplineInsertPointTipsAndTricksTitle" _LCLZText="Insert Point Information"/>
+       <Tips _LCLZId="lclzTSplineInsertPointTipsAndTricksTips" _LCLZText="Select a point on an edge to start. Continue selecting points on additional edges to divide multiple faces."/>
+       <Description _LCLZId="lclTSplineInsertPointTipsAndTricksDesc" _LCLZText="Slide the pointer along the edge until a red dot is shown, this is the midpoint of the edge. Set the Insertion Mode to Exact to insert the point without changing the shape of the T-Spline body, however this will add more faces to maintain the shape."/>
+      </TipsAndTricks>
+	  </CommandDefinition>
+   <CommandDefinition Id="TSplineMergeEdgeCmd">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/merge_edge.png">
+            <TextBlock _LCLZId="lclzTSplineMergeEdgeDesc1" _LCLZText="Aligns the first set of selected edges to a second set of selected edges."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineMergeEdgeDesc2" _LCLZText="Select the first set of edges then the second set of edges."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-MERGE-EDGE-CMD">
+       <Title _LCLZId="lclzTSplineMergeEdgeTipsAndTricksTitle" _LCLZText="Merge Edge Information"/>
+       <Tips _LCLZId="lclzMergeEdgeTipsAndTricksTips" _LCLZText="Select the first set of edges then the second set of edges."/>
+       <Description _LCLZId="lclTSplineMergeEdgeTipsAndTricksDesc" _LCLZText="Use Merge Edge in place of Weld Vertices when connecting multiple vertices along the selected edges."/>
+      </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineSubsetCmd">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/subdivide.png">
+            <TextBlock _LCLZId="lclzTSplineSubsetDesc1" _LCLZText="Divides one or more faces into a subset of faces."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineSubsetDesc2" _LCLZText="Select the faces to divide. Hold Ctrl (Windows) or Command (Mac) to select multiple faces."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-SUBDIVIDE-CMD">
+	     <Title _LCLZId="lclzTSplineSubsetTipsAndTricksTitle" _LCLZText="Subdivide Information"/>
+       <Tips _LCLZId="lclzTSplineSubsetTipsAndTricksTips" _LCLZText="Select the faces to divide. Hold Ctrl (Windows) or Command (Mac) to select multiple faces."/>
+       <Description _LCLZId="lclTSplineSubsetTipsAndTricksDesc" _LCLZText="Enable the Specify option and set the number of faces that are added."/>
+      </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineWeldCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/weld_vertices.png">
+            <TextBlock _LCLZId="lclzTSplineWeldDesc1" _LCLZText="Joins two or more vertices."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineWeldDesc2" _LCLZText="Select two vertices to join. Window select vertices to weld within the specified tolerance."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-WELD-VERTICES-CMD">
+       <Title _LCLZId="lclzTSplineWeldTipsAndTricksTitle" _LCLZText="Weld Information"/>
+       <Tips _LCLZId="lclzTSplineWeldTipsAndTricksTips" _LCLZText="Select two vertices to join. Window select vertices to weld within the specified tolerance."/>
+       <Description _LCLZId="lclTSplineWeldTipsAndTricksDesc" _LCLZText="Use the Weld Mode to weld the first vertex to the second or weld both selections to the midpoint."/>
+      </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineUnWeldCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/unweld.png">
+            <TextBlock _LCLZId="lclzTSplineUnWeldDesc1" _LCLZText="Disconnects an edge or loop."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineUnWeldDesc2" _LCLZText="Select an edge or double click to select a loop. Hold Ctrl (Windows) or Command (Mac) to select multiple edges."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-UNWELD-EDGES-CMD">
+       <Title _LCLZId="lclzTSplineUnWeldTipsAndTricksTitle" _LCLZText="UnWeld Information"/>
+       <Tips _LCLZId="lclzTSplineUnWeldTipsAndTricksTips" _LCLZText="Select an edge or double click to select a loop. Hold Ctrl (Windows) or Command (Mac) to select multiple edges."/>
+       <Description _LCLZId="lclTSplineUnWeldTipsAndTricksDesc" _LCLZText="A darker line indicates that the edge has been unwelded and is no longer connected."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineCreasedEdgeCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/crease.png">
+            <TextBlock _LCLZId="lclzTSplineCreasedEdgeDesc1" _LCLZText="Creates a sharp edge between faces."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineCreasedEdgeDesc2" _LCLZText="Select edges to crease."/>            
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-CREASE-CMD">
+       <Title _LCLZId="lclzTSplineCreaseEdgeTipsAndTricksTitle" _LCLZText="Crease Information"/>
+       <Tips _LCLZId="lclzTSplineCreaseEdgeTipsAndTricksTips" _LCLZText="Select edges to crease."/>
+       <Description _LCLZId="lclTSplineCreaseEdgeTipsAndTricksDesc" _LCLZText="Regions around star/cap points (highlighted yellow) will cause edge creases to end abruptly. Boundary corner vertices (indicated by yellow dots at the surface boundary) can also be creased and uncreased."/>
+      </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineUnCreaseEdgeCmd">
+      <Tooltip>
+         <ExpandedContent>
+            <TextBlock _LCLZId="lclzTSplineUnCreaseEdgeDesc1" _LCLZText="Restores previously creased edges to their original state."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineUnCreaseEdgeDesc2" _LCLZText="Select creased edges to uncrease."/>            
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-UNCREASE-CMD">
+       <Title _LCLZId="lclzTSplineUnCreaseEdgeTipsAndTricksTitle" _LCLZText="Uncrease Information"/>
+       <Tips _LCLZId="lclzTSplineUnCreaseEdgeTipsAndTricksTips" _LCLZText="Select edges to uncrease."/>
+       <Description _LCLZId="lclTSplineUnCreaseEdgeTipsAndTricksDesc" _LCLZText="Regions around star/cap points (highlighted yellow) will cause edge creases to end abruptly. Boundary corner vertices (indicated by yellow dots at the surface boundary) can also be creased and uncreased."/>
+      </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineFlattenSubDCmd">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/flatten.png">
+            <TextBlock _LCLZId="lclzTSplineFlattenSubDEdgeDesc1" _LCLZText="Projects vertices to a best fit or user defined plane."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineFlattenSubDEdgeDesc2" _LCLZText="Select the vertices and/or tangency handles to flatten."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-FLATTEN-CMD">
+       <Title _LCLZId="lclzTSplineFlattenTipsAndTricksTitle" _LCLZText="Flatten Information"/>
+       <Tips _LCLZId="lclzTSplineFlattenTipsAndTricksTips" _LCLZText="To easily see the effect of Flatten Type, use Box Display for Control Points and Smooth Display for Surface Points. Valid selection types for Plane are a work plane and planar B-rep face."/>
+       <Description _LCLZId="lclTSplineFlattenTipsAndTricksDesc" _LCLZText="The minimum number of vertices per surface for Flatten operation depends on Direction type: 4 for Fit, 1 for Plane, and 2 for Parallel Plane. If you flatten linked tangency handles, they will get unlinked from their vertices. The more vertices in the region the better the flatten result will look. Use the Subdivide command to add more geometry for better flattening."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+  <CommandDefinition Id="TSplineStraightenCmd">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/straighten.png">
+        <TextBlock _LCLZId="lclzTSplineStraightenDesc1" _LCLZText="Straightens vertices to a best fit line, an existing line, or a line through two selected points."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzTSplineStraightenDesc2" _LCLZText="Select the direction type, select a line or two points to define the line, then select the vertices or tangency handles to straighten."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="FRM-STRAIGHTEN-CMD">
+      <Title _LCLZId="lclzTSplineStraightenTipsAndTricksTitle" _LCLZText="Straighten Information"/>
+      <Tips _LCLZId="lclzTSplineStraightenTipsAndTricksTips" _LCLZText="Adjust the Display Mode to see the effect of each Straighten Type more easily. Use Box Display for Control Points and Smooth Display for Surface Points."/>
+      <Description _LCLZId="lclTSplineStraightenTipsAndTricksDesc" _LCLZText="If you straighten linked tangency handles, they will unlink from their vertices."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="TSplineEditByCurveCmd">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/edit_by_curve.png">
+        <TextBlock _LCLZId="lclzTSplineEditByCurveDesc1" _LCLZText="Manipulates T-Spline edges using a driving curve."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzTSplineEditByCurveDesc2" _LCLZText="Select edges to create a driving curve. Move the control points to adjust the shape of the T-Spline edges."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="FRM-EDIT-BY-CURVE-CMD">
+      <Title _LCLZId="lclzTSplineEditByCurveTipsAndTricksTitle" _LCLZText="Edit By Curve Information"/>
+      <Tips _LCLZId="lclzTSplineEditByCurveTipsAndTricksTips" _LCLZText="The driving curve appears when at least two continuous edges are selected. You can adjust the rotation and scale settings when you select at least two control points of the driving curve."/>
+      <Description _LCLZId="lclTSplineEditByCurveTipsAndTricksDesc" _LCLZText="Adjust the Display Mode to see the effect of Curve Fit more easily. Use Box Display for Control Points and Smooth Display for Surface Points. Control Points (curve fitting only) performs faster than Surface Points (curve and surface fitting)."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="TSplineSmoothCmd">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/smooth.png">
+        <TextBlock _LCLZId="lclzTSplineSmoothDesc1" _LCLZText="Smoothes an area of the T-Spline geometry."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzTSplineSmoothDesc2" _LCLZText="Select the faces to smooth and the smoothing rate."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="GUID-FCB01B0E-828E-40A4-9ADB-DC3955267A53">
+      <Title _LCLZId="lclzTSplineSmoothTipsAndTricksTitle" _LCLZText="Smooth Information"/>
+      <Tips _LCLZId="lclzTSplineSmoothTipsAndTricksTips" _LCLZText="Select around the desired area and play with the smoothing rate for desired result. Change the smoothing rate to see results in real-time."/>
+      <Description _LCLZId="lclTSplineSmoothTipsAndTricksDesc" _LCLZText="Select the faces and set smoothing rate."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="TSplineCylindrifyCmd">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/cylindrify.png">
+        <TextBlock _LCLZId="lclzTSplineCylindrifyDesc1" _LCLZText="Forms uneven T-Spline geometry into a smooth cylindrical shape."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzTSplineCylindrifyDesc2" _LCLZText="Select a face on the feature to cylindrify. The preview displays automatically. Uncheck Auto Feature Selection to select individual faces."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="FRM-CYLINDRIFY-CMD">
+      <Title _LCLZId="lclzTSplineCylindrifyTipsAndTricksTitle" _LCLZText="Cylindrify Information"/>
+      <Tips _LCLZId="lclzTSplineCylindrifyTipsAndTricksTips" _LCLZText="Cylindrify applies to all selected faces on a T-Spline body. You can select multiple strut or hole features on a T-Spline body at once, or uncheck Auto Feature Selection to select individual faces."/>
+      <Description _LCLZId="lclTSplineCylindrifyTipsAndTricksDesc" _LCLZText="You can use Cylindrify to smooth uneven struts and holes from generative design results."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="TSplinePullSubDCmd">
+     <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/pull.png">
+         <TextBlock _LCLZId="lclzTSplinePullSubDDesc1" _LCLZText="Snaps selected T-Spline vertices to a face or surface. The vertices could be control points or surface points."/>
+         <TextBlock/>
+         <TextBlock _LCLZId="lclzTSplinePullSubDDesc2" _LCLZText="Select the vertices to move and the vertices will automatically move to the nearest body."/>
+       </ExpandedContent>
+     </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-PULL-CMD">
+       <Title _LCLZId="lclzTSplinePullTipsAndTricksTitle" _LCLZText="Pull Information"/>
+       <Tips _LCLZId="lclzTSplinePullTipsAndTricksTips" _LCLZText="Select the vertices to move and the vertices will automatically move to the nearest body."/>
+       <Description _LCLZId="lclTSplinePullTipsAndTricksDesc" _LCLZText="Change the Target Select to specify targets. Set the Pull Type to move surface points or control points."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineInterpolateSubDCmd">
+     <Tooltip>
+       <ExpandedContent>
+         <TextBlock _LCLZId="lclzTSplineInterpolateSubDDesc1" _LCLZText="Switches the location of the surface and the control points to improve fitting. Select whether to move the control points to the surface or the surface to the control points."/>
+         <TextBlock/>
+         <TextBlock _LCLZId="lclzTSplineInterpolateSubDDesc2" _LCLZText="Select the body then set whether you are moving control points or surface points."/>
+       </ExpandedContent>
+     </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-INTERPOLATE-CMD">
+       <Title _LCLZId="lclzTSplineInterpolateTipsAndTricksTitle" _LCLZText="Interpolate Information"/>
+       <Tips _LCLZId="lclzTSplineInterpolateTipsAndTricksTips" _LCLZText="Select the body then set whether you are moving control points or surface points."/>
+       <Description _LCLZId="lclTSplineInterpolateTipsAndTricksDesc" _LCLZText="Interpolate is best used in conjunction with the Control Frame Display mode (Ctrl + 2)."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineBridgeSubDCmd">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/bridge.png">
+            <TextBlock _LCLZId="lclzTSplineBridgeSubDDesc1" _LCLZText="Creates segments to connect two opposing faces within a body or between two bodies."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineBridgeSubDDesc2" _LCLZText="Select the first set of edges then select the second set of edges."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-BRIDGE-CMD">
+       <Title _LCLZId="lclzTSplineBridgeTipsAndTricksTitle" _LCLZText="Bridge Information"/>
+       <Tips _LCLZId="lclzTSplineBridgeTipsAndTricksTips" _LCLZText="Select the first set of edges then select the second set of edges. The number of edges on each side must be equal to or a multiple of each other. "/>
+       <Description _LCLZId="lclTSplineBridgeTipsAndTricksDesc" _LCLZText="You can specify the number of faces between the edges. The Follow Curve option will use a sketch curve to influence the shape of the bridged faces."/>
+      </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineThickenCommand">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/thicken.png">
+            <TextBlock _LCLZId="lclzTSplineThickenDesc1" _LCLZText="Creates a body offset."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineThickenDesc2" _LCLZText="Select the body then set the thickness and end treatments."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-THICKEN-CMD">
+       <Title _LCLZId="lclzTSplineThickenTipsAndTricksTitle" _LCLZText="Thicken Information"/>
+       <Tips _LCLZId="lclzTSplineThickenTipsAndTricksTips" _LCLZText="Select the body then set the thickness and end treatments."/>
+       <Description _LCLZId="lclTSplineThickenTipsAndTricksDesc" _LCLZText="Thicken tool does not check for self intersections during creating and can create surfaces that will not convert to a solid."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineFillHoleCmd">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/fill_hole.png">
+            <TextBlock _LCLZId="lclzTSplineFillHoleDesc1" _LCLZText="Fills an internal hole in T-Spline body."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineFillHoleDesc2" _LCLZText="Select the edge of the hole and set the fill type."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-FILL-HOLE-CMD">
+	    <Title _LCLZId="lclzTSplineFillHoleTipsAndTricksTitle" _LCLZText="Fill Hole Information"/>
+       <Tips _LCLZId="lclzTSplineFillHoleTipsAndTricksTips" _LCLZText="Select the edge of the hole and set the fill type."/>
+       <Description _LCLZId="lclTSplineFillHoleTipsAndTricksDesc" _LCLZText="Fill Star will fill using a single face.  Reduced Star will fill with mulitple faces to minimize star points. Collapse brings all vertices together at a single vertex."/>
+      </TipsAndTricks>
+   </CommandDefinition>
+  <CommandDefinition Id="TSplineEraseAndFillCmd">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/EraseAndFill.png">
+        <TextBlock _LCLZId="lclzTSplineEraseAndFillDesc1" _LCLZText="Deletes a part of connected T-Spline geometry and fills new gaps with faces. You can use this to remove struts or bridges."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzTSplineEraseAndFillDesc2" _LCLZText="Select the faces to erase and select fill type."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="GUID-A0F9D28F-8F43-4590-B6CF-7E060D0A0CD3">
+      <Title _LCLZId="lclzTSplineEraseAndFillTipsAndTricksTitle" _LCLZText="Erase and Fill Information"/>
+      <Tips _LCLZId="lclzTSplineEraseAndFillTipsAndTricksTips" _LCLZText="Select the faces to erase and set the fill type."/>
+      <Description _LCLZId="lclTSplineEraseAndFillTipsAndTricksDesc" _LCLZText="Fill Star will fill using a single face.  Reduced Star will fill with mulitple faces to minimize star points."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+   <CommandDefinition Id="TSplineMatchCmd">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/match.png">
+            <TextBlock _LCLZId="lclzTSplineMatchDesc1" _LCLZText="Aligns the edges of a T-Spline body with the edges of a surface or solid or with sketch curves."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineMatchDesc2" _LCLZText="Select the edges to modify then select the target edges or sketch curves."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-MATCH-CMD">
+         <Title _LCLZId="lclzTSplineMatchTipsAndTricksTitle" _LCLZText="Match Information"/>
+       <Tips _LCLZId="lclzTSplineMatchTipsAndTricksTips" _LCLZText="Select the edges to modify then select the target edges or sketch curves."/>
+       <Description _LCLZId="lclTSplineMatchTipsAndTricksDesc" _LCLZText="Use the Spacing and Tolerance options to control the faces and deviation from the target edges."/>
+      </TipsAndTricks>
+   </CommandDefinition>
+  <CommandDefinition Id="TSpline2BRepCommand">
+      <Tooltip>
+         <ExpandedContent>
+            <TextBlock _LCLZId="lclzTSpline2BRepDesc1" _LCLZText="Changes the body type of the selected object. Converts BRep (solid or surface) faces to a T-Spline face. Converts a T-Spline body to a BRep body. Converts a quad mesh to a T-Spline body."/>
+			<TextBlock/>
+            <TextBlock _LCLZId="lclzTSpline2BRepDesc2" _LCLZText="Select the object to convert."/>
+         </ExpandedContent>
+      </Tooltip>
+    <TipsAndTricks MoreInfo="FORM-CONVERT-CMD">
+      <Title _LCLZId="lclzTSplineConvertTipsAndTricksTitle" _LCLZText="Convert Information"/>
+       <Tips _LCLZId="lclzTSplineConvertTipsAndTricksTips" _LCLZText="Select the object to convert."/>
+      <Description _LCLZId="lclTSplineConvertTipsAndTricksDesc" _LCLZText="BRep faces, T-Spline bodies or Mesh bodies can be filtered for selection.  The options available depends on the filter selected."/>
+	  </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineMakeUniformCmd">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/make_uniform.png">
+            <TextBlock _LCLZId="lclzTSplineMakeUniformDesc1" _LCLZText="Removes pinching near star points. Changes non-uniform faces to uniform."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineMakeUniformDesc2" _LCLZText="Select the body to regularize."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-MAKE-UNIFORM-CMD">
+       <Title _LCLZId="lclzTSplineMakeUniformTipsAndTricksTitle" _LCLZText="Make Uniform Information"/>
+       <Tips _LCLZId="lclzTSplineMakeUniformTipsAndTricksTips" _LCLZText="Select the body to regularize."/>
+       <Description _LCLZId="lclTSplineMakeUniformTipsAndTricksDesc" _LCLZText="This command may change the shape of the T-Spline body if there are areas that are non-uniform."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineRepairBodyCmd">
+      <Tooltip>
+         <ExpandedContent>
+            <TextBlock _LCLZId="lclzTSplineRepairBodyDesc1" _LCLZText="Analyzes the T-Spline body and displays information about the mesh. Corrects Error T and Error Star conditions."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineRepairBodyDesc2" _LCLZText="Select the body to analyze."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-REPAIR-BODY-CMD">
+       <Title _LCLZId="lclzTSplineRepairBodyTipsAndTricksTitle" _LCLZText="Repair Body Information"/>
+       <Tips _LCLZId="lclzTSplineRepairBodyTipsAndTricksTips" _LCLZText="Select the body to analyze. This command can be used to evaluate a body without repairing or making any changes."/>
+       <Description _LCLZId="lclTSplineRepairBodyTipsAndTricksDesc" _LCLZText="Clicking on a Star will convert it to a T-Junction and vise versa. Use Autorepair to let the software try to repair the model."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineToggleTessModeCmd">
+      <Tooltip>
+         <ExpandedContent ToolClip="ToolClip/ToggleSmooth.png">
+            <TextBlock _LCLZId="lclzTSplineToggleTessModeDesc1" _LCLZText="Sets the body display to smooth, box, or control frame. Smooth shows the actual model. Box displays only the control framework. Control frame displays the framework and the actual model."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineToggleTessModeDesc2" _LCLZText="Select the desired display mode. If there is more than one T-Spline body, you need to select the body to change the display."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-DISPLAY-MODE-CMD">
+       <Title _LCLZId="lclzTSplineDisplayModeTipsAndTricksTitle" _LCLZText="Display Mode Information"/>
+       <Tips _LCLZId="lclzTSplineDisplayModeTipsAndTricksTips" _LCLZText="Select the desired display mode. If there is more than one T-Spline body, you need to select the body to change the display."/>
+       <Description _LCLZId="lclTSplineDisplayModeTipsAndTricksDesc" _LCLZText="Toggle between modes by holding Ctrl (Windows) or Control (Mac) and the 1, 2, or 3 key. This function is also available in the Edit Form dialog box in Selection Options."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineCapSettingCommand">
+     <Tooltip>
+       <ExpandedContent>
+         <TextBlock _LCLZId="lclzTSplineCapSettingCommand" _LCLZText="Toggles between better performance or better display. Better display shows the bodies at highest quality (G1 conditions at star points). Better performance calculates modification by applying G0 conditions at star points."/>
+       </ExpandedContent>
+     </Tooltip>
+   </CommandDefinition>
+  <!---->
+  <!--TSplines Symmetry commands-->
+  <!---->
+   <CommandDefinition Id="TSplineInternalMirrorSymmetryCmd">
+      <Tooltip>
+         <ExpandedContent ToolClip="TipsAndTricks/MirrorInternal.png">
+            <TextBlock _LCLZId="lclzTSplineInternalMirrorSymmetry1" _LCLZText="Creates a mirror symmetry with the elements of a T-Spline body."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineInternalMirrorSymmetry2" _LCLZText="Select a face on each side of the body. If needed select edges on each side, then vertices."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-MIRROR-INTERNAL-CMD">
+       <Title _LCLZId="lclzTSplineInternalMirrorTipsAndTricksTitle" _LCLZText="Mirror Internal Information"/>
+       <Tips _LCLZId="lclzTSplineInternalMirrorTipsAndTricksTips" _LCLZText="Select a face on each side of the body. If needed select edges on each side, then vertices."/>
+       <Description _LCLZId="lclTSplineInternalMirrorTipsAndTricksDesc" _LCLZText="Symmetry lines are displayed in green."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineInternalCircularSymmetryCmd">
+      <Tooltip>
+         <ExpandedContent ToolClip="TipsAndTricks/CircularInternal.png">
+            <TextBlock _LCLZId="lclzTSplineInternalCircularSymmetry1" _LCLZText="Creates circular symmetry with the elements of a T-Spline body."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineInternalCircularSymmetry2" _LCLZText="Select a face on the body then select the number of symmetry lines."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-CIRCULAR-INTERNAL-CMD">
+       <Title _LCLZId="lclzTSplineInternalCircularTipsAndTricksTitle" _LCLZText="Circular Internal Information"/>
+       <Tips _LCLZId="lclzTSplineInternalCircularTipsAndTricksTips" _LCLZText="Select a face on the body then select the number of symmetry lines."/>
+       <Description _LCLZId="lclTSplineInternalCircularTipsAndTricksDesc" _LCLZText="The possible areas of symmetry are calculated automatically based on the selected face and the body."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineReflectionMirrorSymmetryCmd">
+      <Tooltip>
+         <ExpandedContent ToolClip="TipsAndTricks/MirrorDuplicate.png">
+            <TextBlock _LCLZId="lclzTSplineReflectionMirrorSymmetry1" _LCLZText="Create a duplicate body mirrored across a specified plane."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineReflectionMirrorSymmetry2" _LCLZText="Select the body to copy then select the mirror plane."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-MIRROR-DUPLICATE-CMD">
+       <Title _LCLZId="lclzTSplineReflectionMirrorTipsAndTricksTitle" _LCLZText="Mirror Duplicate Information"/>
+       <Tips _LCLZId="lclzTSplineReflectionMirrorTipsAndTricksTips" _LCLZText="Select the body to copy then select the mirror plane."/>
+       <Description _LCLZId="lclTSplineReflectionMirrorTipsAndTricksDesc" _LCLZText="The weld option will join the bodies where they intersect within the specified tolerance."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineReflectionCircularSymmetryCmd">
+      <Tooltip>
+         <ExpandedContent ToolClip="TipsAndTricks/CircularAdd.png">
+            <TextBlock _LCLZId="lclzTSplineReflectionCircularSymmetry1" _LCLZText="Create specified number of duplicate bodies around a selected axis."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineReflectionCircularSymmetry2" _LCLZText="Select the body to copy then select the axis to revolve around."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-CIRCULAR-DUPLICATE-CMD">
+       <Title _LCLZId="lclzTSplineReflectionCircularTipsAndTricksTitle" _LCLZText="Circular Duplicate Information"/>
+       <Tips _LCLZId="lclzTSplineReflectionCircularTipsAndTricksTips" _LCLZText="Select the body to copy then select the axis to revolve around."/>
+       <Description _LCLZId="lclTSplineReflectionCircularTipsAndTricksDesc" _LCLZText="The weld option will join the bodies where they intersect within the specified tolerance."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+   <CommandDefinition Id="TSplineClearSymmetryCommand">
+      <Tooltip>
+         <ExpandedContent>
+            <TextBlock _LCLZId="lclzTSplineClearSymmetry1" _LCLZText="Remove symmetry constraint from individual bodies or a series of bodies."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="lclzTSplineClearSymmetry2" _LCLZText="Select the symmetric bodies."/>
+         </ExpandedContent>
+      </Tooltip>
+     <TipsAndTricks MoreInfo="FRM-CLEAR-SYMMETRY">
+       <Title _LCLZId="lclzTSplineClearSymmetryTipsAndTricksTitle" _LCLZText="Clear Symmetry Information"/>
+       <Tips _LCLZId="lclzTSplineClearSymmetryTipsAndTricksTips" _LCLZText="Select the symmetric bodies."/>
+     </TipsAndTricks>
+   </CommandDefinition>
+  <CommandDefinition Id="TSplineIsolateSymmetryCmd">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzTSplineIsolateSymmetry1" _LCLZText="Prevents symmetric transformations from being applied to the selected vertex, edge or face."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzTSplineIsolateSymmetry2" _LCLZText="Select the faces, edges, or vertices to remove symmetry from."/>
+      </ExpandedContent>
+    </Tooltip>
+     <TipsAndTricks MoreInfo="FORM-ISOLATE-SYMMETRY-CMD">
+       <Title _LCLZId="lclzTSplineIsolateSymmetryTipsAndTricksTitle" _LCLZText="Isolate Symmetry Information"/>
+       <Tips _LCLZId="lclzTSplineIsolateSymmetryTipsAndTricksTips" _LCLZText="Select the faces, edges, or vertices to remove symmetry from."/>
+       <Description _LCLZId="lclTSplineIsolateSymmetryTipsAndTricksDesc" _LCLZText="The non-symmetric faces are displayed in red."/>
+     </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="TSplineFreezeCmd">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzTSplineFreezeCmd1" _LCLZText="Freezes faces and edges on the model to prevent accidental changes."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzTSplineFreezeCmd2" _LCLZText="Select faces or edges to freeze."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="FORM-FREEZE-CMD">
+      <Title _LCLZId="lclzTSplineFreezeCmdTipsAndTricksTitle" _LCLZText="Freeze Information"/>
+      <Tips _LCLZId="lclzTSplineFreezeCmdTipsAndTricksTips" _LCLZText="Select faces or edges to freeze them."/>
+      <Description _LCLZId="lclTSplineFreezeCmdTipsAndTricksDesc" _LCLZText="Light blue edges represent user-frozen regions. Darker blue edges show the buffer regions that are automatically locked to prevent shape changes in the user-frozen regions."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="TSplineUnFreezeCmd">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzTSplineUnFreezeCmd1" _LCLZText="Unfreezes faces and edges that have previously been frozen."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzTSplineUnFreezeCmd2" _LCLZText="Select faces or edges to unfreeze."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="FORM-UNFREEZE-CMD">
+      <Title _LCLZId="lclzTSplineUnFreezeCmdTipsAndTricksTitle" _LCLZText="Unfreeze Information"/>
+      <Tips _LCLZId="lclzTSplineUnFreezeCmdTipsAndTricksTips" _LCLZText="Select frozen faces or edges to unfreeze them."/>
+      <Description _LCLZId="lclTSplineUnFreezeCmdTipsAndTricksDesc" _LCLZText="Light blue edges represent user-frozen regions. Darker blue edges show the buffer regions that are automatically locked to prevent shape changes in the user-frozen regions."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <!---->
+  <!--TSplines Insert-->
+  <!---->
+   <CommandDefinition Id="TSplineImportCommand">
+      <Tooltip>
+         <ExpandedContent>
+            <TextBlock _LCLZId="lclzTSplineImportDesc1" _LCLZText="Inserts a T-Spline (TSM) file as T-Spline bodies."/>
+         </ExpandedContent>
+      </Tooltip>
+   </CommandDefinition>
+
+</CommandDefinitions>

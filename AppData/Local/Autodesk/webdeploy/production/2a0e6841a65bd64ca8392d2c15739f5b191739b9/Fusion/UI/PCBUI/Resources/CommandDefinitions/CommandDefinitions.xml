@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+  <EnvironmentDefinition Id="PCBEnvironment">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/pcb_workspace.png">
+        <TextBlock _LCLZId="lclzPCBWorkspaceTitle" _LCLZText="Mechanical PCB Workspace"/>
+        <TextBlock/>       
+      </ExpandedContent>
+    </Tooltip>    
+  </EnvironmentDefinition>
+  <EnvironmentDefinition Id="PCB3DEnvironment">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/pcb_workspace.png">
+        <TextBlock _LCLZId="lclzPCB3DWorkspaceTitle" _LCLZText="Mechanical 3D PCB Workspace"/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+  </EnvironmentDefinition>
+<!---->
+<!--PCB Create commands-->
+    <CommandDefinition Id="PCBCreateCmd" >
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzPCBCreateCommand1" _LCLZText="Create a 3D PCB document from the selected sketch or face."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzPCBCreateCommand2" _LCLZText="Use the 3D PCB document as an external reference in the enclosure design."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+<!--PCB Derive command-->
+  <CommandDefinition Id="PCBDeriveCmd" >
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzPCBDeriveCommand1" _LCLZText="Derive a sketch from this design to a 3D PCB design. The selected profiles will be used to create the board outline. "/>
+        <TextBlock/>
+     <TextBlock _LCLZId="lclzPCBDeriveCommand2" _LCLZText="The board outline updates with changes to this design."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+<!--PCB Modify commands-->
+  <CommandDefinition Id="PCBDefineBoardCmd" >
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzPCBDefineBoardCmd1" _LCLZText="Define the shape of the PCB via a sketched profile."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzPCBDefineBoardCmd2" _LCLZText="Select a profile and an origin point."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks  MoreInfo="PCB-DEFINE-BOARD-INFO-CMD">
+      <Title _LCLZId="lclzPCBDefineBoardCmdTipsAndTricksTitle" _LCLZText="PCB Define Board Information"/>
+      <Tips _LCLZId="lclzPCBDefineBoardCmdTipsAndTricksTips" _LCLZText="Select a profile and an origin point."/>
+      <Description _LCLZId="lclzPCBDefineBoardCmdTipsAndTricksDesc" _LCLZText="After selecting the profile, you must choose an origin to ensure the communication with EAGLE is precise. One corner of the PCB normally works well. Decide if the profile is on the top or bottom of the PCB, and be sure that the extrusion direction is correct. The PCB shape will become visible to EAGLE after the model is saved, and the EAGLE user can change the shape of the board as well."/>
+    </TipsAndTricks>    
+  </CommandDefinition>
+  <CommandDefinition Id="PCBStatusCmd" >
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzPCBStatusCommand1" _LCLZText="Check the status of the PCB shape and component positions. "/>
+        <TextBlock/>        
+        <TextBlock _LCLZId="lclzPCBStatusCommand2" _LCLZText="Both the board shape and the component positions can be driven by either Fusion or EAGLE. Use this command to understand the state of the model."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="PCB-STATUS-REFERENCE-CMD" >
+      <Title _LCLZId="lclzPCBStatusCommandTipsAndTricksTitle" _LCLZText="PCB Status Information"/>
+      <Tips _LCLZId="lclzPCBStatusCommandTipsAndTricksTips" _LCLZText="Both the board shape and the component positions can be driven by either Fusion or EAGLE. Use this command to understand the state of the model."/>
+      <Description _LCLZId="lclzPCBStatusCommandTipsAndTricksDesc" _LCLZText="If the board shape and/or component positions have been edited in Fusion after the last EAGLE update, this command will allow you to see both PCB shapes. Also, it will tell you if your current component positions are different from the last EAGLE update."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="PCBMoveComponentsCmd" >
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzPCBMoveComponentsCommand1" _LCLZText="Move PCB components to new locations on the board."/>
+        <TextBlock/>        
+        <TextBlock _LCLZId="lclzPCBMoveComponentsCommand2" _LCLZText="Select a component and move it by dragging or typing in values."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks  MoreInfo="PCB-MOVE-COMPONENTS-CMD">
+      <Title _LCLZId="lclzPCBMoveComponentsCommandTipsAndTricksTitle" _LCLZText="Move PCB Components Information"/>
+      <Tips _LCLZId="lclzPCBMoveComponentsCommandTipsAndTricksTips" _LCLZText="Select a component and move it by dragging or typing in values."/>
+      <Description _LCLZId="lclzPCBMoveComponentsCommandTipsAndTricksDesc" _LCLZText="Note that no Move feature will be created in the timeline. However, the new locations will be remembered by Fusion, and will become visible to EAGLE after the model is saved, and the EAGLE user can move the components as well."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="PCBStop" >
+    <Tooltip>
+      <ExpandedContent>   
+        <TextBlock _LCLZId="lclzPCBStop1" _LCLZText="Return to the Model workspace."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="PCBImprintCmd" >
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzPCBImprintCmd1" _LCLZText="Copies the profile supplied from EAGLE to an upstream Fusion sketch."/>
+        <TextBlock/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks   MoreInfo="PCB-IMPRINT-CMD">
+      <Title _LCLZId="lclzPCBImprintCmdTipsAndTricksTitle" _LCLZText="Copy EAGLE Profile Information"/>
+      <Tips _LCLZId="lclzPCBImprintCmdTipsAndTricksTips" _LCLZText="Copies the profile supplied from EAGLE to an upstream Fusion sketch. You can copy to a pre-existing sketch, or create a new sketch by selecting a planar face or construction plane. The selected sketch or plane must be parallel to the PCB.  If there is already an upstream sketch that drives the PCB feature, that sketch will be selected by default."/>
+      <Description _LCLZId="lclzPCBImprintCmdTipsAndTricksDesc" _LCLZText="This command is primarily useful when both the Fusion and EAGLE user are actively changing the shape of the PCB."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="PCBReplaceComponentCmd" >
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzPCBReplaceComponentCommand1" _LCLZText="Replace PCB component with different one."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzPCBReplaceComponentCommand2" _LCLZText="Select a PCB 3d model(step, stp file format) to replace existing PCB component."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks  MoreInfo="PCB-REPLACE-COMPONENT-CMD">
+      <Title _LCLZId="lclzPCBReplaceComponentCommandTipsAndTricksTitle" _LCLZText="Replace PCB Component Information"/>
+      <Tips _LCLZId="lclzPCBReplaceComponentCommandTipsAndTricksTips" _LCLZText="Select a model to replace selected PCB component and move it to adjust its position."/>
+      <Description _LCLZId="lclzPCBReplaceComponentCommandTipsAndTricksDesc" _LCLZText="Note that no Move feature will be created in the timeline. However, the PCB component will be replace with new model, the change will not able to get back to eagle."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="PCBUpdateComponentCmd" >
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzPCBUpdateComponentCommand1" _LCLZText="Update PCB component from library."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzPCBUpdateComponentCommand2" _LCLZText="Download PCB component from library to replace existing PCB component."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks  MoreInfo="PCB-UPDATE-COMPONENT-CMD">
+      <Title _LCLZId="lclzPCBUpdateComponentCommandTipsAndTricksTitle" _LCLZText="Update PCB Component Information"/>
+      <Tips _LCLZId="lclzPCBUpdateComponentCommandTipsAndTricksTips" _LCLZText="Download PCB component from library to replace the selected PCB component and move it to adjust its position."/>
+      <Description _LCLZId="lclzPCBUpdateComponentCommandTipsAndTricksDesc" _LCLZText="Note that no Move feature will be created in the timeline. However, the PCB component will be replace with new model, the change will not able to get back to eagle."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="PCBMoveComponentBodyCmd" >
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzPCBMoveComponentBodyCommand1" _LCLZText="Move PCB component body to align with the footprint on the board."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzPCBMoveComponentBodyCommand2" _LCLZText="Select a body from PCB component and move it by dragging or typing in values."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks  MoreInfo="PCB-MOVE-COMPONENT-BODY-CMD">
+      <Title _LCLZId="lclzPCBMoveComponentBodyCommandTipsAndTricksTitle" _LCLZText="Move PCB Component Body Information"/>
+      <Tips _LCLZId="lclzPCBMoveComponentBodyCommandTipsAndTricksTips" _LCLZText="Select a body from PCB component and move it by dragging or typing in values."/>
+      <Description _LCLZId="lclzPCBMoveComponentBodyCommandTipsAndTricksDesc" _LCLZText="Note that no Move feature will be created in the timeline. However, the new locations will be remembered by Fusion."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+    <CommandDefinition Id="PCBBoardSketchEditCmd" >
+        <Tooltip>
+            <ExpandedContent>
+                <TextBlock _LCLZId="lclzPCBBoardSketchEditCmd1" _LCLZText="Edit the sketch generated from EAGLE board."/>
+                <TextBlock/>
+            </ExpandedContent>
+        </Tooltip>
+        <TipsAndTricks   MoreInfo="PCB-Board-Sketch-Edit-CMD">
+            <Title _LCLZId="lclzPCBBoardSketchEditCmdTipsAndTricksTitle" _LCLZText="Edit the sketch generated from EAGLE board"/>
+            <Tips _LCLZId="lclzPCBBoardSketchEditCmdTipsAndTricksTips" _LCLZText="This command will activate the sketch generated from EAGLE board for editing."/>
+            <Description _LCLZId="lclzPCBBoardSketchEditCmdTipsAndTricksDesc" _LCLZText="This command is only available when there's sketch generated from EAGLE board."/>
+        </TipsAndTricks>
+    </CommandDefinition>
+<!---->
+</CommandDefinitions>

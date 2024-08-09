@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE Toolbars [
+  <!ENTITY SimulationPanels SYSTEM "../../../../LinearStaticStress/UI/Resources/Toolbar/Shared/SimulationPanels.xml">
+  <!ENTITY DebugPanels SYSTEM "../../../../../UI/CommonUI/Resources/Toolbar/Shared/DebugPanels.xml">
+]>
+<Toolbars>
+  <CommandToolbar Id="InjectionMoldingToolbar">
+    <DropDownButton Id="ActivateEnvironmentCommand" ShowText="true" SynchronizedWithCurrentItem="true"/>
+
+    <!-- ************** -->
+    <!-- "SETUP > Simplify" command will enable 3 contextual tabs: Solid, Surface, and Idealize-->
+    <!-- ************** -->
+    <!-- ************** -->
+    <!-- "RESULTS > Compare" command will enable 1 contextual tab: Compare  -->
+    <!-- ************** -->
+
+    <!--All Tab info-->
+    <Tab Id="SimSetupTab"
+         _LCLZId="lclzSimSetupTab"
+         _LCLZText="SETUP"
+         Panels="StudyPanel;SimplifyPanel;BoundaryConditionsPanel;MaterialsPanelIM;ProcessSettingsPanel;InjectionMoldingManagePanel;InjectionMoldingSolvePanel;WebViewerPanel;InspectPanel;SelectPanel"
+         Environment="SimulationEnvironment"/>
+
+    <Tab Id="SimResultsViewerTab"
+         _LCLZId="lclzResultsViewerTab"
+         _LCLZText="RESULTS"
+         Panels="ViewModePanel;FlatnessPanel;SurfaceRoughnessPanel;IMInspectPanel;FinishWebViewerPanel"
+         Environment="SimulationEnvironment"
+         ContextualFinishId="FinishDoraCmd"/>
+
+    <Tab Id="DebugTab"
+         _LCLZId="lclzDebugTab"
+         _LCLZText="DEBUG"
+         Panels="FilePanel;DiagnosticsPanel;UIDemo"
+         Environment="DebugEnvironment"/>
+
+    <!-- ******************************** -->
+    <!-- **                            ** -->
+    <!-- **  PANELS                    ** -->
+    <!-- **                            ** -->
+    <!-- ******************************** -->
+    &SimulationPanels;
+    &DebugPanels;
+
+    <Panel Id="BoundaryConditionsPanel" _LCLZId="BoundaryConditionsPanel" _LCLZText="Boundary Conditions" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="InjectionPointCommand"/>
+        <Button Id="VisualFacesCommand"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="InjectionPointCommand"/>
+        <Button Id="VisualFacesCommand"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="MaterialsPanelIM" _LCLZId="MaterialsPanelIM" _LCLZText="Materials" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="StudyMaterialsCommand"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="StudyMaterialsCommand"/>
+        <Button Id="MaterialPropertiesCommand"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="ProcessSettingsPanel" _LCLZId="ProcessSettingsPanel" _LCLZText="Process Settings" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="ProcessSettingsCommand"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="ProcessSettingsCommand"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="ViewModePanel" _LCLZId="ViewModePanel" _LCLZText="View Results">
+      <Controls>
+<!--        <Button Id="SimIMResultType1Command"/>
+        <Button Id="SimIMResultType2Command"/>
+        <Button Id="SimIMResultType3Command"/> -->
+      </Controls>
+    </Panel>
+
+	<Panel Id="FlatnessPanel" _LCLZId="FlatnessPanel" _LCLZText="Flatness">
+	  <Controls>
+		  <Button Id="FlatnessCommand"/>
+	  </Controls>
+	</Panel>
+
+	<Panel Id="SurfaceRoughnessPanel" _LCLZId="SurfaceRoughnessPanel" _LCLZText="Surface Roughness">
+		<Controls>
+			<Button Id="SurfaceRoughnessCommand"/>
+		</Controls>
+	</Panel>
+
+	  <Panel Id="FinishWebViewerPanel" _LCLZId="SimFinishWebViewerPanel" _LCLZText="Finish Results" ContextualFinishId="FinishDoraCmd" AvailableBaseTabs="{none}">
+      <Controls>
+        <Button Id="FinishDoraCmd"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="FinishDoraCmd"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="InjectionMoldingManagePanel" _LCLZId="InjectionMoldingManagePanel" _LCLZText="Manage" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="SimCasePropertiesCmd"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="SimCasePropertiesCmd"/>
+        <Separator/>
+        <Button Id="SummaryCardCommand" Checkable="true"/>
+      </PanelDropdown>
+    </Panel>
+    
+    <Panel Id="InjectionMoldingSolvePanel" _LCLZId="InjectionMoldingSolvePanel" _LCLZText="Solve" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="SimFEACSPreSolveCheckCmd"/>
+        <Button Id="InjectionMoldingSolveCommand"/>
+        <Button Id="SimShowJobsDlgCmd"/>
+        <Button Id="SimSolveDetailsCmd"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="InjectionMoldingPreSolveCheckCommand"/>
+        <Separator/>
+        <Button Id="InjectionMoldingSolveCommand"/>
+        <Button Id="SimShowJobsDlgCmd"/>
+        <Separator/>
+        <Button Id="SimSolveDetailsCmd"/>
+      </PanelDropdown>
+    </Panel>    
+    
+    <Panel Id="WebViewerPanel" _LCLZId="WebViewerPanel" _LCLZText="Results" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="WebViewerCmd" HotKey="Ctrl+r"/>
+      </Controls>
+    </Panel>
+	  
+    <Panel Id="IMInspectPanel" _LCLZId="IMInspectPanel" _LCLZText="Inspect" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="IMSurfaceProbesCommand"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IMSurfaceProbesCommand"/>
+        <Button Id="IMShowAllProbesCommand"/>
+        <Button Id="IMHideAllProbesCommand"/>
+        <Button Id="IMDeleteAllProbesCommand"/>
+      </PanelDropdown>
+    </Panel>
+  </CommandToolbar>
+</Toolbars>

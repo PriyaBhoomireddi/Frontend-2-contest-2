@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HUDs>
+	<HUD Id="SimManualContactHudId">
+		<DropDownButton Id="infoContactType" SynchronizedWithCurrentItem="true"/>
+		<DropDownEntry Id="infoHeatConductanceEdit" WidthString="000.000 W / c MMMMM"/>
+	</HUD>
+	<HUD Id="SimMeshRefinementByEntitiesHUDId">
+		<Label Id="SimMeshRefinementByEntitiesValueLabel" ShowText="True"/>
+		<Slider Id="SimMeshRefinementByEntitiesValueSlider" NumSliders="1" ValueType="float"/>
+	</HUD>
+</HUDs>

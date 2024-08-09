@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+  <CommandDefinition Id="SimFDInternalHeatAttributeCommand" HotKey="h">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/Loads.png">
+        <TextBlock _LCLZId="SimFDThermalLoadInternalHeatCmdDesc1" _LCLZText="Applies a user-defined heat load to one or more bodies, to define the heat source(s) that impact adjacent bodies."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="SimFDThermalLoadInternalHeatCmdDesc2" _LCLZText="The heat load can be assigned as a total value, or on a per-unit volume basis. Internal heat load attributes assigned in the Electronics workspace are copied, automatically, to the electronics cooling study. Adjustments made in the electronics cooling study are not reflected back in the Electronics workspace."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SIM-INTERNAL-HEAT-CONCEPT">
+      <Title _LCLZId="SimFluidDynamicsAttributesInternalHeatTipsAndTricksTitle" _LCLZText="Internal Heat" />
+      <Tips _LCLZId="SimFluidDynamicsAttributesInternalHeatTipsAndTricksTips" _LCLZText="Select one or more bodies where the load will be placed." />
+      <Description _LCLZId="SimFluidDynamicsAttributesInternalHeatTipsAndTricksDesc" _LCLZText="Only Internal Heat load types are supported.&lt;br&gt;Click &lt;b&gt;Change Heat Units&lt;/b&gt; to specify a unique unit for this Load.&lt;br&gt;Toggle&lt;b&gt; Unit Volume&lt;/b&gt; to allow per-unit volume assignment." />
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SimFDEditInternalHeatAttributeCommand">
+    <TipsAndTricks MoreInfo="SIM-INTERNAL-HEAT-CONCEPT">
+      <Title _LCLZId="SimFluidDynamicsAttributesInternalHeatTipsAndTricksTitle" _LCLZText="Internal Heat" />
+      <Tips _LCLZId="SimFluidDynamicsAttributesInternalHeatTipsAndTricksTips" _LCLZText="Select one or more bodies where the load will be placed." />
+      <Description _LCLZId="SimFluidDynamicsAttributesInternalHeatTipsAndTricksDesc" _LCLZText="Only Internal Heat load types are supported.&lt;br&gt;Click &lt;b&gt;Change Heat Units&lt;/b&gt; to specify a unique unit for this Load.&lt;br&gt;Toggle&lt;b&gt; Unit Volume&lt;/b&gt; to allow per-unit volume assignment." />
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SimHeatSinkAttributeCommand" HotKey="c">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/HeatSink.png">
+        <TextBlock _LCLZId="SimHeatSinkCmdDesc1" _LCLZText="Calculates the ability of the heat sink to dissipate heat and reduce the temperature of electronic bodies, based on its geometry and material properties."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="SimHeatSinkCmdDesc2" _LCLZText="Create an idealized representation of the heat sink design, automatically, to reduce analysis time while maintaining an accurate result. The geometric properties used in the idealization are obtained from the as-modeled device."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="SimEditHeatSinkAttributeCommand">
+    <TipsAndTricks MoreInfo="SIM-FLUIDDYNAMICSATTRIBUTES-HEATSINK">
+      <Title _LCLZId="SimFluidDynamicsAttributesHeatSinkTipsAndTricksTitle" _LCLZText="Heat Sink" />
+      <Tips _LCLZId="SimFluidDynamicsAttributesHeatSinkTipsAndTricksTips" _LCLZText="PLACEHOLDER" />
+      <Description _LCLZId="SimFluidDynamicsAttributesHeatSinkTipsAndTricksDesc" _LCLZText="PLACEHOLDER" />
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SimForcedFlowAttributeCommand" HotKey="f">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="SimForcedFlowCmdDesc1" _LCLZText="Applies a volumetric air or fluid flow to a body, such as a fan that blows air through an enclosure."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="SimForcedFlowCmdDesc2" _LCLZText="Simplify complex fan geometries, automatically, to reduce the analysis time while maintaining an accurate result. Air flow is propagated to the volume around the adjacent electronic bodies."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SIM-SIMPLIFIED-FAN-CONCEPT">
+      <Title _LCLZId="SimFluidDynamicsAttributesForcedFlowTipsAndTricksTitle" _LCLZText="Forced Flow" />
+      <Tips _LCLZId="SimFluidDynamicsAttributesForcedFlowTipsAndTricksTips" _LCLZText="Select all the bodies that represent a single fan. For the analysis the fan is simplified, as symbolically represented by the green prismatic cylinder superimposed on your model during the Forced Flow load setup. For each selection of multiple bodies, the resulting simplified green cylinder represents a single fan. Change the flow direction using the Direction Type." />
+      <Description _LCLZId="SimFluidDynamicsAttributesForcedFlowTipsAndTricksDesc" _LCLZText="You can window select multiple fan bodies. Edit or Delete Forced Flow settings from the Fan item in the Browser." />
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SimEditForcedFlowAttributeCommand">
+    <TipsAndTricks MoreInfo="SIM-SIMPLIFIED-FAN-CONCEPT">
+      <Title _LCLZId="SimFluidDynamicsAttributesForcedFlowTipsAndTricksTitle" _LCLZText="Forced Flow" />
+      <Tips _LCLZId="SimFluidDynamicsAttributesForcedFlowTipsAndTricksTips" _LCLZText="Select all the bodies that represent a single fan. For the analysis the fan is simplified, as symbolically represented by the green prismatic cylinder superimposed on your model during the Forced Flow load setup. For each selection of multiple bodies, the resulting simplified green cylinder represents a single fan. Change the flow direction using the Direction Type." />
+      <Description _LCLZId="SimFluidDynamicsAttributesForcedFlowTipsAndTricksDesc" _LCLZText="You can window select multiple fan bodies. Edit or Delete Forced Flow settings from the Fan item in the Browser." />
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SimFluidDynamicsWebViewerCmd">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipFluidDynamics.png">
+        <TextBlock _LCLZId="lclzSimFluidDynamicsWebViewerCmd1" _LCLZText="View the temperature of electronics bodies and the air surrounding them, that results from applied heat loads."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzSimFluidDynamicsWebViewerCmd2" _LCLZText="Hide non-critical bodies and create slice planes through the model, to study the temperature of critical bodies. Identify bodies at risk, or above their critical temperatures. Change the scale to highlight temperatures above a certain value."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="SimCriticalTemperaturesCommand" HotKey="c">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzSimCriticalTemperaturesCmdDesc1" _LCLZText="Applies a user-defined maximum safe operating temperature to specified bodies, to provide an indication of when the body may malfunction or fail."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzSimCriticalTemperaturesCmdDesc2" _LCLZText="Bodies are not required to have a critical temperature. Where a critical temperature is defined, bodies operating above the critical temperature are displayed as At Risk.
+Critical temperature attributes assigned in the Electronics workspace are copied, automatically, to the electronics cooling study. Adjustments made in the electronics cooling study are not reflected back in the Electronics workspace."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SIM-CRITICAL-TEMPERATURE-CONCEPT">
+      <Title _LCLZId="lclzSimCriticalTemperaturesTipsAndTricksTitle" _LCLZText="Critical Temperatures" />
+      <Tips _LCLZId="lclzSimCriticalTemperaturesTipsAndTricksTips" _LCLZText="View and edit the critical temperature settings on each body." />
+      <Description _LCLZId="lclzSimFluidDynamicsAttributesInternalHeatTipsAndTricksDesc" _LCLZText="When a critical temperature is defined, any body operating above the critical temperature are displayed as At Risk in the Results view. The maximum temperature across a body is reported as its operating temperature.&lt;br&gt;&lt;br&gt;All bodies participate in the solve, however not all bodies are required to have a critical temperature.&lt;br&gt;&lt;br&gt;Critical temperature attributes assigned in the Electronics workspace are copied, automatically, to the electronics cooling study. Adjustments made in the electronics cooling study are not reflected back in the Electronics workspace." />
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SimFDRiskScaleCommand" HotKey="r">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/RiskScale.png">
+        <TextBlock _LCLZId="lclzSimFDRiskScaleCommandDesc1" _LCLZText="Shows how likely a PCB body is to exceed its critical temperature and overheat."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzSimFDRiskScaleCommandDesc2" _LCLZText="To create this result, set the Critical Temperature on bodies of interest during the study set up. Only bodies with a critical temperature assigned to them are shown in this view."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks>
+      <Title _LCLZId="lclzSimFDRiskScaleCommandTipsAndTricksTitle" _LCLZText="Risk Scale"/>
+      <Tips _LCLZId="lclzSimFDRiskScaleCommandTipsAndTricksTips" _LCLZText="Activate Risk Scale viewing mode."/>
+      <Description _LCLZId="lclzSimFDRiskScaleCommandTipsAndTricksDesc" _LCLZText="Activate Risk Scale viewing mode."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SimFDSectionModeCommand">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/Section.png">
+        <TextBlock _LCLZId="lclzSimFDSectionModeCommandDesc1" _LCLZText="Shows the internal temperatures of bodies, as well as the temperature and velocity of the air surrounding them."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzSimFDSectionModeCommandDesc2" _LCLZText="Create section planes to view the internal temperatures of bodies. Move and rotate the section planes along the plane to identify the best location for them. Switch between air temperature and air velocity."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks>
+      <Title _LCLZId="lclzSimFDSectionModeCommandTipsAndTricksTitle" _LCLZText="Section"/>
+      <Tips _LCLZId="lclzSimFDSectionModeCommandTipsAndTricksTips" _LCLZText="Activate Section viewing mode."/>
+      <Description _LCLZId="lclzSimFDSectionModeCommandTipsAndTricksDesc" _LCLZText="Activate Section viewing mode."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SimFDTemperatureScaleCommand" HotKey="t">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/TemperatureScale.png">
+        <TextBlock _LCLZId="lclzSimFDTemperatureScaleCommandDesc1" _LCLZText="Shows the temperature of all model bodies, such as PCB bodies, boards, and enclosures, that fall within the range of interest."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzSimFDTemperatureScaleCommandDesc2" _LCLZText="Use the Range of interest slider on the legend to alter the temperature at which bodies are included in this view."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks>
+      <Title _LCLZId="lclzSimFDTemperatureScaleCommandTipsAndTricksTitle" _LCLZText="Temperature Scale"/>
+      <Tips _LCLZId="lclzSimFDTemperatureScaleCommandTipsAndTricksTips" _LCLZText="Activate Temperature Scale viewing mode."/>
+      <Description _LCLZId="lclzSimFDTemperatureScaleCommandTipsAndTricksDesc" _LCLZText="Activate Temperature Scale viewing mode."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+</CommandDefinitions>

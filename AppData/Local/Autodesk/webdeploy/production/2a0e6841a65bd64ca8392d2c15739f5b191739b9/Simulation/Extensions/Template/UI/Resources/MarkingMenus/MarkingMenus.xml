@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Menus>
+  <!--/////////////////////////////////////////////
+    This document determines the order in which the contents of the menu will appear.
+    To determine whether the command joins the menu or not, edit the CmdDef onAddToContextMenu method.
+  //////////////////////////////////////////////-->
+  
+	<MarkingMenu EnvId="SimTemplateEnvironment">
+		<Menu TypeId="BaseMenu">
+			<MenuItem Id="RepeatCommand" Position="North"/>
+			<MenuItem Id="RedoCommand" Position="East"/>
+			<MenuItem Id="UndoCommand" Position="West"/>
+			<MenuItem Id="SimDisplayDOFViewCommand" Position="South"/>
+			<MenuItem Id="SimThermalLoadsCmd" Position="Northeast"/>
+			<MenuItem Id="SimOverrideMaterialCommand" Position="Northwest"/>
+			<MenuItem Id="SimTemplateStructuralAttributeCommand" Position="Southeast"/>
+			<MenuItem Id="SimManualContactCommand" Position="Southwest"/>
+		</Menu>
+		<Menu TypeId="Overflow">
+			<!-- Orbit command related -->
+      <!-- Nav controls -->
+      <MenuItem Id="PanCommand"/>
+      <MenuItem Id="ZoomCommand"/>
+      <MenuItem Id="ConstrainedOrbitCommand"/>
+
+      <!-- Orbit command related -->
+      <MenuItem Id="SetOrbitCenterCommand"/>
+      <MenuItem Id="ResetOrbitCenterCommand"/>
+      <Separator />
+			<MenuItem Id="SimShowCommand"/>
+			<MenuItem Id="SimHideCommand"/>
+			<MenuItem Id="SimVisibilityToggleCmd"/>
+			<MenuItem Id="SimVisibilityAllCommand"/>
+			<MenuItem Id="SimShowAllComponentsCommand"/>
+			<MenuItem Id="SimShowAllBodiesCommand"/>
+			<MenuItem Id="SimIsolateCommand"/>
+			<MenuItem Id="SimUnisolateCommand"/>
+			<MenuItem Id="SimUnisolateAllCommand"/>
+			<!-- Object Visibility -->
+			<MenuItem Id="PlanesVisibilityToggleCmd"/>
+			<MenuItem Id="AxesVisibilityToggleCmd" />
+			<MenuItem Id="PointsVisibilityToggleCmd" />
+			<Separator/>
+			<MenuItem Id="SimCreateSimCaseCommand"/>
+			<MenuItem Id="SimActivateSimCaseCommand"/>
+			<MenuItem Id="SimActivateCompareCmd"/>
+			<MenuItem Id="SimCopySimCaseCommand"/>
+			<MenuItem Id="SimActivateSimLoadCaseCmd"/>
+			<MenuItem Id="SimCreateSimLoadCaseCmd"/>
+			<MenuItem Id="SimDuplicateSimLoadCaseCmd"/>
+			<MenuItem Id="SimActivateSimCaseForWorkingModelCommand"/>
+			<Separator/>
+			<MenuItem Id="SimCasePropertiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SwitchToFusionCommand"/>
+			<MenuItem Id="SwitchToSimplifyCommand"/>
+			<Separator/>
+			<MenuItem Id="SimShowAttributesCommand"/>
+			<MenuItem Id="SimTemplateReusedAttributeCommand"/>
+			<MenuItem Id="SimTemplateStructuralAttributeCommand"/>
+			<MenuItem Id="SimContactsManagerCmd"/>
+			<MenuItem Id="SimManualContactCommand"/>
+			<MenuItem Id="SimFEACSAutoContactsCmd"/>
+			<MenuItem Id="SimMeshRefinementByEntitiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimThermalEditContactCommand"/>
+			<MenuItem Id="SimContactsSettingsCmd"/>
+			<MenuItem Id="SimThermalLoadsEditCmd"/>
+			<MenuItem Id="SimTemplateEditStructuralAttributeCommand"/>  
+			<MenuItem Id="SimEditMeshRefinementByEntitiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimSuppressComponentCommand"/>
+			<MenuItem Id="SimUnsuppressComponentCommand"/>
+			<MenuItem Id="SimUnsuppressAllCommand"/>
+			<MenuItem Id="SimSuppressAllComponentsExceptSelectedCommand"/>
+			<MenuItem Id="SimSuppressCommonCommand"/>
+			<MenuItem Id="SimUnsuppressCommonCommand"/>
+			<MenuItem Id="SimDeleteCommonCommand"/>
+			<Separator/>
+			<MenuItem Id="SimOverrideMaterialCommand"/>
+			<MenuItem Id="SimMaterialPropertiesCommand"/>
+			<MenuItem Id="SimMaterialEditCommand"/>
+			<!--<MenuItem Id="SimUpdateMaterialCommand"/>-->
+			<Separator/>
+			<MenuItem Id="SimDisplayNormalViewCommand"/>
+			<MenuItem Id="SimDisplayDOFViewCommand"/>
+			<MenuItem Id="SimDisplayGroupsViewCommand"/>
+			<MenuItem Id="SimTemplateWebViewerCmd"/>
+			<Separator/>
+			<MenuItem Id="SimToggleMeshCmd"/>
+			<MenuItem Id="SimFEACSMeshSolveCmd"/>
+			<!--<MenuItem Id="SimFEACSMeshCloudSolveCmd"/>-->
+			<MenuItem Id="SimMeshSettingsCmd"/>
+			<MenuItem Id="SimShowMeshingIssuesCmd"/>
+			<MenuItem Id="SimHideMeshingIssuesCmd"/>
+			<Separator/>
+      <MenuItem Id="SimTemplateWebViewerCmd"/>
+      <MenuItem Id="SimFEACSPreSolveCheckCmd"/>
+			<MenuItem Id="SimSolveCmd"/>
+			<MenuItem Id="SimFEACSSolveCmd"/>
+			<MenuItem Id="SimSolveLogCmd"/>
+			<Separator/>
+			<MenuItem Id="SimClippingPlaneCreateCmd"/>
+			<MenuItem Id="SimClippingPlaneEditCmd"/>
+			<MenuItem Id="SimEditResultQueryCmd"/>
+			<MenuItem Id="SimShowAllProbesCmd"/>
+			<MenuItem Id="SimHideAllProbesCmd"/>
+			<MenuItem Id="SimDeleteAllProbesCmd"/>
+			<MenuItem Id="SimProbePropertiesCommand"/>
+			<Separator/>
+			<MenuItem Id="SimReportCmd"/>
+			<MenuItem Id="SimConvergencePlotCmd"/>
+			<Separator/>
+			<!--<MenuItem Id="SimOptimizationPlotCmd"/>
+			<MenuItem Id="SimOptimizationViewResultCmd"/>
+			<Separator/>-->
+			<MenuItem Id="SimSelectRelatedContactsCommand"/>
+			<Separator/>
+			<MenuItem Id="SimDocPropertiesCmd"/>
+			<MenuItem Id="FusionPropertiesCommand"/>
+			<MenuItem Id="SimPropertiesCommand"/>
+			<MenuItem Id="SimUnitsSettingsCommand"/>
+			<Separator/>
+			<MenuItem Id="SimSelectAllOccurrencesCommand"/>
+			<MenuItem Id="SimSelectSimilarOccursCommand"/>
+			<MenuItem Id="CreateSelectionGroupCmd"/>
+			<MenuItem Id="SimSelectByInvertCommand"/>
+			<Separator/>
+			<MenuItem Id="DeleteSelectionGroupCmd"/>
+			<MenuItem Id="SimCopyCommonCommand"/>
+			<MenuItem Id="PasteCommand"/>
+			<!-- NamedViews (browser)-->
+			<Separator />
+			<MenuItem Id="AddNamedViewCommand" />
+			<MenuItem Id="RemoveNamedViewCommand" />
+			<MenuItem Id="UpdateNamedViewCameraCommand" />
+			<!-- Find in Window / Browser -->
+			<Separator/>
+			<MenuItem Id="FindInBrowser"/>
+			<MenuItem Id="FindInWindow"/>
+		</Menu>
+	</MarkingMenu>
+</Menus>

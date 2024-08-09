@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+  <CommandDefinition Id="SimTemplateReusedAttributeCommand" HotKey="f">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipTemplate.png">
+        <TextBlock _LCLZId="SimForceLoadDesc1" _LCLZText="Use a Force load to push or pull on an object. Forces can cause stress and deformation." />
+        <TextBlock />
+        <TextBlock _LCLZId="SimForceLoadDesc2" _LCLZText="Individually or multi-select faces, edges, or vertices and specify the load magnitude and direction. You cannot mix geometry types in your selection set. When you apply a Force load to multiple entities, the total magnitude of the force is distributed across the selected entities." />
+        <TextBlock />
+        <TextBlock _LCLZId="SimForceLoadDesc3" _LCLZText="To load a face involved in a contact, use a Pressure instead of a Force." />
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SIM-STRUCTURAL-LOADS-CMD">
+      <Title _LCLZId="SimStructuralLoadTipsAndTricksTitle" _LCLZText="Structural Load Information" />
+      <Tips _LCLZId="SimStructuralLoadTipsAndTricksTips" _LCLZText="Select the geometry where load will be placed. The geometry can be edges, faces, or vertices. You can select individual or multiple entities." />
+      <Description _LCLZId="SimStructuralLoadTipsAndTricksDesc" _LCLZText="Define the magnitude and direction. Note that some load types allow you edit direction by changing &lt;b&gt;Direction Type&lt;/b&gt;." />
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SimTemplateStructuralAttributeCommand" HotKey="f">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipTemplate.png">
+        <TextBlock _LCLZId="SimForceLoadDesc1" _LCLZText="Use a Force load to push or pull on an object. Forces can cause stress and deformation." />
+        <TextBlock />
+        <TextBlock _LCLZId="SimForceLoadDesc2" _LCLZText="Individually or multi-select faces, edges, or vertices and specify the load magnitude and direction. You cannot mix geometry types in your selection set. When you apply a Force load to multiple entities, the total magnitude of the force is distributed across the selected entities." />
+        <TextBlock />
+        <TextBlock _LCLZId="SimForceLoadDesc3" _LCLZText="To load a face involved in a contact, use a Pressure instead of a Force." />
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="SIM-STRUCTURAL-LOADS-CMD">
+      <Title _LCLZId="SimStructuralLoadTipsAndTricksTitle" _LCLZText="Structural Load Information" />
+      <Tips _LCLZId="SimStructuralLoadTipsAndTricksTips" _LCLZText="Select the geometry where load will be placed. The geometry can be edges, faces, or vertices. You can select individual or multiple entities." />
+      <Description _LCLZId="SimStructuralLoadTipsAndTricksDesc" _LCLZText="Define the magnitude and direction. Note that some load types allow you edit direction by changing &lt;b&gt;Direction Type&lt;/b&gt;." />
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SimTemplateStructuralAttributeCommand">
+    <TipsAndTricks MoreInfo="SIM-STRUCTURAL-LOADS-CMD">
+      <Title _LCLZId="SimStructuralLoadTipsAndTricksTitle" _LCLZText="Structural Load Information" />
+      <Tips _LCLZId="SimStructuralLoadTipsAndTricksTips" _LCLZText="Select the geometry where load will be placed. The geometry can be edges, faces, or vertices. You can select individual or multiple entities." />
+      <Description _LCLZId="SimStructuralLoadTipsAndTricksDesc" _LCLZText="Define the magnitude and direction. Note that some load types allow you edit direction by changing &lt;b&gt;Direction Type&lt;/b&gt;." />
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SimTemplateWebViewerCmd">
+    <Tooltip>
+      <ExpandedContent ToolClip="ToolClip/ToolClipTemplate.png">
+        <TextBlock _LCLZId="lclzSimTemplateWebViewerCmd1" _LCLZText="Explores design alternatives, called outcomes, using tools that help you identify the optimal outcome."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzSimTemplateWebViewerCmd2" _LCLZText="Use different views to visually explore outcomes and examine their properties. Apply filters and compare multiple outcomes. Explore an outcome in detail in the 3D view and select an outcome iteration."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="SimFinishTemplateWebViewerCmd">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzFinishTemplateWebViewerCmd" _LCLZText="Exits the Explore workspace and returns to the Simulation workspace."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+</CommandDefinitions>

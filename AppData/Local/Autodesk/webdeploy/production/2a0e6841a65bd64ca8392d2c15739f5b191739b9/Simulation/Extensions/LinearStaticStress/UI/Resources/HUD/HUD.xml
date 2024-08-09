@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HUDs>
+	<HUD Id="SimDofHUDId">
+		<Label Id="SimDofLabel" ShowText="true"/>
+		<NewLine/>
+		<DropDownButton Id="SimDofColorFullyFixedCmd" ShowText="false" SynchronizedWithCurrentItem="true"/>
+		<Label Id="SimDofLabelFullyFixed" ShowText="true"/>
+		<NewLine/>
+		<DropDownButton Id="SimDofColorPotentiallyFixedCmd" ShowText="false" SynchronizedWithCurrentItem="true"/>
+		<Label Id="SimDofLabelPotentiallyFixed" ShowText="true"/>
+		<NewLine/>
+		<DropDownButton Id="SimDofColorPartiallyFixedCmd" ShowText="false" SynchronizedWithCurrentItem="true"/>
+		<Label Id="SimDofLabelPartiallyFixed" ShowText="true"/>
+		<NewLine/>
+		<DropDownButton Id="SimDofColorFreeCmd" ShowText="false" SynchronizedWithCurrentItem="true"/>
+		<Label Id="SimDofLabelFree" ShowText="true"/>
+	</HUD>
+</HUDs>

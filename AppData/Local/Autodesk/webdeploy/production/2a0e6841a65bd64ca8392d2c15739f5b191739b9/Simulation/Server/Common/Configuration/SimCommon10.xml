@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<root DllName="SimCommon10" Identifier="SimCommon" IsCoreAddIn="0" IsUIAddIn="0" IsApplicationAddIn="1" AppName="Simulation" Name="SimCommon">
+	<NeededAddIns>
+		<NeededAddIn>Scene</NeededAddIn>
+		<NeededAddIn>CommonData</NeededAddIn>
+	    <NeededAddIn>Body</NeededAddIn>
+		<NeededAddIn>Component</NeededAddIn>
+		<NeededAddIn>EntityTracking</NeededAddIn>
+	    <NeededAddIn>Fusion</NeededAddIn>
+    	<NeededAddIn>SimBase</NeededAddIn>
+    <NeededAddIn>NeutronProducer</NeededAddIn>
+	</NeededAddIns>
+	<AssetType Name="Simulation Studies" Identifier="SimStudiesAssetType" BaseServerIdentifier="Neutron3DAssetType" AddInId="SimCommon" DefaultDocTypeId="FusionDocType"/>
+	<!--<AssetType Name="Simulation Case" Identifier="SimCaseAssetType" AddInId="SimCommon" DefaultDocTypeId="FusionDocType" Hidden="1"/>-->
+</root>

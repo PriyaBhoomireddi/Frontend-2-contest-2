@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HUDs>
+	<HUD Id="SimHeatSinkAttributeCommand">
+		<DropDownButton Id="infoHeatSinkAttributeType" SynchronizedWithCurrentItem="true"/>
+		<!-- FluidDynamics structural attribute mini-toolbar -->
+		<DropDownEntry Id="infoHeatSinkAttributeMagnitude" WidthString="00.000 mm"/>
+		<DropDownEntry Id="infoHeatSinkAttributeEditX" WidthString="00.000 mm"/>
+		<DropDownEntry Id="infoHeatSinkAttributeEditY" WidthString="00.000 mm"/>
+		<DropDownEntry Id="infoHeatSinkAttributeEditZ" WidthString="00.000 mm"/>
+		<DynamicControls Id="infoHeatSinkAttributeUnitsEnabler" SynchronizedWithCurrentItem="true" ShowText="true"/>
+		<DynamicControls Id="infoHeatSinkAttributeTransform"/>
+	</HUD>
+	<HUD Id="SimForcedFlowAttributeCommand">
+		<DropDownButton Id="infoForcedFlowAttributeType" SynchronizedWithCurrentItem="true"/>
+		<!-- FluidDynamics structural attribute mini-toolbar -->
+		<DropDownEntry Id="infoForcedFlowAttributeMagnitude" WidthString="000.000 lbforce"/>
+		<DropDownEntry Id="infoForcedFlowAttributeEditX" WidthString="000.000 lbforce"/>
+		<DropDownEntry Id="infoForcedFlowAttributeEditY" WidthString="000.000 lbforce"/>
+		<DropDownEntry Id="infoForcedFlowAttributeEditZ" WidthString="000.000 lbforce"/>
+		<DynamicControls Id="infoForcedFlowAttributeUnitsEnabler" SynchronizedWithCurrentItem="true" ShowText="true"/>
+		<DynamicControls Id="infoForcedFlowAttributeTransform"/>
+	</HUD>
+</HUDs>

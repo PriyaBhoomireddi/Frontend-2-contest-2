@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE Toolbars [
+  <!ENTITY SimulationPanels SYSTEM "../../../../LinearStaticStress/UI/Resources/Toolbar/Shared/SimulationPanels.xml">
+  <!ENTITY DebugPanels SYSTEM "../../../../../UI/CommonUI/Resources/Toolbar/Shared/DebugPanels.xml">
+]>
+<Toolbars>
+  <CommandToolbar Id="FluidDynamicsToolbar">
+    <DropDownButton Id="ActivateEnvironmentCommand" ShowText="true" SynchronizedWithCurrentItem="true"/>
+
+    <!-- ************** -->
+    <!-- "SETUP > Simplify" command will enable 3 contextual tabs: Solid, Surface, and Idealize-->
+    <!-- ************** -->
+    <!-- ************** -->
+    <!-- "RESULTS > Compare" command will enable 1 contextual tab: Compare  -->
+    <!-- ************** -->
+
+    <!--All Tab info-->
+    <Tab Id="SimSetupTab"
+         _LCLZId="lclzSimSetupTab"
+         _LCLZText="SETUP"
+         Panels="StudyPanel;SimplifyPanel;MaterialsPanel;ForceLoadsPanel;HeatLoadsPanel;CoolingPanel;CriticalTempsPanel;ManagePanel;SolvePanel;FluidDynamicsWebViewerPanel;InspectPanel;SelectPanel"
+         Environment="SimulationEnvironment"/>
+    
+    <Tab Id="SimResultsViewerTab"
+         _LCLZId="lclzResultsViewerTab"
+         _LCLZText="RESULTS"
+         Panels="FDViewModePanel;FinishFluidDynamicsWebViewerPanel"
+         Environment="SimulationEnvironment"
+         ContextualFinishId="FinishHawkeyeCmd"/>
+
+    <Tab Id="DebugTab"
+         _LCLZId="lclzDebugTab"
+         _LCLZText="DEBUG"
+         Panels="FilePanel;DiagnosticsPanel;UIDemo"
+         Environment="DebugEnvironment"/>
+
+    <!-- ******************************** -->
+    <!-- **                            ** -->
+    <!-- **  PANELS                    ** -->
+    <!-- **                            ** -->
+    <!-- ******************************** -->
+    &SimulationPanels;
+    &DebugPanels;
+
+    <Panel Id="ForceLoadsPanel" _LCLZId="SimForceLoadsPanel" _LCLZText="Gravity" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="SimGravityActivateCommand"/>
+        <Button Id="SimGravityDeactivateCommand"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="SimGravityActivateCommand"/>
+        <Button Id="SimGravityDeactivateCommand"/>
+        <Button Id="SimGravityCommand"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="HeatLoadsPanel" _LCLZId="SimHeatLoadsPanel" _LCLZText="Heat Loads" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="SimFDInternalHeatAttributeCommand"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="SimFDInternalHeatAttributeCommand"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="CoolingPanel" _LCLZId="SimCoolingPanel" _LCLZText="Cooling" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="SimHeatSinkAttributeCommand"/>
+        <Button Id="SimForcedFlowAttributeCommand"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="SimHeatSinkAttributeCommand"/>
+        <Button Id="SimForcedFlowAttributeCommand"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="CriticalTempsPanel" _LCLZId="SimCriticalTemperaturesPanel" _LCLZText="Critical Temperatures" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="SimCriticalTemperaturesCommand"/>
+      </Controls>
+    </Panel>
+
+    <Panel Id="FDViewModePanel" _LCLZId="FDViewModePanel" _LCLZText="View Results">
+      <Controls>
+        <Button Id="SimFDRiskScaleCommand"/>
+        <Button Id="SimFDTemperatureScaleCommand"/>
+        <Button Id="SimFDSectionModeCommand"/>
+      </Controls>
+    </Panel>
+
+    <Panel Id="FinishFluidDynamicsWebViewerPanel" _LCLZId="SimFinishFluidDynamicsWebViewerPanel" _LCLZText="Finish Results" ContextualFinishId="FinishHawkeyeCmd" AvailableBaseTabs="{none}">
+      <Controls>
+        <Button Id="FinishHawkeyeCmd"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="FinishHawkeyeCmd"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="FluidDynamicsWebViewerPanel" _LCLZId="SimFluidDynamicsWebViewerPanel" _LCLZText="Results" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="SimFluidDynamicsWebViewerCmd" HotKey="Ctrl+r"/>
+      </Controls>
+    </Panel>
+
+  </CommandToolbar>
+</Toolbars>

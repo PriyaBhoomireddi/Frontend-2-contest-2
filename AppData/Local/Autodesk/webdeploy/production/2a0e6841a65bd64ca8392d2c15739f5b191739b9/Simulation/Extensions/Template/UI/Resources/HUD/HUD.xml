@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HUDs>
+	<HUD Id="SimTemplateStructuralAttributeCommand">
+		<DropDownButton Id="infoTemplateStructuralAttributeType" SynchronizedWithCurrentItem="true"/>
+		<!-- Template structural attribute mini-toolbar -->
+		<DropDownEntry Id="infoTemplateStructuralAttributeMagnitude" WidthString="000.000 lbforce"/>
+		<DropDownEntry Id="infoTemplateStructuralAttributeEditX" WidthString="000.000 lbforce"/>
+		<DropDownEntry Id="infoTemplateStructuralAttributeEditY" WidthString="000.000 lbforce"/>
+		<DropDownEntry Id="infoTemplateStructuralAttributeEditZ" WidthString="000.000 lbforce"/>
+		<DynamicControls Id="infoTemplateStructuralAttributeUnitsEnabler" SynchronizedWithCurrentItem="true" ShowText="true"/>
+		<DynamicControls Id="infoTemplateStructuralAttributeTransform"/>
+	</HUD>
+</HUDs>

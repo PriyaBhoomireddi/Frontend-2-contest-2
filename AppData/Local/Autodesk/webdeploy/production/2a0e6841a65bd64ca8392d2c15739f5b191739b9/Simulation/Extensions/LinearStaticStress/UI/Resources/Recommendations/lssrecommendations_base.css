@@ -1,0 +1,17 @@
+/*
+Notice that some pixel sizes in this css file are set using schema
+    font-size: scaled_12px;
+etc.
+These scaled_*px values are multiplied with the current ToolbarFramework::Parameters::scaleFactor();
+That means that this css file cannot be used "as-is", but it is a template to be translated in cpp.
+*/
+
+QWidget#LSSResultRecommendationWidget {
+    background-color: #FFFFFF;
+}
+
+QTextBrowser#textBrowser {
+    font-family: Arial, Sans-Serif;
+    font-size: scaled_14px;
+    border: 1px solid #00A5E1;
+}

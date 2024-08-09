@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HUDs>
+  <!-- PCB commands -->
+  <HUD Id="PCBMoveComponentsCmd">
+    <DynamicControls Id="PCBMoveTransformInput"/>
+  </HUD>
+  <HUD Id="PCBMoveComponentBodyCmd">
+    <DynamicControls Id="PCBMoveBodyTransformInput"/>
+  </HUD>
+</HUDs>

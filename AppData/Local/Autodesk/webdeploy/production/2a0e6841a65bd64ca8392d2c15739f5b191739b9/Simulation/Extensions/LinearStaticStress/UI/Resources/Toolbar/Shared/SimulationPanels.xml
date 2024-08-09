@@ -1,0 +1,322 @@
+<Panel Id="ResultToolsPanel" _LCLZId="lclzResultTools" _LCLZText="RESULT TOOLS" >
+  <Controls>
+    <Button Id="SimAnimateCommand"/>
+    <Button Id="SimPromoteCmd"/>
+    <Button Id="SimResultLegendOptionsCmd"/>
+    <Button Id="SimReportCmd"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SimAnimateCommand"/>
+    <Button Id="SimPromoteCmd"/>
+    <Separator />
+    <Button Id="SimConvergencePlotCmd"/>
+    <Separator />
+    <Button Id="SimMassParticipationCommand"/>
+    <Button Id="SimResultLegendOptionsCmd"/>
+    <Button Id="SimEditResultsLegendCmd"/>
+    <Button Id="SimReportCmd"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="ComparePanel" _LCLZId="SimComparePanel" _LCLZText="COMPARE" Environment="SimulationEnvironment">
+  <Controls>
+    <Button Id="SimActivateCompareCmd"/>
+  </Controls>
+</Panel>
+
+<Panel Id="DeformationPanel" _LCLZId="lclzDeformation" _LCLZText="DEFORMATION" >
+  <Controls>
+    <Button Id="SimDisplacementScaleNoneCmd"/>
+    <Button Id="SimDisplacementScaleActualCmd"/>
+    <Button Id="SimDisplacementScaleNormalCmd"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SimDisplacementScaleNoneCmd"/>
+    <Button Id="SimDisplacementScaleActualCmd"/>
+    <Button Id="SimDisplacementScaleSmallCmd"/>
+    <Button Id="SimDisplacementScaleNormalCmd"/>
+    <Button Id="SimDisplacementScaleLargeCmd"/>
+    <Button Id="SimDisplacementScaleLargestCmd"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="SolvePanel" _LCLZId="SimSolvePanel" _LCLZText="Solve" Environment="SimulationEnvironment">
+  <Controls>
+    <!--<Button Id="SimFEACSMeshSolveCmd"/>-->
+    <Button Id="SimFEACSPreSolveCheckCmd"/>
+    <Button Id="SimSolveCmd"/>
+    <Button Id="SimShowJobsDlgCmd"/>
+    <Button Id="SimSolveDetailsCmd"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SimFEACSPreSolveCheckCmd"/>
+    <Button Id="SimFEACSDataCheckCmd"/>
+    <Separator/>
+    <Button Id="SimSolveCmd"/>
+    <Button Id="SimShowJobsDlgCmd"/>
+    <Button Id="SimFEACSMeshSolveCmd"/>
+    <!--<Button Id="SimFEACSMeshSolveASynLocalCmd"/>
+			<Button Id="SimFEACSMeshCloudSolveCmd"/>-->
+    <!--<Separator/>
+			<Button Id="SimFEACSTopologyOptimizationSynchronousSolveCmd"/>
+			<Button Id="SimFEACSOptimizationCloudSolveCmd"/>-->
+    <Separator/>
+    <Button Id="SimSolveDetailsCmd"/>
+    <Separator/>
+    <Button Id="SimShowMeshingIssuesCmd"/>
+    <Button Id="SimHideMeshingIssuesCmd"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="AnsysPanel" _LCLZId="SimAnsysPanel" _LCLZText="ANSYS" Environment="SimulationEnvironment">
+  <Controls>
+    <Button Id="SimExportToMechanicalCommand"/>
+    <Button Id="SimExportToDiscoveryCommand"/>
+    <Button Id="SimExportToScalarisCommand"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SimExportToMechanicalCommand"/>
+    <Button Id="SimExportToDiscoveryCommand"/>
+    <Button Id="SimExportToScalarisCommand"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="ManagePanel" _LCLZId="SimManagePanel" _LCLZText="Manage" Environment="SimulationEnvironment">
+  <Controls>
+    <Button Id="SimCasePropertiesCmd"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SimCasePropertiesCmd"/>
+    <Button Id="SimShowAttributesCommand"/>
+    <Button Id="SimMeshRefinementByEntitiesCmd"/>
+    <Button Id="SimConvergenceSettingsCmd"/>
+    <Button Id="SimExplicitElementDeletionCommand"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="ResultsManagePanel" _LCLZId="SimResultsManagePanel" _LCLZText="Manage" Environment="SimulationEnvironment">
+  <Controls>
+    <Button Id="SimShowAttributesCommand"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SimShowAttributesCommand"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="SynchronizePanel" _LCLZId="SimSynchronizePanel" _LCLZText="Synchronize" Environment="SimCompareEnvironment">
+  <Controls>
+    <Button Id="SimSyncCameraCmd"/>
+    <Button Id="SimSyncRefValuesCmd"/>
+    <Button Id="SimSyncResultTypeCmd"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SimSyncCameraCmd"/>
+    <Button Id="SimSyncResultTypeCmd"/>
+    <Button Id="SimSyncRefValuesCmd"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="ResultsAnimatePanel" _LCLZId="SimAnimatePanel" _LCLZText="Animate" Environment="SimCompareEnvironment">
+  <Controls>
+    <Button Id="SimAnimateCommand"/>
+  </Controls>
+</Panel>
+
+<Panel Id="ResultsOptionsPanel" _LCLZId="SimOptionsPanel" _LCLZText="Options" Environment="SimCompareEnvironment">
+  <Controls>
+    <Button Id="SimResultLegendOptionsCmd"/>
+    <Button Id="SimEditResultsLegendCmd"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SimEditResultsLegendCmd"/>
+    <Button Id="SimResultLegendOptionsCmd"/>
+    <Button Id="SimTransResult2DPlotCmd"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="CompareLayoutsPanel" _LCLZId="SimCompareLayoutsPanel" _LCLZText="Layouts" Environment="SimCompareEnvironment">
+  <Controls>
+    <Button Id="SimLayout2VCmd"/>
+    <Button Id="SimLayout2HCmd"/>
+    <Button Id="SimLayout2x2Cmd"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SimLayout2HCmd"/>
+    <Button Id="SimLayout2VCmd"/>
+    <Button Id="SimLayout1V2HCmd"/>
+    <Button Id="SimLayout1H2VCmd"/>
+    <Button Id="SimLayout2x2Cmd"/>
+    <Button Id="SimLayout1H3VCmd"/>
+    <Button Id="SimLayout1V3HCmd"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="PostMeshPanel" _LCLZId="SimMeshDisplayPanel" _LCLZText="Display" Environment="SimCompareEnvironment">
+  <Controls>
+    <Button Id="SimToggleMeshCmd"/>
+  </Controls>
+  <PanelDropdown>
+    <RadioButton Id="SimToggleMeshCmd"/>
+    <RadioButton Id="SimToggleWireframeCmd"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="StudyPanel" _LCLZId="SimStudyPanel" _LCLZText="Study" Environment="SimulationEnvironment">
+  <Controls>
+    <Button Id="SimCreateSimCaseCommand"/>
+    <Button Id="SimUpdateCommand"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SimCreateSimCaseCommand"/>
+    <Button Id="SimCreateSimCaseFromGenerativeDesignCommand"/>
+    <Button Id="SimUpdateCommand"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="SimplifyPanel" _LCLZId="SimSimplifyPanel" _LCLZText="Simplify" Environment="SimulationEnvironment">
+  <Controls>
+    <Button Id="SwitchToSimplifyCommand"/>
+  </Controls>
+</Panel>
+
+<Panel Id="MaterialsPanel" _LCLZId="SimMaterialsPanel" _LCLZText="Materials" Environment="SimulationEnvironment">
+  <Controls>
+    <Button Id="SimOverrideMaterialCommand"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SimOverrideMaterialCommand"/>
+    <Button Id="SimMaterialPropertiesCommand"/>
+    <Button Id="SimMaterialEditCommand"/>
+    <CheckBox Id="SimSuppressAppearanceCommand"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="DisplayPanel" _LCLZId="SimViewsPanel" _LCLZText="Display" Environment="SimulationEnvironment">
+  <Controls>
+    <!-- Note: There have to be used Button. CheckBox does not work here. CheckBox promotion from PanelDropdown works well. -->
+    <Button Id="SimDisplayNormalViewCommand"/>
+    <Button Id="SimDisplayDOFViewCommand"/>
+    <Button Id="SimToggleMeshCmd"/>
+  </Controls>
+  <PanelDropdown>
+    <RadioButton Id="SimDisplayNormalViewCommand"/>
+    <RadioButton Id="SimToggleMeshCmd"/>
+    <Separator/>
+    <RadioButton Id="SimDisplayDOFViewCommand"/>
+    <RadioButton Id="SimDisplayGroupsViewCommand"/>
+    <Separator/>
+    <RadioButton Id="SimToggleWireframeCmd"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="ResultsDisplayPanel" _LCLZId="ResultsViewsPanel" _LCLZText="Display" Environment="SimulationEnvironment">
+  <Controls>
+    <!-- Note: There have to be used Button. CheckBox does not work here. CheckBox promotion from PanelDropdown works well. -->
+    <Button Id="SimDisplayDOFViewCommand"/>
+    <Button Id="SimToggleMeshCmd"/>
+  </Controls>
+  <PanelDropdown>
+    <RadioButton Id="SimToggleMeshCmd"/>
+    <Separator/>
+    <RadioButton Id="SimDisplayDOFViewCommand"/>
+    <RadioButton Id="SimDisplayGroupsViewCommand"/>
+    <Separator/>
+    <RadioButton Id="SimToggleWireframeCmd"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="ResultsSolvePanel" _LCLZId="SimSolvePanel" _LCLZText="Solve" Environment="SimulationEnvironment">
+  <Controls>
+    <Button Id="SimShowJobsDlgCmd"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SimFEACSPreSolveCheckCmd"/>
+    <Button Id="SimFEACSDataCheckCmd"/>
+    <Separator/>
+    <Button Id="SimSolveCmd"/>
+    <Button Id="SimShowJobsDlgCmd"/>
+    <Separator/>
+    <Button Id="SimSolveDetailsCmd"/>
+    <Button Id="SimSolveLogCmd" />
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="InspectPanel" _LCLZId="SimInspectPanel" _LCLZText="Inspect" Environment="SimulationEnvironment">
+  <Controls>
+    <Button Id="SimMeasureCommand"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SimMeasureCommand"/>
+    <Separator/>
+    <Button Id="FusionViewColorCyclingToggleCmd"/>
+    <Button Id="SimSurfaceTransparencyCmd"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="ResultsInspectPanel" _LCLZId="SimInspectPanel" _LCLZText="Inspect" Environment="SimulationEnvironment">
+  <Controls>
+    <Button Id="SimMinMaxProbesCmd"/>
+    <Button Id="SimPointProbeCreateCmd"/>
+    <Button Id="SimFEACSReactionForceCmd"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SimMinMaxProbesCmd"/>
+    <Button Id="SimSurfaceProbesCmd"/>
+    <Button Id="SimPointProbeCreateCmd"/>
+    <Button Id="SimShowAllProbesCmd"/>
+    <Button Id="SimHideAllProbesCmd"/>
+    <Button Id="SimDeleteAllProbesCmd"/>
+    <Button Id="SimFEACSReactionForceCmd"/>
+    <Button Id="SimClippingPlaneCreateCmd"/>
+    <Separator/>
+    <Button Id="SimSurfaceTransparencyCmd"/>
+    <Button Id="SimSolveLogCmd"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="SelectPanel" _LCLZId="SimSelectPanel" _LCLZText="Select" Environment="SimulationEnvironment">
+  <Controls>
+    <Button Id="SelectCommand"/>
+  </Controls>
+  <PanelDropdown>
+    <Button Id="SelectCommand"/>
+    <Separator/>
+    <Button Id="selectWindow"/>
+    <Button Id="selectFreeForm"/>
+    <Button Id="selectPaint"/>
+    <Button Id="selectAdjacent"/>
+    <Separator/>
+    <DropDownButton _LCLZId="lclzSelectionTools" _LCLZText="Selection Tools">
+      <Button Id="SimSelectByNameCommand"/>
+      <Button Id="SimSelectByBoundaryCommand"/>
+      <Button Id="SimSelectBodiesBySizeCommand"/>
+      <Button Id="SimSelectByInvertCommand"/>
+      <Button Id="FusionSelectSeedAndBoundaryFacesCommand" />
+      <Button Id="SimSelectAllOccurrencesCommand"/>
+      <Button Id="SimSelectSimilarOccurrencesCommand"/>
+      <Button Id="SimVisibilityAllCommand"/>
+      <Button Id="SimIsolateCommand"/>
+      <Button Id="SimUnisolateCommand"/>
+    </DropDownButton>
+    <Separator/>
+    <DropDownButton _LCLZId="lclzSelectionPriorityCommands" _LCLZText="Selection Priority">
+      <Button Id="SelectBodyPriorityCommand"/>
+      <Button Id="SelectFacePriorityCommand"/>
+      <Button Id="SelectEdgePriorityCommand"/>
+      <!--Button Id="SelectComponentPriorityCommand" /-->
+    </DropDownButton>
+    <DropDownButton Id="SelectionFilterCommand" CheckBoxList="true"/>
+  </PanelDropdown>
+</Panel>
+
+<Panel Id="FinishSimComparePanel" _LCLZId="lclzFinishSimComparePanel" _LCLZText="Finish Compare" ContextualFinishId="SimFinishCompareCmd" AvailableBaseTabs="{none}" >
+  <Controls>
+    <Button Id="SimFinishCompareCmd" />
+  </Controls>
+</Panel>
+
+<Panel Id="FinishResultsPanel" _LCLZId="lclzFinishResultsPanel" _LCLZText="Finish Results" ContextualFinishId="FinishResultsCmd" AvailableBaseTabs="{none}" >
+  <Controls>
+    <Button Id="FinishResultsCmd" />
+  </Controls>
+</Panel>

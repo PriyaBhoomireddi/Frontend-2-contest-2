@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Toolbars [
+  <!ENTITY DebugPanels SYSTEM "../../../../../../UI/CommonUI/Resources/Toolbar/Shared/DebugPanels.xml">
+]>
+<Toolbars>
+  <CommandToolbar Id="GenerativeToolbar">
+    <DropDownButton Id="ActivateEnvironmentCommand" ShowText="true" SynchronizedWithCurrentItem="true"/>
+
+    <!-- ************** -->
+    <!-- "DEFINE > Explore Generative Results" command will enable 1 contextual tabs: Explore-->
+    <!-- ************** -->
+
+    <!--All Tab info-->
+    <Tab Id="DefineTab"
+         _LCLZId="lclzGenDefineTab"
+         _LCLZText="DEFINE"
+         Panels="GuidePanel;GenStudyPanel;GenModelPanel;GenDesignSpacePanel;GenDesignConditionsPanel;GenDesignCriteriaPanel;GenMaterialsPanel;GenSolvePanel;GenExplore;GenInspectPanel;GenSelectPanel"
+         Environment="GenerativeEnvironment"/>
+    
+    <Tab Id="ExploreTab"
+         _LCLZId="lclzGenExploreTab"
+         _LCLZText="EXPLORE"
+         Panels="ExploreDisplayPanel;ExploreDesignSpaceViewPanel;ExploreComparePanel;ExploreExportPanel;FinishOutcomeViewPanel;FinishExplorePanel"
+         Environment="GenerativeEnvironment"
+         ContextualFinishId="FinishExploreCmd"/>
+    
+    <Tab Id="OutcomeViewTab"
+         _LCLZId="lclzGenOutcomeViewTab"
+         _LCLZText="OUTCOME VIEW"
+         Panels="ExploreDisplayPanel;ExploreDesignSpaceViewPanel;ExploreComparePanel;ExploreTagPanel;ExploreExportPanel;FinishOutcomeViewPanel;FinishExplorePanel"
+         Environment="GenerativeEnvironment"
+         ContextualFinishId="FinishOutcomeViewCmd"/>
+
+    <Tab Id="DebugTab"
+         _LCLZId="lclzDebugTab"
+         _LCLZText="DEBUG"
+         Panels="FilePanel;DiagnosticsPanel;UIDemo"
+         Environment="DebugEnvironment"/>
+
+    <!-- ******************************** -->
+    <!-- **                            ** -->
+    <!-- **  PANELS                    ** -->
+    <!-- **                            ** -->
+    <!-- ******************************** -->
+    &DebugPanels;
+
+    <Panel Id="GenStudyPanel" _LCLZId="GenStudyPanel" _LCLZText="Study" Environment="GenerativeEnvironment">
+      <Controls>
+        <Button Id="SimCreateGenCaseCmd"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="SimCreateGenCaseCmd"/>
+        <Button Id="GenCasePropertiesCmd"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="GenModelPanel" _LCLZId="GenModelPanel" _LCLZText="Edit Model" Environment="GenerativeEnvironment">
+      <Controls>
+        <Button Id="EditModelCommand"/>
+      </Controls>
+    </Panel>
+
+    <Panel Id="GuidePanel" _LCLZId="LearningPanel" _LCLZText="Guide" Environment="GenerativeEnvironment">
+      <Controls>
+        <Button Id="ToggleLearningPanelCmd"/>
+      </Controls>
+    </Panel>
+
+    <Panel Id="GenDesignSpacePanel" _LCLZId="GenDesignSpacePanel" _LCLZText="Design Space" Environment="GenerativeEnvironment">
+      <Controls>
+        <Button Id="SimGenerativeKeepBoundaryCommand"/>
+        <Button Id="SimGenerativeObstacleBoundaryCommand"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="SimGenerativeKeepBoundaryCommand"/>
+        <Button Id="SimGenerativeObstacleBoundaryCommand"/>
+        <Button Id="SimGenerativeSeedTargetCommand"/>
+        <Button Id="SimGenerativeSymmetryPlanesBoundaryCommand"/>
+        <Button Id="SimGenerativeObstacleOffsetCommand"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="GenDesignConditionsPanel" _LCLZId="GenDesignConditionsPanel" _LCLZText="Design Conditions" Environment="GenerativeEnvironment">
+      <Controls>
+        <Button Id="GenNewConstraintCmd"/>
+        <Button Id="GenLoadsCommand"/>
+        <Button Id="GenFluidsInletCommand"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="GenNewConstraintCmd"/>
+        <Button Id="GenLoadsCommand"/>
+        <Button Id="GenShowAttributesCommand"/>
+        <Button Id="GenFluidsInletCommand"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="GenDesignCriteriaPanel" _LCLZId="GenDesignCriteriaPanel" _LCLZText="Design Criteria" Environment="GenerativeEnvironment">
+      <Controls>
+        <Button Id="SimGenerativeObjectivesCommand"/>
+        <Button Id="SimGenerativeManufacturingCommand"/>
+      </Controls>
+    </Panel>
+
+    <Panel Id="GenMaterialsPanel" _LCLZId="GenMaterialsPanel" _LCLZText="Materials" Environment="GenerativeEnvironment">
+      <Controls>
+        <Button Id="SimGenerativeStudyMaterialsCommand"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="SimGenerativeStudyMaterialsCommand"/>
+        <Button Id="SimGenerativeFluidMaterialCommand"/>
+        <Button Id="GenMaterialEditCommand"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="GenSolvePanel" _LCLZId="GenSolvePanel" _LCLZText="Generate" Environment="GenerativeEnvironment">
+      <Controls>
+        <Button Id="GenFEACSPreSolveCheckCmd"/>
+        <Button Id="SimGenerativePreviewCmd"/>
+        <Button Id="GenSolveCmd"/>
+        <Button Id="GenShowJobsDlgCmd"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="GenFEACSPreSolveCheckCmd"/>
+        <Button Id="SimGenerativePreviewCmd"/>
+        <Button Id="GenSolveCmd"/>
+        <Button Id="GenShowJobsDlgCmd"/>
+        <Separator/>
+        <Button Id="GenGenerateDetailsCmd"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="GenExplore" _LCLZId="GenExplore" _LCLZText="Explore" Environment="GenerativeEnvironment">
+      <Controls>
+        <Button Id="ExploreCommand"/>
+      </Controls>
+    </Panel>
+
+    <Panel Id="ExploreDisplayPanel" _LCLZId="lclzExploreDisplayPanel" _LCLZText="Display" Environment="ExploreEnvironment">
+      <Controls>
+        <Button Id="ExploreDisplayThumbnailViewCmd" />
+        <Button Id="ExploreDisplayPropertiesViewCmd" />
+        <Button Id="ExploreDisplayScatterPlotViewCmd" />
+        <Button Id="ExploreDisplayTableViewCmd" />
+        <Button Id="ExploreOutcomeProfileDisplayModelViewCmd"/>
+        <Button Id="ExploreOutcomeProfileDisplayStressViewCmd"/>
+        <Button Id="ExploreOutcomeProfileDisplayExportPreviewCmd"/>
+        <Button Id="ExploreOutcomeProfileDisplayDesignSpaceViewCmd"/>
+      </Controls>
+      <PanelDropdown>
+        <RadioButton Id="ExploreDisplayThumbnailViewCmd" />
+        <RadioButton Id="ExploreDisplayPropertiesViewCmd" />
+        <RadioButton Id="ExploreDisplayScatterPlotViewCmd" />
+        <RadioButton Id="ExploreDisplayTableViewCmd" />
+        <Separator/>
+        <RadioButton Id="ExploreOutcomeProfileDisplayModelViewCmd"/>
+        <RadioButton Id="ExploreOutcomeProfileDisplayStressViewCmd"/>
+        <RadioButton Id="ExploreOutcomeProfileDisplayExportPreviewCmd"/>
+        <Separator/>
+        <RadioButton Id="ExploreOutcomeProfileDisplayDesignSpaceViewCmd"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="ExploreDesignSpaceViewPanel" _LCLZId="lclzExploreDesignSpaceViewPanel" _LCLZText="Show" Environment="ExploreEnvironment">
+      <Controls>
+          <Button Id="ExploreOutcomeProfileDisplayPreserveViewCmd"/>
+          <Button Id="ExploreOutcomeProfileDisplayObstacleViewCmd"/>
+          <Button Id="ExploreOutcomeProfileDisplayStartingShapeViewCmd"/>
+      </Controls>
+      <PanelDropdown>
+          <CheckBox Id="ExploreOutcomeProfileDisplayPreserveViewCmd"/>
+          <CheckBox Id="ExploreOutcomeProfileDisplayObstacleViewCmd"/>
+          <CheckBox Id="ExploreOutcomeProfileDisplayStartingShapeViewCmd"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="ExploreComparePanel" _LCLZId="lclzExploreComparePanel" _LCLZText="Compare" Environment="ExploreEnvironment">
+      <Controls>
+        <Button Id="ExploreOutcomeProfileCompareCmd"/>
+        <Button Id="ExploreOutcomeProfileCompareAddEnabledCmd"/>
+        <Button Id="ExploreOutcomeProfileCompareAddDisabledCmd"/>
+      </Controls>
+    </Panel>
+
+    <Panel Id="ExploreExportPanel" _LCLZId="lclzExploreExportPanel" _LCLZText="Create" Environment="ExploreEnvironment">
+      <Controls>
+        <Button Id="ExploreOutcomeProfileExportSmtCmd"/>
+        <Button Id="ExploreOutcomeProfileExportStlCmd"/>
+      </Controls>
+    </Panel>
+
+    <Panel Id="ExploreTagPanel" _LCLZId="lclzExploreTagPanel" _LCLZText="Tag" Environment="ExploreEnvironment">
+      <Controls>
+        <Button Id="ExploreFavoritesCmd"/>
+        <Button Id="ExploreLabelsCmd"/>
+      </Controls>
+    </Panel>
+
+    <Panel Id="FinishOutcomeViewPanel" _LCLZId="lclzFinishOutcomeViewPanel" _LCLZText="Finish Outcome View" ContextualFinishId="FinishOutcomeViewCmd" AvailableBaseTabs="{none}">
+      <Controls>
+        <Button Id="FinishOutcomeViewCmd"/>
+      </Controls>
+    </Panel>
+
+    <Panel Id="FinishExplorePanel" _LCLZId="lclzFinishExplorePanel" _LCLZText="Finish Explore" ContextualFinishId="FinishExploreCmd" AvailableBaseTabs="{none}" >
+      <Controls>
+        <Button Id="FinishExploreCmd" />
+      </Controls>
+    </Panel>
+
+    <Panel Id="GenInspectPanel" _LCLZId="GenInspectPanel" _LCLZText="Inspect" Environment="GenerativeEnvironment">
+      <Controls>
+        <Button Id="SimMeasureCommand"/>
+      </Controls>
+    </Panel>
+
+    <Panel Id="GenSelectPanel" _LCLZId="GenSelectPanel" _LCLZText="Select" Environment="GenerativeEnvironment">
+      <Controls>
+        <Button Id="SelectCommand" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="SelectCommand" />
+        <Button Id="SelectFacePriorityCommand"/>
+        <Button Id="SelectBodyPriorityCommand"/>
+        <Separator />
+        <Button Id="selectWindow" />
+        <Button Id="selectFreeForm" />
+        <!-- <Button Id="selectPolygon" /> -->
+        <Button Id="selectPaint" />
+        <Button Id="selectAdjacent" />
+        <Separator />
+        <DropDownButton _LCLZId="lclzSelectionTools"
+						_LCLZText="Selection Tools">
+          <Button Id="SelectByNameCommand" />
+          <Button Id="SelectByBoundaryCommand"/>
+          <Button Id="FusionSelectBodiesBySizeCommand" />
+          <Button Id="SelectByInvertCommand" />
+          <Button Id="SelectInternalCommand" />
+          <Button Id="FusionSelectSeedAndBoundaryFacesCommand" />
+          <Button Id="SimSelectAllOccurrencesCommand"/>
+          <Button Id="SimSelectSimilarOccurrencesCommand"/>
+          <Button Id="SimVisibilityAllCommand"/>
+          <Button Id="SimIsolateCommand"/>
+          <Button Id="SimUnisolateCommand"/>
+        </DropDownButton>
+        <Separator />
+        <DropDownButton _LCLZId="lclzSelectionPriorityCommands"
+						_LCLZText="Selection Priority">
+          <Button Id="SelectBodyPriorityCommand" />
+          <Button Id="SelectFacePriorityCommand" />
+          <Button Id="SelectEdgePriorityCommand" />
+          <!--Button Id="SelectComponentPriorityCommand" /-->
+        </DropDownButton>/&gt;
+        <DropDownButton Id="SelectionFilterCommand" CheckBoxList="true" />
+      </PanelDropdown>
+    </Panel>
+
+  </CommandToolbar>
+</Toolbars>

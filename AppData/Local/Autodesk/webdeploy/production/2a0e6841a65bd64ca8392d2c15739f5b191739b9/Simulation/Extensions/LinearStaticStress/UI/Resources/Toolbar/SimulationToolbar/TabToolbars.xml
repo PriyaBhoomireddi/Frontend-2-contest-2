@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE Toolbars [
+  <!ENTITY SimulationPanels SYSTEM "../Shared/SimulationPanels.xml">
+  <!ENTITY DebugPanels SYSTEM "../../../../../../UI/CommonUI/Resources/Toolbar/Shared/DebugPanels.xml">
+]>
+<Toolbars>
+  <CommandToolbar Id="SimulationToolbar">
+    <DropDownButton Id="ActivateEnvironmentCommand" ShowText="true" SynchronizedWithCurrentItem="true"/>
+
+    <!-- ************** -->
+    <!-- "SETUP > Simplify" command will enable 3 contextual tabs: Solid, Surface, and Idealize-->
+    <!-- ************** -->
+    <!-- ************** -->
+    <!-- "RESULTS > Compare" command will enable 1 contextual tab: Compare  -->
+    <!-- ************** -->
+
+    <!--All Tab info-->
+    <Tab Id="SimSetupTab"
+         _LCLZId="lclzSimSetupTab"
+         _LCLZText="SETUP"
+         Panels="StudyPanel;SimplifyPanel;MaterialsPanel;ConstraintsPanel;LoadsPanel;ContactsPanel;DisplayPanel;OptimizationPanel;ManagePanel;SolvePanel;AnsysPanel;ResultsCmdPanel;InspectPanel;SelectPanel"
+         Environment="SimulationEnvironment"/>
+    
+    <Tab Id="SimResultsTab"
+         _LCLZId="lclzSimResultsTab"
+         _LCLZText="RESULTS"
+         Panels="ResultToolsPanel;ComparePanel;DeformationPanel;ResultsDisplayPanel;ResultsManagePanel;ResultsInspectPanel;SelectPanel;FinishResultsPanel"
+         Environment="SimulationEnvironment"
+         ContextualFinishId="FinishResultsCmd"/>
+    
+    <Tab Id="CompareTab"
+         _LCLZId="lclzCompareTab"
+         _LCLZText="COMPARE"
+         Panels="SynchronizePanel;ResultsAnimatePanel;ResultsOptionsPanel;CompareLayoutsPanel;PostMeshPanel;FinishSimComparePanel"
+         Environment="SimulationEnvironment"
+         ContextualFinishId="SimFinishCompareCmd"/>
+
+    <Tab Id="SimSetupDebugTab"
+         _LCLZId="lclzDebugTab"
+         _LCLZText="DEBUG"
+         Panels="FilePanel;DiagnosticsPanel;UIDemo"
+         Environment="DebugEnvironment"/>
+
+    <Tab Id="SimResultsDebugTab"
+         _LCLZId="lclzDebugTab"
+         _LCLZText="DEBUG"
+         Panels="FilePanel;DiagnosticsPanel;UIDemo"
+         Environment="DebugEnvironment"
+         ContextualFinishId="FinishResultsCmd"/>
+
+    <Tab Id="CompareDebugTab"
+         _LCLZId="lclzDebugTab"
+         _LCLZText="DEBUG"
+         Panels="FilePanel;DiagnosticsPanel;UIDemo"
+         Environment="DebugEnvironment"
+         ContextualFinishId="SimFinishCompareCmd"/>         
+
+    <!-- ******************************** -->
+    <!-- **                            ** -->
+    <!-- **  PANELS                    ** -->
+    <!-- **                            ** -->
+    <!-- ******************************** -->
+    &SimulationPanels;
+    &DebugPanels;
+
+    <Panel Id="ConstraintsPanel" _LCLZId="SimConstraintsPanel" _LCLZText="Constraints" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="SimNewConstraintCmd"/>
+        <Button Id="SimTransientPrescribedConstraintCmd"/>
+        <Button Id="SimTransientPrescribedRotationCmd"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="SimNewConstraintCmd"/>
+        <Button Id="SimTransientPrescribedConstraintCmd"/>
+        <Button Id="SimTransientPrescribedRotationCmd"/>
+        <Separator/>
+        <Button Id="SimConnectorBoltCommand"/>
+        <Button Id="SimConnectorRigidBodyCommand"/>
+        <Button Id="SimConnectorSpringCommand"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="LoadsPanel" _LCLZId="SimLoadsPanel" _LCLZText="Loads" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="SimTransientLoadsCommand"/>
+        <Button Id="SimTransientInitialLinearBodyLoadCommand"/>
+        <Button Id="SimExplicitInitialAngularBodyLoadCommand"/>
+        <Button Id="SimLoadsCommand"/>
+        <Button Id="SimThermalLoadsCmd"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="SimTransientLoadsCommand"/>
+        <Button Id="SimLoadsCommand"/>
+        <Button Id="SimThermalLoadsCmd"/>
+        <Separator/>
+        <Button Id="SimTransientInitialLinearBodyLoadCommand"/>
+        <Button Id="SimExplicitInitialAngularBodyLoadCommand"/>
+        <Separator/>
+        <Button Id="SimLinearBodyLoadCommand"/>
+        <Button Id="SimAngularBodyLoadCommand"/>
+        <Separator/>
+        <Button Id="SimGravityActivateCommand"/>
+        <Button Id="SimGravityDeactivateCommand"/>
+        <Button Id="SimGravityCommand"/>
+        <Separator/>
+        <Button Id="SimAutoPointMassCommand"/>
+        <Button Id="SimManualPointMassCommand"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="ContactsPanel" _LCLZId="SimContactsPanel" _LCLZText="Contacts" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="SimGlobalExplicitContactsCommand"/>
+        <Button Id="SimExplicitContactsManagerCommand"/>
+        <Button Id="SimFEACSAutoContactsCmd"/>
+        <Button Id="SimContactsManagerCmd"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="SimGlobalExplicitContactsCommand"/>
+        <Button Id="SimExplicitContactsManagerCommand"/>
+        <Button Id="SimFEACSAutoContactsCmd"/>
+        <Button Id="SimManualContactCommand"/>
+        <Separator/>
+        <Button Id="SimContactsManagerCmd"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="OptimizationPanel" _LCLZId="SimOptimizationPanel" _LCLZText="Shape Optimization" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="SimNewPreserveBoundaryCmd"/>
+        <Button Id="SimOptimizationSetupCommand"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="SimNewPreserveBoundaryCmd"/>
+        <Button Id="SimOptimizationSetupCommand"/>
+        <Button Id="SimNewSymmetryPlaneCmd"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="ResultsPanel" _LCLZId="SimResultsPanel" _LCLZText="Results" Environment="SimulationEnvironment">
+      <Controls>
+        <Button Id="SimAnimateCommand"/>
+        <Button Id="SimPromoteCmd"/>
+        <Button Id="SimConvergencePlotCmd"/>
+        <Button Id="SimMassParticipationCommand"/>
+      </Controls>
+      <PanelDropdown>
+        <DropDownButton _LCLZId="SimDisplacementScaleGroupCmd" _LCLZText="Deformation Scale">
+          <RadioButton Id="SimDisplacementScaleNoneCmd"/>
+          <RadioButton Id="SimDisplacementScaleActualCmd"/>
+          <RadioButton Id="SimDisplacementScaleSmallCmd"/>
+          <RadioButton Id="SimDisplacementScaleNormalCmd"/>
+          <RadioButton Id="SimDisplacementScaleLargeCmd"/>
+          <RadioButton Id="SimDisplacementScaleLargestCmd"/>
+        </DropDownButton>
+        <Button Id="SimAnimateCommand"/>
+        <Separator/>
+        <Button Id="SimPromoteCmd"/>
+        <!--<Button Id="SimContourLinesCmd"/>-->
+        <Button Id="SimConvergencePlotCmd"/>
+        <Button Id="SimMassParticipationCommand"/>
+        <Separator/>
+        <Button Id="SimResultLegendOptionsCmd"/>
+        <Button Id="SimEditResultsLegendCmd"/>
+        <Separator/>
+        <Button Id="SimReportCmd"/>
+        <Separator/>
+        <Button Id="SimSolveLogCmd"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="ResultsCmdPanel" _LCLZId="ResultsCmd" _LCLZText="Results" >
+      <Controls>
+        <Button Id="SimResultsCmd"/>
+      </Controls>
+    </Panel>
+
+  </CommandToolbar>
+</Toolbars>

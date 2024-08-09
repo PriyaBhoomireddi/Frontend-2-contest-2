@@ -1,0 +1,823 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Menus>
+  <!--/////////////////////////////////////////////
+    This document determines the order in which the contents of the menu will appear.
+    To determine whether the command joins the menu or not, edit the CmdDef onAddToContextMenu method.
+  //////////////////////////////////////////////-->
+  
+	<MarkingMenu EnvId="SimLinearStaticStressEnvironment">
+		<Menu TypeId="BaseMenu">
+			<MenuItem Id="RepeatCommand" Position="North"/>
+			<MenuItem Id="RedoCommand" Position="East"/>
+			<MenuItem Id="UndoCommand" Position="West"/>
+			<MenuItem Id="SimDisplayDOFViewCommand" Position="South"/>
+			<MenuItem Id="SimLoadsCommand" Position="Northeast"/>
+			<MenuItem Id="SimOverrideMaterialCommand" Position="Northwest"/>
+			<MenuItem Id="SimNewConstraintCmd" Position="Southeast"/>
+			<MenuItem Id="SimManualContactCommand" Position="Southwest"/>
+		</Menu>
+		<Menu TypeId="Overflow">
+      <!-- Nav controls -->
+      <MenuItem Id="PanCommand"/>
+      <MenuItem Id="ZoomCommand"/>
+      <MenuItem Id="ConstrainedOrbitCommand"/>
+
+      <!-- Orbit command related -->
+      <MenuItem Id="SetOrbitCenterCommand"/>
+      <MenuItem Id="ResetOrbitCenterCommand"/>
+      <Separator />
+			<MenuItem Id="SimShowCommand"/>
+			<MenuItem Id="SimHideCommand"/>
+			<MenuItem Id="SimVisibilityToggleCmd"/>
+			<MenuItem Id="SimVisibilityAllCommand"/>
+			<MenuItem Id="SimShowAllComponentsCommand"/>
+			<MenuItem Id="SimShowAllBodiesCommand"/>
+			<MenuItem Id="SimIsolateCommand"/>
+			<MenuItem Id="SimUnisolateCommand"/>
+			<MenuItem Id="SimUnisolateAllCommand"/>
+			<!-- Object Visibility -->
+			<MenuItem Id="PlanesVisibilityToggleCmd"/>
+			<MenuItem Id="AxesVisibilityToggleCmd" />
+			<MenuItem Id="PointsVisibilityToggleCmd" />
+			<Separator/>
+			<MenuItem Id="SimCreateSimCaseCommand"/>
+      <MenuItem Id="SimCreateSimCaseFromGenerativeDesignCommand"/>
+			<MenuItem Id="SimActivateSimCaseCommand"/>
+			<MenuItem Id="SimCopySimCaseCommand"/>
+			<MenuItem Id="SimActivateCompareCmd"/>
+			<MenuItem Id="SimActivateSimLoadCaseCmd"/>
+			<MenuItem Id="SimCreateSimLoadCaseCmd"/>
+			<MenuItem Id="SimDuplicateSimLoadCaseCmd"/>
+			<MenuItem Id="SimActivateSimCaseForWorkingModelCommand"/>
+			<Separator/>
+			<MenuItem Id="SimCasePropertiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SwitchToFusionCommand"/>
+			<MenuItem Id="SwitchToSimplifyCommand"/>
+			<Separator/>
+			<MenuItem Id="SimAutoPointMassCommand"/>
+			<MenuItem Id="SimManualPointMassCommand"/>
+			<MenuItem Id="SimShowAttributesCommand"/>
+			<MenuItem Id="SimNewConstraintCmd"/>
+			<MenuItem Id="SimLoadsCommand"/>
+			<MenuItem Id="SimGravityActivateCommand"/>
+			<MenuItem Id="SimGravityDeactivateCommand"/>
+			<MenuItem Id="SimGravityCommand"/>
+			<MenuItem Id="SimManualContactCommand"/>
+			<MenuItem Id="SimFEACSAutoContactsCmd"/>
+			<MenuItem Id="SimMeshRefinementByEntitiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimEditAutoPointMassCommand"/>
+			<MenuItem Id="SimEditManualPointMassCommand"/>
+			<MenuItem Id="SimEditConstraintCmd"/>
+			<MenuItem Id="SimEditLoadsCommand"/>
+			<MenuItem Id="SimEditContactCommand"/>
+			<MenuItem Id="SimEditConnectorCommand"/>
+			<MenuItem Id="SimContactsSettingsCmd"/>
+			<MenuItem Id="SimContactsManagerCmd"/>
+			<MenuItem Id="SimEditLinearBodyLoadCommand"/>
+			<MenuItem Id="SimEditAngularBodyLoadCommand"/>
+			<MenuItem Id="SimEditMeshRefinementByEntitiesCmd"/>
+			<MenuItem Id="SimTopologyTargetCommmand"/>
+			<MenuItem Id="SimGenerativeSeedTargetCommmand"/>
+			<Separator/>
+			<MenuItem Id="SimUnsuppressAllCommand"/>
+			<MenuItem Id="SimSuppressCommonCommand"/>
+			<MenuItem Id="SimUnsuppressCommonCommand"/>
+			<MenuItem Id="SimDeleteCommonCommand"/>
+			<Separator/>
+			<MenuItem Id="SimOverrideMaterialCommand"/>
+			<MenuItem Id="SimMaterialPropertiesCommand"/>
+			<MenuItem Id="SimMaterialEditCommand"/>
+			<!--<MenuItem Id="SimUpdateMaterialCommand"/>-->
+			<Separator/>
+			<MenuItem Id="SimOptimizationSetupEditCommand"/>
+			<Separator/>
+			<MenuItem Id="SimDisplayNormalViewCommand"/>
+			<MenuItem Id="SimDisplayDOFViewCommand"/>
+			<MenuItem Id="SimDisplayGroupsViewCommand"/>
+			<MenuItem Id="SimSwitchToPostProcessingCommand"/>
+			<Separator/>
+			<MenuItem Id="SimToggleMeshCmd"/>
+			<MenuItem Id="SimFEACSMeshSolveCmd"/>
+			<!--<MenuItem Id="SimFEACSMeshCloudSolveCmd"/>-->
+			<MenuItem Id="SimMeshSettingsCmd"/>
+			<MenuItem Id="SimHideMeshingIssuesCmd"/>
+			<MenuItem Id="SimShowMeshingIssuesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimFEACSPreSolveCheckCmd"/>
+			<MenuItem Id="SimSolveCmd"/>
+			<MenuItem Id="SimFEACSSolveCmd"/>
+			<MenuItem Id="SimFEACSCloudSolveCmd"/>
+			<!--<MenuItem Id="SimFEACSOptimizationCloudSolveCmd"/>-->
+			<MenuItem Id="SimConvergenceSettingsCmd"/>
+			<MenuItem Id="SimSolveLogCmd"/>
+			<Separator/>
+			<MenuItem Id="SimClippingPlaneCreateCmd"/>
+			<MenuItem Id="SimClippingPlaneEditCmd"/>
+			<MenuItem Id="SimEditResultQueryCmd"/>
+			<MenuItem Id="SimEditPointProbeCmd"/>
+			<MenuItem Id="SimShowAllProbesCmd"/>
+			<MenuItem Id="SimHideAllProbesCmd"/>
+			<MenuItem Id="SimDeleteAllProbesCmd"/>
+			<MenuItem Id="SimProbePropertiesCommand"/>
+			<Separator/>
+			<MenuItem Id="SimReportCmd"/>
+			<MenuItem Id="SimFEACSReactionForceCmd"/>
+			<MenuItem Id="SimConvergencePlotCmd"/>
+			<MenuItem Id="SimMassParticipationCommand"/>
+			<MenuItem Id="SimAnimateCommand"/>
+			<Separator/>
+			<MenuItem Id="SimSelectRelatedContactsCommand"/>
+			<Separator/>
+			<MenuItem Id="SimDocPropertiesCmd"/>
+			<MenuItem Id="FusionPropertiesCommand"/>
+			<MenuItem Id="SimPropertiesCommand"/>
+			<MenuItem Id="SimUnitsSettingsCommand"/>
+			<Separator/>
+			<MenuItem Id="SimSelectAllOccurrencesCommand"/>
+			<MenuItem Id="SimSelectSimilarOccursCommand"/>
+			<MenuItem Id="CreateSelectionGroupCmd"/>
+			<MenuItem Id="SimSelectByInvertCommand"/>
+			<Separator/>
+			<MenuItem Id="DeleteSelectionGroupCmd"/>      
+			<MenuItem Id="SimCopyCommonCommand"/>
+			<MenuItem Id="PasteCommand"/>
+			<!-- NamedViews (browser)-->
+			<Separator />
+			<MenuItem Id="AddNamedViewCommand" />
+			<MenuItem Id="RemoveNamedViewCommand" />
+			<MenuItem Id="UpdateNamedViewCameraCommand" />
+			<!-- Find in Window / Browser -->      
+			<Separator/>
+			<MenuItem Id="FindInBrowser"/>
+			<MenuItem Id="FindInWindow"/>
+		</Menu>
+	</MarkingMenu>
+
+	<MarkingMenu EnvId="SimNonlinearExplicitEnvironment">
+		<Menu TypeId="BaseMenu">
+			<MenuItem Id="RepeatCommand" Position="North"/>
+			<MenuItem Id="RedoCommand" Position="East"/>
+			<MenuItem Id="UndoCommand" Position="West"/>
+			<MenuItem Id="SimDisplayDOFViewCommand" Position="South"/>
+			<MenuItem Id="SimTransientLoadsCommand" Position="Northeast"/>
+			<MenuItem Id="SimLoadsCommand" Position="Northeast"/>
+			<MenuItem Id="SimOverrideMaterialCommand" Position="Northwest"/>
+			<MenuItem Id="SimNewConstraintCmd" Position="Southeast"/>
+			<!--<MenuItem Id="SimManualContactCommand" Position="Southwest"/>-->
+		</Menu>
+		<Menu TypeId="Overflow">
+			<!-- Orbit command related -->
+      <!-- Nav controls -->
+      <MenuItem Id="PanCommand"/>
+      <MenuItem Id="ZoomCommand"/>
+      <MenuItem Id="ConstrainedOrbitCommand"/>
+
+      <!-- Orbit command related -->
+      <MenuItem Id="SetOrbitCenterCommand"/>
+      <MenuItem Id="ResetOrbitCenterCommand"/>
+      <Separator />
+			<MenuItem Id="SimShowCommand"/>
+			<MenuItem Id="SimHideCommand"/>
+			<MenuItem Id="SimVisibilityToggleCmd"/>
+			<MenuItem Id="SimVisibilityAllCommand"/>
+			<MenuItem Id="SimShowAllComponentsCommand"/>
+			<MenuItem Id="SimShowAllBodiesCommand"/>
+			<MenuItem Id="SimIsolateCommand"/>
+			<MenuItem Id="SimUnisolateCommand"/>
+			<MenuItem Id="SimUnisolateAllCommand"/>
+			<!-- Object Visibility -->
+			<MenuItem Id="PlanesVisibilityToggleCmd"/>
+			<MenuItem Id="AxesVisibilityToggleCmd" />
+			<MenuItem Id="PointsVisibilityToggleCmd" />
+			<Separator/>
+			<MenuItem Id="SimCreateSimCaseCommand"/>
+      <MenuItem Id="SimCreateSimCaseFromGenerativeDesignCommand"/>
+			<MenuItem Id="SimActivateSimCaseCommand"/>
+			<MenuItem Id="SimCopySimCaseCommand"/>
+			<MenuItem Id="SimActivateCompareCmd"/>
+			<MenuItem Id="SimActivateSimCaseForWorkingModelCommand"/>
+			<Separator/>
+			<MenuItem Id="SimCasePropertiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SwitchToFusionCommand"/>
+			<MenuItem Id="SwitchToSimplifyCommand"/>
+			<Separator/>
+			<MenuItem Id="SimToggleMeshCmd"/>
+			<MenuItem Id="SimFEACSMeshSolveCmd"/>
+			<MenuItem Id="SimFEACSMeshSolveASynLocalCmd"/>
+			<MenuItem Id="SimMeshSettingsCmd"/>
+			<MenuItem Id="SimHideMeshingIssuesCmd"/>
+			<MenuItem Id="SimShowMeshingIssuesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimShowAttributesCommand"/>
+			<MenuItem Id="SimTransientLoadsCommand"/>
+			<MenuItem Id="SimLoadsCommand"/>
+			<MenuItem Id="SimGravityCommand"/>
+			<MenuItem Id="SimGravityActivateCommand"/>
+			<MenuItem Id="SimGravityDeactivateCommand"/>
+			<MenuItem Id="SimNewConstraintCmd"/>
+			<MenuItem Id="SimAddNewConstraintCmd"/>
+			<MenuItem Id="SimGlobalExplicitContactsCommand"/>
+			<MenuItem Id="SimExplicitContactsManagerCommand"/>
+			<MenuItem Id="SimEditContactPairCommand"/>
+			<MenuItem Id="SimAutoPointMassCommand"/>
+			<MenuItem Id="SimManualPointMassCommand"/>
+			<MenuItem Id="SimMeshRefinementByEntitiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimEditConstraintCmd"/>
+			<MenuItem Id="SimTransientEditPrescribedConstraintCmd"/>
+			<MenuItem Id="SimTransientEditPrescribedRotationCmd"/>
+			<MenuItem Id="SimTransientEditInitialLinearBodyLoadCommand"/>
+			<MenuItem Id="SimEditPreserveBoundaryCmd"/>
+			<MenuItem Id="SimEditSymmetryPlaneCmd"/>
+			<MenuItem Id="SimEditContactCommand"/>
+			<MenuItem Id="SimEditConnectorCommand"/>
+			<MenuItem Id="SimFlipContactRefsCommand"/>
+			<MenuItem Id="SimTransientEditLoadsCommand"/>
+			<MenuItem Id="SimEditLoadsCommand"/>
+			<MenuItem Id="SimEditAutoPointMassCommand"/>
+			<MenuItem Id="SimEditManualPointMassCommand"/>
+			<MenuItem Id="SimEditLinearBodyLoadCommand"/>
+			<MenuItem Id="SimEditAngularBodyLoadCommand"/>
+			<MenuItem Id="SimEditMeshRefinementByEntitiesCmd"/>
+			<MenuItem Id="SimContactsSettingsCmd"/>
+			<MenuItem Id="SimExplicitEditInitialAngularBodyLoadCommand"/>
+			<MenuItem Id="SimEditExplicitElementDeletionCommand"/>
+			<Separator/>
+			<MenuItem Id="SimUnsuppressAllCommand"/>
+			<MenuItem Id="SimDeleteCommonCommand"/>
+			<MenuItem Id="SimRemoveRigidBodyTargetCommand"/>
+			<Separator/>
+			<MenuItem Id="SimClippingPlaneCreateCmd"/>
+			<MenuItem Id="SimClippingPlaneEditCmd"/>
+			<MenuItem Id="SimShowAllProbesCmd"/>
+			<MenuItem Id="SimHideAllProbesCmd"/>
+			<MenuItem Id="SimDeleteAllProbesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimFEACSPreSolveCheckCmd"/>
+			<MenuItem Id="SimFEACSDataCheckCmd"/>
+			<MenuItem Id="SimFEACSSolveCmd"/>
+      <MenuItem Id="SimSolveCmd"/>
+			<MenuItem Id="SimFEACSASynLocalSolveCmd"/>
+			<MenuItem Id="SimFEACSCloudSolveCmd"/>
+			<!--<MenuItem Id="SimFEACSEditSolveCmd"/>-->
+			<MenuItem Id="SimFEACSReconnectCloudSolveCmd"/>
+			<MenuItem Id="SimSolveLogCmd"/>
+			<MenuItem Id="SimReportCmd"/>
+			<!-- <MenuItem Id="SimFEACSReactionForceCmd"/> -->
+			<Separator/>
+			<MenuItem Id="SimCreateFatigueCaseCmd"/>
+			<Separator/>
+			<MenuItem Id="SimFatigueCaseOvMaterialCmd"/>
+			<MenuItem Id="SimFatigueCaseSettingCmd"/>
+			<MenuItem Id="SimFatigueCycleHistoryCmd"/>
+			<MenuItem Id="SimFatigueCaseSurfaceFinishCmd"/>
+			<MenuItem Id="SimFatigueOutputOptCmd"/>
+			<MenuItem Id="SimFatigueMaterialViewCmd"/>
+			<MenuItem Id="SimFatigueUpdateMaterialCmd"/>
+			<Separator/>
+			<MenuItem Id="SimOverrideMaterialCommand"/>
+			<MenuItem Id="SimMaterialPropertiesCommand"/>
+			<MenuItem Id="SimMaterialEditCommand"/>
+			<!--<MenuItem Id="SimUpdateMaterialCommand"/>-->
+			<Separator/>
+			<MenuItem Id="SimDisplayNormalViewCommand"/>
+			<MenuItem Id="SimDisplayDOFViewCommand"/>
+			<MenuItem Id="SimDisplayGroupsViewCommand"/>
+			<MenuItem Id="SimSwitchToPostProcessingCommand"/>
+			<Separator/>
+			<MenuItem Id="SimSelectRelatedContactsCommand"/>
+			<Separator/>
+			<MenuItem Id="SimDocPropertiesCmd"/>
+			<MenuItem Id="FusionPropertiesCommand"/>
+			<MenuItem Id="SimPropertiesCommand"/>
+			<MenuItem Id="SimUnitsSettingsCommand"/>
+			<Separator/>
+			<MenuItem Id="SimSelectAllOccurrencesCommand"/>
+			<MenuItem Id="SimSelectSimilarOccursCommand"/>
+			<MenuItem Id="CreateSelectionGroupCmd"/>
+			<MenuItem Id="SimSelectByInvertCommand"/>
+			<Separator/>
+			<MenuItem Id="DeleteSelectionGroupCmd"/>
+			<MenuItem Id="SimCopyCommonCommand"/>
+			<MenuItem Id="PasteCommand"/>
+			<!-- NamedViews (browser)-->
+			<Separator />
+			<MenuItem Id="AddNamedViewCommand" />
+			<MenuItem Id="RemoveNamedViewCommand" />
+			<MenuItem Id="UpdateNamedViewCameraCommand" />
+			<!-- Find in Window / Browser -->
+			<Separator/>
+			<MenuItem Id="FindInBrowser"/>
+			<MenuItem Id="FindInWindow"/>
+		</Menu>
+	</MarkingMenu>
+  <MarkingMenu EnvId="GenerativeEnvironment">
+    <Menu TypeId="BaseMenu">
+      <MenuItem Id="RepeatCommand" Position="North"/>
+      <MenuItem Id="RedoCommand" Position="East"/>
+      <MenuItem Id="UndoCommand" Position="West"/>
+      <MenuItem Id="GenLoadsCommand" Position="Northeast"/>
+      <!-- [FUS-67149] As a user, I would like to launch Inlet/Outlet command from cursor menu. -->
+      <!-- The visibility of the GenFluidsInletCommand menu item of the GenerativeEnvironment radial marking menu is set in the Su::LinearStaticStressAddIn::markingMenuInitialize method. -->
+      <MenuItem Id="GenFluidsInletCommand" Position="Northwest"/>
+      <MenuItem Id="GenNewConstraintCmd" Position="Southeast"/>
+      <MenuItem Id="SimCreateGenCaseCmd" Position="Southwest"/>
+    </Menu>
+    <Menu TypeId="Overflow">
+      <!-- Orbit command related -->
+      <!-- Nav controls -->
+      <MenuItem Id="PanCommand"/>
+      <MenuItem Id="ZoomCommand"/>
+      <MenuItem Id="ConstrainedOrbitCommand"/>
+
+      <!-- Orbit command related -->
+      <MenuItem Id="SetOrbitCenterCommand"/>
+      <MenuItem Id="ResetOrbitCenterCommand"/>
+      <Separator />
+      <MenuItem Id="SimShowCommand"/>
+      <MenuItem Id="SimHideCommand"/>
+      <MenuItem Id="SimVisibilityToggleCmd"/>
+      <MenuItem Id="SimVisibilityAllCommand"/>
+      <MenuItem Id="SimShowAllComponentsCommand"/>
+      <MenuItem Id="SimShowAllBodiesCommand"/>
+      <MenuItem Id="SimIsolateCommand"/>
+      <MenuItem Id="SimUnisolateCommand"/>
+      <MenuItem Id="SimUnisolateAllCommand"/>
+      <!-- Object Visibility -->
+      <MenuItem Id="PlanesVisibilityToggleCmd"/>
+      <MenuItem Id="AxesVisibilityToggleCmd" />
+      <MenuItem Id="PointsVisibilityToggleCmd" />
+      <Separator/>
+      <MenuItem Id="SimCreateGenCaseCmd"/>
+      <MenuItem Id="SimActivateSimCaseCommand"/>
+      <MenuItem Id="SimCopySimCaseCommand"/>
+      <MenuItem Id="SimActivateSimLoadCaseCmd"/>
+      <MenuItem Id="SimCreateSimLoadCaseCmd"/>
+      <MenuItem Id="SimDuplicateSimLoadCaseCmd"/>
+      <MenuItem Id="SimActivateSimCaseForWorkingModelCommand"/>
+      <Separator/>
+      <MenuItem Id="GenCasePropertiesCmd"/>
+      <Separator/>
+      <MenuItem Id="SwitchToFusionCommand"/>
+      <MenuItem Id="EditModelCommand"/>
+      <Separator/>
+      <MenuItem Id="GenShowAttributesCommand"/>
+      <MenuItem Id="GenNewConstraintCmd"/>
+      <MenuItem Id="GenLoadsCommand"/>
+      <MenuItem Id="SimGravityActivateCommand"/>
+      <MenuItem Id="SimGravityDeactivateCommand"/>
+      <MenuItem Id="GenGravityCommand"/>
+      <Separator/>
+      <MenuItem Id="GenEditConstraintCmd"/>
+      <MenuItem Id="GenEditLoadsCommand"/>
+      <MenuItem Id="GenEditFluidsInletCommand"/>
+      <MenuItem Id="SimGenerativeSeedTargetCommmand"/>
+      <Separator/>
+      <MenuItem Id="SimUnsuppressAllCommand"/>
+      <MenuItem Id="SimSuppressCommonCommand"/>
+      <MenuItem Id="SimUnsuppressCommonCommand"/>
+      <MenuItem Id="SimDeleteCommonCommand"/>
+      <Separator/>
+      <MenuItem Id="SimGenerativeObjectivesCommand"/>
+      <MenuItem Id="SimGenerativeManufacturingCommand"/>
+      <MenuItem Id="SimGenerativeStudyMaterialsCommand"/>
+      <MenuItem Id="GenMaterialEditCommand"/>
+      <!--<MenuItem Id="SimUpdateMaterialCommand"/>-->
+      <Separator/>
+      <MenuItem Id="SimDisplayNormalViewCommand"/>
+      <MenuItem Id="SimDisplayDOFViewCommand"/>
+      <Separator/>
+      <MenuItem Id="GenFEACSPreSolveCheckCmd"/>
+      <MenuItem Id="SimGenerativePreviewCmd"/>
+      <MenuItem Id="GenSolveCmd"/>
+      <MenuItem Id="SimSolveLogCmd"/>
+      <Separator/>
+      <MenuItem Id="SimDocPropertiesCmd"/>
+      <MenuItem Id="FusionPropertiesCommand"/>
+      <MenuItem Id="SimPropertiesCommand"/>
+      <MenuItem Id="SimUnitsSettingsCommand"/>
+      <Separator/>
+      <MenuItem Id="SimSelectAllOccurrencesCommand"/>
+      <MenuItem Id="SimSelectSimilarOccursCommand"/>
+      <MenuItem Id="CreateSelectionGroupCmd"/>
+      <MenuItem Id="SimSelectByInvertCommand"/>
+      <Separator/>
+      <MenuItem Id="DeleteSelectionGroupCmd"/>
+      <MenuItem Id="SimCopyCommonCommand"/>
+      <MenuItem Id="PasteCommand"/>
+      <!-- NamedViews (browser)-->
+      <Separator />
+      <MenuItem Id="AddNamedViewCommand" />
+      <MenuItem Id="RemoveNamedViewCommand" />
+      <MenuItem Id="UpdateNamedViewCameraCommand" />
+      <!-- Find in Window / Browser -->
+      <Separator/>
+      <MenuItem Id="FindInBrowser"/>
+      <MenuItem Id="FindInWindow"/>
+    </Menu>
+  </MarkingMenu>
+	<!--<MarkingMenu EnvId="SimTransientStructuralEnvironment">
+		<Menu TypeId="BaseMenu">
+			<MenuItem Id="RepeatCommand" Position="North"/>
+			<MenuItem Id="RedoCommand" Position="East"/>
+			<MenuItem Id="UndoCommand" Position="West"/>
+			<MenuItem Id="SimDisplayDOFViewCommand" Position="South"/>
+			<MenuItem Id="SimTransientLoadsCommand" Position="Northeast"/>
+			<MenuItem Id="SimOverrideMaterialCommand" Position="Northwest"/>
+			<MenuItem Id="SimNewConstraintCmd" Position="Southeast"/>
+			<MenuItem Id="SimManualContactCommand" Position="Southwest"/>
+		</Menu>
+		<Menu TypeId="Overflow">
+			<MenuItem Id="SimShowCommand"/>
+			<MenuItem Id="SimHideCommand"/>
+			<MenuItem Id="SimVisibilityToggleCmd"/>
+			<MenuItem Id="SimVisibilityAllCommand"/>
+			<MenuItem Id="SimIsolateCommand"/>
+			<MenuItem Id="SimUnisolateCommand"/>
+			<Separator/>
+			<MenuItem Id="SimCreateSimCaseCommand"/>
+      <MenuItem Id="SimCreateSimCaseFromGenerativeDesignCommand"/>
+			<MenuItem Id="SimActivateSimCaseCommand"/>
+			<MenuItem Id="SimActivateCompareCmd"/>
+			<MenuItem Id="SimCopySimCaseCommand"/>
+			<Separator/>
+			<MenuItem Id="SimCasePropertiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SwitchToWMCommand"/>
+			<MenuItem Id="SwitchToFusionCommand"/>
+			<Separator/>
+			<MenuItem Id="SimShowAttributesCommand"/>
+			<MenuItem Id="SimLoadsCommand"/>
+			<MenuItem Id="SimGravityActivateCommand"/>
+			<MenuItem Id="SimGravityDeactivateCommand"/>
+			<MenuItem Id="SimGravityCommand"/>
+			<MenuItem Id="SimNewConstraintCmd"/>
+			<MenuItem Id="SimManualContactCommand"/>
+			<MenuItem Id="SimFEACSAutoContactsCmd"/>
+			<MenuItem Id="SimAutoPointMassCommand"/>
+			<MenuItem Id="SimManualPointMassCommand"/>
+			<MenuItem Id="SimMeshRefinementByEntitiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimEditConstraintCmd"/>
+			<MenuItem Id="SimEditContactCommand"/>
+			<MenuItem Id="SimEditTransientStructuralLoad"/>
+			<MenuItem Id="SimEditAutoPointMassCommand"/>
+			<MenuItem Id="SimEditManualPointMassCommand"/>
+			<MenuItem Id="SimEditLinearBodyLoadCommand"/>
+			<MenuItem Id="SimEditAngularBodyLoadCommand"/>
+			<MenuItem Id="SimEditMeshRefinementByEntitiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimUnsuppressAllCommand"/>
+			<MenuItem Id="SimSuppressCommonCommand"/>
+			<MenuItem Id="SimUnsuppressCommonCommand"/>
+			<MenuItem Id="SimDeleteCommonCommand"/>
+			<Separator/>
+			<MenuItem Id="SimOverrideMaterialCommand"/>
+			<MenuItem Id="SimMaterialPropertiesCommand"/>
+			<MenuItem Id="SimMaterialEditCommand"/>
+			<MenuItem Id="SimUpdateMaterialCommand"/>
+			<Separator/>
+			<MenuItem Id="SimDisplayNormalViewCommand"/>
+			<MenuItem Id="SimDisplayDOFViewCommand"/>
+			<MenuItem Id="SimDisplayGroupsViewCommand"/>
+			<MenuItem Id="SimSwitchToPostProcessingCommand"/>
+			<Separator/>
+			<MenuItem Id="SimToggleMeshCmd"/>
+			<MenuItem Id="SimFEACSMeshSolveCmd"/>
+			<MenuItem Id="SimFEACSMeshCloudSolveCmd"/>
+			<MenuItem Id="SimMeshSettingsCmd"/>
+			<MenuItem Id="SimHideMeshingIssuesCmd"/>
+			<MenuItem Id="SimShowMeshingIssuesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimFEACSPreSolveCheckCmd"/>
+			<MenuItem Id="SimFEACSSolveCmd"/>
+			<MenuItem Id="SimFEACSCloudSolveCmd"/>
+			<MenuItem Id="SimFEACSReconnectCloudSolveCmd"/>
+			<MenuItem Id="SimSolveLogCmd"/>
+			<Separator/>
+			<MenuItem Id="SimClippingPlaneCmd"/>
+			<MenuItem Id="SimClippingPlaneEditCmd"/>
+			<MenuItem Id="SimEditResultQueryCmd"/>
+			<MenuItem Id="SimEditPointProbeCmd"/>
+			<MenuItem Id="SimShowAllProbesCmd"/>
+			<MenuItem Id="SimHideAllProbesCmd"/>
+			<MenuItem Id="SimDeleteAllProbesCmd"/>
+			<MenuItem Id="SimProbePropertiesCommand"/>
+			<Separator/>
+			<MenuItem Id="SimReportCmd"/>
+			<MenuItem Id="SimFEACSReactionForceCmd"/>
+			<MenuItem Id="SimConvergencePlotCmd"/>
+			<MenuItem Id="SimAnimateCommand"/>
+			<Separator/>
+			<MenuItem Id="SimCreateFatigueCaseCmd"/>
+			<MenuItem Id="SimFatigueCaseCloneCmd"/>
+			<Separator/>
+			<MenuItem Id="SimFatigueCaseOvMaterialCmd"/>
+			<MenuItem Id="SimFatigueCaseSettingCmd"/>
+			<MenuItem Id="SimFatigueCycleHistoryCmd"/>
+			<MenuItem Id="SimFatigueCaseSurfaceFinishCmd"/>
+			<MenuItem Id="SimFatigueOutputOptCmd"/>
+			<MenuItem Id="SimFatigueMaterialViewCmd"/>
+			<MenuItem Id="SimFatigueUpdateMaterialCmd"/>
+			<Separator/>
+			<MenuItem Id="SimSelectRelatedContactsCommand"/>
+			<Separator/>
+			<MenuItem Id="SimDocPropertiesCmd"/>
+			<MenuItem Id="FusionPropertiesCommand"/>
+			<MenuItem Id="SimPropertiesCommand"/>
+			<MenuItem Id="SimUnitsSettingsCommand"/>
+			<Separator/>
+			<MenuItem Id="CreateSelectionGroupCmd"/>
+			<Separator/>
+			<MenuItem Id="FindInBrowser"/>
+			<MenuItem Id="FindInWindow"/>
+		</Menu>
+	</MarkingMenu>-->
+
+	<!--<MarkingMenu EnvId="SimFatigueEnvironment">
+		<Menu TypeId="BaseMenu">
+			<MenuItem Id="RepeatCommand" Position="North"/>
+			<MenuItem Id="RedoCommand" Position="East"/>
+			<MenuItem Id="UndoCommand" Position="West"/>
+			<MenuItem Id="SimFatigueCaseSurfaceFinishCmd" Position="South"/>
+			<MenuItem Id="SimFatigueCycleHistoryCmd" Position="Northeast"/>
+			<MenuItem Id="SimFatigueCaseOvMaterialCmd" Position="Northwest"/>
+			<MenuItem Id="SimFatigueOutputOptCmd" Position="Southeast"/>
+			<MenuItem Id="SimFatigueCaseSettingCmd" Position="Southwest"/>
+		</Menu>
+		<Menu TypeId="Overflow">
+			<MenuItem Id="SimCreateSimCaseCommand"/>
+      <MenuItem Id="SimCreateSimCaseFromGenerativeDesignCommand"/>
+			<MenuItem Id="SimActivateSimCaseCommand"/>
+			<MenuItem Id="SimActivateCompareCmd"/>
+			<MenuItem Id="SimCopySimCaseCommand"/>
+			<MenuItem Id="SimFatigueDeleteLinkedStudyCmd"/>
+			<MenuItem Id="SimFatigueEditLinkedStudiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimCasePropertiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SwitchToWMCommand"/>
+			<MenuItem Id="SwitchToFusionCommand"/>
+			<Separator/>
+			<MenuItem Id="SimDisplayNormalViewCommand"/>
+			<MenuItem Id="SimDisplayDOFViewCommand"/>
+			<MenuItem Id="SimDisplayGroupsViewCommand"/>
+			<MenuItem Id="SimSwitchToPostProcessingCommand"/>
+			<Separator/>
+			<MenuItem Id="SimToggleMeshCmd"/>
+			<MenuItem Id="SimFEACSMeshSolveCmd"/>
+			<MenuItem Id="SimFEACSMeshCloudSolveCmd"/>
+			<MenuItem Id="SimMeshSettingsCmd"/>
+			<Separator/>
+			<MenuItem Id="SimFEACSPreSolveCheckCmd"/>
+			<MenuItem Id="SimFEACSSolveCmd"/>
+			<MenuItem Id="SimFEACSCloudSolveCmd"/>
+			<MenuItem Id="SimSolveLogCmd"/>
+			<Separator/>
+			<MenuItem Id="SimClippingPlaneCmd"/>
+			<MenuItem Id="SimClippingPlaneEditCmd"/>
+			<MenuItem Id="SimEditResultQueryCmd"/>
+			<MenuItem Id="SimShowAllProbesCmd"/>
+			<MenuItem Id="SimHideAllProbesCmd"/>
+			<MenuItem Id="SimDeleteAllProbesCmd"/>
+			<MenuItem Id="SimProbePropertiesCommand"/>
+			<Separator/>
+			<MenuItem Id="SimReportCmd"/>
+			<MenuItem Id="SimFEACSReactionForceCmd"/>
+			<MenuItem Id="SimConvergencePlotCmd"/>
+			<MenuItem Id="SimAnimateCommand"/>
+			<Separator/>
+			<MenuItem Id="SimCreateFatigueCaseCmd"/>
+			<MenuItem Id="SimFatigueCaseCloneCmd"/>
+			<Separator/>
+			<MenuItem Id="SimFatigueCaseOvMaterialCmd"/>
+			<MenuItem Id="SimFatigueCaseSettingCmd"/>
+			<MenuItem Id="SimFatigueCycleHistoryCmd"/>
+			<MenuItem Id="SimFatigueCaseSurfaceFinishCmd"/>
+			<MenuItem Id="SimFatigueOutputOptCmd"/>
+			<MenuItem Id="SimFatigueMaterialViewCmd"/>
+			<MenuItem Id="SimMaterialEditCommand"/>
+			<MenuItem Id="SimFatigueUpdateMaterialCmd"/>
+			<Separator/>
+			<MenuItem Id="SimVisibilityToggleCmd"/>
+			<Separator/>
+			<MenuItem Id="SimSuppressCommonCommand"/>
+			<MenuItem Id="SimUnsuppressCommonCommand"/>
+			<MenuItem Id="SimDeleteCommonCommand"/>
+			<Separator/>
+			<MenuItem Id="FusionPropertiesCommand"/>
+			<MenuItem Id="SimPropertiesCommand"/>
+			<MenuItem Id="SimUnitsSettingsCommand"/>
+			<Separator/>
+			<MenuItem Id="CreateSelectionGroupCmd"/>
+			<Separator/>
+			<MenuItem Id="FindInBrowser"/>
+			<MenuItem Id="FindInWindow"/>
+		</Menu>
+	</MarkingMenu>-->
+
+	<!--<MarkingMenu EnvId="SimFreqResponseEnvironment">
+		<Menu TypeId="BaseMenu">
+			<MenuItem Id="RepeatCommand" Position="North"/>
+			<MenuItem Id="RedoCommand" Position="East"/>
+			<MenuItem Id="UndoCommand" Position="West"/>
+			<MenuItem Id="SimDisplayDOFViewCommand" Position="South"/>
+			<MenuItem Id="SimHarmonicLoadsCommand" Position="Northeast"/>
+			<MenuItem Id="SimOverrideMaterialCommand" Position="Northwest"/>
+			<MenuItem Id="SimNewConstraintCmd" Position="Southeast"/>
+			<MenuItem Id="SimManualContactCommand" Position="Southwest"/>
+		</Menu>
+		<Menu TypeId="Overflow">
+			<MenuItem Id="SimShowCommand"/>
+			<MenuItem Id="SimHideCommand"/>
+			<MenuItem Id="SimVisibilityToggleCmd"/>
+			<MenuItem Id="SimVisibilityAllCommand"/>
+			<MenuItem Id="SimIsolateCommand"/>
+			<MenuItem Id="SimUnisolateCommand"/>
+			<Separator/>
+			<MenuItem Id="SimCreateSimCaseCommand"/>
+      <MenuItem Id="SimCreateSimCaseFromGenerativeDesignCommand"/>
+			<MenuItem Id="SimActivateSimCaseCommand"/>
+			<MenuItem Id="SimActivateCompareCmd"/>
+			<MenuItem Id="SimCopySimCaseCommand"/>
+			<Separator/>
+			<MenuItem Id="SimCasePropertiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SwitchToWMCommand"/>
+			<MenuItem Id="SwitchToFusionCommand"/>
+			<Separator/>
+			<MenuItem Id="SimHarmonicLoadsCommand"/>
+			<MenuItem Id="SimNewConstraintCmd"/>
+			<MenuItem Id="SimManualContactCommand"/>
+			<MenuItem Id="SimFEACSAutoContactsCmd"/>
+			<MenuItem Id="SimAutoPointMassCommand"/>
+			<MenuItem Id="SimManualPointMassCommand"/>
+			<MenuItem Id="SimMeshRefinementByEntitiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimEditConstraintCmd"/>
+			<MenuItem Id="SimEditContactCommand"/>
+			<MenuItem Id="SimEditHarmonicLoadsCommand"/>
+			<MenuItem Id="SimEditAutoPointMassCommand"/>
+			<MenuItem Id="SimEditManualPointMassCommand"/>
+			<MenuItem Id="SimEditMeshRefinementByEntitiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimUnsuppressAllCommand"/>
+			<MenuItem Id="SimSuppressCommonCommand"/>
+			<MenuItem Id="SimUnsuppressCommonCommand"/>
+			<MenuItem Id="SimDeleteCommonCommand"/>
+			<Separator/>
+			<MenuItem Id="SimOverrideMaterialCommand"/>
+			<MenuItem Id="SimMaterialPropertiesCommand"/>
+			<MenuItem Id="SimMaterialEditCommand"/>
+			<MenuItem Id="SimUpdateMaterialCommand"/>
+			<Separator/>
+			<MenuItem Id="SimDisplayNormalViewCommand"/>
+			<MenuItem Id="SimDisplayDOFViewCommand"/>
+			<MenuItem Id="SimDisplayGroupsViewCommand"/>
+			<MenuItem Id="SimSwitchToPostProcessingCommand"/>
+			<Separator/>
+			<MenuItem Id="SimToggleMeshCmd"/>
+			<MenuItem Id="SimFEACSMeshSolveCmd"/>
+			<MenuItem Id="SimFEACSMeshCloudSolveCmd"/>
+			<MenuItem Id="SimMeshSettingsCmd"/>
+			<MenuItem Id="SimHideMeshingIssuesCmd"/>
+			<MenuItem Id="SimShowMeshingIssuesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimFEACSPreSolveCheckCmd"/>
+			<MenuItem Id="SimFEACSSolveCmd"/>
+			<MenuItem Id="SimFEACSCloudSolveCmd"/>
+			<MenuItem Id="SimSolveLogCmd"/>
+			<Separator/>
+			<MenuItem Id="SimClippingPlaneCmd"/>
+			<MenuItem Id="SimClippingPlaneEditCmd"/>
+			<MenuItem Id="SimEditResultQueryCmd"/>
+			<MenuItem Id="SimShowAllProbesCmd"/>
+			<MenuItem Id="SimHideAllProbesCmd"/>
+			<MenuItem Id="SimDeleteAllProbesCmd"/>
+			<MenuItem Id="SimProbePropertiesCommand"/>
+			<Separator/>
+			<MenuItem Id="SimReportCmd"/>
+			<MenuItem Id="SimFEACSReactionForceCmd"/>
+			<MenuItem Id="SimConvergencePlotCmd"/>
+			<MenuItem Id="SimMassParticipationCommand"/>
+			<MenuItem Id="SimAnimateCommand"/>
+			<Separator/>
+			<MenuItem Id="SimSelectRelatedContactsCommand"/>
+			<Separator/>
+			<MenuItem Id="SimDocPropertiesCmd"/>
+			<MenuItem Id="FusionPropertiesCommand"/>
+			<MenuItem Id="SimPropertiesCommand"/>
+			<MenuItem Id="SimUnitsSettingsCommand"/>
+			<Separator/>
+			<MenuItem Id="CreateSelectionGroupCmd"/>
+			<Separator/>
+			<MenuItem Id="FindInBrowser"/>
+			<MenuItem Id="FindInWindow"/>
+		</Menu>
+	</MarkingMenu>-->
+
+	<!--<MarkingMenu EnvId="SimRTSSEnvironment">
+		<Menu TypeId="BaseMenu">
+			<MenuItem Id="RepeatCommand" Position="North"/>
+			<MenuItem Id="RedoCommand" Position="East"/>
+			<MenuItem Id="UndoCommand" Position="West"/>
+			<MenuItem Id="SimDisplayDOFViewCommand" Position="South"/>
+			<MenuItem Id="SimDropTestPlaneCmd" Position="Northeast"/>
+			<MenuItem Id="SimOverrideMaterialCommand" Position="Northwest"/>
+			<MenuItem Id="SimDropTestModelPositionCommand" Position="Southeast"/>
+			<MenuItem Id="SimManualContactCommand" Position="Southwest"/>
+		</Menu>
+		<Menu TypeId="Overflow">
+			<MenuItem Id="SimShowCommand"/>
+			<MenuItem Id="SimHideCommand"/>
+			<MenuItem Id="SimVisibilityToggleCmd"/>
+			<MenuItem Id="SimVisibilityAllCommand"/>
+			<MenuItem Id="SimIsolateCommand"/>
+			<MenuItem Id="SimUnisolateCommand"/>
+			<Separator/>
+			<MenuItem Id="SimCreateSimCaseCommand"/>
+      <MenuItem Id="SimCreateSimCaseFromGenerativeDesignCommand"/>
+			<MenuItem Id="SimActivateSimCaseCommand"/>
+			<MenuItem Id="SimActivateCompareCmd"/>
+			<MenuItem Id="SimCopySimCaseCommand"/>
+			<Separator/>
+			<MenuItem Id="SimCasePropertiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SwitchToFusionCommand"/>
+			<Separator/>
+			<MenuItem Id="SimGravityActivateCommand"/>
+			<MenuItem Id="SimGravityDeactivateCommand"/>
+			<MenuItem Id="SimGravityCommand"/>
+			<MenuItem Id="SimNewConstraintCmd"/>
+			<MenuItem Id="SimManualContactCommand"/>
+			<MenuItem Id="SimFEACSAutoContactsCmd"/>
+			<MenuItem Id="SimAutoPointMassCommand"/>
+			<MenuItem Id="SimManualPointMassCommand"/>
+			<MenuItem Id="SimMeshRefinementByEntitiesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimEditConstraintCmd"/>
+			<MenuItem Id="SimEditContactCommand"/>
+			<MenuItem Id="SimEditLoadsCommand"/>
+			<MenuItem Id="SimEditAutoPointMassCommand"/>
+			<MenuItem Id="SimEditManualPointMassCommand"/>
+			<MenuItem Id="SimEditMeshRefinementByEntitiesCmd"/>
+			<MenuItem Id="SimEditDropTestPlaneCmd"/>
+			<MenuItem Id="SimEditDropTestDirectionCommand"/>
+			<Separator/>
+			<MenuItem Id="SimUnsuppressAllCommand"/>
+			<MenuItem Id="SimSuppressCommonCommand"/>
+			<MenuItem Id="SimUnsuppressCommonCommand"/>
+			<MenuItem Id="SimDeleteCommonCommand"/>
+			<Separator/>
+			<MenuItem Id="SimOverrideMaterialCommand"/>
+			<MenuItem Id="SimMaterialPropertiesCommand"/>
+			<MenuItem Id="SimMaterialEditCommand"/>
+			<MenuItem Id="SimUpdateMaterialCommand"/>
+			<Separator/>
+			<MenuItem Id="SimDisplayNormalViewCommand"/>
+			<MenuItem Id="SimDisplayDOFViewCommand"/>
+			<MenuItem Id="SimDisplayGroupsViewCommand"/>
+			<MenuItem Id="SimSwitchToPostProcessingCommand"/>
+			<Separator/>
+			<MenuItem Id="SimToggleMeshCmd"/>
+			<MenuItem Id="SimFEACSMeshSolveCmd"/>
+			<MenuItem Id="SimFEACSMeshCloudSolveCmd"/>
+			<MenuItem Id="SimMeshSettingsCmd"/>
+			<MenuItem Id="SimHideMeshingIssuesCmd"/>
+			<MenuItem Id="SimShowMeshingIssuesCmd"/>
+			<Separator/>
+			<MenuItem Id="SimFEACSPreSolveCheckCmd"/>
+			<MenuItem Id="SimFEACSSolveCmd"/>
+			<MenuItem Id="SimFEACSCloudSolveCmd"/>
+			<MenuItem Id="SimSolveLogCmd"/>
+			<Separator/>
+			<MenuItem Id="SimClippingPlaneCmd"/>
+			<MenuItem Id="SimClippingPlaneEditCmd"/>
+			<MenuItem Id="SimEditResultQueryCmd"/>
+			<MenuItem Id="SimShowAllProbesCmd"/>
+			<MenuItem Id="SimHideAllProbesCmd"/>
+			<MenuItem Id="SimDeleteAllProbesCmd"/>
+			<MenuItem Id="SimProbePropertiesCommand"/>
+			<Separator/>
+			<MenuItem Id="SimReportCmd"/>
+			<MenuItem Id="SimFEACSReactionForceCmd"/>
+			<MenuItem Id="SimConvergencePlotCmd"/>
+			<MenuItem Id="SimAnimateCommand"/>
+			<Separator/>
+			<MenuItem Id="SimSelectRelatedContactsCommand"/>
+			<Separator/>
+			<MenuItem Id="SimDocPropertiesCmd"/>
+			<MenuItem Id="FusionPropertiesCommand"/>
+			<MenuItem Id="SimPropertiesCommand"/>
+			<MenuItem Id="SimUnitsSettingsCommand"/>
+			<Separator/>
+			<MenuItem Id="CreateSelectionGroupCmd"/>
+			<Separator/>
+			<MenuItem Id="FindInBrowser"/>
+			<MenuItem Id="FindInWindow"/>
+		</Menu>
+	</MarkingMenu>-->
+</Menus>

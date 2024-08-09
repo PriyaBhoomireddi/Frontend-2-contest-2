@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HUDs>
+
+  <!-- Primitives -->
+
+  <HUD Id="TSplinePrimitivePlaneCommand">
+    <DropDownEntry Id="primitiveLengthDimensionInput" WidthString="000.000 cm" />
+    <DropDownEntry Id="primitiveLengthSegmentInput" WidthString="00000" />
+    <DropDownEntry Id="primitiveWidthDimensionInput" WidthString="000.000 cm" />
+    <DropDownEntry Id="primitiveWidthSegmentInput" WidthString="00000" />
+  </HUD>
+  <HUD Id="TSplinePrimitiveBoxCommand">
+    <DropDownEntry Id="primitiveLengthDimensionInput" WidthString="000.000 cm" />
+    <DropDownEntry Id="primitiveLengthSegmentInput" WidthString="00000" />
+    <DropDownEntry Id="primitiveWidthDimensionInput" WidthString="000.000 cm" />
+    <DropDownEntry Id="primitiveWidthSegmentInput" WidthString="00000" />
+    <DropDownEntry Id="primitiveHeightDimensionInput" WidthString="000.000 cm" />
+    <DropDownEntry Id="primitiveHeightSegmentInput" WidthString="00000" />
+  </HUD>
+  <HUD Id="TSplinePrimitiveCylinderCommand">
+    <DropDownEntry Id="primitiveDiameterDimensionInput" WidthString="000.000 cm" />
+    <DropDownEntry Id="primitiveDiameterSegmentInput" WidthString="00000" />
+    <DropDownEntry Id="primitiveHeightDimensionInput" WidthString="000.000 cm" />
+    <DropDownEntry Id="primitiveHeightSegmentInput" WidthString="00000" />
+  </HUD>
+  <HUD Id="TSplinePrimitiveConeCommand">
+    <DropDownEntry Id="primitiveRadiusDimensionInput" WidthString="000.000 cm" />
+    <DropDownEntry Id="primitiveRadiusSegmentInput" WidthString="00000" />
+    <DropDownEntry Id="primitiveHeightDimensionInput" WidthString="000.000 cm" />
+    <DropDownEntry Id="primitiveHeightSegmentInput" WidthString="00000" />
+  </HUD>
+  <HUD Id="TSplinePrimitiveSphereCommand">
+    <DropDownEntry Id="primitiveDiameterDimensionInput" WidthString="000.000 cm" />
+    <DropDownEntry Id="primitiveLongitudeSegmentInput" WidthString="00000" />
+    <DropDownEntry Id="primitiveLatitudeSegmentInput" WidthString="00000" />
+  </HUD>
+  <HUD Id="TSplinePrimitiveQuadBallCommand">
+    <DropDownEntry Id="primitiveDiameterDimensionInput" WidthString="000.000 cm" />
+    <DropDownEntry Id="primitiveSpanSegmentInput" WidthString="00000" />
+  </HUD>
+  <HUD Id="TSplinePrimitiveTorusCommand">
+    <DropDownEntry Id="primitiveDiameterDimensionInput" WidthString="000.000 cm" />
+    <DropDownEntry Id="primitiveDiameterSegmentInput" WidthString="00000" />
+    <DropDownEntry Id="primitiveRingDimensionInput" WidthString="000.000 cm" />
+    <DropDownEntry Id="primitiveRingSegmentInput" WidthString="00000" />
+  </HUD>
+
+
+
+  <!-- Modify -->
+
+  <HUD Id="TSplineEditCommand">
+    <DynamicControls Id="FrameTransformInput"/>
+    <DropDownEntry Id="infoRotateX" WidthString="000.000 deg" />
+    <DropDownEntry Id="infoRotateY" WidthString="000.000 deg" />
+    <DropDownEntry Id="infoRotateZ" WidthString="000.000 deg" />
+    <DropDownEntry Id="softRadiusInput" ShowText="false" Text="Soft Radius" WidthString="000.000 mm" />
+    <DropDownEntry Id="softRectLengthInput" ShowText="false" Text="Soft Rect Length" WidthString="  0     " />
+    <DropDownEntry Id="softRectWidthInput" ShowText="false" Text="Soft Rect Width" WidthString="  0     " />
+    <DropDownEntry Id="softGrowCountInput" ShowText="false" Text="Soft Grow Count" WidthString="  0     " />
+    <!-- <DropDownButton Id="transformModeInput" ShowText="false" SynchronizedWithCurrentItem="true" /> -->
+    <!-- <DropDownButton Id="filterTypeInput" ShowText="false" SynchronizedWithCurrentItem="true" /> -->
+  </HUD>
+
+  <HUD Id="TSplineEditByCurveCmd">
+  </HUD>
+
+  <HUD Id="TSplineExtrudeCommand">
+    <DropDownEntry Id="AlongExtrudeDistance" ShowText="false" Text="Distance" WidthString="000.000 mm" />
+    <DropDownEntry Id="AgainstExtrudeDistance" ShowText="false" Text="Distance" WidthString="000.000 mm" />
+    <DropDownEntry Id="ExtrudeFrontSegmentsInput" ShowText="false" Text="FrontSpans" WidthString="  0     " />
+    <DropDownEntry Id="ExtrudeBackSegmentsInput" ShowText="false" Text="BackSpans" WidthString="  0     " />
+    <DropDownEntry Id="SpanCount" ShowText="false" Text="BackSpans" WidthString="  0     " />
+    <DropDownEntry Id="ExtrudeTaperAngle" ShowText="false" Text="Angle" WidthString="000.000 deg" />
+  </HUD>
+  
+  <HUD Id="TSplinePrimitivePipe">
+    <DropDownButton Id="infoEndType" ShowText="false" />
+    <DropDownEntry Id="infoSectionDiameter" ShowText="false" Text="Diameter" WidthString="000.000 mm" />
+    <DropDownEntry Id="infoSectionPosition" ShowText="false" Text="Position" WidthString="  0     " />
+    <DropDownEntry Id="infoSectionAngle" ShowText="false" Text="Angle" WidthString="000.000 deg" />
+    <DropDownEntry Id="SegmentCount" ShowText="false" WidthString="0000" />
+  </HUD>
+  
+   <HUD Id="TSplinePipeEditCommand">
+    <DropDownButton Id="infoEndType" ShowText="false" />
+    <DropDownEntry Id="infoSectionDiameter" ShowText="false" Text="Diameter" WidthString="000.000 mm" />
+    <DropDownEntry Id="infoSectionPosition" ShowText="false" Text="Position" WidthString="  0     " />
+    <DropDownEntry Id="infoSectionAngle" ShowText="false" Text="Angle" WidthString="000.000 deg" />
+    <DropDownEntry Id="SegmentCount" ShowText="false" WidthString="0000" />
+  </HUD>
+  
+  <HUD Id="TSplineSlideEdgeCommand">
+    <DropDownEntry Id="tsSplineSlideEdgePreviewInput" ShowText="false" Text="Slide Location" WidthString="000.000" />
+  </HUD>
+
+  <HUD Id="TSplineBevelEdgeCommand">
+    <DropDownEntry Id="tsSplineBevelEdgePreviewInput" ShowText="false" Text="Bevel Location" WidthString="000.000" />
+    <DropDownEntry Id="SpanCount" ShowText="false" Text="Segments" WidthString="0000" />
+  </HUD>
+  
+  <HUD Id="TSplineInsertEdgeCommand">
+    <DropDownEntry Id="tsSplineInsertEdgePreviewInput" ShowText="false" Text="Insert Location" WidthString="000.000" />
+    <DropDownEntry Id="retoOffsetDistanceInput" ShowText="false" Text="Offset" WidthString="000.000" />
+    <!-- <DropDownButton Id="InsertEdgeMode" ShowText="false" SynchronizedWithCurrentItem="true" /> -->
+    <!-- <DropDownButton Id="InsertEdgeSide" ShowText="false" SynchronizedWithCurrentItem="true" /> -->
+  </HUD>
+
+  <HUD Id="TSplineThickenCommand">
+    <DropDownEntry Id="tsSplineThicknessInput" ShowText="false" Text="Thickness" WidthString="000.000 mm" />
+    <!-- <DropDownButton Id="infoThickenEdge" ShowText="false" SynchronizedWithCurrentItem="true" />  -->
+  </HUD>
+
+  <HUD Id="TSplineRevolveCommand">
+    <DropDownEntry Id="RevolveAlongAngle" WidthString="000.000 deg" />
+    <DropDownEntry Id="RevolveAgainstAngle" WidthString="000.000 deg" />
+    <DropDownEntry Id="revolveRadiusSegment"  WidthString="00000" />
+    <DropDownEntry Id="profileSegmentInput"  WidthString="00000" />
+    <!-- <DropDownButton Id="infoDirectionType" ShowText="false" SynchronizedWithCurrentItem="true" /> -->
+    <!-- <DropDownButton Id="infoType" ShowText="false" SynchronizedWithCurrentItem="true" /> -->
+    <!-- <DropDownButton Id="symmetryTypeInput" ShowText="false" SynchronizedWithCurrentItem="true" /> -->
+  </HUD>
+  <HUD Id="TSplineSweepCommand">
+    <DropDownEntry Id="SWEEP_POP_ALONG" WidthString="0.000 " />
+    <DropDownEntry Id="SWEEP_POP_AGAINST" WidthString="0.000 " />
+    <DropDownEntry Id="sweepPathSegmentInput"  WidthString="00000" />
+    <DropDownEntry Id="sweepSegmentInput"  WidthString="00000" />
+  </HUD>
+  <HUD Id="TSplineRepairBodyCmd">
+    <DropDownButton Id="INPUT_SELREORDER" ShowText="true" SynchronizedWithCurrentItem="true" WidthString="200"/>
+    <DropDownEntry Id="WeldToleranceValue" ShowText="false" Text="Weld Tolerance" WidthString="000.000 mm" />
+  </HUD>
+
+  <!-- Sketch -->
+
+  <HUD Id="ForgeFilletSketchCmd">
+    <DropDownEntry Id="SketchFilletRadius" WidthString="000.000 cm" />
+  </HUD>
+  <HUD Id="KCurveSketchOnPlane">
+    <DropDownButton Id="sketchPlaneTypeInput" ShowText="true" SynchronizedWithCurrentItem="true"/>
+  </HUD>
+  <HUD Id="ForgeMoveComponentsCommand">
+    <DynamicControls Id="MoveComponentsTransformInput"/>
+  </HUD>
+
+  <HUD Id="ForgeTSplineSymmetryCmdMasterFace">
+  </HUD>
+
+  <HUD Id="ForgeTSplineSymmetryCmdSlaveFace">
+  </HUD>
+
+  <HUD Id="TSplineReflectionCircularSymmetryCmd">
+  </HUD>
+
+  <HUD Id="ForgeSymmetryCommand">
+  </HUD>
+
+
+
+  <!-- Other -->
+
+  <HUD Id="SelectionManager">
+    <CheckBox Id="Selection1" />
+    <CheckBox Id="Selection2" />
+  </HUD>
+
+  <HUD Id="ForgeBoolean">
+    <Button Id="TargetBSelectionInput" ShowText="false" />
+    <Button Id="ToolBSelectionInput" ShowText="false" />
+    <DropDownButton Id="BooleanType" ShowText="false" SynchronizedWithCurrentItem="true" />
+    <Button Id="NewComponent" ShowText="true" Text="New Component" />
+    <Button Id="KeepTool" ShowText="true" Text="Keep Tool" />
+  </HUD>
+
+  <HUD Id="ForgeEmboss">
+    <Button Id="curveSelectionInput" ShowText="true" />
+    <NewLine />
+    <DropDownButton Id="projectionTypeInput" ShowText="false" SynchronizedWithCurrentItem="true" />
+    <DropDownEntry Id="distanceInput" ShowText="true" Text="Distance" WidthString="000.000 cm" Expandable="true" />
+    <DropDownEntry Id="angleInput" ShowText="true" Text="Taper Angle" WidthString="000.000 deg" Expandable="true" />
+    <NewLine />
+    <DropDownEntry Id="baseRadiusInput" ShowText="true" Text="Base Fillet" WidthString="000.000 cm" />
+    <DropDownEntry Id="offsetRadiusInput" ShowText="true" Text="Offset Fillet" WidthString="000.000 cm" />
+  </HUD>
+  <HUD Id="ForgeDecal">
+    <DropDownEntry Id="DecalValue" WidthString="00.00" />
+  </HUD>
+
+
+  <HUD Id="TSplineExtrudeCommandTest">
+    <DropDownEntry Id="FrameTransformInput" ShowText="true" Text="Distance" WidthString="000.000 mm" />
+  </HUD>
+
+
+
+</HUDs>

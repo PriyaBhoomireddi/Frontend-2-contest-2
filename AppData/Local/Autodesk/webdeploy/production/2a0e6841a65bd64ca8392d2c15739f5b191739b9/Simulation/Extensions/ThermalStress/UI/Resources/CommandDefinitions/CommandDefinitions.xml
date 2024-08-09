@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+	<CommandDefinition Id="SimThermalStressReferenceTemperatureCommand">
+		<Tooltip>
+			<!--<ExpandedContent ToolClip="ToolClip/ReferenceTemperature.png">-->
+			<ExpandedContent>
+				<TextBlock _LCLZId="SimThermalStressReferenceTemperatureDesc1" _LCLZText="Define stress-free temperature of components. Default temperature comes from general settings."/>
+			</ExpandedContent>
+		</Tooltip>
+	</CommandDefinition>
+</CommandDefinitions>
