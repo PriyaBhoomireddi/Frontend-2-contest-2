@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="form-title">If validations aren't correct!</h2>
+        <form id="signup-form" onsubmit="handleSubmit(event)">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Example@email.com" oninput="validateEmail()">
+                <span id="email-error" class="error-message">Make sure email is more than 3 characters and has @ and .</span>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Your Password" oninput="validatePassword()">
+                <span id="password-error" class="error-message">Make sure password is more than 8 characters.</span>
+            </div>
+            <span id="success-message" class="success-message">All good to go!</span>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
