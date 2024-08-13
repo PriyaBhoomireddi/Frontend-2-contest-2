@@ -1,0 +1,150 @@
+#version 330
+#include "Sketch_oit_def.ogsfh"
+#include "Sketch_primitive.ogsfh"
+#include "Sketch_line.ogsfh"
+#include "Sketch_line_no_weight.ogsfh"
+
+// simple line index texture
+uniform highp texture2D gGradientLineIndexTex_ : GradientLineIndexTexture ;
+uniform highp sampler2D gGradientLineIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gGradientLineIndexTex_>; };
+uniform highp texture2D gGradientLineDrawOrderZTex_ : GradientLineDrawOrderZTexture ;
+uniform highp sampler2D gGradientLineDrawOrderZTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gGradientLineDrawOrderZTex_>; };
+
+attribute VS_INPUT
+{
+    int VertexID : TEXCOORD0;
+    int InstanceID : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 vso_position;
+    vec4 vso_color;
+    float vso_dist;
+};
+
+attribute pixelOut
+{
+    vec4 pso_color : COLOR0;
+};
+
+GLSLShader Sketch_gradient_line
+{
+
+struct GradientVertexAttr_Line
+{
+    vec4 position; // transformed  vertex position
+    vec4 color;  // line color
+    float dist;     // distance to line  
+};
+
+}
+
+GLSLShader GradientLine_VS
+{
+
+// gradient line input information
+struct GradientLineAttr
+{
+    vec2 startPoint; 
+    vec2 endPoint;
+
+    uint startColor; 
+    uint endColor;
+
+    uint flag;
+    float drawZ;
+    uint isLogical;
+};
+
+// load gradient line information
+void load_gradient_line_info(uint offset, uint line_index, uint line_flag, out GradientLineAttr attr)
+{
+    load_gradient_line_position(get_pos_id(offset), attr.startPoint,  attr.endPoint, attr.startColor, attr.endColor);
+    load_line_flag(line_flag, attr.flag);
+    load_gradient_line_attributes(line_index, attr.drawZ, attr.isLogical);
+
+    if (gRetainMode)
+    {
+        adjust_line_segment_precision_logical(attr.startPoint, attr.endPoint);
+    }
+    else if (attr.isLogical == uint(0))
+    {
+        adjust_line_segment_precision(attr.startPoint, attr.endPoint);
+    }
+}
+
+void set_gradient_line_properties(uint vid, GradientLineAttr line_attr, out GradientVertexAttr_Line outputData)
+{
+    float temp_dist = 0.0f;
+    bool isDot = false;
+
+    if (line_attr.isLogical != uint(0))
+        outputData.position.xy = get_logical_line_envelope_pos(vid,  line_attr.flag,
+         uint(1), line_attr.startPoint, line_attr.endPoint, temp_dist, isDot);
+    else 
+        outputData.position.xy = get_line_envelope_pos(vid, 
+         uint(1), line_attr.startPoint, line_attr.endPoint, temp_dist);
+     
+    outputData.position.z =  line_attr.drawZ;
+    outputData.position.xyz = outputData.position.xyz;
+    outputData.position.w = 1.0f;
+    
+    outputData.dist = temp_dist;
+
+    if ((vid == uint(0)) || (vid == uint(2)))
+        outputData.color = unpack_color(line_attr.startColor);
+    else  
+        outputData.color = unpack_color(line_attr.endColor);
+}
+
+void main()
+{
+    LineVertex_Input vs_input = LineVertex_Input(uint(0), uint(0), uvec2(0, 0));
+    load_gradient_line_input(uint(gl_VertexID), uint(gl_InstanceID),  gGradientLineIndexTex, vs_input);
+
+    GradientLineAttr line_attr = GradientLineAttr(vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), uint(0), uint(0), uint(0), 0.0f, uint(0));
+    load_gradient_line_info(vs_input.PrimID.x, get_prim_id(vs_input.PrimID.y), get_prim_flag(vs_input.PrimID.y), line_attr);
+
+    if (gRetainMode)
+        load_dynamic_draworderz(uint(gl_InstanceID), gGradientLineDrawOrderZTex, line_attr.drawZ);
+
+    GradientVertexAttr_Line outputData = GradientVertexAttr_Line(vec4(0.0f, 0.0f, 0.0f, 0.0f), vec4(0.0f, 0.0f, 0.0f, 0.0f), 0.0f);
+    set_gradient_line_properties(uint(gl_VertexID),  line_attr, outputData);
+    
+    gl_Position = outputData.position;
+
+    vso_position = outputData.position;
+    vso_color = outputData.color;
+    vso_dist = outputData.dist;
+}
+
+}
+
+GLSLShader GradientLine_PS
+{
+
+void main()
+{
+    uint t_color = pack_color(vso_color);
+    vec4 color;
+
+    float anti_aliasing_val = get_antialiasing_val(get_extended_dist_to_center(abs(vso_dist)), get_extended_line_weight(SINGLE_LINE_WIDTH));
+    color = get_formatted_color(t_color, anti_aliasing_val);
+
+    if (color.a < 0.01f)
+        discard;
+    pso_color = OIT_PS_OUTPUT(color, vso_position);  
+}
+
+}
+
+technique Line_AA
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = GradientLine_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = GradientLine_PS;
+    }
+}
+

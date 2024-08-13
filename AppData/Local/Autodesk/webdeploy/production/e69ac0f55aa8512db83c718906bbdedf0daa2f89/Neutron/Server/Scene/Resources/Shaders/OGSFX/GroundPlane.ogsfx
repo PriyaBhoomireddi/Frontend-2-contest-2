@@ -1,0 +1,166 @@
+//**************************************************************************/
+// Copyright 2015 Autodesk, Inc.
+// All rights reserved.
+//
+// This computer source code and related instructions and comments are the
+// unpublished confidential and proprietary information of Autodesk, Inc.
+// and are protected under Federal copyright and state trade secret law.
+// They may not be disclosed to, copied or used by any third party without
+// the prior written consent of Autodesk, Inc.
+//**************************************************************************/
+// DESCRIPTION: Virtual ground plane effect.
+// AUTHOR: Shubird
+// CREATED: July 2015
+//**************************************************************************/
+
+#include "Common.ogsfh"
+
+#define PI 3.141592654
+
+// Environment map
+uniform texture2D g_LatLongTex;
+uniform sampler2D g_LatLongSampler = 
+    sampler_state
+{
+    Texture = <g_LatLongTex>;
+};
+uniform mat4 g_LatLongTransform;
+uniform vec4 g_LatLongGain;
+
+// Ground parameters:
+uniform vec3 g_PivotPosW;
+uniform vec3 g_GroundWorldPt;
+uniform vec3 g_GroundNormal;
+
+// Scene camera parameters:
+// Whether scene camera is perspective.
+uniform bool g_SceneCameraPerspective = true;
+// Scene camera world-space position.
+uniform vec3 g_SceneCameraWorldPos;
+// Projection matrix of scene camera.
+uniform mat4 g_SceneCameraPXf;
+// View inverse martrix of scene camera.
+uniform mat4 g_SceneCameraVIXf;
+
+
+attribute pixelOut {
+    vec4 colorOut:COLOR0;
+}
+
+GLSLShader {
+    precision mediump float;
+}
+
+
+// Sample the lat-long environment map by the direction.
+GLSLShader PS_Ground
+{
+    vec3 SampleLatLongDirection(sampler2D samp, mat4 transform, vec3 direction)
+    {
+       // Transform sample direction using the texture matrix.
+       vec3 dir = normalize((transform * vec4(direction, 0.0)).xyz);
+
+       float latitude = -asin(dir.y)/PI + 0.5;
+       // Clamp the latitude value to avoid artifacts at the poles.
+       // NOTE: The clamping values should be based on the texture height, but this these values will
+       // work for most cases.
+       latitude = clamp(latitude, 0.001, 0.999);
+       float longitude = atan2(dir.x, -dir.z)/PI*0.5+0.5;
+       return texture2D(samp, vec2(longitude,latitude)).rgb;
+    }
+
+    // Return the world-space (3D) position of the pixel.
+    // depth input parameter is the depth value of view space.
+    vec4 GetWorldPosition(vec2 texUV, float depth, bool perspective)
+    {
+        // Convert texUV to normalized [-1.0, 1.0] device coordinates.
+        vec2 pos2D = texUV * vec2(2.0, 2.0) - vec2(1.0, 1.0);
+
+        // Compute the depth scale from the depth of the current pixel and the view scale.  This
+        // is the vector from the center of the screen to the corners of the screen in view space, at
+        // the current depth. 
+        vec2 viewScale = 1.0 / vec2(g_SceneCameraPXf[0][0], g_SceneCameraPXf[1][1]);
+        vec2 depthScale = (perspective ? depth : 1.0) * viewScale;
+
+        // Get the view-space (3D) position of the current pixel from the depth, the depth
+        // scale, and the recovered [-1.0, 1.0] device coordinates.
+        vec3 viewPos = vec3(pos2D * depthScale, depth);
+
+        // Get the world-space (3D) position.
+        vec4 worldPos = g_SceneCameraVIXf * vec4(viewPos, 1.0);
+
+        return worldPos;
+    }
+
+    void main ()
+    {
+        // VSUV, but you can't assign to a uniform in GLSL
+        vec2 localUV;
+        localUV.x = VSUV.x;
+        localUV.y = 1.0 - VSUV.y;
+
+        // Get the world-space (3D) position of current pixel at far plane(depth set as 1.0).
+        // Note: Whether it is a perspective view or not, the depth of far plane is 1.0.
+        vec4 worldPos = GetWorldPosition(localUV, 1.0, g_SceneCameraPerspective);
+        
+        float normalLength = length(g_GroundNormal);
+        
+        // In perspective projection, view direction is the direction from the scene camera to the draw quad vertex;
+        // In orthographic projection, view direction is the view direction of scene camera, which is acquired from view inverse matrix.
+        vec3 Vw = g_SceneCameraPerspective ? worldPos.xyz - g_SceneCameraWorldPos : vec3(g_SceneCameraVIXf[2][0], g_SceneCameraVIXf[2][1], g_SceneCameraVIXf[2][2]);
+        
+        float viewDotN = dot(Vw, g_GroundNormal);
+        
+        // Get the distance from the camera position to the ground plane in world-space.
+        float camera2GroundDist = dot(g_GroundWorldPt - g_SceneCameraWorldPos, g_GroundNormal) / normalLength;
+
+        // If the view direction is towards the ground plane and the camera position is above the 
+        // ground plane, use pivot projection.
+        vec4 outColor = vec4(0,0,0,1.0);
+        if (viewDotN < 0 && camera2GroundDist < 0)
+        {
+            // Use the pivot projection at the ground plane:
+
+            // Get the intersection point of the view ray hitting the ground plane.
+            float cos = dot(Vw, g_GroundNormal) / (normalLength * length(Vw));
+            
+            // In perspective projection, view position is scene camera position;
+            // In orthographic projection, view position is draw quad vertex.
+            vec3 viewPos = g_SceneCameraWorldPos;
+            float viewPos2GroundDist = camera2GroundDist;
+            if (!g_SceneCameraPerspective)
+            {
+                viewPos = worldPos.xyz;
+                viewPos2GroundDist = dot(g_GroundWorldPt - viewPos, g_GroundNormal) / normalLength;
+            }
+        
+            vec3 intersectPt = viewPos + normalize(Vw) * (viewPos2GroundDist / cos);
+
+            // Use the new ray direction from the pivot to the ground intersection point.
+            vec3 dir = normalize(intersectPt - g_PivotPosW);
+
+            // Apply the gain here.
+            outColor.rgb = g_LatLongGain.rgb * SampleLatLongDirection(g_LatLongSampler, g_LatLongTransform, dir);
+        }
+        else
+        {
+            // Discard the pixel if it is not on the ground horizon.
+            discard;
+        }
+
+        #if GL_ES && SHADER_VERSION == 2
+            gl_FragColor = outColor;
+        #else
+            colorOut = outColor;
+        #endif
+    }
+}
+
+technique Main
+{
+    pass p0
+    {
+        VertexShader (in VS_INPUT_ScreenQuad, out VS_TO_PS_ScreenQuad) = VS_ScreenQuad;
+        PixelShader (in VS_TO_PS_ScreenQuad, out pixelOut) = PS_Ground;
+    }
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<Toolkit>
+  <UserVariable>
+    <color color_0="#5889b2"/>
+    <color color_1="#bebebe"/>
+    <color color_2="#6699cc"/>
+    <color color_3="#f0f0f0"/>
+    <color color_4="#cdcdcd"/>
+    <color color_5="rgba(128,128,128,242)"/>
+    <color color_6="#adadad"/>
+    <color color_7="#ffffff"/>
+    <color color_8="#484848"/>
+    <color color_9="#ccdcff"/>
+    <color color_10="#ffffff"/>
+    <color color_11="rgba(0,0,0,51)"/>
+    <color color_12="#dddddd"/>
+    <color color_13="#b7b7b7"/>
+    <color color_14="#e5e5e5"/>
+    <color color_15="#505050"/>
+    <color color_16="#ff5050"/>
+    <color color_17="rgba(0,52,255,200)"/>
+    <color color_18="rgba(255,255,255,179)"/>
+    <color color_19="#666666"/>
+    <color color_20="#000000"/>
+    <color color_21="#ffffff"/>
+    <color color_22="#788caa"/>
+    <color color_23="#a3b7dd"/>
+    <color color_24="#ffffff"/>
+    <color color_25="#979797"/>
+    <color color_26="#b7b7b7"/>
+    <color color_27="#979797"/>
+    <color color_28="#666666"/>
+    <color color_29="#979797"/>
+    <color color_30="#adadad"/>
+    <color color_31="#848484"/>
+    <color color_32="#979797"/>
+  </UserVariable>
+  <CommonStyle>
+    <Param cellActiveBackgroundColor="color_0"/>
+    <Param cellActiveColor="color_1"/>
+    <Param cellActiveHoverBackgroundColor="color_2"/>
+    <Param cellColor="color_3"/>
+    <Param cellHoverBackgroundColor="color_4"/>
+    <Param cellInactiveColor="color_5"/>
+    <Param cellOutlineColor="color_6"/>
+    <Param fontActiveColor="color_7"/>
+    <Param fontColor="color_8"/>
+    <Param highlightBoxColor="color_9"/>
+    <Param menuBackgroundColor="color_10"/>
+    <Param optBoxSepColor="color_11"/>
+    <Param panelColor="color_12"/>
+    <Param separator1Color="color_13"/>
+    <Param separator2Color="color_14"/>
+    <Param sliderColor="color_15"/>
+    <Param sliderColor2="color_16"/>
+    <Param tbColor="color_17"/>
+    <Param tbOutlineColor="color_18"/>
+    <Param textColor="color_19"/>
+    <Param tickMarksColor="color_20"/>
+    <Param tickMarksColor2="color_21"/>
+    <Param underlineColor="color_22"/>
+    <Param underlineColor2="color_23"/>
+    <Param workspaceDropdownBackgroundColor="color_24"/>
+    <Param workspaceDropdownBorderColor="color_25"/>
+    <Param workspaceDropdownHoverColor="color_26"/>
+    <Param workspaceDropdownSeparatorColor="color_27"/>
+    <Param workspaceDropdownTextColor="color_28"/>
+    <Param workspaceGripHoverColor="color_29"/>
+    <Param workspacePanelColor="color_30"/>
+    <Param workspaceSwitchActiveColor="color_31"/>
+    <Param workspaceSwitchHoverColor="color_32"/>
+  </CommonStyle>
+  <ParticularStyle StyleName="HUD"/>
+  <ParticularStyle StyleName="NameValue"/>
+  <ParticularStyle StyleName="Browser"/>
+  <ParticularStyle StyleName="ToolbarLarge"/>
+  <ParticularStyle StyleName="ToolbarSmall"/>
+  <ParticularStyle StyleName="ToolbarQAT"/>
+  <ParticularStyle StyleName="CommandToolbar"/>
+  <ParticularStyle StyleName="ToolbarDropdown"/>
+</Toolkit>

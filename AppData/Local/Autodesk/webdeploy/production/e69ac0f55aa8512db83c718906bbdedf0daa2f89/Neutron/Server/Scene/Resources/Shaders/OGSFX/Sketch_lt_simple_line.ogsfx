@@ -1,0 +1,154 @@
+#version 330
+#include "Sketch_lt_simple_line.ogsfh"
+
+// line type index texture
+uniform highp texture2D gLineTypeIndexTex_ : LineTypeIndexTexture;
+uniform highp sampler2D gLineTypeIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gLineTypeIndexTex_>; };
+
+// line type draw order z  texture for retain mode
+uniform highp texture2D gLineTypeDrawOrderZTex_ : LineTypeDrawOrderZTexture;
+uniform highp sampler2D gLineTypeDrawOrderZTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gLineTypeDrawOrderZTex_>; };
+
+attribute VS_INPUT
+{
+    int VertexID : TEXCOORD0;
+    int InstanceID : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 vso_position;
+    flat int vso_colorS;
+    flat int vso_glowColorS;
+    flat int vso_patternIndexS;
+    flat int vso_reservedS;
+    flat vec4 vso_lineParams;
+    flat vec4 vso_patternProp;
+    vec4 vso_dist;
+};
+
+attribute pixelOut
+{
+    vec4 pso_color : COLOR0;
+};
+
+GLSLShader LineType_VS
+{
+
+// line type line vertex shader
+void main()
+{
+    LineVertex_Input vs_input = LineVertex_Input(uint(0), uint(0), uvec2(0, 0));
+    load_line_input(uint(gl_VertexID), uint(gl_InstanceID), gLineTypeIndexTex, vs_input);
+
+    LineTypeAttr line_attr = LineTypeAttr(vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), uint(0), uint(0), uint(0), 0.0f,
+                                          uint(0), uint(0), uint(0), 0.0f, 0.0f, 0.0f, 0.0f);
+    load_line_type_info(vs_input.PrimID.x, get_prim_id(vs_input.PrimID.y), get_prim_flag(vs_input.PrimID.y), vs_input.SegmentID, line_attr);
+
+
+    if (gRetainMode)
+    {
+        load_dynamic_draworderz(uint(gl_InstanceID), gLineTypeDrawOrderZTex, line_attr.drawZ);
+    }    
+
+    adjust_line_width_single_line(line_attr.width);
+
+    VertexAttr_LineType outputData = VertexAttr_LineType(vec4(0.0f, 0.0f, 0.0f, 0.0f), uint(0), uint(0), uint(0), uint(0), vec4(0.0f, 0.0f, 0.0f, 0.0f),
+                                                         vec4(0.0f, 0.0f, 0.0f, 0.0f), vec4(0.0f, 0.0f, 0.0f, 0.0f));
+    
+    if (line_attr.isLogical != uint(0))
+    {
+        set_logical_line_type_properties(vs_input.VertexID, line_attr, outputData);
+    }
+    else
+    {
+       set_line_type_properties(vs_input.VertexID, line_attr, outputData);
+    } 
+
+    gl_Position = outputData.position;
+
+    vso_position = outputData.position;
+    vso_colorS = int(outputData.color);
+    vso_glowColorS = int(outputData.glowColor);
+    vso_patternIndexS = int(outputData.patternIndex);
+    vso_reservedS = int(outputData.reserved);
+    vso_lineParams = outputData.lineParams;
+    vso_patternProp = outputData.patternProp;
+    vso_dist = outputData.dist;
+}
+
+}
+
+GLSLShader LineType_PS
+{
+
+void main()
+{
+    uint vso_color = uint(vso_colorS);
+    uint vso_glowColor = uint(vso_glowColorS);
+    uint vso_patternIndex = uint(vso_patternIndexS);
+    uint vso_reserved = uint(vso_reservedS);
+
+    VertexAttr_LineType inputData = VertexAttr_LineType(vso_position, vso_color, vso_glowColor, vso_patternIndex,
+                                                        vso_reserved, vso_lineParams, vso_patternProp, vso_dist);
+    // set attributes.
+    SimpleLineTypeAttr attr;
+    attr.toLineDist = inputData.dist.x;
+    attr.startDist = inputData.dist.y;
+    attr.endDist = inputData.dist.z;
+    attr.startSkipLen = inputData.patternProp.x;
+    attr.endSkipLen = inputData.patternProp.y;
+    attr.patternScale = inputData.patternProp.z;
+    attr.patternOffset = inputData.patternProp.w;
+    attr.patternID = inputData.patternIndex;
+    attr.lineDir = normalize(vec2(inputData.lineParams.y, -inputData.lineParams.x));
+    attr.isClosed = false;
+    attr.isCurve = false;
+    
+    // check current pixel is on display or not
+    SimpleLineTypeResult result;
+    bool display = check_line_pattern(attr, result);
+    
+    if (!display)
+        discard;
+
+    vec4 color;
+
+    // if is dash or no aa dot, draw as line 
+    if ((!result.isDot)||(result.noDotAA))
+    {
+        if (gNoAAMode != 0)
+        {
+            bool in_sharp = in_line_sharp(inputData.lineParams.xyz, vec2(inputData.position.x, gScreenSize.y - inputData.position.y));
+            color = in_sharp ? get_formatted_color(inputData.color, 1.0f) : vec4(0.0f, 0.0f, 0.0f, 0.0f);
+        }
+        else
+        {
+            color = compute_final_color(get_extended_dist_to_center(abs(inputData.dist.x)), get_extended_line_weight(SINGLE_LINE_WIDTH), inputData.color, inputData.glowColor);
+        }
+    }
+    // other wise draw as anti-aliasing dot
+    else
+    {
+        float dist = abs(inputData.dist.x);
+
+        float new_dist = sqrt(dist * dist + result.dotDist *  result.dotDist);
+        color = compute_final_color(get_extended_dist_to_center(new_dist), get_extended_line_type_dot_weight(SINGLE_LINE_WIDTH), inputData.color, inputData.glowColor);
+    }
+
+    if (color.a < 0.01f)
+        discard;
+    pso_color = OIT_PS_OUTPUT(color, vso_position);  
+}
+
+}
+
+technique Line_Type
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = LineType_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = LineType_PS;
+    }
+}
+

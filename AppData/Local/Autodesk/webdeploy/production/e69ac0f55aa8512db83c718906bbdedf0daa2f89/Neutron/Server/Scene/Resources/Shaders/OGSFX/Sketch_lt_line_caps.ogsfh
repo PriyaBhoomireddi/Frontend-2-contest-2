@@ -1,0 +1,267 @@
+#ifndef _HQ_FX_LT_LINE_CAPS_H_
+#define _HQ_FX_LT_LINE_CAPS_H_
+
+#include "Sketch_oit_def.ogsfh"
+#include "Sketch_primitive.ogsfh"
+#include "Sketch_line.ogsfh"
+#include "Sketch_line_weight.ogsfh"
+#include "Sketch_line_type_line.ogsfh"
+
+GLSLShader Sketch_lt_line_caps
+{
+
+// line type caps properties
+struct CapsLineTypeAttr
+{
+    vec2 startPoint;
+    vec2 endPoint;
+
+    uint flag;
+    uint color;
+    uint width;
+    float drawZ;
+    uint glowColor;
+    uint isLogical;
+
+    uint  patternIndex;
+    uint capsType;
+
+    float startSkipLen;
+    float endSkipLen;
+    float patternOffset;
+    float patternScale;
+
+#ifdef ANALYTIC_STIPPLE
+    uint stippleIndex;
+#endif
+};
+
+struct VertexAttr_LineTypeCaps
+{
+    vec4 position; // transformed  vertex position
+
+    uint flag;   // line flag
+    uint color;  // line color
+    uint glowColor;  // glow color
+    uint width;  // line width;
+    uint capType;  // caps type;
+
+    vec2 center; // cap center
+    vec2 endPoint; // end point
+
+    uint patternIndex; // line pattern index
+    bool reversed; // is start/end point reversed
+    vec4 patternProp; // line pattern properties: x - start skip len, y - end skip len, z - pattern scale, w - pattern offset
+
+#ifdef ANALYTIC_STIPPLE
+    uint stippleIndex;  // stipple index
+#endif
+};
+
+// get center point of caps
+void get_line_type_caps_points(CapsLineTypeAttr attr, bool isEndPoint, out vec2 cur_point, out vec2 next_point, out bool reversed)
+{
+    // if doesn't have previous line
+    if ((attr.flag&HAS_PREV_LINE) == uint(0))
+    {
+        // if is end point: that happens for single segment
+        if (isEndPoint)
+        {
+            // end point is the caps point
+            cur_point = attr.endPoint;
+            next_point = attr.startPoint;
+            reversed = true;
+        }
+        // if is start point
+        else
+        {
+            // start point is the caps point
+            cur_point = attr.startPoint;
+            next_point = attr.endPoint;
+            reversed = false;
+        }
+    }
+    // if has previous line
+    else
+    {
+        // end point must be caps point
+        cur_point = attr.endPoint;
+        next_point = attr.startPoint;
+        reversed = true;
+    }
+
+}
+
+// output line type caps properties
+void set_line_type_caps_properties(uint vid, bool isEndPoint, CapsLineTypeAttr line_attr, out VertexAttr_LineTypeCaps outputData)
+{
+    vec2 curPoint, nextPoint;
+    bool reversed;
+    get_line_type_caps_points(line_attr, isEndPoint, curPoint, nextPoint, reversed);
+
+    outputData.flag = line_attr.flag;
+    outputData.color = line_attr.color;
+    outputData.glowColor = line_attr.glowColor;
+    outputData.width = line_attr.width;
+    outputData.capType = line_attr.capsType;
+    outputData.reversed = reversed;
+
+    vec2 dir = -normalize(nextPoint - curPoint);
+
+    outputData.endPoint = offset_screen_pos(nextPoint);
+    outputData.center = offset_screen_pos(curPoint);
+
+    outputData.position.xy = get_caps_envelope_pos(vid, line_attr.width,
+        outputData.center, dir);
+    outputData.position.z = line_attr.drawZ;
+    outputData.position.w = 1.0f;
+
+    outputData.patternIndex = line_attr.patternIndex;
+
+    outputData.patternProp.x = line_attr.startSkipLen;
+    outputData.patternProp.y = line_attr.endSkipLen;
+    outputData.patternProp.z = line_attr.patternOffset;
+    outputData.patternProp.w = line_attr.patternScale;
+
+#ifdef ANALYTIC_STIPPLE
+    outputData.stippleIndex = line_attr.stippleIndex;
+#endif
+}
+
+// output line type caps properties in logical space
+void set_logical_line_type_caps_properties(uint vid, bool isEndPoint, CapsLineTypeAttr line_attr, out VertexAttr_LineTypeCaps outputData)
+{
+    vec2 curPoint, nextPoint;
+    bool reversed;
+
+    float weight_expand = get_line_weight_expand(float(line_attr.width));
+    vec2 uv = get_rect_pos(vid);
+
+    get_line_type_caps_points(line_attr, isEndPoint, curPoint, nextPoint, reversed);
+
+    vec2  screen_next_pt = logic_to_screen(nextPoint);
+    vec2  screen_cur_pt = logic_to_screen(curPoint);
+    vec2 ndc_cur_pt = screen_to_ndc_pos(screen_cur_pt);
+    vec2 dir = -normalize(screen_next_pt - screen_cur_pt);
+    float  xoffset = 2.0f;
+
+    // if the current point and next point is near enough it will have precision issue when
+    // calculate the direction. Here set (1.0f, 0.0f) as its direction.
+    if (int(screen_cur_pt.x) == int(screen_next_pt.x)  && int(screen_cur_pt.y) == int(screen_next_pt.y))
+    {
+        dir = vec2(1.0f, 0.0f);
+        screen_cur_pt = offset_screen_pos(screen_cur_pt);
+        screen_next_pt = screen_cur_pt - dir*0.1f;
+        weight_expand = 0.0f;
+        xoffset = 0.0f;
+    }
+
+    vec2 extrude = uv.x* vec2(dir.y, -dir.x) *gPixelLen* weight_expand*0.5f
+        + (uv.y*0.5f + 0.5f) * dir *gPixelLen*weight_expand*0.5f
+        + (1.0f - (uv.y*0.5f + 0.5f)) * (-dir) *gPixelLen* xoffset;
+
+    outputData.position.xy = ndc_cur_pt + extrude;
+    outputData.endPoint = screen_next_pt;
+    outputData.center = screen_cur_pt;
+    outputData.position.z = line_attr.drawZ;
+    outputData.position.w = 1.0f;
+
+    outputData.flag = line_attr.flag;
+    outputData.color = line_attr.color;
+    outputData.glowColor = line_attr.glowColor;
+    outputData.width = line_attr.width;
+    outputData.capType = line_attr.capsType;
+    outputData.reversed = reversed;
+
+    outputData.patternIndex = line_attr.patternIndex;
+
+    outputData.patternProp = vec4(line_attr.startSkipLen, line_attr.endSkipLen,
+        line_attr.patternOffset, line_attr.patternScale);
+
+#ifdef ANALYTIC_STIPPLE
+    outputData.stippleIndex = line_attr.stippleIndex;
+#endif
+}
+
+int getCapsColorFromAttr(VertexAttr_LineTypeCaps inputData, int res, vec2 pixelPos, vec2 dir,
+    WideLinePatternResult left_attr, WideLinePatternResult right_attr, out vec4 color)
+{
+    int ret = 0;
+
+    // get distances and line width
+    float dist_to_center = length(pixelPos - inputData.center);
+    float width = adjust_line_width_wide_line(inputData.width);
+
+    // if the start(end) point is in pure space, discard current point directly.
+    if (res == PURE_SPACE)
+        return -1;
+
+    // if the start(end) point is in dash, draw the cap directly.
+    if (res == PURE_DASH)
+    {
+        if (gNoAAMode != 0)
+        {
+            color = compute_sharp_caps_final_color(dist_to_center, width, inputData.color, inputData.glowColor,
+                pixelPos, inputData.center, dir, inputData.capType);
+        }
+        else
+        {
+            color = compute_caps_final_color(dist_to_center, width, inputData.color, inputData.glowColor,
+                pixelPos, inputData.center, dir, inputData.capType);
+        }
+    }
+    else
+    {
+        // if start(end) point is in MIXED, which means it is in space, but it is in a cap or a dot region.
+        vec4 left_color = compute_wide_pattern_color(left_attr, width,
+            inputData.color, inputData.glowColor, pixelPos, inputData.capType);
+
+        vec4 right_color = compute_wide_pattern_color(right_attr, width,
+            inputData.color, inputData.glowColor, pixelPos, inputData.capType);
+
+        // if left color is less transparent, or closer to left when have same color, output left color
+        if (left_color.a > right_color.a || (left_color.a == right_color.a && left_attr.dist <= right_attr.dist))
+        {
+            if (left_color.a < EPS)
+                return -1;
+
+            vec2 capCenter = inputData.center;
+
+            // if it is in a cap region, then current point will share the same cap center as start(end) point.
+            if (left_attr.is_caps)
+                capCenter = left_attr.caps_center;
+            // if it is in a dot region, then we need adjust the capCenter for current point.
+            else if (left_attr.dist > 0.0f)
+                capCenter = inputData.center - dir * left_attr.dist;
+
+            left_attr.dist = length(pixelPos - capCenter);
+            color = compute_wide_pattern_color(left_attr, width,
+                inputData.color, inputData.glowColor, pixelPos, inputData.capType);
+        }
+        // output right color
+        else
+        {
+            if (right_color.a < EPS)
+                return -1;
+
+            vec2 capCenter = inputData.center;
+
+            // if it is in a cap region, then current point will share the same cap center as start(end) point.
+            if (right_attr.is_caps)
+                capCenter = right_attr.caps_center;
+            // if it is in a dot region, then we need adjust the capCenter for current point.
+            else if (right_attr.dist > 0.0f)
+                capCenter = inputData.center - dir * right_attr.dist;
+
+            right_attr.dist = length(pixelPos - capCenter);
+            color = compute_wide_pattern_color(right_attr, width,
+                inputData.color, inputData.glowColor, pixelPos, inputData.capType);
+        }
+    }
+
+    return ret;
+}
+
+}
+
+#endif // _HQ_FX_LT_LINE_CAPS_H_

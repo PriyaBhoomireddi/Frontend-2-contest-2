@@ -1,0 +1,68 @@
+<RCC>
+    <qresource prefix="/ToolbarFramework">
+        <file>Checkbox_On.svg</file>
+        <file>Checkbox_Off.svg</file>
+        <file>Checkbox_Off_HB.svg</file>
+        <file>Checkbox_On_HB.svg</file>
+        <file>Checkbox_Off_Hover.svg</file>
+        <file>Checkbox_On_Hover.svg</file>
+        <file>Checkbox_On_disabled.svg</file>
+        <file>Checkbox_Off_disabled.svg</file>
+        <file>Radio_On.svg</file>
+        <file>Radio_Off.svg</file>
+        <file>Radio_Off_HB.svg</file>
+        <file>Radio_On_HB.svg</file>
+        <file>Radio_Off_Hover.svg</file>
+        <file>Radio_On_Hover.svg</file>
+        <file alias="Options.svg">Options.svg</file>
+        <file alias="OptionsHighlight.svg">OptionsHighlight.svg</file>
+		<file alias="menuArrowDownTabbedToolbarPanelMenu.svg">menuArrowDownTabbedToolbarPanelMenu.svg</file>
+        <file alias="menuArrowDown.svg">menuArrowDown.svg</file>
+        <file alias="menuArrowLeft.svg">menuArrowLeft.svg</file>
+        <file alias="menuArrowRight.svg">menuArrowRight.svg</file>
+        <file alias="menuArrowUp.svg">menuArrowUp.svg</file>
+        <file alias="dropDownButtonMenuArrowDown.svg">dropDownButtonMenuArrowDown.svg</file>
+        <file alias="dropDownButtonMenuArrowDownQAT.svg">dropDownButtonMenuArrowDownQAT.svg</file>
+        <file alias="commandToolbarDropdownArrow.svg">commandToolbarDropdownArrow.svg</file>
+        <file alias="Checkmark.svg">Checkmark.svg</file>
+        <file alias="Toolbar_Grip.svg">Toolbar_Grip.svg</file>
+        <file alias="promoteToolGrip.svg">promoteToolGrip.svg</file>
+        <file alias="pinned.svg">pinned.svg</file>
+        <file alias="unpinned.svg">unpinned.svg</file>
+        <file alias="AddToToolbar.svg">AddToToolbar.svg</file>
+        <file alias="AddToMyToolbox.svg">AddToMyToolbox.svg</file>
+        <file alias="RemoveFromMyToolbox.svg">RemoveFromMyToolbox.svg</file>
+        <file alias="RemoveFromToolbar.svg">RemoveFromToolbar.svg</file>
+        <file alias="Grip.svg">Grip.svg</file>
+        <file alias="deleteItem.svg">deleteItem.svg</file>
+        <file alias="locked.svg">locked.svg</file>
+        <file alias="copy.svg">copy.svg</file>
+        <file alias="workspaceGrip.svg">workspaceGrip.svg</file>
+        <file alias="NavBack.svg">NavBack.svg</file>
+        <file alias="spin_up.svg">spin_up.svg</file>
+        <file alias="spin_down.svg">spin_down.svg</file>
+        <file alias="slider_active.svg">slider_active.svg</file>
+        <file alias="slider_highlight.svg">slider_highlight.svg</file>
+        <file alias="slider_inactive.svg">slider_inactive.svg</file>
+        <file alias="RemoveButton.svg">RemoveButton.svg</file>
+        <file alias="Finish.svg">Finish.svg</file>
+        <file alias="ThreeDots.svg">ThreeDots.svg</file>
+        <file alias="threeDotsSelect.svg">threeDotsSelect.svg</file>
+        <file alias="threeDotsHover.svg">threeDotsHover.svg</file>
+        <file alias="fxNormal.svg">fxNormal.svg</file>
+        <file alias="fxHover.svg">fxHover.svg</file>
+        <file alias="fxPress.svg">fxPress.svg</file>
+        <file>DemoSvg/3D Print.svg</file>
+        <file>DemoSvg/INV_Box.svg</file>
+        <file>DemoSvg/INV_Box-2.svg</file>
+        <file>DemoSvg/INV_Model_CircularPattern_Cmd.svg</file>
+        <file>DemoSvg/INV_Model_Coil_Cmd_16x16.svg</file>
+        <file>DemoSvg/INV_Model_Hole_Cmd.svg</file>
+        <file>DemoSvg/INV_Model_RectangularPattern_Cmd.svg</file>
+        <file>DemoSvg/INV_Model_ReplaceFace_Cmd.svg</file>
+        <file>DemoSvg/INV_Stitch.svg</file>
+        <file>DemoSvg/Plane.svg</file>
+        <file>DemoSvg/REDO.svg</file>
+        <file>DemoSvg/UNDO.svg</file>
+    </qresource>
+</RCC>

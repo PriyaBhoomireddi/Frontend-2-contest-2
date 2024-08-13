@@ -1,0 +1,62 @@
+<html>
+<!-- Mock html.  Temporary for development only.-->
+<head>
+<title>Fusion 360 Home Tab</title>
+<link rel="stylesheet" href="css/styles.css" type="text/css"/>
+<script>
+   const urlParams = new URLSearchParams(window.location.search);
+   const template = urlParams.get('template');
+</script>
+</head>
+
+<body>
+    <div id="offline-content">
+        <!-- Title -->
+        <div id="offline1"> <h1 id="id_Offline_title">Offline Mode</h1></div>
+        <div id="personalHub1"><h1 id="id_SUStorage_title">Single-User Storage</h1></div>
+        <div id="nonMeHub1"><h1 id="id_NonMEHub_title">Fusion Lifecycle</h1></div>
+        <!-- Image -->
+        <div class="offline-first-use-image"></div>
+        <!-- Subtitle and message -->
+        <div id="offline2">
+            <p id="id_Offline_subtitle" class="text-1">Offline mode isn't supported in the Home tab yet.</p>
+            <p id="id_Offline_message" class="text-2">
+                Use the data panel(<i class='offline-grid-icon-image'></i>) to access cached data while you are offline.
+            </p>
+        </div>
+        <div id="personalHub2">
+            <p id="id_SUStorage_subtitle" class="text-1">Single-user storage isn't supported in the Home tab.</p>
+            <p id="id_SUStorage_message" class="text-2">
+                Go to the data panel(<i class='offline-grid-icon-image'></i>) to access data while you are in single-user storage.
+            </p>
+        </div>
+        <div id="nonMeHub2">
+            <p id="id_NonMEHub_subtitle" class="text-1">Fusion Lifecycle is not enabled for the selected team.</p>
+            <p id="id_NonMEHub_message" class="text-2">
+                To access Fusion Lifecycle, an administrator needs to purchase Fusion 360 Manage Extension for this team.
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript" src="./Localize.js"></script>
+    <script>
+        if (template === "nonMeHub") {
+            document.getElementById("personalHub1").style.display = "none";
+            document.getElementById("personalHub2").style.display = "none";
+            document.getElementById("offline1").style.display = "none";
+            document.getElementById("offline2").style.display = "none";
+        }
+        else if (template === "personalHub") {
+            document.getElementById("offline1").style.display = "none";
+            document.getElementById("offline2").style.display = "none";
+            document.getElementById("nonMeHub1").style.display = "none";
+            document.getElementById("nonMeHub2").style.display = "none";
+        }
+        else {
+            document.getElementById("personalHub1").style.display = "none";
+            document.getElementById("personalHub2").style.display = "none";
+            document.getElementById("nonMeHub1").style.display = "none";
+            document.getElementById("nonMeHub2").style.display = "none";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+.activitiesPane {
+    margin-top: 6px;
+    position: relative;
+    font-size: 12px;
+    overflow: auto;
+}
+
+    .inactivated {
+        cursor: default;
+        pointer-events: none;
+        background-color: grey;
+    }
+
+    .activitiesPane.savingInProgress {
+    }
+
+    /* activity group node */
+    .activitiesPane .group {
+        position: relative;
+        border: #a7a9ac 1px solid;
+        background: #e9e9e9;
+        margin: 6px 6px 6px 6px;
+    }
+
+        .activitiesPane .group:first-child {
+            margin-top: 0;
+        }
+
+        .activitiesPane .group.active {
+            border: SteelBlue 2px solid;
+        }
+
+        /*used for header footer as well as messageRow*/
+        .activitiesPane .group .hideComment {
+            display: none;
+            overflow: hidden;
+        }
+
+        .activitiesPane .group.showHidden .messageRow.hideComment {
+            display: block;
+            overflow: auto;
+        }
+
+        .activitiesPane .group .version {
+            float: left;
+            color: #666666;
+            padding: 0 6px 0 6px;
+        }
+
+        .activitiesPane .group .author {
+            padding: 0 0 0 6px;
+            float: left;
+        }
+
+        .activitiesPane .group .timeCapsule {
+            float: right;
+            right: 0px;
+            top: 0px;
+            text-align: right;
+            color: #666666;
+            font-weight: normal;
+        }
+
+        .activitiesPane .group.deleting {
+            pointer-events: none;
+        }
+
+        /* header */
+        .activitiesPane .group .groupHeader {
+            position: relative;
+            color: #000000;
+            overflow-x: scroll;
+        }
+
+        .activitiesPane .group .deletingCommentMask {
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.75);
+            left: 0px;
+            right: 0px;
+            top: 0px;
+            bottom: 0px;
+            z-index: 1001;
+            overflow: hidden;
+            visibility: hidden;
+        }
+
+            .activitiesPane .group .deletingCommentMask.deleting {
+                visibility: visible;
+            }
+
+        .activitiesPane .group .groupHeader .headLine {
+            position: relative;
+            left: 0px;
+            right: 0px;
+            height: 22px;
+            padding-left: 6px;
+            padding-right: 6px;
+            line-height: 22px;
+            color: #000000;
+            background: #d2d2d2;
+        }
+
+        .activitiesPane .group .groupHeader .headerMessageWrapper {
+            position: relative;
+        }
+
+        .activitiesPane .group .status {
+            position: absolute;
+            top: 6px;
+            right: 18px;
+            -webkit-border-radius: 2px;
+            border: 1px solid #8e8c8c;
+            cursor: pointer;
+        }
+
+        .activitiesPane .group .deleteComment {
+            position: absolute;
+            margin-right: 3px;
+            margin-top: 9px;
+            top: 0px;
+            right: 0px;
+            width: 10px;
+            height: 10px;
+            background: url("../../assets/close_cross.png") no-repeat center center;
+            background-size: contain;
+            visibility: hidden;
+        }
+
+            .activitiesPane .group .deleteComment:hover {
+                cursor: pointer;
+            }
+
+        .activitiesPane .group .groupHeader:hover .headerMessageWrapper .deleteComment {
+            visibility: visible;
+        }
+
+        .activitiesPane .group .groupContent .messageRow:hover .deleteComment {
+            margin-top: 0px;
+            visibility: visible;
+        }
+
+        .activitiesPane .group .groupHeader.groupContentPresent {
+            border-bottom: #989898 1px solid;
+        }
+
+        .activitiesPane .group .messageText {
+            position: relative;
+            margin: 0 15px 0 6px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            text-align: justify;
+            font-size: 12px;
+            font-weight: normal;
+            overflow: hidden;
+            max-height: 54px;
+            line-height: 15px;
+            white-space: normal;
+            word-wrap: break-word;
+            clear: left;
+        }
+
+        .activitiesPane .group .seeMore {
+            position: relative;
+            line-height: 15px;
+            padding-top: 6px;
+            font-size: 12px;
+            margin: 0 15px 0 6px;
+            text-align: justify;
+            cursor: pointer;
+        }
+
+        .activitiesPane .group .groupHeader .headerMessage.previewTitle {
+            color: #666666;
+        }
+
+        .activitiesPane .group .groupHeader .displayUrl {
+            position: relative;
+            display: block;
+            margin: 0 3px 0 17px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            white-space: pre-line;
+            overflow: visible;
+            text-decoration: none;
+        }
+
+        .activitiesPane .group .groupHeader .displayDelim {
+            position: relative;
+            margin: 0 3px 0 17px;
+        }
+
+        .activitiesPane .group .headerFooter {
+            cursor: default;
+            position: relative;
+        }
+
+        /* arrow-right */
+        .activitiesPane .group .footerTriangle {
+            position: absolute;
+            left: 9px;
+            margin: auto;
+            top: 0px;
+            bottom: 0px;
+            width: 0;
+            height: 0;
+            border-top: 4px solid transparent;
+            border-bottom: 4px solid transparent;
+            border-left: 4px solid #989898;
+        }
+
+        /* arrow-down */
+        .activitiesPane .group.showHidden .footerTriangle {
+            left: 7px;
+            top: auto;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid #989898;
+        }
+
+        .activitiesPane .group .footerText {
+            font-size: 10px;
+            padding: 0 0 0 16px;
+        }
+
+
+    .activitiesPane .linkButton {
+        float: left;
+        margin-left: 6px;
+        width: 16px;
+        height: 16px;
+        background: url("../../assets/commentLink.png") no-repeat center center;
+        background-size: contain;
+    }
+
+    /* content */
+    .activitiesPane .group .groupContent {
+        position: relative;
+    }
+
+        .activitiesPane .group .groupContent .messageRow {
+            overflow: auto;
+            position: relative;
+            border-top: #a7a9ac 1px solid;
+            color: #000000;
+        }
+
+            .activitiesPane .group .groupContent .messageRow .deletingReplyMask {
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.75);
+                left: 0px;
+                right: 0px;
+                top: 0px;
+                bottom: 0px;
+                z-index: 1001;
+                overflow: hidden;
+                visibility: hidden;
+            }
+
+                .activitiesPane .group .groupContent .messageRow .deletingReplyMask.deleting {
+                    visibility: visible;
+                }
+
+            .activitiesPane .group .groupContent .messageRow.editOnly {
+                padding-top: 3px;
+                padding-bottom: 3px;
+                border-bottom: none;
+            }
+
+                .activitiesPane .group .groupContent .messageRow.editOnly:last-child {
+                    padding-bottom: 5px;
+                }
+
+                .activitiesPane .group .groupContent .messageRow.editOnly:first-child {
+                    padding-top: 5px;
+                }
+
+    .activitiesPane .group .messageRow .messageTitleBar {
+        position: relative;
+        left: 0px;
+        right: 0px;
+        height: 22px;
+        padding-top: 6px;
+        padding-left: 0px;
+        padding-right: 6px;
+    }
+
+    .activitiesPane .group .messageRow .messageTitleBar .timeCapsule {
+        padding-top: 6px;
+    }
+
+    .activitiesPane .group .messageRow .messageTextWrapper {
+        position: relative;
+    }
+
+    .activitiesPane .group .messageRow .messageTextWrapper .messageText {
+        padding-top: 0px;
+        position: relative;
+        padding-bottom: 6px;
+    }
+
+    .activitiesPane .group .messageRow .messageTextWrapper .seeMore {
+        padding-bottom: 6px;
+    }
+    .activitiesPane .group .groupContent .messageRow span {
+        color: #3c33a8;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .activitiesPane .group .groupContent .replyContainer {
+        position: relative;
+        padding: 6px;
+        border-top: #a7a9ac 1px solid;
+        color: #000000;
+    }
+
+        .activitiesPane .group .groupContent .replyContainer .replyInput {
+            visibility: visible;
+        }
+
+    .activitiesPane.savingInProgress .group .groupContent .replyContainer .replyInput {
+        visibility: hidden;
+    }
+
+    .activitiesPane .group .promptAction {
+        position: relative;
+        background-color: steelblue;
+        padding: 6px;
+        color: white;
+    }
+
+        .activitiesPane .group .promptAction .prompt {
+            position: relative;
+            left: 0px;
+            margin-right: 76px;
+            min-height: 22px;
+        }
+
+        .activitiesPane .group .promptAction .action {
+            position: absolute;
+            right: 0px;
+            width: 60px;
+            height: 20px;
+            top: 50%;
+            margin-top: -15px;
+            border: white 1px solid;
+            background: #5285B0;
+            text-align: center;
+            cursor: pointer;
+        }
+
+            .activitiesPane .group .promptAction .action:hover {
+                background: linear-gradient(#6193C9, #3A669B);
+            }
+
+            .activitiesPane .group .promptAction .action:active {
+                background: #5284BE;
+            }
+
+    .activitiesPane .thumbnailWrapper {
+        float: left;
+        margin-left: 6px;
+        width: 106px;
+        height: 106px;
+        border: #B5B5B5 1px solid;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+
+    .activitiesPane .thumbnail {
+        display: block;
+        position: absolute;
+        margin: 0 auto;
+        width: 106px;
+        height: auto;
+        cursor: pointer;
+    }
+
+    .activitiesPane .thumbnailWrapper .viewThumbnail {
+        visibility: hidden;
+        pointer-events: none;
+        align-items: center;
+    }
+
+    .activitiesPane .thumbnail:hover ~ .viewThumbnail.mask {
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        background-color: rgba(255, 255, 255, 0.5);
+        visibility: visible;
+        z-index: 10;
+    }
+
+    .activitiesPane .thumbnail:hover ~ .viewThumbnail.icon {
+        position: absolute;
+        width: 36px;
+        height: 36px;
+        left: 35px;
+        top: 40%;
+        margin-top: -26px;
+        background: url("../../assets/view_thumbnail.png") no-repeat center center;
+        background-size: contain;
+        visibility: visible;
+        z-index: 20;
+    }
+
+    .activitiesPane .thumbnail:hover ~ .viewThumbnail.text {
+        margin: 6px;
+        margin-top: 56px;
+        text-align: center;
+        font-size: 12px;
+        color: #3B7ED0;
+        visibility: visible;
+        z-index: 30;
+    }
+
+    .activitiesPane::-webkit-scrollbar {
+        width: 6px;
+        background: none;
+        margin: 0 3px 0 3px;
+    }
+
+    .activitiesPane::-webkit-scrollbar-thumb,
+    .activitiesPane::-webkit-scrollbar-thumb:hover {
+        background: #bdbbbc;
+        -webkit-border-radius: 2px;
+        border: 1px solid #8e8c8c;
+        height: 58px;
+    }
+
+    .activitiesPane::-webkit-scrollbar-corner {
+        background: #c8c9cb;
+    }
+
+    .activitiesPane::-webkit-scrollbar-track {
+        background: #c8c9cb;
+    }
+
+.goog-tooltip {
+    position: absolute;
+    background: #515151;
+    font-size: 12px;
+    line-height: 14px;
+    max-width: 170px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 3px 13px 3px 13px;
+    border-radius: 10px;
+    z-index: 15;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    box-shadow: 0 7px 23px 0 rgba(50, 50, 50, 0.41);
+    -webkit-box-shadow: 0 7px 23px 0 rgba(50, 50, 50, 0.41);
+}
+
+a.mention {
+    color: #0696D7;
+    font-weight: 400;
+    text-decoration: none;
+}

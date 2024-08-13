@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WeightedCountCircuitBreakerStateStore version="1.0">
+  	<callFailureCountThresholdToOpen value="10"/>
+ 	<recoverySuccessCountThresholdOpenToHalfOpen value="1"/>
+ 	<recoverySuccessCountThresholdHalfOpenToClosed value="3"/>
+  	<recoveryFailureCountThresholdHalfOpenToOpen value="2"/>
+ 	<openToHalfOpenTimeout value="60"/>
+</WeightedCountCircuitBreakerStateStore>

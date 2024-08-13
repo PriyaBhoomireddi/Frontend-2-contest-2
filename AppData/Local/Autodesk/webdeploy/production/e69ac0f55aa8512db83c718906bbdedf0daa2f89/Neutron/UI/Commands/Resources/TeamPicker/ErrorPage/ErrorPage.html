@@ -1,0 +1,35 @@
+﻿<html>
+<head>
+	<title>Fusion 360 Error Page</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="./ErrorPage.css" rel="stylesheet" type="text/css">
+</head>
+<body class="autodesk360">
+<div class="modal-backdrop team-picker-background">
+  	<div class="tho-wizard">
+		<div class="tho-message">
+			<icon class="tho-message-icon ng-isolate-scope" src="tho_error">
+				<svg width="60" height="60" viewBox="0 0 60 60">
+					<g fill="none" fill-rule="evenodd">
+						<circle fill="#D75A4A" fill-rule="nonzero" cx="30" cy="30" r="30"></circle>
+						<path stroke="#FFF" stroke-width="2" stroke-linecap="round" d="M19.2 40.8L30 30l10.8-10.8m-21.6 0L30 30l10.8 10.8"></path>
+					</g>
+				</svg>
+			</icon>
+			<div class="tho-message-title">
+				<p id="id_error_title">Unable to load data</p>
+			</div>
+			<div class="tho-message-body">
+				<span id="id_error_message">We can't seem to connect to the server. Please try again.</span>
+                	<br>
+                		<span id="id_forum_help">If the problem persists, <a href = "https://knowledge.autodesk.com/contact-support">contact customer support</a>.</span>
+			</div>
+			<button type="button" onClick="onClickRetry()" id="id_button_retry" class="btn btn-primary tho-message-button">Retry</button>
+		</div>
+		<div id="id_button_exit" class="tho-cross-button" onClick="onClickExit()">&#215;</div>
+    </div>
+</div>
+
+<script type="text/javascript" src="./ErrorPage.js"></script>
+</body>
+</html>

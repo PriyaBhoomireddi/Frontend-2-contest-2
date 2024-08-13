@@ -1,0 +1,287 @@
+// World-view-projection transformation.
+uniform mat4 gWVPXf : WorldViewProjection;
+
+uniform vec2 gFinalres : ViewportPixelSize;
+
+#ifndef HALO_WIDTH
+#define HALO_WIDTH 2
+#endif
+
+uniform vec4 gScissorBox = {0.0, 0.0, 1.0, 1.0};
+
+// The selection mask
+uniform texture2D gMask;
+
+// Filter mask sampler.
+uniform sampler2D MaskSampler = sampler_state
+{
+    Texture = <gMask>;
+};
+
+// The selection lines
+uniform texture2D gLines;
+
+// Filter mask sampler.
+uniform sampler2D LinesSampler = sampler_state
+{
+    Texture = <gLines>;
+};
+
+// The result of horizontal and vertical pass 
+uniform texture2D gBlur;
+
+// Filter blur sampler.
+uniform sampler2D BlurSampler = sampler_state
+{
+    Texture = <gBlur>;
+};
+
+// Input for deciding if lines should be taken into account.
+uniform bool gUseLines = true;
+
+
+// Vertex shader input structure.
+attribute VS_INPUT
+{
+    vec4 Pos : POSITION;
+    vec3 UV : TEXCOORD0;
+};
+
+// Vertex shader output structure.
+attribute VS_TO_PS
+{
+    vec4 HPos : POSITION;
+    vec3 VsUV : TEXCOORD0;
+};
+
+attribute pixelOut {
+    vec4 colorOut:COLOR0;
+}
+
+// Vertex shader.
+GLSLShader VS_NPR {
+	void main ()
+	{
+		// Transform the position from object space to clip space for output.
+		HPos = gWVPXf * Pos;
+
+		// Pass the texture coordinates unchanged.
+		VsUV = UV;
+
+		gl_Position = HPos;
+	}
+}
+
+GLSLShader PS_HHalo {
+	void main ()
+	{
+		vec2 texCoord = VsUV.xy;
+		vec4 retValue = vec4(0.0, 0.0, 0.0, 0.0);
+
+		int stepRadius = HALO_WIDTH;
+		float checkRadius = HALO_WIDTH+0.5;
+
+		vec4 mask, lines;
+
+		mask = texture2D(MaskSampler, texCoord);
+		lines = texture2D(LinesSampler, texCoord);
+
+		vec2 offset;
+		vec2 sampleCoord;
+		vec4 sample, sample2;
+
+		vec2 edgeOffset = vec2(1.0/gFinalres.x,1.0/gFinalres.y);
+
+		float epsilon = max(1/gFinalres.x,1/gFinalres.y);
+
+		if(texCoord.x >= (gScissorBox.x - checkRadius * epsilon)
+		&& texCoord.x <= (gScissorBox.x + gScissorBox.z + checkRadius * epsilon)
+		&& texCoord.y >= (gScissorBox.y - checkRadius * epsilon)
+		&& texCoord.y <= (gScissorBox.y + gScissorBox.w + checkRadius * epsilon) )
+		{
+			// If lines are visible check the pixels where both the selection mask and lines mask have 
+			// alpha 0(outside selection and lines).
+			// If we skip this if statement there would be a halo on the inside of the lines as well.  
+			if((mask.a == 0.0) && (!gUseLines || (gUseLines && lines.a == 0.0)))
+			{
+				offset.y = float(0);
+				// loop through all points in a horizontal line around the center point
+				for ( int x = -stepRadius; x <= stepRadius; x++ )
+				{
+					offset.x = float(x);
+					// is the distance to this point inside the radius?
+					if (length(offset) < checkRadius)
+					{	
+						sampleCoord = texCoord + offset * edgeOffset;
+						sample = texture2D( MaskSampler, sampleCoord );
+						sample2 = texture2D( LinesSampler, sampleCoord );
+
+						// check if this sample is different from the mask
+						if(any(notEqual(mask.rgb, sample.rgb)) || (gUseLines && any(notEqual(lines.rgb, sample2.rgb))))
+						{
+						retValue = vec4(1.0, 1.0, 1.0, 1.0);
+						}
+					}          
+				}
+			}
+			else
+			{
+				retValue = vec4(1.0, 1.0, 1.0, 1.0);
+			}
+		}
+		colorOut = retValue;
+	}
+}
+
+// Pixel shader.
+// Vertical Halo pass
+GLSLShader PS_VHalo {
+	void main ()
+	{
+		vec2 texCoord = VsUV.xy;
+		vec4 retValue = vec4(0.0, 0.0, 0.0, 0.0);
+
+		int stepRadius = HALO_WIDTH;
+		float checkRadius = HALO_WIDTH+0.5;
+
+		vec4 mask;
+		mask = texture2D(MaskSampler, texCoord);
+
+		vec2 offset;
+		vec2 sampleCoord;
+		vec4 sample;
+
+		vec2 edgeOffset = vec2(1.0/gFinalres.x,1.0/gFinalres.y);
+
+		float epsilon = max(1.0/gFinalres.x,1.0/gFinalres.y);
+
+		if(texCoord.x >= (gScissorBox.x - checkRadius * epsilon)
+		&& texCoord.x <= (gScissorBox.x + gScissorBox.z + checkRadius * epsilon)
+		&& texCoord.y >= (gScissorBox.y - checkRadius * epsilon)
+		&& texCoord.y <= (gScissorBox.y + gScissorBox.w + checkRadius * epsilon) )
+		{
+			// If lines are visible check the pixels where both the selection mask and lines mask have 
+			// alpha 0(outside selection and lines).
+			// If we skip this if statement there would be a halo on the inside of the lines as well.  
+			if(mask.a == 0.0)
+			{
+				// loop through all points in a vertical line around the center point
+				offset.x = float(0.0);
+				for ( int y = -stepRadius; y <= stepRadius; y++ )
+				{
+					offset.y = float(y);
+					// is the distance to this point inside the radius?
+					if (length(offset) < checkRadius)
+					{	
+						sampleCoord = texCoord + offset * edgeOffset;
+						sample = texture2D( MaskSampler, sampleCoord );
+						// check if this sample is different from the mask
+						if(any(notEqual(mask.rgb, sample.rgb)))
+						{
+							retValue = vec4(1.0, 1.0, 1.0, 1.0);
+						}
+					}
+				}
+			}
+			else
+			{
+				retValue = vec4(1.0, 1.0, 1.0, 1.0);
+			}
+		}
+		colorOut = retValue;
+	}
+}
+
+// Pixel shader.
+GLSLShader PS_NPR {
+	void main ()
+	{
+		vec2 texCoord = VsUV.xy;
+		vec4 retValue = vec4(0.0, 0.0, 0.0, 0.0);
+
+		int stepRadius = HALO_WIDTH;
+		float checkRadius = HALO_WIDTH+0.5;
+
+		vec4 mask, lines, blur;
+
+		mask = texture2D(MaskSampler, texCoord);
+		lines = texture2D(LinesSampler, texCoord);
+		blur = texture2D(BlurSampler, texCoord);
+
+		vec2 offset;
+		vec2 sampleCoord;
+		vec4 sample, sample2;
+
+		vec2 edgeOffset = vec2(1.0/gFinalres.x,1.0/gFinalres.y);
+
+		float epsilon = max(1.0/gFinalres.x,1.0/gFinalres.y);
+
+		if(texCoord.x >= (gScissorBox.x - checkRadius * epsilon)
+		&& texCoord.x <= (gScissorBox.x + gScissorBox.z + checkRadius * epsilon)
+		&& texCoord.y >= (gScissorBox.y - checkRadius * epsilon)
+		&& texCoord.y <= (gScissorBox.y + gScissorBox.w + checkRadius * epsilon) )
+		{
+			// If lines are visible check the pixels where both the selection mask and lines mask have 
+			// alpha 0(outside selection and lines).
+			// If we skip this if statement there would be a halo on the inside of the lines as well.  
+			if((mask.a == 0.0) && (!gUseLines || (gUseLines && lines.a == 0.0)) && (blur.a != 0.0) )
+			{
+				// loop through all points in a square around the center point
+				for ( int x = -stepRadius; x <= stepRadius; x++ )
+				{
+					offset.x = float(x);
+					for ( int y = -stepRadius; y <= stepRadius; y++ )
+					{
+						offset.y = float(y);
+
+						// is the distance to this point inside the radius?
+						if (length(offset) < checkRadius)
+						{	
+							sampleCoord = texCoord + offset * edgeOffset;
+
+							sample = texture2D( MaskSampler, sampleCoord );
+							sample2 = texture2D( LinesSampler, sampleCoord );
+
+							// check if this sample is different from the mask
+							if(any(notEqual(mask.rgb, sample.rgb)) || (gUseLines && any(notEqual(lines.rgb, sample2.rgb))))
+							{
+								retValue = vec4(1.0, 1.0, 1.0, 1.0);
+							}
+						}
+					}
+				}
+			}
+		}
+		colorOut =  retValue;
+	}
+}
+
+// The main technique.
+technique Main
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT,out VS_TO_PS) = VS_NPR;
+        PixelShader (in VS_TO_PS, out pixelOut) = PS_NPR;
+    }
+}
+
+// The Horizontal pass technique.
+technique T_HHalo
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT,out VS_TO_PS) = VS_NPR;
+        PixelShader (in VS_TO_PS, out pixelOut) = PS_HHalo;
+    }
+}
+
+// The vertical pass technique.
+technique T_VHalo
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT,out VS_TO_PS) = VS_NPR;
+        PixelShader (in VS_TO_PS, out pixelOut) = PS_VHalo;
+    }
+}

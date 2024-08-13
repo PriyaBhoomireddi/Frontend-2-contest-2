@@ -1,0 +1,26 @@
+
+#ContentWidget1 {
+}
+
+#UnlimitedBadge {
+    border: 1px solid #EEEEEE;
+    border-radius: 2px;
+    background-color: #EEEEEE;
+    padding: 3px;
+    padding-left: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#UnlimitedBadgeIcon {
+    margin: 6px;
+}
+
+#UnlimitedBadgeText {
+    margin: 6px;
+    margin-left: 0px;
+}
+
+#CostLabel {
+    color: #cccccc;
+}

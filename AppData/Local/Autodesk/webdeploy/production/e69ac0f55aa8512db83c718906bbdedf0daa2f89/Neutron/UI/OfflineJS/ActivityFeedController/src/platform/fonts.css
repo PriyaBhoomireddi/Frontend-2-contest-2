@@ -1,0 +1,205 @@
+/*
+    OPEN SANS
+*/
+/* Light */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font/OpenSans-Light.ttf');
+    font-weight: 300;
+    font-style: normal;
+}
+/* Light Italic */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font/OpenSans-LightItalic.ttf');
+    font-weight: 300;
+    font-style: italic;
+}
+/* Regular */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font/OpenSans-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+/* Italic */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font/OpenSans-Italic.ttf');
+    font-weight: 400;
+    font-style: italic;
+}
+/* Semi-Bold */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font/OpenSans-Semibold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+/* Semi-Bold Italic */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font/OpenSans-SemiboldItalic.ttf');
+    font-weight: 600;
+    font-style: italic;
+}
+/* Bold */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font/OpenSans-Bold.ttf');
+    font-weight: 700;
+    font-style: normal;
+}
+/* Bold Italic */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font/OpenSans-BoldItalic.ttf');
+    font-weight: 700;
+    font-style: italic;
+}
+/* Extra-Bold */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font/OpenSans-ExtraBold.ttf');
+    font-weight: 800;
+    font-style: normal;
+}
+/* Extra-Bold Italic */
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../font/OpenSans-ExtraBoldItalic.ttf');
+    font-weight: 800;
+    font-style: italic;
+}
+
+
+
+/*
+    BASE
+*/
+.ft_baseForMeasurement{ font-size: 12px }
+
+
+
+/*
+    FONT TYPES
+*/
+.ft_title{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 200%;
+    color: #6c6c6c;
+    cursor: default;
+}
+
+.ft_subTitle{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 116.7%;
+    color: #000000;
+    cursor: default;
+}
+
+.ft_sectionTitle{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 100%;
+    color: #6c6c6c;
+    cursor: default;
+}
+
+.ft_placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 116.7%;
+    color: #bdbdbd;
+    cursor: default;
+}
+
+.ft_buttonText,
+.ft_dialogText{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 116.7%;
+    color: #6c6c6c;
+    cursor: default;
+}
+
+
+.ft_dialogLightText{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 116.7%;
+    color: #adadad;
+    cursor: default;
+}
+
+.ft_whiteText,
+.ft_lightText,
+.ft_text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 100%;
+    color: #6c6c6c;
+    line-height: 150%;
+    cursor: default;
+}
+.ft_lightText{ color: #adadad; }
+.ft_whiteText{ color: #ffffff; }
+
+.ft_text strong,
+.ft_lightText strong,
+.ft_whiteText strong{ font-weight: 600 }
+
+.ft_text b,
+.ft_lightText b{
+    font-weight: 600;
+    color: #2d2d2d;
+}
+.ft_whiteText b{
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.ft_text a{
+    text-decoration: none;
+    color: #00a6e2;
+}
+.ft_text a:hover { color: #3ab5e1; }
+.ft_text a:active{ color: #007ec0; }
+
+.ft_smallText{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 75%;
+	color: #6c6c6c;
+	cursor: default;
+}
+
+.ft_error{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 108%;
+    color: #E94D4D;
+    cursor: default;
+}
+
+/*
+    UTILIZATION
+*/
+.ft_capitalize{ text-transform: uppercase }
+
+.ft_threeDots{
+    white-space: nowrap;
+    overflow: hidden;         /* !important */
+    text-overflow: ellipsis;
+}

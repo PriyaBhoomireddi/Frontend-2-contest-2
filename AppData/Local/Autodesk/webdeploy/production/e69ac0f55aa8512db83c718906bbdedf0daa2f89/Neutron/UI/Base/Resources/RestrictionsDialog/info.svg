@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>medium-low-density/alert-24</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Notifications" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Two-Lines-w-Link" transform="translate(-28.000000, -17.000000)" fill="#0696D7">
+            <g id="24px/info-24" transform="translate(25.000000, 14.000000)">
+                <path d="M12,3 C16.9705627,3 21,7.02943725 21,12 C21,16.9705627 16.9705627,21 12,21 C7.02943725,21 3,16.9705627 3,12 C3,7.02943725 7.02943725,3 12,3 Z M12,4 C7.581722,4 4,7.581722 4,12 C4,16.418278 7.581722,20 12,20 C14.1217319,20 16.1565632,19.1571453 17.6568542,17.6568542 C19.1571453,16.1565632 20,14.1217319 20,12 C20,7.581722 16.418278,4 12,4 Z M13,11 L13,16 L14,16 L14,17 L10,17 L10,16 L11,16 L11,12 L10,12 L10,11 L13,11 Z M12,6.75 C12.6903559,6.75 13.25,7.30964406 13.25,8 C13.25,8.69035594 12.6903559,9.25 12,9.25 C11.3096441,9.25 10.75,8.69035594 10.75,8 C10.75,7.30964406 11.3096441,6.75 12,6.75 Z" id="🌈--icon-color"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Metadata version="1.0">
+<Environment Id="crossroads" CenterAngle="135" />
+<Environment Id="DryLakeBed" CenterAngle="105" />
+<Environment Id="field" CenterAngle="45" />
+<Environment Id="mi360_Plaza" CenterAngle="30" />
+<Environment Id="skylight" CenterAngle="0" />
+<Environment Id="mi360_Snow" CenterAngle="55" />
+<Environment Id="photobooth" CenterAngle="45" />
+</Metadata>

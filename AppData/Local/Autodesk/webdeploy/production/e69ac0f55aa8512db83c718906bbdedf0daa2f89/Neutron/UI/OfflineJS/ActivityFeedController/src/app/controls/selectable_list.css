@@ -1,0 +1,164 @@
+.selectableList{
+    position: absolute;
+    overflow: hidden;
+}
+
+.selectableList .listScrollContainer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: auto;
+}
+
+.selectableList .listContainer{
+    overflow: visible;
+    position: relative;
+}
+
+/* group */
+.selectableList .listGroup{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    cursor: default;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 13px 2px 15px 0;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: rgb(100, 100, 100);
+    text-transform: uppercase;
+    transition: top 0.25s ease-out;
+    -webkit-transition: top 0.25s ease-out;
+}
+.selectableList .listGroup.fakeListGroup{
+    top: 0;
+    padding: 13px 0 15px 0;
+    display: none;
+    transition: none;
+    -webkit-transition: none;
+    z-index: 10;
+    background: rgb(231, 231, 231);
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+}
+
+.selectableList .listGroup.h_delimiter {
+    padding: 8px 2px 0px 0;
+    height: 21px;
+}
+
+.selectableList .listGroup .titleContainer,
+.selectableList .listGroup.fakeListGroup .titleContainer{
+    position: relative;
+    height: 12px;
+}
+
+.selectableList .listGroup.h_delimiter .titleContainer{
+    margin: 0px 0px 0px 2px;
+    border-top: #cccccc 1px solid;
+}
+
+.selectableList .listGroup .actionButton,
+.selectableList .listGroup.fakeListGroup .actionButton{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #6896C8;
+    border-radius: 3px;
+    height: 28px;
+    text-transform: none;
+}
+
+.selectableList .listGroup .actionButton:hover,
+.selectableList .listGroup.fakeListGroup .actionButton:hover {
+    background: #70A2C6;
+}
+
+.selectableList .listGroup .actionButton._disabled_,
+.selectableList .listGroup.fakeListGroup .actionButton._disabled_{
+    background: #8A8A8A;
+}
+
+.selectableList .listGroup .actionButton .label,
+.selectableList .listGroup.fakeListGroup .actionButton .label{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 28px;
+    padding: 0 7px 0 7px;
+}
+
+.selectableList .listGroup .actionButton .label._disabled_,
+.selectableList .listGroup.fakeListGroup .actionButton .label._disabled_{
+    color: white;
+}
+
+/* item */
+.selectableList .listItem{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 3px;
+    border: #ffffff 1px solid;
+    cursor: default;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.selectableList .listItem.useAnimation{
+    transition: top 0.25s ease-out, opacity 0.25s ease-out;
+    -webkit-transition: top 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+.selectableList .listItem.hide{
+    transform:scale(0.0);
+    -webkit-transform: scale(0.0);
+}
+.selectableList .listItem.selected{ border: rgb(102, 149, 202) 1px solid; }
+
+
+.selectableList .errorMessage{
+    position: absolute;
+    height: 26px;
+    width: 100%;
+    bottom: 0px;
+    left:0px;
+    z-index: 50;
+    line-height: 26px;
+    box-sizing: content-box;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #c0d9ef;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+
+    -webkit-transition: -webkit-transform 0.35s ease-out;
+    transition: transform 0.35s ease;
+}
+
+.selectableList .errorMessage.showByScale{
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.selectableList .errorMessage .content{
+    padding-left: 7px;
+    padding-right: 7px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+.selectableList:hover .listItem{
+    overflow: visible;
+}

@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbars>
+
+  <Toolbar Id="PropertiesTB" Style="ToolbarLargeStyle">
+    <DropDownButton Id="VisualMaterialCommand" Text="" ShowText="true" SynchronizedWithCurrentItem="true" WidthString="MetallicLavender"/>
+    <DropDownButton Id="PhysicalMaterialCommand" Text="" ShowText="true" SynchronizedWithCurrentItem="true" WidthString="MetallicLavender"/>
+    <DropDownButton Id="ViewSelectionEffectCommand" Text="" ShowText="true" SynchronizedWithCurrentItem="true"/>
+  </Toolbar>
+
+	<!-- NOTE (JP): We use custom ToolbarPersister to load this file,
+	                so that we can use LOCALIZE() to set the panel text, instead of requiring the _LCLZ attributes in this file. 
+	                If you add a new panel, make sure to add a new section into the CAMToolbarPersister::onLoadPanelText method. -->
+
+  <CommandToolbar Id="CAMAssetType">
+    <DropDownButton Id="ActivateEnvironmentCommand" ShowText="true" Text="Environments" SynchronizedWithCurrentItem="true" />
+    <!--All Tab info-->
+    <Tab Id="MillingTab"
+         Text="Milling"
+         Panels="CAMJobPanel;CAM2DPanel;CAM3DPanel;CAMDrillingPanel;CAMMultiAxisPanel;CAMDEDPanel;CAMEditPanel;CAMActionPanel;CAMManagePanel;CAMInspectPanel;SelectPanel"
+         Environment="CAMEnvironment"/>
+    <Tab Id="TurningTab"
+         Text="Turning"
+         Panels="CAMJobPanel;CAMTurningPanel;CAMDrillingPanel;CAMActionPanel;CAMManagePanel;CAMInspectPanel;SelectPanel"
+         Environment="CAMEnvironment"/>
+    <Tab Id="AdditiveTab"
+         Text="Additive"
+         Panels="CAMAdditiveJobPanel;CAMAdditivePositioningPanel;CAMAdditivePrintProfilePanel;CAMInfillPanel;CAMSupportsPanel;CAMDEDPanel;CAMAdditiveProcessSimPanel;CAMAdditiveActionPanel;CAMAdditiveManagePanel;CAMInspectPanel;SelectPanel"
+         Environment="CAMEnvironment"/>
+    <Tab Id="AdditiveResultsTab"
+         Text="Process Simulation Results"
+         Panels="CAMAdditiveProcessSimResultsPanel;CAMAdditiveProcessSimActionPanel;CAMAdditiveProcessSimFinishPanel"
+         Environment="CAMEnvironment"
+         ContextualFinishId="AdditiveResultsStop"/>
+    <Tab Id="ProbingTab"
+         Text="Inspection"
+         Panels="CAMJobPanel;CAMProbingPanel;CAMCMMPanel;CAMManualInspectionPanel;CAMProbingActionPanel;CAMManagePanel;CAMInspectPanel;SelectPanel"
+         Environment="CAMEnvironment"/>
+    <Tab Id="FabricationTab"
+         Text="Fabrication"
+         Panels="ManufacturingSourcesPanel;CAMJobPanel;CAMWLPCPanel;CAMActionPanel;FabricationManagePanel;CAMInspectPanel;SelectPanel"
+         Environment="CAMEnvironment"/>
+    <Tab Id="UtilitiesTab"
+         Text="Utilities"
+         Panels="CAMInProcessStockPanel;CAMManagePanel;CAMInspectPanel;CAMScriptsAddinsPanel;SelectPanel"
+         Environment="CAMEnvironment"/>
+    <Tab Id="PartAlignmentTab"
+         Text="Part Alignment"
+         Panels="CAMPartAlignmentEditPanel;CAMPartAlignmentInspectPanel;CAMPartAlignmentPostPanel;CAMPartAlignmentResultsPanel;CAMPartAlignmentPostAndExitPanel;CAMPartAlignmentFinishPanel"
+         Environment="CAMEnvironment"
+         ContextualFinishId="PartAlignmentStop"/>
+    <Tab Id="FeaturesTab"
+         Text="Features"
+         Panels="CAMGeometryFeatures;SelectPanel"
+         Environment="CAMEnvironment"/>
+
+    <!-- ** CAM Environment ** -->
+    <Panel Id="CAMJobPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronSetup" />
+        <Button Id="IronNcProgram" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronSetup" />
+        <Button Id="IronNcProgram" />
+        <Button Id="IronFolder" />
+        <Button Id="IronPattern" />
+        <Button Id="IronStrategy_manual" />
+        <Button Id="IronStrategy_probe" />
+      <Separator/>
+        <Button Id="MSFWmdCreateAggregationAssetWorkingModelCmd"/>
+      </PanelDropdown>
+    </Panel>
+
+    <!-- In Process Stock panel -->
+    <Panel Id="CAMInProcessStockPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronAutomaticIPSGeneration" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronAutomaticIPSGeneration" />
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="CAMAdditiveJobPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronSetup" />
+        <Button Id="MSFWmdCreateAggregationAssetWorkingModelCmd"/>
+	  </Controls>
+      <PanelDropdown>
+        <Button Id="IronSetup" />
+        <Button Id="IronAdditiveImportGCode" />
+        <Separator/>
+        <Button Id="MSFWmdCreateAggregationAssetWorkingModelCmd"/>
+	  </PanelDropdown>
+    </Panel>
+
+    <!-- Positioning functionality i.e. manual rotation, translation; place on platform, nesting -->
+    <Panel Id="CAMAdditivePositioningPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="CAMMoveComponentsCommand"/>
+        <Button Id="IronMinimizeBoundingBox"/>
+        <Button Id="IronPlaceOnPlatform"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="CAMMoveComponentsCommand"/>
+        <Separator/>
+        <Button Id="IronMinimizeBoundingBox"/>
+        <Button Id="IronStrategy_additive_optimize_orientation"/>
+        <Separator/>
+        <Button Id="IronPlaceOnPlatform"/>
+        <Separator/>
+        <Button Id="CollisionDetectionCmd"/>
+      </PanelDropdown>
+    </Panel>
+
+    <!-- 2D Milling Strategies -->
+    <Panel Id="CAM2DPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronStrategy_face" />
+        <Button Id="IronStrategy_adaptive2d" />
+        <Button Id="IronStrategy_contour2d" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronStrategy_featureRecognition" />
+        <Button Id="IronStrategy_contourFeatureFolder" />
+        <Button Id="IronStrategy_holeFeatureFolder" />
+        <Separator/>
+        <Button Id="IronStrategy_adaptive2d" />
+        <Button Id="IronStrategy_pocket2d" />
+        <Separator/>
+        <Button Id="IronStrategy_face" />
+        <Button Id="IronStrategy_contour2d" />
+        <Button Id="IronStrategy_slot" />
+        <Button Id="IronStrategy_path3d" />
+        <!-- Trace -->
+        <Separator/>
+        <Button Id="IronStrategy_thread" />
+        <Button Id="IronStrategy_bore" />
+        <Button Id="IronStrategy_circular" />
+        <Button Id="IronStrategy_engrave" />
+        <Button Id="IronStrategy_chamfer2d" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- 3D Roughing Strategies -->
+    <Panel Id="CAM3DPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronStrategy_adaptive" />
+        <Button Id="IronStrategy_steep_and_shallow" />
+        <Button Id="IronStrategy_flat" />
+        <Button Id="IronStrategy_parallel_new" />
+        <Button Id="IronStrategy_scallop_new" />
+        <Button Id="IronStrategy_contour_new" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronStrategy_adaptive" />
+        <Button Id="IronStrategy_pocket_new" />
+        <Separator />
+        <Button Id="IronStrategy_steep_and_shallow" />
+        <Button Id="IronStrategy_flat" />
+        <Button Id="IronStrategy_parallel_new" />
+        <Button Id="IronStrategy_scallop_new" />
+        <Button Id="IronStrategy_contour_new" />
+        <Button Id="IronStrategy_ramp" />
+        <Button Id="IronStrategy_pencil_new" />
+        <Button Id="IronStrategy_horizontal_new" />
+        <Button Id="IronStrategy_spiral_new" />
+        <Button Id="IronStrategy_radial_new" />
+        <Button Id="IronStrategy_morphed_spiral" />
+        <Button Id="IronStrategy_project" />
+        <!--
+        <Button Id="IronStrategy_project" />
+        -->
+        <Button Id="IronStrategy_blend" />
+        <Button Id="IronStrategy_morph" />
+
+        <Button Id="IronStrategy_rest_finishing" />
+        <Button Id="IronStrategy_flow" />
+      </PanelDropdown>
+    </Panel>
+    
+    <!-- WIP Edit Operations-->
+    <Panel Id="CAMEditPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronToolpathTrim" />
+        <Button Id="IronToolpathEditDelete" />
+        <Button Id="IronToolpathEditLeadsLinks" />
+        <Button Id="IronToolpathEditToolChange" />
+				<Button Id="IronToolpathEditMoveStartPoints" />							
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronToolpathTrim" />
+        <Button Id="IronToolpathEditDelete" />
+        <Button Id="IronToolpathEditLeadsLinks" />
+        <Button Id="IronToolpathEditToolChange" />
+				<Button Id="IronToolpathEditMoveStartPoints" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- Drilling strategies -->
+    <Panel Id="CAMDrillingPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronStrategy_drill" />
+        <Button Id="IronHoleRecognition" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronStrategy_drill" />
+        <Button Id="IronHoleRecognition" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- - MultiAxis strategies -->
+    <Panel Id="CAMMultiAxisPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronStrategy_swarf5d"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronStrategy_swarf5d"/>
+        <Button Id="IronStrategy_multiAxisContour"/>
+        <Button Id="IronStrategy_rotary_finishing" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- Turning strategies -->
+    <Panel Id="CAMTurningPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronStrategy_turningFace" />
+        <Button Id="IronStrategy_turningRoughing" />
+        <Button Id="IronStrategy_turningProfileRoughing" />
+        <Button Id="IronStrategy_turningProfileFinishing" />
+        <Button Id="IronStrategy_turningProfileGroove" />
+        <Button Id="IronStrategy_turningPart" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronStrategy_turningFace" />
+        <Button Id="IronStrategy_turningProfileRoughing" />
+        <Button Id="IronStrategy_turningProfileFinishing" />
+        <Button Id="IronStrategy_turningRoughing" />
+        <Button Id="IronStrategy_turningAdaptiveRoughing" />
+        <Button Id="IronStrategy_turningProfileGroove" />
+        <Button Id="IronStrategy_turningGroove" />
+        <Button Id="IronStrategy_turningThread" />
+        <Button Id="IronStrategy_turningChamfer" />
+        <Button Id="IronStrategy_turningPart" />
+        <Button Id="IronStrategy_turningSecondarySpindleGrab" />
+        <Button Id="IronStrategy_turningSecondarySpindlePull" />
+        <Button Id="IronStrategy_turningSecondarySpindleReturn" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- Water-jet / Laser / Plasma strategies -->
+    <Panel Id="CAMWLPCPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronStrategy_jet2d" />
+      </Controls>
+    </Panel>
+
+    <!-- FFF Infill -->
+    <Panel Id="CAMInfillPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronFFFInfillCmd" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronFFFInfillCmd" />
+      </PanelDropdown>
+    </Panel>
+    
+    <!-- FUSION MAKE workspace functionality -->
+    <Panel Id="CAMSupportsPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronFFFSupportsCmd"/>
+        <Button Id="IronStrategy_areavolume_additive_support"/>
+        <Button Id="IronStrategy_areabar_additive_support"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronFFFSupportsCmd"/>
+        <Button Id="IronStrategy_areavolume_additive_support"/>
+        <Button Id="IronStrategy_surroundvolumepolyline_additive_support"/>
+        <Separator />
+        <Button Id="IronStrategy_areabar_additive_support"/>
+        <Button Id="IronStrategy_downoriented_additive_support"/>
+        <Button Id="IronStrategy_lattice_additive_support"/>
+        <Separator />
+        <Button Id="IronStrategy_areapolyline_additive_support"/>
+        <Button Id="IronStrategy_edgepolyline_additive_support"/>
+        <Button Id="IronStrategy_clustercontourpolyline_additive_support"/>
+        <Button Id="IronStrategy_skeletonpolyline_additive_support"/>
+        <Separator />
+        <Button Id="IronStrategy_baseplate_additive_support"/>
+      </PanelDropdown>
+    </Panel>
+
+    <!-- DED Operations-->
+    <Panel Id="CAMDEDPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronStrategy_ded_parallel_feature_construction" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronStrategy_ded_parallel_feature_construction" />
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="CAMAdditiveProcessSimPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronAdditiveProcessSimulation" />
+        <Button Id="IronAdditiveProcessSimMesh" />
+        <Button Id="IronAdditiveProcessSimSolve" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronAdditiveProcessSimulation" />
+        <Button Id="IronAdditiveProcessSimMesh" />
+        <Button Id="IronAdditiveProcessSimSolve" />
+        <Separator />
+        <Button Id="IronAdditiveMeshView" />
+        <Button Id="IronAdditiveResultsView" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- Additive Process Simulation Results -->
+    <Panel Id="CAMAdditiveProcessSimResultsPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronAdditiveProcessSimToggleEdges" />
+        <Button Id="IronAdditiveProcessSimMinMaxProbe" />
+        <Button Id="IronAdditiveOpenResultsFolder" />
+        <Button Id="IronAdditiveExportCompensated" />
+      </Controls>
+    </Panel>
+
+    <!-- Additive Process Simulation Actions -->
+    <Panel Id="CAMAdditiveProcessSimActionPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronAdditiveExportCompensatedSTL"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronAdditiveExportCompensatedSTL"/>
+      </PanelDropdown>
+    </Panel>
+
+    <!-- Additive Process Simulation finish panel -->
+    <Panel Id="CAMAdditiveProcessSimFinishPanel" Environment="CAMEnvironment" ContextualFinishId="AdditiveResultsStop" AvailableBaseTabs="{none}" >
+      <Controls>
+        <Button Id="AdditiveResultsStop" />
+      </Controls>
+    </Panel>
+	
+    <!-- inspection strategies-->
+    <Panel Id="CAMProbingPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronStrategy_probe" />
+        <Button Id="IronStrategy_probe_geometry" />
+        <Button Id="IronStrategy_inspectSurface" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronStrategy_probe" />
+        <Button Id="IronStrategy_probe_geometry" />
+        <Button Id="IronStrategy_inspectSurface" />
+        <Button Id="PartAlignmentStart" />
+
+      </PanelDropdown>
+    </Panel>
+
+	<!-- CMM inspection commands-->
+	<Panel Id="CAMCMMPanel" Environment="CAMEnvironment">
+		<Controls>
+			<Button Id="IronStrategy_cmm_inspection_setup" />
+			<Button Id="IronStrategy_datum" />
+			<Button Id="MeasureSurface" />
+			<Button Id="ScanSurface" />
+		</Controls>
+		<PanelDropdown>
+			<Button Id="IronStrategy_cmm_inspection_setup" />
+			<Button Id="IronStrategy_datum" />
+			<Button Id="MeasureSurface" />
+			<Button Id="ScanSurface" />
+		</PanelDropdown>
+	</Panel>
+	  
+    <!-- manual inspection commands-->
+    <Panel Id="CAMManualInspectionPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronCreateInspections" />
+        <Button Id="IronRecordManualMeasure" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronCreateInspections" />
+        <Button Id="IronRecordManualMeasure" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- Part alignment edit panel -->
+    <Panel Id="CAMPartAlignmentEditPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="PartAlignment_EditAlignment" />
+      </Controls>
+    </Panel>
+
+    <!-- Part alignment inspect panel -->
+    <Panel Id="CAMPartAlignmentInspectPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="PartAlignment_IronStrategy_inspectSurface" />
+      </Controls>
+    </Panel>
+
+    <!-- Part alignment post panel -->
+    <Panel Id="CAMPartAlignmentPostPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="PartAlignment_IronNcProgram" />
+        <Button Id="PartAlignmentPostLive" />
+      </Controls>
+    </Panel>
+
+    <!-- Part alignment results panel -->
+    <Panel Id="CAMPartAlignmentResultsPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="PartAlignment_ImportResults" />
+        <Button Id="PartAlignment_IronPartAlignmentInfo" />
+        <Button Id="PartAlignment_IronShowResults" />
+        <Button Id="LivePartAlignment" />
+      </Controls>
+    </Panel>
+
+    <!-- Part alignment post and exit panel -->
+    <Panel Id="CAMPartAlignmentPostAndExitPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="PartAlignmentPostStop" />
+      </Controls>
+    </Panel>
+    
+    <!-- Part alignment finish panel -->
+    <Panel Id="CAMPartAlignmentFinishPanel" Environment="CAMEnvironment"  ContextualFinishId="PartAlignmentStop" AvailableBaseTabs="{none}" >
+      <Controls>
+        <Button Id="PartAlignmentStop" />
+      </Controls>
+    </Panel>
+    
+    <Panel Id="CAMActionPanel" Environment="CAMEnvironment">
+      <Controls>
+        <!-- Actions -->
+        <Button Id="IronSimulation" />
+        <Button Id="IronPostProcess" />
+        <Button Id="IronSetupSheetSwitchboard" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronGenerateToolpath" />
+        <Button Id="IronSimulation" />
+        <Button Id="IronPostProcess" />
+        <Button Id="IronSetupSheetSwitchboard" />
+        <!--
+        <Button Id="IronStock" />
+        <Button Id="IronToolpathPreview" />
+        -->
+      </PanelDropdown>
+    </Panel>
+    
+    <Panel Id="CAMProbingActionPanel" Environment="CAMEnvironment">
+      <Controls>
+        <!-- Actions -->
+        <Button Id="IronSimulation" />
+        <Button Id="IronPostProcess" />
+        <Button Id="IronSetupSheetSwitchboard" />
+        <Button Id="LiveProbing" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronGenerateToolpath" />
+        <Button Id="IronSimulation" />
+        <Button Id="IronPostProcess" />
+        <Button Id="IronSetupSheetSwitchboard" />
+        <Button Id="ImportResults" />
+        <Button Id="LiveProbing" />
+        <Button Id="IronInspectionReport" />
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="CAMAdditivePrintProfilePanel" Environment="CAMEnvironment">
+      <Controls>
+        <!-- Actions -->
+        <Button Id="SimplePrintSettingSelection" />
+        <Button Id="IronAdditiveEditPrintSetting" />
+        <Button Id="IronAdditiveBuildStrategy" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="SimplePrintSettingSelection" />
+        <Button Id="IronAdditiveEditPrintSetting" />
+        <Button Id="IronAdditiveBuildStrategy" />
+      </PanelDropdown>
+    </Panel>
+    
+
+    <Panel Id="CAMAdditiveActionPanel" Environment="CAMEnvironment">
+      <Controls>
+        <!-- Actions -->
+        <Button Id="IronGenerateToolpath" />
+        <Button Id="IronAdditiveSimulation" />
+        <Button Id="IronPostProcess" />
+        <Button Id="IronAdditiveExportStrategy"/>
+        <Button Id="IronFormlabsExport"/>
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronGenerateToolpath" />
+        <Button Id="IronAdditiveSimulation" />
+        <Button Id="IronPostProcess" />
+        <Button Id="IronAdditiveExportStrategy"/>
+        <Separator/>
+        <Button Id="IronAdditiveShowPrintStatistics" />
+        <Button Id="Iron3MFExport"/>
+        <Button Id="IronFormlabsExport"/>
+      </PanelDropdown>
+    </Panel>
+
+    <!-- **************************************** -->
+    <!-- ** Inspect Panel (copied from Fusion) ** -->
+    <!-- **************************************** -->
+    <Panel Id="CAMInspectPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="MeasureCommand" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="MeasureCommand" />
+        <Button Id="InterferenceCheckCommand" />
+        <Button Id="FusionAccessibilityAnalysisCommand" />
+        <Button Id="FusionMinimumRadiusAnalysisCommand" />
+        <Button Id="FusionHalfSectionViewCommand" />
+        <Button Id="FusionZebraAnalysisCommand" />
+      </PanelDropdown>
+    </Panel>
+    
+    <Panel Id="CAMManagePanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronToolLibrary"/>
+        <Button Id="IronMachineLibrary"/>
+        <Button Id="IronPostLibrary"/>
+        <Button Id="IronTemplateLibrary"/>
+        <!-- TODO: Options -->
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronStrategy_create_form_mill"/>
+        <Button Id="IronToolLibrary"/>
+        <Button Id="IronMachineLibrary"/>
+        <Button Id="IronPostLibrary"/>
+        <Button Id="IronTemplateLibrary"/>
+        <Button Id="IronSetupSheetConfigurations"/>
+        <Button Id="IronTaskManager"/>
+        <Separator />
+        <Button Id="IronExportDefaults"/>
+        <Button Id="IronImportDefaults"/>
+        <Button Id="IronResetDefaults"/>
+        <Separator />
+        <Button Id="IronShowTemplateSelector"/>
+        <Button Id="IronTranslation"/>
+      </PanelDropdown>
+    </Panel>
+
+    <Panel Id="CAMAdditiveManagePanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronMachineLibrary"/>
+        <Button Id="IronPostLibrary"/>
+        <Button Id="IronTemplateLibrary"/>
+        <Button Id="IronPrintSettingLibrary"/>
+        <Button Id="IronTaskManager"/>
+        <!-- TODO: Options -->
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronMachineLibrary"/>
+        <Button Id="IronPostLibrary"/>
+        <Button Id="IronTemplateLibrary"/>
+        <Button Id="IronPrintSettingLibrary"/>
+        <Button Id="IronTaskManager"/>
+        <Separator />
+        <Button Id="IronExportDefaults"/>
+        <Button Id="IronImportDefaults"/>
+        <Button Id="IronResetDefaults"/>
+        <Separator />
+        <Button Id="IronShowTemplateSelector"/>
+        <Button Id="IronTranslation"/>
+      </PanelDropdown>
+    </Panel>
+    <Panel Id="CAMGeometryFeatures" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronStrategy_geometry_contours" />
+        <Button Id="IronStrategy_geometry_pockets" />
+        <Button Id="IronStrategy_pocket_recognition" />
+        <Button Id="IronStrategy_geometry_silhouette" />
+      </Controls>
+      <PanelDropdown>
+      </PanelDropdown>
+    </Panel>
+    <!-- ************************************** -->
+    <!-- ** Scripts & Add-ins Panel          ** -->
+    <!-- ************************************** -->
+    <Panel Id="CAMScriptsAddinsPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="ScriptsManagerCommand" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="ScriptsManagerCommand" />
+        <Button Id="ExchangeAppStoreCommand" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- ****************** -->
+    <!-- ** Select Panel ** -->
+    <!-- ****************** -->
+    <Panel Id="SelectPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="SelectCommand" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="SelectCommand" />
+        <Separator />
+        <Button Id="selectWindow" />
+        <Button Id="selectFreeForm" />
+        <Button Id="selectPaint" />
+        <Separator />
+        <DropDownButton Id="SelectionPriorityCommands">
+          <Button Id="SelectBodyPriorityCommand" />
+          <Button Id="SelectFacePriorityCommand" />
+          <Button Id="SelectEdgePriorityCommand" />
+          <Button Id="SelectComponentPriorityCommand" />
+        </DropDownButton>
+        <DropDownButton Id="SelectionFilterCommand" CheckBoxList="true" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- ********************************* -->
+    <!-- ** Manufacturing sources Panel ** -->
+    <!-- ********************************* -->
+    <Panel Id="ManufacturingSourcesPanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="MSFWmdComponentLibraryCmd" />
+      </Controls>
+      <PanelDropdown>
+        <Button Id="MSFWmdComponentLibraryCmd" />
+      </PanelDropdown>
+    </Panel>
+
+    <!-- ****************************** -->
+    <!-- ** Fabrication manage Panel ** -->
+    <!-- ****************************** -->
+    <Panel Id="FabricationManagePanel" Environment="CAMEnvironment">
+      <Controls>
+        <Button Id="IronToolLibrary"/>
+        <Button Id="IronMachineLibrary"/>
+        <Button Id="IronPostLibrary"/>
+        <Button Id="IronTemplateLibrary"/>
+        <!-- TODO: Options -->
+      </Controls>
+      <PanelDropdown>
+        <Button Id="IronStrategy_create_form_mill"/>
+        <Button Id="IronToolLibrary"/>
+        <Button Id="IronMachineLibrary"/>
+        <Button Id="IronPostLibrary"/>
+        <Button Id="IronTemplateLibrary"/>
+        <Button Id="IronSetupSheetConfigurations"/>
+        <Button Id="IronTaskManager"/>
+        <Separator />
+        <Button Id="IronExportDefaults"/>
+        <Button Id="IronImportDefaults"/>
+        <Button Id="IronResetDefaults"/>
+        <Separator />
+        <Button Id="IronShowTemplateSelector"/>
+        <Button Id="IronTranslation"/>
+      </PanelDropdown>
+    </Panel>
+
+  </CommandToolbar>
+
+  <!-- JP Note: Anything added here will be appended to the end of the standard Neutron NavToolbar. -->
+  <Toolbar Id="NavToolbar" Style="ToolbarSmallStyle">
+    <DropDownButton Id="IronViewOrientation" HasSplitter="False">
+      <DropDownItem Id="IronViewOrientationTop" />
+      <DropDownItem Id="IronViewOrientationBottom" />
+      <DropDownItem Id="IronViewOrientationFront" />
+      <DropDownItem Id="IronViewOrientationBack" />
+      <DropDownItem Id="IronViewOrientationLeft" />
+      <DropDownItem Id="IronViewOrientationRight" />
+      <DropDownItem Id="IronViewOrientationIso" />
+    </DropDownButton>
+    <DropDownButton Id="IronShowHideToolpathMoves" CheckBoxList="true" />
+    <DropDownButton Id="IronSyncActiveSetup" CheckBoxList="true" />
+    <DropDownButton Id="IronViewStock" CheckBoxList="true" />
+    <DropDownButton Id="IronMachineVisibility" CheckBoxList="true" />
+    <DropDownButton Id="IronShowHideTool" CheckBoxList="true" />
+  </Toolbar>
+
+</Toolbars>

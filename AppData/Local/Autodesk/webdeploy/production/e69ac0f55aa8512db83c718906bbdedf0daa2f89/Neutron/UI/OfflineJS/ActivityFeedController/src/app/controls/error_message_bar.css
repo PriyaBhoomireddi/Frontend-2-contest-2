@@ -1,0 +1,33 @@
+.errorMessageBar{
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    visibility: hidden;
+    background: #c0d9ef;
+    padding: 4px 10px 4px 10px;
+    opacity: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    transition: visibility 0s 1s, opacity 1s linear;
+    -webkit-transition: visibility 0s 1s, opacity 1s linear;
+}
+.errorMessageBar.shown{
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+}
+
+.errorMessageBar .messageContainer{
+    color: #646464;
+}
+.errorMessageBar.permanent .messageContainer{ padding-right: 23px; }
+
+.errorMessageBar .closeBtn{
+    position: absolute;
+    background-image: -webkit-image-set(url('../../assets/close_normal_10.png') 1x, url('../../assets/close_normal_10_@2x.png') 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}

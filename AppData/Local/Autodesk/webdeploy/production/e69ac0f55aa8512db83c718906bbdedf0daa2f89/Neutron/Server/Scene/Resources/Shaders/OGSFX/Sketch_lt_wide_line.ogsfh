@@ -1,0 +1,365 @@
+#ifndef _HQ_FX_LT_WIDE_LINE_H_
+#define _HQ_FX_LT_WIDE_LINE_H_
+
+#include "Sketch_oit_def.ogsfh"
+#include "Sketch_primitive.ogsfh"
+#include "Sketch_line.ogsfh"
+#include "Sketch_line_weight.ogsfh"
+#include "Sketch_line_type_line.ogsfh"
+#include "Sketch_lt_line_caps.ogsfh"
+#include "Sketch_lt_line_joint.ogsfh"
+
+#ifdef ANALYTIC_STIPPLE
+  #include "Sketch_stipple_line_type.ogsfh"
+#endif
+
+GLSLShader Sketch_lt_wide_line
+{
+
+struct VertexAttr_WideLineType
+{
+    vec4 position; // transformed  vertex position
+
+    uint flag;   // line flag
+    uint color;  // line color
+    uint glowColor;  // glow color
+    uint width;  // line width;
+
+    vec2 prevPoint;
+    vec2 startPoint;
+    vec2 endPoint;
+    vec2 postPoint;
+    
+    vec4 lineParams; // Func = lineParams.x * x + lineParams.y * y + lineParams.z
+
+    uint patternIndex; // line pattern index
+    uint capsType; // caps type
+
+    vec4 patternProp; // line pattern properties: x - start skip len, y - end skip len, z - pattern scale, w - pattern offset
+    vec4 dist;     // x - distance to line, y distance to start, z distance to end, w reserved
+
+#ifdef ANALYTIC_STIPPLE
+    uint stippleIndex;  // stipple index
+#endif
+};
+
+struct VertexAttr_MetaWideLineType
+{
+    vec4 position; // transformed  vertex position
+
+    uint flag;   // line flag
+    uint color;  // line color
+    uint glowColor;  // glow color
+    uint width;  // line width;
+
+	// points:
+    // caps:  PNT0 = center point
+    //        PNT1 = end point
+    //        PNT2 = dir
+    // joint: PNT0 = prev point
+    //        PNT1 = current point
+    //        PNT2 = post point
+    // body:  PNT0 = prev point
+    //        PNT1 = start point
+    //        PNT2 = end point
+    //        PNT3 = post point
+    vec2 point0;
+    vec2 point1;
+    vec2 point2;
+    vec2 point3;
+	
+	uint shapeType ;
+    uint capsType ;  // joint type;
+    uint jointType ;  // joint type;
+    
+    uint patternIndex; // line pattern index
+	vec4 patternProp; // line pattern properties: x - start skip len, y - end skip len, z - pattern scale, w - pattern offset
+	vec4 patternProp_Post; // line pattern properties: x - start skip len, y - end skip len, z - pattern scale, w - pattern offset
+	
+    bool reversed ; // is start/end point reversed
+	vec4 lineParams; // Func = lineParams.x * x + lineParams.y * y + lineParams.z
+
+    vec4 dist;     // x - distance to line, y distance to start, z distance to end, w reserved
+
+#ifdef ANALYTIC_STIPPLE
+    uint stippleIndex;  // stipple index
+#endif
+};
+
+// wide line attributes
+struct WideLineTypeAttr
+{
+    vec2 prevPoint;
+    vec2 startPoint;
+    vec2 endPoint;
+    vec2 postPoint;
+    
+    uint flag;
+    uint color; 
+    uint width; 
+    float drawZ; 
+    uint glowColor;
+    uint isLogical;
+
+    uint  patternIndex;
+    uint capsType;
+
+    float startSkipLen;
+    float endSkipLen;
+    float patternOffset;
+    float patternScale;
+
+#ifdef ANALYTIC_STIPPLE
+    uint stippleIndex;
+#endif
+};
+
+// load line type info for wide line
+void load_wide_line_type_info(uint offset, uint line_index, uint seg_index, uint line_flag, out WideLineTypeAttr attr)
+{
+    load_line_position(get_pos_id(offset), attr.startPoint, attr.endPoint);
+    
+    uint joint_type;
+    uint logical_width, stipple_index, logical_lt;
+    load_line_attributes(line_index, attr.color, attr.width, attr.patternIndex, attr.drawZ, attr.glowColor, attr.capsType, joint_type, attr.isLogical);
+    load_line_attributes_neutron_sketch(line_index, logical_width, stipple_index, logical_lt);
+    load_line_adj_info(offset, line_flag, attr.startPoint, attr.flag, attr.prevPoint, attr.postPoint);
+    load_line_type(seg_index, attr.isLogical & logical_lt, attr.startSkipLen, attr.endSkipLen, attr.patternOffset, attr.patternScale);
+
+    adjust_line_width_wide_line_neutron_sketch(logical_width, attr.width);
+
+#ifdef ANALYTIC_STIPPLE
+    attr.stippleIndex = stipple_index;
+#endif
+}
+
+// load line type info for wide line
+void load_hatch_wide_line_type_info(uint offset, uint line_index, uint seg_index, uint line_flag, out WideLineTypeAttr attr)
+{
+    load_hatch_line_position(get_pos_id(offset), attr.startPoint, attr.endPoint);
+
+    uint joint_type;
+    load_hatch_line_attributes(line_index, attr.color, attr.width, attr.patternIndex, attr.drawZ, attr.glowColor, attr.capsType, joint_type, attr.isLogical);
+    load_hatch_line_adj_info(offset, line_flag, attr.startPoint, attr.flag, attr.prevPoint, attr.postPoint);
+    load_hatch_line_type(seg_index, attr.isLogical, attr.startSkipLen, attr.endSkipLen, attr.patternOffset, attr.patternScale);
+}
+
+// output wide line properties.
+void set_wide_line_type_properties(uint vid, WideLineTypeAttr line_attr, 
+    out VertexAttr_WideLineType outputData)
+{
+    float temp_dist;
+    outputData.position.xy = get_line_envelope_pos(vid, line_attr.width, 
+        line_attr.startPoint, line_attr.endPoint, temp_dist);
+    outputData.position.z =  line_attr.drawZ;
+    outputData.position.w = 1.0f;
+    
+    outputData.dist.x = temp_dist;
+    outputData.color = line_attr.color;
+    outputData.glowColor = line_attr.glowColor;
+    outputData.flag = line_attr.flag;
+    outputData.width = line_attr.width;
+
+    outputData.prevPoint = offset_screen_pos(line_attr.prevPoint);
+    outputData.startPoint = offset_screen_pos(line_attr.startPoint);
+    outputData.endPoint = offset_screen_pos(line_attr.endPoint);
+    outputData.postPoint = offset_screen_pos(line_attr.postPoint);
+    
+    outputData.lineParams.x = outputData.startPoint.y - outputData.endPoint.y;
+    outputData.lineParams.y = outputData.endPoint.x - outputData.startPoint.x;
+    outputData.lineParams.z = outputData.startPoint.x * outputData.endPoint.y - outputData.endPoint.x * outputData.startPoint.y;
+    outputData.lineParams.w = 0.0f;
+
+   // length on line
+    set_line_pattern_dist(vid, line_attr.startPoint, line_attr.endPoint,
+        outputData.dist.y, outputData.dist.z);
+    outputData.dist.w = 0.0f; // reserved
+
+    outputData.patternIndex = line_attr.patternIndex;
+    outputData.capsType = line_attr.capsType;
+
+    outputData.patternProp = vec4(line_attr.startSkipLen, line_attr.endSkipLen,
+        line_attr.patternOffset, line_attr.patternScale);
+
+#ifdef ANALYTIC_STIPPLE
+    outputData.stippleIndex = line_attr.stippleIndex;
+#endif
+}
+
+
+// output wide line properties in logical space
+void set_logical_wide_line_type_properties(uint vid, WideLineTypeAttr line_attr,
+    out VertexAttr_WideLineType outputData)
+{
+    float temp_dist;
+    vec2 screen_prev = logic_to_screen(line_attr.prevPoint);
+    vec2 screen_start = logic_to_screen(line_attr.startPoint);
+    vec2 screen_end = logic_to_screen(line_attr.endPoint);
+    vec2 screen_post = logic_to_screen(line_attr.postPoint);
+    outputData.position.xy = get_logical_wide_line_envelope_pos(vid, line_attr.flag, line_attr.width,
+        screen_start, screen_end, temp_dist);
+    outputData.position.z = line_attr.drawZ;
+    outputData.position.w = 1.0f;
+
+    outputData.dist.x = temp_dist;
+    outputData.dist.y = temp_dist;
+    outputData.dist.z = temp_dist;
+    outputData.dist.w = temp_dist;
+    
+    outputData.color = line_attr.color;
+    outputData.glowColor = line_attr.glowColor;
+    outputData.flag = line_attr.flag;
+    outputData.width = line_attr.width;
+
+    outputData.prevPoint = screen_prev;
+    outputData.startPoint = screen_start;
+    outputData.endPoint = screen_end;
+    outputData.postPoint = screen_post;
+
+    outputData.lineParams.x = screen_start.y - screen_end.y;
+    outputData.lineParams.y = screen_end.x - screen_start.x;
+    outputData.lineParams.z = screen_start.x * screen_end.y - screen_end.x * screen_start.y;
+    outputData.lineParams.w = 0.0f;
+
+    // length on line
+    set_line_pattern_dist(vid, outputData.startPoint, outputData.endPoint,
+        outputData.dist.y, outputData.dist.z);
+    outputData.dist.w = 0.0f; // reserved
+
+    outputData.patternIndex = line_attr.patternIndex;
+    outputData.capsType = line_attr.capsType;
+
+    outputData.patternProp = vec4(line_attr.startSkipLen, line_attr.endSkipLen,
+        line_attr.patternOffset, line_attr.patternScale);
+
+#ifdef ANALYTIC_STIPPLE
+    outputData.stippleIndex = line_attr.stippleIndex;
+#endif
+}
+
+vec4 getWLColorFromLTAttr(VertexAttr_WideLineType inputData, WideLinePatternResult left_attr, WideLinePatternResult right_attr, int res)
+{
+    // get screen pos
+    vec2 pixelPos = inputData.position.xy * vec2(0.5f, 0.5f) + vec2(0.5f, 0.5f);
+    pixelPos *= gScreenSize;
+    // pixelPos.y = gScreenSize.y - pixelPos.y;
+
+    float width = adjust_line_width_wide_line(inputData.width);
+
+    vec4 color;
+    // if on dash, draw as wide line
+    if (res == PURE_DASH)
+    {
+        if (gNoAAMode != 0)
+        {
+#ifdef ANALYTIC_HIGHLIGHT
+            bool in_sharp = (width > 1.0f) ? true : in_line_sharp(inputData.lineParams.xyz, pixelPos);
+            color = compute_highlight_sharp_color(abs(inputData.dist.x), width, inputData.color, inputData.glowColor, in_sharp);
+#else
+            color = compute_final_color_sharp(abs(inputData.dist.x), width, inputData.color, inputData.glowColor);
+#endif
+        }
+        else
+        {
+#ifdef ANALYTIC_STIPPLE
+            color = compute_final_color_stipple(abs(inputData.dist.x), width, inputData.color, inputData.glowColor, pixelPos, inputData.stippleIndex);
+#else
+            color = compute_final_color(abs(inputData.dist.x), width, inputData.color, inputData.glowColor);
+#endif
+        }
+    }
+    // other wise we need get color from left segment and right segment
+    // and combine both sides.
+    else
+    {
+
+#ifdef ANALYTIC_STIPPLE
+        vec4 left_color = compute_wide_pattern_color_stipple(left_attr, width,
+            inputData.color, inputData.glowColor, pixelPos, inputData.capsType, inputData.stippleIndex);
+
+        vec4 right_color = compute_wide_pattern_color_stipple(right_attr, width,
+            inputData.color, inputData.glowColor, pixelPos, inputData.capsType, inputData.stippleIndex);
+#else
+        vec4 left_color = compute_wide_pattern_color(left_attr, width,
+            inputData.color, inputData.glowColor, pixelPos, inputData.capsType);
+
+        vec4 right_color = compute_wide_pattern_color(right_attr, width,
+            inputData.color, inputData.glowColor, pixelPos, inputData.capsType);;
+#endif
+
+        color = (left_color.a >= right_color.a) ? left_color : right_color;
+    }
+
+    return color;
+}
+
+vec4 getWLColorFromLTAttr_Meta(VertexAttr_MetaWideLineType inputData, WideLinePatternResult left_attr, WideLinePatternResult right_attr, int res)
+{
+    // get screen pos
+    vec2 pixelPos = inputData.position.xy * vec2(0.5f, 0.5f) + vec2(0.5f, 0.5f);
+    pixelPos *= gScreenSize;
+    // pixelPos.y = gScreenSize.y - pixelPos.y;
+
+    float width = adjust_line_width_wide_line(inputData.width);
+
+    vec4 color;
+    // if on dash, draw as wide line
+    if (res == PURE_DASH)
+    {
+        if (gNoAAMode != 0)
+        {
+#ifdef ANALYTIC_HIGHLIGHT
+            bool in_sharp = (width > 1.0f) ? true : in_line_sharp(inputData.lineParams.xyz, pixelPos);
+            color = compute_highlight_sharp_color(abs(inputData.dist.x), width, inputData.color, inputData.glowColor, in_sharp);
+#else
+            color = compute_final_color_sharp(abs(inputData.dist.x), width, inputData.color, inputData.glowColor);
+#endif
+        }
+        else
+        {
+#ifdef ANALYTIC_STIPPLE
+            color = compute_final_color_stipple(abs(inputData.dist.x), width, inputData.color, inputData.glowColor, pixelPos, inputData.stippleIndex);
+#else
+            color = compute_final_color(abs(inputData.dist.x), width, inputData.color, inputData.glowColor);
+#endif
+        }
+    }
+    // other wise we need get color from left segment and right segment
+    // and combine both sides.
+    else
+    {
+
+#ifdef ANALYTIC_STIPPLE
+        vec4 left_color = compute_wide_pattern_color_stipple(left_attr, width,
+            inputData.color, inputData.glowColor, pixelPos, inputData.capsType, inputData.stippleIndex);
+
+        vec4 right_color = compute_wide_pattern_color_stipple(right_attr, width,
+            inputData.color, inputData.glowColor, pixelPos, inputData.capsType, inputData.stippleIndex);
+#else
+        vec4 left_color = compute_wide_pattern_color(left_attr, width,
+            inputData.color, inputData.glowColor, pixelPos, inputData.capsType);
+
+        vec4 right_color = compute_wide_pattern_color(right_attr, width,
+            inputData.color, inputData.glowColor, pixelPos, inputData.capsType);;
+#endif
+
+        color = (left_color.a >= right_color.a) ? left_color : right_color;
+    }
+
+    return color;
+}
+
+VertexAttr_WideLineType outputWideLineType_VS(uint vid, WideLineTypeAttr line_attr)
+{
+    VertexAttr_WideLineType outputData;
+    if (line_attr.isLogical != uint(0))
+        set_logical_wide_line_type_properties(vid, line_attr, outputData);
+    else
+        set_wide_line_type_properties(vid, line_attr, outputData);
+
+    return outputData;
+}
+
+}
+
+#endif // _HQ_FX_LT_WIDE_LINE_H_

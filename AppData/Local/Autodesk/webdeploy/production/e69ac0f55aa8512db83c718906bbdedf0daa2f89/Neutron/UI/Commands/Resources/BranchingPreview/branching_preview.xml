@@ -1,0 +1,134 @@
+<html>
+<head>
+        <style type="text/css">
+        *{ border:0; margin:0; padding:0; outline:0; }
+
+
+      @font-face {
+
+        font-family: 'Open Sans';
+        src: url('%fnt path%/OpenSans-Regular.ttf');
+
+        font-weight: 400;
+
+        font-style: normal;
+
+      }
+
+        .noSelection{
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+body {
+    border-top: 1px solid #d9d9d9;
+}
+
+        .txt {
+cursor: default;
+            padding: 34px 34px 0 34px;
+            font-family: Open Sans, serif, arial, verdana, sans-serif;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 23px;
+            color: #767676;
+            vertical-align: top;
+        }
+
+        .img {
+            vertical-align: top;
+xwidth: 117px;
+        }
+
+.img img{
+  margin-top: 34px;
+  margin-right: 34px;
+  width: 78px;
+xheight: 122px;
+height: auto;
+}
+
+        .helpLink {
+            text-decoration: none;
+            color: #00A5E1;
+        }
+
+        .helpLink:hover {
+            color: #42b6df;
+        }
+
+        .helpLink:active {
+            color: #007fbe;
+        }
+        
+        .btnCell {
+            text-align: right;
+            padding: 34px 34px 34px 0;
+        }
+
+        .btn {
+cursor: default;
+            display: inline-block;
+            padding-left: 40px;
+            padding-right: 40px;
+            height: 34px;
+            font-family: Open Sans, serif, arial, verdana, sans-serif;
+            font-size: 13px;
+            line-height: 34px;
+            text-align: center;
+            color: white;
+            background-color: #00A5E1;
+            border-radius: 3px;
+        }
+
+       .btn:hover {
+            background-color: #42b6df;
+        }
+
+       .btn:active {
+            background-color: #007fbe;
+        }
+    </style>
+    <script type="text/javascript">
+        function sendString(str) {
+            document.title = '(empty msg)';
+            document.title = str;
+        }
+
+        function sendHeight() {
+            setTimeout(function() {
+                var str='RESIZE:' + table.clientHeight;
+                sendString(str);
+            }, 1);
+        }
+
+        function initialize() {
+            sendHeight();
+            document.onkeydown = function(evt) {
+                evt = evt || window.event;
+                if (evt.keyCode == 27) {
+                    sendString('BTN:CANCEL');
+                }
+            };
+        }
+
+    </script>
+</head>
+<body class="noSelection" onload="initialize();">
+    <table id="table">
+        <tr>
+            <td class="txt">
+                %txt%
+            </td>
+            <td class="img">
+                <img src="data:image/png;base64,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" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="btnCell">
+                <div class="btn" onclick="sendString('BTN:OK'); return false;">%ok%</div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

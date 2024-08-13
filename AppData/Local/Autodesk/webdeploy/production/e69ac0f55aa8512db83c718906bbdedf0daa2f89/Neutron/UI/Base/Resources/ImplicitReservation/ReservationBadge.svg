@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Reservation_Badge_2x);
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+      .cls-5 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #3c3c3c;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+    <clipPath id="clip-Reservation_Badge_2x">
+      <rect width="12" height="12"/>
+    </clipPath>
+  </defs>
+  <g id="Reservation_Badge_2x" data-name="Reservation Badge_2x" class="cls-1">
+    <rect class="cls-5" width="12" height="12"/>
+    <g id="Ellipse_53" data-name="Ellipse 53" class="cls-2">
+      <circle class="cls-3" cx="6" cy="6" r="6"/>
+      <circle class="cls-4" cx="6" cy="6" r="5"/>
+    </g>
+  </g>
+</svg>

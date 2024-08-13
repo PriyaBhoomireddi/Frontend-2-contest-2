@@ -1,0 +1,9 @@
+<html>
+    <body>Unit test page</body>
+    <script>
+        window.setTimeout(closeViewer, 5000);
+        function closeViewer() {
+            window.neutronJavaScriptObject.executeQuery('logoutForErrorPage', "{}");
+        }
+    </script>
+</html>

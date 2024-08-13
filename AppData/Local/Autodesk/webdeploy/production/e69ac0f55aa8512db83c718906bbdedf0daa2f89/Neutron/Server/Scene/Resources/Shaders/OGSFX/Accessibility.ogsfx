@@ -1,0 +1,279 @@
+//#define LOCAL_VIEWER
+#define FLIP_BACKFACING_NORMALS
+#define CLIPPING
+
+#ifdef CLIPPING
+#include "Clipping.ogsfh"
+#endif
+
+// World transformation.
+uniform mat4 gWXf : World;
+
+// World transformation, inverse transpose.
+uniform mat4 gWITXf : WorldInverseTranspose;
+
+// World-view-projection transformation.
+uniform mat4 gWVPXf : WorldViewProjection;
+
+// World-view transformation
+uniform mat4 gWV : WorldView;
+
+#ifdef LOCAL_VIEWER
+   uniform mat4 gVIXf : ViewInverse;
+#else
+   uniform vec3 gViewDirection : ViewDirection;
+#endif
+
+// Whether the projection matrix flips Z: -1.0 if so, otherwise 1.0.
+uniform float gProjZSense : ProjectionZSense;
+
+// Depth priority, which shifts the model a bit forward in the z-buffer
+uniform float gDepthPriority : DepthPriority;
+
+
+// Opacity factor.
+uniform float gOpacity : Opacity;
+
+// Shadow Size
+uniform int gAccessibilityShadowSize : AccessibilityShadowSize;
+
+// Shadow Map
+uniform mat4 gAccessibilityShadowTransform : AccessibilityShadowTransform;
+
+// Shadow Texture
+uniform texture2D gAccessibilityShadowTex : AccessibilityShadowTexture;
+
+// Shadow Sample
+uniform sampler2D gAccessibilityShadowSampler : AccessibilityShadowSampler = sampler_state
+{
+     Texture = <gAccessibilityShadowTex>;
+};
+
+// A float acting as a bool to flag if the second shadow map is needed
+uniform float gAccessibilityIsSecondShadowNeeded : AccessibilityIsSecondShadowNeeded;
+
+// Second Shadow Size
+uniform int gAccessibilitySecondShadowSize : AccessibilitySecondShadowSize;
+
+uniform float4x4 gAccessibilitySecondShadowTransform : AccessibilitySecondShadowTransform;
+// Second Shadow Map
+
+// Second Shadow Texture
+uniform Texture2D gAccessibilitySecondShadowTex : AccessibilitySecondShadowTexture;
+
+// Second Shadow Sample
+uniform sampler2D gAccessibilitySecondShadowSampler : AccessibilitySecondShadowSampler = sampler_state
+{
+  Texture = <gAccessibilitySecondShadowTex>;
+};
+
+// Vertex shader input structure
+attribute VS_INPUT
+{
+    vec3 Pos : POSITION;
+    vec3 Normal : NORMAL;
+};
+
+// Vertex shader output structure
+attribute VS_TO_PS
+{
+    vec4 HPos : POSITION;
+#ifdef CLIPPING
+    // The position of the sample point in the shadow map's clip space.
+    vec4 PosShadow : TEXCOORD0;
+    vec3 NormalShadow : TEXCOORD1;
+    // The position of the sample point in the second shadow map's clip space.
+    vec4 PosSecondShadow : TEXCOORD2;
+    vec3 NormalSecondShadow : TEXCOORD3;
+    vec4 HPw : TEXCOORD4;
+#endif
+};
+
+attribute pixelOut {
+    vec4 colorOut:COLOR0;
+}
+
+// Vertex shader - takes and processes vertex related data (positions, normals, texcoords)
+GLSLShader accessibilityVS{
+    void main()
+    {
+        vec4 P = vec4(Pos, 1.0);
+      
+        // Transform the vertex from object space to clip space
+        HPos = gWVPXf * P;
+      
+#ifdef CLIPPING
+        // On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+        // First compute the Pw in vertex shader, then pass the Pw to pixel shader
+        HPw = gWXf * P;
+        // Output the vertex position in the clip space of the shadow map.
+        PosShadow = gAccessibilityShadowTransform * HPw;
+        PosSecondShadow = PosShadow;
+        if(gAccessibilityIsSecondShadowNeeded > 0.5) PosSecondShadow = gAccessibilitySecondShadowTransform * HPw;
+        
+        // Calculate normal projected onto the shadow map (subtract translation due to transform)
+        vec4 ShadowNormal = gAccessibilityShadowTransform * gWITXf * vec4(Normal, 0.0);
+        vec4 ShadowTranslation = gAccessibilityShadowTransform * vec4(0, 0, 0, 0);
+        NormalShadow = normalize((ShadowNormal - ShadowTranslation).xyz);
+        NormalSecondShadow = NormalShadow;
+        if(gAccessibilityIsSecondShadowNeeded > 0.5){
+            ShadowNormal = gAccessibilitySecondShadowTransform * gWITXf * vec4(Normal, 0.0);
+            ShadowTranslation = gAccessibilitySecondShadowTransform * vec4(0, 0, 0, 0);
+            NormalSecondShadow = normalize((ShadowNormal - ShadowTranslation).xyz);
+        }
+#endif
+      
+        // modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+        //HPos.z -= HPos.w * gDepthPriority;
+        HPos.z -= HPos.w*2.0f*gDepthPriority;
+        //HPos.z -= HPos.w*2.0f/1048576.0f;
+      
+        gl_Position = HPos;
+    }
+}
+
+// Pixel shader - takes values interpolated from those processed in VS and generates pixel fragments
+GLSLShader accessibilityPS{
+    void main()
+    {
+#ifdef CLIPPING
+        // Compute whether the pixel needs to be discard by the clipping planes.
+        bool needDiscard = false;
+        if (gNumClipPlanes > 0) { if(dot(HPw, gClipPlanes[0])<0) needDiscard = true;}
+        if (gNumClipPlanes > 1) { if(dot(HPw, gClipPlanes[1])<0) needDiscard = true;}
+        if (gNumClipPlanes > 2) { if(dot(HPw, gClipPlanes[2])<0) needDiscard = true;}
+        if (gNumClipPlanes > 3) { if(dot(HPw, gClipPlanes[3])<0) needDiscard = true;}
+        if (gNumClipPlanes > 4) { if(dot(HPw, gClipPlanes[4])<0) needDiscard = true;}
+        if (gNumClipPlanes > 5) { if(dot(HPw, gClipPlanes[5])<0) needDiscard = true;}
+        
+        if (needDiscard == true)
+	        discard;
+#endif
+
+        // precompute the size of a telex in telex space
+        float gTexelSize = 1.0 / float(gAccessibilityShadowSize);
+        
+        float gSecondTexelSize = (gAccessibilityIsSecondShadowNeeded > 0.5) ? 1.0 / gAccessibilitySecondShadowSize : gTexelSize;
+  
+        // Tolerance used when testing depth against shadow map
+        float depthTolerance = 0.00001;
+  
+        // Tolerance when testing normal
+        float normalTolerance = 0.00001;
+
+        // Perform sampling for points inside the NDC box.  Percentage closest filtering is used to
+        // smooth the result at shadow-light boundaries.  Points outside are treated as not in shadow.
+        // The normalized version of the sample point is used for the rest of this function.
+        float result = 1.0;
+        vec3 Pndc = PosShadow.xyz / PosShadow.w;
+  
+        if ((Pndc.x < -1.0 || Pndc.y < -1.0 || Pndc.z < -1.0) || (Pndc.x > 1.0 || Pndc.y > 1.0 || Pndc.z > 1.0)) {
+            result = 1.0;
+        } else {
+  
+            // z depth for the pixel in question
+            float zDepth = Pndc.z - depthTolerance;
+    
+            // Compute the texture coordinates for shadow map sampling based on the sample point.  Since
+            // the point is in the light's space, the x and y components of the point map to the UV
+            // texture coordinates.  They must be mapped from the range [-1.0, 1.0] to [0.0, 1.0],  Also, shift
+            // the texture coordinates by half a texel to properly emulate bilinear filtering in the code
+            // that follows, so that they are relative to a texel center, not corner.
+            vec2 texCoords = Pndc.xy * vec2(0.5, 0.5) + 0.5 - 0.5 * gTexelSize;
+    
+            // Sample the texture from computed location and three adjacent texels: down, right, and
+            // diagonal.  Each texel's r component is the depth in the shadow map.  Record whether the
+            // depth of the current sample point is greater than this depth (in shadow, 0.0) or less
+            // (fully lit, 1.0).  The step() instrinsic provides a shorthand for this.
+            result = step(zDepth, texture2D(gAccessibilityShadowSampler, texCoords).r);
+            if (result <= 0.0) {
+                result = step(zDepth, texture2D(gAccessibilityShadowSampler, texCoords + vec2(gTexelSize, 0.0), 0).r);
+            }
+            if (result <= 0.0) {
+                result = step(zDepth, texture2D(gAccessibilityShadowSampler, texCoords + vec2(0.0, gTexelSize), 0).r);
+            }
+            if (result <= 0.0) {
+                result = step(zDepth, texture2D(gAccessibilityShadowSampler, texCoords + vec2(gTexelSize, gTexelSize), 0).r);
+            }
+    
+            // If result is not 1.0 (Green), check the neighbours
+            if (result <= 0.0 && NormalShadow.z > -normalTolerance && NormalShadow.z < normalTolerance) {
+                float offset = 4 * gTexelSize;
+                result = step(zDepth, texture2D(gAccessibilityShadowSampler, texCoords + vec2(offset, offset), 0).r);
+                if (result <= 0.0) {
+                    result = step(zDepth, texture2D(gAccessibilityShadowSampler, texCoords + vec2(offset, -offset), 0).r);
+                }
+                if (result <= 0.0) {
+                    result = step(zDepth, texture2D(gAccessibilityShadowSampler, texCoords + vec2(-offset, -offset), 0).r);
+                }
+                if (result <= 0.0) {
+                    result = step(zDepth, texture2D(gAccessibilityShadowSampler, texCoords + vec2(-offset, offset), 0).r);
+                }
+            }
+        }
+        if(result <= 0 && gAccessibilityIsSecondShadowNeeded > 0.5f) {
+            Pndc = PosSecondShadow.xyz / PosSecondShadow.w;
+      
+            if ((Pndc.x < -1.0 || Pndc.y < -1.0 || Pndc.z < -1.0) || (Pndc.x > 1.0 || Pndc.y > 1.0 || Pndc.z > 1.0)) {
+                result = 1.0;
+            } else {
+      
+                // z depth for the pixel in question
+                float zDepth = Pndc.z - depthTolerance;
+        
+                // Compute the texture coordinates for shadow map sampling based on the sample point.  Since
+                // the point is in the light's space, the x and y components of the point map to the UV
+                // texture coordinates.  They must be mapped from the range [-1.0, 1.0] to [0.0, 1.0],  Also, shift
+                // the texture coordinates by half a texel to properly emulate bilinear filtering in the code
+                // that follows, so that they are relative to a texel center, not corner.
+                vec2 texCoords = Pndc.xy * vec2(0.5, 0.5) + 0.5 - 0.5 * gSecondTexelSize;
+        
+                // Sample the texture from computed location and three adjacent texels: down, right, and
+                // diagonal.  Each texel's r component is the depth in the shadow map.  Record whether the
+                // depth of the current sample point is greater than this depth (in shadow, 0.0) or less
+                // (fully lit, 1.0).  The step() instrinsic provides a shorthand for this.
+                result = step(zDepth, texture2D(gAccessibilitySecondShadowSampler, texCoords).r);
+                if (result <= 0.0) {
+                    result = step(zDepth, texture2D(gAccessibilitySecondShadowSampler, texCoords + vec2(gSecondTexelSize, 0.0), 0).r);
+                }
+                if (result <= 0.0) {
+                    result = step(zDepth, texture2D(gAccessibilitySecondShadowSampler, texCoords + vec2(0.0, gSecondTexelSize), 0).r);
+                }
+                if (result <= 0.0) {
+                    result = step(zDepth, texture2D(gAccessibilitySecondShadowSampler, texCoords + vec2(gSecondTexelSize, gSecondTexelSize), 0).r);
+                }
+        
+                // If result is not 1.0 (Green), check the neighbours
+                if (result <= 0.0 && NormalSecondShadow.z > -normalTolerance && NormalSecondShadow.z < normalTolerance) {
+                    float offset = 4 * gSecondTexelSize;
+                    result = step(zDepth, texture2D(gAccessibilitySecondShadowSampler, texCoords + vec2(offset, offset), 0).r);
+                    if (result <= 0.0) {
+                        result = step(zDepth, texture2D(gAccessibilitySecondShadowSampler, texCoords + vec2(offset, -offset), 0).r);
+                    }
+                    if (result <= 0.0) {
+                        result = step(zDepth, texture2D(gAccessibilitySecondShadowSampler, texCoords + vec2(-offset, -offset), 0).r);
+                    }
+                    if (result <= 0.0) {
+                        result = step(zDepth, texture2D(gAccessibilitySecondShadowSampler, texCoords + vec2(-offset, offset), 0).r);
+                    }
+                }
+            }
+        }
+        if (result > 0.0) {
+            // green
+            colorOut = vec4(0.0f, 1.0f, 0.0f, gOpacity);
+        } else {
+            // red
+            colorOut = vec4(1.0f, 0.0f, 0.0f, gOpacity);
+        }
+    }
+}
+
+technique Accessibility
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT,out VS_TO_PS) = accessibilityVS;
+        PixelShader (in VS_TO_PS, out pixelOut) = accessibilityPS;
+    }
+}

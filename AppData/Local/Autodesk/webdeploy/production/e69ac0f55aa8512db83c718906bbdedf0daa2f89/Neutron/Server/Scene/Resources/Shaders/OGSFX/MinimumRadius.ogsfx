@@ -1,0 +1,222 @@
+//#define LOCAL_VIEWER
+#define FLIP_BACKFACING_NORMALS
+#define CLIPPING
+
+#define LIGHT_DIRECTIONAL_MULTIPLE
+
+#ifdef CLIPPING
+#include "Clipping.ogsfh"
+#endif
+
+#include "LightArray.ogsfh"
+
+// World transformation.
+uniform mat4 gWXf : World;
+
+// World transformation, inverse transpose.
+uniform mat4 gWITXf : WorldInverseTranspose;
+
+// World-view transformation
+uniform mat4 gWV : WorldView;
+
+// World-View-projection transformation.
+uniform mat4 gWVPXf : WorldViewProjection;
+
+// Inverse view, used for normal in local or perspective view
+uniform mat4 gVIXf : ViewInverse;
+
+// View direction, for orthographic view
+uniform vec3 gViewDirection : ViewDirection;
+
+// Projection, used to determine what the current view is
+uniform mat4 gProjection : Projection < string UIWidget = "None"; >;
+
+// Emissive color.
+uniform vec3 gEmiColor : Emissive = {0.0, 0.0, 0.0};
+
+// Ambient color.
+uniform vec3 gAmbColor : Ambient = {0.0, 0.0, 0.0};
+
+// Diffuse color.
+uniform vec3 gDiffColor : Diffuse = {0.7, 0.7, 0.7};
+
+// Specular color.
+uniform vec3 gSpecColor : Specular = {0.0, 0.0, 0.0};
+
+// Glossiness (specular power).
+uniform float gGlossiness : SpecularPower = 32.0;
+
+// Opacity factor.
+uniform float gOpacity : Opacity = 1.0;
+
+uniform float gMinimumRadius : MinimumRadius = 1.0;
+
+uniform float gTolerance : Tolerance = 0.0;
+
+// Depth priority, which shifts the model a bit forward in the z-buffer
+uniform float gDepthPriority : DepthPriority = 0.0;
+
+attribute VS_INPUT
+{
+    vec3 Pos  : POSITION;
+    vec3 Normal: NORMAL;
+	vec2 UV  : TEXCOORD0;
+	vec2 Curvature  : TEXCOORD1;
+    vec2 NormalReversed : TEXCOORD2; // Used as a boolean to indicate if the face normal as been reversed
+};
+
+attribute VS_TO_PS
+{
+    vec4 HPos       : POSITION;
+    // Can't use the same name as in the VS_INPUT.
+    vec3 Norm : NORMAL;
+    vec2 CurData    : TEXCOORD0;
+    float NormReversed : TEXCOORD2;
+    vec3 ViewDir : gViewDirection;
+#ifdef CLIPPING
+    // World position, for CLIPPING
+    vec4 HPw 	: TEXCOORD2;
+#endif
+    vec3 Diff : COLOR0; 
+    vec3 Spec : COLOR1;
+};
+
+attribute pixelOut {
+    vec4 colorOut:COLOR0;
+}
+
+GLSLShader minimumRadiusVS{
+	void main()
+	{
+		vec4 P = vec4(Pos, 1.0);
+		HPos = gWVPXf * P;  
+
+		// Transform the position and normal to world space for lighting, and normalize the normal.
+		vec4 HPwT = gWXf * P;
+		vec3 Nw = normalize((gWITXf * vec4(Normal, 1.0)).xyz);
+
+
+
+		// Compute the view direction, using the eye position and vertex position.  The eye
+		// position is the translation vector of the inverse view transformation matrix.  This
+		// provides more accurate lighting highlights and environment-mapped reflections than
+		// using a non-local viewer (below).
+		vec4 Vw = HPwT - gVIXf[3];
+		vec3 VwPerspectiveNorm = normalize(Vw.xyz);
+
+		// Use the fixed view direction, the same for the entire view.  Use of this vector is
+		// similar to disabling D3DRS_LOCALVIEWER for lighting and reflection in D3D9 (the
+		// default state).  This is appropriate for orthographic projections.
+		vec3 VwNorm = gViewDirection;
+
+#ifdef LOCAL_VIEWER
+        VwNorm = VwPerspectiveNorm;
+#endif
+
+		// Pass normal on to PS function.
+		Norm = Nw;
+		NormReversed = NormalReversed.x;
+		ViewDir = gViewDirection;
+
+		if (gProjection[2][3] == 1.0) { // 1.0 is perspective view, 0.0 is orthographic view//
+			ViewDir = VwPerspectiveNorm;
+		}
+
+		// Flip the normal to face the view direction, allowing proper shading of back-facing surfaces.
+		// NOTE: This will lead to artifacts on the silhouettes of coarsely-tessellated surfaces.  A
+		// compensation of about nine degrees is performed here (cos(99deg) ~ 0.15), so this issue
+		// should be limited to triangles with very divergent normals.
+#ifdef FLIP_BACKFACING_NORMALS
+		Nw = -Nw * sign(dot(VwNorm, Nw));
+#endif
+		
+		// Compute the ambient, diffuse, and specular lighting components from the light array.
+		vec3 amb = vec3(0.0, 0.0, 0.0);
+		vec3 spec = vec3(0.0, 0.0, 0.0);
+		
+		// Use the glossiness value.
+		ComputeLighting(Nw, -VwNorm, HPwT.xyz, gGlossiness, amb, Diff.rgb, spec);
+		Diff.rgb *= gDiffColor;
+		Diff.rgb += gAmbColor * amb + gEmiColor;
+		Spec = gSpecColor * spec;
+
+		// Clamp the diffuse and specular components to [0.0, 1.0] to match the limitations of COLOR
+		// registers in SM 2.0.  Otherwise the final color output will not match.
+		Diff = saturate(Diff);
+
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w*gDepthPriority;
+
+		CurData.x =	atan(Curvature.x);
+		CurData.y = atan(Curvature.y);
+
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif
+
+		gl_Position = HPos;
+	}
+}
+
+GLSLShader minimumRadiusPS{
+	void main()
+	{
+#ifdef CLIPPING
+		// Compute whether the pixel needs to be discard by the clipping planes.
+		bool needDiscard = false;
+		if (gNumClipPlanes > 0) { if(dot(HPw, gClipPlanes[0])<0) needDiscard = true;}
+		if (gNumClipPlanes > 1) { if(dot(HPw, gClipPlanes[1])<0) needDiscard = true;}
+		if (gNumClipPlanes > 2) { if(dot(HPw, gClipPlanes[2])<0) needDiscard = true;}
+		if (gNumClipPlanes > 3) { if(dot(HPw, gClipPlanes[3])<0) needDiscard = true;}
+		if (gNumClipPlanes > 4) { if(dot(HPw, gClipPlanes[4])<0) needDiscard = true;}
+		if (gNumClipPlanes > 5) { if(dot(HPw, gClipPlanes[5])<0) needDiscard = true;}
+    
+		if (needDiscard == true)
+			discard;
+#endif
+
+		float curvatureU = tan(CurData.x);
+		float curvatureV = tan(CurData.y);
+		
+		float sign = 1;
+		
+		// Check whether the normal is facing towards the view,
+		// if so the curvature needs to be reversed.
+		float curvature = CurData.y;
+		if (dot(ViewDir, Norm) > 0) {
+			sign *= -1;
+		}
+
+		// Also need to flip the curvature if the normal is reversed.
+		// Note: NormReversed should be 0.0 or 1.0, but interpolation can lead to an imprecise float, so use 0.5 for comparison
+		if (NormReversed > 0.5) {
+			sign *= -1;
+		}
+		
+		curvatureU *= sign;
+		curvatureV *= sign;
+
+		vec3 outputColor = Diff.rgb;
+		if (curvatureU > 1 / gMinimumRadius || curvatureV > 1 / gMinimumRadius) {
+			outputColor = vec3(1.0f, 0.0f, 0.0f);
+		}
+		else if (curvatureU > gTolerance || curvatureV > gTolerance) {
+			outputColor = vec3(0.0f, 1.0f, 0.0f);
+		}
+
+		// Final color and alpha.
+		vec4 final = vec4(outputColor, gOpacity);
+		colorOut = final;
+	}
+}
+
+technique MinimumRadius
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT,out VS_TO_PS) = minimumRadiusVS;
+        PixelShader (in VS_TO_PS, out pixelOut) = minimumRadiusPS;
+    }
+}

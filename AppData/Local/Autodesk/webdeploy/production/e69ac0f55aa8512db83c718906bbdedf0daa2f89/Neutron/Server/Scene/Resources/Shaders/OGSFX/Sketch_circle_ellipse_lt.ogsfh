@@ -1,0 +1,203 @@
+#ifndef _HQ_FX_CIRCLR_ELLIPSE_LT_H_
+#define _HQ_FX_CIRCLR_ELLIPSE_LT_H_
+
+#include "Sketch_circle_ellipse.ogsfh"
+
+GLSLShader Sketch_circle_ellipse_lt
+{
+
+struct VertexAttr_LineType_Arc
+{
+    uint patternIndex;   // line pattern index
+    uint lt_dot;         // is pure dot
+    uint lt_inverted;    // line type is inverted
+    uint reserved;        // reserved
+
+    vec4 patternProp; // line pattern properties: x - start skip len, y - end skip len, z - pattern scale, w - pattern offset
+};
+
+struct VertexAttr_LineType_DIST
+{
+    vec2 dist;           // distance from 0 degree to start/end angle
+};
+
+struct EllipseAttr_LineType
+{
+    uint lt_index;    // line type pattern index
+    uint lt_dot;      // is pure dot
+    uint lt_inverted; // line type is inverted
+    uint lt_logical;  // line type is logical
+};
+
+struct EllipseAttr_Dash_LT
+{
+    vec2 center; // screen space center
+    vec2 radius;   // screen space raiuds
+
+    vec2 range;     // start angle end angle
+    float rotate;    // rotation
+
+    float weight;    // line weight
+    uint color;      // color
+    float drawZ;      // draw order z
+
+    uint glowColor;  // glow color
+    uint capType;   // cap type
+    uint isLogical;    // logical flag 0: non-logical transform, 1: logical transform
+    uint lt_index;    // line type pattern index
+    uint lt_dot;      // is pure dot
+    uint lt_inverted; // line type is inverted
+};
+
+struct VertexAttr_Ellipse_LT
+{
+    vec4 position; // transformed  vertex position
+
+    vec2 radius;     // x long axis, y short axis
+    vec2 range;       // x start angle, y end angle
+
+    vec2 uv;                       // uv is used to compute gradient
+    uint  color;       // ellipse color
+    float weight;      // ellipse line weight
+
+    uint  glowColor;   // glow color for highlights
+    uint lt_index;                       // line type pattern index
+    uint lt_dot;                         // is pure dot
+    uint lt_inverted;                    // line type is inverted
+};
+
+
+void adjust_elliptical_arc_lt(inout EllipseAttr_Dash_LT attr)
+{
+    float s1, c1;
+    s1 = sin(attr.rotate + attr.range.x);
+    c1 = cos(attr.rotate + attr.range.x);
+
+    float x_start = attr.center.x + attr.radius.x * c1;
+    float y_start = attr.center.y + attr.radius.y * s1;
+
+    s1 = sin(attr.rotate + attr.range.y);
+    c1 = cos(attr.rotate + attr.range.y);
+
+    float x_end = attr.center.x + attr.radius.x * c1;
+    float y_end = attr.center.y + attr.radius.y * s1;
+
+    float x_start_dev = round(x_start) - x_start;
+    float y_start_dev = round(y_start) - y_start;
+    float x_end_dev = round(x_end) - x_end;
+    float y_end_dev = round(y_end) - y_end;
+    attr.center.x += (x_start_dev + x_end_dev) / 2.0f;
+    attr.center.y += (y_start_dev + y_end_dev) / 2.0f;
+
+    float adjust_angle = min(0.25f / max(attr.radius.x, attr.radius.y), 0.01f);
+    attr.range.x -= adjust_angle;
+    attr.range.y += adjust_angle;
+}
+
+void set_line_type_properties(EllipseAttr_LineType linetype_attr, vec4 patternProps, inout VertexAttr_LineType_Arc outputData)
+{
+    outputData.patternIndex = linetype_attr.lt_index;
+    outputData.lt_dot = linetype_attr.lt_dot;
+    outputData.lt_inverted = linetype_attr.lt_inverted;
+    outputData.reserved = uint(0);
+    outputData.patternProp = patternProps;
+}
+
+void assign_attr_lt(vec4 attr_array[ATTR_SIZE], out EllipseAttr_Dash_LT attr)
+{
+    attr.center.x = attr_array[0].x;
+    attr.center.y = attr_array[0].y;
+    attr.radius.x = attr_array[0].z;
+    attr.radius.y = attr_array[0].w;
+
+    attr.range = attr_array[1].xy;
+    attr.rotate = attr_array[1].z;
+    attr.color = floatBitsToUint(attr_array[1].w);
+
+    attr.weight = float((floatBitsToUint(attr_array[2].x) & MASK_WIDTH) >> OFFSET_WIDTH);
+    attr.lt_index = ((floatBitsToUint(attr_array[2].x) & MASK_LINDEX) >> OFFSET_LINDEX);
+    attr.lt_dot = ((floatBitsToUint(attr_array[2].x) & MASK_LDOT) >> OFFSET_LDOT);
+    attr.isLogical = ((floatBitsToUint(attr_array[2].x) & MASK_LFLAG) >> OFFSET_LFLAG);
+    attr.capType = ((floatBitsToUint(attr_array[2].x) & MASK_CTYPE) >> OFFSET_CTYPE);
+    attr.lt_inverted = ((floatBitsToUint(attr_array[2].x) & MASK_LTINV) >> OFFSET_LTINV);
+    attr.glowColor = floatBitsToUint(attr_array[2].y);
+    attr.drawZ = attr_array[2].z;
+}
+
+void load_ellipse_info_lt(uint offset, out EllipseAttr_Dash attr_ellipse, out EllipseAttr_LineType attr_linetype)
+{
+    vec4 attr_array[ATTR_SIZE];
+
+    for (uint i = uint(0); i < uint(ATTR_SIZE); ++i)
+    {
+        ivec2 tex_offset = get_ptex_offset(offset*uint(ATTR_SIZE) + i);
+        attr_array[i] = texelFetch(gPTex, tex_offset, 0);
+    }
+
+    assign_attr(attr_array, attr_ellipse);
+    assign_attr_neutron_sketch(attr_array, attr_ellipse);
+
+    // line type
+    attr_linetype.lt_index = ((floatBitsToUint(attr_array[2].x) & MASK_LINDEX) >> OFFSET_LINDEX);
+    attr_linetype.lt_dot = ((floatBitsToUint(attr_array[2].x) & MASK_LDOT) >> OFFSET_LDOT);
+    attr_linetype.lt_inverted = ((floatBitsToUint(attr_array[2].x) & MASK_LTINV) >> OFFSET_LTINV);
+    attr_linetype.lt_logical = ((floatBitsToUint(attr_array[2].x) & uint(0x40000000)) >> uint(30));
+}
+
+VertexAttr_Ellipse_LT output_vertex_attr_ellipse_lt(uint vid, EllipseAttr_Dash_LT ellipse_attr)
+{
+    // initialize
+    VertexAttr_Ellipse_LT outputData = VertexAttr_Ellipse_LT(vec4(0.0f, 0.0f, 0.0f, 0.0f), vec2(0.0f, 0.0f), vec2(0.0f, 0.0f),
+                                                         vec2(0.0f, 0.0f), uint(0), 0.0f, uint(0), uint(0), uint(0), uint(0));
+
+    // update geometry info
+    vec2 center = vec2(ellipse_attr.center.x, ellipse_attr.center.y);
+    outputData.range = ellipse_attr.range;
+
+    vec2 adjusted_radius = ellipse_attr.radius;
+
+    float sin_rot, cos_rot;
+    sin_rot = sin(ellipse_attr.rotate);
+    cos_rot = cos(ellipse_attr.rotate);
+
+    if (gRetainMode || (ellipse_attr.isLogical != uint(0)))
+    {
+        center = logic_to_ndc(center);
+        center = ndc_to_screen(center);
+
+        adjusted_radius = neutron_sketch_radius_to_screen(adjusted_radius);
+    }
+    else
+    {
+        if (ellipse_attr.radius.x == 0.0f) adjusted_radius.x = 0.5f;
+        if (ellipse_attr.radius.y == 0.0f) adjusted_radius.y = 0.5f;
+    }
+
+
+
+    // get the radius
+    outputData.radius = adjusted_radius;
+
+    outputData.position.xy = get_vertex_pos_envelope_30(vid, adjusted_radius.x, adjusted_radius.y,
+        center, sin_rot, cos_rot, outputData.range, ellipse_attr.weight, outputData.uv);
+
+    // update other properties
+    outputData.weight = ellipse_attr.weight;
+    outputData.position.z = ellipse_attr.drawZ;
+    outputData.position.xyz = outputData.position.xyz;
+    outputData.position.w = 1.0f;
+
+    outputData.color = ellipse_attr.color; // move color assignment to last will fix an Intel compiler issue.
+                                       // since the color assignment will affect position result on Intel cards.
+
+    outputData.glowColor = ellipse_attr.glowColor;
+    outputData.lt_index = ellipse_attr.lt_index;
+    outputData.lt_dot = ellipse_attr.lt_dot;
+    outputData.lt_inverted = ellipse_attr.lt_inverted;
+
+    return outputData;
+}
+
+}
+
+#endif // _HQ_FX_CIRCLR_ELLIPSE_LT_H_

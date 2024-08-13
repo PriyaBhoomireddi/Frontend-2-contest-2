@@ -1,0 +1,142 @@
+QObject {
+	color:#8E8E8E;
+	background-color: transparent;
+	font-family: Artifakt Element;
+}
+
+QDialog {	
+	border: 1px solid #EEEEEE;
+    background-color: #FFFFFF;
+}
+
+QWidget#branchWidget
+{
+	 background-color: transparent;
+}
+
+QScrollArea#branch_area {
+    background-color: transparent;
+}
+
+/* */
+/* QLabels */
+/* */
+QLabel {
+    color:#767676;
+    font-size: 13px;
+	font-weight:normal;
+}
+
+QLabel#title_lbl {
+	color: #6B6B6B;
+    font-size: 22px;
+    margin-top: 0px;
+}
+
+QLabel#branch_name {
+   background-color: transparent;
+}
+
+QTLinkLabel#convertErrorInfo
+{
+	padding:1px;
+	color: #767676;
+}
+
+/* */
+/* QPushButtons */
+/* */
+QPushButton {
+    background-color: transparent;
+    border-radius: 3px;
+    padding: 7px 16px 6px 16px;
+    color: #6C6C6C;
+	font-size: 13px;
+}
+/* */
+/* Yes Button */
+/* */
+QPushButton#yes_btn {
+    background-color: #00A6E2;
+    border: 1px solid #00A6E2;
+    color: #FFFFFF;
+}
+
+QPushButton#yes_btn:hover {
+    background-color: #3AB5E1;
+    border: 1px solid #3AB5E1;
+}
+
+QPushButton#yes_btn:pressed {
+    background-color: #007EC0;
+    border: 1px solid #007EC0;
+}
+
+/* */
+/* No Button */
+/* */
+QPushButton#no_btn
+{
+    background-color: #FAFAFA;
+    border: 1px solid #A2A2A2;
+}
+
+QPushButton#no_btn:hover
+{
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+}
+
+QPushButton#no_btn:pressed {
+    background-color: #EAEAEA;
+    border: 1px solid #ADADAD;
+}
+
+QPushButton#close_btn {
+    border: none;
+}
+
+/* */
+/* QFrames */
+/* */
+QFrame#header_separator {
+    color: #D2D2D2;
+}
+
+/* */
+/* ScrollBar */
+/* */
+
+QScrollBar{
+    height: 10px;
+    width: 12px;
+    background: #F8F8F8;
+	border: 1px solid #EEEEEE;
+	padding:-1px;
+}
+
+QScrollBar::handle {
+    border-radius: 0px;
+	border: 1px solid #CCCCCC;
+    background: #DDDDDD;
+}
+
+QScrollBar::handle:hover {
+    background: #979797;
+}
+
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: none;
+}
+
+/* 
+Without height, width set to 0, the control is invisible but still there. When the handle is at the top / bottom,
+it is not possible to drag the handle because on top of it
+there is the invisible sub-line, add-lne control.
+UP-26722
+*/
+QScrollBar::sub-line, QScrollBar::add-line {
+    height: 0px;  
+    width: 0px;
+    background: none;
+}

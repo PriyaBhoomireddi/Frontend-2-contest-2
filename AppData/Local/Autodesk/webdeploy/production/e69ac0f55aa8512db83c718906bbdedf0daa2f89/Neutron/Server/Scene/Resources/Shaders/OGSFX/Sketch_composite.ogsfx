@@ -1,0 +1,149 @@
+#version 330
+
+uniform texture2D gTex0 : Texture0;
+uniform texture2D gTex1 : Texture1;
+uniform texture2D gTex2 : Texture2;
+uniform texture2D gTex3 : Texture3;
+uniform texture2D gTex4 : Texture4;
+uniform texture2D gTex5 : Texture5;
+uniform texture2D gTex6 : Texture6;
+uniform texture2D gTex7 : Texture7;
+
+uniform sampler2D gSamp0 : Sampler0 = sampler_state { Texture = <gTex0>; };
+uniform sampler2D gSamp1 : Sampler1 = sampler_state { Texture = <gTex1>; };
+uniform sampler2D gSamp2 : Sampler2 = sampler_state { Texture = <gTex2>; };
+uniform sampler2D gSamp3 : Sampler3 = sampler_state { Texture = <gTex3>; };
+uniform sampler2D gSamp4 : Sampler4 = sampler_state { Texture = <gTex4>; };
+uniform sampler2D gSamp5 : Sampler5 = sampler_state { Texture = <gTex5>; };
+uniform sampler2D gSamp6 : Sampler6 = sampler_state { Texture = <gTex6>; };
+uniform sampler2D gSamp7 : Sampler7 = sampler_state { Texture = <gTex7>; };
+
+uniform vec4 gColor[32] : Color;
+uniform int gPackedCount[8] : PackedCount;
+
+attribute VS_INPUT
+{
+    vec3 Pos : POSITION;
+    vec2 UV : TEXCOORD0;
+};
+
+attribute VS_TO_PS
+{
+    vec2 VSUV : TEXCOORD0;
+};
+
+attribute pixelOut
+{
+    vec4 colorOut : COLOR0;
+};
+
+GLSLShader Composite_VS
+{
+
+void main()
+{
+    VSUV = UV;
+    gl_Position = vec4(Pos, 1.0f);
+}
+
+}
+
+GLSLShader Composite_PS
+{
+
+vec4 composite_rgba_associative(vec4 C1, vec4 C2)
+{
+    vec4 Cx;
+    Cx.a = 1.0f - (1.0f - C1.a) * (1.0f - C2.a);
+    Cx.rgb = C2.rgb + C1.rgb * (1.0f - C2.a);
+    return Cx;
+}
+
+vec4 composite_packed_layers(vec4 Cx, vec4 Tx, int Txn, vec4 Color0, vec4 Color1, vec4 Color2, vec4 Color3)
+{
+    vec4 Cy;
+
+    Cy = Color0;
+    Cy.a *= lerp(0.0f, Tx.b, float(Txn >= 1));
+    Cy.rgb *= Cy.a;
+    Cx = composite_rgba_associative(Cx, Cy);
+
+    Cy = Color1;
+    Cy.a *= lerp(0.0f, Tx.g, float(Txn >= 2));
+    Cy.rgb *= Cy.a;
+    Cx = composite_rgba_associative(Cx, Cy);
+
+    Cy = Color2;
+    Cy.a *= lerp(0.0f, Tx.r, float(Txn >= 3));
+    Cy.rgb *= Cy.a;
+    Cx = composite_rgba_associative(Cx, Cy);
+
+    Cy = Color3;
+    Cy.a *= lerp(0.0f, Tx.a, float(Txn >= 4));
+    Cy.rgb *= Cy.a;
+    Cx = composite_rgba_associative(Cx, Cy);
+
+    return Cx;
+}
+
+vec4 composite_rgba_layer(vec4 Cx, vec4 Tx)
+{
+    vec4 Cy = Tx;
+    Cx = composite_rgba_associative(Cx, Cy);
+    return Cx;
+}
+
+vec4 composite_layers(vec4 Cx, int i, sampler2D Samp, vec2 UV)
+{
+    int Txn = gPackedCount[i];
+    if (Txn == 0)
+    {
+        return Cx;
+    }
+    else
+    {
+        vec4 Tx = texture2D(Samp, UV);
+        if (Txn > 0)
+        {
+            vec4 Color0 = gColor[i*4+0];
+            vec4 Color1 = gColor[i*4+1];
+            vec4 Color2 = gColor[i*4+2];
+            vec4 Color3 = gColor[i*4+3];
+            Cx = composite_packed_layers(Cx, Tx, Txn, Color0, Color1, Color2, Color3);
+        }
+        else if (Txn < 0)
+        {
+            Cx = composite_rgba_layer(Cx, Tx);
+        }
+    }
+
+    return Cx;
+}
+
+void main()
+{
+    vec4 Cx = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+
+    Cx = composite_layers(Cx, 0, gSamp0, VSUV);
+    Cx = composite_layers(Cx, 1, gSamp1, VSUV);
+    Cx = composite_layers(Cx, 2, gSamp2, VSUV);
+    Cx = composite_layers(Cx, 3, gSamp3, VSUV);
+    Cx = composite_layers(Cx, 4, gSamp4, VSUV);
+    Cx = composite_layers(Cx, 5, gSamp5, VSUV);
+    Cx = composite_layers(Cx, 6, gSamp6, VSUV);
+    Cx = composite_layers(Cx, 7, gSamp7, VSUV);
+
+    colorOut = Cx;
+}
+
+}
+
+technique Composite
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = Composite_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = Composite_PS;
+    }
+}
+

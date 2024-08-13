@@ -1,0 +1,1086 @@
+#version 330
+#include "Sketch_lt_wide_line.ogsfh"
+
+// draw order z texture for retain mode (bug)
+uniform highp texture2D gLineTypeCapsDrawOrderZTex_;
+uniform highp sampler2D gLineTypeCapsDrawOrderZTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gLineTypeCapsDrawOrderZTex_>; };
+
+// line type joint draw order texture for retain mode (bug)
+uniform highp texture2D gLineTypeJointDrawOrderZTex_;
+uniform highp sampler2D gLineTypeJointDrawOrderZTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gLineTypeJointDrawOrderZTex_>; };
+
+// line type index texture
+uniform highp texture2D gWideLineTypeIndexTex_ : WideLineTypeIndexTexture;
+uniform highp sampler2D gWideLineTypeIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gWideLineTypeIndexTex_>; };
+
+// line type draw order z texture for retain mode
+uniform highp texture2D gWideLineTypeDrawOrderZTex_ : WideLineTypeDrawOrderZTexture;
+uniform highp sampler2D gWideLineTypeDrawOrderZTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gWideLineTypeDrawOrderZTex_>; };
+
+attribute VS_INPUT
+{
+    int VertexID : TEXCOORD0;
+    int InstanceID : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 vso_position;
+    flat int vso_flagS;
+    flat int vso_colorS;
+    flat int vso_glowColorS;
+    flat int vso_widthS;
+    flat vec2 vso_point0;
+    flat vec2 vso_point1;
+    flat vec2 vso_point2;
+    flat vec2 vso_point3;
+    flat int vso_shapeTypeS;
+    flat int vso_capsTypeS;
+    flat int vso_jointTypeS;
+    flat int vso_patternIndexS;
+    flat vec4 vso_patternProp;
+    flat vec4 vso_patternProp_post;
+    flat int vso_reversedS;
+    flat vec4 vso_lineParams;
+    vec4 vso_dist;
+#ifdef ANALYTIC_STIPPLE
+    flat int vso_stippleIndexS;
+#endif
+};
+
+attribute pixelOut
+{
+    vec4 pso_color : COLOR0;
+};
+
+GLSLShader WideLineType_VS
+{
+
+// output wide line properties.
+void set_meta_wide_line_type_properties(uint vid, WideLineTypeAttr line_attr, 
+    out VertexAttr_MetaWideLineType outputData)
+{
+    float temp_dist;
+    outputData.position.xy = get_line_envelope_pos(vid, line_attr.width, 
+        line_attr.startPoint, line_attr.endPoint, temp_dist);
+    outputData.position.z =  line_attr.drawZ;
+    outputData.position.w = 1.0f;
+    
+    outputData.dist.x = temp_dist;
+    outputData.color = line_attr.color;
+    outputData.glowColor = line_attr.glowColor;
+    outputData.flag = line_attr.flag;
+    outputData.width = line_attr.width;
+
+    outputData.point0 = offset_screen_pos(line_attr.prevPoint);
+    outputData.point1 = offset_screen_pos(line_attr.startPoint);
+    outputData.point2 = offset_screen_pos(line_attr.endPoint);
+    outputData.point3 = offset_screen_pos(line_attr.postPoint);
+    
+    outputData.lineParams.x = outputData.point1.y - outputData.point2.y;
+    outputData.lineParams.y = outputData.point2.x - outputData.point1.x;
+    outputData.lineParams.z = outputData.point1.x * outputData.point2.y - outputData.point2.x * outputData.point1.y;
+    outputData.lineParams.w = 0.0f;
+
+    // length on line
+    set_line_pattern_dist(vid, line_attr.startPoint, line_attr.endPoint,
+        outputData.dist.y, outputData.dist.z);
+    outputData.dist.w = 0.0f; // reserved
+
+    outputData.patternIndex = line_attr.patternIndex;
+    outputData.capsType = line_attr.capsType;
+
+    outputData.patternProp = vec4(line_attr.startSkipLen, line_attr.endSkipLen,
+        line_attr.patternOffset, line_attr.patternScale);
+        
+    outputData.shapeType = uint(0);
+    outputData.jointType = uint(0);
+    outputData.reversed = false;
+    outputData.patternProp_Post = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+
+#ifdef ANALYTIC_STIPPLE
+    outputData.stippleIndex = line_attr.stippleIndex;
+#endif
+}
+
+
+// output wide line properties in logical space
+void set_logical_meta_wide_line_type_properties(uint vid, WideLineTypeAttr line_attr,
+    out VertexAttr_MetaWideLineType outputData)
+{
+    float temp_dist;
+    vec2 screen_prev = logic_to_screen(line_attr.prevPoint);
+    vec2 screen_start = logic_to_screen(line_attr.startPoint);
+    vec2 screen_end = logic_to_screen(line_attr.endPoint);
+    vec2 screen_post = logic_to_screen(line_attr.postPoint);
+    outputData.position.xy = get_logical_wide_line_envelope_pos(vid, line_attr.flag, line_attr.width,
+        screen_start, screen_end, temp_dist);
+    outputData.position.z = line_attr.drawZ;
+    outputData.position.w = 1.0f;
+
+    outputData.dist.x = temp_dist;
+    outputData.dist.y = temp_dist;
+    outputData.dist.z = temp_dist;
+    outputData.dist.w = temp_dist;
+    
+    outputData.color = line_attr.color;
+    outputData.glowColor = line_attr.glowColor;
+    outputData.flag = line_attr.flag;
+    outputData.width = line_attr.width;
+
+    outputData.point0 = screen_prev;
+    outputData.point1 = screen_start;
+    outputData.point2 = screen_end;
+    outputData.point3 = screen_post;
+
+    outputData.lineParams.x = screen_start.y - screen_end.y;
+    outputData.lineParams.y = screen_end.x - screen_start.x;
+    outputData.lineParams.z = screen_start.x * screen_end.y - screen_end.x * screen_start.y;
+    outputData.lineParams.w = 0.0f;
+
+    // length on line
+    set_line_pattern_dist(vid, outputData.point1, outputData.point2,
+        outputData.dist.y, outputData.dist.z);
+    outputData.dist.w = 0.0f; // reserved
+
+    outputData.patternIndex = line_attr.patternIndex;
+    outputData.capsType = line_attr.capsType;
+
+    outputData.patternProp = vec4(line_attr.startSkipLen, line_attr.endSkipLen,
+        line_attr.patternOffset, line_attr.patternScale);
+        
+    outputData.shapeType = uint(0);
+    outputData.jointType = uint(0);
+    outputData.reversed = false;
+    outputData.patternProp_Post = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+
+#ifdef ANALYTIC_STIPPLE
+    outputData.stippleIndex = line_attr.stippleIndex;
+#endif
+}
+
+// load line type caps information
+void load_caps_line_type_info(uint offset, uint line_index, uint seg_index, uint line_flag, out CapsLineTypeAttr attr)
+{
+    load_line_position(get_pos_id(offset), attr.startPoint, attr.endPoint);
+    uint joint_type;
+    uint logical_width, stipple_index, logical_lt;
+    load_line_attributes(line_index, attr.color, attr.width, attr.patternIndex, attr.drawZ, attr.glowColor, attr.capsType, joint_type, attr.isLogical);
+    load_line_attributes_neutron_sketch(line_index, logical_width, stipple_index, logical_lt);
+    load_line_flag(line_flag, attr.flag);
+    load_line_type(seg_index, attr.isLogical & logical_lt, attr.startSkipLen, attr.endSkipLen, attr.patternOffset, attr.patternScale);
+
+    adjust_line_width_wide_line_neutron_sketch(logical_width, attr.width);
+
+#ifdef ANALYTIC_STIPPLE
+    attr.stippleIndex = stipple_index;
+#endif
+}
+
+// output line type caps properties
+void set_meta_line_type_caps_properties(uint vid, bool isEndPoint, CapsLineTypeAttr line_attr, out VertexAttr_MetaWideLineType outputData)
+{
+    vec2 curPoint, nextPoint;
+    bool reversed;
+    get_line_type_caps_points(line_attr, isEndPoint, curPoint, nextPoint, reversed);
+
+    outputData.flag = line_attr.flag;
+    outputData.color = line_attr.color;
+    outputData.glowColor = line_attr.glowColor;
+    outputData.width = line_attr.width;
+    outputData.capsType = line_attr.capsType;
+    outputData.reversed = reversed;
+
+    vec2 dir = -normalize(nextPoint - curPoint);
+
+    outputData.point1 = offset_screen_pos(nextPoint);
+    outputData.point0 = offset_screen_pos(curPoint);
+
+    outputData.position.xy = get_caps_envelope_pos(vid, line_attr.width,
+        outputData.point0, dir);
+    outputData.position.z = line_attr.drawZ;
+    outputData.position.w = 1.0f;
+
+    outputData.patternIndex = line_attr.patternIndex;
+
+    outputData.patternProp.x = line_attr.startSkipLen;
+    outputData.patternProp.y = line_attr.endSkipLen;
+    outputData.patternProp.z = line_attr.patternOffset;
+    outputData.patternProp.w = line_attr.patternScale;
+    
+    outputData.point2 = vec2(0.0f, 0.0f);
+    outputData.point3 = vec2(0.0f, 0.0f);
+    outputData.shapeType = uint(0);
+    outputData.jointType = uint(0);
+    outputData.patternProp_Post = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+    outputData.lineParams = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+    outputData.dist = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+
+#ifdef ANALYTIC_STIPPLE
+    outputData.stippleIndex = line_attr.stippleIndex;
+#endif
+}
+
+// output line type caps properties in logical space
+void set_logical_meta_line_type_caps_properties(uint vid, bool isEndPoint, CapsLineTypeAttr line_attr, out VertexAttr_MetaWideLineType outputData)
+{
+    vec2 curPoint, nextPoint;
+    bool reversed;
+
+    float weight_expand = get_line_weight_expand(float(line_attr.width));
+    vec2 uv = get_rect_pos(vid);
+
+    get_line_type_caps_points(line_attr, isEndPoint, curPoint, nextPoint, reversed);
+
+    vec2  screen_next_pt = logic_to_screen(nextPoint);
+    vec2  screen_cur_pt = logic_to_screen(curPoint);
+    vec2 ndc_cur_pt = screen_to_ndc_pos(screen_cur_pt);
+    vec2 dir = -normalize(screen_next_pt - screen_cur_pt);
+    float  xoffset = 2.0f;
+
+    // if the current point and next point is near enough it will have precision issue when
+    // calculate the direction. Here set (1.0f, 0.0f) as its direction.
+    if (int(screen_cur_pt.x) == int(screen_next_pt.x)  && int(screen_cur_pt.y) == int(screen_next_pt.y))
+    {
+        dir = vec2(1.0f, 0.0f);
+        screen_cur_pt = offset_screen_pos(screen_cur_pt);
+        screen_next_pt = screen_cur_pt - dir*0.1f;
+        weight_expand = 0.0f;
+        xoffset = 0.0f;
+    }
+
+    vec2 extrude = uv.x* vec2(dir.y, -dir.x) *gPixelLen* weight_expand*0.5f
+        + (uv.y*0.5f + 0.5f) * dir *gPixelLen*weight_expand*0.5f
+        + (1.0f - (uv.y*0.5f + 0.5f)) * (-dir) *gPixelLen* xoffset;
+
+    outputData.position.xy = ndc_cur_pt + extrude;
+    outputData.point1 = screen_next_pt;
+    outputData.point0 = screen_cur_pt;
+    outputData.position.z = line_attr.drawZ;
+    outputData.position.w = 1.0f;
+
+    outputData.flag = line_attr.flag;
+    outputData.color = line_attr.color;
+    outputData.glowColor = line_attr.glowColor;
+    outputData.width = line_attr.width;
+    outputData.capsType = line_attr.capsType;
+    outputData.reversed = reversed;
+
+    outputData.patternIndex = line_attr.patternIndex;
+
+    outputData.patternProp = vec4(line_attr.startSkipLen, line_attr.endSkipLen,
+        line_attr.patternOffset, line_attr.patternScale);
+        
+    outputData.point2 = vec2(0.0f, 0.0f);
+    outputData.point3 = vec2(0.0f, 0.0f);
+    outputData.shapeType = uint(0);
+    outputData.jointType = uint(0);
+    outputData.patternProp_Post = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+    outputData.lineParams = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+    outputData.dist = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+
+#ifdef ANALYTIC_STIPPLE
+    outputData.stippleIndex = line_attr.stippleIndex;
+#endif
+}
+
+// load line type info
+void load_joint_line_type_info(uint offset, uint line_index, uint seg_index, uint line_flag, out JointLineTypeAttr attr)
+{
+    load_joint_line_position(offset, line_flag, attr.flag, attr.prevPoint, attr.curPoint, attr.postPoint);
+    uint logical_width, stipple_index, logical_lt;
+    load_line_attributes(line_index, attr.color, attr.width, attr.patternIndex, attr.drawZ, attr.glowColor, attr.capsType, attr.jointType, attr.isLogical);
+    load_line_attributes_neutron_sketch(line_index, logical_width, stipple_index, logical_lt);
+
+    load_line_type(seg_index, attr.isLogical & logical_lt, attr.startSkipLen_post, attr.endSkipLen_post, attr.patternOffset_post, attr.patternScale_post);
+    load_line_type(get_prev_seg_index(seg_index, line_flag, offset), attr.isLogical & logical_lt, attr.startSkipLen_prev, attr.endSkipLen_prev, attr.patternOffset_prev, attr.patternScale_prev);
+
+    adjust_line_width_wide_line_neutron_sketch(logical_width, attr.width);
+
+#ifdef ANALYTIC_STIPPLE
+    attr.stippleIndex = stipple_index;
+#endif
+}
+
+//TODO: move all envelpe pos function together.
+vec2 get_line_type_joint_envelope_pos(uint vid, uint width, vec2 prev_point, vec2 cur_point, vec2 post_point)
+{
+    float weight_expand = get_line_weight_expand(float(width));
+    vec2 uv = get_rect_pos(vid);
+
+    vec2 prev_dir = normalize(prev_point - cur_point);
+    vec2 post_dir = normalize(post_point - cur_point);
+
+    vec2 middle_dir = -normalize(prev_dir + post_dir);
+
+    vec2 prev_pend_dir = vec2(prev_dir.y, -prev_dir.x);
+    vec2 post_pend_dir = vec2(post_dir.y, -post_dir.x);
+
+    if (dot(prev_pend_dir, middle_dir) < 0.0f)
+        prev_pend_dir = -prev_pend_dir;
+
+    if (dot(post_pend_dir, middle_dir) < 0.0f)
+        post_pend_dir = -post_pend_dir;
+
+    float cos_angle = dot(prev_pend_dir, middle_dir);
+    float sin_angle = sqrt(1.0f - cos_angle*cos_angle);
+
+    vec2 scr_pos;
+        
+    if (cos_angle < 0.1f)
+    {
+        scr_pos = cur_point + uv.x*weight_expand * prev_pend_dir * 1.5f +
+            uv.y * weight_expand*middle_dir * 1.5f;
+    }
+    else if (sin_angle < 0.1f)
+    {
+        scr_pos = cur_point + uv.x*weight_expand * vec2(middle_dir.y, -middle_dir.x) * 1.5f +
+            uv.y * weight_expand*middle_dir * 1.5f;
+
+    }
+    else
+    {
+        float dist = weight_expand / 2.0f / cos_angle;
+
+
+        if (vid == uint(0))
+            scr_pos = cur_point - dist*middle_dir * 1.5f;
+        else if (vid == uint(1))
+            scr_pos = cur_point - dist*vec2(middle_dir.y, - middle_dir.x) * 1.5f ;
+        else if (vid == uint(2))
+            scr_pos = cur_point + dist*vec2(middle_dir.y, -middle_dir.x) * 1.5f;
+        else
+            scr_pos = cur_point + dist*middle_dir * 1.5f ;
+    }
+
+    return screen_to_ndc_pos(scr_pos);
+}
+
+
+vec2 get_logical_line_type_joint_envelope_pos(uint vid, uint width, vec2 cur_point)
+{
+    float weight_expand = get_line_weight_expand(float(width));
+    vec2 uv = get_rect_pos(vid);
+
+    vec2 scr_pos = cur_point + uv.x*vec2(1.0f, 0.0f)*weight_expand*1.5f*0.5f*gPixelLen +
+        uv.y*vec2(0.0f, 1.0f)*weight_expand * 1.5f * 0.5f *gPixelLen;
+
+    return scr_pos;
+}
+
+// output line-type joint properties in local space
+void set_logical_meta_line_type_joint_properties(uint vid, JointLineTypeAttr line_attr, out VertexAttr_MetaWideLineType outputData)
+{
+    outputData.color = line_attr.color;
+    outputData.glowColor = line_attr.glowColor;
+    outputData.width = line_attr.width;
+
+    outputData.patternIndex = line_attr.patternIndex;
+    outputData.capsType = line_attr.capsType;
+    outputData.jointType = line_attr.jointType;
+
+    outputData.point0 = logic_to_screen(line_attr.prevPoint);
+    outputData.point1 = logic_to_screen(line_attr.curPoint);
+    outputData.point2 = logic_to_screen(line_attr.postPoint);
+    vec2 ndc_cur_point = screen_to_ndc_pos(outputData.point1); 
+
+    outputData.position.xy = get_logical_line_type_joint_envelope_pos(vid, line_attr.width, ndc_cur_point);
+
+    outputData.position.z = line_attr.drawZ;
+    outputData.position.xyz = outputData.position.xyz;
+    outputData.position.w = 1.0f;
+
+    outputData.patternProp.x = line_attr.startSkipLen_prev;
+    outputData.patternProp.y = line_attr.endSkipLen_prev;
+    outputData.patternProp.z = line_attr.patternOffset_prev;
+    outputData.patternProp.w = line_attr.patternScale_prev;
+
+    outputData.patternProp_Post.x = line_attr.startSkipLen_post;
+    outputData.patternProp_Post.y = line_attr.endSkipLen_post;
+    outputData.patternProp_Post.z = line_attr.patternOffset_post;
+    outputData.patternProp_Post.w = line_attr.patternScale_post;
+    
+    outputData.flag = uint(0);
+    outputData.reversed = false;
+    outputData.point3 = vec2(0.0f, 0.0f);
+    outputData.shapeType = uint(0);
+    outputData.lineParams = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+    outputData.dist = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+
+#ifdef ANALYTIC_STIPPLE
+    outputData.stippleIndex = line_attr.stippleIndex;
+#endif
+}
+
+// output line-type joint properties
+void set_meta_line_type_joint_properties(uint vid, JointLineTypeAttr line_attr, out VertexAttr_MetaWideLineType outputData)
+{
+    outputData.color = line_attr.color;
+    outputData.glowColor = line_attr.glowColor;
+    outputData.width = line_attr.width;
+
+    outputData.patternIndex = line_attr.patternIndex;
+    outputData.capsType  = line_attr.capsType;
+    outputData.jointType = line_attr.jointType;
+    
+    outputData.point0 = offset_screen_pos(line_attr.prevPoint);
+    outputData.point1 = offset_screen_pos(line_attr.curPoint);
+    outputData.point2 = offset_screen_pos(line_attr.postPoint);
+    
+    outputData.position.xy = get_line_type_joint_envelope_pos(vid, line_attr.width, 
+        outputData.point0, outputData.point1, outputData.point2);
+
+    outputData.position.z =  line_attr.drawZ;
+    outputData.position.xyz = outputData.position.xyz;
+    outputData.position.w = 1.0f;
+
+    outputData.patternProp.x = line_attr.startSkipLen_prev;
+    outputData.patternProp.y = line_attr.endSkipLen_prev;
+    outputData.patternProp.z = line_attr.patternOffset_prev;
+    outputData.patternProp.w = line_attr.patternScale_prev;
+
+    outputData.patternProp_Post.x = line_attr.startSkipLen_post;
+    outputData.patternProp_Post.y = line_attr.endSkipLen_post;
+    outputData.patternProp_Post.z = line_attr.patternOffset_post;
+    outputData.patternProp_Post.w = line_attr.patternScale_post;
+    
+    outputData.flag = uint(0);
+    outputData.reversed = false;
+    outputData.point3 = vec2(0.0f, 0.0f);
+    outputData.shapeType = uint(0);
+    outputData.lineParams = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+    outputData.dist = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+
+#ifdef ANALYTIC_STIPPLE
+    outputData.stippleIndex = line_attr.stippleIndex;
+#endif
+}
+
+// wide line type pixel shader
+void main()
+{
+    bool isEndPoint = false;
+    uint shape_type = uint(0);
+    LineVertex_Input vs_input = LineVertex_Input(uint(0), uint(0), uvec2(0, 0));
+
+    load_wide_line_input(uint(gl_VertexID),uint(gl_InstanceID), gWideLineTypeIndexTex, vs_input, shape_type, isEndPoint);
+    
+    VertexAttr_MetaWideLineType outputData = VertexAttr_MetaWideLineType(vec4(0.0f, 0.0f, 0.0f, 0.0f), uint(0), uint(0), uint(0), uint(0), vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), 
+                                                                         vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), uint(0), uint(0), uint(0), uint(0), vec4(0.0f, 0.0f, 0.0f, 0.0f),
+                                                                         vec4(0.0f, 0.0f, 0.0f, 0.0f), false, vec4(0.0f, 0.0f, 0.0f, 0.0f), vec4(0.0f, 0.0f, 0.0f, 0.0f)
+#ifdef ANALYTIC_STIPPLE
+                                                                         , uint(0)
+#endif
+                                                                         );
+    
+    
+    if (shape_type == uint(SHAPE_BODY))
+    {
+        WideLineTypeAttr line_attr = WideLineTypeAttr(vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), uint(0), uint(0), uint(0),
+                                                      0.0f, uint(0), uint(0), uint(0), uint(0), 0.0f, 0.0f, 0.0f, 0.0f
+#ifdef ANALYTIC_STIPPLE
+                                                      , uint(0)
+#endif
+                                                      );
+        load_wide_line_type_info(vs_input.PrimID.x, get_prim_id(vs_input.PrimID.y), vs_input.SegmentID, get_prim_flag(vs_input.PrimID.y), line_attr);
+
+        if (gRetainMode)
+        {
+            load_dynamic_draworderz(uint(gl_InstanceID), gWideLineTypeDrawOrderZTex, line_attr.drawZ);
+        }
+
+        if (line_attr.isLogical != uint(0))
+        {
+            set_logical_meta_wide_line_type_properties(vs_input.VertexID, line_attr, outputData);
+        }
+        else
+        {
+            set_meta_wide_line_type_properties(vs_input.VertexID, line_attr, outputData);
+        }
+        
+        outputData.shapeType = uint(SHAPE_BODY);
+
+    }
+    else if (shape_type == uint(SHAPE_CAPS))
+    {
+        CapsLineTypeAttr line_attr = CapsLineTypeAttr(vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), uint(0), uint(0), uint(0), 0.0f,
+                                                      uint(0), uint(0), uint(0), uint(0), 0.0f, 0.0f, 0.0f, 0.0f
+#ifdef ANALYTIC_STIPPLE
+                                                      , uint(0)
+#endif
+                                                      );
+        load_caps_line_type_info(vs_input.PrimID.x, get_prim_id(vs_input.PrimID.y), vs_input.SegmentID, get_prim_flag(vs_input.PrimID.y), line_attr);
+
+        if (gRetainMode)
+        {
+            load_dynamic_draworderz(uint(gl_InstanceID), gLineTypeCapsDrawOrderZTex, line_attr.drawZ);
+        }
+        
+        if (line_attr.isLogical != uint(0))
+        {
+            set_logical_meta_line_type_caps_properties(vs_input.VertexID, isEndPoint, line_attr, outputData);
+        }
+        else
+        {
+            set_meta_line_type_caps_properties(vs_input.VertexID, isEndPoint, line_attr, outputData);
+        } 
+        outputData.shapeType = uint(SHAPE_CAPS);
+
+    }
+    else if (shape_type == uint(SHAPE_JOINT))
+    {
+        
+        JointLineTypeAttr line_attr = JointLineTypeAttr(vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), uint(0), uint(0), uint(0), 0.0f, 
+                                                        uint(0), uint(0), uint(0), uint(0), uint(0), 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f
+#ifdef ANALYTIC_STIPPLE
+                                                        , uint(0)
+#endif
+                                                        );
+        load_joint_line_type_info(vs_input.PrimID.x, get_prim_id(vs_input.PrimID.y), vs_input.SegmentID, get_prim_flag(vs_input.PrimID.y), line_attr);
+
+        if (gRetainMode)
+        {
+            load_dynamic_draworderz(uint(gl_InstanceID), gLineTypeJointDrawOrderZTex, line_attr.drawZ);
+        }
+
+        if (line_attr.isLogical != uint(0))
+        {
+            set_logical_meta_line_type_joint_properties(vs_input.VertexID, line_attr, outputData);
+        }
+        else 
+        {
+            set_meta_line_type_joint_properties(vs_input.VertexID, line_attr, outputData);
+        }   
+        outputData.shapeType = uint(SHAPE_JOINT);
+    }
+   
+    gl_Position = outputData.position;
+
+    vso_position = outputData.position;
+    vso_flagS = int(outputData.flag);
+    vso_colorS = int(outputData.color);
+    vso_glowColorS = int(outputData.glowColor);
+    vso_widthS = int(outputData.width);
+    vso_point0 = outputData.point0;
+    vso_point1 = outputData.point1;
+    vso_point2 = outputData.point2;
+    vso_point3 = outputData.point3;
+    vso_shapeTypeS = int(outputData.shapeType);
+    vso_capsTypeS  = int(outputData.capsType);
+    vso_jointTypeS = int(outputData.jointType);
+    vso_patternIndexS = int(outputData.patternIndex);
+    vso_patternProp = outputData.patternProp;
+    vso_patternProp_post = outputData.patternProp_Post;
+    vso_reversedS = outputData.reversed?int(1):int(0);
+    vso_lineParams = outputData.lineParams;
+    vso_dist = outputData.dist;
+#ifdef ANALYTIC_STIPPLE
+    vso_stippleIndexS = int(outputData.stippleIndex);
+#endif
+}
+
+}
+
+GLSLShader WideLineType_PS
+{
+
+void main()
+{
+    uint vso_flag = uint(vso_flagS);
+    uint vso_color = uint(vso_colorS);
+    uint vso_glowColor = uint(vso_glowColorS);
+    uint vso_width = uint(vso_widthS);
+    uint vso_shapeType = uint(vso_shapeTypeS);
+    uint vso_capsType = uint(vso_capsTypeS);
+    uint vso_jointType = uint(vso_jointTypeS);
+    uint vso_patternIndex = uint(vso_patternIndexS);
+    uint vso_reversed = uint(vso_reversedS);
+#ifdef ANALYTIC_STIPPLE
+    uint vso_stippleIndex = uint(vso_stippleIndexS);
+#endif
+
+    vec4 color = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+    if (vso_shapeType == uint(SHAPE_BODY))
+    {
+        VertexAttr_WideLineType inputData = VertexAttr_WideLineType(vso_position, vso_flag, vso_color, vso_glowColor, vso_width, vso_point0, vso_point1,
+                                                                    vso_point2, vso_point3, vso_lineParams, vso_patternIndex, vso_capsType, vso_patternProp, vso_dist
+#ifdef ANALYTIC_STIPPLE
+                                                                    , vso_stippleIndex
+#endif
+                                                                    );
+        // get distance to line
+        float dist = abs(inputData.dist.x);
+
+        // get screen pos
+        vec2 pixelPos = inputData.position.xy * vec2(0.5f, 0.5f) + vec2(0.5f, 0.5f);
+        pixelPos *= gScreenSize;;
+        // pixelPos.y = gScreenSize.y - pixelPos.y;
+
+        // get line direction
+        vec2 line_dir = normalize(inputData.endPoint - inputData.startPoint);
+
+        // discard pixels out of line region
+        if (!inLineRegion(pixelPos, inputData.startPoint, inputData.endPoint, float(inputData.width) + 4.0f, line_dir))
+           discard;
+
+        // compute distance to start and end point
+        float start_dist = abs(dot(pixelPos - inputData.startPoint, line_dir));
+        float end_dist = abs(dot(pixelPos - inputData.endPoint, -line_dir));
+
+        // check wide line type shapes: is dash, space or dot
+        WideLinePatternResult left_attr;
+        WideLinePatternResult right_attr;
+
+        WideLinePatternAttr attr;
+        attr.dist = dist;
+        attr.width = float(inputData.width);
+        attr.startDist = start_dist;
+        attr.endDist = end_dist;
+        attr.startSkipLen = inputData.patternProp.x;
+        attr.endSkipLen = inputData.patternProp.y;
+        attr.patternScale = inputData.patternProp.z;
+        attr.patternOffset = inputData.patternProp.w;
+        attr.patternIndex = inputData.patternIndex;
+
+        WideLineInfo info;
+        info.startPos = inputData.startPoint;
+        info.endPos = inputData.endPoint;
+        info.lineDir  =  line_dir;
+        info.hasPrevLine = (inputData.flag&HAS_PREV_LINE) != uint(0);
+        info.hasPostLine =  (inputData.flag&HAS_POST_LINE) != uint(0);
+
+        int res = check_wide_line_pattern(
+            attr, 
+            info,
+            left_attr,
+            right_attr);
+
+        // discard pixel when on space
+        if (res == PURE_SPACE)
+           discard;
+
+        color = getWLColorFromLTAttr(inputData, left_attr, right_attr, res);
+    }
+    else if (vso_shapeType == uint(SHAPE_CAPS))
+    {
+        VertexAttr_LineTypeCaps inputData = VertexAttr_LineTypeCaps(vso_position, vso_flag, vso_color, vso_glowColor, vso_width,
+                                                                    vso_capsType, vso_point0, vso_point1, vso_patternIndex, bool(vso_reversed != uint(0)), vso_patternProp
+#ifdef ANALYTIC_STIPPLE
+                                                                    , vso_stippleIndex
+#endif
+                                                                    );
+        // get screen position
+        vec2 pixelPos = inputData.position.xy * vec2(0.5f, 0.5f) + vec2(0.5f, 0.5f);
+        pixelPos *= gScreenSize;
+        //pixelPos.y = gScreenSize.y - pixelPos.y;
+
+        // get line direction
+        vec2 dir = normalize(inputData.center - inputData.endPoint);
+
+        // discard the point if it is in the line region.
+        if (inLineRegion(pixelPos, inputData.center, inputData.endPoint, float(inputData.width) + 2.0f, -dir))
+            discard;
+
+        // discard the point if it is over middle point.
+        if (over_middle_point(pixelPos, inputData.center, inputData.endPoint, dir))
+            discard;
+
+        // get distances and line width
+        float dist_to_center = length(pixelPos - inputData.center);
+        float width = adjust_line_width_wide_line(inputData.width);
+        float dist_to_line = abs_dist_pixel_to_line(pixelPos, dir, inputData.endPoint);
+
+        color = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+
+        // get pure dot flag
+        bool is_pure_dot = (inputData.patternIndex&PURE_DOT_MASK) != uint(0);
+
+        // get plinegen flag
+        bool is_plinegen;
+        if (inputData.reversed)
+        {
+            is_plinegen = is_pline_gen(inputData.patternProp.y);
+        }
+        else
+        {
+            is_plinegen = is_pline_gen(inputData.patternProp.x);
+        }
+
+        // if it is not plinegen and first/last dash length are not zero, then draw cap directly.
+        if ((!is_plinegen)&&(inputData.patternProp.x != 0.0f)&&(inputData.patternProp.y != 0.0f))
+        {
+            if (gNoAAMode != 0)
+            {
+                color = compute_sharp_caps_final_color(dist_to_center, width, inputData.color, inputData.glowColor,
+                    pixelPos, inputData.center, dir, inputData.capType);
+            }
+            else
+            {
+#ifdef ANALYTIC_STIPPLE
+                color = compute_caps_final_color_stipple(dist_to_center, width, inputData.color, inputData.glowColor,
+                    pixelPos, inputData.center, dir, inputData.capType, inputData.stippleIndex);
+#else
+                color = compute_caps_final_color(dist_to_center, width, inputData.color, inputData.glowColor,
+                    pixelPos, inputData.center, dir, inputData.capType);
+#endif
+            }
+        }
+        else
+        {
+            // check if need to draw caps
+            
+            // get start and end points   
+            vec2 startPoint, endPoint;
+            if (inputData.reversed)
+            {
+                startPoint = inputData.endPoint;
+                endPoint = inputData.center;
+            }
+            else
+            {
+                startPoint = inputData.center;
+                endPoint = inputData.endPoint;
+            }
+
+            // check the line pattern of start or end point.
+            // if current point is near the start point, then check the start point's line pattern.
+            // if current point is near the end point, then check the end point's line pattern.
+            WideLinePatternAttr attr;
+            attr.dist = 0.0f;
+            attr.width = float(inputData.width);
+            attr.startDist = length(inputData.center - startPoint);
+            attr.endDist = length(endPoint - inputData.center);
+            attr.startSkipLen = inputData.patternProp.x;
+            attr.endSkipLen = inputData.patternProp.y;
+            attr.patternScale = inputData.patternProp.z;
+            attr.patternOffset = inputData.patternProp.w;
+            attr.patternIndex = inputData.patternIndex;
+
+            WideLineInfo info;
+            info.startPos = startPoint;
+            info.endPos = endPoint;
+            info.lineDir  =  normalize(endPoint - startPoint);
+            info.hasPrevLine = (inputData.flag&HAS_PREV_LINE) != uint(0);
+            info.hasPostLine =  (inputData.flag&HAS_POST_LINE) != uint(0);
+            
+            WideLinePatternResult left_attr;
+            WideLinePatternResult right_attr;
+
+
+            int res = check_wide_line_pattern(
+                        attr, 
+                        info,
+                        left_attr,
+                        right_attr);
+
+            // if the start(end) point is in pure space, discard current point directly.
+            if (res == PURE_SPACE)
+                discard;
+
+            // if the start(end) point is in dash, draw the cap directly.
+            if (res == PURE_DASH)
+            {
+                if(gNoAAMode != 0)
+                {
+                    color = compute_sharp_caps_final_color(dist_to_center, width, inputData.color, inputData.glowColor,
+                        pixelPos, inputData.center, dir, inputData.capType);
+                }
+                else
+                {
+#ifdef ANALYTIC_STIPPLE
+                    color = compute_caps_final_color_stipple(dist_to_center, width, inputData.color, inputData.glowColor,
+                        pixelPos, inputData.center, dir, inputData.capType, inputData.stippleIndex);
+#else
+                    color = compute_caps_final_color(dist_to_center, width, inputData.color, inputData.glowColor,
+                        pixelPos, inputData.center, dir, inputData.capType);
+#endif
+                }
+            }
+            else
+            {
+                // if start(end) point is in MIXED, which means it is in space, but it is in a cap or a dot region.
+#ifdef ANALYTIC_STIPPLE
+                vec4 left_color = compute_wide_pattern_color_stipple(left_attr, width,
+                    inputData.color, inputData.glowColor, pixelPos, inputData.capType, inputData.stippleIndex);
+
+                vec4 right_color = compute_wide_pattern_color_stipple(right_attr, width,
+                    inputData.color, inputData.glowColor, pixelPos, inputData.capType, inputData.stippleIndex);
+#else
+                vec4 left_color = compute_wide_pattern_color(left_attr, width,
+                    inputData.color, inputData.glowColor, pixelPos, inputData.capType);
+
+                vec4 right_color = compute_wide_pattern_color(right_attr, width,
+                    inputData.color, inputData.glowColor, pixelPos, inputData.capType);
+#endif
+
+                // if left color is less transparent, or closer to left when have same color, output left color
+                if (left_color.a > right_color.a || (left_color.a == right_color.a && left_attr.dist <= right_attr.dist))
+                {
+                    if (left_color.a < EPS)
+                        discard;
+
+                    vec2 capCenter = inputData.center;
+
+                    // if it is in a cap region, then current point will share the same cap center as start(end) point.
+                    if (left_attr.is_caps)
+                        capCenter = left_attr.caps_center;
+                    // if it is in a dot region, then we need adjust the capCenter for current point.
+                    else if(left_attr.dist > 0.0f)
+                        capCenter = inputData.center - dir * left_attr.dist;
+
+                    left_attr.dist = length(pixelPos - capCenter);
+#ifdef ANALYTIC_STIPPLE
+                    color = compute_wide_pattern_color_stipple(left_attr, width, 
+                        inputData.color, inputData.glowColor, pixelPos, inputData.capType, inputData.stippleIndex);
+#else
+                    color = compute_wide_pattern_color(left_attr, width, 
+                        inputData.color, inputData.glowColor, pixelPos, inputData.capType);
+#endif
+                }
+                // output right color
+                else
+                {
+                    if (right_color.a < EPS)
+                        discard;
+
+                    vec2 capCenter = inputData.center;
+
+                    // if it is in a cap region, then current point will share the same cap center as start(end) point.
+                    if (right_attr.is_caps)
+                        capCenter = right_attr.caps_center;
+                    // if it is in a dot region, then we need adjust the capCenter for current point.
+                    else if(right_attr.dist > 0.0f)
+                        capCenter = inputData.center - dir * right_attr.dist;
+
+                    right_attr.dist = length(pixelPos - capCenter);
+#ifdef ANALYTIC_STIPPLE
+                    color = compute_wide_pattern_color_stipple(right_attr, width, 
+                        inputData.color, inputData.glowColor, pixelPos, inputData.capType, inputData.stippleIndex);
+#else
+                    color = compute_wide_pattern_color(right_attr, width, 
+                        inputData.color, inputData.glowColor, pixelPos, inputData.capType);
+#endif
+                }
+            }
+        }
+    }
+    else if (vso_shapeType == uint(SHAPE_JOINT))
+    {
+         VertexAttr_LineTypeJoint inputData = VertexAttr_LineTypeJoint(vso_position, vso_color, vso_glowColor, vso_width, vso_patternIndex, vso_capsType,
+                                                                       vso_jointType, vso_point0, vso_point1, vso_point2, vso_patternProp, vso_patternProp_post
+#ifdef ANALYTIC_STIPPLE
+                                                                       , vso_stippleIndex
+#endif
+                                                                       );
+        // get screen pos
+        vec2 pixelPos = inputData.position.xy * vec2(0.5f, 0.5f) + vec2(0.5f, 0.5f);
+        pixelPos *= gScreenSize;
+        //pixelPos.y = gScreenSize.y - pixelPos.y;
+
+        // get wide line width
+        float width = adjust_line_width_wide_line(inputData.width);
+
+        
+        // check joint point is on dash or not
+        bool on_dash = check_joint_point_on_dash(
+            inputData.prevPoint,
+            inputData.curPoint,
+            inputData.postPoint,
+            inputData.patternIndex,
+            inputData.patternProp_prev, 
+            inputData.patternProp_post,
+            width
+            );
+
+        // compute directions and distances
+        vec2 prev_dir = normalize(inputData.curPoint - inputData.prevPoint);
+        vec2 post_dir = normalize(inputData.postPoint - inputData.curPoint);
+
+        float dist_to_prev = abs_dist_pixel_to_line(pixelPos,  prev_dir, inputData.prevPoint);
+        float dist_to_post = abs_dist_pixel_to_line(pixelPos, post_dir, inputData.curPoint);
+        float dist = length(pixelPos - inputData.curPoint);
+        
+        // compute pixel and line segments relationship
+        bool in_prev_line = inLineRegion(pixelPos, inputData.prevPoint, inputData.curPoint, float(inputData.width)+1.0f, prev_dir);
+        bool in_post_line = inLineRegion(pixelPos, inputData.curPoint, inputData.postPoint, float(inputData.width)+1.0f, post_dir);
+
+        
+        // get pure dot flag
+        bool is_pure_dot = (inputData.patternIndex&PURE_DOT_MASK) != uint(0);
+        // get pline gen flag
+        bool is_pure_dot_pline_gen = is_pure_dot &&
+            is_pline_gen(inputData.patternProp_prev.y) &&
+            is_pline_gen(inputData.patternProp_post.x);
+       
+        // discard pixels when in overlapped region, unless for the case that pure dot and pline gen off.
+        if (in_prev_line&&in_post_line)
+        {
+            if (is_pure_dot_pline_gen ||(!is_pure_dot))
+                discard;
+        }
+
+        color = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+        vec4 prev_color = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+        vec4 post_color = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+
+        // fading factor is default value with fading power = 0.3f and fading level = 12.
+        //    set fading factor = 1.0f when line-fading off, we can fix it later.
+        float fading_factor = pow(0.3f, 1.0f/6.0f);  // = 1.0f;
+
+        // if on dash
+        if (on_dash)
+        {
+            // compute original color if in line region
+            if (in_prev_line || in_post_line)
+            {
+                if (gNoAAMode != 0)
+                {
+                    color = compute_final_color_sharp(dist, width, inputData.color, inputData.glowColor);
+                }
+                else
+                {
+#ifdef ANALYTIC_STIPPLE
+                    color = compute_final_color_stipple(dist, width, inputData.color, inputData.glowColor, pixelPos, inputData.stippleIndex);
+#else
+                    color = compute_final_color(dist, width, inputData.color, inputData.glowColor);
+#endif
+                }
+            }
+            // compute linefading color if in overlapped region
+            else
+            {
+                if (gNoAAMode != 0)
+                {
+                    color = compute_sharp_joint_final_color(dist, width, inputData.color, inputData.glowColor,
+                        pixelPos, inputData.prevPoint, inputData.curPoint, inputData.postPoint, inputData.jointType);
+                }
+                else
+                {
+#ifdef ANALYTIC_STIPPLE
+                    color = compute_joint_final_color_stipple(dist, width, inputData.color, inputData.glowColor,
+                        pixelPos, inputData.prevPoint, inputData.curPoint, inputData.postPoint, inputData.jointType, inputData.stippleIndex);
+#else
+                    color = compute_joint_final_color(dist, width, inputData.color, inputData.glowColor,
+                        pixelPos, inputData.prevPoint, inputData.curPoint, inputData.postPoint, inputData.jointType);
+#endif
+                }
+
+                if (is_pure_dot_pline_gen || (!is_pure_dot))
+                    color = vec4(color.xyz, (1.0f+fading_factor) * color.a - color.a*color.a*fading_factor);
+            }
+        }
+        // if on space or dot
+        else
+        {
+            // check wide line pattern result for left line
+            WideLinePatternResult left_prev_attr;
+            WideLinePatternResult right_prev_attr;
+
+            WideJointInfo left_info;
+            left_info.curPoint = pixelPos;
+            left_info.dist = dist_to_prev;
+            left_info.width = float(inputData.width);
+            left_info.startPoint = inputData.prevPoint;
+            left_info.endPoint = inputData.curPoint + prev_dir*float(inputData.width)*0.5f;
+
+            int res = check_wide_line_pattern_left(left_info,
+                inputData.patternProp_prev,
+                inputData.patternIndex,
+                left_prev_attr);
+           
+            
+            if (!in_prev_line)
+            {
+                if (res == MIXED)
+                {
+                    if (left_prev_attr.dist != -1.0f)
+                    {
+                        float dist_to_end = length(pixelPos- inputData.curPoint);
+
+                        if (dist_to_end <= left_prev_attr.dist + 0.3f)
+                        {
+#ifdef ANALYTIC_STIPPLE
+                            prev_color = compute_wide_pattern_color_stipple(left_prev_attr, width, 
+                                inputData.color, inputData.glowColor, pixelPos, inputData.capsType, inputData.stippleIndex);
+#else
+                            prev_color = compute_wide_pattern_color(left_prev_attr, width, 
+                                inputData.color, inputData.glowColor, pixelPos, inputData.capsType);
+#endif
+                        }
+                    }
+                }
+            }
+            
+            // check wide line pattern result for right line
+            WideLinePatternResult left_post_attr;
+            WideLinePatternResult right_post_attr;
+
+            vec4 t_post_prop = inputData.patternProp_post;
+            t_post_prop.w = t_post_prop.w - (float(inputData.width)*0.5f)*t_post_prop.z;// adjust pattern offset
+
+            WideJointInfo right_info;
+            right_info.curPoint = pixelPos;
+            right_info.dist = dist_to_post;
+            right_info.width = float(inputData.width);
+            right_info.startPoint = inputData.curPoint - post_dir*float(inputData.width)*0.5f;
+            right_info.endPoint = inputData.postPoint;
+              
+
+            res = check_wide_line_pattern_right(right_info,
+                    t_post_prop,
+                    inputData.patternIndex,
+                    right_post_attr);
+
+           
+            if (!in_post_line)
+            {
+                if (res == MIXED)
+                {
+                    if (right_post_attr.dist != -1.0f)
+                    {
+                        float dist_to_start = length(pixelPos - inputData.curPoint);
+
+                        if (dist_to_start <= right_post_attr.dist + 0.3f)
+                        {
+#ifdef ANALYTIC_STIPPLE
+                            post_color = compute_wide_pattern_color_stipple(right_post_attr, width, 
+                                inputData.color, inputData.glowColor, pixelPos, inputData.capsType, inputData.stippleIndex);
+#else
+                            post_color = compute_wide_pattern_color(right_post_attr, width, 
+                                inputData.color, inputData.glowColor, pixelPos, inputData.capsType);
+#endif
+                        }
+                    }
+                }
+           }
+
+           // merge color
+           if (post_color.a == 0.0f)
+           {
+               color = prev_color;
+           }
+           else
+           {
+               // compute fading color.
+               float final_alpha = prev_color.a * fading_factor + post_color.a - prev_color.a * post_color.a * fading_factor;
+               color = vec4((prev_color.xyz*prev_color.w *(1.0f - post_color.w)*fading_factor + post_color.xyz*post_color.w) / final_alpha, final_alpha);
+           }
+        }
+    }
+
+    if (color.a < 0.01f)
+        discard;
+    pso_color = OIT_PS_OUTPUT(color, vso_position);  
+}
+
+}
+
+technique WideLine_Type
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = WideLineType_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = WideLineType_PS;
+    }
+}
+

@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Open Sans';
+    src: url('font/OpenSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#os_block_message {
+    width: 450px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #777;
+    margin: auto;
+    padding: 0 30px 20px;
+    line-height: 2em;
+}
+
+body.os_block {
+    background-color: white;
+    border-radius: 3px;
+    border: solid 1px #EFEFEF;
+    box-shadow: 0 2px 5px #000000;  
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+
+#os_block_message * {
+    margin: 10px 0 10px;
+}
+
+#os_block_message h1 {
+    font-size: 22px;
+    font-weight: bold;
+    text-align: left;
+    padding: 30px 0 0;
+    margin: 10px 0 0;
+}
+
+#os_block_message a {
+    color: #00A5E1;
+    text-decoration: none;
+}
+
+#os_button_paragraph {
+    margin-top: 20px
+}
+
+a#os_close_button {
+    color: #FFFFFF;
+    background-color: #00A5E1;
+    border: 1px solid #00A5E1;  
+    font-size: 13px;
+    font-family:'Open Sans', Arial, sans-serif;
+    line-height: 18px;
+    text-align: center;
+    border-radius: 3px;
+    height: 34px;
+    padding: 8px 40px 8px 40px; 
+    margin: auto;
+}
+
+a#os_close_button:hover {
+    background-color: #42B6DF;
+    border: 1px solid #42B6DF;
+}
+
+a#os_close_button:active {
+    background-color: #007FBE;
+    border: 1px solid #007FBE;
+}
+
+#os_close_control {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-image: url("assets/close_normal_10_@2x.png");
+    text-decoration: none;
+}
+
+#os_close_control:hover {
+    background-image: url("assets/close_hover_10_@2x.png");
+}
+

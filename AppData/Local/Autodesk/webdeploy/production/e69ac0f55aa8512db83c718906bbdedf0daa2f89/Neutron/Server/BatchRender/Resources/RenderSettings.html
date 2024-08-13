@@ -1,0 +1,216 @@
+<!--/**
+* Copyright 2015 Autodesk, Inc.
+* All rights reserved.
+*
+* This computer source code and related instructions and comments are the unpublished confidential
+* and proprietary information of Autodesk, Inc. and are protected under Federal copyright and state
+* trade secret law. They may not be disclosed to, copied or used by any third party without the
+* prior written consent of Autodesk, Inc.
+*
+*/-->
+
+<!doctype html>
+
+<html>
+<!--Set title and link to vx component css-->
+<head>
+    <meta charset="utf-8">
+    <title>Render Settings dialog</title>
+    <!--TODO - Add documentation about what this does-->
+    <style>
+        html, body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<!--Declare the ng-app, see https://docs.angularjs.org/api/ng/directive/ngApp, and it's controller, see https://docs.angularjs.org/api/ng/directive/ngController -->
+<body my-ng-app="vx360.webcomponents.rendersettings" ng-controller="RenderSettingsController">
+
+<!--Declare raas-render-settings directive, see https://git.autodesk.com/raas/vx360-web-components/blob/develop/docs/RenderSettings.md#raas-render-settings-directive -->
+<raas-render-settings
+        render-settings="myRenderSettings"
+        options="myOptions"
+        on-render-submit="mySubmit(renderDescriptor, renderDelegate)"
+        class="fusion-theme vx360">
+</raas-render-settings>
+
+<!-- Active block, both standard js and angular blocks -->
+<script language="JavaScript" type="application/javascript">
+
+//Fix bug RAAS-15970: add a default handler for requestShutdown before myInit event
+window.neutronJavaScriptHandler = {
+	handle: function (command, args) {
+        if (command === 'requestShutdown') {
+			window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ shutDown: null }));
+		}
+	}
+};
+
+// Set background color on areas not covered by vx component, should not be needed once the size of the browser matches the component
+document.body.style.background = "#ECECEC";
+
+// Init Once
+document.addEventListener('myInit', function myInit(initEvt) {
+    document.removeEventListener('myInit', myInit, false);
+
+    // Define angular controller, for angular reference, see https://docs.angularjs.org/guide/controller.
+    myApp.controller('RenderSettingsController', ['$scope', '$q', 'renderService',
+        function ($scope, $q, renderService) {
+
+            // Catch events sent on scope https://docs.angularjs.org/guide/scope
+            // Forward error and messages to fusion, will not be displayed unless VxVerboseMode is set
+            $scope.$on('vx360.webcomponents', myVXEventHandler);
+
+            // set options, https://git.autodesk.com/raas/vx360-web-components/blob/develop/docs/RenderSettings.md
+            $scope.myOptions = {
+                renderer: myContext.renderer,
+                showRendererToggle: true,
+                enableCloudRenderer: myContext.connectionStatus === 'Online',
+                enableLocalRenderer: true,
+                sendResizeEvents: true,
+                sendModalEvents: true,
+				localAdvancedRenderSelected: myContext.renderSettings.localRenderAdvancedSelected,
+                enableRenderDelegate: true
+            };
+
+            // Capability restrictions.
+            var capabilityRestrictions = myContext.capabilityRestrictions || {};
+            if ($scope.myOptions.enableCloudRenderer) {
+                if (capabilityRestrictions.cloudRendering === 'Restricted') {
+                    $scope.myOptions.enableCloudRenderer = false;
+                    $scope.myOptions.cloudRendererUnavailableMessage = capabilityRestrictions.cloudRenderingRestrictedMessage;
+                }
+            }
+
+            // Reservation restrictions.
+            var reservationRestrictions = myContext.reservationRestrictions || {};
+            if ($scope.myOptions.enableCloudRenderer) {
+                if (reservationRestrictions.cloudRendering === 'Restricted') {
+                    $scope.myOptions.enableCloudRenderer = false;
+                    $scope.myOptions.cloudRendererUnavailableMessage = reservationRestrictions.cloudRenderingReservationMessage;
+                }
+            }
+
+            // Handle events sent from fusion to js object
+            window.neutronJavaScriptHandler = {
+                handle: function (command, args) {
+                    if (command === 'connectivityChanged') {
+                        var status = JSON.parse(args).status;
+                        if (status === 'connected') {
+                            $scope.myOptions.enableCloudRenderer = true;
+                        } else if (status === 'disconnected') {
+                            $scope.myOptions.enableCloudRenderer = false;
+                        }
+                        $scope.$apply();
+                    }
+                    else if (command === 'requestShutdown') {
+                        myShutdown($scope);
+                        window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ shutDown: null }));
+                    }
+                }
+            };
+
+            // set renderSettings, https://git.autodesk.com/raas/vx360-web-components/blob/develop/docs/RenderSettings.md#render-settings
+            $scope.myRenderSettings = myContext.renderSettings;
+
+            // Define submit function, called when submit button is pressed, https://git.autodesk.com/raas/vx360-web-components/blob/develop/docs/RenderSettings.md#submit-callback
+            $scope.mySubmit = function (renderDescriptor, renderDelegate) {
+                
+                // Save some of the options the user selection to fusion, will be used to fill the context object next time the dialog is opened
+                window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({
+                    doStoreState: {
+                        RenderQuality: renderDescriptor.imageInfo.Render.RenderQuality,
+                        LocalRenderQuality: renderDescriptor.imageInfo.Render.LocalRenderQuality,
+                        RenderKernel: renderDescriptor.imageInfo.Render.RenderKernel,
+                        RenderResolutionX: renderDescriptor.imageInfo.ImageParams.RenderResolutionX,
+                        RenderResolutionY: renderDescriptor.imageInfo.ImageParams.RenderResolutionY,
+                        RenderImageFormat: renderDescriptor.imageInfo.ImageParams.RenderImageFormat,
+						LocalRenderAdvancedSelected: $scope.myOptions.localAdvancedRenderSelected
+                    }}));
+                
+                // Set partial UserInfo https://git.autodesk.com/raas/vx360-web-components/blob/develop/docs/RenderDescriptor.md
+                // EmailFlag not included to avoid overwriting it
+                renderDescriptor.setUserInfo(myContext.userInfo);
+
+                // Set partial Overrides https://git.autodesk.com/raas/vx360-web-components/blob/develop/docs/RenderDescriptor.md
+                // environmentPreset not included to avoid overwriting it
+                var overrides = {
+                    camera: JSON.parse(window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ getCameraOverride: null }))),
+                }
+                renderDescriptor.setOverrides(overrides);
+
+                // Set sceneinfo, Fusion Design from WIP as expected, see https://git.autodesk.com/raas/vx360-web-components/blob/develop/docs/RenderDescriptor.md#methods
+                var syncVersion = renderDescriptor.isCloudRender();
+                renderDescriptor.setSceneInfo(JSON.parse(window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ getDesignContext: syncVersion }))));
+
+                // Create deffered object to be able to create promise, which is the expected output, see https://docs.angularjs.org/api/ng/service/$q
+                var deferred = $q.defer();
+                
+                // Check Delegate/Cloud/Local
+                if (renderDelegate) {
+                    // vx360 will start a render. Chain the deferred objects.
+                    renderDelegate.then(function (response) {
+                        // TODO : Response can later become a list bigger than one, if we request several jobs at once, not needed initailly
+                        window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ doCloudRender: { JobId: response[0].JobId, CameraName: response[0].CameraName } }));
+                        // Prepare return value
+                        deferred.resolve();
+                        // Close browser, starts a timer that closes it after function returns
+                        window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ doClose: null }));
+                    }, function (error) {
+                        // If we failed to create a cloud render, let fusion know and pop an error if VxVerboseMode is set
+                        window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ sendError: error }));
+                        // Prepare return value
+                        deferred.reject(error);
+                        // Close browser, starts a timer that closes it after function returns
+                        window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ doClose: null }));
+                    });                        
+                } else if (renderDescriptor.isCloudRender()) {
+                    // Try to start a cloud render, https://git.autodesk.com/raas/vx360-web-components/blob/develop/docs/RenderService.md
+                    renderService.render(renderDescriptor).then(function (response) {
+                        // TODO : Response can later become a list bigger than one, if we request several jobs at once, not needed initailly
+                        window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ doCloudRender: { JobId: response[0].JobId, CameraName: response[0].CameraName } }));
+                        // Prepare return value
+                        deferred.resolve();
+                        // Close browser, starts a timer that closes it after function returns
+                        window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ doClose: null }));
+                    }, function (error) {
+                        // If we failed to create a cloud render, let fusion know and pop an error if VxVerboseMode is set
+                        window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ sendError: error }));
+                        // Prepare return value
+                        deferred.reject(error);
+                        // Close browser, starts a timer that closes it after function returns
+                        window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ doClose: null }));
+                    });                        
+                } else {
+                    //If we want a local render
+                    // Start a local render
+                    var resultDoLocalRender = window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ doLocalRender: renderDescriptor }));
+                    if ('ok' == resultDoLocalRender) {
+                        // If local render was started, prepare return value.
+                        deferred.resolve();
+                    } else {
+                        // If local render was not started, prepare return value.
+                        deferred.reject();
+                    }
+                    // Close browser, starts a timer that closes it after function returns
+                    if (resultDoLocalRender != 'Legacy') {
+                        window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ doClose: null }));
+                    }
+                }
+
+                // Return prepared value, or a promise of a value that will be sent later if we requested a cloud render.
+                return deferred.promise;
+            };
+
+        }]);
+
+}, false);
+
+</script>
+
+<!-- Load vx360 scripts and stylesheets -->
+<script src="Bootstrap.js"></script>
+
+</body>
+</html>

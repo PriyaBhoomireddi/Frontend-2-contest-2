@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>spinner</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="new" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-19.000000, -14.000000)" fill="#00A6E2">
+            <g id="Progress-Spinner-/-32x32" transform="translate(19.000000, 14.000000)">
+                <path d="M17.0116454,22.990125 C15.5190165,23.639625 13.8693887,24 12.1351936,24 C5.43770443,24 0,18.622875 0,12 C0,5.377125 5.43770443,0 12.1351936,0 C17.9559151,0 22.8247823,4.06125 24,9.47175 L22.5229194,9.78675 C21.4940825,5.04975 17.2312165,1.494 12.1351936,1.494 C6.27161976,1.494 1.51083161,6.20175 1.51083161,12 C1.51083161,17.79825 6.27161976,22.506 12.1351936,22.506 C13.6532305,22.506 15.0976978,22.19025 16.4045065,21.62175 L17.0116454,22.990125 L17.0116454,22.990125 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

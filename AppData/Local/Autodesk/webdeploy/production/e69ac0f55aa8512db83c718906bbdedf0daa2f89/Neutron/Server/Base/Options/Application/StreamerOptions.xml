@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes" ?>
+<ApplicationOptions SchemaVersion="1.0">
+    <Option key="AppUserModelId" value="AutodeskInc.Fusion360${streamtag}" />
+    <Option key="GlobalInstall" value="0" />
+    <Option key="DevBuild" value="1" />
+    <Option key="StreamerRootUrl" value="" />
+    <Option key="ETag" value="" />
+    <Option key="InstallStream" value="" />
+</ApplicationOptions>

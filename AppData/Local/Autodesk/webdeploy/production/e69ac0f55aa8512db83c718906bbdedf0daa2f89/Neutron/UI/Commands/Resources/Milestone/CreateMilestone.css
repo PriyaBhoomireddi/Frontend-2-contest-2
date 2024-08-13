@@ -1,0 +1,157 @@
+
+/*
+	NB
+	Some of the styles are set directly from C++
+	using setStyleSheet() in QTSaveFileOptions.cpp
+	For example to change the table header style
+	to the ...Wait... mode and back,
+	or to create labels with hyperlink anchors.
+*/
+
+
+QObject {
+    font-family: Arial, Sans-Serif;
+    font-size: 13px;
+}
+
+QDialog {
+    border: 0px solid #313331;
+    background-color: #F4F5F6;
+}
+
+QDialog#dlgSaveFileOptions {
+    border: 1px solid #D2D2D2;
+    background-color: #FFFFFF;
+}
+
+QStackedWidget {
+    border: 1px solid rgba(49,51,49,40%);
+}
+
+#pahSaveIn,
+#breadcrumbBar
+{
+    font-size: 12px;
+}
+
+/* */
+/* QLabels */
+/* */
+
+QLabel {
+    color: #666666;
+    font-size: 12px;
+}
+
+QLabel:disabled {
+    color: #999999;
+}
+
+QLabel#titleLabel {
+    font-size: 18px;
+    color: #6C6C6C;
+}
+
+QLabel#descriptionLabel {
+	font-weight: bold;
+}
+
+
+/* */
+/* QLineEdit */
+/* */
+
+QLineEdit {
+    font-size: 12px;
+    color: #6C6C6C;
+    margin-top: 0px; /* necessary for Mac to use height */
+}
+
+QLineEdit{
+     background-color: #FFFFFF;
+     border-radius: 3px;
+     border: 1px solid #D2D2D2;
+     padding: 5px 10px;
+}
+
+QLineEdit:focus {
+    border: 1px solid #00A6E2;
+}
+
+/* */
+/* QPushButtons */
+/* */
+
+QPushButton {
+    background-color: transparent;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 9px 16px 8px 16px;
+    color: #6C6C6C;
+}
+
+QPushButton#SaveButton {
+    background-color: #00A6E2;
+    border: 1px solid #00A6E2;
+    color: #FFFFFF;
+}
+
+QPushButton#SaveButton:disabled {
+    background-color: #A5E0F5;
+    border: 1px solid #A5E0F5;
+}
+
+
+QPushButton#SaveButton:hover {
+    background-color: #3AB5E1;
+    border: 1px solid #3AB5E1;
+}
+
+
+QPushButton#SaveButton:pressed {
+    background-color: #007EC0;
+    border: 1px solid #007EC0;
+}
+
+
+QPushButton#CancelButton {
+    background-color: #FAFAFA;
+    border: 1px solid #A2A2A2;
+}
+
+QPushButton#CancelButton:disabled
+{
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    color: #D2D2D2;
+}
+
+QPushButton#CancelButton:hover{
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+}
+
+QPushButton#CancelButton:pressed{
+    background-color: #EAEAEA;
+    border: 1px solid #ADADAD;
+}
+
+QPushButton#CloseButton {
+    border: none;
+}
+
+
+/* */
+/* QFrames */
+/* */
+QFrame#separator1{
+    color: #D2D2D2;
+}
+
+QFrame#standardActions {
+    background-color:transparent;
+}
+
+QListView {
+  border: none;
+}

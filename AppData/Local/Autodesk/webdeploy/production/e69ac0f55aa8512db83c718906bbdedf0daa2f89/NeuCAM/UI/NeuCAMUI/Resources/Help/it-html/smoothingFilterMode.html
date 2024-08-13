@@ -1,0 +1,21 @@
+<div id="smoothingFilterMode"><p>Specifica come ammorbidire il percorso utensile.</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="200" height="189" src="../images/arc_fitting_ss.png"/></center></td>
+<td><center><img border="0" width="200" height="189" src="../images/arc_fitting_ss_applied.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Ammorbidimento - Disattivata</b></p></center></td>
+<td><center><p><b>Adatta archi - Attivata</b></p></center></td>
+</tr></table>
+<p><b>Adatta archi</b>: sostituisce più linee nelle aree curve con archi restando all'interno della tolleranza del percorso. Se non è possibile soddisfare la tolleranza, gli archi non vengono applicati. L'adattamento di archi ridurrà le dimensioni del file G-Code, rendendolo fruibile su macchine più vecchie con controller CNC più lenti che funzionano meglio con file di dimensioni inferiori.</p>
+
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="400" height="196" src="../images/Evenly_spaced_points_2_SS.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Punti equamente distribuiti</b></p></center></td>
+</tr></table>
+<p><b>Punti equamente distribuiti</b>: appropriata per macchine più recenti con controller CNC più veloci che sono in grado di gestire un numero elevato di punti.</p>
+<p><b>1</b> - Rimuove vecchi punti e inserisce nuovi punti lungo i movimenti di taglio, disponendoli in modo che siano equidistanti, ove possibile. L'aggiunta di nuovi punti può aumentare il tempo di calcolo richiesto per generare un percorso. Tuttavia, i punti ridistribuiti permettono notevoli riduzioni dei tempi in macchina.<br></p>
+<p><b>2</b> - I punti potrebbero essere maggiormente infittiti attorno agli angoli per rimanere all'interno della tolleranza del percorso.</p>
+</div>

@@ -1,0 +1,183 @@
+#ifndef _HQ_FX_LINE_WEIGHT_H_
+#define _HQ_FX_LINE_WEIGHT_H_
+
+GLSLShader Sketch_line_weight
+{
+
+#define SHAPE_BODY  (0)
+#define SHAPE_CAPS  (1)
+#define SHAPE_JOINT (2)
+
+// load previous and post vertex point
+void load_prev_point(uint offset, uint flag, out vec2 prev_point)
+{
+    load_line_vertex(get_prev_pos_id(offset, flag), prev_point);
+}
+void load_post_point(uint offset, uint flag, out vec2 post_point)
+{
+    load_line_vertex(get_post_pos_id(offset, flag), post_point);
+}
+
+void load_hatch_prev_point(uint offset, uint flag, out vec2 prev_point)
+{
+    load_hatch_line_vertex(get_prev_pos_id(offset, flag), prev_point);
+}
+void load_hatch_post_point(uint offset, uint flag, out vec2 post_point)
+{
+    load_hatch_line_vertex(get_post_pos_id(offset, flag), post_point);
+}
+
+// load polyline adjancent information.
+void load_line_adj_info(uint offset, uint line_flag, vec2 ref_point,
+    out uint flag, out vec2 prev_point, out vec2 post_point)
+{
+    load_line_flag(line_flag, flag);
+    load_prev_point(offset, flag, prev_point);
+    load_post_point(offset, flag, post_point);
+}
+
+// load polyline adjancent information.
+void load_hatch_line_adj_info(uint offset, uint line_flag, vec2 ref_point,
+    out uint flag, out vec2 prev_point, out vec2 post_point)
+{
+    load_line_flag(line_flag, flag);
+    load_hatch_prev_point(offset, flag, prev_point);
+    load_hatch_post_point(offset, flag, post_point);
+}
+
+
+// TODO: move envelope functions to another place
+vec2 get_logical_wide_line_envelope_pos(uint vid, uint line_flag, uint line_width, inout vec2 screen_start, inout vec2 screen_end,
+    out float dist)
+{
+    float weight_expand = get_line_weight_expand(float(line_width));
+    float wide_line_expand = weight_expand*0.5f + 1.0f;
+
+    vec2 uv = get_rect_pos(vid);
+    vec2  screen_len = screen_end - screen_start;
+    vec2 dir = normalize(screen_len);
+    float  xoffset = ENDPOINT_EXTEND;
+
+    dist = uv.y*(wide_line_expand);
+    vec2 extrude = uv.x* dir * xoffset + uv.y * wide_line_expand*vec2(dir.y, -dir.x);
+    vec2  curPoint = (uv.x < 0.0f) ? screen_start : screen_end;
+    return screen_to_ndc_pos(curPoint + extrude);
+
+
+}
+
+// check if a pixel is in a wide-line's region.
+bool inLineRegion(vec2 curPos, vec2 startPoint, vec2 endPoint, float width, vec2 dir)
+{
+    // get line len
+    vec2 delta_line = endPoint - startPoint;
+    float  line_len = length(delta_line);
+
+    bool ret = true;
+
+
+    // ignore degrading line.
+    if (abs(line_len) < EPS)
+        ret = false;
+
+
+    // check distance to start and distance to end
+    vec2 delta_to_start = curPos - startPoint;
+    float dist_to_start = dot(delta_to_start, dir);
+
+    vec2 delta_to_end = curPos - endPoint;
+    float dist_to_end = dot(delta_to_end, -dir);
+
+    // ignore out of distance range pixels.
+    if ((dist_to_start > line_len + EPS))
+        ret = false;
+
+    if ((dist_to_end > line_len + EPS))
+        ret = false;
+
+    // check distance to line center line
+    vec2 distance = endPoint - startPoint;
+
+    float dist = abs(delta_line.x * delta_to_start.y - delta_line.y * delta_to_start.x) / line_len;
+
+    // ignore the pixels far from current line
+    if (ret)
+        return dist < width / 2.0f + EPS;
+    else
+        return false;
+}
+
+// load caps information
+void load_line_caps_input(uint vid, uint iid, highp sampler2D indexTex, highp usampler2D segTex, out LineVertex_Input vs_input, out bool endPoint)
+{
+    vs_input.VertexID = vid;
+
+    ivec2 index_offset = get_ptex_offset(iid);
+    uint index = floatBitsToUint(texelFetch(indexTex, index_offset, 0).x);
+
+    endPoint = (index&uint(IS_END_POINT)) != uint(0);
+
+    index = (index&uint(CAPS_IDX_MASK));
+    vs_input.SegmentID = index;
+
+    ivec2 prim_offset = get_ptex_offset(index);
+    uvec2 primIndex = texelFetch(segTex, prim_offset, 0).xy;
+
+    vs_input.PrimID.x = primIndex.x;
+    vs_input.PrimID.y = primIndex.y;
+}
+// load joint information
+void load_joint_line_position(uint offset, uint line_flag, out uint flag, out vec2 prev_point, out vec2 cur_point, out vec2 post_point)
+{
+    load_line_flag(line_flag, flag);
+
+    load_prev_point(offset, line_flag, prev_point);
+    load_line_vertex(get_pos_id(offset), cur_point);
+    load_line_vertex(get_pos_id(offset) + uint(1), post_point);
+
+}
+
+// TODO: move envelope shape together.
+vec2 get_caps_envelope_pos(uint vid, uint width, vec2 center, vec2 dir)
+{
+    float weight_expand = get_line_weight_expand(float(width));
+    vec2 uv = get_rect_pos(uint(vid));
+
+    vec2 scr_pos = center +
+        +uv.x * vec2(dir.y, -dir.x) * weight_expand*0.5f
+        + (uv.y*0.5f + 0.5f) * dir * weight_expand * 0.5f
+        + (1.0f - (uv.y*0.5f + 0.5f)) * (-dir) * 2.0f;
+
+    return screen_to_ndc_pos(scr_pos);
+}
+
+// check if a pixel position in the end point side of current line
+bool over_middle_point(vec2 pixel_pos, vec2 start, vec2 end, vec2 line_dir)
+{
+    vec2 middle_point = (start + end) / 2.0f;
+
+    vec2 mid_dir = normalize(pixel_pos - middle_point);
+
+    bool ret = false;
+    if (dot(mid_dir, line_dir) < 0.0f)
+        ret = true;
+
+    return ret;
+
+}
+
+// get previous segment index
+uint get_prev_seg_index(uint seg_index, uint flag, uint offset)
+{
+    uint prev_vtx = get_prev_pos_id(offset, flag);
+    uint cur_vtx = get_pos_id(offset);
+
+    if (prev_vtx == cur_vtx - uint(1))
+        return seg_index - uint(1);
+    else
+        return seg_index + prev_vtx - cur_vtx;
+}
+
+}
+
+#endif // _HQ_FX_LINE_WEIGHT_H_

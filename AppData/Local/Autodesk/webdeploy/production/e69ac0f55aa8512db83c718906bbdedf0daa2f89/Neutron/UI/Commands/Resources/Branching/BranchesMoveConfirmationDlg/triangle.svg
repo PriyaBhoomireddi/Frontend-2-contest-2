@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="12px" viewBox="0 0 13 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>triangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="6.5 0 13 12 0 12"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="confirmation-dialog---with-error" transform="translate(-59.000000, -169.000000)">
+            <g id="triangle" transform="translate(59.000000, 169.000000)">
+                <g id="Triangle">
+                    <use fill="#E5EB00" fill-rule="evenodd" xlink:href="#path-1"></use>
+                    <path stroke="#575757" stroke-width="0.7" d="M6.5,0.734856988 L0.587630869,11.65 L12.4123691,11.65 L6.5,0.734856988 Z"></path>
+                </g>
+                <g id="Group" transform="translate(6.000000, 5.000000)" fill="#484848">
+                    <rect id="Rectangle-2" x="0" y="0" width="1" height="3"></rect>
+                    <rect id="Rectangle" x="0" y="4" width="1" height="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

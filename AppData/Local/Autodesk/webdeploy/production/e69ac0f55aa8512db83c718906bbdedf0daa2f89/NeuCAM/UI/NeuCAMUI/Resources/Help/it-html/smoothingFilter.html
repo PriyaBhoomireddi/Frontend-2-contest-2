@@ -1,0 +1,12 @@
+<div id="smoothingFilter"><p>Consente di ammorbidire il percorso utensile rimuovendo punti eccessivi e adattando gli archi ove possibile all'interno della tolleranza di filtro specificata.</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="200" height="200" src="../images/SmoothingOff.png"/></center></td>
+<td><center><img border="0" width="200" height="200" src="../images/SmoothingOn.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Ammorbidimento - Off</b></p></center></td>
+<td><center><p><b>Ammorbidimento - On</b></p></center></td>
+</tr></table>
+<p>L'ammorbidimento viene utilizzato per ridurre le dimensioni del codice senza sacrificare la precisione. L'ammorbidimento funziona sostituendo linee collineari con una linea e archi tangenti per sostituire più linee nelle aree curve.</p>
+<p>Gli effetti dell'ammorbidimento possono essere notevoli. Le dimensioni del file G-Code possono essere ridotte del 50% o più. La macchina funzionerà più velocemente e in modo più uniforme e la finitura della superficie migliorerà. La quantità di riduzione del codice dipende da quanto il percorso utensile si presta all'ammorbidimento. I percorsi utensile che si trovano principalmente in un piano maggiore (XY, XZ, YZ), come i percorsi paralleli, hanno un buon livello di filtro. Gli altri, come Scallop, vengono ridotti di meno.</p>
+</div>

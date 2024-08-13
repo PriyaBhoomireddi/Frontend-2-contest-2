@@ -1,0 +1,353 @@
+.breadcrumbsBar{
+    position: absolute;
+    font: 12px Arial;
+    transition: opacity 1s linear;
+    -webkit-transition: opacity 1s linear;
+    transition: top 0.25s linear;
+    -webkit-transition: top 0.25s linear;
+}
+
+.breadcrumbsBar .endFade{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 18px;
+    width: 10px;
+    z-index: 5;
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(231,231,231,0)), color-stop(100%,rgba(231,231,231,1)));
+    background: -webkit-linear-gradient(left,  rgba(231,231,231,0) 0%,rgba(231,231,231,1) 100%);
+    background: linear-gradient(to right,  rgba(231,231,231,0) 0%,rgba(231,231,231,1) 100%);
+}
+
+.breadcrumbsBar .content {
+    line-height: 18px;
+    height: 18px;
+    font: 12px Arial;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.breadcrumbsBar .content .item {
+    color: #6b6b6b;
+    padding-left: 3px;
+    padding-right: 2px;
+    cursor: default;
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    height: 18px;
+    line-height: 18px;
+}
+
+.breadcrumbsBar .content .item:hover {
+    color: #6894ca;
+}
+
+.breadcrumbsBar .content .item.ellipsis,
+.breadcrumbsBar .content.short .item.tohide
+{
+    display: none;
+}
+
+.breadcrumbsBar .content.short .item.ellipsis {
+    display: block;
+}
+
+.breadcrumbsBar .content.short.nodots .item.ellipsis {
+    display: none;
+}
+
+.breadcrumbsBar .content .item.sep,
+.breadcrumbsBar .content .item.disabled.sep:hover {
+    width: 10px;
+    height: 18px;
+    background: url("../../assets/fldsep.svg") no-repeat center center;
+    background-size: 10px 16px;
+}
+
+.breadcrumbsBar .content .item.sep.last {
+    display: none;
+}
+
+.breadcrumbsBar .content.lastArrowVisible .item.sep.last {
+    display: block;
+}
+
+.breadcrumbsBar .content .item.sep:hover {
+    background: url("../../assets/fldsep_hover.svg") no-repeat center center;
+    background-size: 10px 16px;
+}
+
+.breadcrumbsBar .content .project {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+}
+
+.breadcrumbsBar .content .project .icon {
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    width: 16px;
+    height: 18px;
+    background: url("../../assets/project.svg") no-repeat center left;
+    background-size: 16px 15px;
+    padding-right: 3px;
+    padding-left: 1px;
+}
+
+
+.breadcrumbsBar .content .project .home {
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    width: 16px;
+    height: 18px;
+    background: url("../../assets/home.svg") no-repeat center left;
+    background-size: 16px 15px;
+    padding-right: 3px;
+    padding-left: 1px;
+}
+
+.breadcrumbsBar .content .project .arrow {
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    width: 10px;
+    height: 18px;
+    background: url("../../assets/fldsep.svg") no-repeat center center;
+    background-size: 10px 16px;
+    /*background-size: contain;*/
+    padding-left: 3px;
+    padding-right: 2px;
+}
+
+.breadcrumbsBar:not(.branching) .content .project .arrow {
+    display: none;
+}
+
+.breadcrumbsBar.branching .content .project.activated .icon,
+.breadcrumbsBar.branching .content .project:hover .icon,
+.breadcrumbsBar:not(.branching) .content .project .icon:hover {
+    background: url("../../assets/project_hover.svg") no-repeat center left;
+    background-size: 16px 15px;
+}
+
+.breadcrumbsBar.branching .content .project.activated .home,
+.breadcrumbsBar.branching .content .project:hover .home,
+.breadcrumbsBar:not(.branching) .content .project .home:hover {
+    background: url("../../assets/home_hover.svg") no-repeat center left;
+}
+
+.breadcrumbsBar.branching .content .project.activated .arrow,
+.breadcrumbsBar.branching .content .project:hover .arrow {
+    background: url("../../assets/fldsep_hover.svg") no-repeat center center;
+    background-size: 10px 16px;
+    /*background-size: contain;*/
+}
+
+.breadcrumbsBar .content .branch {
+    display: flex;
+    display: -webkit-flex;
+    width: auto;
+    flex-flow: row nowrap;
+    -webkit-flex-flow: row nowrap;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    align-items: center;
+    padding-left: 3px;
+    padding-right: 3px;
+    overflow: hidden;
+}
+
+.breadcrumbsBar .content.short .branch {
+    max-width: 17px;
+    text-overflow: clip;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.breadcrumbsBar:not(.popupshown) .content.short .branch:hover {
+    max-width: 400px;
+}
+
+.breadcrumbsBar .content .branch .icon {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+    -webkit-flex-shrink: 0;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.breadcrumbsBar .content .branch .label {
+    margin-left: 6px;
+}
+
+.breadcrumbsBar .content .item.ellipsis,
+.breadcrumbsBar .content .item.last:not(.sep) {
+    font-weight: bold;
+}
+
+
+.breadcrumbsBar .popup {
+    padding: 5px 0 5px 0;
+    border: 1px solid #cacaca;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    background: white;
+    font: 12px Arial;
+    cursor: default;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+.breadcrumbsBar .popup.branchlist {
+    position: absolute;
+    left: 38px;
+    top: -8px;
+    max-width: 340px;
+    min-width: 100px;
+    z-index: 200;
+}
+
+.breadcrumbsBar .popup.subfolderlist {
+    position: absolute;
+    top: -8px;
+    z-index: 200;
+}
+
+.breadcrumbsBar .popup .coverarrow {
+    position: absolute;
+    width: 3px;
+    height: 22px;
+    left: -4px;
+}
+
+.breadcrumbsBar .popup .item {
+    position: relative;
+    padding-right: 12px;
+    line-height: 22px;
+    height: 22px;
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: default;
+    color: #484848;
+}
+
+.breadcrumbsBar .popup.branchlist .item {
+    padding-left: 33px;
+}
+
+.breadcrumbsBar .popup.subfolderlist .item {
+    padding-left: 12px;
+}
+
+.breadcrumbsBar .popup .item.selected {
+    font-weight: bold;
+}
+
+.breadcrumbsBar .popup.subfolderlist .item.disabled {
+    color: #cacaca;
+    text-align: center;
+}
+
+.breadcrumbsBar .popup .item:not(.disabled):hover {
+    background-color: #f5f6f7;
+}
+
+.breadcrumbsBar .popup .branch .circle{
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    display: inline-block;
+    border-width: 2px;
+    border-style: solid;
+    top: 0;
+    left: 12px;
+    bottom: 0;
+    margin: auto;
+}
+
+.breadcrumbsBar .popupcover {
+    position: absolute;
+    left: 23px;
+    top: 22px;
+    max-width: 326px;
+    min-width: 100px;
+    z-index: 200;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.3s, opacity 0.3s;
+}
+
+.breadcrumbsBar.branching .popupcover {
+    left: 61px;
+    max-width: 288px;
+}
+
+.breadcrumbsBar:not(.popupshown) .ellipsis:hover .popupcover {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.breadcrumbsBar .popup.folderlist {
+    position: relative;
+    opacity: 1;
+}
+
+.folderlist:after, .folderlist:before {
+    bottom: 100%;
+    left: 19px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+
+.folderlist:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #ffffff;
+    border-width: 6px;
+    margin-left: -6px;
+}
+.folderlist:before {
+    border-color: rgba(202, 202, 202, 0);
+    border-bottom-color: #cacaca;
+    border-width: 7px;
+    margin-left: -7px;
+}
+
+.breadcrumbsBar .folderlist .item {
+    background: url("../../assets/fldsep.svg") no-repeat left;
+    background-size: 10px 16px;
+}
+
+.breadcrumbsBar .folderlist .item:hover {
+    color: #484848;
+}
+
+.breadcrumbsBar .folderlist .item:last-child {
+    font-weight: normal;
+}

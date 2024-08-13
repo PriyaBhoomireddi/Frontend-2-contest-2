@@ -1,0 +1,16 @@
+{
+"description":          ["This allows you to pattern a component around a helix"],
+"appName":              "Create Helix Pattern App",
+"objectsName":          "Objects",
+"objectsTooltip":       "Select the object or objects to pattern", 
+"objectsPrompt":        "Select the object or objects to pattern",
+"axisName":             "Axis",
+"axisTooltip":          "Select the axis for the helix",
+"axisPrompt":           "Select the axis for the helix",
+"turnsName":            "Turns",
+"turnsTooltip":         "The number of turns (complete revolutions) in the helix",
+"countName":            "Count per turn",
+"countTooltip":         "The number of patterned objects for one turn",
+"depthPerTurnName":     "Depth per turn",
+"depthPerTurnToolTip":  "The depth of the helix for one turn, also known as the pitch"
+}

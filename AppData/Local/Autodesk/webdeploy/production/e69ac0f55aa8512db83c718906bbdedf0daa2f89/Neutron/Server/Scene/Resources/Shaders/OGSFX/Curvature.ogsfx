@@ -1,0 +1,235 @@
+//#define LOCAL_VIEWER
+#define FLIP_BACKFACING_NORMALS
+#define CLIPPING
+
+#define LIGHT_DIRECTIONAL_MULTIPLE
+
+#ifdef CLIPPING
+#include "Clipping.ogsfh"
+#endif
+
+#include "LightArray.ogsfh"
+
+// World transformation.
+uniform mat4 gWXf : World;
+
+// World transformation, inverse transpose.
+uniform mat4 gWITXf : WorldInverseTranspose;
+
+// World-view transformation
+uniform mat4 gWV : WorldView;
+
+// World-View-projection transformation.
+uniform mat4 gWVPXf : WorldViewProjection;
+
+#ifdef LOCAL_VIEWER
+	uniform mat4 gVIXf : ViewInverse;
+#else
+	uniform vec3 gViewDirection : ViewDirection;
+#endif
+
+uniform int  gMapType : MapType = 0; 
+
+// Emissive color.
+uniform vec3 gEmiColor : Emissive = {0.0, 0.0, 0.0};
+
+// Ambient color.
+uniform vec3 gAmbColor : Ambient = {0.0, 0.0, 0.0};
+
+// Diffuse color.
+uniform vec3 gDiffColor : Diffuse = {0.7, 0.7, 0.7};
+
+// Specular color.
+uniform vec3 gSpecColor : Specular = {0.0, 0.0, 0.0};
+
+// Glossiness (specular power).
+uniform float gGlossiness : SpecularPower = 32.0;
+
+// Opacity factor.
+uniform float gOpacity : Opacity = 1.0;
+
+uniform float gGaussianFactor : GaussianFactor = 1.0;
+
+uniform mat4 gTextureTransform : TextureTransform;  
+
+uniform texture1D gDiffTex : DiffuseTexture;
+
+// Base texture sampler.
+uniform sampler1D gDiffSamp : DiffTextureSampler = sampler_state
+{
+    Texture = <gDiffTex>;
+};
+
+// Depth priority, which shifts the model a bit forward in the z-buffer
+uniform float gDepthPriority : DepthPriority = 0.0;
+
+attribute VS_INPUT
+{
+    vec3 Pos  : POSITION;
+    vec3 Normal: NORMAL;
+	vec2 UV  : TEXCOORD0;
+	vec2 Curvature  : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 HPos       : POSITION;
+	vec3 CurData    : TEXCOORD0;
+#ifdef CLIPPING
+    // World position, for CLIPPING
+    vec4 HPw 	: TEXCOORD1;
+#endif
+    vec3 Diff : COLOR0; 
+    vec3 Spec : COLOR1;
+};
+
+attribute pixelOut {
+    vec4 colorOut:COLOR0;
+}
+
+GLSLShader curvatureVS{
+	void main()
+	{
+		vec4 P = vec4(Pos, 1.0);
+		HPos = gWVPXf * P;  
+
+		// Transform the position and normal to world space for lighting, and normalize the normal.
+		vec4 HPwT = gWXf * P;
+		vec3 Nw = normalize((gWITXf * vec4(Normal, 1.0)).xyz);
+
+
+#ifdef LOCAL_VIEWER
+		// Compute the view direction, using the eye position and vertex position.  The eye
+		// position is the translation vector of the inverse view transformation matrix.  This
+		// provides more accurate lighting highlights and environment-mapped reflections than
+		// using a non-local viewer (below).
+		vec3 Vw = HPwT - gVIXf[3];
+		vec3 VwNorm = normalize(Vw);    
+#else
+		// Use the fixed view direction, the same for the entire view.  Use of this vector is
+		// similar to disabling D3DRS_LOCALVIEWER for lighting and reflection in D3D9 (the
+		// default state).  This is appropriate for orthographic projections.
+		vec3 VwNorm = gViewDirection;
+#endif
+
+		// Flip the normal to face the view direction, allowing proper shading of back-facing surfaces.
+		// NOTE: This will lead to artifacts on the silhouettes of coarsely-tessellated surfaces.  A
+		// compensation of about nine degrees is performed here (cos(99deg) ~ 0.15), so this issue
+		// should be limited to triangles with very divergent normals.
+#ifdef FLIP_BACKFACING_NORMALS
+		Nw = -Nw * sign(dot(VwNorm, Nw));
+#endif
+    
+		// Compute the ambient, diffuse, and specular lighting components from the light array.
+		vec3 amb = vec3(0.0, 0.0, 0.0);
+		vec3 spec = vec3(0.0, 0.0, 0.0);
+    
+		// Use the glossiness value.
+		ComputeLighting(Nw, -VwNorm, HPwT.xyz, gGlossiness, amb, Diff.rgb, spec);
+		Diff.rgb *= gDiffColor;
+		Diff.rgb += gAmbColor * amb + gEmiColor;
+		Spec = gSpecColor * spec;
+
+		// Clamp the diffuse and specular components to [0.0, 1.0] to match the limitations of COLOR
+		// registers in SM 2.0.  Otherwise the final color output will not match.
+		Diff = saturate(Diff);
+
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w*gDepthPriority;
+
+		CurData.x =	Curvature.x;
+		CurData.y = Curvature.y;
+		if(gMapType == 0)
+		{
+			CurData.z = Curvature.x * Curvature.y;			
+		}
+	
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif
+
+		gl_Position = HPos;
+	}
+}
+
+GLSLShader curvaturePS{
+	void main()
+	{
+#ifdef CLIPPING
+		// Compute whether the pixel needs to be discard by the clipping planes.
+		bool needDiscard = false;
+		if (gNumClipPlanes > 0) { if(dot(HPw, gClipPlanes[0])<0) needDiscard = true;}
+		if (gNumClipPlanes > 1) { if(dot(HPw, gClipPlanes[1])<0) needDiscard = true;}
+		if (gNumClipPlanes > 2) { if(dot(HPw, gClipPlanes[2])<0) needDiscard = true;}
+		if (gNumClipPlanes > 3) { if(dot(HPw, gClipPlanes[3])<0) needDiscard = true;}
+		if (gNumClipPlanes > 4) { if(dot(HPw, gClipPlanes[4])<0) needDiscard = true;}
+		if (gNumClipPlanes > 5) { if(dot(HPw, gClipPlanes[5])<0) needDiscard = true;}
+    
+		if (needDiscard == true)
+			discard;
+#endif
+
+		float x;
+
+		if(gMapType == 0)
+		{
+			float curvature = CurData.z;
+
+			float sign = (curvature < 0.0)?-1.0:1.0;
+			curvature = (curvature < 0.0)?-curvature:curvature;
+		
+			if (curvature == 0.0 || gGaussianFactor == 0.0)
+			{
+				x = 0.5;
+			}
+			else 
+			{
+				float expval = exp(-0.01/(gGaussianFactor*gGaussianFactor*curvature))/2.0;
+				x = 0.5 + sign*expval;                                        
+			}
+		}
+		else
+		{
+			float curvU = abs(CurData.x);
+			float curvV = abs(CurData.y);
+			if(gMapType == 1) {
+				x = min(curvU, curvV);
+			}
+			else if(gMapType == 2) {
+				x = max(curvU, curvV);
+			}
+			
+			if(x>gGaussianFactor*2)
+			{
+				x = 0.99f;
+			}
+			else
+			{
+				x = x/(gGaussianFactor*2);
+			}
+		} 	
+
+ 		x = clamp(x, 0.01, 0.99);
+ 		vec3 color = texture1D(gDiffSamp, x).xyz;
+		
+		// Start the output color with the diffuse component.  The rest of the shader adds to it.
+		vec3 outputColor = Diff.rgb;
+		outputColor *= color;  //Treat the curvature map color as the diffuse texture
+		// Add the specular component.
+		outputColor += Spec; 
+		// Final color and alpha.
+		vec4 final = vec4(outputColor, gOpacity);
+		colorOut = final;
+	}
+}
+
+technique Curvature
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT,out VS_TO_PS) = curvatureVS;
+        PixelShader (in VS_TO_PS, out pixelOut) = curvaturePS;
+    }
+}

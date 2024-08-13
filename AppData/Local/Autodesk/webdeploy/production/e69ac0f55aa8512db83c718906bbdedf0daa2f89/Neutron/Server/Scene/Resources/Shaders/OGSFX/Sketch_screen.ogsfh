@@ -1,0 +1,22 @@
+#ifndef _HQ_FX_SCREEN_HEADER_
+#define _HQ_FX_SCREEN_HEADER_
+
+uniform vec2 gScreenSize : NeutronSketchViewportPixelSize;
+uniform vec2 gInvScreenSize : NeutronSketchViewportPixelSizeInverse;
+
+GLSLShader Sketch_screen
+{
+
+// webgl: fix shader compilation error (vec2 gPixelLen = 2.0f *gInvScreenSize;)
+#define gPixelLen (2.0f*gInvScreenSize)
+
+vec2 gScreenOffset = vec2(0.5, 0.5f);
+
+vec2 offset_screen_pos(in vec2 pos)
+{
+    return (pos + gScreenOffset);
+}
+
+}
+
+#endif // _HQ_FX_SCREEN_HEADER_

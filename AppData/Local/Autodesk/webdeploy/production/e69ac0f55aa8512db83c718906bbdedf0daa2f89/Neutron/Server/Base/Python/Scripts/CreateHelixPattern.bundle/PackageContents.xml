@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" 
+    AutodeskProduct="Fusion360" 
+    Name="Create Helix Pattern" 
+    Description="Create a helix pattern easily" 
+    AppVersion="1.0.0" 
+    ProductType="Application" 
+    Author="Autodesk Inc" 
+    ProductCode="{B046CFC8-96AD-4772-81BC-5CA194532530}" 
+    Icon="./Resource/32x32.png"
+    HelpFile="./Resources/Help.html">
+  <CompanyDetails Name="Autodesk Inc" Url="http://www.autodesk.com" Email="sales@autodesk.com" />
+  <Components>
+    <RuntimeRequirements OS="Win64|MacOS" Platform="Fusion360" SeriesMin="1.6.601"/>
+	<ComponentEntry AppName="CreateHelixPattern" Version="1.0.3" ModuleName="./AutoRunCreateHelixPattern.py"/>
+  </Components>
+</ApplicationPackage>

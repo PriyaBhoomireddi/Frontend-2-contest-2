@@ -1,0 +1,60 @@
+#ifndef _HQ_FX_TEXT_H_
+#define _HQ_FX_TEXT_H_
+
+#include "Sketch_primitive.ogsfh"
+
+GLSLShader Sketch_text
+{
+
+struct CurvedTextVertexAttr
+{
+    vec2   pos; // vertex position
+    vec2   uv;  // texture coordinate
+
+    float  drawZ; // draw-z value
+    uint   color; // vertex color
+    bool   isLogical; // whether in logical coordinates 
+    vec2   triType; // inner, convex, concave
+};
+
+struct VertexAttr_Curved_Text
+{
+    vec4 position; // transformed  vertex position
+    vec4 color;  // color
+    vec2 uv;
+    vec2 triType;
+};
+
+// set properties of curved text for pixel shader
+void set_curved_text_properties(CurvedTextVertexAttr attr, out VertexAttr_Curved_Text outputData)
+{
+    outputData.color = get_formatted_color(attr.color, 1.0f);
+    outputData.uv = attr.uv;
+    outputData.triType = attr.triType;
+
+    if (gRetainMode)
+    {
+        outputData.position.xy = logic_to_ndc(attr.pos);
+    }
+    else
+    {
+        outputData.position.xy = attr.isLogical ? logic_to_ndc(attr.pos) : screen_to_ndc_pos(offset_screen_pos(attr.pos));
+    }
+
+    outputData.position.z = attr.drawZ;
+    outputData.position.xyz = outputData.position.xyz;
+    outputData.position.w = 1.0f;
+}
+
+// load triangle index from index texture
+uint load_tri_id_from_tex(highp sampler2D indexTex, uint id)
+{
+    ivec2 tex_offset = get_ptex_offset(id);
+    uvec4 val = floatBitsToUint(texelFetch(indexTex, tex_offset, 0));
+
+    return val.x;
+}
+
+}
+
+#endif // _HQ_FX_TEXT_H_

@@ -1,0 +1,15 @@
+<div id="2d_tolerance"><p>La tolleranza utilizzata durante la linearizzazione della geometria, ad esempio curve ed ellissi.
+La tolleranza viene misurata come la massima distanza di corda.</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="200" height="200" src="../images/ToleranceLoose.png"/></center></td>
+<td><center><img border="0" width="200" height="200" src="../images/ToleranceTight.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Tolleranza ampia 0,100</b></p></center></td>
+<td><center><p><b>Tolleranza stretta 0,001</b></p></center></td>
+</tr></table>
+<p>Il movimento di contornatura della macchina CNC è controllato utilizzando i comandi G1 linea e G2 G3 arco. Per adattarsi a ciò, il CAM approssima i percorsi utensili curve e superfici linearizzandoli; creando molti segmenti di linea brevi per approssimare la forma desiderata. La precisione con cui il percorso utensile corrisponde la forma desiderata dipende in gran parte dal numero di linee utilizzate. Un numero maggiore di linee si traduce in un percorso utensile che è più simile alla forma nominale della curva o della superficie.</p>
+<p><b>Esaurimento dati</b></p>
+<p>Si è tentati di utilizzare sempre tolleranze molto strette, ma ci sono compromessi che includono tempi di calcolo del percorso utensile più lunghi, file G-Code di grandi dimensioni e movimenti di linea molto brevi. I primi due non rappresentano un grosso problema perché il programma esegue i calcoli molto rapidamente e la maggior parte dei controlli moderni dispone di almeno 1 MB di RAM. Tuttavia, i movimenti di linea brevi, associati ad elevate velocità di avanzamento, possono causare un fenomeno noto come esaurimento dei dati.</p>
+<p>L'esaurimento dei dati si verifica quando il numero di dati ricevuti dal controllo è così elevato che non è più in grado di gestirli. I controlli CNC possono elaborare solo un numero finito di linee di codice (blocchi) per secondo. Questo può essere un minimo di 40 blocchi/secondo su macchine più vecchie e 1.000 blocchi/secondo o più su macchine più recenti, come il controllo di automazione Haas. Movimenti di linea brevi ed elevate velocità di avanzamento possono forzare la velocità di elaborazione oltre quella che il controllo è in grado di gestire. Quando ciò si verifica, la macchina deve fermarsi dopo ogni movimento e attendere di ricevere il successivo comando servomotore dal controllo.</p>
+</div>

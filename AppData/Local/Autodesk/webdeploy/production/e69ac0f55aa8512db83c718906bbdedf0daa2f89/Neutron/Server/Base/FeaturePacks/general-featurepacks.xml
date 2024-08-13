@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeaturePacks>
+
+  <FeaturePack Id="general" Preview="True">
+	<Title _LCLZId="general-featurepack-title" _LCLZText="General"/>
+	<Description _LCLZId="general-featurepack-desc" _LCLZText="This section controls optional aspects of behavior across Fusion 360."/>
+	
+	<Features>
+	  <Feature Id="mesh-workspace" LegacyPreviewId="MeshEnabled">
+		<Title _LCLZId="mesh-workspace-title" _LCLZText="Mesh Workspace"/>
+		<Description _LCLZId="mesh-workspace-desc" _LCLZText="Adds a new Mesh workspace, with tools to modify and repair mesh bodies. Also adds two new Sketch tools for reverse engineering, allowing you to take cross-sections of a mesh and build sketch profiles from these."/>
+	  </Feature>
+	
+	  <Feature Id="branch-merge" Deprecated="True" LegacyPreviewId="BranchingEnabled" CustomVisibilityCheck="SupportsBranching">
+		<Title _LCLZId="branch-merge-title" _LCLZText="Branch &amp; Merge Preview (Closing)"/>
+		<Description _LCLZId="branch-merge-desc">
+		<_LCLZText>
+		<![CDATA[The B&M preview will be closing soon. You can still browse the history and merge branches but you cannot create new branches and milestones. After the preview is fully closed, you will no longer have access to data on branches. Merge any changes to master to keep working on those designs. If you need any help with merging you can <a href='https://autode.sk/f360supportforum'>contact us</a>.<br/>Autodesk appreciates your time in using this preview and giving us feedback.]]>
+		</_LCLZText>
+		</Description>
+	  </Feature>
+	
+	  <Feature Id="cross-project-refs" Default="True" LegacyPreviewId="CrossProjectReferenceEnabled" CustomVisibilityCheck="CrossProjectReferenceTechPreview">
+		<Title _LCLZId="cross-project-refs-title" _LCLZText="Cross-Project References"/>
+		<Description _LCLZId="cross-project-refs-desc" _LCLZText="Reuse designs from any project, using the insert workflow, without making a copy in the destination project. At this time the preview is available as part of team hubs."/>
+	  </Feature>
+
+    <Feature Id="anycad-preview" Default="True" LegacyPreviewId="AnyCADEnabled" CustomVisibilityCheck="SupportsAnyCAD">
+      <Title _LCLZId="anycad-preview-title" _LCLZText="AnyCAD"/>
+      <Description _LCLZId="anycad-preview-desc">
+        <_LCLZText>
+          <![CDATA[Reuse Inventor or SolidWorks<font size=\"3\"><sup>&reg;</sup></font> CAD data with associative connections into Fusion, so that any changes made to the original data will be automatically reflected in Fusion. This preview is currently available in Fusion Team hubs.]]>
+        </_LCLZText>
+      </Description>
+    </Feature>
+
+	<Feature Id="highDPI-preview" Default="False" RequireRestart="True" Platform="Windows">
+      <Title _LCLZId="highDPI-preview-title" _LCLZText="HighDPIScaling"/>
+      <Description _LCLZId="highDPI-preview-desc">
+        <_LCLZText>
+          <![CDATA[Enable High DPI scaling for Fusion. Restart Fusion to take effect.]]>
+        </_LCLZText>
+      </Description>
+    </Feature>
+
+    <Feature Id="insertPanel-preview" Default="False" RequireRestart="True" CustomVisibilityCheck="SupportsInsertPanel">
+      <Title _LCLZId="insertPanel-preview-title" _LCLZText="Insert Dialog"/>
+      <Description _LCLZId="insertPanel-preview-desc">
+        <_LCLZText>
+          <![CDATA[Insert a design into the active document. Available under File > View > Show Insert Design.]]>
+        </_LCLZText>
+      </Description>
+    </Feature>    
+    
+	</Features>
+  </FeaturePack>
+
+</FeaturePacks>

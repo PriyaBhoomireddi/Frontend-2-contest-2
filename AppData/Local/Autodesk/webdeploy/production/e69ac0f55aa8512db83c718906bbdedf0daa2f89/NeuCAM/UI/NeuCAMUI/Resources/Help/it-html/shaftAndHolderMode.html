@@ -1,0 +1,23 @@
+<div id="shaftAndHolderMode"><p>Specifica in che modo il percorso utensile deve gestire una collisione tra il gambo e/o la pinza e il pezzo.</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="100" height="100" src="../images/shaftAndHolderMode_Disabled.png"/></center></td>
+<td><center><img border="0" width="100" height="100" src="../images/shaftAndHolderMode_Trimmed.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Disattivato</b></p></center></td>
+<td><center><p><b>Ritagliato</b></p></center></td>
+</tr></table>
+<br>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="100" height="100" src="../images/shaftAndHolderMode_PullAway.png"/></center></td>
+<td><center><img border="0" width="100" height="100" src="../images/shaftAndHolderMode_DetectLenght.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Trascina via</b></p></center></td>
+<td><center><p><b>Calcola la lunghezza utensile necessaria</b></p></center></td>
+</tr></table>
+<p><b>Ritagliato</b> - Le sezioni del percorso utensile che non sono a distanza di sicurezza rispetto a gambo e/o la pinza vengono ritagliate.</p>
+<p><b>Trascina via</b> - Il percorso utensile si allontana dal pezzo per mantenere una distanza di sicurezza tra gambo e/o pinza.</p>
+<p><b>Calcola la lunghezza utensile necessaria</b> - L'utensile viene ulteriormente esteso automaticamente fuori dalla pinza per mantenere la distanza di sicurezza specificata tra gambo e/o pinza  e il pezzo. Viene inviato un messaggio che indica di quanto l'utensile viene esteso fuori dalla pinza.</p>
+<p><b>Errore se in collisione</b> - Il calcolo del percorso utensile viene interrotto e viene inviato un messaggio di errore quando la distanza di sicurezza viene superata.</p>
+</div>

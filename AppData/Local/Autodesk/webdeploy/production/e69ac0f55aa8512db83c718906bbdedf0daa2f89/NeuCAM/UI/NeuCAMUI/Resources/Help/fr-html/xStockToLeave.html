@@ -1,0 +1,33 @@
+<div id="xStockToLeave"><p>Détermine la quantité de matière à conserver dans la direction radiale.<br>
+Cette option permet de conserver du brut sur le diamètre intérieur ou extérieur de la pièce.</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="177" height="66" src="../images/Turning_Stock_1x0-5B.png"/></center></td>
+<td><center><img border="0" width="75" height="66" src="../images/Turning_Stock_1x0-6A.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Brut X de 1 mm</b></p></center></td>
+<td><center><p><b>Brut X de 1 mm</b></p></center></td>
+</tr></table>
+<br>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="177" height="66" src="../images/Turning_Stock_0x0-5B.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Brut X de 0.0</b></p></center></td>
+</tr></table>
+<br>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="177" height="66" src="../images/Turning_Stock_-1x-1-5B.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Brut X et Z - 1 mm</b></p></center></td>
+</tr></table>
+<p>Pour les surfaces qui ne sont pas exactement horizontales, le programme effectue une interpolation à partir des valeurs de surépaisseur axiale (paroi) et radiale. La quantité de brut conservé sur ces surfaces dans la direction radiale peut dès lors être différente de la valeur spécifiée, selon l'inclinaison de la surface et la valeur de surépaisseur axiale.</p>
+<p>La modification de la valeur de l'option <b>Surépaisseur X</b> permet de définir automatiquement l'option <b>Surépaisseur Z</b> sur la même valeur. Vous pouvez saisir manuellement une autre valeur pour le brut axial.</p>
+<p>Si vous envisagez d'effectuer l'ébauche et les finitions à l'aide d'outils différents, définissez l'opération d'ébauche avec une surépaisseur à laisser pour la prochaine opération de finition.</p>
+<p><b>Surépaisseur négative</b>
+Vous pouvez utiliser une valeur négative. L'outil usinera la matière au-delà des limites de la forme du modèle.</p>
+<p><b>REMARQUE:</b> la valeur maximale de surépaisseur négative doit être inférieure à la valeur du rayon de plaquette.<br>
+Avec un rayon de plaquette de .032, la valeur maximale de surépaisseur négative est de -.032.<br>
+Vous ne pouvez pas effectuer de compensation au-delà de la pointe théorique de l'outil.</p>
+</div>

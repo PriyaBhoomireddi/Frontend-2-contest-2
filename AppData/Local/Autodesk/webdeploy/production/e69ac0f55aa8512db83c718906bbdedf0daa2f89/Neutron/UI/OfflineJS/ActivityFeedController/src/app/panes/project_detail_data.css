@@ -1,0 +1,221 @@
+#projectDetailData {
+    position: absolute;
+}
+
+#projectDetailData .actionButton {
+    position: absolute;
+    transition: top 0.25s linear;
+    -webkit-transition: top 0.25s linear;
+}
+
+/* BUTTONS ON LEFT */
+
+#projectDetailData .actionButton.createBranch{
+    background-image: url("../../assets/create branch.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#projectDetailData .actionButton.createBranch._disabled_ {
+    background-image: url("../../assets/create branch - disabled.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#projectDetailData .actionButton.createBranch:not(._disabled_) ._hover_ {
+    background-image: url("../../assets/create branch - hover.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#projectDetailData .actionButton.createMilestone{
+    background-image: url("../../assets/create milestone.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#projectDetailData .actionButton.createMilestone._disabled_ {
+    background-image: url("../../assets/create milestone - disabled.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#projectDetailData .actionButton.createMilestone:not(._disabled_) ._hover_ {
+    background-image: url("../../assets/create milestone - hover.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#projectDetailData .actionButton.pull {
+    background-image: url("../../assets/pull.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#projectDetailData .actionButton.pull._disabled_ {
+    background-image: url("../../assets/pull - disabled.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#projectDetailData .actionButton.pull:not(._disabled_) ._hover_ {
+    background-image: url("../../assets/pull - hover.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#projectDetailData .actionButton.push {
+    background-image: url("../../assets/push.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#projectDetailData .actionButton.push._disabled_ {
+    background-image: url("../../assets/push - disabled.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#projectDetailData .actionButton.push:not(._disabled_) ._hover_ {
+    background-image: url("../../assets/push - hover.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#projectDetailData .actionButton.projectHistory{
+    background-image: url("../../assets/history.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#projectDetailData .actionButton.projectHistory._disabled_ { opacity: 0.5 }
+#projectDetailData .actionButton.projectHistory:not(._disabled_) ._hover_ {
+    background-image: url("../../assets/history - hover.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* BUTTONS ON RIGHT */
+
+#projectDetailData .actionButton.settings{
+    background-image: -webkit-image-set(url(../../assets/settings_16.png) 1x,
+                                        url(../../assets/settings_16@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#projectDetailData .actionButton.settings ._hover_ {
+    background-image: -webkit-image-set(url(../../assets/settings_16_hover.png) 1x,
+                                        url(../../assets/settings_16_hover@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#projectDetailData .actionButton.newFolder {
+    background-color: transparent;
+    border: 1px solid #979797;
+    border-radius: 3px;
+    height: 28px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#projectDetailData .actionButton.newFolder .textData {
+    color: #6b6b6b;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+
+#projectDetailData .actionButton.newFolder:not(._disabled_):hover {
+    background-color: #fafafa;
+}
+
+#projectDetailData .actionButton.newFolder._disabled_ {
+    border-color: #bdbdbd;
+}
+
+#projectDetailData .actionButton.newFolder._disabled_ .textData {
+    color: #bdbdbd;
+}
+
+#projectDetailData .actionButton.upload {
+    background-color: #6896C8;
+    border-radius: 3px;
+    height: 28px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#projectDetailData .actionButton.upload:hover {
+    background-color: #70A2C6;
+}
+
+#projectDetailData .actionButton.upload._disabled_ {
+    background-color: #BDBDBD;
+}
+
+#projectDetailData .actionButton.upload .textData {
+    color: #ffffff;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+#projectDetailData .actionButton.recover {
+    border: 1px solid #979797;
+    border-radius: 3px;
+    height: 28px;
+    width: 82px;
+    padding: 0 10px;
+    background-image: -webkit-image-set(url(../../assets/recovery.png) 1x,
+                                        url(../../assets/recovery@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#projectDetailData .actionButton.recover.progress {
+    background-image: none;
+}
+
+#projectDetailData .actionButton.openOnWeb {
+    background-image: url(../../assets/open_on_web_16.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px 16px;
+}
+#projectDetailData .actionButton.openOnWeb:hover{
+    background-image: url(../../assets/open_on_web_16_hover.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px 16px;
+}
+
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#projectDetailData .actionButton.recover.progress:before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    left: 31px;
+    background-image: url(../../assets/spinner.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px 16px;
+    animation: rotating 1.5s linear infinite;
+    -webkit-animation: rotating 1.5s linear infinite;
+}
+
+#projectDetailData .actionButton.recover.tooltipParent .tooltip.left10  { left: -10px; }
+#projectDetailData .actionButton.recover.tooltipParent .tooltip.left10.bottom
+{ transform: translate(0, 6px); -webkit-transform: translate(0, 6px); }
+
+#projectDetailData .actionButton.recover:not(._disabled_):hover {
+    background-color: #fafafa;
+}

@@ -1,0 +1,19 @@
+<div id="stockToLeave"><p>Il parametro sovrametallo radiale da lasciare controlla la quantità di materiale da lasciare in direzione radiale (perpendicolare all'asse utensile), quindi al lato dell'utensile.</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="128" height="122" src="../images/117_StockToLeaveRadial.png"/></center></td>
+<td><center><img border="0" width="128" height="122" src="../images/117_StockToLeaveBoth.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Sovrametallo radiale da lasciare</b></p></center></td>
+<td><center><p><b>Sovrametallo radiale e assiale da lasciare</b></p></center></td>
+</tr></table>
+<p>Specificando di lasciare un sovrametallo radiale positivo, il materiale verrà lasciato sulle pareti verticali e sulle zone ripide.</p>
+<p>Per le superfici che non sono esattamente verticali, il programma esegue l'interpolazione tra i valori di sovrametallo assiale (piano) e radiale, in modo che il materiale rimasto nella direzione radiale su queste superfici possa essere diverso dal valore specificato, a seconda dell'inclinazione della superficie e del valore di sovrametallo impostato.</p>
+<p>Modificando il sovrametallo radiale anche il sovrametallo assiale viene impostato automaticamente sulla stessa quantità, a meno che non si inserisca manualmente il valore del sovrametallo assiale.</p>
+<p>Per le operazioni di finitura, il valore di default è 0 mm/0 poll., ovvero non viene lasciato alcun materiale.</p>
+<p>Per le operazioni di sgrossatura, l'impostazione predefinita è quella di lasciare una piccola quantità di materiale che può essere rimossa in seguito da una o più operazioni di finitura.</p>
+<p><b>Sovrametallo negativo da lasciare</b></p>
+<p>Quando si utilizza un sovrametallo negativo, la lavorazione rimuove dal grezzo più materiale rispetto al modello finito. Questa opzione può essere utilizzata per lavorare elettrodi con un <b>gap di erosione</b>, dove il valore del gap è pari al sovrametallo negativo.</p>
+<p>Sia il sovrametallo radiale sia il sovrametallo assiale possono essere valori negativi. Tuttavia, il valore del sovrametallo radiale negativo deve essere inferiore al raggio utensile.</p>
+<p>Quando si utilizza un utensile sferico o raggiato, con un sovrametallo radiale negativo che è superiore al raggio in punta, il sovrametallo assiale da lasciare negativo deve essere inferiore o uguale al raggio in punta.</p>
+</div>

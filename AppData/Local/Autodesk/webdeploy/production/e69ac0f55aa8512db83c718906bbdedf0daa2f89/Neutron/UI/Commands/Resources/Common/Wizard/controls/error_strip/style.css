@@ -1,0 +1,28 @@
+QObject {
+    font-family: Artifakt Element; 
+	color:white;
+	font-size: 13px;
+}
+
+QTErrorStrip
+{
+	background-color:#DB5A57;
+}
+
+QTErrorStrip[warning-mode = true]
+{
+	background-color:#F19E47;
+}
+
+/*
+QTLinkLabel#err_message
+{
+	background-color:orange;
+}
+
+QTLinkLabel#action_trigger
+{
+	background-color:blue;
+}
+*/
+

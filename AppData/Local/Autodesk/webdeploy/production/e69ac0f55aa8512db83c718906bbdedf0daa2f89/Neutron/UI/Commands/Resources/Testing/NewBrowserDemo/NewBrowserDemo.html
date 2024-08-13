@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>QtWebBrowser Demo</title>
+  <meta name="generator" content="Google Web Designer 5.0.3.0130">
+  <style type="text/css" id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      background-color: transparent;
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+    }
+    .gwd-p-z39p {
+      position: absolute;
+      font-family: Arial;
+      text-align: center;
+      transform-origin: 598px 21.5px 0px;
+      width: 1196px;
+      height: 43.02px;
+      left: -130.04px;
+      top: 54.99px;
+      font-size: 24px;
+    }
+    .gwd-label-1xky {
+      position: absolute;
+      height: 20px;
+      left: 156px;
+      top: 172px;
+      width: 200px;
+      font-family: Arial;
+      text-align: center;
+    }
+    .gwd-button-1t4z {
+      position: absolute;
+      width: 100px;
+      height: 24px;
+      left: 206px;
+      top: 229px;
+    }
+    .gwd-label-1buc {
+      left: 522px;
+      top: 158px;
+    }
+    .gwd-button-35ec {
+      top: 215px;
+      left: 561px;
+    }
+    .gwd-label-2qp8 {
+      width: 200.06px;
+      top: 158px;
+      height: 19.97px;
+      left: 208.96px;
+    }
+    .gwd-button-hm9x {
+      left: 259px;
+      top: 215px;
+    }
+    .gwd-label-hwkr {
+      position: absolute;
+      width: 208px;
+      height: 45px;
+      transform-origin: 10.4105px 40.6671px 0px;
+      text-align: center;
+      font-family: Arial;
+      font-size: 12px;
+      color: rgb(125, 116, 116);
+      padding-left: 0px;
+      top: 261px;
+      left: 512px;
+      background-image: none;
+      background-color: transparent;
+    }
+    .gwd-p-nbke {
+      height: auto;
+      left: 0px;
+      position: absolute;
+      top: 0px;
+      width: auto;
+    }
+    .gwd-span-9ycq {
+      position: absolute;
+      font-family: Arial;
+      font-weight: bold;
+      text-align: center;
+      left: 195px;
+      width: 569px;
+      transform-origin: 284.442px 34.7687px 0px;
+      font-size: 20px;
+      top: 447px;
+      height: 30px;
+    }
+    .gwd-span-17t8 {
+      font-size: 20px;
+    }
+    .gwd-span-1ce5 {
+      font-size: 20px;
+    }
+    .gwd-label-juez {
+      position: absolute;
+      width: 240px;
+      height: 40px;
+      left: 215px;
+      top: 339px;
+    }
+    .gwd-label-nx22 {
+      text-align: center;
+      left: 195px;
+      top: 348px;
+      font-family: "Courier New";
+    }
+    .gwd-label-khcw {
+      top: 348px;
+      left: 495px;
+    }
+    .gwd-label-1eue {
+      left: 195px;
+    }
+    .gwd-label-1w70 {
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      transform-origin: 50px 9.99645px 0px;
+      font-size: 18px;
+      font-family: Arial;
+      left: 152px;
+      top: 493px;
+    }
+  </style>
+  <script type="text/javascript">
+    setUpNeutronObject = function(waitedTime) {
+		if (window.neutronJavaScriptObject) {
+            console.info(`neutronJavascriptObject is ready after ${waitedTime} miliseconds! and the document ready state was ${document.readyState}`);
+        }
+		else {
+			console.info(`neutronJavascriptObject still not ready after ${waitedTime} miliseconds! and the document ready state was ${document.readyState}`);
+			var intervalWaitTime = 1; // miliseconds
+			var that = this;
+			setTimeout(() => {
+				waitedTime = waitedTime + intervalWaitTime;
+				that.setUpNeutronObject(waitedTime);
+			}, intervalWaitTime);
+		}
+    };
+    onAsyncCommand = function(event) {
+        window.neutronJavaScriptObject.executeCommand('ToolsCommand', '{"value":"input value from JSCommand"}');
+    };
+    onAsyncQuery = function(event) {
+      window.neutronJavaScriptObject.executeQuery('JSQuery', '{"value":"input value from JSQuery"}', function(responseFromCPP) {
+        var queryResponseLabel = document.getElementById('QueryResponseLabel');
+        queryResponseLabel.innerHTML = responseFromCPP;
+        queryResponseLabel.style.color = "red";
+      });
+    };
+    window.neutronJavaScriptHandler = {
+      handle: function(cmdId, args) {
+        if (cmdId == 'CPPEvent') {
+          var argsObj = JSON.parse(args);
+          var cppCommandLabel = document.getElementById('CPPCommandArgs');
+          cppCommandLabel.innerHTML = 'Command: ' + cmdId + '. Value from C++: ' + argsObj.key;
+          cppCommandLabel.style.color = "red";
+        } else if (cmdId == 'CPPQuery') {
+          var argsObj = JSON.parse(args);
+          var cppQueryLabel = document.getElementById('CPPQueryArgs');
+          cppQueryLabel.innerHTML = 'Command: ' + cmdId + '. Value from C++: ' + argsObj.key1;
+          cppQueryLabel.style.color = "red";
+          return 'this is the response from JS';
+        } 
+      }
+    }
+	
+	//example of what happens when client calls the NJSO too early, it needs to be called when DOMContentLoaded is received
+	console.log('initial readyState:' + document.readyState);
+	var waitedTime = 0; // we considered using Date() to find the value of waitedTime but due to the short durations involved, it wasn't practical.
+    this.setUpNeutronObject(waitedTime);
+    document.addEventListener('readystatechange', () => console.log('readyState:' + document.readyState));
+    document.addEventListener('DOMContentLoaded', () => console.log('DOMContentLoaded'));
+    window.onload = () => console.log('window onload');
+  </script>
+</head>
+
+<body class="htmlNoPages">
+  <h1 class="gwd-p-z39p">HTML/JS Area</h1>
+  <label id="AsyncCommandLabel" class="gwd-label-1xky gwd-label-2qp8">Use this button to send an Async Command to C++</label>
+  <button id="AsyncCommandButton" class="gwd-button-1t4z gwd-button-hm9x" onclick="onAsyncCommand()">Command</button>
+  <label id="AsyncQueryLabel" class="gwd-label-1xky gwd-label-1buc">Use this button to send an Async Query to C++</label>
+  <button id="AsyncQueryButton" class="gwd-button-1t4z gwd-button-35ec" onclick="onAsyncQuery()">Query</button>
+  <label id="QueryResponseLabel" class="gwd-label-hwkr">Response to Query will appear here</label>
+  <span id="InstructionsSpan" class="gwd-span-9ycq">Instructions for Integrating are available on this wikipage:<br></span><br>
+  
+  <label id="CPPCommandArgs" class="gwd-label-juez gwd-label-nx22 gwd-label-1eue">Command args from C++ will appear here</label>
+  <label id="CPPQueryArgs" class="gwd-label-juez gwd-label-nx22 gwd-label-khcw">Query args from C++ will appear here</label>
+  <a id="PunchOutURL" class="gwd-label-1w70" href="https://wiki.autodesk.com/display/NEU/How+to+use+the+new+Qt+browser+engine">https://wiki.autodesk.com/display/NEU/How+to+use+the+new+Qt+browser+engine</a>
+</body>
+
+</html>

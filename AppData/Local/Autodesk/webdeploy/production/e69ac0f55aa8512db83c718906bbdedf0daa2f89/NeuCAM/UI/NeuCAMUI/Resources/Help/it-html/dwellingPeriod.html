@@ -1,0 +1,16 @@
+<div id="dwellingPeriod"><p>Tempo di sosta in secondi.</p>
+<p>Specificando un tempo di sosta si arresta il movimento di tutti gli assi per un tempo specificato, mentre il mandrino continua a ruotare al numero di giri specificato. Questo può essere utilizzato per garantire che i trucioli vengano eliminati prima di uscire da un foro e in genere migliora la finitura di un foro.</p>
+<p>In genere è sufficiente un tempo di sosta compreso tra 1/4 di secondo e 1 secondo.</p>
+<p>Esempio: per fermarsi per 1/4 di secondo, specificare 0,25 o 1/4 in questo campo.</p>
+<p>Quando si esegue la postprocessazione di un ciclo di foratura, il tempo di sosta viene specificato come uno dei parametri del ciclo di foratura (in genere P), e nella maggior parte dei casi viene emesso in millisecondi (ms).</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="361" height="55" src="../images/dwellingPeriod.png"/></center></td>
+</tr><tr>
+<td><center><p>Tempo di sosta di 250 ms in G82</p></center></td>
+</tr></table>
+<p>Quando si scrive con cicli espansi, il tempo di permanenza viene emesso come un normale comando di sosta (G4 - Arresto temporizzato a fine blocco).</p>
+<p>Per calcolare il tempo di sosta minimo che garantisca almeno un giro completo, utilizzare un valore di 60 diviso per la velocità del mandrino.</p>
+<p>Esempio: a 350 giri/min il tempo di sosta minimo deve essere 60/350 = 0,171, che potrebbe essere arrotondato a 0,2 secondi.</p>
+<p>Attenzione: se l'operatore sta eseguendo il programma con un override della velocità, allora la velocità del mandrino è più lenta, ma il tempo di sosta è costante. Per garantire quindi un giro completo quando si utilizza un override di velocità del 50%, il tempo di sosta va raddoppiato.</p>
+</div>

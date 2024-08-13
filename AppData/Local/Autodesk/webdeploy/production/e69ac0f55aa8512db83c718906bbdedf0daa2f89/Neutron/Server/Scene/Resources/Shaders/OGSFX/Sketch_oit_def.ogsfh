@@ -1,0 +1,17 @@
+#ifndef _HQ_FX_OIT_DEF_HEADER_
+#define _HQ_FX_OIT_DEF_HEADER_
+
+#include "Sketch_color.ogsfh"
+
+GLSLShader Sketch_oit_def
+{
+
+vec4 OIT_PS_OUTPUT(vec4 color, vec4 position)
+{
+    color = neutron_sketch_adjust_output_color(color);
+    return color;
+}
+
+}
+
+#endif // _HQ_FX_OIT_DEF_HEADER_

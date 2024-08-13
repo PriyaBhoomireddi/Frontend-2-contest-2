@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toolbars>
+ 
+  <Toolbar Id="QAT" Style="ToolbarQATStyle" TransparentBackground="True" Movable="False">
+    <Button Id="DashboardModeOpenCommand" />
+    <Button Id="DashboardModeCloseCommand" />
+
+    <!--   Note: This menu should match the File menu defined in:             -->
+    <!--            Commands\Resources\Toolbar\Toolbars.xml                   -->
+    <DropDownButton Id="FileSubMenuCommand">
+      <DropDownItem Id="NewDocumentCommand" NoMenuIcon="True"/>
+      <!--   <DropDownItem Id="NewFusionDrawingDocumentCommand" NoMenuIcon="True"/> -->
+      <DropDownButton Id="NewDrawingMenuCommand"  NoMenuIcon="True" >
+        <Button Id="NewFusionDrawingDocumentCommand" NoMenuIcon="True" Checkable="false"/>
+        <Button Id="PublisherNewDrawingDocumentCommand" NoMenuIcon="True" Checkable="false"/>
+      </DropDownButton>
+      <DropDownItem Id="NewFusionDrawingTemplateCommand" NoMenuIcon="True"/>
+      <DropDownItem Id="OpenCommand" NoMenuIcon="True"/>
+      <DropDownItem Id="NotifyAutoSaveFilesCommand"  NoMenuIcon="True"/>
+      <DropDownItem Id="UploadCommand"  NoMenuIcon="True"/>
+      <Separator />
+      <DropDownItem Id="PLM360SaveCommand" NoMenuIcon="True"/>
+      <DropDownItem Id="PLM360SaveAsCommand" NoMenuIcon="True" />
+	  <DropDownItem Id="PLM360SaveAsLatestOnQATCommand" NoMenuIcon="True" />
+      <DropDownItem Id="ExportCommand" NoMenuIcon="True"/>
+      <Separator />
+      <DropDownItem Id="FusionDrawingPrintCommand" NoMenuIcon="True"/>
+      <DropDownItem Id="ThreeDprintCmdDef"  NoMenuIcon="True"/>
+      <DropDownItem Id="SaveAsImageCommand"  NoMenuIcon="True"/>
+      <DropDownButton Id="ShareToFusion360GallerySubCommand" HasSplitter="True" NoMenuIcon="True">
+        <Button Id="LaunchScreencastCommand" NoMenuIcon="True"/>
+        <Button Id="SimpleSharingPublicLinkCommand" NoMenuIcon="True"/>
+        <Button Id="ShareToFusion360GalleryCommand" NoMenuIcon="True"/>
+        <Button Id="FusionPublishToGrabCADCommand" NoMenuIcon="True"/>
+      </DropDownButton>
+      <Separator />
+      <DropDownItem Id="PLM360OpenDetailsCommand"  NoMenuIcon="True"/>
+      <DropDownButton Id="ViewWidgetCommand" NoMenuIcon="True">
+      <DropDownItem Id="HideViewCubeCommand" />
+      <DropDownItem Id="ShowViewCubeCommand" />
+      <DropDownItem Id="HideBrowserCommand" />
+      <DropDownItem Id="ShowBrowserCommand" />
+      <DropDownItem Id="HideActivityFeedCommand" />
+      <DropDownItem Id="ShowActivityFeedCommand" />
+      <DropDownItem Id="HideInsertDialogCommand" />
+      <DropDownItem Id="ShowInsertDialogCommand" />
+      <DropDownItem Id="HideCommandPaletteCommand" />
+      <DropDownItem Id="ShowCommandPaletteCommand" />
+      <DropDownItem Id="HideTextCommandsCommand" NoMenuIcon="True"/>
+      <DropDownItem Id="ShowTextCommandsCommand" NoMenuIcon="True"/>
+      <DropDownItem Id="HideNavigationToolbarCommand" />
+      <DropDownItem Id="ShowNavigationToolbarCommand" />
+      <DropDownItem Id="DashboardModeOpenCommand" NoMenuIcon="True"/>
+      <DropDownItem Id="DashboardModeCloseCommand" NoMenuIcon="True"/>
+    <Separator />
+    <DropDownItem Id="ResetToDefaultLayoutCommand" />
+    </DropDownButton>
+      <DropDownItem Id="GrabCadSaveDocumentCommand" />
+      <DropDownItem Id="GrabCadSaveDocumentAsCommand" />
+      <DropDownItem Id="GrabCadExportCommand" />
+      <DropDownItem Id="GrabCadViewProjectCommand" />
+      <Separator />
+            
+            
+    </DropDownButton>
+    <Button Id="OpenDocumentCommand" />
+    <Button Id="SaveDocumentCommand" />
+    <Button Id="PLM360SaveCommand" />
+    <DropDownButton Id="UndoDropDown" HasSplitter="True" />
+    <Button Id="FusionDrawingUndoCommand" HasSplitter="True" />
+    <DropDownButton Id="DoraUndoCommand" HasSplitter="True"  />
+    <DropDownButton Id="RedoDropDown" HasSplitter="True" />
+    <Button Id="FusionDrawingRedoCommand" HasSplitter="True" />
+    <DropDownButton Id="DoraRedoCommand" HasSplitter="True"  />
+    <Button Id="NTestExcCommand" />
+
+
+  </Toolbar>
+
+    <!-- *******************-->
+    <!-- Navigation Toolbar -->
+    <!-- *******************-->
+  <Toolbar Id="NavToolbar" Style="ToolbarSmallStyle">
+    <DropDownButton Id="OrbitCommand" HasSplitter="True" SynchronizedWithCurrentItem="true" SynchronizedWithUpdates="true">
+    </DropDownButton>
+    <Button Id="LookAtCommand" />
+    <Button Id="PanCommand" />
+    <Button Id="ZoomCommand" />
+    <DropDownButton Id="ZoomFitCommandGroup"  HasSplitter="true" SynchronizedWithCurrentItem="true" SynchronizedWithUpdates="true">   
+    </DropDownButton>
+    <DropDownButton Id="ViewDisplayCommand"  HasSplitter="False">
+      <DropDownButton Id="ViewVisualStyleCommand" SynchronizedWithCurrentItem="true" GroupSubItemsOnly="true" />
+      <DropDownButton Id="MeshStyleCommand"  CheckBoxList="true"/>
+      <DropDownButton Id="ViewEnvCommand"  SynchronizedWithCurrentItem="true" GroupSubItemsOnly="true"/>
+      <DropDownButton Id="ViewEffectCommand"  CheckBoxList="true"/>
+      <DropDownButton Id="VisibilityOverrideCommand"  CheckBoxList="true"/>
+      <DropDownButton Id="ViewCameraCommand"  SynchronizedWithCurrentItem="true" GroupSubItemsOnly="true"/>
+      <DropDownButton Id="SplitViewVisualStyleCommand" SynchronizedWithCurrentItem="true" GroupSubItemsOnly="true" />
+      <DropDownButton Id="SplitViewCameraCommand"  SynchronizedWithCurrentItem="true" GroupSubItemsOnly="true"/>
+      <Button Id="GroundPlaneOffsetCommand" SynchronizedWithCurrentItem="true" GroupSubItemsOnly="true" />
+      <Separator />
+      <DropDownItem Id="ShowWorkspaceFullScreenCommand" />
+      <DropDownItem Id="ShowWorkspaceNormalCommand" />
+    </DropDownButton>
+    <DropDownButton Id="ViewLayoutGridCommand" HasSplitter="False" CheckBoxList="true">
+      <Button Id="DefineGridCmd" />
+      <Separator />
+      <!--Button Id="EnableAdaptiveSnapCmd" /-->
+      <!--Button Id="DisableAdaptiveSnapCmd" /-->
+      <Button Id="ToggleIncrementalMoveCmd" Checkable="true"/>
+      <Button Id="SetSnapValueCmd" />
+    </DropDownButton>
+    <DropDownButton Id="SplitViewWindowSyncCommand"  HasSplitter="false" CheckBoxList="true">
+       <Separator />
+       <Button Id="SingleViewCmd" />
+       <Button Id="MultiViewCmd" />
+       <Button Id="SplitViewResetCmd" />
+    </DropDownButton>
+  </Toolbar>
+
+
+  <Toolbar Id="ActiveViewToolbar" Style="ToolbarSmallStyle">
+  </Toolbar>
+
+  <Toolbar Id="QATRight" Style="ToolbarQATStyle" TransparentBackground="True" Movable="False">
+    <Button Id="BasicAccessCommand" ShowText="true" TextColor="(255, 255, 255)" BackgroundColor="(250, 162, 27)" Visible="false"/>
+    <Button Id="HealthStatusCommand" ShowText="True" TextColor="(255, 255, 255)" BackgroundColor="(49, 127, 67)" Visible="false"/>
+    <Button Id="TryToBuyCommand" ShowText="True" TextColor="(255, 255, 255)" BackgroundColor="(6, 149, 215)" Visible="false"/>
+    <Button Id="ConnectivityStatusCommand" />
+    <Button Id="CloudServiceStatusCommand" />
+    <Button Id="InAppPurchaseCommand" ShowText="True" Visible="false"/>
+    <Button Id="UpdateAvailableCommand" ShowText="True" Visible="false"/>
+    <Button Id="NotificationCommand" />
+    <Button Id="CapacityLimitStatusCommand" ShowText="True" Visible="false"/>
+    <Button Id="FeaturePacksCommand" ShowText="true" />
+    <Button Id="CloudStatusCommand" ShowText="true" GlobalState="true"/>
+    <Button Id="NotificationCenterCommand" />
+    <DropDownButton Id="SubscriptionCommand" >
+      <DropDownItem Id="SubscriptionCommand" />
+    </DropDownButton>
+
+    <!-- Button Id="LearningPaletteCommand"/>                                 -->
+    <!--   Note: This menu should match the Help menu defined in:             -->
+    <!--            Base\Resources\MenuBar\MenuBar.xml                        -->
+    <DropDownButton Id="HelpGroupCommand" HasSplitter="False">
+      <Widget Id="SearchCommand" />
+      <Separator />
+      <DropDownItem Id="LearningPanelOpenCommand" />
+      <DropDownItem Id="LearningPanelCloseCommand" />
+
+      <!--Learning and Help dropdown-->
+      <DropDownButton Id="LearningAndHelpCommand">
+        <DropDownItem Id="HelpCommand" />
+        <DropDownItem Id="LearningAndTutorialsCommand" />
+        <DropDownItem Id="APIHelpCommand" />
+      </DropDownButton>
+
+      <!--Quick setup-->
+      <DropDownItem Id="LearningPaletteCommand" /> <!-- learningpalette == quick setup/gettingstarted-->
+
+      <!--Community Dropdown-->
+      <DropDownButton Id="CommunityCommand" >
+
+        <DropDownItem Id="ForumCommand" />
+        <DropDownItem Id="SubmitAnIdeaCommand" />
+        <DropDownItem Id="GalleryCommand" />
+        <DropDownItem Id="ProductRoadmapCommand" />
+        <DropDownItem Id="BlogCommand" />
+      </DropDownButton>
+
+      <!--Support&Diagnostics-->
+      <DropDownButton Id="SupportAndDiagnosticsCommand">
+        <DropDownItem Id="FeedbackCommand" /> <!--Get Support-->
+        <DropDownItem Id="GatherDiagnosticsDataCommand" />
+        <DropDownItem Id="GraphicsDiagnosticsCommand" />
+        <DropDownItem Id="ClearUserCacheCommand" />
+      </DropDownButton>
+      <DropDownItem Id="StreetTeamCommand" />
+
+      <Separator />
+
+      <DropDownItem Id="PreReleaseFeedbackCommand" />
+      <Separator />
+      <DropDownItem Id="WhatsNewCommand" />
+      <DropDownItem Id="AboutBoxCommand" />
+      
+      <Separator />
+      <!-- <DropDownItem Id="ExchangeAppStoreCommand" /> -->
+      <DropDownItem Id="TutorialsCommand" />
+      <DropDownItem Id="QuickStartCommand" />
+      <DropDownItem Id="VideosCommand" />   
+      <DropDownItem Id="CIPCommand" />      
+    </DropDownButton>
+    <DropDownButton Id="UserDisplayNameCommand" Text="no user logged in" ShowText="true" Enabled="true">
+        <DropDownItem Id ="GoToMyAccountCommand" Text="Autodesk Account" ShowText="true"/>
+        <DropDownItem Id="PreferencesCommand" />
+        <DropDownButton Id="UserHubsCommand" Text="Switch Hubs" ShowText="true" Enabled="true"/>
+        <DropDownItem Id ="GoToMyProfileCommand" Text="My Profile" ShowText="true"/>
+        <DropDownItem Id ="MyCloudCommand" Text="My Cloud" ShowText="true" Visible="False"/>
+        <DropDownItem Id ="ShareFeedbackCommand" Text="Share Feedback" ShowText="true"/>
+        <DropDownItem Id ="ReferralCommand" Text="Refer a Friend" ShowText="true"/>
+        <Separator />
+        <DropDownItem Id ="SubscribeNowCommand" Text="Subscribe Now" ShowText="true" Visible="False"/>
+        <Separator />
+        <DropDownItem Id ="QontextLogoutCommand" Text="Logout" ShowText="true"/>
+    </DropDownButton>      
+  </Toolbar>
+
+  <Toolbar Id="MessageTray" Style="ToolbarSmallStyle" TransparentBackground="True" Movable="False">
+    <Label Id="MessageResult" TextFormat="1" ReadOnly="true"   />
+    <Button Id="AlertCommand" />
+    <Button Id="PerformanceFeedbackCommand" />
+    <Button Id="ChatCommand" />
+  </Toolbar>
+
+  <Toolbar Id="ActiveDocumentsToolbar" Style="ToolbarSmallStyle" Moveable="False">
+    <Label Id="ActiveDocumentState" TextFormat="1" ReadOnly="true" />
+    <Label Id="ActiveDocumentReason" ReadOnly="true" />
+    <Separator/>
+    <Button Id="ActiveDocumentAction" />
+  </Toolbar>
+
+</Toolbars>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<CommandDefinitions>
+  <CommandDefinition Id="CopyCommand" HotKey="Ctrl+C">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzCopyCommandText" _LCLZText="CopyCommand"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="PasteCommand" HotKey="Ctrl+V">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzPasteCommandText" _LCLZText="PasteCommand"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="VisibilityToggleCmd" HotKey="v">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzVisibilityToggleCmdText" _LCLZText="Show/Hide"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="MeasureCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="MeasureCommandDesc1" _LCLZText="Measure distance, angle, area, or position/delta."/>
+        <TextBlock _LCLZId="MeasureCommandDesc2" _LCLZText="Select a vertex, edge, face, body, or component."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ShowAllComponentsCmd">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="ShowAllComponentsCmdDesc1" _LCLZText="Turns on the visibility of selected components, including child components."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+</CommandDefinitions>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xmlInfAndNaNUnitTest>
+	<double>
+		<attributeTest pinf="1.#INF" ninf="-1.#INF" pqnan="1.#QNAN" nqnan="-1.#IND" psnan="1.#QNAN" nsnan="-1.#QNAN"/>
+		<textElementTest>
+			<pinf>1.#INF</pinf>
+			<ninf>-1.#INF</ninf>
+			<pqnan>1.#QNAN</pqnan>
+			<nqnan>-1.#IND</nqnan>
+			<psnan>1.#QNAN</psnan>
+			<nsnan>-1.#QNAN</nsnan>
+		</textElementTest>
+	</double>
+	<float>
+		<attributeTest pinf="1.#INF" ninf="-1.#INF" pqnan="1.#QNAN" nqnan="-1.#IND" psnan="1.#QNAN" nsnan="-1.#QNAN"/>
+		<textElementTest>
+			<pinf>1.#INF</pinf>
+			<ninf>-1.#INF</ninf>
+			<pqnan>1.#QNAN</pqnan>
+			<nqnan>-1.#IND</nqnan>
+			<psnan>1.#QNAN</psnan>
+			<nsnan>-1.#QNAN</nsnan>
+		</textElementTest>
+	</float>
+</xmlInfAndNaNUnitTest>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Commands>
+  <Command ID ="FusionMaterialCommand" />
+  <Command ID ="ActivateEnvironmentCommand" />
+  <Command ID ="VisibilityToggleCmd" />
+  <Command ID ="PLM360SaveCommand" />
+  <Command ID ="RemoveOverrideCommand" />
+</Commands>

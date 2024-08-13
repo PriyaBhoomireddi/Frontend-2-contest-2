@@ -1,0 +1,70 @@
+/* ToolTips */
+.t_tooltipParent{
+}
+.t_tooltipParent .t_tooltip, .tooltipMerge
+{
+    position: absolute;
+    background: rgba(68, 68, 68, 0.95);
+    padding: 14px 12px 14px 12px;
+    border-radius: 3px;
+
+    z-index: 100;
+    cursor: default;
+    display: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.t_tooltipParent .t_tooltip.merge{
+    min-width: 25em;
+    font-size: 133%;
+    white-space:normal;
+}
+.t_tooltipParent .t_tooltip.right { right: 0; }
+.t_tooltipParent .t_tooltip.right30 { right: -30px; }
+.t_tooltipParent .t_tooltip.left  { left: 0; }
+.t_tooltipParent .t_tooltip.center{ left: 50%; }
+.t_tooltipParent .t_tooltip.bottom{ top: 100%; }
+.t_tooltipParent .t_tooltip.top   { bottom: 100%; }
+.t_tooltipParent .t_tooltip.top80 { bottom: 80%; }
+.t_tooltipParent .t_tooltip.left.top,
+.t_tooltipParent .t_tooltip.right.top,
+.t_tooltipParent .t_tooltip.right30.top { transform: translate(0, -6px); -webkit-transform: translate(0, -6px); }
+.t_tooltipParent .t_tooltip.left.bottom,
+.t_tooltipParent .t_tooltip.right.bottom { transform: translate(0, 6px); -webkit-transform: translate(0, 6px); }
+.t_tooltipParent .t_tooltip.center.top   { transform: translate(-50%, -6px); -webkit-transform: translate(-50%, -6px); }
+.t_tooltipParent .t_tooltip.center.bottom{ transform: translate(-50%, 6px); -webkit-transform: translate(-50%, 6px); }
+.t_tooltipParent:hover .t_tooltip
+{
+    display: inline-block;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-name: t_tooltipFadeIn;
+    animation-name: t_tooltipFadeIn;
+    opacity: 0.95;
+}
+
+.t_tooltipParent .t_tooltipBridge {
+    position: absolute;
+    background-color: transparent;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    display: none;
+}
+
+.t_tooltipParent:hover .t_tooltipBridge {
+    display: inline-block;
+}
+
+.t_tooltipParent .t_tooltipBridge.bottomSide { top: 100%; }
+.t_tooltipParent .t_tooltipBridge.topSide    { bottom: 100%; }
+
+@-webkit-keyframes t_tooltipFadeIn {
+    0%, 50%      { opacity: 0; }
+    100%         { opacity: 0.95; }
+}
+@keyframes t_tooltipFadeIn {
+    0%, 50%      { opacity: 0; }
+    100%         { opacity: 0.95; }
+}

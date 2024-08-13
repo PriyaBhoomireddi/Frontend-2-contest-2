@@ -1,0 +1,190 @@
+#version 330
+#include "Sketch_text.ogsfh"
+
+// simple triangle list vertex texture structure (glow is the same):
+// 1. coordinates, uvs of three vertices (12 floats)
+// 2. depth and logical shared flag (1 float)
+// 3. color (1 float)
+// 4. triangle type (2 floats)
+uniform highp texture2D gCurvedTextVertexTex_ : CurvedTextVertexTexture ;
+uniform highp sampler2D gCurvedTextVertexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gCurvedTextVertexTex_>; };
+
+// Since simple triangle and simple glow triangle are in one buffer, we need
+// index texture to know which triangle it is.
+//
+// simple triangle list index texture structure:
+// index value of current triangle
+uniform highp texture2D gCurvedTextIndexTex_ : CurvedTextIndexTexture ;
+uniform highp sampler2D gCurvedTextIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gCurvedTextIndexTex_>; };
+
+// simple glow triangle list index texture structure:
+// index value of current glow triangle
+uniform highp texture2D gGlowCurvedTextIndexTex_ : GlowCurvedTextIndexTexture ;
+uniform highp sampler2D gGlowCurvedTextIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gGlowCurvedTextIndexTex_>; };
+uniform highp texture2D gCurvedTextDrawOrderZTex_ : CurvedTextDrawOrderZTex ;
+uniform highp sampler2D gCurvedTextDrawOrderZTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gCurvedTextDrawOrderZTex_>; };
+
+attribute VS_INPUT
+{
+    int VertexID : TEXCOORD0;
+    int InstanceID : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 vso_pos;
+    vec4 vso_color;
+    vec2 vso_uv;
+    vec2 vso_tri_type;
+};
+
+attribute pixelOut
+{
+    vec4 pso_color : COLOR0;
+};
+
+GLSLShader CurvedText_VS
+{
+
+void load_vertex_info(uint instance_id, uint vertex_id, uint tri_id, out CurvedTextVertexAttr attr)
+{
+    ivec2 offset = get_ptex_offset(tri_id*uint(4) + uint(3));
+    vec4 val = texelFetch(gCurvedTextVertexTex, offset, 0);
+
+    if (vertex_id == uint(0))
+    {
+        ivec2 offset1 = get_ptex_offset(tri_id*uint(4));
+        vec4 val1 = texelFetch(gCurvedTextVertexTex, offset1, 0);
+        attr.pos = val1.xy;
+        attr.uv = val1.zw;
+    }
+    else if (vertex_id == uint(1))
+    {
+        ivec2 offset1 = get_ptex_offset(tri_id*uint(4) + uint(1));
+        vec4 val1 = texelFetch(gCurvedTextVertexTex, offset1, 0);
+        attr.pos = val1.xy;
+        attr.uv = val1.zw;
+    }
+    else
+    {
+        ivec2 offset1 = get_ptex_offset(tri_id*uint(4) + uint(2));
+        vec4 val1 = texelFetch(gCurvedTextVertexTex, offset1, 0);
+        attr.pos = val1.xy;
+        attr.uv = val1.zw;
+    }
+
+    if (gRetainMode)
+    {
+        load_dynamic_draworderz(instance_id, gCurvedTextDrawOrderZTex, attr.drawZ);
+        attr.isLogical = true;
+    }
+    else 
+    {
+        attr.isLogical = get_logical_space(val.z);
+        attr.drawZ = abs(val.z);
+    }
+    
+    attr.color = floatBitsToUint(val.w);
+    attr.triType = val.xy;
+}
+
+void main()
+{
+    CurvedTextVertexAttr attr = CurvedTextVertexAttr(vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), 0.0f, uint(0), false, vec2(0.0f, 0.0f));
+
+	uint tri_id;
+
+#ifdef ANALYTIC_HIGHLIGHT
+		tri_id = load_tri_id_from_tex(gGlowCurvedTextIndexTex, uint(gl_InstanceID));
+#else
+		tri_id = load_tri_id_from_tex(gCurvedTextIndexTex, uint(gl_InstanceID));
+#endif
+
+
+    load_vertex_info(uint(gl_InstanceID), uint(gl_VertexID), tri_id, attr);
+
+    VertexAttr_Curved_Text outputData = VertexAttr_Curved_Text(vec4(0.0f, 0.0f, 0.0f, 0.0f),
+                                                               vec4(0.0f, 0.0f, 0.0f, 0.0f),
+                                                               vec2(0.0f, 0.0f),
+                                                               vec2(0.0f, 0.0f));
+    set_curved_text_properties(attr, outputData);
+
+    gl_Position = outputData.position;
+
+    vso_pos = outputData.position;
+    vso_color = outputData.color;
+    vso_uv = outputData.uv;
+    vso_tri_type = outputData.triType;
+}
+
+}
+
+GLSLShader CurvedText_PS
+{
+
+void main()
+{
+    float alpha = 1.0f;
+
+    if (vso_tri_type.x <= 0.5f)
+    {
+        // The curve is u^2 - v, where (u, v) is the texture coordinate.
+        //
+        // As in the paper, the signed distance from the pixel to the curve g(x,y) is calculated as
+        //
+        //                           g(x, y)
+        //      d(x, y) = ---------------------------------
+        //                 || (g'x(x,y), g'y(x,y))||
+        //
+        // Here, g(x, y) = g(u(x, y), v(x, y)) = u(x, y) ^ 2 - v(x, y)
+        // So, we can calculate the partial derivative:
+        //
+        //      g'x(x, y) = 2 * u(x, y) * u'x(x, y) - v'x(x, y)
+        //      g'y(x, y) = 2 * u(x, y) * u'y(x, y) - v'y(x, y)
+        //
+
+        // g(x, y)
+        float g = vso_uv.x * vso_uv.x - vso_uv.y;
+
+        // g'x(x, y)
+        float pgdx = 2.0f * vso_uv.x * dFdx(vso_uv.x) - dFdx(vso_uv.y);
+
+        // g'y(x, y)
+        float pgdy = 2.0f * vso_uv.x * dFdy(vso_uv.x) - dFdy(vso_uv.y);
+
+        //                           g(x, y)
+        //      d(x, y) = ---------------------------------
+        //                 || (g'x(x,y), g'y(x,y))||
+        float dist = g / sqrt( pgdx * pgdx + pgdy * pgdy);
+
+        // The anti-alias algorithm is simple.
+        // If the distance from the pixel to the outline is larger than 0.5 and on the fill side,
+        // we think the pixel should be fully filled, so alpha will be gOpacity.
+        // If the distance from the pixel to the outline is larger than 0.5 and on the non-fill side,
+        // we think the pixel should be empty, so alpha will be 0.0.
+        // If the distance from the pixel to the outline is smaller than 0.5,
+        // we think the coverage of the pixel is (0.5 - distance), so alpha will be gOpacity plus this minus.
+
+        if (vso_tri_type.y <= 0.5f)
+            alpha = dist > 0.5f ? 1.0f : ( dist > -0.5f ? (0.5f + dist) : 0.0f);
+        else
+            alpha = dist < -0.5f ? 1.0f : ( dist < 0.5f ? (0.5f - dist) : 0.0f);
+    }
+
+    vec4 final_color = vec4(vso_color.rgb, vso_color.a * alpha);
+    if (final_color.a < 0.01f)
+        discard;
+    pso_color = OIT_PS_OUTPUT(final_color, vso_pos);  
+}
+
+}
+
+technique CurvedText
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = CurvedText_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = CurvedText_PS;
+    }
+}
+

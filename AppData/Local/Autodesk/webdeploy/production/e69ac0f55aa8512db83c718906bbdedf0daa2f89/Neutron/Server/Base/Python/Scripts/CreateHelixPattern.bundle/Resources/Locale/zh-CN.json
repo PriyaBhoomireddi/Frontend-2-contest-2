@@ -1,0 +1,16 @@
+﻿{
+"description":          ["将模块以螺旋方式进行布局"],
+"appName":              "创建螺旋模式",
+"objectsName":          "对象",
+"objectsTooltip":       "选择一个或多个实施布局的对象", 
+"objectsPrompt":        "选择一个或多个实施布局的对象",
+"axisName":             "轴",
+"axisTooltip":          "选择螺旋轴",
+"axisPrompt":           "选择螺旋轴",
+"turnsName":            "转数",
+"turnsTooltip":         "螺旋的圈数（整圈）",
+"countName":            "每转的对象数",
+"countTooltip":         "每转图案化的对象的数量",
+"depthPerTurnName":     "每转的深度",
+"depthPerTurnToolTip":  "一匝的螺旋结构的深度"
+}

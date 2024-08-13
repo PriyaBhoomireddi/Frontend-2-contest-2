@@ -1,0 +1,36 @@
+.swipeControl{
+    position: absolute;
+    overflow: hidden;
+    transition: top 0.25s linear 0.75s;
+    -webkit-transition: top 0.25s linear 0.75s;
+}
+
+.swipeControl.moveImmediatelyDown{
+    transition: top 0.25s linear;
+    -webkit-transition: top 0.25s linear;
+}
+
+.swipeControl .swipePanel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+}
+
+.swipeControl .swipePanel.enableSwipeAnimation
+{
+    transition: transform 0.25s ease-out;
+    -webkit-transition: -webkit-transform 0.25s ease-out;
+}
+
+.swipeControl .swipePanel .swipePane{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+    -webkit-user-select: none;
+    user-select: none;
+}

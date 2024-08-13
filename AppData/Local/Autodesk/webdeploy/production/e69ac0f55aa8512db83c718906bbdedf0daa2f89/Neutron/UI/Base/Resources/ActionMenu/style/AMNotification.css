@@ -1,0 +1,44 @@
+*{
+	color: #111111;
+	font-style: normal;
+	font-size: 13px;
+	font-weight: normal;
+}
+
+QFrame#AMNotificationStandalone {
+    border-radius: 3px;
+}
+
+QFrame#AMNotification{
+	background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+}
+
+QLabel#am_ntf_title
+{
+	font-weight: bold;
+}
+
+QTLinkLabel#am_ntf_message
+{
+	padding:1px; /* dont' remove this - is needed to proper link hover detection*/
+	color: #111111;
+}
+
+QPushButton#am_ntf_btn
+{
+	height:24px;
+	color:#FFFFFF;
+	background-color:#00A5E1;
+	border: none;
+	border-radius: 3px;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+QPushButton::hover#am_ntf_btn{
+	background-color: #3990CB;
+}
+QPushButton::pressed#am_ntf_btn{
+	background-color: #057FB6;
+}

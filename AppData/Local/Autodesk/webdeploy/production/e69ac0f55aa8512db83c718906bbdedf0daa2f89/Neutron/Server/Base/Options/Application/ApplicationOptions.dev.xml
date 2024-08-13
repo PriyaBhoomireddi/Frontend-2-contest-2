@@ -1,0 +1,79 @@
+<?xml version="1.0" standalone="yes" ?>
+<!DOCTYPE serverconfig [
+  <!ENTITY dashboardHost "https://d1it2gim2ylev1.cloudfront.net">
+    <!ENTITY dashboardServiceRoot "&dashboardHost;/dashboard">
+]>
+<ApplicationOptions SchemaVersion="1.0">
+    <Option key="serverType" value="STAGING" />
+    <Option key="fusionTeamUrl" value="staging.autodesk360beta.com" />
+    <Option key="homePageUrl" value="https://wwwwip1fqa.staging.autodesk360beta.com/login" />
+    <Option key="exchangeMaterialUrl" value="https://d1it2gim2ylev1.cloudfront.net/emb/index.html" />
+    <Option key="exchangeServiceUrl" value="https://d1it2gim2ylev1.cloudfront.net/exchange" />
+    <Option key="gaAccount" value="UA-41472239-1" />
+    <Option key="serviceStatusUrl" value="https://d1it2gim2ylev1.cloudfront.net/fusion" />
+    <Option key="translationStatusUrl" value="https://translation-staging.api.autodesk.com/data/v1/" />
+    <Option key="hubType" value="personal" />
+    <Option key="notificationsUrl" value="https://notifications.stg.fusionapi.autodesk.com" />
+    <Option key="maintenanceUrl" value="http://localhost:8080/maintenance.json" />
+    <Option key="blockcheck" value="https://d1it2gim2ylev1.cloudfront.net/dufo/scripts/check_blocked.js" />
+    <Option key="trytobuyOptionsUrl" value="https://d1it2gim2ylev1.cloudfront.net/staging/IPM.html" />
+    <Option key="lxUrl" value="https://ui-dls360-staging.autodesk.com/lxv2/" />
+    <Option key="liveData" value="urn:adsk.wipqa:fs.folder:co.IUTJ-s-CQU-XP5U4TvExMg" />
+    <Option key="liveDataHub" value="https://wip1fqamyhub.staging.autodesk360beta.com/wip1fqae29ccbf3" />
+    <Option key="liveDataProject" value="201601082482048" />
+    <Option key="RaasServer" value="https://mercury-staging.autodesk.com" />
+    <Option key="migrationBucket" value="fusionerrorreports-stg" />
+    <Option key="apigeeEndpointUrl" value="https://developer-stg.api.autodesk.com" />
+    <Option key="apigeeEndpointDataPath" value="/forge-dm-qa/data/v1/projects/"/>
+    <Option key="changesServiceUrl" value="https://changes-staging.api.autodesk.com" />
+    <Option key="CollaborationServer" value="https://livereview.stg.fusionapi.autodesk.com" />
+    <Option key="CollaborationViewer" value="http://ec2-54-82-121-16.compute-1.amazonaws.com:8080/viewer3d.html" />
+    <Option key="simServiceUrl" value="https://simulation.qa.fusionapi.autodesk.com/v1" />
+    <Option key="gdServicesUrl" value="https://developer-stg.api.autodesk.com/gcp/a/v2/agd" />
+    <Option key="gdExploreUrl" value="https://dev.dreamcatcher.autodesk.com" />
+    <Option key="hawkeyeUrl" value="https://dev.hawkeye.autodesk.com" />
+    <Option key="hawkeyeServiceUrl" value="https://alpha-svc.hawkeye.autodesk.com" />
+    <Option key="doraUrl" value="https://dev.sim.autodesk.com" />
+    <Option key="injectionMoldingMaterialUrl" value="https://developer-stg.api.autodesk.com/simmat-alpha" />
+    <Option key="meteringServerUrl" value="https://metering-staging.autodesk.com" />
+    <Option key="frvServerUrl" value="https://frv-c-uw2.cosv2-c-uw2.autodesk.com" />
+    <Option key="cepPageUrl" value="https://customer-stg.autodesk.com" />
+    <Option key="aklamioUID" value="f0acb94495fde56406edaf7103c67367" />
+    <Option key="surveyUrl" value="https://autodeskfeedback.az1.qualtrics.com/jfe/form/SV_02N0kS0VHnBRSZv" />
+    <Option key="anytimeSurveyUrl" value="https://autodeskfeedback.az1.qualtrics.com/jfe/form/SV_bNlhWfuUWYzBbYV" />
+    <Option key="fusionStaticsUrl" value="https://d1it2gim2ylev1.cloudfront.net/" />
+    <Option key="healthStatusUrl" value="https://d1it2gim2ylev1.cloudfront.net/hds/fusion360.json" />
+    <Option key="healthStatusWebUrl" value="https://health-dev.autodesk.com/" />
+    <Option key="hsmGaAccount" value="UA-93571112-1" />
+    <Option key="derivativeServiceUrl" value="https://developer-stg.api.autodesk.com/derivativeservice/v2/derivatives/" />
+    <Option key="fusionDMUrl" value="https://developer-stg.api.autodesk.com/fusiondm-qa" />
+    <Option key="ldUrl" value="https://app.launchdarkly.com/api/v2/users/fusion/development/fusion360/flags" />
+    <Option key="symphonyServiceUrl" value="https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2" />
+    <Option key="hfdmUrl" value="https://developer-stg.api.autodesk.com/hfdm-soc2" />
+    <Option key="pimUrl" value="https://developer-stg.api.autodesk.com/pim-qa" />
+    <Option key="pimMigrationUrl" value= "https://developer-stg.api.autodesk.com/pim-migration-dev" />
+    <Option key="pimUrlPathPrefix" value="/v4" />
+    <Option key="fhqUrl" value="https://developer-stg.api.autodesk.com/fhq" />
+    <Option key="flcDomain"  value="autodeskplm.com" />
+    <Option key="pimServerUrl" value="https://developer-stg.api.autodesk.com/hfdm-soc2" />
+    <Option key="pimFdServerUrl" value="https://developer-stg.api.autodesk.com/assetgraph-uat" />
+    <Option key="learningPageUrl" value="https://js.qa.fusionapi.autodesk.com/learning-panel/online.js" />
+    <Option key="LibraryIOUrl" value="https://contapi-beta.circuits.io/" />
+    <Option key="EagleDevEnvironment" value="BETA" />
+    <Option key="forgeDataInspectorUrl" value="http://inspector.autodesk.com/staging_soc2.html" />
+    <Option key="applicationType" value="dev" />
+    <Option key="clsUrl" value="https://api-stg.v3license.access.np.clic.autodesk.com" />
+    <Option key="GCPEnvironment" value="alpha" />
+    <Option key="simecoolWorker" value="fec2020" />
+    <Option key="simfimWorker" value="fim2022" />
+    <Option key="simecoolGCPMoniker" value="simecool" />
+    <Option key="simfimGCPMoniker" value="simfim" />
+    <Option key="simecoolMoniker" value="simsamp-s-ue1" />
+    <Option key="simsampMoniker" value="simsamp-s-ue1" />
+    <Option key="SCMBucket" value="1a99a94d-8102-4f71-977e-434990a6f537" />
+    <Option key="CloudOSJMAPI" value="https://developer-stg.api.autodesk.com/fpccomp-s-ue1-dn/jm/api/v1" />
+    <Option key="GCPJMAPI" value="https://developer-stg.api.autodesk.com/gcp/a/v2" />
+    <Option key="OSSPrefix" value="oss:stg:" />
+    <Option key="uhmUrl" value="https://app.digital-help-stg.autodesk.com/universal-help/current/index.html?mode=openWidget&amp;product=NINVFUS&amp;integrationType=In-Product" />
+    <Option key="CAMWebsiteUrl" value="https://camstg.autodesk.com/" />
+</ApplicationOptions>

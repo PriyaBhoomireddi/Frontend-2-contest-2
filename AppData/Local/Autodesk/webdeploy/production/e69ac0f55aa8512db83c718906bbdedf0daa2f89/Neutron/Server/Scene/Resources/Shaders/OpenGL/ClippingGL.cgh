@@ -1,0 +1,85 @@
+//**************************************************************************/
+// Copyright (c) 2008 Autodesk, Inc.
+// All rights reserved.
+// 
+// These coded instructions, statements, and computer programs contain
+// unpublished proprietary information written by Autodesk, Inc., and are
+// protected by Federal copyright law. They may not be disclosed to third
+// parties or copied or duplicated in any form, in whole or in part, without
+// the prior written consent of Autodesk, Inc.
+//**************************************************************************/
+// DESCRIPTION: Clipping utilities (OpenGL).
+// AUTHOR: Ryan Qian
+// CREATED: Jan 2009
+//**************************************************************************/
+
+#ifndef _CLIPPING_CGH_
+#define _CLIPPING_CGH_
+
+// The clipping is done per pixel, because not all Cg vertex profiles supported user-defined
+// clipping in VS code, such as arbvp1, vp20. More effecient user-defined clipping should be
+// achieved through declaring VS output structures with CLP0~CLP5 semantics.
+
+// NOTES: CLP0~CLP5 semantics are tried. This does not work on ATI FireGL 3350. I Did not test other cards. 
+// ATI FireGL 3350 runs on GLSL profiles. While this can work on NV8800 and forced to GLSL. Should be ATI bugs.
+
+// Clipping plane array (world space).
+float4 gClipPlanes[6] : ClippingPlanes =
+{
+    float4(1.0f, 0.0f, 0.0f, 0.0f),
+    float4(0.0f, 1.0f, 0.0f, 0.0f),
+    float4(0.0f, 0.0f, 1.0f, 0.0f),
+    float4(1.0f, 0.0f, 0.0f, 0.0f),
+    float4(1.0f, 0.0f, 0.0f, 0.0f),
+    float4(1.0f, 0.0f, 0.0f, 0.0f),
+};
+
+// Number of clipping planes.
+int gNumClipPlanes : ClippingPlaneCount
+<
+    string UIName = "# Clipping Planes";
+    string UIWidget = "Slider";
+    int UIMin = 0;
+    int UIMax = 6;
+    int UIStep = 1;
+>
+= 0;
+
+void ComputeClipDistances(float4 HPw, 
+                          out float clip0, 
+                          out float clip1,
+                          out float clip2, 
+                          out float clip3,
+                          out float clip4, 
+                          out float clip5)
+{
+	clip0 = 1.0f;
+    clip1 = 1.0f;
+    clip2 = 1.0f;
+    clip3 = 1.0f;
+    clip4 = 1.0f;
+    clip5 = 1.0f;
+	
+	// A clip distance is the distance of the specified world-space point from the clipping plane.
+	// This is computed with a dot product.  Values are interpolated in the rasterizer, and
+	// fragments with any value less then zero (i.e. on the negative side of a clipping plane)
+	// are discarded before reaching the pixel shader.
+
+	// Compute clip distances for planes 0 - 3.
+	if (gNumClipPlanes > 0)
+	{
+		clip0 = dot(HPw, gClipPlanes[0]);
+		if (gNumClipPlanes > 1) clip1 = dot(HPw, gClipPlanes[1]);
+		if (gNumClipPlanes > 2) clip2 = dot(HPw, gClipPlanes[2]);
+		if (gNumClipPlanes > 3) clip3 = dot(HPw, gClipPlanes[3]);
+	}
+	
+	// Compute clip distances for planes 4 - 5.
+	if (gNumClipPlanes > 4)
+	{
+		clip4 = dot(HPw, gClipPlanes[4]);
+		if (gNumClipPlanes > 5) clip5 = dot(HPw, gClipPlanes[5]);
+	}
+}
+
+#endif // _CLIPPING_CGH_

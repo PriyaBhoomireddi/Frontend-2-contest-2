@@ -1,0 +1,318 @@
+/*
+Notice that some pixel sizes in this css file are set using schema
+    font-size: scaled_12px;
+etc.
+These scaled_*px values are multiplied with the current ToolbarFramework::Parameters::scaleFactor();
+That means that this css file cannot be used "as-is", but it is a template to be translated in cpp.
+*/
+
+QDialog {
+    border: 1px solid #D2D2D2;
+    background-color: #FFFFFF;
+}
+
+QDialog#UploadFileOptions {
+    border: 1px solid #D2D2D2;
+    background-color: #FFFFFF;
+}
+
+QFrame#HeaderFrame{
+	border-bottom: 1px solid #D2D2D2;
+	background-color: transparent;
+}
+
+QLabel {
+    color: #666666;
+    font-size: scaled_12px;
+}
+
+#locationPath {
+    color: #666666;
+    font-size: scaled_12px;
+}
+
+QLabel:disabled {
+    color: #999999;
+}
+
+QLabel#titleLabel {
+    font-size: scaled_24px;
+    color: #6C6C6C;
+}
+
+QLabel#orText {
+    padding-left: 40px;
+    padding-right: 23px;
+}
+
+QLabel#dragZone {
+    background-color: transparent;
+    min-height: 105px;
+    max-height: 105px;
+    min-width: 418px;
+    color: #878787;
+    border: 1px solid #D2D2D2;
+}
+
+QLabel#tableHeaderLabel {
+    font-weight: bold;
+}
+
+QLabel#tableHeaderLabel[error="true"] {
+    color: red;
+}
+
+QLabel#locationLabel {
+    margin-left: -0.1em;
+}
+
+QLabel#locationPath {
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    border-radius: 3px;
+    font-size: scaled_12px;
+    padding: 6px 10px;
+}
+
+QCheckBox#partsOnlyCheckbox {
+    background-color: transparent;
+    font-family: Arial, Sans-Serif;
+    color: #666666;
+    font-size: scaled_13px;
+}
+
+QPushButton {
+    background-color: transparent;
+    font-size: scaled_12px;
+    border-radius: 3px;
+    padding: 9px 16px 8px 16px;
+    color: #6C6C6C;
+}
+
+QPushButton#closeButton {
+    border: none;
+}
+
+QPushButton#selectButton,
+QPushButton#uploadButton,
+QPushButton#saveQuitButton {
+    background-color: #00A6E2;
+    border: 1px solid #00A6E2;
+    color: #FFFFFF;
+}
+
+QPushButton#selectButton:disabled,
+QPushButton#uploadButton:disabled,
+QPushButton#saveQuitButton:disabled {
+    background-color: #A5E0F5;
+    border: 1px solid #A5E0F5;
+}
+
+QPushButton#selectButton:hover,
+QPushButton#uploadButton:hover,
+QPushButton#saveQuitButton:hover {
+    background-color: #3AB5E1;
+    border: 1px solid #3AB5E1;
+}
+
+QPushButton#selectButton:pressed,
+QPushButton#uploadButton:pressed,
+QPushButton#saveQuitButton:pressed {
+    background-color: #007EC0;
+    border: 1px solid #007EC0;
+}
+
+QPushButton#cancelButton,
+QPushButton#quitButton {
+    background-color: #FAFAFA;
+    border: 1px solid #A2A2A2;
+}
+
+QPushButton#cancelButton:disabled,
+QPushButton#quitButton:disabled {
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    color: #D2D2D2;
+}
+
+QPushButton#cancelButton:hover,
+QPushButton#quitButton:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+}
+
+QPushButton#cancelButton:pressed,
+QPushButton#quitButton:pressed {
+    background-color: #EAEAEA;
+    border: 1px solid #ADADAD;
+}
+
+QPushButton#closeButton {
+    border: none;
+}
+
+QPushButton#changeLocationButton {
+    background: transparent;
+    font-size: scaled_14px;
+    border: none;
+    color: #00A6E2;
+    padding: 0px;
+}
+
+/* Simulations tab - minimal space between items (UP-25885) */
+/* NB this progress spacer is hardcoded in the cpp code now. So this css has no effect. */
+#simulationsTable::item
+{
+    border-right: 10px solid transparent;
+}
+
+QPushButton#removeButton {
+    background-color: transparent;
+    border: none;
+}
+
+QFrame#separator {
+    color: #D2D2D2;
+}
+
+QFrame#dragZoneFrame {
+    min-height: 106px;
+}
+
+QFrame#fileTableFrame {
+    max-height: 200px;
+}
+
+QFrame#fileTableFrame, QFrame#dragZoneFrame {
+    border: 1px solid transparent;
+}
+
+QFrame#fileTableFrame[error="true"], QFrame#dragZoneFrame[error="true"] {
+    border: 1px solid red;
+}
+
+QFrame#standardActionsFrame {
+    background-color: transparent;
+}
+
+QTableWidget#filesTable,
+QTreeWidget#filesTable {
+    background-color: transparent;
+    font-family: Arial, Sans-Serif; 
+    font-size: scaled_12px;
+    border: none;
+    color: #666666;
+    max-height: 195px;
+}
+
+QFrame#simulationsTableFrame {
+    border-style: solid;
+    border-width: 2px;
+    border-color: transparent;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+QHeaderView::section {
+    background-color: #FFFFFF;
+    font-family: Arial, Sans-Serif; 
+    font-size: scaled_10pt;
+    font-weight: bold;
+    color: #666666;
+    border: none;
+    text-transform: uppercase;
+}
+
+QTreeView::item {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+QRadioButton {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 8px;
+}
+
+QPushButton#savequitButton , QPushButton#quitButton{
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+QTabWidget {
+    font-family: Arial, Sans-Serif; 
+    font-size: scaled_16px;
+}
+
+QTabWidget::pane { 
+    border: 0px none; 
+}
+
+/* Quit Fusion 360 */
+#firstDescription, #secondDescription {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*
+NB that same settings for scrollbar are defined in Save.css
+We should use some shared css with styling for common controls like scrollbar etc.
+*/
+
+/* */
+/* ScrollBar */
+/* */
+
+QScrollBar{
+    height: 10px;
+    width: 10px;
+    background: #FCFDFF;
+}
+
+QScrollBar::handle {
+    border-radius: 4px;
+    background: #C2C2C2;
+}
+
+QScrollBar::handle:hover {
+    background: #979797;
+}
+
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: none;
+}
+
+/* 
+Without height, width set to 0, the control is invisible but still there. When the handle is at the top / bottom,
+it is not possible to drag the handle because on top of it
+there is the invisible sub-line, add-lne control.
+UP-26722
+*/
+QScrollBar::sub-line, QScrollBar::add-line {
+    height: 0px;  
+    width: 0px;
+    background: none;
+}
+QLabel[cssClass="reminding"] {
+	color: #767676;
+	font-size: 13px;
+	min-height: 0;
+}
+
+QLabel[cssClass="sharedFileWarningMsg"] {
+    border-style: solid;
+    border-width: 1px;
+    background: rgba(250, 162, 27, 0.1);
+    border-color: rgba(250, 162, 27, 0.5);
+    padding: 10px;
+}
+
+QLabel[cssClass="sharedFileWarningIcon"] {
+    border-style: solid;
+    border-width: 1px;
+    background: rgba(250, 162, 27, 1.0);
+    border-color: rgba(250, 162, 27, 0.5);
+    padding: 10px;
+}

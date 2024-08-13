@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>medium-low-density/alert-24 copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M12,2 C6.4771525,2 2,6.4771525 2,12 C2,17.5228475 6.4771525,22 12,22 C17.5228475,22 22,17.5228475 22,12 C22,9.3478351 20.9464316,6.80429597 19.0710678,4.92893219 C17.195704,3.0535684 14.6521649,2 12,2 Z M12,21 C7.02943725,21 3,16.9705627 3,12 C3,7.02943725 7.02943725,3 12,3 C16.9705627,3 21,7.02943725 21,12 C21,14.3869484 20.0517884,16.6761336 18.363961,18.363961 C16.6761336,20.0517884 14.3869484,21 12,21 Z M13,11 L13,17 L11,17 L11,11 L13,11 Z M12,6.75 C12.6903559,6.75 13.25,7.30964406 13.25,8 C13.25,8.69035594 12.6903559,9.25 12,9.25 C11.3096441,9.25 10.75,8.69035594 10.75,8 C10.75,7.30964406 11.3096441,6.75 12,6.75 Z" id="path-1"></path>
+    </defs>
+    <g id="Notifications" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-2.000000, -2.000000)">
+            <g id="02-medium-low-density/info-24">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="🌈-color" fill="#0696D7" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

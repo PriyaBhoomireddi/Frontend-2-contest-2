@@ -1,0 +1,55 @@
+/* ------------------------------------------------------------
+   QTInteractivityMeter
+------------------------------------------------------------ */
+
+QTInteractivityMeter
+{
+    padding: 0px;
+    background: #666666;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #000000;
+    max-height: 20px;
+}
+
+QTInteractivityMeter QHBoxLayout
+{
+    spacing: 8px;
+    margin: 2px 2px 2px 2px;
+}
+
+QTInteractivityMeter QLabel#Name
+{
+    background: none;
+    color: white;
+    alignment: center;
+    max-height: 20px;
+    min-height: 20px;
+}
+
+/* ------------------------------------------------------------
+   QTErrorRateMeter
+------------------------------------------------------------ */
+
+QTErrorRateMeter
+{
+    padding: 0px;
+    background: #666666;
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #000000;
+    max-height: 20px;
+}
+
+QTErrorRateMeter QHBoxLayout
+{
+    spacing: 8px;
+    margin: 2px 2px 2px 2px;
+}
+
+QTErrorRateMeter QLabel#Name
+{
+    background: none;
+    color: white;
+    alignment: center;
+    max-height: 20px;
+    min-height: 20px;
+}

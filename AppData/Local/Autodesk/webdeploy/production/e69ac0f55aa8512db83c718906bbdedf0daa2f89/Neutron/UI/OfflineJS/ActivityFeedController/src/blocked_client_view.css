@@ -1,0 +1,103 @@
+@font-face {
+	font-family: 'Open Sans';
+	src: url('font/OpenSans-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#client_block_message {
+    width: 430px;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #777;
+	margin: auto;
+	padding: 0 30px 20px;
+	line-height: 2em;
+}
+
+body.client_block {
+	background-color: white;
+	border-radius: 3px;
+	border: solid 1px #EFEFEF;
+	box-shadow: 0 2px 5px #000000;
+	font-family: 'Open Sans', Arial, sans-serif;}
+
+#client_block_message * {
+    margin: 10px 0 10px;
+}
+
+#client_block_message h1 {
+	font-size: 22px;
+	font-weight: bold;
+	text-align: left;
+	padding: 30px 0 0;
+	margin: 10px 0 0;}
+
+#client_block_message a {
+	color: #00A5E1;
+	text-decoration: none;
+}
+
+#client_button_paragraph {
+	margin-top: 20px
+}
+
+#client_block_message button.client_draconian_install {
+	color: #FFFFFF;
+	background-color: #00A5E1;
+	border: 1px solid #00A5E1;
+	margin: auto 10px;
+}
+
+a#client_close_button {
+	color: #6E6E6E;
+	background-color: #FAFAFA;
+	border: 1px solid #A2A2A2;
+	margin: auto;
+}
+
+a#client_close_button, #client_block_message button.client_draconian_install {
+	font-size: 13px;
+	font-family:'Open Sans', Arial, sans-serif;
+	line-height: 18px;
+	text-align: center;
+	border-radius: 3px;
+	height: 34px;
+	padding: 8px 40px 8px 40px;
+}
+
+#client_block_message button.client_draconian_install:hover {
+	background-color: #42B6DF;
+	border: 1px solid #42B6DF;
+}
+
+#client_block_message button.client_draconian_install:active {
+	background-color: #007FBE;
+	border: 1px solid #007FBE;
+}
+
+a#client_close_button:hover {
+	border: 1px solid #C9C9C9;
+	background-color: #FFFFFF;
+}
+
+a#client_close_button:active {
+	border: 1px solid #A1A1A1;
+	background-color: #E8E8E8;
+}
+
+#client_close_control {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 20px;
+	height: 20px;
+	background-image: url("assets/close_normal_10_@2x.png");
+	text-decoration: none;
+}
+
+#client_close_control:hover {
+	background-image: url("assets/close_hover_10_@2x.png");
+}
+

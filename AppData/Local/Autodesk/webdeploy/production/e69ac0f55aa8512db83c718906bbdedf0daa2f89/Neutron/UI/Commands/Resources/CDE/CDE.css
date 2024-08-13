@@ -1,0 +1,81 @@
+/*
+Notice that some pixel sizes in this css file are set using schema
+    font-size: scaled_12px;
+etc.
+These scaled_*px values are multiplied with the current ToolbarFramework::Parameters::scaleFactor();
+That means that this css file cannot be used "as-is", but it is a template to be translated in cpp.
+*/
+
+QFrame#CDEViewer {
+    border: 1px solid #D2D2D2;
+    background-color: #FFFFFF;
+}
+
+QFrame#HeaderFrame{
+    border-bottom: 1px solid #D2D2D2;
+    background-color: transparent;
+}
+
+QLabel {
+    color: #666666;
+    font-size: scaled_12px;
+}
+
+QSizeGrip  {
+	color: #6C6C6C;
+}
+
+QLabel:disabled {
+    color: #999999;
+}
+
+QLabel#titleLabel {
+    font-size: 16px;
+    color: #3C3C3C;
+}
+
+QLabel#checklistLabel {
+    font-size: scaled_16px;
+    color: #6C6C6C;
+}
+
+QFrame#MainFrame {
+    margin-top: 0px;
+	margin-right: 0px;
+    margin-bottom: 0px;
+	margin-left: 0px;
+}
+
+QPushButton {
+    background-color: transparent;
+    font-size: scaled_12px;
+    border-radius: 3px;
+    padding: 9px 16px 8px 16px;
+    color: #6C6C6C;
+}
+
+QPushButton#closeButton {
+    border: none;
+}
+
+QHeaderView {
+    background-color: transparent;
+    font-family: Artifakt Element, Arial, Sans-Serif;
+    font-size: scaled_14px;
+    font-weight: 500;
+    color: #3C3C3C;
+    border-bottom: 1px solid #B4B4B4;
+}
+
+QHeaderView::section {
+    background-color: transparent;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 3px;
+    text-transform: uppercase;
+}
+
+QHeaderView::section:horizontal:first {
+    padding-left: 63px;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<root>
+	<Values Text="LOCID=Test">
+		<LOC Module="NsBase" _LCLZId="Test" _LCLZText="Test for localizable xml attribute, please don't translate this."/>
+	</Values>
+</root>

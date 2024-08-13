@@ -1,0 +1,989 @@
+#version 330
+#include "Sketch_circle_ellipse_lt.ogsfh"
+#include "Sketch_ellipse.ogsfh"
+#include "Sketch_line.ogsfh"
+#include "Sketch_line_type_line.ogsfh"
+
+// line type ellipse index texture
+uniform highp texture2D gEllipseLineTypeIndexTex_ : EllipseLineTypeIndexTexture; 
+uniform highp sampler2D gEllipseLineTypeIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gEllipseLineTypeIndexTex_>; };
+
+// line type ellipse draw order texture for retain mode
+uniform highp texture2D gEllipticalArcLineTypeDashDrawOrderZTex_ : EllipticalArcLineTypeDashDrawOrderZTex;
+uniform highp sampler2D gEllipticalArcLineTypeDashDrawOrderZTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gEllipticalArcLineTypeDashDrawOrderZTex_>; };
+
+// line type ellipse distance texture
+uniform highp texture2D gEllipseDistTex_ : EllipseDistTexure; 
+uniform highp sampler2D gEllipseDistTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gEllipseDistTex_>; };
+
+attribute VS_INPUT
+{
+    int VertexID : TEXCOORD0;
+    int InstanceID : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 vso_position;
+    flat vec2 vso_radius;
+    flat vec2 vso_range;
+    flat vec2 vso_center;
+    flat float vso_rotate;
+
+    vec2 vso_uv;
+    flat int vso_colorS;
+    flat float vso_weight;
+    flat int vso_glowColorS; 
+
+    flat int vso_patternIndexS;
+    flat int vso_lt_dotS;
+    flat int vso_lt_invertedS;
+    flat int vso_reservedS;
+    flat vec4 vso_patternProp;
+
+    flat vec2 vso_dist;
+};
+
+attribute pixelOut
+{
+    vec4 pso_color : COLOR0;
+};
+
+GLSLShader Sketch_lt_ellipse
+{
+
+float get_ellipse_curve_dist_to_angle_0(float angle, vec2 radius)
+{
+    while (angle >= TWO_PI)
+        angle -= TWO_PI;
+
+    float arc_len = 0.0f;
+
+    float l_radius = max(radius.x, radius.y);
+
+    float d_angle = 0.5f / l_radius;
+
+    float a2 = radius.x*radius.x;
+    float b2 = radius.y*radius.y;
+
+
+    float cur_angle = 0.0f;
+
+    for (cur_angle = 0.0f; cur_angle < angle; cur_angle += d_angle)
+    {
+        float s, c;
+        s = sin(cur_angle);
+        c = cos(cur_angle);
+
+        arc_len += sqrt(a2*s*s + b2*c*c)*d_angle;
+    }
+
+    return arc_len;
+}
+
+void compute_ellipse_distance(vec2 range, vec2 radius, out vec2 dist)
+{
+    if (is_closed_arc(range))
+    {
+        dist.x = 0.0f;
+        dist.y = get_ellipse_curve_dist_to_angle_0(TWO_PI, radius);
+    }
+    else
+    {
+        dist.x = get_ellipse_curve_dist_to_angle_0(range.x, radius);
+        dist.y = get_ellipse_curve_dist_to_angle_0(range.y, radius);
+    }
+}
+
+}
+
+GLSLShader Ellipse_Line_Type_VS
+{
+
+uint load_lt_ellipse_prim_id(uint id)
+{
+    return load_prim_id_from_tex(gEllipseLineTypeIndexTex, id);
+}
+
+void main()
+{
+     // load primitive index
+    uint primID = load_lt_ellipse_prim_id(uint(gl_InstanceID));
+
+    // load ellipse information
+    EllipseAttr_Dash ellipse_attr;
+    EllipseAttr_LineType linetype_attr;
+    load_ellipse_info_lt(primID, ellipse_attr, linetype_attr);
+    
+    if (gRetainMode)
+    {
+        load_dynamic_draworderz(uint(gl_InstanceID), gEllipticalArcLineTypeDashDrawOrderZTex, ellipse_attr.drawZ);
+    }
+    else
+    {
+        adjust_ellipse(ellipse_attr);
+    }
+    
+    VertexAttr_Ellipse outputDataEllipse = output_vertex_attr_ellipse(uint(gl_VertexID), ellipse_attr);
+
+    // Merge lt_index and lt_dot
+    if (linetype_attr.lt_dot > uint(0))
+        linetype_attr.lt_index = linetype_attr.lt_index | PURE_DOT_MASK;
+
+    VertexAttr_LineType_Arc outputDataLT = VertexAttr_LineType_Arc(uint(0), uint(0), uint(0), uint(0), vec4(0.0f, 0.0f, 0.0f, 0.0f));
+    VertexAttr_LineType_DIST outputDataDST = VertexAttr_LineType_DIST(vec2(0.0f, 0.0f));
+
+    // load linetype information
+    float startSkipLen, endSkipLen, patternOffset, patternScale;
+    load_line_type(primID, ellipse_attr.isLogical & linetype_attr.lt_logical, startSkipLen, endSkipLen, patternOffset, patternScale);
+    set_line_type_properties(linetype_attr, vec4(startSkipLen, endSkipLen, patternOffset, patternScale), outputDataLT);
+
+    outputDataDST.dist = vec2(0.0f, 0.0f);
+    // compute ellipse distance when radius rate > 10.0f
+    if ((outputDataEllipse.radius.x/outputDataEllipse.radius.y > 10.0f) ||
+       (outputDataEllipse.radius.y/outputDataEllipse.radius.x > 10.0f))
+       compute_ellipse_distance(outputDataEllipse.range, outputDataEllipse.radius, outputDataDST.dist);
+
+    gl_Position = outputDataEllipse.position;
+
+    vso_position = outputDataEllipse.position;
+    vso_radius = outputDataEllipse.radius;
+    vso_range = outputDataEllipse.range;
+    vso_center = outputDataEllipse.center;
+    vso_rotate = outputDataEllipse.rotate;
+    vso_uv = outputDataEllipse.uv;
+    vso_colorS = int(outputDataEllipse.color);
+    vso_weight = outputDataEllipse.weight;
+    vso_glowColorS = int(outputDataEllipse.glowColor);
+
+    vso_patternIndexS = int(outputDataLT.patternIndex);
+    vso_lt_dotS = int(outputDataLT.lt_dot);
+    vso_lt_invertedS = int(outputDataLT.lt_inverted);
+    vso_reservedS = int(outputDataLT.reserved);
+    vso_patternProp = outputDataLT.patternProp;
+
+    vso_dist = outputDataDST.dist;
+}
+
+}
+
+GLSLShader Ellipse_Line_Type_PS
+{
+
+float ellipse_distance(vec2 radius, vec2 uv)
+{
+    // compute distance to ellipse
+    float x_len = radius.x;
+    float y_len = radius.y;
+    
+    float a = uv.x / x_len;
+    float b = uv.y / y_len;
+    
+    vec2 dx = dFdx(uv);
+    vec2 dy = dFdy(uv);
+    
+    float x_len_2 = x_len*x_len;
+    float y_len_2 = y_len*y_len;
+    
+    float x_2 = uv.x*uv.x;
+    float y_2 = uv.y*uv.y;
+    
+    float dfx = (2.0f * uv.x) / x_len_2 * dx.x + (2.0f * uv.y) / y_len_2 * dx.y;
+    float dfy = (2.0f * uv.x) / x_len_2 * dy.x + (2.0f * uv.y) / y_len_2 * dy.y;
+    
+    float dist = 0.0f;
+    float df_2 = dfx * dfx + dfy * dfy;
+    
+    if (df_2 > 0.0f)
+        dist = (x_2 / x_len_2 + y_2 / y_len_2 - 1.0f) * inversesqrt(df_2);
+    
+    return abs(dist);
+}
+
+const uint ANGLE_NUM = uint(4096);
+const uint RATE_NUM = uint(1024);
+
+float get_ellipse_angle_distance_tex(float angle, float rate)
+{
+    float angle_step = HALF_PI/(float(ANGLE_NUM)-1.0f);
+    float angle_val = angle/angle_step;
+
+    uint angle_index = uint(angle_val);
+    float angle_bias = angle_val - float(angle_index);
+
+    //float rate_val = (rate - 1.0f)/rate*RATE_NUM;
+    float rate_val = (rate - 1.0f) / 0.01f;
+
+    uint rate_index = uint(rate_val);
+    float rate_bias = rate_val - float(rate_index);
+
+    uint prev_angle, post_angle;
+
+    if (angle_index >= ANGLE_NUM-uint(1))
+    {
+        prev_angle = angle_index;
+        post_angle = angle_index;
+        angle_bias = 0.0f;
+    }
+    else
+    {
+        prev_angle = angle_index;
+        post_angle = angle_index+uint(1);
+    }
+
+    uint prev_rate, post_rate;
+    if (rate_index >= RATE_NUM-uint(1))
+    {
+        prev_rate = rate_index;
+        post_rate = rate_index;
+        rate_bias = 0.0f;
+    }
+    else
+    {
+        prev_rate = rate_index;
+        post_rate = rate_index+uint(1);
+    }
+
+    float prev_val0 = texelFetch(gEllipseDistTex, ivec2(prev_angle, prev_rate), 0).x;
+    float prev_val1 = texelFetch(gEllipseDistTex, ivec2(prev_angle, post_rate), 0).x;
+
+    float prev_val = mix(prev_val0, prev_val1, rate_bias);
+
+    float post_val0 = texelFetch(gEllipseDistTex, ivec2(post_angle, prev_rate), 0).x;
+    float post_val1 = texelFetch(gEllipseDistTex, ivec2(post_angle, post_rate), 0).x;
+
+    float post_val = mix(post_val0, post_val1, rate_bias);
+
+    return mix(prev_val, post_val, angle_bias);
+}
+
+float get_ellipse_circum_div_4(vec2 radius)
+{
+    bool horiz_ellipse = (radius.x >= radius.y);
+
+    float rate;
+    if (horiz_ellipse)
+    {
+        rate = radius.x/radius.y;
+    }
+    else
+    {
+        rate = radius.y/radius.x;
+    }
+
+    float dist = get_ellipse_angle_distance_tex(HALF_PI, rate);
+
+
+    if (horiz_ellipse)
+    {
+        dist = dist*radius.y;
+    }
+    else
+    {
+        dist = dist*radius.x;
+    }
+
+    return dist;
+}
+ 
+float get_ellipse_cur_dist_to_angle_0_tex(float angle, vec2 radius, float circum_div_4)
+{
+    while (angle >= TWO_PI)
+        angle -= TWO_PI;
+
+    // transform to uniform space
+    bool horiz_ellipse = (radius.x >= radius.y);
+
+    float org_angle = angle;
+
+    float rate;
+    if (horiz_ellipse)
+    {
+        rate = radius.x/radius.y;
+
+        if (angle >= ONE_HALF_PI)
+        {
+            angle = TWO_PI - angle;
+        }
+        else if (angle >= PI)
+        {
+            angle = angle - PI;
+        }
+        else if (angle >= HALF_PI)
+        {
+            angle = PI - angle;
+        }
+    }
+    else
+    {
+        rate = radius.y/radius.x;
+
+        if (angle >= ONE_HALF_PI)
+        {
+            angle = angle - ONE_HALF_PI;
+        }
+        else if (angle >= PI)
+        {
+            angle = ONE_HALF_PI - angle;
+        }
+        else if (angle >= HALF_PI)
+        {
+            angle = angle - HALF_PI;
+        }
+        else
+        {
+            angle = HALF_PI - angle;
+        }
+    }
+
+    float dist = get_ellipse_angle_distance_tex(angle, rate);
+
+    // transform back to screen space
+    if (horiz_ellipse)
+    {
+        dist = dist*radius.y;
+
+        if (org_angle >= ONE_HALF_PI)
+        {
+            dist = circum_div_4*4.0f - dist;
+        }
+        else if (org_angle >= PI)
+        {
+            dist = circum_div_4*2.0f + dist;
+        }
+        else if (org_angle >= HALF_PI)
+        {
+            dist = circum_div_4*2.0f - dist;
+        }
+    }
+    else
+    {
+        dist = dist*radius.x;
+
+        if (org_angle >= ONE_HALF_PI)
+        {
+            dist = circum_div_4*3.0f + dist;
+        }
+        else if (org_angle >= PI)
+        {
+            dist = circum_div_4*3.0f - dist;
+        }
+        else if (org_angle >= HALF_PI)
+        {
+            dist = circum_div_4 + dist;
+        }
+        else
+        {
+            dist = circum_div_4 - dist;
+        }
+    }
+
+    return dist;
+}
+
+float func(float s, float c, float r_a, float r_a2, vec2 uv)
+{
+    return -r_a*uv.x*s + uv.y*c + (r_a2 - 1.0f)*s*c;
+}
+
+float compute_point_angle(float px, float py, float r_a)
+{
+    float angle = atan(py, px / r_a);
+
+    if (angle < 0.0)
+        angle = 0.0;
+    if (angle > HALF_PI)
+        angle = HALF_PI;
+
+    return angle;
+}
+
+float ellipse_distance_precise_uniform(float radius, vec2 uv, out bool needAdjust)
+{
+    needAdjust = false;
+
+    float r_a = radius; 
+    float r_a2 = r_a*r_a; // a^2
+
+    float r_c2 = r_a2 - 1.0f;
+    float r_c = sqrt(r_c2);
+
+    float u2 = uv.x*uv.x;
+    float v2 = uv.y*uv.y;
+
+    // on y-axis
+    if (abs(uv.x) < EPS)
+    {
+        return HALF_PI;
+    }
+
+    // on x-axis
+    if (abs(uv.y) < EPS)
+    {
+        if (uv.x > r_a - 1.0/r_a)
+        {
+            return 0.0f;
+        }
+                
+        return acos(uv.x*r_a / (r_a2 - 1.0));
+    }
+
+    float uv_dist = u2 / r_a2 + v2;
+
+    // point on the ellipse
+    if (abs(uv_dist - 1.0) < 0.00001f)
+    {
+        needAdjust = true;
+        return atan(uv.y, uv.x / r_a);
+    }
+
+    // compute intersect point from origin to ellipse
+    float o_len_rcp = inversesqrt(u2 + r_a2*v2);
+    float o_x = uv.x*r_a * o_len_rcp;
+    float o_y = uv.y*r_a * o_len_rcp;
+
+    float angle_o = compute_point_angle(o_x, o_y, r_a);
+
+    // compute intersect point between line x = u and ellipse
+    float l_x;
+    float l_y;
+
+    if (uv.x < r_a)
+    {
+        l_x = uv.x;
+        l_y = sqrt(r_a2 - u2)/r_a;
+    }
+    else
+    {
+        l_x = r_a;
+        l_y = 0.0f;
+    }
+    float angle_l = compute_point_angle(l_x, l_y, r_a);
+
+    // compute intersec point from (c, 0) to elllipse
+    float param_A = ((uv.x - r_c)*(uv.x - r_c) + r_a2*uv.y*uv.y);
+    float param_B = 2.0*r_c*(uv.x - r_c);
+    float param_C = -1.0;
+
+    float b2_4ac = param_B*param_B - 4.0*param_A*param_C;
+    float t = (-param_B + sqrt(b2_4ac)) / (2.0*param_A);
+
+    float p_x = r_c + t*(uv.x - r_c);
+    float p_y = t*uv.y;
+
+    float angle_c = compute_point_angle(p_x, p_y, r_a);
+
+    // choose the smallest range
+    float max_angle;
+    float min_angle;
+
+    float max_x, max_y;
+    float min_x, min_y;
+        
+    if (uv_dist < 1.0) // inside ellipse
+    {
+        min_angle = angle_o;
+        min_x = o_x;
+        min_y = o_y;
+
+        if (angle_l < angle_c)
+        {
+            max_angle = angle_l;
+
+            max_x = l_x;
+            max_y = l_y;
+        }
+        else
+        {
+            max_angle = angle_c;
+
+            max_x = p_x;
+            max_y = p_y;
+        }
+    }
+    else
+    {
+        max_angle = angle_o;
+        max_x = o_x;
+        max_y = o_y;
+
+        if (angle_l > angle_c)
+        {
+            min_angle = angle_l;
+
+            min_x = l_x;
+            min_y = l_y;
+        }
+        else
+        {
+            min_angle = angle_c;
+
+            min_x = p_x;
+            min_y = p_y;
+        }
+    }
+
+    if (abs(max_angle - min_angle) < EPS)
+    {
+        return max_angle;
+    }
+
+    float cur_angle;
+
+    float diff = 999999.0f;
+
+    const uint MAX_ANGLE_STEP = uint(128);
+    uint count = uint(0);
+
+    float sin_max, cos_max;
+    sin_max = sin(max_angle);
+    cos_max = cos(max_angle);
+
+    float sin_min, cos_min;
+    sin_min = sin(min_angle);
+    cos_min = cos(min_angle);
+
+    float f_max = func(sin_max, cos_max, r_a, r_a2,  uv);
+    float f_min = func(sin_min, cos_min, r_a, r_a2,  uv);
+
+    float test_x = 0.0f;
+    float test_y = 0.0f;
+
+    while (abs(diff) > 0.001f)
+    {
+        float delta_x = max_x - min_x;
+        float delta_y = max_y - min_y;
+        float delta_len_rcp = inversesqrt(delta_x*delta_x + delta_y*delta_y);
+
+        float dir_x = delta_x * delta_len_rcp;
+        float dir_y = delta_y * delta_len_rcp;
+
+        float nrm_x = -dir_y;
+        float nrm_y = dir_x;
+
+        float test_angle = atan(nrm_y / (-r_a), -nrm_x);
+
+        if ((test_angle > max_angle - EPS) || (test_angle < min_angle + EPS))
+        {
+            test_angle = (max_angle + min_angle)*0.5f;
+        }
+
+        float sin_test, cos_test;
+        sin_test = sin(test_angle);
+        cos_test = cos(test_angle);
+
+        float test_x = r_a*cos_test;
+        float test_y = sin_test;
+
+        float test_delta_x = uv.x - test_x;
+        float test_delta_y = uv.y - test_y;
+        float test_delta_len_rcp = inversesqrt(test_delta_x*test_delta_x + test_delta_y*test_delta_y);
+
+        float tan_test_x = -r_a*sin_test;
+        float tan_test_y = cos_test;
+        float tan_test_len_rcp = inversesqrt(tan_test_x*tan_test_x + tan_test_y*tan_test_y);
+
+        float tan_x = tan_test_x * tan_test_len_rcp;
+        float tan_y = tan_test_y * tan_test_len_rcp;
+
+        float f_test = func(sin_test, cos_test, r_a, r_a2, uv);
+
+        cur_angle = test_angle;
+        diff = test_delta_x * test_delta_len_rcp*tan_x + test_delta_y * test_delta_len_rcp*tan_y;
+
+        count++;
+
+        if (count > MAX_ANGLE_STEP)
+        {
+            break;
+        }
+
+        if (sign(f_test) != sign(f_min))
+        {
+          
+            max_angle = test_angle;
+
+            max_x = test_x;
+            max_y = test_y;
+
+            f_max = f_test;
+        }
+        else if (sign(f_test) != sign(f_max))
+        {
+            min_angle = test_angle;
+
+            min_x = test_x;
+            min_y = test_y;
+
+            f_min = f_test;
+               
+        }
+        else
+        {
+            float f_final_min = min(abs(f_test), min(abs(f_max), abs(f_min)));
+
+            if (f_final_min == abs(f_test))
+                return test_angle;
+            else if (f_final_min == abs(f_max))
+                return max_angle;
+            else
+                return min_angle;
+        }
+    }
+        
+    return cur_angle;
+}
+
+float ellipse_distance_precise3(vec2 radius, vec2 uv, out bool needAdjust)
+{
+    float hit_angle = 0.0f;
+
+    // transform to uniform space
+    bool horiz_ellipse = (radius.x >= radius.y);
+
+    float radius_a;
+    vec2 new_uv;
+
+    if (horiz_ellipse)
+    {
+        radius_a = radius.x/radius.y;
+        new_uv = abs(uv/radius.y);
+    }
+    else
+    {
+        radius_a = radius.y/radius.x;
+
+        new_uv = abs(uv/radius.x);
+        new_uv = vec2(new_uv.y, new_uv.x);
+    }
+
+    float new_hit_angle =  ellipse_distance_precise_uniform(radius_a, new_uv, needAdjust);
+        
+    // transform back from uniform space
+    if (horiz_ellipse)
+    {
+        if (uv.x >= 0.0f)
+        {
+            if (uv.y < 0.0f)
+            {
+                hit_angle = TWO_PI - new_hit_angle;
+            }
+            else
+            {
+                hit_angle = new_hit_angle;
+            }
+        }
+        else
+        {
+            if (uv.y < 0.0f)
+            {
+                hit_angle = new_hit_angle + PI;
+            }
+            else
+            {    
+                hit_angle = PI - new_hit_angle;
+            }
+        }
+
+    }
+    else
+    {
+        if (uv.x >= 0.0f)
+        {
+            if (uv.y < 0.0f)
+            {
+                hit_angle = ONE_HALF_PI + new_hit_angle;
+            }
+            else
+            {
+                hit_angle = HALF_PI - new_hit_angle;
+            }
+        }
+        else
+        {
+            if (uv.y < 0.0f)
+            {
+                hit_angle = ONE_HALF_PI - new_hit_angle;
+            }
+            else
+            {
+                hit_angle = HALF_PI + new_hit_angle;
+            }
+        }
+
+
+    }
+
+    return hit_angle;
+}
+
+
+void main()
+{
+    uint vso_color = uint(vso_colorS);
+    uint vso_glowColor = uint(vso_glowColorS);
+    uint vso_patternIndex = uint(vso_patternIndexS);
+    uint vso_lt_dot = uint(vso_lt_dotS);
+    uint vso_lt_inverted = uint(vso_lt_invertedS);
+    uint vso_reserved = uint(vso_reservedS);
+
+    VertexAttr_Ellipse inputDataEllipse = VertexAttr_Ellipse(vso_position, vso_radius, vso_range,
+                                                             vso_center, vso_rotate, vso_uv,
+                                                             vso_color, vso_weight, vso_glowColor);
+    
+    VertexAttr_LineType_Arc inputDataLT = VertexAttr_LineType_Arc(vso_patternIndex, vso_lt_dot, vso_lt_inverted,
+                                                                  vso_reserved, vso_patternProp);
+
+    VertexAttr_LineType_DIST inputDataDST = VertexAttr_LineType_DIST(vso_dist);
+    // get current angle on ellipse 
+    bool needAdjust = false;
+    float cur_angle = ellipse_distance_precise3(inputDataEllipse.radius, inputDataEllipse.uv, needAdjust);
+
+    // compute distance to ellipse
+    float sin_angle, cos_angle;
+    sin_angle = sin(cur_angle);
+    cos_angle = cos(cur_angle);
+
+    float pos_x = inputDataEllipse.radius.x*cos_angle;
+    float pos_y = inputDataEllipse.radius.y*sin_angle;
+
+    float dist = length(inputDataEllipse.uv - vec2(pos_x, pos_y));
+
+    // if above distance is not accurate, we need to adjust it with another method
+    if (needAdjust)
+    {
+        dist = ellipse_distance(inputDataEllipse.radius, inputDataEllipse.uv);
+    }
+    
+    // check if ellipse is in arc range
+    if (!angle_is_in_range(cur_angle, inputDataEllipse.range))
+        discard;
+
+    if (gNoAAMode != 0)
+    {
+        if (!in_lw_ellipse(inputDataEllipse.weight, dist) && not_in_ellipse(inputDataEllipse))
+            discard;
+    }
+       
+    // linetype
+    bool is_dot;
+    bool no_aa;
+    float dot_dist;
+
+    float dist_to_start;
+    float dist_to_end;
+
+    // compute ellipse distance
+    float circum_div_4 = get_ellipse_circum_div_4(inputDataEllipse.radius);
+    float cur_dist_to_0;
+    
+    // if ellipse ratio > 10, we are using integration.
+    if ((inputDataEllipse.radius.x/inputDataEllipse.radius.y > 10.0f) ||
+        (inputDataEllipse.radius.y/inputDataEllipse.radius.x > 10.0f ))
+    {
+        cur_dist_to_0 = get_ellipse_curve_dist_to_angle_0(cur_angle, inputDataEllipse.radius);
+
+        if (inputDataDST.dist.x < inputDataDST.dist.y)
+        {
+            dist_to_start = cur_dist_to_0 - inputDataDST.dist.x;
+            dist_to_end = inputDataDST.dist.y - cur_dist_to_0;
+        }
+        else
+        {
+            if (cur_dist_to_0 > inputDataDST.dist.x)
+                dist_to_start = cur_dist_to_0 - inputDataDST.dist.x;
+            else
+                dist_to_start = circum_div_4*4.0f - inputDataDST.dist.x + cur_dist_to_0;
+
+            if (cur_dist_to_0 > inputDataDST.dist.y)
+                dist_to_end = circum_div_4*4.0f - cur_dist_to_0 + inputDataDST.dist.y;
+            else
+                dist_to_end = inputDataDST.dist.y - cur_dist_to_0;
+        }
+    }
+    // else we are using table searching for better performance
+    else
+    {
+        
+        cur_dist_to_0 = get_ellipse_cur_dist_to_angle_0_tex(cur_angle, inputDataEllipse.radius, circum_div_4);
+        float start_dist_to_0 = get_ellipse_cur_dist_to_angle_0_tex(inputDataEllipse.range.x, inputDataEllipse.radius, circum_div_4);
+        float end_dist_to_0 = get_ellipse_cur_dist_to_angle_0_tex(inputDataEllipse.range.y, inputDataEllipse.radius, circum_div_4);
+
+        if (start_dist_to_0 < end_dist_to_0)
+        {
+            dist_to_start = cur_dist_to_0 - start_dist_to_0;
+            dist_to_end = end_dist_to_0 - cur_dist_to_0;
+        }
+        else
+        {
+            if (cur_dist_to_0 > start_dist_to_0)
+                dist_to_start = cur_dist_to_0 - start_dist_to_0;
+            else
+                dist_to_start = circum_div_4*4.0f - start_dist_to_0 + cur_dist_to_0;
+
+            if (cur_dist_to_0 > end_dist_to_0)
+                dist_to_end = circum_div_4*4.0f - cur_dist_to_0 + end_dist_to_0;
+            else
+                dist_to_end = end_dist_to_0 - cur_dist_to_0;
+        }
+    }
+
+    // revert distance result if necessary
+    if (inputDataLT.lt_inverted != uint(0))
+    {
+        float tmp = dist_to_start;
+        dist_to_start = dist_to_end;
+        dist_to_end = tmp;
+    }
+
+    vec4 color;
+   
+    // for wide arc
+    if (inputDataEllipse.weight > 1.0f)
+    {
+        WideLinePatternResult left_attr;
+        WideLinePatternResult right_attr;
+
+        WideLinePatternAttr attr;
+        attr.dist = dist;
+        attr.width = inputDataEllipse.weight;
+        attr.startDist = dist_to_start;
+        attr.endDist = dist_to_end;
+        attr.startSkipLen = inputDataLT.patternProp.x;
+        attr.endSkipLen =  inputDataLT.patternProp.y;
+        attr.patternScale = inputDataLT.patternProp.z;
+        attr.patternOffset = inputDataLT.patternProp.w;
+        attr.patternIndex = inputDataLT.patternIndex;
+
+        WideEllipseInfo info;
+        info.inverted = (inputDataLT.lt_inverted != uint(0));
+        info.radius = inputDataEllipse.radius;
+        info.range = inputDataEllipse.range;
+        info.hasPrevLine = false;
+        info.hasPostLine = false;
+        info.isCircle = false;
+        info.curAngle = cur_angle;
+
+        int res = check_widearc_line_pattern(attr, info, glowWidth(),
+            left_attr,
+            right_attr);
+
+        if (res == PURE_SPACE)
+           discard;
+
+        float width = adjust_line_width_wide_line(uint(inputDataEllipse.weight));
+
+        if (res == PURE_DASH)
+        {
+            if (gNoAAMode != 0)
+            {
+#ifdef ANALYTIC_HIGHLIGHT
+                bool in_sharp = in_lw_ellipse(width, dist) || !not_in_ellipse(inputDataEllipse);
+                color = compute_highlight_sharp_color(dist, width, inputDataEllipse.color, inputDataEllipse.glowColor, in_sharp);
+#else
+                color = get_formatted_color(inputDataEllipse.color, 1.0f);
+#endif
+            }
+            else
+            {
+                color = compute_final_color(dist, width, inputDataEllipse.color, inputDataEllipse.glowColor);
+            }
+        }
+        else
+        {
+            vec4 left_color;
+            vec4 right_color;
+
+            if (gNoAAMode != 0)
+            {
+                left_color = compute_wide_pattern_color_sharp_curve(left_attr, width,
+                    inputDataEllipse.color, inputDataEllipse.glowColor, inputDataEllipse.uv, uint(2));
+
+                right_color = compute_wide_pattern_color_sharp_curve(right_attr, width,
+                    inputDataEllipse.color, inputDataEllipse.glowColor, inputDataEllipse.uv, uint(2));
+            }
+            else
+            {
+                left_color = compute_wide_pattern_color(left_attr, width,
+                    inputDataEllipse.color, inputDataEllipse.glowColor, inputDataEllipse.uv, uint(2));
+
+                right_color = compute_wide_pattern_color(right_attr, width,
+                    inputDataEllipse.color, inputDataEllipse.glowColor, inputDataEllipse.uv, uint(2));
+            }
+
+
+            color = (left_color.a >= right_color.a)? left_color:right_color;
+            
+        } 
+    }
+    // for single arc
+    else
+    {
+        SimpleLineTypeAttr attr = SimpleLineTypeAttr(0.0f, 0.0f, 0.0f, 0.0f, 0.0f, vec2(0.0f, 0.0f),
+                                                     0.0f, 0.0f, uint(0), false, false);
+        attr.startDist = dist_to_start;
+        attr.endDist = dist_to_end;
+        attr.startSkipLen = inputDataLT.patternProp.x;
+        attr.endSkipLen = inputDataLT.patternProp.y;
+        attr.patternScale = inputDataLT.patternProp.z;
+        attr.patternOffset = inputDataLT.patternProp.w;
+        attr.patternID = inputDataLT.patternIndex;
+        attr.isClosed = is_closed_arc(inputDataEllipse.range);
+        attr.isCurve = true;
+
+        if (gNoAAMode != 0)
+            attr.lineDir = ellipse_dir(inputDataEllipse);
+
+        SimpleLineTypeResult result;
+        bool display = check_line_pattern(attr, result);
+
+        if (!display)
+            discard;
+
+        if (result.isDot && !result.noDotAA)
+        {
+            float dist_to_dot_center = sqrt(dist*dist + result.dotDist * result.dotDist);
+
+            if (gNoAAMode != 0)
+            {
+#ifdef ANALYTIC_HIGHLIGHT
+                color = compute_highlight_sharp_color(get_extended_dist_to_center(dist_to_dot_center), get_extended_line_type_dot_weight(inputDataEllipse.weight), inputDataEllipse.color, inputDataEllipse.glowColor, true);
+#else
+                color = get_formatted_color(inputDataEllipse.color, 1.0f);
+#endif
+            }
+            color = compute_final_color(get_extended_dist_to_center(dist_to_dot_center), get_extended_line_type_dot_weight(inputDataEllipse.weight), inputDataEllipse.color, inputDataEllipse.glowColor);
+        }
+        else
+        {
+            if (gNoAAMode != 0)
+            {
+#ifdef ANALYTIC_HIGHLIGHT
+                color = compute_highlight_sharp_color(get_extended_dist_to_center(dist), get_extended_line_type_dot_weight(inputDataEllipse.weight), inputDataEllipse.color, inputDataEllipse.glowColor, true);
+#else
+                color = get_formatted_color(inputDataEllipse.color, 1.0f);
+#endif
+            }
+            else
+            {
+                color = compute_final_color(get_extended_dist_to_center(dist), get_extended_line_weight(inputDataEllipse.weight), inputDataEllipse.color, inputDataEllipse.glowColor);
+            }
+        }
+    }
+
+    if (color.a < 0.01f)
+        discard;
+    pso_color = OIT_PS_OUTPUT(color, vso_position);  
+}
+
+}
+
+technique Ellipse_Line_Type
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = Ellipse_Line_Type_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = Ellipse_Line_Type_PS;
+    }
+}
+

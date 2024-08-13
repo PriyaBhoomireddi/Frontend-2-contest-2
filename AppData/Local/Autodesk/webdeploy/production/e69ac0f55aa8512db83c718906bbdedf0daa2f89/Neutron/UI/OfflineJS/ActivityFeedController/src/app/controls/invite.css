@@ -1,0 +1,108 @@
+.invite {
+    position: absolute;
+    width:348px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.invite .invitecontent {
+    position: relative;
+    width:276px;
+    height: auto;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+.invite .inviteinputcontent {
+    overflow: auto;
+    border-radius: 3px;
+}
+
+.invite .token {
+    position: relative;
+    display: inline-block;
+    float: left;
+    height:18px;
+    line-height: 18px;
+    text-align: center;
+    background-color: #eff2f7;
+    border-radius: 2px;
+    color: #646464;
+    border: 1px solid #ccd5e4;
+    cursor: default;
+    margin: 4px 0px 4px 4px;
+    padding: 0px 20px 0px 2px;
+}
+
+.invite .token .close {
+    position:absolute;
+    right: 0px;
+    top: 0px;
+    width: 20px;
+    height: inherit;
+    background: url('../../assets/close_cross.png') no-repeat center;
+    cursor: default;
+}
+
+.invite input {
+    color: #646464;
+    border : none;
+    box-sizing: border-box;
+    height: 28px;
+    font-style: italic;
+    min-width: 138px;
+    max-width: inherit;
+    width: 100%;
+    float:left;
+    -webkit-appearance:none;
+    border-radius: 3px;
+    padding-left: 4px;
+}
+
+.invite input:disabled {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.invite input[type="search"]::-webkit-search-decoration,
+.invite input[type="search"]::-webkit-search-cancel-button,
+.invite input[type="search"]::-webkit-search-results-button,
+.invite input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+/* taken from #projectDetailData .actionButton.upload */
+.invite .invitebtn {
+    position: absolute;
+    transition: top 0.25s linear;
+    -webkit-transition: top 0.25s linear;
+/*.contributors .actionButton.upload {*/
+    background-color: #6896C8;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: default;
+/*.contributors .rbtn { */
+    right:0px;
+    top: 0px;
+    height: 28px;
+    line-height: 28px;
+    width: 62px;
+    text-align: center;
+}
+
+.invite .invitebtn:hover {
+    background-color: #70A2C6;
+ }
+
+.invite .invitebtn._disabled_
+{
+    background-color: #8A8A8A;
+}
+
+.invite .inputResp {
+    width:inherit;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+}

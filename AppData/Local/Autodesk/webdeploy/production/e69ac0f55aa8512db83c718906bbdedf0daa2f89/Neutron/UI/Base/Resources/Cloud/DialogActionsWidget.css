@@ -1,0 +1,69 @@
+/*
+Notice that some pixel sizes in this css file are set using schema
+    font-size: scaled_12px;
+etc.
+These scaled_*px values are multiplied with the current ToolbarFramework::Parameters::scaleFactor();
+That means that this css file cannot be used "as-is", but it is a template to be translated in cpp.
+*/
+
+#StyleCommitAction, #StyleCancelAction {
+    font-size: scaled_12px;
+    border-radius: 3px;
+    padding: 4px 16px 4px 16px;
+    color: #3c3c3c;
+    background-color: #FFFFFF;
+    border: 1px solid #A2A2A2;
+    margin-top: 5px;
+    margin-bottom: 18px;
+    margin-right: 15px;
+}
+
+    #StyleCancelAction:disabled {
+        color: 808080;
+    }
+
+    #StyleCancelAction:hover {
+        background-color: #F7F7F7;
+    }
+
+    #StyleCancelAction:pressed {
+        background-color: #eeeeee;
+    }
+
+#StyleCommitAction {
+    background-color: transparent;
+    background-color: #0696d7;
+    border: 1px solid #0696d7;
+    color: #FFFFFF;
+}
+
+    #StyleCommitAction:disabled {
+        background-color: #6ac0e7;
+        border: 1px solid #6ac0e7;
+    }
+
+    #StyleCommitAction:hover {
+        background-color: #38abdf;
+        border: 1px solid #38abdf;
+    }
+
+    #StyleCommitAction:pressed {
+        background-color: #007EC0;
+        border: 1px solid #007EC0;
+    }
+
+#StyleIcon {
+    border: none;
+    font-family: Arial, Sans-Serif;
+    color: #6C6C6C;
+    font-weight: bold;
+    font-size: scaled_12px;
+    text-align: left;
+    padding-left: 10px;
+    margin-left: 3px;
+}
+
+#mainFrame {
+    padding-left: 10px;
+    padding-right: 10px;
+}

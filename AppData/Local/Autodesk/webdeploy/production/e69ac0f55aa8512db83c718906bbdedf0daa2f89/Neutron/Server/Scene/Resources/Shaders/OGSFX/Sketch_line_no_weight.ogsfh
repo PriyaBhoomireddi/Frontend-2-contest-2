@@ -1,0 +1,74 @@
+#ifndef _HQ_FX_LINE_NW_H_
+#define _HQ_FX_LINE_NW_H_
+
+#include "Sketch_line.ogsfh"
+
+GLSLShader Sketch_line_no_weight
+{
+
+vec2 get_logical_line_envelope_pos(uint vid, uint line_flag, uint line_width, vec2 start_point, vec2 end_point, out float dist, out bool isDot)
+{
+    float weight_expand = get_line_weight_expand(float(line_width));
+    float wide_line_expand = weight_expand*0.5f + 1.0f;
+
+    vec2 uv = get_rect_pos(vid);
+
+    vec2 fstart = logic_to_ndc(start_point);
+    vec2 fend = logic_to_ndc(end_point);
+    vec2  screen_start = ndc_to_screen(fstart);
+    vec2  screen_end = ndc_to_screen(fend);
+
+    if (gNoAAMode != 0)
+    {
+        screen_start = trunc(screen_start) + vec2(0.5f, 0.5f);
+        screen_end = trunc(screen_end) + vec2(0.5f, 0.5f);
+        fstart = screen_to_ndc_pos(screen_start);
+        fend = screen_to_ndc_pos(screen_end);
+    }
+
+    vec2  screen_len = screen_end - screen_start;
+    vec2 dir = normalize(screen_len);
+    float  xoffset = ENDPOINT_EXTEND;
+
+    isDot = false;
+    if (abs(screen_len.x) < 1.0f && abs(screen_len.y) < 1.0f)
+    {
+        dir = vec2(1.0f, 0.0f);
+        vec2 screen_pos = offset_screen_pos(vec2((screen_start + screen_end)*0.5f));
+        vec2  fcenter = screen_to_ndc_pos(screen_pos);
+        xoffset = 0.5f;
+        wide_line_expand = 0.5f;
+        fstart = fcenter;
+        fend = fcenter;
+        if ((line_flag & HAS_PREV_LINE) != uint(0))
+        {
+            vec2 start_pixel = vec2(offset_screen_pos(screen_start));
+            vec2 end_pixel = vec2(offset_screen_pos(screen_end));
+            if ((start_pixel.x == end_pixel.x) && (start_pixel.y == end_pixel.y))
+            {
+                xoffset = 0.0f;
+                wide_line_expand = 0.0f;
+            }
+        }
+
+        isDot = (((line_flag & IS_FIRST_SEG) != uint(0)) && ((line_flag & IS_LAST_SEG) != uint(0)));
+    }
+    dist = uv.y*(wide_line_expand);
+    vec2 extrude = gPixelLen*(uv.x* dir * xoffset + uv.y * wide_line_expand*vec2(dir.y, -dir.x));
+    vec2 curPoint = (uv.x < 0.0f) ? fstart : fend;
+    vec2 Hpm = curPoint + extrude;
+    return Hpm;
+
+}
+
+// for single line, set line-weight to 1.2f for fine tuning anti-aliasing effect
+void adjust_line_width_single_line(inout uint width)
+{
+    // adjust line-width
+    if (float(width) <= 1.0f)
+        width = uint(SINGLE_LINE_WIDTH_EXPAND);
+}
+
+}
+
+#endif // _HQ_FX_LINE_NW_H_

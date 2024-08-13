@@ -1,0 +1,19 @@
+<div id="retractionPolicy"><p>Controlla in che modo l'utensile si sposta tra passaggi di taglio.</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="125" height="125" src="../images/retractionPolicy_FullRetraction.png"/></center></td>
+<td><center><img border="0" width="125" height="125" src="../images/retractionPolicy_MinimumRetraction.png"/></center></td>
+<td><center><img border="0" width="125" height="125" src="../images/retractionPolicy_ShortestPath.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Retrazione completa</b></p></center></td>
+<td><center><p><b>Retrazione minima</b></p></center></td>
+<td><center><p><b>Percorso più breve</b></p></center></td>
+</tr></table>
+<p><em>Visualizzato con Flow</em></p>
+<br>
+<p><b>Retrazione completa</b> - Retrae completamente l'utensile all'altezza di retrazione alla fine del passaggio prima di spostarsi sopra l'inizio del passaggio successivo.</p>
+<p><b>Retrazione minima</b> - Si sposta direttamente fino all'altezza più bassa dove l'utensile lavorerà il pezzo, oltre a qualsiasi distanza di sicurezza specificata.</p>
+<p><b>Percorso più breve</b> - Sposta l'utensile alla distanza più breve possibile in linea retta tra i percorsi.</p>
+<p><b>ATTENZIONE:</b> il percorso più breve non dovrebbe essere utilizzato su macchine che non supportano movimenti rapidi linearizzati dove i movimenti G0 sono rettilinei (rispetto ai movimenti G0 che guidano tutti gli assi alla massima velocità, talvolta indicati come movimenti dogleg). La mancata osservanza di questa regola comporterà un movimento della macchina che non può essere adeguatamente simulato dal software e <em>può causare collisioni utensili</em>.</p>
+<p>Per le macchine CNC che non supportano movimenti rapidi linearizzati, il post-processor può essere modificato per convertire tutti i movimenti G0 in movimenti G1 ad alta velocità. Contattare il supporto tecnico per ulteriori informazioni o istruzioni su come modificare i post-processor come descritto.</p>
+</div>

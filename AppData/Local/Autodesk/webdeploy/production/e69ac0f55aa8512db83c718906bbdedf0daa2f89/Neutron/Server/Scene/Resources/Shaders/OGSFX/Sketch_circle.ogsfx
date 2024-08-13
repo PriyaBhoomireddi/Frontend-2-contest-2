@@ -1,0 +1,144 @@
+#version 330
+#include "Sketch_circle.ogsfh"
+
+// circle primitive index texture
+uniform highp texture2D gCircleIndexTex_ : CircleIndexTexture;
+uniform highp sampler2D gCircleIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gCircleIndexTex_>; };
+uniform highp texture2D gCircleArcDashDrawOrderZTex_ : CircleArcDashDrawOrderZTex;
+uniform highp sampler2D gCircleArcDashDrawOrderZTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gCircleArcDashDrawOrderZTex_>; };
+
+attribute VS_INPUT
+{
+    int VertexID : TEXCOORD0;
+    int InstanceID : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 vso_position;
+    flat vec2 vso_radius;
+    flat vec2 vso_range;
+    flat vec2 vso_center;
+    flat float vso_rotate;
+    vec2 vso_uv;
+    flat int vso_colorS;
+    flat float vso_weight;
+    flat int vso_glowColorS;
+};
+
+attribute pixelOut
+{
+    vec4 pso_color : COLOR0;
+};
+
+GLSLShader Circle_Dash_VS
+{
+
+// load primitive id
+uint load_circle_prim_id(uint id)
+{
+    return load_prim_id_from_tex(gCircleIndexTex, id);
+}
+
+void main()
+{
+    // load primitive index
+    uint primID = load_circle_prim_id(uint(gl_InstanceID));
+
+    // load ellipse information
+    EllipseAttr_Dash ellipse_attr;
+    load_ellipse_info(primID, ellipse_attr);
+
+    if (gRetainMode)
+    {
+        load_dynamic_draworderz(uint(gl_InstanceID), gCircleArcDashDrawOrderZTex, ellipse_attr.drawZ);
+    }
+    else 
+    {
+        adjust_circle(ellipse_attr);
+    }
+
+
+    VertexAttr_Ellipse outData = output_vertex_attr_ellipse(uint(gl_VertexID), ellipse_attr);
+
+    gl_Position = outData.position;
+
+    vso_position = outData.position;
+    vso_radius = outData.radius;
+    vso_range = outData.range;
+    vso_center = outData.center;
+    vso_rotate = outData.rotate;
+    vso_uv = outData.uv;
+    vso_colorS = int(outData.color);
+    vso_weight = outData.weight;
+    vso_glowColorS = int(outData.glowColor);
+}
+
+}
+
+GLSLShader Circle_Dash_PS
+{
+
+bool valid_range_circle(VertexAttr_Ellipse inputData)
+{
+    return valid_range(inputData.radius, inputData.uv, inputData.range);
+}
+float circle_distance(VertexAttr_Ellipse inputData)
+{
+    return abs(sqrt(inputData.uv.x*inputData.uv.x + inputData.uv.y*inputData.uv.y) - inputData.radius.x);
+}
+
+void main()
+{
+    uint vso_color = uint(vso_colorS);
+    uint vso_glowColor = uint(vso_glowColorS);
+
+    vec4 pixelPos = vso_position * vec4(0.5f, 0.5f, 1.0f, 1.0f) + vec4(0.5f, 0.5f, 0.0f, 0.0f);
+    pixelPos.xy = pixelPos.xy*gScreenSize;
+
+    VertexAttr_Ellipse inputData = VertexAttr_Ellipse(pixelPos, vso_radius, vso_range, vso_center, vso_rotate, vso_uv, vso_color, vso_weight, vso_glowColor);
+
+    if (!valid_range_circle(inputData))
+        discard;
+
+    float width = adjust_line_width_wide_line(uint(inputData.weight));
+    float dist = circle_distance(inputData);
+    
+    vec4 color;
+
+    if (gNoAAMode != 0)
+    {
+#ifdef ANALYTIC_HIGHLIGHT
+        if (not_in_circle(inputData, inputData.weight))
+            discard;
+
+        bool in_sharp = !not_in_circle(inputData, width);
+        color = compute_highlight_sharp_color(dist, width, inputData.color, inputData.glowColor, in_sharp);
+#else
+        if (not_in_circle(inputData, width))
+            discard;
+
+        color = get_formatted_color(inputData.color, 1.0f);
+#endif
+    }
+    else
+    {
+        color = compute_final_color(dist, width, inputData.color, inputData.glowColor);
+    }
+
+    if (color.a < 0.01f)
+        discard;
+    pso_color = OIT_PS_OUTPUT(color, vso_position);  
+}
+
+}
+
+technique Circle_Dash
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = Circle_Dash_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = Circle_Dash_PS;
+    }
+}
+

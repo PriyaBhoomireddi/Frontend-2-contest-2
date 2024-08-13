@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<HardwareLibrary>
+	<OS value="Windows">
+		<Vendor value="NVIDIA">
+			<Device value="GeForce 9600M GT" Rating="Yellow" Workarounds="00000001"/>
+	    	<Device value="Quadro FX 380 LP" Rating="Yellow" Workarounds="00000001"/>
+	    	<Device value="Quadro FX 1800M" Rating="Yellow" Workarounds="00000001"/>
+	    	<Device value="Quadro FX 1600M" Rating="Yellow" Workarounds="00000001"/>
+	    	<Device value="NVS 3100M" Rating="Yellow" Workarounds="00000001"/>
+	    	<Device value="Quadro 2000M" Rating="Yellow" Workarounds="00000008"/>
+	    	<Device value="Quadro FX 2800M" Rating="Yellow" Workarounds="00000008"/>
+    	</Vendor>
+    	<Vendor value="ATI">
+    		<Device value="AMD Radeon(TM) R5 Graphics" Rating="Yellow" Workarounds="00000128"/>
+    		<Device value="AMD Radeon(TM) R4 Graphics" Rating="Yellow" Workarounds="00000128"/>
+    		<Device value="AMD Radeon(TM) R2 Graphics" Rating="Yellow" Workarounds="00000128"/>
+    	</Vendor>
+    	<Vendor value="INTEL">
+	    	<Device value="Intel(R) HD Graphics" Rating="Yellow" Workarounds="00000128"/>
+	    	<Device value="Intel(R)" Rating="Yellow" Workarounds="00000004"/>
+	    	<Device value="Intel(R) Iris(TM) Graphics 5100" Rating="Yellow" Workarounds="00000128"/>
+	    	<Device value="Intel(R) Iris(TM) Pro Graphics 5200" Rating="Yellow" Workarounds="00000128"/>
+	    	<Device value="Intel(R) Iris(TM) Graphics 6100" Rating="Yellow" Workarounds="00000128"/>
+	    	<Device value="Express Chipset" Rating="Yellow" Workarounds="00000001"/>
+	    	<Device value="Intel(R) GMA 3100" Rating="Red" Workarounds="00000002"/>
+	    	<Device value="Intel(R) GMA 950" Rating="Red" Workarounds="00000002"/>
+    	</Vendor>
+  	</OS>
+  	<OS value="Mac">
+  		<Vendor value="NVIDIA">
+  	  		<Device value="GeForce GT 650M" Rating="Green" Workarounds="00000016"/>
+	    	<Device value="GeForce GTX 675" Rating="Green" Workarounds="00000016"/>
+		    <Device value="GeForce GT 750M" Rating="Green" Workarounds="00000016"/>
+		    <Device value="GeForce GTX 750" Rating="Green" Workarounds="00000016"/>
+	    	<Device value="GeForce GTX 775" Rating="Green" Workarounds="00000016"/>
+	      	<Device value="GeForce 8600 GT" Rating="Yellow" Workarounds="00000032"/>
+	      	<Device value="GeForce 8800 GT" Rating="Yellow" Workarounds="00000032"/>
+      		<Device value="GeForce 8600M GT" Rating="Yellow" Workarounds="00000032"/>
+	      	<Device value="GeForce 8800M GT" Rating="Yellow" Workarounds="00000032"/>
+  	  		<Device value="GeForce 9600M GT" Rating="Yellow" Workarounds="00000032"/>
+      		<Device value="Quadro FX 5600" Rating="Yellow" Workarounds="00000032"/>
+		    <Device value="GeForce GT 120" Rating="Yellow" Workarounds="00000032"/>
+  		</Vendor>
+	  	<Vendor value="INTEL">
+      		<Device value="Iris" Rating="Yellow" Workarounds="00000032"/>
+      		<Device value="Iris Pro" Rating="Yellow" Workarounds="00000032"/>
+      		<Device value="HD Graphics" Rating="Yellow" Workarounds="00000032"/>
+	    	<Device value="HD Graphics 5300" Rating="Yellow" Workarounds="00000064"/>
+	    	<Device value="HD Graphics 6000" Rating="Yellow" Workarounds="00000064"/>
+	    	<Device value="Graphics 6100" Rating="Yellow" Workarounds="00000064"/>
+	    	<Device value="Iris(TM) Plus" Rating="Yellow" Workarounds="00000512"/>
+	  	</Vendor>
+	  	<Vendor value="ATI">
+	    	<Device value="Radeon HD 4670" Rating="Green" Workarounds="00000016"/>
+	    	<Device value="Radeon HD 6750" Rating="Green" Workarounds="00000016"/>
+      		<Device value="Radeon HD 6770" Rating="Green" Workarounds="00000016"/>
+      		<Device value="Radeon R9 M290" Rating="Green" Workarounds="00000016"/>
+      		<Device value="FirePro D300" Rating="Green" Workarounds="00000016"/>
+	  	</Vendor>
+	</OS>
+</HardwareLibrary>

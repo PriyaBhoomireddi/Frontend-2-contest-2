@@ -1,0 +1,83 @@
+.dashboardSelect {
+    position: absolute;
+    height: 23px;
+    font-size: 16px;
+    color: #646464;
+}
+
+.dashboardSelect .contextBtn{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: url("../../assets/triangle_white.png") #b8b8b8 no-repeat center center;
+    background-size: 6px 4px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    cursor: default;
+}
+
+.dashboardSelect .projectName{
+    display: inline-block;
+    padding: 0 15px 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: url("../../assets/triangle.png") no-repeat right center;
+    background-size: 6px;
+    cursor: default;
+}
+
+.dashboardSelect .projectName:hover{
+    color: #6693CC;
+    background: url("../../assets/triangle_hover.png") no-repeat right center;
+    background-size: 6px;
+}
+
+#dashboardSelectMenu {
+    position: absolute;
+    padding: 10px;
+    border: 2px solid #808080;
+    height: 0;
+    overflow: hidden;
+    background-color: #F7F7F7;
+    z-index: 10;
+    font-size: 12px;
+    left: 12px;
+    transition: height 0.2s ease-out;
+    -webkit-transition: height 0.2s ease-out;
+    border-radius: 2px;
+    color: #484848;
+    max-width: 350px;
+}
+
+#dashboardSelectMenu .option {
+    padding: 1px 5px 1px 30px;
+    cursor: default;
+    background: no-repeat 4px center;
+    background-size: 22px;
+    height: 30px;
+    overflow: hidden;
+}
+
+#dashboardSelectMenu .option.corrupted{
+    background-image: url("../../assets/alert_icon_orange.png");
+}
+
+#dashboardSelectMenu .option div {
+    padding: 0px 4px 0px 4px;
+    cursor: default;
+    height: 30px;
+    line-height: 30px;
+    white-space: nowrap;
+}
+
+#dashboardSelectMenu .optionSeparator {
+    margin: 8px 0px;
+    cursor: default;
+    background-color: lightgray;
+    height: 1px;
+}
+
+#dashboardSelectMenu .option:hover div {
+    background-color: #bebebe;
+}

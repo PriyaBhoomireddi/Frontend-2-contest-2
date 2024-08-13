@@ -1,0 +1,234 @@
+//#define LOCAL_VIEWER
+#define FLIP_BACKFACING_NORMALS
+#define CLIPPING
+
+#define LIGHT_DIRECTIONAL_MULTIPLE
+
+#ifdef CLIPPING
+#include "Clipping.ogsfh"
+#endif
+
+#include "LightArray.ogsfh"
+
+// World transformation.
+uniform mat4 gWXf : World;
+
+// World transformation, inverse transpose.
+uniform mat4 gWITXf : WorldInverseTranspose;
+
+// World-view transformation
+uniform mat4 gWV : WorldView;
+
+// World-View-projection transformation.
+uniform mat4 gWVPXf : WorldViewProjection;
+
+#ifdef LOCAL_VIEWER
+	uniform mat4 gVIXf : ViewInverse;
+#else
+	uniform vec3 gViewDirection : ViewDirection;
+#endif
+
+
+// Whether the projection matrix flips Z: -1.0 if so, otherwise 1.0.
+uniform float gProjZSense : ProjectionZSense;
+
+// 0.0 for horizontal, 0.5 for diagonal, 1.0 for vertical
+uniform float  gStripeDir : StripeDir = 0.5;                   
+
+// controls the density of the zebra striping
+uniform float  gStripeDensity : StripeDensity = 20.0;                  
+
+// The first color of the stripe
+uniform vec3 gStripeColor0 : StripeColor0 = { 0.0, 0.0, 0.5 };       
+
+// The second color of the stripe
+uniform vec3 gStripeColor1 : StripeColor1 = { 1.0, 0.8, 0.5 };   
+
+// The stripe are generated in world space using normal: locked mode
+uniform bool gLocked : StripeLocked = false; 
+
+// Emissive color.
+uniform vec3 gEmiColor : Emissive = {0.0, 0.0, 0.0};
+
+// Ambient color.
+uniform vec3 gAmbColor : Ambient = {1.0, 1.0, 1.0};
+
+// Diffuse color.
+uniform vec3 gDiffColor : Diffuse = {1.0, 1.0, 1.0};
+
+// Specular color.
+uniform vec3 gSpecColor : Specular = {1.0, 1.0, 1.0};
+
+// Glossiness (specular power).
+uniform float gGlossiness : SpecularPower = 32.0;
+
+// Opacity factor.
+uniform float gOpacity : Opacity = 1.0;
+
+// Base texture.
+uniform texture2D gZebraTex : ZebraTexture;
+
+// Base texture sampler.
+uniform sampler2D gZebraSamp : ZebraTextureSampler = sampler_state
+{
+    Texture = <gZebraTex>;
+};
+
+// Depth priority, which shifts the model a bit forward in the z-buffer
+uniform float gDepthPriority : DepthPriority = 0.0;
+
+attribute VS_INPUT
+{
+    vec3 Pos  : POSITION;
+    vec3 Normal  : NORMAL;
+};
+
+attribute VS_TO_PS
+{
+    vec4 HPos       : POSITION;
+    vec3 ViewVec    : TEXCOORD0;
+    vec3 EyeNormal  : TEXCOORD1;
+#ifdef CLIPPING
+    // World position, for CLIPPING
+    vec4 HPw 	: TEXCOORD2;
+#endif
+    vec3 Diff : COLOR0; 
+    vec3 Spec : COLOR1;
+};
+
+attribute pixelOut {
+    vec4 colorOut:COLOR0;
+}
+
+GLSLShader  zebraVS{
+	void main()
+	{
+        vec4 P = vec4(Pos, 1.0);
+		vec4 eyeSpaceP  = gWV * P; 
+
+		if(gLocked)
+ 		{
+ 			EyeNormal   =	Normal;
+			ViewVec		= -(Pos.xyz + vec3(0.1, 0.0, 0.0)) * vec3( 1.0, 1.0, gProjZSense );
+ 		}
+ 		else
+ 		{
+ 			EyeNormal  = (gWV * vec4(Normal, 0.0)).xyz;
+ 			ViewVec       = -eyeSpaceP.xyz * vec3( 1.0, 1.0, gProjZSense ); 
+ 		}
+	  
+		HPos  = gWVPXf * P; 
+
+		// Transform the position and normal to world space for lighting, and normalize the normal.
+		vec4 HPwT = gWXf * P;
+		vec3 Nw = normalize(gWITXf * vec4(Normal, 0.0)).xyz;
+
+#ifdef LOCAL_VIEWER
+		// Compute the view direction, using the eye position and vertex position.  The eye
+		// position is the translation vector of the inverse view transformation matrix.  This
+		// provides more accurate lighting highlights and environment-mapped reflections than
+		// using a non-local viewer (below).
+		vec3 Vw = HPwT - gVIXf[3];
+		vec3 VwNorm = normalize(Vw);    
+#else
+		// Use the fixed view direction, the same for the entire view.  Use of this vector is
+		// similar to disabling D3DRS_LOCALVIEWER for lighting and reflection in D3D9 (the
+		// default state).  This is appropriate for orthographic projections.
+		vec3 VwNorm = gViewDirection;
+#endif
+
+		// Flip the normal to face the view direction, allowing proper shading of back-facing surfaces.
+		// NOTE: This will lead to artifacts on the silhouettes of coarsely-tessellated surfaces.  A
+		// compensation of about nine degrees is performed here (cos(99deg) ~ 0.15), so this issue
+		// should be limited to triangles with very divergent normals.
+#ifdef FLIP_BACKFACING_NORMALS
+		Nw = -Nw * sign(dot(VwNorm, Nw));
+#endif
+    
+		// Compute the ambient, diffuse, and specular lighting components from the light array.
+		vec3 amb = vec3(0.0, 0.0, 0.0);
+		vec3 spec = vec3(0.0, 0.0, 0.0);
+    
+		// Use the glossiness value.
+		ComputeLighting(Nw, -VwNorm, HPwT.xyz, gGlossiness, amb, Diff.rgb, spec);
+		Diff.rgb *= gDiffColor;
+		Diff.rgb += gAmbColor * amb + gEmiColor;
+		Spec = gSpecColor * spec;
+
+		// Clamp the diffuse and specular components to [0.0, 1.0] to match the limitations of COLOR
+		// registers in SM 2.0.  Otherwise the final color output will not match.
+		Diff = saturate(Diff); 
+
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w * gDepthPriority;
+	
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif
+
+		gl_Position = HPos;
+	}
+}
+
+GLSLShader zebraPS{
+	void main()
+	{
+
+#ifdef CLIPPING
+		// Compute whether the pixel needs to be discard by the clipping planes.
+		bool needDiscard = false;
+		if (gNumClipPlanes > 0) { if(dot(HPw, gClipPlanes[0])<0) needDiscard = true;}
+		if (gNumClipPlanes > 1) { if(dot(HPw, gClipPlanes[1])<0) needDiscard = true;}
+		if (gNumClipPlanes > 2) { if(dot(HPw, gClipPlanes[2])<0) needDiscard = true;}
+		if (gNumClipPlanes > 3) { if(dot(HPw, gClipPlanes[3])<0) needDiscard = true;}
+		if (gNumClipPlanes > 4) { if(dot(HPw, gClipPlanes[4])<0) needDiscard = true;}
+		if (gNumClipPlanes > 5) { if(dot(HPw, gClipPlanes[5])<0) needDiscard = true;}
+    
+		if (needDiscard == true)
+			discard;
+#endif
+
+		vec3 nrefl = normalize(EyeNormal);
+
+ 		//if(!gLocked)
+ 		{
+ 			vec3 nEyeNorm  = nrefl;
+ 			nrefl  = normalize( reflect( ViewVec, nEyeNorm ) );
+ 		} 	
+
+		//stripe dir controls the strip direction from horizontal stripes to vertical
+		float nReflAxis = lerp( nrefl.y, nrefl.x, gStripeDir );
+
+		//striped spherical environment map using reflection vector
+		vec3 mVec = vec3( nrefl.x, nrefl.y, ( nrefl.z + 1.0 ) );
+		float m = 2.0 * sqrt( dot( mVec, mVec ) );
+		float tube_angle = 0.5 + (nReflAxis / m);
+
+		float zebra_frac = tube_angle * gStripeDensity;
+
+		vec2 UV = vec2(0.0, 0.0);
+		UV.x = zebra_frac; //Use the zebra_frac as the texture coordinates
+
+		vec3 zebraColor = texture2D(gZebraSamp, UV).xyz;
+
+		// Start the output color with the diffuse component.  The rest of the shader adds to it.
+		vec3 outputColor = Diff.rgb;
+		outputColor *= zebraColor;  //Treat the zebra color as the diffuse texture
+		// Add the specular component.
+		outputColor += Spec; 
+		// Final color and alpha.
+		vec4 final = vec4(outputColor, gOpacity);
+		colorOut = final;
+	}
+}
+
+technique Zebra
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT,out VS_TO_PS) = zebraVS;
+        PixelShader (in VS_TO_PS, out pixelOut) = zebraPS;
+    }
+}

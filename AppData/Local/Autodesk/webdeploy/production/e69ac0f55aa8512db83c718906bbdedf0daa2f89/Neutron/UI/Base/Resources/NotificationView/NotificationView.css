@@ -1,0 +1,71 @@
+QObject {
+    font-family: Lucida Sans Unicode;
+	background-color: rgb(09,09,09);
+}
+
+
+#NotificationDialogTitle
+{
+	background-color: black;
+}
+
+QLabel#NotificationDialogTitle {
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+	padding: 7px;
+    margin-left: 15px;
+	background-color: none;
+}
+
+QPushButton#NotificationDialogClose
+{
+	min-width:32px;
+	max-width:32px;
+	border: none;
+	background-color: none;
+}
+QWidget {
+	background-color: #282828;
+}
+
+QTreeWidget{
+	background-color: #282828;
+}
+QTreeWidget::item {
+    
+	 border-top: 1px solid #4B4B4B;
+     border-left: none; 
+     border-right: none;
+     border-bottom: 1px solid #1D1D1D;
+}
+
+QWidget#notificationStatus
+{
+	background-position: center;
+    background-repeat: no-repeat;
+}
+
+QLabel#messageTitle
+{
+    color: #F8F8F8;
+    font-weight: bold;
+    font-size: 14px;
+}
+QLabel#messageSubtitle
+{
+    color: #DADADA;
+    font-weight: bold;
+    font-size: 12px;
+}
+QLabel#messageText
+{
+    color: #DADADA;
+    font-size: 12px;
+	height: 24px;
+}
+#notificationDelete
+{
+	background-position: center;
+    background-repeat: no-repeat;
+}

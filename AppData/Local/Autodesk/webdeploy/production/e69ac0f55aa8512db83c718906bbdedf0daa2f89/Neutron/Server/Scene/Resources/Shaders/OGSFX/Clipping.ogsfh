@@ -1,0 +1,80 @@
+//**************************************************************************/
+// Copyright (c) 2008 Autodesk, Inc.
+// All rights reserved.
+// 
+// These coded instructions, statements, and computer programs contain
+// unpublished proprietary information written by Autodesk, Inc., and are
+// protected by Federal copyright law. They may not be disclosed to third
+// parties or copied or duplicated in any form, in whole or in part, without
+// the prior written consent of Autodesk, Inc.
+//**************************************************************************/
+// DESCRIPTION: Clipping utilities (OpenGL).
+// AUTHOR: Ryan Qian, ported to OGSFX by Flavio Bortot
+// CREATED: May 2013
+//**************************************************************************/
+
+#ifndef _CLIPPING_OGSFH_
+#define _CLIPPING_OGSFH_
+
+// Clipping plane array (world space).
+
+#define OGSFX_MAX_CLIP_PLANES 6
+uniform vec4 gClipPlanes[OGSFX_MAX_CLIP_PLANES] : ClippingPlanes =
+{
+    {1.0, 0.0, 0.0, 0.0},
+    {0.0, 1.0, 0.0, 0.0},
+    {0.0, 0.0, 1.0, 0.0},
+    {1.0, 0.0, 0.0, 0.0},
+    {1.0, 0.0, 0.0, 0.0},
+    {1.0, 0.0, 0.0, 0.0}
+};
+
+// Number of clipping planes.  --> ALWAYS REMEMBER TO USE THIS SEMANTIC!! <--
+uniform lowp int gNumClipPlanes : ClippingPlaneCount= 0;
+
+GLSLShader ClipPlanes {
+
+#vertexshader
+#if GL_ES
+	varying highp float ClipDistance[OGSFX_MAX_CLIP_PLANES];
+#else
+	
+#define ClipDistance gl_ClipDistance
+
+	//OpenGL core declares gl_ClipDistances as a dimension-less array.
+	//The user must initialize it (i.e. explicit the dimension) before using it
+	//On the C++ side (OGSFX runtime) we are enabling only those planes that are used.
+	float ClipDistance[OGSFX_MAX_CLIP_PLANES];
+
+#endif
+void ComputeClipDistances(in vec4 HPw)
+{
+    
+    // A clip distance is the distance of the specified world-space point from the clipping plane.
+    // This is computed with a dot product.  Values are interpolated in the rasterizer, and
+    // fragments with any value less then zero (i.e. on the negative side of a clipping plane)
+    // are discarded before reaching the pixel shader.
+
+    // Compute clip distances.
+    for(int i=0;i<gNumClipPlanes;i++)
+        ClipDistance[i]=dot(HPw, gClipPlanes[i]);	
+}
+#endshader
+
+#if GL_ES
+#pixelshader
+varying float ClipDistance[OGSFX_MAX_CLIP_PLANES];
+
+void ClipPixels()
+{
+    for(int i=0;i<gNumClipPlanes;i++)
+    {
+        if (ClipDistance[i] < 0.0)
+            discard;
+    }
+}
+#endshader
+#endif
+}
+
+#endif // _CLIPPING_OGSFH_

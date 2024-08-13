@@ -1,0 +1,154 @@
+//#define LOCAL_VIEWER
+#define FLIP_BACKFACING_NORMALS
+#define CLIPPING
+
+#define LIGHT_DIRECTIONAL_MULTIPLE
+
+#ifdef CLIPPING
+#include "Clipping.ogsfh"
+#endif
+
+#include "LightArray.ogsfh"
+
+// World transformation.
+uniform mat4 gWXf : World;
+
+// World transformation, inverse transpose.
+uniform mat4 gWITXf : WorldInverseTranspose;
+
+// World-view transformation
+uniform mat4 gWV : WorldView;
+
+// World-View-projection transformation.
+uniform mat4 gWVPXf : WorldViewProjection;
+
+#ifdef LOCAL_VIEWER
+	uniform mat4 gVIXf : ViewInverse;
+#else
+	uniform vec3 gViewDirection : ViewDirection;
+#endif
+
+// Emissive color.
+uniform vec3 gEmiColor : Emissive = {0.0, 0.0, 0.0};
+
+// Ambient color.
+uniform vec3 gAmbColor : Ambient = {0.2, 0.2, 0.2};
+
+// Diffuse color.
+uniform vec3 gDiffColor : Diffuse = {0.8, 0.8, 0.8};
+
+// Specular color.
+uniform vec3 gSpecColor : Specular = {1.0, 1.0, 1.0};
+
+// Glossiness (specular power).
+uniform float gGlossiness : SpecularPower = 32.0;
+
+// Opacity factor.
+uniform float gOpacity : Opacity = 1.0;
+
+attribute VS_INPUT
+{
+    vec3 Pos  : POSITION;
+    vec3 Normal  : NORMAL;
+
+	// transform matrix for instancing
+    vec4 Row0 : TEXCOORD1;
+    vec4 Row1 : TEXCOORD2;
+    vec4 Row2 : TEXCOORD3;
+    vec4 Row3 : TEXCOORD4;
+    vec4 VertexColor : TEXCOORD5;
+};
+
+attribute VS_TO_PS
+{
+    vec4 HPos       : POSITION;
+
+    vec3 WorldNormal    : TEXCOORD0;
+
+    vec4 Diff : COLOR0; 
+    vec3 Spec : COLOR1;
+};
+
+attribute pixelOut {
+    vec4 colorOut:COLOR0;
+}
+
+GLSLShader instanceVS{
+	void main()
+	{
+		vec4 HPm = vec4(Pos, 1.0);
+		mat4 instanceMatrix = mat4(Row0, Row1, Row2, Row3);
+		HPm = instanceMatrix * HPm;
+		// Transform the position and normal to world space for lighting, and normalize the normal.
+		vec4 HPw = gWXf * HPm;
+
+		vec3 Nw = normalize((instanceMatrix * vec4(Normal, 1.0)).xyz);
+		Nw = normalize((gWITXf * vec4(Nw, 1.0)).xyz);
+    
+#ifdef LOCAL_VIEWER
+		// Compute the view direction, using the eye position and vertex position.  The eye
+		// position is the translation vector of the inverse view transformation matrix.  This
+		// provides more accurate lighting highlights and environment-mapped reflections than
+		// using a non-local viewer (below).
+		vec3 Vw = HPw - gVIXf[3];
+		vec3 VwNorm = normalize(Vw);    
+#else
+		// Use the fixed view direction, the same for the entire view.  Use of this vector is
+		// similar to disabling D3DRS_LOCALVIEWER for lighting and reflection in D3D9 (the
+		// default state).  This is appropriate for orthographic projections.
+		vec3 VwNorm = gViewDirection;
+#endif
+
+		// Flip the normal to face the view direction, allowing proper shading of back-facing surfaces.
+		// NOTE: This will lead to artifacts on the silhouettes of coarsely-tessellated surfaces.  A
+		// compensation of about nine degrees is performed here (cos(99deg) ~ 0.15), so this issue
+		// should be limited to triangles with very divergent normals.
+#ifdef FLIP_BACKFACING_NORMALS
+		Nw = -Nw * sign(dot(VwNorm, Nw));
+#endif
+
+		WorldNormal  = Nw; 	  
+		HPos = gWVPXf * HPm; 
+    
+		// Compute the ambient, diffuse, and specular lighting components from the light array.
+		vec3 amb = vec3(0.0, 0.0, 0.0);
+		vec3 spec = vec3(0.0, 0.0, 0.0);
+    
+		// Use the glossiness value.
+		ComputeLighting(Nw, -VwNorm, HPw.xyz, gGlossiness, amb, Diff.rgb, spec);
+		Diff.rgb *= VertexColor.rgb;
+		Diff.rgb += gAmbColor * amb + gEmiColor;
+		Spec = gSpecColor * spec;
+
+		// Clamp the diffuse and specular components to [0.0, 1.0] to match the limitations of COLOR
+		// registers in SM 2.0.  Otherwise the final color output will not match.
+		Diff = saturate(Diff);
+
+		Diff.a = VertexColor.a;
+
+		gl_Position = HPos;
+	}
+}
+
+GLSLShader instancePS{
+	void main()
+	{
+		// Start the output color with the diffuse component.  The rest of the shader adds to it.
+		vec3 outputColor = Diff.rgb;
+		// Add the specular component.
+		outputColor += Spec; 
+		// Final color and alpha.
+		vec4 final = vec4(outputColor, Diff.a);
+
+		colorOut = final;
+	}
+}
+
+technique Instance
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT,out VS_TO_PS) = instanceVS;
+        PixelShader (in VS_TO_PS, out pixelOut) = instancePS;
+    }
+}

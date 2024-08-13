@@ -1,0 +1,88 @@
+// World-view-projection transformation.
+uniform mat4 gWVPXf : WorldViewProjection;
+
+// Color and alpha accumulation texture.
+uniform texture2D gColorTex;
+// Color and alpha accumulation texture sampler.
+uniform sampler2D gColorSamp = sampler_state 
+{
+    Texture   = <gColorTex>;
+};
+
+// Depth complexity texture.
+uniform texture2D gColorTex2;
+// Depth complexity texture sampler.
+uniform sampler2D gColorSamp2 = sampler_state 
+{
+    Texture   = <gColorTex2>;
+};
+
+// Vertex shader input structure.
+attribute VS_INPUT
+{
+    vec4 Pos : POSITION;
+    vec2 UV : TEXCOORD0;
+};
+
+// Vertex shader output structure.
+attribute VS_TO_PS
+{
+    vec4 HPos : POSITION;
+    vec2 UVPS : TEXCOORD0;
+};
+
+attribute pixelOut {
+    vec4 colorOut:COLOR0;
+}
+
+// Vertex shader.
+GLSLShader VS_WeightedAverageFinal{
+	void main()
+	{    
+		HPos = gWVPXf * Pos;
+    
+		// Pass the texture coordinates unchanged.
+		UVPS = UV;
+    
+		gl_Position = HPos;
+	}
+}
+
+GLSLShader PS_WeightedAverageFinal{
+	void main()
+	{	
+		// Color sum.
+		vec4 SumColor = texture2D(gColorSamp, UVPS);
+
+		// Depth Complexity
+		float n = texture2D(gColorSamp2, UVPS).r;
+
+		// If depth comlexity is zero, it means no transparent color on this pixel.
+		// So return zero directly.
+		if (n == 0.0 || SumColor.a == 0.0) {
+			colorOut = vec4(0.0, 0.0, 0.0, 0.0);
+			return;
+		}
+
+		// Average Color
+		vec3 AvgColor = SumColor.rgb / SumColor.a;
+
+		// Average Alpha
+		float AvgAlpha = SumColor.a / n;
+
+		// Final Alpha
+		float T = pow(1.0-AvgAlpha, n);
+
+		colorOut = vec4(AvgColor, 1 - T);
+	}
+}
+
+// The main technique.
+technique Main
+{
+    pass p0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = VS_WeightedAverageFinal;
+        PixelShader (in VS_TO_PS, out pixelOut) = PS_WeightedAverageFinal;
+    }
+}

@@ -1,0 +1,136 @@
+#define CLIPPING
+
+#ifdef CLIPPING
+#include "Clipping.ogsfh"
+#endif
+
+// Screen size in pixels, specified for the enabled features that need it.
+// NOTE: Needs to be specified before one or more of the include files below.
+uniform vec2 gScreenSize : ViewportPixelSize;
+
+// World transformation.
+uniform mat4 gWXf : World;
+
+// World-view-projection transformation.
+uniform mat4 gWVPXf : WorldViewProjection;
+
+// Depth priority, which shifts the model a bit forward in the z-buffer
+uniform float gDepthPriority : DepthPriority = 0.0;
+
+// Color.
+uniform vec3 gColor : Color = {1.0, 1.0, 1.0};
+
+// Opacity factor.
+uniform float gOpacity : Opacity = 1.0;
+
+// The texture.
+uniform texture2D gTex : Texture;
+
+// Texture sampler.
+uniform sampler2D gSamp : TextureSampler = sampler_state
+{
+    Texture = <gTex>;
+};
+
+// Point Size.
+uniform vec2 gNeutronPointSize : NeutronPointSize = {1.0, 1.0};
+
+// Vertex shader input structure.
+attribute VS_INPUT
+{
+    vec3 Pos : POSITION;
+    vec2 UV : TEXCOORD0;
+    float ExtrudeCode : TEXCOORD1;
+}
+
+// Pixel shader input structure.
+attribute VS_TO_PS
+{
+    vec2 oUV : TEXCOORD0;
+}
+
+// Pixel shader output.
+attribute pixelOutput
+{
+    vec4 ColorOut : COLOR0;
+}
+
+// Vertex shader.
+GLSLShader VS_FatPoint
+{
+    void main()
+    {
+        vec4 HPos;
+
+        // Transform the position from object space to clip space for output.
+        HPos = gWVPXf * vec4(Pos, 1.0);
+        oUV = UV;
+
+        // Half of width and height of the fat point in NDC space.
+        vec2 hsizeNDC = gNeutronPointSize / gScreenSize;
+
+        // Extrude the 4 vertices.
+        if (ExtrudeCode == 0.0)
+        {
+            HPos.x -= HPos.w*hsizeNDC.x;
+            HPos.y += HPos.w*hsizeNDC.y;
+        }
+        else if (ExtrudeCode == 1.0)
+        {
+            HPos.x -= HPos.w*hsizeNDC.x;
+            HPos.y -= HPos.w*hsizeNDC.y;
+        }
+        else if (ExtrudeCode == 2.0)
+        {
+            HPos.x += HPos.w*hsizeNDC.x;
+            HPos.y -= HPos.w*hsizeNDC.y;
+        }
+        else if (ExtrudeCode == 3.0)
+        {
+            HPos.x += HPos.w*hsizeNDC.x;
+            HPos.y += HPos.w*hsizeNDC.y;
+        }
+
+        // modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+        HPos.z -= HPos.w*2.0*gDepthPriority;
+
+#ifdef CLIPPING
+        // World position, for CLIPPING
+        ComputeClipDistances(gWXf*vec4(Pos, 1.0));
+#endif
+    
+        gl_Position = HPos;
+    }
+}
+
+// Pixel shader.
+GLSLShader PS_FatPoint
+{
+    void main()
+    {
+        // Get the solid color.
+        vec3 pColor = gColor;
+        float pOpacity = gOpacity;
+
+        // Get the texture color.
+        vec4 clrTex = texture2D(gSamp, oUV);
+
+        // The output color is the input color modulated by the texture color.
+        vec3 outputColor = clrTex.rgb * pColor;
+        float outputAlpha = pOpacity * clrTex.a;
+
+        vec4 finalColor = vec4(outputColor, outputAlpha);
+        ColorOut = finalColor;
+    }
+}
+
+// The main technique.
+technique FatPoint
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT,out VS_TO_PS) = VS_FatPoint;
+        PixelShader (in VS_TO_PS, out pixelOutput) = PS_FatPoint;
+    }
+}
+

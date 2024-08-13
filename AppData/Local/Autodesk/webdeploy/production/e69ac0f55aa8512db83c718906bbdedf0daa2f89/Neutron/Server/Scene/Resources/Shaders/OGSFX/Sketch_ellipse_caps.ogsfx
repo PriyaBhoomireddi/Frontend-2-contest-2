@@ -1,0 +1,221 @@
+#version 330
+#include "Sketch_ellipse_caps.ogsfh"
+#include "Sketch_ellipse.ogsfh"
+
+// ellipse caps primitive texture
+uniform highp texture2D gCapsIndexTex_ : CapsIndexTexture; 
+uniform highp sampler2D gCapsIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gCapsIndexTex_>; };
+uniform highp texture2D gEllipticalArcCapsDrawOrderZTex_ : EllipticalArcCapsDrawOrderZTex;
+uniform highp sampler2D gEllipticalArcCapsDrawOrderZTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gEllipticalArcCapsDrawOrderZTex_>; };
+
+attribute VS_INPUT
+{
+    int VertexID : TEXCOORD0;
+    int InstanceID : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 vso_position;
+    vec2 vso_uv;
+    vec4 vso_ref;
+    flat vec2 vso_radius;
+    flat vec2 vso_range;
+    flat int vso_colorS;
+    flat float vso_weight;
+    flat int vso_glowColorS;
+    flat int vso_capTypeS;
+};
+
+attribute pixelOut
+{
+    vec4 pso_color : COLOR0;
+};
+
+GLSLShader Ellipse_Caps_VS
+{
+
+// load caps primitive id
+uint load_caps_prim_id(uint id)
+{
+   return load_prim_id_from_tex(gCapsIndexTex, id);
+}
+
+void main()
+{
+    // load primitive index
+    uint primID = load_caps_prim_id(uint(gl_InstanceID));
+
+    // load ellipse information
+    EllipseAttr_Dash ellipse_attr;
+    load_ellipse_info(primID, ellipse_attr);
+
+    if (gRetainMode)
+    {
+        load_dynamic_draworderz(uint(gl_InstanceID), gEllipticalArcCapsDrawOrderZTex, ellipse_attr.drawZ);
+    }
+    else 
+    {
+        adjust_caps(ellipse_attr);
+    }
+
+    // initialize
+    VertexAttr_Caps outputData = VertexAttr_Caps(vec4(0.0f, 0.0f, 0.0f, 0.0f), vec2(0.0f, 0.0f), vec4(0.0f, 0.0f, 0.0f, 0.0f),
+                                             vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), uint(0), 0.0f, uint(0), uint(0));
+
+    // update geometry info
+    vec2 center = vec2(ellipse_attr.center.x, ellipse_attr.center.y);
+    outputData.range = ellipse_attr.range;  
+
+    vec2 adjusted_radius = ellipse_attr.radius;
+
+    if (gRetainMode || (ellipse_attr.isLogical != uint(0)))
+    {
+        center = logic_to_ndc(center);
+        center = ndc_to_screen(center);
+        adjusted_radius = neutron_sketch_radius_to_screen(adjusted_radius);
+    }
+    else
+    {
+        if (ellipse_attr.radius.x == 0.0f) adjusted_radius.x = 1.0f;
+        if (ellipse_attr.radius.y == 0.0f) adjusted_radius.y = 1.0f;
+    }
+
+    
+    outputData.radius = adjusted_radius;
+    
+    float sin_rot, cos_rot;
+    sin_rot = sin(ellipse_attr.rotate);
+    cos_rot = cos(ellipse_attr.rotate);
+    
+     // expand range when have line weight
+    float weight_expand = get_screen_weight_expand(ellipse_attr.weight);
+
+    // get the radius
+    outputData.position.xy = get_vertex_pos_caps(uint(gl_VertexID), outputData.range, outputData.radius.x, outputData.radius.y,
+        weight_expand, center, sin_rot, cos_rot, outputData.uv, outputData.ref);
+    
+    // update other properties
+    outputData.weight = ellipse_attr.weight;
+    outputData.position.z = ellipse_attr.drawZ;
+    outputData.position.xyz = outputData.position.xyz;
+    outputData.position.w = 1.0f;
+    
+    outputData.color  = ellipse_attr.color; // move color assignment to last will fix an Intel compiler issue.
+                                        // since the color assignment will affect position result on Intel cards.
+
+    outputData.glowColor  = ellipse_attr.glowColor;
+
+    outputData.capType = ellipse_attr.capType;
+
+    gl_Position = outputData.position;
+
+    vso_position = outputData.position;
+    vso_uv = outputData.uv;
+    vso_ref = outputData.ref;
+    vso_radius = outputData.radius;
+    vso_range = outputData.range;
+    vso_colorS = int(outputData.color);
+    vso_weight = outputData.weight;
+    vso_glowColorS = int(outputData.glowColor);
+    vso_capTypeS = int(outputData.capType);
+}
+
+}
+
+GLSLShader Ellipse_Caps_PS
+{
+
+float ellipse_distance(vec2 radius, vec2 uv)
+{
+    // compute distance to ellipse
+    float x_len = radius.x;
+    float y_len = radius.y;
+    
+    float a = uv.x / x_len;
+    float b = uv.y / y_len;
+    
+    vec2 dx = dFdx(uv);
+    vec2 dy = dFdy(uv);
+    
+    float x_len_2 = x_len*x_len;
+    float y_len_2 = y_len*y_len;
+    
+    float x_2 = uv.x*uv.x;
+    float y_2 = uv.y*uv.y;
+    
+    float dfx = (2.0f * uv.x) / x_len_2 * dx.x + (2.0f * uv.y) / y_len_2 * dx.y;
+    float dfy = (2.0f * uv.x) / x_len_2 * dy.x + (2.0f * uv.y) / y_len_2 * dy.y;
+    
+    float dist = 0.0f;
+    float df_2 = dfx * dfx + dfy * dfy;
+    
+    if (df_2 > 0.0f)
+        dist = (x_2 / x_len_2 + y_2 / y_len_2 - 1.0f) * inversesqrt(df_2);
+    
+    return abs(dist);
+}
+
+bool valid_range_caps(VertexAttr_Caps inputData)
+{
+    if (abs(inputData.radius.x - inputData.radius.y) < EPS)
+       return valid_range(inputData.radius, inputData.uv, inputData.range);
+    else
+    {
+        float dist = ellipse_distance(inputData.radius, inputData.uv);
+        return valid_range_ellipse(inputData.radius, inputData.uv, inputData.range, dist);
+    }
+}
+
+void main()
+{
+    uint vso_color = uint(vso_colorS);
+    uint vso_glowColor = uint(vso_glowColorS);
+    uint vso_capType = uint(vso_capTypeS);
+
+    VertexAttr_Caps inputData = VertexAttr_Caps(vso_position, vso_uv, vso_ref,
+                                                vso_radius, vso_range, vso_color,
+                                                vso_weight, vso_glowColor, vso_capType);
+    
+    vec2 delta = inputData.uv - inputData.ref.xy;
+    float dis_to_ref = length(delta);
+    float dis_to_border = dot(delta, inputData.ref.zw);
+    float abs_dis_to_border = abs(dis_to_border);
+
+    if (close_to_caps_border(abs_dis_to_border))// if close to border
+    {
+        if (valid_range_caps(inputData)) // if inside ellipse
+            discard;
+    }
+    float dist = abs(dis_to_ref);
+
+    float width = adjust_line_width_wide_line(uint(inputData.weight));
+
+    vec4 color;
+    if (gNoAAMode != 0)
+    {
+        color = compute_sharp_caps_final_color(dist, width, inputData.color, inputData.glowColor,
+            inputData.uv, inputData.ref.xy, inputData.ref.zw, inputData.capType);
+    }
+    else
+    {
+        color = compute_caps_final_color(dist, width, inputData.color, inputData.glowColor,
+            inputData.uv, inputData.ref.xy, inputData.ref.zw, inputData.capType);
+    }
+
+    if (color.a < 0.01f)
+        discard;
+    pso_color = OIT_PS_OUTPUT(color, vso_position);  
+}
+
+}
+
+technique Ellipse_Caps
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = Ellipse_Caps_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = Ellipse_Caps_PS;
+    }
+}
+

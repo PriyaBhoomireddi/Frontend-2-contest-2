@@ -1,0 +1,261 @@
+.imgNewBranch {
+    background-image: url("../../assets/create branch.svg");
+    background-position: 11px center;
+}
+
+.imgNewBranch.disabled {
+    background-image: url("../../assets/create branch - disabled.svg");
+    background-position: 11px center;
+}
+
+.imgMilestone {
+    background-image: url("../../assets/create milestone.svg");
+    background-position: 11px center;
+}
+
+.imgMilestone.disabled {
+    background-image: url("../../assets/create milestone - disabled.svg");
+    background-position: 11px center;
+}
+
+.imgMergePull {
+    background-image: url("../../assets/pull.svg");
+    background-position: 11px center;
+}
+
+.imgMergePull.disabled {
+    background-image: url("../../assets/pull - disabled.svg");
+    background-position: 11px center;
+}
+
+.imgMergePush {
+    background-image: url("../../assets/push.svg");
+    background-position: 11px center;
+}
+
+.imgMergePush.disabled {
+    background-image: url("../../assets/push - disabled.svg");
+    background-position: 11px center;
+}
+
+.imgPrjManage {
+    background-image: url("../../assets/history.svg");
+    background-position: 7px center;
+}
+
+.imgPrjManage.disabled {
+    background-image: url("../../assets/history - disabled.svg");
+    background-position: 7px center;
+}
+
+.comboButton {
+    position: relative;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 116.7%;
+    cursor: default;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    width: 67px;
+    height: 28px;
+}
+
+.comboButton .action {
+    position: relative;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-left: 1px solid #979797;
+    border-top: 1px solid #979797;
+    border-bottom: 1px solid #979797;
+
+    width: 40px;
+    height: 28px;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    background-repeat: no-repeat;
+}
+
+.comboButton.disabled .action {
+    border-left: 1px solid #bdbdbd;
+    border-top: 1px solid #bdbdbd;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+
+.comboButton .down {
+    position: absolute;
+    top: 0;
+    left: 40px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: 1px solid #979797;
+
+    background-image: url("../../assets/down_arrow.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    width: 27px;
+    height: 28px;
+
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.comboButton.disabled .down {
+    border: 1px solid #bdbdbd;
+    background-image: url("../../assets/down_arrow - disabled.svg");
+}
+
+.comboButton:not(.disabled):not(.textComboButton):not(.textComboButtonTHOImp) .action:hover,
+.comboButton:not(.disabled):not(.textComboButton):not(.textComboButtonTHOImp) .down:hover,
+.comboButton:not(.disabled):not(.textComboButton):not(.textComboButtonTHOImp) .down.clicked {
+    background-color: #FAFAFA;
+}
+
+.comboButton .list {
+    position: absolute;
+    left: 0;
+    top: 28px;
+    background-color: #FFFFFF;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    padding: 5px 0 5px 0;
+
+    z-index: 200;
+    max-width: 350px;
+    width: auto;
+
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+.comboButton .list:empty {
+    -webkit-transition: none;
+    transition: none;
+}
+
+.comboButton .list .item {
+    font: 12px Arial;
+    font-weight: normal;
+
+    position: relative;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 34px;
+    padding-right: 12px;
+
+    color: #6b6b6b;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: default;
+    background-repeat: no-repeat;
+}
+
+.comboButton .list .item:hover {
+    background-color: #f5f6f7;
+}
+
+.comboButton .list .item.current {
+    font-weight: bold;
+}
+
+.comboButton .list .item.disabled {
+    font-weight: normal;
+    color: #bdbdbd;
+    background-color: transparent;
+}
+
+.comboButton .list .item.tooltipParent .tooltip {
+    left: 10px;
+    top: 100%;
+    white-space: pre-wrap;
+    width: 290px;
+    transform: translate(0, 2px);
+    -webkit-transform: translate(0, 2px);
+}
+
+.textComboButton {
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    float: left;
+    width:initial;
+    top: 30%;
+}
+
+.textComboButton .action {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: initial;
+    border: none;
+    top: 30%;
+    float: left;
+    text-transform: uppercase;
+    color: rgb(100, 100, 100);
+}
+
+.textComboButton .down {
+    position: relative;
+    float: left;
+    left: 4px;
+    top: 1px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+}
+
+.textComboButton .list .item {
+    padding-left: 12px;
+}
+
+.textComboButtonTHOImp {
+    z-index: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: bold;
+    float: left;
+    width:initial;
+    top: 25px;
+}
+
+.textComboButtonTHOImp .action {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width: initial;
+    border: none;
+    top: 30%;
+    float: left;
+    text-transform: uppercase;
+    color: rgb(100, 100, 100);
+}
+
+.textComboButtonTHOImp .action .tooltipParent{
+    height:18px;
+    line-height:18px;
+}
+
+
+
+.textComboButtonTHOImp .down {
+    position: relative;
+    float: left;
+    left: 4px;
+    top: 1px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+}
+
+.textComboButtonTHOImp .list .item {
+    padding-left: 12px;
+}

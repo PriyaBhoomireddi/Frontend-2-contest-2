@@ -1,0 +1,352 @@
+QObject {
+    font-family: Artifakt Element; 
+    color:#8E8E8E;
+    background-color: transparent;
+}
+
+QDialog {	
+	border: 1px solid #EEEEEE;
+    background-color: #FFFFFF;
+}
+
+QFrame#obje
+{
+	background-color:yellow;
+}
+/*JUST FOR TESTING*/
+/* 
+QFrame#pagedFrame
+{
+	background-color:yellow;
+	border:none;
+}
+
+QWidget#itemsWidget{
+ background-color: red;
+}
+
+QTProjectSelector{
+	background-color: blue;
+}
+*/
+
+QScrollArea#mainScrollArea{
+    /*background-color: orange;*/
+    border:none;
+}
+
+
+/*              */
+/* Project Page */
+/*              */
+
+QLabel#projectPagetInfoLbl
+{
+	font-weight:bold;
+}
+
+/*              */
+/* Items        */
+/*              */
+QLabel#itemThumbnail
+{
+	border: none;
+}
+
+QLabel#defaultHubSign
+{
+	background-color: #E3E3E3;
+	color: #5380AE;
+	border-radius: 3px;
+	padding:3px;
+}
+
+QPushButton#unusableHubButton
+{
+    color: #F39F3C;
+    font-family: "Artifakt Element";	
+    font-size: 12px;	
+    line-height: 17px;	
+    text-align: center;
+
+	border: 1px solid #F39F3C;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+	padding:3px 8px 3px 8px;
+}
+
+QPushButton#unusableHubButton_clickable
+{
+    color: #F39F3C;
+    font-family: "Artifakt Element";	
+    font-size: 12px;	
+    line-height: 17px;	
+    text-align: center;
+
+	border: 1px solid #F39F3C;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+	padding:3px 8px 3px 8px;
+}
+
+QPushButton#unusableHubButton_clickable:hover
+{
+    color: #f3bd3c;
+	border-color: #f3bd3c;
+}
+
+QLabel#itemLbl
+{
+	color:#363636;
+}
+
+QLabel#itemLbl:disabled
+{
+    color: #4D4D4D;
+}
+
+QLabel#itemUrlLbl
+{
+	color:#767676;
+}
+
+QLabel#transferingLbl
+{
+	color:#CBCBCB;
+	font-style:italic;
+}
+
+QProgressBar {
+    border:none;
+    border-radius:3px;
+	background-color:#EEEEEE;
+}
+
+QProgressBar::chunk {
+	border:none;
+    border-radius:3px;
+    background-color: #0DA6DE;
+}
+
+QTProjectItem[checked = true]{
+	 background-color: #F0FAFD;
+}
+
+QTProjectItem[hovered = true]{
+	 background-color: #F7FCFE;
+}
+
+QTHubItem[checked = true]{
+	 background-color: #F0FAFD;
+}
+
+QTHubItem[hovered = true]{
+	 background-color: #F7FCFE;
+}
+
+/*                */
+/* Project Header */
+/*                */
+
+QLabel#selectorNameLbl
+{
+	color:#363636;
+	font-weight:bold;
+}
+
+QLabel#projectSelectorItemOwner
+{
+	color:#A4A4A4;
+	font-weight:bold;
+}
+
+
+/*       */
+/* Pages */
+/*       */
+
+QTTransferIntroductionPage#introductionPage {
+	background-color:orange;
+	border:none;
+}
+
+QTTransferConfirmationPage#confirmationPage {
+	background-color:green;
+	border:none;
+}
+
+/*         */
+/* QLabels */
+/*         */
+
+QLabel {
+    color: #767676;
+    font-size: 13px;
+    background-color: transparent;
+}
+
+
+QLabel#title_lbl {
+    font-size: 22px;
+    color: #7E7E7E;	
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+QLabel#introductionPageContentLabel{
+	border:none;
+	background-color:lightgrey;
+}
+
+
+/*              */
+/* QPushButtons */
+/*              */
+QPushButton {
+    background-color: transparent;
+    font-size: 13px;
+    border-radius: 3px;
+    padding: 9px 16px 8px 16px;
+    color: #6C6C6C;
+}
+/*                */
+/* Proceed Button */
+/*                */
+QPushButton#proceed_btn {
+   background-color: #00A6E2;
+   border: 1px solid #00A6E2;
+   color: #FFFFFF;
+   padding: 8px 39px 8px 39px;
+}
+ 
+
+QPushButton#proceed_btn:hover {
+    background-color: #3AB5E1;
+    border: 1px solid #3AB5E1;
+}
+
+QPushButton#proceed_btn:pressed {
+    background-color: #007EC0;
+    border: 1px solid #007EC0;
+}
+
+QPushButton#proceed_btn:disabled
+{
+    background-color: #A5E0F5;
+    border: 1px solid #A5E0F5;
+}
+
+/*                     */
+/* Cancel, Back Button */
+/*                     */
+QPushButton#cancel_btn,
+QPushButton#back_btn {
+    background-color: #FAFAFA;
+    border: 1px solid #A2A2A2;
+    padding: 8px 39px 8px 39px;
+}
+ 
+QPushButton#cancel_btn:hover,
+QPushButton#back_btn:hover
+{
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+}
+
+QPushButton#cancel_btn:pressed,
+QPushButton#back_btn:pressed
+{
+    background-color: #EAEAEA;
+    border: 1px solid #ADADAD;
+}
+
+QPushButton#cancel_btn:disabled,
+QPushButton#back_btn:disabled
+{
+    background-color: #FDFDFD;
+    border: 1px solid #D1D1D1;
+}
+
+QPushButton#close_btn {
+    border: none;
+    padding: 0px;
+}
+
+/*         */
+/* QFrames */
+/*         */
+QFrame#header_separator {
+    color: #B3B3B3;
+}
+
+QFrame#item_separator {
+    color: #F2F2F2;
+}
+
+QFrame#dialog_header_separator {
+    color: #D7D7D7;
+}
+
+
+/* */
+/* ScrollBar */
+/* */
+
+QScrollBar{
+    height: 10px;
+    width: 12px;
+    background: #F8F8F8;
+	border: 1px solid #EEEEEE;
+	padding:-1px;
+}
+
+QScrollBar::handle {
+    border-radius: 0px;
+	border: 1px solid #CCCCCC;
+    background: #DDDDDD;
+}
+
+QScrollBar::handle:hover {
+    background: #979797;
+}
+
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: none;
+}
+
+/* 
+Without height, width set to 0, the control is invisible but still there. When the handle is at the top / bottom,
+it is not possible to drag the handle because on top of it
+there is the invisible sub-line, add-lne control.
+UP-26722
+*/
+QScrollBar::sub-line, QScrollBar::add-line {
+    height: 0px;  
+    width: 0px;
+    background: none;
+}
+
+
+/*                 */
+/* QTStatusControl */
+/*                 */
+QLabel#status_text_lbl {
+    color: #CCCCCC;
+    font-size: 13px;
+    font-style:italic;
+}
+
+/*                 */
+/* Select way page */
+/*                 */
+QTLinkLabel#radio_label
+{
+    margin-top: 2px;
+}
+
+/*                 */
+/* Email page */
+/*                 */
+QLabel#mail_adress {
+    color: #4D4D4D;
+}

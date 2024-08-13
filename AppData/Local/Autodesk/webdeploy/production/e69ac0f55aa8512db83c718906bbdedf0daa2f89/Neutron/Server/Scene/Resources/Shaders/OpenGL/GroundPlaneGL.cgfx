@@ -1,0 +1,165 @@
+//**************************************************************************/
+// Copyright 2015 Autodesk, Inc.
+// All rights reserved.
+//
+// This computer source code and related instructions and comments are the
+// unpublished confidential and proprietary information of Autodesk, Inc.
+// and are protected under Federal copyright and state trade secret law.
+// They may not be disclosed to, copied or used by any third party without
+// the prior written consent of Autodesk, Inc.
+//**************************************************************************/
+// DESCRIPTION: Virtual ground plane effect (CGFX).
+// AUTHOR: Shubird
+// CREATED: July 2015
+//**************************************************************************/
+
+#include "Common.cgh"
+
+#define PI 3.141592654
+
+// Environment map
+texture g_LatLongTex;
+sampler2D g_LatLongSampler = 
+sampler_state
+{
+    Texture = <g_LatLongTex>;
+};
+
+float4x4 g_LatLongTransform
+< 
+    string UIWidget = "None"; 
+    bool rowMajor = true;
+>;
+float4 g_LatLongGain;
+
+// Ground parameters:
+float3 g_PivotPosW;
+float3 g_GroundWorldPt;
+float3 g_GroundNormal;
+
+
+// Scene camera parameters:
+bool g_SceneCameraPerspective
+<
+    string UIName = "Perspective View";
+> = true;
+
+// Scene camera world-space position.
+float3 g_SceneCameraWorldPos;
+
+// Projection matrix of scene camera.
+float4x4 g_SceneCameraPXf 
+<
+    string UIWidget = "None";
+    bool rowMajor = true;
+>;
+
+// View scale, i.e. view-space size at a distance of one.
+static float2 g_SceneCameraViewScale = 1.0f / float2(g_SceneCameraPXf[0][0], g_SceneCameraPXf[1][1]);
+
+// View inverse martrix of scene camera.
+float4x4 g_SceneCameraVIXf
+< 
+    string UIWidget = "None";
+    bool rowMajor = true;
+>;
+
+
+// Sample the lat-long environment map by the direction.
+float3 SampleLatLongDirection(sampler2D samp, float4x4 transform, float3 direction)
+{
+   // Transform sample direction using the texture matrix.
+   float3 dir = normalize(mul(float4(direction,0.0), transform).xyz);
+   float latitude = -asin(dir.y)/PI + 0.5;
+   latitude = clamp(latitude, 0.001, 0.999);
+   float longitude = atan2(dir.x, -dir.z)/PI*0.5+0.5;
+   return tex2D(samp, float2(longitude,latitude)).xyz;
+}
+
+// Return the world-space (3D) position of the pixel.
+// depth input parameter is the depth value of view space.
+float4 GetWorldPosition(float2 texUV, float depth, bool perspective)
+{
+    // Convert texUV to normalized [-1.0, 1.0] device coordinates.
+    float2 pos2D = texUV * float2(2.0f, 2.0f) - float2(1.0f, 1.0f);
+
+    // Compute the depth scale from the depth of the current pixel and the view scale.  This
+    // is the vector from the center of the screen to the corners of the screen in view space, at
+    // the current depth. 
+    float2 depthScale = (perspective ? depth : 1.0f) * g_SceneCameraViewScale;
+
+    // Get the view-space (3D) position of the current pixel from the depth, the depth
+    // scale, and the recovered [-1.0, 1.0] device coordinates.
+    float3 viewPos = float3(pos2D * depthScale, depth);
+
+    // Get the world-space (3D) position.
+    float4 worldPos = mul(float4(viewPos, 1.0f), g_SceneCameraVIXf);
+
+    return worldPos;
+}
+
+// Pixel shader.
+float4 PS_Ground(VS_TO_PS_ScreenQuad In) : COLOR0
+{
+    // Get the world-space (3D) position of current pixel at far plane(depth set as 1.0).
+    // Note: Whether it is a perspective view or not, the depth of far plane is 1.0.
+    In.UV.y = 1 - In.UV.y;
+    float4 worldPos = GetWorldPosition(In.UV, 1.0f, g_SceneCameraPerspective);
+    
+    float normalLength = length(g_GroundNormal);
+    
+    // In perspective projection, view direction is the direction from the scene camera to the draw quad vertex;
+    // In orthographic projection, view direction is the view direction of scene camera, which is acquired from view inverse matrix.
+    float3 Vw = g_SceneCameraPerspective ? worldPos.xyz - g_SceneCameraWorldPos : float3(g_SceneCameraVIXf[2][0], g_SceneCameraVIXf[2][1], g_SceneCameraVIXf[2][2]);
+    
+    float viewDotN = dot(Vw, g_GroundNormal);
+    
+    // Get the distance from the camera position to the ground plane in world-space.
+    float camera2GroundDist = dot(g_GroundWorldPt - g_SceneCameraWorldPos, g_GroundNormal) / normalLength;
+
+    // If the view direction is towards the ground plane and the camera position is above the 
+    // ground plane, use pivot projection.
+    float4 outColor = float4(0,0,0,1.0f);
+    if (viewDotN < 0 && camera2GroundDist < 0)
+    {
+        // Use the pivot projection at the ground plane:
+
+        // Get the intersection point of the view ray hitting the ground plane.
+        float cos = dot(Vw, g_GroundNormal) / (normalLength * length(Vw));
+        
+        // In perspective projection, view position is scene camera position;
+        // In orthographic projection, view position is draw quad vertex.
+        float3 viewPos = g_SceneCameraWorldPos;
+        float viewPos2GroundDist = camera2GroundDist;
+        if (!g_SceneCameraPerspective)
+        {
+            viewPos = worldPos.xyz;
+            viewPos2GroundDist = dot(g_GroundWorldPt - viewPos, g_GroundNormal) / normalLength;
+        }
+        
+        float3 intersectPt = viewPos + normalize(Vw) * (viewPos2GroundDist / cos);
+
+        // Use the new ray direction from the pivot to the ground intersection point.
+        float3 dir = normalize(intersectPt - g_PivotPosW);
+
+        // Apply the gain here.
+        outColor.rgb = g_LatLongGain.rgb * SampleLatLongDirection(g_LatLongSampler, g_LatLongTransform, dir);
+    }
+    else
+    {
+        // Discard the pixel if it is not on the ground horizon.
+        discard;
+    }
+
+    return outColor;
+}
+
+// The main technique.
+technique Main
+{
+    pass p0
+    {
+        VertexShader = compile glslv VS_ScreenQuad();
+        PixelShader = compile glslf PS_Ground();
+    }
+}

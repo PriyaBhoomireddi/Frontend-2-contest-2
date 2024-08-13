@@ -1,0 +1,633 @@
+.expandPopup{
+    position: absolute;
+
+    height: auto;
+    padding-top: 7px;
+    cursor: default;
+}
+
+.expandPopup.usePositionAnim{
+    transition: left 0.25s ease-out, top 0.25s ease-out, height 0.25s ease-out;
+    -webkit-transition: left 0.25s ease-out, top 0.25s ease-out, height 0.25s ease-out;
+}
+
+.expandPopup .contentContainer{
+    position: relative;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    background: #ffffff;
+    height: auto;
+    font-size: 12px;
+    padding: 12px 10px 0px 10px;
+}
+
+.expandPopup .contentContainer:after,
+.expandPopup .contentContainer:before {
+    bottom: 100%;
+    left: -100px;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+
+.expandPopup .contentContainer.leftCol:after,
+.expandPopup .contentContainer.leftCol:before {
+    left: 149px;
+}
+
+.expandPopup .contentContainer.rightCol:after,
+.expandPopup .contentContainer.rightCol:before {
+    left: 328px;
+}
+
+.expandPopup .contentContainer:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #ffffff;
+    border-width: 5.5px;
+    margin-left: -5.5px;
+}
+.expandPopup .contentContainer:before {
+    border-color: rgba(202, 202, 202, 0);
+    border-bottom-color: #dddddd;
+    border-width: 7px;
+    margin-left: -7px;
+}
+
+/* top info */
+.expandPopup .contentContainer .topInfo{
+    position: relative;
+    color: #646464;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.expandPopup .contentContainer .topInfo .fileName{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: normal;
+    color: #333333;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.expandPopup .header .selectable,
+.expandPopup .contentContainer .topInfo .linkA360,
+.expandPopup .tabCtrl .tab .content .showAll {
+    color: #6896c8;
+}
+
+.expandPopup .header .selectable:hover,
+.expandPopup .contentContainer .topInfo .linkA360:hover,
+.expandPopup .tabCtrl .tab .content .showAll:hover {
+    color: #00a4e1;
+}
+
+.expandPopup .inUse,
+.expandPopup .lastUpdate,
+.expandPopup .by
+{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.expandPopup .inUse
+{
+    padding-bottom: 8px;
+}
+
+.expandPopup .by
+{
+    padding-bottom: 12px;
+}
+
+.expandPopup .showHistory{
+    background-color: transparent;
+    border: 1px solid #979797;
+    border-radius: 3px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.expandPopup .inUse span,
+.expandPopup .lastUpdate span,
+.expandPopup .by span
+{
+    font-weight: bold;
+    color: #333333;
+}
+
+.expandPopup.offline .inUse,
+.expandPopup.offline .by {
+    display: none;
+}
+
+.expandPopup .contentContainer .topInfo .stored {
+    padding-bottom: 18px;
+    line-height: 18px;
+}
+
+
+.expandPopup.offline .contentContainer .topInfo .stored {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.expandPopup .contentContainer .topInfo .stored:empty {
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.expandPopup .contentContainer .topInfo .stored > div{
+    display: inline-block;
+    height: 18px;
+    line-height: 18px;
+}
+
+.expandPopup .contentContainer .topInfo .stored .name {
+    color: #333333;
+    font-weight: bold;
+    padding: 0 2px 0 3px;
+}
+
+.expandPopup .contentContainer .topInfo .stored .branchicon {
+    margin: 0 2px 0 3px;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.expandPopup .contentContainer .topInfo .stored .sep {
+    padding: 0 2px 0 3px;
+    width: 10px;
+    background: url("../../assets/fldsep.svg") no-repeat center center;
+    background-size: 10px 16px;
+    color: #6b6b6b;
+}
+
+.expandPopup .header {
+    position: relative;
+    line-height: 22px;
+    border-bottom: 1px solid #979797;
+    white-space: nowrap;
+}
+
+.expandPopup .header .selector{
+    position: absolute;
+    height: 2px;
+    width: 0px;
+    top: 0;
+    left: 0;
+    background: #6896c8;
+    padding-bottom: -100%;
+}
+
+.tabHeaderAnim {
+    transition: left 0.25s ease-out, width 0.25s ease-out;
+    -webkit-transition: left 0.25s ease-out, width 0.25s ease-out;
+}
+
+.expandPopup .header .selectable
+{
+    display: inline-block;
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.expandPopup .header .selectable::before
+{
+    content: attr(data-title);
+}
+
+.expandPopup .header .selected::after
+{
+    position: absolute;
+    content: attr(data-title);
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    color: #333333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.expandPopup.offline .tabCtrl {
+    display: none;
+}
+
+.expandPopup .tabCtrl .tabs {
+    position: relative;
+}
+
+.centercenter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.expandPopup .tabCtrl .tab .splash {
+    display: none;
+}
+
+.expandPopup .tabCtrl .tab .content {
+    padding: 6px 0 6px 0;
+}
+
+.expandPopup .tabCtrl .tab .splash>div {
+    min-height: 64px;
+}
+
+.expandPopup .tabCtrl .tab .splash .msg{
+    font-size: 11px;
+    color: #646464;
+    text-align: center;
+}
+
+@keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.expandPopup .tabCtrl .tab .splash .spin {
+    background-image: url(../../assets/spinner.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 24px;
+    height: 24px;
+    animation: rotating 1.5s linear infinite;
+    -webkit-animation: rotating 1.5s linear infinite;
+}
+
+.expandPopup .tabCtrl .tab.load .content,
+.expandPopup .tabCtrl .tab.empty .content {
+    display: none;
+}
+
+.expandPopup .tabCtrl .tab.load .splash,
+.expandPopup .tabCtrl .tab.empty .splash {
+    display: block;
+}
+
+.expandPopup .tabCtrl .tab.load .splash .loader{
+    display: block;
+}
+
+.expandPopup .tabCtrl .tab.load .splash .msg{
+    display: none;
+}
+
+.expandPopup .tabCtrl .tab.empty .splash .loader{
+    display: none;
+}
+
+.expandPopup .tabCtrl .tab.empty .splash .msg{
+    display: block;
+}
+
+
+.expandPopup .tabCtrl .tab .content .listItem {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    font-size: 11px;
+}
+
+.expandPopup .tabCtrl .tab .content .list.showSubset .listItem.initHidden {
+    display: none;
+}
+
+.expandPopup .tabCtrl .tab .content .listItem.selectable:before {
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: 0;
+    bottom: 0;
+    background-color: #f7fcfe;
+    content: ' ';
+    display: none;
+}
+
+.expandPopup .tabCtrl .tab .content .listItem.selectable:hover:before {
+    display: block;
+}
+
+.expandPopup .listItem .itemIndex {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 6px;
+}
+
+.expandPopup .listItem .milestoneItemIndex {
+    background-image: url("../../assets/tip.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 14px;
+}
+
+.expandPopup .list.onenum .itemIndex {
+    min-width: 14px;
+}
+
+.expandPopup .list.twonum .itemIndex {
+    min-width: 21px;
+}
+
+.expandPopup .list.twonum .milestoneItemIndex {
+    min-width: 21px;
+    padding-right: 7px;
+}
+
+.expandPopup .list.threenum .itemIndex {
+    min-width: 27px;
+}
+
+.expandPopup .list.threenum .milestoneItemIndex {
+    min-width: 27px;
+    padding-right: 13px;
+}
+
+.expandPopup .listItem .itemThumbnail {
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+}
+
+.expandPopup .listItem .itemRest {
+    height: 40px;
+    padding-left: 6px;
+    width: 265px;
+}
+
+.expandPopup .listItem .itemTitle,
+.expandPopup .listItem .itemDescription {
+    color: #646464;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+}
+
+.expandPopup .listItem .milestoneItemHeight {
+    height: 14px;
+    line-height: 14px;
+}
+
+.expandPopup .listItem .itemTitle span,
+.expandPopup .tabUses .listItem .itemTitle,
+.expandPopup .tabUsedIn .listItem .itemTitle,
+.expandPopup .tabDrawings .listItem .itemTitle
+{
+    font-weight: bold;
+    color: #000;
+}
+
+.expandPopup .tabUses .listItem .milestoneItemIcon,
+.expandPopup .tabUsedIn .listItem .milestoneItemIcon,
+.expandPopup .tabDrawings .listItem .milestoneItemIcon
+{
+    background-image: url("../../assets/tip.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.expandPopup .listItem span.nameSpan
+{
+    font-weight: normal;
+    color: #000;
+    float: right;
+}
+
+.expandPopup .listItem span.bySpan
+{
+    font-weight: normal;
+    color: #646464;
+    float: right;
+}
+
+.expandPopup .listItem .vernum {
+    background-color: #c3c3c3;
+    color: white;
+    line-height: 16px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 2px;
+}
+
+.expandPopup .listItem .exclamation {
+    line-height: 16px;
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    background-image: url('../../assets/triangle.svg');
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+
+.expandPopup .listItem .itemTools {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: -6px;
+    background: linear-gradient(to right, rgba(247,252,254,0) 0px,rgba(247,252,254,1) 10px);
+    padding-left: 10px;
+    display: none;
+}
+
+.expandPopup .listItem .itemTools .verticalThreeDots:hover,
+.expandPopup .listItem .itemTools.selected .verticalThreeDots{
+    background-image: url('../../assets/more_vertical_click.png');
+    background-size: 25px 25px;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+.expandPopup .listItem .itemTools.selected,
+.expandPopup .tabCtrl .tab .content .listItem.selectable:hover .itemTools {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Milestone: button with vertical three dots */
+.expandPopup .listItem .itemTools .verticalThreeDots {
+    background-image: url('../../assets/more_vertical.png');
+    background-size: 3px 15px;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+
+.expandPopup .listItem .itemTools .verticalThreeDots,
+.expandPopup .listItem .itemTools .cmdOpen,
+.expandPopup .listItem .itemTools .cmdPromote {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    padding: 6px;
+}
+
+.expandPopup .listItem .itemTools .cmdOpen {
+    background-image: url('../../assets/open.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+
+.expandPopup .listItem .itemTools .cmdPromote {
+    background-image: url('../../assets/promote.svg');
+    background-size: 15px 15px;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+
+/* Milestone: button with save */
+.expandPopup .listItem .cmdMilestoneSave {
+    background-image: url('../../assets/milestone_save.svg');
+    background-size: 16px 16px;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+
+/* Milestone: button with cancel */
+.expandPopup .listItem .cmdMilestoneCancel {
+    background-image: url('../../assets/milestone_cancel.svg');
+    background-size: 16px 16px;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+}
+
+.expandPopup .listItem .cmdMilestoneSave,
+.expandPopup .listItem .cmdMilestoneCancel {
+    display: flex;
+    position: relative;
+    width: 15px;
+    height: 15px;
+    padding: 6px;
+}
+
+.expandPopup .tabCtrl .tab .content .list:not(.showSubset) .showAllItem {
+    display: none;
+}
+
+.expandPopup .tabCtrl .tab .content .showAll {
+    font-size: 12px;
+}
+
+.expandPopup .tabCtrl .tab .content .inaccessibleFileItem {
+    position: relative;
+    width: 100%;
+    height: 52px;
+    font-size: 11px;
+}
+
+.expandPopup .tabCtrl .tab .content .list.showSubset .inaccessibleFileItem.initHidden {
+    display: none;
+}
+
+.expandPopup .tabCtrl .tab .content .inaccessibleFileItem.selectable:before {
+    position: absolute;
+    left: -10px;
+    right: -10px;
+    top: 0;
+    bottom: 0;
+    background-color: #f7fcfe;
+    content: ' ';
+    display: none;
+}
+
+.expandPopup .tabCtrl .tab .content .inaccessibleFileItem.selectable:hover:before {
+    display: block;
+}
+
+.expandPopup .inaccessibleFileItem .itemThumbnail1,
+.expandPopup .inaccessibleFileItem .itemThumbnail2,
+.expandPopup .inaccessibleFileItem .itemThumbnail3 {
+    background-size: 40px 40px;
+    width: 40px;
+    height: 40px;
+}
+
+.expandPopup .inaccessibleFileItem .itemThumbnail1 {
+    background-image: url('../../assets/inaccessible_file_1.svg');
+}
+
+.expandPopup .inaccessibleFileItem .itemThumbnail2 {
+    background-image: url('../../assets/inaccessible_files_2.svg');
+}
+
+.expandPopup .inaccessibleFileItem .itemThumbnail3 {
+    background-image: url('../../assets/inaccessible_files_3.svg');
+}
+
+.expandPopup .inaccessibleFileItem .itemRest {
+    height: 40px;
+    padding-left: 6px;
+    width: 265px;
+    display: flex;
+    flex-direction: row;
+}
+
+.expandPopup .inaccessibleFileItem .itemTitle {
+    color: #646464;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+}
+
+.expandPopup .inaccessibleFileItem .itemDescription {
+    color: #646464;
+    font-weight: normal;
+    height: 20px;
+    line-height: 20px;
+    padding-left: 6px;
+}
+
+.expandPopup .inaccessibleFileItem .itemTitle span,
+.expandPopup .tabUses .inaccessibleFileItem .itemTitle,
+.expandPopup .tabUsedIn .inaccessibleFileItem .itemTitle,
+.expandPopup .tabDrawings .inaccessibleFileItem .itemTitle
+{
+    font-weight: bold;
+    color: #000;
+}
+
+.expandPopup .inaccessibleFileItem .cmdDetails {
+    background-color: #6896C8;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: none;
+    font-family: Arial;
+    font-size: 12px;   
+    font-weight: bold; 
+    height: 28px;
+    line-height: 28px;     
+    padding: 0 10px;
+    transition: top 0.25s linear;
+    -webkit-box-sizing: border-box;
+    -webkit-transition: top 0.25s linear;   
+}
+
+.expandPopup .inaccessibleFileItem .cmdDetails:hover {
+    background-color: #70A2C6;
+}
+
+.expandPopup .inaccessibleFileItem .cmdDetails._disabled_ {
+    background-color: #BDBDBD;
+}
+
+.expandPopup .tabCtrl .tab .content .inaccessibleFileItem.selectable:hover .cmdDetails {
+    display: initial;
+}

@@ -1,0 +1,210 @@
+#version 330
+#include "Sketch_oit_def.ogsfh"
+#include "Sketch_primitive.ogsfh"
+#include "Sketch_line.ogsfh"
+#include "Sketch_line_no_weight.ogsfh"
+
+// single segment input texture
+uniform highp texture2D gSingleSegmentTex_ : SingleSegmentTexture;
+uniform highp sampler2D gSingleSegmentTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gSingleSegmentTex_>; };
+
+uniform highp texture2D gSegmentIndexTex_ : SegmentIndexTexture;
+uniform highp sampler2D gSegmentIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gSegmentIndexTex_>; };
+uniform highp texture2D gSegmentDrawOrderZTex_ : SegmentDrawOrderZTexture;
+uniform highp sampler2D gSegmentDrawOrderZTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gSegmentDrawOrderZTex_>; };
+
+attribute VS_INPUT
+{
+    int VertexID : TEXCOORD0;
+    int InstanceID : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 vso_position;
+    flat int vso_colorS;
+    float vso_dist;
+    float vso_isDot;
+};
+
+attribute pixelOut
+{
+    vec4 pso_color : COLOR0;
+};
+
+GLSLShader Sketch_segment
+{
+
+// segment input information
+struct SegmentAttr
+{
+    vec2 startPoint;
+    vec2 endPoint;
+    uint color;
+    float drawZ;
+    uint flag;
+    bool isLogical;
+};
+
+struct VertexAttr_Segment
+{
+    vec4 position;  // transformed  vertex position
+    uint color;     // line color
+    float dist;     // distance to line     
+
+    bool isDot;     // line degradate to a dot 
+};
+
+// load segment input information
+void load_single_segment_info(uint iid, out SegmentAttr attr)
+{
+    uint segmentID = iid;
+    uint drawOrderZIndex = uint(0);
+    if (gRetainMode)
+    {
+        uvec4 segmentIDVec = floatBitsToUint(texelFetch(gSegmentIndexTex, get_ptex_offset(iid), 0));
+        drawOrderZIndex = (segmentIDVec.x & uint(0xffff0000)) >> uint(16);
+        segmentID = segmentIDVec.x & uint(0xffff);
+    }
+    uint line_index = segmentID * uint(2);
+    ivec2 index_offset = get_ptex_offset(line_index);
+    
+    vec4 val = texelFetch(gSingleSegmentTex, index_offset, 0);
+    
+    attr.startPoint = val.xy;
+    attr.endPoint.x = val.z;
+    
+    index_offset = get_ptex_offset(line_index + uint(1));
+    val = texelFetch(gSingleSegmentTex, index_offset, 0);
+    attr.endPoint.y = val.x;
+    attr.color = floatBitsToUint(val.z);
+    
+
+    if (gRetainMode)
+    {
+        attr.flag = get_prim_flag(floatBitsToUint(val.y));
+        attr.isLogical = true;
+        drawOrderZIndex = (drawOrderZIndex > uint(0)) ? (drawOrderZIndex - uint(1)) : (floatBitsToUint(val.y) & uint(0xffff));
+        ivec2 index_offset = get_ptex_offset(drawOrderZIndex);
+        load_dynamic_draworderz(drawOrderZIndex, gSegmentDrawOrderZTex, attr.drawZ);
+    }
+    else
+    {
+        attr.drawZ = abs(val.y);
+        attr.isLogical = val.y < 0.0f;
+        if (!attr.isLogical && !gRetainMode)
+        {
+            adjust_line_segment_precision(attr.startPoint, attr.endPoint);        
+        }
+    }
+    
+    attr.flag = uint(0);
+}
+
+}
+
+GLSLShader Segment_VS
+{
+
+// compute segment vertex output properties
+void set_single_segment_propertties(uint vid, SegmentAttr seg_attr, float width, out VertexAttr_Segment outputData)
+{
+    float temp_dist = 0.0f;
+    bool temp_isDot = false;
+
+    if (gRetainMode)
+    {
+        outputData.position.xy = get_logical_line_envelope_pos(vid, seg_attr.flag,      
+            uint(width), seg_attr.startPoint, seg_attr.endPoint, temp_dist, temp_isDot);   
+        outputData.isDot = temp_isDot;
+    }
+    else
+    {
+        if (seg_attr.isLogical)
+        {
+            outputData.position.xy = get_logical_line_envelope_pos(vid, uint(0),
+                uint(width), seg_attr.startPoint, seg_attr.endPoint, temp_dist, temp_isDot);
+            outputData.isDot = temp_isDot;
+        }
+       else
+        {
+            outputData.position.xy = get_line_envelope_pos(vid,
+                uint(width), seg_attr.startPoint, seg_attr.endPoint, temp_dist);
+            outputData.isDot = false;
+        }    
+    }
+
+    outputData.position.z = seg_attr.drawZ;
+    outputData.position.xyz = outputData.position.xyz;
+    outputData.position.w = 1.0f;
+
+    outputData.dist = temp_dist;
+    outputData.color = seg_attr.color;
+}
+
+void main()
+{
+    SegmentAttr seg_attr = SegmentAttr(vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), uint(0), 0.0f, uint(0), false);
+
+    uint segmentID = uint(gl_InstanceID);
+
+    load_single_segment_info(segmentID, seg_attr);
+
+    float width = SINGLE_LINE_WIDTH_EXPAND;
+
+    VertexAttr_Segment outputData = VertexAttr_Segment(vec4(0.0f, 0.0f, 0.0f, 0.0f), uint(0), 0.0f, false);
+    set_single_segment_propertties(uint(gl_VertexID), seg_attr, width, outputData);
+
+    gl_Position = outputData.position;
+
+    vso_position = outputData.position;
+   // vso_position.z = 0.9;
+
+    vso_colorS = int(outputData.color);
+    vso_dist = outputData.dist;
+
+    if (outputData.isDot)
+    {
+        vso_isDot = 1.0f;
+    }
+    else
+    {
+        vso_isDot = 0.0f;
+    }
+}
+
+}
+
+GLSLShader Segment_PS
+{
+
+void main()
+{
+    vec4 color;
+    uint vso_color = uint(vso_colorS);
+
+    if (gRetainMode)
+    {
+        color = (vso_isDot > 0.5f) ? get_formatted_color(vso_color, 1.0f) : compute_final_color(get_extended_dist_to_center(abs(vso_dist)), get_extended_line_weight(SINGLE_LINE_WIDTH), vso_color, uint(0));
+    }
+    else
+    {
+        color = compute_final_color(get_extended_dist_to_center(abs(vso_dist)), get_extended_line_weight(SINGLE_LINE_WIDTH), vso_color, uint(0));
+    }
+    
+    if (color.a < 0.01f)
+        discard;
+    pso_color = OIT_PS_OUTPUT(color, vso_position);  
+}
+
+}
+
+technique Segment_AA
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = Segment_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = Segment_PS;
+    }
+}
+

@@ -1,0 +1,286 @@
+#version 330
+#include "Sketch_circle.ogsfh"
+#include "Sketch_circle_ellipse_lt.ogsfh"
+#include "Sketch_line.ogsfh"
+#include "Sketch_line_type_line.ogsfh"
+
+// line type circle index texture
+uniform highp texture2D gCircleLineTypeIndexTex_ : CircleLineTypeIndexTex;
+uniform highp sampler2D gCircleLineTypeIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gCircleLineTypeIndexTex_>; };
+
+// line type circle draw order texture
+uniform highp texture2D gCircleLineTypeDrawOrderZTex_ : CircleLineTypeDrawOrderZTex;
+uniform highp sampler2D gCircleLineTypeDrawOrderZTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gCircleLineTypeDrawOrderZTex_>; };
+
+attribute VS_INPUT
+{
+    int VertexID : TEXCOORD0;
+    int InstanceID : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 vso_position;
+    flat vec2 vso_radius;
+    flat vec2 vso_range;
+    flat vec2 vso_center;
+    flat float vso_rotate;
+
+    vec2 vso_uv;
+    flat int vso_colorS;
+    flat float vso_weight;
+    flat int vso_glowColorS; 
+
+    flat int vso_patternIndexS;
+    flat int vso_lt_dotS;
+    flat int vso_lt_invertedS;
+    flat int vso_reservedS;
+    flat vec4 vso_patternProp;
+};
+
+attribute pixelOut
+{
+    vec4 pso_color : COLOR0;
+};
+
+GLSLShader Circle_Line_Type_VS
+{
+
+void main()
+{
+    // load primitive index
+    uint primID = load_prim_id_from_tex(gCircleLineTypeIndexTex, uint(gl_InstanceID));
+
+    // load ellipse information
+    EllipseAttr_Dash ellipse_attr;
+    EllipseAttr_LineType linetype_attr;
+    load_ellipse_info_lt(primID, ellipse_attr, linetype_attr);
+
+    adjust_circle(ellipse_attr);
+
+    VertexAttr_Ellipse outputDataEllipse = output_vertex_attr_ellipse(uint(gl_VertexID), ellipse_attr);
+
+    // Merge lt_index and lt_dot
+    if (linetype_attr.lt_dot > uint(0) )
+        linetype_attr.lt_index = linetype_attr.lt_index | PURE_DOT_MASK;
+
+    // load linetype information
+    float startSkipLen, endSkipLen, patternOffset, patternScale;
+    load_line_type(primID, ellipse_attr.isLogical & linetype_attr.lt_logical, startSkipLen, endSkipLen, patternOffset, patternScale);
+
+    VertexAttr_LineType_Arc outputDataLT = VertexAttr_LineType_Arc(uint(0), uint(0), uint(0), uint(0), vec4(0.0f, 0.0f, 0.0f, 0.0f));
+
+    set_line_type_properties(linetype_attr, vec4(startSkipLen, endSkipLen, patternOffset, patternScale), outputDataLT);
+
+    gl_Position = outputDataEllipse.position;
+
+    vso_position = outputDataEllipse.position;
+    vso_radius = outputDataEllipse.radius;
+    vso_range = outputDataEllipse.range;
+    vso_center = outputDataEllipse.center;
+    vso_rotate = outputDataEllipse.rotate;
+    vso_uv = outputDataEllipse.uv;
+    vso_colorS = int(outputDataEllipse.color);
+    vso_weight = outputDataEllipse.weight;
+    vso_glowColorS = int(outputDataEllipse.glowColor);
+
+    vso_patternIndexS = int(outputDataLT.patternIndex);
+    vso_lt_dotS = int(outputDataLT.lt_dot);
+    vso_lt_invertedS = int(outputDataLT.lt_inverted);
+    vso_reservedS = int(outputDataLT.reserved);
+    vso_patternProp = outputDataLT.patternProp;
+}
+
+}
+
+GLSLShader Circle_Line_Type_PS
+{
+
+void main()
+{
+    uint vso_color = uint(vso_colorS);
+    uint vso_glowColor = uint(vso_glowColorS);
+    uint vso_patternIndex = uint(vso_patternIndexS);
+    uint vso_lt_dot = uint(vso_lt_dotS);
+    uint vso_lt_inverted = uint(vso_lt_invertedS);
+    uint vso_reserved = uint(vso_reservedS);
+
+    VertexAttr_Ellipse inputDataEllipse = VertexAttr_Ellipse(vso_position, vso_radius, vso_range,
+                                                             vso_center, vso_rotate, vso_uv,
+                                                             vso_color, vso_weight, vso_glowColor);
+
+    VertexAttr_LineType_Arc inputDataLT = VertexAttr_LineType_Arc(vso_patternIndex, vso_lt_dot,
+                                                                  vso_lt_inverted, vso_reserved,
+                                                                  vso_patternProp);
+
+    // get current pixel's angle on circle
+    float cur_angle = get_ellipse_angle(inputDataEllipse.radius, inputDataEllipse.uv);
+
+    // discard out of angle range pixels
+    if (!angle_is_in_range(cur_angle, inputDataEllipse.range))
+        discard;
+
+    if (gNoAAMode != 0)
+    {
+        if (not_in_circle(inputDataEllipse, inputDataEllipse.weight))
+            discard;
+    }
+
+    // adjust angle
+    if (cur_angle < inputDataEllipse.range.x)
+       cur_angle = TWO_PI+ cur_angle;
+
+    bool is_dot;
+    bool no_aa;
+    float dot_dist;
+
+    // get distance to start and end point
+    float dist_to_start = inputDataEllipse.radius.x * (cur_angle - inputDataEllipse.range.x);
+    float dist_to_end = inputDataEllipse.radius.x * (inputDataEllipse.range.y - cur_angle);
+    if (inputDataLT.lt_inverted != uint(0))
+    {
+        float tmp = dist_to_start;
+        dist_to_start = dist_to_end;
+        dist_to_end = tmp;
+    }
+
+    // get distance to circle
+    float dist_to_circle = abs(sqrt(inputDataEllipse.uv.x*inputDataEllipse.uv.x + inputDataEllipse.uv.y*inputDataEllipse.uv.y) - inputDataEllipse.radius.x);
+
+    vec4 color;
+
+    // Handle arc with lineweight.
+    if (inputDataEllipse.weight > 1.0f)
+    {
+        WideLinePatternResult left_attr;
+        WideLinePatternResult right_attr;
+
+        WideLinePatternAttr attr;
+        attr.dist = dist_to_circle;
+        attr.width = inputDataEllipse.weight;
+        attr.startDist = dist_to_start;
+        attr.endDist = dist_to_end;
+        attr.startSkipLen = inputDataLT.patternProp.x;
+        attr.endSkipLen =  inputDataLT.patternProp.y;
+        attr.patternScale = inputDataLT.patternProp.z;
+        attr.patternOffset = inputDataLT.patternProp.w;
+        attr.patternIndex = inputDataLT.patternIndex;
+
+        WideEllipseInfo info;
+        info.inverted = (inputDataLT.lt_inverted != uint(0));
+        info.radius = inputDataEllipse.radius;
+        info.range = inputDataEllipse.range;
+        info.hasPrevLine = false;
+        info.hasPostLine = false;
+        info.isCircle = true;
+        info.curAngle = 0.0f;
+
+        int res = check_widearc_line_pattern(attr, info, glowWidth(), left_attr, right_attr);
+
+        if (res == PURE_SPACE)
+           discard;
+
+        float width = adjust_line_width_wide_line(uint(inputDataEllipse.weight));
+
+        if (res == PURE_DASH)
+        {
+            if (gNoAAMode != 0)
+            {
+#ifdef ANALYTIC_HIGHLIGHT
+                bool in_sharp = !not_in_circle(inputDataEllipse, width);
+                color = compute_highlight_sharp_color(dist_to_circle, width, inputDataEllipse.color, inputDataEllipse.glowColor, in_sharp);
+#else
+                color = get_formatted_color(inputDataEllipse.color, 1.0f);
+#endif
+            }
+            else
+            {
+                color = compute_final_color(dist_to_circle, width, inputDataEllipse.color, inputDataEllipse.glowColor);
+            }
+        }
+        else
+        {
+            vec4 left_color;
+            vec4 right_color;
+
+            if (gNoAAMode != 0)
+            {
+                left_color = compute_wide_pattern_color_sharp_curve(left_attr, width, inputDataEllipse.color, inputDataEllipse.glowColor, inputDataEllipse.uv, uint(2));
+
+                right_color = compute_wide_pattern_color_sharp_curve(right_attr, width, inputDataEllipse.color, inputDataEllipse.glowColor, inputDataEllipse.uv, uint(2));
+            }
+
+            left_color = compute_wide_pattern_color(left_attr, width,
+                inputDataEllipse.color, inputDataEllipse.glowColor, inputDataEllipse.uv, uint(2));
+
+            right_color = compute_wide_pattern_color(right_attr, width, 
+                inputDataEllipse.color, inputDataEllipse.glowColor, inputDataEllipse.uv, uint(2));
+
+            color = (left_color.a >= right_color.a)? left_color:right_color;
+
+        } 
+    }
+    // Handle arc without lineweight.
+    else
+    {
+        SimpleLineTypeAttr attr = SimpleLineTypeAttr(0.0f, 0.0f, 0.0f, 0.0f, 0.0f, vec2(0.0f, 0.0f),
+                                                     0.0f, 0.0f, uint(0), false, false);
+        attr.startDist = dist_to_start;
+        attr.endDist = dist_to_end;
+        attr.startSkipLen = inputDataLT.patternProp.x;
+        attr.endSkipLen = inputDataLT.patternProp.y;
+        attr.patternScale = inputDataLT.patternProp.z;
+        attr.patternOffset = inputDataLT.patternProp.w;
+        attr.patternID = inputDataLT.patternIndex;
+        attr.lineDir = normalize(vec2(-inputDataEllipse.uv.y, inputDataEllipse.uv.x));
+        attr.isClosed = is_closed_arc(inputDataEllipse.range);
+
+        SimpleLineTypeResult result;
+        
+        bool display = check_line_pattern(attr, result);
+
+        if (!display)
+            discard;
+
+        if (result.isDot && !result.noDotAA)
+        {
+            float dist_to_dot_center = sqrt(dist_to_circle*dist_to_circle + result.dotDist*result.dotDist);
+
+            if (gNoAAMode != 0)
+            {
+                color = compute_final_color_sharp(get_extended_dist_to_center(dist_to_dot_center), get_extended_line_type_dot_weight(inputDataEllipse.weight), inputDataEllipse.color, inputDataEllipse.glowColor);
+            }
+            else
+            {
+                color = compute_final_color(get_extended_dist_to_center(dist_to_dot_center), get_extended_line_type_dot_weight(inputDataEllipse.weight), inputDataEllipse.color, inputDataEllipse.glowColor);
+            }
+        } 
+        else
+        {
+            if (gNoAAMode != 0)
+            {
+                color = compute_final_color_sharp(get_extended_dist_to_center(dist_to_circle), get_extended_line_weight(inputDataEllipse.weight), inputDataEllipse.color, inputDataEllipse.glowColor);
+            }
+            else
+            {
+                color = compute_final_color(get_extended_dist_to_center(dist_to_circle), get_extended_line_weight(inputDataEllipse.weight), inputDataEllipse.color, inputDataEllipse.glowColor);
+            }
+        }
+    }
+
+    if (color.a < 0.01f)
+        discard;
+    pso_color = OIT_PS_OUTPUT(color, vso_position);  
+}
+
+}
+
+technique Circle_Line_Type
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = Circle_Line_Type_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = Circle_Line_Type_PS;
+    }
+}
+

@@ -1,0 +1,168 @@
+#version 330
+#include "Sketch_triangle.ogsfh"
+
+// simple triangle strip vertex texture structure (glow is the same):
+// 1. coordinates (2 floats)
+// 2. uv  (2 floats)
+// 3. primitive index + unused (2 floats)
+uniform highp texture2D gTexturedTriStripVertexTex_ : TexturedTriangleStripVertexTexture ;
+uniform highp sampler2D gTexturedTriStripVertexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gTexturedTriStripVertexTex_>; };
+
+// Textured triangle strip primitive texture structure:
+// depth and logical flag shared value
+uniform highp texture2D gTexturedTriStripPrimTex_ : TexturedTriangleStripPrimTexture ;
+uniform highp sampler2D gTexturedTriStripPrimTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gTexturedTriStripPrimTex_>; };
+
+// Textured triangle list index texture structure:
+// index value of current triangle
+uniform highp texture2D gTexturedTriStripIndexTex_ : TexturedTriangleStripIndexTexture ;
+uniform highp sampler2D gTexturedTriStripIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gTexturedTriStripIndexTex_>; };
+
+// Bulk of different input textures.
+uniform highp texture2D gColorTexture0_ : ColorTexture0 ;
+uniform highp texture2D gColorTexture1_ : ColorTexture1 ;
+uniform highp texture2D gColorTexture2_ : ColorTexture2 ;
+uniform highp texture2D gColorTexture3_ : ColorTexture3 ;
+uniform highp texture2D gColorTexture4_ : ColorTexture4 ;
+uniform highp texture2D gColorTexture5_ : ColorTexture5 ;
+uniform highp texture2D gColorTexture6_ : ColorTexture6 ;
+uniform highp texture2D gColorTexture7_ : ColorTexture7 ;
+uniform highp sampler2D gColorTexture0 : TextureSampler0 = sampler_state { Texture = <gColorTexture0_>; };
+uniform highp sampler2D gColorTexture1 : TextureSampler1 = sampler_state { Texture = <gColorTexture1_>; };
+uniform highp sampler2D gColorTexture2 : TextureSampler2 = sampler_state { Texture = <gColorTexture2_>; };
+uniform highp sampler2D gColorTexture3 : TextureSampler3 = sampler_state { Texture = <gColorTexture3_>; };
+uniform highp sampler2D gColorTexture4 : TextureSampler4 = sampler_state { Texture = <gColorTexture4_>; };
+uniform highp sampler2D gColorTexture5 : TextureSampler5 = sampler_state { Texture = <gColorTexture5_>; };
+uniform highp sampler2D gColorTexture6 : TextureSampler6 = sampler_state { Texture = <gColorTexture6_>; };
+uniform highp sampler2D gColorTexture7 : TextureSampler7 = sampler_state { Texture = <gColorTexture7_>; };
+
+attribute VS_INPUT
+{
+    int VertexID : TEXCOORD0;
+    int InstanceID : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 vso_pos;
+    vec4 vso_color;
+    vec2 vso_uv;
+    flat int vso_tex_indexS;
+};
+
+attribute pixelOut
+{
+    vec4 pso_color : COLOR0;
+};
+
+GLSLShader TexturedTriangleStrip_VS
+{
+
+void load_textured_triangle_strip_info(uint vtx_id, out TexTriVertexAttr attr)
+{
+    ivec2 ver_offset = get_ptex_offset(vtx_id * uint(2));
+    vec4 val = texelFetch(gTexturedTriStripVertexTex, ver_offset, 0);
+
+    ivec2 ver_offset1 = get_ptex_offset(vtx_id * uint(2) + uint(1));
+    vec4 val1 = texelFetch(gTexturedTriStripVertexTex, ver_offset1, 0);
+
+    ivec2 prim_offset = get_ptex_offset(floatBitsToUint(val1.z) * uint(2));
+    vec4 prims = texelFetch(gTexturedTriStripPrimTex, prim_offset, 0);
+
+    ivec2 prim_offset1 = get_ptex_offset(floatBitsToUint(val1.z) * uint(2) + uint(1));
+    vec4 prims1 = texelFetch(gTexturedTriStripPrimTex, prim_offset1, 0);
+
+    attr.pos = val.xy;
+    attr.uv = val1.xy;
+    attr.uv.y = 1.0f - attr.uv.y;
+    attr.uv = attr.uv * prims1.xy + prims1.zw;
+
+    attr.drawZ = abs(prims.x);
+    attr.isLogical = (prims.x < 0.0) ? uint(1): uint(0);
+    attr.color = floatBitsToUint(prims.y);
+    attr.tex_index = floatBitsToUint(prims.z);
+}
+
+void main()
+{
+    TexTriVertexAttr attr = TexTriVertexAttr(vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), 0.0f, uint(0), uint(0), uint(0));
+
+    uint vtx_id = load_tri_id_from_tex(gTexturedTriStripIndexTex, uint(gl_VertexID));
+
+    load_textured_triangle_strip_info(vtx_id, attr);
+
+    VertexAttr_Textured_Triangle outputData = VertexAttr_Textured_Triangle(vec4(0.0f, 0.0f, 0.0f, 0.0f),
+                                                                       vec4(0.0f, 0.0f, 0.0f, 0.0f),
+                                                                       vec2(0.0f, 0.0f), uint(0));
+    set_textured_triangle_properties(attr, outputData);
+
+    gl_Position = outputData.position;
+
+    vso_pos = outputData.position;
+    vso_color = outputData.color;
+    vso_uv = outputData.uv;
+    vso_tex_indexS = int(outputData.tex_index);
+}
+
+}
+
+GLSLShader TexturedTriangle_PS
+{
+
+void main()
+{
+    uint vso_tex_index = uint(vso_tex_indexS);
+    uint tex_index = (vso_tex_index & uint(0xFFFF));
+    uint tex_rgb_order = ((vso_tex_index & uint(0x10000)) >> uint(16));
+    uint tex_alpha_only = ((vso_tex_index & uint(0x20000)) >> uint(17));
+
+    vec4 tex_color;
+    if (tex_index == uint(0))
+        tex_color = texture(gColorTexture0, vso_uv);
+    else if (tex_index == uint(1))
+        tex_color = texture(gColorTexture1, vso_uv);
+    else if (tex_index == uint(2))
+        tex_color = texture(gColorTexture2, vso_uv);
+    else if (tex_index == uint(3))
+        tex_color = texture(gColorTexture3, vso_uv);
+    else if (tex_index == uint(4))
+        tex_color = texture(gColorTexture4, vso_uv);
+    else if (tex_index == uint(5))
+        tex_color = texture(gColorTexture5, vso_uv);
+    else if (tex_index == uint(6))
+        tex_color = texture(gColorTexture6, vso_uv);
+    else if (tex_index == uint(7))
+        tex_color = texture(gColorTexture7, vso_uv);
+    else
+        tex_color = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+
+    if (tex_alpha_only != uint(0))
+    {
+        tex_color = vec4(1.0f, 1.0f, 1.0f, tex_color.a);
+    }
+
+    if (tex_rgb_order == uint(0))
+    {
+        float t_color = tex_color.r;
+        tex_color.r = tex_color.b;
+        tex_color.b = t_color;
+    }
+
+    vec4 final_color = tex_color*vso_color;
+
+    if (final_color.a < 0.01f)
+        discard;
+    pso_color = OIT_PS_OUTPUT(final_color, vso_pos);  
+}
+
+}
+
+technique TexturedTriangleStrip
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = TexturedTriangleStrip_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = TexturedTriangle_PS;
+    }
+}
+

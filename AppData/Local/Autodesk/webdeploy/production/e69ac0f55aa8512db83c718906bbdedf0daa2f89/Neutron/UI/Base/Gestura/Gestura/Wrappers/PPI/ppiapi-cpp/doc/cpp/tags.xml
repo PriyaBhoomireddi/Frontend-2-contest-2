@@ -1,0 +1,2221 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+<tagfile>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+    <docanchor file="index">PPIGest</docanchor>
+    <docanchor file="index">PPITrace</docanchor>
+    <docanchor file="index">Changes</docanchor>
+    <docanchor file="index">Interfaces</docanchor>
+  </compound>
+  <compound kind="file">
+    <name>APIBase.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/cpp/include/PPI/APIBase/</path>
+    <filename>_a_p_i_base_8h</filename>
+    <class kind="class">PPI::APIBase::APIBase</class>
+    <namespace>PPI</namespace>
+    <namespace>PPI::APIBase</namespace>
+  </compound>
+  <compound kind="file">
+    <name>GestureRec.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/cpp/include/PPI/Gest/</path>
+    <filename>_gesture_rec_8h</filename>
+    <includes id="_trace_8h" name="Trace.h" local="no" imported="no">PPI/Trace/Trace.h</includes>
+    <class kind="class">PPI::Gest::Recognizer</class>
+    <class kind="class">PPI::Gest::IndependentRecognizerListener</class>
+    <class kind="class">PPI::Gest::IndependentRecognizer</class>
+    <class kind="class">PPI::Gest::GroupRecognizerListener</class>
+    <class kind="class">PPI::Gest::GroupRecognizer</class>
+    <class kind="class">PPI::Gest::TapHoldRecognizerListener</class>
+    <class kind="class">PPI::Gest::TapHoldRecognizer</class>
+    <class kind="class">PPI::Gest::PZRRecognizerListener</class>
+    <class kind="class">PPI::Gest::PZRRecognizer</class>
+    <namespace>PPI</namespace>
+    <namespace>PPI::Gest</namespace>
+    <member kind="enumeration">
+      <name>RecognizerState</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>a9524bb90325a7482dafc42ae3dc238dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RecognizerState_Waiting</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>a9524bb90325a7482dafc42ae3dc238dda4790799741ad68e721362c2832f6167d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RecognizerState_Processing</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>a9524bb90325a7482dafc42ae3dc238ddaf9ff59f4085280281bb023334fd8b95c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RecognizerState_Success</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>a9524bb90325a7482dafc42ae3dc238ddaa8b935f16836bf8e087bb50cd259462a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RecognizerState_Failure</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>a9524bb90325a7482dafc42ae3dc238ddaa6f89b503eb6f09cea1e9d601bf7bac7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>TapHoldRecognizerTypes</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>ab4093a096a003c0dd0f5c1e0301fc7f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TapHoldRecognizerTypes_None</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>ab4093a096a003c0dd0f5c1e0301fc7f2a6073b20ad4e0d770714d477534662ca2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TapHoldRecognizerTypes_Tap</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>ab4093a096a003c0dd0f5c1e0301fc7f2ac4fe730399cec3fbc7b118fbbc9ca9b8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TapHoldRecognizerTypes_Hold</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>ab4093a096a003c0dd0f5c1e0301fc7f2a6f0a530d924dff4825a73bc4d9ddc0aa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TapHoldRecognizerTypes_All</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>ab4093a096a003c0dd0f5c1e0301fc7f2ac7ec2d960c3118509ec35c981a85fa49</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>PZRRecognizerTypes</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>abbb4bb4d95b9ae32e937f5dc8c23c8ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PZRRecognizerTypes_None</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>abbb4bb4d95b9ae32e937f5dc8c23c8eea618b73267e45e34038f276ac6be9c9db</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PZRRecognizerTypes_HorzPan</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>abbb4bb4d95b9ae32e937f5dc8c23c8eea5212873916710bdb646b622604c96276</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PZRRecognizerTypes_VertPan</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>abbb4bb4d95b9ae32e937f5dc8c23c8eea5a75942f610259fb19dbec1794fd0875</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PZRRecognizerTypes_Rotation</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>abbb4bb4d95b9ae32e937f5dc8c23c8eeab696f7ba6185520f11d304433d05278b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PZRRecognizerTypes_Zoom</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>abbb4bb4d95b9ae32e937f5dc8c23c8eea4bc1b0654a4c3da6abfa3ac9a35f8e2e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PZRRecognizerTypes_All</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>abbb4bb4d95b9ae32e937f5dc8c23c8eea1a0e0e3e48e753ccf7a2fe1222f31485</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>Interface.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/cpp/include/PPI/</path>
+    <filename>_interface_8h</filename>
+    <namespace>PPI</namespace>
+    <member kind="function">
+      <type>void</type>
+      <name>getAPIVersions</name>
+      <anchorfile>namespace_p_p_i.html</anchorfile>
+      <anchor>a7269ce528cf0dff3d2d8be8c2001364b</anchor>
+      <arglist>(int *major, int *minor, int *patch)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>Trace.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/cpp/include/PPI/Trace/</path>
+    <filename>_trace_8h</filename>
+    <includes id="_a_p_i_base_8h" name="APIBase.h" local="no" imported="no">PPI/APIBase/APIBase.h</includes>
+    <class kind="class">PPI::Trace::InputPassListener</class>
+    <class kind="class">PPI::Trace::TraceListener</class>
+    <class kind="class">PPI::Trace::TouchTraceListener</class>
+    <class kind="class">PPI::Trace::PenTraceListener</class>
+    <class kind="class">PPI::Trace::HoverTraceListener</class>
+    <class kind="class">PPI::Trace::Trace</class>
+    <class kind="class">PPI::Trace::TouchTrace</class>
+    <class kind="class">PPI::Trace::PenTrace</class>
+    <class kind="class">PPI::Trace::HoverTrace</class>
+    <namespace>PPI</namespace>
+    <namespace>PPI::Gest</namespace>
+    <namespace>PPI::Trace</namespace>
+  </compound>
+  <compound kind="file">
+    <name>TraceGenerator.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/cpp/include/PPI/Trace/</path>
+    <filename>_trace_generator_8h</filename>
+    <includes id="_trace_8h" name="Trace.h" local="no" imported="no">PPI/Trace/Trace.h</includes>
+    <class kind="class">PPI::Trace::TraceGeneratorListener</class>
+    <class kind="class">PPI::Trace::TraceGenerator</class>
+    <namespace>PPI</namespace>
+    <namespace>PPI::Trace</namespace>
+  </compound>
+  <compound kind="page">
+    <name>VirtualDesktop</name>
+    <title>Virtual Desktop Coordinates</title>
+    <filename>virtualdesktop</filename>
+    <docanchor file="virtualdesktop">InputPointDisambiguation</docanchor>
+    <docanchor file="virtualdesktop">Example</docanchor>
+  </compound>
+  <compound kind="page">
+    <name>Concurrency</name>
+    <title>Concurrency and multiple threads</title>
+    <filename>concurrency</filename>
+  </compound>
+  <compound kind="page">
+    <name>TraceLifeCycle</name>
+    <title>Trace Life Cycle</title>
+    <filename>tracelifecycle</filename>
+    <docanchor file="tracelifecycle">InputPassBegin</docanchor>
+    <docanchor file="tracelifecycle">Overview</docanchor>
+    <docanchor file="tracelifecycle">TraceLifetimes</docanchor>
+    <docanchor file="tracelifecycle">Threading</docanchor>
+    <docanchor file="tracelifecycle">InputPassEnd</docanchor>
+    <docanchor file="tracelifecycle">InputProcessing</docanchor>
+  </compound>
+  <compound kind="page">
+    <name>TraceLifetimeEvents</name>
+    <title>Trace Lifetime Events</title>
+    <filename>tracelifetimeevents</filename>
+    <docanchor file="tracelifetimeevents">TouchTraces</docanchor>
+    <docanchor file="tracelifetimeevents">PenHoverTraces</docanchor>
+  </compound>
+  <compound kind="page">
+    <name>GestureRecognizerOverview</name>
+    <title>Gesture Recognizers</title>
+    <filename>gesturerecognizeroverview</filename>
+    <docanchor file="gesturerecognizeroverview">GestureRecChains</docanchor>
+    <docanchor file="gesturerecognizeroverview">GestureRecChainExample</docanchor>
+    <docanchor file="gesturerecognizeroverview">GestureRecOverview</docanchor>
+  </compound>
+  <compound kind="page">
+    <name>Changes102_110</name>
+    <title>API Changes from 1.0.2 to 1.1.0</title>
+    <filename>changes102_110</filename>
+    <docanchor file="changes102_110">CChanges</docanchor>
+    <docanchor file="changes102_110">OvewviewBreaking</docanchor>
+    <docanchor file="changes102_110">CPPAdditions</docanchor>
+    <docanchor file="changes102_110">OverviewBehavior</docanchor>
+    <docanchor file="changes102_110">CAdditions</docanchor>
+    <docanchor file="changes102_110">AllAdditions</docanchor>
+    <docanchor file="changes102_110">AllChanges</docanchor>
+    <docanchor file="changes102_110">OverviewNew</docanchor>
+  </compound>
+  <compound kind="namespace">
+    <name>PPI</name>
+    <filename>namespace_p_p_i.html</filename>
+    <namespace>PPI::APIBase</namespace>
+    <namespace>PPI::Gest</namespace>
+    <namespace>PPI::Trace</namespace>
+    <member kind="function">
+      <type>void</type>
+      <name>getAPIVersions</name>
+      <anchorfile>namespace_p_p_i.html</anchorfile>
+      <anchor>a7269ce528cf0dff3d2d8be8c2001364b</anchor>
+      <arglist>(int *major, int *minor, int *patch)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>PPI::APIBase</name>
+    <filename>namespace_p_p_i_1_1_a_p_i_base.html</filename>
+    <class kind="class">PPI::APIBase::APIBase</class>
+  </compound>
+  <compound kind="class">
+    <name>PPI::APIBase::APIBase</name>
+    <filename>class_p_p_i_1_1_a_p_i_base_1_1_a_p_i_base.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>APIBase</name>
+      <anchorfile>class_p_p_i_1_1_a_p_i_base_1_1_a_p_i_base.html</anchorfile>
+      <anchor>afa8f6b9a951614c1f3c478306278ce81</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>APIBase</name>
+      <anchorfile>class_p_p_i_1_1_a_p_i_base_1_1_a_p_i_base.html</anchorfile>
+      <anchor>a26eafac7e6d2c6dffb9ce99e9edab8be</anchor>
+      <arglist>(const ppi_api_base *impl)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>APIBase</name>
+      <anchorfile>class_p_p_i_1_1_a_p_i_base_1_1_a_p_i_base.html</anchorfile>
+      <anchor>ad226b6d8fbd1abc657fd87d1e350ae48</anchor>
+      <arglist>(const APIBase &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>APIBase &amp;</type>
+      <name>operator=</name>
+      <anchorfile>class_p_p_i_1_1_a_p_i_base_1_1_a_p_i_base.html</anchorfile>
+      <anchor>a02a286963fbc88e50227265635a24614</anchor>
+      <arglist>(const APIBase &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~APIBase</name>
+      <anchorfile>class_p_p_i_1_1_a_p_i_base_1_1_a_p_i_base.html</anchorfile>
+      <anchor>a4f6a64a9f6f35e2cd50cd87dde19a44c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isValid</name>
+      <anchorfile>class_p_p_i_1_1_a_p_i_base_1_1_a_p_i_base.html</anchorfile>
+      <anchor>ad05bc6731ad39ed7f7434715c48060a9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>reset</name>
+      <anchorfile>class_p_p_i_1_1_a_p_i_base_1_1_a_p_i_base.html</anchorfile>
+      <anchor>a1c8dca4c8a1313837a12de5b15c2a162</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>int32_t</type>
+      <name>getRefCount</name>
+      <anchorfile>class_p_p_i_1_1_a_p_i_base_1_1_a_p_i_base.html</anchorfile>
+      <anchor>a0f516d70ffd195f5d4236c9689a3bd0e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addDestructionCallback</name>
+      <anchorfile>class_p_p_i_1_1_a_p_i_base_1_1_a_p_i_base.html</anchorfile>
+      <anchor>adc17127fe174392679651b190a1cb40a</anchor>
+      <arglist>(ppi_api_base_destruction_callback callback, void *client_data) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removeDestructionCallback</name>
+      <anchorfile>class_p_p_i_1_1_a_p_i_base_1_1_a_p_i_base.html</anchorfile>
+      <anchor>aa3687768618da6b0d1fa2c07ecce7e00</anchor>
+      <arglist>(void *client_data) const </arglist>
+    </member>
+    <member kind="variable">
+      <type>const ppi_api_base *</type>
+      <name>m_impl</name>
+      <anchorfile>class_p_p_i_1_1_a_p_i_base_1_1_a_p_i_base.html</anchorfile>
+      <anchor>ab5cee72e6bb180c454da38d94fec05ba</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>PPI::Gest</name>
+    <filename>namespace_p_p_i_1_1_gest.html</filename>
+    <class kind="class">PPI::Gest::Recognizer</class>
+    <class kind="class">PPI::Gest::IndependentRecognizerListener</class>
+    <class kind="class">PPI::Gest::IndependentRecognizer</class>
+    <class kind="class">PPI::Gest::GroupRecognizerListener</class>
+    <class kind="class">PPI::Gest::GroupRecognizer</class>
+    <class kind="class">PPI::Gest::TapHoldRecognizerListener</class>
+    <class kind="class">PPI::Gest::TapHoldRecognizer</class>
+    <class kind="class">PPI::Gest::PZRRecognizerListener</class>
+    <class kind="class">PPI::Gest::PZRRecognizer</class>
+    <member kind="enumeration">
+      <name>RecognizerState</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>a9524bb90325a7482dafc42ae3dc238dd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RecognizerState_Waiting</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>a9524bb90325a7482dafc42ae3dc238dda4790799741ad68e721362c2832f6167d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RecognizerState_Processing</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>a9524bb90325a7482dafc42ae3dc238ddaf9ff59f4085280281bb023334fd8b95c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RecognizerState_Success</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>a9524bb90325a7482dafc42ae3dc238ddaa8b935f16836bf8e087bb50cd259462a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>RecognizerState_Failure</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>a9524bb90325a7482dafc42ae3dc238ddaa6f89b503eb6f09cea1e9d601bf7bac7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>TapHoldRecognizerTypes</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>ab4093a096a003c0dd0f5c1e0301fc7f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TapHoldRecognizerTypes_None</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>ab4093a096a003c0dd0f5c1e0301fc7f2a6073b20ad4e0d770714d477534662ca2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TapHoldRecognizerTypes_Tap</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>ab4093a096a003c0dd0f5c1e0301fc7f2ac4fe730399cec3fbc7b118fbbc9ca9b8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TapHoldRecognizerTypes_Hold</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>ab4093a096a003c0dd0f5c1e0301fc7f2a6f0a530d924dff4825a73bc4d9ddc0aa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>TapHoldRecognizerTypes_All</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>ab4093a096a003c0dd0f5c1e0301fc7f2ac7ec2d960c3118509ec35c981a85fa49</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>PZRRecognizerTypes</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>abbb4bb4d95b9ae32e937f5dc8c23c8ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PZRRecognizerTypes_None</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>abbb4bb4d95b9ae32e937f5dc8c23c8eea618b73267e45e34038f276ac6be9c9db</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PZRRecognizerTypes_HorzPan</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>abbb4bb4d95b9ae32e937f5dc8c23c8eea5212873916710bdb646b622604c96276</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PZRRecognizerTypes_VertPan</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>abbb4bb4d95b9ae32e937f5dc8c23c8eea5a75942f610259fb19dbec1794fd0875</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PZRRecognizerTypes_Rotation</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>abbb4bb4d95b9ae32e937f5dc8c23c8eeab696f7ba6185520f11d304433d05278b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PZRRecognizerTypes_Zoom</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>abbb4bb4d95b9ae32e937f5dc8c23c8eea4bc1b0654a4c3da6abfa3ac9a35f8e2e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PZRRecognizerTypes_All</name>
+      <anchorfile>namespace_p_p_i_1_1_gest.html</anchorfile>
+      <anchor>abbb4bb4d95b9ae32e937f5dc8c23c8eea1a0e0e3e48e753ccf7a2fe1222f31485</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Gest::Recognizer</name>
+    <filename>class_p_p_i_1_1_gest_1_1_recognizer.html</filename>
+    <base>PPI::APIBase::APIBase</base>
+    <member kind="function">
+      <type></type>
+      <name>Recognizer</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_recognizer.html</anchorfile>
+      <anchor>ad56a0f08001906a842b55ca86a96a764</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Recognizer</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_recognizer.html</anchorfile>
+      <anchor>a8a058c8fa354c4f948d0b9511105e1c0</anchor>
+      <arglist>(ppi_gest_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_recognizer.html</anchorfile>
+      <anchor>a6c30a21ebc7167283a9d01c8806dabba</anchor>
+      <arglist>(const Recognizer &amp;other) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator!=</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_recognizer.html</anchorfile>
+      <anchor>a532bedf83183e87f45777bc5b2cbcbcc</anchor>
+      <arglist>(const Recognizer &amp;other) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&lt;</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_recognizer.html</anchorfile>
+      <anchor>ab39b2686d7c4614f2fd77374b841c4d2</anchor>
+      <arglist>(const Recognizer &amp;other) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addTrace</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_recognizer.html</anchorfile>
+      <anchor>a7ae7a69e7dbad35e2bcaa34acf7c6006</anchor>
+      <arglist>(const Trace::Trace &amp;trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removeTrace</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_recognizer.html</anchorfile>
+      <anchor>ad629bfacb78f662de71510bc81a32700</anchor>
+      <arglist>(const Trace::Trace &amp;trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>size_t</type>
+      <name>getNumTraces</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_recognizer.html</anchorfile>
+      <anchor>a24dc46b5eb92b74bd1cf7886991c2a72</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>Trace::Trace</type>
+      <name>getTrace</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_recognizer.html</anchorfile>
+      <anchor>a3fcbef3980ff4bd21f2b322eda0501ff</anchor>
+      <arglist>(const size_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addFailureTarget</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_recognizer.html</anchorfile>
+      <anchor>a4a89cc69b2fbc30bef6a14e8381ece5f</anchor>
+      <arglist>(const Recognizer &amp;target)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>const ppi_trace *</type>
+      <name>getTraceImpl</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_recognizer.html</anchorfile>
+      <anchor>a1de72003a2b316bb449d0c73724e4d35</anchor>
+      <arglist>(const Trace::Trace &amp;trace) const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Gest::IndependentRecognizerListener</name>
+    <filename>class_p_p_i_1_1_gest_1_1_independent_recognizer_listener.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onStateChanged</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_independent_recognizer_listener.html</anchorfile>
+      <anchor>a0146d897c0949bd21dcbc4b3d46d8b26</anchor>
+      <arglist>(const IndependentRecognizer &amp;rec, const Trace::Trace &amp;trace, const RecognizerState old_state, const RecognizerState new_state)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Gest::IndependentRecognizer</name>
+    <filename>class_p_p_i_1_1_gest_1_1_independent_recognizer.html</filename>
+    <base>PPI::Gest::Recognizer</base>
+    <member kind="function">
+      <type></type>
+      <name>IndependentRecognizer</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_independent_recognizer.html</anchorfile>
+      <anchor>ad0b72c74bda098c90c20056898577463</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IndependentRecognizer</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_independent_recognizer.html</anchorfile>
+      <anchor>ad3cc797eddd81a4dc3ca0a2ec3e3ae03</anchor>
+      <arglist>(ppi_gest_indep_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>IndependentRecognizer</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_independent_recognizer.html</anchorfile>
+      <anchor>aeaebef242bb9b53b3d137f38c2b65779</anchor>
+      <arglist>(const IndependentRecognizer &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>IndependentRecognizer &amp;</type>
+      <name>operator=</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_independent_recognizer.html</anchorfile>
+      <anchor>a6565ded033b2cadc2f814a9f1116ed69</anchor>
+      <arglist>(const IndependentRecognizer &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addIndependentListener</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_independent_recognizer.html</anchorfile>
+      <anchor>a466d006396b7af5e7292adc29ce887e9</anchor>
+      <arglist>(IndependentRecognizerListener *listener)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removeIndependentListener</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_independent_recognizer.html</anchorfile>
+      <anchor>a5584720d6b8a39c63fbf761659c572c1</anchor>
+      <arglist>(IndependentRecognizerListener *listener)</arglist>
+    </member>
+    <member kind="function">
+      <type>RecognizerState</type>
+      <name>getState</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_independent_recognizer.html</anchorfile>
+      <anchor>a25a056b3b6e34c496e3751bc3547d6ab</anchor>
+      <arglist>(const Trace::Trace &amp;trace) const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Gest::GroupRecognizerListener</name>
+    <filename>class_p_p_i_1_1_gest_1_1_group_recognizer_listener.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onStateChanged</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_group_recognizer_listener.html</anchorfile>
+      <anchor>a679965d18504d74b1435014d111f41e6</anchor>
+      <arglist>(const GroupRecognizer &amp;rec, const RecognizerState old_state, const RecognizerState new_state)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Gest::GroupRecognizer</name>
+    <filename>class_p_p_i_1_1_gest_1_1_group_recognizer.html</filename>
+    <base>PPI::Gest::Recognizer</base>
+    <member kind="function">
+      <type></type>
+      <name>GroupRecognizer</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_group_recognizer.html</anchorfile>
+      <anchor>a38aae8b582266b28039e8a165f6dc0e0</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>GroupRecognizer</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_group_recognizer.html</anchorfile>
+      <anchor>aa0bdb21f0887cf342bb093750a3c7875</anchor>
+      <arglist>(ppi_gest_group_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>GroupRecognizer</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_group_recognizer.html</anchorfile>
+      <anchor>aed1e6a9ba85d76b2a291b31b33ca34c5</anchor>
+      <arglist>(const GroupRecognizer &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>GroupRecognizer &amp;</type>
+      <name>operator=</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_group_recognizer.html</anchorfile>
+      <anchor>a8f036b6a4375a0fad221d38504d257ec</anchor>
+      <arglist>(const GroupRecognizer &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addGroupListener</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_group_recognizer.html</anchorfile>
+      <anchor>a8f3596e99efb42c30ddccfe7ca24d44d</anchor>
+      <arglist>(GroupRecognizerListener *listener)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removeGroupListener</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_group_recognizer.html</anchorfile>
+      <anchor>a671fbbaf6728ce6e1e7aedc441e1c6b2</anchor>
+      <arglist>(GroupRecognizerListener *listener)</arglist>
+    </member>
+    <member kind="function">
+      <type>RecognizerState</type>
+      <name>getState</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_group_recognizer.html</anchorfile>
+      <anchor>ab767fbe65040c38418f1143012718963</anchor>
+      <arglist>() const </arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Gest::TapHoldRecognizerListener</name>
+    <filename>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer_listener.html</filename>
+    <base>PPI::Gest::IndependentRecognizerListener</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onTapHoldSuccess</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer_listener.html</anchorfile>
+      <anchor>a12a21064f669f4cb527193cedc9a8307</anchor>
+      <arglist>(const TapHoldRecognizer &amp;rec, const Trace::Trace &amp;trace, const size_t tapCount, const bool hold)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onTapHoldFailure</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer_listener.html</anchorfile>
+      <anchor>a526e5e89186ef3d2932e00995ec1aa38</anchor>
+      <arglist>(const TapHoldRecognizer &amp;rec, const Trace::Trace &amp;trace)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Gest::TapHoldRecognizer</name>
+    <filename>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</filename>
+    <base>PPI::Gest::IndependentRecognizer</base>
+    <member kind="function">
+      <type></type>
+      <name>TapHoldRecognizer</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>a3c15d71573dbaf6d7d4399d1f445095a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>TapHoldRecognizer</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>ad549731b41fd014a3b46573e3ef91ef6</anchor>
+      <arglist>(ppi_gest_tap_hold_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>TapHoldRecognizer</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>ab9bc661fa973c7781bee1984dd3e8222</anchor>
+      <arglist>(const TapHoldRecognizer &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>TapHoldRecognizer &amp;</type>
+      <name>operator=</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>a44524675c50a17f9729184382a89e2cb</anchor>
+      <arglist>(const TapHoldRecognizer &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addTapHoldListener</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>ab686f3268bdfd64a2a328a7c4d2ecb4e</anchor>
+      <arglist>(TapHoldRecognizerListener *listener)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removeTapHoldListener</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>aee49a67b646de29a5195fe6332823985</anchor>
+      <arglist>(TapHoldRecognizerListener *listener)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getRecognitionTypes</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>ab6dd523feb6260a06dd3ee6b16d10a01</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getMaxDistance</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>a34afc0206efc32110f1f769f5798d0fe</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setMaxDistance</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>a50593768591c11e61d3d4a2cf9aefad8</anchor>
+      <arglist>(const double dist)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getTapTimeout</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>a3f61f7a6505e3ed23f1cf782c7f05edf</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setTapTimeout</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>a6381360c36531816359084f08a15446e</anchor>
+      <arglist>(const double timeout)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getContinuationDistance</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>a8e39432d40c68dc6f938c7555d5b1b59</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setContinuationDistance</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>aec1823bcf4d1433676f1dcc59e504f77</anchor>
+      <arglist>(const double dist)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getContinuationTimeout</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>a5df1a0a45a64b2c5975744af270d5dbf</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setContinuationTimeout</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>a8a8922cddf32571acd0020e7d5816477</anchor>
+      <arglist>(const double timeout)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static TapHoldRecognizer</type>
+      <name>create</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_tap_hold_recognizer.html</anchorfile>
+      <anchor>a0a7fbaf7ca5eda7c264ebf5359a5f8d8</anchor>
+      <arglist>(const int recognitionTypes)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Gest::PZRRecognizerListener</name>
+    <filename>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer_listener.html</filename>
+    <base>PPI::Gest::GroupRecognizerListener</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onPZRSuccess</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer_listener.html</anchorfile>
+      <anchor>a3e8fe605b85e3fae73bedf5ce53d3ed4</anchor>
+      <arglist>(const PZRRecognizer &amp;rec, const ppi_pos_2d translation, const double rotation, const double zoom)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onPZRFailure</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer_listener.html</anchorfile>
+      <anchor>a7bcc3700adf966c8cfa83b0d6aaf9f73</anchor>
+      <arglist>(const PZRRecognizer &amp;rec, const Trace::Trace &amp;trace)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Gest::PZRRecognizer</name>
+    <filename>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</filename>
+    <base>PPI::Gest::GroupRecognizer</base>
+    <member kind="typedef">
+      <type>ppi_gest_rec_pzr_point_map</type>
+      <name>PointMap</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>ab067289b94eca877c1178fee25f6e110</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PZRRecognizer</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>ac70b8a91bf98f5218e9eb96b499b19d9</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PZRRecognizer</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>a3f028dae5ce0b3b1cd25ac3ba478d7fd</anchor>
+      <arglist>(ppi_gest_pzr_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PZRRecognizer</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>a50e10fbefa36f6fdfe83ff2ba89f1a2e</anchor>
+      <arglist>(const PZRRecognizer &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>PZRRecognizer &amp;</type>
+      <name>operator=</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>a5fc19a9077ec7ad0c7226677f1e06636</anchor>
+      <arglist>(const PZRRecognizer &amp;other)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addPZRListener</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>ae5162826607763039dde06d37d15d618</anchor>
+      <arglist>(PZRRecognizerListener *listener)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removePZRListener</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>ab487bcab044aec5ca18143e4337a8180</anchor>
+      <arglist>(PZRRecognizerListener *listener)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getRecognitionTypes</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>aae93886d4d8ea57d5ba55b2cae4c7c27</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>getFailureTypes</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>a62b5e1d37d1b23d9512205362fc4700c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setThresholds</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>a29e2b192ee0ad1a9cd72937aead23dfe</anchor>
+      <arglist>(const double horzPanThresh, const double vertPanThresh, const double rotThresh, const double zoomThresh)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getHorzPanThresh</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>adf8f840efa124c30b8e6f6d03754971a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getVertPanThresh</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>ab2d061baef8d05b45e157d4e3df449c6</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getRotThresh</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>af023bd6af94e91e0870a5984854f8003</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getZoomThresh</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>a488f5d2c48bb2ba39d0d0922ae04165b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setHorzPanThresh</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>afac4f24a6f84d1a6115e6c54ad4b8b22</anchor>
+      <arglist>(const double thresh)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setVertPanThresh</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>a54b9da9118418de9e42e29b0b48257ac</anchor>
+      <arglist>(const double thresh)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setRotThresh</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>af147cf224f1bb7b8c52965ceff0101f9</anchor>
+      <arglist>(const double thresh)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setZoomThresh</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>ac00edc134be1b6a90d7dd90df4bdab2c</anchor>
+      <arglist>(const double thresh)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setTargetMap</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>a79dcd188db2b5a53236bef037a82ffcc</anchor>
+      <arglist>(PointMap pointMap, void *clientData)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setInitialTranslation</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>afb7a0ab9e508c54832aa309d8daa3c13</anchor>
+      <arglist>(const ppi_pos_2d &amp;pos)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setInitialRotation</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>a3064f798b8b0034c8a899ac2f54bab57</anchor>
+      <arglist>(const double rotation)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setInitialZoom</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>abd2c90d84fe614a9daab5cf3c1c79a20</anchor>
+      <arglist>(const double zoom)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_pos_2d</type>
+      <name>getTranslation</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>a0097b33cc430ac77fb5455799167b834</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getRotation</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>a2537b9b74a5063057348a92814afcf16</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getZoom</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>a1ee86cde592f2b7313f348812f940255</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static PZRRecognizer</type>
+      <name>create</name>
+      <anchorfile>class_p_p_i_1_1_gest_1_1_p_z_r_recognizer.html</anchorfile>
+      <anchor>adcf2ca449721682dd533e8d41c8535fb</anchor>
+      <arglist>(const int recognitionTypes, const int failureTypes=PZRRecognizerTypes_None)</arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>PPI::Trace</name>
+    <filename>namespace_p_p_i_1_1_trace.html</filename>
+    <class kind="class">PPI::Trace::HardwareInfoListener</class>
+    <class kind="class">PPI::Trace::HardwareInfo</class>
+    <class kind="class">PPI::Trace::InputPassListener</class>
+    <class kind="class">PPI::Trace::TraceListener</class>
+    <class kind="class">PPI::Trace::TouchTraceListener</class>
+    <class kind="class">PPI::Trace::PenTraceListener</class>
+    <class kind="class">PPI::Trace::HoverTraceListener</class>
+    <class kind="class">PPI::Trace::Trace</class>
+    <class kind="class">PPI::Trace::TouchTrace</class>
+    <class kind="class">PPI::Trace::PenTrace</class>
+    <class kind="class">PPI::Trace::HoverTrace</class>
+    <class kind="class">PPI::Trace::TraceGeneratorListener</class>
+    <class kind="class">PPI::Trace::TraceGenerator</class>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Trace::HardwareInfoListener</name>
+    <filename>class_p_p_i_1_1_trace_1_1_hardware_info_listener.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onConnectionChanged</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info_listener.html</anchorfile>
+      <anchor>abd9d26007642c91e7e880cbb212f5183</anchor>
+      <arglist>(bool wasConnected, bool isConnected)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onMonitorChanged</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info_listener.html</anchorfile>
+      <anchor>ab2ca34b7f725077d0f4ca7b3cc517d17</anchor>
+      <arglist>(uint32_t id)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onMonitorToBeRemoved</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info_listener.html</anchorfile>
+      <anchor>a6e71616690452efa458a9b992107810d</anchor>
+      <arglist>(uint32_t id)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onSensorChanged</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info_listener.html</anchorfile>
+      <anchor>af044a0043d358faffb8e1d759c1c329d</anchor>
+      <arglist>(uint32_t id)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onSensorToBeRemoved</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info_listener.html</anchorfile>
+      <anchor>a9947b4a7e3924d6a05ad0dd9c99b2ffe</anchor>
+      <arglist>(uint32_t id)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onVirtualDesktopChanged</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info_listener.html</anchorfile>
+      <anchor>a904061698371cba38dffaa67902d6e67</anchor>
+      <arglist>(const ppi_rect_2d &amp;rect)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Trace::HardwareInfo</name>
+    <filename>class_p_p_i_1_1_trace_1_1_hardware_info.html</filename>
+    <base>PPI::APIBase::APIBase</base>
+    <member kind="function">
+      <type></type>
+      <name>HardwareInfo</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>a604f3368fc92ffbd6738cecf3da7c598</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>HardwareInfo</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>ab0e5460baf7153fcccecb5eed9f6107e</anchor>
+      <arglist>(ppi_hw_info *impl)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>processEvents</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>acbc54b28251c25c21d069ca0a1b87f68</anchor>
+      <arglist>(const double maxProcessingTime=std::numeric_limits&lt; double &gt;::max())</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isConnected</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>ad0822c608df3d48c9ffb0594d4087130</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addListener</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>a683193c06ba2a1f2bd620b1cc19007fb</anchor>
+      <arglist>(HardwareInfoListener *listener)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removeListener</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>abbb3c62c3d45f27e708857f746e0dab2</anchor>
+      <arglist>(HardwareInfoListener *listener)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>getNumMonitors</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>a8e018f3e56cef6e726be21472cc8a189</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_monitor</type>
+      <name>getMonitor</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>a9d7b5e675958774f3c4be40244d13fe3</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>findMonitorById</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>a78e23516088999ff9eb06cfee3a9ef46</anchor>
+      <arglist>(const uint32_t id, ppi_monitor *monitor) const </arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_monitor</type>
+      <name>getVirtualMonitor</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>a42b6a82ac72a18f6df936fea33626e4e</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>getNumSensors</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>a58c3c4767ed254ffd0e6305283061ea6</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_sensor</type>
+      <name>getSensor</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>a2420ebf94050047521ef39163ea9d5f5</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>findSensorById</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>a02df0f1ba69361e196685f4d26b36847</anchor>
+      <arglist>(const uint32_t id, ppi_sensor *sensor) const </arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_sensor</type>
+      <name>getVirtualSensor</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>a49897f5b0a00a222b2a420466a8373c1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>ab5b85ef4d572cd6f81d555a1c7781266</anchor>
+      <arglist>(const HardwareInfo &amp;other) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator!=</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>adad0bb0129c52e181d0146c38ba64874</anchor>
+      <arglist>(const HardwareInfo &amp;other) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&lt;</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>ac2f1d5999252c14995861a11db9a826f</anchor>
+      <arglist>(const HardwareInfo &amp;other) const </arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static HardwareInfo</type>
+      <name>create</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>a72885189391a15afbbb5a4cee8a59d35</anchor>
+      <arglist>(const std::string &amp;host=PPI_TRACE_GEN_DEFAULT_HOST)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static HardwareInfo</type>
+      <name>dynamicCast</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hardware_info.html</anchorfile>
+      <anchor>a3493b936cab38618a1b6f7c15f2e8abe</anchor>
+      <arglist>(const PPI::APIBase::APIBase &amp;other)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Trace::InputPassListener</name>
+    <filename>class_p_p_i_1_1_trace_1_1_input_pass_listener.html</filename>
+    <member kind="function" virtualness="virtual">
+      <type>virtual</type>
+      <name>~InputPassListener</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_input_pass_listener.html</anchorfile>
+      <anchor>a86dc75cb0c72858cfed4ce4f260a676b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onInputPassBegin</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_input_pass_listener.html</anchorfile>
+      <anchor>a20dc86bb5e1df4391b8e0ed871a25644</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onInputPassEnd</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_input_pass_listener.html</anchorfile>
+      <anchor>a04224dd275f042e05348154043015cff</anchor>
+      <arglist>()</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Trace::TraceListener</name>
+    <filename>class_p_p_i_1_1_trace_1_1_trace_listener.html</filename>
+    <base>PPI::Trace::InputPassListener</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onTraceCanceled</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_listener.html</anchorfile>
+      <anchor>ae182fb2dd3108802a2e1e81f30787794</anchor>
+      <arglist>(const Trace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onTraceEnd</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_listener.html</anchorfile>
+      <anchor>a4402d205eb50dda4ebbbf50d83daf615</anchor>
+      <arglist>(const Trace &amp;trace)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Trace::TouchTraceListener</name>
+    <filename>class_p_p_i_1_1_trace_1_1_touch_trace_listener.html</filename>
+    <base>PPI::Trace::TraceListener</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onTouchTraceCanceled</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace_listener.html</anchorfile>
+      <anchor>a726e0984f079b567e363b0d4b760b3e2</anchor>
+      <arglist>(const TouchTrace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onTouchTraceEnd</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace_listener.html</anchorfile>
+      <anchor>aa06aa38a5dffd6b57892b8b695ca8d35</anchor>
+      <arglist>(const TouchTrace &amp;trace)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Trace::PenTraceListener</name>
+    <filename>class_p_p_i_1_1_trace_1_1_pen_trace_listener.html</filename>
+    <base>PPI::Trace::TraceListener</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onPenTraceCanceled</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace_listener.html</anchorfile>
+      <anchor>a1336ec52fafec66f28d831550c937c93</anchor>
+      <arglist>(const PenTrace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onPenTraceEnd</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace_listener.html</anchorfile>
+      <anchor>a8946fdf1c832fb498190ce2985dd8a9d</anchor>
+      <arglist>(const PenTrace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onPenTraceButtonsChanged</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace_listener.html</anchorfile>
+      <anchor>a0b4b7af164b09d684776b33e61f1a1ec</anchor>
+      <arglist>(const PenTrace &amp;trace)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Trace::HoverTraceListener</name>
+    <filename>class_p_p_i_1_1_trace_1_1_hover_trace_listener.html</filename>
+    <base>PPI::Trace::TraceListener</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onHoverTraceCanceled</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hover_trace_listener.html</anchorfile>
+      <anchor>a16a86a60e9d3d23e9e06a346be90456c</anchor>
+      <arglist>(const HoverTrace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onHoverTraceEnd</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hover_trace_listener.html</anchorfile>
+      <anchor>a84cddb5fef3b49e863524bc31ff267a7</anchor>
+      <arglist>(const HoverTrace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onHoverTraceButtonsChanged</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hover_trace_listener.html</anchorfile>
+      <anchor>ad63abf6710935d7e8a99d82c74abd7ef</anchor>
+      <arglist>(const HoverTrace &amp;trace)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Trace::Trace</name>
+    <filename>class_p_p_i_1_1_trace_1_1_trace.html</filename>
+    <base>PPI::APIBase::APIBase</base>
+    <member kind="function">
+      <type></type>
+      <name>Trace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a7a894c8a43182e6e1531b2bf2c53f287</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>Trace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>ac04c6f3efd7823917695918d75e4eb2e</anchor>
+      <arglist>(const ppi_trace *impl)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a9d842f7984a75b3674ea9198bb72de13</anchor>
+      <arglist>(const Trace &amp;other) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator!=</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>ada354bfb0d187b5331006e2790d97fed</anchor>
+      <arglist>(const Trace &amp;other) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&lt;</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a966b38c2bea739597f1acfb3d3faf3cc</anchor>
+      <arglist>(const Trace &amp;other) const </arglist>
+    </member>
+    <member kind="function">
+      <type>TraceGenerator</type>
+      <name>getTraceGenerator</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a20cdf7afd0db7f9a1de507ef4d3d0804</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>getTraceId</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a0a50811417f9286cdea82be83437b2ba</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>getSensorId</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a4198d0641de2d3cd28df34c62b280892</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_trace_state</type>
+      <name>getState</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>ad63453a6e11a0281c6d3679f3d39a9d1</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>getNumEvents</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a1a4a22601675394d865470519645e20d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>getEventString</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a08f966f56c6ddf697aad227c77054e62</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getTime</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a674d7cf7278cedfa7fa96c7a279c202c</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getPosValid</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>acc6e42aa0408dc47551eced6df1237db</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_pos_2d</type>
+      <name>getPos</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a40ed1edcde71063e7e1ebb40747f47fb</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getPosOffSensorDisplay</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>aa66edc359e55d85f36d78ad1ff38a290</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getPosOffDesktop</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a41961e625cdf5ca5d8251359cf274f63</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getLastTime</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a31220c97a4238eed808b3d5e49bf8e58</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getLastPosValid</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a6fcc8372cd32944c88ab2042bc8209a5</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_pos_2d</type>
+      <name>getLastPos</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a7c17efb84daed149ee58581f00c02513</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getLastPosOffSensorDisplay</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>afe77b49be90728da4ba0bd2e9ba0707b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getLastPosOffDesktop</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>aa3909d319b8d19fd3090b904e0b151f4</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addTraceListener</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a80fda402e78ae5403ef8bc2fb693a014</anchor>
+      <arglist>(TraceListener *listener) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removeTraceListener</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>aadac4fe88a4825cbbf939378e15aee1e</anchor>
+      <arglist>(TraceListener *listener) const </arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static Trace</type>
+      <name>dynamicCast</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a0af952caaa94bded9105f731a1721084</anchor>
+      <arglist>(const PPI::APIBase::APIBase &amp;other)</arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>TraceGenerator</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a5bc4e8e8ff165d802a90ecfc894fc3bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>TouchTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a87e54821d22f032f7a22e27bf410c6f8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>PenTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a0bed32b4d535cc2b4d657d1936b032a5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>HoverTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a16c8490d56ac6775c7c4df40162e3fa4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="friend">
+      <type>friend class</type>
+      <name>Gest::Recognizer</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace.html</anchorfile>
+      <anchor>a7d6b85ffda91d74be0befae43b6542f4</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Trace::TouchTrace</name>
+    <filename>class_p_p_i_1_1_trace_1_1_touch_trace.html</filename>
+    <base>PPI::Trace::Trace</base>
+    <member kind="function">
+      <type></type>
+      <name>TouchTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>aa2584e030ef49b5efe583460cb305e73</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>TouchTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>a38b994eec976754b6a88c64dfe480212</anchor>
+      <arglist>(const ppi_touch_trace *impl)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getSizeValid</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>af938914ace094b778814efef4f9db8e4</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getSize</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>af0689c08b57f3b140f8243cd9fe7f0fa</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getEllipseValid</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>a780763321d27168cd6a2dd6e32bfa6f6</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_size_2d</type>
+      <name>getEllipse</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>ac4b16236199ba4c9cd33da5a881f808b</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getRotationValid</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>a43c0c8e9cfea491059d95936292bf9ad</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getRotation</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>a5b00b16eca6752e56afb82e9bec6a519</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getPressureValid</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>a217a54afef653a22e56b78d6fce03dbd</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getPressure</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>a3e84299998eb5eacfb8914f2b1edc6c7</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getLastSizeValid</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>a28be3c90b8672c43827ff2fbfb0a34cf</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getLastSize</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>a2cb357384b1fb114ca00664ca3cce004</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getLastEllipseValid</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>ab58826ab8ef52fa3326a24681baec28f</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_size_2d</type>
+      <name>getLastEllipse</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>ad3a96fac9fb769165552de735215cd7a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getLastRotationValid</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>a1bc3a438552b4fb79db975134395c952</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getLastRotation</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>a7d53e48770814cd0b9f352da2856eb85</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getLastPressureValid</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>ad6b857bb6b9057e3e90c6fc8ac6339bf</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getLastPressure</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>a1e6426b584f29f7f4538526b1a6a727d</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addTouchTraceListener</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>a0aaf4fccb1a27a0302518ef8e9db6cf1</anchor>
+      <arglist>(TouchTraceListener *listener) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removeTouchTraceListener</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>aed6ce4db2a2fa2157145a0b9ce30c35b</anchor>
+      <arglist>(TouchTraceListener *listener) const </arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static TouchTrace</type>
+      <name>dynamicCast</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>a72d26c3a93f397878fe1bee65d2c9238</anchor>
+      <arglist>(const Trace &amp;other)</arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>TraceGenerator</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_touch_trace.html</anchorfile>
+      <anchor>a5bc4e8e8ff165d802a90ecfc894fc3bf</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Trace::PenTrace</name>
+    <filename>class_p_p_i_1_1_trace_1_1_pen_trace.html</filename>
+    <base>PPI::Trace::Trace</base>
+    <member kind="function">
+      <type></type>
+      <name>PenTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace.html</anchorfile>
+      <anchor>a8fbac5ae03d6199a2e155976c6a07d9c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>PenTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace.html</anchorfile>
+      <anchor>adabbe4b774ae22058095b760cd406b56</anchor>
+      <arglist>(const ppi_pen_trace *impl)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>getPenGuid</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace.html</anchorfile>
+      <anchor>a72633f342a8f2e1d3f77aa880539e0e8</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getPressureValid</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace.html</anchorfile>
+      <anchor>a114e17c685196a27a961651611e656a9</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getPressure</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace.html</anchorfile>
+      <anchor>ad16aecf5812dceb6d2ce20fb697a36ea</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>getButtons</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace.html</anchorfile>
+      <anchor>aa9a0373257b468f192f79e9f29b3c0af</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>getLastPressureValid</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace.html</anchorfile>
+      <anchor>ab8a47a49f9e198159bffac655eb62d8c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getLastPressure</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace.html</anchorfile>
+      <anchor>a00a8a52305874426c60daeaa1d0ef187</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>getLastButtons</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace.html</anchorfile>
+      <anchor>a27604c83ed65ce2224b619e2d64f8dc9</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addPenTraceListener</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace.html</anchorfile>
+      <anchor>a6bf36c5f1cf0867333807a58c204aa35</anchor>
+      <arglist>(PenTraceListener *listener) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removePenTraceListener</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace.html</anchorfile>
+      <anchor>ad99b08a5aa1a397e0f3f8b9f50239d8e</anchor>
+      <arglist>(PenTraceListener *listener) const </arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static PenTrace</type>
+      <name>dynamicCast</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace.html</anchorfile>
+      <anchor>ad600b75c50920d82a82d306b483eb331</anchor>
+      <arglist>(const Trace &amp;other)</arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>TraceGenerator</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_pen_trace.html</anchorfile>
+      <anchor>a5bc4e8e8ff165d802a90ecfc894fc3bf</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Trace::HoverTrace</name>
+    <filename>class_p_p_i_1_1_trace_1_1_hover_trace.html</filename>
+    <base>PPI::Trace::Trace</base>
+    <member kind="function">
+      <type></type>
+      <name>HoverTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hover_trace.html</anchorfile>
+      <anchor>ac43105cf2838ea2eeba45af7c3c8a281</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>HoverTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hover_trace.html</anchorfile>
+      <anchor>a8abd708836149d4642ddbcf3d3c47f09</anchor>
+      <arglist>(const ppi_hover_trace *impl)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>getPenGuid</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hover_trace.html</anchorfile>
+      <anchor>a1428d109852f8d81cd8705c1d30badb0</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>getButtons</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hover_trace.html</anchorfile>
+      <anchor>a76563b8e13b194c736c989f8959f0c63</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>getLastButtons</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hover_trace.html</anchorfile>
+      <anchor>a9273b3da0bcd8528dd918ea81b2ea6a3</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addHoverTraceListener</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hover_trace.html</anchorfile>
+      <anchor>a0a1772f256b3d6392e6c3a84c888bc5a</anchor>
+      <arglist>(HoverTraceListener *listener) const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removeHoverTraceListener</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hover_trace.html</anchorfile>
+      <anchor>a450eecbe38da2d2b25816c60ebfa08f1</anchor>
+      <arglist>(HoverTraceListener *listener) const </arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static HoverTrace</type>
+      <name>dynamicCast</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hover_trace.html</anchorfile>
+      <anchor>a3262dad8c26ac5d139c3bc7fd22c7be7</anchor>
+      <arglist>(const Trace &amp;other)</arglist>
+    </member>
+    <member kind="friend" protection="private">
+      <type>friend class</type>
+      <name>TraceGenerator</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_hover_trace.html</anchorfile>
+      <anchor>a5bc4e8e8ff165d802a90ecfc894fc3bf</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Trace::TraceGeneratorListener</name>
+    <filename>class_p_p_i_1_1_trace_1_1_trace_generator_listener.html</filename>
+    <base>PPI::Trace::InputPassListener</base>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onTouchTraceBegin</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator_listener.html</anchorfile>
+      <anchor>a73053cfd1c5a02d1e169dbc7b1178af0</anchor>
+      <arglist>(const TouchTrace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onTouchTraceCanceled</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator_listener.html</anchorfile>
+      <anchor>a13002658533038138d128b0c7c5a9882</anchor>
+      <arglist>(const TouchTrace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onTouchTraceEnd</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator_listener.html</anchorfile>
+      <anchor>a80a9c9d4357edda9684e72bb24060017</anchor>
+      <arglist>(const TouchTrace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onPenTraceBegin</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator_listener.html</anchorfile>
+      <anchor>a25df1b63852a26ae5fcbd417097f79f7</anchor>
+      <arglist>(const PenTrace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onPenTraceCanceled</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator_listener.html</anchorfile>
+      <anchor>aca4d0b312b68f0a3cf0b29eeb12907bf</anchor>
+      <arglist>(const PenTrace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onPenTraceEnd</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator_listener.html</anchorfile>
+      <anchor>a67ac7d126fc90ef5aa509afa8303c98a</anchor>
+      <arglist>(const PenTrace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onHoverTraceBegin</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator_listener.html</anchorfile>
+      <anchor>af3d3b892d73f35a76106c3063fcccf3a</anchor>
+      <arglist>(const HoverTrace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onHoverTraceCanceled</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator_listener.html</anchorfile>
+      <anchor>adcb363a1a4eeefc3ebaf3469271eb364</anchor>
+      <arglist>(const HoverTrace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onHoverTraceEnd</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator_listener.html</anchorfile>
+      <anchor>a6cc4dd7ca17c0f3c9c9a8aa44095d91d</anchor>
+      <arglist>(const HoverTrace &amp;trace)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onVirtualDesktopChanged</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator_listener.html</anchorfile>
+      <anchor>a33ee966134718a5b02e56946ef195530</anchor>
+      <arglist>(const ppi_rect_2d &amp;rect)</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual void</type>
+      <name>onConnectionChanged</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator_listener.html</anchorfile>
+      <anchor>a74aefd0d06b2804b6061a4fa2e040b90</anchor>
+      <arglist>(const bool wasConnected, const bool isConnected)</arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>PPI::Trace::TraceGenerator</name>
+    <filename>class_p_p_i_1_1_trace_1_1_trace_generator.html</filename>
+    <base>PPI::APIBase::APIBase</base>
+    <member kind="function">
+      <type></type>
+      <name>TraceGenerator</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>abec5e177b3154434cb88afe8e21017a8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>TraceGenerator</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>abd557689ab10d08b789cb5cbde833876</anchor>
+      <arglist>(ppi_trace_gen *impl)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>isConnected</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a09813f57df381c45a08cd5f0c0068070</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addListener</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>aa4d5d8399a56ce3ee0749fe604424ba6</anchor>
+      <arglist>(TraceGeneratorListener *listener)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>removeListener</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>aff2d3d2de469c484f15698ce8f7d6dd2</anchor>
+      <arglist>(TraceGeneratorListener *listener)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_rect_2d</type>
+      <name>getVirtualDesktopRect</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a964a0353f82125ba308e1a59b844ef8b</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_rect_2d</type>
+      <name>getVirtualSensorRect</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a52051aa926ccf20065930628cc5c471a</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getLastEventTime</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a30fcb30c752b85f9bd716fc6ad9ca886</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>getTimeEstimate</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>ae5fb0cb23ec7e7d6223ead64c36a75ad</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setTransform</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a2b94c67a5dd84eb5a2eef411d559d0a6</anchor>
+      <arglist>(const double scale_x, const double scale_y, const double offset_x, const double offset_y)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>processEvents</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a816aab9a389bbd3d6e4e78c48feed840</anchor>
+      <arglist>(const double maxProcessingTime=std::numeric_limits&lt; double &gt;::max())</arglist>
+    </member>
+    <member kind="function">
+      <type>const Trace</type>
+      <name>claimTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a6a2956585a69000208ab2cdcdf9f4dd2</anchor>
+      <arglist>(const Trace &amp;trace, void *myListener=0)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>cancelTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a5a6d18449e7fd10eb61ff568ff6316fd</anchor>
+      <arglist>(const Trace &amp;trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator==</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>af173381f5422fba2479258a033a29721</anchor>
+      <arglist>(const TraceGenerator &amp;other) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator!=</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a19916f4edaf7923e088b73c5528503f8</anchor>
+      <arglist>(const TraceGenerator &amp;other) const </arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>operator&lt;</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>ab1db008536cea586098ab89da53232b1</anchor>
+      <arglist>(const TraceGenerator &amp;other) const </arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>getNumTouchTraces</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a9edcc923164e6919a5bb5ace2208b713</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>TouchTrace</type>
+      <name>getTouchTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a54e6a05b6a2e480a683a98432ea4561d</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>getNumPenTraces</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a26bfb2f9c835e9a9c2b324d4291f9036</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>PenTrace</type>
+      <name>getPenTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>ad7a5b1565bb5716b8e7ceb1c4f813dd2</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>getNumHoverTraces</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a9ecef9140e9d54b763f8a0dd335311c2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>HoverTrace</type>
+      <name>getHoverTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a4ed77f8ff2fa7125ed7a3961e91a0976</anchor>
+      <arglist>(const uint32_t index) const </arglist>
+    </member>
+    <member kind="function">
+      <type>TouchTrace</type>
+      <name>findTouchTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a65690513ca35ad8a75f5714447dd1f40</anchor>
+      <arglist>(const uint32_t traceID) const </arglist>
+    </member>
+    <member kind="function">
+      <type>PenTrace</type>
+      <name>findPenTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>ad37b4a778d55b0eb9fd209a44bad13c3</anchor>
+      <arglist>(const uint32_t traceID) const </arglist>
+    </member>
+    <member kind="function">
+      <type>HoverTrace</type>
+      <name>findHoverTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a43f8a0561ac3eef5b3188200bac4a953</anchor>
+      <arglist>(const uint32_t traceID) const </arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_trace_gen_emu_mode</type>
+      <name>getEmuMode</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a5ac75a72f72b61715dc7cb30c5d9357c</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setEmuMode</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a26b40943e1624ef1bccf898c6d322b5b</anchor>
+      <arglist>(const ppi_trace_gen_emu_mode mode)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>addEmuMouseEvent</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a17c6a5a0965eeeefd8442289ec8cc544</anchor>
+      <arglist>(ppi_trace_gen_emu_mouse_event event)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>debugInputPassBegin</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a21e9f958c626a77d0536e19687910582</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>debugInputPassEnd</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a51915006369f0000e2dcb312e2db77cd</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>debugBeginTouchTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a0dcc1a86eba1e43621de0013d245ece7</anchor>
+      <arglist>(const ppi_pos_2d &amp;pos, const double size, const ppi_size_2d &amp;ellipse, const double rotation, const double pressure, const double time)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>debugUpdateTouchTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>ac7ff7c8157d561cbea68afadcc26609e</anchor>
+      <arglist>(const uint32_t traceId, const ppi_pos_2d &amp;pos, const double size, const ppi_size_2d &amp;ellipse, const double rotation, const double pressure, const double time)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>debugEndTouchTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a39ac933f77227dcec7ce30ff827d46ee</anchor>
+      <arglist>(const uint32_t traceId, const ppi_trace_state endState)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>debugBeginPenTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>aaefced4fa1c6b320f8e24f8bfa79929b</anchor>
+      <arglist>(const uint32_t penGuid, const ppi_pos_2d &amp;pos, const double pressure, const uint32_t buttons, const double time)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>debugUpdatePenTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a56bbb4e3eefa393e11f7a6984f1dddd0</anchor>
+      <arglist>(const uint32_t traceId, const ppi_pos_2d &amp;pos, const double pressure, const uint32_t buttons, const double time)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>debugEndPenTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a74258362fa99ce82c8a5a9e627e686ac</anchor>
+      <arglist>(const uint32_t traceId, const ppi_trace_state endState)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>debugBeginHoverTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a99f58cc98a6f7159e72284a43ad78384</anchor>
+      <arglist>(const uint32_t penGuid, const ppi_pos_2d &amp;pos, const uint32_t buttons, const double time)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>debugUpdateHoverTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a371fd69ad4526f2e271932b06249c686</anchor>
+      <arglist>(const uint32_t traceId, const ppi_pos_2d &amp;pos, const uint32_t buttons, const double time)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>debugEndHoverTrace</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a37c3b844f521bed453aac2a036b4f7b1</anchor>
+      <arglist>(const uint32_t traceId, const ppi_trace_state endState)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static TraceGenerator</type>
+      <name>create</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a97eaf382f987a28995da71e435741237</anchor>
+      <arglist>(const std::string &amp;host=PPI_TRACE_GEN_DEFAULT_HOST)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static TraceGenerator</type>
+      <name>dynamicCast</name>
+      <anchorfile>class_p_p_i_1_1_trace_1_1_trace_generator.html</anchorfile>
+      <anchor>a2ec1cf979f90f650dd4170f9d78a27ad</anchor>
+      <arglist>(const PPI::APIBase::APIBase &amp;other)</arglist>
+    </member>
+  </compound>
+</tagfile>

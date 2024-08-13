@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CircuitBreakerConfiguration version="1.0">
+  <WIP>
+    <URLKey value="^.*\/wipdata\-serv.*$"/>
+  </WIP>
+  <OSS>
+    <healthCheckURL value="https://download.api.autodesk.com/health"/>
+    <healthCheckURL value="https://upload.api.autodesk.com/health"/>
+    <healthCheckURL value="https://oss.api.autodesk.com/health"/>
+  </OSS>
+  <A360>
+    <URLKey value="^.*autodesk360.*\.com\/.*\/hubs.*$"/>
+    <URLKey value="^.*autodesk360.*\.com\/.*\/projects.*$"/>
+    <healthCheckURL value="https://myhub.autodesk360.com/projects/devops/health"/>
+  </A360>
+  <FusionDM>
+    <URLKey value="^.*developer.*\/fusiondm\/.*$"/>
+  </FusionDM>
+</CircuitBreakerConfiguration>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeaturePacks>
+  <FeaturePack Id="PreviewTeamFunctionsGroup" Preview="True">
+	<Title _LCLZId="team-general-featurepack-title" _LCLZText="General"/>
+	<Description _LCLZId="team-general-featurepack-desc" _LCLZText="This section controls optional aspects of behavior across Fusion 360."/>
+	
+	<Features>
+	  <Feature Id="test" FeatureFlag="test-expose-tech-preview">
+        <Title _LCLZId="test-tech-title" _LCLZText="Test tech"/>
+        <Description _LCLZId="test-tech-desc" _LCLZText="A place holder of a new functionality in a conceptual stage to be previewed."/>
+	  </Feature>
+	</Features>
+  </FeaturePack>
+
+</FeaturePacks>

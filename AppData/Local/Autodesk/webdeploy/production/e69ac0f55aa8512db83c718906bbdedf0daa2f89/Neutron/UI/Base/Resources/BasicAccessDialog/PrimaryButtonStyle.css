@@ -1,0 +1,29 @@
+/*
+Notice that some pixel sizes in this css file are set using schema
+    font-size: scaled_12px;
+etc.
+These scaled_*px values are multiplied with the current ToolbarFramework::Parameters::scaleFactor();
+That means that this css file cannot be used "as-is", but it is a template to be translated in cpp.
+*/
+
+QPushButton {
+    background-color: #0696d7;
+    color: white;
+    border: 1px solid #0696d7;
+    border-radius: 2px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: scaled_12px;
+}
+
+    QPushButton:hover {
+        background-color: #38abdf;
+        border-color: #38abdf;
+    }
+
+    QPushButton:pressed {
+        background-color: #0686c2;
+        border-color: #0686c2;
+    }

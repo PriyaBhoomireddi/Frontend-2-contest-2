@@ -1,0 +1,166 @@
+#ifndef _FX_HQ_LT_SIMPLE_LINE_H_
+#define _FX_HQ_LT_SIMPLE_LINE_H_
+
+#include "Sketch_oit_def.ogsfh"
+#include "Sketch_primitive.ogsfh"
+#include "Sketch_line.ogsfh"
+#include "Sketch_line_no_weight.ogsfh"
+#include "Sketch_line_type_line.ogsfh"
+
+GLSLShader Sketch_lt_simple_line
+{
+
+struct VertexAttr_LineType
+{
+    vec4 position; // transformed  vertex position
+
+    uint color;  // line color
+    uint glowColor; // glow color
+
+    uint patternIndex; // line pattern index
+    uint reserved; // reserved
+
+    vec4 lineParams; // Func = lineParam.x * x + lineParam.y * y + lineParam.z
+    vec4 patternProp; // line pattern properties: x - start skip len, y - end skip len, z - pattern scale, w - pattern offset
+
+    vec4 dist;     // x - distance to line, y distance to start, z distance to end, w reserved
+};
+
+struct HatchLineAttr
+{
+    vec2 startPoint;
+    vec2 endPoint;
+};
+
+// line type attribute for lines
+struct LineTypeAttr
+{
+    vec2 startPoint; 
+    vec2 endPoint;
+    
+    uint flag;
+    uint color; 
+    uint width; 
+    float drawZ;    
+    uint glowColor;
+    uint isLogical;
+
+    uint  patternIndex;
+
+    float startSkipLen;
+    float endSkipLen;
+    float patternOffset;
+    float patternScale;
+};
+
+
+// load line type info from texture 
+void load_line_type_info(uint offset, uint line_index, uint line_flag, uint seg_index, out LineTypeAttr attr)
+{
+    uint caps_type, joint_type;
+    uint logical_width, stipple_index, logical_lt;
+    load_line_position(get_pos_id(offset), attr.startPoint, attr.endPoint);
+    load_line_flag(line_flag, attr.flag);
+    load_line_attributes(line_index, attr.color, attr.width, attr.patternIndex, attr.drawZ, attr.glowColor, caps_type, joint_type, attr.isLogical);
+    load_line_attributes_neutron_sketch(line_index, logical_width, stipple_index, logical_lt);
+    load_line_type(seg_index, attr.isLogical & logical_lt, attr.startSkipLen, attr.endSkipLen, attr.patternOffset, attr.patternScale);
+}
+
+// load line type info from texture 
+void load_hatch_line_type_info(uint offset, uint line_index, uint line_flag, uint seg_index, out LineTypeAttr attr)
+{
+    uint caps_type, joint_type;
+    load_hatch_line_position(get_pos_id(offset), attr.startPoint, attr.endPoint);
+    load_line_flag(line_flag, attr.flag);
+    load_hatch_line_attributes(line_index, attr.color, attr.width, attr.patternIndex, attr.drawZ, attr.glowColor, caps_type, joint_type, attr.isLogical);
+    load_hatch_line_type(seg_index, attr.isLogical, attr.startSkipLen, attr.endSkipLen, attr.patternOffset, attr.patternScale);
+}
+
+// output line-type properties.
+void set_line_type_properties(uint vid, LineTypeAttr line_attr, out VertexAttr_LineType outputData)
+{
+    float temp_dist = 0.0f;
+    outputData.position.xy = get_line_envelope_pos(vid, 
+         line_attr.width, line_attr.startPoint, line_attr.endPoint, temp_dist);
+     
+    outputData.position.z =  line_attr.drawZ;
+    outputData.position.w = 1.0f;
+    
+    
+    outputData.dist.x = temp_dist;
+    outputData.color = line_attr.color;
+    outputData.glowColor = line_attr.glowColor;
+
+    // length on line
+    set_line_pattern_dist(vid, line_attr.startPoint, line_attr.endPoint,
+        outputData.dist.y, outputData.dist.z);
+    outputData.dist.w = 0.0f; // reserved
+
+    outputData.patternIndex = line_attr.patternIndex;
+    outputData.reserved = uint(0);
+
+    outputData.patternProp = vec4(line_attr.startSkipLen, line_attr.endSkipLen,
+        line_attr.patternOffset, line_attr.patternScale);
+    
+    vec2 startPoint = offset_screen_pos(line_attr.startPoint);
+    vec2 endPoint = offset_screen_pos(line_attr.endPoint);
+    outputData.lineParams.x = startPoint.y - endPoint.y;
+    outputData.lineParams.y = endPoint.x - startPoint.x;
+    outputData.lineParams.z = startPoint.x * endPoint.y - endPoint.x * startPoint.y;
+    outputData.lineParams.w = 0.0f;
+}
+
+// output line-type properties in logical space
+void set_logical_line_type_properties(uint vid, LineTypeAttr line_attr, out VertexAttr_LineType outputData)
+{
+    float temp_dist = 0.0f;
+    bool isDot = false;
+    outputData.position.xy = get_logical_line_envelope_pos(vid, line_attr.flag,
+        line_attr.width, line_attr.startPoint, line_attr.endPoint, temp_dist, isDot);
+
+    outputData.position.z = line_attr.drawZ;
+    outputData.position.w = 1.0f;
+
+
+    outputData.dist.x = temp_dist;
+    outputData.color = line_attr.color;
+    outputData.glowColor = line_attr.glowColor;
+
+    // length on line
+
+    vec2 screen_start = logic_to_screen(line_attr.startPoint);
+    vec2 screen_end = logic_to_screen(line_attr.endPoint);
+
+    set_line_pattern_dist(vid, screen_start, screen_end,
+        outputData.dist.y, outputData.dist.z);
+
+    outputData.dist.w = 0.0f; // reserved
+
+    outputData.patternIndex = line_attr.patternIndex;
+    outputData.reserved = uint(0);
+
+    outputData.patternProp = vec4(line_attr.startSkipLen, line_attr.endSkipLen,
+        line_attr.patternOffset, line_attr.patternScale);
+
+    outputData.lineParams.x = screen_start.y - screen_end.y;
+    outputData.lineParams.y = screen_end.x - screen_start.x;
+    outputData.lineParams.z = screen_start.x * screen_end.y - screen_end.x * screen_start.y;
+    outputData.lineParams.w = 0.0f;
+}
+
+VertexAttr_LineType outputLineType_VS(uint vid, LineTypeAttr line_attr)
+{
+    adjust_line_width_single_line(line_attr.width);
+
+    VertexAttr_LineType outputData;
+    if (line_attr.isLogical != uint(0))
+        set_logical_line_type_properties(vid, line_attr, outputData);
+    else
+        set_line_type_properties(vid, line_attr, outputData);
+
+    return outputData;
+}
+
+}
+
+#endif // _FX_HQ_LT_SIMPLE_LINE_H_

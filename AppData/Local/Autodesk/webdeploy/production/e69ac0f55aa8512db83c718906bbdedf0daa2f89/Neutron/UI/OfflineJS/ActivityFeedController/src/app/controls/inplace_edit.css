@@ -1,0 +1,73 @@
+.inplaceedit {
+    -webkit-animation: glow 2000ms ease-out infinite alternate;
+    border: 1px solid #1d94ff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-shadow: 0 -1px 0 #aad2ff;
+    z-index: 10;
+    background: #f4f4f5;
+    border-color: #1d94ff;
+    box-shadow: 0 0 5px rgba(29, 147, 254, 0.20), inset 0 0 5px rgba(29, 148, 255, 0.10), 0 2px 0 #aad2ff;
+    outline: none;
+    position: absolute;
+    overflow: hidden;
+}
+
+@-webkit-keyframes glow {
+    0% {
+        border-color:  rgba(18, 156, 255, 0.9);
+        box-shadow: 0 0 5px rgba(18, 156, 255, 0.2), inset 0 0 5px rgba(18, 156, 255, 0.1), 1px 1px 1px rgba(18, 156, 255, 0.1);
+    }
+    100% {
+        border-color: rgba(18, 156, 255, 0.68);
+        box-shadow: 0 0 20px rgba(18, 156, 255, 0.88), inset 0 0 10px rgba(18, 156, 255, 0.4), 1px 1px 1px rgba(18, 156, 255, 0.1);
+    }
+}
+
+@keyframes glow {
+    0% {
+        border-color: rgba(18, 156, 255, 0.9);
+        box-shadow: 0 0 5px rgba(18, 156, 255, 0.2), inset 0 0 5px rgba(18, 156, 255, 0.1), 1px 1px 1px rgba(18, 156, 255, 0.1);
+    }
+    100% {
+        border-color: rgba(18, 156, 255, 0.68);
+        box-shadow: 0 0 20px rgba(18, 156, 255, 0.88), inset 0 0 10px rgba(18, 156, 255, 0.4), 1px 1px 1px rgba(18, 156, 255, 0.1);
+    }
+}
+
+.milestoneedit{
+    -webkit-animation: milestoneglow 2000ms ease-out infinite alternate;
+    font-size: 11px;
+}
+
+.milestonenameedit{
+    font-weight: bold;
+    color: #000;
+}
+
+.milestonedescedit{
+    font-weight: normal;
+    color: #646464;
+}
+
+@-webkit-keyframes milestoneglow {
+    0% {
+        border-color:  rgba(18, 156, 255, 0.6);
+        box-shadow: 0 0 5px rgba(18, 156, 255, 0.2), inset 0 0 5px rgba(18, 156, 255, 0.1), 1px 1px 1px rgba(18, 156, 255, 0.1);
+    }
+    100% {
+        border-color: rgba(18, 156, 255, 0.38);
+        box-shadow: 0 0 5px rgba(18, 156, 255, 0.58), inset 0 0 5px rgba(18, 156, 255, 0.4), 1px 1px 1px rgba(18, 156, 255, 0.1);
+    }
+}
+
+@keyframes milestoneglow {
+    0% {
+        border-color: rgba(18, 156, 255, 0.6);
+        box-shadow: 0 0 5px rgba(18, 156, 255, 0.2), inset 0 0 5px rgba(18, 156, 255, 0.1), 1px 1px 1px rgba(18, 156, 255, 0.1);
+    }
+    100% {
+        border-color: rgba(18, 156, 255, 0.38);
+        box-shadow: 0 0 5px rgba(18, 156, 255, 0.58), inset 0 0 5px rgba(18, 156, 255, 0.4), 1px 1px 1px rgba(18, 156, 255, 0.1);
+    }
+}

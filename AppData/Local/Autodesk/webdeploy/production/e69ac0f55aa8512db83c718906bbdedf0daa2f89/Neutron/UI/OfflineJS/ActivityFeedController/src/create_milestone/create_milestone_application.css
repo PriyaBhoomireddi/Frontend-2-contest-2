@@ -1,0 +1,19 @@
+/*
+    GLOBAL
+*/
+*{ border:0; margin:0; padding:0; outline:0; }
+
+.notSelectable{
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+::selection {
+    background: #000000;
+    color: #ffffff;
+}
+
+body{
+    background: #ffffff;
+    overflow: hidden;
+}

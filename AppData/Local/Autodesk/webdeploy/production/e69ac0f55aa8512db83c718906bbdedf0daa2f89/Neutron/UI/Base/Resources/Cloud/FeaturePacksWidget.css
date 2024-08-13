@@ -1,0 +1,227 @@
+/*
+Notice that some pixel sizes in this css file are set using schema
+    font-size: scaled_12px;
+etc.
+These scaled_*px values are multiplied with the current ToolbarFramework::Parameters::scaleFactor();
+That means that this css file cannot be used "as-is", but it is a template to be translated in cpp.
+*/
+
+#defaultLabel {
+    border: none;
+    font-family: Arial, Sans-Serif;
+    color: #808080;
+    font-size: scaled_13px;
+}
+
+#footerFrame {
+    background-color: #FFFFFF;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    border: none;
+}
+
+#footerLine1 {
+    border: none;
+    font-family: Arial, Sans-Serif;
+    color: #808080;
+    font-size: scaled_12px;
+}
+
+#mfgExtDescFrame {
+    background-color: #FFFFFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-top: 5px;
+    border: none;
+    /*
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    */
+}
+
+#mfgExtDescLine1, #mfgExtDescLine2 {
+    border: none;
+    font-family: Arial, Sans-Serif;
+    color: #808080;
+    font-size: scaled_12px;
+}
+
+#mfgExtTitleRowFrame {
+    /*
+    border-top: 1px solid #dcdcdc;
+    */
+    border-bottom: 1px solid #dcdcdc;
+    border-radius: 0px;
+    background-color: #EEEEEE;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+#FeaturePackTablePackTitle {
+    border: none;
+    font-family: Arial, Sans-Serif;
+    color: #6C6C6C;
+    font-weight: bold;
+    font-size: scaled_15px;
+}
+
+#FeaturePackTableTitle {
+    border: none;
+    font-family: Arial, Sans-Serif;
+    color: #3c3c3c;
+    font-size: scaled_16px;
+    padding: 0px;
+    padding-left: 4px;
+    margin: 0px;
+}
+
+#FeaturePackStatusFrame {
+    margin: 0px;
+    padding: 5px;
+    border-bottom: 1px solid #9fc966;
+    border-top: 1px solid #9fc966;
+    border-radius: 0px;
+    background-color: #e7f2d9;
+}
+
+#FeaturePackTableStatus1 {
+    margin-left: 9px;
+}
+
+#FeaturePackTableStatus1, #FeaturePackTableStatus2 {
+    border: none;
+    font-family: Arial, Sans-Serif;
+    font-weight: normal;
+    font-size: scaled_13px;
+    color: #6a9728
+}
+
+#PreviewBannerFrame {
+    margin: 0px;
+    padding: 5px;
+    border-bottom: 1px solid #FBB549;
+    border-top: 1px solid #FBB549;
+    border-radius: 0px;
+    background-color: #FEECD1;
+}
+
+#PreviewBannerIcon {
+    border: none;
+    margin-left: 9px;
+}
+
+#PreviewBannerLabel {
+    border: none;
+    font-family: Arial, Sans-Serif;
+    font-weight: normal;
+    font-size: scaled_13px;
+    margin-left: 4px;
+    color: #BF5808;
+}
+
+#scrollAreaWidget {
+    background-color: transparent;
+}
+
+#scrollArea {
+    border: 2px solid #D2D2D2;
+    margin-left: 4px;
+    margin-right: 14px;
+    background-color: #FFFFFF;
+}
+
+#FeaturePackTableFeatureTitle {
+    border: none;
+    font-family: Arial, Sans-Serif;
+    color: #3c3c3c;
+    font-size: scaled_14px;
+    margin-left: 18px;
+    margin-bottom: 3px;
+}
+
+#FeaturePackTableFeatureDesc {
+    border: none;
+    font-family: Arial, Sans-Serif;
+    color: #808080;
+    font-size: scaled_12px;
+    margin-left: 35px;
+    margin-right: 18px;
+    padding-bottom: 10px;
+}
+
+#Bullet {
+    padding-top: 10px;
+}
+
+#AddToCartUnavailable {
+    border: none;
+    background-color: transparent;
+    font-family: Arial, Sans-Serif;
+    font-weight: normal;
+    font-size: scaled_14px;
+    color: #0696d7;
+}
+
+#AddToCart {
+    border: 1px solid #A2A2A2;
+    font-size: scaled_12px;
+    border-radius: 3px;
+    background-color: #0696d7;
+    border: 1px solid #0696d7;
+    color: #FFFFFF;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+    #AddToCart:disabled {
+        background-color: #6ac0e7;
+        border: 1px solid #6ac0e7;
+    }
+
+    #AddToCart:hover {
+        background-color: #38abdf;
+        border: 1px solid #38abdf;
+    }
+
+    #AddToCart:pressed {
+        background-color: #007EC0;
+        border: 1px solid #007EC0;
+    }
+
+    #AddToCart::menu-indicator {
+        subcontrol-origin: content;
+        subcontrol-position: right center;
+        left: 5px;
+    }
+
+#FeaturePackTableCost {
+    font-family: Arial, Sans-Serif;
+    color: #3c3c3c;
+    font-weight: normal;
+    font-size: scaled_14px;
+    border: none;
+    padding: 4px;
+    margin-right: 10px;
+}
+
+#ExpandClose {
+    background-color: transparent;
+    border: none;
+}
+
+#FeaturesWidget {
+    background-color: #FFFFFF;
+    border: none;
+    margin-top: 0px;
+}
+
+#InfoButton {
+    background-color: transparent;
+    border: none;
+    padding-top: 10px;
+    padding-left: 20px;
+    margin: 10px;
+}

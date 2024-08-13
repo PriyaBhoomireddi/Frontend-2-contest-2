@@ -1,0 +1,524 @@
+#define CLIPPING
+
+#ifdef CLIPPING
+#include "Clipping.ogsfh"
+#endif
+
+// World transformation.
+uniform mat4 gWXf : World;
+
+// World-View-projection transformation.
+uniform mat4 gWVPXf : WorldViewProjection;
+
+// Depth priority, which shifts the model a bit forward in the z-buffer
+//    float UIMin = -16/1048576.0;    // divide by 2^24/16 by default
+//    float UIMax = 16/1048576.0;
+//    float UIStep = 1/1048576.0;
+uniform float gDepthPriority : DepthPriority = 0.0;
+
+// ScreenSize
+uniform vec2 gScreenSize : ViewportPixelSize ;
+
+// Point color.
+uniform vec4 gNeutronLineColor : NeutronLineColor = {0.0, 0.0, 0.0, 1.0};
+
+// Vertex shader input structure.
+attribute VSPos
+{
+	vec3 Pos : POSITION;
+};
+
+// Pixel shader input structure.
+attribute VSOutput
+{
+    vec4 HPos : POSITION;
+
+#ifdef CLIPPING
+    // World position, for CLIPPING
+    vec4 HPw 	: TEXCOORD2;
+#endif
+
+};
+
+attribute pixelOut {
+    vec4 colorOut:COLOR0;
+}
+
+GLSLShader VS_Pos_0_2{
+	void main()
+	{
+		vec2 offset = vec2(0.0, 2.0);
+		
+		HPos = gWVPXf * vec4(Pos, 1.0);
+
+		if(HPos.w > 0.0f)
+		{
+			HPos.xyz /= HPos.w;
+			HPos.w = 1.0;
+			
+			offset.xy /= gScreenSize.xy;
+			HPos.xy += offset.xy;
+		}
+
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif    
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w * gDepthPriority;
+
+		gl_Position = HPos;
+
+	}
+}
+
+GLSLShader VS_Pos_2_2{
+	void main()
+	{
+		vec2 offset = vec2(2.0, 2.0);
+		HPos = gWVPXf * vec4(Pos, 1.0);
+
+		if(HPos.w > 0.0f)
+		{
+			HPos.xyz /= HPos.w;
+			HPos.w = 1.0;
+			
+			offset.xy /= gScreenSize.xy;
+			HPos.xy += offset.xy;
+		}
+
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif    
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w * gDepthPriority;
+
+		gl_Position = HPos;
+
+	}
+}
+
+GLSLShader VS_Pos_m2_0{
+	void main()
+	{
+		vec2 offset = vec2(-2.0,0.0);
+		HPos = gWVPXf * vec4(Pos, 1.0);
+
+		if(HPos.w > 0.0f)
+		{
+			HPos.xyz /= HPos.w;
+			HPos.w = 1.0;
+			
+			offset.xy /= gScreenSize.xy;
+			HPos.xy += offset.xy;
+		}
+
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif    
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w * gDepthPriority;
+
+		gl_Position = HPos;
+
+	}
+}
+
+GLSLShader VS_Pos_0_0{
+	void main()
+	{
+		vec2 offset = vec2(0.0, 0.0);
+		HPos = gWVPXf * vec4(Pos, 1.0);
+
+		if(HPos.w > 0.0f)
+		{
+			HPos.xyz /= HPos.w;
+			HPos.w = 1.0;
+			
+			offset.xy /= gScreenSize.xy;
+			HPos.xy += offset.xy;
+		}
+
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif    
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w * gDepthPriority;
+
+		gl_Position = HPos;
+
+	}
+}
+
+GLSLShader VS_Pos_2_0{
+	void main()
+	{
+		vec2 offset = vec2(2.0, 0.0);
+		HPos = gWVPXf * vec4(Pos, 1.0);
+
+		if(HPos.w > 0.0f)
+		{
+			HPos.xyz /= HPos.w;
+			HPos.w = 1.0;
+			
+			offset.xy /= gScreenSize.xy;
+			HPos.xy += offset.xy;
+		}
+
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif    
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w * gDepthPriority;
+
+		gl_Position = HPos;
+
+	}
+}
+
+GLSLShader VS_Pos_4_0{
+	void main()
+	{
+		vec2 offset = vec2(4.0, 0.0);
+		HPos = gWVPXf * vec4(Pos, 1.0);
+
+		if(HPos.w > 0.0f)
+		{
+			HPos.xyz /= HPos.w;
+			HPos.w = 1.0;
+			
+			offset.xy /= gScreenSize.xy;
+			HPos.xy += offset.xy;
+		}
+
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif    
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w * gDepthPriority;
+
+		gl_Position = HPos;
+
+	}
+}
+
+GLSLShader VS_Pos_m2_m2{
+	void main()
+	{
+		vec2 offset = vec2(-2.0, -2.0);
+		HPos = gWVPXf * vec4(Pos, 1.0);
+
+		if(HPos.w > 0.0f)
+		{
+			HPos.xyz /= HPos.w;
+			HPos.w = 1.0;
+			
+			offset.xy /= gScreenSize.xy;
+			HPos.xy += offset.xy;
+		}
+
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif    
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w * gDepthPriority;
+
+		gl_Position = HPos;
+
+	}
+}
+
+GLSLShader VS_Pos_0_m2{
+	void main()
+	{
+		vec2 offset = vec2(0.0, -2.0);
+		HPos = gWVPXf * vec4(Pos, 1.0);
+
+		if(HPos.w > 0.0f)
+		{
+			HPos.xyz /= HPos.w;
+			HPos.w = 1.0;
+			
+			offset.xy /= gScreenSize.xy;
+			HPos.xy += offset.xy;
+		}
+
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif    
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w * gDepthPriority;
+
+		gl_Position = HPos;
+	}
+}
+
+GLSLShader VS_Pos_2_m2{
+	void main()
+	{
+		vec2 offset = vec2(2.0, -2.0);
+		HPos = gWVPXf * vec4(Pos, 1.0);
+
+		if(HPos.w > 0.0f)
+		{
+			HPos.xyz /= HPos.w;
+			HPos.w = 1.0;
+			
+			offset.xy /= gScreenSize.xy;
+			HPos.xy += offset.xy;
+		}
+
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif    
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w * gDepthPriority;
+
+		gl_Position = HPos;
+	}
+}
+
+GLSLShader VS_Pos_4_m2{
+	void main()
+	{
+		vec2 offset = vec2(4.0, -2.0);
+		HPos = gWVPXf * vec4(Pos, 1.0);
+
+		if(HPos.w > 0.0f)
+		{
+			HPos.xyz /= HPos.w;
+			HPos.w = 1.0;
+			
+			offset.xy /= gScreenSize.xy;
+			HPos.xy += offset.xy;
+		}
+
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif    
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w * gDepthPriority;
+
+		gl_Position = HPos;
+	}
+}
+
+GLSLShader VS_Pos_0_m4{
+	void main()
+	{
+		vec2 offset = vec2(0.0, -4.0);
+		HPos = gWVPXf * vec4(Pos, 1.0);
+
+		if(HPos.w > 0.0f)
+		{
+			HPos.xyz /= HPos.w;
+			HPos.w = 1.0;
+			
+			offset.xy /= gScreenSize.xy;
+			HPos.xy += offset.xy;
+		}
+
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif    
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w * gDepthPriority;
+
+		gl_Position = HPos;
+
+	}
+}
+
+GLSLShader VS_Pos_2_m4{
+	void main()
+	{
+		vec2 offset = vec2(2.0, -4.0);
+		HPos = gWVPXf * vec4(Pos, 1.0);
+
+		if(HPos.w > 0.0f)
+		{
+			HPos.xyz /= HPos.w;
+			HPos.w = 1.0;
+			
+			offset.xy /= gScreenSize.xy;
+			HPos.xy += offset.xy;
+		}
+
+#ifdef CLIPPING
+		// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+		// First compute the Pw in vertex shader, then pass the Pw to pixel shader
+		HPw = gWXf * vec4(Pos, 1.0);
+#endif    
+		// modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+		HPos.z -= HPos.w * gDepthPriority;
+
+		gl_Position = HPos;
+
+	}
+}
+ 
+GLSLShader PS_Pos{
+	void main()
+	{
+#ifdef CLIPPING
+		// Compute whether the pixel needs to be discard by the clipping planes.
+		bool needDiscard = false;
+		if (gNumClipPlanes > 0) { if(dot(HPw, gClipPlanes[0])<0.0) needDiscard = true;}
+		if (gNumClipPlanes > 1) { if(dot(HPw, gClipPlanes[1])<0.0) needDiscard = true;}
+		if (gNumClipPlanes > 2) { if(dot(HPw, gClipPlanes[2])<0.0) needDiscard = true;}
+		if (gNumClipPlanes > 3) { if(dot(HPw, gClipPlanes[3])<0.0) needDiscard = true;}
+		if (gNumClipPlanes > 4) { if(dot(HPw, gClipPlanes[4])<0.0) needDiscard = true;}
+		if (gNumClipPlanes > 5) { if(dot(HPw, gClipPlanes[5])<0.0) needDiscard = true;}
+    
+		if (needDiscard == true)
+			discard;
+#endif
+		colorOut = gNeutronLineColor;
+	}
+}
+
+// wide line:2 pixels' width
+//Actually 4 passes are needed: offset table is like this:(0,0),(0,1),(1,0),(1,1)
+technique WideLine2pixels
+{
+	pass P0
+    {
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_0_0;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P1
+    {  
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_0_m2;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P2
+    { 
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_2_0;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P3
+    { 
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_2_m2;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+}
+
+// wide line:3 pixels' width
+//Actually 5 passes are needed: offset table is like this:(0,-1),(-1,0),(0,0),(1,0),(0,1)
+technique WideLine3pixels
+{
+    pass P0
+    { 
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_0_2;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P1
+    {  
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_m2_0;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P2
+    { 
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_0_0;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P3
+    { 
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_2_0;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P4
+    {  
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_0_m2;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+}
+
+
+// wide line:4 or more pixels' width
+//Actually 12 passes are needed: offset table is like this:(0,-1),(1,-1),(-1,0),(0,0),(1,0),(2,0),(-1,1),(0,1),(1,1),(2,1),(0,2),(1,2)
+technique WideLine4pixels
+{
+    pass P0
+    {
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_0_2;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P1
+    {  
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_2_2;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P2
+    {   
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_m2_0;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P3
+    {   
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_0_0;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P4
+    {
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_2_0;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P5
+    {
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_4_0;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P6
+    {
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_m2_m2;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P7
+    { 
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_0_m2;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P8
+    {  
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_2_m2;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P9
+    {  
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_4_m2;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P10
+    {   
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_0_m4;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+    pass P11
+    {
+		VertexShader (in VSPos,out VSOutput) = VS_Pos_2_m4;
+        PixelShader (in VSOutput, out pixelOut) = PS_Pos;
+    }
+   
+}

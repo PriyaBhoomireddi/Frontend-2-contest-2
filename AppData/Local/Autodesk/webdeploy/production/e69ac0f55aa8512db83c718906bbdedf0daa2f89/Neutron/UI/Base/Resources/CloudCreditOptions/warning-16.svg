@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="15px" viewBox="0 0 16 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
+    <title>01-high-density/checkmark-16</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M7,10.5416667 L9,10.5416667 L9,12.4583333 L7,12.4583333 L7,10.5416667 Z M7,4.79166667 L9,4.79166667 L9,9.58333333 L7,9.58333333 L7,4.79166667 Z M7.73,1.0925 L1.05263021e-13,14.1066667 C-0.12,14.28875 1.05263021e-13,14.375 0.27,14.375 L15.68,14.375 C15.91,14.375 16.08,14.28875 15.95,14.1066667 L8.27,1.0925 C8.20820889,1.00823347 8.10747036,0.958080965 8,0.958080965 C7.89252964,0.958080965 7.79179111,1.00823347 7.73,1.0925 Z" id="path-1"></path>
+    </defs>
+    <g id="Unlimited-Badge" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Badge---Warning" transform="translate(-23.000000, -21.000000)">
+            <g transform="translate(15.000000, 17.000000)" id="01-high-density/issue-warning-16">
+                <g transform="translate(8.000000, 3.833333)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="🌈-color" fill="#FAA21B" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

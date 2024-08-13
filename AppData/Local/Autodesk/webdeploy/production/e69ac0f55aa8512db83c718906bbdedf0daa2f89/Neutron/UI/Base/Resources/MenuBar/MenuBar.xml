@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MenuBar MenuBarId="MainMenu" Id="MainMenuBar">
+    <Menu TypeId="BaseMenu" Id="LOCID=File">
+        <LOC Module="NuBase" _LCLZId="File" _LCLZText="File" />
+        <MenuItem Id="NewDocumentCommand" />
+        <MenuItem Id="NewElectronDesignDocumentCommand" />
+        <MenuItem Id="NewElectronLbrDocumentCommand" />
+        <Menu TypeId="SubMenu" Id="NewDrawingMenuCommand">
+            <MenuItem Id="NewFusionDrawingDocumentCommand" />
+            <MenuItem Id="PublisherNewDrawingDocumentCommand" />
+        </Menu>
+        <MenuItem Id="NewFusionDrawingTemplateCommand" />
+        <MenuItem Id="OpenCommand" />
+        <MenuItem Id="UploadCommand" />
+        <Separator />
+        <MenuItem Id="PLM360SaveCommand" />
+        <MenuItem Id="PLM360SaveAsCommand" />
+		<MenuItem Id="PLM360SaveAsLatestOnQATCommand" />
+        <MenuItem Id="ExportCommand" />
+        <Separator />
+        <MenuItem Id="ThreeDprintCmdDef" />
+        <MenuItem Id="SaveAsImageCommand" />
+        <Menu TypeId="SubMenu" Id="ShareToFusion360GallerySubCommand">
+            <MenuItem Id="LaunchScreencastCommand" />
+            <MenuItem Id="SimpleSharingPublicLinkCommand" />
+            <MenuItem Id="ShareToFusion360GalleryCommand" />
+            <MenuItem Id="FusionPublishToGrabCADCommand" />
+        </Menu>
+        <Separator />
+        <MenuItem Id="PLM360OpenDetailsCommand" />
+        <Separator />
+        <MenuItem Id="FusionDrawingPrintCommand" />
+        <MenuItem Id="ExitApplicationCommand" Role="QuitRole" />
+    </Menu>
+
+  <Menu TypeId="BaseMenu" Id="LOCID=Edit" >
+    <LOC Module="NuBase" _LCLZId="Edit" _LCLZText="Edit"/>
+    <MenuItem Id="DrawingUndoCommand" />
+    <MenuItem Id="UndoCommand" />
+    <Menu TypeId="SubMenu" Id="UndoDropDown" >
+    </Menu>
+    <MenuItem Id="DrawingRedoCommand" />
+    <MenuItem Id="RedoCommand" />
+    <Menu TypeId="SubMenu" Id="RedoDropDown" >
+    </Menu>
+    <Separator />
+    <MenuItem Id="CutCommand" Role="mac_ClipboardOverridable" />
+    <MenuItem Id="CopyCommand" Role="mac_ClipboardOverridable" />
+    <MenuItem Id="PasteCommand" Role="mac_ClipboardOverridable" />
+    <MenuItem Id="DeleteCommand" />
+  </Menu>
+
+  <Menu TypeId="BaseMenu" Id="LOCID=View" >
+    <LOC Module="NuBase" _LCLZId="View" _LCLZText="View"/>
+    <MenuItem Id="HideViewCubeCommand" />
+    <MenuItem Id="ShowViewCubeCommand" />
+    <MenuItem Id="HideBrowserCommand" />
+    <MenuItem Id="ShowBrowserCommand" />
+    <MenuItem Id="HideActivityFeedCommand" />
+    <MenuItem Id="ShowActivityFeedCommand" />
+    <MenuItem Id="HideCommandPaletteCommand" />
+    <MenuItem Id="ShowCommandPaletteCommand" />
+    <MenuItem Id="HideTextCommandsCommand" />
+    <MenuItem Id="ShowTextCommandsCommand" />
+    <MenuItem Id="HideElectronDescriptionCommand" />
+    <MenuItem Id="ShowElectronDescriptionCommand" />
+    <MenuItem Id="HideNavigationToolbarCommand" />
+    <MenuItem Id="ShowNavigationToolbarCommand" />
+    <MenuItem Id="DashboardModeOpenCommand" />
+    <MenuItem Id="DashboardModeCloseCommand" />
+    <Separator />
+    <MenuItem Id="ResetToDefaultLayoutCommand" />
+    <Separator />
+    <MenuItem Id="ShowWorkspaceFullScreenCommand" />
+    <MenuItem Id="ShowWorkspaceNormalCommand" />
+  </Menu>
+
+  <Menu TypeId="BaseMenu" Id="LOCID=Window" >
+    <LOC Module="NuBase" _LCLZId="Window" _LCLZText="Window"/>
+    <MenuItem Id="MinimizeCommand"  />
+    <MenuItem Id="ZoomWindowCommand" />
+    <MenuItem Id="CycleTabsForwardCommand" />
+    <MenuItem Id="CycleTabsBackwardCommand" />
+    <Separator />
+    <MenuItem Id="BringAllToFrontCommand" />
+	<Separator />
+	<Menu TypeId="SubMenu" Id="CurrentlyOpenDocumentsCommand" >
+	</Menu>
+  </Menu>
+
+<!--   Note: This menu should match the Help menu defined in:             -->
+<!--            Commands\Resources\Toolbar\Toolbars.xml                   -->
+   <Menu TypeId="BaseMenu" Id="LOCID=Help">
+    <LOC Module="NuBase" _LCLZId="Help" _LCLZText="Help"/>
+	<Separator />
+    <Menu TypeId="SubMenu" Id="LearningAndHelpCommand">
+        <MenuItem Id="HelpCommand" />
+        <MenuItem Id="LearningAndTutorialsCommand" />
+        <MenuItem Id="APIHelpCommand" />
+    </Menu>
+    <MenuItem Id="LearningPaletteCommand" />
+    <Menu TypeId="SubMenu" Id="CommunityCommand" >
+        <MenuItem Id="ForumCommand" />
+        <MenuItem Id="SubmitAnIdeaCommand" />
+        <MenuItem Id="GalleryCommand" />
+        <MenuItem Id="ProductRoadmapCommand" />
+        <MenuItem Id="BlogCommand" />
+    </Menu>
+    <Menu TypeId="SubMenu" Id="SupportAndDiagnosticsCommand">
+        <MenuItem Id="FeedbackCommand" /> <!--Get Support-->
+        <MenuItem Id="GatherDiagnosticsDataCommand" />
+        <MenuItem Id="GraphicsDiagnosticsCommand" />
+        <MenuItem Id="ClearUserCacheCommand" />
+    </Menu>
+     <Separator />
+    <MenuItem Id="WhatsNewCommand" />
+    <MenuItem Id="AboutBoxCommand" Role="AboutRole" />
+    <Separator />
+    <MenuItem Id="TutorialsCommand" />
+    <MenuItem Id="QuickStartCommand" />
+    <MenuItem Id="VideosCommand" />
+    <MenuItem Id="CIPCommand" />
+  </Menu>
+</MenuBar>

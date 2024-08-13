@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="Light_OFF" sodipodi:docname="Checkbox_Off_Hover_L.svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:version="0.48.1 " xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px"
+	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<sodipodi:namedview  id="namedview2997" bordercolor="#666666" borderopacity="1" inkscape:window-height="998" objecttolerance="10" pagecolor="#ffffff" gridtolerance="10" guidetolerance="10" inkscape:pageopacity="0" inkscape:pageshadow="2" inkscape:window-width="1680" showgrid="false" inkscape:cy="8" inkscape:zoom="15.125" inkscape:cx="-2.3140496" inkscape:window-x="-8" inkscape:window-y="-8" inkscape:window-maximized="1" inkscape:current-layer="Light_OFF">
+	</sodipodi:namedview>
+<path id="path2986" opacity="0.8" fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" enable-background="new    " d="
+	M13.4,3.1C13,2.7,12.6,2.5,12,2.5H4c-0.6,0-1.1,0.2-1.4,0.6C2.2,3.4,2,3.9,2,4.5v8c0,0.6,0.2,1,0.6,1.4C2.9,14.3,3.4,14.5,4,14.5h8
+	c0.6-0.1,1-0.3,1.4-0.6C13.8,13.5,14,13.1,14,12.5v-8C13.9,3.9,13.7,3.4,13.4,3.1"/>
+<linearGradient id="path2993_1_" gradientUnits="userSpaceOnUse" x1="8.1987" y1="13.6328" x2="8.1987" y2="1.6328">
+	<stop  offset="0" style="stop-color:#789ADC"/>
+	<stop  offset="1" style="stop-color:#CADAFE"/>
+</linearGradient>
+<path id="path2993" inkscape:connector-curvature="0" fill="url(#path2993_1_)" d="M14.198,11.633v-8c-0.101-0.6-0.3-1.1-0.601-1.4
+	c-0.399-0.4-0.799-0.6-1.399-0.6h-8c-0.6,0-1.1,0.2-1.4,0.6c-0.4,0.3-0.6,0.8-0.6,1.4v8c0,0.5,0.2,1,0.6,1.399
+	c0.3,0.399,0.8,0.601,1.4,0.601h8c0.601-0.101,1-0.301,1.399-0.601C13.998,12.633,14.198,12.133,14.198,11.633z"/>
+<path id="path2995" fill="none" stroke="#404040" stroke-linecap="round" stroke-linejoin="round" d="M14,3.5
+	c-0.1-0.6-0.3-1.1-0.6-1.4C13,1.7,12.6,1.5,12,1.5H4c-0.6,0-1.1,0.2-1.4,0.6C2.2,2.4,2,2.9,2,3.5v8c0,0.5,0.2,1,0.6,1.4
+	C2.9,13.3,3.4,13.5,4,13.5h8c0.6-0.1,1-0.3,1.4-0.6C13.8,12.5,14,12,14,11.5V3.5"/>
+</svg>

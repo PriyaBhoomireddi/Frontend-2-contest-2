@@ -1,0 +1,31 @@
+QFrame#progressManagerFrame {
+    border: 1px solid #D2D2D2;
+    background-color: #FFFFFF;
+}
+
+QPushButton#minimizeButton {
+    background-color: transparent;
+    border: none;
+}
+
+QTreeWidget::item {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+QFrame#fileTableShutDownFrame {
+    max-height: 250px;
+}
+
+QTreeWidget#filesTableShutDown {
+    background-color: transparent;
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+    border: none;
+    color: #666666;
+    max-height: 245px;
+}
+
+QLabel#description1 {
+    font-weight: bold;
+}

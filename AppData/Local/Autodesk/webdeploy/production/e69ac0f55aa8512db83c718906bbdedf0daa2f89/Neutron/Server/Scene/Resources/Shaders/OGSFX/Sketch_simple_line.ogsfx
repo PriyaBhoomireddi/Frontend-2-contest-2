@@ -1,0 +1,161 @@
+#version 330
+#include "Sketch_oit_def.ogsfh"
+#include "Sketch_primitive.ogsfh"
+#include "Sketch_line.ogsfh"
+#include "Sketch_line_no_weight.ogsfh"
+
+// simple line index texture
+uniform highp texture2D gLineIndexTex_ : LineIndexTexture ;
+uniform highp sampler2D gLineIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gLineIndexTex_>; };
+uniform highp texture2D gLineDrawOrderZTex_ : LineDrawOrderZTexture ;
+uniform highp sampler2D gLineDrawOrderZTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gLineDrawOrderZTex_>; };
+
+attribute VS_INPUT
+{
+    int VertexID : TEXCOORD0;
+    int InstanceID : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 vso_position;
+    flat int vso_colorS;
+    flat int vso_glowColorS;
+    float vso_dist;
+};
+
+attribute pixelOut
+{
+    vec4 pso_color : COLOR0;
+};
+
+GLSLShader Sketch_simple_line
+{
+
+struct VertexAttr_Line
+{
+    vec4 position;  // transformed  vertex position
+    uint color;     // line color
+    uint glowColor; // glow color
+    float dist;     // distance to line  
+};
+
+}
+
+GLSLShader Line_VS
+{
+
+// simple line input information
+struct LineAttr
+{
+    vec2 startPoint;
+    vec2 endPoint;
+    
+    uint flag;
+    uint color;
+    uint width;
+    float drawZ;
+    uint glowColor;
+    uint isLogical;
+};
+
+// load simple line information
+void load_line_info(uint offset, uint line_index, uint line_flag, out LineAttr attr)
+{
+    uint caps_type, joint_type, lt_type;
+    load_line_position(get_pos_id(offset), attr.startPoint, attr.endPoint);
+    load_line_flag(line_flag, attr.flag);
+    load_line_attributes(line_index, attr.color, attr.width, lt_type, attr.drawZ, attr.glowColor, caps_type, joint_type, attr.isLogical);
+
+    if (gRetainMode)
+    {
+        adjust_line_segment_precision_logical(attr.startPoint, attr.endPoint);
+    }
+    else if (attr.isLogical == uint(0))
+    {
+        adjust_line_segment_precision(attr.startPoint, attr.endPoint);
+    }
+}
+
+// get vertex output attributes
+void set_line_properties(uint vid, LineAttr line_attr, out VertexAttr_Line outputData)
+{
+    float temp_dist = 0.0f;
+    bool isDot = false;
+
+
+    if (line_attr.isLogical != uint(0))
+    {
+        outputData.position.xy = get_logical_line_envelope_pos(vid,  line_attr.flag,
+         line_attr.width, line_attr.startPoint, line_attr.endPoint, temp_dist, isDot);
+    }
+    else 
+    {
+        outputData.position.xy = get_line_envelope_pos(vid, 
+         line_attr.width, line_attr.startPoint, line_attr.endPoint, temp_dist);
+
+    }  
+     
+    outputData.position.z =  line_attr.drawZ;
+    outputData.position.xyz = outputData.position.xyz;
+    outputData.position.w = 1.0f;
+    
+    outputData.dist = temp_dist;
+    outputData.color = line_attr.color;
+    outputData.glowColor = line_attr.glowColor;
+}
+
+void main()
+{
+    LineVertex_Input vs_input = LineVertex_Input(uint(0), uint(0), uvec2(0, 0));
+    load_line_input(uint(gl_VertexID), uint(gl_InstanceID), gLineIndexTex, vs_input);
+    
+    LineAttr line_attr = LineAttr(vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), uint(0), uint(0), uint(0), 0.0f, uint(0), uint(0));
+    load_line_info(vs_input.PrimID.x, get_prim_id(vs_input.PrimID.y), get_prim_flag(vs_input.PrimID.y), line_attr);
+
+    if (gRetainMode)
+    {
+        load_dynamic_draworderz(uint(gl_InstanceID), gLineDrawOrderZTex, line_attr.drawZ);
+    }
+
+    adjust_line_width_single_line(line_attr.width);
+
+    VertexAttr_Line outputData = VertexAttr_Line(vec4(0.0f, 0.0f, 0.0f, 0.0f), uint(0), uint(0), 0.0f);
+    set_line_properties(uint(gl_VertexID),  line_attr, outputData);
+    
+    gl_Position = outputData.position;
+
+    vso_position = outputData.position;
+    vso_colorS = int(outputData.color);
+    vso_glowColorS = int(outputData.glowColor);
+    vso_dist = outputData.dist;
+}
+
+}
+
+GLSLShader Line_PS
+{
+
+void main()
+{
+    uint vso_color = uint(vso_colorS);
+    uint vso_glowColor = uint(vso_glowColorS);
+
+    vec4 color = compute_final_color(get_extended_dist_to_center(abs(vso_dist)), get_extended_line_weight(SINGLE_LINE_WIDTH), vso_color, vso_glowColor);
+
+    if (color.a < 0.01f)
+        discard;
+    pso_color = OIT_PS_OUTPUT(color, vso_position);  
+}
+
+}
+
+technique Line_AA
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = Line_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = Line_PS;
+    }
+}
+

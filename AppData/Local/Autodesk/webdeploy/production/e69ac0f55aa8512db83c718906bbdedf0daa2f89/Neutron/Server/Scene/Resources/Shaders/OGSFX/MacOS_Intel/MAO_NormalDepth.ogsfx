@@ -1,0 +1,131 @@
+//**************************************************************************/
+// Copyright (c) 2008 Autodesk, Inc.
+// All rights reserved.
+//
+// These coded instructions, statements, and computer programs contain
+// unpublished proprietary information written by Autodesk, Inc., and are
+// protected by Federal copyright law. They may not be disclosed to third
+// parties or copied or duplicated in any form, in whole or in part, without
+// the prior written consent of Autodesk, Inc.
+//**************************************************************************/
+// DESCRIPTION: Screen space ambient occlusion - normal-depth buffer pass.
+// AUTHOR: Mauricio Vives, converted to OGSFX by Eric Haines, July 2013
+// CREATED: October 2008
+//**************************************************************************/
+
+#include "MAO_Common.ogsfh"
+
+#ifdef CLIPPING
+#include "OGS_Clipping.ogsfh"
+#endif
+
+// Whether back-facing normals need to be flipped to face the viewer.
+uniform bool gFlipBackFacingNormals : FlipBackFacingNormals = false;
+
+// Is left handed coordinate system or right handed system.
+// Its value is 1.0 for left-handed system, and -1.0 for right-handed system.
+uniform float gLeftHandedSign : LeftHandedSign = 1.0;
+
+// Depth priority, which shifts the model a bit forward in the z-buffer
+uniform float gDepthPriority : DepthPriority = 0.0;
+
+// Vertex shader input structure.
+attribute VS_INPUT_NormalDepth
+{
+    vec3 Pos : POSITION;
+    vec3 Normal: NORMAL;
+}
+
+// Vertex shader output structure.
+attribute VS_TO_PS_NormalDepth
+{
+    vec4 NormalDepth : TEXCOORD0;
+    vec4 Pv: TEXCOORD1;
+
+}
+
+// Vertex shader.
+// VS_TO_PS_NormalDepth VS_NormalDepth(VS_INPUT_NormalDepth In)
+GLSLShader VS_NormalDepth
+{
+    void main()
+    {
+		#ifdef CLIPPING
+        // Compute the six clip distances.
+        ComputeClipDistances(gWXf*vec4(Pos, 1.0));
+        #endif
+
+        // Transform the vertex from object space to clip space.
+        gl_Position = gWVPXf*vec4(Pos, 1.0);
+
+        // modify the gl_Position a bit by biasing the Z a bit forward, based on depth priority
+        gl_Position.z -= gl_Position.w*2.0*gDepthPriority;
+
+        // Record the normal and depth components for the pixel shader.
+        // NOTE: This depends on whether the view direction is along +Z or -Z.  The projection matrix
+        // "Z sense" determines this.
+        NormalDepth.xyz = mat3(gWVITXf[0].xyz,
+                                     gWVITXf[1].xyz,
+                                     gWVITXf[2].xyz)*Normal;
+        NormalDepth.z = gProjZSense * NormalDepth.z;
+        NormalDepth.w = gProjZSense * (gWVXf*vec4(Pos, 1.0)).z;
+
+        Pv = gWVXf*vec4(Pos, 1.0);
+
+    }
+}
+
+// Pixel shader output structure.
+attribute PS_OUT
+{
+    vec4 Normal : COLOR0;
+    vec4 Depth : COLOR1;
+}
+
+// Pixel shader.
+// PS_OUT PS_NormalDepth(VS_TO_PS_NormalDepth In)
+GLSLShader PS_NormalDepth
+{
+    void main()
+    {
+    #ifdef CLIPPING
+        #if GL_ES
+			ClipPixels();
+		#endif
+	#endif
+        // normalize input normal
+		vec3 normal = normalize(NormalDepth.xyz);
+
+        // gl_FrontFacing is always false on MacOS / CoreProfile / Intel Iris Plus 640 / Intel HD Graphics 630.
+        // Compute face direction to approximate normal.
+        // Face direction is computed by cross product of dx and dy on view position.
+        vec3 faceNormal = normalize(cross(dFdx(Pv.xyz), dFdy(Pv.xyz)));
+
+        // For left handed system, reconstruct normal by cross(ddy,ddx). For right handed system,
+        // reconstruct normal by cross(ddx,ddy). So multiply gLeftHandedSign to adapt both left and
+        // right handed systems.
+        faceNormal *= gLeftHandedSign;
+
+        // Flip normal for back face when gFlipBackFacingNormals is true
+        if( gFlipBackFacingNormals && dot(normal, faceNormal) < 0.0 )
+        {
+            normal *= -1.0;
+        }
+
+        // Set the normal for an unsigned normalized integer target, and depth for a floating-point
+        // target.
+        Normal = vec4((normal + 1.0) * 0.5, 0.0);
+        Depth  = NormalDepth.wwww;
+    }
+}
+
+// Technique.
+technique NormalDepth
+{
+    pass p0
+    {
+        VertexShader (in VS_INPUT_NormalDepth, out VS_TO_PS_NormalDepth) = VS_NormalDepth;
+        PixelShader (in VS_TO_PS_NormalDepth, out PS_OUT) = PS_NormalDepth;
+    }
+}
+

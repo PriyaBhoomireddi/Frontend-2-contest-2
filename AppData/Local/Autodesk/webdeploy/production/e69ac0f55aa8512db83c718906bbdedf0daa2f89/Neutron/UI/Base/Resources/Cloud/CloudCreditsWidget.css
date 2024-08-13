@@ -1,0 +1,178 @@
+/*
+Notice that some pixel sizes in this css file are set using schema
+    font-size: scaled_12px;
+etc.
+These scaled_*px values are multiplied with the current ToolbarFramework::Parameters::scaleFactor();
+That means that this css file cannot be used "as-is", but it is a template to be translated in cpp.
+*/
+
+#AlertLabel {
+    font-family: Arial, Sans-Serif;
+    font-size: scaled_12px;
+    color: #6C6C6C;
+    background-color: #FFEFEC;
+    border: 2px solid #F1A7A7;
+    border-radius: 2px;
+    margin-left: 23px;
+    margin-right: 23px;
+    padding: 9px;
+    padding-left: 23px;
+    margin-bottom: 8px;
+}
+
+#historyButton, #faqButton, #divider1, #divider2 {
+    border: none;
+    font-family: Arial, Sans-Serif;
+    font-weight: bold;
+    font-size: scaled_14px;
+    color: #00A6E2;
+    text-transform: uppercase;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#buyCreditsButton {
+    font-style: italic;
+    color: #5ACBEC;
+    text-decoration: underline;
+    font-family: Arial, Sans-Serif;
+    font-size: scaled_12px;
+    border: none;
+    margin-left: 1px;
+    margin-top: 3px;
+}
+
+#buyCreditsButtonMac {
+    font-style: italic;
+    color: #5ACBEC;
+    text-decoration: underline;
+    font-family: Arial, Sans-Serif;
+    font-size: scaled_12px;
+    border: none;
+    margin-left: 8px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#CloudCreditsWidget {
+}
+
+#CloudCreditsFrame {
+    background-color: #f7f7f7;
+    padding: 10px;
+    padding-right: 0px;
+    padding-left: 23px;
+    margin-left: 23px;
+    margin-right: 23px;
+    margin-bottom: 5px;
+}
+
+#CloudCreditsFrameMac {
+    background-color: #f7f7f7;
+    padding: 10px;
+    padding-right: 0px;
+    padding-left: 15px;
+    margin-left: 23px;
+    margin-right: 23px;
+    margin-bottom: 5px;
+}
+
+#CartFrame {
+    border: none;
+}
+
+#CartContentFrame {
+    border: 2px solid #D2D2D2;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-bottom: 5px;
+}
+
+#seperator {
+    border: 1px solid #D2D2D2;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#CartItemLabel {
+    font-family: Arial, Sans-Serif;
+    font-size: scaled_12px;
+    color: #6C6C6C;
+    margin-right: 1px;
+}
+
+#RemoveFromCart {
+    background-color: transparent;
+    border: none;
+}
+
+#Underline {
+    border: 1px solid #d2d2d2;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 3px;
+    margin-right: 5px;
+}
+
+#UnderlineMac {
+    border: 1px solid #d2d2d2;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-left: 8px;
+    margin-right: 2px;
+}
+
+QComboBox {
+    font-family: Arial, Sans-Serif;
+    font-size: scaled_12px;
+    color: #3c3c3c;
+    background-color: transparent;
+}
+
+QListView {
+    font-family: Arial, Sans-Serif;
+    font-size: scaled_12px;
+    color: #3c3c3c;
+}
+
+#BalanceAfterLabel, #BalanceAfter {
+    font-family: Arial, Sans-Serif;
+    font-size: scaled_12px;
+    color: #6C6C6C;
+    background-color: transparent;
+    margin-top: 3px;
+}
+
+#BalanceAfter {
+    color: #3c3c3c;
+    margin-right: 19px;
+}
+
+    #BalanceAfter:disabled {
+        color: red;
+    }
+
+#CurrentBalanceLabel, #CreditsAvailable, #AccountsLabel {
+    font-family: Arial, Sans-Serif;
+    font-size: scaled_12px;
+    color: #6C6C6C;
+    background-color: transparent;
+    padding-bottom: 2px;
+}
+
+#CreditsAvailable {
+    margin-right: 19px;
+    color: #3c3c3c;
+}
+
+#LinksFrame {
+    margin-top: -2px;
+}

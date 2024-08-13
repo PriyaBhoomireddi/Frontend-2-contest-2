@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage SchemaVersion="1.0" 
+    AutodeskProduct="Fusion360" 
+    Name="Sample Composite command" 
+    Description="Python composite command using extrude and rectangular pattern" 
+    AppVersion="1.0.0" 
+    ProductType="Application" 
+    Author="Autodesk Inc" 
+    ProductCode="{0815BA61-7F6B-4C91-B8D9-2453D742E71C}" 
+    Icon="./Resource/32x32.png"
+    HelpFile="./Resources/Help.html">
+  <CompanyDetails Name="Autodesk Inc" Url="http://www.autodesk.com" Email="sales@autodesk.com" />
+  <Components>
+    <RuntimeRequirements OS="Win64|MacOS" Platform="Fusion360" SeriesMin="1.6.601" SeriesMax="1.6.601" />
+	<ComponentEntry AppName="CreateCompositeCommand" Version="1.0.2" ModuleName="./AutoRunCompositeCommand.py"/>
+  </Components>
+</ApplicationPackage>

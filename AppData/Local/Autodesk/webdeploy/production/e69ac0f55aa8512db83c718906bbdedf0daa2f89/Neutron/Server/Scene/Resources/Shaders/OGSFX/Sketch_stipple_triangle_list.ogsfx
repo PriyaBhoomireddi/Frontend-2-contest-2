@@ -1,0 +1,115 @@
+#version 330
+#include "Sketch_triangle.ogsfh"
+#include "Sketch_screen.ogsfh"
+#include "Sketch_stipple.ogsfh"
+
+// stipple triangle list vertex texture structure:
+// 1. coordinates of three vertices (6 floats)
+// 2. depth and logical shared flag (1 float)
+// 3. color (1 float)
+// 4. stipple index (2 ushorts)
+uniform highp texture2D gStippleTriListVertexTex_ : StippleTriangleListVertexTexture ;
+uniform highp sampler2D gStippleTriListVertexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gStippleTriListVertexTex_>; };
+
+// stipple triangle list index texture structure:
+// index value of current triangle
+uniform highp texture2D gStippleTriListIndexTex_ : StippleTriangleListIndexTexture ;
+uniform highp sampler2D gStippleTriListIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gStippleTriListIndexTex_>; };
+
+attribute VS_INPUT
+{
+    int VertexID : TEXCOORD0;
+    int InstanceID : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 vso_pos;
+    vec4 vso_color;
+    flat int vso_stipple_indexS;
+};
+
+attribute pixelOut
+{
+    vec4 pso_color : COLOR0;
+};
+
+GLSLShader StippleTriangleList_VS
+{
+
+void load_vertex_info(uint instance_id, uint vertex_id, uint tri_id, out StippleTriVertexAttr attr)
+{
+    ivec2 offset = get_ptex_offset(tri_id*uint(3) + uint(1));
+    vec4 val = texelFetch(gStippleTriListVertexTex, offset, 0);
+
+    ivec2 offset2 = get_ptex_offset(tri_id*uint(3) + uint(2));
+    vec4 val2 = texelFetch(gStippleTriListVertexTex, offset2, 0);
+
+    if (vertex_id == uint(0))
+    {
+        ivec2 offset1 = get_ptex_offset(tri_id*uint(3));
+        attr.pos = texelFetch(gStippleTriListVertexTex, offset1, 0).xy;
+    }
+    else if (vertex_id == uint(1))
+    {
+        ivec2 offset1 = get_ptex_offset(tri_id*uint(3));
+        attr.pos = texelFetch(gStippleTriListVertexTex, offset1, 0).zw;
+    }
+    else if (vertex_id == uint(2))
+    {
+        attr.pos = val.xy;
+    }
+
+    attr.isLogical = get_logical_space(val.z);
+    attr.drawZ = abs(val.z);
+    attr.color = floatBitsToUint(val.w);
+    attr.prim_id = uint(0);
+    attr.stipple_index = floatBitsToUint(val2.x) & uint(0xffff);
+}
+
+void main()
+{
+    StippleTriVertexAttr attr = StippleTriVertexAttr(vec2(0.0f, 0.0f), uint(0), 0.0f, uint(0), false, uint(0));
+
+    uint tri_id = load_tri_id_from_tex(gStippleTriListIndexTex, uint(gl_InstanceID));
+    load_vertex_info(uint(gl_InstanceID), uint(gl_VertexID), tri_id, attr);
+
+    VertexAttr_Stipple_Triangle outputData = VertexAttr_Stipple_Triangle(vec4(0.0f, 0.0f, 0.0f, 0.0f),
+                                                                         vec4(0.0f, 0.0f, 0.0f, 0.0f), uint(0));
+    set_stipple_triangle_properties(attr, outputData);
+
+    gl_Position = outputData.position;
+
+    vso_pos = outputData.position;
+    vso_color = outputData.color;
+    vso_stipple_indexS = int(outputData.stipple_index);
+}
+
+}
+
+GLSLShader StippleTriangle_PS
+{
+
+void main()
+{
+    vec2 pixelPos = vso_pos.xy * vec2(0.5f, 0.5f) + vec2(0.5f, 0.5f);
+    pixelPos *= gScreenSize;
+    // pixelPos.y = gScreenSize.y - pixelPos.y;
+
+    vec4 final_color = neutron_sketch_stipple_apply(vso_color, pixelPos, uint(vso_stipple_indexS));
+    if (final_color.a < 0.01f)
+        discard;
+    pso_color = OIT_PS_OUTPUT(final_color, vso_pos);  
+}
+
+}
+
+technique StippleTriangleList
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = StippleTriangleList_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = StippleTriangle_PS;
+    }
+}
+

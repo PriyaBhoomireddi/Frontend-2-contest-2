@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?> 
+<CommandDefinitions>
+  <CommandDefinition Id="InsertAssetCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzInsertAssetCommandText" _LCLZText="Insert an asset to the current document."/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ExportCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzExportCommandText" _LCLZText="Export the active asset as translator supported file type(*.sat, *.step, etc.)"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="A360RenderCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzA360RenderCommand1" _LCLZText="Creates a high-quality rendered image of your scene using cloud or local background rendering technology."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzA360RenderCommand2" _LCLZText="Choose the desired image size, settings, cloud or local render, and click Render to start the rendering process. Finished renderings will appear in your Rendering Gallery."/>
+      </ExpandedContent>
+    </Tooltip>
+    <TipsAndTricks MoreInfo="RENDER-IN-THE-CLOUD-CMD">
+      <Title _LCLZId="lclA360RenderTipsAndTricksTitle" _LCLZText="Rendering Information"/>
+      <Tips _LCLZId="lclzA360RenderTipsAndTricksTips" _LCLZText="Select from one of the presets or configure custom settings. Click Render to start the rendering process. A thumbnail is displayed in the Rendering Gallery."/>
+      <Description _LCLZId="lclzA360RenderTipsAndTricksDesc" _LCLZText="Larger, or higher-quality images will require Cloud Credits."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SaveAsImageCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzSaveAsImageCommandText" _LCLZText="Capture Image"/>
+      <ExpandedContent>
+         <TextBlock _LCLZId="lclzSaveAsImageCommand1" _LCLZText="Captures the current canvas as an image."/>
+         <TextBlock/>
+         <TextBlock _LCLZId="lclzSaveAsImageCommand2" _LCLZText="Set the image size and resolution then set the file type (*.png, *.jpg, *.tiff) and file name."/>
+      </ExpandedContent>      
+    </Tooltip>
+    <TipsAndTricks MoreInfo="RENDER-CAPTURE-CURRENT-IMAGE-CMD">
+      <Title _LCLZId="lclzSaveAsImageTipsAndTricksTitle" _LCLZText="Capture Image Information"/>
+      <Tips _LCLZId="lclzSaveAsImageTipsAndTricksTips" _LCLZText="Captures the current canvas as an image. Set the image size and resolution then set the file type (*.png, *.jpg, *. tiff) and filename."/>
+      <Description _LCLZId="lclzSaveAsImageTipsAndTricksDesc" _LCLZText="For best results, set the environment and camera settings and enable In-canvas Render before capturing the screen."/>
+    </TipsAndTricks>
+  </CommandDefinition>
+  <CommandDefinition Id="SaveDocumentAsCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzSaveDocumentAsCommandText" _LCLZText="Save the active document as a new one"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="OpenDocumentCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzOpenDocumentCommandText" _LCLZText="Open a document"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="AutoSaveFilesCommand" HotKey="Ctrl+Shift+S">    
+  </CommandDefinition>
+  <CommandDefinition Id="NotifyAutoSaveFilesCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzNotifyAutoSaveFilesCommandText" _LCLZText="Recover Documents"/>
+      <ExpandedContent>
+            <TextBlock _LCLZId="NotifyAutoSaveFilesCommand1" _LCLZText="Opens the File Recovery dialog box and displays a list of Recovery files."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="NotifyAutoSaveFilesCommand2" _LCLZText="Recovery files are cached locally. Use Recovery files to recover design data if Fusion 360 closes unexpectedly."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="NotifyAutoSaveFilesCommand3" _LCLZText="Set the Recovery time interval in the Preferences dialog box."/>
+
+        </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="PLM360SaveCommand" HotKey="Ctrl+S">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzPLM360SaveCommandText" _LCLZText="Save"/>
+      <ExpandedContent>
+            <TextBlock _LCLZId="SaveDesc1" _LCLZText="Saves a design to a selected location within a project."/>
+            <TextBlock/>
+            <TextBlock _LCLZId="SaveDesc2" _LCLZText="Save your design frequently to prevent loss of work in the event of a power failure or unexpected crash."/>
+        </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="PLM360SaveAsCommand" >
+    <Tooltip>
+      <TextBlock _LCLZId="lclzPLM360SaveAsCommandText" _LCLZText="Save As"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="CloseDocumentCommand" HotKey="Ctrl+w">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzCloseDocumentCommandText" _LCLZText="Close a document"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="CycleTabsForwardCommand" >
+    <Tooltip>
+      <TextBlock _LCLZId="lclzCycleTabsForwardCommandText" _LCLZText="Show Next Tab"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="CycleTabsBackwardCommand" >
+    <Tooltip>
+      <TextBlock _LCLZId="lclzCycleTabsBackwardCommandText" _LCLZText="Show Previous Tab"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="AboutBoxCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzAboutBoxCommandText" _LCLZText="Launch About Box"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="CancelCommand" HotKey="Escape">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzCancelCommandText" _LCLZText="CancelCommand"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="CommitCommand" HotKey="Return">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzCommitCommandText" _LCLZText="CommitCommand"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="CutCommand" HotKey="Ctrl+X">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzCutCommandText" _LCLZText="CutCommand"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="DeleteCommand" HotKey="Delete">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzDeleteCommandText" _LCLZText="DeleteCommand"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="RepeatCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzRepeatCommandText" _LCLZText="Repeat the last command."/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="RunScriptCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzRunScriptCommandText" _LCLZText="Run a python script."/>
+    </Tooltip>
+  </CommandDefinition>    
+  <CommandDefinition Id="HideTextCommandsCommand" HotKey="Alt+Ctrl+c">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzHideTextCommandsCommandText" _LCLZText="Hide Text Commands"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ShowTextCommandsCommand" HotKey="Alt+Ctrl+c">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzShowTextCommandsCommandText" _LCLZText="Show Text Commands"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ShowNavigationToolbarCommand" HotKey="Alt+Ctrl+n">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzShowNavigationToolbarCommandText" _LCLZText="Show Navigation Bar"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="HideNavigationToolbarCommand" HotKey="Alt+Ctrl+n">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzHideNavigationToolbarCommandText" _LCLZText="Hide Navigation Bar"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ShowBrowserCommand" HotKey="Alt+Ctrl+b">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzShowBrowserCommandText" _LCLZText="Show Browser"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="HideBrowserCommand" HotKey="Alt+Ctrl+b">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzHideBrowserCommandText" _LCLZText="Hide Browser"/>
+    </Tooltip>
+  </CommandDefinition>
+  
+  <CommandDefinition Id="ActivateProjectFilterCommand" HotKey="Ctrl+f">
+      <Tooltip>
+          <TextBlock _LCLZId="lclzActivateProjectFilterCommandText" _LCLZText="Activate Project Filter"/>
+      </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ShowActivityFeedCommand" HotKey="Alt+Ctrl+a">
+      <Tooltip>
+          <TextBlock _LCLZId="lclzShowActivityFeedCommandText" _LCLZText="Show Comments"/>
+      </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="HideActivityFeedCommand" HotKey="Alt+Ctrl+a">
+      <Tooltip>
+          <TextBlock _LCLZId="lclzHideActivityFeedCommandText" _LCLZText="Hide Comments"/>
+      </Tooltip>
+  </CommandDefinition>  
+  <CommandDefinition Id="MinimizeCommand" HotKey="Ctrl+m">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzMinimizeCommandText" _LCLZText="Minimize"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ResetToDefaultLayoutCommand" HotKey="Alt+Ctrl+r">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzResetToDefaultLayoutCommandText" _LCLZText="Reset to Default Layout"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="FitCommand" HotKey="F6">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzFitCommandText" _LCLZText="Fit"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ShowViewCubeCommand" HotKey="Alt+Ctrl+v">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzShowViewCubeCommandText" _LCLZText="Show ViewCube"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="HideViewCubeCommand" HotKey="Alt+Ctrl+v">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzHideViewCubeCommandText" _LCLZText="Hide ViewCube"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ActivateEnvironmentCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzActivateEnvironmentCommandText" _LCLZText="Change Workspace"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="CycleWorkspacesForwardCommand" HotKey="Ctrl+bracketright">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzCycleWorkspacesForwardCommandText" _LCLZText="Cycle Workspaces Forward"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="CycleWorkspacesBackwardCommand" HotKey="Ctrl+bracketleft">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzCycleWorkspacesBackwardCommandText" _LCLZText="Cycle Workspaces Backward"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="StartTranscriptingCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzStartTranscriptingCommandText" _LCLZText="Start recording transcripts."/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="StartPerfTranscriptingCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzStartPerfTranscriptingCommandText" _LCLZText="Start recording performance transcripts."/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="StopTranscriptingCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzStopTranscriptingCommandText" _LCLZText="Stop recording transcripts."/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ReplayTranscriptCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzReplayTranscriptCommandText" _LCLZText="Replay a transcript."/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ShowCommandPaletteCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzShowCommandPaletteCommandText" _LCLZText="Show CommandPalette"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="HideCommandPaletteCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzHideCommandPaletteCommandText" _LCLZText="Hide CommandPalette"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="UndoDropDown">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzUndoDropDownText" _LCLZText="Undo"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="RedoDropDown">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzRedoDropDownText" _LCLZText="Redo"/>
+    </Tooltip>
+  </CommandDefinition> 
+  <CommandDefinition Id="InCanvasRenderSettingsCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzInCanvasRenderSettingsCmdText" _LCLZText="In-canvas Render Settings"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="DashboardModeSwitchCommand">
+      <Tooltip>
+          <TextBlock _LCLZId="lclzDashboardModeSwitchCommandText" _LCLZText="Switch Data Panel"/>
+      </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="DashboardModeOpenCommand" HotKey="Alt+Ctrl+p">
+      <Tooltip>
+          <TextBlock _LCLZId="lclzDashboardModeOpenCommandText" _LCLZText="Show Data Panel"/>
+      </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="DashboardModeCloseCommand" HotKey="Alt+Ctrl+p">
+      <Tooltip>
+          <TextBlock _LCLZId="lclzDashboardModeCloseCommandText" _LCLZText="Hide Data Panel"/>
+      </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="CapacityLimitStatusCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzCapacityLimitStatusCommand" _LCLZText="Capacity"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ActiveDocumentActivateCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzActiveDocumentActivateCommand" _LCLZText="Make Editable"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ActiveDocumentDeactivateCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzActiveDocumentDeactivateCommand" _LCLZText="Make Read-Only"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ActiveDocumentsShowActiveDocumentsListCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzActiveDocumentsShowActiveDocumentsListCommand" _LCLZText="My Editable Documents"/>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="ActiveDocumentsLearnMoreBasicAccessCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzActiveDocumentsLearnMoreBasicAccessCommand" _LCLZText="Learn More"/>
+    </Tooltip>
+  </CommandDefinition>
+
+
+
+  <CommandDefinition Id="TestTableCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzTestTableText" _LCLZText="Test Table"/>
+      <ExpandedContent ToolClip="Testing/Download/download.png">
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <!--<CommandDefinition Id="TestTabBarCommand">
+    <Tooltip>
+      <TextBlock _LCLZId="lclzTestTabBarText" _LCLZText="Test TabBar"/>
+      <ExpandedContent ToolClip="ToolClip/html/2d_tolerance.htm">
+        <TextBlock _LCLZId="lclzTestTabBarTextDesc1" _LCLZText="This tooltip is a html file."/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzSurfaceSweep1" _LCLZText="&lt;u&gt;Surface Sweep&lt;/u&gt; : Sweeps a sketch profile or planar face along a selected path."/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>-->
+  <CommandDefinition Id="TestToolkitCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzTestToolkitToolTipDesc1" _LCLZText="INTERNAL USE ONLY"/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzTestToolkitToolTipDesc2" _LCLZText="Used to develop advanced toolbar handling. Don't do this at home kids!"/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+  <CommandDefinition Id="TestOptionGroupCommand">
+    <Tooltip>
+      <ExpandedContent>
+        <TextBlock _LCLZId="lclzTestOptionGroupToolTipDesc1" _LCLZText="INTERNAL USE ONLY"/>
+        <TextBlock/>
+        <TextBlock _LCLZId="lclzTestOptionGroupToolTipDesc2" _LCLZText="Used to test option group!"/>
+      </ExpandedContent>
+    </Tooltip>
+  </CommandDefinition>
+</CommandDefinitions>

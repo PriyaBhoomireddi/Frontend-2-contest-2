@@ -1,0 +1,59 @@
+
+body {
+    min-width: 600px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    color: #272727;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1.6;
+    overflow-x: auto;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+.autodesk360 .modal-backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+
+.autodesk360 .team-picker-background .tho-wizard {		
+    text-align: center;	
+}
+
+.autodesk360 .team-picker-background .tho-wizard .loading {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+.autodesk360 .team-picker-background .tho-wizard .tho-message-title {
+    color: rgb(60, 60, 60);
+    font-size: 14px;
+    font-weight: 400;
+  
+}

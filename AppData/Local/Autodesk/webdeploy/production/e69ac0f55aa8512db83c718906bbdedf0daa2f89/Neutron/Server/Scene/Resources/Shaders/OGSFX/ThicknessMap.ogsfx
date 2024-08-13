@@ -1,0 +1,91 @@
+//**************************************************************************/
+// Copyright 2014 Autodesk, Inc.
+// All rights reserved.
+//
+// This computer source code and related instructions and comments are the
+// unpublished confidential and proprietary information of Autodesk, Inc.
+// and are protected under Federal copyright and state trade secret law.
+// They may not be disclosed to, copied or used by any third party without
+// the prior written consent of Autodesk, Inc.
+//**************************************************************************/
+// DESCRIPTION: Thickness map effect (OGSFX).
+// AUTHOR: Shubird
+// CREATED: Oct 2014
+//**************************************************************************/
+
+// World transformation.
+uniform mat4 gWXf : World ;
+
+// World-view-projection transformation.
+uniform mat4 gWVPXf : WorldViewProjection;
+
+// View inverse transformation.
+uniform highp mat4 gVIXf : ViewInverse;
+
+#if GL_ES
+GLSLShader {
+    precision mediump float;
+}
+#endif
+
+// Vertex shader input structure.
+attribute VS_INPUT
+{
+    vec3 Pos : POSITION;
+}
+
+// Vertex shader output structure.
+attribute VS_TO_PS
+{
+    vec3 ViewDir : TEXCOORD0;
+}
+
+attribute pixOut {
+    vec4 oColor: COLOR0;
+}
+
+// Vertex shader.
+GLSLShader VS_ThicknessMap {
+    void main ()
+    {
+        // Transform the vertex from object space to clip space and world space.
+        gl_Position = gWVPXf*vec4(Pos, 1.0);
+        vec4 HPw = gWXf*vec4(Pos, 1.0);
+
+        // Compute the view direction from the eye point(the last row of the inverse view matrix) 
+        // to the world-space position.
+        ViewDir = HPw.xyz - gVIXf[3].xyz;
+    }
+}//GLSL block
+
+// Pixel shader.
+GLSLShader PS_ThicknessMap {
+    void main ()
+    {
+        // Get the fragment depth (distance from the view position).
+        float depth = length(ViewDir);
+
+        // ADD the depth from backfaces (larger values), and SUBTRACT the depth from front faces
+        // (smaller values).  Using a one-one-add blend state with this will give the thickness.
+        // In glsl, gl_FrontFacing will indicate whether it is front face or back face.
+        // NOTE: This assumes manifold (properly formed) geometry.
+        depth = gl_FrontFacing ? -depth : depth;
+
+        // Return the depth in the first channel.
+    #if GL_ES
+        gl_FragColor = vec4(depth, 0.0, 0.0, 1.0);
+    #else
+        oColor= vec4(depth, 0.0, 0.0, 1.0);
+    #endif
+    }
+}//GLSL block
+
+// The main technique.
+technique Main
+{
+    pass p0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS)= VS_ThicknessMap;
+        PixelShader (in VS_TO_PS, out pixOut)= PS_ThicknessMap;
+    }
+}

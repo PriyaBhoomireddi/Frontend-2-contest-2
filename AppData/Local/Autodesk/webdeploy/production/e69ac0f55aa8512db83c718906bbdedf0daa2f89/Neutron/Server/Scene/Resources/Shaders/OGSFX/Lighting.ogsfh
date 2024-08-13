@@ -1,0 +1,205 @@
+//**************************************************************************/
+// Copyright (c) 2013 Autodesk, Inc.
+// All rights reserved.
+// 
+// These coded instructions, statements, and computer programs contain
+// unpublished proprietary information written by Autodesk, Inc., and are
+// protected by Federal copyright law. They may not be disclosed to third
+// parties or copied or duplicated in any form, in whole or in part, without
+// the prior written consent of Autodesk, Inc.
+//**************************************************************************/
+// DESCRIPTION: Lighting utilities.
+// AUTHOR: Bernard Kwok, ported to OGSFX by Flavio Bortot
+// CREATED: May 2013
+//**************************************************************************/
+
+#ifndef _LIGHTINGGL_OGSFH_
+#define _LIGHTINGGL_OGSFH_
+
+// Light structure.
+struct Light
+{
+    // The light color.
+    vec4 Color;
+    
+    // The light ambient color.
+    vec4 AmbColor;
+    
+    // The light specular color.
+    vec4 SpecColor;
+
+    // The light direction, in world space.
+    // NOTE: Used by directional and spot lights.  This is the direction *toward* the light.
+    vec4 Dir;
+
+    // The light position, in world space.
+    // NOTE: Used by point and spot lights.
+    vec4 Pos;
+    
+    // The light range and attenuation factors.
+    // NOTE: Used by point and spot lights.
+    vec4 Atten;
+   
+    // The cosine of the light hotspot and falloff half-angles.
+    // NOTE: Used by spot lights.
+    vec4 Cone;
+};
+
+//=====================================================================
+//         LIGHTINGGL.cgh
+//=====================================================================
+GLSLShader LightCompute {
+
+void ComputeLightingCoefficients(
+    in vec3 Lw, in vec3 Nw, in vec3 Vw, float exp, out float diff, out float spec)
+{
+    // Compute the intermediate results for lighting.
+    // > NdotL: The dot product of the world space normal and world space light direction.
+    // > Hw   : The halfway vector between the light direction and the view direction, computed as
+    //          the normalized sum of the vectors.
+    // > NdotH: The dot product of the world space normal and world space halfway vector.
+    float NdotL = dot(Nw, Lw);
+#ifdef SPECULAR
+    highp vec3 Hw = normalize(Vw + Lw);
+    float NdotH = dot(Nw, Hw);
+#endif
+    
+#if defined(USE_LIT_INTRINSIC) && defined(SPECULAR)
+
+    // Use the lit() intrinsic function to compute the diffuse and specular coefficients.
+    vec4 lighting = lit(NdotL, NdotH, exp);
+    diff = lighting.y;
+    spec = lighting.z;
+
+#else
+
+    // Compute the diffuse (Lambertian) coefficient as NdotL clamped to [0.0, 1.0].    
+    diff = saturate(NdotL);
+
+#ifdef SPECULAR
+    // Compute the specular coefficient, which is only relevant if the normal faces the light.  If
+    // it does, then the specular coefficient is NdotH, raised to the glossiness exponent.    
+    spec = NdotL > 0.0 ? pow(saturate(dot(Nw, Hw)), exp) : 0.0;
+#else
+    spec = 0.0;
+#endif
+
+#endif
+}
+
+float ComputeDistanceAttenuation(in vec4 atten, float d)
+{
+    // Set the attenuation factor to zero if the light range is exceeded.  Otherwise, compute the
+    // attenuation factor as the reciprocal of the quadratic expression a + b*(d+1) + c*(d+1)^2.
+    // NOTE: The attenuation function is shifted by one, so that attenuation starts at 1.0 at a
+    // distance of zero with common attenuation factors.
+    if (d > atten.w)
+    {
+        return 0.0;
+    }
+    else
+    {
+        d += 1.0;
+        return  1.0 / (atten.x + atten.y * d + atten.z * d * d);
+    }
+}
+
+float ComputeConeAttenuation(vec2 cone, vec3 Lw, vec3 LightDir)
+{
+    // Compute the cosine of the angle between the incident light direction and the spot light
+    // direction, i.e. the dot product of those vectors.
+    float cosDir = dot(Lw, LightDir);
+    
+    // The cosines of the spot light cone angles vary from 1.0 in the light direction to 0.0 when
+    // perpendicular to the light direction, with the hotspot angle cosine being *larger* than the
+    // falloff angle cosine.  Find where the incident light angle cosine is in relation to the
+    // range between the hotpot and falloff angle cosines:  If it is greater than the hotspot
+    // angle cosine, then full intensity is returned; if it is less than the falloff angle, then
+    // zero intensity is returned.  Lastly, if it is between the angle cosines, then a linearly
+    // interpolated factor is returned.
+    return saturate((cosDir - cone.y) / (cone.x - cone.y));
+}
+
+// Computes lighting for a single directional light.
+void ComputeDirectionalLight(
+    in Light light, in vec3 Nw, in vec3 Vw, float exp,
+    out vec3 amb, out vec3 diff, out vec3 spec)
+{
+    // Compute the lighting coefficients based on the incident light direction, surface normal, and
+    // view direction.
+    float diffCoeff = 0.0, specCoeff = 0.0;
+    ComputeLightingCoefficients(light.Dir.xyz, Nw, Vw, exp, diffCoeff, specCoeff);
+    
+    // Multiply the light color by the coefficients.
+    // NOTE: The ambient component is only affected by attenuation, and there is none here.
+    amb  = light.AmbColor.xyz;
+    diff = light.Color.xyz * diffCoeff;
+    spec = light.SpecColor.xyz * specCoeff;
+}
+
+// Computes lighting for a single point light.
+void ComputePointLight(
+    in Light light, in vec3 Nw, in vec3 Vw, in vec3 Pw, float exp,
+    out vec3 amb, out vec3 diff, out vec3 spec)
+{
+    // Compute the incident light direction as the normalized difference between the light position
+    // and the surface position.  This is different from the spot light direction.
+    vec3 Lw = light.Pos.xyz - Pw;
+    vec3 LwNorm = normalize(Lw);
+
+    // Compute the attenuation factor based on the distance from the light to the surface position.
+    float atten = ComputeDistanceAttenuation(light.Atten, length(Lw));
+ 
+    // Compute the lighting coefficients based on the incident light direction, surface normal, and
+    // view direction.  The incident light direction is the normalized difference between the light
+    // position and the surface position.
+    float diffCoeff = 0.0, specCoeff = 0.0;
+    ComputeLightingCoefficients(LwNorm, Nw, Vw, exp, diffCoeff, specCoeff);
+    
+    // Multiply the light color by the coefficients and attenutation.
+    amb  = light.AmbColor.xyz * atten;
+    diff = light.Color.xyz * diffCoeff * atten;
+    spec = light.SpecColor.xyz * specCoeff * atten;
+}
+
+// Computes lighting for a single spot light.
+void ComputeSpotLight(
+    in Light light, in vec3 Nw, in vec3 Vw, in vec3 Pw, float exp,
+    out vec3 amb, out vec3 diff, out vec3 spec)
+{
+    // Compute the incident light direction as the normalized difference between the light position
+    // and the surface position.  This is different from the spot light direction.
+    vec3 Lw = light.Pos.xyz - Pw;
+ 
+    // if the light position is on the surface, we assume that light can not be seen.
+    // This is a workaround for defect 1178260. If the light position is on the surface,
+    // the result of normalize() is undefined. If this hurt performance, we may need to 
+    // remove this check and have to tolerate this undefined result.
+    if(length(Lw)==0.0)
+    {
+        amb  = vec3(0.0,0.0,0.0);
+        diff = vec3(0.0,0.0,0.0);
+        spec = vec3(0.0,0.0,0.0);
+        return;
+    }
+    vec3 LwNorm = normalize(Lw);
+
+    // Compute the distance attenuation factor based on the distance from the light to the surface
+    // position.
+    float atten = ComputeDistanceAttenuation(light.Atten, length(Lw));
+ 
+    // Compute the cone attenuation factor, and combine it with the distance attenutation factor.
+    atten *= ComputeConeAttenuation(light.Cone.xy, LwNorm, light.Dir.xyz);
+    
+    // Compute the lighting coefficients based on the incident light direction, surface normal, and
+    // view direction.
+    float diffCoeff = 0.0, specCoeff = 0.0;
+    ComputeLightingCoefficients(LwNorm, Nw, Vw, exp, diffCoeff, specCoeff);
+    
+    // Multiply the light color by the coefficients and attenutation.
+    amb  = light.AmbColor.xyz * atten;
+    diff = light.Color.xyz * diffCoeff * atten;
+    spec = light.SpecColor.xyz * specCoeff * atten;
+}
+}//Close shader block
+#endif // _LIGHTINGGL_OGSFH_

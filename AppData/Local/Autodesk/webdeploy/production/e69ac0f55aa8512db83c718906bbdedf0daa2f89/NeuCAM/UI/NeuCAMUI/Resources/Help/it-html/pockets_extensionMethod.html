@@ -1,0 +1,23 @@
+<div id="pockets_extensionMethod"><p>Estende le selezioni a catena aperta fino all'estensione della casella di delimitazione del materiale grezzo per determinare un contorno chiuso, che viene utilizzato per calcolare un percorso utensile per tasche aperte.</p>
+<p>Quando le catene aperte estese si intersecano prima di raggiungere il riquadro di delimitazione, non viene creato un contorno chiuso e di conseguenza il calcolo del percorso utensile non può essere completato.</p>
+<p>A seconda della geometria della tasca aperta, scegliere tra tre tipi di metodi di estensione:</p>
+<p><b>Tangente</b>: estende tangenzialmente tutte le selezioni delle catene.<br>
+<b>Boundary più vicina</b>: estende tutte le selezioni catena nella direzione più vicina alla casella di delimitazione.<br>
+<b>Parallela</b>: estende le selezioni della catena intersecante in modo che siano parallele in direzione del limite del materiale grezzo. Le catene rimanenti si estendono tangenzialmente.<br></p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="185" height="197" src="../images/tangent_extension_method.png"/></center></td>
+<td><center><img border="0" width="185" height="197" src="../images/closest_boundary_extension_method.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Tangente</b></p></center></td>
+<td><center><p><b>Boundary più vicina</b></p></center></td>
+</tr></table>
+
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="185" height="197" src="../images/parallel_extension_method.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Parallelo</b></p></center></td>
+</tr></table>
+<p><b>NOTA:</b> il <b>metodo di estensione</b> si applica solo alle tasche aperte e non influisce sulle tasche chiuse.</p>
+</div>

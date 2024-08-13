@@ -1,0 +1,117 @@
+<!--/**
+* Copyright 2015 Autodesk, Inc.
+* All rights reserved.
+*
+* This computer source code and related instructions and comments are the unpublished confidential
+* and proprietary information of Autodesk, Inc. and are protected under Federal copyright and state
+* trade secret law. They may not be disclosed to, copied or used by any third party without the
+* prior written consent of Autodesk, Inc.
+*
+*/-->
+
+<!doctype html>
+<html>
+<!--Set title and link to vx component css-->
+<head>
+    <meta charset="utf-8">
+    <title>Render Gallery dialog</title>
+    <style>
+        .vx360 #thumb-wrapper #thumb-list-left {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<!--Declare the ng-app (https://docs.angularjs.org/api/ng/directive/ngApp) and it's controller (https://docs.angularjs.org/api/ng/directive/ngController)-->
+<body my-ng-app="vx360.webcomponents.carousel" ng-controller="RenderGalleryController">
+
+<!--Declare raas-gallery directive, see https://git.autodesk.com/raas/vx360-web-components/blob/develop/docs/Carousel.md#raas-carousel-directive -->
+<raas-carousel
+    design="myDesign"
+    options="myOptions">
+</raas-carousel>
+
+<!-- Active block, both standard js and angular blocks -->
+<script language="JavaScript" type="application/javascript">
+
+//Fix bug RAAS-15970: add a default handler for requestShutdown before myInit event
+window.neutronJavaScriptHandler = {
+	handle: function (command, args) {
+        if (command === 'requestShutdown') {
+			window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ shutDown: null }));
+		}
+	}
+};
+
+// Set background color on areas not covered by vx component, should not be needed once the size of the browser matches the component
+document.body.style.background = "#D2D2D2";
+
+// Init Once
+document.addEventListener('myInit', function myInit(initEvt) {
+    document.removeEventListener('myInit', myInit, false);
+
+    // Define angular controller, for angular reference, see https://docs.angularjs.org/guide/controller.
+    myApp.controller('RenderGalleryController', ['$scope', 'jobService',
+        function ($scope, jobService) {
+
+            // set job provider, see https://git.autodesk.com/raas/vx360-web-components/blob/develop/docs/JobService.md#setjobproviderjobprovider
+            jobService.setJobProvider(myJobProvider);
+
+            // Catch events sent on scope https://docs.angularjs.org/guide/scope
+            // Forward error and messages to fusion, will not be displayed unless VxVerboseMode is set
+            $scope.$on('vx360.webcomponents', myVXEventHandler);
+
+            // Set variables defined by raas-carousel directive, see https://git.autodesk.com/raas/vx360-web-components/blob/develop/docs/Carousel.md#raas-carousel-directive
+            $scope.myDesign = myContext.design;
+            $scope.myOptions = {
+                offline: myContext.connectionStatus !== 'Online',
+                autoSelect: false
+            };
+
+            // Handle events sent from fusion to js object
+            window.neutronJavaScriptHandler = {
+                handle: function (command, args) {
+                    if (command === 'updateJobInfo') {
+                        // Update progress and preview, see https://git.autodesk.com/raas/vx360-web-components/blob/develop/docs/JobService.md#updatejobinfonewinfo
+                        var jobInfo = JSON.parse(args);
+                        mySafeApply($scope, function () {
+                            jobService.updateJobInfo(jobInfo);
+                        });
+                    }
+                    else if (command === 'boardcast') {
+                        $scope.$emit('vx360.webcomponents', JSON.parse(args));
+                        $scope.$apply();
+                    }
+                    else if (command === 'connectivityChanged') {
+                        var status = JSON.parse(args).status;
+                        if (status === 'connected') {
+                            $scope.myOptions.offline = false;
+                        } else if (status === 'disconnected') {
+                            $scope.myOptions.offline = true;
+                        }
+                        $scope.$apply();
+                    }
+                    else if (command === 'documentUploaded') {
+                        window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ createGallery: null }));
+						myContext = JSON.parse(window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ getContext: null })));
+						mySafeApply($scope, function() {
+							$scope.myDesign = myContext.design;
+						});
+					}
+                    else if (command === 'requestShutdown') {
+                        myShutdown($scope);
+                        window.neutronJavaScriptObject.executeQuery('RaasRequest', JSON.stringify({ shutDown: null }));
+                    }
+                }
+            };
+        }]);
+
+}, false);
+
+</script>
+
+<!-- Load vx360 scripts and stylesheets -->
+<script src="Bootstrap.js"></script>
+
+</body>
+</html>

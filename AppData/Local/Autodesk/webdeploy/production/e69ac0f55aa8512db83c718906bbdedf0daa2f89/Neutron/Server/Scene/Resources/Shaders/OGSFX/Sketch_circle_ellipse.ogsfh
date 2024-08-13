@@ -1,0 +1,595 @@
+#ifndef _HQ_FX_CIRCLR_ELLIPSE_H_
+#define _HQ_FX_CIRCLR_ELLIPSE_H_
+
+#include "Sketch_oit_def.ogsfh"
+#include "Sketch_primitive.ogsfh"
+
+// ellipse primitive texture
+uniform highp texture2D gPTex_ : PrimitiveTexture;
+uniform highp sampler2D gPTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gPTex_>; };
+
+GLSLShader Sketch_circle_ellipse
+{
+
+/*
+Ellipse/Circle data format.
+// high-->low
+// |---reserved1 : 2---|---lt_inverted : 1---|---capType : 2---|---logical_flag : 1---|---lt_dot : 1---|---lt_index : 9---|---width : 16---|
+
+center                  64-bits
+radius                  64-bits
+range                   64-bits
+rotate                  32-bits
+color                   32-bits
+width                   16-bits
+lt_index                9-bits
+lt_dot                  1-bit
+logical_flag            1-bit
+capType                 2-bits
+lt_inverted             1-bit
+reserved1               2-bits
+drawZ                   32-bits
+glowColor               32-bits
+reserved2               32-bits
+total                   256-bits
+*/
+
+#define OFFSET_WIDTH (uint(0))        // width offset
+#define MASK_WIDTH (uint(0xffff))     // width mask
+
+#define OFFSET_LINDEX (uint(16))      // linetype index offset
+#define MASK_LINDEX (uint(0x1ff0000)) // linetype index mask
+
+#define OFFSET_LDOT (uint(25))        // linetype dot offset
+#define MASK_LDOT (uint(0x2000000))   // linetype dot mask
+
+#define OFFSET_LFLAG (uint(26))       // logical flag offset
+#define MASK_LFLAG (uint(0x4000000))  // logical flag mask
+
+#define OFFSET_CTYPE (uint(27))       // cap type offset
+#define MASK_CTYPE (uint(0x18000000)) // cap type mask
+
+#define OFFSET_LTINV (uint(29))       // linetype inverted offset
+#define MASK_LTINV (uint(0x20000000)) // linetype inverted mask
+
+struct EllipseAttr_Dash
+{
+    vec2 center;   // screen space center
+    vec2 radius;     // screen space raiuds
+
+    vec2 range;       // start angle end angle
+    float rotate;      // rotation
+
+    float weight;      // line weight
+    uint color;        // color
+    float drawZ;        // draw order z
+
+    uint glowColor;    // glow color
+    uint capType;     // cap type
+    uint isLogical;      //logical flag 0: non-logical transform, 1: logical transform
+};
+#define ATTR_SIZE (3)           // count of attribute size (of float4)
+
+struct VertexAttr_Ellipse
+{
+    vec4 position;    // transformed  vertex position
+
+    vec2 radius;        // x long axis, y short axis
+    vec2 range;          // x start angle, y end angle
+    vec2 center;      // screen space center
+    float rotate;         // rotation
+
+    vec2 uv;                          // uv is used to compute gradient
+    uint color;          // ellipse color
+    float weight;         // ellipse line weight
+
+    uint glowColor;      // glow color for highlights
+};
+
+// load ellipse primitive id
+uint load_prim_id_from_tex(highp sampler2D indexTex, uint id)
+{
+    ivec2 tex_offset = get_ptex_offset(id);
+    uvec4 res = floatBitsToUint(texelFetch(indexTex, tex_offset, 0));
+    return res.x;
+}
+
+// load ellipse attributes
+void assign_attr(vec4 attr_array[ATTR_SIZE], out EllipseAttr_Dash attr)
+{
+    attr.center.x = attr_array[0].x;
+    attr.center.y = attr_array[0].y;
+    attr.radius.x = attr_array[0].z;
+    attr.radius.y = attr_array[0].w;
+
+    attr.range = attr_array[1].xy;
+    attr.rotate = attr_array[1].z;
+    attr.color = floatBitsToUint(attr_array[1].w);
+
+    attr.weight = float(((floatBitsToUint(attr_array[2].x) & MASK_WIDTH) >> OFFSET_WIDTH));
+    attr.isLogical = ((floatBitsToUint(attr_array[2].x) & MASK_LFLAG) >> OFFSET_LFLAG);
+    attr.capType = ((floatBitsToUint(attr_array[2].x) & MASK_CTYPE) >> OFFSET_CTYPE);
+    attr.glowColor = floatBitsToUint(attr_array[2].y);
+    attr.drawZ = attr_array[2].z;
+}
+
+void assign_attr_neutron_sketch(vec4 attr_array[ATTR_SIZE], inout EllipseAttr_Dash attr)
+{
+    uint logical_width = floatBitsToUint(attr_array[2].w);
+    uint adjusted_width = uint(attr.weight);
+    adjust_line_width_wide_line_neutron_sketch(logical_width, adjusted_width);
+    attr.weight = float(adjusted_width);
+}
+
+// load ellipse input info
+void load_ellipse_info(uint offset, out EllipseAttr_Dash attr)
+{
+    vec4 attr_array[ATTR_SIZE];
+
+    for (uint i = uint(0); i <uint(ATTR_SIZE); ++i)
+    {
+        ivec2 tex_offset = get_ptex_offset(offset*uint(ATTR_SIZE) + i);
+        attr_array[i] = texelFetch(gPTex, tex_offset, 0);
+    }
+
+    assign_attr(attr_array, attr);
+    assign_attr_neutron_sketch(attr_array, attr);
+}
+
+// check if elliptical or circle arc is closed when do precision adjustment
+bool is_closed_arc(vec2 range)
+{
+    // since this is not restrictly to check arc is closed but for precsion adjustment,
+    // the EPS is not common float EPS(1E-6) but an experimental value.
+    const float RANGE_EPS = 0.01f;
+
+    return abs(range.y - range.x) > (2.0f * PI - RANGE_EPS);
+}
+
+// calculate arc angle according to cirlce center, position in arc and circle radius
+float get_circle_arc_angle(float x_center, float y_center, float x_pos, float y_pos, float radius)
+{
+    // calculate angle according to two vertexes of a line.
+    float sin_value = (y_pos - y_center) / radius;
+    sin_value = sin_value > 1.0f ? 1.0f : (sin_value < -1.0f ? -1.0f : sin_value);
+
+    float angle = asin(sin_value);
+    angle = x_pos < x_center ? (PI - angle) : (y_pos < y_center ? 2.0f * PI + angle : angle);
+
+    // since float asin will cause precision loss sometimes, do angle compensation.
+    float new_sin_value, new_cos_value;
+    new_sin_value = sin(angle);
+    new_cos_value = cos(angle);
+
+    float new_x_pos = x_center + new_cos_value * radius;
+    float new_y_pos = y_center + new_sin_value * radius;
+    float adjust_angle = distance(vec2(x_pos, y_pos), vec2(new_x_pos, new_y_pos)) / radius;
+    angle = ((sin_value > 0.0f) == (new_x_pos > x_pos)) ? angle + adjust_angle : angle - adjust_angle;
+
+    return angle;
+}
+
+void updateOffset(inout vec2 center)
+{
+    center.x += 0.5f;
+    center.y += 0.5f;
+}
+
+// adjust elliptical arc via adjusting center then range according to start point and end point of ellipse arc.
+// please refer to https://wiki.autodesk.com/display/AGS/Maestro+Analytic+Curve+Precision.
+void adjust_elliptical_arc(inout EllipseAttr_Dash attr)
+{
+    float s1, c1;
+    s1 = sin(attr.rotate + attr.range.x);
+    c1 = cos(attr.rotate + attr.range.x);
+    float x_start = attr.center.x + attr.radius.x * c1;
+    float y_start = attr.center.y + attr.radius.y * s1;
+
+    s1 = sin(attr.rotate + attr.range.y);
+    c1 = cos(attr.rotate + attr.range.y);
+    float x_end = attr.center.x + attr.radius.x * c1;
+    float y_end = attr.center.y + attr.radius.y * s1;
+
+    float x_start_dev = round(x_start) - x_start;
+    float y_start_dev = round(y_start) - y_start;
+    float x_end_dev = round(x_end) - x_end;
+    float y_end_dev = round(y_end) - y_end;
+    attr.center.x += (x_start_dev + x_end_dev) / 2.0f;
+    attr.center.y += (y_start_dev + y_end_dev) / 2.0f;
+
+    float adjust_angle = min(0.25f / max(attr.radius.x, attr.radius.y), 0.01f);
+    attr.range.x -= adjust_angle;
+    attr.range.y += adjust_angle;
+}
+
+// expand envelope width for ellipse
+float get_screen_weight_expand(float weight)
+{
+    return weight*4.0f;
+}
+
+vec2 get_ndc_pos(vec2 center, float sin_rot, float cos_rot, vec2 model_pos)
+{
+    // rotate model pos
+    vec2 rot_pos;
+
+    rot_pos.x = model_pos.x*cos_rot - model_pos.y*sin_rot;
+    rot_pos.y = model_pos.x*sin_rot + model_pos.y*cos_rot;
+
+    // mirror model pos
+    rot_pos *= neutron_sketch_lcs_matrix_scale_sign();
+
+    // get ndc pos
+    vec2 scr_pos = center + rot_pos;
+    vec2 ndc_pos = scr_pos * gInvScreenSize * 2.0f - 1.0f;
+
+    return ndc_pos;
+}
+
+// compute envelope shape with 30 triangles
+const uint ENVELOPE_ANGLE_COUNT = uint(15);
+const uint ENVELOPE_GEOM_COUNT = ENVELOPE_ANGLE_COUNT * uint(2);
+
+vec2 get_ellipse_degrade_pos(uint vid, vec2 center, inout vec2 range, inout float weight, out vec2 uv)
+{
+    vec2 pos_s = vec2(ivec2(center));
+    if (vid > uint(3))
+        vid = uint(3);
+
+    pos_s.x += (-0.5f + float((vid & uint(0x1))));
+    pos_s.y += (-0.5f + float((vid & uint(0x2))));
+
+    uv.x = (-0.5f + float((vid & uint(0x1))));
+    uv.y = (-0.5f + float((vid & uint(0x2))));
+
+    range = vec2(0.0f, 2.0f * PI);
+    weight = 1.0f;
+
+    return screen_to_ndc_pos(pos_s);
+
+}
+
+vec2 get_ellipse_model_pos(uint vid, float weight_expand, vec2 mid_pos, float mid_dist,
+    vec2 mid_vec, vec2 mid_tan,
+    float angle_delta)
+{
+    float cos_mn = abs(dot(mid_tan, mid_vec));
+    float sin_mn = abs(sqrt(1.0f - cos_mn*cos_mn));
+
+    float adjust_weight_expand = weight_expand / sin_mn;
+
+    vec2 model_pos;
+
+    if ((vid & uint(0x1)) ==uint(0))
+    {
+        adjust_weight_expand = weight_expand;
+
+        if (mid_dist <= adjust_weight_expand)
+            model_pos = vec2(0.0f, 0.0f);
+        else
+            model_pos = mid_pos - adjust_weight_expand*mid_vec;
+    }
+    else
+    {
+        float half_angle_delta = angle_delta / 2.0f;
+
+        vec2 sin_cos_half;
+        sin_cos_half.x = sin(half_angle_delta);
+        sin_cos_half.y = cos(half_angle_delta);
+
+        float t_dist = (mid_dist + adjust_weight_expand) / sin_cos_half.y - mid_dist;
+
+        if (t_dist < adjust_weight_expand)
+            t_dist = adjust_weight_expand;
+
+        model_pos = mid_pos + t_dist*mid_vec;
+    }
+
+    return model_pos;
+}
+
+// generate ellipse envelope shapes
+vec2 get_vertex_pos_envelope_30(uint vid, float long_radius, float short_radius,
+    vec2 center, float sin_rot, float cos_rot,
+    inout vec2 range, inout float weight, out vec2 uv)
+{
+    if (max(long_radius, short_radius) < 0.5f)
+    {
+        return get_ellipse_degrade_pos(vid, center, range, weight, uv);
+    }
+
+    float weight_expand = get_screen_weight_expand(weight);
+
+    vec2 expand_range = range + vec2(-PI / 180.0f, PI / 180.0f);
+    if (expand_range.x < 0.0f) expand_range.x = 0.0f;
+
+
+    // get arc range index:
+    float angle_delta = (2.0f * PI) / float(ENVELOPE_ANGLE_COUNT);
+    vec2 range_index = expand_range / angle_delta;
+
+    int s_index = int(range_index.x);
+    int e_index = int(range_index.y) + 1;
+
+    if (e_index - s_index >= int(ENVELOPE_ANGLE_COUNT))
+        e_index = s_index + int(ENVELOPE_ANGLE_COUNT);
+
+    // get angle_index
+    int angle_index = (int(vid) >> 1) + s_index;
+
+    if (angle_index > e_index) // if not current arc, move to end angle to 
+        angle_index = e_index; // generate degeneration shape
+
+    while (angle_index > int(ENVELOPE_ANGLE_COUNT)) // change to 0..2PI
+        angle_index -= int(ENVELOPE_ANGLE_COUNT);
+
+    // get angle
+    float cur_angle = float(angle_index) * angle_delta;
+
+    // get mid point parameters
+    vec2 sin_cos_angle;
+    sin_cos_angle.x = sin(cur_angle);
+    sin_cos_angle.y = cos(cur_angle);
+
+    vec2 mid_pos = vec2(long_radius*sin_cos_angle.y, short_radius*sin_cos_angle.x);
+    float  mid_dist = sqrt(mid_pos.x * mid_pos.x + mid_pos.y*mid_pos.y);
+    vec2 mid_vec = normalize(mid_pos);
+
+    vec2 mid_tan = vec2(-long_radius*sin_cos_angle.x, short_radius*sin_cos_angle.y);
+    mid_tan = normalize(mid_tan);
+
+
+
+    // get model space position
+    vec2 model_pos = get_ellipse_model_pos(vid, weight_expand, mid_pos, mid_dist, mid_vec, mid_tan,
+        angle_delta);
+
+    uv = model_pos;
+
+    // rotate model pos
+    return get_ndc_pos(center, sin_rot, cos_rot, model_pos);
+}
+
+VertexAttr_Ellipse output_vertex_attr_ellipse(uint vid, EllipseAttr_Dash ellipse_attr)
+{
+    // initialize
+    VertexAttr_Ellipse outputData = VertexAttr_Ellipse(vec4(0.0f, 0.0f, 0.0f, 0.0f), vec2(0.0f, 0.0f), vec2(0.0f, 0.0f),
+                                                       vec2(0.0f, 0.0f), 0.0f, vec2(0.0f, 0.0f), uint(0), 0.0f, uint(0));
+
+    // update geometry info
+    vec2 center = vec2(ellipse_attr.center.x, ellipse_attr.center.y);
+    outputData.range = ellipse_attr.range;
+
+    vec2 adjusted_radius = ellipse_attr.radius;
+
+    float sin_rot, cos_rot;
+    sin_rot = sin(ellipse_attr.rotate);
+    cos_rot = cos(ellipse_attr.rotate);
+
+    if (gRetainMode || (ellipse_attr.isLogical != uint(0)))
+    {
+        center = logic_to_ndc(center);
+        center = ndc_to_screen(center);
+        adjusted_radius = neutron_sketch_radius_to_screen(adjusted_radius);
+    }
+    else
+    {
+        if (ellipse_attr.radius.x == 0.0f) adjusted_radius.x = 0.5f;
+        if (ellipse_attr.radius.y == 0.0f) adjusted_radius.y = 0.5f;
+    }
+
+
+    outputData.position.xy = get_vertex_pos_envelope_30(vid, adjusted_radius.x, adjusted_radius.y,
+        center, sin_rot, cos_rot, outputData.range, ellipse_attr.weight, outputData.uv);
+
+    // get the radius
+    outputData.radius = adjusted_radius;
+
+    outputData.center = center;
+    outputData.rotate = ellipse_attr.rotate;
+
+    // update other properties
+    outputData.weight = ellipse_attr.weight;
+    outputData.position.z = ellipse_attr.drawZ;
+    outputData.position.xyz = outputData.position.xyz;
+    outputData.position.w = 1.0f;
+
+    outputData.color = ellipse_attr.color; // move color assignment to last will fix an Intel compiler issue.
+                                       // since the color assignment will affect position result on Intel cards.
+
+    outputData.glowColor = ellipse_attr.glowColor;
+
+    return outputData;
+}
+
+// get angle for a point on ellipse 
+float get_ellipse_angle(vec2 radius, vec2 uv)
+{
+    float x_len = radius.x;
+    float y_len = radius.y;
+
+    float cur_angle = atan(uv.y / y_len, uv.x / x_len);
+
+    if (cur_angle < 0.0f)
+        cur_angle = cur_angle + 2.0f * PI;
+
+    return cur_angle;
+}
+// check if angle is in arc start/end angle
+bool angle_is_in_range(float cur_angle, vec2 range)
+{
+    float lower = min(range.x, range.y);
+    float upper = max(range.x, range.y);
+    float delta = upper - lower + EPS;
+
+    float dist = cur_angle - lower;
+    float dist2 = dist + 2.0f * PI;
+    bool result = ((dist > -EPS) && (dist <= delta))
+        || ((dist2 > -EPS) && (dist2 <= delta));
+
+    return result;
+}
+
+// check current pixel is in arc start/end angle
+bool valid_range(vec2 radius, vec2 uv, vec2 range)
+{
+    float cur_angle = get_ellipse_angle(radius, uv);
+
+    return angle_is_in_range(cur_angle, range);
+}
+
+// check if this is a circle arc. Not precise but for arc precision adjustment.
+bool is_circle_arc(vec2 radius)
+{
+    return (round(radius.x) == round(radius.y));
+}
+
+// expand range to inner direction of caps
+const float INNER_EXPAND = 8.0f;
+
+bool close_to_caps_border(float dist)
+{
+    return abs(dist) < INNER_EXPAND;
+}
+
+// get caps envelope postion
+vec2 get_vertex_model_pos_caps(uint vertex_id, vec2 mid_point, vec2 mid_vec, float weight_expand, out vec4 ref_point)
+{
+    vec2 mid_dir = vec2(-mid_vec.y, mid_vec.x);
+
+    vec2 model_pos;
+    float move_dir = float(vertex_id & uint(0x1))*2.0f - 1.0f;
+
+    if ((vertex_id & uint(0x2)) == uint(0)) // 0, 1
+    {
+        model_pos = mid_point - mid_vec*INNER_EXPAND + move_dir * mid_dir * weight_expand;
+    }
+    else // 1, 3
+    {
+        model_pos = mid_point + mid_vec * weight_expand + move_dir * mid_dir * weight_expand;
+    }
+
+    ref_point.xy = mid_point;
+    ref_point.zw = mid_vec;
+
+    return model_pos;
+}
+
+// get vertex position for start caps envelope shape
+vec2 get_vertex_pos_start_caps(uint vertex_id, vec2 range, float long_radius, float short_radius, float weight_expand, out vec4 ref_point)
+{
+    if (vertex_id >= uint(4))
+        vertex_id = uint(3); // adjust last point
+
+                       // start point vec.
+    float sin_start, cos_start;
+    sin_start = sin(range.x);
+    cos_start = cos(range.x);
+
+    vec2 start_point = vec2(long_radius*cos_start, short_radius*sin_start);
+    vec2 start_vec = -vec2(-long_radius*sin_start, short_radius*cos_start);
+    start_vec = normalize(start_vec);
+
+
+    return get_vertex_model_pos_caps(vertex_id, start_point, start_vec, weight_expand, ref_point);
+}
+// get vertex position for end caps envelope shape
+vec2 get_vertex_pos_end_caps(uint vertex_id, vec2 range, float long_radius, float short_radius, float weight_expand, out vec4 ref_point)
+{
+    if (vertex_id <= uint(5))
+        vertex_id = uint(6); // adjust first point
+
+    vertex_id = vertex_id - uint(6); // to 0, 1, 2, 3
+
+                               // end point vec
+    float sin_end, cos_end;
+    sin_end = sin(range.y);
+    cos_end = cos(range.y);
+
+    vec2 end_point = vec2(long_radius*cos_end, short_radius*sin_end);
+    vec2 end_vec = vec2(-long_radius*sin_end, short_radius*cos_end);
+    end_vec = normalize(end_vec);
+
+    return get_vertex_model_pos_caps(vertex_id, end_point, end_vec, weight_expand, ref_point);
+}
+
+// get caps envelope shape
+vec2 get_vertex_pos_caps(uint vertex_id, vec2 range, float long_radius, float short_radius, float weight_expand,
+    vec2 center, float sin_rot, float cos_rot, out vec2 uv, out vec4 ref_point)
+{
+    /* circle as dot don't need caps. */
+    if (max(long_radius, short_radius) < 0.5f)
+        return vec2(0.0f, 0.0f);
+
+    // vid 0,1,2,3 start_cap
+    //     4,5,    deprecated pos
+    //     6,7,8,9 end_cap
+    vec2 model_pos;
+
+    if (vertex_id <= uint(4))
+        model_pos = get_vertex_pos_start_caps(vertex_id, range, long_radius, short_radius, weight_expand, ref_point);
+    else
+        model_pos = get_vertex_pos_end_caps(vertex_id, range, long_radius, short_radius, weight_expand, ref_point);
+
+    uv = model_pos;
+
+    return get_ndc_pos(center, sin_rot, cos_rot, model_pos);
+}
+
+bool not_in_circle(VertexAttr_Ellipse inputData, float width)
+{
+    float squaredSum = inputData.uv.x * inputData.uv.x + inputData.uv.y * inputData.uv.y;
+    float dist = abs(sqrt(squaredSum) - inputData.radius.x);
+    if ((width > 1.0f) && (dist < width / 2.0f))
+        return false;
+
+    float dist2 = squaredSum - inputData.radius.x * inputData.radius.x + 0.25f;
+    float maxXY = max(abs(inputData.uv.x), abs(inputData.uv.y));
+
+    return ((dist >(width + 1.0f) / 2.0f) || (dist2 > max(0.25f, maxXY)) || (dist2 < min(0.25f, -maxXY)));
+}
+bool in_lw_ellipse(float width, float dist)
+{
+    return ((width > 1.0f) && (dist < width / 2.0f));
+}
+
+bool outside_ellipse(vec2 xy, vec2 axis)
+{
+    return ((xy.x * xy.x) / (axis.x * axis.x) + (xy.y * xy.y) / (axis.y * axis.y) - 1.0f > 0.0f);
+}
+
+vec2 ellipse_dir(VertexAttr_Ellipse inputData)
+{
+    float sin_rot, cos_rot;
+    sin_rot = sin(inputData.rotate);
+    cos_rot = cos(inputData.rotate);
+    float positionX = inputData.uv.x * cos_rot - inputData.uv.y * sin_rot;
+    float positionY = inputData.uv.x * sin_rot + inputData.uv.y * cos_rot;
+    float squareRadiaX = inputData.radius.x * inputData.radius.x;
+    float squareRadiaY = inputData.radius.y * inputData.radius.y;
+    float squareRadiaDiff = squareRadiaY - squareRadiaX;
+    float temp1 = sin_rot * sin_rot * squareRadiaDiff;
+    float temp2 = sin_rot * cos_rot * squareRadiaDiff;
+
+    return normalize(vec2((positionY * (squareRadiaX + temp1) + positionX  * temp2), (positionX * (squareRadiaY - temp1) + positionY * temp2)));
+}
+
+bool not_in_ellipse(VertexAttr_Ellipse inputData)
+{
+    float sin_rot, cos_rot;
+    sin_rot = sin(inputData.rotate);
+    cos_rot = cos(inputData.rotate);
+    vec2 dir = ellipse_dir(inputData);
+    float slope = -dir.y / dir.x;
+    
+    if (abs(slope) > 1.0f)
+        return (outside_ellipse(vec2(inputData.uv.x + 0.5f * cos_rot, inputData.uv.y - 0.5f * sin_rot), inputData.radius)
+                == outside_ellipse(vec2(inputData.uv.x - 0.5f * cos_rot, inputData.uv.y + 0.5f * sin_rot), inputData.radius));
+    else
+        return (outside_ellipse(vec2(inputData.uv.x + 0.5f * sin_rot, inputData.uv.y + 0.5f * cos_rot), inputData.radius)
+                == outside_ellipse(vec2(inputData.uv.x - 0.5f * sin_rot, inputData.uv.y - 0.5f * cos_rot), inputData.radius));
+}
+
+}
+
+#endif // _HQ_FX_CIRCLR_ELLIPSE_H_

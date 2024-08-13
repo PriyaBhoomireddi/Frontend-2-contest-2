@@ -1,0 +1,59 @@
+* {
+    color: #3c3c3c;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+QFrame#AMNotificationStandalone {
+    border-radius: 6px;
+}
+
+QFrame#AMNotification {
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    border-radius: 6px;
+}
+
+#CancelButton {
+    margin-top: 12px;
+    margin-right: 12px;
+    background: transparent;
+    border: none;
+}
+
+#NotificationLink {
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+QLabel#am_ntf_title {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+QTLinkLabel#am_ntf_message {
+    margin-top: 3px;
+    padding: 1px; /* dont' remove this - is needed to proper link hover detection*/
+    color: #3c3c3c;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+QPushButton#am_ntf_btn {
+    border: 1px solid #bbbbbb;
+    color: #3c3c3c;
+    background-color: white;
+    height: 22px;
+    border-radius: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+QPushButton::hover#am_ntf_btn {
+    background-color: #eeeeee;
+}
+
+QPushButton::pressed#am_ntf_btn {
+    background-color: #dcdcdc;
+}

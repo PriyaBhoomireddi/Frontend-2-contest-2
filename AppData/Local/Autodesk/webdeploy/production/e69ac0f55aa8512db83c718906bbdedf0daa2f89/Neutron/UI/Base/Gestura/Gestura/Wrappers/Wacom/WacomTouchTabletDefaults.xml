@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <TouchRejectionFilter>
+	  <Enabled>1</Enabled>
+	  <FingerWidthMM>25</FingerWidthMM>
+	  <FingerHeightMM>25</FingerHeightMM>
+	  <MoveDistanceThresholdMM>5</MoveDistanceThresholdMM>
+	  <MoveTimeThresholdMsecs>50</MoveTimeThresholdMsecs>
+	  <MoveHoldoffMsecs>50</MoveHoldoffMsecs>
+  </TouchRejectionFilter>
+</root>

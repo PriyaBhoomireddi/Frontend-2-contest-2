@@ -1,0 +1,476 @@
+body {
+    margin: 0px;
+}
+
+.popUpContainer .popupBorder, .cke_dialog_body {
+border: 2px solid rgba(0,0,0,0.6);
+}
+
+.defaultText {
+color: #666666;
+font-size: 13px;
+font-family: arial, sans-serif;
+}
+
+.popupBorder {
+border-color: #758086;
+border-width: 6px;
+border-style: solid;
+border-radius: 2px;
+box-shadow: 0 0 2px rgba(0,0,0,0.45);
+background-color: #F3F3F3;
+}
+
+.popupBorder .tileHolder {
+margin-bottom: 0;
+}
+
+.tileTopBorderNoHeader {
+font-size: 0;
+line-height: 0;
+}
+
+.itemPopUpWrapper .tile, .itemPopUpWrapper .tileBodyFooterDiv, .itemPopUpWrapper .tileHeaderContent, .itemPopUpWrapper .tileTopBorderNoHeader {
+-webkit-box-shadow: none;
+border-left: 0;
+border-right: 0;
+border-top: 0;
+-moz-border-radius: 0;
+-webkit-border-radius: 0;
+}
+
+.tile {
+word-wrap: break-word;
+}
+
+.popUpContainer .tileHeader {
+border-top-left-radius: 2px;
+border-top-right-radius: 2px;
+}
+
+.tileBodyFooterDiv, .navBarDropdownULStyle, .navBarMenuItemNorm, .tileBodyBackgroundColor, .tileBodyFooterDiv .timeStamp, .popUpContainer .tileHeader, .cke_reset_all .cke_dialog_title {
+background-color: #F3F3F3;
+}
+
+.popUpContainer .tileTitle {
+padding: 0;
+}
+
+.popUpContainer .tileHeaderContent, .cke_reset_all .cke_dialog_title {
+border-bottom: 1px solid #DEDEDE;
+margin: 0 10px;
+}
+
+.clearfix, .hasLayout {
+zoom: 1;
+}
+
+.clearfix:after {
+display: block;
+visibility: hidden;
+clear: both;
+height: 0;
+content: " ";
+font-size: 0;
+}
+
+.tileHeaderContent {
+height: 40px;
+overflow: hidden;
+}
+
+.popupIconControls {
+float: right;
+}
+
+.popupIconControls:before {
+content: '';
+height: 40px;
+display: inline-block;
+vertical-align: middle;
+}
+
+.tileHeaderCloseBtnDiv {
+vertical-align: middle;
+display: inline-block;
+width: 20px;
+height: 20px;
+background-image: url('assets/close_dark.png');
+background-size: contain;
+cursor: default;
+}
+
+.popupHeaderContainer {
+padding-right: 20px;
+overflow: hidden;
+word-wrap: normal;
+}
+
+.popupHeaderContainer:before {
+min-height: 40px;
+vertical-align: middle;
+content: '';
+display: inline-block;
+}
+
+.popUpContainer .tileTitle h2 {
+text-transform: none;
+font-size: 1.857em;
+font-weight: normal;
+padding-bottom: 0px;
+padding-top: 0px;
+}
+
+.tileTitle h2 {
+margin: 0px;
+color: #333333;
+letter-spacing: .04em;
+}
+
+.popupHeaderLabel {
+display: inline-block;
+vertical-align: middle;
+}
+
+.itemPopUpWrapper .tileBodyFooterDiv {
+border-bottom: 0;
+border-bottom-left-radius: 2px;
+border-bottom-right-radius: 2px;
+}
+
+.dBNone {
+display: none;
+}
+.tileBodyControls {
+padding: 10px 10px 6px 10px;
+}
+
+.bodyControlTabs {
+float: left;
+}
+
+.bodyControlActions {
+float: right;
+}
+
+.tileBodyContent {
+zoom: 1;
+}
+
+.doublePad {
+padding: 12px;
+}
+
+.rFloat, .rightFloat {
+float: right;
+display: inline;
+}
+
+ul, menu, dir {
+display: block;
+list-style-type: disc;
+-webkit-margin-before: 1em;
+-webkit-margin-after: 1em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+-webkit-padding-start: 40px;
+}
+
+.midFonts, .smallFonts {
+font-size: .9231em;
+}
+
+.buttonisedRadio.first {
+border-bottom-left-radius: 2px;
+border-top-left-radius: 2px;
+}
+
+.buttonisedRadio.selected {
+background-color: #4D86C3;
+color: #FFF;
+box-shadow: inset 0 1px 1px 1px rgba(0,0,0,0.1),0px 1px 2px 1px rgba(0,0,0,0.25);
+}
+
+.buttonisedRadio {
+display: inline-block;
+vertical-align: top;
+padding: 5px 15px 3px;
+background-color: #FFF;
+box-shadow: 0 1px 3px 0 rgba(0,0,0,0.25);
+border: 1px solid #CCC\0/;
+margin-right: -1px\0/;
+cursor: default;
+float: left;
+}
+
+li {
+text-align: -webkit-match-parent;
+}
+
+.radioButtonTabsSpan {
+display: block;
+padding: 5px 0 7px;
+}
+
+.buttonisedRadio.last {
+border-top-right-radius: 2px;
+border-bottom-right-radius: 2px;
+margin-right: 0;
+}
+
+.overflowHidden {
+overflow: hidden;
+}
+
+.normalText input[type="text"], .defaultText input[type="text"] {
+resize: none;
+}
+.normalText input[type="text"], .defaultText input[type="text"], .normalText textarea, .defaultText textarea {
+outline: none;
+}
+.normalText input[type="text"], .defaultText input[type="text"], .normalText input[type="button"], .defaultText input[type="button"] {
+font-family: arial,verdana,sans-serif;
+}
+.normalText input[type="text"], .defaultText input[type="text"] {
+color: inherit;
+font-size: 1em;
+}
+.qFormFieldBorderPad input, .qFormFieldBorderPad textarea {
+width: 100%;
+border: 0;
+margin: 0 -1px 0 0;
+outline: none;
+float: left;
+}
+
+.input, .textArea {
+background-color: transparent;
+}
+
+input:not([type]), input[type="email"], input[type="number"], input[type="password"], input[type="tel"], input[type="url"], input[type="text"] {
+padding: 1px 0px;
+}
+
+h4 {
+display: block;
+-webkit-margin-before: 1.33em;
+-webkit-margin-after: 1.33em;
+-webkit-margin-start: 0px;
+-webkit-margin-end: 0px;
+font-weight: bold;
+}
+
+.rFloat, .rightFloat {
+float: right;
+display: inline;
+}
+
+.overflowHidden {
+overflow: hidden;
+}
+
+.qFormFieldBorderPad {
+width: 440px;
+padding: 5px 8px 6px;
+background-color: #FFF;
+border: 1px solid #CCC;
+box-shadow: inset 0 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+.toggleSwitch.toggleSwitchOn {
+background: #4675AB;
+}
+
+.toggleSwitch {
+position: relative;
+height: 30px;
+width: 56px;
+border-radius: 3px;
+}
+
+.toggleSwitchInput {
+display: none;
+}
+
+.toggleSwitchLabel {
+position: relative;
+z-index: 2;
+float: left;
+width: 56px;
+line-height: 26px;
+font-size: 11px;
+color: rgba(255,255,255,0.35);
+text-align: center;
+cursor: default;
+}
+
+.toggleSwitchLabelOff {
+padding-left: 2px;
+}
+
+.icon16 {
+display: inline-block;
+width: 16px;
+height: 16px;
+background-repeat: no-repeat;
+font-family: arial,sans-serif;
+}
+
+.iconPublicSharingTick16 {
+cursor: default;
+background-image: url('assets/publicSharingTick.png');
+}
+
+.dw_container{
+    display:flex;
+    padding-bottom: 5px;
+}
+
+.iconDerivedWarning {
+    background-image: -webkit-image-set(url('assets/info_16.png') 1x, url('assets/info_16@2x.png') 2x);
+    background-repeat: no-repeat;
+    width:20px;
+    height:32px;
+    justify-content: center;
+    position: relative;
+    float: left;
+    
+}
+
+.toggleSwitchLabel em.iconPublicSharingTick16 {
+position: absolute;
+top: 7px;
+left: 7px;
+}
+
+.toggleSwitchLabelOn {
+padding-right: 2px;
+}
+
+.toggleSwitchOn em.iconPublicSharingCross16 {
+	background-image: none;
+position: absolute;
+top: 4px;
+right: 6px;
+border-radius: 3px;
+padding: 3px;
+margin-left: -3px;
+}
+
+.toggleSwitchOff em.iconPublicSharingTick16 {
+	background-image: none;
+position: absolute;
+top: 4px;
+right: 6px;
+border-radius: 3px;
+padding: 3px;
+margin-left: -2px;
+}
+
+.toggleSwitchOn .toggleSwitchSelection {
+left: 28px;
+}
+
+.publicSharingUrlRow {
+padding-bottom: 10px;
+}
+
+.publicShareLink {
+border-bottom: 1px solid #CCC;
+padding-bottom: 25px;
+}
+
+.publicSharingDwdToggleDiv {
+padding-bottom: 10px;
+}
+
+.publicSharingPwdToggleDiv {
+	padding-bottom: 10px;
+}
+
+.toggleSwitch.toggleSwitchOff {
+background: #DDD;
+}
+
+.toggleSwitchOff em.iconPublicSharingTick16 {
+background-image: none;
+}
+
+.iconPublicSharingCross16 {
+cursor: default;
+background-image: url('assets/publicSharingCross.png');
+position: absolute;
+top: 7px;
+left: 33px;
+}
+
+.btnStyle {
+margin: 0;
+display: inline-block;
+text-decoration: none;
+text-align: center;
+text-transform: capitalize;
+padding-left: 13px;
+padding-right: 12px;
+border-radius: 3px;
+outline-color: transparent;
+box-sizing: content-box;
+color: #4675AB;
+background-color: #FFFFFF;
+border: 1px solid #CCCCCC;
+cursor: default;
+}
+
+.vertBtnPad {
+padding-top: 6px;
+padding-bottom: 7px;
+}
+
+.txtPadLt {
+position: absolute;
+left: 479px;
+}
+
+.publicSharingLabel {
+padding-top: 5px;
+}
+
+.tileHeaderContent {
+border-bottom-color: #DAD0C7;
+border-bottom-width: 0px;
+border-bottom-style: dotted;
+border-top-color: #CFCFCF;
+border-top-width: 0px;
+border-top-style: solid;
+border-left-color: #CFCFCF;
+border-left-width: 0px;
+border-left-style: solid;
+border-right-color: #CFCFCF;
+border-right-width: 0px;
+border-right-style: solid;
+background-repeat: no-repeat;
+background-image: none;
+background-color: transparent;
+-webkit-border-top-left-radius: 0px;
+-webkit-border-top-right-radius: 0px;
+-moz-border-radius-topleft: 0px;
+-moz-border-radius-topright: 0px;
+border-top-left-radius: 0px;
+border-top-right-radius: 0px;
+}
+
+.toggleSwitchSelection {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 22px;
+    background: #F7F7F7;
+    border-radius: 3px;
+    -webkit-transition: left 0.15s ease-out;
+    -moz-transition: left 0.15s ease-out;
+    -o-transition: left 0.15s ease-out;
+    transition: left 0.15s ease-out;
+}

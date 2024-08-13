@@ -1,0 +1,688 @@
+.designsPane{
+    position: absolute;
+    overflow: auto;
+    transition: height 0.15s linear, top 0.25s linear;
+    -webkit-transition: height 0.15s linear, top 0.25s linear;
+}
+
+.designsPane.tileView{ }
+.designsPane.listView{ }
+
+/* datalist node */
+.designsPane .datalistNode{
+    position: absolute;
+    cursor: default;
+    z-index: 5;
+    background-repeat: no-repeat;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.designsPane .container{
+    opacity: 0;
+    transition: left 0.25s ease-out, top 0.25s ease-out, opacity 0.25s ease-out;
+    -webkit-transition: left 0.25s ease-out, top 0.25s ease-out, opacity 0.25s ease-out;
+}
+
+.designsPane .datalistNode .errorMessage{
+    position: absolute;
+    min-height: 26px;
+    width: 100%;
+    bottom: 0px;
+    left:0px;
+    z-index: 50;
+    line-height: 22px;
+    box-sizing: content-box;
+    color: #ffffff;
+    font-weight: 500;
+    background-color: #c0d9ef;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+
+    -webkit-transform-origin: bottom;
+    transform-origin: bottom;
+
+    -webkit-transition: -webkit-transform 0.35s ease-out;
+    transition: transform 0.35s ease;
+}
+
+.designsPane .datalistNode .errorMessage.showByScale{
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.designsPane .datalistNode .errorMessage .content{
+    padding-left: 7px;
+    padding-right: 7px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+}
+
+.designsPane .datalistNode.inAction{
+    cursor: default;
+}
+
+/* datalistNode in tile view */
+.designsPane.tileView .datalistNode{
+    width: 168px;
+    height: 168px;
+    background-color: #EDEDED;
+    background-position: center center;
+    background-size: contain;
+}
+
+.designsPane .datalistNode.selected{
+    border: 1px solid #6693CC;
+}
+
+.designsPane.tileView .datalistNode.folderNode{
+    background-color: #EDEDED;
+}
+
+.designsPane.tileView .datalistNode .folder {
+    width: 168px;
+    height: 168px;
+    background-image: url("../../assets/folder.png");
+    background-position: center 40%;
+    background-size: 96px 78px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+
+.designsPane.tileView .datalistNode .folderUp {
+    width: 168px;
+    height: 168px;
+    background-image: url("../../assets/folder-up.png");
+    background-size: 166px 166px;
+    background-color: transparent;
+}
+
+
+
+/* datalistNode in list view */
+.designsPane.listView .datalistNode{
+    height: 68px;
+    width: 348px;
+    background-color: #fdfdfd;
+    background-position: left center;
+    background-size: 68px 68px;
+}
+
+.designsPane.listView .datalistNode .folder,
+.designsPane.listView .datalistNode .folderUp
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 68px;
+    width: 68px;
+    border: none;
+}
+
+.designsPane.listView .datalistNode .folder {
+    background-image: url("../../assets/folder-list.png");
+}
+
+
+.designsPane.listView .datalistNode .folderUp {
+    background-image: url("../../assets/folder-up-list.png");
+}
+
+/* image */
+.designsPane .datalistNode img.backgroundImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.25s ease-out;
+    -webkit-transition: opacity 0.25s ease-out;
+}
+
+.designsPane.tileView .datalistNode .container {
+    width: 100%;
+    height: 100%;
+}
+
+.designsPane.tileView .datalistNode div.folder,
+.designsPane.tileView .datalistNode div.folderUp,
+.designsPane.tileView .datalistNode img.backgroundImage{
+    width:  100%;
+    height: 100%;
+    opacity: 1;
+    background-color: #EDEDED;
+}
+
+.designsPane.tileView .datalistNode img.backgroundImage.defaultImgBackground{
+    content: url('../../assets/default_node_background@2x.png');
+}
+
+.designsPane.listView .datalistNode div.folder,
+.designsPane.listView .datalistNode div.folderUp,
+.designsPane.listView .datalistNode img.backgroundImage{
+    width: 68px;
+    height: 68px;
+    opacity: 1;
+    background-color: #EDEDED;
+}
+
+.designsPane.listView .datalistNode img.backgroundImage.defaultImgBackground{
+    content: -webkit-image-set(url('../../assets/default_node_background.png')  1x, url('../../assets/default_node_background@2x.png') 2x);
+}
+
+/* file type */
+.designsPane .datalistNode .fileType{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 16px;
+    height: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+}
+.designsPane .datalistNode.fusionFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/fusion_file.png') 1x, url('../../assets/fusion_file@2x.png') 2x);
+}
+.designsPane .datalistNode.f3dFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/f3d.png') 1x, url('../../assets/f3d@2x.png') 2x);
+}
+.designsPane .datalistNode.simFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/sim.png') 1x, url('../../assets/sim@2x.png') 2x);
+}
+.designsPane .datalistNode.camFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/fusion_file.png') 1x, url('../../assets/fusion_file@2x.png') 2x);
+}
+.designsPane .datalistNode.docFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/doc.png') 1x, url('../../assets/doc@2x.png') 2x);
+}
+.designsPane .datalistNode.f2tFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/f2t.png') 1x, url('../../assets/f2t.png') 2x);
+}
+.designsPane .datalistNode.fbrdFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/fbrd.png') 1x, url('../../assets/fbrd.png') 2x);
+}
+    .designsPane .datalistNode.fschFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/fsch.png') 1x, url('../../assets/fsch.png') 2x);
+}
+.designsPane .datalistNode.fprjFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/fprj.png') 1x, url('../../assets/fprj.png') 2x);
+}
+.designsPane .datalistNode.flbrFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/flbr.png') 1x, url('../../assets/flbr.png') 2x);
+}
+.designsPane .datalistNode.pdfFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/pdf.png') 1x, url('../../assets/pdf@2x.png') 2x);
+}
+.designsPane .datalistNode.iptFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/ipt.png') 1x, url('../../assets/ipt@2x.png') 2x);
+}
+.designsPane .datalistNode.excelFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/excel.png') 1x, url('../../assets/excel@2x.png') 2x);
+}
+.designsPane .datalistNode.wordFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/word.png') 1x, url('../../assets/word@2x.png') 2x);
+}
+.designsPane .datalistNode.pptFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/ppt.png') 1x, url('../../assets/ppt@2x.png') 2x);
+}
+.designsPane .datalistNode.imgFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/image.png') 1x, url('../../assets/image@2x.png') 2x);
+}
+.designsPane .datalistNode.vidFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/video.png') 1x,  url('../../assets/video.png') 2x);
+}
+.designsPane .datalistNode.asmFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/iam.png') 1x,  url('../../assets/iam@2x.png') 2x);
+}
+.designsPane .datalistNode.dwgFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/dwg.png') 1x,  url('../../assets/dwg@2x.png') 2x);
+}
+.designsPane .datalistNode.dxfFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/dxf.png') 1x,  url('../../assets/dxf@2x.png') 2x);
+}
+.designsPane .datalistNode.txtFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/txt.png') 1x,  url('../../assets/txt.png') 2x);
+}
+.designsPane .datalistNode.cadFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/cad.png') 1x,  url('../../assets/cad.png') 2x);
+}
+
+.designsPane .datalistNode.sldprtFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/sldprt.png') 1x,  url('../../assets/sldprt@2x.png') 2x);
+}
+
+.designsPane .datalistNode.sldasmFile .fileType {
+    background-image: -webkit-image-set(url('../../assets/sldasm.png') 1x,  url('../../assets/sldasm@2x.png') 2x);
+}
+
+.designsPane .datalistNode.folderNode .fileType   {
+    background-image: -webkit-image-set(url(../../assets/folder_16.png) 1x,
+    url(../../assets/folder_16@2x.png) 2x);
+    bottom: 5px;
+}
+.designsPane .datalistNode.folderUp .fileType { display: none; }
+
+.designsPane.listView .datalistNode .fileType {
+    top: 5px;
+    left: 73px;
+}
+
+.designsPane.listView .datalistNode.folderNode .fileType { display: none; }
+
+.hide {
+    display: none;
+}
+
+/* explicit cache management spinner */
+.designsPane .datalistNode .ecmSpinner {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 16px;
+    height: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: -webkit-image-set(url(../../assets/spinner.png) 1x, url(../../assets/spinner@2x.png) 2x);
+    z-index: 5;
+    -webkit-animation: rotating 1s linear infinite;
+    animation: rotating 1s linear infinite;
+}
+
+/* version number */
+.designsPane .datalistNode .versionNumber{
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    z-index: 5;
+    line-height: 16px;
+    padding-left: 5px;
+    padding-right: 10px;
+    font-size: 10px;
+    color: #6B6B6B;
+    border: 1px solid #C3C3C3;
+    border-radius: 2px;
+    text-align: left;
+    cursor: pointer;
+    -webkit-animation: 0.5s ease;
+    animation: 0.5s ease;
+}
+
+/* milestone version */
+.designsPane .datalistNode .milestone{
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    right: 5px;
+}
+
+/* milestone version - tip version is a milestone */
+.designsPane .datalistNode .milestone.latest{
+    background-image: url("../../assets/Tip Flag.svg");
+}
+/* milestone version - milestone was added to a non-tip version */
+.designsPane .datalistNode .milestone.old{
+    background-image: url("../../assets/Non-tip Flag.svg");
+}
+
+/* released indicator */
+ .designsPane .datalistNode .releasedVersion{
+    position: absolute;
+    left: 73px;
+    bottom: 5px;
+    z-index: 5;
+    line-height: 16px;
+    padding-left: 6px;
+    padding-right: 6px;
+    text-align: center;
+    font-size: 11px;
+    color: #008080;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #008080;
+} 
+.designsPane .datalistNode .versionNumber::after{
+    position: absolute;
+    top: 6px;
+    right: 1px;
+    content: " ";
+    background: url("../../assets/triangle.png");
+    background-size: 100% 100%;
+    width: 7px;
+    float: left;
+    height: 5px;
+    background-repeat: no-repeat;
+}
+
+.designsPane .datalistNode .versionNumber:hover {
+    box-shadow: 0 0 3px 1px rgba(136,136,136,0.5);
+}
+
+.designsPane .datalistNode .versionNumber.selected {
+    box-shadow: 0 0 3px 1px rgba(0,173,255,.54);
+}
+
+/* version number CONTENT_NOT_AVAILABLE */
+.designsPane .datalistNode .CNA {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 26px;
+    height: 26px;
+    background-color: #FFFFFF;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: -webkit-image-set(url(../../assets/info_cna_16.png) 1x,
+    url(../../assets/info_16@2x.png) 2x);
+    z-index: 5;
+}
+
+.designsPane.listView .datalistNode .CNAtooltip {
+    right: 5px;
+    top: 100%;
+}
+
+.designsPane.tileView .datalistNode .CNAtooltip {
+    right: 5px;
+    top: 100%;
+    white-space: pre-wrap;
+    min-width: 110px;
+    max-width: 160px;
+    transform: translate(0, 3px);
+    -webkit-transform: translate(0, 3px);
+}
+
+.designsPane .datalistNode.folderNode .versionNumber,
+.designsPane .datalistNode.folderNode .CNA {
+    display: none;
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+/* three dots */
+.designsPane .datalistNode .xrefOutOfDate{
+    display: none;
+    position: absolute;
+    right: 35px;
+    bottom: 5px;
+    width: 16px;
+    height: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-image: -webkit-image-set(url(../../assets/out_of_date_16.png) 1x,
+    url(../../assets/out_of_date_16@2x.png) 2x);
+    z-index: 5;
+}
+
+.designsPane .datalistNode .xrefOutOfDate ._hover_ {
+    background-image: -webkit-image-set(url(../../assets/out_of_date_16.png) 1x,
+    url(../../assets/out_of_date_16@2x.png) 2x);
+    background-color: transparent;
+    background-size:16px 16px; /* icon is 16x16, with 1px top and bottom transparent area. This gives graphics of requested 14px in height */
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.designsPane .datalistNode.folderNode .xrefOutOfDate{
+    display: none;
+}
+
+/* description */
+.designsPane.tileView .descriptionFrame{
+    position: absolute;
+    width: 100%;
+    height: 26px;
+    bottom: 0;
+    background: #ffffff;
+    opacity: 0.95;
+    color: #646464;
+}
+
+.designsPane.tileView .descriptionFrame.offlineMode {
+    height: 46px;
+}
+
+.designsPane.tileView .descriptionFrame.offlineMode.supportBranching {
+    height: 62px;
+}
+
+.designsPane.tileView .descriptionFrame.offlineMode .branchName{
+    text-overflow: ellipsis;
+    font-size: 12px;
+    padding: 5px 26px 0px 42px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.designsPane.tileView .descriptionFrame.offlineMode .branchColor{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    bottom: 4px;
+    left: 26px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.designsPane.listView .descriptionFrame{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* description text */
+.designsPane.tileView .datalistNode .descriptionFrame .descriptionText{
+    text-overflow: ellipsis;
+    font-size: 12px;
+    padding: 5px 40px 0px 26px;
+    top: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.designsPane.listView .datalistNode .descriptionFrame .descriptionText{
+    margin: 5px 5px 0 94px;
+    line-height: 16px;
+    font-family: Arial;
+    font-size: 13px;
+    font-weight: bold;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space: nowrap;
+    color: #646464;
+}
+
+.designsPane.tileView .datalistNode.folderNode .descriptionFrame .descriptionText{
+    padding-top: 5px;
+}
+
+.designsPane.listView .datalistNode.folderNode .descriptionFrame .descriptionText,
+.designsPane.listView .datalistNode.folderNodeUp .descriptionFrame .descriptionText{
+    margin: 5px 0 0 73px;
+}
+
+/* description text details*/
+.designsPane.tileView .datalistNode .descriptionFrame .descriptionTextDetail{
+    display: none;
+}
+
+.designsPane.listView .datalistNode.folderNode .descriptionTextDetail,
+.designsPane.listView .datalistNode.folderNodeUp .descriptionTextDetail,
+.designsPane.listView .datalistNode.uploadItem .descriptionTextDetail{ display: none; }
+
+.designsPane.listView .datalistNode .descriptionFrame .descContainer{
+    margin: 5px 5px 0 94px;
+    height: 21px;
+    line-height: 21px;
+    overflow: hidden;
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.designsPane.listView .datalistNode .descriptionFrame .descContainer .searchItemTextDetail{
+    display:inline-block;
+    font-family: Arial;
+    font-size: 12px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    color: #979797;
+    /*height: 21px;*/
+    white-space: nowrap;
+}
+
+.designsPane.listView .datalistNode .descriptionFrame .descContainer .searchItemTextDetail.rebnd{
+    margin-left: 5px;
+}
+
+.designsPane.listView .datalistNode .descriptionFrame .descContainer .branchColorContainer {
+    margin-left: 1px;
+    width: 12px;
+    line-height: 21px;
+}
+
+.designsPane.listView .datalistNode .descriptionFrame .descContainer .branchColor{
+    width: 12px;
+    height: 12px;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.designsPane.listView .datalistNode .descriptionFrame .descriptionTextDetail{
+    margin: 5px 5px 0 73px;
+    font-family: Arial;
+    font-size: 12px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    color: #979797;
+    height: 21px;
+    white-space: nowrap;
+}
+
+.designsPane.listView .datalistNode .descriptionFrame .descriptionTextDetail.search{
+    margin: 0px 5px 0 94px;
+}
+
+/* next set button */
+.designsPane .nextSetBtn{
+    position: absolute;
+    border: #c6c6c6 1px solid;
+    color: #444444;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    cursor: default;
+    line-height: 27px;
+}
+
+.designsPane .marker
+{
+    position: relative;
+    margin: 9px 0px 20px 0px;
+    background-color: #dbdbdb;
+    height: 1px;
+    width: 348px;
+}
+
+/* In use by on design */
+.designsPane .designInUseBy{
+    white-space: pre;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 26px;
+}
+
+/* In use by on the tile view */
+.designsPane.tileView .designInUseBy{
+    position: absolute;
+    padding: 5px 5px 5px 0;
+    bottom: 26px;
+    background: #232e4f;
+    opacity: 0.95;
+    color: #CCCCCC;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 10px;
+}
+
+
+/* In use by on the list view */
+.designsPane.listView .designInUseBy{
+    position: absolute;
+    bottom: 0px;
+    padding-left: 68px;
+    padding-right: 36px;
+    font-size: 11px;
+    color: #646464;
+}
+
+.designsPane .truncatedList {
+    color: #05A7DF;
+}
+
+.inUseByTooltip {
+    background: #444444;
+    color: #dbdbdb;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 11px;
+    z-index: 6;
+}
+
+.designsPane .inUseByDot {
+    display: inline-block;
+    flex-shrink: 0;
+    border-radius: 50%;
+    height: 6px;
+    width: 6px;
+    background-color: #EA4F51;
+    margin: 0 7px 0 7px;
+}

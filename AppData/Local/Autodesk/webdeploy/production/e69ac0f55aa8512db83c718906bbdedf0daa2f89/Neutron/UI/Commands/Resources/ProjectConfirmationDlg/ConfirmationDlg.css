@@ -1,0 +1,111 @@
+/*
+CONFIRMATION DIALOG STYLESHEET
+*/
+
+
+QObject {
+    font-family: arial, verdana, sans-serif; 
+}
+
+QDialog {
+    border: 1px solid #D2D2D2;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+
+/* */
+/* QLabels */
+/* */
+
+QLabel {
+    color: #767676;
+    font-size: 14px;
+}
+
+QLabel#titleLabel {
+    font-size: 22px;
+    color: #6B6B6B;
+    padding-top:20px;
+	padding-bottom:20px;
+}
+
+QLabel#infoLabel {
+    font-size:14px;
+    background-color:transparent;
+	padding-right:20px;
+	padding-left:20px;
+	padding-bottom:20px;
+    border: none;
+}
+
+
+/* */
+/* QPushButtons */
+/* */
+
+QPushButton {
+    background-color: transparent;
+    font-size: 14px;
+    border: 1px solid #CCCCCB;
+    padding: 5px;
+    margin-left: 5px;
+	border-radius: 3px;
+	
+}
+
+QPushButton#SaveButton {
+    background-color: #00A6E2;
+    border: 1px solid #00A6E2;
+    color: #FFFFFF;
+}
+
+QPushButton#SaveButton:disabled {
+    background-color: #A5E0F5;
+    border: 1px solid #A5E0F5;
+}
+
+QPushButton#SaveButton:hover {
+    background-color: #3AB5E1;
+    border: 1px solid #3AB5E1;
+}
+
+QPushButton#SaveButton:pressed {
+    background-color: #007EC0;
+    border: 1px solid #007EC0;
+}
+
+QPushButton#CancelButton {
+    background-color: #FAFAFA;
+    border: 1px solid #A2A2A2;
+    color: #6C6C6C;
+}
+
+QPushButton#CancelButton:hover {
+	background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+}
+
+QPushButton#CancelButton:pressed {
+	background-color: #EAEAEA;
+    border: 1px solid #ADADAD;
+}
+
+
+QPushButton#CloseButton {
+    border: none;
+}
+
+
+/* */
+/* QFrames */
+/* */
+
+
+QFrame#separator {
+    color: #D2D2D2;
+}
+
+QFrame#standardActions {
+    background-color: transparent;
+}

@@ -1,0 +1,33 @@
+.projectsPane .filterbox {
+    position: absolute;
+
+    border-top: #dbdbdb 1px solid;
+}
+
+.projectsPane .filterbox input {
+    position: relative;
+    width: 100%;
+    height: 22px;
+    top: 6px;
+    border: #dbdbdb 1px solid;
+    border-radius: 4px;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bolder;
+    padding-left: 6px;
+    padding-right: 4px;
+    -webkit-appearance:none;
+}
+
+.projectsPane .filterbox .hasFocus {
+    background-color: #ffffff;
+}
+
+.projectsPane .filterbox .noFocus {
+    background-color: #e7e7e7;
+}
+
+.projectsPane .filterbox .noFocus:hover {
+    background-color: #ffffff;
+}

@@ -1,0 +1,102 @@
+.dashboardSelect {
+    position: absolute;
+    display:inline-block;
+    cursor: pointer;
+}
+
+.dashboardSelect img.triangle {
+    width:6px;
+    margin-left: 3px;
+    margin-bottom: 2px;
+}
+
+#dashboardSelectMenu {
+    position: absolute;
+    border: 1px solid black;
+    height: 0px;
+    transition: height 0.2s ease-out;
+    -webkit-transition: height 0.2s ease-out;
+    overflow: hidden;
+    background-color: white;
+}
+
+#dashboardSelectMenu .option {
+    padding: 5px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#dashboardSelectMenu .option:hover {
+    background-color: lightgrey;
+}.designsPane{
+    position: absolute;
+    overflow: hidden;
+    transition: height 0.35s linear;
+    -webkit-transition: height 0.35s linear;
+}
+
+.designsPane .datalistNode{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    opacity: 0;
+    background-color: #666666;
+    background-position: center center;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    transition: left 0.35s ease-out, top 0.35s ease-out, opacity 0.35s ease-out;
+    -webkit-transition: left 0.35s ease-out, top 0.35s ease-out, opacity 0.35s ease-out;
+}
+.designsPane .datalistNode.fusionFile{ background-image: url('assets/fusion_file.png'); }
+.designsPane .datalistNode.iptFile   { background-image: url('assets/ipt.png'); }
+.designsPane .datalistNode.excelFile { background-image: url('assets/excel.png'); }
+.designsPane .datalistNode.wordFile  { background-image: url('assets/word.png'); }
+.designsPane .datalistNode.wordFile  { background-image: url('assets/word.png'); }
+
+.designsPane .datalistNode.listItem{
+    width: auto;
+    height: 40px;
+    background-color: transparent;
+    background-position: left center;
+    background-size: 36px 36px;
+}
+
+.designsPane .description{
+    white-space: nowrap;
+    display: none;
+    line-height: 40px;
+}
+
+.designsPane .listItem .description{
+    display: inline;
+    margin-left: 40px;
+}
+/* dataViewToolbar */
+.dataViewToolbar{
+    position: absolute;
+    background: #d9d9d9;
+}
+
+.dataViewToolbar .toolbarButton{
+    position:absolute;
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+    color: #ffffff;
+    cursor: pointer;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+}
+.dataViewToolbar .toolbarButton:hover{
+    background-color: #A7C9E1;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 5px #555555;
+    -moz-box-shadow: 0 0 5px #555555;
+    box-shadow: 0 0 5px #555555;
+    opacity: 0.8;
+}
+.dataViewToolbar .toolbarButton.tileBtn { background-image: url('assets/tilesBtn.png'); }
+.dataViewToolbar .toolbarButton.listBtn { background-image: url('assets/listBtn.png'); }

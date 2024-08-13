@@ -1,0 +1,118 @@
+QObject {
+	color:#8E8E8E;
+	background-color: transparent;
+	font-family: Artifakt Element;
+}
+
+QDialog {	
+	border: 1px solid #EEEEEE;
+    background-color: #FFFFFF;
+}
+
+/* */
+/* QLabels */
+/* */
+QLabel {
+    color:#767676;
+    font-size: 13px;
+	font-weight:normal;
+}
+
+QLabel#title_lbl {
+	color: #6B6B6B;
+    font-size: 22px;
+    margin-top: 0px;
+}
+
+/* */
+/* QPushButtons */
+/* */
+QPushButton {
+    background-color: transparent;
+    border-radius: 3px;
+    padding: 7px 16px 6px 16px;
+    color: #6C6C6C;
+	font-size: 13px;
+}
+/* */
+/* Yes Button */
+/* */
+QPushButton#gotit_btn {
+    background-color: #00A6E2;
+    border: 1px solid #00A6E2;
+    color: #FFFFFF;
+}
+
+QPushButton#ygotit_btn:hover {
+    background-color: #3AB5E1;
+    border: 1px solid #3AB5E1;
+}
+
+QPushButton#gotit_btn:pressed {
+    background-color: #007EC0;
+    border: 1px solid #007EC0;
+}
+
+/* */
+/* update anyway button and Learn more Button */
+/* */
+QPushButton#updateanyway_btn, QPushButton#learnmore_btn 
+{
+    background-color: #FAFAFA;
+    border: 1px solid #A2A2A2;
+}
+
+QPushButton#updateanyway_btn:hover, QPushButton#learnmore_btn:hover 
+{
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+}
+
+QPushButton#updateanyway_btn:pressed, QPushButton#learnmore_btn:pressed 
+{
+    background-color: #EAEAEA;
+    border: 1px solid #ADADAD;
+}
+
+QPushButton#close_btn {
+    border: none;
+}
+
+/* */
+/* QFrames */
+/* */
+QFrame#header_separator {
+    color: #D2D2D2;
+}
+
+/* */
+/* ScrollBar */
+/* */
+
+QScrollBar{
+    height: 10px;
+    width: 12px;
+    background: #F8F8F8;
+	border: 1px solid #EEEEEE;
+	padding:-1px;
+}
+
+QScrollBar::handle {
+    border-radius: 0px;
+	border: 1px solid #CCCCCC;
+    background: #DDDDDD;
+}
+
+QScrollBar::handle:hover {
+    background: #979797;
+}
+
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: none;
+}
+
+QScrollBar::sub-line, QScrollBar::add-line {
+    height: 0px;  
+    width: 0px;
+    background: none;
+}

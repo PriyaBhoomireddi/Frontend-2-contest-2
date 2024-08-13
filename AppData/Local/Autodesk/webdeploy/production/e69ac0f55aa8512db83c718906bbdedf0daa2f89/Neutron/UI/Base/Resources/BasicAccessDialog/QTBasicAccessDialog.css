@@ -1,0 +1,91 @@
+/*
+Notice that some pixel sizes in this css file are set using schema
+    font-size: scaled_12px;
+etc.
+These scaled_*px values are multiplied with the current ToolbarFramework::Parameters::scaleFactor();
+That means that this css file cannot be used "as-is", but it is a template to be translated in cpp.
+*/
+
+QObject {
+    font-family: Arial, Sans-Serif;
+}
+
+QDialog {
+    border: 1px solid #D2D2D2;
+    background-color: white;
+}
+
+QFrame {
+    background-color: transparent;
+}
+
+QLabel {
+    color: #6C6C6C;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: scaled_12px;
+}
+
+#Header {
+    background-color: transparent;
+    border-bottom: 1px solid #D2D2D2;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#HeaderLabel {
+    font-size: scaled_16px;
+    font-weight: 500;
+    color: #6C6C6C;
+    padding-left: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#Body {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#BodyLabel {
+    padding-top: 0px;
+    padding-bottom: 12px;
+}
+
+#Footer {
+    margin-top: 0px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+QPushButton {
+    border: 1px solid #cccccc;
+    color: #3c3c3c;
+    background-color: white;
+    border-radius: 2px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: scaled_12px;
+}
+
+QPushButton:hover {
+    border-color: #bbbbbb;
+    color: #3c3c3c;
+    background-color: #eeeeee;
+}
+
+QPushButton:pressed {
+    border-color: #bbbbbb;
+    color: #3c3c3c;
+    background-color: #dcdcdc;
+}

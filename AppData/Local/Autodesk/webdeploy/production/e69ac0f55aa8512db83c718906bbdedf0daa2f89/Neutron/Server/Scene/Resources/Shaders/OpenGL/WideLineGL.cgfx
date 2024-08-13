@@ -1,0 +1,230 @@
+#define CLIPPING
+
+#ifdef CLIPPING
+#include "ClippingGL.cgh"
+#endif
+
+// World transformation.
+float4x4 gWXf : World 
+< 
+    string UIWidget = "None";
+    bool rowMajor = true;
+>;
+
+// World-View-projection transformation.
+float4x4 gWVPXf : WorldViewProjection 
+< 
+    string UIWidget = "None"; 
+    bool rowMajor = true;
+>;
+
+// Depth priority, which shifts the model a bit forward in the z-buffer
+//    float UIMin = -16/1048576.0;    // divide by 2^24/16 by default
+//    float UIMax = 16/1048576.0;
+//    float UIStep = 1/1048576.0;
+uniform float gDepthPriority : DepthPriority = 0.0;
+
+// ScreenSize
+uniform vec2 gScreenSize : ViewportPixelSize ;
+
+// Point color.
+float4 gNeutronLineColor : NeutronLineColor
+<
+    string UIName =  "Neutron Line Color";
+> = float4(0.0f, 0.0f, 0.0f, 1.0f);
+
+// Vertex shader input structure.
+struct VSPos
+{
+	float3 Pos			: POSITION;
+};
+
+// Pixel shader input structure.
+struct VSOutput
+{
+    float4 HPos : POSITION;
+
+#ifdef CLIPPING
+    // World position, for CLIPPING
+    float4 HPw 	: TEXCOORD2;
+#endif
+
+};
+
+VSOutput VS_Pos( VSPos Input,uniform float2 offset)
+{
+	VSOutput Out = (VSOutput) 0;
+	float4 LocalPos = float4(Input.Pos,1.0f);
+	Out.HPos = mul(LocalPos, gWVPXf);
+
+	if(Out.HPos.w > 0.0f)
+	{
+		//In orthographics mode, Out.Pos.w is always 1.0f, so this is not a problem.
+		//But in perspective mode, if Out.Pos.w <= 0, that means we are out of the view frustum
+		//and we can't do the following computation otherwise there will be some problem. see DID 1288930
+		Out.HPos.xyz /= Out.HPos.w;
+		Out.HPos.w = 1.0f;
+		offset.xy /= gScreenSize.xy;
+		Out.HPos.xy += offset.xy;
+	}
+
+#ifdef CLIPPING
+	// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+    // First compute the Pw in vertex shader, then pass the Pw to pixel shader
+    Out.HPw = mul(float4(Input.Pos, 1.0f), gWXf);
+#endif
+    
+    // modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+    Out.HPos.z -= Out.HPos.w*gDepthPriority;
+
+
+
+	return Out;
+}
+
+float4 PS_Pos( VSOutput In ) : COLOR0
+{
+#ifdef CLIPPING
+
+	// Compute whether the pixel needs to be discard by the clipping planes.
+    bool needDiscard = false;
+    if (gNumClipPlanes > 0) { if(dot(In.HPw, gClipPlanes[0])<0) needDiscard = true;}
+    if (gNumClipPlanes > 1) { if(dot(In.HPw, gClipPlanes[1])<0) needDiscard = true;}
+    if (gNumClipPlanes > 2) { if(dot(In.HPw, gClipPlanes[2])<0) needDiscard = true;}
+    if (gNumClipPlanes > 3) { if(dot(In.HPw, gClipPlanes[3])<0) needDiscard = true;}
+    if (gNumClipPlanes > 4) { if(dot(In.HPw, gClipPlanes[4])<0) needDiscard = true;}
+    if (gNumClipPlanes > 5) { if(dot(In.HPw, gClipPlanes[5])<0) needDiscard = true;}
+    
+    if (needDiscard == true)
+        discard;
+
+#endif
+	return gNeutronLineColor;
+}
+
+
+
+// wide line:2 pixels' width
+//Actually 4 passes are needed: offset table is like this:(0,0),(0,1),(1,0),(1,1)
+technique WideLine2pixels
+{
+    pass P0
+    {
+		VertexShader = compile glslv VS_Pos(float2(0.0f,0.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P1
+    {  
+		VertexShader = compile glslv VS_Pos(float2(0.0f,-2.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P2
+    { 
+		VertexShader = compile glslv VS_Pos(float2(2.0f,0.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P3
+    { 
+		VertexShader = compile glslv VS_Pos(float2(2.0f, -2.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+}
+
+// wide line:3 pixels' width
+//Actually 5 passes are needed: offset table is like this:(0,-1),(-1,0),(0,0),(1,0),(0,1)
+technique WideLine3pixels
+{
+    pass P0
+    { 
+		VertexShader = compile glslv VS_Pos(float2(0.0f,2.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P1
+    {  
+		VertexShader = compile glslv VS_Pos(float2(-2.0f,0.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P2
+    { 
+		VertexShader = compile glslv VS_Pos(float2(0.0f,0.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P3
+    { 
+		VertexShader = compile glslv VS_Pos(float2(2.0f,0.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P4
+    {  
+		VertexShader = compile glslv VS_Pos(float2(0.0f,-2.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+}
+
+
+// wide line:4 or more pixels' width
+//Actually 12 passes are needed: offset table is like this:(0,-1),(1,-1),(-1,0),(0,0),(1,0),(2,0),(-1,1),(0,1),(1,1),(2,1),(0,2),(1,2)
+technique WideLine4pixels
+{
+    pass P0
+    {
+		VertexShader = compile glslv VS_Pos(float2(0.0f,2.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P1
+    {  
+		VertexShader = compile glslv VS_Pos(float2(2.0f,2.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P2
+    {   
+		VertexShader = compile glslv VS_Pos(float2(-2.0f,0.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P3
+    {   
+		VertexShader = compile glslv VS_Pos(float2(0.0f,0.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P4
+    {
+		VertexShader = compile glslv VS_Pos(float2(2.0f,0.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P5
+    {
+		VertexShader = compile glslv VS_Pos(float2(2*2.0f,0.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P6
+    {
+		VertexShader = compile glslv VS_Pos(float2(-2.0f,-2.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P7
+    { 
+		VertexShader = compile glslv VS_Pos(float2(0.0f,-2.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P8
+    {  
+		VertexShader = compile glslv VS_Pos(float2(2.0f,-2.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P9
+    {  
+		VertexShader = compile glslv VS_Pos(float2(2*2.0f,-2.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P10
+    {   
+		VertexShader = compile glslv VS_Pos(float2(0.0f,-2*2.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+    pass P11
+    {
+		VertexShader = compile glslv VS_Pos(float2(2.0f,-2*2.0f));
+        PixelShader = compile glslf PS_Pos();
+    }
+   
+}

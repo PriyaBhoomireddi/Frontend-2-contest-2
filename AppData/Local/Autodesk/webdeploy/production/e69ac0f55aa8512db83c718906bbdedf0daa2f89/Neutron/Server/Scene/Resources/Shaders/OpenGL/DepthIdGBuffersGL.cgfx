@@ -1,0 +1,254 @@
+//**************************************************************************/
+// Copyright 2009 Autodesk, Inc.
+// All rights reserved.
+// 
+// These coded instructions, statements, and computer programs contain
+// unpublished proprietary information written by Autodesk, Inc., and are
+// protected by Federal copyright law. They may not be disclosed to third
+// parties or copied or duplicated in any form, in whole or in part, without
+// the prior written consent of Autodesk, Inc.
+//**************************************************************************/
+// DESCRIPTION: DepthIdBuffers
+//   This effect creates up to 3 output targets (assuming each is assigned).
+//   * Object ID, where the ID is expressed as float4 of fractions.
+//   * NDC z-depth per pixel, the z-depth between 0.0 and 1.0 for each pixel,
+//     linearly interpolated (i.e. hyperbolic for perspective)
+//   * Code commented out for W-buffer linear interpolation. While potentially
+//     useful for other purposes, for NPR this code gives non-linear interpolation
+//     of depth in perspective space, which makes the Decaudin slope detection for
+//     depth differences fail, as the slope changes per pixel.
+// AUTHOR: Nikolai Sander
+// CREATED: March 2008
+// MODIFIED: Charlotta Wadman, February 2010
+//**************************************************************************/
+
+// For per-object clipping, unfortunately needed on by default;
+// the problem is that for an override material, per-object clipping will not
+// affect this material and get it to recompile.
+// TODO: is there some way to get this variable set *per object* for it's material?
+// ApplySystemShaderMacros in the script interpreter does so globally, but can't
+// per object. Mauricio thinks we might need a callback in the script interpreter.
+//#ifdef CLIPPING
+#include "ClippingGL.cgh"
+// World transformation, needed only for clipping
+float4x4 gWXf : World 
+< 
+string UIWidget = "None";
+bool rowMajor = true;
+>;
+//#endif
+
+// World-view-projection transformation.
+float4x4 gWVPXf : WorldViewProjection;
+
+float4x4 gWVIT: WorldViewInverseTranspose
+<
+bool rowMajor = true;
+>;
+
+// Use this to calculate truly linear depth 
+// Standard matrix
+//float4x4 gWVXf : WorldView < bool rowMajor = true; >;
+// Standard camera propertiy
+//float gFarClipPlane;
+
+// Depth priority, which shifts the model a bit forward in the z-buffer
+float gDepthPriority : DepthPriority
+<
+    string UIName =  "Depth Priority";
+    string UIWidget = "Slider";
+    float UIMin = -16/1048576.0f;    // divide by 2^24/16 by default
+    float UIMax = 16/1048576.0f;
+    float UIStep = 1/1048576.0f;
+> = 0.0f;
+
+
+float4 gObjectID;
+float3 gHaloColor;
+
+// The visibility texture.
+texture gVisibilityTex : Texture
+<
+    string UIName = "Texture";
+>;
+
+// Visibility texture sampler.
+sampler2D gSamp : TextureSampler = sampler_state
+{
+    Texture = <gVisibilityTex>;
+};
+
+struct VS_INPUT
+{
+    float3 Pos : POSITION;
+};
+
+// Vertex shader output structure.
+struct VS_TO_PS
+{
+    float4 HPos : POSITION;
+
+//#ifdef CLIPPING // OpenGL ONLY
+    // World position
+    float4 HPw : TEXCOORD0;
+//#endif
+};
+
+// Vertex shader output structure for text.
+struct VS_TO_PS_Text
+{
+    VS_TO_PS BasicVSToPS;
+    float4 VPos : TEXCOORD1;
+};
+
+// Pixel shader input structure.
+// We cannot share the PS_INPUT structure with VS_TO_PS, because "WPOS"
+// is a specific semantics for PS input.
+struct PS_INPUT
+{
+    float4 WPos : WPOS;
+
+//#ifdef CLIPPING // OpenGL ONLY
+    // World position
+    float4 HPw : TEXCOORD0;
+//#endif
+};
+
+// Pixel shader input structure for text.
+struct PS_INPUT_Text
+{
+    PS_INPUT BasicPSInput;
+    float4 VPos : TEXCOORD1;
+};
+
+struct DepthPixelShaderOutput
+{
+    float4 ObjectID : COLOR0;
+    float4 PDepthVal : COLOR1;
+    // float4 VDepthVal : COLOR2;
+};
+
+// Basic vertex shader function.
+// Outputs:
+//   HPos is the position in clip space (NDC with undivided W).
+//   Depth holds one value: x holds the z-depth value from the eye, i.e. with respect to the view matrix
+//     but not normalized by the projection matrix.
+VS_TO_PS VSBasic(VS_INPUT In)
+{
+    VS_TO_PS Out;
+
+    // Transform the position from object space to clip space for output.
+    Out.HPos = mul(gWVPXf, float4(In.Pos, 1.0f));
+
+    // modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+    Out.HPos.z -= Out.HPos.w*2.0f*gDepthPriority;
+   
+    // To get truly linear depth distribution, save the z value before projection calculations.
+    // Then let the projection figure out where on the screen that depth is valid. 
+    // The hyperbolic interpolation used for vertexes makes sure it is perpective corrected.
+    // This depth is not wanted when gradients are used for edge detection.
+    // Out.Depth.z = (mul(In.Pos, gWVXf)).z;
+    
+//#ifdef CLIPPING
+    // World position for clipping.
+    Out.HPw = mul(float4(In.Pos, 1.0f), gWXf);
+//#endif
+
+    return Out;
+}
+
+// Vertex shader for main technique, used to set up GBuffer data to interpolate.
+VS_TO_PS VS_NPR(VS_INPUT In)
+{
+    return VSBasic(In);
+}
+
+// Vertex shader for text technique, used to set up GBuffer data to interpolate.
+VS_TO_PS_Text VS_NPR_Text(VS_INPUT In)
+{
+    VS_TO_PS_Text Out;
+    Out.BasicVSToPS = VSBasic(In);
+
+     // Output the position to pixel shader.
+    Out.VPos = Out.BasicVSToPS.HPos;
+
+    return Out;
+}
+
+// Basic pixel shader function.
+DepthPixelShaderOutput PSBasic(PS_INPUT In)
+{
+//#ifdef CLIPPING // OpenGL ONLY
+    // Compute whether the pixel need to be discard by the clipping planes.
+    // This is slow, for NV4x(GeForce 6xxx) or higher card, we can use the semantic CLP(n) 
+    // in vertex shader to make it faster.
+    if (gNumClipPlanes > 0) { if(dot(In.HPw, gClipPlanes[0])<0) discard;}
+    if (gNumClipPlanes > 1) { if(dot(In.HPw, gClipPlanes[1])<0) discard;}
+    if (gNumClipPlanes > 2) { if(dot(In.HPw, gClipPlanes[2])<0) discard;}
+    if (gNumClipPlanes > 3) { if(dot(In.HPw, gClipPlanes[3])<0) discard;}
+    if (gNumClipPlanes > 4) { if(dot(In.HPw, gClipPlanes[4])<0) discard;}
+    if (gNumClipPlanes > 5) { if(dot(In.HPw, gClipPlanes[5])<0) discard;}
+//#endif
+
+    DepthPixelShaderOutput Output;
+
+    // Save away object ID, using gObjectID converted to 0-1 floats, with R
+    // being the lowest 8 bits of the integer, G being the next highest, B, then A.
+    Output.ObjectID = gObjectID;
+
+    // save depth with linear depth distribution.
+    // Divide it by far clip plane to get it in the [0,1] range.
+    // Perspective correction is already taken care of vertex interpolator
+    // If you use the Far clip plane to scale, this value will differ as far clip plane differs
+    // An alternative is to use a global scale value, or to multiply the value with far clip plane again before using it.
+    // Output.VDepthVal.r = In.Depth.z/gFarClipPlane;
+    // Output.VDepthVal.gba = 0.0f;
+
+    // Unlike with DX9, here we can have access to the depth value of the pixel, WPos.z,
+    // which is the same value (if it passes the depth test) written to the depth buffer.
+    Output.PDepthVal.r = 0.0f;
+	Output.PDepthVal.g = gHaloColor.r;
+	Output.PDepthVal.b = gHaloColor.g;
+	Output.PDepthVal.a = gHaloColor.b;
+    return Output;
+}
+
+// Pixel shader for main technique, which puts the various values into the needed GBuffers.
+DepthPixelShaderOutput PS_NPR(PS_INPUT In)
+{
+    return PSBasic(In);
+}
+
+// Pixel shader for text technique, which puts the various values into the needed GBuffers.
+DepthPixelShaderOutput PS_NPR_Text(PS_INPUT_Text In)
+{
+    // Get the sample coordinate for the current pixel.
+    float sampleX = (In.VPos.x / In.VPos.w + 1.0) / 2.0;
+    float sampleY = (In.VPos.y / In.VPos.w + 1.0) / 2.0;
+    // Sample the visibility. We use the reb channel as the visibility.
+    float visibility = tex2D(gSamp, float2(sampleX, sampleY)).r;
+    if(visibility > 0.5f)
+        discard;
+
+    return PSBasic(In.BasicPSInput);
+}
+
+// The main technique.
+technique Main
+{
+    pass p0
+    {
+        VertexProgram = compile glslv VS_NPR();
+        FragmentProgram = compile glslf PS_NPR();
+    }
+}
+
+// The text technique.
+technique Text
+{
+    pass p0
+    {
+        VertexProgram = compile glslv VS_NPR_Text();
+        FragmentProgram = compile glslf PS_NPR_Text();
+    }
+}

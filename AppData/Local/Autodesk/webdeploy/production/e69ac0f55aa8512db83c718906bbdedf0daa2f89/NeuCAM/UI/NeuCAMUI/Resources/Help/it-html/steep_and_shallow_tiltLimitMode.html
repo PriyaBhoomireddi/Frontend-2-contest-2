@@ -1,0 +1,25 @@
+<div id="steep_and_shallow_tiltLimitMode"><p>Se l'asse utensile raggiunge il limite di <b>inclinazione massima</b>, è possibile scegliere di:</p>
+<ul>
+<li><b>Taglia percorso utensile</b>: selezionare per rimuovere la parte del percorso che inclinerebbe l'asse utensile oltre il limite massimo di inclinazione. Utilizzare questa opzione se l'angolo dell'asse utensile è critico per la finitura della superficie, quindi completare la lavorazione della parte utilizzando un altro Setup.</li>
+<li><b>Macchina nella massima inclinazione</b>: selezionare per mantenere l'asse utensile al limite di inclinazione quando viene raggiunta. Utilizzare questa opzione per continuare la lavorazione con il percorso nel Setup corrente se l'angolo dell'asse utensile non è critico per la finitura della superficie.</li>
+</ul>
+<p>Se si seleziona <b>Taglia percorso utensile</b>, per l'inclinazione massima a 90 gradi non viene eseguito alcun ritaglio poiché l'asse utensile rimane sempre entro 90 gradi. Per l'inclinazione massima a 65 gradi, viene rimossa la parte che inclina l'asse utensile oltre 65 gradi.</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="300" height="173" src="../images/no_tool_axis_limits.png"/></center></td>
+<td><center><img border="0" width="300" height="173" src="../images/trim_toolpath_65deg.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Inclinazione massima = 90 gradi</b><br>
+<b>Ritaglia percorso utensile</b></p></center></td>
+<td><center><p><b>Inclinazione massima = 65 gradi</b><br>
+<b>Ritaglia percorso utensile</b></p></center></td>
+</tr></table>
+<p>Se si seleziona <b>Macchina alla massima inclinazione</b>, il percorso in eccesso viene mantenuto, ma l'inclinazione dell'asse utensile è limitato dalla macchina a 65 gradi.</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="300" height="173" src="../images/machine_at_max_tilt.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Inclinazione massima = 65 gradi</b><br>
+<b>Macchina alla massima inclinazione</b><br></p></center></td>
+</tr></table>
+</div>

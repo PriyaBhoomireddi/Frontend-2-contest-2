@@ -1,0 +1,145 @@
+.itemGlyph{
+    min-width:22px;
+    height:22px;
+    border-radius: 3px;
+    background-color: rgb(119,189,13);
+    position: absolute;
+    line-height: 21px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    cursor:default;
+    right: 8px;
+    top: 8px;
+}
+
+.itemGlyph.lower{
+    background-color: #CCCCCC;
+    top: 34px;
+}
+
+.itemGlyph.pin{
+    display: none;
+    background-color: #CCCCCC;
+    padding-right: 22px;
+}
+
+.itemGlyph._disabled_{
+    display: none;
+}
+
+.itemGlyph .glyphimg{
+    width: 22px;
+    height: 22px;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+.itemGlyph .memberimg{
+    background-image: -webkit-image-set(url('../../assets/user_48.png') 1x, url('../../assets/user_48@2x.png') 2x);
+}
+
+.itemGlyph .joinimg{
+    background-image: url('../../assets/plus_16.svg');
+    background-size: 16px 16px;
+    border-radius: 3px;
+    background-color: #CCCCCC;
+}
+
+.itemGlyph .bellimg{
+    background-image: url('../../assets/bell_16.svg');
+    background-size: 16px 16px;
+    border-radius: 3px;
+    background-color: #CCCCCC;
+}
+
+.itemGlyph .pinimg{
+    background-image: url('../../assets/pin.svg');
+    background-size: 18px 18px;
+    border-radius: 3px;
+}
+
+.itemGlyph .unpinimg{
+    background-image: url('../../assets/pin.svg');
+    background-size: 18px 18px;
+    background-color: rgb(119,189,13);
+    border-radius: 3px;
+}
+
+.itemGlyph .checkmarkimg{
+    background-size: 16px 16px;
+    background-image: url('../../assets/check_mark.svg');
+}
+
+.itemGlyph .crossimg{
+    background-size: 16px 16px;
+    background-image: url('../../assets/cross.svg');
+}
+
+.itemGlyph:hover{
+    background-image: none;
+    background-color: rgb(119,189,13);
+    display: inline-block;
+}
+
+.itemGlyph:hover._disabled_ {
+    display: none;
+}
+
+.itemGlyph .glyphText{
+    font-size:12px;
+    font-family: arial, sans-serif;
+    color:#ffffff;
+    display: none;
+    padding-right: 3px;
+    padding-left: 3px;
+    border-radius: 3px;
+}
+
+.itemGlyph:hover.cross{
+    background-color: #dd2222;
+}
+
+.itemGlyph:hover .glyphText{
+    display: inline-block;
+}
+
+.offline .itemGlyph {
+    background-color: #CCCCCC;
+}
+
+.offline .itemGlyph:hover {
+    background-color: #CCCCCC;
+}
+
+.offline .itemGlyph.join .glyphText{
+    background-color: #CCCCCC;
+}
+
+.itemGlyph:hover .memberimg{
+     display: none;
+}
+
+.itemGlyph:hover .joinimg{
+    display: none;
+}
+
+.itemGlyph:hover .bellimg{
+    display: none;
+}
+
+.itemGlyph:hover .unpinimg{
+    display: none;
+}
+
+.itemGlyph:hover .checkmarkimg{
+    display: none;
+}
+
+.itemGlyph:hover .crossimg{
+    display: none;
+}
+

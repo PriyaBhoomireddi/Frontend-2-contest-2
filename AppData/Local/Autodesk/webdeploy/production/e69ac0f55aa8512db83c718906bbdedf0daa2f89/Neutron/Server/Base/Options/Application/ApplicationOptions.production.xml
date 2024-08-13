@@ -1,0 +1,77 @@
+<?xml version="1.0" standalone="yes" ?>
+<!DOCTYPE serverconfig [
+  <!ENTITY dashboardHost "https://ui-dls360.autodesk.com">
+  <!ENTITY dashboardServiceRoot "&dashboardHost;/dashboard">
+]>
+<ApplicationOptions SchemaVersion="1.0">
+    <Option key="serverType" value="PRODUCTION" />
+    <Option key="hubType" value="personal" />
+    <Option key="fusionTeamUrl" value="autodesk360.com" />
+    <Option key="homePageUrl" value="https://login.autodesk360.com/login" />
+    <Option key="exchangeMaterialUrl" value="https://ui-dls360.autodesk.com/emb/index.html" />
+    <Option key="exchangeServiceUrl" value="http://exchange.services.autodesk.com" />
+    <Option key="gaAccount" value="UA-41472239-2" />
+    <Option key="serviceStatusUrl" value="https://ui-dls360.autodesk.com/fusion" />
+    <Option key="translationStatusUrl" value="https://translation.api.autodesk.com/data/v1/" />
+    <Option key="notificationsUrl" value="https://notifications.prd.fusionapi.autodesk.com" />
+    <Option key="maintenanceUrl" value="https://a360-statusdashboard.s3.amazonaws.com/autodesk_maintenance.json" />
+    <Option key="blockcheck" value="&dashboardHost;/dufo/scripts/check_blocked.js" />
+    <Option key="trytobuyOptionsUrl" value="https://ui-dls360.autodesk.com/fusion/IPM.html" />
+    <Option key="lxUrl" value="https://ui-dls360.autodesk.com/lxv2/" />
+    <Option key="RaasServer" value="https://raas2.autodesk.com" />
+    <Option key="liveData" value="urn:adsk.wipprod:fs.folder:co.LcTRcOvIT6GziU1ITb2hww" />
+    <Option key="liveDataHub" value="https://myhub.autodesk360.com/ue29032bb" />
+    <Option key="liveDataProject" value="2016030226166531" />
+    <Option key="migrationBucket" value="fusionerrorreports" />
+    <Option key="apigeeEndpointUrl" value="https://developer.api.autodesk.com" />
+    <Option key="apigeeEndpointDataPath" value="/data/v1/projects/"/>
+    <Option key="changesServiceUrl" value="https://changes.api.autodesk.com" />
+    <Option key="CollaborationServer" value="https://livereview.fusionapi.autodesk.com" />
+    <Option key="simServiceUrl" value="https://simulation.prd.fusionapi.autodesk.com/v1" />
+    <Option key="gdServicesUrl" value="https://developer.api.autodesk.com/gcp/v2/agd" />
+    <Option key="gdExploreUrl" value="https://dreamcatcher.autodesk.com" />
+    <Option key="hawkeyeUrl" value="https://hawkeye.autodesk.com" />
+    <Option key="hawkeyeServiceUrl" value="https://svc.hawkeye.autodesk.com" />
+    <Option key="doraUrl" value="https://sim.autodesk.com" />
+    <Option key="injectionMoldingMaterialUrl" value="https://developer.api.autodesk.com/simmat" />
+    <Option key="meteringServerUrl" value="https://metering.autodesk.com" />
+    <Option key="frvServerUrl" value="https://frv.ui-dls360.autodesk.com" />
+    <Option key="cepPageUrl" value="https://manage.autodesk.com" />
+    <Option key="aklamioUID" value="f0acb94495fde56406edaf7103c67367" />
+    <Option key="surveyUrl" value="https://autodeskfeedback.az1.qualtrics.com/jfe/form/SV_erPgdZlvApJVIbj" />
+    <Option key="anytimeSurveyUrl" value="https://autodeskfeedback.az1.qualtrics.com/jfe/form/SV_a9Szyv0iTkBcSVv" />
+    <Option key="fusionStaticsUrl" value="https://js.prd.fusionapi.autodesk.com/" />
+    <Option key="healthStatusUrl" value="https://js.prd.fusionapi.autodesk.com/hds/fusion360.json" />
+    <Option key="healthStatusWebUrl" value="https://health.autodesk.com/" />
+    <Option key="hsmGaAccount" value="UA-93571112-2" />
+    <Option key="derivativeServiceUrl" value="https://developer.api.autodesk.com/derivativeservice/v2/derivatives/" />
+    <Option key="fusionDMUrl" value="https://developer.api.autodesk.com/fusiondm" />
+    <Option key="ldUrl" value="https://app.launchdarkly.com/api/v2/users/fusion/production/fusion360/flags" />
+    <Option key="symphonyServiceUrl" value="https://symphonydm.ft.autodesk.com/symphonydm/v2" />
+    <Option key="hfdmUrl" value="https://developer.api.autodesk.com/hfdm-soc2" />
+    <Option key="pimUrl" value="https://developer.api.autodesk.com/pim" />
+    <Option key="pimMigrationUrl" value= "https://developer.api.autodesk.com/pim-migration" />
+    <Option key="pimUrlPathPrefix" value="/v4" />
+    <Option key="fhqUrl" value="https://developer.api.autodesk.com/fhq" />
+    <Option key="flcDomain"  value="autodeskplm360.net" />
+    <Option key="pimServerUrl" value="https://developer.api.autodesk.com/hfdm-soc2" />
+    <Option key="pimFdServerUrl" value="https://developer.api.autodesk.com/assetgraph" />
+    <Option key="learningPageUrl" value="https://ui-dls360.autodesk.com/learning-panel/online.js" />
+    <Option key="LibraryIOUrl" value="https://contapi.circuits.io/" />
+    <Option key="applicationType" value="production" />
+    <Option key="forgeDataInspectorUrl" value="https://inspector.autodesk.com" />
+    <Option key="clsUrl" value="https://api.v3license.access.clic.autodesk.com" />
+    <Option key="GCPEnvironment" value="prod" />
+    <Option key="simecoolWorker" value="fec2020" />
+    <Option key="simfimWorker" value="fim2022" />
+    <Option key="simecoolGCPMoniker" value="simecool" />
+    <Option key="simfimGCPMoniker" value="simfim" />
+    <Option key="simecoolMoniker" value="simecool-p-ue1" />
+    <Option key="simsampMoniker" value="simsamp-p-ue1" />
+    <Option key="SCMBucket" value="6b8e2c8a-3003-48c9-9acc-d4ad7e4016d7" />
+    <Option key="CloudOSJMAPI" value="https://developer.api.autodesk.com/fpccomp-p-ue1-dn/jm/api/v1" />
+    <Option key="GCPJMAPI" value="https://developer.api.autodesk.com/gcp/v2" />
+    <Option key="OSSPrefix" value="oss:prd:" />
+    <Option key="uhmUrl" value="https://app.digital-help-prd.autodesk.com/universal-help/current/index.html?mode=openWidget&amp;product=NINVFUS&amp;integrationType=In-Product" />
+    <Option key="CAMWebsiteUrl" value="https://cam.autodesk.com/" />
+</ApplicationOptions>

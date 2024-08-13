@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+<g>
+	<rect fill="#BEBEBE" width="16" height="16"/>
+</g>
+<rect x="2" y="3" fill="#DDDDDD" width="13" height="11"/>
+<line fill="none" stroke="#4D4D4D" stroke-width="2" stroke-miterlimit="10" x1="5" y1="1" x2="5" y2="9"/>
+<line fill="none" stroke="#4D4D4D" stroke-width="2" stroke-miterlimit="10" x1="1" y1="5" x2="9" y2="5"/>
+<rect x="6" y="10" fill="#4D4D4D" width="3" height="3"/>
+<rect x="10.5" y="3.8" fill="#4D4D4D" width="3" height="3"/>
+<rect x="10.5" y="10" fill="#4D4D4D" width="3" height="3"/>
+</svg>

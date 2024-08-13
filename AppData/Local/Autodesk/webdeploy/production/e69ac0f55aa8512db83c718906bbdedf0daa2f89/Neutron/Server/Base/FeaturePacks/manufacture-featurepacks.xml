@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FeaturePacks>
+
+  <!-- Mfg Feature Pack & Features -->
+
+  <FeaturePack Id="manufacture" Preview="True">
+	<Title _LCLZId="manufacture-featurepack-title" _LCLZText="Manufacture"/>
+	<Description _LCLZId="manufacture-featurepack-desc" _LCLZText="This section controls optional functionality with the Manufacture workspace."/>
+	<Features>
+	  <Feature Id="machine-configurations" LegacyPreviewId="MachineConfigurationEnabled">
+		<Title _LCLZId="machine-configurations-title" _LCLZText="Machine Configurations"/>
+		<Description _LCLZId="machine-configurations-desc" _LCLZText="The first stage of machine definitions has been added to Autodesk Fusion 360. This will lay the framework for information about a machine to be used throughout the Manufacture workspace. A machine configuration will contain information about the machine such as its axes, maximum spindle speed, feedrate limits, print configurations, and more, which will allow Fusion 360 to alert the user to potential issues as well as aid users in making toolpathing decisions and configure the output programs."/>
+	  </Feature>
+	  <Feature Id="additive" LegacyPreviewId="AdditiveEnabled">
+		<Title _LCLZId="additive-title" _LCLZText="Additive Manufacturing"/>
+		<Description _LCLZId="additive-desc" _LCLZText="Adds select additive manufacturing machines (3D printers) to the Manufacture Workspace. This initial stage allows for users to select an additive machine, specify print parameters, manually position and orient a part on  the build platform, generate support structures, and either create a build file for select machines or export a 3MF file for all machines. Note that activating this preview functionality will also enable the Machine Configurations feature above."/>
+	  </Feature>
+	</Features>
+  </FeaturePack>
+
+</FeaturePacks>

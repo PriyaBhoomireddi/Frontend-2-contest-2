@@ -1,0 +1,25 @@
+<div id="steep_and_shallow_tiltLimitMode"><p>工具軸が <b>最大傾斜</b> 制限に達した場合、次のオプションを選択できます:</p>
+<ul>
+<li><b>ツールパスをトリム</b> - 最大傾斜制限を超えて工具軸を傾けるツールパスの部分を削除する場合に選択します。表面仕上げにおいて工具軸の角度が重要である場合にこのオプションを使用し、その後別のセットアップを使用してパーツの加工を完了します。</li>
+<li><b>最大傾斜で加工</b> - チルト制限に達したときにその工具軸を維持する場合に選択します。このオプションは、表面仕上げにおいて工具軸の角度が重要でない場合に、現在のセットアップのツールパスを使用して加工を続行する場合に使用します。</li>
+</ul>
+<p><b>ツールパスをトリム</b> を選択すると、最大傾斜が 90 度のイメージでは、工具軸は常に 90 度の範囲内であるため何もトリムされません。最大傾斜が 65 度のイメージでは、65 度を超えて工具軸を傾ける部分が削除されます。</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="300" height="173" src="../images/no_tool_axis_limits.png"/></center></td>
+<td><center><img border="0" width="300" height="173" src="../images/trim_toolpath_65deg.png"/></center></td>
+</tr><tr>
+<td><center><p><b>最大傾斜 = 90 度</b><br>
+<b>ツールパスをトリム</b></p></center></td>
+<td><center><p><b>最大傾斜 = 65 度</b><br>
+<b>ツールパスをトリム</b></p></center></td>
+</tr></table>
+<p><b>最大傾斜で加工</b> を選択すると、超過ツールパスは維持されますが、工具軸の傾斜は 65 度での加工に制限されます。</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="300" height="173" src="../images/machine_at_max_tilt.png"/></center></td>
+</tr><tr>
+<td><center><p><b>最大傾斜 = 65 度</b><br>
+<b>最大傾斜で加工</b><br></p></center></td>
+</tr></table>
+</div>

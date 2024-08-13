@@ -1,0 +1,2419 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+<tagfile>
+  <compound kind="page">
+    <name>index</name>
+    <title></title>
+    <filename>index</filename>
+    <docanchor file="index">PPIGest</docanchor>
+    <docanchor file="index">PPITrace</docanchor>
+    <docanchor file="index">Changes</docanchor>
+    <docanchor file="index">Interfaces</docanchor>
+  </compound>
+  <compound kind="file">
+    <name>ppi_api_base.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/c/include/PPI/</path>
+    <filename>ppi__api__base_8h</filename>
+    <includes id="ppi__api__base__shared_8h" name="ppi_api_base_shared.h" local="no" imported="no">PPI/ppi_api_base_shared.h</includes>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_api_base_inc_ref</name>
+      <anchorfile>ppi__api__base_8h.html</anchorfile>
+      <anchor>a55b4d86703e184584ba4f5f34b93dbd6</anchor>
+      <arglist>(const ppi_api_base *base)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_api_base_dec_ref</name>
+      <anchorfile>ppi__api__base_8h.html</anchorfile>
+      <anchor>ac471b424be1fd62c8e0b49dea8a6e330</anchor>
+      <arglist>(const ppi_api_base *base)</arglist>
+    </member>
+    <member kind="function">
+      <type>int32_t</type>
+      <name>ppi_api_base_get_ref_count</name>
+      <anchorfile>ppi__api__base_8h.html</anchorfile>
+      <anchor>a3dd0c18f95d8bc5dfac25635042243fa</anchor>
+      <arglist>(const ppi_api_base *base)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_api_base_add_destruction_callback</name>
+      <anchorfile>ppi__api__base_8h.html</anchorfile>
+      <anchor>aba336ca52e8a1c4d8a3582134140753e</anchor>
+      <arglist>(const ppi_api_base *base, ppi_api_base_destruction_callback callback, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_api_base_remove_destruction_callback</name>
+      <anchorfile>ppi__api__base_8h.html</anchorfile>
+      <anchor>ad0e349dc8c364b5acfef97aad1dc3ec1</anchor>
+      <arglist>(const ppi_api_base *base, void *client_data)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ppi_api_base_shared.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/shared/include/PPI/</path>
+    <filename>ppi__api__base__shared_8h</filename>
+    <member kind="typedef">
+      <type>struct ppi_api_base</type>
+      <name>ppi_api_base</name>
+      <anchorfile>ppi__api__base__shared_8h.html</anchorfile>
+      <anchor>a95511bf47b29e0537dac55346205d72f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_api_base_destruction_callback</name>
+      <anchorfile>ppi__api__base__shared_8h.html</anchorfile>
+      <anchor>a9ca95adaadc56b801c54e12efea51f9c</anchor>
+      <arglist>)(const void *object, void *client_data)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ppi_geom.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/shared/include/PPI/</path>
+    <filename>ppi__geom_8h</filename>
+    <class kind="struct">ppi_pos_2d</class>
+    <class kind="struct">ppi_size_2d</class>
+    <class kind="struct">ppi_rect_2d</class>
+    <member kind="function">
+      <type>ppi_pos_2d</type>
+      <name>ppi_pos_2d_create</name>
+      <anchorfile>ppi__geom_8h.html</anchorfile>
+      <anchor>abc29b5afc09aa1927e112d0f5c7e97b5</anchor>
+      <arglist>(const double x, const double y)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_size_2d</type>
+      <name>ppi_size_2d_create</name>
+      <anchorfile>ppi__geom_8h.html</anchorfile>
+      <anchor>afbfa4a402c5d9c4ac5937923891e7fac</anchor>
+      <arglist>(const double w, const double h)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_rect_2d</type>
+      <name>ppi_rect_2d_create</name>
+      <anchorfile>ppi__geom_8h.html</anchorfile>
+      <anchor>a7481d41d3d90242c98231107802e3138</anchor>
+      <arglist>(const ppi_pos_2d origin, const ppi_size_2d size)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ppi_gest_rec.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/c/include/PPI/</path>
+    <filename>ppi__gest__rec_8h</filename>
+    <includes id="ppi__gest__shared_8h" name="ppi_gest_shared.h" local="no" imported="no">PPI/ppi_gest_shared.h</includes>
+    <includes id="ppi__trace_8h" name="ppi_trace.h" local="no" imported="no">PPI/ppi_trace.h</includes>
+    <member kind="function">
+      <type>ppi_gest_rec *</type>
+      <name>ppi_api_base_cast_to_gest_rec</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a1c7396a0ca315e43a2844dd33c9c4684</anchor>
+      <arglist>(ppi_api_base *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_api_base *</type>
+      <name>ppi_gest_rec_cast_to_base</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a0915eb500c4f5b8060d5d095cfcc6857</anchor>
+      <arglist>(ppi_gest_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_gest_indep_rec *</type>
+      <name>ppi_gest_rec_cast_to_indep_rec</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a97d49c4157f1bea5ab7868e0da78b634</anchor>
+      <arglist>(ppi_gest_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_gest_rec *</type>
+      <name>ppi_gest_indep_rec_cast_to_rec</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>abc4769da9b9b197a691c9438a6f27464</anchor>
+      <arglist>(ppi_gest_indep_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_gest_group_rec *</type>
+      <name>ppi_gest_rec_cast_to_group_rec</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a95ba624e4a68720088b37e94f2583ac8</anchor>
+      <arglist>(ppi_gest_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_gest_rec *</type>
+      <name>ppi_gest_group_rec_cast_to_rec</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>ace733e3387f09bab3d46756dff19d847</anchor>
+      <arglist>(ppi_gest_group_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_gest_tap_hold_rec *</type>
+      <name>ppi_gest_indep_rec_cast_to_tap_hold</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a6bc92fa12a921dcdda4e619e1a5e1ff5</anchor>
+      <arglist>(ppi_gest_indep_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_gest_indep_rec *</type>
+      <name>ppi_gest_tap_hold_rec_cast_to_indep_rec</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a61cdab47fdc115fb9b2ef87bb2da5393</anchor>
+      <arglist>(ppi_gest_tap_hold_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_gest_pzr_rec *</type>
+      <name>ppi_gest_group_rec_cast_to_pzr_rec</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a18f9b1197a09a3ff93a0bec6efa9df31</anchor>
+      <arglist>(ppi_gest_group_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_gest_group_rec *</type>
+      <name>ppi_gest_pzr_rec_cast_to_group_rec</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a14ac5805bfd2947d9c63642a04c22138</anchor>
+      <arglist>(ppi_gest_pzr_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_rec_add_trace</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>aa1dd21c1ed191a3a645502c7e13a73f8</anchor>
+      <arglist>(ppi_gest_rec *rec, const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_rec_remove_trace</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a90f69abe756c07cc06a089dd12ae4bdd</anchor>
+      <arglist>(ppi_gest_rec *rec, const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>size_t</type>
+      <name>ppi_gest_rec_get_num_traces</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a754f3805e95bfd36082804f4dd86b3df</anchor>
+      <arglist>(const ppi_gest_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_trace *</type>
+      <name>ppi_gest_rec_get_trace</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a9e6e1a60e23042147939450b70ceade0</anchor>
+      <arglist>(const ppi_gest_rec *rec, const size_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_rec_add_failure_target</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a7ee0bbfa003ff6701e9f4763edc112cf</anchor>
+      <arglist>(ppi_gest_rec *rec, ppi_gest_rec *failure_target)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_indep_rec_add_listener</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a2deddfcf50037a686d257f25c54726b8</anchor>
+      <arglist>(const ppi_gest_indep_rec *rec, ppi_gest_indep_rec_callbacks callbacks, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_indep_rec_remove_listener</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a1949dc387bc9047a183ddced4fce60d4</anchor>
+      <arglist>(const ppi_gest_indep_rec *rec, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_gest_rec_state</type>
+      <name>ppi_gest_indep_rec_get_state</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a3f8d3e9cb14c70c531a8339012937130</anchor>
+      <arglist>(const ppi_gest_indep_rec *rec, const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_group_rec_add_listener</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a2c322caeecf363a532d4c09595b13e3b</anchor>
+      <arglist>(const ppi_gest_group_rec *rec, ppi_gest_group_rec_callbacks callbacks, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_group_rec_remove_listener</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a42b750a9163193055c714ce9fa0bbb3a</anchor>
+      <arglist>(const ppi_gest_group_rec *rec, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_gest_rec_state</type>
+      <name>ppi_gest_group_rec_get_state</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>af60e37537885447cd84e5954b0867f45</anchor>
+      <arglist>(const ppi_gest_group_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_gest_tap_hold_rec *</type>
+      <name>ppi_gest_create_tap_hold_rec</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>ae1bf59d9fb6f047817f4c71ea58486f4</anchor>
+      <arglist>(const int recognition_typess)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>ppi_gest_tap_hold_rec_get_rec_types</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>adaad14efd7a604c6a6041c9354e7a0ff</anchor>
+      <arglist>(const ppi_gest_tap_hold_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_tap_hold_rec_add_listener</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a74741181ed38f52e25c8a73e20f114ca</anchor>
+      <arglist>(const ppi_gest_tap_hold_rec *rec, ppi_gest_tap_hold_rec_callbacks callbacks, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_tap_hold_rec_remove_listener</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>acc48c7c2b6f596db1c0d45cbadeb86b0</anchor>
+      <arglist>(const ppi_gest_tap_hold_rec *rec, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_gest_tap_hold_rec_get_max_distance</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a5f3ad334799e92fb10ae4d789ffcd680</anchor>
+      <arglist>(const ppi_gest_tap_hold_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_tap_hold_rec_set_max_distance</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>ae0885cd15de63350ed810a44dca4531e</anchor>
+      <arglist>(ppi_gest_tap_hold_rec *rec, double max_dist)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_gest_tap_hold_rec_get_tap_timeout</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a84b5a80ee7874be05a2ea189e01aac0c</anchor>
+      <arglist>(const ppi_gest_tap_hold_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_tap_hold_rec_set_tap_timeout</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>ab6890d75da160800431278dcf46a21f9</anchor>
+      <arglist>(ppi_gest_tap_hold_rec *rec, double tap_timeout)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_gest_tap_hold_rec_get_continuation_distance</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a71c0451cfcb7aedba073f401a78a1543</anchor>
+      <arglist>(const ppi_gest_tap_hold_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_tap_hold_rec_set_continuation_distance</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a6b9a038da091c66c76d5c3fdb672cff3</anchor>
+      <arglist>(ppi_gest_tap_hold_rec *rec, double cont_dist)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_gest_tap_hold_rec_get_continuation_timeout</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>af7ac21c023522212a443fed126c626c8</anchor>
+      <arglist>(const ppi_gest_tap_hold_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_tap_hold_rec_set_continuation_timeout</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a9c77e938406d2a1a7e8c9337372a7ac2</anchor>
+      <arglist>(ppi_gest_tap_hold_rec *rec, double cont_timeout)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_gest_pzr_rec *</type>
+      <name>ppi_gest_create_pzr_rec</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>afbaea46ad037efa33fc128b21b6d4b72</anchor>
+      <arglist>(const int recognition_types, const int failure_types)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>ppi_gest_pzr_rec_get_rec_types</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a7652bc9aa14f5861f401849c88d64687</anchor>
+      <arglist>(const ppi_gest_pzr_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>ppi_gest_pzr_rec_get_fail_types</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>abbbd7e7d700645d3fd26aff0f51c5e27</anchor>
+      <arglist>(const ppi_gest_pzr_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_pzr_rec_set_thresholds</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>ae2b96c5db17df893f84e38a57b13a6c4</anchor>
+      <arglist>(ppi_gest_pzr_rec *rec, const double horz_pan_thresh, const double vert_pan_thresh, const double rot_thresh, const double zoom_thresh)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_gest_pzr_rec_get_horz_pan_thresh</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a45d38766794ad524494f72e3a3403978</anchor>
+      <arglist>(const ppi_gest_pzr_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_gest_pzr_rec_get_vert_pan_thresh</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>aff3309cbfd8f745ffc3f8bfca1d5f29f</anchor>
+      <arglist>(const ppi_gest_pzr_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_gest_pzr_rec_get_rot_thresh</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>aa7373dddf25e03529f05b7e349a4d6e8</anchor>
+      <arglist>(const ppi_gest_pzr_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_gest_pzr_rec_get_zoom_thresh</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a24824f05a040f8f52b5006e815adc232</anchor>
+      <arglist>(const ppi_gest_pzr_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_pzr_rec_set_horz_pan_thresh</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a774565b9791d2be0c2da3b8816b806c7</anchor>
+      <arglist>(ppi_gest_pzr_rec *rec, const double thresh)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_pzr_rec_set_vert_pan_thresh</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a70e6b468f08d042f64e2ee90159935ea</anchor>
+      <arglist>(ppi_gest_pzr_rec *rec, const double thresh)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_pzr_rec_set_rot_thresh</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a75105deb1bdf5902c95887b1b5df3669</anchor>
+      <arglist>(ppi_gest_pzr_rec *rec, const double thresh)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_pzr_rec_set_zoom_thresh</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>aa8ad4ae88d6b02da110aea5e3076ccec</anchor>
+      <arglist>(ppi_gest_pzr_rec *rec, const double thresh)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_pzr_rec_set_target_map</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a5610e56c94f4568bee98934765c02cf9</anchor>
+      <arglist>(ppi_gest_pzr_rec *rec, ppi_gest_rec_pzr_point_map point_map, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_pzr_rec_add_listener</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a5ea9ad5bc6e3350468a7d8d6265fb225</anchor>
+      <arglist>(const ppi_gest_pzr_rec *rec, ppi_gest_pzr_rec_callbacks callbacks, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_pzr_rec_remove_listener</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>af303037eb1c5905487e76f0155874385</anchor>
+      <arglist>(const ppi_gest_pzr_rec *rec, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_pzr_rec_set_initial_translation</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>ad17a0084ba8063b75e5ced0e5ed998ab</anchor>
+      <arglist>(ppi_gest_pzr_rec *rec, const ppi_pos_2d pos)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_pzr_rec_set_initial_rotation</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>ade1bded50045ded03a6bc8ea2dcf4f03</anchor>
+      <arglist>(ppi_gest_pzr_rec *rec, const double rotation)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_gest_pzr_rec_set_initial_zoom</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a19b4761b60255b4f4fbd85a9555ce12f</anchor>
+      <arglist>(ppi_gest_pzr_rec *rec, const double zoom)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_pos_2d</type>
+      <name>ppi_gest_pzr_rec_get_translation</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a7cbed540d7bb2a3b9a8992eb72292e5e</anchor>
+      <arglist>(const ppi_gest_pzr_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_gest_pzr_rec_get_rotation</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a522465bd9170fc4eb777fba7c722fd0c</anchor>
+      <arglist>(const ppi_gest_pzr_rec *rec)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_gest_pzr_rec_get_zoom</name>
+      <anchorfile>ppi__gest__rec_8h.html</anchorfile>
+      <anchor>a1de1d18cf55402acba40251adc6e2d2c</anchor>
+      <arglist>(const ppi_gest_pzr_rec *rec)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ppi_gest_shared.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/shared/include/PPI/</path>
+    <filename>ppi__gest__shared_8h</filename>
+    <includes id="ppi__api__base__shared_8h" name="ppi_api_base_shared.h" local="no" imported="no">PPI/ppi_api_base_shared.h</includes>
+    <includes id="ppi__trace__shared_8h" name="ppi_trace_shared.h" local="no" imported="no">PPI/ppi_trace_shared.h</includes>
+    <class kind="struct">ppi_gest_indep_rec_callbacks</class>
+    <class kind="struct">ppi_gest_group_rec_callbacks</class>
+    <class kind="struct">ppi_gest_tap_hold_rec_callbacks</class>
+    <class kind="struct">ppi_gest_pzr_rec_callbacks</class>
+    <member kind="typedef">
+      <type>struct ppi_gest_rec</type>
+      <name>ppi_gest_rec</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a14eb7e74bdf39b78d4ecbeb9e9b9ab84</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct ppi_gest_indep_rec</type>
+      <name>ppi_gest_indep_rec</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a03f89647748491ba70bed536f3e70b96</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct ppi_gest_group_rec</type>
+      <name>ppi_gest_group_rec</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>ac2bba9cf56cae0ab6492d5ad114475c2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct ppi_gest_pzr_rec</type>
+      <name>ppi_gest_pzr_rec</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>ab046ee70916ccbdc804bc20969ec4c91</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct ppi_gest_tap_hold_rec</type>
+      <name>ppi_gest_tap_hold_rec</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a5bfb4261ef3481f571b2832099b76c5e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_gest_indep_rec_state_callback</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a84bae0638020530aa153c8bdbca61c4e</anchor>
+      <arglist>)(ppi_gest_indep_rec *rec, const ppi_trace *trace, const ppi_gest_rec_state old_state, const ppi_gest_rec_state new_state, void *client_data)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_gest_group_rec_state_callback</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a5fa5a673597c458975436251371845f3</anchor>
+      <arglist>)(ppi_gest_group_rec *rec, const ppi_gest_rec_state old_state, const ppi_gest_rec_state new_state, void *client_data)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_gest_tap_hold_rec_success</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>ad627ad01192e3773e1295f5890e4e2b7</anchor>
+      <arglist>)(ppi_gest_tap_hold_rec *rec, const ppi_trace *trace, const size_t tap_count, const bool hold, void *client_data)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_gest_tap_hold_rec_failure</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>accb9ab0979e91e30a448e693ec3d3407</anchor>
+      <arglist>)(ppi_gest_tap_hold_rec *rec, const ppi_trace *trace, void *client_data)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_gest_pzr_rec_success</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a6f6fb1a2bc5ad15355e24c607673b5ec</anchor>
+      <arglist>)(ppi_gest_pzr_rec *rec, const ppi_pos_2d translation, const double rotation, const double zoom, void *client_data)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_gest_pzr_rec_failure</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>afa1469a7e946977bc80243887172f1e9</anchor>
+      <arglist>)(ppi_gest_pzr_rec *rec, const ppi_trace *trace, void *client_data)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>ppi_pos_2d(*</type>
+      <name>ppi_gest_rec_pzr_point_map</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a343b36f45b6b7f97b4c4f253f97c02ae</anchor>
+      <arglist>)(ppi_gest_pzr_rec *rec, const ppi_pos_2d pos, void *client_data)</arglist>
+    </member>
+    <member kind="enumeration">
+      <name>ppi_gest_rec_state</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a5d8d84ee7516b1cfda4da697490a39b1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_GEST_REC_STATE_WAITING</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a5d8d84ee7516b1cfda4da697490a39b1a5b5914398c155332c199e034df68c1e4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_GEST_REC_STATE_PROCESSING</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a5d8d84ee7516b1cfda4da697490a39b1ae10a2cfe7756d6047fb51db0e4d2f8fb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_GEST_REC_STATE_SUCCESS</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a5d8d84ee7516b1cfda4da697490a39b1a37d6cab0933d56b52dfe80abfe05ab6f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_GEST_REC_STATE_FAILURE</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a5d8d84ee7516b1cfda4da697490a39b1ad89c9ff45896be3dfc6815ba93e11056</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>ppi_gest_tap_hold_rec_types</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a6ffc66e27c13d225edc6d6d3279b2418</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_GEST_TAP_HOLD_REC_NONE</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a6ffc66e27c13d225edc6d6d3279b2418ab67492dd790a62679fdc9bcccb97ce01</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_GEST_TAP_HOLD_REC_TAP</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a6ffc66e27c13d225edc6d6d3279b2418a653d49d4b1abc6d5340ed9970d0a6066</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_GEST_TAP_HOLD_REC_HOLD</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a6ffc66e27c13d225edc6d6d3279b2418a700bc3f833b1d86184aa40ffcad6431f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_GEST_TAP_HOLD_REC_ALL</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>a6ffc66e27c13d225edc6d6d3279b2418afdab4c5b50f94f8357f2d0526cad2494</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>ppi_gest_pzr_rec_types</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>af19da7c8865f881f52d899283a4041eb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_GEST_PZR_REC_NONE</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>af19da7c8865f881f52d899283a4041ebae9155f4998df5a1d325c90a124c49188</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_GEST_PZR_REC_HORZ_PAN</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>af19da7c8865f881f52d899283a4041ebab19cd9f30bf8b59518411019bc5455f5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_GEST_PZR_REC_VERT_PAN</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>af19da7c8865f881f52d899283a4041ebafc6b6a7008e5192818437ced7aa71c44</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_GEST_PZR_REC_ROTATION</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>af19da7c8865f881f52d899283a4041ebaec0373413cbe014454cebe34d17c9482</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_GEST_PZR_REC_ZOOM</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>af19da7c8865f881f52d899283a4041eba23e1cf41c6aa9ed297aee2fff704e06b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_GEST_PZR_REC_ALL</name>
+      <anchorfile>ppi__gest__shared_8h.html</anchorfile>
+      <anchor>af19da7c8865f881f52d899283a4041eba2f5373a727fac4a53039fc1e177535fd</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ppi_hw_info.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/c/include/PPI/</path>
+    <filename>ppi__hw__info_8h</filename>
+    <includes id="ppi__trace__shared_8h" name="ppi_trace_shared.h" local="no" imported="no">PPI/ppi_trace_shared.h</includes>
+    <member kind="function">
+      <type>ppi_hw_info *</type>
+      <name>ppi_create_hw_info</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>a6b2314cd8468708739f6a86844b07643</anchor>
+      <arglist>(const char *host)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_hw_info_process_events</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>a5c315cb4d460c7791c47016f41f1e979</anchor>
+      <arglist>(ppi_hw_info *info, const double max_processing_time)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_hw_info_is_connected</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>a15f4c583d9cb2e324b44d3004399af0e</anchor>
+      <arglist>(const ppi_hw_info *info)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_hw_info_get_num_monitors</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>a05d9c0ea35f2e933e100f9ef578f04e9</anchor>
+      <arglist>(const ppi_hw_info *info)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_monitor</type>
+      <name>ppi_hw_info_get_monitor</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>a1a933e997fc6d19d9e73e8709a7b486c</anchor>
+      <arglist>(const ppi_hw_info *info, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_hw_info_find_monitor_by_id</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>a0d887f7cf6b120312862b3910656d3c6</anchor>
+      <arglist>(const ppi_hw_info *info, const uint32_t id, ppi_monitor *monitor)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_monitor</type>
+      <name>ppi_hw_info_get_virtual_monitor</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>ab58fe6a50846e020a389009ac51b24ca</anchor>
+      <arglist>(const ppi_hw_info *info)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_hw_info_get_num_sensors</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>af5ff6660bd60adc6bc6fb56017f86487</anchor>
+      <arglist>(const ppi_hw_info *info)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_sensor</type>
+      <name>ppi_hw_info_get_sensor</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>a41499a17794b6c41df608868f3c71fff</anchor>
+      <arglist>(const ppi_hw_info *info, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_hw_info_find_sensor_by_id</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>ad85f37749ce14e6d397cae95f32170e2</anchor>
+      <arglist>(const ppi_hw_info *info, const uint32_t id, ppi_sensor *sensor)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_sensor</type>
+      <name>ppi_hw_info_get_virtual_sensor</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>a02a7e9e1da1ef8bfc19878c847a9e182</anchor>
+      <arglist>(const ppi_hw_info *info)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_hw_info_add_listener</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>ae3e5420dbf9907faa2f7f20faa0caf8f</anchor>
+      <arglist>(const ppi_hw_info *info, void *clientData, ppi_hw_info_callbacks callbacks)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_hw_info_remove_listener</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>a940dab898098d7ebc82e759d774d5e16</anchor>
+      <arglist>(const ppi_hw_info *info, void *clientData)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_hw_info *</type>
+      <name>ppi_api_base_cast_to_hw_info</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>a09da263d29c70e1f7556bb1622354da8</anchor>
+      <arglist>(ppi_api_base *base)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_api_base *</type>
+      <name>ppi_hw_info_cast_to_base</name>
+      <anchorfile>ppi__hw__info_8h.html</anchorfile>
+      <anchor>ac0f644d983673c6f787db85977a368da</anchor>
+      <arglist>(ppi_hw_info *gen)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ppi_interface.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/c/include/PPI/</path>
+    <filename>ppi__interface_8h</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_get_api_versions</name>
+      <anchorfile>ppi__interface_8h.html</anchorfile>
+      <anchor>aba38b6ac8ce6fc556fabec0617eeea9d</anchor>
+      <arglist>(int *major, int *minor, int *patch)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ppi_trace.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/c/include/PPI/</path>
+    <filename>ppi__trace_8h</filename>
+    <includes id="ppi__geom_8h" name="ppi_geom.h" local="no" imported="no">PPI/ppi_geom.h</includes>
+    <includes id="ppi__trace__shared_8h" name="ppi_trace_shared.h" local="no" imported="no">PPI/ppi_trace_shared.h</includes>
+    <member kind="function">
+      <type>const ppi_trace *</type>
+      <name>ppi_api_base_cast_to_trace</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>af6a1873de1b67895a9e3873ed469c594</anchor>
+      <arglist>(const ppi_api_base *base)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_api_base *</type>
+      <name>ppi_trace_cast_to_base</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a27441392e6dfa2083526dc131f8e4543</anchor>
+      <arglist>(const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_touch_trace *</type>
+      <name>ppi_trace_cast_to_touch_trace</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a41c96b56d3f0509ab408f22686478b3e</anchor>
+      <arglist>(const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_pen_trace *</type>
+      <name>ppi_trace_cast_to_pen_trace</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a9b530418ea0b7ff1fc91f62329bd799a</anchor>
+      <arglist>(const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_hover_trace *</type>
+      <name>ppi_trace_cast_to_hover_trace</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a9b5fd7b3d97077fe347b8d736dda330d</anchor>
+      <arglist>(const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_trace *</type>
+      <name>ppi_touch_trace_cast_to_trace</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a73a4f372eb39b4aa2613e909df2c921e</anchor>
+      <arglist>(const ppi_touch_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_trace *</type>
+      <name>ppi_pen_trace_cast_to_trace</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a4890c44f2924168d19dc9edaa0be4907</anchor>
+      <arglist>(const ppi_pen_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_trace *</type>
+      <name>ppi_hover_trace_cast_to_trace</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a0400160c8fff25ddd5034cf1f05d1a88</anchor>
+      <arglist>(const ppi_hover_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_trace_gen *</type>
+      <name>ppi_trace_get_gen</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>aee9cf8f3b06e30fdb6ebc478643cc75e</anchor>
+      <arglist>(const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_trace_get_id</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a7ae0fe02a1a94cbde6cbf021bb0c3498</anchor>
+      <arglist>(const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_trace_get_sensor_id</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a50d5dc7eb2c18a2e81e79e21ad930428</anchor>
+      <arglist>(const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_trace_get_pos_valid</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>ae4d35edfb450edbd140191f22713a4b9</anchor>
+      <arglist>(const ppi_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_trace_state</type>
+      <name>ppi_trace_get_state</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a0329548751ade6fcbb8764cc88957806</anchor>
+      <arglist>(const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_trace_get_num_events</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a255f795226362d6008bd0d97cb5d1df3</anchor>
+      <arglist>(const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>char *</type>
+      <name>ppi_trace_create_event_string</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a2c35c319bf3800a31e51a164496b5f86</anchor>
+      <arglist>(const ppi_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_destroy_event_string</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>ad57db43f84daa08976b8d2dd88358bd2</anchor>
+      <arglist>(const ppi_trace *trace, char *s)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_trace_get_time</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>aa0ba3293e463f95a6b36a130b2c53566</anchor>
+      <arglist>(const ppi_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_pos_2d</type>
+      <name>ppi_trace_get_pos</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a713c208e6499d76c6e3183e4edd29ca3</anchor>
+      <arglist>(const ppi_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_trace_get_pos_off_sensor_display</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a35645296c2af5057d6180483ca6705ba</anchor>
+      <arglist>(const ppi_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_trace_get_pos_off_desktop</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a4dc28869f62941200c2d7ea0789d491b</anchor>
+      <arglist>(const ppi_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_trace_get_last_time</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>afd4f189258372709d48b878c782f93f1</anchor>
+      <arglist>(const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_trace_get_last_pos_valid</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a7a28151b4f654040a673c9edb16698f9</anchor>
+      <arglist>(const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_pos_2d</type>
+      <name>ppi_trace_get_last_pos</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>ad9974d39a66fd53cc3c8a9ff6a87c623</anchor>
+      <arglist>(const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_trace_get_last_pos_off_sensor_display</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a057e51b3af68849a33349849b18f1045</anchor>
+      <arglist>(const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_trace_get_last_pos_off_desktop</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>ab4e30ce8cfc4b2b68b1022eb87eb786a</anchor>
+      <arglist>(const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_add_listener</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a28a0ebd5a82c5d667ab324a0dfc0368e</anchor>
+      <arglist>(const ppi_trace *trace, void *client_data, ppi_trace_listener_callbacks callbacks)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_remove_listener</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a20a86d19fdbc3d344e1b8b88cb74ad3d</anchor>
+      <arglist>(const ppi_trace *trace, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_touch_trace_get_size_valid</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a4d54f75bcb226aec4f54c5c38618f5a1</anchor>
+      <arglist>(const ppi_touch_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_touch_trace_get_size</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>ae43aeb151fd3c855169f644fbe2d4fa4</anchor>
+      <arglist>(const ppi_touch_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_touch_trace_get_ellipse_valid</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>aa8eec030222c68e321cf5750e13ec226</anchor>
+      <arglist>(const ppi_touch_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_size_2d</type>
+      <name>ppi_touch_trace_get_ellipse</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>ae0bca594f9848fa17695c248dfff7778</anchor>
+      <arglist>(const ppi_touch_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_touch_trace_get_rotation_valid</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a16a64566e9a07ccacf50b8801f3e39ac</anchor>
+      <arglist>(const ppi_touch_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_touch_trace_get_rotation</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a988ce9f4d93362f5ae253b06294fa13a</anchor>
+      <arglist>(const ppi_touch_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_touch_trace_get_pressure_valid</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a6d2e5d71efbc44fdb3dc5df8f0f8a03e</anchor>
+      <arglist>(const ppi_touch_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_touch_trace_get_pressure</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>adc6b4e63bd6d30447eda09ad9a2573cf</anchor>
+      <arglist>(const ppi_touch_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_touch_trace_get_last_size_valid</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>ab2ea332c0ef06424e7efb2d9c0a46fa0</anchor>
+      <arglist>(const ppi_touch_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_touch_trace_get_last_size</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>aeb098c615fa5135813d7d82b7a9c42c3</anchor>
+      <arglist>(const ppi_touch_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_touch_trace_get_last_ellipse_valid</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a403b9463849e8487aa4c03ce52c7bfbf</anchor>
+      <arglist>(const ppi_touch_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_size_2d</type>
+      <name>ppi_touch_trace_get_last_ellipse</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a1713fa2f8e7b242ad524046c6c6641e0</anchor>
+      <arglist>(const ppi_touch_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_touch_trace_get_last_rotation_valid</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>aa5a97feb6b03b5d4150f07916c787665</anchor>
+      <arglist>(const ppi_touch_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_touch_trace_get_last_rotation</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>aded42a1e1ca9b54a6193a3c790b50419</anchor>
+      <arglist>(const ppi_touch_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_touch_trace_get_last_pressure</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a7dd1d69b325643cc6c7e2502d4a703e9</anchor>
+      <arglist>(const ppi_touch_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_touch_trace_get_last_pressure_valid</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a9e3e9efb19c15947118d4d123606a539</anchor>
+      <arglist>(const ppi_touch_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_touch_trace_add_listener</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a0d569c344e2417bc1ef184231ffe3596</anchor>
+      <arglist>(const ppi_touch_trace *trace, void *client_data, ppi_touch_trace_listener_callbacks callbacks)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_touch_trace_remove_listener</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a4f79af209b39f1bd2b5511ca2cbaa3af</anchor>
+      <arglist>(const ppi_touch_trace *trace, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_pen_trace_get_pen_id</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>adba43fac73d7fa014496624cc6e32381</anchor>
+      <arglist>(const ppi_pen_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_pen_trace_get_pressure_valid</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a351a09d6e596d7b6450ba586dd895618</anchor>
+      <arglist>(const ppi_pen_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_pen_trace_get_pressure</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a8aa5b95da26a1e21b8290dfba6e3033f</anchor>
+      <arglist>(const ppi_pen_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_pen_trace_get_buttons</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a204b48662f5cd3d531132a756d69636d</anchor>
+      <arglist>(const ppi_pen_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_pen_trace_get_last_pressure_valid</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a0dbd629742421937a7cc02617dba8d3a</anchor>
+      <arglist>(const ppi_pen_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_pen_trace_get_last_pressure</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>af718290e489c9dfe96659e470f14f1b2</anchor>
+      <arglist>(const ppi_pen_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_pen_trace_get_last_buttons</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a90406abc681635efb830482906714f45</anchor>
+      <arglist>(const ppi_pen_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_pen_trace_add_listener</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a4a9f29bb4d7568692526f1135e317f17</anchor>
+      <arglist>(const ppi_pen_trace *trace, void *client_data, ppi_pen_trace_listener_callbacks callbacks)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_pen_trace_remove_listener</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>acb13213c678a4d4dd552f3490e372d0b</anchor>
+      <arglist>(const ppi_pen_trace *trace, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_hover_trace_get_pen_id</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a2045be0301e1fa95716599c5abbd0a88</anchor>
+      <arglist>(const ppi_hover_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_hover_trace_get_buttons</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a34b812087aeb3135bc71f00158a33845</anchor>
+      <arglist>(const ppi_hover_trace *trace, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_hover_trace_get_last_buttons</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a25f99933995c3ac459078dee2af9a601</anchor>
+      <arglist>(const ppi_hover_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_hover_trace_add_listener</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>ab72aa9620d2a32578c24f2e01f589b40</anchor>
+      <arglist>(const ppi_hover_trace *trace, void *client_data, ppi_hover_trace_listener_callbacks callbacks)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_hover_trace_remove_listener</name>
+      <anchorfile>ppi__trace_8h.html</anchorfile>
+      <anchor>a555e172c42dbe02aa8406a70b17165f9</anchor>
+      <arglist>(const ppi_hover_trace *trace, void *client_data)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ppi_trace_gen.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/c/include/PPI/</path>
+    <filename>ppi__trace__gen_8h</filename>
+    <includes id="ppi__api__base__shared_8h" name="ppi_api_base_shared.h" local="no" imported="no">PPI/ppi_api_base_shared.h</includes>
+    <includes id="ppi__trace_8h" name="ppi_trace.h" local="no" imported="no">PPI/ppi_trace.h</includes>
+    <includes id="ppi__trace__shared_8h" name="ppi_trace_shared.h" local="no" imported="no">PPI/ppi_trace_shared.h</includes>
+    <member kind="function">
+      <type>ppi_trace_gen *</type>
+      <name>ppi_create_trace_gen</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>af23f80c54b5bb297af5db156c0f378eb</anchor>
+      <arglist>(const char *host)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_process_events</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>abe1897e7cf787b5a21cfc5fe5e428359</anchor>
+      <arglist>(ppi_trace_gen *gen, const double max_processing_time)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>ppi_trace_gen_is_connected</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>ad24fb03d7e4ab7bb7265ccae301011c7</anchor>
+      <arglist>(const ppi_trace_gen *gen)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_trace *</type>
+      <name>ppi_trace_gen_claim_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a6e1cdf7b29ed0b0533cfc3a909751980</anchor>
+      <arglist>(ppi_trace_gen *gen, const ppi_trace *trace, const bool transfer_my_listener, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_cancel_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a4c02a111391e178d4a2d1fe5a919b224</anchor>
+      <arglist>(ppi_trace_gen *gen, const ppi_trace *trace)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_rect_2d</type>
+      <name>ppi_trace_gen_get_virtual_desktop_rect</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>acddf37e926b0cfed8c834fbfd874e827</anchor>
+      <arglist>(const ppi_trace_gen *gen)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_rect_2d</type>
+      <name>ppi_trace_gen_get_virtual_sensor_rect</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a2c3d586ed4a38e4ba2d894d316b505ac</anchor>
+      <arglist>(const ppi_trace_gen *gen)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_trace_gen_get_last_event_time</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>aff8ad6f01c11f8f0eec157dbd0f8cfbb</anchor>
+      <arglist>(const ppi_trace_gen *gen)</arglist>
+    </member>
+    <member kind="function">
+      <type>double</type>
+      <name>ppi_trace_gen_get_time_estimate</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>aeceb1cbfceee1ee348adf961ba0a4f94</anchor>
+      <arglist>(const ppi_trace_gen *gen)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_set_transform</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a30a8604430a625c8f67ef304db91ef8b</anchor>
+      <arglist>(ppi_trace_gen *gen, const double scale_x, const double scale_y, const double offset_x, const double offset_y)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_trace_gen *</type>
+      <name>ppi_api_base_cast_to_trace_gen</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a9cf2c30c8d667c3b980c313df96f39a0</anchor>
+      <arglist>(ppi_api_base *base)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_api_base *</type>
+      <name>ppi_trace_gen_cast_to_base</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a5a611108c438c2f6e32e77bf15ab41eb</anchor>
+      <arglist>(ppi_trace_gen *gen)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_trace_gen_get_num_touch_traces</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a633c149004c0af0965072077df1ab603</anchor>
+      <arglist>(const ppi_trace_gen *gen)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_touch_trace *</type>
+      <name>ppi_trace_gen_get_touch_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a99a50ed6ea67efd6260fb910fcf13a4e</anchor>
+      <arglist>(const ppi_trace_gen *gen, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_trace_gen_get_num_pen_traces</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>ab322eb5329775b9bbc80e02fa6ec66b1</anchor>
+      <arglist>(const ppi_trace_gen *gen)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_pen_trace *</type>
+      <name>ppi_trace_gen_get_pen_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>ae04b6cfcd519f31de6890934b02b5a9f</anchor>
+      <arglist>(const ppi_trace_gen *gen, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_trace_gen_get_num_hover_traces</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a9777b892bfd113902b722a6e653282e8</anchor>
+      <arglist>(const ppi_trace_gen *gen)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_hover_trace *</type>
+      <name>ppi_trace_gen_get_hover_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>ab1eada191b82413f88b62aeeefadd504</anchor>
+      <arglist>(const ppi_trace_gen *gen, const uint32_t index)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_touch_trace *</type>
+      <name>ppi_trace_gen_find_touch_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>ac533c1404041f9244a3ff231c6c5b82a</anchor>
+      <arglist>(const ppi_trace_gen *gen, const uint32_t traceID)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_pen_trace *</type>
+      <name>ppi_trace_gen_find_pen_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a5ac5886f01daaafa46b4154ada4c8399</anchor>
+      <arglist>(const ppi_trace_gen *gen, const uint32_t traceID)</arglist>
+    </member>
+    <member kind="function">
+      <type>const ppi_hover_trace *</type>
+      <name>ppi_trace_gen_find_hover_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a8a3d5ca6c8c3706197f79e872b326e6d</anchor>
+      <arglist>(const ppi_trace_gen *gen, const uint32_t traceID)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_add_listener</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>ae4cf2ea174950e37152decae44fe30bb</anchor>
+      <arglist>(const ppi_trace_gen *gen, void *client_data, ppi_trace_gen_callbacks callbacks)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_remove_listener</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>ae03791e7b72768607b06d58da0e0ae4c</anchor>
+      <arglist>(const ppi_trace_gen *gen, void *client_data)</arglist>
+    </member>
+    <member kind="function">
+      <type>ppi_trace_gen_emu_mode</type>
+      <name>ppi_trace_gen_get_emu_mode</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a32ec23f97cc648a2bf9a7f7405aaa4bb</anchor>
+      <arglist>(const ppi_trace_gen *gen)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_set_emu_mode</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a37645338221cc603c2d37a5d9dbdb527</anchor>
+      <arglist>(ppi_trace_gen *gen, ppi_trace_gen_emu_mode mode)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_add_emu_mouse_event</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a865dfd97e0e4402477c832d6bb39bb61</anchor>
+      <arglist>(ppi_trace_gen *gen, ppi_trace_gen_emu_mouse_event event)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_debug_input_pass_begin</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a9badc7502e632e4a1fa2918efb3603af</anchor>
+      <arglist>(ppi_trace_gen *gen)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_debug_input_pass_end</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a3a4de680567feb87a24316b1beabd7cd</anchor>
+      <arglist>(ppi_trace_gen *gen)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_trace_gen_debug_begin_touch_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>aed02c3149f2794414d9a678e2be2e03d</anchor>
+      <arglist>(ppi_trace_gen *gen, const ppi_pos_2d pos, const double size, const ppi_size_2d ellipse, const double rotation, const double pressure, const double time)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_debug_update_touch_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a93dadf9a4cf906dcf84e60cef3160969</anchor>
+      <arglist>(ppi_trace_gen *gen, const uint32_t traceId, const ppi_pos_2d pos, const double size, const ppi_size_2d ellipse, const double rotation, const double pressure, const double time)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_debug_end_touch_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a8b3621f5d003be96b14e8f5b83898cfb</anchor>
+      <arglist>(ppi_trace_gen *gen, const uint32_t traceId, const ppi_trace_state end_state)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_trace_gen_debug_begin_pen_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a360d9d004475596248a3bb71be4ebc67</anchor>
+      <arglist>(ppi_trace_gen *gen, const uint32_t penGuid, const ppi_pos_2d pos, const double pressure, const uint32_t buttons, const double time)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_debug_update_pen_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>ab816c3a4f85f761b0705467dc5266d12</anchor>
+      <arglist>(ppi_trace_gen *gen, const uint32_t traceId, const ppi_pos_2d pos, const double pressure, const uint32_t buttons, const double time)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_debug_end_pen_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a910bf36282bebfe6cbcbfac720310208</anchor>
+      <arglist>(ppi_trace_gen *gen, const uint32_t traceId, const ppi_trace_state end_state)</arglist>
+    </member>
+    <member kind="function">
+      <type>uint32_t</type>
+      <name>ppi_trace_gen_debug_begin_hover_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>ae3e781e58474565e3935ce3f5a913718</anchor>
+      <arglist>(ppi_trace_gen *gen, const uint32_t penGuid, const ppi_pos_2d pos, const uint32_t buttons, const double time)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_debug_update_hover_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>a66c516ace263683256f1ca883e6982f8</anchor>
+      <arglist>(ppi_trace_gen *gen, const uint32_t traceId, const ppi_pos_2d pos, const uint32_t buttons, const double time)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ppi_trace_gen_debug_end_hover_trace</name>
+      <anchorfile>ppi__trace__gen_8h.html</anchorfile>
+      <anchor>ab0fd9d7e033bd3e59b96cb2323c23d42</anchor>
+      <arglist>(ppi_trace_gen *gen, const uint32_t traceId, const ppi_trace_state end_state)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ppi_trace_shared.h</name>
+    <path>Z:/home/autobuild/projects/f/mtouch/framework/api/shared/include/PPI/</path>
+    <filename>ppi__trace__shared_8h</filename>
+    <includes id="ppi__api__base__shared_8h" name="ppi_api_base_shared.h" local="no" imported="no">PPI/ppi_api_base_shared.h</includes>
+    <includes id="ppi__geom_8h" name="ppi_geom.h" local="no" imported="no">PPI/ppi_geom.h</includes>
+    <class kind="struct">ppi_input_pass_callbacks</class>
+    <class kind="struct">ppi_trace_listener_callbacks</class>
+    <class kind="struct">ppi_touch_trace_listener_callbacks</class>
+    <class kind="struct">ppi_pen_trace_listener_callbacks</class>
+    <class kind="struct">ppi_hover_trace_listener_callbacks</class>
+    <class kind="struct">ppi_trace_gen_callbacks</class>
+    <class kind="struct">ppi_trace_gen_emu_mouse_event</class>
+    <class kind="struct">ppi_monitor</class>
+    <class kind="struct">ppi_sensor</class>
+    <class kind="struct">ppi_hw_info_callbacks</class>
+    <member kind="typedef">
+      <type>struct ppi_trace_gen</type>
+      <name>ppi_trace_gen</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>ab2d117e0e78ab1fcb41b806f7e651014</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct ppi_hw_info</type>
+      <name>ppi_hw_info</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>ab288ace963ebe2535feb525e347f272c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct ppi_trace</type>
+      <name>ppi_trace</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>aac17b21e3cb356929f438c4b7e6072c2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct ppi_touch_trace</type>
+      <name>ppi_touch_trace</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a3b9afb63a8ce1422f2fea0ee0001a366</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct ppi_pen_trace</type>
+      <name>ppi_pen_trace</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a1edbf8430e9afacf2e9dc7598aa2d33f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>struct ppi_hover_trace</type>
+      <name>ppi_hover_trace</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a4db10fa5eeecc61b951e5f6f2a844765</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_virtual_desktop_callback</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>ac02d3204cdc993b2d598dab5ce18781e</anchor>
+      <arglist>)(double origin_x, double origin_y, double width, double height, void *client_data)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_connection_callback</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>add0ed54de74e51efe072691ec71b31e4</anchor>
+      <arglist>)(bool was_connected, bool is_connected, void *client_data)</arglist>
+    </member>
+    <member kind="enumeration">
+      <name>ppi_trace_state</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>ac446c87f9b448a6e0fe09579ae282667</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_TRACE_BEGAN</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>ac446c87f9b448a6e0fe09579ae282667a866fd1256451117d49513695f484d811</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_TRACE_CONTACT_ENDED</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>ac446c87f9b448a6e0fe09579ae282667aaddadf301159bef832b9c41309dda642</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_TRACE_HOVER_ENDED</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>ac446c87f9b448a6e0fe09579ae282667aa7e3d984ae8dd179fe08a7429bddf0bf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_TRACE_CANCELED</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>ac446c87f9b448a6e0fe09579ae282667aef2f31ceb6109df68d8132e6ccc19626</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>ppi_trace_gen_emu_mode</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a4f6d9275a4a21be27fc63f6e73cacd86</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_TRACE_GEN_NO_EMULATION</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a4f6d9275a4a21be27fc63f6e73cacd86a5ceb8784a207d683fbfbfa448d0794b7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_TRACE_GEN_EMULATE_TOUCH_AND_PEN</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a4f6d9275a4a21be27fc63f6e73cacd86ac803618623873345b030ec5f4bf3fbab</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>ppi_trace_gen_emu_type</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>abe217ca3417eab3bc41f39d0e6837dfb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_TRACE_GEN_BUTTON_PRESSED</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>abe217ca3417eab3bc41f39d0e6837dfba49a2fe50ff91fdf804bb3a6d8d080504</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_TRACE_GEN_BUTTON_RELEASED</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>abe217ca3417eab3bc41f39d0e6837dfba317e006ba110000d85d8b97fbafbf6e5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_TRACE_GEN_MOUSE_MOVED</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>abe217ca3417eab3bc41f39d0e6837dfbaf7fe029aed9c23ab74fe6efb92dec9d6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>ppi_trace_gen_emu_button</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>aee3735a0f28c7782251e71410d31ec0e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_TRACE_GEN_BUTTON_NONE</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>aee3735a0f28c7782251e71410d31ec0eae6fd40b4aa1aec1116b9c68a416dd522</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_TRACE_GEN_BUTTON_LEFT</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>aee3735a0f28c7782251e71410d31ec0ea2e432c53cf538bb5e18b8d9455f65c00</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_TRACE_GEN_BUTTON_MIDDLE</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>aee3735a0f28c7782251e71410d31ec0ea9b3d7435e9424e4695631fdb5878885d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_TRACE_GEN_BUTTON_RIGHT</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>aee3735a0f28c7782251e71410d31ec0eaec1394e3afdc7d691afeb4954529620c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>ppi_sensor_cap</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>abeb1126ddbecda79160aaa53656fca15</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_SENSOR_CAP_TOUCH_SIZE</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>abeb1126ddbecda79160aaa53656fca15a7d267e117fd3d7821773c6e048029abe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_SENSOR_CAP_TOUCH_ELLIPSE</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>abeb1126ddbecda79160aaa53656fca15a5e77db1ef52193283bcf7b4be98652d3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_SENSOR_CAP_TOUCH_ROTATION</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>abeb1126ddbecda79160aaa53656fca15a9fcc87169f240d8e281158573a22592d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_SENSOR_CAP_TOUCH_PRESSURE</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>abeb1126ddbecda79160aaa53656fca15a21181ad32ff05989b501cc9d6d75a3a2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_SENSOR_CAP_PEN_RANGE</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>abeb1126ddbecda79160aaa53656fca15a7a80446bb12cdbec955984131077d46b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_SENSOR_CAP_PEN_BUTTONS</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>abeb1126ddbecda79160aaa53656fca15a1e51431a885ca60e7c8cf36d01134698</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_SENSOR_CAP_PEN_PRESSURE</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>abeb1126ddbecda79160aaa53656fca15a907e691f22dc754cc91b44723f7740dc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_SENSOR_CAP_PEN_IDENTIFIERS</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>abeb1126ddbecda79160aaa53656fca15a5ac530618b07653b964a0e16ea11dbbf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumeration">
+      <name>ppi_model</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a2233aa04ea1704b3ed0b4dc9ad6c8a4b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_MODEL_VIRTUAL</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a2233aa04ea1704b3ed0b4dc9ad6c8a4baac7a77ff46f70d14229a5ce290bd9c77</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_MODEL_GENERIC</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a2233aa04ea1704b3ed0b4dc9ad6c8a4ba741c0da8b4a2d65ad1880edb8b719b70</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_MODEL_PPI_WORK36</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a2233aa04ea1704b3ed0b4dc9ad6c8a4baf20b17a096c2d3d019bf693c8f0234ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_MODEL_PPI_WORK48</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a2233aa04ea1704b3ed0b4dc9ad6c8a4ba2eee1533e82e995d59b15cf9ec3ddd74</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_MODEL_PPI_WORK55</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a2233aa04ea1704b3ed0b4dc9ad6c8a4bac69dc8977fbf6e5aa2fa1a94c898d557</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_MODEL_PPI_WALL64</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a2233aa04ea1704b3ed0b4dc9ad6c8a4ba89594087c2fc2c1a6dc16afa60c24d69</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_MODEL_PPI_WALL88</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a2233aa04ea1704b3ed0b4dc9ad6c8a4ba9991d2a81067900f6f1183fb6ba5d3b9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_MODEL_PPI_DUAL88</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a2233aa04ea1704b3ed0b4dc9ad6c8a4ba8ed4eda99e782e59fdf35cd431f900e6</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_MODEL_PPI_LCD19</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a2233aa04ea1704b3ed0b4dc9ad6c8a4baa67e5c354b9ae830c18cb3e118f4a9e2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_MODEL_PPI_LCD22</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a2233aa04ea1704b3ed0b4dc9ad6c8a4baa9e6488d15f7bb00626e7106e852112f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_MODEL_PPI_LCD27</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a2233aa04ea1704b3ed0b4dc9ad6c8a4ba32cfd80a40d8d3d8121c78fc7d04aa6b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_MODEL_PPI_LCD55</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a2233aa04ea1704b3ed0b4dc9ad6c8a4ba38e70915fe61d6d1e9d52417770fb3f2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="enumvalue">
+      <name>PPI_MODEL_PPI_LCD82</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a2233aa04ea1704b3ed0b4dc9ad6c8a4ba648119a29095ecceab9b627addacfd7b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_monitor_callback</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>aa1622d176d70c292501215db0085265f</anchor>
+      <arglist>)(uint32_t id, void *client_data)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_sensor_callback</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a3e367d013d0f253d981fb53f1204aff2</anchor>
+      <arglist>)(uint32_t id, void *client_data)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_input_pass_callback</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>ac3cadd36f1eb4ea73bb2275e6d1d532e</anchor>
+      <arglist>)(void *client_data)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_trace_listener_callback</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a758168c0ac79c076034da5604632428d</anchor>
+      <arglist>)(const ppi_trace *trace, void *client_data)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_touch_trace_listener_callback</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>ad1c24b9bb6d32aef96215ea9aa3abd1a</anchor>
+      <arglist>)(const ppi_touch_trace *trace, void *client_data)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_pen_trace_listener_callback</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>aab40a9a0cf40c47ab06da9a02e6e93c2</anchor>
+      <arglist>)(const ppi_pen_trace *trace, void *client_data)</arglist>
+    </member>
+    <member kind="typedef">
+      <type>void(*</type>
+      <name>ppi_hover_trace_listener_callback</name>
+      <anchorfile>ppi__trace__shared_8h.html</anchorfile>
+      <anchor>a5a9e3c8137b086582388fc456888a922</anchor>
+      <arglist>)(const ppi_hover_trace *trace, void *client_data)</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>VirtualDesktop</name>
+    <title>Virtual Desktop Coordinates</title>
+    <filename>virtualdesktop</filename>
+    <docanchor file="virtualdesktop">InputPointDisambiguation</docanchor>
+    <docanchor file="virtualdesktop">Example</docanchor>
+  </compound>
+  <compound kind="page">
+    <name>Concurrency</name>
+    <title>Concurrency and multiple threads</title>
+    <filename>concurrency</filename>
+  </compound>
+  <compound kind="page">
+    <name>TraceLifeCycle</name>
+    <title>Trace Life Cycle</title>
+    <filename>tracelifecycle</filename>
+    <docanchor file="tracelifecycle">InputPassBegin</docanchor>
+    <docanchor file="tracelifecycle">Overview</docanchor>
+    <docanchor file="tracelifecycle">TraceLifetimes</docanchor>
+    <docanchor file="tracelifecycle">Threading</docanchor>
+    <docanchor file="tracelifecycle">InputPassEnd</docanchor>
+    <docanchor file="tracelifecycle">InputProcessing</docanchor>
+  </compound>
+  <compound kind="page">
+    <name>TraceLifetimeEvents</name>
+    <title>Trace Lifetime Events</title>
+    <filename>tracelifetimeevents</filename>
+    <docanchor file="tracelifetimeevents">TouchTraces</docanchor>
+    <docanchor file="tracelifetimeevents">PenHoverTraces</docanchor>
+  </compound>
+  <compound kind="page">
+    <name>GestureRecognizerOverview</name>
+    <title>Gesture Recognizers</title>
+    <filename>gesturerecognizeroverview</filename>
+    <docanchor file="gesturerecognizeroverview">GestureRecChains</docanchor>
+    <docanchor file="gesturerecognizeroverview">GestureRecChainExample</docanchor>
+    <docanchor file="gesturerecognizeroverview">GestureRecOverview</docanchor>
+  </compound>
+  <compound kind="page">
+    <name>Changes102_110</name>
+    <title>API Changes from 1.0.2 to 1.1.0</title>
+    <filename>changes102_110</filename>
+    <docanchor file="changes102_110">CChanges</docanchor>
+    <docanchor file="changes102_110">OvewviewBreaking</docanchor>
+    <docanchor file="changes102_110">CPPAdditions</docanchor>
+    <docanchor file="changes102_110">OverviewBehavior</docanchor>
+    <docanchor file="changes102_110">CAdditions</docanchor>
+    <docanchor file="changes102_110">AllAdditions</docanchor>
+    <docanchor file="changes102_110">AllChanges</docanchor>
+    <docanchor file="changes102_110">OverviewNew</docanchor>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_gest_group_rec_callbacks</name>
+    <filename>structppi__gest__group__rec__callbacks.html</filename>
+    <member kind="variable">
+      <type>ppi_gest_group_rec_state_callback</type>
+      <name>on_state_changed</name>
+      <anchorfile>structppi__gest__group__rec__callbacks.html</anchorfile>
+      <anchor>a3f17b7af8b333af7fcaf4d49d0eaeedc</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_gest_indep_rec_callbacks</name>
+    <filename>structppi__gest__indep__rec__callbacks.html</filename>
+    <member kind="variable">
+      <type>ppi_gest_indep_rec_state_callback</type>
+      <name>on_state_changed</name>
+      <anchorfile>structppi__gest__indep__rec__callbacks.html</anchorfile>
+      <anchor>af93734a2ade65a7702d7ef5f28a40f82</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_gest_pzr_rec_callbacks</name>
+    <filename>structppi__gest__pzr__rec__callbacks.html</filename>
+    <member kind="variable">
+      <type>ppi_gest_group_rec_callbacks</type>
+      <name>group_rec_callbacks</name>
+      <anchorfile>structppi__gest__pzr__rec__callbacks.html</anchorfile>
+      <anchor>a9484c3b02eaa4a5a94028c3822e1bb08</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_gest_pzr_rec_success</type>
+      <name>success</name>
+      <anchorfile>structppi__gest__pzr__rec__callbacks.html</anchorfile>
+      <anchor>a593db1c571f0f947d3e3e0f08003163f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_gest_pzr_rec_failure</type>
+      <name>failure</name>
+      <anchorfile>structppi__gest__pzr__rec__callbacks.html</anchorfile>
+      <anchor>a760bd0e812785937cf34a3cfd6d98407</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_gest_tap_hold_rec_callbacks</name>
+    <filename>structppi__gest__tap__hold__rec__callbacks.html</filename>
+    <member kind="variable">
+      <type>ppi_gest_indep_rec_callbacks</type>
+      <name>indep_rec_callbacks</name>
+      <anchorfile>structppi__gest__tap__hold__rec__callbacks.html</anchorfile>
+      <anchor>a217dd324231a3e2afa090013fb96f0b0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_gest_tap_hold_rec_success</type>
+      <name>success</name>
+      <anchorfile>structppi__gest__tap__hold__rec__callbacks.html</anchorfile>
+      <anchor>a4cfd46707782f6c240222f8d815a447d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_gest_tap_hold_rec_failure</type>
+      <name>failure</name>
+      <anchorfile>structppi__gest__tap__hold__rec__callbacks.html</anchorfile>
+      <anchor>a3a7320be3b95b6cf03bc214a7dd47206</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_hover_trace_listener_callbacks</name>
+    <filename>structppi__hover__trace__listener__callbacks.html</filename>
+    <base>ppi_input_pass_callbacks</base>
+    <member kind="variable">
+      <type>ppi_trace_listener_callbacks</type>
+      <name>trace_listener_callbacks</name>
+      <anchorfile>structppi__hover__trace__listener__callbacks.html</anchorfile>
+      <anchor>aba41c7a3b742b52b354745e0f39de122</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_hover_trace_listener_callback</type>
+      <name>on_hover_trace_canceled</name>
+      <anchorfile>structppi__hover__trace__listener__callbacks.html</anchorfile>
+      <anchor>aacc5463bfffb991bb6062d2f782c3b9d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_hover_trace_listener_callback</type>
+      <name>on_hover_trace_end</name>
+      <anchorfile>structppi__hover__trace__listener__callbacks.html</anchorfile>
+      <anchor>a62977095f0022c73dfa8ff71fdf7e333</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_hover_trace_listener_callback</type>
+      <name>on_buttons_changed</name>
+      <anchorfile>structppi__hover__trace__listener__callbacks.html</anchorfile>
+      <anchor>aca4f8a2be550fa12ee6b431119699097</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_hw_info_callbacks</name>
+    <filename>structppi__hw__info__callbacks.html</filename>
+    <member kind="variable">
+      <type>ppi_connection_callback</type>
+      <name>on_connection_changed</name>
+      <anchorfile>structppi__hw__info__callbacks.html</anchorfile>
+      <anchor>a688d6df7ba7257e525bb58d2a4c90fd2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_monitor_callback</type>
+      <name>on_monitor_changed</name>
+      <anchorfile>structppi__hw__info__callbacks.html</anchorfile>
+      <anchor>a976dadcab161a5fe29a0dba3d39ae219</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_monitor_callback</type>
+      <name>on_monitor_to_be_removed</name>
+      <anchorfile>structppi__hw__info__callbacks.html</anchorfile>
+      <anchor>a3a381e0f9516f3c703b5184193c9e386</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_sensor_callback</type>
+      <name>on_sensor_changed</name>
+      <anchorfile>structppi__hw__info__callbacks.html</anchorfile>
+      <anchor>a0aaa6826985ad794709d203ce4173bc1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_sensor_callback</type>
+      <name>on_sensor_to_be_removed</name>
+      <anchorfile>structppi__hw__info__callbacks.html</anchorfile>
+      <anchor>ac8299d94d279020066e778df532dd579</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_virtual_desktop_callback</type>
+      <name>on_virtual_desktop_changed</name>
+      <anchorfile>structppi__hw__info__callbacks.html</anchorfile>
+      <anchor>ad70194d94af60ead8cb9f757f180f59e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_input_pass_callbacks</name>
+    <filename>structppi__input__pass__callbacks.html</filename>
+    <member kind="variable">
+      <type>ppi_input_pass_callback</type>
+      <name>on_input_pass_begin</name>
+      <anchorfile>structppi__input__pass__callbacks.html</anchorfile>
+      <anchor>a1ff7ae32c97d166fb98d2593e21ea423</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_input_pass_callback</type>
+      <name>on_input_pass_end</name>
+      <anchorfile>structppi__input__pass__callbacks.html</anchorfile>
+      <anchor>accb304d1a5a7286bb0183afba65bb536</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_monitor</name>
+    <filename>structppi__monitor.html</filename>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>id</name>
+      <anchorfile>structppi__monitor.html</anchorfile>
+      <anchor>a52d85b4f33dfc85685e794c3925dde36</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_model</type>
+      <name>model</name>
+      <anchorfile>structppi__monitor.html</anchorfile>
+      <anchor>a78743b2b14726454fd6e18d66c662030</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_rect_2d</type>
+      <name>rectPix</name>
+      <anchorfile>structppi__monitor.html</anchorfile>
+      <anchor>a13c19666417d102d58ea1922825338ca</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_size_2d</type>
+      <name>sizeMM</name>
+      <anchorfile>structppi__monitor.html</anchorfile>
+      <anchor>a1a409475f3f1fd9ee3cc014b409680d1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>char</type>
+      <name>name</name>
+      <anchorfile>structppi__monitor.html</anchorfile>
+      <anchor>aa2612b0fd97a853bf7ddf42f818adff3</anchor>
+      <arglist>[32]</arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_pen_trace_listener_callbacks</name>
+    <filename>structppi__pen__trace__listener__callbacks.html</filename>
+    <base>ppi_input_pass_callbacks</base>
+    <member kind="variable">
+      <type>ppi_trace_listener_callbacks</type>
+      <name>trace_listener_callbacks</name>
+      <anchorfile>structppi__pen__trace__listener__callbacks.html</anchorfile>
+      <anchor>a1fa2b64c852018346fdaf8f33db0e9b9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_pen_trace_listener_callback</type>
+      <name>on_pen_trace_canceled</name>
+      <anchorfile>structppi__pen__trace__listener__callbacks.html</anchorfile>
+      <anchor>ac6f645519cf5f1508616d165ba92fb4f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_pen_trace_listener_callback</type>
+      <name>on_pen_trace_end</name>
+      <anchorfile>structppi__pen__trace__listener__callbacks.html</anchorfile>
+      <anchor>a17fb95279498d5225d80e0778daffa76</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_pen_trace_listener_callback</type>
+      <name>on_buttons_changed</name>
+      <anchorfile>structppi__pen__trace__listener__callbacks.html</anchorfile>
+      <anchor>a9df26f5cc5e24727d3d5c22ad36cd210</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_pos_2d</name>
+    <filename>structppi__pos__2d.html</filename>
+    <member kind="variable">
+      <type>double</type>
+      <name>x</name>
+      <anchorfile>structppi__pos__2d.html</anchorfile>
+      <anchor>add3858206d76c74187bf0daae89c7f38</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>y</name>
+      <anchorfile>structppi__pos__2d.html</anchorfile>
+      <anchor>ac6ea6580201f7adee9f29cad5ca8b73e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_rect_2d</name>
+    <filename>structppi__rect__2d.html</filename>
+    <member kind="variable">
+      <type>ppi_pos_2d</type>
+      <name>origin</name>
+      <anchorfile>structppi__rect__2d.html</anchorfile>
+      <anchor>a8da725853928f9b1c994332deb3bf4fd</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_size_2d</type>
+      <name>size</name>
+      <anchorfile>structppi__rect__2d.html</anchorfile>
+      <anchor>ac63843c8637f9b6e0174ab830e2b98e6</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_sensor</name>
+    <filename>structppi__sensor.html</filename>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>id</name>
+      <anchorfile>structppi__sensor.html</anchorfile>
+      <anchor>aadde98064ba66fd4a8e6b8d7570236eb</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_model</type>
+      <name>model</name>
+      <anchorfile>structppi__sensor.html</anchorfile>
+      <anchor>a082ac61e07bba779f052c439f19bc627</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>flags</name>
+      <anchorfile>structppi__sensor.html</anchorfile>
+      <anchor>a4ebad8332c614629b809dc4d3ed90a78</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint32_t</type>
+      <name>monitorId</name>
+      <anchorfile>structppi__sensor.html</anchorfile>
+      <anchor>a3e7b64b8adb8a04c5f75208592e9c3a8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_rect_2d</type>
+      <name>rectPix</name>
+      <anchorfile>structppi__sensor.html</anchorfile>
+      <anchor>a70b21d5bfb6ec8e4e37e05a530435c2b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_rect_2d</type>
+      <name>visRectPix</name>
+      <anchorfile>structppi__sensor.html</anchorfile>
+      <anchor>a4f28f1639cda696219e06129cbb29961</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_size_2d</type>
+      <name>sizeMM</name>
+      <anchorfile>structppi__sensor.html</anchorfile>
+      <anchor>a8257ffcadaf6e6882fa9f6f535ce256b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_size_2d</name>
+    <filename>structppi__size__2d.html</filename>
+    <member kind="variable">
+      <type>double</type>
+      <name>width</name>
+      <anchorfile>structppi__size__2d.html</anchorfile>
+      <anchor>a2c1b4961dd2135456273814e41090025</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>double</type>
+      <name>height</name>
+      <anchorfile>structppi__size__2d.html</anchorfile>
+      <anchor>a494a432e306a779548fbb79a20b233c1</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_touch_trace_listener_callbacks</name>
+    <filename>structppi__touch__trace__listener__callbacks.html</filename>
+    <base>ppi_input_pass_callbacks</base>
+    <member kind="variable">
+      <type>ppi_trace_listener_callbacks</type>
+      <name>trace_listener_callbacks</name>
+      <anchorfile>structppi__touch__trace__listener__callbacks.html</anchorfile>
+      <anchor>a3aa44332b502a820d02d35b27548a95b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_touch_trace_listener_callback</type>
+      <name>on_touch_trace_canceled</name>
+      <anchorfile>structppi__touch__trace__listener__callbacks.html</anchorfile>
+      <anchor>ae9d221684a96df9cb8f15d1aeca4c78d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_touch_trace_listener_callback</type>
+      <name>on_touch_trace_end</name>
+      <anchorfile>structppi__touch__trace__listener__callbacks.html</anchorfile>
+      <anchor>ab9ce9916796f1482073d16d404c8cb80</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_trace_gen_callbacks</name>
+    <filename>structppi__trace__gen__callbacks.html</filename>
+    <member kind="variable">
+      <type>ppi_input_pass_callbacks</type>
+      <name>input_pass_callbacks</name>
+      <anchorfile>structppi__trace__gen__callbacks.html</anchorfile>
+      <anchor>aa72011bf68c2c22f29448ae6278492cf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_touch_trace_listener_callback</type>
+      <name>on_touch_trace_begin</name>
+      <anchorfile>structppi__trace__gen__callbacks.html</anchorfile>
+      <anchor>ab9a2707b7a7bb008f68abb8a6e84f9e2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_touch_trace_listener_callback</type>
+      <name>on_touch_trace_canceled</name>
+      <anchorfile>structppi__trace__gen__callbacks.html</anchorfile>
+      <anchor>a9ca8656f7f4b8bd3c97d377056c5b8e5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_touch_trace_listener_callback</type>
+      <name>on_touch_trace_end</name>
+      <anchorfile>structppi__trace__gen__callbacks.html</anchorfile>
+      <anchor>a0a7220faac906df32a0196d5aa2e97e3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_pen_trace_listener_callback</type>
+      <name>on_pen_trace_begin</name>
+      <anchorfile>structppi__trace__gen__callbacks.html</anchorfile>
+      <anchor>ae92dd11478b88e05f7817bd28ed82ae9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_pen_trace_listener_callback</type>
+      <name>on_pen_trace_canceled</name>
+      <anchorfile>structppi__trace__gen__callbacks.html</anchorfile>
+      <anchor>a6426c27de53d0759471d2385193d726f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_pen_trace_listener_callback</type>
+      <name>on_pen_trace_end</name>
+      <anchorfile>structppi__trace__gen__callbacks.html</anchorfile>
+      <anchor>a841c294b8117d6f0952fe7ea1a091731</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_hover_trace_listener_callback</type>
+      <name>on_hover_trace_begin</name>
+      <anchorfile>structppi__trace__gen__callbacks.html</anchorfile>
+      <anchor>aac8c075df0ac182b03e5be2f31e4458f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_hover_trace_listener_callback</type>
+      <name>on_hover_trace_canceled</name>
+      <anchorfile>structppi__trace__gen__callbacks.html</anchorfile>
+      <anchor>a18a3fb123642e5e620a7d96124f0ae8c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_hover_trace_listener_callback</type>
+      <name>on_hover_trace_end</name>
+      <anchorfile>structppi__trace__gen__callbacks.html</anchorfile>
+      <anchor>aca784bdcc5ca822f900549afbe159288</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_virtual_desktop_callback</type>
+      <name>on_virtual_desktop_changed</name>
+      <anchorfile>structppi__trace__gen__callbacks.html</anchorfile>
+      <anchor>ac5b6fdd5d13a5b66208e65612d90f85e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_connection_callback</type>
+      <name>on_connection_changed</name>
+      <anchorfile>structppi__trace__gen__callbacks.html</anchorfile>
+      <anchor>ab78ca49b5294e1b67d41bdb73be3f89a</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_trace_gen_emu_mouse_event</name>
+    <filename>structppi__trace__gen__emu__mouse__event.html</filename>
+    <member kind="variable">
+      <type>ppi_trace_gen_emu_type</type>
+      <name>type</name>
+      <anchorfile>structppi__trace__gen__emu__mouse__event.html</anchorfile>
+      <anchor>aea6d45df0fef737cf456e44ddb45a69a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_pos_2d</type>
+      <name>pos</name>
+      <anchorfile>structppi__trace__gen__emu__mouse__event.html</anchorfile>
+      <anchor>af1ee35dcf02ffcae23ed3f60f674ba17</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_trace_gen_emu_button</type>
+      <name>button</name>
+      <anchorfile>structppi__trace__gen__emu__mouse__event.html</anchorfile>
+      <anchor>a11ae4a898e57b4dbf08dc0a97c64495e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="struct">
+    <name>ppi_trace_listener_callbacks</name>
+    <filename>structppi__trace__listener__callbacks.html</filename>
+    <base>ppi_input_pass_callbacks</base>
+    <member kind="variable">
+      <type>ppi_input_pass_callbacks</type>
+      <name>input_pass_callbacks</name>
+      <anchorfile>structppi__trace__listener__callbacks.html</anchorfile>
+      <anchor>afac3b4e53fa40a4ff3ed2b653b9483f7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_trace_listener_callback</type>
+      <name>on_trace_canceled</name>
+      <anchorfile>structppi__trace__listener__callbacks.html</anchorfile>
+      <anchor>af665796972f82a7c4fb8158fc4208dcc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>ppi_trace_listener_callback</type>
+      <name>on_trace_end</name>
+      <anchorfile>structppi__trace__listener__callbacks.html</anchorfile>
+      <anchor>a03e42fd2696ce34eaf55afbf61c7062f</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+</tagfile>

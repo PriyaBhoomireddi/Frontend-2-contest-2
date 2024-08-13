@@ -1,0 +1,75 @@
+*{
+  color: #111111;
+  font-size: 13px;
+}
+
+QTAMItem#qtambaseitem{
+	background-color: #FFFFFF;
+
+}
+
+QFrame#itemseparator{
+	color: #E0E0E0;
+	background-color: #FFFFFF;
+}
+
+#cacheManagementControl{
+	background-color: #FFFFFF;
+	min-height:64px;
+}
+
+QLabel#itemDescLabel{
+	color:#777777;
+    margin-right: 15px;
+}
+
+/*  cancel/pause/resume buttons */
+QPushButton#actionMenuTextButton{color:#0696D7;border: none;padding: 0px;}
+QPushButton::hover#actionMenuTextButton{color: #0586C1;}
+QPushButton::pressed#actionMenuTextButton{color: #057FB6;}
+
+#switchItem {
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	background-color: #FFFFFF;
+	padding-left: 32px;		
+}
+#jobViewItem {
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	background-color: #FFFFFF;
+}
+
+#jobViewButton {
+	padding-left: 16px;	
+	padding-right: 8px;	
+	border: none;	  
+	color: #000000;
+	text-align: left;
+	min-height: 24px;
+}
+
+#jobViewButton:hover {    background-color: #00A4E1; color: #FFFFFF;  }
+
+
+/* shutdown menu buttons */
+QPushButton#quitButton {
+	background-color: #00A6E2; 
+	padding: 4px;	
+	border: none;	  
+	border-radius: 3px; 
+	color: #FFFFFF;
+}
+QPushButton#quitButton:disabled {    background-color: #A5E0F5;    }
+QPushButton#quitButton:hover {    background-color: #3AB5E1;   }
+QPushButton#quitButton:pressed {    background-color: #007EC0;}
+
+QPushButton#cancelButton{
+	background-color: #FAFAFA;
+	padding: 4px;
+	border: none;	 
+	border-radius: 3px; 
+}
+QPushButton#cancelButton:disabled{    background-color: #FFFFFF;   color: #D2D2D2;}
+QPushButton#cancelButton:hover{    background-color: #FFFFFF;}
+QPushButton#cancelButton:pressed{    background-color: #EAEAEA;  }

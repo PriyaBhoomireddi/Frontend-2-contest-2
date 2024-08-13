@@ -1,0 +1,153 @@
+//#define LOCAL_VIEWER
+#define FLIP_BACKFACING_NORMALS
+
+#define CLIPPING
+
+#define LIGHT_DIRECTIONAL_MULTIPLE
+
+#ifdef CLIPPING
+#include "Clipping.ogsfh"
+#endif
+
+#include "LightArray.ogsfh"
+
+// World transformation.
+uniform mat4 gWXf : World;
+
+// World transformation, inverse transpose.
+uniform mat4 gWITXf : WorldInverseTranspose;
+
+// World-view transformation
+uniform mat4 gWV : WorldView;
+
+// World-View-projection transformation.
+uniform mat4 gWVPXf : WorldViewProjection;
+
+// Whether the projection matrix flips Z: -1.0 if so, otherwise 1.0.
+uniform float gProjZSense : ProjectionZSense;
+
+uniform float gHatchSlope : HatchSlope = 1.0f;
+
+uniform float  gHatchPeriod : HatchPeriod = 10.0f;
+
+uniform vec3 gHatchTintColor : HatchTintColor = { 0.0, 0.5, 0.5 };
+
+uniform float  gHatchTintIntensity : HatchTintIntensity = 1.0f;
+
+// Opacity factor.
+uniform float gOpacity : Opacity = 1.0;
+
+// Depth priority, which shifts the model a bit forward in the z-buffer
+uniform float gDepthPriority : DepthPriority = 0.0;
+
+attribute VS_INPUT
+{
+    vec3 Pos  : POSITION;
+    vec3 Normal  : NORMAL;
+};
+
+attribute VS_TO_PS
+{
+    vec4 HPos : POSITION;
+
+#ifdef CLIPPING
+    // World position, for CLIPPING
+    vec4 HPw 	: TEXCOORD2;
+#endif
+};
+
+attribute pixelOut {
+    vec4 colorOut:COLOR0;
+};
+
+
+GLSLShader  HatchPatternVS{
+    void main()
+    {
+        vec4 P = vec4(Pos, 1.0);
+        HPos  = gWVPXf * P;
+
+        // modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+        HPos.z -= HPos.w * gDepthPriority;
+
+        #ifdef CLIPPING
+        // On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+        // First compute the Pw in vertex shader, then pass the Pw to pixel shader
+        HPw = gWXf * vec4(Pos, 1.0);
+        #endif
+
+        gl_Position = HPos;
+    }
+}
+
+
+GLSLShader HatchPatternPS{
+    void main()
+    {
+#ifdef CLIPPING
+		// Compute whether the pixel needs to be discard by the clipping planes.
+		bool needDiscard = false;
+		if (gNumClipPlanes > 0) { if(dot(HPw, gClipPlanes[0])<0) needDiscard = true;}
+		if (gNumClipPlanes > 1) { if(dot(HPw, gClipPlanes[1])<0) needDiscard = true;}
+		if (gNumClipPlanes > 2) { if(dot(HPw, gClipPlanes[2])<0) needDiscard = true;}
+		if (gNumClipPlanes > 3) { if(dot(HPw, gClipPlanes[3])<0) needDiscard = true;}
+		if (gNumClipPlanes > 4) { if(dot(HPw, gClipPlanes[4])<0) needDiscard = true;}
+		if (gNumClipPlanes > 5) { if(dot(HPw, gClipPlanes[5])<0) needDiscard = true;}
+    
+		if (needDiscard == true)
+			discard;
+#endif
+		vec2 coord = gl_FragCoord.xy;
+
+		float hatchPhase;
+		float dist;
+		vec3 hatchColor;
+
+		float hatchSlope = gHatchSlope;
+		if (abs(hatchSlope) <= 1.0)
+		{
+			hatchPhase = coord.y - hatchSlope * coord.x;
+			dist = mod(hatchPhase, gHatchPeriod);
+		}
+		else if(abs(hatchSlope) <= 2.0)
+		{
+			if (hatchSlope > 0.0)
+			{
+				hatchSlope = 2.0 - hatchSlope;
+			}
+			else
+			{
+				hatchSlope = -2.0 - hatchSlope;
+			}
+
+			hatchPhase = coord.x - hatchSlope * coord.y;
+			dist = mod(hatchPhase, gHatchPeriod);
+		}
+		else
+		{
+			dist = mod(coord.x, gHatchPeriod);
+		}
+
+		if (dist < 1.0)
+		{
+			hatchColor = vec3(0.0,0.0,0.0);
+		} 
+		else 
+		{
+			hatchColor.xyz = gHatchTintColor;
+		}  
+
+		vec4 final = vec4(hatchColor, gOpacity);
+
+        colorOut = final;
+    }
+}
+
+technique HatchPattern
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT,out VS_TO_PS) = HatchPatternVS;
+        PixelShader (in VS_TO_PS, out pixelOut) = HatchPatternPS;
+    }
+}

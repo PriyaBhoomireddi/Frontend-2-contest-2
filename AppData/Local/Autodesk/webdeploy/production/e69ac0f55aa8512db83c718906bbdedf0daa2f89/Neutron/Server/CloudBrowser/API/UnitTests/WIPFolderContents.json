@@ -1,0 +1,217 @@
+{
+    "versionedFiles": [
+      {
+        "lineage": {
+          "urn": "urn:adsk.wipqa:dm.lineage:ZOzOWCToQpSfTfVSvVyK2g",
+          "tempUrn": null,
+          "createTime": "2020-12-17T12:06:43+0000",
+          "lastModifiedTime": "2020-12-17T12:06:43+0000",
+          "lastModifiedUserId": "GLCRPCT4ZDYY",
+          "lastModifiedUserName": "bryantm",
+          "lastModifiedSortableName": null,
+          "properties": {
+            "notes": {
+              "value": "",
+              "dataType": "STRING"
+            },
+            "documentType": {
+              "value": "FusionDocType",
+              "dataType": "STRING"
+            }
+          },
+          "createUserId": "GLCRPCT4ZDYY",
+          "createUserName": "bryantm",
+          "createSortableName": null,
+          "permissions": null,
+          "parentFolderUrn": "urn:adsk.wipqa:fs.folder:co.72jbZ3t5Tg-HkbHGtOc2Rg",
+          "tipVersionUrn": "urn:adsk.wipqa:fs.file:vf.ZOzOWCToQpSfTfVSvVyK2g?version=1",
+          "xdioPayload": null,
+          "branchUrn": "urn:adsk.wipqa:dm.branch:Z-49ssmfQqC6VCPMWcUcLw",
+          "title": "2D Strategies",
+          "hidden": false,
+          "reserved": false,
+          "reservedTime": null,
+          "reservedUserId": null,
+          "reservedUserName": null,
+          "seedUrn": null
+        },
+        "versionedFile": {
+          "urn": "urn:adsk.wipqa:fs.file:vf.ZOzOWCToQpSfTfVSvVyK2g?version=1",
+          "tempUrn": null,
+          "createTime": "2020-12-17T12:06:43+0000",
+          "lastModifiedTime": "2020-12-17T12:06:49+0000",
+          "lastModifiedUserId": "GLCRPCT4ZDYY",
+          "lastModifiedUserName": "bryantm",
+          "lastModifiedSortableName": null,
+          "properties": {
+            "DesignModelRevisionID": {
+              "value": "ac31771d-b32e-47a7-9531-e3e21b81f95c",
+              "dataType": "STRING"
+            },
+            "rootFileName": {
+              "value": "2D Strategies.f3d",
+              "dataType": "STRING"
+            },
+            "translateChannel": {
+              "value": "convert-fusion-qa",
+              "dataType": "STRING"
+            },
+            "description": {
+              "value": "Item created",
+              "dataType": "STRING"
+            },
+            "viewableChannel": {
+              "value": "viewing-f3d-lmv-qa",
+              "dataType": "STRING"
+            },
+            "thumbnailStatus": {
+              "value": "REGISTERED",
+              "dataType": "STRING"
+            },
+            "isAutoSave": {
+              "value": "false",
+              "dataType": "BOOLEAN"
+            },
+            "EIPContext": {
+              "value": "{}",
+              "dataType": "STRING"
+            }
+          },
+          "createUserId": "GLCRPCT4ZDYY",
+          "createUserName": "bryantm",
+          "createSortableName": null,
+          "permissions": null,
+          "lineageUrn": "urn:adsk.wipqa:dm.lineage:ZOzOWCToQpSfTfVSvVyK2g",
+          "versionNumber": 1,
+          "name": "4f9e339a-e01d-4250-8743-146ff537b3b1.f3d",
+          "title": "2D Strategies",
+          "storageUrn": "urn:adsk.objects:os.object:wip.dm.qa/7e81c334-6e6c-4bf9-b57e-3cf4b9ae5118.f3d",
+          "storageType": "OSS",
+          "states": ["VIEWABLES_REGISTERED", "CONTENT_AVAILABLE"],
+          "fileSize": 68145,
+          "fileType": "f3d",
+          "mimeType": "application/vnd.autodesk.fusion360",
+          "translationPayload": null,
+          "seedUrn": null
+        }
+      },
+      {
+        "lineage": {
+          "urn": "urn:adsk.wipqa:dm.lineage:49eKvDuXSMCVep4oO6ZDXw",
+          "tempUrn": null,
+          "createTime": "2020-11-06T13:54:21+0000",
+          "lastModifiedTime": "2020-11-06T13:54:21+0000",
+          "lastModifiedUserId": "VHVJMQCXSL3S",
+          "lastModifiedUserName": "mark.obrien@autodesk.com",
+          "lastModifiedSortableName": null,
+          "properties": {},
+          "createUserId": "VHVJMQCXSL3S",
+          "createUserName": "mark.obrien@autodesk.com",
+          "createSortableName": null,
+          "permissions": null,
+          "parentFolderUrn": "urn:adsk.wipqa:fs.folder:co.72jbZ3t5Tg-HkbHGtOc2Rg",
+          "tipVersionUrn": "urn:adsk.wipqa:fs.file:vf.49eKvDuXSMCVep4oO6ZDXw?version=1",
+          "xdioPayload": null,
+          "branchUrn": "urn:adsk.wipqa:dm.branch:Z-49ssmfQqC6VCPMWcUcLw",
+          "title": "Untitled.f3d",
+          "hidden": false,
+          "reserved": false,
+          "reservedTime": null,
+          "reservedUserId": null,
+          "reservedUserName": null,
+          "seedUrn": null
+        },
+        "versionedFile": {
+          "urn": "urn:adsk.wipqa:fs.file:vf.49eKvDuXSMCVep4oO6ZDXw?version=1",
+          "tempUrn": null,
+          "createTime": "2020-11-06T13:54:21+0000",
+          "lastModifiedTime": "2020-11-06T13:54:22+0000",
+          "lastModifiedUserId": "VHVJMQCXSL3S",
+          "lastModifiedUserName": "mark.obrien@autodesk.com",
+          "lastModifiedSortableName": null,
+          "properties": {
+            "thumbnailStatus": {
+              "value": "REGISTERED",
+              "dataType": "STRING"
+            }
+          },
+          "createUserId": "VHVJMQCXSL3S",
+          "createUserName": "mark.obrien@autodesk.com",
+          "createSortableName": null,
+          "permissions": null,
+          "lineageUrn": "urn:adsk.wipqa:dm.lineage:49eKvDuXSMCVep4oO6ZDXw",
+          "versionNumber": 1,
+          "name": "Untitled.f3d",
+          "title": "Untitled.f3d",
+          "storageUrn": "urn:adsk.objects:os.object:wip.dm.qa/46b6d6d0-64fc-4ee2-ae1a-26a095ab7b75.f3d",
+          "storageType": "OSS",
+          "states": ["CONTENT_AVAILABLE"],
+          "fileSize": 97399,
+          "fileType": "f3d",
+          "mimeType": "application/vnd.autodesk.f3d",
+          "translationPayload": null,
+          "seedUrn": null
+        }
+      }
+    ],
+    "staticFiles": [],
+    "statics": [],
+    "folders": [
+      {
+        "urn": "urn:adsk.wipqa:fs.folder:co.7lFnxjACSqilDbWl2retbA",
+        "tempUrn": null,
+        "createTime": "2020-12-10T12:31:56+0000",
+        "lastModifiedTime": "2020-12-14T11:49:48+0000",
+        "lastModifiedUserId": "KG8XKHKD2QNY",
+        "lastModifiedUserName": "paul.courts",
+        "lastModifiedSortableName": null,
+        "properties": {},
+        "createUserId": "KG8XKHKD2QNY",
+        "createUserName": "paul.courts@autodesk.com",
+        "createSortableName": null,
+        "permissions": null,
+        "name": "Read",
+        "title": "Read",
+        "path": "/tenant-2315546/group-2020121044398923/Read",
+        "parentFolderUrn": "urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg",
+        "objectCount": 1,
+        "inheritParentSecurity": null,
+        "hidden": false,
+        "containerType": "FOLDER",
+        "lastModifiedTimeRollup": "2020-12-14T11:49:48+0000"
+      },
+      {
+        "urn": "urn:adsk.wipqa:fs.folder:co.H0jfqrgbS0eg7zrmFnpv4A",
+        "tempUrn": null,
+        "createTime": "2020-12-10T12:33:15+0000",
+        "lastModifiedTime": "2020-12-14T11:50:13+0000",
+        "lastModifiedUserId": "KG8XKHKD2QNY",
+        "lastModifiedUserName": "paul.courts",
+        "lastModifiedSortableName": null,
+        "properties": {},
+        "createUserId": "KG8XKHKD2QNY",
+        "createUserName": "paul.courts@autodesk.com",
+        "createSortableName": null,
+        "permissions": null,
+        "name": "View",
+        "title": "View",
+        "path": "/tenant-2315546/group-2020121044398923/View",
+        "parentFolderUrn": "urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg",
+        "objectCount": 1,
+        "inheritParentSecurity": null,
+        "hidden": false,
+        "containerType": "FOLDER",
+        "lastModifiedTimeRollup": "2020-12-14T11:50:20+0000"
+      }
+    ],
+    "relationships": [],
+    "page": {
+      "offset": 0,
+      "limit": 5,
+      "nextUrl": "folders/urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg/contents?offset=2",
+      "prevUrl": null
+    },
+    "totalCount": 5,
+    "filteredCount": 0,
+    "sortedUrns": null
+  }

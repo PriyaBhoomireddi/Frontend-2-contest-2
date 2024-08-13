@@ -1,0 +1,404 @@
+#version 330
+#include "Sketch_circle_ellipse_lt.ogsfh"
+#include "Sketch_ellipse_caps.ogsfh"
+#include "Sketch_line.ogsfh"
+#include "Sketch_line_type_line.ogsfh"
+
+uniform highp texture2D gCircleLineTypeCapsIndexTex_ : CircleLineTypeCapsIndexTex; 
+uniform highp sampler2D gCircleLineTypeCapsIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gCircleLineTypeCapsIndexTex_>; };
+uniform highp texture2D gEllipticalArcLineTypeCapsDrawOrderZTex_ : CircleCapsDrawOrderZTex;
+uniform highp sampler2D gEllipticalArcLineTypeCapsDrawOrderZTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gEllipticalArcLineTypeCapsDrawOrderZTex_>; };
+
+attribute VS_INPUT
+{
+    int VertexID : TEXCOORD0;
+    int InstanceID : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 vso_position;
+    vec2 vso_uv;
+    vec4 vso_ref;
+
+    flat vec2 vso_radius;
+    flat vec2 vso_range;
+    flat int vso_colorS;
+    flat float vso_weight;
+
+    flat int vso_glowColorS;
+    flat int vso_capTypeS;
+
+    flat int vso_patternIndexS;
+    flat int vso_lt_dotS;
+    flat int vso_lt_invertedS;
+
+    flat vec4 vso_patternProp;
+    flat int vso_start_capS;
+};
+
+attribute pixelOut
+{
+    vec4 pso_color : COLOR0;
+};
+
+GLSLShader Sketch_lt_ellipse_caps
+{
+
+struct VertexAttr_Caps_LT
+{
+    vec4 position; // transformed  vertex position
+
+    vec2 uv;     // uv is used to compute gradient
+    vec4 ref;   // xy reference point, zw reference dir
+
+    vec2 radius;  // x long axis, y short axis
+    vec2 range;  // x start angle, y end angle
+    uint color;  // line color
+    float weight; // line weight
+
+    uint glowColor; // glow color for highlights
+    uint capType; // cap type
+
+    uint patternIndex; // line pattern index
+    uint lt_dot;
+    uint lt_inverted;
+
+    vec4 patternProp; // line pattern properties: x - start skip len, y - end skip len, z - pattern scale, w - pattern offset
+    uint start_cap;
+};
+
+}
+
+GLSLShader LT_Ellipse_Caps_VS
+{
+
+void main()
+{
+    // load primitive index
+    uint primID = load_prim_id_from_tex(gCircleLineTypeCapsIndexTex, uint(gl_InstanceID));
+
+    // load ellipse information
+    EllipseAttr_Dash ellipse_attr;
+    EllipseAttr_LineType linetype_attr;
+    load_ellipse_info_lt(primID, ellipse_attr, linetype_attr);
+
+    if (gRetainMode)
+    {
+        load_dynamic_draworderz(uint(gl_InstanceID), gEllipticalArcLineTypeCapsDrawOrderZTex, ellipse_attr.drawZ);
+    }
+    else 
+    {
+        adjust_caps(ellipse_attr);
+    }
+
+    // initialize
+    VertexAttr_Caps_LT outputData = VertexAttr_Caps_LT(vec4(0.0f, 0.0f, 0.0f, 0.0f), vec2(0.0f, 0.0f), vec4(0.0f, 0.0f, 0.0f, 0.0f),
+                                                       vec2(0.0f, 0.0f), vec2(0.0f, 0.0f), uint(0), 0.0f, uint(0), uint(0),
+                                                       uint(0), uint(0), uint(0), vec4(0.0f, 0.0f, 0.0f, 0.0f), uint(0));
+
+    // update geometry info
+    vec2 center = vec2(ellipse_attr.center.x, ellipse_attr.center.y);
+    outputData.range = ellipse_attr.range;  
+
+    vec2 adjusted_radius = ellipse_attr.radius;
+
+     if (gRetainMode || (ellipse_attr.isLogical != uint(0)))
+    {
+        center = logic_to_ndc(center);
+        center = ndc_to_screen(center);
+        adjusted_radius = neutron_sketch_radius_to_screen(adjusted_radius);
+    }
+    else
+    {
+        if (ellipse_attr.radius.x == 0.0f) adjusted_radius.x = 1.0f;
+        if (ellipse_attr.radius.y == 0.0f) adjusted_radius.y = 1.0f;
+    }
+
+
+    outputData.radius = adjusted_radius;
+    
+    float sin_rot, cos_rot;
+    sin_rot = sin(ellipse_attr.rotate);
+    cos_rot = cos(ellipse_attr.rotate);
+    
+     // expand range when have line weight
+    float weight_expand = get_screen_weight_expand(ellipse_attr.weight);
+
+    // get the radius
+    outputData.position.xy = get_vertex_pos_caps(uint(gl_VertexID), outputData.range, outputData.radius.x, outputData.radius.y,
+        weight_expand, center, sin_rot, cos_rot, outputData.uv, outputData.ref);
+
+    // start cap
+    outputData.start_cap = gl_VertexID <= 4 ? uint(1) : uint(0);
+    
+    // update other properties
+    outputData.weight = ellipse_attr.weight;
+    outputData.position.z = ellipse_attr.drawZ;
+    outputData.position.xyz = outputData.position.xyz;
+    outputData.position.w = 1.0f;
+    
+    outputData.color  = ellipse_attr.color; // move color assignment to last will fix an Intel compiler issue.
+                                        // since the color assignment will affect position result on Intel cards.
+
+    outputData.glowColor  = ellipse_attr.glowColor;
+
+    outputData.capType = ellipse_attr.capType;
+
+    // load linetype information
+    outputData.patternIndex = linetype_attr.lt_index;
+    outputData.lt_dot = linetype_attr.lt_dot;
+    outputData.lt_inverted = linetype_attr.lt_inverted;
+
+    float startSkipLen, endSkipLen, patternOffset, patternScale;
+    load_line_type(primID, ellipse_attr.isLogical & linetype_attr.lt_logical, startSkipLen, endSkipLen, patternOffset, patternScale);
+    outputData.patternProp = vec4(startSkipLen, endSkipLen, patternOffset, patternScale);
+
+    gl_Position = outputData.position;
+
+    vso_position = outputData.position;
+    vso_uv = outputData.uv;
+    vso_ref = outputData.ref;
+    vso_radius = outputData.radius;
+    vso_range = outputData.range;
+    vso_colorS = int(outputData.color);
+    vso_weight = outputData.weight;
+    vso_glowColorS = int(outputData.glowColor);
+    vso_capTypeS = int(outputData.capType);
+    vso_patternIndexS = int(outputData.patternIndex);
+    vso_lt_dotS = int(outputData.lt_dot);
+    vso_lt_invertedS = int(outputData.lt_inverted);
+    vso_patternProp = outputData.patternProp;
+    vso_start_capS = int(outputData.start_cap);
+}
+
+}
+
+GLSLShader LT_Ellipse_Caps_PS
+{
+
+float ellipse_distance(vec2 radius, vec2 uv)
+{
+    // compute distance to ellipse
+    float x_len = radius.x;
+    float y_len = radius.y;
+    
+    float a = uv.x / x_len;
+    float b = uv.y / y_len;
+    
+    vec2 dx = dFdx(uv);
+    vec2 dy = dFdy(uv);
+    
+    float x_len_2 = x_len*x_len;
+    float y_len_2 = y_len*y_len;
+    
+    float x_2 = uv.x*uv.x;
+    float y_2 = uv.y*uv.y;
+    
+    float dfx = (2.0f * uv.x) / x_len_2 * dx.x + (2.0f * uv.y) / y_len_2 * dx.y;
+    float dfy = (2.0f * uv.x) / x_len_2 * dy.x + (2.0f * uv.y) / y_len_2 * dy.y;
+    
+    float dist = 0.0f;
+    float df_2 = dfx * dfx + dfy * dfy;
+    
+    if (df_2 > 0.0f)
+        dist = (x_2 / x_len_2 + y_2 / y_len_2 - 1.0f) * inversesqrt(df_2);
+    
+    return abs(dist);
+}
+
+bool valid_range_caps(VertexAttr_Caps_LT inputData)
+{
+    if (abs(inputData.radius.x - inputData.radius.y) < EPS)
+        return valid_range(inputData.radius, inputData.uv, inputData.range);
+    else
+    {
+        float dist = ellipse_distance(inputData.radius, inputData.uv);
+        return valid_range_ellipse(inputData.radius, inputData.uv, inputData.range, dist);
+    }
+}
+
+void main()
+{
+    uint vso_color = uint(vso_colorS);
+    uint vso_glowColor = uint(vso_glowColorS);
+    uint vso_capType = uint(vso_capTypeS);
+    uint vso_patternIndex = uint(vso_patternIndexS);
+    uint vso_lt_dot = uint(vso_lt_dotS);
+    uint vso_lt_inverted = uint(vso_lt_invertedS);
+    uint vso_start_cap = uint(vso_start_capS);
+
+    VertexAttr_Caps_LT inputData  = VertexAttr_Caps_LT(vso_position, vso_uv, vso_ref, vso_radius,
+                                                       vso_range, vso_color, vso_weight, vso_glowColor,
+                                                       vso_capType, vso_patternIndex, vso_lt_dot, vso_lt_inverted,
+                                                       vso_patternProp, vso_start_cap);
+    // Check plinegen:
+    // If current point is in start_cap, then check inputData.patternProp.x;
+    // If current point is in end_cap, then check inputData.patternProp.y;
+    // inputData.lt_inverted is true means line type is inverted, in this case exchange the checking target.
+    bool isPlineGen = false;
+    if (((inputData.start_cap != uint(0)) && (inputData.lt_inverted == uint(0))) || ((inputData.start_cap == uint(0)) && (inputData.lt_inverted != uint(0))))
+        isPlineGen = is_pline_gen(inputData.patternProp.x);
+    else
+        isPlineGen = is_pline_gen(inputData.patternProp.y);
+
+    vec2 delta = inputData.uv - inputData.ref.xy;
+    float dis_to_ref = length(delta);
+    float dir_to_border = dot(delta, inputData.ref.zw);
+    float dis_to_border = abs(dir_to_border);
+    
+    if (close_to_caps_border(dis_to_border))// if close to border
+    {
+        if (valid_range_caps(inputData)) // if inside ellipse
+            discard;
+    }
+
+    float dist = abs(dis_to_ref);
+
+
+    if (inputData.weight <= 1.0f)
+        discard;
+
+    // linetype
+    bool is_dot;
+    bool no_aa;
+    float dot_dist;
+    float arc_length = inputData.radius.x * abs(inputData.range.y - inputData.range.x);
+    float dist_to_start = inputData.start_cap > uint(0) ? 0.0f : arc_length;
+    float dist_to_end = inputData.start_cap > uint(0) ? arc_length : 0.0f;
+
+    if (inputData.lt_inverted != uint(0)){
+        float tmp = dist_to_start;
+        dist_to_start = dist_to_end;
+        dist_to_end = tmp;
+    }
+
+    vec4 color;
+    float width = adjust_line_width_wide_line(uint(inputData.weight));
+
+    // If it is not plinegen and first/last dash length are not zero, then draw cap directly.
+    if ((!isPlineGen)&&(inputData.patternProp.x != 0.0f)&&(inputData.patternProp.y != 0.0f))
+    {
+        if (gNoAAMode != 0)
+        {
+            color = compute_sharp_caps_final_color(dist, width, inputData.color, inputData.glowColor,
+                inputData.uv, inputData.ref.xy, inputData.ref.zw, inputData.capType);
+        }
+        else
+        {
+            color = compute_caps_final_color(dist, width, inputData.color, inputData.glowColor,
+                inputData.uv, inputData.ref.xy, inputData.ref.zw, inputData.capType);
+        }
+    }
+    else
+    {
+        WideLinePatternResult left_attr;
+        WideLinePatternResult right_attr;
+
+        WideLinePatternAttr attr;
+        attr.dist = 0.0f;
+        attr.width = inputData.weight;
+        attr.startDist = dist_to_start;
+        attr.endDist = dist_to_end;
+        attr.startSkipLen = inputData.patternProp.x;
+        attr.endSkipLen =  inputData.patternProp.y;
+        attr.patternScale = inputData.patternProp.z;
+        attr.patternOffset = inputData.patternProp.w;
+        attr.patternIndex = inputData.patternIndex;
+
+        WideEllipseInfo info;
+        info.inverted = (inputData.lt_inverted != uint(0));
+        info.radius = inputData.radius;
+        info.range = inputData.range;
+        info.hasPrevLine = false;
+        info.hasPostLine = false;
+        info.isCircle = true;
+        info.curAngle = 0.0f;
+
+        // Check the line pattern of start or end point.
+        // If current point is near the start point, then check the start point's line pattern.
+        // If current point is near the end point, then check the end point's line pattern.
+        int res = check_widearc_line_pattern(attr, info, glowWidth(),
+            left_attr,
+            right_attr);
+
+        // If the start(end) point is in pure space, discard current point directly.
+        if (res == PURE_SPACE)
+            discard;
+
+        // If the start(end) point is in dash, draw the cap directly.
+        if (res == PURE_DASH)
+        {
+            if (gNoAAMode != 0)
+            {
+                color = compute_sharp_caps_final_color(dist, width, inputData.color, inputData.glowColor,
+                    inputData.uv, inputData.ref.xy, inputData.ref.zw, inputData.capType);
+            }
+            else
+            {
+                color = compute_caps_final_color(dist, width, inputData.color, inputData.glowColor,
+                    inputData.uv, inputData.ref.xy, inputData.ref.zw, inputData.capType);
+            }
+        }
+        else
+        {
+            // If start(end) point is in MIXED, which means it is in space, but it is in a cap or a dot region.
+            vec4 left_color = compute_wide_pattern_color(left_attr, width, 
+                inputData.color, inputData.glowColor, inputData.uv, uint(2));
+
+            vec4 right_color = compute_wide_pattern_color(right_attr, width, 
+                inputData.color, inputData.glowColor, inputData.uv, uint(2));;
+
+            if (left_color.a > right_color.a || (left_color.a == right_color.a && left_attr.dist <= right_attr.dist))
+            {
+                if (left_color.a < EPS)
+                    discard;
+
+                vec2 capCenter = inputData.ref.xy;
+                // If it is in a cap region, then current point will share the same cap center as start(end) point.
+                if (left_attr.is_caps)
+                    capCenter = left_attr.caps_center;
+                // If it is in a dot region, then we need adjust the capCenter for current point.
+                else if(left_attr.dist > 0.0f)
+                    capCenter = inputData.ref.xy - inputData.ref.zw * left_attr.dist;
+
+                left_attr.dist = length(inputData.uv - capCenter);
+                color = compute_wide_pattern_color(left_attr, width, 
+                    inputData.color, inputData.glowColor, inputData.uv, inputData.capType);
+            }
+            else
+            {
+                if (right_color.a < EPS)
+                    discard;
+
+                vec2 capCenter = inputData.ref.xy;
+                // If it is in a cap region, then current point will share the same cap center as start(end) point.
+                if (right_attr.is_caps)
+                    capCenter = right_attr.caps_center;
+                // If it is in a dot region, then we need adjust the capCenter for current point.
+                else if(right_attr.dist > 0.0f)
+                    capCenter = inputData.ref.xy - inputData.ref.zw * right_attr.dist;
+
+                right_attr.dist = length(inputData.uv - capCenter);
+                color = compute_wide_pattern_color(right_attr, width, 
+                    inputData.color, inputData.glowColor, inputData.uv, inputData.capType);
+            }
+        }
+    }
+
+    if (color.a < 0.01f)
+        discard;
+    pso_color = OIT_PS_OUTPUT(color, vso_position);  
+}
+
+}
+
+technique Circle_Line_Type_Caps
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = LT_Ellipse_Caps_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = LT_Ellipse_Caps_PS;
+    }
+}
+

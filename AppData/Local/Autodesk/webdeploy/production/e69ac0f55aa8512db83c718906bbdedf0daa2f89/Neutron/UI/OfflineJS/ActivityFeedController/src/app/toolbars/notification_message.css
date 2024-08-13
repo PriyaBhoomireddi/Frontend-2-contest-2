@@ -1,0 +1,188 @@
+/* notificationMessageToolbar */
+.notificationMessageToolbar{
+    width: 350px;
+    margin-bottom: 0.5em;
+    /* these should match that of dropdown (projectDetailData.css) */
+    font-size: 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
+
+    border: 1px solid #979797;
+    background: #FAFAFA;
+}
+
+.notificationMessageToolbar:last-child{
+    margin-bottom: 0;
+}
+
+.notificationMessageToolbar.hidden {
+    -webkit-transition: height 0.3s linear, margin-bottom 0.3s linear, opacity 0.3s linear;
+    transition: height 0.3s linear, margin-bottom 0.3s linear, opacity 0.3s linear;
+    opacity: 0;
+    margin-bottom: 0;
+}
+
+.notificationMessageToolbar.overflow_hidden {
+    overflow: hidden;
+}
+
+.notificationMessageToolbar>div {
+}
+
+.notificationMessageToolbar .toolbarButton{
+    width: 20px; /* this will drive the size of the hoover-highlight */
+    cursor: default;
+}
+
+.notificationMessageToolbar .toolbarButton.closeBtn {
+    margin: 1em 3px 1em 0.5em;
+    background-image: -webkit-image-set(url(../../assets/close_normal_10.png) 1x,
+                                        url(../../assets/close_normal_10_@2x.png) 2x);
+    background-color: transparent;
+    background-size:10px 10px; /* icon is 16x16, with 1px top and bottom transparent area. This gives graphics of requested 14px in height */
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.notificationMessageToolbar .toolbarButton.closeBtn ._hover_ {
+    background-image: -webkit-image-set(url(../../assets/close_normal_10.png) 1x,
+                                        url(../../assets/close_normal_10_@2x.png) 2x);
+    background-color: transparent;
+    background-size:10px 10px; /* icon is 16x16, with 1px top and bottom transparent area. This gives graphics of requested 14px in height */
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.notificationMessageToolbar .toolbarButton.closeBtn.select {
+    background-image: -webkit-image-set(url(../../assets/close_normal_10.png) 1x,
+                                        url(../../assets/close_normal_10_@2x.png) 2x);
+    background-color: transparent;
+    background-size:10px 10px; /* icon is 16x16, with 1px top and bottom transparent area. This gives graphics of requested 14px in height */
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.notificationMessageToolbar .toolbarButton.closeBtn.select ._hover_ {
+    background-image: -webkit-image-set(url(../../assets/close_normal_10.png) 1x,
+                                        url(../../assets/close_normal_10_@2x.png) 2x);
+    background-color: transparent;
+    background-size:10px 10px; /* icon is 16x16, with 1px top and bottom transparent area. This gives graphics of requested 14px in height */
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.notificationMessageToolbar .toolbarButton.closeBtn.right5 {
+    margin-right: 5px;
+}
+
+.notificationMessageToolbar .description{
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.notificationMessageToolbar .msgToolbarButton{
+    margin: 1em 0.5em 1em 5px;
+    cursor: default;
+    -webkit-user-select: none;
+    user-select: none;
+    font-weight: normal;
+    color: #A7A7A7;
+}
+
+.notificationMessageToolbar .msgToolbarButton.name {
+    text-align: left;
+    text-decoration: underline;
+}
+
+.notificationMessageToolbar .msgToolbarButton.select {
+    color: #646464;
+}
+
+.notificationMessageToolbar .msgToolbarButton:hover {
+    color: #646464;
+    cursor: default;
+}
+
+.notificationMessageToolbar .msgToolbarButton.hidden {
+    visibility: hidden;
+}
+
+.notificationMessageToolbar .msgToolbarButton.notext {
+    opacity: 0;
+}
+
+.notificationMessageToolbar .refreshToolbarButton{
+    margin: 1em 0px 1em 0.5em;
+    line-height: 14px;
+    cursor: default;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+    color: #A7A7A7;
+    max-width: 120px;
+}
+
+.notificationMessageToolbar .refreshToolbarButton.name {
+    text-align: left;
+    text-decoration: underline;
+}
+
+.notificationMessageToolbar .refreshToolbarButton.select {
+    color: #646464;
+}
+
+.notificationMessageToolbar .refreshToolbarButton:hover {
+    color: #6693CC;
+    cursor: default;
+}
+
+.notificationMessageToolbar .refreshToolbarButton.hidden {
+    visibility: hidden;
+}
+
+.notificationMessageToolbar .refreshToolbarButton.notext {
+    opacity: 0;
+}
+
+.notificationMessageToolbar .refreshToolbarButton.newBranch {
+    text-decoration: none;
+    color: #5286BD
+}
+
+.notificationMessageToolbar .refreshToolbarButton.newBranch:hover {
+    text-decoration: none;
+    color: #5286BD;
+    cursor: default;
+}
+
+/* toolbarEllipsisMsgPopup */
+.toolbarEllipsisMsgPopup{
+    position: absolute;
+    padding: 0px 38px 0 0; /* no padding on top, otherwise invisible strip will capture clicks to data panel project detail actions */
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+    z-index: 9;
+
+    /*transition: height 0.25s linear, padding 0.25s linear, top 0.25s linear;
+    -webkit-transition: height 0.2s linear, padding 0.2s linear, top 0.25s linear;*/
+}
+
+.toolbarEllipsisMsgPopup.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+.toolbarEllipsisMsgPopup .boxShadow {
+    position: absolute;
+    /*top: 40px;*/
+    width: 350px;
+    background-color: rgba(0,0,0,0.3);
+    -webkit-box-shadow: 2px 10px 15px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 10px 15px 0px rgba(0,0,0,0.5);
+    box-shadow: 2px 10px 15px 0px rgba(0,0,0,0.5);
+/*    -webkit-transition: height 0.3s linear;
+    transition: height 0.3s linear;
+    */
+}

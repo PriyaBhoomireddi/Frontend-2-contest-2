@@ -1,0 +1,40 @@
+#tabsCtrl {
+    position: absolute;
+}
+
+#tabsCtrl .tabs {
+    position: absolute;
+}
+
+/* tabButton */
+#tabsCtrl .tabs .tabButton{
+    cursor: default;
+    position: absolute;
+    height: 26px;
+    border: 1px solid #979797;
+    font-size: 12px;
+    color: #646464;
+    text-align: center;
+    line-height: 26px;
+    top: 0px;
+}
+
+#tabsCtrl .tabs .tabButton:hover,
+#tabsCtrl .tabs .tabButton.selected{
+    background: #FAFAFA;
+}
+
+#tabsCtrl .tabs .tabButton:first-child {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+#tabsCtrl .tabs .tabButton:last-child {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#tabsCtrl .defaultTabPane {
+    position: absolute;
+}
+

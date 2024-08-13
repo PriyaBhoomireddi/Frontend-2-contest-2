@@ -1,0 +1,20 @@
+/*
+Notice that some pixel sizes in this css file are set using schema
+    font-size: scaled_12px;
+etc.
+These scaled_*px values are multiplied with the current ToolbarFramework::Parameters::scaleFactor();
+That means that this css file cannot be used "as-is", but it is a template to be translated in cpp.
+*/
+
+QObject {
+    font-family: Arial, Sans-Serif;
+}
+
+QPushButton {
+    background-color: transparent;
+    border: none;
+    font-size: scaled_12px;
+    color: #0696d7;
+    padding-left: 0px;
+    margin-left: 0px;
+}

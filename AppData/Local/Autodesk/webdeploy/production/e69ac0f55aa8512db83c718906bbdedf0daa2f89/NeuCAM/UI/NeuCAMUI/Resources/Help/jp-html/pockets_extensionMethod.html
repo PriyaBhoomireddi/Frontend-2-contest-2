@@ -1,0 +1,23 @@
+<div id="pockets_extensionMethod"><p>開いたチェーン選択をストックの境界領域の範囲まで延長して閉じた輪郭を決定します。この輪郭は、開いたポケットのツールパスを計算するために使用されます。</p>
+<p>拡張された開いたチェーンが境界領域に達する前に交差している場合、閉じた輪郭は作成されないため、ツールパスの計算を完了できません。</p>
+<p>開いたポケットの形状に応じて、次の 3 つのタイプの拡張メソッドのいずれかを選択します:</p>
+<p><b>接線</b> - すべてのチェーン選択を接線方向に拡張します。<br>
+<b>最も近い境界</b> - すべてのチェーン選択を、境界領域に最も近い方向に拡張します。<br>
+<b>平行</b> - 交差するチェーン選択を、境界ボックスに達したときに平行になるように拡張します。残りのチェーンは接線方向に延長されます。<br></p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="185" height="197" src="../images/tangent_extension_method.png"/></center></td>
+<td><center><img border="0" width="185" height="197" src="../images/closest_boundary_extension_method.png"/></center></td>
+</tr><tr>
+<td><center><p><b>接線</b></p></center></td>
+<td><center><p><b>最も近い境界</b></p></center></td>
+</tr></table>
+
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="185" height="197" src="../images/parallel_extension_method.png"/></center></td>
+</tr><tr>
+<td><center><p><b>平行</b></p></center></td>
+</tr></table>
+<p><b>注:</b> <b>拡張メソッド</b> は開いたポケットの選択にのみ適用され、閉じたポケットには影響しません。</p>
+</div>

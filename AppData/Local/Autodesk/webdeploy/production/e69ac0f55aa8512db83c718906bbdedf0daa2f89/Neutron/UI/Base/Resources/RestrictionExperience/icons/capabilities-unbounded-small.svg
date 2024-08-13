@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>subscription-full-small</title>
+    <g id="subscription-full-small" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Upsell-Sparkle-Header-Full" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group" transform="translate(0.300000, 0.500000)">
+                <g id="Group-2" transform="translate(0.000000, 5.463519)">
+                    <rect id="Rectangle" x="0" y="3.51511165" width="10.1950113" height="2.51757997" rx="1.25878999"></rect>
+                    <rect id="Rectangle-Copy" x="3.78527648" y="0" width="2.67492872" height="9.59530479" rx="1.33746436"></rect>
+                </g>
+                <g id="Group-2-Copy" transform="translate(9.723356, 1.980526)">
+                    <rect id="Rectangle" x="0" y="1.95003716" width="5.65986395" height="1.37929457" rx="0.689647287"></rect>
+                    <rect id="Rectangle-Copy" x="2.12244898" y="0" width="1.46550048" height="5.32693077" rx="0.732750242"></rect>
+                </g>
+                <g id="Group-2-Copy-2" transform="translate(5.115646, 0.000000)">
+                    <rect id="Rectangle" x="0" y="0.993857193" width="2.86621315" height="1" rx="0.5"></rect>
+                    <rect id="Rectangle-Copy" x="1.05597327" y="0" width="1" height="2.69761238" rx="0.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

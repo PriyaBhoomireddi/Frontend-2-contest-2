@@ -1,0 +1,218 @@
+//**************************************************************************/
+// Copyright 2009 Autodesk, Inc.
+// All rights reserved.
+// 
+// These coded instructions, statements, and computer programs contain
+// unpublished proprietary information written by Autodesk, Inc., and are
+// protected by Federal copyright law. They may not be disclosed to third
+// parties or copied or duplicated in any form, in whole or in part, without
+// the prior written consent of Autodesk, Inc.
+//**************************************************************************/
+// DESCRIPTION: DepthIdBuffers
+//   This effect creates up to 3 output targets (assuming each is assigned).
+//   * Object ID, where the ID is expressed as float4 of fractions.
+//   * NDC z-depth per pixel, the z-depth between 0.0 and 1.0 for each pixel,
+//     linearly interpolated (i.e. hyperbolic for perspective)
+//   * Code commented out for W-buffer linear interpolation. While potentially
+//     useful for other purposes, for NPR this code gives non-linear interpolation
+//     of depth in perspective space, which makes the Decaudin slope detection for
+//     depth differences fail, as the slope changes per pixel.
+// AUTHOR: Nikolai Sander, converted to OGSFX by Eric Haines, July 2013
+// CREATED: March 2008
+// MODIFIED: Charlotta Wadman, February 2010
+//**************************************************************************/
+
+// For per-object clipping, unfortunately needed on by default;
+// the problem is that for an override material, per-object clipping will not
+// affect this material and get it to recompile.
+// TODO: is there some way to get this variable set *per object* for it's material?
+// ApplySystemShaderMacros in the script interpreter does so globally, but can't
+// per object. Mauricio thinks we might need a callback in the script interpreter.
+//#ifdef CLIPPING
+#include "Clipping.ogsfh"
+
+// World transformation, needed only for clipping
+uniform mat4 gWXf : World;
+//#endif
+
+// World-view-projection transformation.
+uniform mat4 gWVPXf : WorldViewProjection;
+
+uniform mat4 gWVIT : WorldViewInverseTranspose;
+
+// Depth priority, which shifts the model a bit forward in the z-buffer
+uniform float gDepthPriority : DepthPriority = 0.0;
+
+
+uniform vec4 gObjectID;
+
+uniform vec3 gHaloColor;
+
+// The visibility texture.
+uniform texture2D gVisibilityTex : Texture;
+
+// Visibility texture sampler.
+uniform sampler2D gSamp : TextureSampler = sampler_state
+{
+    Texture = <gVisibilityTex>;
+};
+
+attribute VS_INPUT
+{
+    vec3 Pos : POSITION;
+}
+
+// Vertex shader output structure.
+attribute VS_TO_PS
+{
+    // World position
+    vec4 oHPw       : TEXCOORD6;
+}
+
+// Vertex shader output structure.
+attribute VS_TO_PS_Text
+{
+    vec4 VPos       : TEXCOORD0;
+
+}
+
+attribute DepthPixelShaderOutput
+{
+    //vec4 ObjectID : COLOR0;
+    //vec4 PDepthVal : COLOR2;
+    vec4 oMRT0 : COLOR0;
+    vec4 oMRT1 : COLOR1;
+}
+
+// Basic vertex shader function.
+// Outputs:
+//   HPos (gl_Position) is the position in clip space (NDC with undivided W).
+//   Depth holds one value: x holds the z-depth value from the eye, i.e. with respect to the view matrix
+//     but not normalized by the projection matrix.
+// Note that, unlike the Cg version, we always pass on VPos, since it's used by both fragment shaders.
+// VS_TO_PS VSBasic(VS_INPUT In)
+GLSLShader VS_NPR
+{
+    void main()
+    {
+        // Transform the position from object space to clip space for output.
+        gl_Position =  gWVPXf*vec4(Pos,1.0);
+
+        // modify the position a bit by biasing the Z a bit forward, based on depth priority
+        gl_Position.z -= gl_Position.w*2.0*gDepthPriority;
+
+        // To get truly linear depth distribution, save the z value before projection calculations.
+        // Then let the projection figure out where on the screen that depth is valid. 
+        // The hyperbolic interpolation used for vertexes makes sure it is perspective corrected.
+        // This depth is not wanted when gradients are used for edge detection.
+        // Depth.z = (mul(gWVXf, vec4(Pos,1.0))).z;
+
+        //#ifdef CLIPPING
+        // Compute the world space position for clipping.
+        ComputeClipDistances(gWXf*vec4(Pos, 1.0));
+        //#endif
+    }
+}
+
+GLSLShader VS_NPR_Text
+{
+    void main()
+    {
+        // Transform the position from object space to clip space for output.
+        gl_Position = gWVPXf*vec4(Pos,1.0);
+
+        // modify the position a bit by biasing the Z a bit forward, based on depth priority
+        gl_Position.z -= gl_Position.w*2.0*gDepthPriority;
+
+        // To get truly linear depth distribution, save the z value before projection calculations.
+        // Then let the projection figure out where on the screen that depth is valid. 
+        // The hyperbolic interpolation used for vertexes makes sure it is perspective corrected.
+        // This depth is not wanted when gradients are used for edge detection.
+        // Depth.z = (mul(gWVXf, vec4(Pos,1.0))).z;
+
+        //#ifdef CLIPPING
+        // Compute the world space position for clipping.
+        ComputeClipDistances(gWXf*vec4(Pos, 1.0));
+        //#endif
+    
+        // Here's how the shader differs from above: adds the VPos.
+        // Output the position to the pixel shader.
+        VPos = gl_Position;
+    }
+}
+
+// Basic pixel shader function.
+// DepthPixelShaderOutput PSBasic(vec4 WPos : WPOS)
+GLSLShader PSBasic
+{
+    void PSBasic(float depth)
+    {
+        #if GL_ES
+			ClipPixels();
+		#endif
+
+		// Save away object ID, using gObjectID converted to 0-1 floats, with R
+        // being the lowest 8 bits of the integer, G being the next highest, B, then A.
+        oMRT0 = gObjectID;
+
+        // save depth with linear depth distribution.
+        // Divide it by far clip plane to get it in the [0,1] range.
+        // Perspective correction is already taken care of vertex interpolator
+        // If you use the Far clip plane to scale, this value will differ as far clip plane differs
+        // An alternative is to use a global scale value, or to multiply the value with far clip plane again before using it.
+        // Output.VDepthVal.r = Depth.z/gFarClipPlane;
+        // Output.VDepthVal.gba = 0.0;
+
+        // We don't have direct access to the depth stored in the depth buffer, so compute it.
+        // Division by zero won't happen, since we're doing this in the pixel shader, where VPos.w values are all positive.
+        oMRT1 = vec4(0.0, gHaloColor.rgb);
+    }
+}
+
+// Pixel shader for main technique, which puts the various values into the needed GBuffers.
+// DepthPixelShaderOutput PS_NPR(vec4 WPos : WPOS)
+GLSLShader PS_NPR
+{
+    void main()
+    {
+        PSBasic(gl_FragCoord.z);
+    }
+}
+
+// Pixel shader for text technique, which puts the various values into the needed GBuffers.
+// DepthPixelShaderOutput PS_NPR_Text(PS_INPUT_Text In)
+GLSLShader PS_NPR_Text
+{
+    void main()
+    {
+        // Get the sample coordinate for the current pixel.
+        float sampleX = (VPos.x / VPos.w + 1.0) / 2.0;
+        float sampleY = (VPos.y / VPos.w + 1.0) / 2.0;
+        // Sample the visibility. We use the red channel as the visibility.
+        float visibility = texture2D(gSamp, vec2(sampleX, sampleY)).r;
+        if(visibility > 0.5)
+            discard;
+
+        PSBasic(gl_FragCoord.z);
+    }
+}
+
+// The main technique.
+technique Main
+{
+    pass p0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = VS_NPR;
+        PixelShader (in VS_TO_PS, out DepthPixelShaderOutput) = PS_NPR;
+    }
+}
+
+// The text technique.
+technique Text
+{
+    pass p0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS_Text) = VS_NPR_Text;
+        PixelShader (in VS_TO_PS_Text, out DepthPixelShaderOutput) = PS_NPR_Text;
+    }
+}

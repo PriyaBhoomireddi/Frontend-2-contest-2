@@ -1,0 +1,43 @@
+#ifndef _HQ_FX_COLOR_HEADER_
+#define _HQ_FX_COLOR_HEADER_
+
+// Neutron's monochrome output: 0=off,1=max,2=min
+uniform int gNeutronSketchMonoMode : NeutronSketchMonoMode = 0;
+
+// render options
+uniform bool gClipMode = false;
+uniform bool gRetainMode = false;
+uniform int gNoAAMode = false;
+
+GLSLShader Sketch_color
+{
+
+// color pack methods
+uint pack_color(vec4 color)
+{
+    uvec4 dw_color = uvec4(color*255.0f);
+    return (dw_color.b & uint(0x000000ff)) |
+        ((dw_color.g & uint(0x000000ff)) << uint(8)) |
+        ((dw_color.r & uint(0x000000ff)) << uint(16)) |
+        ((dw_color.a & uint(0x000000ff)) << uint(24));
+}
+vec4 unpack_color(uint color)
+{
+    return vec4(
+        float((color & uint(0x00ff0000)) >> uint(16)) / 255.0f,
+        float((color & uint(0x0000ff00)) >> uint(8)) / 255.0f,
+        float((color & uint(0x000000ff)) >> uint(0)) / 255.0f,
+        float((color & uint(0xff000000)) >> uint(24)) / 255.0f
+        );
+}
+
+vec4 neutron_sketch_adjust_output_color(vec4 color)
+{
+    if (gNeutronSketchMonoMode == 1) return color.aaaa;
+    if (gNeutronSketchMonoMode == 2) return vec4(1.0f, 1.0f, 1.0f, 1.0f) - color.aaaa;
+    return color;
+}
+
+}
+
+#endif // _HQ_FX_COLOR_HEADER_

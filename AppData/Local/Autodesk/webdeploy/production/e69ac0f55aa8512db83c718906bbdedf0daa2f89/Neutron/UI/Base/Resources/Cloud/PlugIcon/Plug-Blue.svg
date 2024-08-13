@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 500 499" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icon - Blue - Full</title>
+    <defs>
+        <circle id="path-1" cx="249.721977" cy="249.249493" r="249.249493"></circle>
+        <circle id="path-3" cx="249.721977" cy="249.249493" r="249.249493"></circle>
+        <circle id="path-5" cx="249.721977" cy="249.249493" r="249.249493"></circle>
+        <circle id="path-7" cx="249.721977" cy="249.249493" r="249.249493"></circle>
+    </defs>
+    <g id="Icon---Blue---Full" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4" transform="translate(251.000000, 250.000000) rotate(-45.000000) translate(-251.000000, -250.000000) translate(1.000000, 0.000000)">
+            <g id="Oval" transform="translate(0.013138, -0.004488)" fill="#0696D7" fill-rule="nonzero">
+                <circle id="path-1" cx="249.721977" cy="249.249493" r="249.249493"></circle>
+            </g>
+            <g id="Rectangle-Clipped" transform="translate(0.013138, -0.004488)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="path-1"></g>
+                <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-2)" x="0" y="216.618529" width="97.3630832" height="65.2332657"></rect>
+            </g>
+            <g id="Combined-Shape-Clipped" transform="translate(0.013138, -0.004488)">
+                <mask id="mask-4" fill="white">
+                    <use xlink:href="#path-3"></use>
+                </mask>
+                <g id="path-1"></g>
+                <path d="M257.525488,74.4660891 C267.417019,74.4660891 285.923297,77.3139759 285.923297,86.8922637 C285.923297,87.4390422 285.959265,87.9872837 286.030073,88.5371415 L286.030073,406.700145 C285.959229,407.282492 285.923297,407.865127 285.923297,408.448257 C285.923297,418.759434 267.253418,424.004367 257.525488,424.004367 C161.004413,424.004367 82.7586207,345.756241 82.7586207,249.235166 C82.7586207,152.71409 161.004413,74.4660891 257.525488,74.4660891 Z" id="Combined-Shape" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-4)"></path>
+            </g>
+            <g id="Rectangle-Copy-12-Clipped" transform="translate(0.013138, -0.004488)">
+                <mask id="mask-6" fill="white">
+                    <use xlink:href="#path-5"></use>
+                </mask>
+                <g id="path-1"></g>
+                <rect id="Rectangle-Copy-12" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-6)" x="260.431917" y="281.37931" width="154.807302" height="46.7342799" rx="12"></rect>
+            </g>
+            <g id="Rectangle-Copy-13-Clipped" transform="translate(0.013138, -0.004488)">
+                <mask id="mask-8" fill="white">
+                    <use xlink:href="#path-7"></use>
+                </mask>
+                <g id="path-1"></g>
+                <rect id="Rectangle-Copy-13" fill="#FFFFFF" fill-rule="nonzero" mask="url(#mask-8)" x="259.959432" y="169.884249" width="154.807302" height="46.7342799" rx="12"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

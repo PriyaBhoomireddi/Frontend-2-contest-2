@@ -1,0 +1,188 @@
+//**************************************************************************/
+// Copyright (c) 2008 Autodesk, Inc.
+// All rights reserved.
+// 
+// These coded instructions, statements, and computer programs contain
+// unpublished proprietary information written by Autodesk, Inc., and are
+// protected by Federal copyright law. They may not be disclosed to third
+// parties or copied or duplicated in any form, in whole or in part, without
+// the prior written consent of Autodesk, Inc.
+//**************************************************************************/
+// DESCRIPTION: Sky box effect.
+// AUTHOR: Danny Chen, converted to OGSFX by Eric Haines, June 2013
+// CREATED: March 2009
+//**************************************************************************/
+
+#define PI 3.14159265358
+
+//matrices
+uniform mat4  gVXf : View;
+uniform mat4  gWXf : World;
+uniform mat4  gPXf : Projection;
+uniform mat4  gTexXf;
+
+//textures
+uniform textureCube g_CubeTex;
+uniform texture2D g_SphereTex;
+uniform texture2D g_LatLongTex;
+
+// Gain, a color to scale the texture value.
+uniform float4    gGain;
+
+//samplers
+uniform samplerCube g_samCube =
+    sampler_state
+{
+    Texture = <g_CubeTex>;
+};
+
+uniform sampler2D g_samSphere =
+    sampler_state
+{
+    Texture = <g_SphereTex>;
+};
+
+uniform sampler2D g_samLatLong = 
+    sampler_state
+{
+    Texture = <g_LatLongTex>;
+};
+
+attribute VS_INPUT_SKY
+{
+    vec3 Pos : POSITION;
+    vec3 Tex : NORMAL;
+}
+
+attribute VS_TO_PS_SKY
+{
+    vec3 oTex : TEXCOORD0;
+}
+
+attribute pixelOut {
+    vec4 colorOut:COLOR0;
+}
+
+GLSLShader {
+    precision mediump float;
+}
+
+GLSLShader RenderSkyBoxVS
+{
+    void main ()
+    {
+        //transform vertex
+        vec4 wpos =  gWXf*vec4(Pos,1.0);
+        gl_Position = gVXf*wpos;
+        gl_Position = gPXf*gl_Position;
+
+        //transform sample direction using the texture matrix
+        oTex = (gTexXf*vec4(Tex,0.0)).xyz;
+    }
+}
+
+
+GLSLShader RenderSkyBoxPS_Cube
+{
+    void main ()
+    {
+        //sample cubemap
+#if GL_ES
+        gl_FragColor = gGain * textureCube( g_samCube, normalize(oTex) );
+#else
+        colorOut = gGain * textureCube( g_samCube, normalize(oTex) );
+#endif
+    }
+}
+
+GLSLShader RenderSkyBoxPS_Sphere
+{
+    void main ()
+    {
+        //normalize direction
+        vec3 dir = normalize(oTex);
+
+        //if the length of the x,y direction vector is 0, 
+        // this is a special case. We test here to avoid division by zero in rsqrt
+        if ((dir.x==0.0)&&(dir.y==0.0))
+        {
+            //make sure the sample coords is (0.5,0.5)
+            dir.y = 1.0;  
+            dir.z = 1.0;
+        }
+
+        //calculate reciprocal of the length of the arc projected on XY plane 
+        float dist_r = inversesqrt(dir.x*dir.x+dir.y*dir.y);
+
+        //calculate sphere map texcoord
+        vec2 coord;
+
+        coord.xy = dir.xy*dist_r*acos(dir.z)/PI;
+        coord.xy = coord.xy*vec2(0.5,-0.5)+vec2(0.5,0.5);
+
+        //sample color
+#if GL_ES
+        gl_FragColor = gGain * texture2D(g_samSphere,coord);
+#else
+        colorOut = gGain * texture2D(g_samSphere,coord);
+#endif
+    }
+}
+
+GLSLShader RenderSkyBoxPS_LatLong
+{
+    void main ()
+    {
+        //normalize direction
+        vec3 dir = normalize(oTex);    
+
+        //calculate lat/long
+        float latitude = -asin(dir.y)/PI + 0.5;
+        float longitude = atan(dir.x, -dir.z)/PI*0.5+0.5;
+
+        //sample color
+#if GL_ES
+        gl_FragColor = gGain * texture2D(g_samLatLong,vec2(longitude,latitude));
+#else
+        colorOut = gGain * texture2D(g_samLatLong,vec2(longitude,latitude));
+#endif
+    }
+}
+
+//-----------------------------------------------------------------------------
+// Technique: RenderSkyCube
+// Desc: Renders using 3D texture coordinates to sample from a cube texture.
+//-----------------------------------------------------------------------------
+technique RenderSkyCube
+{
+    pass p0
+    {
+        VertexShader (in VS_INPUT_SKY, out VS_TO_PS_SKY) = RenderSkyBoxVS;
+        PixelShader (in VS_TO_PS_SKY, out pixelOut) = RenderSkyBoxPS_Cube;
+    }
+}
+//-----------------------------------------------------------------------------
+// Technique: RenderSkySphere
+// Desc: Renders using 3D texture coordinates to sample from a sphere texture.
+//-----------------------------------------------------------------------------
+technique RenderSkySphere
+{
+    pass p0
+    {
+        VertexShader (in VS_INPUT_SKY, out VS_TO_PS_SKY) = RenderSkyBoxVS;
+        PixelShader (in VS_TO_PS_SKY, out pixelOut) = RenderSkyBoxPS_Sphere;
+    }
+}
+//-----------------------------------------------------------------------------
+// Technique: RenderSkyLatLong
+// Desc: Renders using 3D texture coordinates to sample from a latitude-longitude texture.
+//-----------------------------------------------------------------------------
+technique RenderSkyLatLong
+{
+    pass p0
+    {
+        VertexShader (in VS_INPUT_SKY, out VS_TO_PS_SKY) = RenderSkyBoxVS;
+        PixelShader (in VS_TO_PS_SKY, out pixelOut) = RenderSkyBoxPS_LatLong;
+    }
+}
+

@@ -1,0 +1,232 @@
+/*
+Notice that some pixel sizes in this css file are set using schema
+    font-size: scaled_12px;
+etc.
+These scaled_*px values are multiplied with the current ToolbarFramework::Parameters::scaleFactor();
+That means that this css file cannot be used "as-is", but it is a template to be translated in cpp.
+*/
+
+QObject {
+    font-family: Arial, Sans-Serif;
+}
+
+QDialog {
+    border: 1px solid #D2D2D2;
+    background-color: white;
+}
+
+QFrame {
+    background-color: transparent;
+}
+
+QLabel {
+    color: #6C6C6C;
+    padding: 0px;
+}
+
+QRadioButton {
+    font-size: scaled_12px;
+    color: #808080;
+    padding-bottom: 8px;
+}
+
+    QRadioButton:checked {
+        color: #3c3c3c;
+        font-size: scaled_14px;
+    }
+
+#SessionDialogHeader {
+    background-color: transparent;
+    border-bottom: 1px solid #D2D2D2;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#StatusIcon {
+    padding-left: 16px;
+    padding-right: 0px;
+    margin: 0px, 0px, 0px, 0px;
+}
+
+#TitleLabel {
+    font-size: scaled_18px;
+    font-weight: 500;
+    color: #6C6C6C;
+    padding-left: 0px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#PrimaryLabel {
+    color: #808080;
+    font-size: scaled_15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#SecondaryLabel {
+    color: #808080;
+    font-size: scaled_14px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#SessionDialogBody {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+#SessionDialogFooter {
+    margin-top: 8px;
+    margin-bottom: 14px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+QPushButton {
+    border-radius: 3px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: scaled_12px;
+}
+
+    QPushButton#PrimaryButton {
+        background-color: #0696d7;
+        color: white;
+        border: 1px solid #0696d7;
+    }
+
+        QPushButton#PrimaryButton:hover {
+            background-color: #38abdf;
+            border-color: #38abdf;
+        }
+
+        QPushButton#PrimaryButton:pressed {
+            background-color: #0686c2;
+            border-color: #0686c2;
+        }
+
+#SecondaryButton {
+    border: 1px solid #cccccc;
+    color: #808080;
+    background-color: white;
+}
+
+    #SecondaryButton:hover {
+        border-color: #bbbbbb;
+        color: #6c6c6c;
+        background-color: #eeeeee;
+    }
+
+    #SecondaryButton:pressed {
+        border-color: #bbbbbb;
+        color: #6c6c6c;
+        background-color: #dcdcdc;
+    }
+
+/*
+QTableWidget::row {
+    border-top: 1px solid #D2D2D2;
+}
+*/
+QTableWidget#SystemTable {
+    selection-color: #848484;
+    font-size: scaled_14px;
+    color: #848484;
+    /*
+    border-top: 1px;
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+        */
+    border: 1px solid #D2D2D2;
+    background-color: transparent;
+    gridline-color: transparent;
+    margin-top: 0px;
+    outline: 0;
+    margin-bottom: 8px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+    QTableWidget#SystemTable::item {
+        font-size: scaled_14px;
+        border-bottom: 1px solid #cccccc;
+        padding: 5px;
+        outline: 0;
+    }
+
+        QTableWidget#SystemTable::item:selected {
+            background-color: #cdeaf7;
+        }
+
+QHeaderView {
+    font-size: scaled_14px;
+    font-weight: bold;
+    color: #6C6C6C;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+    QHeaderView::section {
+        border: none;
+        padding: 5px;
+        background-color: transparent;
+    }
+
+QScrollBar {
+    height: 10px;
+    width: 6px;
+    background: #FCFDFF;
+}
+
+    QScrollBar::handle {
+        border-radius: 3px;
+        background: #cccccc;
+    }
+
+        QScrollBar::handle:hover {
+            background: #808080;
+        }
+
+/*SYSTEM INFO*/
+QLabel#InfoHeader1 {
+    color: #6c6c6c;
+    font-size: scaled_12px;
+    font-weight: bold;
+}
+
+QLabel#InfoHeader2 {
+    color: #6c6c6c;
+    font-size: scaled_12px;
+    font-weight: bold;
+}
+
+QLabel#InfoHeader3 {
+    color: #6c6c6c;
+    font-size: scaled_12px;
+    font-weight: bold;
+}
+
+QLabel#InfoValue1 {
+    color: #808080;
+    font-size: scaled_12px;
+}
+
+QLabel#InfoValue2 {
+    color: #808080;
+    font-size: scaled_12px;
+}
+
+QLabel#InfoValue3 {
+    color: #808080;
+    font-size: scaled_12px;
+}

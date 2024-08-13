@@ -1,0 +1,532 @@
+
+/*
+	NB 
+	Some of the styles are set directly from C++
+	using setStyleSheet() in QTSaveFileOptions.cpp
+	For example to change the table header style
+	to the ...Wait... mode and back,
+	or to create labels with hyperlink anchors.
+*/
+
+
+QObject {
+    font-family: Arial, Sans-Serif; 
+    font-size: 13px;
+}
+
+QDialog {
+    border: 1px solid #D2D2D2;
+    background-color: #FFFFFF;
+}
+
+QDialog#dlgSaveFileOptions {
+    border: 1px solid #D2D2D2;
+    background-color: #FFFFFF;
+}
+
+QStackedWidget {
+    border: 1px solid rgba(49,51,49,40%);
+}
+
+#pahSaveIn,
+#breadcrumbBar
+{
+    font-size: 12px;
+}
+
+/* */
+/* QLabels */
+/* */
+
+QLabel {
+    color: #666666;
+    font-size: 12px;
+}
+
+QLabel:disabled {
+    color: #999999;
+}
+
+QLabel#labelProject {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-left: 28px;
+    margin-bottom: 12px;
+}
+
+QFrame#pathSaveInBorder {
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    border: 1px solid #D2D2D2;
+    padding: 6px 10px;
+}
+
+QLabel#pathProject {
+    padding-right: 1px;
+}
+
+QLabel#pathFolders {
+    padding-left: 1px;
+}
+
+QLabel#titleLabel {
+    font-size: 24px;
+    color: #6C6C6C;
+    margin-top: 0px;
+}
+
+/* */
+/* QLineEdit */
+/* */
+
+QLineEdit {
+    font-size: 12px;
+    color: #6C6C6C;
+    margin-top: 0px; /* necessary for Mac to use height */
+}
+
+QLineEdit#editName {
+     background-color: #FFFFFF;
+     border-radius: 3px;
+     border: 1px solid #D2D2D2;
+     padding: 5px 10px;
+}
+
+QLineEdit#editName:focus {
+    border: 1px solid #00A6E2;
+}
+
+/* */
+/* QPushButtons */
+/* */
+
+QPushButton {
+    background-color: transparent;
+    font-size: 12px;
+    border-radius: 3px;
+    padding: 9px 16px 8px 16px;
+    color: #6C6C6C;
+}
+
+QLabel#ExpandButton
+{
+    background-color: #FAFAFA;
+    border: 1px solid #A2A2A2;
+    border-radius: 3px;
+    background-position: center;
+    qproperty-alignment: AlignCenter;
+}
+QLabel#ExpandButton:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+}
+QLabel#ExpandButton:disabled {
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    color: #D2D2D2;
+}
+
+QPushButton#BrowseLocalSave
+{
+    background-color: #FAFAFA;
+    border: 1px solid #A2A2A2;
+    padding: 0px 6px;
+    min-height: 24px;
+}
+
+QPushButton#SaveButton {
+    background-color: #00A6E2;
+    border: 1px solid #00A6E2;
+    color: #FFFFFF;
+}
+
+QPushButton#DoNotSaveButton {
+    background-color: #FAFAFA;
+    border: 1px solid #A2A2A2;
+}
+
+QPushButton#SaveButton:disabled {
+    background-color: #A5E0F5;
+    border: 1px solid #A5E0F5;
+}
+
+QPushButton#DoNotSaveButton:disabled {
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    color: #D2D2D2;
+}
+
+QPushButton#SaveButton:hover {
+    background-color: #3AB5E1;
+    border: 1px solid #3AB5E1;
+}
+
+QPushButton#DoNotSaveButton:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+}
+
+QPushButton#SaveButton:pressed {
+    background-color: #007EC0;
+    border: 1px solid #007EC0;
+}
+
+QPushButton#DoNotSaveButton:pressed {
+    background-color: #EAEAEA;
+    border: 1px solid #ADADAD;
+}
+
+QPushButton#CancelButton,
+QPushButton#LocalOpenButton,
+QPushButton#NewFolderButton,
+QPushButton#NewProjectButton {
+    background-color: #FAFAFA;
+    border: 1px solid #A2A2A2;
+}
+
+QPushButton#ExpandButton:disabled,
+QPushButton#CancelButton:disabled,
+QPushButton#LocalOpenButton :disabled,
+QPushButton#NewFolderButton:disabled,
+QPushButton#NewProjectButton:disabled,
+QPushButton#BrowseLocalSave:disabled
+{
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    color: #D2D2D2;
+}
+
+QPushButton#ExpandButton:hover,
+QPushButton#CancelButton:hover,
+QPushButton#LocalOpenButton:hover,
+QPushButton#NewFolderButton:hover,
+QPushButton#NewProjectButton:hover,
+QPushButton#BrowseLocalSave:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+}
+
+QPushButton#ExpandButton:pressed,
+QPushButton#CancelButton:pressed,
+QPushButton#LocalOpenButton :pressed,
+QPushButton#NewFolderButton:pressed,
+QPushButton#NewProjectButton:pressed,
+QPushButton#BrowseLocalSave:pressed {
+    background-color: #EAEAEA;
+    border: 1px solid #ADADAD;
+}
+
+
+QPushButton#CloseButton {
+    border: none;
+}
+
+
+/* */
+/* QFrames */
+/* */
+QFrame#separator1, QFrame#separator2 {
+    color: #D2D2D2;
+}
+
+QFrame#standardActions {
+    background-color:transparent;
+}
+
+QWidget#breadcrumb{
+	margin-left:30px;
+	margin-top:9px;
+}
+
+/* */
+/* QTableWidgets */
+/* */
+QTableWidget#folderTable {
+    selection-color: #848484;
+    font-size: 14px;
+    color: #848484;
+
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    background-color: transparent;
+    gridline-color: transparent;
+    margin-top: 6px;
+    outline:0;
+    margin-bottom:1px;
+}
+
+QTableWidget#folderTable::item {
+	border:none;
+	outline:0;
+	padding-left:28px;
+}
+
+QTableWidget#folderTable::item:selected {
+	background-color: #F5F6F7;
+}
+
+/* */
+/* QHeaderView */
+/* */
+
+QHeaderView#sortingHeader {
+    font-size: 13px;
+    font-weight: bold;
+    color: #6C6C6C;
+    text-transform: uppercase;
+    background-color:transparent;
+}
+
+QHeaderView#sortingHeader::section {
+    border: none;
+    padding-left:0px;
+    padding-top:4px;
+    padding-bottom:4px;
+    background-color:transparent;
+    padding-left:31px; /*isn't same left padding as QTableWidget#folderTable::item -> icons in rows have 3px empty space from left*/
+}
+
+QTableWidget::item:disabled:!selected#projectTable {
+	color: #b7b7b7;
+}
+
+
+/* */
+/* QTreeView - projects tree */
+/* */
+QTreeView#projectTree {
+     border: none;
+	 outline:0;
+	 background-color:transparent;
+	 color:#848484;
+	 font-size:14px;
+	 font-family: "Open Sans", Light;
+	 margin-bottom:1px;		 
+}
+
+QTreeView::branch#projectTree{
+	border:none;
+	border-image: none;
+}
+
+QTreeView#projectTree::item{
+	height:30px;
+	border:0px;
+	padding-left:26px;
+}
+
+QTreeView#projectTree::item:selected {
+    background-color: #F5F6F7;
+	color:#806C6C;
+}
+
+QWidget#controlLineEdit{
+    border: 1px solid #00A6E2;
+    border-radius: 3px;
+	color:#848484;
+	font-size:14px;
+	font-family: "Open Sans", Light;
+    margin-right: 5px;
+    padding-left: 1px;
+}
+
+QWidget#controlLineEditFolder{
+    border: 1px solid #00A6E2;
+    border-radius: 3px;
+    background-color: #F5F6F7;
+    color:#848484;
+    font-size:14px;
+    font-family: "Open Sans", Light;
+    padding-left: 1px;
+    margin-right: 1px;
+}
+
+/* */
+/* ScrollBar */
+/* */
+
+QScrollBar{
+    height: 10px;
+    width: 8px;
+    background: #FCFDFF;
+}
+
+QScrollBar::handle {
+    border-radius: 3px;
+    background: #C2C2C2;
+}
+
+QScrollBar::handle:hover {
+    background: #979797;
+}
+
+QScrollBar::add-page, QScrollBar::sub-page {
+    background: none;
+}
+
+/* 
+Without height, width set to 0, the control is invisible but still there. When the handle is at the top / bottom,
+it is not possible to drag the handle because on top of it
+there is the invisible sub-line, add-lne control.
+UP-26722
+*/
+QScrollBar::sub-line, QScrollBar::add-line {
+    height: 0px;  
+    width: 0px;
+    background: none;
+}
+
+QAbstractScrollArea::corner {
+    background: transparent;
+}
+
+QListView {
+  border: none;
+}
+
+/* */
+/* Treeview */
+/* */
+
+QTreeView#navigationView {
+    font-size: 13px;
+    /*color: #666666;*/
+    border: none;
+    /*background-color: #EFEFEF;*/
+    /*padding-left: 6px;*/
+    margin-right: 4px;
+}
+
+QTreeView::item#navigationView {	
+	margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+QTreeView::item:selected#navigationView {	
+    background-color: #A5C6DE;
+    color: #666666;	
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+QTreeView::item:focus#navigationView
+{
+    background-color: #A5C6DE;
+    color: #666666;	
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+QTreeView::item:!enabled#navigationView {	
+    background-color: #EFEFEF;
+    color: #666666;	
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+QComboBox {
+    font-size: 12px;
+    /*color: #6C6C6C;*/
+}
+
+QCheckBox#checkLocalSave {
+    color: #666666;	
+}
+
+QCheckBox#checkSaveIn {
+    color: #666666;	
+}
+
+QLabel#labelLocalSavePath {
+    background-color: #F4F5F6;
+    border: 1px solid #F4F5F6;
+    border-radius: 3px;
+    padding: 0px 3px;
+    margin-left: 10px;
+    min-height: 24px;
+    qproperty-alignment: 'AlignVCenter | AlignLeft';
+}
+
+QWidget#hideableUI {
+    border-top: 1px solid #D2D2D2;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+QWidget#projectsAndFolders {
+    border-top: 1px solid #D2D2D2;
+    border-bottom: 1px solid #D2D2D2;
+}
+
+QWidget#infoOverlay {
+    background-color: #FFFFFF;
+}
+
+QComboBox#comboType {
+    /*background-color: #FFFFFF;*/
+    border: 1px solid #D2D2D2;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+
+QComboBox#comboType:focus {
+    border-color: #00A6E2;
+}
+
+QComboBox#comboType QListView
+{
+    font-size: 12px;
+    /*color: #6C6C6C;*/
+    /*background-color: #FFFFFF;*/
+    border: 1px solid #D2D2D2;
+    padding: 5px 0px 2px 8px;
+}
+
+QComboBox#comboType::drop-down
+{
+    width: 20px;
+    border: 1px;
+    border-color:#D2D2D2;
+    border-left-style:none;
+    border-top-style: none;
+    border-bottom-style: none;
+    border-right-style: none;
+    background-color: #FAFAFA;
+    border-radius: 3px;
+}
+
+QComboBox#comboType::drop-down:focus
+{
+    border-color:#00A6E2;
+}
+
+QComboBox#comboType::drop-down:hover
+{
+    background-color: #FFFFFF;
+}
+
+QComboBox#comboType::drop-down:pressed
+{
+    background-color: #EAEAEA;
+}
+
+QSizeGrip {
+    width: 15px;
+}
+#labelWarning
+{
+	color: #FF0000;
+}
+#hiddenFileLabelWarning
+{
+	color: #FF8C00;
+}
+QLabel[cssClass="reminding"]
+{
+    color:#767676;
+    font-size:13px;
+    min-height:0;
+}

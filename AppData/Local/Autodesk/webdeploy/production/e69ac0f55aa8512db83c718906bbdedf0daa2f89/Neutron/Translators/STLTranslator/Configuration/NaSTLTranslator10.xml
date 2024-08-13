@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<root DllName="NaSTLTranslator10" Identifier="STLTranslator" IsCoreAddIn="0" IsUIAddIn="0" 
+      IsTranslatorAddIn="1" Name="STLTranslator" FileFilterExt="*.stl" FileFilterDescription="LOCID=STLFileFilterDescription" 
+      SupportImport="1" SupportExport="1">
+  <LOC Module="NaSTLTranslator" _LCLZId="STLFileFilterDescription" _LCLZText="STL Files (*.stl)"/>
+  <NeededAddIns>
+    <NeededAddIn>Scene</NeededAddIn>
+    <NeededAddIn>CommonData</NeededAddIn>
+    <NeededAddIn>Component</NeededAddIn>
+    <NeededAddIn>Body</NeededAddIn>
+    <NeededAddIn>NeutronProducer</NeededAddIn>
+    <NeededAddIn>NeutronConsumer</NeededAddIn>
+    <NeededAddIn>NeutronListener</NeededAddIn>
+  </NeededAddIns>
+  <SupportedAssetTypes>
+    <SupportedAssetType>Hello3DAssetType</SupportedAssetType>
+    <SupportedAssetType>FusionAssetType</SupportedAssetType>
+  </SupportedAssetTypes>
+</root>

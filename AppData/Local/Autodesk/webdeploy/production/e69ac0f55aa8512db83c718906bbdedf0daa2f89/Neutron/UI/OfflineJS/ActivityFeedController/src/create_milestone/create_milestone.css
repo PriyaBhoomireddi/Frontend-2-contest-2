@@ -1,0 +1,75 @@
+/*
+    CREATE MILESTONE
+*/
+#createMilestone{
+    position: absolute;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #ffffff;
+    opacity: 1;
+    -webkit-transition: opacity 0.2s ease-out;
+    transition: opacity 0.2s ease-out;
+    border-radius: 3px;
+}
+#createMilestone.embeddedMode{ z-index: 1010 }
+
+
+
+/*
+    HEADER
+*/
+#createMilestone #header{
+    width: 100%;
+    padding: 0 30px 0 30px;
+}
+
+#createMilestone #header .titleLayout{ padding: 28px 0 24px 0 }
+
+#createMilestone #header .title{ padding-right: 19px }
+
+#createMilestone #header .closeButton{
+    width: 0.8em;
+    height: 0.8em;
+}
+
+#createMilestone #header .divider{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/*
+    FOOTER
+*/
+#createMilestone #footer{
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 30px 0 30px;
+}
+
+#createMilestone #footer .titleContainer{
+    height: 2.571em;
+    line-height: 2.571em;
+    padding: 0 14px 0 0;
+}
+
+#createMilestone #footer:not(.showDescription) .partOfDescriptionInput{ display: none }
+
+#createMilestone #footer .addDescriptionContainer{
+    text-align: right;
+    padding: 4px 0 0 0;
+}
+
+#createMilestone #footer .addDescriptionContainer .addDescriptionButton{ display: inline-block }
+#createMilestone #footer .addDescriptionContainer .addDescriptionButton:hover{ color: #007ec0 }
+
+#createMilestone .dialogButtonsContainer{
+    position: relative;
+    padding: 47px 0 30px 0;
+}
+
+#createMilestone .dialogButtonsContainer > div{ margin-right: 17px }
+#createMilestone .dialogButtonsContainer > div:last-child{ margin-right: 0 }

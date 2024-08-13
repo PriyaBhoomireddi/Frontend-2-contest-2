@@ -1,0 +1,15 @@
+<div id="turning_tolerance"><p>Tolérance utilisée pour linéariser des éléments de géométrie tels que des splines et des ellipses.
+La tolérance est déterminée par la distance de corde maximale.</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="200" height="200" src="../images/ToleranceLoose.png"/></center></td>
+<td><center><img border="0" width="200" height="200" src="../images/ToleranceTight.png"/></center></td>
+</tr><tr>
+<td><center><p><b> Tolérance large 0,100</b></p></center></td>
+<td><center><p><b>Tolérance stricte 0,001</b></p></center></td>
+</tr></table>
+<p>Le déplacement de délimitation de contour des machines CNC est déterminé par la commande de ligne G1 et les commandes d'arc G2 et G3. Aussi, le système de FAO calcule une approximation des trajectoires de spline et de surface en les linéarisant, c'est-à-dire en utilisant plusieurs segments courts pour obtenir à peu près la forme voulue. La correspondance entre la trajectoire d'outil et la forme désirée dépend pour beaucoup du nombre de lignes utilisées. Plus vous utilisez de lignes, plus la trajectoire d'outil est proche de la forme nominale de la spline ou de la surface.</p>
+<p><b>Surcharge de données</b></p>
+<p>Il est tentant de toujours utiliser des tolérances strictes, mais cette option présente aussi des inconvénients, comme un accroissement du temps de calcul des trajectoires d'outil, une augmentation de la taille des fichiers de code G et l'utilisation de mouvements linéaires très courts. Les deux premiers aspects ne sont pas très problématiques, car le programme calcule très rapidement et la plupart des commandes disposent d'au moins 1 Mo de mémoire vive. En revanche, l'application de mouvements de petite amplitude, associés à des vitesses d'avance élevées, peut entraîner un phénomène appelé surcharge de données.</p>
+<p>On parle de surcharge lorsque la commande est submergée de données, au point qu'elle ne peut pas suivre. Les commandes CNC ne peuvent traiter qu'un nombre fini de lignes de code (blocs) par seconde. Cette valeur peut ne pas dépasser 40 blocs/s sur d'anciennes machines ou 1 000 blocs/s sur les machines Haas Automation. L'application de mouvements linéaires de faible amplitude à des vitesses d'avance élevées peut demander une vitesse de traitement excédant les capacités de gestion de la commande. Lorsque cela se produit, la machine doit s'interrompre après chaque mouvement et attendre la servocommande suivante.</p>
+</div>

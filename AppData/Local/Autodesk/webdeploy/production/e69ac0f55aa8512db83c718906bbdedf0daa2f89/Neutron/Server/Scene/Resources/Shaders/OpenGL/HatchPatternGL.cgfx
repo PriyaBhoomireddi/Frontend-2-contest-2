@@ -1,0 +1,192 @@
+//#define LOCAL_VIEWER
+#define FLIP_BACKFACING_NORMALS
+#define CLIPPING
+
+#ifdef CLIPPING
+#include "ClippingGL.cgh"
+#endif
+
+// World transformation.
+float4x4 gWXf : World 
+< 
+    string UIWidget = "None";
+    bool rowMajor = true;
+>;
+
+// World-view transformation
+float4x4 gWV : WorldView 
+< 
+    string UIWidget = "None"; 
+    bool rowMajor = true;
+>;
+
+// World-View-projection transformation.
+float4x4 gWVPXf : WorldViewProjection 
+< 
+    string UIWidget = "None"; 
+    bool rowMajor = true;
+>;
+
+// Whether the projection matrix flips Z: -1.0 if so, otherwise 1.0.
+float gProjZSense : ProjectionZSense < string UIWidget = "None"; >;
+
+float gHatchSlope : HatchSlope
+<
+    string UIName = "Hatch Slope";
+    string UIWidget = "Slider";
+> = 1.0f;                   
+
+float  gHatchPeriod : HatchPeriod
+<
+    string UIName = "Hatch Period";
+    string UIWidget = "Slider";
+> = 10.0f;                  
+
+// The first color of the stripe
+float3 gHatchTintColor : HatchTintColor
+<
+    string UIName = "Hatch Tint Color";
+> = float3( 0.0, 0.5, 0.5 );   
+
+float  gHatchTintIntensity : HatchTintIntensity
+<
+	string UIName = "Hatch Tint Intensity";
+	string UIWidget = "Slider";
+> = 1.0f;
+
+// Opacity factor.
+float gOpacity : Opacity
+<
+    string UIName = "Opacity";
+    string UIWidget = "Slider";
+    float UIMin = 0.0f;
+    float UIMax = 1.0f;
+    float UIStep = 0.1f;
+> = 1.0f;
+
+// Depth priority, which shifts the model a bit forward in the z-buffer
+float gDepthPriority : DepthPriority
+<
+	string UIName = "Depth Priority";
+	string UIWidget = "Slider";
+	float UIMin = -16 / 1048576.0f;    // divide by 2^24/16 by default
+	float UIMax = 16 / 1048576.0f;
+	float UIStep = 1 / 1048576.0f;
+> = 0.0f;
+
+struct VS_INPUT
+{
+    float3 Pos  : POSITION;
+    float3 Normal  : NORMAL;
+};
+
+struct VS_TO_PS
+{
+    float4 HPos       : POSITION;
+
+#ifdef CLIPPING
+    // World position, for CLIPPING
+    float4 HPw 	: TEXCOORD2;
+#endif
+};
+
+VS_TO_PS HatchPatternVS(VS_INPUT In)
+{
+    VS_TO_PS Out;
+
+    float4 P = float4(In.Pos, 1.0);	  
+    Out.HPos          = mul(P, gWVPXf); 
+
+    // modify the HPos a bit by biasing the Z a bit forward, based on depth priority
+    Out.HPos.z -= Out.HPos.w*2.0f*gDepthPriority;
+	Out.HPos.z -= Out.HPos.w*2.0f/1048576.0f;
+
+#ifdef CLIPPING
+	// On Mac, the semantic CLP(n) does not work, so we need to simulate exactly as what basic material has done
+    // First compute the Pw in vertex shader, then pass the Pw to pixel shader
+    Out.HPw = mul(float4(In.Pos, 1.0f), gWXf);
+#endif
+
+    return Out; 
+}
+
+float4 HatchPatternPS(VS_TO_PS In, float4 WPos : WPOS) : COLOR0
+{
+
+#ifdef CLIPPING
+
+	// Compute whether the pixel needs to be discard by the clipping planes.
+    bool needDiscard = false;
+    if (gNumClipPlanes > 0) { if(dot(In.HPw, gClipPlanes[0])<0) needDiscard = true;}
+    if (gNumClipPlanes > 1) { if(dot(In.HPw, gClipPlanes[1])<0) needDiscard = true;}
+    if (gNumClipPlanes > 2) { if(dot(In.HPw, gClipPlanes[2])<0) needDiscard = true;}
+    if (gNumClipPlanes > 3) { if(dot(In.HPw, gClipPlanes[3])<0) needDiscard = true;}
+    if (gNumClipPlanes > 4) { if(dot(In.HPw, gClipPlanes[4])<0) needDiscard = true;}
+    if (gNumClipPlanes > 5) { if(dot(In.HPw, gClipPlanes[5])<0) needDiscard = true;}
+    
+    if (needDiscard == true)
+        discard;
+
+#endif
+
+	float2 coord = WPos.xy;
+	
+	float hatchPhase;
+	float dist;
+	float3 hatchColor;
+
+	float hatchSlope = gHatchSlope;
+	if (abs(hatchSlope) <= 1.0)
+	{
+		hatchPhase = coord.y - hatchSlope * coord.x;
+		dist = fmod(hatchPhase, gHatchPeriod);
+		if (dist < 0.0)
+		{
+			dist = gHatchPeriod + dist;
+		}
+	}
+	else if(abs(hatchSlope) <= 2.0)
+	{
+		if (hatchSlope > 0.0f)
+		{
+			hatchSlope = 2.0 - hatchSlope;
+		}
+		else
+		{
+			hatchSlope = -2.0 - hatchSlope;
+		}
+
+		hatchPhase = coord.x - hatchSlope * coord.y;
+		dist = fmod(hatchPhase, gHatchPeriod);
+		if (dist < 0.0)
+		{
+			dist = gHatchPeriod + dist;
+		}
+	}
+	else
+	{
+		dist = fmod(coord.x, gHatchPeriod);
+	}
+
+	if (dist < 0.99)
+	{
+		hatchColor = float3(0.0,0.0,0.0);
+	} 
+	else 
+	{
+		hatchColor.xyz = gHatchTintColor;
+	}   
+
+    // Final color and alpha.
+    float4 final = float4(hatchColor, gOpacity);
+    return final;
+}
+
+technique HatchPattern
+{
+    pass P0
+    {
+        VertexShader = compile glslv HatchPatternVS();
+        PixelShader = compile glslf HatchPatternPS();
+    }
+}

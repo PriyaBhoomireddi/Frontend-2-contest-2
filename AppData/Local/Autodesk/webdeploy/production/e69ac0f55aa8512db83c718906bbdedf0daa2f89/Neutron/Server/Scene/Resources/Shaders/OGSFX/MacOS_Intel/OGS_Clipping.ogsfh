@@ -1,0 +1,165 @@
+//**************************************************************************/
+// Copyright (c) 2008 Autodesk, Inc.
+// All rights reserved.
+//
+// These coded instructions, statements, and computer programs contain
+// unpublished proprietary information written by Autodesk, Inc., and are
+// protected by Federal copyright law. They may not be disclosed to third
+// parties or copied or duplicated in any form, in whole or in part, without
+// the prior written consent of Autodesk, Inc.
+//**************************************************************************/
+// DESCRIPTION: Clipping utilities (OpenGL).
+// AUTHOR: Ryan Qian, ported to OGSFX by Flavio Bortot
+// CREATED: May 2013
+//**************************************************************************/
+
+#ifndef _CLIPPING_OGSFH_
+#define _CLIPPING_OGSFH_
+
+// Clipping plane array (world space).
+
+#define OGSFX_MAX_CLIP_PLANES 8
+uniform vec4 gClipPlanes[OGSFX_MAX_CLIP_PLANES] : ClippingPlanes =
+{
+    {1.0, 0.0, 0.0, 0.0},
+    {0.0, 1.0, 0.0, 0.0},
+    {0.0, 0.0, 1.0, 0.0},
+    {1.0, 0.0, 0.0, 0.0},
+    {1.0, 0.0, 0.0, 0.0},
+    {1.0, 0.0, 0.0, 0.0},
+    {1.0, 0.0, 0.0, 0.0},
+    {1.0, 0.0, 0.0, 0.0}
+};
+
+// Number of clipping planes.  --> ALWAYS REMEMBER TO USE THIS SEMANTIC!! <--
+uniform lowp int gNumClipPlanes : ClippingPlaneCount= 0;
+
+GLSLShader ClipPlanes {
+
+#vertexshader
+#if GL_ES
+  #if defined(GL_APPLE_clip_distance)
+    // declare gl_ClipDistance for devices that supports GL_APPLE_clip_distance extension
+    #define ClipDistance gl_ClipDistance
+  #endif
+
+  #if SHADER_VERSION == 2
+    #define VERTEX_OUT varying
+  #else
+    #define VERTEX_OUT out
+  #endif
+
+// ADBUG_2: On some Android devices such as Galaxy Note 4, the varying arrays are not supported. We
+// have to use separate varyings.
+// TODO: this is a driver bug. After it is fixed, we can remove the android specific code.
+// https://developer.qualcomm.com/forum/qdn-forums/maximize-hardware/mobile-gaming-graphics-adreno/28752
+#if defined(ANDROID_MOBILE) && SHADER_VERSION == 2
+    VERTEX_OUT highp float ClipDistance0;
+    VERTEX_OUT highp float ClipDistance1;
+    VERTEX_OUT highp float ClipDistance2;
+    VERTEX_OUT highp float ClipDistance3;
+    VERTEX_OUT highp float ClipDistance4;
+    VERTEX_OUT highp float ClipDistance5;
+    VERTEX_OUT highp float ClipDistance6;
+    VERTEX_OUT highp float ClipDistance7;
+#else
+	VERTEX_OUT highp float ClipDistance[OGSFX_MAX_CLIP_PLANES];
+#endif
+
+#else
+
+#define ClipDistance gl_ClipDistance
+
+	//OpenGL core declares gl_ClipDistances as a dimension-less array.
+	//The user must initialize it (i.e. explicit the dimension) before using it
+	//On the C++ side (OGSFX runtime) we are enabling only those planes that are used.
+	float ClipDistance[OGSFX_MAX_CLIP_PLANES];
+
+#endif
+void ComputeClipDistances(in vec4 HPw)
+{
+    // A clip distance is the distance of the specified world-space point from the clipping plane.
+    // This is computed with a dot product.  Values are interpolated in the rasterizer, and
+    // fragments with any value less then zero (i.e. on the negative side of a clipping plane)
+    // are discarded before reaching the pixel shader.
+
+    // Compute clip distances.
+#if defined(ANDROID_MOBILE) && SHADER_VERSION == 2
+    // ALIMIT_1: On some Android devices, dynamic loops are not supported. So we need to unroll the
+    // loops here.
+    // ADBUG_2: On some Android devices such as Galaxy Note 4, the varying arrays are not supported.
+    // We have to use separate varyings.
+    // TODO: ADBUG_2.
+    if(0 < gNumClipPlanes)  ClipDistance0=dot(HPw, gClipPlanes[0]);
+    if(1 < gNumClipPlanes)  ClipDistance1=dot(HPw, gClipPlanes[1]);
+    if(2 < gNumClipPlanes)  ClipDistance2=dot(HPw, gClipPlanes[2]);
+    if(3 < gNumClipPlanes)  ClipDistance3=dot(HPw, gClipPlanes[3]);
+    if(4 < gNumClipPlanes)  ClipDistance4=dot(HPw, gClipPlanes[4]);
+    if(5 < gNumClipPlanes)  ClipDistance5=dot(HPw, gClipPlanes[5]);
+    if(6 < gNumClipPlanes)  ClipDistance6=dot(HPw, gClipPlanes[6]);
+    if(7 < gNumClipPlanes)  ClipDistance7=dot(HPw, gClipPlanes[7]);
+#else  //defined(ANDROID_MOBILE) && SHADER_VERSION == 2
+    for(int i=0;i<gNumClipPlanes;i++)
+        ClipDistance[i]=dot(HPw, gClipPlanes[i]);
+#endif  //defined(ANDROID_MOBILE) && SHADER_VERSION == 2
+}
+#endshader
+
+#if GL_ES
+// GLES uses shader clip if GL_APPLE_clip_distance extension is not supported
+#if !defined(GL_APPLE_clip_distance)
+#pixelshader
+  #if SHADER_VERSION == 2
+    #define PIXEL_IN varying
+  #else
+    #define PIXEL_IN in
+  #endif
+
+// ADBUG_2: On some Android devices such as Galaxy Note 4, the varying arrays are not supported.
+// We have to use separate varyings.
+// TODO: ADBUG_2.
+#if defined(ANDROID_MOBILE) && SHADER_VERSION == 2
+    PIXEL_IN float ClipDistance0;
+    PIXEL_IN float ClipDistance1;
+    PIXEL_IN float ClipDistance2;
+    PIXEL_IN float ClipDistance3;
+    PIXEL_IN float ClipDistance4;
+    PIXEL_IN float ClipDistance5;
+    PIXEL_IN float ClipDistance6;
+    PIXEL_IN float ClipDistance7;
+#else
+    // Note, ClipDistance in PS would compare to 0.0 directly, no further calculation. Mediump
+    // PS input would be good in this case
+	PIXEL_IN float ClipDistance[OGSFX_MAX_CLIP_PLANES];
+#endif
+
+void ClipPixels()
+{
+#if defined(ANDROID_MOBILE) && SHADER_VERSION == 2
+    // ALIMIT_1: On some Android devices, dynamic loops are not supported. So we need to unroll the
+    // loops here.
+    // ADBUG_2: On some Android devices such as Galaxy Note 4, the varying arrays are not supported.
+    // We have to use separate varyings.
+    // TODO: ADBUG_2.
+    if(0 < gNumClipPlanes && ClipDistance0 < 0.0)  discard;
+    if(1 < gNumClipPlanes && ClipDistance1 < 0.0)  discard;
+    if(2 < gNumClipPlanes && ClipDistance2 < 0.0)  discard;
+    if(3 < gNumClipPlanes && ClipDistance3 < 0.0)  discard;
+    if(4 < gNumClipPlanes && ClipDistance4 < 0.0)  discard;
+    if(5 < gNumClipPlanes && ClipDistance5 < 0.0)  discard;
+    if(6 < gNumClipPlanes && ClipDistance6 < 0.0)  discard;
+    if(7 < gNumClipPlanes && ClipDistance7 < 0.0)  discard;
+#else  //defined(ANDROID_MOBILE) && SHADER_VERSION == 2
+    for(int i=0;i<gNumClipPlanes;i++)
+    {
+        if (ClipDistance[i] < 0.0)
+            discard;
+    }
+#endif  //defined(ANDROID_MOBILE) && SHADER_VERSION == 2
+}
+#endshader
+#endif //!GL_APPLE_clip_distance
+#endif //GL_ES
+}
+
+#endif // _CLIPPING_OGSFH_

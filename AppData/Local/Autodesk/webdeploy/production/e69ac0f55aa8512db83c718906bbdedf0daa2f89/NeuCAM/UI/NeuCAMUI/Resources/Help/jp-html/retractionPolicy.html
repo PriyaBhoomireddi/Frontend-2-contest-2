@@ -1,0 +1,19 @@
+<div id="retractionPolicy"><p>工具が切削パス間をどのように移動するかをコントロールします。</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="125" height="125" src="../images/retractionPolicy_FullRetraction.png"/></center></td>
+<td><center><img border="0" width="125" height="125" src="../images/retractionPolicy_MinimumRetraction.png"/></center></td>
+<td><center><img border="0" width="125" height="125" src="../images/retractionPolicy_ShortestPath.png"/></center></td>
+</tr><tr>
+<td><center><p><b>完全退避</b></p></center></td>
+<td><center><p><b>最小退避</b></p></center></td>
+<td><center><p><b>最短パス</b></p></center></td>
+</tr></table>
+<p><em>図はフロー</em></p>
+<br>
+<p><b>完全退避</b> - 次のパスの加工開始位置上方に移動する前に、パスの終わりで退避高さまで工具を完全に退避します。</p>
+<p><b>最小退避</b> - 工具がワークピースをクリアできる最低の高さに指定の安全距離を加算した高さまで、まっすぐに退避します。</p>
+<p><b>最短パス</b> - 可能な限り最短の直線距離でパス間を工具が移動します。</p>
+<p><b>警告:</b> 最短パスは、複数の G0 動作がまっすぐな 1 本の直線動作となる直線化された早送り動作をサポートしていない工作機械には使用しないでください(これをサポートしていない場合、すべての軸が最大速度で動く G0 動作となります。これは「ドッグレッグ」動作と呼ばれることもあります)。この規則に従わないと、ソフトウェアによって正しくシミュレートできないマシン モーションになり、<em>工具がクラッシュする可能性があります</em>。</p>
+<p>線形化早送り動作をサポートしない CNC 工作機では、ポスト プロセッサはすべての G0 動作を高速送り G1 動作に変換するように変更することができます。ポスト プロセッサを変更する方法の詳細や手順については、技術サポートにお問い合わせください。</p>
+</div>

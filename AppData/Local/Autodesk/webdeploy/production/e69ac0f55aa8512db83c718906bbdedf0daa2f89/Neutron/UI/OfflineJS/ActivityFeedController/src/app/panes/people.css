@@ -1,0 +1,73 @@
+.peoplePane{
+    position: absolute;
+    overflow: auto;
+}
+
+/* list item */
+.peoplePane .listItem {
+    border: none;
+}
+
+.peoplePane .peopleListItem{
+    padding: 7px 7px 7px 49px;
+    position: relative;
+    min-width: 292px;
+    min-height: 32px;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgb(100, 100, 100);
+}
+
+.peoplePane .peopleListItem .peopleAvatar{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #eeeeee;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    line-height: 32px;
+    color: white;
+    text-align: center;
+}
+
+.peoplePane .peopleListItem .defaultIcon{
+    background-image: url("../../assets/defaultAvatar.png");
+}
+
+.peoplePane .peopleListItem .peopleModerator{
+    background: -webkit-image-set(url(../../assets/moderator_16.png) 1x,
+    url(../../assets/moderator_16@2x.png) 2x) no-repeat left center;
+    padding: 0 0 0 20px;
+}
+
+.peoplePane .peopleListItem .fullName{
+    font-weight: bold;
+}
+
+.peoplePane .peopleListItem .primaryEmail{
+    color:#42A8E1;
+    max-width: 260px;
+    display: inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.peoplePane .peopleListItem .primaryEmail:hover{
+    color: #2A6496;
+    text-decoration: underline;
+    cursor: default;
+}
+
+.peoplePane .bottomMessage{
+    background-color: #cccccc;
+    color: #ffffff;
+    line-height: 22px;
+    font-size: 12px;
+    font-weight: bold;
+    padding-left: 8px;
+    margin-top: 8px;
+}

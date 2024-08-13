@@ -1,0 +1,35 @@
+#ifndef _HQ_FX_STIPPLE_LINE_TYPE_HEADER_
+#define _HQ_FX_STIPPLE_LINE_TYPE_HEADER_
+
+#include "Sketch_line_type.ogsfh"
+#include "Sketch_stipple.ogsfh"
+
+GLSLShader Sketch_stipple_line_type
+{
+
+vec4 compute_wide_pattern_color_stipple(WideLinePatternResult attr, float width, uint color, uint glow_color, vec2 pixelPos, uint caps_type, uint stipple_index)
+{
+    vec4 ret = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+
+    // if dist is valid
+    if (attr.dist >= 0.0f)
+    {
+        // if is cap, need to compute cap color
+        if (attr.is_caps)
+        {
+            ret = compute_caps_final_color_stipple(attr.dist, width, color, glow_color,
+                pixelPos, attr.caps_center, attr.caps_dir, caps_type, stipple_index);
+        }
+        // else compute body color
+        else
+        {
+            ret = compute_final_color_stipple(attr.dist, width, color, glow_color, pixelPos, stipple_index);
+        }
+    }
+
+    return ret;
+}
+
+}
+
+#endif // _HQ_FX_STIPPLE_LINE_TYPE_HEADER_

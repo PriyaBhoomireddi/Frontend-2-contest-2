@@ -1,0 +1,56 @@
+#ifndef _HQ_FX_ELLIPSE_CAPS_H_
+#define _HQ_FX_ELLIPSE_CAPS_H_
+
+#include "Sketch_circle_ellipse.ogsfh"
+#include "Sketch_circle.ogsfh"
+#include "Sketch_ellipse.ogsfh"
+
+GLSLShader Sketch_ellipse_caps
+{
+
+struct VertexAttr_Caps
+{
+    vec4 position; // transformed  vertex position
+
+    vec2 uv;     // uv is used to compute gradient
+    vec4 ref;   // xy reference point, zw reference dir
+
+    vec2 radius;  // x long axis, y short axis
+    vec2 range;  // x start angle, y end angle
+    uint color;  // line color
+    float weight; // line weight
+
+    uint glowColor; // glow color for highlights
+    uint capType; // cap type
+};
+
+// adjust elliptical arc for precision. don't need to do adjustment in logic CS since this circle is
+// represented with float type and is precise.
+void adjust_caps(inout EllipseAttr_Dash attr)
+{
+    if (attr.isLogical == uint(0))
+    {
+        bool is_closed = is_closed_arc(attr.range);
+        bool is_circle = is_circle_arc(attr.radius);
+
+        if (is_closed)
+        {
+            if (is_circle)
+                adjust_closed_circle(attr);
+            else
+                adjust_closed_ellipse(attr);
+        }
+        else
+        {
+            if (is_circle)
+                adjust_circle_arc(attr);
+            else
+                adjust_elliptical_arc(attr);
+        }
+        updateOffset(attr.center);
+    }
+}
+
+}
+
+#endif // _HQ_FX_ELLIPSE_CAPS_H_

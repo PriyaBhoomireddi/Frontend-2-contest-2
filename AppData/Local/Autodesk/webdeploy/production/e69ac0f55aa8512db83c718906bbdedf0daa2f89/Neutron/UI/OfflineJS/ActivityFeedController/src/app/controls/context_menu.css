@@ -1,0 +1,112 @@
+.contextMenu{
+    position: absolute;
+    min-width: 150px;
+    background: #ffffff;
+    border: #d2d2d2 1px solid;
+    z-index: 20;
+    opacity: 0;
+    overflow: hidden;
+    border-radius: 3px;
+    color: #484848;
+}
+
+.contextMenu.popupMenu{
+    top: 0;
+    overflow: visible;
+    min-width: 130px;
+}
+
+.contextMenu .item{
+    position: relative;
+    padding: 0 12px 0 12px;
+    cursor: default;
+    font-size: 12px;
+    white-space:nowrap;
+    line-height: 22px;
+}
+
+.contextMenu .separator{
+    margin: 11px 12px 11px 12px;
+    background-color: #d2d2d2;
+    height: 1px;
+}
+
+.contextMenu .item:hover {
+    background-color: #f5f6f7
+}
+
+.contextMenu .item.disabled{
+    cursor: default;
+    opacity: 0.5;
+}
+.contextMenu .item.disabled:hover{
+    opacity: 0.5;
+    /* don't highlight disabled items on hover */
+    /* make sure this matches the default background color */
+    background: #ffffff;
+}
+
+.contextMenu.checkable .item{
+    padding: 0px 10px 0 27px;
+    background-image: -webkit-image-set(url(../../assets/check_unsel.png) 1x,
+    url(../../assets/check_unsel@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: 7px center;
+}
+
+.contextMenu .noImage.item{
+    background-image: none;
+}
+
+.contextMenu.checkable .item.checked
+{
+    background-image: -webkit-image-set(url(../../assets/check_sel.png) 1x,
+    url(../../assets/check_sel@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: 7px center;
+}
+
+.contextMenu.checkable .item.unsel{
+    padding: 0px 10px 0 27px;
+    background-image: -webkit-image-set(url(../../assets/radio_unsel.png) 1x,
+    url(../../assets/radio_unsel@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: 7px center;
+}
+
+.contextMenu.checkable .item.sel
+{
+    background-image: -webkit-image-set(url(../../assets/radio_sel.png) 1x,
+    url(../../assets/radio_sel@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: 7px center;
+}
+
+.hiddenContextMenuInput {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+/*.contextMenu .item.popupItem
+{
+    background-image: -webkit-image-set(url(../../assets/menu_item_list_16.png) 1x,
+                                        url(../../assets/menu_item_list_16@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: 97% 50%;
+    position: relative;
+}
+
+.item.popupItem .contextMenu {
+    visibility: hidden;
+    min-width: 100px;
+    right: 100%;
+}
+
+.item.popupItem:hover .contextMenu {
+    visibility: visible;
+    opacity: 1;
+}*/

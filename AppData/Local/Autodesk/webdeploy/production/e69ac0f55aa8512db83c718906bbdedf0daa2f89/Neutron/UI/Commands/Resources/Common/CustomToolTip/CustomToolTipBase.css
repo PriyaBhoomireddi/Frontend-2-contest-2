@@ -1,0 +1,17 @@
+QObject 
+{
+    font-family: Artifakt Element; 
+}
+
+QLabel#title
+{
+    font-size:18px;
+    color: #00A6E2;
+}
+
+QTLinkLabel#content
+{
+	font-size: 13px;
+	color: #6E6E6E;
+}
+

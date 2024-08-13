@@ -1,0 +1,141 @@
+/*
+	Note: Some of the styles are set directly from C++
+*/
+
+
+QDialog {
+    background-color: #FFFFFF;
+    border: 1px solid;
+	border-color: rgba(60, 60, 60, 0.25);
+}
+
+QLabel, QCheckBox, QRadioButton, QPushButton {
+    font-family: Artifakt Element, Arial, Sans-Serif;
+}
+
+
+/* */
+/* QLabel, QCheckBox, QRadioButton */
+/* */
+
+QLabel, QCheckBox, QRadioButton {
+    color: #3C3C3C;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+QLabel#titleLabel {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+QLabel#messageLabel {
+    margin-bottom: 8px;
+}
+
+QCheckBox {
+	margin-bottom: 8px;
+}
+
+QRadioButton {
+	margin-left: 8px;
+	margin-bottom: 8px;
+}
+
+
+/* */
+/* QPushButtons */
+/* */
+
+QPushButton {
+    background-color: transparent;
+    color: #3C3C3C;
+    font-size: 12px;
+    border: 1px solid;
+    border-color: rgba(128, 128, 128, 0.5);
+    border-radius: 2px;
+    /* Qt doesn't appear to support the "box-sizing: border-box" property, so need to subtract 1px on all sides   */
+    height: 22px;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+
+    QPushButton:disabled {
+        color: 808080;
+    }
+
+    QPushButton:hover {
+        background-color: #F7F7F7;
+    }
+
+    QPushButton:pressed {
+        background-color: #eeeeee;
+    }
+
+QPushButton:default {
+    background-color: #0696D7;
+    color: #FFFFFF;
+    border: 1px solid #0696D7;
+}
+
+    QPushButton:default:disabled {
+        background-color: #6ac0e7;
+        border: 1px solid #6ac0e7;
+    }
+    
+	QPushButton:default:hover {
+	    background-color: #38abdf;
+	    border: 1px solid #38abdf;
+	}
+
+	QPushButton:default:pressed {
+	    background-color: #007EC0;
+	    border: 1px solid #007EC0;
+	}
+
+QPushButton#CloseButton {
+	border: none;
+    width: 20px;
+    height: 20px;
+}
+
+    QPushButton#CloseButton:disabled {
+        background-color: transparent;
+        border: none;
+    }
+
+    QPushButton#CloseButton:hover {
+        background-color: transparent;
+        border: none;
+    }
+
+    QPushButton#CloseButton:pressed {
+        background-color: transparent;
+        border: none;
+    }
+
+
+/* */
+/* QFrames */
+/* */
+
+QFrame#titleSeparator {
+    color: rgba(60, 60, 60, 0.25);
+}
+
+QFrame#statusIndicatorInfo {
+    color: transparent;
+    background-color: #38ABDF;
+}
+
+QFrame#statusIndicatorWarning {
+	color: transparent;
+    background-color: #FBB549;
+}
+
+QFrame#statusIndicatorError {
+    color: transparent;
+    background-color: #EB5555;
+}

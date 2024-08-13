@@ -1,0 +1,244 @@
+.projectsPane{
+    position: absolute;
+    overflow: hidden;
+}
+
+.projectsPane .closeButton{
+    position: absolute;
+    background-image: -webkit-image-set(url('../../assets/close_normal_10.png') 1x, url('../../assets/close_normal_10_@2x.png') 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.projectsPane .closeButton ._hover_{
+    background-image: -webkit-image-set(url('../../assets/close_hover_10.png') 1x, url('../../assets/close_hover_10_@2x.png') 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.projectsPane .searchButton{
+    position: absolute;
+    background-image: -webkit-image-set(url('../../assets/search_16.png') 1x, url('../../assets/search_16@2x.png') 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.projectsPane .searchButton._disabled_{
+    position: absolute;
+    background-image: -webkit-image-set(url('../../assets/search_16_dis.png') 1x, url('../../assets/search_16_dis@2x.png') 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.projectsPane .searchButton:not(._disabled_) ._hover_{
+    background-image: -webkit-image-set(url('../../assets/search_16_hover.png') 1x, url('../../assets/search_16_hover@2x.png') 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.projectsPane .refresh, .projectsPane .refreshAnim {
+    position: absolute;
+}
+.projectsPane .refresh .refreshImage, .projectsPane .refreshAnim .refreshImage {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: -webkit-image-set(url('../../assets/refresh_16.png') 1x, url('../../assets/refresh_16@2x.png') 2x);
+}
+.projectsPane .refresh._disabled_ .refreshImage, .projectsPane .refreshAnim._disabled_ .refreshImage{
+    background-image: -webkit-image-set(url('../../assets/refresh_16_dis.png') 1x, url('../../assets/refresh_16_dis@2x.png') 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.projectsPane .refresh:not(._disabled_) ._hover_ {
+    background-image: -webkit-image-set(url('../../assets/refresh_16_hover.png') 1x, url('../../assets/refresh_16_hover@2x.png') 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.projectsPane .refreshAnim .refreshImage {
+    -webkit-animation: rotating 1.5s linear infinite;
+    animation: rotating 1.5s linear infinite;
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.projectsPane .backToLast {
+    position: absolute;
+}
+
+.projectsPane .backToLast .textData {
+    font-size: 0.7em;
+    color: rgb(100, 100, 100);
+}
+
+.projectsPane .backToLast:hover .textData {
+    text-decoration: underline;
+}
+
+.projectsPane .title{
+    position: absolute;
+    font-size: 24px;
+    color: rgb(100, 100, 100);
+    font-weight: normal;
+    cursor: default;
+    white-space: nowrap;
+}
+
+.projectsPane .title:not(._disabled_):hover{
+    text-decoration: underline;
+}
+
+.projectsPane .title .textData{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+
+/* list item */
+.projectsPane .projectListItem{
+    padding: 7px 7px 7px 49px;
+    position: relative;
+    min-height: 52px;
+    min-width: 290px;
+    font-size: 12px;
+    color: rgb(100, 100, 100);
+}
+
+.projectsPane .listItem .projectListItem>.projectInfoTip {
+    word-wrap: break-word;
+    padding-right: 22px;
+    display: none;
+}
+
+.projectsPane .projectListItem>.itemGlyph.join:hover+.projectInfoTip {
+    display: inline;
+}
+
+/* item selected */
+.projectsPane .listItem.selected .projectListItem>.projectInfoTip {
+    display: inline;
+}
+
+.projectsPane .listItem.selected .projectListItem>.itemGlyph.join .joinimg{
+    display: none;
+}
+
+.projectsPane .listItem.selected .projectListItem>.itemGlyph.join .glyphText{
+    display: inline-block;
+}
+
+.projectsPane .projectListItem.needPunchOut>.punchOutButton {
+    cursor: pointer;
+    min-width:80px;
+    padding: 0 7px 0 7px;
+    line-height: 28px;
+    font-size:12px;
+    color: blue;
+    background: transparent;
+    border-radius: 4px;
+    display:block;
+}
+.projectsPane .projectListItem.needPunchOut>.punchOutButton:hover {
+    cursor: pointer;
+    color: darkcyan;
+    background: darkkhaki;
+    border-radius: 4px;
+    display:block;
+}
+
+.projectsPane .projectListItem.closeNoAccess {
+    background:lightgrey;
+}
+.projectsPane .projectListItem.openAccess {
+    background: lightgrey;
+}
+
+
+
+/* list item */
+.projectsPane .projectListItem span.thelink{
+    text-decoration: underline;
+    color: #4675A8;
+    cursor: default;
+}
+
+.projectsPane .projectListItem.corrupted{
+    background: url("../../assets/alert_icon_orange.png") no-repeat right top;
+    background-size: 12px;
+}
+
+.projectsPane .projectListItem .projectThumbnail{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 32px;
+    height: 32px;
+    border-radius: 3px;
+    background-color: #eeeeee;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.projectsPane .projectListItem:hover .itemGlyph.pin{
+    display: inline-block;
+}
+
+.projectsPane .projectListItem .projectThumbnail.recent{ background-image: -webkit-image-set(url('../../assets/recent_32.png') 1x, url('../../assets/recent_32@2x.png') 2x); }
+.projectsPane .projectListItem .projectThumbnail.newproj{ background-image: -webkit-image-set(url('../../assets/new_proj_32.png') 1x, url('../../assets/new_proj_32@2x.png') 2x); }
+
+
+.projectsPane .projectListItem .projectName{
+    position: relative;
+    font-weight: bold;
+    padding: 0 0 9px 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-right: 29px;
+}
+
+.projectsPane .projectListItem .projectDescription{
+    position: relative;
+    overflow: auto;
+    word-wrap: break-word;
+    padding-right: 22px;
+}
+
+.projectsPane .projectListItem .f {
+    background-color: #FFF99A;
+}
+
+.projectsPane .projectListItem .projectReason span.thelink{
+    text-decoration: underline;
+    color: #4675A8;
+    cursor: default;
+    word-wrap: break-word;
+    padding-right: 0;
+}
+/*.projectsPane .projectListItem .projectReason span.thelink{*/
+    /*padding-right: 0;*/
+/*}*/

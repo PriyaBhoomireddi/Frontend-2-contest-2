@@ -1,0 +1,51 @@
+#ifndef _HQ_FX_LOGICAL_SCREEN_COMMON_H_
+#define _HQ_FX_LOGICAL_SCREEN_COMMON_H_
+
+#include "Sketch_logical_precision.ogsfh"
+#include "Sketch_screen.ogsfh"
+
+GLSLShader Sketch_logical_screen
+{
+
+float neutron_sketch_screen_to_logical(float x)
+{
+    return x * gPixelLen.x / abs(gLCSMatrix[0].x);
+}
+
+float neutron_sketch_logical_to_screen(float x)
+{
+    return x / gPixelLen.x * abs(gLCSMatrix[0].x);
+}
+
+vec2 neutron_sketch_radius_to_screen(vec2 radius)
+{
+    if (gLCSIsInteger)
+        return floatBitsToInt(radius) * abs(vec2(gLCSMatrix[0].x, gLCSMatrix[1].y)) * gScreenSize * 0.5f;
+    else
+        return radius * abs(vec2(gLCSMatrix[0].x, gLCSMatrix[1].y)) * gScreenSize * 0.5f;
+}
+
+float neutron_sketch_lcs_matrix_det()
+{
+    return gLCSMatrix[0].x * gLCSMatrix[1].y;
+}
+
+float neutron_sketch_lcs_matrix_det_sign()
+{
+    return sign(neutron_sketch_lcs_matrix_det());
+}
+
+vec2 neutron_sketch_lcs_matrix_scale()
+{
+    return vec2(gLCSMatrix[0].x, gLCSMatrix[1].y);
+}
+
+vec2 neutron_sketch_lcs_matrix_scale_sign()
+{
+    return sign(neutron_sketch_lcs_matrix_scale());
+}
+
+}
+
+#endif
+

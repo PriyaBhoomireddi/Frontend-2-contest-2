@@ -1,0 +1,21 @@
+<div id="smoothingFilterMode"><p>ツールパスを円滑化する方法を指定します。</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="200" height="189" src="../images/arc_fitting_ss.png"/></center></td>
+<td><center><img border="0" width="200" height="189" src="../images/arc_fitting_ss_applied.png"/></center></td>
+</tr><tr>
+<td><center><p><b>円滑化をオフ</b></p></center></td>
+<td><center><p><b>適用された円弧フィット</b></p></center></td>
+</tr></table>
+<p><b>円弧フィット</b> - ツールパスの許容差の範囲内に保ちながら、カーブした領域の複数の線を円弧に置き換えます。許容差を満たせない場合、円弧は適用されません。円弧をフィッティングすると、G コード ファイルのサイズが小さくなります。これは、ファイル サイズが小さい方がうまく機能する、低速の CNC コントローラを備えた古いマシンに適しています。</p>
+
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="400" height="196" src="../images/Evenly_spaced_points_2_SS.png"/></center></td>
+</tr><tr>
+<td><center><p><b>均等間隔の点</b></p></center></td>
+</tr></table>
+<p><b>均等間隔の点</b> - 多数の点を処理できる高速の CNC コントローラを備えた新しいマシンに適しています。</p>
+<p><b>1</b> - 古い点を削除し、切削動作に沿って新しい点を挿入し、可能な限り均等間隔になるように配置します。新しい点を追加すると、ツールパスを生成するための計算時間が長くなる場合がありますが、均等間隔の点を使用すると、マシンで時間の大幅な短縮を実現できます。<br></p>
+<p><b>2</b> - ツールパスの許容範囲内に留めるため、点がコーナーの周りにより緊密にクラスタ化される場合があります。</p>
+</div>

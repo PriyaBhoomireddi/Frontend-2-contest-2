@@ -1,0 +1,52 @@
+.neutronFiles{
+    position: absolute;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.neutronFiles .verticalSeparator.left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    background: #757575;
+}
+
+.neutronFiles .filesContainer{
+    position: absolute;
+    top: 0;
+    left: 1px;
+    overflow: auto;
+}
+
+/* file */
+.neutronFiles .neutronFile{
+    position: relative;
+    cursor: pointer;
+    color: #000000;
+    height: 20px;
+    line-height: 20px;
+    padding: 4px 5px 4px 30px;
+    border-bottom: #757575 1px solid;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.neutronFiles .neutronFile:hover{ background: #b7b7b7; }
+.neutronFiles .neutronFile.active{
+    background: #757575;
+    color: #ffffff;
+}
+
+/* file close btn */
+.neutronFiles .neutronFile .closeBtn{
+    position: absolute;
+    cursor: pointer;
+    left: 10px;
+    top: 9px;
+    width: 10px;
+    height: 10px;
+    background: url("../../assets/close_dark_gray.png") no-repeat center center;
+    background-size: contain;
+}
+.neutronFiles .neutronFile.active .closeBtn{ background: url("../../assets/close_white.png") no-repeat center center; }

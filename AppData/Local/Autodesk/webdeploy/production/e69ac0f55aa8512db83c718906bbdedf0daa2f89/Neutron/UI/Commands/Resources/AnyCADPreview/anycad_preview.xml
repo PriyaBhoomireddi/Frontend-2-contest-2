@@ -1,0 +1,261 @@
+<html>
+
+<head>
+
+        <style type="text/css">
+
+        *{ border:0; margin:0; padding:0; outline:0; }
+
+
+
+
+
+      @font-face {
+
+
+
+        font-family: 'Open Sans';
+
+        src: url('%fnt path%/OpenSans-Regular.ttf');
+
+
+
+        font-weight: 400;
+
+
+
+        font-style: normal;
+
+
+
+      }
+
+
+
+        .noSelection{
+
+    -webkit-user-select: none;
+
+    user-select: none;
+
+}
+
+
+
+body {
+
+    border-top: 1px solid #d9d9d9;
+
+}
+
+
+
+        .txt {
+
+cursor: default;
+
+            padding: 34px 34px 0 34px;
+
+            font-family: Open Sans, serif, arial, verdana, sans-serif;
+
+            font-size: 13px;
+
+            font-weight: 400;
+
+            line-height: 23px;
+
+            color: #767676;
+
+            vertical-align: top;
+
+        }
+
+
+
+        .img {
+
+            vertical-align: top;
+
+xwidth: 117px;
+
+        }
+
+
+
+.img img{
+
+  margin-top: 34px;
+
+  margin-right: 34px;
+
+  width: 78px;
+
+xheight: 122px;
+
+height: auto;
+
+}
+
+
+
+        .helpLink {
+
+            text-decoration: none;
+
+            color: #00A5E1;
+
+        }
+
+
+
+        .helpLink:hover {
+
+            color: #42b6df;
+
+        }
+
+
+
+        .helpLink:active {
+
+            color: #007fbe;
+
+        }
+
+        
+
+        .btnCell {
+
+            text-align: right;
+
+            padding: 34px 34px 34px 0;
+
+        }
+
+
+
+        .btn {
+
+cursor: default;
+
+            display: inline-block;
+
+            padding-left: 40px;
+
+            padding-right: 40px;
+
+            height: 34px;
+
+            font-family: Open Sans, serif, arial, verdana, sans-serif;
+
+            font-size: 13px;
+
+            line-height: 34px;
+
+            text-align: center;
+
+            color: white;
+
+            background-color: #00A5E1;
+
+            border-radius: 3px;
+
+        }
+
+
+
+       .btn:hover {
+
+            background-color: #42b6df;
+
+        }
+
+
+
+       .btn:active {
+
+            background-color: #007fbe;
+
+        }
+
+    </style>
+
+    <script type="text/javascript">
+
+        function sendString(str) {
+
+            document.title = '(empty msg)';
+
+            document.title = str;
+
+        }
+
+
+
+        function sendHeight() {
+
+            setTimeout(function() {
+
+                var str='RESIZE:' + table.clientHeight;
+
+                sendString(str);
+
+            }, 1);
+
+        }
+
+
+
+        function initialize() {
+
+            sendHeight();
+
+            document.onkeydown = function(evt) {
+
+                evt = evt || window.event;
+
+                if (evt.keyCode == 27) {
+
+                    sendString('BTN:CANCEL');
+
+                }
+
+            };
+
+        }
+
+
+
+    </script>
+
+</head>
+
+<body class="noSelection" onload="initialize();">
+
+    <table id="table">
+
+        <tr>
+
+            <td class="txt">
+
+                %txt%
+
+            </td>
+
+        </tr>
+
+        <tr>
+
+            <td colspan="2" class="btnCell">
+
+                <div class="btn" onclick="sendString('BTN:OK'); return false;">%ok%</div>
+
+            </td>
+
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

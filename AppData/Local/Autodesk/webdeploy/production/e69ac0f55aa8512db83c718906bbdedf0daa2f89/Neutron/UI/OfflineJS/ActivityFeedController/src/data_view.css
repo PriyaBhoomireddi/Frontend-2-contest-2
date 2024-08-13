@@ -1,0 +1,250 @@
+/* dataViewBoard */
+#dataViewBoard{
+    overflow: hidden;
+}
+
+/* topButton */
+#dataViewBoard .topButton{
+    position: absolute;
+}
+#dataViewBoard .topButton.users{
+    background-image: -webkit-image-set(url(assets/people_16.png) 1x,
+                                        url(assets/people_16@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#dataViewBoard .topButton.users ._hover_{
+    background-image: -webkit-image-set(url(assets/people_16_hover.png) 1x,
+                                        url(assets/people_16_hover@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#dataViewBoard .topButton.project{
+    background-image: -webkit-image-set(url(assets/project_16.png) 1x,
+                                        url(assets/project_16@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#dataViewBoard .topButton.project ._hover_{
+    background-image: -webkit-image-set(url(assets/project_16_hover.png) 1x,
+                                        url(assets/project_16_hover@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#dataViewBoard .topButton.search{
+    background-image: -webkit-image-set(url(assets/search_16.png) 1x,
+                                        url(assets/search_16@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+#dataViewBoard .topButton.search._disabled_{
+    background-image: -webkit-image-set(url(assets/search_16_dis.png) 1x,
+    url(assets/search_16_dis@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+#dataViewBoard .topButton.search:not(._disabled_) ._hover_{
+    background-image: -webkit-image-set(url(assets/search_16_hover.png) 1x,
+    url(assets/search_16_hover@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+#dataViewBoard .topButton.leave{
+    background-image: -webkit-image-set(url(assets/chevron_10x14.png) 1x,
+    url(assets/chevron_10x14@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#dataViewBoard .topButton.leave ._hover_{
+    background-image: -webkit-image-set(url(assets/chevron_hover_10x14.png) 1x,
+    url(assets/chevron_hover_10x14@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#dataViewBoard .topButton.close{
+    background-image: -webkit-image-set(url(assets/close_normal_10.png) 1x,
+                                        url(assets/close_normal_10_@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#dataViewBoard .topButton.close ._hover_{
+    background-image: -webkit-image-set(url(assets/close_hover_10.png) 1x,
+                                        url(assets/close_hover_10_@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#dataViewBoard .topButton.searchBack {
+    background-image: -webkit-image-set(url(assets/back_16.png) 1x,
+                                        url(assets/back_16@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+#dataViewBoard .topButton.searchBack ._hover_{
+    background-image: -webkit-image-set(url(assets/back_16_hover.png) 1x,
+                                        url(assets/back_16_hover@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+#dataViewBoard .projectsTitle{
+    position: absolute;
+    height: 23px;
+    font-size: 16px;
+    line-height: 23px;
+    color: #646464;
+}
+
+#dataViewBoard .searchContextTitle{
+    position: absolute;
+    font-weight: bold;
+    font-size: 12px;
+    color: #646464;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+/* dataViewToolbar */
+#dataViewBoard .dataViewToolbar{ }
+
+/* delimiterLine */
+#dataViewBoard .delimiterLine{
+    position: absolute;
+    background: #dbdbdb;
+    transition: top 0.25s linear;
+    -webkit-transition: top 0.25s linear;
+}
+
+/* project detail pane */
+#dataViewBoard .projectDetailPane{
+
+}
+
+#dataViewBoard .projectDetailPane .projectAvatar{
+    position: absolute;
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center center;
+    cursor: default;
+    background-color: #eeeeee;
+}
+#dataViewBoard .projectDetailPane .projectAvatar.recent{ background-image: -webkit-image-set(url('assets/recent_32.png') 1x, url('assets/recent_32@2x.png') 2x); }
+#dataViewBoard .projectDetailPane .projectAvatar.newproj{ background-image: -webkit-image-set(url('assets/new_proj_32.png') 1x, url('assets/new_proj_32@2x.png') 2x); }
+
+#dataViewBoard .projectDetailPane .projectName{
+    position: absolute;
+    font-size: 24px;
+    color: rgb(100, 100, 100);
+    font-weight: normal;
+    cursor: default;
+}
+#dataViewBoard .projectDetailPane .projectName:not(._disabled_):hover span{ text-decoration: underline; }
+
+#dataViewBoard .projectDetailPane .projectName .textData{
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+#dataViewBoard .projectDetailPane .actionButton {
+    position: absolute;
+    transition: top 0.25s linear;
+    -webkit-transition: top 0.25s linear;
+}
+
+#dataViewBoard .projectDetailPane .teamHubContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#dataViewBoard .projectDetailPane .teamHubImage{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    left: 15%;
+    top: 15%;
+    content: -webkit-image-set(url(assets/team_hub.gif) 1x, url(assets/team_hub@2x.gif) 2x);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#dataViewBoard .projectDetailPane .teamHubImage.shaked {
+    -webkit-animation: shake 0.1s ease-in-out 0.1s 6 alternate;
+    -webkit-animation-delay: 0.5s;
+}
+
+#dataViewBoard .projectDetailPane .teamHubInfo{
+    position: absolute;
+    font-family: Artifakt ElementOfc;
+    font-size: 14px;
+    line-height: 19px;
+    color: #00A8E4;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    cursor: default;
+}
+
+#dataViewBoard .projectDetailPane .actionButton.refresh .refreshImage, #dataViewBoard .projectDetailPane .actionButton.refreshAnim .refreshImage {
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-image-set(url(assets/refresh_16.png) 1x, url(assets/refresh_16@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#dataViewBoard .projectDetailPane .actionButton.refresh._disabled_ .refreshImage  {
+    background-image: -webkit-image-set(url(assets/refresh_16_dis.png) 1x, url(assets/refresh_16_dis@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#dataViewBoard .projectDetailPane .actionButton.refresh:not(._disabled_) ._hover_ {
+    background-image: -webkit-image-set(url(assets/refresh_16_hover.png) 1x, url(assets/refresh_16_hover@2x.png) 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#dataViewBoard .projectDetailPane .actionButton.refreshAnim .refreshImage {
+    -webkit-animation: rotating 1.5s linear infinite;
+    animation: rotating 1.5s linear infinite;
+}
+
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: rotate(20deg);
+    }
+    to {
+        -webkit-transform-origin:center center;
+        -webkit-transform: rotate(-20deg);
+    }
+
+}
+
+@keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotating {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

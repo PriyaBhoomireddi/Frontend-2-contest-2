@@ -1,0 +1,74 @@
+#ifndef _HQ_FX_LT_LINE_JOINT_H_
+#define _HQ_FX_LT_LINE_JOINT_H_
+
+#include "Sketch_oit_def.ogsfh"
+#include "Sketch_primitive.ogsfh"
+#include "Sketch_line.ogsfh"
+#include "Sketch_line_weight.ogsfh"
+#include "Sketch_line_type_line.ogsfh"
+
+GLSLShader Sketch_lt_line_joint
+{
+
+// line type joint attributes
+struct JointLineTypeAttr
+{
+    vec2 prevPoint;
+    vec2 curPoint;
+    vec2 postPoint;
+    
+    uint flag;
+    uint color; 
+    uint width; 
+    float drawZ; 
+    uint glowColor;
+    uint isLogical;
+
+    uint capsType;
+    uint jointType;
+
+    uint  patternIndex;
+
+    float startSkipLen_prev;
+    float endSkipLen_prev;
+    float patternOffset_prev;
+    float patternScale_prev;
+
+    float startSkipLen_post;
+    float endSkipLen_post;
+    float patternOffset_post;
+    float patternScale_post;
+
+#ifdef ANALYTIC_STIPPLE
+    uint stippleIndex;
+#endif
+};
+
+struct VertexAttr_LineTypeJoint
+{
+    vec4 position; // transformed  vertex position
+
+    uint color;  // line color
+    uint glowColor;  // glow color
+    uint width;  // line width;
+    uint patternIndex; // line pattern index
+
+    uint capsType;  // joint type;
+    uint jointType;  // joint type;
+
+
+    vec2 prevPoint; // previous point
+    vec2 curPoint;  // current point
+    vec2 postPoint;  // post point
+
+    vec4 patternProp_prev; // line pattern properties: x - start skip len, y - end skip len, z - pattern scale, w - pattern offset
+    vec4 patternProp_post; // line pattern properties: x - start skip len, y - end skip len, z - pattern scale, w - pattern offset
+
+#ifdef ANALYTIC_STIPPLE
+    uint stippleIndex;  // stipple index
+#endif
+};
+
+}
+
+#endif // _HQ_FX_LT_LINE_JOINT_H_

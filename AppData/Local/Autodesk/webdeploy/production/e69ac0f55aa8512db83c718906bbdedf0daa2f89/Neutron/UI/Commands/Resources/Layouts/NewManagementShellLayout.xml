@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- NOTE:
+    If you make any change to the layout here, before you run that application, please don't forget to delete the file
+    "NULastDisplayedLayout.xml"(that is the file to remember the last displayed layout, and it will be applied automatically
+    when the application run next time.) located at
+    "C:\Users\[username]\AppData\Roaming\Autodesk\Neutron Platform\Options\[oxygen id]\"
+    folder in Windows, the similar thing should be done to Mac OS.
+
+    PLEASE MAKE SURE ALL YOUR CHANGES ARE IN ALL RELEVANT XMLS:
+    AssetShellLayout.xml
+    WebShellLayout.xml
+    AssetDwgShellLayout.xml
+    NewManagementShellLayout.xml
+    AssetSchShellLayout.xml
+    AssetPcbShellLayout.xml
+    AssetLbrShellLayout.xml
+    AssetElectronShellLayout.xml
+    AssetElectronicDesignShellLayout.xml
+
+    ***********************************************************************************************
+    If you want Fusion to read your change to this file, the version number should be incremented.
+    If you add a new Area or change "Contents", "Name or "_LCLZText", you need to increment the Version number below.
+    This will tell Fusion to not read old setup files. Fields, like position do not need the version changed.
+    ***********************************************************************************************
+-->
+<Area Contents="Desktop" Visible="True"
+   Version="2.18"
+   >
+  <Area Contents="Workspace" Placement="Absolute" Visible="True">
+    <Area Placement="Center" LayoutPattern="Default">
+    <Area Placement="Top" Height="116" LayoutPattern="Row">
+      <Area Contents="ApplicationBar" Name="ApplicationBar" Placement="Top" Height="114" Resizable="False" Stretchable="True" Visible="True" LayoutPattern="Column">
+        <Area Contents="ToolBar" Name="ToolBar" Placement="Top" Height="0" InternalPadding="0,0,0,0" Stretchable="True" Resizable="False"/>
+      </Area>
+    </Area>
+    <Area Placement="Top" LayoutPattern="Row" Height="40">
+      <Area Contents="MessageBanner" Name="MessageBanner" Height="40" Placement="Top" Resizable="False" Stretchable="True" Visible="True" />
+    </Area>
+    <Area Placement="Bottom" Size="200,150" LayoutPattern="Row">
+        <Area Contents="Palette" Name="TextCommands" Placement="Bottom" Size="200,150" Resizable="True" Stretchable="True" InternalPaddingTop="22" Visible="False" MacUseWndToolFlag="False">
+            <Parameters Title="LOCID=TextCommands" DockingOption="HorizontalOnly">
+                <LOC Module="NuCommands" _LCLZId="TextCommands" _LCLZText="Text Commands"/>
+            </Parameters>
+            <Area Contents="TextCommands" Placement="Center"/>
+        </Area>
+    </Area>
+    <!--<Area Placement="Center" Name="CenterRegion" Visible="True" LayoutPattern="Layer">
+        <Area Placement="Center" Name="CenterWidgets" Visible="True" Spacing="4" InternalPadding="4,4,4,4">
+          <Area Placement="Left" Size="300,450" LayoutPattern="Column">
+            <Area Contents="Palette" Name="MainDashboardPalette" Placement="Right" Size="300,400" MaximumWidth="1024" MinimumSize="150,200" Resizable="True" InternalPadding="0,0,61,0" Stretchable="True" Visible="True">
+                <Parameters Title="LOCID=MainDashboard" DockingOption="VerticalOnly" Footer="True">
+                    <LOC Module="NuCommands" _LCLZId="MainDashboard" _LCLZText="Main Dashboard"/>
+                </Parameters>
+                <Area Contents="WebControl" Name="MainDashboard" Placement="Center" MarginTop="3"/>
+            </Area>
+          </Area>
+        </Area>
+    </Area> -->
+    <Area Contents="InteractivityMeter" Alignment="Left,Bottom" Visible="False"/>
+    <Area Contents="ErrorRateMeter" Alignment="Left,Bottom" Visible="False"/>
+    <Area Contents="MessageTray" Alignment="Right,Bottom" Size="16,16" Visible="False"/>
+    <Area Contents="SnapRuler" Alignment="Right,Bottom" Size="50,50" Visible="False"/>
+    <Area Contents="NotificationCenter" Alignment="Right,Bottom" Visible="False"/>
+  </Area>
+  </Area>
+</Area>

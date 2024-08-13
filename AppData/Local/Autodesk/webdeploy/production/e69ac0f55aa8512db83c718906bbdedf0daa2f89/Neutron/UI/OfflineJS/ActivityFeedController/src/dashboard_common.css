@@ -1,0 +1,213 @@
+*{ border:0; margin:0; padding:0; outline:0; }
+
+.noSelection{
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.waitCursor,
+.waitCursor * { cursor: wait !important; }
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    color: #000000;
+    background: rgb(231, 231, 231);
+    overflow: hidden;
+}
+
+body.rightBorder{
+	border-right: #979797 1px solid;
+}
+
+/* scrollbars for entire application */
+::-webkit-scrollbar{
+    height: 8px;
+    width: 8px;
+    -webkit-border-radius: 1ex;
+    background: none;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #979797;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #b7b7b7;
+    -webkit-border-radius: 1ex;
+    -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-corner{ background: #d9d9d9; }
+
+::-webkit-scrollbar-track{
+    background:none;
+}
+
+/* ToolTips */
+.tooltipParent{
+
+}
+
+.tooltipParent .tooltip,
+#projecticon.tooltip {
+    position: absolute;
+    background: #515151;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 3px 13px 3px 13px;
+    border-radius: 10px;
+    z-index: 100;
+    cursor: default;
+    display: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    user-select: none;
+    box-shadow: 0 7px 23px 0 rgba(50, 50, 50, 0.41);
+    -webkit-box-shadow: 0 7px 23px 0 rgba(50, 50, 50, 0.41);
+}
+
+.tooltipParent.projectName .tooltip {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 240px;
+}
+
+.tooltipParent .tooltip.right { right: 0; }
+.tooltipParent .tooltip.right30 { right: -30px; }
+.tooltipParent .tooltip.left  { left: 0; }
+.tooltipParent .tooltip.center{ left: 50%; }
+.tooltipParent .tooltip.bottom{ top: 100%; }
+.tooltipParent .tooltip.top   { bottom: 100%; }
+.tooltipParent .tooltip.top80 { bottom: 80%; }
+.tooltipParent .tooltip.left.top,
+.tooltipParent .tooltip.right.top,
+.tooltipParent .tooltip.right30.top { transform: translate(0, -6px); -webkit-transform: translate(0, -6px); }
+.tooltipParent .tooltip.left.bottom,
+.tooltipParent .tooltip.down,
+.tooltipParent .tooltip.right.bottom { transform: translate(0, 6px); -webkit-transform: translate(0, 6px); }
+.tooltipParent .tooltip.center.top   { transform: translate(-50%, -6px); -webkit-transform: translate(-50%, -6px); }
+.tooltipParent .tooltip.center.bottom{ transform: translate(-50%, 6px); -webkit-transform: translate(-50%, 6px); }
+
+.tooltipParent .tooltip.longtip {
+    width: 305px;
+    white-space: normal;
+    overflow-wrap: normal;
+}
+
+.tooltipParent:not(._ttdisabled_):hover .tooltip,
+#projecticon.tooltip {
+    display: inline-block;
+    -webkit-animation-duration: 7s;
+    animation-duration: 7s;
+    -webkit-animation-name: tooltipFadeIn;
+    animation-name: tooltipFadeIn;
+    opacity: 0;
+}
+@-webkit-keyframes tooltipFadeIn {
+    0%, 14%, 100% { opacity: 0; }
+    19%, 95%      { opacity: 1; }
+}
+@keyframes tooltipFadeIn {
+    0%, 14%, 100% { opacity: 0; }
+    19%, 95%      { opacity: 1; }
+}
+
+
+#alertOverlay {
+    display: none;
+    opacity: 0.5;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background: #000000;
+    width: 100%;
+    z-index: 10;
+}
+
+#alertBox {
+    display: none;
+    position: absolute;
+    border:4px solid #646464;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: #FFFFFF;
+    width:300px;
+    z-index: 10;
+    padding-bottom: 10px;
+}
+
+#alertBox #alertTitle {
+    background: #646464;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px;
+    color:#FFFFFF;
+    margin: 0 auto;
+    text-align: left;
+}
+#alertBox #alertMessage {
+    background:#FFFFFF;
+    padding: 15px 6px;
+    color:#000000;
+    font-weight: bold;
+    text-align: center;
+}
+
+#alertBox .div4OK{
+    position: relative;
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+#alertBox .div4Cancel{
+    position: relative;
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+#alertBox .alertButton{
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    background: #646464;
+    padding:3px;
+    color: #FFFFFF;
+    border:1px solid #646464;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    width: 50px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#alertBox .alertButton:hover {
+    background-color: #888888;
+    opacity: 0.8;
+}
+
+#alertBox .alertButton:active {
+    background-color: #7698DB;
+    opacity: 1.0
+}
+
+
+._hover_ {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+._hover_:hover {
+    opacity: 1;
+}

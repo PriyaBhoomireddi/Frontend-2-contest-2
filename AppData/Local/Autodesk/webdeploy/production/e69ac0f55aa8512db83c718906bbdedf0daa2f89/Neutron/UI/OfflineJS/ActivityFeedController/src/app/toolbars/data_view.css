@@ -1,0 +1,159 @@
+/* dataViewToolbar */
+.dataViewToolbar{
+    position: absolute;
+    font-size: 12px;
+    width: 348px;
+    height: 32px;
+    background: #ffffff;
+    border-radius: 3px;
+}
+
+.dataViewToolbar .toolbarButton{
+    position:absolute;
+    width: 20px; /* this will drive the size of the hoover-highlight */
+    height: 20px;
+    top: 6px; /* toolbar has height 32, as our height is 20, we have (32-20) / 2 = 6 */
+    cursor: default;
+}
+
+.dataViewToolbar .toolbarButton.tileBtn {
+    background-image: -webkit-image-set(url(../../assets/grid_view_16_inactive.png) 1x,
+                                        url(../../assets/grid_view_16_inactive@2x.png) 2x);
+    background-color: transparent;
+    background-size:16px 16px; /* icon is 16x16, with 1px top and bottom transparent area. This gives graphics of requested 14px in height */
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.dataViewToolbar .toolbarButton.tileBtn ._hover_ {
+    background-image: -webkit-image-set(url(../../assets/grid_view_16_hover.png) 1x,
+                                        url(../../assets/grid_view_16_hover@2x.png) 2x);
+    background-color: transparent;
+    background-size:16px 16px; /* icon is 16x16, with 1px top and bottom transparent area. This gives graphics of requested 14px in height */
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.dataViewToolbar .toolbarButton.tileBtn.select {
+    background-image: -webkit-image-set(url(../../assets/grid_view_16.png) 1x,
+                                        url(../../assets/grid_view_16@2x.png) 2x);
+    background-color: transparent;
+    background-size:16px 16px; /* icon is 16x16, with 1px top and bottom transparent area. This gives graphics of requested 14px in height */
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.dataViewToolbar .toolbarButton.tileBtn.select ._hover_ {
+    background-image: -webkit-image-set(url(../../assets/grid_view_16_hover.png) 1x,
+                                        url(../../assets/grid_view_16_hover@2x.png) 2x);
+    background-color: transparent;
+    background-size:16px 16px; /* icon is 16x16, with 1px top and bottom transparent area. This gives graphics of requested 14px in height */
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.dataViewToolbar .toolbarButton.listBtn {
+    background-image: -webkit-image-set(url(../../assets/list_normal_16_inactive.png) 1x,
+    url(../../assets/list_normal_16_inactive@2x.png) 2x);
+    background-color: transparent;
+    background-size:16px 16px; /* icon is 16x16, with 1px top and bottom transparent area. This gives graphics of requested 14px in height */
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.dataViewToolbar .toolbarButton.listBtn ._hover_ {
+    background-image: -webkit-image-set(url(../../assets/list_normal_16_hover.png) 1x,
+    url(../../assets/list_normal_16_hover@2x.png) 2x);
+    background-color: transparent;
+    background-size:16px 16px; /* icon is 16x16, with 1px top and bottom transparent area. This gives graphics of requested 14px in height */
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.dataViewToolbar .toolbarButton.listBtn.select {
+    background-image: -webkit-image-set(url(../../assets/list_normal_16.png) 1x,
+    url(../../assets/list_normal_16@2x.png) 2x);
+    background-color: transparent;
+    background-size:16px 16px; /* icon is 16x16, with 1px top and bottom transparent area. This gives graphics of requested 14px in height */
+    background-repeat:no-repeat;
+    background-position:center;
+}
+.dataViewToolbar .toolbarButton.listBtn.select ._hover_ {
+    background-image: -webkit-image-set(url(../../assets/list_normal_16_hover.png) 1x,
+    url(../../assets/list_normal_16_hover@2x.png) 2x);
+    background-color: transparent;
+    background-size:16px 16px; /* icon is 16x16, with 1px top and bottom transparent area. This gives graphics of requested 14px in height */
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.dataViewToolbar .toolbarButton.foldersBtn {
+    background-image: url('../../assets/foldersBtn_b.png');
+}
+.dataViewToolbar .toolbarButton.foldersBtn.select {
+    background-image: url('../../assets/foldersBtn.png');
+}
+
+.dataViewToolbar .description{
+    position:absolute;
+    top: 10px;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.dataViewToolbar .sortToolbarButton{
+    position:absolute;
+    height: 14px;
+    line-height: 14px;
+    cursor: default;
+    font-size: 12px;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+    font-weight: normal;
+    color: #A7A7A7;
+    margin: 9px 0px 9px 0;
+}
+
+.dataViewToolbar .sortToolbarButton.name {
+    text-align: left;
+}
+
+.dataViewToolbar .sortToolbarButton.select
+{
+    font-weight: bold;
+    color: #555555;
+}
+
+.dataViewToolbar .sortToolbarButton:hover {
+    color: #6693CC;
+}
+
+.dataViewToolbar .sortToolbarButton.hidden {
+	visibility: hidden;
+}
+
+.dataViewToolbar .sortToolbarButton.recentNameDelimiter {
+    width: 1px;
+    height: 12px;
+    background-color: #555555;
+}
+
+.dataViewToolbar .sortToolbarButton.recentNameDelimiter.hidden {
+	visibility: hidden;
+}
+
+/* toolbarEllipsisPopup */
+.toolbarEllipsisPopup{
+    position: absolute;
+    padding: 10px 38px 0 0;
+    overflow: hidden;
+    transition: height 0.25s linear, padding 0.25s linear, top 0.25s linear;
+    -webkit-transition: height 0.2s linear, padding 0.2s linear, top 0.25s linear;
+}
+
+.toolbarEllipsisPopup .arrowUp{
+    position: absolute;
+    top: 0;
+    right: 39px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #ffffff;
+}

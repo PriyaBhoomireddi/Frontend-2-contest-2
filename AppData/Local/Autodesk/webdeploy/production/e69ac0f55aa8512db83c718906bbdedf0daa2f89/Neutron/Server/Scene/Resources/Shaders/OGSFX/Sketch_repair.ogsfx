@@ -1,0 +1,71 @@
+#version 330
+#include "Sketch_screen.ogsfh"
+
+uniform texture2D gRetainedTex : RetainedTexture;
+uniform sampler2D gRetainedSamp : RetainedSampler = sampler_state { Texture = <gRetainedTex>; };
+uniform vec2 gRetainedVec : RetainedVector;
+uniform vec4 gRetainedHalo : RetainedHalo;
+uniform vec4 gInvalidatedBox : InvalidatedBox;
+
+attribute VS_INPUT
+{
+    vec3 Pos : POSITION;
+    vec2 UV : TEXCOORD0;
+};
+
+attribute VS_TO_PS
+{
+    vec2 VSUV : TEXCOORD0;
+};
+
+attribute pixelOut
+{
+    vec4 colorOut : COLOR0;
+};
+
+GLSLShader Repair_VS
+{
+
+void main()
+{
+    VSUV = UV;
+    gl_Position = vec4(Pos, 1.0f);
+}
+
+}
+
+GLSLShader Repair_PS
+{
+
+void main()
+{
+    vec2 rUV = VSUV + gRetainedVec;
+
+    if (any(lessThan(rUV, gRetainedHalo.xy)) || any(greaterThan(rUV, vec2(1.0f, 1.0f) - gRetainedHalo.zw)))
+    {
+        colorOut = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+        discard;
+        return;
+    }
+
+    if (all(greaterThanEqual(rUV, gInvalidatedBox.xy)) && all(lessThanEqual(rUV, gInvalidatedBox.zw)))
+    {
+        colorOut = vec4(0.0f, 0.0f, 0.0f, 0.0f);
+        discard;
+        return;
+    }
+
+    colorOut = texture2D(gRetainedSamp, rUV);
+}
+
+}
+
+technique Repair
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = Repair_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = Repair_PS;
+    }
+}
+

@@ -1,0 +1,22 @@
+QObject {
+    font-family: Arial, Sans-Serif;   
+}
+
+QFrame#informationStrip{
+	background-color: transparent;
+}
+
+QWidget#informationStripWidget{
+    border: none;
+    background-color: #FFC36E;
+}
+
+QLabel#stripMessage{
+	font-size: 12px;
+    color: #FFFFFF;
+}
+
+QPushButton#stripCloseButton{
+    background-color: transparent;
+    border: none;
+}

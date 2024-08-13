@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<root DllName="NaSTEPTranslator10" Identifier="STEPTranslator" IsCoreAddIn="0" IsUIAddIn="0" 
+      IsTranslatorAddIn="1" Name="STEPTranslator" FileFilterExt="*.stp;*.step" FileFilterDescription="LOCID=STEPFileFilterDescription" 
+      SupportImport="1" SupportExport="1">
+  <LOC Module="NaSTEPTranslator" _LCLZId="STEPFileFilterDescription" _LCLZText="STEP Files (*.stp *.step)"/>
+  <NeededAddIns>
+    <NeededAddIn>Scene</NeededAddIn>
+    <NeededAddIn>CommonData</NeededAddIn>
+    <NeededAddIn>Component</NeededAddIn>
+    <NeededAddIn>Body</NeededAddIn>
+    <NeededAddIn>NeutronConsumer</NeededAddIn>
+    <NeededAddIn>NeutronListener</NeededAddIn>
+  </NeededAddIns>
+  <SupportedAssetTypes>
+    <SupportedAssetType>Hello3DAssetType</SupportedAssetType>
+    <SupportedAssetType>FusionAssetType</SupportedAssetType>
+  </SupportedAssetTypes>
+</root>

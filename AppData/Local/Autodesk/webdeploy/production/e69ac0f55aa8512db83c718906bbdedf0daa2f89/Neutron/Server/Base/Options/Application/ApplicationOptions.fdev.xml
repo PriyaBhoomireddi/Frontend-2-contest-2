@@ -1,0 +1,69 @@
+<?xml version="1.0" standalone="yes" ?>
+<!DOCTYPE serverconfig [
+  <!ENTITY dashboardHost "https://d1it2gim2ylev1.cloudfront.net">
+  <!ENTITY dashboardServiceRoot "&dashboardHost;/dashboard">
+]>
+<ApplicationOptions SchemaVersion="1.0">
+  <Option key="serverType" value="STAGING" />
+  <Option key="fusionTeamUrl" value="staging.autodesk360beta.com" />
+  <Option key="homePageUrl" value="https://wwwfdev.staging.autodesk360beta.com/login" />
+  <Option key="exchangeMaterialUrl" value="https://d1it2gim2ylev1.cloudfront.net/emb/index.html" />
+  <Option key="exchangeServiceUrl" value="https://d1it2gim2ylev1.cloudfront.net/exchange" />
+  <Option key="gaAccount" value="UA-41472239-1" />
+  <Option key="serviceStatusUrl" value="https://d1it2gim2ylev1.cloudfront.net/fusion" />
+  <Option key="translationStatusUrl" value="https://translation-staging.api.autodesk.com/data/v1/" />
+  <Option key="hubType" value="personal" />
+  <Option key="notificationsUrl" value="https://notifications.stg.fusionapi.autodesk.com" />
+  <Option key="maintenanceUrl" value="http://f360statusdashboardbucket.s3-website-us-east-1.amazonaws.com/wip_maintenance.json" />
+  <Option key="blockcheck" value="https://d1it2gim2ylev1.cloudfront.net/dufo/scripts/check_blocked.js" />
+  <Option key="trytobuyOptionsUrl" value="https://d1it2gim2ylev1.cloudfront.net/staging/IPM.html" />
+  <Option key="lxUrl" value="https://ui-dls360-staging.autodesk.com/lxv2/" />
+  <Option key="liveData" value="urn:adsk.wipmaster:fs.folder:co.jTdnBp8bR2Wh-ShfnSJb-g" />
+  <Option key="RaasServer" value="https://mercury-staging.autodesk.com" />
+  <Option key="migrationBucket" value="fusionerrorreports-stg" />
+  <Option key="apigeeEndpointUrl" value="https://developer-stg.api.autodesk.com" />
+  <Option key="apigeeEndpointDataPath" value="/data/v1/projects/"/>
+  <Option key="changesServiceUrl" value="https://changes-staging.api.autodesk.com" />
+  <Option key="CollaborationServer" value="https://livereview.stg.fusionapi.autodesk.com" />
+  <Option key="CollaborationViewer" value="http://ec2-54-82-121-16.compute-1.amazonaws.com:8080/viewer3d.html" />
+  <Option key="simServiceUrl" value="https://simulation.qa.fusionapi.autodesk.com/v1" />
+  <Option key="gdServicesUrl" value="" />
+  <Option key="gdExploreUrl" value="" />
+  <Option key="hawkeyeUrl" value="" />
+  <Option key="hawkeyeServiceUrl" value="" />
+  <Option key="doraUrl" value="" />
+  <Option key="injectionMoldingMaterialUrl" value="" />
+  <Option key="meteringServerUrl" value="https://metering-staging.autodesk.com" />
+  <Option key="frvServerUrl" value="https://frv-c-uw2.cosv2-c-uw2.autodesk.com" />
+  <Option key="cepPageUrl" value="https://customer-stg.autodesk.com" />
+  <Option key="aklamioUID" value="f0acb94495fde56406edaf7103c67367" />
+  <Option key="surveyUrl" value="https://autodeskfeedback.az1.qualtrics.com/jfe/form/SV_02N0kS0VHnBRSZv" />
+  <Option key="anytimeSurveyUrl" value="https://autodeskfeedback.az1.qualtrics.com/jfe/form/SV_bNlhWfuUWYzBbYV" />
+  <Option key="fusionStaticsUrl" value="https://d1it2gim2ylev1.cloudfront.net/" />
+  <Option key="healthStatusUrl" value="https://d1it2gim2ylev1.cloudfront.net/hds/fusion360.json" />
+  <Option key="healthStatusWebUrl" value="https://health-dev.autodesk.com/" />
+  <Option key="hsmGaAccount" value="UA-93571112-1" />
+  <Option key="derivativeServiceUrl" value="https://developer-stg.api.autodesk.com/derivativeservice/v2/derivatives/" />
+  <Option key="fusionDMUrl" value="https://developer-stg.api.autodesk.com/fusiondm-dev" />
+  <Option key="ldUrl" value="https://app.launchdarkly.com/api/v2/users/fusion/development/fusion360/flags" />
+  <Option key="symphonyServiceUrl" value="https://symphonydm-dev.ft.autodesk.com/symphonydm/v2" />
+  <Option key="hfdmUrl" value="https://develCore/Neutron/Server/Base/Options/Application/ApplicationOptions.staging.gd-local.xml oper-stg.api.autodesk.com/hfdm-soc2" />
+  <Option key="pimUrl" value="https://developer-stg.api.autodesk.com/pim-dev" />
+  <Option key="pimMigrationUrl" value= "https://developer-stg.api.autodesk.com/pim-migration-dev" />
+  <Option key="pimUrlPathPrefix" value="/v4" />
+  <Option key="fhqUrl" value="https://developer-stg.api.autodesk.com/fhq" />
+  <Option key="flcDomain"  value="autodeskplm.com" />
+  <Option key="pimServerUrl" value="https://developer-stg.api.autodesk.com/hfdm-soc2" />
+  <Option key="pimFdServerUrl" value="https://developer-stg.api.autodesk.com/assetgraph-uat" />
+  <Option key="applicationType" value="fdev" />
+  <Option key="EagleDevEnvironment" value="BETA" />
+  <Option key="LibraryIOUrl" value="https://contapi-beta.circuits.io/" />
+  <Option key="forgeDataInspectorUrl" value="http://inspector.autodesk.com/staging_soc2.html" />
+  <!-- Whether enable team picker, also controled by LD feature flag. TODO: remove when feature is ready. -->
+  <Option key="teamPicker" value="yes" />
+  <!-- For debugging purpose, url of team picker from Fusion team Front end -->
+  <!--<Option key="teamPickerUrl" value="https://localgalileo.staging.autodesk360beta.com:8443/g/teampicker" />-->
+  <Option key="clsUrl" value="https://api-stg.v3license.access.np.clic.autodesk.com" />
+  <Option key="uhmUrl" value="https://app.digital-help-stg.autodesk.com/universal-help/current/index.html?mode=openWidget&amp;product=NINVFUS&amp;integrationType=In-Product" />
+  <Option key="CAMWebsiteUrl" value="https://camstg.autodesk.com/" />
+</ApplicationOptions>

@@ -1,0 +1,153 @@
+.uploadProgressBarContainer{
+    position: absolute;
+    z-index: 15;
+    transition: top 0.25s ease-out;
+    -webkit-transition: top 0.25s ease-out;
+}
+
+.uploadProgressBarContainer .uploadProgressBar{
+    position: absolute;
+    top: 100%;
+    height: 0px;
+    width: 100%;
+    background: #d1d1d1;
+    cursor: default;
+    transition: top 0.25s ease-out;
+    -webkit-transition: top 0.25s ease-out;
+}
+
+.uploadProgressBarContainer .uploadProgressBar.spacer:before {
+    border-top: 1px solid rgb(231, 231, 231);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 10px;
+    right: 10px;
+    content: "";
+}
+
+.uploadProgressBarContainer .uploadProgressBar .statusText{
+    position: absolute;
+    font-size: 12px;
+    color: #000000;
+    text-align: left;
+    width:150px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.uploadProgressBarContainer .uploadProgressBar .errorIndicator{
+    position: absolute;
+    width: 14px;
+    height: 100%;
+    top: 0;
+    left: 140px;
+    z-index:16;
+    background: url("../../assets/alert_icon_gray.png") no-repeat center center;
+    background-size: contain;
+    visibility: hidden;
+    overflow: visible;
+}
+.uploadProgressBarContainer .uploadProgressBar.error .errorIndicator{ visibility: visible; }
+
+.uploadProgressBarContainer .uploadProgressBar .errorIndicator .errorIndicatorPopup{
+    position: absolute;
+    bottom: 35px;
+    left: -60px;
+    width: 260px;
+    border: #000000 2px solid;
+    display: none;
+    z-index: 10;
+}
+.uploadProgressBarContainer .uploadProgressBar .errorIndicator:hover .errorIndicatorPopup,
+.uploadProgressBarContainer .uploadProgressBar .errorIndicator:hover .errorIndicatorPopup:hover{ display: block }
+
+.uploadProgressBarContainer .uploadProgressBar .errorIndicator .errorIndicatorPopup .popupTitleContainer{
+    color: #ffffff;
+    font-size: 12px;
+    padding: 0 0 0 5px;
+    background: #000000;
+}
+
+.uploadProgressBarContainer .uploadProgressBar .errorIndicator .errorIndicatorPopup .popupTitleContainer .popupTitle{
+    padding: 0 24px 0 0;
+    line-height: 24px;
+    background: url("../../assets/alert_icon_orange.png") no-repeat right center;
+    display: inline-block;
+}
+
+.uploadProgressBarContainer .uploadProgressBar .errorIndicator .errorIndicatorPopup .popupMessage{
+    color: #000000;
+    font-size: 12px;
+    padding: 5px;
+    text-align: left;
+    background: #ffffff;
+}
+
+.uploadProgressBarContainer .uploadProgressBar .errorShortMessage{
+    position: absolute;
+    font-size: 8px;
+    color: #000000;
+    text-align: left;
+    left: 125px;
+    bottom: 3px;
+    visibility: hidden;
+}
+.uploadProgressBarContainer .uploadProgressBar.error .errorShortMessage{ visibility: visible; }
+
+.uploadProgressBarContainer .uploadProgressBar .progressContainer{
+    position: absolute;
+    background: #ffffff;
+    width: 205px;
+    border-radius: 6px;
+    left: 160px;
+}
+
+.uploadProgressBarContainer .uploadProgressBar .progressContainer .progressIndicator{
+    position: absolute;
+    background: #4f86be;
+    border-radius: 6px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    transition: width 0.15s ease-out;
+    -webkit-transition: width 0.15s ease-out;
+}
+.uploadProgressBarContainer .uploadProgressBar.error .progressContainer .progressIndicator{
+    background-color: #4f86be;
+    background-size: 30px 30px;
+    background-image: linear-gradient(135deg,
+        rgba(231,231,231,1) 0%,
+        rgba(231,231,231,1) 25%,
+        rgba(231,231,231,0) 25%,
+        rgba(231,231,231,0) 50%,
+        rgba(231,231,231,1) 50%,
+        rgba(231,231,231,1) 75%,
+        rgba(231,231,231,0) 75%,
+        rgba(231,231,231,0) 100%);
+    animation: moveProgressAnim 2s linear infinite;
+    -webkit-animation: moveProgressAnim 2s linear infinite;
+}
+
+@-webkit-keyframes moveProgressAnim {
+    0% { background-position: 0 0; }
+    100% { background-position: -60px -60px; }
+}
+@keyframes moveProgressAnim {
+    0% { background-position: 0 0; }
+    to { background-position: -60px -60px; }
+}
+
+.uploadProgressBarContainer .uploadProgressBar .expandButton{
+    position: absolute;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTcgMTciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0xNCwxN2wtMTQsMGwwLC0xNGwxMiwwbC0yLDItOCwwYzAsMyAwLDYgMCwxMGwxMCwwbDAsLThsMiwtMmwwLDEyN1pNMTcsMGwwLDYuN2wtMSwwbDAsLTVsLTksOWwtMC43LC0wLjdsOSwtOWwtNSwwbDAsLTFsNiwwWiIgc3R5bGU9ImZpbGw6IzY2NjsiLz48L3N2Zz4=");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+.uploadProgressBarContainer .uploadProgressBar .expandButton:hover {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTcgMTciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxwYXRoIGQ9Ik0xNCwxN2wtMTQsMGwwLC0xNGwxMiwwbC0yLDItOCwwYzAsMyAwLDYgMCwxMGwxMCwwbDAsLThsMiwtMmwwLDEyN1pNMTcsMGwwLDYuN2wtMSwwbDAsLTVsLTksOWwtMC43LC0wLjdsOSwtOWwtNSwwbDAsLTFsNiwwWiIgc3R5bGU9ImZpbGw6IzMzMzsiLz48L3N2Zz4=");
+    cursor: default;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- NOTE:
+     If you make any change to the layout here, before you run that applicaiton, please don't forget to delete the file
+     "NULastDisplayedLayout.xml"(that is the file to remember the last displayed layout, and it will be applied automatically
+     when the applicaiton run next time.) located at
+     "C:\Users\[username]\AppData\Roaming\Autodesk\Neutron Test Application Technical Preview [version, like 2011]\Options"
+     folder in Windows, the similar thing should be done to Mac OS.
+     
+    PLEASE MAKE SURE ALL YOUR CHANGES ARE IN ALL XMLS: AssetShellLayout.xml, WebShellLayout.xml, AssetDwgShellLayout.xml, NewManagementShellLayout.xml
+-->
+<Area Contents="Desktop" Visible="True" Version="1.2.11">
+  <Area Contents="Workspace" Placement="Absolute" Visible="True">
+    <Area Placement="Center" LayoutPattern="Default">
+	  <Area Placement="Top" Height="116" LayoutPattern="Row">
+        <Area Contents="ApplicationBar" Name="ApplicationBar" Placement="Top" Height="114" Resizable="False" Stretchable="True" Visible="True" LayoutPattern="Column">
+          <Area Contents="ToolBar" Name="ToolBar" Placement="Top" Height="0" InternalPadding="0,0,0,0" Stretchable="True" Resizable="False">
+          </Area>
+        </Area>
+      </Area>
+	  <Area Placement="Left" Size="300,900" Resizable="True" Stretchable="True" LayoutPattern="Column" >
+          <Area Name="HomePanelContainer" Size="300,900" Placement="Left" Resizable="True" Stretchable="True" Visible="True">
+              <Area Contents="WebControl" Name="HomePanel" Placement="Center" Visible="True"/>
+          </Area>
+      </Area>
+	  <Area Placement="Center" Resizable="True" Stretchable="True" LayoutPattern="Column">
+        <Area Name="ContentPanelContainer" Placement="Center" Resizable="True" Stretchable="True" Visible="True">
+          <Area Contents="WebControl" Name="ContentPanel" Placement="Center" Visible="True"/>
+        </Area>
+	  </Area>
+    </Area>
+  </Area>
+</Area>

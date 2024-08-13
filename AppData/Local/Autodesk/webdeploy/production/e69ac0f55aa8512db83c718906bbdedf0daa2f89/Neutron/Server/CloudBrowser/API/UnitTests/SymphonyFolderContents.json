@@ -1,0 +1,299 @@
+{
+    "data": {
+        "type": "folderContents",
+        "id": "urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg",
+        "links": {
+            "self": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/folders/urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg/content?offset=0&limit=20&include=allowedActions"
+        },
+        "files": [
+            {
+                "type": "files",
+                "id": "urn:adsk.wipqa:dm.lineage:Vz4Sta1HS5aBJRF1jbWTsw",
+                "links": {
+                    "comments": "https://fqa-fusiondm.staging.autodesk360beta.com/fusiondm/v2/files/urn:adsk.wipqa:dm.lineage:Vz4Sta1HS5aBJRF1jbWTsw/comments",
+                    "versions": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/files/urn:adsk.wipqa:dm.lineage:Vz4Sta1HS5aBJRF1jbWTsw/versions",
+                    "self": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/files/urn:adsk.wipqa:dm.lineage:Vz4Sta1HS5aBJRF1jbWTsw"
+                },
+                "name": "Cylinder.f3d",
+                "created": {
+                    "on": 1607727812000,
+                    "by": {
+                        "type": "users",
+                        "id": "KG8XKHKD2QNY",
+                        "links": {
+                            "self": "https://fqa-user.staging.autodesk360beta.com/users/v2/users/KG8XKHKD2QNY"
+                        }
+                    }
+                },
+                "modified": {
+                    "on": 1607946578000,
+                    "by": {
+                        "type": "users",
+                        "id": "KG8XKHKD2QNY",
+                        "links": {
+                            "self": "https://fqa-user.staging.autodesk360beta.com/users/v2/users/KG8XKHKD2QNY"
+                        }
+                    }
+                },
+                "parent": {
+                    "type": "folders",
+                    "id": "urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg",
+                    "links": {
+                        "self": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/folders/urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg"
+                    }
+                },
+                "title": "Cylinder.f3d",
+                "fileType": "f3d",
+                "mimeType": "application/vnd.autodesk.fusion360",
+                "branchUrn": "urn:adsk.wipqa:dm.branch:Tlbea0K7RViwhpceFzW7FQ",
+                "hidden": false,
+                "tip": {
+                    "type": "versions",
+                    "id": "urn:adsk.wipqa:fs.file:vf.Vz4Sta1HS5aBJRF1jbWTsw?version=2",
+                    "links": {
+                        "self": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/versions/urn%3Aadsk.wipqa%3Afs.file%3Avf.Vz4Sta1HS5aBJRF1jbWTsw%3Fversion%3D2"
+                    }
+                }
+            }
+        ],
+        "folders": [
+            {
+                "type": "folders",
+                "id": "urn:adsk.wipqa:fs.folder:co.7lFnxjACSqilDbWl2retbA",
+                "links": {
+                    "self": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/folders/urn:adsk.wipqa:fs.folder:co.7lFnxjACSqilDbWl2retbA",
+                    "content": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/folders/urn:adsk.wipqa:fs.folder:co.7lFnxjACSqilDbWl2retbA/content"
+                },
+                "name": "Read",
+                "created": {
+                    "on": 1607603516000,
+                    "by": {
+                        "type": "users",
+                        "id": "KG8XKHKD2QNY",
+                        "links": {
+                            "self": "https://fqa-user.staging.autodesk360beta.com/users/v2/users/KG8XKHKD2QNY"
+                        }
+                    }
+                },
+                "modified": {
+                    "on": 1607946588000,
+                    "by": {
+                        "type": "users",
+                        "id": "KG8XKHKD2QNY",
+                        "links": {
+                            "self": "https://fqa-user.staging.autodesk360beta.com/users/v2/users/KG8XKHKD2QNY"
+                        }
+                    }
+                },
+                "parent": {
+                    "type": "folders",
+                    "id": "urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg",
+                    "links": {
+                        "self": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/folders/urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg"
+                    }
+                },
+                "title": "Read",
+                "path": "/Read",
+                "hidden": false
+            },
+            {
+                "type": "folders",
+                "id": "urn:adsk.wipqa:fs.folder:co.H0jfqrgbS0eg7zrmFnpv4A",
+                "links": {
+                    "self": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/folders/urn:adsk.wipqa:fs.folder:co.H0jfqrgbS0eg7zrmFnpv4A",
+                    "content": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/folders/urn:adsk.wipqa:fs.folder:co.H0jfqrgbS0eg7zrmFnpv4A/content"
+                },
+                "name": "View",
+                "created": {
+                    "on": 1607603595000,
+                    "by": {
+                        "type": "users",
+                        "id": "KG8XKHKD2QNY",
+                        "links": {
+                            "self": "https://fqa-user.staging.autodesk360beta.com/users/v2/users/KG8XKHKD2QNY"
+                        }
+                    }
+                },
+                "modified": {
+                    "on": 1607946613000,
+                    "by": {
+                        "type": "users",
+                        "id": "KG8XKHKD2QNY",
+                        "links": {
+                            "self": "https://fqa-user.staging.autodesk360beta.com/users/v2/users/KG8XKHKD2QNY"
+                        }
+                    }
+                },
+                "parent": {
+                    "type": "folders",
+                    "id": "urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg",
+                    "links": {
+                        "self": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/folders/urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg"
+                    }
+                },
+                "title": "View",
+                "path": "/View",
+                "hidden": false
+            },
+            {
+                "type": "folders",
+                "id": "urn:adsk.wipqa:fs.folder:co.fnF-FI67Rkq-oxOI55kuLQ",
+                "links": {
+                    "self": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/folders/urn:adsk.wipqa:fs.folder:co.fnF-FI67Rkq-oxOI55kuLQ",
+                    "content": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/folders/urn:adsk.wipqa:fs.folder:co.fnF-FI67Rkq-oxOI55kuLQ/content"
+                },
+                "name": "Write",
+                "created": {
+                    "on": 1607603524000,
+                    "by": {
+                        "type": "users",
+                        "id": "KG8XKHKD2QNY",
+                        "links": {
+                            "self": "https://fqa-user.staging.autodesk360beta.com/users/v2/users/KG8XKHKD2QNY"
+                        }
+                    }
+                },
+                "modified": {
+                    "on": 1607946632000,
+                    "by": {
+                        "type": "users",
+                        "id": "KG8XKHKD2QNY",
+                        "links": {
+                            "self": "https://fqa-user.staging.autodesk360beta.com/users/v2/users/KG8XKHKD2QNY"
+                        }
+                    }
+                },
+                "parent": {
+                    "type": "folders",
+                    "id": "urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg",
+                    "links": {
+                        "self": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/folders/urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg"
+                    }
+                },
+                "title": "Write",
+                "path": "/Write",
+                "hidden": false
+            }
+        ]
+    },
+    "included": {
+        "ThumbnailStatusResponses": [
+            {
+                "type": "ThumbnailStatusResponses",
+                "id": "urn:adsk.wipqa:fs.file:vf.Vz4Sta1HS5aBJRF1jbWTsw?version=2",
+                "links": {
+                    "thumbnail": "https://fqa-fusiondm.staging.autodesk360beta.com/fusiondm/v2/versions/urn%3Aadsk.wipqa%3Afs.file%3Avf.Vz4Sta1HS5aBJRF1jbWTsw%3Fversion%3D2/derivatives/thumbnail/content",
+                    "self": "https://fqa-fusiondm.staging.autodesk360beta.com/fusiondm/v2/versions/urn%3Aadsk.wipqa%3Afs.file%3Avf.Vz4Sta1HS5aBJRF1jbWTsw%3Fversion%3D2/derivatives/thumbnail"
+                },
+                "status": "WORKING",
+                "progress": 0
+            }
+        ],
+        "versions": [
+            {
+                "type": "versions",
+                "id": "urn:adsk.wipqa:fs.file:vf.Vz4Sta1HS5aBJRF1jbWTsw?version=2",
+                "links": {
+                    "self": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/versions/urn%3Aadsk.wipqa%3Afs.file%3Avf.Vz4Sta1HS5aBJRF1jbWTsw%3Fversion%3D2",
+                    "viewableStatus": "https://fqa-fusiondm.staging.autodesk360beta.com/fusiondm/v2/versions/urn%3Aadsk.wipqa%3Afs.file%3Avf.Vz4Sta1HS5aBJRF1jbWTsw%3Fversion%3D2/derivatives/viewable",
+                    "thumbnailStatus": "https://fqa-fusiondm.staging.autodesk360beta.com/fusiondm/v2/versions/urn%3Aadsk.wipqa%3Afs.file%3Avf.Vz4Sta1HS5aBJRF1jbWTsw%3Fversion%3D2/derivatives/thumbnail"
+                },
+                "name": "8934f94e-a4f9-48c7-84e1-116623782771.f3d",
+                "created": {
+                    "on": 1607946578000,
+                    "by": {
+                        "type": "users",
+                        "id": "KG8XKHKD2QNY",
+                        "links": {
+                            "self": "https://fqa-user.staging.autodesk360beta.com/users/v2/users/KG8XKHKD2QNY"
+                        }
+                    }
+                },
+                "modified": {
+                    "on": 1607946578000,
+                    "by": {
+                        "type": "users",
+                        "id": "KG8XKHKD2QNY",
+                        "links": {
+                            "self": "https://fqa-user.staging.autodesk360beta.com/users/v2/users/KG8XKHKD2QNY"
+                        }
+                    }
+                },
+                "mimeType": "application/vnd.autodesk.fusion360",
+                "fileType": "f3d",
+                "docType": "Fusion360:Design",
+                "size": 47993,
+                "title": "Cylinder.f3d",
+                "versionNumber": 2,
+                "contentAvailable": true,
+                "storage": {
+                    "type": "OSS",
+                    "urn": "urn:adsk.objects:os.object:wip.dm.qa/9b8a0475-7005-4350-aec1-1cd6e934c825.f3d"
+                },
+                "states": [
+                    "VIEWABLES_REGISTERED",
+                    "CONTENT_AVAILABLE"
+                ],
+                "thumbnailStatus": {
+                    "type": "ThumbnailStatusResponses",
+                    "id": "urn:adsk.wipqa:fs.file:vf.Vz4Sta1HS5aBJRF1jbWTsw?version=2",
+                    "links": {
+                        "self": "https://fqa-fusiondm.staging.autodesk360beta.com/fusiondm/v2/versions/urn%3Aadsk.wipqa%3Afs.file%3Avf.Vz4Sta1HS5aBJRF1jbWTsw%3Fversion%3D2/derivatives/thumbnail"
+                    }
+                },
+                "description": "User Saved",
+                "file": {
+                    "type": "files",
+                    "id": "urn:adsk.wipqa:dm.lineage:Vz4Sta1HS5aBJRF1jbWTsw",
+                    "links": {
+                        "self": "https://fqa-symphonydm.staging.autodesk360beta.com/symphonydm/v2/files/urn:adsk.wipqa:dm.lineage:Vz4Sta1HS5aBJRF1jbWTsw"
+                    }
+                },
+                "tip": true,
+                "compositeDesign": false,
+                "sample": false
+            }
+        ],
+      "actions": [
+        {
+          "type": "actions",
+          "id": "urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg.KG8XKHKD2QNY",
+          "resourceId": "urn:adsk.wipqa:fs.folder:co.NbF-DZQnR-yC-ZLwrfE4jg",
+          "userId": "KG8XKHKD2QNY"
+        },
+        {
+          "type": "actions",
+          "id": "urn:adsk.wipqa:fs.folder.actions:co.7lFnxjACSqilDbWl2retbA.KG8XKHKD2QNY",
+          "resourceId": "urn:adsk.wipqa:fs.folder:co.7lFnxjACSqilDbWl2retbA",
+          "userId": "KG8XKHKD2QNY",
+          "actions": [
+            "read"
+          ]
+        },
+        {
+          "type": "actions",
+          "id": "urn:adsk.wipqa:fs.folder.actions:co.H0jfqrgbS0eg7zrmFnpv4A.KG8XKHKD2QNY",
+          "resourceId": "urn:adsk.wipqa:fs.folder:co.H0jfqrgbS0eg7zrmFnpv4A",
+          "userId": "KG8XKHKD2QNY"
+        },
+        {
+          "type": "actions",
+          "id": "urn:adsk.wipqa:fs.folder.actions:co.fnF-FI67Rkq-oxOI55kuLQ.KG8XKHKD2QNY",
+          "resourceId": "urn:adsk.wipqa:fs.folder:co.fnF-FI67Rkq-oxOI55kuLQ",
+          "userId": "KG8XKHKD2QNY",
+          "actions": [
+            "write"
+          ]
+        },
+        {
+          "type": "actions",
+          "id": "urn:adsk.wipqa:dm.lineage.actions:Vz4Sta1HS5aBJRF1jbWTsw.KG8XKHKD2QNY",
+          "resourceId": "urn:adsk.wipqa:dm.lineage:Vz4Sta1HS5aBJRF1jbWTsw",
+          "userId": "KG8XKHKD2QNY",
+          "actions": [
+            "read"
+          ]
+        }
+      ]
+    }
+}

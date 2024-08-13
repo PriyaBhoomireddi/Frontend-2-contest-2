@@ -1,0 +1,66 @@
+#ifndef _HQ_FX_LOGICAL_PRECISION_COMMON_H_
+#define _HQ_FX_LOGICAL_PRECISION_COMMON_H_
+
+// logical space transform matrix and center.
+uniform mat4 gLCSMatrix : NeutronSketchLCSMatrix;
+uniform vec2 gLCSCenter : NeutronSketchLCSCenterOGSFX;
+uniform bool gLCSIsInteger : NeutronSketchLCSIsInteger;
+
+GLSLShader Sketch_logical_precision
+{
+
+// check if is in logical space
+bool get_logical_space(float depth)
+{
+    return depth < 0.0;
+}
+
+vec2 logic_to_ndc(vec2 logical_pos)
+{
+    if (gLCSIsInteger)
+    {
+        ivec2 pos = floatBitsToInt(logical_pos);
+        pos -= floatBitsToInt(gLCSCenter);
+        vec4 temp = vec4(float(pos.x), float(pos.y), 0.0, 1.0);
+        return (temp * gLCSMatrix).xy;
+    }
+    else
+    {
+        vec2 pos = logical_pos;
+        pos -= gLCSCenter;
+        vec4 temp = vec4(pos, 0.0, 1.0);
+        return (temp * gLCSMatrix).xy;
+    }
+}
+
+vec2 ndc_to_logic(vec2 ndc_pos)
+{
+    vec2 posF;
+    posF.x = (ndc_pos.x - gLCSMatrix[3].x) / gLCSMatrix[0].x;
+    posF.y = (ndc_pos.y - gLCSMatrix[3].y) / gLCSMatrix[1].y;
+
+    if (gLCSIsInteger)
+    {
+        ivec2 pos = ivec2(posF);
+        pos += floatBitsToInt(gLCSCenter);
+        return intBitsToFloat(pos);
+    }
+    else
+    {
+        vec2 pos = posF;
+        pos += gLCSCenter;
+        return pos;
+    }
+}
+
+vec2 neutron_sketch_logic_dir(vec2 pos1, vec2 pos2)
+{
+    if (gLCSIsInteger)
+        return floatBitsToInt(pos1) - floatBitsToInt(pos2);
+    else
+        return pos1 - pos2;
+}
+
+}
+
+#endif

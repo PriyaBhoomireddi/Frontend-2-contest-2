@@ -1,0 +1,120 @@
+#version 330
+#include "Sketch_triangle.ogsfh"
+
+// for gouraud triangles we don't need glow texture because glow on those 
+// triangles will go through simple triangle pipeline with same colors on
+// all vertices and with no interpolation
+//
+// Gouraud triangle list vertex texture structure:
+// each vertex of triangle occupy a float4 buffer
+// 1. coordinates of vertex (2 float)
+// 2. depth and logical shared flag (1 float)
+// 3. color (1 float)
+uniform highp texture2D gGouraudTriListVertexTex_ : GouraudTriangleListVertexTexture ;
+uniform highp sampler2D gGouraudTriListVertexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gGouraudTriListVertexTex_>; };
+
+// Gouraud triangle list index texture structure:
+// index value of current triangle
+uniform highp texture2D gGouraudTriListIndexTex_ : GouraudTriangleListIndexTexture ;
+uniform highp sampler2D gGouraudTriListIndexTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gGouraudTriListIndexTex_>; };
+uniform highp texture2D gGouraudTriListDrawOrderZTex_ : GouraudTriListDrawOrderZTex ;
+uniform highp sampler2D gGouraudTriListDrawOrderZTex = sampler_state { TEXTURE_MIN_FILTER = NEAREST; TEXTURE_MAG_FILTER = NEAREST; Texture = <gGouraudTriListDrawOrderZTex_>; };
+
+attribute VS_INPUT
+{
+    int VertexID : TEXCOORD0;
+    int InstanceID : TEXCOORD1;
+};
+
+attribute VS_TO_PS
+{
+    vec4 vso_pos;
+    vec4 vso_color;
+};
+
+attribute pixelOut
+{
+    vec4 pso_color : COLOR0;
+};
+
+GLSLShader GouraudTriangleList_VS
+{
+
+void load_gouraud_vertex_info(uint instance_id, uint vertex_id, uint tri_id, out TriVertexAttr attr)
+{
+    ivec2 offset = ivec2(0, 0);
+    vec4 val = vec4(0.f, 0.f, 0.f, 0.f);
+
+    if (vertex_id == uint(0))
+    {
+        offset = get_ptex_offset(tri_id*uint(3));
+        val = texelFetch(gGouraudTriListVertexTex, offset, 0);
+    }
+    else if (vertex_id == uint(1))
+    {
+        offset = get_ptex_offset(tri_id*uint(3) + uint(1));
+        val = texelFetch(gGouraudTriListVertexTex, offset, 0);
+    }
+    else if (vertex_id == uint(2))
+    {  
+        offset = get_ptex_offset(tri_id*uint(3) + uint(2));   
+        val = texelFetch(gGouraudTriListVertexTex, offset, 0);
+    }
+    attr.pos = val.xy;
+
+    if (gRetainMode)
+    {
+        load_dynamic_draworderz(instance_id, gGouraudTriListDrawOrderZTex, attr.drawZ);
+        attr.isLogical = true;
+    }
+    else 
+    {
+        attr.isLogical = get_logical_space(val.z);
+        attr.drawZ = abs(val.z);
+    }
+    attr.color = floatBitsToUint(val.w);
+
+    attr.prim_id = uint(0);
+}
+
+void main()
+{
+    TriVertexAttr attr = TriVertexAttr(vec2(0.0f, 0.0f), uint(0), 0.0f, uint(0), false);
+
+    uint tri_id = load_tri_id_from_tex(gGouraudTriListIndexTex, uint(gl_InstanceID));
+
+    load_gouraud_vertex_info(uint(gl_InstanceID), uint(gl_VertexID), tri_id, attr);
+
+    VertexAttr_Gouraud_Triangle outputData = VertexAttr_Gouraud_Triangle(vec4(0.0f, 0.0f, 0.0f, 0.0f),
+                                                     vec4(0.0f, 0.0f, 0.0f, 0.0f));
+    set_gouraud_triangle_properties(attr, outputData);
+
+    gl_Position = outputData.position;
+
+    vso_pos = outputData.position;
+    vso_color = outputData.color;
+}
+
+}
+
+GLSLShader GouraudTriangle_PS
+{
+
+void main()
+{
+    if (vso_color.a < 0.01f)
+        discard;
+    pso_color = OIT_PS_OUTPUT(vso_color, vso_pos);  
+}
+
+}
+
+technique GouraudTriangleList
+{
+    pass P0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS) = GouraudTriangleList_VS;
+        PixelShader (in VS_TO_PS, out pixelOut) = GouraudTriangle_PS;
+    }
+}
+

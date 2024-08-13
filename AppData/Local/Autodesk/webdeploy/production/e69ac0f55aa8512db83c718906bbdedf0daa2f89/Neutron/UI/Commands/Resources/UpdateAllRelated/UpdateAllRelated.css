@@ -1,0 +1,163 @@
+/*
+Notice that some pixel sizes in this css file are set using schema
+    font-size: scaled_12px;
+etc.
+These scaled_*px values are multiplied with the current ToolbarFramework::Parameters::scaleFactor();
+That means that this css file cannot be used "as-is", but it is a template to be translated in cpp.
+*/
+
+QDialog#updateAllRelatedItems {
+    border: 1px solid #D2D2D2;
+    background-color: #FFFFFF;
+}
+
+QFrame#UpdateHeaderFrame{
+	border-bottom: 1px solid #D2D2D2;
+	background-color: transparent;
+}
+
+QLabel {
+    color: #666666;
+    font-size: scaled_12px;
+}
+
+QLabel:disabled {
+    color: #999999;
+}
+
+QLabel#titleLabel {
+    font-size: scaled_24px;
+    color: #6C6C6C;
+}
+
+QLabel#checklistLabel {
+    font-size: scaled_16px;
+    color: #6C6C6C;
+}
+
+QCheckBox#partsOnlyCheckbox {
+    background-color: transparent;
+    font-family: Arial, Sans-Serif;
+    color: #666666;
+    font-size: scaled_13px;
+}
+
+QFrame#UpdateMainFrame {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+QTreeView {
+	qproperty-indentation: 60;
+}
+
+#updateallitemTable {
+	background-color: transparent;
+	font-family: Arial, Sans-Serif;
+	font-size: scaled_14px;
+	border: none;
+	color: #4D4D4D;
+	padding: 0px;
+	margin-left: 0px;
+}
+
+QTreeWidget::item {
+	margin-top: 5px;
+	margin-bottom: 0px;
+	font-family: Arial, Sans-Serif;
+	font-size: scaled_14px;
+}
+
+#noUpdateLabel {
+	font-family: Arial, Sans-Serif;
+	font-size: scaled_16px;
+	color: #A5A5A5;
+}
+
+#receiveDataLabel {
+	font-family: Arial, Sans-Serif;
+	font-size: scaled_24px;
+	color: #A5A5A5;
+}
+
+QPushButton {
+    background-color: transparent;
+    font-size: scaled_12px;
+    border-radius: 3px;
+    padding: 9px 16px 8px 16px;
+    color: #6C6C6C;
+}
+
+QPushButton#closeButton {
+    border: none;
+}
+
+QPushButton#updateButton {
+	padding: 10px 40px 10px 40px;
+    background-color: #00A6E2;
+    border: 1px solid #00A6E2;
+    color: #FFFFFF;
+}
+
+QPushButton#updateButton:disabled {
+    background-color: #A5E0F5;
+    border: 1px solid #A5E0F5;
+}
+
+QPushButton#updateButton:hover {
+    background-color: #3AB5E1;
+    border: 1px solid #3AB5E1;
+}
+
+QPushButton#updateButton:pressed {
+    background-color: #007EC0;
+    border: 1px solid #007EC0;
+}
+
+QPushButton#cancelButton {
+	padding: 10px 40px 10px 40px;
+    background-color: #FAFAFA;
+    border: 1px solid #A2A2A2;
+}
+
+QPushButton#cancelButton:disabled {
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+    color: #D2D2D2;
+}
+
+QPushButton#cancelButton:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #D2D2D2;
+}
+
+QPushButton#cancelButton:pressed {
+    background-color: #EAEAEA;
+    border: 1px solid #ADADAD;
+}
+
+QPushButton#closeButton {
+    border: none;
+}
+
+QHeaderView {
+	background-color: transparent;
+	font-family: Arial, Sans-Serif;
+	font-size: scaled_14px;
+	font-weight: bold;
+	color: #A5A5A5;
+	border-bottom: 1px solid #B4B4B4;
+}
+
+QHeaderView::section {
+	background-color: transparent;
+	border: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 3px;
+	text-transform: uppercase;
+}
+
+QHeaderView::section:horizontal:first {
+	padding-left: 63px;
+}

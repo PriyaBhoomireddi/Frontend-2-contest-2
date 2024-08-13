@@ -1,0 +1,22 @@
+<div id="additionalStock"><p>Un valore stimato, utilizzato per generare un ordine più sicuro tra le passate di lavorazione tra due pareti ripide vicine, quando si seleziona <b>Prima ripido</b> come <b>Priorità</b>.</p>
+<p>Quando rimane del materiale irregolare tra due pareti verticali, tagliare ad una grande profondità su una sola delle due pareti crea un sovraccarico dell'utensile mentre lavora il materiale residuo. È opportuno tagliare alternativamente tra le due pareti per evitare di danneggiare l'utensile.</p>
+<p><b>Quantità massima di materiale residuo</b> viene utilizzata per riordinare il percorso utensile in modo che due pareti verticali, vicine tra loro, vengano lavorate allo stesso livello di Z prima di continuare con il livello Z successivo.</p>
+<p>Stimare un valore che sia maggiore della distanza tra i segmenti del percorso utensile attorno ad entrambe le pareti. L'utensile e la geometria del modello influenzano il momento e la posizione in cui avviene il riordinamento.</p>
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="375" height="136" src="../images/Max_remaining_stock_2mm.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Quantità massima materiale residuo = 2 mm</b><br>
+Le pareti verticali vengono lavorate singolarmente.</p></center></td>
+</tr></table>
+
+<table class="tipTable" cellspacing="10">
+<tr>
+<td><center><img border="0" width="375" height="133" src="../images/Max_remaining_stock_4mm.png"/></center></td>
+</tr><tr>
+<td><center><p><b>Quantità massima materiale residuo = 4 mm</b><br>
+Le pareti verticali vengono lavorate simultaneamente.</p></center></td>
+</tr></table>
+<p>In questo esempio, cambiando il valore della quantità massima del materiale residuo da 2 mm a 4 mm, le passate di lavorazione vengono riordinate.</p>
+<p><b>Nota: se non viene inserito un valore per la quantità massima di materiale residuo, sarà utilizzato un valore minimo di default pari al 10% del raggio utensile.</b></p>
+</div>

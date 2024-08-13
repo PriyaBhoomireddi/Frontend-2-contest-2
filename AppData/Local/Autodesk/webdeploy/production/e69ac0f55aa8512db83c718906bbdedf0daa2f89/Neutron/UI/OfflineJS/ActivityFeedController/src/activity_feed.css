@@ -1,0 +1,167 @@
+/* activityFeedBoard */
+
+#activityFeedBoard{
+    position: relative;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 8pt;
+    color: #666666;
+    background: #dddddd;
+    border-left: 1px solid #aeaeae;
+    border-right: 1px solid #aeaeae;
+    border-bottom: 1px solid #aeaeae;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    overflow-x:auto;
+}
+
+#activityTabContent{
+    min-width:284px;
+}
+
+.versionsPane .item .description {
+    padding-top: 5px;
+    padding-left: 5px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap: normal;
+    height: 30px;
+}
+
+@-webkit-keyframes spinActivities {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+.loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 56px;
+    height: 56px;
+    margin: auto;
+}
+
+.loading .maskedCircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 24px;
+    border: 3px solid dimgray;
+}
+
+.loading .mask {
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+}
+
+.loading .spinner {
+    position: absolute;
+    left: 1px;
+    top: 1px;
+    width: 52px;
+    height: 52px;
+    -webkit-animation: spinActivities 1s infinite linear;
+}
+
+.tabPanes{
+    position: absolute;
+    padding-top: 7px;
+    padding-bottom: 5px;
+}
+
+
+.tabPane{
+    display: none;
+}
+
+.tabBar {
+    position: absolute;
+    cursor: default;
+    padding: 3px 1px 0 0;
+    left: -1px;
+}
+
+.tabBar .feedTab {
+    height: 16px;
+    position: relative;
+    padding: 5px 9px;
+    cursor: default;
+    line-height: 16px;
+    top: 1px;
+    color: #666666;
+    float: left;
+}
+
+.tabBar .feedTab.selected {
+    padding: 4px 8px;
+    border-left: 1px solid #adadad;
+    border-top: 1px solid #adadad;
+    border-right: 1px solid #adadad;
+    background: #dddddd;
+}
+
+.tabBar.tabBarTop {
+    border-bottom: 1px solid #adadad !important;
+}
+
+.detailsInA360 {
+    position: absolute;
+    text-align: right;
+    margin-right: 6px;
+    right: 6px;
+    top: 6px;
+    color: #666666;
+    font-weight: normal;
+}
+
+/*
+ * TODO(annams): Rename (here and in renderer.js) to specify class name as
+ * goog-autocomplete-renderer
+ */
+ .ac-renderer {
+  position: absolute;
+  background: #fff;
+  border: 1px solid #666;
+  -moz-box-shadow: 2px 2px 2px rgba(102, 102, 102, .4);
+  -webkit-box-shadow: 2px 2px 2px rgba(102, 102, 102, .4);
+  z-index: 100;
+  margin-left:6px;
+  margin-right:6px;
+  margin-top:4px;
+  font-size:12px;
+  color: rgb(13, 13, 13);
+  line-height: 36px;
+}
+
+.ac-renderer .email {
+    font-size:10px;
+    color: rgba(13, 13, 13, 0.4);
+}
+
+.ac-row {
+  cursor: pointer;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ac-highlighted {
+  font-weight: bold;
+}
+
+.ac-active {
+  background-color: #4379A6;
+  color: #F2F2F2;
+}
+
+.ac-active .email {
+  font-size:10px;
+  color: #F2F2F2;
+}

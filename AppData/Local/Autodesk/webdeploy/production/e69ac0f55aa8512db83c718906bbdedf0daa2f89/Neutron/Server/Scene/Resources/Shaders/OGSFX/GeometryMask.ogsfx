@@ -1,0 +1,167 @@
+//**************************************************************************/
+// Copyright (c) 2009 Autodesk, Inc.
+// All rights reserved.
+// 
+// These coded instructions, statements, and computer programs contain
+// unpublished proprietary information written by Autodesk, Inc., and are
+// protected by Federal copyright law. They may not be disclosed to third
+// parties or copied or duplicated in any form, in whole or in part, without
+// the prior written consent of Autodesk, Inc.
+//**************************************************************************/
+// AUTHOR: Charlotta Wadman, converted to OGSFX by Eric Haines, July 2013
+// DESCRIPTION: Geometry mask. Render the input geometry with a specified color.
+// CREATED: November 2009
+//**************************************************************************/
+
+// For per-object clipping, unfortunately needed on by default;
+// the problem is that for an override material, per-object clipping will not
+// affect this material and get it to recompile.
+// TODO: is there some way to get this variable set *per object* for it's material?
+// ApplySystemShaderMacros in the script interpreter does so globally, but can't
+// per object. Mauricio thinks we might need a callback in the script interpreter.
+//#ifdef CLIPPING
+#include "Clipping.ogsfh"
+
+// World transformation, needed only for clipping
+uniform mat4 gWXf : World;
+//#endif
+
+// World-view-projection transformation.
+uniform mat4 gWVPXf : WorldViewProjection;
+
+
+uniform vec4 gMaskColor = {0.0, 0.0, 0.0, 1.0};
+
+// Depth priority, which shifts the model a bit forward in the z-buffer
+uniform float gDepthPriority : DepthPriority = 0.0;
+
+// The visibility texture.
+uniform texture2D gVisibilityTex : Texture;
+
+// Visibility TODO uniform texture2D sampler.
+uniform sampler2D gSamp : TextureSampler = sampler_state
+{
+    Texture = <gVisibilityTex>;
+};
+
+// Vertex shader input structure.
+attribute VS_INPUT
+{
+    vec3 Pos : POSITION;
+}
+
+
+// Vertex shader output structure for text.
+attribute VS_TO_PS_Text
+{
+    vec4 VPos : TEXCOORD0;
+}
+
+attribute pixelOut {
+    vec4 colorOut:COLOR0;
+}
+
+// Vertex shader for main technique, used to set up GBuffer data to interpolate.
+// VS_TO_PS VS_NPR(VS_INPUT In)
+GLSLShader VS_NPR
+{
+    void main()
+    {
+        // Transform the position from object space to clip space for output.
+        gl_Position = gWVPXf*vec4(Pos, 1.0);
+
+        // modify the position a bit by biasing the Z a bit forward, based on depth priority
+        gl_Position.z -= gl_Position.w*2.0*gDepthPriority;
+
+		//#ifdef CLIPPING
+        // Compute the world space position for clipping.
+        ComputeClipDistances(gWXf*vec4(Pos, 1.0));
+        //#endif
+    }
+}
+
+// Vertex shader for text technique, used to set up GBuffer data to interpolate.
+// VS_TO_PS_Text VS_NPR_Text(VS_INPUT In)
+GLSLShader VS_NPR_Text
+{
+    void main()
+    {
+        // Transform the position from object space to clip space for output.
+        gl_Position = gWVPXf*vec4(Pos, 1.0);
+
+        // modify the position a bit by biasing the Z a bit forward, based on depth priority
+        gl_Position.z -= gl_Position.w*2.0*gDepthPriority;
+
+		//#ifdef CLIPPING
+        // Compute the world space position for clipping.
+        ComputeClipDistances(gWXf*vec4(Pos, 1.0));
+        //#endif
+
+        // Output the position to pixel shader.
+        VPos = gl_Position;
+    }
+}
+
+// Pixel shader for main.
+// vec4 PS_NPR(VS_TO_PS In) : COLOR0
+GLSLShader PS_NPR
+{
+    void main()
+    {
+		#if GL_ES
+			ClipPixels();
+		#endif
+#if GL_ES && SHADER_VERSION == 2
+        gl_FragColor = gMaskColor;
+#else
+        colorOut = gMaskColor;
+#endif
+    }
+}
+
+// Pixel shader for text.
+// vec4 PS_NPR_Text(VS_TO_PS_Text In) : COLOR0
+GLSLShader PS_NPR_Text
+{
+    void main()
+    {
+		#if GL_ES
+			ClipPixels();
+		#endif
+
+        // Get the sample coordinate for the current pixel.
+        float sampleX = (VPos.x / VPos.w + 1.0) / 2.0;
+        float sampleY = (VPos.y / VPos.w + 1.0) / 2.0;
+        // Sample the visibility. We use the reb channel as the visibility.
+        float visibility = texture2D(gSamp, vec2(sampleX, sampleY)).r;
+        if(visibility > 0.5)
+            discard;
+
+#if GL_ES && SHADER_VERSION == 2
+        gl_FragColor = gMaskColor;
+#else
+        colorOut = gMaskColor;
+#endif
+    }
+}
+
+// The main technique.
+technique Main
+{
+    pass p0
+    {
+        VertexShader (in VS_INPUT) = VS_NPR;
+        PixelShader (out pixelOut) = PS_NPR;
+    }
+}
+
+// The text technique.
+technique Text
+{
+    pass p0
+    {
+        VertexShader (in VS_INPUT, out VS_TO_PS_Text) = VS_NPR_Text;
+        PixelShader (in VS_TO_PS_Text, out pixelOut) = PS_NPR_Text;
+    }
+}
+

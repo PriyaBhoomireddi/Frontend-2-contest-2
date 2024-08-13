@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clip-Default_Avatar);
+      }
+
+      .cls-2 {
+        fill: #666;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4, .cls-6 {
+        fill: none;
+      }
+
+      .cls-4 {
+        stroke: #666;
+      }
+
+      .cls-5 {
+        stroke: none;
+      }
+    </style>
+    <clipPath id="clip-Default_Avatar">
+      <rect width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="Default_Avatar" data-name="Default Avatar" class="cls-1">
+    <g id="Group_1197" data-name="Group 1197" transform="translate(8196 325)">
+      <g id="Group_1196" data-name="Group 1196" transform="translate(-14229 -9456)">
+        <circle id="Ellipse_11" data-name="Ellipse 11" class="cls-2" cx="12" cy="12" r="12" transform="translate(6033 9131)"/>
+      </g>
+      <path id="Intersection_2" data-name="Intersection 2" class="cls-3" d="M4,20.944a8,8,0,0,1,5.664-7.6,4.5,4.5,0,1,1,4.672,0A8,8,0,0,1,20,20.945a12,12,0,0,1-16,0Z" transform="translate(-8196 -325)"/>
+      <g id="Ellipse_113" data-name="Ellipse 113" class="cls-4" transform="translate(-8196 -325)">
+        <circle class="cls-5" cx="12" cy="12" r="12"/>
+        <circle class="cls-6" cx="12" cy="12" r="11.5"/>
+      </g>
+    </g>
+	<image x="16" y="16" width="8" height="8" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABTUlEQVQokYWSP2vCUBTFj0mgQnWMEHziIB2q8qZkCUgpOGbOLg5tvoGD3+PVxamLb7aTIjpkMln8Q9290EFwEsxgoEP7HKrS33g5XM6952Twi5RSJ6LeYrHwiSgHAIyxA+dcMsZefN9PASADAMPh8HE0Gs3iODZxBdu2d81m88nzvM+MlFIPw/ArjmOzVCohCALUajUAwHq9hhAC2+0Wtm3vXNe1DCLqKXG/30c2mz1vbjQacBwHrVYLURSZ5XL5Tbcs632/3991Oh1UKpULO4ZhoFAoYDKZ4HQ6PWjqQGXjGvV6HQBARDntpuoGGmPsoA68xWq1AvDzZo1zLgFACIEkSS7ESZJACAEA4JwP9Ha7/ZGmabDZbO6n0ylM00Q+n8fxeMR8Pke32wURwXGcXbVafT4HNx6PZ1EU/R+cGqpqLJfLv9UYFIvFV1WNb65LlCP9kGSBAAAAAElFTkSuQmCC" />
+  </g>
+</svg>

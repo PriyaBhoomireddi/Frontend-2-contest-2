@@ -1,0 +1,110 @@
+/*
+Notice that some pixel sizes in this css file are set using schema
+    font-size: scaled_12px;
+etc.
+These scaled_*px values are multiplied with the current ToolbarFramework::Parameters::scaleFactor();
+That means that this css file cannot be used "as-is", but it is a template to be translated in cpp.
+*/
+
+#TitleLabel {
+    font-size: scaled_16px;
+    color: #3c3c3c;
+    padding-left: 5px;
+}
+
+#CancelButton, #CancelButton2 {
+    border: none;
+}
+
+    #CancelButton:hover, #CancelButton2:hover {
+    }
+
+#DialogHeaderFrame {
+    background-color: transparent;
+}
+
+#NormalFrame {
+    border: 1px solid #D2D2D2;
+    background-color: transparent;
+    padding: 13px;
+    margin-bottom: 14px;
+}
+
+#BannerFrame {
+    border: 1px solid #87BC40;
+    padding-right: 10px;
+}
+
+#CancelButton2 {
+}
+
+#StatusText {
+    font-size: scaled_15px;
+    padding-left: 10px;
+    color: #6C6C6C;
+}
+
+#StatusIcon {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#BannerFrame.Success {
+    border-color: rgb(135, 179, 64);
+    background-color: rgb(243, 247, 236);
+}
+
+#StatusText.Success {
+    border-color: rgb(135, 179, 64);
+    background-color: rgb(243, 247, 236);
+}
+
+#StatusIcon.Success {
+    border-color: rgb(135, 179, 64);
+    background-color: rgb(135, 179, 64);
+}
+
+#BannerFrame.Error {
+    border-color: rgb(236, 74, 65);
+    background-color: rgb(253, 237, 236);
+}
+
+#StatusText.Error {
+    border-color: rgb(236, 74, 65);
+    background-color: rgb(253, 237, 236);
+}
+
+#StatusIcon.Error {
+    border-color: rgb(236, 74, 65);
+    background-color: rgb(236, 74, 65);
+}
+
+#BannerFrame.Informational {
+    border-color: rgb(56, 171, 223);
+    background-color: rgb(235, 246, 252);
+}
+
+#StatusText.Informational {
+    border-color: rgb(56, 171, 223);
+    background-color: rgb(235, 246, 252);
+}
+
+#StatusIcon.Informational {
+    border-color: rgb(56, 171, 223);
+    background-color: rgb(56, 171, 223);
+}
+
+#BannerFrame.Warning {
+    border-color: rgb(250, 162, 27);
+    background-color: rgb(254, 246, 232);
+}
+
+#StatusText.Warning {
+    border-color: rgb(250, 162, 27);
+    background-color: rgb(254, 246, 232);
+}
+
+#StatusIcon.Warning {
+    border-color: rgb(250, 162, 27);
+    background-color: rgb(250, 162, 27);
+}

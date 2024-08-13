@@ -1,0 +1,120 @@
+/*
+    LAYOUT
+*/
+.l_layout{
+    display: flex;
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+.l_layout.l_verticalLayout{
+    -webkit-flex-direction: column;
+    flex-direction: column;
+}
+
+/* vertical align content */
+.l_layout.l_vAlignContentTop{
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+}
+.l_layout.l_vAlignContentMiddle{
+    -webkit-align-content: center;
+    align-content: center;
+}
+.l_layout.l_vAlignContentBottom{
+    -webkit-align-content: flex-end;
+    align-content: flex-end;
+}
+
+/* horizontal align content  */
+.l_layout.l_alignContentSpaceBetween{
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+.l_layout.l_alignContentLeft{
+    -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+}
+.l_layout.l_alignContentCenter{
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.l_layout.l_alignContentRight{
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+/* items */
+.l_layout.l_vAlignItemsBaseline{
+    -webkit-align-items: baseline;
+    align-items: baseline;
+}
+.l_layout.l_vAlignItemsTop{
+     -webkit-align-items: flex-start;
+     align-items: flex-start;
+}
+.l_layout.l_vAlignItemsBottom{
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+}
+.l_layout.l_vAlignItemsMiddle{
+    -webkit-align-items: center;
+    align-items: center;
+}
+.l_layout.l_vAlignItemsStretch{
+    -webkit-align-items: stretch;
+    align-items: stretch;
+}
+
+/* wrap */
+.l_layout.l_flex_wrap {
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+/*
+    COLUMN
+*/
+.l_column{
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.l_column.l_flexible{
+    -webkit-flex-grow: 999;
+    flex-grow: 999;
+}
+.l_column.l_fixed{
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+.l_column.l_canGrow{
+    -webkit-flex-grow: 999;
+    flex-grow: 999;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+}
+.l_column.l_canShrink{
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 999;
+    flex-shrink: 999;
+}
+
+
+
+/*
+    TABLE
+*/
+.l_table{
+    display: table;
+}
+.l_tableRow{
+    display: table-row;
+}
+.l_tableCell{
+    display: table-cell;
+}
+

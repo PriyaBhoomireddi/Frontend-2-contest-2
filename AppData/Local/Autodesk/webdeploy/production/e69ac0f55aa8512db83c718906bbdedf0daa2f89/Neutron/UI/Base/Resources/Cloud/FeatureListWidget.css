@@ -1,0 +1,54 @@
+/*
+Notice that some pixel sizes in this css file are set using schema
+    font-size: scaled_12px;
+etc.
+These scaled_*px values are multiplied with the current ToolbarFramework::Parameters::scaleFactor();
+That means that this css file cannot be used "as-is", but it is a template to be translated in cpp.
+*/
+
+#scrollAreaWidget {
+    padding: 0px;
+    margin: 0px;
+    background-color: transparent;
+}
+
+#scrollArea {
+    background-color: #FFFFFF;
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+#mainFrame {
+    padding: 0px;
+    margin-left: 24px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+}
+
+#header {
+    background-color: transparent;
+    font-size: scaled_16px;
+    color: #3c3c3c;
+    border-bottom: 1px solid #d2d2d2;
+    border-radius: 0px;
+    padding-bottom: 6px;
+    padding-right: 3px;
+    margin-bottom: 4px;
+}
+
+#featurePack {
+    font-family: Arial, Sans-Serif;
+    font-size: scaled_13px;
+    color: #808080;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    text-align: left;
+    border: none;
+    background-color: transparent;
+}
+
+#featurePack:checked {
+    color: #007EC0;
+    font-weight: bold;
+}

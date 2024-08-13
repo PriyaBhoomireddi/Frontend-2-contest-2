@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Menus>
+  <!--/////////////////////////////////////////////
+    This document determines the order in which the contents of the menu will appear.
+    To determine whether the command joins the menu or not, edit the CmdDef onAddToContextMenu method.
+  //////////////////////////////////////////////-->
+
+  <MarkingMenu EnvId="CAMEnvironment">
+    <Menu TypeId="BaseMenu">
+      <MenuItem Id="RepeatCommand" Position="North" />
+      <MenuItem Id="RedoCommand" Position="East" />
+      <MenuItem Id="NeuCAMImportCommand" Position="South" />
+      <MenuItem Id="UndoCommand" Position="West" />
+    </Menu>
+    <Menu TypeId="Overflow">
+      <!-- Nav controls -->
+      <MenuItem Id="PanCommand"/>
+      <MenuItem Id="ZoomCommand"/>
+      <MenuItem Id="ConstrainedOrbitCommand"/>
+
+      <!-- Orbit command related -->
+      <MenuItem Id="SetOrbitCenterCommand"/>
+      <MenuItem Id="ResetOrbitCenterCommand"/>
+      <Separator />
+
+      <!-- Edit -->
+      <MenuItem Id="IronEditOperation" />
+      <MenuItem Id="IronEditInspections" />
+      <MenuItem Id="IronEditWorkingModelSetup" />
+      <MenuItem Id="IronEditBuildStrategyOperation" />
+      <MenuItem Id="IronEditAdditiveProcessSimulation"/>
+      <MenuItem Id="IronEditHoleRecognition" />
+      <MenuItem Id="IronEditNcProgram" />
+      <MenuItem Id="IronEditTool" />
+      <MenuItem Id="IronCompareAndEdit" />
+      <MenuItem Id="IronAdditiveSupport">
+        <MenuItem Id="IronStrategy_areavolume_additive_support"/>
+        <MenuItem Id="IronStrategy_surroundvolumepolyline_additive_support"/>
+        <Separator />
+        <MenuItem Id="IronStrategy_areabar_additive_support"/>
+        <MenuItem Id="IronStrategy_downoriented_additive_support"/>
+        <MenuItem Id="IronStrategy_lattice_additive_support"/>
+        <Separator />
+        <MenuItem Id="IronStrategy_areapolyline_additive_support"/>
+        <MenuItem Id="IronStrategy_edgepolyline_additive_support"/>
+        <MenuItem Id="IronStrategy_clustercontourpolyline_additive_support"/>
+        <MenuItem Id="IronStrategy_skeletonpolyline_additive_support"/>
+        <Separator />
+        <MenuItem Id="IronStrategy_baseplate_additive_support"/>
+      </MenuItem>
+      <MenuItem Id="IronAdditiveOrientations">
+        <MenuItem Id="IronStrategy_additive_optimize_orientation"/>
+      </MenuItem>
+      <MenuItem Id="SimplePrintSettingSelection"/>
+      <MenuItem Id="MachineSelection"/>
+      <MenuItem Id="IronNewOperation">
+        <MenuItem Id="IronDrilling">
+          <MenuItem Id="IronStrategy_drill" />
+          <MenuItem Id="IronHoleRecognition" />
+        </MenuItem>
+        <MenuItem Id="Iron2DMilling">
+          <MenuItem Id="IronStrategy_contourFeatureFolder" />
+          <MenuItem Id="IronStrategy_holeFeatureFolder" />
+          <MenuItem Id="IronStrategy_featureRecognition" />
+          <MenuItem Id="IronStrategy_face" />
+          <MenuItem Id="IronStrategy_adaptive2d" />
+          <MenuItem Id="IronStrategy_pocket2d" />
+          <MenuItem Id="IronStrategy_contour2d" />
+          <MenuItem Id="IronStrategy_slot" />
+          <MenuItem Id="IronStrategy_circular" />
+          <MenuItem Id="IronStrategy_bore" />
+          <MenuItem Id="IronStrategy_thread" />
+          <MenuItem Id="IronStrategy_path3d" />
+          <!-- Trace -->
+          <MenuItem Id="IronStrategy_engrave" />
+          <MenuItem Id="IronStrategy_chamfer2d" />
+        </MenuItem>
+        <MenuItem Id="Iron3DMilling">
+          <MenuItem Id="IronStrategy_adaptive"/>
+          <MenuItem Id="IronStrategy_pocket_new"/>
+          <Separator/>
+          <MenuItem Id="IronStrategy_parallel_new"/>
+          <MenuItem Id="IronStrategy_contour_new"/>
+          <MenuItem Id="IronStrategy_ramp"/>
+          <MenuItem Id="IronStrategy_horizontal_new"/>
+          <MenuItem Id="IronStrategy_pencil_new"/>
+          <MenuItem Id="IronStrategy_scallop_new"/>
+          <MenuItem Id="IronStrategy_spiral_new"/>
+          <MenuItem Id="IronStrategy_radial_new"/>
+          <MenuItem Id="IronStrategy_morphed_spiral"/>
+          <MenuItem Id="IronStrategy_project"/>
+          <MenuItem Id="IronStrategy_blend"/>
+          <MenuItem Id="IronStrategy_morph"/>
+          <MenuItem Id="IronStrategy_steep_and_shallow"/>
+          <MenuItem Id="IronStrategy_flat"/>
+          <MenuItem Id="IronStrategy_rest_finishing" />
+        </MenuItem>
+        <MenuItem Id="IronDED">
+          <MenuItem Id="IronStrategy_ded_parallel_feature_construction" />
+        </MenuItem>
+        <MenuItem Id="IronMultiAxisMilling">
+          <MenuItem Id="IronStrategy_swarf5d" />
+          <MenuItem Id="IronStrategy_multiAxisContour" />
+          <MenuItem Id="IronStrategy_flow" />
+          <MenuItem Id="IronStrategy_rotary_finishing" />
+        </MenuItem>
+        <MenuItem Id="IronTurning">
+
+          <MenuItem Id="IronStrategy_turningProfileRoughing" />
+          <MenuItem Id="IronStrategy_turningProfileFinishing" />
+          <MenuItem Id="IronStrategy_turningRoughing" />
+          <MenuItem Id="IronStrategy_turningAdaptiveRoughing" />
+          <MenuItem Id="IronStrategy_turningProfileGroove" />
+          <MenuItem Id="IronStrategy_turningFace" />
+          <MenuItem Id="IronStrategy_turningGroove" />
+          <MenuItem Id="IronStrategy_turningChamfer" />
+          <MenuItem Id="IronStrategy_turningPart" />
+          <MenuItem Id="IronStrategy_turningThread" />
+          <MenuItem Id="IronStrategy_turningStockTransfer" />
+          <MenuItem Id="IronStrategy_turningSecondarySpindleGrab" />
+          <MenuItem Id="IronStrategy_turningSecondarySpindlePull" />
+          <MenuItem Id="IronStrategy_turningSecondarySpindleReturn" />
+        </MenuItem>
+        <MenuItem Id="IronWLPC">
+          <MenuItem Id="IronStrategy_jet2d" />
+        </MenuItem>
+        <MenuItem Id="IronProbing">
+          <MenuItem Id="IronStrategy_probe" />
+          <MenuItem Id="IronStrategy_probe_geometry" />
+          <MenuItem Id="IronStrategy_inspectSurface" />
+        </MenuItem>
+        <Separator />
+        <MenuItem Id="IronStrategy_manual" />
+      </MenuItem>
+      <MenuItem Id="IronCreateFromTemplate"/>
+      <MenuItem Id="IronSetup"/>
+      <MenuItem Id="PartAlignmentStart" />
+      <MenuItem Id="IronNcProgram"/>
+      <MenuItem Id="IronFolder" />
+      <!--TODO: Select Tool -->
+      <Separator />
+      <MenuItem Id="ImportResults" />
+      <MenuItem Id="IronPartAlignmentInfo" />
+      <MenuItem Id="IronResetPartAlignment" />
+      <MenuItem Id="MeasureDatum" />
+      <Separator />
+      <MenuItem Id="Iron3MFExport" />
+      <MenuItem Id="IronAdditiveExportStrategy"/>
+      <MenuItem Id="IronGenerateToolpath" />
+      <MenuItem Id="IronAdditiveShowPrintStatistics"/>
+      <MenuItem Id="IronSimulation" />
+      <MenuItem Id="IronAdditiveSimulation" />
+      <MenuItem Id="IronAdditiveSimulation" />
+      <MenuItem Id="IronExportToolpath" />
+      <MenuItem Id="IronPostProcess" />
+      <MenuItem Id="IronOpenNcFolder" />
+      <MenuItem Id="IronCreateInspections" />
+      <MenuItem Id="IronRecordManualMeasure" />
+      <MenuItem Id="IronSetupSheetSwitchboard" />
+      <MenuItem Id="IronClearToolpath" />
+      <MenuItem Id="IronMachiningTime" />
+      <MenuItem Id="IronDrawAllToolpathOps" />
+      <MenuItem Id="IronUndrawAllToolpathOps" />
+      <MenuItem Id="IronDrawAllToolpathsInParent" />
+      <MenuItem Id="IronUndrawAllToolpathsInParent" />
+      <MenuItem Id="IronToolpathVisibilityToggle" />
+      <Separator />
+      <MenuItem Id="IronMakeAllDefault" />
+      <MenuItem Id="IronSuppress"/>
+      <MenuItem Id="IronProtect"/>
+      <MenuItem Id="IronOptional"/>
+      <MenuItem Id="IronKeepUpToDate"/>
+      <Separator />
+      <MenuItem Id="IronDerivedOperation">
+        <MenuItem Id="IronDrilling_derived">
+          <MenuItem Id="IronStrategy_drill_derived" />
+        </MenuItem>
+        <MenuItem Id="Iron2DMilling_derived">
+          <MenuItem Id="IronStrategy_face_derived" />
+          <MenuItem Id="IronStrategy_adaptive2d_derived" />
+          <MenuItem Id="IronStrategy_pocket2d_derived" />
+          <MenuItem Id="IronStrategy_contour2d_derived" />
+          <MenuItem Id="IronStrategy_slot_derived" />
+          <MenuItem Id="IronStrategy_circular_derived" />
+          <MenuItem Id="IronStrategy_bore_derived" />
+          <MenuItem Id="IronStrategy_thread_derived" />
+          <MenuItem Id="IronStrategy_path3d_derived" />
+          <!-- Trace -->
+          <MenuItem Id="IronStrategy_engrave_derived" />
+          <MenuItem Id="IronStrategy_chamfer2d_derived" />
+        </MenuItem>
+        <MenuItem Id="Iron3DMilling_derived">
+          <MenuItem Id="IronStrategy_adaptive_derived"/>
+          <MenuItem Id="IronStrategy_pocket_new_derived"/>
+          <Separator/>
+          <MenuItem Id="IronStrategy_parallel_new_derived"/>
+          <MenuItem Id="IronStrategy_contour_new_derived"/>
+          <MenuItem Id="IronStrategy_ramp_derived"/>
+          <MenuItem Id="IronStrategy_horizontal_new_derived"/>
+          <MenuItem Id="IronStrategy_pencil_new_derived"/>
+          <MenuItem Id="IronStrategy_scallop_new_derived"/>
+          <MenuItem Id="IronStrategy_spiral_new_derived"/>
+          <MenuItem Id="IronStrategy_radial_new_derived"/>
+          <MenuItem Id="IronStrategy_morphed_spiral_derived"/>
+          <MenuItem Id="IronStrategy_project_derived"/>
+          <MenuItem Id="IronStrategy_blend_derived"/>
+          <MenuItem Id="IronStrategy_morph_derived"/>
+          <MenuItem Id="IronStrategy_steep_and_shallow_derived"/>
+          <MenuItem Id="IronStrategy_flat_derived"/>
+          <MenuItem Id="IronStrategy_rest_finishing_derived" />
+        </MenuItem>
+        <MenuItem Id="IronMultiAxisMilling_derived">
+          <MenuItem Id="IronStrategy_swarf5d_derived" />
+          <MenuItem Id="IronStrategy_multiAxisContour_derived" />
+          <MenuItem Id="IronStrategy_flow_derived" />
+          <MenuItem Id="IronStrategy_rotary_finishing_derived" />
+        </MenuItem>
+        <MenuItem Id="IronTurning_derived">
+          <MenuItem Id="IronStrategy_turningProfileRoughing_derived" />
+          <MenuItem Id="IronStrategy_turningProfileFinishing_derived" />
+          <MenuItem Id="IronStrategy_turningRoughing_derived" />
+          <MenuItem Id="IronStrategy_turningAdaptiveRoughing_derived" />
+          <MenuItem Id="IronStrategy_turningProfileGroove_derived" />
+          <MenuItem Id="IronStrategy_turningFace_derived" />
+          <MenuItem Id="IronStrategy_turningGroove_derived" />
+          <MenuItem Id="IronStrategy_turningChamfer_derived" />
+          <MenuItem Id="IronStrategy_turningPart_derived" />
+          <MenuItem Id="IronStrategy_turningThread_derived" />
+          <MenuItem Id="IronStrategy_turningStockTransfer_derived" />
+          <MenuItem Id="IronStrategy_turningSecondarySpindleGrab_derived" />
+          <MenuItem Id="IronStrategy_turningSecondarySpindleReturn_derived" />
+        </MenuItem>
+        <MenuItem Id="IronDED_derived">
+          <MenuItem Id="IronStrategy_ded_parallel_feature_construction_derived"/>
+        </MenuItem>
+        <MenuItem Id="IronWLPC_derived">
+          <MenuItem Id="IronStrategy_jet2d_derived" />
+        </MenuItem>
+      </MenuItem>
+      <Separator />
+      <MenuItem Id="IronNewToolpathEdit">
+        <MenuItem Id="IronToolpathTrim" />
+        <MenuItem Id="IronToolpathEditDelete" />
+        <MenuItem Id="IronToolpathEditLeadsLinks" />
+        <MenuItem Id="IronToolpathEditToolChange" />
+				<MenuItem Id="IronToolpathEditMoveStartPoints" />
+      </MenuItem>
+      <MenuItem Id="IronMoveInsertMarkerHere"/>
+      <MenuItem Id="IronAddToNewFolder"/>
+      <MenuItem Id="IronAddToNewPattern" />
+      <MenuItem Id="IronDuplicate"/>
+      <MenuItem Id="IronCut" />
+      <MenuItem Id="IronCopy"/>
+      <MenuItem Id="PasteCommand" />
+      <MenuItem Id="IronDeleteObject" />
+      <MenuItem Id="IronDeleteEditSubToolpath" />
+      <MenuItem Id="IronDiscardEdits" />
+      <MenuItem Id="IronAdditiveViewOrientationResults" />
+      <Separator />
+      <MenuItem Id="IronAssociateNamedView" />
+      <Separator />
+      <MenuItem Id="IronViewToolpath" />
+      <MenuItem Id="IronEditNotes" />
+      <MenuItem Id="IronShowLog" />
+      <MenuItem Id="IronShowResults" />
+      <MenuItem Id="IronInspectionReport" />
+      <MenuItem Id="IronReplayManualMeasure" />
+      <MenuItem Id="IronRecalculateInspectionResults"/>
+      <Separator/>
+      <!-- TODO: Generate Setup Sheet -->
+      <MenuItem Id="IronStoreAsTemplate"/>
+      <MenuItem Id="IronStoreAsHoleTemplate"/>
+      <Separator/>
+      <MenuItem Id="IronExpandAllChildren" />
+      <MenuItem Id="IronCollapseAllChildren" />
+      <!-- Visual analysis (browser) -->
+      <MenuItem Id="FusionEditAccessibilityAnalysisCommand" />
+      <MenuItem Id="FusionEditMinimumRadiusAnalysisCommand" />
+      <MenuItem Id="FusionEditHalfSectionViewCommand" />
+      <MenuItem Id="FusionEditZebraAnalysisCommand" />
+      <Separator/>
+      <!-- NamedViews (browser)-->
+      <Separator />
+      <MenuItem Id="AddNamedViewCommand" />
+      <MenuItem Id="RemoveNamedViewCommand" />
+      <MenuItem Id="UpdateNamedViewCameraCommand" />
+
+      <!-- Working model commands -->
+      <MenuItem Id="ActivateMfgWorkingModelCmd" />
+      <MenuItem Id="DeleteMfgWorkingModelCmd" />
+      <MenuItem Id="DuplicateMfgWorkingModelCmd" />
+      <MenuItem Id="MSFWmdCreateAggregationAssetWorkingModelCmd" />
+      <MenuItem Id="DeleteMfgWorkingModelsCmd" />
+      <MenuItem Id="IronCreateSetupFromWorkingModel" />
+      <MenuItem Id="IronCreateSetupsFromWorkingModel" />
+      <MenuItem Id="IronUpdateWorkingModels" />
+      <MenuItem Id="IronToggleBendLineVisibility" />
+
+      <!-- Selection Sets -->
+      <MenuItem Id="IronCreateSelectionGroupCmd" />
+
+      <!-- Non-IronObject deletion -->
+      <MenuItem Id="IronDeleteNonIronObject" />
+
+      <!-- Model Visibility commands -->
+      <MenuItem Id="CAMVisibilityToggleCmdDef" />
+      <MenuItem Id="CAMShowAllComponentsCmdDef" />
+      <MenuItem Id="CAMShowAllBodiesCmdDef" />
+
+      <!-- Isolate related commands -->
+      <MenuItem Id="IronIsolateCmd" />
+      <MenuItem Id="IronUnisolateCmd" />
+      <MenuItem Id="IronUnisolateAllCmd" />
+
+      <Separator />
+
+      <!-- Find in Window / Browser -->
+      <MenuItem Id="IronFindInBrowser" />
+      <MenuItem Id="FindInWindow" />
+	</Menu>
+  </MarkingMenu>
+
+</Menus>

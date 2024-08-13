@@ -1,0 +1,91 @@
+GuidingWindow#coachMark
+{
+	/*background-color: lila;*/
+}
+
+MainWidget#mainWidget
+{
+	font: %1;
+}
+
+MessageContainer#messageContainer
+{
+	/*background-color: yellow;*/
+}
+
+QWidget#container
+{
+	background-color: white;
+	border-style: solid;
+	border-radius: 3px;
+}
+
+QLabel#titleLable 
+{
+	/*background-color: yellow;*/
+    font-size:18px;
+    color: #00A6E2;
+	padding-top: 0px;
+	padding-bottom: 12px;
+	margin: 0px;
+}
+
+QPushButton#closeButton {
+	/*background-color: green;*/
+    border: none;
+	padding: 0px 0px 12px 0px;
+	color: black;
+	background-position: center;
+    qproperty-alignment: AlignCenter;
+}
+
+QLabel#content
+{
+	/*background-color: blue;*/
+	color: #767676;
+	font-size: 13px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+QLabel#step
+{
+	font-size: 11px;
+	color: #767676;
+	font-style: light italic;
+}
+
+QPushButton
+{
+    background-color: transparent;
+    font-size: 13px;
+    border-radius: 3px;
+	padding: 8px 40px 8px 40px;
+    color: #6C6C6C;	
+}
+
+QPushButton#previousButton
+{
+	padding: 8px 10px 8px 10px;
+    background: transparent;
+    border: none;
+    color: #00A6E2;
+}
+
+QPushButton#nextButton:hover
+{
+    background-color: #3AB5E1;
+    border: 1px solid #3AB5E1;
+}
+
+QPushButton#nextButton:pressed
+{
+    background-color: #007EC0;
+    border: 1px solid #007EC0;
+}
+
+QPushButton#nextButton {
+    background-color: #00A6E2;
+    border: 1px solid #00A6E2;
+    color: #FFFFFF;
+}

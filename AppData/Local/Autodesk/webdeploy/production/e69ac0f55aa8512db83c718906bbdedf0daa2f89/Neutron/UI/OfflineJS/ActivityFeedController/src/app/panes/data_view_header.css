@@ -1,0 +1,152 @@
+.dataViewHeader{
+    
+    position: absolute;
+    height: 32px;
+    width: 401px;
+    background-color: #CCCCCC;
+}
+
+
+.dataViewHeader .headerTitleBtn{
+    position: absolute;
+    height: 32px;
+    max-width: 200px;
+	color: #646464;
+	font-family: Arial;
+	font-size: 14px;
+    line-height: 32px;    
+    white-space:nowrap;
+}
+
+
+
+.headerTitleBtn:hover{
+    background-color: #bbbbbb; 
+}
+
+.dataViewHeader .headerTitleBtn.headerTitleBtnEnabled::after{
+    content:url("../../assets/down_arrow.svg");
+    position: relative;
+    float: left;
+    left: 4px;
+    width: 30px;
+    transform: scale(0.7);
+
+}
+
+.dataViewHeader .singleUserIcon::before{
+    content: url('../../assets/permission-individual-16.svg');    
+    position: relative;
+    height: 16px;	
+    width: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 2px;
+}
+
+.dataViewHeader .teamAccountIcon::before{
+    content: url('../../assets/forums-16.svg');    
+    position: relative;
+    height: 16px;	
+    width: 16px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 2px;
+}
+
+
+
+
+
+.dataViewHeader .headerTitleBtn .textData {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;    
+    max-width: 170px;
+}
+
+
+.dataViewHeader .headerSearchButton{
+    position: absolute;
+    width:32px;
+    height: 32px;
+    left:337px;    
+    background-image: -webkit-image-set(url('../../assets/search_16_tho.svg') 1x, url('../../assets/search_16_tho.svg') 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px 16px;
+}
+
+.dataViewHeader .headerSearchButton._disabled_{
+    position: absolute;
+    background-image: -webkit-image-set(url('../../assets/search_16_tho_dis.svg') 1x, url('../../assets/search_16_tho_dis.svg') 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px 16px;
+}
+.dataViewHeader .headerSearchButton:not(._disabled_) ._hover_{
+    background-image: url('../../assets/search_16_tho.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px 16px;
+    background-color: #bbbbbb;  
+}
+
+.dataViewHeader .headerCloseButton{
+    position: absolute;
+    left: 369px;
+    width:32px;
+    height: 32px;
+    background-image: -webkit-image-set(url('../../assets/illustration_close.svg') 1x, url('../../assets/illustration_close.svg') 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px 16px;
+}
+
+.dataViewHeader .headerCloseButton:not(._disabled_) ._hover_{
+    background-image: url('../../assets/illustration_close.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px 16px;
+    background-color: #bbbbbb;  
+}
+
+.dataViewHeader .headerRefresh, .dataViewHeader .headerRefreshAnim{
+    position: absolute;    
+    left:305px;
+    width:32px;
+    height: 32px;
+}
+
+
+.dataViewHeader .headerRefresh .headerRefreshImage,.dataViewHeader .headerRefreshAnim .headerRefreshImage  {
+    
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: -webkit-image-set(url('../../assets/sync_16.svg') 1x, url('../../assets/sync_16.svg') 2x);
+    background-size: 16px 16px;
+}
+
+
+.dataViewHeader .headerRefresh._disabled_ .headerRefreshImage, .dataViewHeader .headerRefreshAnim._disabled_ .headerRefreshImage{
+    background-image: -webkit-image-set(url('../../assets/sync_16_dis.svg') 1x, url('../../assets/sync_16_dis.svg') 2x);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 16px 16px;
+}
+.dataViewHeader .headerRefresh:not(._disabled_) ._hover_ {
+    background-image:url('../../assets/sync_16.svg');     
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px 16px;     
+    background-color: #bbbbbb;   
+    
+}
+
+.dataViewHeader .headerRefreshAnim .headerRefreshImage {
+    -webkit-animation: rotating 1.5s linear infinite;
+    animation: rotating 1.5s linear infinite;
+}
